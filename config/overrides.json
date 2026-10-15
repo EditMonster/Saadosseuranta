@@ -1,10 +1,66 @@
 {
-  "_ohje": "Käsin ylläpidettävät lisäykset ja korjaukset. Avain on säädöksen id (fi-he-129-2026, fi-hanke-<tunnus>, eu-2021-0106). Kentät yhdistetään automaattiseen aineistoon: 'topics' korvaa, 'summary' korvaa, 'events' lisätään (päivämäärät merkitään tarkistamattomiksi, ellei confirmed=true).",
+  "_ohje": "Käsin ylläpidettävät lisäykset ja korjaukset. Avain on säädöksen id (fi-he-129-2026, fi-hanke-<tunnus>, eu-2021-0106). 'title' korvaa näyttönimen (virallinen nimi säilyy fullTitle-kentässä), 'topics' ja 'summary' korvaavat, 'events' lisätään (merkitään tarkistamattomiksi, ellei confirmed=true).",
   "eu-2021-0106": {
     "summary": "Tekoälyasetus. Huom: AI-omnibus (EU) 2026/1744 siirsi liitteen III suuririskisten järjestelmien velvoitteet 2.12.2027 ja tuotteisiin sulautettujen 2.8.2028 alkaviksi.",
     "events": [
-      {"date": "2027-12-02", "label": "Liite III suuririskiset (omnibus 2026/1744)", "kind": "soveltaminen", "confirmed": true},
-      {"date": "2028-08-02", "label": "Liite I sulautetut (omnibus 2026/1744)", "kind": "soveltaminen", "confirmed": true}
-    ]
+      {
+        "date": "2027-12-02",
+        "label": "Liite III suuririskiset (omnibus 2026/1744)",
+        "kind": "soveltaminen",
+        "confirmed": true
+      },
+      {
+        "date": "2028-08-02",
+        "label": "Liite I sulautetut (omnibus 2026/1744)",
+        "kind": "soveltaminen",
+        "confirmed": true
+      }
+    ],
+    "title": "Tekoälyasetus (AI Act)"
+  },
+  "eu-2025-0359": {
+    "title": "Digitaalinen omnibus: tekoäly (AI-omnibus)"
+  },
+  "eu-2025-0360": {
+    "title": "Digitaalinen omnibus: data ja GDPR"
+  },
+  "eu-2022-0272": {
+    "title": "Kyberkestävyysasetus (CRA)"
+  },
+  "eu-2022-0302": {
+    "title": "Tuotevastuudirektiivi (uusi PLD)"
+  },
+  "eu-2025-0045": {
+    "title": "Omnibus I: CSRD- ja CSDDD-kevennykset"
+  },
+  "eu-2021-0414": {
+    "title": "Alustatyödirektiivi"
+  },
+  "eu-2021-0050": {
+    "title": "Palkka-avoimuusdirektiivi"
+  },
+  "eu-2021-0239": {
+    "title": "Rahanpesuasetus (AMLR)"
+  },
+  "eu-2022-0396": {
+    "title": "Pakkaus- ja pakkausjäteasetus (PPWR)"
+  },
+  "eu-2026-0074": {
+    "title": "EU Inc. – 28. yhtiöoikeusjärjestelmä"
+  },
+  "eu-2022-0047": {
+    "title": "Data-asetus (Data Act)"
+  },
+  "eu-2020-0359": {
+    "title": "NIS2-direktiivi"
+  },
+  "eu-2020-0266": {
+    "title": "DORA-asetus"
+  },
+  "eu-2020-0361": {
+    "title": "Digipalvelusäädös (DSA)"
+  },
+  "eu-2020-0374": {
+    "title": "Digimarkkinasäädös (DMA)"
   }
 }

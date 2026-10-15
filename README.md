@@ -8,6 +8,15 @@ Sivu on staattinen (`docs/`), aineisto on yksi JSON-tiedosto (`docs/data/items.j
 GitHub Actions ajaa hakuskriptit joka aamu ja committaa muuttuneen aineiston. Käyttökustannus
 on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
+## Sivun näkymät
+
+* **Tilannekuva** – avoimet lausuntokierrokset, seuraavien 60 päivän vaiheet ja viimeisten 14 päivän tapahtumat; neljä avainlukua.
+* **Kansallinen** ja **EU** – vaakasuuntaiset aikajanat (lausuntoaika, eduskunta-/lainsäädäntömenettely, voimaantulo, määräajat), lausuttavissa olevat kärjessä.
+* **Valmiit** – vahvistetut ja voimassa olevat säädökset taulukkona.
+* Jokaisella säädöksellä on pysyvä linkki (`…/#fi-he-129-2026`), joka avaa sen aikajanan suoraan.
+* `data/saadosseuranta.ics` – kaikki tulevat määräajat kalenteriin (Google/Outlook/Apple: "tilaa kalenteri osoitteesta").
+* Tumma teema oletuksena, vaalea *Teema*-napista; valinta muistetaan selaimessa.
+
 ## Mistä aineisto tulee
 
 | Lähde | Mitä haetaan | Rajapinta |
@@ -30,13 +39,13 @@ config/
   settings.yaml      EU-vuodet, menettelytyypit, Valmiit-sivun aikaraja
   topics.yaml        aihealueiden avainsanat (muokkaa vapaasti)
   eu_watchlist.yaml  EU-menettelyt, jotka haetaan aina
-  overrides.json     käsin lisätyt tapahtumat / korjaukset (id:n mukaan)
+  overrides.json     käsin lisätyt tapahtumat, korjaukset ja lyhyet näyttönimet (id:n mukaan)
 scripts/
   fetch_hankeikkuna.py  fetch_eduskunta.py  fetch_finlex.py  fetch_eu.py
   build.py           yhdistää välimuistit -> docs/data/items.json
   update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita
 data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys on nopea)
-docs/                GitHub Pages -sivu: index.html, logo.png, data/items.json
+docs/                GitHub Pages -sivu: index.html, logot, data/items.json + meta.json + saadosseuranta.ics
 .github/workflows/update.yml   päivittäinen ajo
 ```
 

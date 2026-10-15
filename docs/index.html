@@ -4,246 +4,303 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Kansallisen ja EU-lainsäädännön seuranta: lausuntoajat, eduskuntakäsittely, voimaantulot ja määräajat aikajanalla.">
-<link rel="icon" href="logo.png">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="logo-dark.png">
 <title>Säädösseuranta</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Layout: white single-theme by request. Header with logo + three tabs; topic-chip toolbar;
-   horizontally scrollable Gantt-style timeline with a sticky label column; right-hand drawer
-   for one case (also used from the completed-items table). */
+/* Layout: ops-console. Hairline status bar, mono microlabels, one signal colour (amber) for anything
+   that demands action; everything else is bone-white on graphite. Dark first, light as a toggle. */
 :root{
-  --bg:#ffffff;
-  --surface:#f4f4f1;
-  --ink:#131313;
-  --muted:#6b6b65;
-  --line:#dddcd6;
-  --line-strong:#a3a29b;
-  --accent:#1f3fbf;
-  --accent-soft:#e3e8fa;
-  --open:#0d7a46;
-  --open-soft:#dff2e6;
-  --open-stripe:#bfe3cc;
-  --today:#d4432b;
-  --font-ui:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,sans-serif;
-  --font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-  --label-w:290px;
-  --row-h:70px;
+  --bg:#0a0a0b; --bg2:#101112; --panel:#131415; --panel2:#18191b;
+  --line:#242628; --line2:#35373a; --fg:#ecebe6; --muted:#8e8d87; --dim:#55554f;
+  --signal:#e5a33a; --signal-dim:rgba(229,163,58,.16);
+  --hatch:rgba(236,235,230,.22); --grid:rgba(236,235,230,.035);
+  --sans:"Geist","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --label-w:300px; --row-h:72px; --radius:2px;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#f4f3ef; --bg2:#fbfaf7; --panel:#ffffff; --panel2:#f1f0ec;
+  --line:#d9d7d0; --line2:#bcb9b1; --fg:#121212; --muted:#6a6963; --dim:#a4a29a;
+  --signal:#b4700c; --signal-dim:rgba(180,112,12,.12);
+  --hatch:rgba(18,18,18,.18); --grid:rgba(18,18,18,.045);
   color-scheme:light;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 img{max-width:100%}
+html,body{margin:0}
 body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font-family:var(--font-ui);font-size:14px;line-height:1.45;
-  padding-left:max(16px,env(safe-area-inset-left,0px));
-  padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:0 40px;
+  background:var(--bg); color:var(--fg); font-family:var(--sans); font-size:13.5px; line-height:1.45;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px; background-attachment:fixed;
+  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); padding-block:0 48px;
   -webkit-font-smoothing:antialiased;
 }
-button{font:inherit;color:inherit}
-a{color:var(--accent)}
-.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line2)}
+a:hover{border-color:var(--fg)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.micro{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+:focus-visible{outline:1px solid var(--signal);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-/* Header */
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding-block:14px 12px;border-bottom:1.5px solid var(--ink)}
-.brand{display:flex;align-items:center;gap:14px;min-width:0}
-.logo{height:38px;width:auto;display:block}
-.name{font-weight:600;font-size:17px;letter-spacing:-.01em;line-height:1.2}
-.sub{color:var(--muted);font-size:12.5px}
-.tabs{display:flex;gap:4px;flex-wrap:wrap}
-.tab{appearance:none;border:1px solid transparent;background:none;font-weight:500;padding:7px 12px;border-radius:4px;cursor:pointer;color:var(--muted);display:flex;gap:8px;align-items:center}
-.tab:hover{border-color:var(--line-strong);color:var(--ink)}
-.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-.tab .n{font-family:var(--font-mono);font-size:11.5px;opacity:.75}
+/* Status bar */
+.status{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-block:10px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.status .sys{display:flex;gap:18px;flex-wrap:wrap}
+.status .sys span b{color:var(--fg);font-weight:500}
+.led{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--signal);margin-right:6px;vertical-align:middle;box-shadow:0 0 6px var(--signal)}
+.led.ok{background:var(--fg);box-shadow:none}
+.status .ctl{display:flex;gap:10px;align-items:center}
+.status .ctl button,.status .ctl a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:4px 8px;border-radius:var(--radius)}
+.status .ctl button:hover,.status .ctl a:hover{color:var(--fg);border-color:var(--line2)}
+
+/* Masthead */
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding-block:22px 0;border-bottom:1px solid var(--fg)}
+.brand{display:flex;align-items:center;gap:16px;min-width:0;padding-bottom:14px}
+.logo{height:44px;width:auto;display:block}
+.logo.light{display:none}
+:root[data-theme="light"] .logo.dark{display:none}
+:root[data-theme="light"] .logo.light{display:block}
+.name{font-weight:600;font-size:20px;letter-spacing:-.01em;line-height:1.1}
+.sub{color:var(--muted);font-size:12px;margin-top:4px}
+.tabs{display:flex;gap:2px;flex-wrap:wrap}
+.tab{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--line);border-bottom:0;color:var(--muted);display:flex;gap:10px;align-items:center;border-radius:var(--radius) var(--radius) 0 0;background:var(--bg)}
+.tab:hover{color:var(--fg)}
+.tab[aria-selected="true"]{color:var(--bg);background:var(--fg);border-color:var(--fg)}
+.tab .n{opacity:.7}
 
 /* Toolbar */
 .toolbar{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;padding-block:12px;border-bottom:1px solid var(--line)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.chips-title{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-.chip{appearance:none;border:1px solid var(--line-strong);border-radius:999px;padding:4px 11px;font-size:12.5px;background:#fff;cursor:pointer;line-height:1.3}
-.chip:hover{border-color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.search{border:1px solid var(--line-strong);border-radius:4px;padding:6px 10px;font:inherit;min-width:220px;background:#fff;color:var(--ink)}
-.count{color:var(--muted);font-size:12.5px;white-space:nowrap}
-.toggle{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;white-space:nowrap;cursor:pointer}
-.label .min{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nodates{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:11px;color:var(--line-strong)}
-.drawer .srclinks{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12.5px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.chips-title{margin-right:8px}
+.chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);padding:4px 9px;border-radius:var(--radius);color:var(--muted);background:transparent}
+.chip:hover{color:var(--fg);border-color:var(--fg)}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.search{border:1px solid var(--line2);border-radius:var(--radius);padding:6px 10px;font:inherit;font-size:13px;min-width:240px;background:var(--panel);color:var(--fg)}
+.search::placeholder{color:var(--dim)}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);cursor:pointer;white-space:nowrap}
+.toggle input{accent-color:var(--signal)}
+.count{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 
 /* Views */
-.view{padding-top:14px}
-.view-head{display:flex;justify-content:space-between;gap:12px 24px;align-items:flex-end;flex-wrap:wrap}
-.view-head h2{margin:0;font-size:15px;font-weight:600}
-.view-head p{margin:2px 0 0;color:var(--muted);font-size:12.5px;max-width:62ch}
-.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);align-items:center}
+.view{padding-top:16px}
+.view-head{display:flex;justify-content:space-between;gap:12px 24px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px}
+.view-head h2{margin:0;font-size:15px;font-weight:600;letter-spacing:-.005em}
+.view-head p{margin:3px 0 0;color:var(--muted);font-size:12.5px;max-width:64ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:6px}
-.lg{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid var(--ink)}
-.lg.future{background:#fff}
-.lg.diamond{border-radius:2px;transform:rotate(45deg);background:var(--accent);border-color:var(--accent);width:11px;height:11px}
-.lg.deadline{border-radius:0;background:#fff;border:2px solid var(--today);width:11px;height:11px}
-.lg.bar{width:22px;height:10px;border-radius:3px;border:1px solid var(--open);background:repeating-linear-gradient(135deg,var(--open-soft) 0 4px,var(--open-stripe) 4px 8px)}
-.lg.bar2{width:22px;height:10px;border-radius:3px;border:1px solid var(--line-strong);background:var(--surface)}
-.lg.bar3{width:22px;height:4px;border-radius:2px;background:var(--accent-soft);border:0}
-.lg.today{width:2px;height:14px;border:0;border-radius:0;background:var(--today)}
+.lg{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--fg);border:1.5px solid var(--fg)}
+.lg.future{background:transparent}
+.lg.diamond{border-radius:1px;transform:rotate(45deg);width:9px;height:9px}
+.lg.deadline{border-radius:0;background:transparent;border-color:var(--signal);width:9px;height:9px}
+.lg.bar{width:22px;height:9px;border-radius:1px;border:1px solid var(--fg);background:repeating-linear-gradient(135deg,transparent 0 3px,var(--hatch) 3px 6px)}
+.lg.bar.open{border-color:var(--signal);background:repeating-linear-gradient(135deg,transparent 0 3px,var(--signal-dim) 3px 6px)}
+.lg.bar2{width:22px;height:9px;border-radius:1px;border:1px solid var(--line2);background:var(--panel2)}
+.lg.bar3{width:22px;height:3px;border-radius:0;background:var(--line2);border:0}
+.lg.today{width:1px;height:14px;border:0;border-radius:0;background:var(--signal)}
+
+/* Panels with corner brackets */
+.panel{position:relative;border:1px solid var(--line);background:var(--panel);padding:14px 16px;min-width:0}
+.panel::before,.panel::after{content:"";position:absolute;width:9px;height:9px;pointer-events:none}
+.panel::before{top:-1px;left:-1px;border-top:1px solid var(--fg);border-left:1px solid var(--fg)}
+.panel::after{bottom:-1px;right:-1px;border-bottom:1px solid var(--fg);border-right:1px solid var(--fg)}
+
+/* Tilannekuva */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:16px}
+.kpi .v{font-family:var(--mono);font-size:30px;font-weight:500;line-height:1;margin:6px 0 4px;font-variant-numeric:tabular-nums}
+.kpi .v.signal{color:var(--signal)}
+.kpi .d{font-size:12px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:12px;align-items:start}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:86px 1fr auto;gap:12px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);cursor:pointer}
+.list li:first-child{border-top:0}
+.list li:hover .t{color:var(--signal)}
+.list li.empty{display:block;cursor:default}
+.list .d{font-family:var(--mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.35}
+.list .d.soon{color:var(--signal)}
+.list .t{font-size:13px;line-height:1.3}
+.list .k{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.list .m{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.panel h3{margin:0 0 8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;display:flex;justify-content:space-between;gap:12px}
+.empty{padding:28px 12px;text-align:center;color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 
 /* Timeline */
-.tl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin-top:14px;background:#fff;position:relative}
+.tl{overflow-x:auto;border:1px solid var(--line);background:var(--panel);position:relative}
 .tl-inner{position:relative;min-width:var(--min-w,900px)}
 .tl-head,.row{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr)}
-.tl-head{position:sticky;top:0;z-index:4;background:#fff;border-bottom:1px solid var(--ink);height:46px}
-.tl-head .label{display:flex;align-items:center;padding-block:0;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tl-head{position:sticky;top:0;z-index:4;background:var(--panel);border-bottom:1px solid var(--fg);height:46px}
+.tl-head .label{display:flex;align-items:center;padding-block:0}
 .tl-head .track{position:relative;overflow:hidden}
-.year{position:absolute;top:0;bottom:0;display:flex;align-items:flex-start;padding-top:5px;padding-left:6px;font-family:var(--font-mono);font-size:12px;color:var(--ink);border-left:1px solid var(--line-strong)}
-.q{position:absolute;top:0;bottom:0;border-left:1px dotted var(--line);font-family:var(--font-mono);font-size:10px;color:var(--line-strong);padding-left:3px;display:flex;align-items:flex-end;padding-bottom:2px}
-.today-tag{position:absolute;bottom:3px;transform:translateX(-50%);background:var(--today);color:#fff;font-family:var(--font-mono);font-size:10.5px;padding:2px 6px;border-radius:3px;white-space:nowrap}
+.year{position:absolute;top:0;bottom:0;display:flex;align-items:flex-start;padding-top:6px;padding-left:6px;font-family:var(--mono);font-size:11px;color:var(--fg);border-left:1px solid var(--line2)}
+.q{position:absolute;top:0;bottom:0;border-left:1px dotted var(--line);font-family:var(--mono);font-size:9.5px;color:var(--dim);padding-left:3px;display:flex;align-items:flex-end;padding-bottom:3px}
+.today-tag{position:absolute;bottom:4px;transform:translateX(-50%);background:var(--signal);color:#0a0a0b;font-family:var(--mono);font-size:10px;letter-spacing:.06em;padding:2px 6px;white-space:nowrap}
 .grid{position:absolute;top:46px;bottom:0;left:var(--label-w);right:0;pointer-events:none;z-index:0}
-.grid .yl{position:absolute;top:0;bottom:0;border-left:1px solid var(--line-strong);opacity:.6}
+.grid .yl{position:absolute;top:0;bottom:0;border-left:1px solid var(--line2);opacity:.7}
 .grid .ql{position:absolute;top:0;bottom:0;border-left:1px dotted var(--line)}
-.grid .tl-today{position:absolute;top:0;bottom:0;border-left:2px solid var(--today);opacity:.9}
+.grid .tl-today{position:absolute;top:0;bottom:0;border-left:1px solid var(--signal)}
 .row{border-bottom:1px solid var(--line);min-height:var(--row-h);position:relative;z-index:1;cursor:pointer}
 .row:last-child{border-bottom:0}
-.row:hover .label,.row:focus-visible .label{background:var(--surface)}
+.row:hover .label,.row:focus-visible .label{background:var(--panel2)}
 .row:focus-visible{outline:none}
-.row:focus-visible .label{box-shadow:inset 3px 0 0 var(--accent)}
-.label{position:sticky;left:0;z-index:3;background:#fff;border-right:1px solid var(--line);padding:9px 14px;min-width:0}
-.label .t{font-weight:500;font-size:13.5px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.label .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:4px;font-size:11.5px;color:var(--muted)}
-.label .next{font-size:11.5px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.label .next b{font-weight:500;color:var(--ink)}
-.pill{display:inline-block;border-radius:3px;padding:1px 6px;font-size:11px;font-weight:500;border:1px solid var(--line-strong);color:var(--ink);background:#fff;white-space:nowrap}
-.pill.open{background:var(--open-soft);border-color:var(--open);color:var(--open)}
-.pill.eduskunnassa,.pill.neuvotteluissa{background:var(--surface)}
-.pill.voimassa{background:var(--ink);color:#fff;border-color:var(--ink)}
-.pill.scope{font-family:var(--font-mono);font-weight:500;font-size:10.5px;letter-spacing:.04em}
+.row:focus-visible .label{box-shadow:inset 2px 0 0 var(--signal)}
+.label{position:sticky;left:0;z-index:3;background:var(--panel);border-right:1px solid var(--line);padding:9px 14px;min-width:0}
+.label .t{font-weight:500;font-size:13px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.label .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:5px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.label .next{font-size:11.5px;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.label .next b{font-weight:500;color:var(--fg);font-family:var(--mono);font-size:11px}
+.label .min{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.04em}
+.pill{display:inline-block;border-radius:var(--radius);padding:1px 6px;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);color:var(--muted);white-space:nowrap}
+.pill.open{border-color:var(--signal);color:var(--signal);background:var(--signal-dim)}
+.pill.voimassa{border-color:var(--fg);color:var(--fg)}
+.pill.scope{color:var(--fg)}
 .track{position:relative;min-width:0}
-.span{position:absolute;top:50%;height:12px;transform:translateY(-50%);border-radius:3px;z-index:1}
-.span.lausunto{background:repeating-linear-gradient(135deg,var(--open-soft) 0 4px,var(--open-stripe) 4px 8px);border:1px solid var(--open)}
-.span.lausunto.now{box-shadow:0 0 0 2px var(--open-soft)}
-.span.kasittely{background:var(--surface);border:1px solid var(--line-strong)}
-.span.kasittely.open-end{border-right-style:dashed;background:linear-gradient(90deg,var(--surface) 70%,#fff)}
-.span.siirtyma{height:4px;background:var(--accent-soft);border:0;border-radius:2px}
-.span-label{position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10.5px;white-space:nowrap;color:var(--open);font-weight:500;pointer-events:none}
-.span.kasittely .span-label{color:var(--muted)}
-.ev{position:absolute;top:50%;width:14px;height:14px;transform:translate(-50%,-50%);border-radius:50%;background:var(--ink);border:2px solid var(--ink);padding:0;cursor:pointer;z-index:2}
-.ev.future{background:#fff}
-.ev.kind-voimaan,.ev.kind-soveltaminen{border-radius:2px;background:var(--accent);border-color:var(--accent);transform:translate(-50%,-50%) rotate(45deg);width:12px;height:12px}
-.ev.kind-voimaan.future,.ev.kind-soveltaminen.future{background:#fff}
-.ev.kind-maaraaika{border-radius:0;background:#fff;border-color:var(--today);width:12px;height:12px}
-.ev.kind-maaraaika.past{background:var(--today)}
+.nodates{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.span{position:absolute;top:50%;height:11px;transform:translateY(-50%);border-radius:1px;z-index:1}
+.span.lausunto{background:repeating-linear-gradient(135deg,transparent 0 3px,var(--hatch) 3px 6px);border:1px solid var(--fg)}
+.span.lausunto.now{border-color:var(--signal);background:repeating-linear-gradient(135deg,transparent 0 3px,var(--signal-dim) 3px 6px)}
+.span.kasittely{background:var(--panel2);border:1px solid var(--line2)}
+.span.kasittely.open-end{border-right-style:dashed}
+.span.siirtyma{height:2px;background:var(--line2);border:0;border-radius:0}
+.span-label{position:absolute;left:6px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;color:var(--muted);pointer-events:none}
+.span.lausunto.now .span-label{color:var(--signal)}
+.ev{position:absolute;top:50%;width:12px;height:12px;transform:translate(-50%,-50%);border-radius:50%;background:var(--fg);border:1.5px solid var(--fg);padding:0;cursor:pointer;z-index:2}
+.ev.future{background:var(--panel)}
+.ev.kind-voimaan,.ev.kind-soveltaminen{border-radius:1px;transform:translate(-50%,-50%) rotate(45deg);width:10px;height:10px}
+.ev.kind-maaraaika{border-radius:0;background:var(--panel);border-color:var(--signal);width:10px;height:10px}
+.ev.kind-maaraaika.past{background:var(--signal)}
 .ev.unconfirmed{border-style:dashed}
-.ev.up{margin-top:-11px}.ev.down{margin-top:11px}
-.ev-label{position:absolute;transform:translateX(-50%);font-size:11px;white-space:nowrap;color:var(--ink);text-align:center;line-height:1.2;pointer-events:none}
-.ev-label .d{display:block;font-family:var(--font-mono);font-size:10.5px;color:var(--muted)}
-.ev-label.above{bottom:calc(50% + 12px)}
-.ev-label.below{top:calc(50% + 12px)}
-.ev-label.above2{bottom:calc(50% + 46px)}
-.ev-label.below2{top:calc(50% + 46px)}
-.empty{padding:40px 16px;text-align:center;color:var(--muted)}
+.ev.up{margin-top:-10px}.ev.down{margin-top:10px}
+.ev-label{position:absolute;transform:translateX(-50%);font-size:10.5px;white-space:nowrap;color:var(--fg);text-align:center;line-height:1.25;pointer-events:none}
+.ev-label .d{display:block;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.ev-label.above{bottom:calc(50% + 11px)}
+.ev-label.below{top:calc(50% + 11px)}
+.ev-label.above2{bottom:calc(50% + 44px)}
+.ev-label.below2{top:calc(50% + 44px)}
 
 /* Tooltip */
-.tip{position:fixed;z-index:50;background:var(--ink);color:#fff;padding:6px 9px;border-radius:4px;font-size:12px;max-width:260px;pointer-events:none;line-height:1.35}
-.tip .d{font-family:var(--font-mono);font-size:11px;opacity:.8;display:block}
+.tip{position:fixed;z-index:50;background:var(--fg);color:var(--bg);padding:6px 9px;border-radius:var(--radius);font-size:12px;max-width:280px;pointer-events:none;line-height:1.35}
+.tip .d{font-family:var(--mono);font-size:10.5px;opacity:.75;display:block}
 
 /* Completed table */
-.tablewrap{overflow-x:auto;margin-top:14px;border:1px solid var(--line);border-radius:6px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
 table{border-collapse:collapse;width:100%;min-width:720px}
-th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left;padding:10px 12px;border-bottom:1px solid var(--ink);background:#fff;position:sticky;top:0}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left;padding:10px 12px;border-bottom:1px solid var(--fg);background:var(--panel);position:sticky;top:0}
 td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr.r{cursor:pointer}
-tr.r:hover td{background:var(--surface)}
+tr.r:hover td{background:var(--panel2)}
 tr.r:focus-visible{outline:none}
-tr.r:focus-visible td{box-shadow:inset 0 0 0 2px var(--accent)}
+tr.r:focus-visible td{box-shadow:inset 0 0 0 1px var(--signal)}
 td .t{font-weight:500}
-td .ref{color:var(--muted);font-size:12px}
-td.date{font-family:var(--font-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td .ref{font-family:var(--mono);color:var(--muted);font-size:11px;margin-top:2px}
+td.date{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 .topiclist{display:flex;flex-wrap:wrap;gap:4px}
-.topiclist span{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:1px 7px;color:var(--muted)}
+.topiclist span{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:var(--radius);padding:1px 6px;color:var(--muted)}
 th.sortable{cursor:pointer}
-th.sortable:hover{color:var(--ink)}
+th.sortable:hover{color:var(--fg)}
 
 /* Drawer */
-.scrim{position:fixed;inset:0;background:rgba(19,19,19,.28);z-index:60}
-.drawer{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:#fff;z-index:61;overflow-y:auto;border-left:1px solid var(--ink);
-  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));
-  padding-block:calc(16px + env(safe-area-inset-top,0px)) calc(24px + env(safe-area-inset-bottom,0px));box-shadow:-12px 0 40px rgba(0,0,0,.08)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--panel);z-index:61;overflow-y:auto;border-left:1px solid var(--fg);
+  padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px));
+  padding-block:calc(18px + env(safe-area-inset-top,0px)) calc(28px + env(safe-area-inset-bottom,0px))}
 .drawer-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
-.close{appearance:none;border:1px solid var(--line-strong);background:#fff;border-radius:4px;width:32px;height:32px;cursor:pointer;flex:none;font-size:18px;line-height:1}
-.close:hover{border-color:var(--ink)}
-.kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--muted)}
-.drawer h3{margin:8px 0 6px;font-size:18px;font-weight:600;line-height:1.25;text-wrap:balance}
-.drawer .summary{margin:10px 0 0;max-width:62ch;color:#2a2a28}
-.drawer .src{margin-top:8px;font-size:12.5px}
-.drawer h4{margin:22px 0 8px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.mini{margin-top:4px}
-.mini .tl{margin-top:0}
+.close{border:1px solid var(--line2);border-radius:var(--radius);width:30px;height:30px;flex:none;font-size:16px;line-height:1;color:var(--muted)}
+.close:hover{border-color:var(--fg);color:var(--fg)}
+.kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.drawer h3{margin:10px 0 6px;font-size:19px;font-weight:600;line-height:1.25;letter-spacing:-.01em;text-wrap:balance}
+.drawer .summary{margin:10px 0 0;max-width:64ch;color:var(--fg);opacity:.9}
+.drawer .srclinks{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:12.5px}
+.drawer h4{margin:24px 0 8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .mini .tl-inner{--label-w:0px;min-width:var(--min-w,460px)}
 .mini .tl-head,.mini .row{grid-template-columns:minmax(0,1fr)}
 .mini .grid{left:0}
 .mini .row{min-height:200px;cursor:default}
-.mini .span-label{display:none}
 .mini .label{display:none}
-.vlist{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);margin-left:7px}
+.mini .span-label{display:none}
+.vlist{list-style:none;margin:0;padding:0;border-left:1px solid var(--line2);margin-left:6px}
 .vlist li{position:relative;padding:0 0 14px 20px}
-.vlist li::before{content:"";position:absolute;left:-8px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid var(--ink)}
-.vlist li.future::before{background:#fff}
-.vlist li.kind-voimaan::before,.vlist li.kind-soveltaminen::before{border-radius:2px;transform:rotate(45deg);background:var(--accent);border-color:var(--accent);width:10px;height:10px;left:-7px}
-.vlist li.kind-voimaan.future::before,.vlist li.kind-soveltaminen.future::before{background:#fff}
-.vlist li.kind-maaraaika::before{border-radius:0;border-color:var(--today);background:#fff;width:10px;height:10px;left:-7px}
-.vlist li.kind-lausunto::before{border-radius:3px;background:repeating-linear-gradient(135deg,var(--open-soft) 0 3px,var(--open-stripe) 3px 6px);border-color:var(--open)}
+.vlist li::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--fg);border:1.5px solid var(--fg)}
+.vlist li.future::before{background:var(--panel)}
+.vlist li.kind-voimaan::before,.vlist li.kind-soveltaminen::before{border-radius:1px;transform:rotate(45deg);width:9px;height:9px;left:-5px}
+.vlist li.kind-maaraaika::before{border-radius:0;border-color:var(--signal);background:var(--panel);width:9px;height:9px;left:-5px}
+.vlist li.kind-maaraaika.past::before{background:var(--signal)}
+.vlist li.kind-lausunto::before{border-radius:1px;background:repeating-linear-gradient(135deg,transparent 0 2px,var(--hatch) 2px 4px)}
 .vlist li.unconfirmed::before{border-style:dashed}
-.vlist .d{font-family:var(--font-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.vlist .d{font-family:var(--mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 .vlist .l{font-weight:500}
-.vlist .now{display:inline-block;margin-left:8px;font-size:11px;color:var(--open);border:1px solid var(--open);border-radius:3px;padding:0 5px;background:var(--open-soft)}
-.vlist .unc{font-size:11px;color:var(--muted);margin-left:6px}
+.vlist .now{display:inline-block;margin-left:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);border:1px solid var(--signal);border-radius:var(--radius);padding:0 5px}
+.vlist .unc{font-family:var(--mono);font-size:10px;color:var(--dim);margin-left:6px}
 
 /* Footer */
-.foot{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
+.foot{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
 
 @media (max-width:700px){
-  :root{--label-w:170px;--row-h:78px}
-  .logo{height:32px}
+  :root{--label-w:168px;--row-h:80px}
+  .logo{height:34px}
   .sub{display:none}
   .label{padding:8px 10px}
   .label .t{font-size:12.5px}
   .label .next{white-space:normal}
   .search{min-width:0;width:100%}
   .tools{width:100%}
+  .list li{grid-template-columns:74px 1fr}
+  .list .k{display:none}
 }
 </style>
 </head>
 <body>
+
+<div class="status" id="status">
+  <div class="sys" id="sys"><span><i class="led"></i>Ladataan aineistoa…</span></div>
+  <div class="ctl">
+    <a href="data/saadosseuranta.ics" title="Määräajat kalenteriin (.ics)">Kalenteri</a>
+    <a href="https://github.com/EditMonster/Saadosseuranta" target="_blank" rel="noopener">GitHub</a>
+    <button id="theme" aria-label="Vaihda teemaa">Teema</button>
+  </div>
+</div>
+
 <header class="top">
   <div class="brand">
-    <img class="logo" src="logo.png" alt="Säädösseuranta-logo">
+    <img class="logo dark" src="logo-dark.png" alt="">
+    <img class="logo light" src="logo-light.png" alt="">
     <div>
       <div class="name">Säädösseuranta</div>
       <div class="sub">Kansallinen ja EU-sääntely aikajanalla · lausuntoajat, voimaantulot, määräajat</div>
     </div>
   </div>
   <nav class="tabs" role="tablist" aria-label="Näkymät">
-    <button class="tab" role="tab" id="tab-fi" data-tab="fi" aria-selected="true" aria-controls="view-fi">Kansallinen <span class="n" id="n-fi"></span></button>
+    <button class="tab" role="tab" id="tab-now" data-tab="now" aria-selected="true" aria-controls="view-now">Tilannekuva</button>
+    <button class="tab" role="tab" id="tab-fi" data-tab="fi" aria-selected="false" aria-controls="view-fi">Kansallinen <span class="n" id="n-fi"></span></button>
     <button class="tab" role="tab" id="tab-eu" data-tab="eu" aria-selected="false" aria-controls="view-eu">EU <span class="n" id="n-eu"></span></button>
     <button class="tab" role="tab" id="tab-done" data-tab="done" aria-selected="false" aria-controls="view-done">Valmiit <span class="n" id="n-done"></span></button>
   </nav>
 </header>
 
 <section class="toolbar" aria-label="Suodattimet">
-  <div class="chips" id="topics"><span class="chips-title">Aihealue</span></div>
+  <div class="chips" id="topics"><span class="micro chips-title">Aihealue</span></div>
   <div class="tools">
-    <label class="toggle"><input type="checkbox" id="open-only"> Vain lausuttavissa nyt</label>
+    <label class="toggle"><input type="checkbox" id="open-only"> Vain lausuttavissa</label>
     <input class="search" type="search" id="q" placeholder="Hae nimellä, numerolla tai sisällöllä" aria-label="Hae">
     <span class="count" id="count"></span>
   </div>
 </section>
 
 <main>
-  <section class="view" id="view-fi" role="tabpanel" aria-labelledby="tab-fi">
+  <section class="view" id="view-now" role="tabpanel" aria-labelledby="tab-now">
+    <div class="kpis" id="kpis"></div>
+    <div class="cols">
+      <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
+      <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
+      <div class="panel"><h3><span>Uusimmat vaiheet</span><span>14 pv</span></h3><ul class="list" id="l-recent"></ul></div>
+    </div>
+  </section>
+  <section class="view" id="view-fi" role="tabpanel" aria-labelledby="tab-fi" hidden>
     <div class="view-head">
       <div><h2>Kansallinen lainsäädäntö</h2><p>Kaikki valmisteilla ja eduskunnassa olevat hallituksen esitykset (Hankeikkuna + eduskunnan avoin data). Lausuttavissa olevat nousevat kärkeen. Napsauta riviä, niin tapauksen aikajana avautuu.</p></div>
       <div class="legend" id="legend-fi"></div>
@@ -259,7 +316,7 @@ th.sortable:hover{color:var(--ink)}
   </section>
   <section class="view" id="view-done" role="tabpanel" aria-labelledby="tab-done" hidden>
     <div class="view-head">
-      <div><h2>Maaliin menneet</h2><p>Hyväksytyt ja voimassa olevat säädökset, joista ei ole enää lausuttavaa. Napsauta riviä nähdäksesi tapauksen aikajanan.</p></div>
+      <div><h2>Maaliin menneet</h2><p>Vahvistetut ja voimassa olevat säädökset, joista ei ole enää lausuttavaa. Napsauta riviä nähdäksesi tapauksen aikajanan.</p></div>
     </div>
     <div class="tablewrap">
       <table id="done-table">
@@ -274,8 +331,8 @@ th.sortable:hover{color:var(--ink)}
 </main>
 
 <footer class="foot">
-  <span id="foot-note">Aineisto koottu 15.10.2026 lähteistä Finlex, eduskunta.fi, valtioneuvosto.fi ja EUR-Lex. Katkoviivalla merkityt päivämäärät on poimittu toissijaisesta lähteestä.</span>
-  <span>Tänään <span class="mono" id="foot-today"></span></span>
+  <span id="foot-note">Lähteet: Hankeikkuna, eduskunnan avoin data, Finlex, Euroopan parlamentin avoin data, EU:n julkaisutoimiston Cellar. Katkoviiva = käsin lisätty, tarkistamaton päivämäärä.</span>
+  <span>Tänään <span id="foot-today"></span></span>
 </footer>
 
 <div class="tip" id="tip" hidden></div>
@@ -288,7 +345,7 @@ th.sortable:hover{color:var(--ink)}
   <h3 id="dr-title"></h3>
   <div class="topiclist" id="dr-topics"></div>
   <p class="summary" id="dr-summary"></p>
-  <div class="src" id="dr-src"></div>
+  <div id="dr-src"></div>
   <h4>Aikajana</h4>
   <div class="mini" id="dr-mini"></div>
   <h4>Vaiheet</h4>
@@ -298,36 +355,44 @@ th.sortable:hover{color:var(--ink)}
 <script>
 let DATA = [];
 let META = {};
-
 const TOPICS = ["Työoikeus","Yhtiö ja rahoitus","Tietosuoja ja digi","Tekoäly ja kyber","Kestävyys ja ympäristö","Kuluttaja ja tuotteet","Verotus","Rikos ja prosessi","Hallinto ja hankinnat","Maahanmuutto"];
 const KIND_LABEL = {lausunto:"Lausuntoaika",he:"HE annettu eduskunnalle",eduskunta:"Eduskuntakäsittely",hyvaksytty:"Eduskunta hyväksynyt",vahvistettu:"Vahvistettu",voimaan:"Voimaantulo",maaraaika:"Määräaika",muu:"Vaihe",ehdotus:"Komission ehdotus",sopu:"Poliittinen sopu",parlamentti:"Parlamentti",neuvosto:"Neuvosto",julkaistu:"Julkaistu EUVL:ssä",soveltaminen:"Soveltaminen alkaa"};
-const STATUS_CLASS = {lausunnolla:"open",eduskunnassa:"eduskunnassa",neuvotteluissa:"neuvotteluissa",voimassa:"voimassa",vahvistettu:"voimassa","voimassa, soveltaminen vaiheittain":"voimassa"};
+const STATUS_CLASS = {lausunnolla:"open",voimassa:"voimassa",vahvistettu:"voimassa","voimassa, soveltaminen vaiheittain":"voimassa"};
+const TABHASH = {now:"tilannekuva",fi:"kansallinen",eu:"eu",done:"valmiit"};
+const HASHTAB = {tilannekuva:"now",kansallinen:"fi",eu:"eu",valmiit:"done"};
 
 const TODAY = (()=>{const d=new Date();return new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));})();
 const DAY = 86400000;
 const pd = s => { const [y,m,d]=s.split("-").map(Number); return new Date(Date.UTC(y,m-1,d)); };
 const fmt = d => `${d.getUTCDate()}.${d.getUTCMonth()+1}.${d.getUTCFullYear()}`;
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const monthStart = (d)=> new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),1));
-const addMonths = (d,n)=> new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+n,1));
+const monthStart = d => new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),1));
+const addMonths = (d,n) => new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+n,1));
+const daysTo = d => Math.round((d-TODAY)/DAY);
 
-
-
-const state = { tab:"fi", topics:new Set(), q:"", sortDesc:true, openOnly:false };
-try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(["fi","eu","done"].includes(s.tab)) state.tab=s.tab; }catch(e){}
-const h = location.hash.replace("#","");
-if(h==="eu"||h==="kansallinen"||h==="valmiit"){ state.tab = h==="eu"?"eu":h==="valmiit"?"done":"fi"; }
+/* ---------- state ---------- */
+const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false };
+try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(s.tab in TABHASH) state.tab=s.tab; }catch(e){}
+let pendingItem=null;
+(()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
 function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics]})); }catch(e){} }
 
+/* theme: dark by default, light on request */
+(()=>{ let t=null; try{ t=localStorage.getItem("saadosseuranta-theme"); }catch(e){} if(t==="light") document.documentElement.setAttribute("data-theme","light"); })();
+document.getElementById("theme").addEventListener("click",()=>{
+  const light=document.documentElement.getAttribute("data-theme")==="light";
+  if(light) document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme","light");
+  try{ localStorage.setItem("saadosseuranta-theme",light?"dark":"light"); }catch(e){}
+});
+
 /* ---------- helpers ---------- */
-function openConsultation(it){
-  return it.events.find(e=>e.kind==="lausunto"&&e.end&&pd(e.date)<=TODAY&&pd(e.end)>=TODAY);
-}
+function openConsultation(it){ return it.events.find(e=>e.kind==="lausunto"&&e.end&&pd(e.date)<=TODAY&&pd(e.end)>=TODAY); }
 function nextEvent(it){
   const oc=openConsultation(it); if(oc) return {date:pd(oc.end),label:"Lausuntoaika päättyy"};
   const fut=it.events.filter(e=>pd(e.end||e.date)>=TODAY).sort((a,b)=>(a.end||a.date).localeCompare(b.end||b.date))[0];
   if(!fut) return null;
-  return {date:pd(fut.end&&pd(fut.date)<TODAY?fut.end:fut.date),label:fut.end&&pd(fut.date)<TODAY?fut.label+" päättyy":fut.label};
+  const ongoing=fut.end&&pd(fut.date)<TODAY;
+  return {date:pd(ongoing?fut.end:fut.date),label:ongoing?fut.label+" päättyy":fut.label};
 }
 function statusOf(it){
   const oc=openConsultation(it);
@@ -335,12 +400,8 @@ function statusOf(it){
   return {text:it.status,cls:STATUS_CLASS[it.status]||""};
 }
 function entryDate(it){
-  const kinds=["voimaan","soveltaminen"];
-  const ev=it.events.filter(e=>kinds.includes(e.kind));
-  if(!ev.length) return null;
-  // first entry-into-force date; for EU prefer the first "voimaan"
-  const v=ev.find(e=>e.kind==="voimaan")||ev[0];
-  return {date:pd(v.date),label:v.label,kind:v.kind};
+  const ev=it.events.filter(e=>e.kind==="voimaan"||e.kind==="soveltaminen"); if(!ev.length) return null;
+  const v=ev.find(e=>e.kind==="voimaan")||ev[0]; return {date:pd(v.date),label:v.label,kind:v.kind};
 }
 function matches(it){
   if(state.topics.size && !it.topics.some(t=>state.topics.has(t))) return false;
@@ -348,10 +409,7 @@ function matches(it){
   if(state.q){ const q=state.q.toLowerCase(); const hay=(it.title+" "+(it.fullTitle||"")+" "+it.ref+" "+(it.summary||"")+" "+(it.ministry||"")+" "+(it.sk||[]).join(" ")+" "+it.topics.join(" ")).toLowerCase(); if(!hay.includes(q)) return false; }
   return true;
 }
-function itemsFor(tab){
-  let arr = DATA.filter(it=> tab==="done" ? it.done : (!it.done && it.scope===tab));
-  return arr.filter(matches);
-}
+function itemsFor(tab){ return DATA.filter(it=> tab==="done" ? it.done : (!it.done && it.scope===tab)).filter(matches); }
 function derivedSpans(it){
   const spans=[];
   it.events.filter(e=>e.kind==="lausunto"&&e.end).forEach(e=>spans.push({from:pd(e.date),to:pd(e.end),cls:"lausunto"+(pd(e.date)<=TODAY&&pd(e.end)>=TODAY?" now":""),label:"Lausuntoaika"}));
@@ -370,22 +428,18 @@ function derivedSpans(it){
 /* ---------- timeline ---------- */
 function renderTimeline(root, items, opts={}){
   root.innerHTML="";
-  if(!items.length){ root.innerHTML='<p class="empty">Ei säädöksiä valituilla suodattimilla.</p>'; return; }
-  const dates=[TODAY];
-  const lo=addMonths(TODAY,-30), hi=addMonths(TODAY,42);
+  if(!items.length){ root.innerHTML='<p class="empty">Ei säädöksiä valituilla suodattimilla</p>'; return; }
+  const dates=[TODAY]; const lo=addMonths(TODAY,-30), hi=addMonths(TODAY,42);
   items.forEach(it=>it.events.forEach(e=>{ const d=pd(e.date); if(d>=lo&&d<=hi) dates.push(d); if(e.end){ const x=pd(e.end); if(x>=lo&&x<=hi) dates.push(x);} }));
   let min=new Date(Math.min(...dates)), max=new Date(Math.max(...dates));
   min=addMonths(monthStart(min),-2); max=addMonths(monthStart(max),4);
-  const total=max-min; const x=d=>((d-min)/total*100);
-  const days=total/DAY;
+  const total=max-min; const x=d=>((d-min)/total*100); const days=total/DAY;
   const inner=document.createElement("div"); inner.className="tl-inner";
-  const pxPerDay = opts.mini?1.4:0.6;
-  const labelW = opts.mini?0:parseInt(getComputedStyle(document.documentElement).getPropertyValue("--label-w"))||290;
-  inner.style.setProperty("--min-w", Math.round(labelW + Math.max(opts.mini?560:620, days*pxPerDay))+"px");
-
-  // header
-  let head=`<div class="tl-head"><div class="label">Säädös</div><div class="track">`;
-  let grid=`<div class="grid">`;
+  const pxPerDay=opts.mini?1.4:0.6;
+  const labelW=opts.mini?0:(parseInt(getComputedStyle(document.documentElement).getPropertyValue("--label-w"))||300);
+  const trackPx=Math.max(opts.mini?560:620, days*pxPerDay);
+  inner.style.setProperty("--min-w", Math.round(labelW+trackPx)+"px");
+  let head=`<div class="tl-head"><div class="label micro">Säädös</div><div class="track">`; let grid=`<div class="grid">`;
   for(let d=monthStart(min); d<=max; d=addMonths(d,1)){
     const m=d.getUTCMonth();
     if(m===0){ head+=`<div class="year" style="left:${x(d)}%">${d.getUTCFullYear()}</div>`; grid+=`<div class="yl" style="left:${x(d)}%"></div>`; }
@@ -394,11 +448,11 @@ function renderTimeline(root, items, opts={}){
   head+=`<div class="today-tag" style="left:${x(TODAY)}%">Tänään ${fmt(TODAY)}</div></div></div>`;
   grid+=`<div class="tl-today" style="left:${x(TODAY)}%"></div></div>`;
   inner.insertAdjacentHTML("beforeend", head+grid);
-
+  const thr=105/trackPx*100;
   items.forEach(it=>{
     const st=statusOf(it); const nx=nextEvent(it);
     let row=`<div class="row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">`;
-    row+=`<div class="label"><div class="t">${esc(it.title)}</div><div class="meta"><span class="mono">${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span></div>`;
+    row+=`<div class="label"><div class="t">${esc(it.title)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span></div>`;
     row+=`<div class="next">${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(nx.label)}`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(it.ministry||it.procedure) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
     row+=`</div><div class="track">`;
@@ -407,48 +461,76 @@ function renderTimeline(root, items, opts={}){
       const l=Math.max(0,x(sp.from)), w=Math.min(100,x(sp.to))-l; if(w<=0) return;
       row+=`<div class="span ${sp.cls}" style="left:${l}%;width:${w}%" title="${esc(sp.label)} ${fmt(sp.from)}–${fmt(sp.to)}">${w>9&&sp.label?`<span class="span-label">${esc(sp.label)}</span>`:""}</div>`;
     });
-    let prevX=-99, flip=false; const tiers=[-1e9,-1e9,-1e9,-1e9]; const trackPx=Math.max(opts.mini?560:620, days*pxPerDay); const thr=105/trackPx*100;
+    let prevX=-99, flip=false; const tiers=[-1e9,-1e9,-1e9,-1e9];
     it.events.forEach((e,i)=>{
       const d=pd(e.date); const px=Math.max(0.3,Math.min(99.7,x(d))); const past=d<=TODAY;
       let off=""; if(Math.abs(px-prevX)<1.6){ flip=!flip; off=flip?" up":" down"; } else flip=false; prevX=px;
-      const kind=e.kind||"muu";
-      const lab=e.label||KIND_LABEL[kind]||"";
+      const kind=e.kind||"muu"; const lab=e.label||KIND_LABEL[kind]||"";
       row+=`<button class="ev kind-${esc(kind)} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}${off}" style="left:${px}%" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}" data-l="${esc(lab)}${e.confirmed===false?" (tarkistamaton)":""}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
       if(opts.labels){
         let tier=tiers.findIndex(v=>px-v>thr); if(tier<0) tier=i%4; tiers[tier]=px;
-        const side=["above","below","above2","below2"][tier];
-        row+=`<div class="ev-label ${side}" style="left:${px}%"><span class="d">${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}</span>${esc(lab)}</div>`;
+        row+=`<div class="ev-label ${["above","below","above2","below2"][tier]}" style="left:${px}%"><span class="d">${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}</span>${esc(lab)}</div>`;
       }
     });
     row+=`</div></div>`;
     inner.insertAdjacentHTML("beforeend",row);
   });
   root.appendChild(inner);
-  if(!opts.mini){
-    // scroll so that today sits in view
-    requestAnimationFrame(()=>{ const w=inner.scrollWidth; const tx=labelW+(w-labelW)*x(TODAY)/100; root.scrollLeft=Math.max(0,tx-root.clientWidth*0.55); });
-  }
+  if(!opts.mini) requestAnimationFrame(()=>{ const w=inner.scrollWidth; const tx=labelW+(w-labelW)*x(TODAY)/100; root.scrollLeft=Math.max(0,tx-root.clientWidth*0.55); });
 }
-
 function legendHTML(scope){
-  const common=`<span><i class="lg bar"></i>Lausuntoaika</span><span><i class="lg bar2"></i>${scope==="fi"?"Eduskuntakäsittely":"Lainsäädäntömenettely"}</span>`+
+  return `<span><i class="lg bar"></i>Lausuntoaika</span><span><i class="lg bar open"></i>Lausuttavissa nyt</span><span><i class="lg bar2"></i>${scope==="fi"?"Eduskuntakäsittely":"Lainsäädäntömenettely"}</span>`+
     (scope==="eu"?`<span><i class="lg bar3"></i>Siirtymäaika</span>`:"")+
     `<span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg diamond"></i>Voimaantulo / soveltaminen</span><span><i class="lg deadline"></i>Määräaika</span><span><i class="lg today"></i>Tänään</span>`;
-  return common;
+}
+
+/* ---------- tilannekuva ---------- */
+function renderNow(){
+  const all=DATA.filter(matches);
+  const open=all.filter(it=>!it.done&&openConsultation(it)).map(it=>({it,e:openConsultation(it)})).sort((a,b)=>a.e.end.localeCompare(b.e.end));
+  const horizon=60; const next=[];
+  all.forEach(it=>it.events.forEach(e=>{
+    if(e.kind==="lausunto"){
+      if(e.end){ const n=daysTo(pd(e.end)); if(n>=0&&n<=horizon&&!openConsultation(it)) next.push({it,date:pd(e.end),label:"Lausuntoaika päättyy",kind:e.kind}); }
+      const s=daysTo(pd(e.date)); if(s>0&&s<=horizon) next.push({it,date:pd(e.date),label:"Lausuntoaika alkaa",kind:e.kind});
+      return;
+    }
+    if(!["voimaan","soveltaminen","maaraaika","he"].includes(e.kind)) return;
+    const n=daysTo(pd(e.date)); if(n>=(e.kind==="he"?1:0)&&n<=horizon) next.push({it,date:pd(e.date),label:e.label||KIND_LABEL[e.kind],kind:e.kind});
+  }));
+  next.sort((a,b)=>a.date-b.date);
+  const recent=[];
+  all.forEach(it=>it.events.forEach(e=>{ if(e.end||e.kind==="muu") return; const n=daysTo(pd(e.date)); if(n<=0&&n>=-14) recent.push({it,date:pd(e.date),label:e.label||KIND_LABEL[e.kind],kind:e.kind}); }));
+  recent.sort((a,b)=>b.date-a.date);
+  const in14=next.filter(n=>daysTo(n.date)<=14).length;
+  const voimaan30=next.filter(n=>(n.kind==="voimaan"||n.kind==="soveltaminen")&&daysTo(n.date)<=30).length;
+  const euMaar=next.filter(n=>n.it.scope==="eu"&&n.kind==="maaraaika").length;
+  document.getElementById("kpis").innerHTML=[
+    ["Lausuttavissa nyt",open.length,open.length?"signal":"","lausuntokierrosta avoinna"],
+    ["Vaiheita 14 pv",in14,in14?"signal":"","määräaikaa tai vaihetta kahden viikon sisällä"],
+    ["Voimaan 30 pv",voimaan30,"","voimaantuloa tai soveltamisvaihetta"],
+    ["EU-määräajat 60 pv",euMaar,"","täytäntöönpanon tai säädöksen määräaikaa"],
+  ].map(([h,v,c,d])=>`<div class="panel kpi"><div class="micro">${h}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
+  const li=(it,date,label,extra)=>{ const n=daysTo(date); return `<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${n>=0&&n<=14?"soon":""}">${fmt(date)}${n>=0?`<br>${n===0?"tänään":n+" pv"}`:""}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}${extra?" · "+esc(extra):""}</div></span><span class="k">${esc(label)}</span></li>`; };
+  document.getElementById("l-open").innerHTML=open.map(({it,e})=>li(it,pd(e.end),"päättyy",it.ministry)).join("")||'<li class="empty">Ei avoimia lausuntokierroksia</li>';
+  document.getElementById("h-open").textContent=open.length+" kpl";
+  document.getElementById("l-next").innerHTML=next.slice(0,40).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 60 päivän sisällä</li>';
+  document.getElementById("h-next").textContent=next.length+" vaihetta";
+  document.getElementById("l-recent").innerHTML=recent.slice(0,30).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 14 päivän sisällä</li>';
 }
 
 /* ---------- completed table ---------- */
 function renderDone(items){
   const body=document.getElementById("done-body"); body.innerHTML="";
-  if(!items.length){ body.innerHTML='<tr><td colspan="4" class="empty">Ei säädöksiä valituilla suodattimilla.</td></tr>'; return; }
+  if(!items.length){ body.innerHTML='<tr><td colspan="4" class="empty">Ei säädöksiä valituilla suodattimilla</td></tr>'; return; }
   const rows=items.map(it=>({it,ed:entryDate(it)}));
   rows.sort((a,b)=>{ const da=a.ed?a.ed.date:0, db=b.ed?b.ed.date:0; return state.sortDesc?db-da:da-db; });
   rows.forEach(({it,ed})=>{
     body.insertAdjacentHTML("beforeend",`<tr class="r" tabindex="0" data-id="${esc(it.id)}">
-      <td><div class="t">${esc(it.title)}</div><div class="ref mono">${esc(it.ref)}</div></td>
+      <td><div class="t">${esc(it.title)}</div><div class="ref">${esc(it.ref)}</div></td>
       <td><span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span></td>
       <td><div class="topiclist">${it.topics.map(t=>`<span>${esc(t)}</span>`).join("")}</div></td>
-      <td class="date">${ed?fmt(ed.date):"–"}${ed&&ed.kind==="soveltaminen"?`<div class="ref">sovelletaan</div>`:""}</td>
+      <td class="date">${ed?fmt(ed.date):"–"}${ed&&ed.kind==="soveltaminen"?`<div class="ref">sovelletaan</div>`:""}${ed&&ed.label&&/ehdotettu/i.test(ed.label)?`<div class="ref">ehdotettu</div>`:""}</td>
     </tr>`);
   });
 }
@@ -460,28 +542,28 @@ function openItem(id){
   const it=DATA.find(i=>i.id===id); if(!it) return;
   lastFocus=document.activeElement;
   const st=statusOf(it);
-  document.getElementById("dr-kicker").innerHTML=`<span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span>${it.ref.startsWith(it.kind)?"":`<span>${esc(it.kind)}</span>`}<span class="mono">${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>`;
+  document.getElementById("dr-kicker").innerHTML=`<span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span>${it.ref.startsWith(it.kind)?"":`<span>${esc(it.kind)}</span>`}<span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>`;
   document.getElementById("dr-title").textContent=it.fullTitle||it.title;
   document.getElementById("dr-topics").innerHTML=it.topics.map(t=>`<span>${esc(t)}</span>`).join("");
   document.getElementById("dr-summary").textContent=it.summary||"";
   const L=it.links||{}; const names={hankeikkuna:"Hankeikkuna (valtioneuvosto.fi)",finlex:"Finlex: hallituksen esitys",saadoskokoelma:"Finlex: säädöskokoelma",eurlex:"EUR-Lex",oeil:"EP Legislative Observatory"};
   const links=Object.entries(L).filter(([k,v])=>v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(names[k]||k)}</a>`);
   if(!links.length&&it.source) links.push(`<a href="${esc(it.source)}" target="_blank" rel="noopener">Lähde</a>`);
-  document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="min" style="margin-top:6px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}`;
+  links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
+  document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="micro" style="margin-top:8px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}`;
   renderTimeline(document.getElementById("dr-mini"), [it], {mini:true,labels:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
   it.events.forEach(e=>{
-    const d=pd(e.date), end=e.end?pd(e.end):null; const past=(end||d)<=TODAY;
-    const now=end&&d<=TODAY&&end>=TODAY;
+    const d=pd(e.date), end=e.end?pd(e.end):null; const past=(end||d)<=TODAY; const now=end&&d<=TODAY&&end>=TODAY;
     list.insertAdjacentHTML("beforeend",`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}">
       <div class="d">${fmt(d)}${end?" – "+fmt(end):""}</div>
-      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?'<span class="unc">tarkistamaton</span>':""}</div>
-    </li>`);
+      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?'<span class="unc">tarkistamaton</span>':""}</div></li>`);
   });
   drawer.hidden=false; scrim.hidden=false; document.body.style.overflow="hidden";
+  if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
-function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
 scrim.addEventListener("click",closeDrawer);
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!drawer.hidden) closeDrawer(); });
@@ -503,17 +585,16 @@ document.addEventListener("focusout",e=>{ if(e.target.closest(".ev")) hideTip();
 
 /* ---------- interactions ---------- */
 document.addEventListener("click",e=>{
+  const pl=e.target.closest("#dr-permalink");
+  if(pl){ e.preventDefault(); const url=location.href.split("#")[0]+pl.getAttribute("href"); try{ navigator.clipboard.writeText(url).then(()=>{pl.textContent="Linkki kopioitu";}).catch(()=>{pl.textContent=url;}); }catch(err){ pl.textContent=url; } return; }
   const ev=e.target.closest(".ev"); if(ev){ e.stopPropagation(); openItem(ev.dataset.id); return; }
-  const row=e.target.closest(".row[data-id], tr.r[data-id]"); if(row&&!row.closest(".mini")) openItem(row.dataset.id);
+  const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id]"); if(row&&!row.closest(".mini")) openItem(row.dataset.id);
 });
 document.addEventListener("keydown",e=>{
   if(e.key!=="Enter"&&e.key!==" ") return;
-  const row=e.target.closest(".row[data-id], tr.r[data-id]"); if(row&&!row.closest(".mini")){ e.preventDefault(); openItem(row.dataset.id); }
+  const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id]"); if(row&&!row.closest(".mini")){ e.preventDefault(); openItem(row.dataset.id); }
 });
-
-// tabs
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{ state.tab=b.dataset.tab; persist(); render(); }));
-// topics
 const topicsEl=document.getElementById("topics");
 function buildTopicChips(list){
   topicsEl.querySelectorAll(".chip").forEach(c=>c.remove());
@@ -521,30 +602,31 @@ function buildTopicChips(list){
   list.forEach(t=>{ const b=document.createElement("button"); b.className="chip"; b.textContent=t; b.dataset.topic=t; b.setAttribute("aria-pressed","false"); topicsEl.appendChild(b); });
   [...state.topics].forEach(t=>{ if(!list.includes(t)) state.topics.delete(t); });
 }
-document.getElementById("open-only").addEventListener("change",e=>{ state.openOnly=e.target.checked; render(); });
 topicsEl.addEventListener("click",e=>{
   const b=e.target.closest(".chip"); if(!b) return;
   if(b.dataset.topic==="*") state.topics.clear(); else { state.topics.has(b.dataset.topic)?state.topics.delete(b.dataset.topic):state.topics.add(b.dataset.topic); }
   persist(); render();
 });
+document.getElementById("open-only").addEventListener("change",e=>{ state.openOnly=e.target.checked; render(); });
 document.getElementById("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });
 document.getElementById("th-date").addEventListener("click",()=>{ state.sortDesc=!state.sortDesc; document.getElementById("th-date").textContent="Voimaantulo "+(state.sortDesc?"▾":"▴"); render(); });
+window.addEventListener("hashchange",()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]){ if(!drawer.hidden) closeDrawer(); state.tab=HASHTAB[h]; persist(); render(); } else if(h&&DATA.some(i=>i.id===h)) openItem(h); });
 
 function render(){
-  // chips
   topicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.topics.size===0):String(state.topics.has(c.dataset.topic))));
-  // tabs + views
-  ["fi","eu","done"].forEach(t=>{ document.getElementById("tab-"+t).setAttribute("aria-selected",String(state.tab===t)); document.getElementById("view-"+t).hidden=state.tab!==t; });
+  Object.keys(TABHASH).forEach(t=>{ document.getElementById("tab-"+t).setAttribute("aria-selected",String(state.tab===t)); document.getElementById("view-"+t).hidden=state.tab!==t; });
   const fi=itemsFor("fi"), eu=itemsFor("eu"), done=itemsFor("done");
   document.getElementById("n-fi").textContent=fi.length; document.getElementById("n-eu").textContent=eu.length; document.getElementById("n-done").textContent=done.length;
   const sortNext=(a,b)=>{ const oa=openConsultation(a)?0:1, ob=openConsultation(b)?0:1; if(oa!==ob) return oa-ob; const na=nextEvent(a), nb=nextEvent(b); if(na&&nb) return na.date-nb.date; if(na) return -1; if(nb) return 1; const ea=a.events.length?0:1, eb=b.events.length?0:1; if(ea!==eb) return ea-eb; return String(b.updated||"").localeCompare(String(a.updated||"")); };
+  if(state.tab==="now") renderNow();
   if(state.tab==="fi"){ document.getElementById("legend-fi").innerHTML=legendHTML("fi"); renderTimeline(document.getElementById("tl-fi"), fi.slice().sort(sortNext)); }
   if(state.tab==="eu"){ document.getElementById("legend-eu").innerHTML=legendHTML("eu"); renderTimeline(document.getElementById("tl-eu"), eu.slice().sort(sortNext)); }
   if(state.tab==="done") renderDone(done);
-  const n={fi:fi.length,eu:eu.length,done:done.length}[state.tab];
-  document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta valittu`:"");
-  if(history.replaceState) history.replaceState(null,"","#"+({fi:"kansallinen",eu:"eu",done:"valmiit"})[state.tab]);
+  const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab];
+  document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"");
+  if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
+
 document.getElementById("foot-today").textContent=fmt(TODAY);
 const v=Date.now();
 Promise.all([
@@ -554,10 +636,12 @@ Promise.all([
   DATA=j.items||[]; META=Object.assign({},j.meta||{},m||{});
   DATA.forEach(it=>{ it.events=(it.events||[]).slice().sort((a,b)=>a.date.localeCompare(b.date)); it.topics=it.topics||[]; });
   buildTopicChips(META.topics||TOPICS);
-  const g=META.generated?new Date(META.generated):null;
-  document.getElementById("foot-note").textContent=`Aineisto päivitetty automaattisesti ${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"} · lähteet: Hankeikkuna, eduskunnan avoin data, Finlex, Euroopan parlamentin avoin data ja EU:n julkaisutoimiston Cellar. Katkoviiva = käsin lisätty, tarkistamaton päivämäärä.`;
+  const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
+  const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
+  document.getElementById("sys").innerHTML=`<span><i class="led ${ageH!==null&&ageH<36?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span><span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span>`;
   render();
-}).catch(e=>{ document.querySelectorAll(".tl").forEach(x=>x.innerHTML='<p class="empty">Aineistoa ei voitu ladata (data/items.json). Aja scripts/update.py tai tarkista GitHub Actions -ajo.</p>'); });
+  if(pendingItem&&DATA.some(i=>i.id===pendingItem)) openItem(pendingItem);
+}).catch(e=>{ document.getElementById("sys").innerHTML='<span><i class="led"></i>Aineistoa ei voitu ladata (data/items.json)</span>'; document.querySelectorAll(".tl,#kpis").forEach(x=>x.innerHTML='<p class="empty">Aineistoa ei voitu ladata – aja scripts/update.py tai tarkista GitHub Actions</p>'); });
 </script>
 </body>
 </html>

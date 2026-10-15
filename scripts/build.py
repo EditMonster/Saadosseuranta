@@ -223,6 +223,39 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
     return items
 
 
+ICS_KINDS = {"voimaan": "Voimaan", "soveltaminen": "Soveltaminen", "maaraaika": "Määräaika", "lausunto": "Lausuntoaika päättyy"}
+
+
+def build_ics(items: list[dict]) -> str:
+    """All-day calendar events for upcoming deadlines (next 400 days), importable into any calendar."""
+    def esc_(s):
+        return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", " ")
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//saadosseuranta//FI", "CALSCALE:GREGORIAN",
+             "X-WR-CALNAME:Säädösseuranta – määräajat", "X-WR-TIMEZONE:Europe/Helsinki"]
+    lo, hi = (TODAY - dt.timedelta(days=7)).isoformat(), (TODAY + dt.timedelta(days=400)).isoformat()
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    for it in items:
+        for e in it["events"]:
+            kind = e.get("kind")
+            if kind not in ICS_KINDS:
+                continue
+            day = e.get("end") if kind == "lausunto" else e["date"]
+            if not day or day < lo or day > hi:
+                continue
+            d = dt.date.fromisoformat(day)
+            nxt = (d + dt.timedelta(days=1)).strftime("%Y%m%d")
+            summary = f"[{'FI' if it['scope'] == 'fi' else 'EU'}] {ICS_KINDS[kind]}: {it['title']}"
+            desc = f"{e.get('label', '')} · {it['ref']}" + (f" · {it['source']}" if it.get("source") else "")
+            lines += ["BEGIN:VEVENT", f"UID:{it['id']}-{kind}-{day}@saadosseuranta", f"DTSTAMP:{stamp}",
+                      f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}", f"DTEND;VALUE=DATE:{nxt}",
+                      f"SUMMARY:{esc_(summary)}", f"DESCRIPTION:{esc_(desc)}"]
+            if it.get("source"):
+                lines.append(f"URL:{it['source']}")
+            lines.append("END:VEVENT")
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(lines) + "\r\n"
+
+
 def apply_overrides(items: list[dict]):
     ov = load_json(CONFIG_DIR / "overrides.json", {})
     by_id = {i["id"]: i for i in items}
@@ -232,6 +265,8 @@ def apply_overrides(items: list[dict]):
         it = by_id[k]
         for f in ("topics", "summary", "title", "status"):
             if f in o:
+                if f == "title":
+                    it.setdefault("fullTitle", it["title"])
                 it[f] = o[f]
         for e in o.get("events", []):
             e = dict(e)
@@ -281,6 +316,7 @@ def main():
     # meta.json carries the run timestamp and counts.
     save_json(OUT_DIR / "items.json", {"items": keep}, compact=True)
     save_json(OUT_DIR / "meta.json", meta, compact=True)
+    (OUT_DIR / "saadosseuranta.ics").write_text(build_ics(keep), encoding="utf-8")
     log(f"build: {c} -> {OUT_DIR / 'items.json'} + meta.json")
 
 
