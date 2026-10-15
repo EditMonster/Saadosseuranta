@@ -84,7 +84,7 @@ def build_fi(topics_cfg, settings) -> list[dict]:
             v = [e["date"] for e in ev if e["kind"] == "voimaan"]
             if v and not is_future(v[0]) and (days_ago(v[0]) or 0) >= 0:
                 status = "voimassa"
-        item = {"id": base_id, "scope": "fi", "kind": "HE" if has_he else "Lakiluonnos", "title": short_title(title),
+        item = {"id": base_id, "scope": "fi", "laji": "laki", "kind": "HE" if has_he else "Lakiluonnos", "title": short_title(title),
                 "fullTitle": title, "ref": ref, "topics": classify(text, topics_cfg), "status": status, "done": done,
                 "summary": summary, "source": source, "links": links, "ministry": ministry, "events": ev}
         item.update(extra)
@@ -93,6 +93,8 @@ def build_fi(topics_cfg, settings) -> list[dict]:
         return item
 
     for p in hk:
+        if p.get("laji") == "asetus":
+            continue
         hes = [he_num(h) for h in p.get("heNumerot") or []]
         hes = [h for h in hes if h]
         rec = ek.get(hes[0]) if hes else None
@@ -156,6 +158,143 @@ def build_fi(topics_cfg, settings) -> list[dict]:
     return items
 
 
+def build_asetukset(topics_cfg, settings) -> list[dict]:
+    hk = load_json(CACHE_DIR / "hankeikkuna.json", {"items": []})["items"]
+    fx = load_json(CACHE_DIR / "finlex.json", {"items": {}})["items"]
+    items = []
+    for p in hk:
+        if p.get("laji") != "asetus":
+            continue
+        ev = []
+        for e in p.get("etapit", []):
+            if e.get("tyyppi") == "SAADOS":
+                ev.append({"date": e["date"], "label": "Asetus annettu", "kind": "vahvistettu", "confirmed": True})
+            else:
+                ev.append({"date": e["date"], "end": e.get("end"), "label": e["label"], "kind": e["kind"], "confirmed": True})
+        if not any(e["kind"] == "lausunto" for e in ev):
+            for d in p.get("asiakirjat", []):
+                if d["tyyppi"] == "LAUSUNTOPYYNTO" and d.get("pvm"):
+                    ev.append({"date": d["pvm"], "label": "Lausuntopyyntö lähetetty", "kind": "lausunto", "confirmed": True, "url": d["url"]})
+                    break
+        sks = list(p.get("skNumerot") or [])
+        voimaan = None
+        for sk in sks:
+            f = fx.get(sk)
+            if f and f.get("voimaan"):
+                voimaan = voimaan or f["voimaan"]
+                ev.append({"date": f["voimaan"], "label": f"Voimaan ({sk})", "kind": "voimaan", "confirmed": True, "url": f["url"]})
+        ev = sorted({(e["date"], e["label"]): e for e in ev}.values(), key=lambda e: e["date"])
+        annettu = bool(sks) or any(e["kind"] == "vahvistettu" for e in ev)
+        if annettu:
+            status = "voimassa" if voimaan and not is_future(voimaan) else "annettu"
+        elif any(e["kind"] == "lausunto" and e.get("end") and e["date"] <= TODAY.isoformat() <= e["end"] for e in ev):
+            status = "lausunnolla"
+        else:
+            status = "valmistelussa"
+        done = status == "voimassa"
+        if done:
+            last = max((e["date"] for e in ev), default=None)
+            if last and (days_ago(last) or 0) > settings["completed"]["max_age_days"]:
+                continue
+        if p.get("tila") == "PAATTYNYT" and not done:
+            continue
+        title = p["nimi"]
+        links = {"hankeikkuna": p.get("url")}
+        for sk in sks:
+            if fx.get(sk):
+                links.setdefault("saadoskokoelma", fx[sk]["url"])
+        summary = (p.get("tiivistelma") or "")[:400]
+        text = " ".join([title, summary, " ".join(p.get("teemat", [])), " ".join(p.get("asiasanat", []))])
+        items.append({"id": f"fi-asetus-{p['uuid'][:8]}", "scope": "fi", "laji": "asetus", "kind": "Asetus" if annettu else "Asetusluonnos",
+                      "title": short_title(title), "fullTitle": title, "ref": (sks[0] if sks else (p.get("tunnus") or "")),
+                      "topics": classify(text, topics_cfg), "status": status, "done": done, "summary": summary,
+                      "source": links.get("saadoskokoelma") or p.get("url"), "links": links, "ministry": p.get("ministerio", ""),
+                      "events": ev, "tunnus": p.get("tunnus"), "sk": sks, "updated": p.get("muokattu")})
+    return items
+
+
+def attach_ue(eu_items: list[dict], topics_cfg) -> list[dict]:
+    """Attach U/E letters to the EU procedures they concern (by COM number or procedure
+    reference); letters without a tracked procedure become items of their own."""
+    ue = load_json(CACHE_DIR / "ue.json", {"items": {}})["items"]
+    by_com, by_pid = {}, {}
+    for it in eu_items:
+        if it.get("proposalCom"):
+            by_com.setdefault(it["proposalCom"], it)
+        if it.get("pid"):
+            by_pid[it["pid"]] = it
+    standalone = []
+    for tunnus, d in ue.items():
+        if not d.get("anto"):
+            continue
+        kind_u = tunnus.startswith("U")
+        label = f"{tunnus.replace(' vp', '')} annettu – Suomen kanta" if kind_u else f"{tunnus.replace(' vp', '')} – valtioneuvoston selvitys"
+        url = f"https://www.eduskunta.fi/FI/search/Sivut/Vaskiresults.aspx?k={tunnus.replace(' vp', '').replace(' ', '+')}"
+        targets = []
+        for c in d.get("com", []):
+            if c in by_com and by_com[c] not in targets:
+                targets.append(by_com[c])
+        for pid in d.get("cod", []):
+            if pid in by_pid and by_pid[pid] not in targets:
+                targets.append(by_pid[pid])
+        ev = {"date": d["anto"], "label": label, "kind": "kanta", "confirmed": True, "url": url}
+        if targets:
+            for it in targets:
+                if not any(e["label"] == label for e in it["events"]):
+                    it["events"].append(ev)
+                    it["events"].sort(key=lambda e: e["date"])
+                it.setdefault("kirjelmat", []).append(tunnus)
+            continue
+        if (days_ago(d["anto"]) or 0) > 365:
+            continue
+        text0 = d.get("short", "") + " " + d.get("title", "")
+        if not kind_u and classify(text0, topics_cfg) == ["Muut"]:
+            continue
+        evs = [ev]
+        for s in d.get("stages", []):
+            if s["code"] == "VKPL":
+                evs.append({"date": s["date"], "label": "Valiokunnan lausunto", "kind": "eduskunta", "confirmed": True})
+        text = d.get("short", "") + " " + d.get("title", "")
+        standalone.append({"id": "fi-" + tunnus.replace(" vp", "").replace(" ", "-").replace("/", "-").lower(), "scope": "eu", "laji": "kirjelma",
+                           "kind": "U-kirjelmä" if kind_u else "E-kirje", "title": d.get("short") or d.get("title"), "fullTitle": d.get("title"),
+                           "ref": tunnus, "topics": classify(text, topics_cfg), "status": "käsitelty" if d.get("tila") == "Valmis" else "eduskunnassa",
+                           "done": False, "summary": ("Komission asiakirjat: " + ", ".join(f"COM({c.split('/')[0]}) {c.split('/')[1]}" for c in d.get("com", [])[:6])) if d.get("com") else "",
+                           "source": url, "links": {"eduskunta": url}, "ministry": d.get("ministry") or "", "events": sorted(evs, key=lambda e: e["date"]),
+                           "updated": d.get("fetched")})
+    return standalone
+
+
+def build_hys(topics_cfg, settings) -> list[dict]:
+    hys = load_json(CACHE_DIR / "hys.json", {"items": []})["items"]
+    items = []
+    for h in hys:
+        title = h.get("title_fi") or h.get("title_en") or ""
+        text = " ".join([title, h.get("title_en") or ""])
+        topics = classify(text, topics_cfg)
+        if topics == ["Muut"]:
+            continue
+        ev = []
+        for p in h.get("periods", []):
+            stage = STAGE_LABELS.get(p.get("stage"), "Palauteaika")
+            ev.append({"date": p["start"], "end": p["end"], "label": stage, "kind": "lausunto", "confirmed": True, "url": h["url"]})
+        ev.sort(key=lambda e: e["date"])
+        now_open = any(e["date"] <= TODAY.isoformat() <= e["end"] for e in ev)
+        upcoming = any(e["date"] > TODAY.isoformat() for e in ev)
+        status = "lausunnolla" if now_open else ("palauteaika tulossa" if upcoming else "palauteaika päättynyt")
+        items.append({"id": f"eu-hys-{h['id']}", "scope": "eu", "laji": "kuuleminen", "kind": "EU-kuuleminen", "title": title[:160],
+                      "fullTitle": h.get("title_en") or title, "ref": h.get("actTypeLabel") or "Komission aloite", "topics": topics,
+                      "status": status, "done": False, "summary": (f"{h.get('actTypeLabel') or ''} · {h.get('reference') or ''}").strip(" ·"),
+                      "source": h["url"], "links": {"haveyoursay": h["url"]}, "events": ev, "updated": None})
+    return items
+
+
+STAGE_LABELS = {
+    "CALL_FOR_EVIDENCE": "Kannanottopyyntö (call for evidence)", "PUBLIC_CONSULTATION": "Julkinen kuuleminen",
+    "ADOPTION_WORKFLOW": "Palaute hyväksytystä ehdotuksesta", "DRAFT_ACT": "Palaute säädösluonnoksesta",
+    "ISC_WORKFLOW": "Palaute säädösluonnoksesta", "DELEGATED_ACT": "Palaute delegoidusta säädöksestä",
+}
+
+
 def celex_ref(celex: str) -> tuple[str, str]:
     m = re.match(r"3(\d{4})([RLD])(\d{4})", celex)
     if not m:
@@ -214,7 +353,10 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
             lastdate = max((e["date"] for e in ev), default=None)
             if lastdate and (days_ago(lastdate) or 0) > settings["completed"]["max_age_days"]:
                 continue
-        items.append({"id": f"eu-{pid}", "scope": "eu", "kind": kind, "title": title[:160], "fullTitle": title,
+        pc = c.get("proposal") or ""
+        mpc = re.match(r"5(\d{4})PC(\d{4})", pc)
+        items.append({"id": f"eu-{pid}", "scope": "eu", "laji": "eu", "pid": pid, "proposalCom": f"{mpc.group(1)}/{int(mpc.group(2))}" if mpc else None,
+                      "kind": kind, "title": title[:160], "fullTitle": title,
                       "ref": ref, "procedure": rec.get("ref"), "topics": topics, "status": status, "done": done,
                       "summary": (rec.get("title_en") or ""), "source": source,
                       "links": {"oeil": f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={rec.get('ref', pid)}",
@@ -262,6 +404,7 @@ CHANGE_KINDS = {"voimaan", "soveltaminen", "maaraaika", "lausunto", "he", "hyvak
 def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> list[dict]:
     """Diff two data sets into human-readable change rows (what the Tilannekuva 'Muutokset' panel shows)."""
     old = {i["id"]: i for i in old_items}
+    old_lajit = {i.get("laji", "laki") for i in old_items}
     out = []
 
     def add(it, typ, text):
@@ -274,7 +417,8 @@ def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> l
     for it in new_items:
         o = old.get(it["id"])
         if not o:
-            add(it, "uusi", f"Uusi: {it.get('kind', 'säädös')} ({it['status']})")
+            if it.get("laji", "laki") in old_lajit:
+                add(it, "uusi", f"Uusi: {it.get('kind', 'säädös')} ({it['status']})")
             continue
         if it.get("status") != o.get("status"):
             add(it, "tila", f"Tila: {o.get('status')} → {it.get('status')}")
@@ -342,8 +486,11 @@ def main():
     topics_cfg = load_yaml(CONFIG_DIR / "topics.yaml")["topics"]
     watch = load_yaml(CONFIG_DIR / "eu_watchlist.yaml") or {}
     fi = build_fi(topics_cfg, settings)
+    asetukset = build_asetukset(topics_cfg, settings)
     eu = build_eu(topics_cfg, settings, watch)
-    items = fi + eu
+    kirjelmat = attach_ue(eu, topics_cfg)
+    kuulemiset = build_hys(topics_cfg, settings)
+    items = fi + asetukset + eu + kirjelmat + kuulemiset
     # drop lapsed proposals older than 90 days and completed national items beyond max age
     keep = []
     for it in items:
@@ -365,9 +512,12 @@ def main():
                        "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now),
                        "changes7": sum(1 for r in changes if r["date"] >= (TODAY - dt.timedelta(days=7)).isoformat())},
             "topics": list(topics_cfg.keys()) + ["Muut"],
+            "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
+                      "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
+                      "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep)},
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
-                        "EU:n julkaisutoimiston Cellar (publications.europa.eu)"]}
+                        "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
     minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})

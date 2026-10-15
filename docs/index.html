@@ -80,6 +80,9 @@ a:hover{border-color:var(--fg)}
 
 /* Toolbar */
 .toolbar{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;padding-block:12px;border-bottom:1px solid var(--line)}
+.toolbar #lajit{width:100%}
+.chip.laji[aria-pressed="true"]{background:var(--panel2);color:var(--fg);border-color:var(--fg)}
+.chip.laji .n{opacity:.6;margin-left:4px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .chips-title{margin-right:8px}
 .chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);padding:4px 9px;border-radius:var(--radius);color:var(--muted);background:transparent}
@@ -108,6 +111,10 @@ a:hover{border-color:var(--fg)}
 .lg.bar2{width:22px;height:9px;border-radius:1px;border:1px solid var(--line2);background:var(--panel2)}
 .lg.bar3{width:22px;height:3px;border-radius:0;background:var(--line2);border:0}
 .lg.today{width:1px;height:14px;border:0;border-radius:0;background:var(--signal)}
+.lg.kanta{border-radius:0;background:var(--fg);width:9px;height:9px;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.ev.kind-kanta{border-radius:0;width:12px;height:12px;clip-path:polygon(50% 0,100% 100%,0 100%);border:0;background:var(--fg)}
+.ev.kind-kanta.future{background:var(--line2)}
+.vlist li.kind-kanta::before{border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%);border:0;background:var(--fg);width:11px;height:11px;left:-6px}
 
 /* Panels with corner brackets */
 .panel{position:relative;border:1px solid var(--line);background:var(--panel);padding:14px 16px;min-width:0}
@@ -306,6 +313,7 @@ th.sortable:hover{color:var(--fg)}
 </header>
 
 <section class="toolbar" aria-label="Suodattimet">
+  <div class="chips" id="lajit"><span class="micro chips-title">Tyyppi</span></div>
   <div class="chips" id="topics"><span class="micro chips-title">Aihealue</span></div>
   <div class="tools">
     <label class="toggle"><input type="checkbox" id="follow-only"> Vain seuranta <span id="n-follow" class="mono"></span></label>
@@ -328,14 +336,14 @@ th.sortable:hover{color:var(--fg)}
   </section>
   <section class="view" id="view-fi" role="tabpanel" aria-labelledby="tab-fi" hidden>
     <div class="view-head">
-      <div><h2>Kansallinen lainsäädäntö</h2><p>Kaikki valmisteilla ja eduskunnassa olevat hallituksen esitykset (Hankeikkuna + eduskunnan avoin data). Lausuttavissa olevat nousevat kärkeen. Napsauta riviä, niin tapauksen aikajana avautuu.</p></div>
+      <div><h2>Kansallinen lainsäädäntö</h2><p>Valmisteilla ja eduskunnassa olevat hallituksen esitykset sekä halutessa valtioneuvoston ja ministeriöiden asetukset (Hankeikkuna + eduskunnan avoin data + Finlex). Lausuttavissa olevat nousevat kärkeen.</p></div>
       <div class="legend" id="legend-fi"></div>
     </div>
     <div class="tl" id="tl-fi"></div>
   </section>
   <section class="view" id="view-eu" role="tabpanel" aria-labelledby="tab-eu" hidden>
     <div class="view-head">
-      <div><h2>Euroopan unioni</h2><p>Tavallisen lainsäätämisjärjestyksen menettelyt (Euroopan parlamentin avoin data + Cellar), joiden soveltaminen tai täytäntöönpano on vielä kesken.</p></div>
+      <div><h2>Euroopan unioni</h2><p>Lainsäätämismenettelyt (EP:n avoin data + Cellar), komission kuulemiset ja palauteajat (Have your say) sekä Suomen kannat U-/E-kirjelminä (eduskunta). Tyyppi-suodatin rajaa, mitä näistä näytetään.</p></div>
       <div class="legend" id="legend-eu"></div>
     </div>
     <div class="tl" id="tl-eu"></div>
@@ -395,8 +403,9 @@ th.sortable:hover{color:var(--fg)}
 let DATA = [];
 let META = {};
 const TOPICS = ["Työoikeus","Yhtiö ja rahoitus","Tietosuoja ja digi","Tekoäly ja kyber","Kestävyys ja ympäristö","Kuluttaja ja tuotteet","Verotus","Rikos ja prosessi","Hallinto ja hankinnat","Maahanmuutto"];
-const KIND_LABEL = {lausunto:"Lausuntoaika",he:"HE annettu eduskunnalle",eduskunta:"Eduskuntakäsittely",hyvaksytty:"Eduskunta hyväksynyt",vahvistettu:"Vahvistettu",voimaan:"Voimaantulo",maaraaika:"Määräaika",muu:"Vaihe",ehdotus:"Komission ehdotus",sopu:"Poliittinen sopu",parlamentti:"Parlamentti",neuvosto:"Neuvosto",julkaistu:"Julkaistu EUVL:ssä",soveltaminen:"Soveltaminen alkaa"};
-const STATUS_CLASS = {lausunnolla:"open",voimassa:"voimassa",vahvistettu:"voimassa","voimassa, soveltaminen vaiheittain":"voimassa"};
+const LAJIT=[["laki","Lait (HE)"],["asetus","Asetukset"],["eu","EU-säädökset"],["kuuleminen","EU-kuulemiset"],["kirjelma","U/E-kirjelmät"]];
+const KIND_LABEL = {kanta:"Suomen kanta (U/E-kirjelmä)",lausunto:"Lausuntoaika",he:"HE annettu eduskunnalle",eduskunta:"Eduskuntakäsittely",hyvaksytty:"Eduskunta hyväksynyt",vahvistettu:"Vahvistettu",voimaan:"Voimaantulo",maaraaika:"Määräaika",muu:"Vaihe",ehdotus:"Komission ehdotus",sopu:"Poliittinen sopu",parlamentti:"Parlamentti",neuvosto:"Neuvosto",julkaistu:"Julkaistu EUVL:ssä",soveltaminen:"Soveltaminen alkaa"};
+const STATUS_CLASS = {lausunnolla:"open",voimassa:"voimassa",vahvistettu:"voimassa",annettu:"voimassa","voimassa, soveltaminen vaiheittain":"voimassa"};
 const TABHASH = {now:"tilannekuva",fi:"kansallinen",eu:"eu",done:"valmiit"};
 const HASHTAB = {tilannekuva:"now",kansallinen:"fi",eu:"eu",valmiit:"done"};
 
@@ -410,9 +419,9 @@ const addMonths = (d,n) => new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+
 const daysTo = d => Math.round((d-TODAY)/DAY);
 
 /* ---------- state ---------- */
-const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set() };
+const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set(), lajit:new Set(["laki","eu","kuuleminen","kirjelma"]) };
 let CHANGES=[]; let CHANGE_BY_ID={};
-try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(s.tab in TABHASH) state.tab=s.tab; }catch(e){}
+try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(Array.isArray(s.lajit)) state.lajit=new Set(s.lajit); if(s.tab in TABHASH) state.tab=s.tab; }catch(e){}
 try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-follow")||"[]"); if(Array.isArray(f)) state.follow=new Set(f); }catch(e){}
 function persistFollow(){ try{ localStorage.setItem("saadosseuranta-follow",JSON.stringify([...state.follow])); }catch(e){} }
 function toggleFollow(id){ if(state.follow.has(id)) state.follow.delete(id); else state.follow.add(id); persistFollow(); render(); if(!drawer.hidden&&drawer.dataset.id===id) syncDrawerFollow(id); }
@@ -455,7 +464,7 @@ function starHTML(id){ const on=state.follow.has(id); return `<button class="sta
 function changeBadge(id){ const c=CHANGE_BY_ID[id]; if(!c) return ""; const n=-daysTo(pd(c.date)); if(n>14) return ""; return `<span class="pill chg" title="${esc(c.text)}">muuttunut ${n===0?"tänään":n+" pv"}</span>`; }
 let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
-function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics]})); }catch(e){} }
+function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics],lajit:[...state.lajit]})); }catch(e){} }
 
 /* theme: white by default; the segmented control picks light or dark and the choice is remembered */
 function setTheme(name){
@@ -487,6 +496,7 @@ function entryDate(it){
   const v=ev.find(e=>e.kind==="voimaan")||ev[0]; return {date:pd(v.date),label:v.label,kind:v.kind};
 }
 function matches(it){
+  if(!state.lajit.has(it.laji||"laki")) return false;
   if(state.topics.size && !it.topics.some(t=>state.topics.has(t))) return false;
   if(state.openOnly && !openConsultation(it)) return false;
   if(state.followOnly && !state.follow.has(it.id)) return false;
@@ -565,7 +575,7 @@ function renderTimeline(root, items, opts={}){
 function legendHTML(scope){
   return `<span><i class="lg bar"></i>Lausuntoaika</span><span><i class="lg bar open"></i>Lausuttavissa nyt</span><span><i class="lg bar2"></i>${scope==="fi"?"Eduskuntakäsittely":"Lainsäädäntömenettely"}</span>`+
     (scope==="eu"?`<span><i class="lg bar3"></i>Siirtymäaika</span>`:"")+
-    `<span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg diamond"></i>Voimaantulo / soveltaminen</span><span><i class="lg deadline"></i>Määräaika</span><span><i class="lg today"></i>Tänään</span>`;
+    `<span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg diamond"></i>Voimaantulo / soveltaminen</span><span><i class="lg deadline"></i>Määräaika</span>`+(scope==="eu"?`<span><i class="lg kanta"></i>Suomen kanta (U/E)</span>`:"")+`<span><i class="lg today"></i>Tänään</span>`;
 }
 
 /* ---------- tilannekuva ---------- */
@@ -699,6 +709,12 @@ function buildTopicChips(list){
   list.forEach(t=>{ const b=document.createElement("button"); b.className="chip"; b.textContent=t; b.dataset.topic=t; b.setAttribute("aria-pressed","false"); topicsEl.appendChild(b); });
   [...state.topics].forEach(t=>{ if(!list.includes(t)) state.topics.delete(t); });
 }
+const lajitEl=document.getElementById("lajit");
+function buildLajiChips(counts){
+  lajitEl.querySelectorAll(".chip").forEach(c=>c.remove());
+  LAJIT.forEach(([k,label])=>{ const b=document.createElement("button"); b.className="chip laji"; b.dataset.laji=k; b.innerHTML=`${esc(label)}<span class="n">${counts&&counts[k]!=null?counts[k]:""}</span>`; lajitEl.appendChild(b); });
+}
+lajitEl.addEventListener("click",e=>{ const b=e.target.closest(".chip"); if(!b) return; const k=b.dataset.laji; if(state.lajit.has(k)){ if(state.lajit.size>1) state.lajit.delete(k); } else state.lajit.add(k); persist(); render(); });
 topicsEl.addEventListener("click",e=>{
   const b=e.target.closest(".chip"); if(!b) return;
   if(b.dataset.topic==="*") state.topics.clear(); else { state.topics.has(b.dataset.topic)?state.topics.delete(b.dataset.topic):state.topics.add(b.dataset.topic); }
@@ -712,6 +728,7 @@ window.addEventListener("hashchange",()=>{ const h=decodeURIComponent(location.h
 
 function render(){
   topicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.topics.size===0):String(state.topics.has(c.dataset.topic))));
+  lajitEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(state.lajit.has(c.dataset.laji))));
   Object.keys(TABHASH).forEach(t=>{ document.getElementById("tab-"+t).setAttribute("aria-selected",String(state.tab===t)); document.getElementById("view-"+t).hidden=state.tab!==t; });
   const fi=itemsFor("fi"), eu=itemsFor("eu"), done=itemsFor("done");
   document.getElementById("n-fi").textContent=fi.length; document.getElementById("n-eu").textContent=eu.length; document.getElementById("n-done").textContent=done.length;
@@ -736,7 +753,7 @@ Promise.all([
   DATA=j.items||[]; META=Object.assign({},j.meta||{},m||{});
   CHANGES=(ch&&ch.changes)||[]; CHANGE_BY_ID={}; CHANGES.forEach(c=>{ if(!CHANGE_BY_ID[c.id]||CHANGE_BY_ID[c.id].date<c.date) CHANGE_BY_ID[c.id]=c; });
   DATA.forEach(it=>{ it.events=(it.events||[]).slice().sort((a,b)=>a.date.localeCompare(b.date)); it.topics=it.topics||[]; });
-  buildTopicChips(META.topics||TOPICS);
+  buildTopicChips(META.topics||TOPICS); buildLajiChips(META.lajit||{});
   const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
   const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
   document.getElementById("sys").innerHTML=`<span><i class="led ${ageH!==null&&ageH<36?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span><span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span>`;

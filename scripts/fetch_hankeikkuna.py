@@ -109,16 +109,19 @@ def main():
     asettajat = _lookup("asettajat")
     log(f"hankeikkuna: {len(teemat)} teemaa, {len(asettajat)} asettajaa")
     since = (TODAY - dt.timedelta(days=540)).isoformat() + "T00:00:00"
-    base = {"tyyppi": ["LAINSAADANTO"], "lainsaadantoTehtavaluokka": ["HALLITUKSEN_ESITYKSEN_VALMISTELU"]}
-    ongoing = search(dict(base, tila=["KAYNNISSA"]))
-    finished = search(dict(base, tila=["PAATTYNYT"], muokattuPaivaAlku=since))
-    log(f"hankeikkuna: {len(ongoing)} käynnissä, {len(finished)} päättynyt (muokattu {since[:10]} jälkeen)")
     seen, items = set(), []
-    for r in ongoing + finished:
-        if r["kohde"]["uuid"] in seen:
-            continue
-        seen.add(r["kohde"]["uuid"])
-        items.append(normalise(r, teemat, asettajat))
+    for laji, luokka in (("laki", "HALLITUKSEN_ESITYKSEN_VALMISTELU"), ("asetus", "ASETUKSEN_ANTAMINEN")):
+        base = {"tyyppi": ["LAINSAADANTO"], "lainsaadantoTehtavaluokka": [luokka]}
+        ongoing = search(dict(base, tila=["KAYNNISSA"]))
+        finished = search(dict(base, tila=["PAATTYNYT"], muokattuPaivaAlku=since))
+        log(f"hankeikkuna {laji}: {len(ongoing)} käynnissä, {len(finished)} päättynyt (muokattu {since[:10]} jälkeen)")
+        for r in ongoing + finished:
+            if r["kohde"]["uuid"] in seen:
+                continue
+            seen.add(r["kohde"]["uuid"])
+            rec = normalise(r, teemat, asettajat)
+            rec["laji"] = laji
+            items.append(rec)
     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": items})
     log(f"hankeikkuna: tallennettu {len(items)} hanketta -> {OUT}")
 

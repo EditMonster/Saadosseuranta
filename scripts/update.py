@@ -10,6 +10,8 @@ import fetch_eduskunta
 import fetch_eu
 import fetch_finlex
 import fetch_hankeikkuna
+import fetch_hys
+import fetch_ue
 from common import log
 
 STEPS = [
@@ -17,6 +19,8 @@ STEPS = [
     ("eduskunta", fetch_eduskunta.main),
     ("finlex", fetch_finlex.main),
     ("eu", fetch_eu.main),
+    ("ue", fetch_ue.main),
+    ("hys", fetch_hys.main),
 ]
 
 

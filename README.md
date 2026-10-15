@@ -10,6 +10,7 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
 ## Sivun näkymät
 
+* **Tyyppi-suodatin** – Lait (HE), Asetukset, EU-säädökset, EU-kuulemiset, U/E-kirjelmät; valinta muistetaan. Asetukset ovat oletuksena pois, muut päällä.
 * **Tilannekuva** – seurannassa olevat säädökset, *Mitä on muuttunut* (ajojen välinen muutosloki: uudet säädökset, uudet vaiheet, siirtyneet päivämäärät, tilan vaihtumiset), avoimet lausuntokierrokset, seuraavien 60 päivän vaiheet ja viimeisten 14 päivän tapahtumat.
 * **Oma seuranta** – tähti ☆ minkä tahansa säädöksen kohdalla lisää sen seurantaan; *Vain seuranta* -kytkin rajaa kaikki näkymät seurattuihin. Aihealuevalinta muistetaan selaimessa, joten se toimii kategoriaseurantana. Seurantalista tallentuu selaimeen; Tilannekuvan *Seurannassa*-paneelin "Siirrä toiselle koneelle" antaa siirtolinkin tai koodin (tuonti yhdistää tai korvaa). Sivu on suunniteltu työpöytäkäyttöön; kapealla näytöllä se toimii, mutta aikajana vaatii vaakavieritystä.
 * **Kansallinen** ja **EU** – vaakasuuntaiset aikajanat (lausuntoaika, eduskunta-/lainsäädäntömenettely, voimaantulo, määräajat), lausuttavissa olevat kärjessä.
@@ -27,10 +28,13 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 | Finlex | Vireillä olevien HE:iden luettelo ministeriöittäin (varmistus, ettei mikään HE jää Hankeikkunan ulkopuolelle) sekä vahvistettujen lakien voimaantulopäivät säädöskokoelmasta | `finlex.fi` (HTML, rajoitettu nopeus) |
 | Euroopan parlamentin avoin data | Tavallisen lainsäätämisjärjestyksen menettelyt (2021–): suomenkieliset nimet, valiokunta- ja täysistuntovaiheet, alustava sopu, allekirjoitus, EUVL-julkaisu | `https://data.europarl.europa.eu/api/v2/procedures` |
 | EU:n julkaisutoimiston Cellar | Komission ehdotuksen päivä, hyväksytyn säädöksen CELEX-numero, voimaantulo, vaiheittaiset soveltamispäivät, täytäntöönpanon määräajat, voimassaolo | SPARQL `https://publications.europa.eu/webapi/rdf/sparql` |
+| Valtioneuvoston Hankeikkuna (asetukset) | Valtioneuvoston ja ministeriöiden asetushankkeet: lausuntokierrokset, antaminen, säädöskokoelman numero (Tyyppi-suodatin *Asetukset*, oletuksena pois) | sama rajapinta, tehtäväluokka `ASETUKSEN_ANTAMINEN` |
+| Eduskunnan avoin data (U/E) | Valtioneuvoston U-kirjelmät ja E-kirjeet eli Suomen kannat EU-ehdotuksiin: liitetään vaiheena seurattuun EU-menettelyyn COM-numeron perusteella, muuten omana rivinään | `VaskiData`, tunnukset `U n/vuosi vp`, `E n/vuosi vp` |
+| Komission Have your say | Julkiset kuulemiset, kannanottopyynnöt ja palauteajat ehdotuksista sekä delegoiduista ja täytäntöönpanosäädöksistä (EU-tason "milloin voi lausua") | `https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives` |
 
-Mitä **ei** seurata (lisättävissä): valtioneuvoston ja ministeriöiden asetukset, EU:n delegoidut
-ja täytäntöönpanosäädökset, tuomioistuinratkaisut, kansalaisaloitteet, valtiosopimukset
-muuten kuin HE-muodossa. `lausuntopalvelu.fi` ja `valtioneuvosto.fi` estävät ohjelmalliset
+Mitä **ei** seurata (lisättävissä): neuvoston käsittelyvaiheet (yleisnäkemys, hyväksyntä – neuvostolla
+ei ole yksinkertaista avointa rajapintaa), hyväksytyt delegoidut säädökset muuten kuin kuulemisvaiheessa,
+tuomioistuinratkaisut, kansalaisaloitteet. `lausuntopalvelu.fi` ja `valtioneuvosto.fi` estävät ohjelmalliset
 haut (Cloudflare), joten lausuntokierrokset tulevat Hankeikkunasta, joka on sama tieto.
 
 ## Rakenne
@@ -42,7 +46,7 @@ config/
   eu_watchlist.yaml  EU-menettelyt, jotka haetaan aina
   overrides.json     käsin lisätyt tapahtumat, korjaukset ja lyhyet näyttönimet (id:n mukaan)
 scripts/
-  fetch_hankeikkuna.py  fetch_eduskunta.py  fetch_finlex.py  fetch_eu.py
+  fetch_hankeikkuna.py  fetch_eduskunta.py  fetch_finlex.py  fetch_eu.py  fetch_ue.py  fetch_hys.py
   build.py           yhdistää välimuistit -> docs/data/items.json
   update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita
 data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys on nopea)
