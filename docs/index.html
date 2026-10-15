@@ -58,6 +58,10 @@ a:hover{border-color:var(--fg)}
 .status .ctl{display:flex;gap:10px;align-items:center}
 .status .ctl button,.status .ctl a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:4px 8px;border-radius:var(--radius)}
 .status .ctl button:hover,.status .ctl a:hover{color:var(--fg);border-color:var(--line2)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.status .ctl .seg button{border:0;border-radius:0;padding:4px 10px}
+.status .ctl .seg button+button{border-left:1px solid var(--line)}
+.status .ctl .seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 
 /* Masthead */
 .top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding-block:22px 0;border-bottom:1px solid var(--fg)}
@@ -261,7 +265,9 @@ th.sortable:hover{color:var(--fg)}
   <div class="ctl">
     <a href="data/saadosseuranta.ics" title="Määräajat kalenteriin (.ics)">Kalenteri</a>
     <a href="https://github.com/EditMonster/Saadosseuranta" target="_blank" rel="noopener">GitHub</a>
-    <button id="theme" aria-label="Vaihda teemaa">Teema</button>
+    <div class="seg" role="group" aria-label="Ulkoasu">
+      <button id="theme-light" aria-pressed="true">Vaalea</button><button id="theme-dark" aria-pressed="false">Tumma</button>
+    </div>
   </div>
 </div>
 
@@ -377,13 +383,16 @@ let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
 function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics]})); }catch(e){} }
 
-/* theme: white by default, dark on request */
-(()=>{ let t=null; try{ t=localStorage.getItem("saadosseuranta-theme"); }catch(e){} if(t==="dark") document.documentElement.setAttribute("data-theme","dark"); })();
-document.getElementById("theme").addEventListener("click",()=>{
-  const dark=document.documentElement.getAttribute("data-theme")==="dark";
-  if(dark) document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme","dark");
-  try{ localStorage.setItem("saadosseuranta-theme",dark?"light":"dark"); }catch(e){}
-});
+/* theme: white by default; the segmented control picks light or dark and the choice is remembered */
+function setTheme(name){
+  if(name==="dark") document.documentElement.setAttribute("data-theme","dark"); else document.documentElement.removeAttribute("data-theme");
+  document.getElementById("theme-light").setAttribute("aria-pressed",String(name!=="dark"));
+  document.getElementById("theme-dark").setAttribute("aria-pressed",String(name==="dark"));
+  try{ localStorage.setItem("saadosseuranta-theme",name==="dark"?"dark":"light"); }catch(e){}
+}
+(()=>{ let t=null; try{ t=localStorage.getItem("saadosseuranta-theme"); }catch(e){} setTheme(t==="dark"?"dark":"light"); })();
+document.getElementById("theme-light").addEventListener("click",()=>setTheme("light"));
+document.getElementById("theme-dark").addEventListener("click",()=>setTheme("dark"));
 
 /* ---------- helpers ---------- */
 function openConsultation(it){ return it.events.find(e=>e.kind==="lausunto"&&e.end&&pd(e.date)<=TODAY&&pd(e.end)>=TODAY); }

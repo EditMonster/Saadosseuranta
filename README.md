@@ -15,7 +15,7 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 * **Valmiit** – vahvistetut ja voimassa olevat säädökset taulukkona.
 * Jokaisella säädöksellä on pysyvä linkki (`…/#fi-he-129-2026`), joka avaa sen aikajanan suoraan.
 * `data/saadosseuranta.ics` – kaikki tulevat määräajat kalenteriin (Google/Outlook/Apple: "tilaa kalenteri osoitteesta").
-* Valkea teema oletuksena, tumma *Teema*-napista; valinta muistetaan selaimessa.
+* Ulkoasu valittavissa yläpalkista: *Vaalea* (oletus) tai *Tumma*; valinta muistetaan selaimessa.
 
 ## Mistä aineisto tulee
 
