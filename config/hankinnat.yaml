@@ -1,0 +1,86 @@
+# Kilpailutukset (Hilma): toimialaluokitus CPV-koodin perusteella ja näyttöasetukset.
+#
+# Toimiala valitaan pisimmän täsmäävän CPV-etuliitteen mukaan (esim. 791 voittaa 79:n).
+# Ilmoituksen pääkoodin lisäksi katsotaan osien (lots) koodit, joten monialainen kilpailutus
+# voi kuulua useaan toimialaan. Koodi, jolle ei löydy etuliitettä, saa toimialan "Muut".
+toimialat:
+  Rakentaminen ja infra: ["44", "45"]
+  Suunnittelu ja tekninen konsultointi: ["71"]
+  ICT ja ohjelmistot: ["30", "32", "48", "64", "72"]
+  Sosiaali- ja terveyspalvelut: ["85", "98"]
+  Lääkkeet ja hoitotarvikkeet: ["33"]
+  Lakipalvelut: ["791"]
+  Konsultointi ja liike-elämän palvelut: ["79", "66", "75"]
+  Koneet, laitteet ja tarvikkeet: ["14", "16", "18", "19", "22", "24", "31", "37", "38", "39", "42", "43"]
+  Ajoneuvot ja kuljetus: ["34", "60", "63"]
+  Kiinteistö- ja huoltopalvelut: ["50", "51", "70", "909"]
+  Energia ja polttoaineet: ["09", "41", "65", "76"]
+  Ympäristö, viheralueet ja jätehuolto: ["77", "90"]
+  Elintarvikkeet ja ruokapalvelut: ["03", "15", "55"]
+  Turvallisuus ja puolustus: ["35", "797"]
+  Koulutus, tutkimus ja kulttuuri: ["73", "80", "92"]
+
+# Ilmoitustyypit (Hilman type-kenttä) suomeksi. eForms-numerot = TED eF-lomakkeet,
+# E3 = kansallinen eForms-ilmoitus, 9xxx = vanhan Hilman kansalliset lomakkeet, 200/2100 = vanhat TED F02/F21.
+tyypit:
+  "16": Hankintailmoitus
+  "200": Hankintailmoitus
+  "17": Hankintailmoitus – erityisalat
+  "18": Hankintailmoitus – puolustus ja turvallisuus
+  "19": Käyttöoikeussopimus
+  "14": Käyttöoikeussopimus – SOTE ja erityiset palvelut
+  "20": SOTE- ja muut erityiset palvelut
+  "2100": SOTE- ja muut erityiset palvelut
+  "21": Erityisalat – SOTE ja erityiset palvelut
+  "10": Tarjouskilpailukutsuna käytettävä ennakkoilmoitus
+  "11": Tarjouskilpailukutsuna käytettävä ennakkoilmoitus – erityisalat
+  "12": Tarjouskilpailukutsuna käytettävä ennakkoilmoitus
+  "13": Tarjouskilpailukutsuna käytettävä ennakkoilmoitus – erityisalat
+  "15": Kelpuuttamisjärjestelmä – erityisalat
+  "22": Alihankintailmoitus – puolustus ja turvallisuus
+  "23": Suunnittelukilpailu
+  "24": Suunnittelukilpailu – erityisalat
+  "E3": Kansallinen hankintailmoitus
+  "9902": Kansallinen hankintailmoitus
+  "9911": Kansallinen hankintailmoitus – puolustus ja turvallisuus
+  "9912": Pienhankinta
+  "9913": Pienhankinta – SOTE ja erityiset palvelut
+  "9906": Kansallinen suunnittelukilpailu
+
+menettelyt:
+  open: Avoin menettely
+  restricted: Rajoitettu menettely
+  neg-w-call: Neuvottelumenettely
+  neg-wo-call: Neuvottelumenettely ilman ilmoitusta
+  comp-dial: Kilpailullinen neuvottelumenettely
+  comp-tend: Kilpailullinen menettely
+  innovation: Innovaatiokumppanuus
+  oth-single: Muu yksivaiheinen menettely
+  oth-mult: Muu monivaiheinen menettely
+
+# Menettelyt, joissa määräaika koskee osallistumishakemusta tarjouksen sijaan
+osallistumishakemus: ["restricted", "neg-w-call", "comp-dial", "innovation", "oth-mult"]
+
+hankintalajit:
+  services: Palvelut
+  supplies: Tavarat
+  works: Rakennusurakat
+
+# Tiivistelmästä pudotettavat vakiolauseet (pieni kirjain, osuma riittää)
+tiivistelma:
+  max_merkkia: 420
+  ohita:
+    - "ei makseta korvausta"
+    - "tutustua kohteeseen"
+    - "kuvattu tarkemmin tarjouspyyn"
+    - "kuvattu tarkemmin osallistumispyyn"
+    - "on kuvattu yksityiskohtaisesti"
+    - "katso tarkemmin"
+    - "lisätietoja"
+    - "tarjous on sitova"
+    - "tulee laatia suomen kielellä"
+    - "hankintaprosessi on kokonaisuudessaan"
+    - "selvyyden vuoksi"
+    - "pidättää oikeuden"
+    - "hankintayksikkö varaa oikeuden"
+    - "tarjouspyynnön ja sen liitteiden mukaisesti."

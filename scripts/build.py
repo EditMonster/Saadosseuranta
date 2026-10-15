@@ -4,6 +4,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
+from build_hankinnat import build_hankinnat
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, days_ago, is_future, load_json, load_yaml, log, save_json
 
 HE_PREFIX = re.compile(r"^hallituksen esitys (eduskunnalle )?", re.I)
@@ -505,19 +506,26 @@ def main():
         keep.append(it)
     apply_overrides(keep)
     changes = update_changelog(keep, settings)
+    # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
+    # notices a week) and a different page segment. None written = previous file stays in place.
+    hank = build_hankinnat(settings) or load_json(OUT_DIR / "hankinnat.json", {})
     open_now = [i for i in keep if i["scope"] == "fi" and i["status"] == "lausunnolla"]
     meta = {"generated": dt.datetime.now().isoformat(timespec="seconds"), "today": TODAY.isoformat(),
             "counts": {"fi": sum(i["scope"] == "fi" and not i["done"] for i in keep),
                        "eu": sum(i["scope"] == "eu" and not i["done"] for i in keep),
                        "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now),
-                       "changes7": sum(1 for r in changes if r["date"] >= (TODAY - dt.timedelta(days=7)).isoformat())},
+                       "changes7": sum(1 for r in changes if r["date"] >= (TODAY - dt.timedelta(days=7)).isoformat()),
+                       "hankinnat": (hank.get("counts") or {}).get("avoinna", 0),
+                       "hankinnat7": (hank.get("counts") or {}).get("sulkeutuu7", 0)},
             "topics": list(topics_cfg.keys()) + ["Muut"],
+            "hankintaTopics": hank.get("topics") or [],
             "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
                       "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep)},
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
-                        "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)"]}
+                        "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)",
+                        "Hilma – julkiset hankinnat (hankintailmoitukset.fi)"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
     minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})
