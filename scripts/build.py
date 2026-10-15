@@ -270,8 +270,18 @@ def main():
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
                         "EU:n julkaisutoimiston Cellar (publications.europa.eu)"]}
-    save_json(OUT_DIR / "items.json", {"meta": meta, "items": keep}, compact=True)
-    log(f"build: {meta['counts']} -> {OUT_DIR / 'items.json'}")
+    # Sanity gate: never publish an obviously broken data set (a source returning garbage would
+    # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
+    minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})
+    c = meta["counts"]
+    if c["fi"] < minimums["fi"] or c["eu"] < minimums["eu"] or c["done"] < minimums["done"]:
+        log(f"ERROR build: aineisto epäilyttävän pieni {c} (rajat {minimums}); items.json EI päivitetty")
+        raise SystemExit(2)
+    # items.json is deterministic (no timestamp) so git only records real content changes;
+    # meta.json carries the run timestamp and counts.
+    save_json(OUT_DIR / "items.json", {"items": keep}, compact=True)
+    save_json(OUT_DIR / "meta.json", meta, compact=True)
+    log(f"build: {c} -> {OUT_DIR / 'items.json'} + meta.json")
 
 
 if __name__ == "__main__":

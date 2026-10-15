@@ -14,3 +14,9 @@ eu:
 completed:
   # Valmiit-sivulla näytetään säädökset, joiden voimaantulosta on enintään näin monta päivää
   max_age_days: 730
+
+sanity:
+  # Jos rakennettu aineisto on tätä pienempi, ajo keskeytyy eikä vanhaa items.jsonia korvata
+  fi: 100
+  eu: 30
+  done: 50
