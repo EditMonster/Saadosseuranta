@@ -20,3 +20,7 @@ sanity:
   fi: 100
   eu: 30
   done: 50
+
+changelog:
+  # Kuinka monta päivää muutoksia säilytetään docs/data/changes.json-tiedostossa
+  keep_days: 90

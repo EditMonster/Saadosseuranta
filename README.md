@@ -10,7 +10,8 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
 ## Sivun näkymät
 
-* **Tilannekuva** – avoimet lausuntokierrokset, seuraavien 60 päivän vaiheet ja viimeisten 14 päivän tapahtumat; neljä avainlukua.
+* **Tilannekuva** – seurannassa olevat säädökset, *Mitä on muuttunut* (ajojen välinen muutosloki: uudet säädökset, uudet vaiheet, siirtyneet päivämäärät, tilan vaihtumiset), avoimet lausuntokierrokset, seuraavien 60 päivän vaiheet ja viimeisten 14 päivän tapahtumat.
+* **Oma seuranta** – tähti ☆ minkä tahansa säädöksen kohdalla lisää sen seurantaan; *Vain seuranta* -kytkin rajaa kaikki näkymät seurattuihin. Aihealuevalinta muistetaan selaimessa, joten se toimii kategoriaseurantana. Seurantalista on selainkohtainen (localStorage).
 * **Kansallinen** ja **EU** – vaakasuuntaiset aikajanat (lausuntoaika, eduskunta-/lainsäädäntömenettely, voimaantulo, määräajat), lausuttavissa olevat kärjessä.
 * **Valmiit** – vahvistetut ja voimassa olevat säädökset taulukkona.
 * Jokaisella säädöksellä on pysyvä linkki (`…/#fi-he-129-2026`), joka avaa sen aikajanan suoraan.
@@ -45,7 +46,7 @@ scripts/
   build.py           yhdistää välimuistit -> docs/data/items.json
   update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita
 data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys on nopea)
-docs/                GitHub Pages -sivu: index.html, logot, data/items.json + meta.json + saadosseuranta.ics
+docs/                GitHub Pages -sivu: index.html, logot, data/items.json + meta.json + changes.json + saadosseuranta.ics
 .github/workflows/update.yml   päivittäinen ajo
 ```
 

@@ -163,6 +163,15 @@ a:hover{border-color:var(--fg)}
 .pill.open{border-color:var(--signal);color:var(--signal);background:var(--signal-dim)}
 .pill.voimassa{border-color:var(--fg);color:var(--fg)}
 .pill.scope{color:var(--fg)}
+.pill.chg{border-color:var(--signal);color:var(--signal)}
+.star{font-size:15px;line-height:1;color:var(--dim);padding:0 2px;flex:none}
+.star:hover,.star[aria-pressed="true"]{color:var(--signal)}
+.label .head{display:flex;gap:8px;align-items:flex-start}
+.label .head .t{flex:1;min-width:0}
+.list .c{font-size:12.5px;color:var(--fg)}
+.list .c b{font-weight:500;color:var(--signal)}
+.follow-btn{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:4px 10px;border-radius:var(--radius);color:var(--muted)}
+.follow-btn[aria-pressed="true"]{border-color:var(--signal);color:var(--signal);background:var(--signal-dim)}
 .track{position:relative;min-width:0}
 .nodates{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
 .span{position:absolute;top:50%;height:11px;transform:translateY(-50%);border-radius:1px;z-index:1}
@@ -291,6 +300,7 @@ th.sortable:hover{color:var(--fg)}
 <section class="toolbar" aria-label="Suodattimet">
   <div class="chips" id="topics"><span class="micro chips-title">Aihealue</span></div>
   <div class="tools">
+    <label class="toggle"><input type="checkbox" id="follow-only"> Vain seuranta <span id="n-follow" class="mono"></span></label>
     <label class="toggle"><input type="checkbox" id="open-only"> Vain lausuttavissa</label>
     <input class="search" type="search" id="q" placeholder="Hae nimellä, numerolla tai sisällöllä" aria-label="Hae">
     <span class="count" id="count"></span>
@@ -301,6 +311,8 @@ th.sortable:hover{color:var(--fg)}
   <section class="view" id="view-now" role="tabpanel" aria-labelledby="tab-now">
     <div class="kpis" id="kpis"></div>
     <div class="cols">
+      <div class="panel"><h3><span>Seurannassa</span><span id="h-follow"></span></h3><ul class="list" id="l-follow"></ul></div>
+      <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
       <div class="panel"><h3><span>Uusimmat vaiheet</span><span>14 pv</span></h3><ul class="list" id="l-recent"></ul></div>
@@ -352,6 +364,7 @@ th.sortable:hover{color:var(--fg)}
   <div class="topiclist" id="dr-topics"></div>
   <p class="summary" id="dr-summary"></p>
   <div id="dr-src"></div>
+  <div id="dr-changes"></div>
   <h4>Aikajana</h4>
   <div class="mini" id="dr-mini"></div>
   <h4>Vaiheet</h4>
@@ -377,8 +390,14 @@ const addMonths = (d,n) => new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+
 const daysTo = d => Math.round((d-TODAY)/DAY);
 
 /* ---------- state ---------- */
-const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false };
+const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set() };
+let CHANGES=[]; let CHANGE_BY_ID={};
 try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(s.tab in TABHASH) state.tab=s.tab; }catch(e){}
+try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-follow")||"[]"); if(Array.isArray(f)) state.follow=new Set(f); }catch(e){}
+function persistFollow(){ try{ localStorage.setItem("saadosseuranta-follow",JSON.stringify([...state.follow])); }catch(e){} }
+function toggleFollow(id){ if(state.follow.has(id)) state.follow.delete(id); else state.follow.add(id); persistFollow(); render(); if(!drawer.hidden&&drawer.dataset.id===id) syncDrawerFollow(id); }
+function starHTML(id){ const on=state.follow.has(id); return `<button class="star" data-follow="${esc(id)}" aria-pressed="${on}" aria-label="${on?"Poista seurannasta":"Lisää seurantaan"}" title="${on?"Seurannassa":"Lisää seurantaan"}">${on?"★":"☆"}</button>`; }
+function changeBadge(id){ const c=CHANGE_BY_ID[id]; if(!c) return ""; const n=-daysTo(pd(c.date)); if(n>14) return ""; return `<span class="pill chg" title="${esc(c.text)}">muuttunut ${n===0?"tänään":n+" pv"}</span>`; }
 let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
 function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics]})); }catch(e){} }
@@ -415,6 +434,7 @@ function entryDate(it){
 function matches(it){
   if(state.topics.size && !it.topics.some(t=>state.topics.has(t))) return false;
   if(state.openOnly && !openConsultation(it)) return false;
+  if(state.followOnly && !state.follow.has(it.id)) return false;
   if(state.q){ const q=state.q.toLowerCase(); const hay=(it.title+" "+(it.fullTitle||"")+" "+it.ref+" "+(it.summary||"")+" "+(it.ministry||"")+" "+(it.sk||[]).join(" ")+" "+it.topics.join(" ")).toLowerCase(); if(!hay.includes(q)) return false; }
   return true;
 }
@@ -461,7 +481,7 @@ function renderTimeline(root, items, opts={}){
   items.forEach(it=>{
     const st=statusOf(it); const nx=nextEvent(it);
     let row=`<div class="row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">`;
-    row+=`<div class="label"><div class="t">${esc(it.title)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span></div>`;
+    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${changeBadge(it.id)}</div>`;
     row+=`<div class="next">${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(nx.label)}`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(it.ministry||it.procedure) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
     row+=`</div><div class="track">`;
@@ -519,8 +539,15 @@ function renderNow(){
     ["Vaiheita 14 pv",in14,in14?"signal":"","määräaikaa tai vaihetta kahden viikon sisällä"],
     ["Voimaan 30 pv",voimaan30,"","voimaantuloa tai soveltamisvaihetta"],
     ["EU-määräajat 60 pv",euMaar,"","täytäntöönpanon tai säädöksen määräaikaa"],
+    ["Muutoksia 7 pv",CHANGES.filter(c=>-daysTo(pd(c.date))<=7).length,"","uutta tai muuttunutta vaihetta"],
   ].map(([h,v,c,d])=>`<div class="panel kpi"><div class="micro">${h}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
   const li=(it,date,label,extra)=>{ const n=daysTo(date); return `<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${n>=0&&n<=14?"soon":""}">${fmt(date)}${n>=0?`<br>${n===0?"tänään":n+" pv"}`:""}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}${extra?" · "+esc(extra):""}</div></span><span class="k">${esc(label)}</span></li>`; };
+  const fol=DATA.filter(it=>state.follow.has(it.id)&&(!state.topics.size||it.topics.some(t=>state.topics.has(t)))).map(it=>({it,nx:nextEvent(it)})).sort((a,b)=>{ if(a.nx&&b.nx) return a.nx.date-b.nx.date; if(a.nx) return -1; if(b.nx) return 1; return a.it.title.localeCompare(b.it.title); });
+  document.getElementById("l-follow").innerHTML=fol.map(({it,nx})=>nx?li(it,nx.date,nx.label):`<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d">–</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)} · ${esc(it.status)}</div></span><span class="k">ei tulevia vaiheita</span></li>`).join("")||'<li class="empty">Merkitse säädös tähdellä ☆, niin se nousee tähän</li>';
+  document.getElementById("h-follow").textContent=fol.length+" kpl";
+  const ch=CHANGES.filter(c=>-daysTo(pd(c.date))<=14).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).slice(0,60);
+  document.getElementById("l-changes").innerHTML=ch.map(c=>{ const it=DATA.find(i=>i.id===c.id); const n=-daysTo(pd(c.date)); return `<li data-id="${esc(c.id)}" tabindex="0" role="button"><span class="d">${fmt(pd(c.date))}<br>${n===0?"tänään":n+" pv sitten"}</span><span style="min-width:0"><div class="t">${state.follow.has(c.id)?"★ ":""}${esc(it.title)}</div><div class="c">${esc(c.text)}</div><div class="m">${c.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}</div></span><span class="k">${esc(c.type)}</span></li>`; }).join("")||'<li class="empty">Ei muutoksia 14 päivän sisällä – loki täyttyy päivittäisistä ajoista</li>';
+  document.getElementById("h-changes").textContent=ch.length+" / 14 pv";
   document.getElementById("l-open").innerHTML=open.map(({it,e})=>li(it,pd(e.end),"päättyy",it.ministry)).join("")||'<li class="empty">Ei avoimia lausuntokierroksia</li>';
   document.getElementById("h-open").textContent=open.length+" kpl";
   document.getElementById("l-next").innerHTML=next.slice(0,40).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 60 päivän sisällä</li>';
@@ -536,7 +563,7 @@ function renderDone(items){
   rows.sort((a,b)=>{ const da=a.ed?a.ed.date:0, db=b.ed?b.ed.date:0; return state.sortDesc?db-da:da-db; });
   rows.forEach(({it,ed})=>{
     body.insertAdjacentHTML("beforeend",`<tr class="r" tabindex="0" data-id="${esc(it.id)}">
-      <td><div class="t">${esc(it.title)}</div><div class="ref">${esc(it.ref)}</div></td>
+      <td><div class="head" style="display:flex;gap:8px"><div class="t" style="flex:1">${esc(it.title)}</div>${starHTML(it.id)}</div><div class="ref">${esc(it.ref)} ${changeBadge(it.id)}</div></td>
       <td><span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span></td>
       <td><div class="topiclist">${it.topics.map(t=>`<span>${esc(t)}</span>`).join("")}</div></td>
       <td class="date">${ed?fmt(ed.date):"–"}${ed&&ed.kind==="soveltaminen"?`<div class="ref">sovelletaan</div>`:""}${ed&&ed.label&&/ehdotettu/i.test(ed.label)?`<div class="ref">ehdotettu</div>`:""}</td>
@@ -559,6 +586,10 @@ function openItem(id){
   const links=Object.entries(L).filter(([k,v])=>v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(names[k]||k)}</a>`);
   if(!links.length&&it.source) links.push(`<a href="${esc(it.source)}" target="_blank" rel="noopener">Lähde</a>`);
   links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
+  links.push(`<button class="follow-btn" id="dr-follow" data-follow="${esc(it.id)}" aria-pressed="${state.follow.has(it.id)}">${state.follow.has(it.id)?"★ Seurannassa":"☆ Seuraa"}</button>`);
+  drawer.dataset.id=it.id;
+  const myCh=CHANGES.filter(c=>c.id===it.id).slice(0,8);
+  document.getElementById("dr-changes").innerHTML=myCh.length?`<h4>Muutokset</h4><ul class="vlist">${myCh.map(c=>`<li class="past"><div class="d">${fmt(pd(c.date))}</div><div class="l">${esc(c.text)}</div></li>`).join("")}</ul>`:"";
   document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="micro" style="margin-top:8px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}`;
   renderTimeline(document.getElementById("dr-mini"), [it], {mini:true,labels:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
@@ -572,6 +603,7 @@ function openItem(id){
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
+function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
 scrim.addEventListener("click",closeDrawer);
@@ -596,6 +628,7 @@ document.addEventListener("focusout",e=>{ if(e.target.closest(".ev")) hideTip();
 document.addEventListener("click",e=>{
   const pl=e.target.closest("#dr-permalink");
   if(pl){ e.preventDefault(); const url=location.href.split("#")[0]+pl.getAttribute("href"); try{ navigator.clipboard.writeText(url).then(()=>{pl.textContent="Linkki kopioitu";}).catch(()=>{pl.textContent=url;}); }catch(err){ pl.textContent=url; } return; }
+  const st=e.target.closest("[data-follow]"); if(st){ e.preventDefault(); e.stopPropagation(); toggleFollow(st.dataset.follow); return; }
   const ev=e.target.closest(".ev"); if(ev){ e.stopPropagation(); openItem(ev.dataset.id); return; }
   const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id]"); if(row&&!row.closest(".mini")) openItem(row.dataset.id);
 });
@@ -617,6 +650,7 @@ topicsEl.addEventListener("click",e=>{
   persist(); render();
 });
 document.getElementById("open-only").addEventListener("change",e=>{ state.openOnly=e.target.checked; render(); });
+document.getElementById("follow-only").addEventListener("change",e=>{ state.followOnly=e.target.checked; render(); });
 document.getElementById("q").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); });
 document.getElementById("th-date").addEventListener("click",()=>{ state.sortDesc=!state.sortDesc; document.getElementById("th-date").textContent="Voimaantulo "+(state.sortDesc?"▾":"▴"); render(); });
 window.addEventListener("hashchange",()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]){ if(!drawer.hidden) closeDrawer(); state.tab=HASHTAB[h]; persist(); render(); } else if(h&&DATA.some(i=>i.id===h)) openItem(h); });
@@ -631,6 +665,7 @@ function render(){
   if(state.tab==="fi"){ document.getElementById("legend-fi").innerHTML=legendHTML("fi"); renderTimeline(document.getElementById("tl-fi"), fi.slice().sort(sortNext)); }
   if(state.tab==="eu"){ document.getElementById("legend-eu").innerHTML=legendHTML("eu"); renderTimeline(document.getElementById("tl-eu"), eu.slice().sort(sortNext)); }
   if(state.tab==="done") renderDone(done);
+  document.getElementById("n-follow").textContent=state.follow.size?`(${state.follow.size})`:"";
   const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab];
   document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"");
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
@@ -640,9 +675,11 @@ document.getElementById("foot-today").textContent=fmt(TODAY);
 const v=Date.now();
 Promise.all([
   fetch("data/items.json?v="+v,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }),
-  fetch("data/meta.json?v="+v,{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({}))
-]).then(([j,m])=>{
+  fetch("data/meta.json?v="+v,{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({})),
+  fetch("data/changes.json?v="+v,{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([j,m,ch])=>{
   DATA=j.items||[]; META=Object.assign({},j.meta||{},m||{});
+  CHANGES=(ch&&ch.changes)||[]; CHANGE_BY_ID={}; CHANGES.forEach(c=>{ if(!CHANGE_BY_ID[c.id]||CHANGE_BY_ID[c.id].date<c.date) CHANGE_BY_ID[c.id]=c; });
   DATA.forEach(it=>{ it.events=(it.events||[]).slice().sort((a,b)=>a.date.localeCompare(b.date)); it.topics=it.topics||[]; });
   buildTopicChips(META.topics||TOPICS);
   const g=META.generated?new Date(META.generated):null; const c=META.counts||{};

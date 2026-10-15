@@ -256,6 +256,67 @@ def build_ics(items: list[dict]) -> str:
     return "\r\n".join(lines) + "\r\n"
 
 
+CHANGE_KINDS = {"voimaan", "soveltaminen", "maaraaika", "lausunto", "he", "hyvaksytty", "vahvistettu", "julkaistu", "sopu"}
+
+
+def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> list[dict]:
+    """Diff two data sets into human-readable change rows (what the Tilannekuva 'Muutokset' panel shows)."""
+    old = {i["id"]: i for i in old_items}
+    out = []
+
+    def add(it, typ, text):
+        out.append({"date": day, "id": it["id"], "scope": it["scope"], "title": it["title"], "type": typ, "text": text})
+
+    def fmt(d):
+        y, m, dd = d.split("-")
+        return f"{int(dd)}.{int(m)}.{y}"
+
+    for it in new_items:
+        o = old.get(it["id"])
+        if not o:
+            add(it, "uusi", f"Uusi: {it.get('kind', 'säädös')} ({it['status']})")
+            continue
+        if it.get("status") != o.get("status"):
+            add(it, "tila", f"Tila: {o.get('status')} → {it.get('status')}")
+        old_ev = {(e["date"], e.get("end"), e["label"]) for e in o.get("events", [])}
+        old_by_label = {e["label"]: e for e in o.get("events", []) if e.get("kind") in CHANGE_KINDS}
+        seen_labels = set()
+        for e in it.get("events", []):
+            if e.get("kind") not in CHANGE_KINDS:
+                continue
+            key = (e["date"], e.get("end"), e["label"])
+            if key in old_ev:
+                continue
+            prev = old_by_label.get(e["label"])
+            if prev and e["label"] not in seen_labels and (prev["date"] != e["date"] or prev.get("end") != e.get("end")):
+                seen_labels.add(e["label"])
+                if e.get("end") and prev.get("end"):
+                    add(it, "siirto", f"{e['label']}: {fmt(prev['date'])}–{fmt(prev['end'])} → {fmt(e['date'])}–{fmt(e['end'])}")
+                else:
+                    add(it, "siirto", f"{e['label']}: {fmt(prev['date'])} → {fmt(e['date'])}")
+            else:
+                span = f" ({fmt(e['date'])}–{fmt(e['end'])})" if e.get("end") else f" ({fmt(e['date'])})"
+                add(it, "vaihe", f"Uusi vaihe: {e['label']}{span}")
+    return out
+
+
+def update_changelog(new_items: list[dict], settings) -> list[dict]:
+    prev_path = OUT_DIR / "items.json"
+    log_path = OUT_DIR / "changes.json"
+    old_items = load_json(prev_path, {"items": []}).get("items", [])
+    log_rows = load_json(log_path, {"changes": []}).get("changes", [])
+    day = TODAY.isoformat()
+    fresh = compute_changes(old_items, new_items, day) if old_items else []
+    keep_days = settings.get("changelog", {}).get("keep_days", 90)
+    cutoff = (TODAY - dt.timedelta(days=keep_days)).isoformat()
+    existing = {(r["date"], r["id"], r["type"], r["text"]) for r in log_rows}
+    merged = [r for r in log_rows if r["date"] >= cutoff] + [r for r in fresh if (r["date"], r["id"], r["type"], r["text"]) not in existing]
+    merged.sort(key=lambda r: (r["date"], r["id"]), reverse=True)
+    save_json(log_path, {"changes": merged}, compact=True)
+    log(f"changelog: {len(fresh)} uutta muutosta, {len(merged)} lokissa")
+    return merged
+
+
 def apply_overrides(items: list[dict]):
     ov = load_json(CONFIG_DIR / "overrides.json", {})
     by_id = {i["id"]: i for i in items}
@@ -296,11 +357,13 @@ def main():
             continue
         keep.append(it)
     apply_overrides(keep)
+    changes = update_changelog(keep, settings)
     open_now = [i for i in keep if i["scope"] == "fi" and i["status"] == "lausunnolla"]
     meta = {"generated": dt.datetime.now().isoformat(timespec="seconds"), "today": TODAY.isoformat(),
             "counts": {"fi": sum(i["scope"] == "fi" and not i["done"] for i in keep),
                        "eu": sum(i["scope"] == "eu" and not i["done"] for i in keep),
-                       "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now)},
+                       "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now),
+                       "changes7": sum(1 for r in changes if r["date"] >= (TODAY - dt.timedelta(days=7)).isoformat())},
             "topics": list(topics_cfg.keys()) + ["Muut"],
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
