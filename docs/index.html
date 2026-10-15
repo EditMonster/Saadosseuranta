@@ -250,6 +250,12 @@ th.sortable:hover{color:var(--fg)}
 .vlist .now{display:inline-block;margin-left:8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);border:1px solid var(--signal);border-radius:var(--radius);padding:0 5px}
 .vlist .unc{font-family:var(--mono);font-size:10px;color:var(--dim);margin-left:6px}
 
+/* Sync modal */
+.modal{position:fixed;z-index:62;top:50%;left:50%;transform:translate(-50%,-50%);width:min(560px,calc(100% - 32px));max-height:calc(100% - 32px);overflow:auto;padding:18px 20px}
+.modal .sub{margin:6px 0 0;color:var(--muted);font-size:12.5px}
+.sync-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.sync-ta{width:100%;min-height:58px;border:1px solid var(--line2);border-radius:var(--radius);background:var(--bg2);color:var(--fg);font-family:var(--mono);font-size:11px;padding:8px;resize:vertical;margin:4px 0 10px}
+
 /* Footer */
 .foot{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
 
@@ -272,6 +278,7 @@ th.sortable:hover{color:var(--fg)}
 <div class="status" id="status">
   <div class="sys" id="sys"><span><i class="led"></i>Ladataan aineistoa…</span></div>
   <div class="ctl">
+    <button id="open-sync" title="Vie tai tuo seurantalista toiselle koneelle">Seuranta <span id="sync-n"></span></button>
     <a href="data/saadosseuranta.ics" title="Määräajat kalenteriin (.ics)">Kalenteri</a>
     <a href="https://github.com/EditMonster/Saadosseuranta" target="_blank" rel="noopener">GitHub</a>
     <div class="seg" role="group" aria-label="Ulkoasu">
@@ -354,6 +361,18 @@ th.sortable:hover{color:var(--fg)}
 </footer>
 
 <div class="tip" id="tip" hidden></div>
+<div class="scrim" id="sync-scrim" hidden></div>
+<div class="modal panel" id="sync" role="dialog" aria-modal="true" aria-labelledby="sync-title" hidden>
+  <div class="drawer-top"><h3 id="sync-title" style="margin:0">Seurantalistan siirto</h3><button class="close" id="sync-close" aria-label="Sulje">×</button></div>
+  <p class="sub" id="sync-summary"></p>
+  <p class="sub">Seurantalista ja aihealuevalinta tallentuvat selaimeen. Toiselle koneelle ne siirtyvät linkillä tai koodilla.</p>
+  <div class="sync-row"><button class="follow-btn" id="sync-link">Kopioi siirtolinkki</button><button class="follow-btn" id="sync-copy">Kopioi koodi</button><button class="follow-btn" id="sync-clear">Tyhjennä seuranta</button></div>
+  <label class="micro" for="sync-code">Koodi</label>
+  <textarea id="sync-code" class="sync-ta" readonly></textarea>
+  <label class="micro" for="sync-in">Tuo: liitä linkki tai koodi</label>
+  <textarea id="sync-in" class="sync-ta" placeholder="https://… tai koodi"></textarea>
+  <div class="sync-row"><button class="follow-btn" id="sync-merge">Tuo ja yhdistä</button><button class="follow-btn" id="sync-replace">Tuo ja korvaa</button><span class="micro" id="sync-msg"></span></div>
+</div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden>
   <div class="drawer-top">
@@ -396,6 +415,41 @@ try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topi
 try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-follow")||"[]"); if(Array.isArray(f)) state.follow=new Set(f); }catch(e){}
 function persistFollow(){ try{ localStorage.setItem("saadosseuranta-follow",JSON.stringify([...state.follow])); }catch(e){} }
 function toggleFollow(id){ if(state.follow.has(id)) state.follow.delete(id); else state.follow.add(id); persistFollow(); render(); if(!drawer.hidden&&drawer.dataset.id===id) syncDrawerFollow(id); }
+/* follow-list transfer between devices: base64url JSON in a link (?s=) or as a pasted code */
+const b64e=s=>btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+const b64d=s=>decodeURIComponent(escape(atob(s.replace(/-/g,"+").replace(/_/g,"/")+"=".repeat((4-s.length%4)%4))));
+function syncCode(){ return b64e(JSON.stringify({v:1,f:[...state.follow],t:[...state.topics]})); }
+function parseSync(text){
+  let s=(text||"").trim(); if(!s) return null;
+  try{ const u=new URL(s); s=u.searchParams.get("s")||s; }catch(e){ const m=s.match(/[?&]s=([A-Za-z0-9_-]+)/); if(m) s=m[1]; }
+  try{ const o=JSON.parse(b64d(s)); if(o&&Array.isArray(o.f)) return {f:o.f.filter(x=>typeof x==="string"),t:Array.isArray(o.t)?o.t.filter(x=>typeof x==="string"):[]}; }catch(e){}
+  return null;
+}
+function applySync(o,replace){
+  if(replace){ state.follow=new Set(o.f); state.topics=new Set(o.t); } else { o.f.forEach(x=>state.follow.add(x)); o.t.forEach(x=>state.topics.add(x)); }
+  persistFollow(); persist();
+}
+(()=>{ const q=new URLSearchParams(location.search); const o=q.get("s")?parseSync(q.get("s")):null;
+  if(o){ applySync(o,false); try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){} window.__synced=o.f.length; } })();
+const syncEl=document.getElementById("sync"), syncScrim=document.getElementById("sync-scrim");
+function openSync(){
+  document.getElementById("sync-code").value=syncCode();
+  document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} säädöstä · ${state.topics.size?state.topics.size+" aihealuetta valittuna":"kaikki aihealueet"}.`;
+  document.getElementById("sync-msg").textContent=""; document.getElementById("sync-in").value="";
+  syncEl.hidden=false; syncScrim.hidden=false; document.getElementById("sync-close").focus();
+}
+function closeSync(){ syncEl.hidden=true; syncScrim.hidden=true; }
+function copyText(txt,btn,ok){ const orig=btn.textContent; try{ navigator.clipboard.writeText(txt).then(()=>{btn.textContent=ok;setTimeout(()=>btn.textContent=orig,1800);}).catch(()=>{ document.getElementById("sync-code").value=txt; document.getElementById("sync-code").select(); }); }catch(e){ document.getElementById("sync-code").value=txt; document.getElementById("sync-code").select(); } }
+document.getElementById("open-sync").addEventListener("click",openSync);
+document.getElementById("sync-close").addEventListener("click",closeSync);
+syncScrim.addEventListener("click",closeSync);
+document.getElementById("sync-copy").addEventListener("click",e=>copyText(syncCode(),e.currentTarget,"Koodi kopioitu"));
+document.getElementById("sync-link").addEventListener("click",e=>copyText(location.origin+location.pathname+"?s="+syncCode()+"#tilannekuva",e.currentTarget,"Linkki kopioitu"));
+document.getElementById("sync-clear").addEventListener("click",()=>{ state.follow.clear(); persistFollow(); render(); openSync(); document.getElementById("sync-msg").textContent="Seurantalista tyhjennetty."; });
+function doImport(replace){ const o=parseSync(document.getElementById("sync-in").value); const msg=document.getElementById("sync-msg"); if(!o){ msg.textContent="Koodia ei tunnistettu."; return; } applySync(o,replace); render(); msg.textContent=`Tuotu: ${o.f.length} säädöstä, ${o.t.length} aihealuetta (${replace?"korvattu":"yhdistetty"}).`; document.getElementById("sync-code").value=syncCode(); document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} säädöstä.`; }
+document.getElementById("sync-merge").addEventListener("click",()=>doImport(false));
+document.getElementById("sync-replace").addEventListener("click",()=>doImport(true));
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!syncEl.hidden) closeSync(); });
 function starHTML(id){ const on=state.follow.has(id); return `<button class="star" data-follow="${esc(id)}" aria-pressed="${on}" aria-label="${on?"Poista seurannasta":"Lisää seurantaan"}" title="${on?"Seurannassa":"Lisää seurantaan"}">${on?"★":"☆"}</button>`; }
 function changeBadge(id){ const c=CHANGE_BY_ID[id]; if(!c) return ""; const n=-daysTo(pd(c.date)); if(n>14) return ""; return `<span class="pill chg" title="${esc(c.text)}">muuttunut ${n===0?"tänään":n+" pv"}</span>`; }
 let pendingItem=null;
@@ -666,6 +720,7 @@ function render(){
   if(state.tab==="eu"){ document.getElementById("legend-eu").innerHTML=legendHTML("eu"); renderTimeline(document.getElementById("tl-eu"), eu.slice().sort(sortNext)); }
   if(state.tab==="done") renderDone(done);
   document.getElementById("n-follow").textContent=state.follow.size?`(${state.follow.size})`:"";
+  document.getElementById("sync-n").textContent=state.follow.size?`(${state.follow.size})`:"";
   const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab];
   document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"");
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
@@ -686,6 +741,7 @@ Promise.all([
   const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
   document.getElementById("sys").innerHTML=`<span><i class="led ${ageH!==null&&ageH<36?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span><span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span>`;
   render();
+  if(window.__synced){ document.getElementById("sys").insertAdjacentHTML("beforeend",`<span><b>Seurantalista tuotu linkistä (${window.__synced})</b></span>`); }
   if(pendingItem&&DATA.some(i=>i.id===pendingItem)) openItem(pendingItem);
 }).catch(e=>{ document.getElementById("sys").innerHTML='<span><i class="led"></i>Aineistoa ei voitu ladata (data/items.json)</span>'; document.querySelectorAll(".tl,#kpis").forEach(x=>x.innerHTML='<p class="empty">Aineistoa ei voitu ladata – aja scripts/update.py tai tarkista GitHub Actions</p>'); });
 </script>
