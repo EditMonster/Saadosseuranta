@@ -1,0 +1,10 @@
+{
+  "_ohje": "Käsin ylläpidettävät lisäykset ja korjaukset. Avain on säädöksen id (fi-he-129-2026, fi-hanke-<tunnus>, eu-2021-0106). Kentät yhdistetään automaattiseen aineistoon: 'topics' korvaa, 'summary' korvaa, 'events' lisätään (päivämäärät merkitään tarkistamattomiksi, ellei confirmed=true).",
+  "eu-2021-0106": {
+    "summary": "Tekoälyasetus. Huom: AI-omnibus (EU) 2026/1744 siirsi liitteen III suuririskisten järjestelmien velvoitteet 2.12.2027 ja tuotteisiin sulautettujen 2.8.2028 alkaviksi.",
+    "events": [
+      {"date": "2027-12-02", "label": "Liite III suuririskiset (omnibus 2026/1744)", "kind": "soveltaminen", "confirmed": true},
+      {"date": "2028-08-02", "label": "Liite I sulautetut (omnibus 2026/1744)", "kind": "soveltaminen", "confirmed": true}
+    ]
+  }
+}

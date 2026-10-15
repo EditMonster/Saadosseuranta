@@ -1,0 +1,16 @@
+# Säädösseurannan asetukset
+
+site:
+  name: Säädösseuranta
+  # Näytetäänkö kansallisella sivulla myös hankkeet, joilla ei ole vielä yhtään päivämäärää
+  show_items_without_dates: true
+
+eu:
+  # Vuodet, joiden EP-menettelyt haetaan (menettelyn aloitusvuosi)
+  years: [2021, 2022, 2023, 2024, 2025, 2026]
+  # Tavallinen lainsäätämisjärjestys (COD). Lisää "NLE" jos haluat myös hyväksyntämenettelyt.
+  procedure_types: [COD]
+
+completed:
+  # Valmiit-sivulla näytetään säädökset, joiden voimaantulosta on enintään näin monta päivää
+  max_age_days: 730

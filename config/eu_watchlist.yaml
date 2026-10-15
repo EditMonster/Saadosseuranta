@@ -1,0 +1,19 @@
+# EU-menettelyt, jotka haetaan aina riippumatta settings.yaml:n vuosirajauksesta
+# (muoto YYYY/NNNN(COD) tai YYYY/NNNN).
+procedures:
+  - 2020/0359(COD)   # NIS2-direktiivi (EU) 2022/2555
+  - 2020/0266(COD)   # DORA (EU) 2022/2554
+  - 2020/0361(COD)   # Digipalvelusäädös DSA (EU) 2022/2065
+  - 2020/0374(COD)   # Digimarkkinasäädös DMA (EU) 2022/1925
+  - 2021/0106(COD)   # Tekoälyasetus (EU) 2024/1689
+  - 2021/0050(COD)   # Palkka-avoimuusdirektiivi (EU) 2023/970
+  - 2021/0414(COD)   # Alustatyödirektiivi (EU) 2024/2831
+  - 2021/0239(COD)   # Rahanpesuasetus AMLR (EU) 2024/1624
+  - 2022/0047(COD)   # Data-asetus (EU) 2023/2854
+  - 2022/0272(COD)   # Kyberkestävyysasetus CRA (EU) 2024/2847
+  - 2022/0302(COD)   # Tuotevastuudirektiivi (EU) 2024/2853
+  - 2022/0396(COD)   # Pakkaus- ja pakkausjäteasetus (EU) 2025/40
+  - 2025/0045(COD)   # Omnibus I (CSRD/CSDDD)
+  - 2025/0359(COD)   # Digitaalinen omnibus, tekoäly
+  - 2025/0360(COD)   # Digitaalinen omnibus, data/GDPR
+  - 2026/0074(COD)   # EU Inc. (28. yhtiöoikeusjärjestelmä)

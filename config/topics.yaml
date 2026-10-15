@@ -1,0 +1,176 @@
+# Aihealueluokittelu: säädös saa aihealueen, jos sen nimessä, tiivistelmässä tai
+# lakiehdotusten nimissä esiintyy jokin avainsana (kirjainkoko ei merkitse,
+# avainsana saa olla sanan alku: "työsopimus" osuu myös sanaan "työsopimuslain").
+# Säädös voi kuulua useaan aihealueeseen. Jos mikään ei osu, aihealue on "Muut".
+
+topics:
+  Työoikeus:
+    - työsopimus
+    - työaika
+    - vuosiloma
+    - työsuojelu
+    - työehtosopimus
+    - yhteistoimint
+    - lomautu
+    - irtisanom
+    - työntekij
+    - työnantaj
+    - palkka
+    - työttömyysturva
+    - työvoima
+    - tasa-arvo
+    - alustaty
+    - työrauha
+    - työelämä
+    - työmarkkin
+    - employment
+    - worker
+    - labour
+    - platform work
+  Yhtiö ja rahoitus:
+    - osakeyhtiö
+    - osuuskunta
+    - kirjanpito
+    - tilintarkastu
+    - tilinpäätö
+    - kaupparekisteri
+    - luottolaitos
+    - sijoituspalvelu
+    - rahoitusmarkkin
+    - arvopaperi
+    - rahasto
+    - vakuutusyhtiö
+    - rahanpesu
+    - maksupalvelu
+    - yritysjärjestely
+    - elinkeino
+    - yrittäj
+    - company law
+    - corporate
+    - financial
+    - banking
+    - securities
+    - insurance
+    - anti-money
+  Tietosuoja ja digi:
+    - tietosuoja
+    - henkilötieto
+    - sähköinen
+    - digitaali
+    - tietojärjestelm
+    - tunnistautumi
+    - viestint
+    - datakesku
+    - data-ase
+    - data act
+    - gdpr
+    - digital
+    - electronic
+  Tekoäly ja kyber:
+    - tekoäly
+    - kyberturvallisuu
+    - tietoturva
+    - verkko- ja tietojärjestelm
+    - artificial intelligence
+    - cyber
+  Kestävyys ja ympäristö:
+    - ympäristö
+    - ilmasto
+    - päästö
+    - jäte
+    - kestävyys
+    - metsä
+    - luonnonsuojelu
+    - energia
+    - vesi
+    - kaivos
+    - raaka-aine
+    - pakkau
+    - kiertotalou
+    - sustainab
+    - environment
+    - climate
+    - emission
+    - packaging
+    - waste
+  Kuluttaja ja tuotteet:
+    - kuluttaja
+    - tuotevastuu
+    - tuoteturvallisuu
+    - markkinointi
+    - kuluttajaluot
+    - asuntokaup
+    - consumer
+    - product
+  Verotus:
+    - vero
+    - tulli
+    - valmistevero
+    - arvonlisä
+    - taxation
+    - value added tax
+    - customs
+  Rikos ja prosessi:
+    - rikoslain
+    - rikos
+    - esitutkint
+    - pakkokeino
+    - oikeudenkäy
+    - tuomioistui
+    - välimies
+    - välitysmenettely
+    - vankeus
+    - seuraamu
+    - rangaistu
+    - criminal
+    - judicial
+  Hallinto ja hankinnat:
+    - hankint
+    - julkisuus
+    - viranomai
+    - hallintola
+    - valtionavustu
+    - kuntalain
+    - kuntien
+    - kunnan
+    - hyvinvointialue
+    - talousarvio
+    - public procurement
+    - administrative
+  Maahanmuutto:
+    - ulkomaalais
+    - oleskelulupa
+    - kansalaisuu
+    - turvapaik
+    - maahanmuut
+    - migration
+    - asylum
+  Sote ja koulutus:
+    - sosiaalihuol
+    - terveydenhuol
+    - lääk
+    - potila
+    - varhaiskasvatu
+    - perusopetu
+    - opetu
+    - korkeakoulu
+    - eläke
+    - sairausvakuutu
+    - health
+    - medicine
+    - education
+  Turvallisuus ja puolustus:
+    - puolustu
+    - asevelvolli
+    - poliisi
+    - rajavartio
+    - pelastus
+    - huoltovarmuu
+    - defence
+    - security
+  Kansainväliset sopimukset:
+    - sopimuksen hyväksymiseksi
+    - voimaansaattamiseksi
+    - kahdenvälinen
+    - agreement with
+    - treaty

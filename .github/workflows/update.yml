@@ -1,0 +1,43 @@
+name: Päivitä säädösaineisto
+
+on:
+  schedule:
+    # Joka päivä klo 06:40 UTC = 08:40/09:40 Suomen aikaa
+    - cron: "40 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Hae lähteet ja rakenna aineisto
+        run: python scripts/update.py
+
+      - name: Tallenna muutokset
+        run: |
+          git config user.name "saadosseuranta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cache docs/data
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+          else
+            git commit -m "Aineisto päivitetty $(date -u +%Y-%m-%d)"
+            git push
+          fi
