@@ -6,7 +6,7 @@ X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
 UID:fi-he-248-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laiksi valtion talousarviosta annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -15,7 +15,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/248
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-6aee5fe8-lausunto-2026-10-26@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi maataloustuotteiden markkinajärjestelystä annetun lain muuttamisesta
@@ -24,7 +24,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM036:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-2bc7c6ef-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi valtion rahoituksesta kansallisille taidelaitoksille annetun lain 1 ja 2 §:n sekä esittävän taiteen edistämisestä annetun lain 5 ja 6 §:n muuttamisesta
@@ -33,7 +33,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=OKM036:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-241-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sosiaali- ja terveydenhuoltoa ja pelastustoimea koskevan uudistuksen toimeenpanosta ja sitä koskevan lainsäädännön voimaanpanosta annetun lain 65 §:n muuttamisesta
@@ -42,7 +42,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-dc615681-lausunto-2026-10-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta
@@ -51,7 +51,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM034:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-c041a8b7-lausunto-2026-10-28@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261028T000000Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:[FI] Lausuntoaika päättyy: Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-\, kehitys-\, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi
@@ -60,7 +60,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=PLM005:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-229-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi valtion tutkimus- ja kehittämistoiminnan rahoituksesta vuosina 2024–2030 annetun lain 2 §:n muuttamisesta
@@ -69,7 +69,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/229
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-cd699943-lausunto-2026-10-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi sähkömarkkinalain muuttamisesta
@@ -78,7 +78,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM043:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-9cc761f9-lausunto-2026-10-14@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Australian kanssa solmitun työlomasopimuksen voimaansaattamisesta
@@ -87,7 +87,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM038:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-200-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi sosiaalihuoltolain\, ikääntyneen väestön toimintakyvyn tukemisesta sekä iäkkäiden sosiaali- ja terveyspalveluista annetun lain ja sosiaali- ja terveydenhuollon asiakasmaksuista annetun lain muuttamisesta annetun hallituksen esityksen (HE 113/2025 vp) täydentämisestä
@@ -96,7 +96,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/200
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-234-2026-voimaan-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[FI] Voimaan: Laeiksi kirkkolain 3 ja 8 luvun sekä ortodoksisesta kirkosta annetun lain 74 §:n muuttamisesta
@@ -105,7 +105,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/234
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-f7cb4c79-lausunto-2026-10-18@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi tuloverolain 10 §:n muuttamisesta
@@ -114,7 +114,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM091:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-187-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi työttömyysetuuksien rahoituksesta annetun lain muuttamisesta
@@ -123,7 +123,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/187
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-d90876b0-lausunto-2026-10-16@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261016T000000Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[FI] Lausuntoaika päättyy: EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke
@@ -132,7 +132,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=SM013:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-169-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi Kansaneläkelaitoksesta annetun lain muuttamisesta
@@ -141,7 +141,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/169
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-176-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi kunnan peruspalvelujen valtionosuudesta annetun lain muuttamisesta ja väliaikaisesta muuttamisesta annetun lain voimaantulosäännöksen sekä kunnan peruspalvelujen valtionosuudesta annetun lain muuttamisesta
@@ -150,7 +150,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/176
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-173-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi ajoneuvoverolain liitteen muuttamisesta
@@ -159,7 +159,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/173
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-172-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi alkoholi- ja alkoholijuomaverosta annetun lain 4 §:n ja liitteen muuttamisesta
@@ -168,7 +168,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/172
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-171-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi tupakkaverosta annetun lain liitteen muuttamisesta
@@ -177,7 +177,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/171
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-139-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Voimaan: Laiksi vaaratiedotteesta annetun lain 5 ja 7 §:n muuttamisesta
@@ -186,7 +186,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-240-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi fossiilisen polttoaineen jakelun päästökaupasta annetun lain 11 ja 23 §:n sekä eräiden polttoaineiden kestävyyskriteereistä annetun lain 2 §:n muuttamisesta
@@ -195,7 +195,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/240
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-236-2026-voimaan-2026-12-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261230T000000Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:[FI] Voimaan: Laiksi EU:n metsäkatoasetuksen velvoitteiden valvonnasta ja seuraamuksista sekä siihen liittyviksi laeiksi
@@ -204,7 +204,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/236
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-197-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi eräitä yrityksiä koskevasta taloudellisen toiminnan avoimuus- ja tiedonantovelvollisuudesta annetun lain eräiden säännösten kumoamisesta
@@ -213,7 +213,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/197
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-210-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi sijoituspalvelulain ja eräiden muiden lakien muuttamisesta
@@ -222,7 +222,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/210
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-244-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi maatalousyrittäjän eläkelain ja eräiden muiden lakien muuttamisesta
@@ -231,7 +231,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/244
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-211-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Verolainsäädännön yritysjärjestelysäännösten ja eräiden muiden lakien muuttamisesta
@@ -240,7 +240,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/211
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-243-2026-voimaan-2027-04-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270401T000000Z
 DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270402
 SUMMARY:[FI] Voimaan: Lääkkeiden arviointitoiminnan yhtenäistämistä koskevaksi lainsäädännöksi
@@ -249,7 +249,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/243
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-162-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laeiksi eläkesäätiöistä ja eläkekassoista annetun lain ja siihen liittyvien lakien muuttamisesta
@@ -258,7 +258,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/162
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-186-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi sairausvakuutuslain väliaikaisesta muuttamisesta annetun lain ja toimeentulotuesta annetun lain 7 b §:n väliaikaisesta muuttamisesta annetun lain voimaantulosäännöksen muuttamisesta
@@ -267,7 +267,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/186
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-185-2026-voimaan-2027-03-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270301T000000Z
 DTSTART;VALUE=DATE:20270301
 DTEND;VALUE=DATE:20270302
 SUMMARY:[FI] Voimaan: Laeiksi sosiaali- ja terveydenhuollon asiakasmaksuista annetun lain ja kuolemansyyn selvittämisestä annetun lain 12 a §:n muuttamisesta
@@ -276,7 +276,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/185
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-225-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Laeiksi arpajaislain 14 §:n väliaikaisesta muuttamisesta ja rahapelilain 28 §:n muuttamisesta
@@ -285,7 +285,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/225
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-179-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Työvoimapalveluiden järjestämisestä annetun lain ja työttömyysturvalain muuttamisesta
@@ -294,7 +294,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/179
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-212-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi ammatillisesta koulutuksesta annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -303,7 +303,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/212
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-219-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi opioidiyliannostuksen vastalääkkeiden jakelutoiminnasta sekä laiksi lääkelain muuttamisesta
@@ -312,7 +312,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/219
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-239-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Eräitä Työllisyys-\, kehittämis- ja hallintokeskuksen tehtäviä koskevan lainsäädännön muuttamiseksi
@@ -321,7 +321,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/239
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-167-2026-voimaan-2027-09-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270901T000000Z
 DTSTART;VALUE=DATE:20270901
 DTEND;VALUE=DATE:20270902
 SUMMARY:[FI] Voimaan: Laiksi sosiaali- ja terveydenhuollon asiakastietojen käsittelystä annetun lain muuttamisesta
@@ -330,7 +330,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/167
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-224-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi vaalilain ja vaalirahoituslain muuttamisesta
@@ -339,7 +339,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/224
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-178-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi metsityksen määräaikaisesta tukemisesta annetun lain muuttamisesta
@@ -348,7 +348,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/178
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-58b24f67-lausunto-2026-10-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi tekijänoikeuslain muuttamisesta
@@ -357,7 +357,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=OKM067:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-128-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laiksi hyödyllisyysmallioikeudesta annetun lain muuttamisesta
@@ -366,7 +366,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/128
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-207-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi valtion vahingonkorvaustoiminnasta annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -375,7 +375,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/207
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-255-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laiksi puolustuskeksintöjen salassapidon turvaamisesta
@@ -384,7 +384,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/255
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-f22cd269-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta
@@ -393,7 +393,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM123:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-231-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi valtion eläkerahastosta annetun lain 6 §:n muuttamisesta
@@ -402,7 +402,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/231
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-156-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi asumisoikeusasunnoista annetun lain muuttamisesta
@@ -411,7 +411,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/156
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-135-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi kiinteistönmuodostamislain 3 ja 283 §:n sekä yksityistielain 76 §:n muuttamisesta
@@ -420,7 +420,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/135
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-131-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi huoneistotietojärjestelmää koskevan lainsäädännön voimaanpanosta annetun lain muuttamisesta
@@ -429,7 +429,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/131
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-183-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi kuolemansyyn selvittämisestä annetun lain sekä ihmisen elimien\, kudoksien ja solujen lääketieteellisestä käytöstä annetun lain muuttamisesta
@@ -438,7 +438,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/183
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-66-2026-voimaan-2027-11-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20271101T000000Z
 DTSTART;VALUE=DATE:20271101
 DTEND;VALUE=DATE:20271102
 SUMMARY:[FI] Voimaan: Ambulanssikuljetusten ja ensihoitopalveluun sisältyvien kuljetusten järjestämis- ja rahoitusvastuun uudistamista ja sosiaali- ja terveydenhuollon asiakasmaksumuutoksia koskevaksi lainsäädännöksi
@@ -447,7 +447,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/66
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-4bd687c0-lausunto-2026-10-13@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:[FI] Lausuntoaika päättyy: Suomen ja Australian välisen perhe- ja puolisosopimuksen hyväksymiseksi ja voimaansaattamiseksi
@@ -456,7 +456,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=UM018:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-233-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Varhaiskasvatuksen\, perusopetuksen ja vapaan sivistystyön järjestämistä häiriötilanteissa koskevaksi lainsäädännöksi
@@ -465,7 +465,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/233
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-193-2026-voimaan-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
@@ -474,7 +474,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-140-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Rajavartiolaitoksen rikostiedustelua koskevaksi lainsäädännöksi
@@ -483,7 +483,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/140
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-143-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin kuningaskunnan alueella Ruotsin kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
@@ -492,7 +492,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-232-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Tullin rikostiedustelua koskevaksi lainsäädännöksi
@@ -501,7 +501,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/232
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-174-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi vuoden 2027 tuloveroasteikosta ja tuloverolain muuttamisesta sekä eräiksi muiksi verolaeiksi
@@ -510,7 +510,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/174
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-146-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Työeläkejärjestelmän viimeisen eläkelaitoksen periaatteen laajentamista koskevaksi lainsäädännöksi ja eräiksi muiksi laeiksi
@@ -519,7 +519,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/146
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-242-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi lääkelain muuttamisesta ja siihen liittyviksi laeiksi
@@ -528,7 +528,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/242
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-198-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi lääkkeiden velvoitevarastoinnista annetun lain muuttamisesta
@@ -537,7 +537,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/198
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-181-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi sosiaali- ja terveydenhuollon valvonnasta annetun lain muuttamisesta ja väliaikaisesta muuttamisesta sekä Harmaan talouden selvitysyksiköstä annetun lain 6 §:n muuttamisesta
@@ -546,7 +546,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/181
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-89-2026-voimaan-2026-12-07@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[FI] Voimaan: Eräiden sosiaaliturvaetuuksien valtion osuuksien maksamista koskevien säännösten muuttamisesta
@@ -555,7 +555,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/89
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-256-2026-voimaan-2027-08-07@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270807T000000Z
 DTSTART;VALUE=DATE:20270807
 DTEND;VALUE=DATE:20270808
 SUMMARY:[FI] Voimaan: Laiksi ihmisessä käytettäväksi tarkoitettujen ihmisperäisten aineiden käytöstä sekä siihen liittyviksi laeiksi
@@ -564,7 +564,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/256
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-116-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Maailman postiliiton yleissopimuksen toisen lisäpöytäkirjan hyväksymiseksi ja voimaansaattamiseksi sekä laiksi postilain 77 §:n muuttamisesta
@@ -573,7 +573,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/116
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-94-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Voimaan: Laeiksi työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta
@@ -582,7 +582,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-117-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi valtion virkamieslain ja turvallisuusselvityslain 50 §:n muuttamisesta
@@ -591,7 +591,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-194-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi audiovisuaalisen tilausohjelmapalvelun tarjoajan velvollisuudesta investoida audiovisuaaliseen sisältöön
@@ -600,7 +600,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/194
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-182-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Lastensuojelulaiksi ja siihen liittyviksi laeiksi
@@ -609,7 +609,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/182
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-106-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi digitaalisten palvelujen tarjoamisesta annetun lain muuttamisesta
@@ -618,7 +618,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/106
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-132-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Työneuvoston ja yhteistoiminta-asiamiehen toimiston lakkauttamista ja tehtävien siirtämistä koskevaksi lainsäädännöksi
@@ -627,7 +627,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-912e0465-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:[FI] Lausuntoaika päättyy: Kommandiittiyhtiömuotoisia rahastoja koskevan verolainsäädännön uudistamiseksi
@@ -636,7 +636,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM084:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-151-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi tuloverolain 119 ja 124 §:n sekä rajoitetusti verovelvollisen tulon verottamisesta annetun lain 7 ja 15 §:n muuttamisesta
@@ -645,7 +645,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/151
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-35-2026-voimaan-2027-08-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270801T000000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:[FI] Voimaan: Laiksi perusopetuslain muuttamisesta
@@ -654,7 +654,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/35
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-184-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi sosiaali- ja terveydenhuollon järjestämisestä annetun lain ja terveydenhuoltolain 54 ja 57 §:n muuttamisesta
@@ -663,7 +663,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/184
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-152-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi kirkkolain muuttamisesta
@@ -672,7 +672,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/152
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-214-2026-voimaan-2027-05-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[FI] Voimaan: Laiksi metsälain muuttamisesta
@@ -681,7 +681,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/214
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-81-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi terveydenhuoltolain\, vankeuslain 10 luvun 1 §:n ja tutkintavankeuslain 6 luvun 1 §:n muuttamisesta
@@ -690,7 +690,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-213-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi oppivelvollisuuslain muuttamisesta ja siihen liittyviksi laeiksi
@@ -699,7 +699,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/213
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-168-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi terveydenhuoltolain\, sosiaalihuollon ammattihenkilöistä annetun lain ja terveydenhuollon ammattihenkilöistä annetun lain muuttamisesta
@@ -708,7 +708,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/168
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-115-2026-voimaan-2027-08-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270801T000000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:[FI] Voimaan: Laiksi taiteen perusopetuksesta ja siihen liittyviksi laeiksi
@@ -717,7 +717,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/115
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-118-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi vuosilomalain muuttamisesta ja eräiksi muiksi laeiksi
@@ -726,7 +726,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/118
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-125-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi yksityistielain muuttamisesta
@@ -735,7 +735,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/125
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-69-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi lasten kotihoidon ja yksityisen hoidon tuesta annetun lain muuttamisesta
@@ -744,7 +744,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/69
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-16-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi poliisin hallinnosta annetun lain\, Poliisiammattikorkeakoulusta annetun lain ja poliisilain 1 luvun 10 §:n muuttamisesta
@@ -753,7 +753,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/16
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-49ef2d6a-lausunto-2026-10-15@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:[FI] Lausuntoaika päättyy: Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano
@@ -762,7 +762,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=OM070:00/2024
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-133-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Voimaan: Laiksi eräiden kriittisiä raaka-aineita koskevan Euroopan parlamentin ja neuvoston asetuksen mukaisten velvoitteiden toimeenpanosta ja valvonnasta ja siihen liittyviksi laeiksi
@@ -771,7 +771,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/133
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-227-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi elinkeinotulon verottamisesta annetun lain muuttamisesta
@@ -780,7 +780,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/227
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-96-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Laeiksi kirjanpitolain\, kaupparekisterilain 11 §:n ja tilintarkastuslain muuttamisesta
@@ -789,7 +789,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/96
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-136-2026-voimaan-2027-07-06@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270706T000000Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270707
 SUMMARY:[FI] Voimaan: Laeiksi alusturvallisuuden valvonnasta ja sakon täytäntöönpanosta annetun lain 1 §:n muuttamisesta
@@ -798,7 +798,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/136
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-235-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi valtakunnallisista opinto-\, koulutus- ja tutkintorekistereistä annetun lain\, julkisyhteisöjen henkilöstöltä vaadittavasta kielitaidosta annetun lain 13 §:n ja valtakunnallisesta osaamistietovarannosta annetun lain 9 §:n muuttamisesta
@@ -807,7 +807,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/235
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-145-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi tupakkalain muuttamisesta
@@ -816,7 +816,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/145
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-230-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi hankintatietovarannosta ja siihen liittyviksi laeiksi
@@ -825,7 +825,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-180-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sosiaalihuoltolain muuttamisesta ja siihen liittyviksi laeiksi
@@ -834,7 +834,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/180
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-238-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Eräitä työoikeudellisia vanhentumis- ja kanneaikoja koskevaksi lainsäädännöksi
@@ -843,7 +843,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/238
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-196-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi siviilipalveluslain muuttamisesta ja eräiksi muiksi laeiksi
@@ -852,7 +852,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/196
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-149-2026-voimaan-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[FI] Voimaan: Laiksi puolustustarvikkeiden viennistä annetun lain muuttamisesta
@@ -861,7 +861,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/149
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-160-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi jätelain\, ympäristönsuojelulain\, hallinto-oikeuslain ja tuomioistuinlain muuttamisesta
@@ -870,7 +870,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/160
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-190-2026-voimaan-2026-12-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261209T000000Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:[FI] Voimaan: Laeiksi tuotevastuulain ja kuluttajansuojalain 12 luvun 1 a §:n muuttamisesta
@@ -879,7 +879,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/190
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-208-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Laeiksi luottolaitostoiminnasta annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -888,7 +888,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/208
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-68-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi vammaisetuuksista annetun lain\, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta
@@ -897,7 +897,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-218-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Eurooppalaisen terveystietoaluetta koskevan asetuksen terveystietojen toissijaista käyttöä ja seuraamuksia täydentäväksi sääntelyksi
@@ -906,7 +906,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/218
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-110-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi lääketieteellisestä tutkimuksesta annetun lain\, kliinisestä lääketutkimuksesta annetun lain ja biopankkilain muuttamisesta sekä eräiksi muiksi laeiksi
@@ -915,7 +915,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/110
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-97-2026-voimaan-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[FI] Voimaan: Laeiksi sähköisestä lääkemääräyksestä annetun lain ja sosiaali- ja terveydenhuollon asiakastietojen käsittelystä annetun lain 102 §:n muuttamisesta
@@ -924,7 +924,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/97
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-109-2026-voimaan-2027-04-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270401T000000Z
 DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270402
 SUMMARY:[FI] Voimaan: Laeiksi yleistukilain\, työvoimapalveluiden järjestämisestä annetun lain sekä yleisistä kielitutkinnoista annetun lain muuttamisesta
@@ -933,7 +933,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/109
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-220-2026-voimaan-2027-01-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270120T000000Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:[FI] Voimaan: Laiksi työssä käytettäväksi tarkoitettujen teknisten laitteiden vaatimustenmukaisuudesta ja eräiden siihen liittyvien lakien muuttamisesta
@@ -942,7 +942,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/220
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-129-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi naisten ja miesten välisestä tasa-arvosta annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -951,7 +951,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/129
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-157-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Ympäristörikosdirektiivin täytäntöönpanoa koskevaksi lainsäädännöksi
@@ -960,7 +960,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/157
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-90-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Sosiaali- ja terveydenhuollon palveluvalikoiman periaatteita koskevaksi lainsäädännöksi
@@ -969,7 +969,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/90
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-14-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Varmuusvankeutta ja elinkautisvankien vapauttamismenettelyn muuttamista koskevaksi lainsäädännöksi
@@ -978,7 +978,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/14
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-166-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Saaristolaiksi
@@ -987,7 +987,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/166
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-107-2026-voimaan-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[FI] Voimaan: Kuolinpesän sähköistä asiointia koskevaksi lainsäädännöksi
@@ -996,7 +996,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/107
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-126-2026-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Laeiksi osakeyhtiölain ja osuuskuntalain muuttamisesta sekä niihin liittyviksi laeiksi
@@ -1005,7 +1005,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/126
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-46-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Tietosuojalain ja henkilötietojen käsittelystä rikosasioissa ja kansallisen turvallisuuden ylläpitämisen yhteydessä annetun lain seuraamussäännösten muuttamiseksi
@@ -1014,7 +1014,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/46
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-70-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Uudeksi alueidenkäyttölaiksi ja laeiksi eräiden siihen liittyvien lakien muuttamisesta
@@ -1023,7 +1023,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/70
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-16-2025-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Uutta rahapelijärjestelmää koskevaksi lainsäädännöksi
@@ -1032,7 +1032,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/16
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-71-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi turvallisuustutkintalain ja kyberturvallisuuslain 17 §:n muuttamisesta
@@ -1041,7 +1041,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/71
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-121-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Rikostiedustelua koskevaksi lainsäädännöksi
@@ -1050,7 +1050,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/121
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-221-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi eräiden valtion omistamien alueiden muodostamisesta soidensuojelualueiksi annetun lain muuttamisesta
@@ -1059,7 +1059,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/221
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-4561553d-lausunto-2026-10-23@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:[FI] Lausuntoaika päättyy: Keskinäisestä avunannosta ja yhteistyöstä tulliasioissa Moldovan tasavallan kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
@@ -1068,7 +1068,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM104:00/2023
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-95-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi eräiden valtiontukea koskevien Euroopan unionin säännösten soveltamisesta sekä siihen liittyviksi laeiksi
@@ -1077,7 +1077,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/95
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-192-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Etäyhteyksien käyttöä oikeudenkäynnissä hallintoasioissa koskevaksi lainsäädännöksi
@@ -1086,7 +1086,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/192
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-103-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Hallintotuomioistuinten kokoonpanoja koskevan lainsäädännön uudistamiseksi
@@ -1095,7 +1095,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-77-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta
@@ -1104,7 +1104,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-8faac772-lausunto-2026-10-14@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Etelä-Korean kanssa solmitun työlomasopimuksen voimaansaattamisesta
@@ -1113,7 +1113,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM071:00/2019
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-113-2026-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:[FI] Voimaan: Laiksi tuloverolain muuttamisesta ja väliaikaisesta muuttamisesta
@@ -1122,7 +1122,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi tuloverolain muuttamisesta
@@ -1131,7 +1131,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/57
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-67-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun lain ja sairausvakuutuslain 15 ja 17 luvun sekä eräiden muiden lakien muuttamisesta
@@ -1140,7 +1140,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/67
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-78-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta
@@ -1149,7 +1149,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/78
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-25-2026-voimaan-2027-05-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[FI] Voimaan: Rikosseuraamuslaitoksen organisaation ja rikosseuraamusalan koulutusjärjestelmän uudistamista koskevaksi lainsäädännöksi
@@ -1158,7 +1158,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-56-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi hyvinvointialueiden rahoituksesta annetun lain ja saariston kehityksen edistämisestä annetun lain muuttamisesta
@@ -1167,7 +1167,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/56
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-200-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi rikosasioiden ja eräiden riita-asioiden sovittelusta annetun lain ja Oikeuspalveluvirastosta annetun lain muuttamisesta
@@ -1176,7 +1176,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/200
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-154-2025-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Lentoliikenteestä Ruandan tasavallan kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
@@ -1185,7 +1185,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/154
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-164-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Tulon kohdistamista kiinteälle toimipaikalle koskevaksi lainsäädännöksi
@@ -1194,7 +1194,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/164
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-40-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Työeläkejärjestelmää koskevan lainsäädännön muuttamiseksi
@@ -1203,7 +1203,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/40
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-74-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi kotoutumisen edistämisestä annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -1212,7 +1212,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/74
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-43-2026-voimaan-2027-01-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270130T000000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:[FI] Voimaan: Laiksi vakuutusyhtiölain muuttamisesta ja eräiksi siihen liittyviksi laeiksi
@@ -1221,7 +1221,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-15-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi liikenteen palveluista annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -1230,7 +1230,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/15
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-8-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Nuorisorangaistusta koskevan lainsäädännön muuttamista koskevaksi lainsäädännöksi
@@ -1239,7 +1239,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/8
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-5-2026-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laiksi sakon ja rikesakon määräämisestä annetun lain muuttamisesta ja siihen liittyviksi laeiksi
@@ -1248,7 +1248,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/5
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-118-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi terveydenhuoltolain muuttamisesta ja siihen liittyviksi laeiksi
@@ -1257,7 +1257,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/118
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-120-2025-voimaan-2026-11-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[FI] Voimaan: Laeiksi kuluttajansuojalain muuttamisesta ja eräiden kuluttajaluottojen välittäjistä sekä niihin liittyviksi laeiksi
@@ -1266,7 +1266,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/120
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-163-2025-voimaan-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[FI] Voimaan: Terrorismirikoksia koskevan sääntelyn muuttamiseksi
@@ -1275,7 +1275,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/163
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-54-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi kansalaisuuslain muuttamisesta ja siihen liittyviksi laeiksi
@@ -1284,7 +1284,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/54
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-13-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Valtion aluehallintouudistusta koskevaksi lainsäädännöksi
@@ -1293,7 +1293,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/13
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-24-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Ydinenergialaiksi ja siihen liittyviksi laeiksi
@@ -1302,7 +1302,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/24
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-204-2025-voimaan-2027-06-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
 DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Patenttilaiksi
@@ -1311,7 +1311,7 @@ URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/204
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a907c52b-lausunto-2026-11-13@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261113T000000Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:[FI] Lausuntoaika päättyy: Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027
@@ -1320,7 +1320,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM043:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-944075f9-lausunto-2026-11-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:[FI] Lausuntoaika päättyy: Maa- ja metsätalousministeriön asetus Maanmittauslaitoksen maksuista sekä kaupanvahvistuksesta perittävistä maksuista ja korvauksista vuonna 2027
@@ -1329,7 +1329,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM038:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-62e27420-lausunto-2026-11-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:[FI] Lausuntoaika päättyy: Maa- ja metsätalousministeriön asetus kiinteistötietojärjestelmän tulojen jakamisesta vuosina 2027 ja 2028
@@ -1338,7 +1338,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM039:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-d646e721-lausunto-2026-11-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:[FI] Lausuntoaika päättyy: Maa- ja metsätalousministeriön asetus kiinteistöjärjestelmän suoritteista ja tietopalvelusta perittävistä maksuista  vuosina 2027 ja 2028
@@ -1347,7 +1347,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM040:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-2b307d2f-lausunto-2026-11-25@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus perusopetusasetuksen muuttamisesta
@@ -1356,7 +1356,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=OKM032:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-3c104bd9-lausunto-2026-11-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta
@@ -1365,7 +1365,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=MMM006:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-b33253fa-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[FI] Lausuntoaika päättyy: Valtiovarainministeriön asetus eräiden yleishyödyllisten yhteisöjen veronhuojennuksista
@@ -1374,7 +1374,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM119:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-3a5f48e7-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus ydinenergian käyttöä koskevista valtioneuvoston maksullisista suoritteista
@@ -1383,7 +1383,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM052:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-32ac1aaf-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus verontilityksestä
@@ -1392,7 +1392,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM116:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-2893c0dc-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus verotusmenettelystä
@@ -1401,7 +1401,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM115:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-1f9643c0-lausunto-2026-10-27@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261027T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus Rikosseuraamuslaitoksesta annetun valtioneuvoston asetuksen muuttamisesta
@@ -1410,7 +1410,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=OM059:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-ba66602a-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[FI] Lausuntoaika päättyy: Valtiovarainministeriön asetus veronkannosta annetun valtiovarainministeriön asetuksen muuttamisesta
@@ -1419,7 +1419,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=VM117:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-b8a220c7-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[FI] Lausuntoaika päättyy: Yksityistieasetuksen muuttaminen
@@ -1428,7 +1428,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=LVM025:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-e19d2053-lausunto-2026-10-23@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus eräistä valtioneuvoston yleisistunnossa ratkaistavien työ- ja elinkeinoministeriön toimialaan kuuluvien asioiden maksullisista suoritteista
@@ -1437,7 +1437,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM047:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a4c6876a-lausunto-2026-11-11@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen
@@ -1446,7 +1446,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=SM022:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a0cdecbd-lausunto-2026-10-29@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)
@@ -1455,7 +1455,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=LVM041:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-0b695719-lausunto-2026-11-23@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus alueellisista toimeentulotukiasioiden neuvottelukunnista annetun valtioneuvoston asetuksen 1 §:n muuttamisesta
@@ -1464,7 +1464,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=STM071:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-eb8e1989-lausunto-2026-11-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[FI] Lausuntoaika päättyy: SPR asetuksen muuttaminen
@@ -1473,7 +1473,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=SM019:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-611cacbc-lausunto-2026-10-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:[FI] Lausuntoaika päättyy: Uuden ydinenergialain nojalla vuonna 2026 annettavat valtioneuvoston asetukset
@@ -1482,7 +1482,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=TEM034:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-03809642-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Valtiovarainministeriön asetus kunnan taloustietojen toimittamiseen sovellettavasta tietosisällöstä ja teknisistä kuvauksista koskien tilikautta 2027
@@ -1491,7 +1491,7 @@ URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/506
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-1ef0f51a-lausunto-2026-11-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta
@@ -1500,7 +1500,7 @@ URL:https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2020-0359-maaraaika-2027-10-17@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20271017T000000Z
 DTSTART;VALUE=DATE:20271017
 DTEND;VALUE=DATE:20271018
 SUMMARY:[EU] Määräaika: NIS2-direktiivi
@@ -1509,7 +1509,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2022/2555/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2020-0361-maaraaika-2027-02-18@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270218T000000Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:[EU] Määräaika: Digipalvelusäädös (DSA)
@@ -1518,7 +1518,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2022/2065/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2020-0361-maaraaika-2027-11-17@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20271117T000000Z
 DTSTART;VALUE=DATE:20271117
 DTEND;VALUE=DATE:20271118
 SUMMARY:[EU] Määräaika: Digipalvelusäädös (DSA)
@@ -1527,7 +1527,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2022/2065/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0105-soveltaminen-2026-10-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:[EU] Soveltaminen: Konetuotteet
@@ -1536,7 +1536,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/1230/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0105-soveltaminen-2027-01-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270120T000000Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:[EU] Soveltaminen: Konetuotteet
@@ -1545,7 +1545,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/1230/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0105-maaraaika-2027-10-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20271019T000000Z
 DTSTART;VALUE=DATE:20271019
 DTEND;VALUE=DATE:20271020
 SUMMARY:[EU] Määräaika: Konetuotteet
@@ -1554,7 +1554,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/1230/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0106-soveltaminen-2027-08-02@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270802T000000Z
 DTSTART;VALUE=DATE:20270802
 DTEND;VALUE=DATE:20270803
 SUMMARY:[EU] Soveltaminen: Tekoälyasetus (AI Act)
@@ -1563,7 +1563,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0170-maaraaika-2026-12-13@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261213T000000Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:[EU] Määräaika: Asetus yleisestä tuoteturvallisuudesta\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1025/2012 muuttamisesta sekä neuvoston direktiivin 87/357/ETY ja Eu
@@ -1572,7 +1572,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/988/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0171-maaraaika-2026-11-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[EU] Määräaika: Kulutusluotot
@@ -1581,7 +1581,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2023/2225/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0191-maaraaika-2026-12-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261221T000000Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:[EU] Määräaika: Eurooppalaiset vihreät joukkolainat
@@ -1590,7 +1590,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2631/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0203-maaraaika-2027-02-28@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270228T000000Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270301
 SUMMARY:[EU] Määräaika: Energiatehokkuus (uudelleenlaadittu)
@@ -1599,7 +1599,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2023/1791/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0205-maaraaika-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Määräaika: Tasapuolisten toimintaedellytysten varmistaminen kestävälle lentoliikenteelle
@@ -1608,7 +1608,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2405/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0214-soveltaminen-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Soveltaminen: Hiilirajamekanismin perustaminen
@@ -1617,7 +1617,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/956/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0214-soveltaminen-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[EU] Soveltaminen: Hiilirajamekanismin perustaminen
@@ -1626,7 +1626,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/956/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0239-maaraaika-2027-07-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270709T000000Z
 DTSTART;VALUE=DATE:20270709
 DTEND;VALUE=DATE:20270710
 SUMMARY:[EU] Määräaika: Rahanpesuasetus (AMLR)
@@ -1635,7 +1635,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1624/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0239-soveltaminen-2027-07-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270710T000000Z
 DTSTART;VALUE=DATE:20270710
 DTEND;VALUE=DATE:20270711
 SUMMARY:[EU] Soveltaminen: Rahanpesuasetus (AMLR)
@@ -1644,7 +1644,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1624/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0240-maaraaika-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Määräaika: Rahanpesun ja terrorismin rahoituksen torjuntaviranomaisen perustaminen ja asetusten (EU) N:o 1093/2010\, (EU) N:o 1094/2010 ja (EU) N:o 1095/2010 muuttaminen
@@ -1653,7 +1653,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1620/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0244-maaraaika-2027-07-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270710T000000Z
 DTSTART;VALUE=DATE:20270710
 DTEND;VALUE=DATE:20270711
 SUMMARY:[EU] Määräaika: Euroopan parlamentin ja neuvoston direktiivin (EU) 2019/1153 muuttaminen siltä osin kuin on kyse toimivaltaisten viranomaisten pääsystä keskitettyihin pankkitil
@@ -1662,7 +1662,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1654/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0250-maaraaika-2027-07-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270710T000000Z
 DTSTART;VALUE=DATE:20270710
 DTEND;VALUE=DATE:20270711
 SUMMARY:[EU] Määräaika: Jäsenvaltioissa käyttöön otettavat mekanismit rahoitusjärjestelmän käytön estämiseksi rahanpesuun ja terrorismin rahoitukseen ja direktiivin (EU) 2015/849 kumoa
@@ -1671,7 +1671,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1640/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0295-maaraaika-2027-01-29@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270129T000000Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:[EU] Määräaika: Direktiivin 2009/138/EY muuttaminen oikeasuhteisuuden\, valvonnan laadun\, raportoinnin\, pitkäaikaisia takuita koskevien toimenpiteiden\, makrovakausvälineiden\, ke
@@ -1680,7 +1680,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/2/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0295-maaraaika-2027-01-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270130T000000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:[EU] Määräaika: Direktiivin 2009/138/EY muuttaminen oikeasuhteisuuden\, valvonnan laadun\, raportoinnin\, pitkäaikaisia takuita koskevien toimenpiteiden\, makrovakausvälineiden\, ke
@@ -1689,7 +1689,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/2/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0296-maaraaika-2027-01-29@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270129T000000Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:[EU] Määräaika: Vakuutus- ja jälleenvakuutusyritysten elvytys- ja kriisinratkaisukehyksen luominen ja direktiivien 2002/47/EY\, 2004/25/EY\, 2009/138/EY ja (EU) 2017/1132 sekä as
@@ -1698,7 +1698,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/1/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0296-soveltaminen-2027-01-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270130T000000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:[EU] Soveltaminen: Vakuutus- ja jälleenvakuutusyritysten elvytys- ja kriisinratkaisukehyksen luominen ja direktiivien 2002/47/EY\, 2004/25/EY\, 2009/138/EY ja (EU) 2017/1132 sekä as
@@ -1707,7 +1707,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/1/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0296-maaraaika-2027-01-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270130T000000Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 SUMMARY:[EU] Määräaika: Vakuutus- ja jälleenvakuutusyritysten elvytys- ja kriisinratkaisukehyksen luominen ja direktiivien 2002/47/EY\, 2004/25/EY\, 2009/138/EY ja (EU) 2017/1132 sekä as
@@ -1716,7 +1716,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/1/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0297-soveltaminen-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Soveltaminen: Yleisen tullietuusjärjestelmän soveltaminen ja Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 978/2012 kumoaminen
@@ -1725,7 +1725,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1395/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0341-maaraaika-2027-01-11@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270111T000000Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270112
 SUMMARY:[EU] Määräaika: Direktiivin 2013/36/EU muuttaminen valvontavaltuuksien\, seuraamusten\, kolmannen maan sivuliikkeiden sekä ympäristöön\, yhteiskuntaan ja hyvään hallintotapaan lii
@@ -1734,7 +1734,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1619/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0366-soveltaminen-2026-12-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261230T000000Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:[EU] Soveltaminen: Tiettyjen metsäkatoon ja metsien tilan heikkenemiseen liittyvien hyödykkeiden ja tuotteiden asettaminen saataville unionin markkinoilla ja vienti unionin ulkopu
@@ -1743,7 +1743,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/1115/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0366-soveltaminen-2027-06-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[EU] Soveltaminen: Tiettyjen metsäkatoon ja metsien tilan heikkenemiseen liittyvien hyödykkeiden ja tuotteiden asettaminen saataville unionin markkinoilla ja vienti unionin ulkopu
@@ -1752,7 +1752,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/1115/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0367-soveltaminen-2026-11-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261121T000000Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:[EU] Soveltaminen: Jätteiden siirrot sekä asetusten (EU) N:o 1257/2013 ja (EU) 2020/1056 muuttaminen
@@ -1761,7 +1761,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1157/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0367-soveltaminen-2027-05-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270521T000000Z
 DTSTART;VALUE=DATE:20270521
 DTEND;VALUE=DATE:20270522
 SUMMARY:[EU] Soveltaminen: Jätteiden siirrot sekä asetusten (EU) N:o 1257/2013 ja (EU) 2020/1056 muuttaminen
@@ -1770,7 +1770,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1157/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0376-maaraaika-2027-04-16@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270416T000000Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270417
 SUMMARY:[EU] Määräaika: Direktiivien 2011/61/EU ja 2009/65/EY muuttaminen tehtävien siirtämistä koskevien järjestelyjen\, maksuvalmiusriskin hallinnan\, valvontaan liittyvän raportoinnin
@@ -1779,7 +1779,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/927/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0378-maaraaika-2027-07-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270710T000000Z
 DTSTART;VALUE=DATE:20270710
 DTEND;VALUE=DATE:20270711
 SUMMARY:[EU] Määräaika: Rahoituspalvelujen\, pääomamarkkinoiden ja kestävyyden kannalta merkityksellisiin julkisesti saatavilla oleviin tietoihin keskitetyn pääsyn tarjoavan eurooppalai
@@ -1788,7 +1788,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2859/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0411-maaraaika-2027-06-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270612T000000Z
 DTSTART;VALUE=DATE:20270612
 DTEND;VALUE=DATE:20270613
 SUMMARY:[EU] Määräaika: Jäsenvaltioiden lainvalvontaviranomaisten välinen tietojenvaihto ja neuvoston puitepäätöksen 2006/960/YOS kumoaminen
@@ -1797,7 +1797,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2023/977/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2021-0414-maaraaika-2026-12-02@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261202T000000Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:[EU] Määräaika: Alustatyödirektiivi
@@ -1806,7 +1806,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/2831/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0047-soveltaminen-2027-09-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270912T000000Z
 DTSTART;VALUE=DATE:20270912
 DTEND;VALUE=DATE:20270913
 SUMMARY:[EU] Soveltaminen: Data-asetus (Data Act)
@@ -1815,7 +1815,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2854/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0053-maaraaika-2027-01-29@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270129T000000Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:[EU] Määräaika: Direktiivin 2001/82/EY ja asetuksen (EY) N:o 726/2004 mukaisesti myyntiluvan saaneiden eläinlääkkeiden pakkauksia ja merkintöjä koskevat siirtymäsäännöt
@@ -1824,7 +1824,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2022/839/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0085-maaraaika-2027-01-08@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270108T000000Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:[EU] Määräaika: Toimenpiteet yhteisen korkean kyberturvatason varmistamiseksi unionin toimielimissä\, elimissä ja laitoksissa
@@ -1833,7 +1833,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2841/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0094-maaraaika-2026-12-08@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261208T000000Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:[EU] Määräaika: Rakennustuotteiden kaupan pitämistä koskevien ehtojen yhdenmukaistaminen\, asetuksen (EU) 2019/1020 muuttaminen ja asetuksen (EU) N:o 305/2011 kumoaminen
@@ -1842,7 +1842,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/3110/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0094-soveltaminen-2027-01-08@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270108T000000Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:[EU] Soveltaminen: Rakennustuotteiden kaupan pitämistä koskevien ehtojen yhdenmukaistaminen\, asetuksen (EU) 2019/1020 muuttaminen ja asetuksen (EU) N:o 305/2011 kumoaminen
@@ -1851,7 +1851,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/3110/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0115-maaraaika-2026-12-02@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261202T000000Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:[EU] Määräaika: Käsiteollisuustuotteiden ja teollisuustuotteiden maantieteellisten merkintöjen suoja ja Euroopan parlamentin ja neuvoston asetusten (EU) 2017/1001 ja (EU) 2019/
@@ -1860,7 +1860,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2411/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0140-soveltaminen-2027-03-26@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270326T000000Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
 SUMMARY:[EU] Soveltaminen: Eurooppalainen terveysdata-avaruus
@@ -1869,7 +1869,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2025/327/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0167-maaraaika-2026-11-23@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:[EU] Määräaika: Varojen takaisinhankinta ja menetetyksi tuomitseminen
@@ -1878,7 +1878,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1260/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0167-maaraaika-2027-05-24@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270524T000000Z
 DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270525
 SUMMARY:[EU] Määräaika: Varojen takaisinhankinta ja menetetyksi tuomitseminen
@@ -1887,7 +1887,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1260/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0219-maaraaika-2026-12-31@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:[EU] Määräaika: Euroopan puolustusteollisuuden vahvistamista yhteistoiminnallisten hankintojen avulla koskevan välineen perustaminen
@@ -1896,7 +1896,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2023/2418/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0302-maaraaika-2026-12-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261209T000000Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:[EU] Määräaika: Tuotevastuudirektiivi (uusi PLD)
@@ -1905,7 +1905,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/2853/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0345-maaraaika-2027-07-31@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270731T000000Z
 DTSTART;VALUE=DATE:20270731
 DTEND;VALUE=DATE:20270801
 SUMMARY:[EU] Määräaika: Yhdyskuntajätevesien käsittely (uudelleenlaadittu)
@@ -1914,7 +1914,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/3019/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0345-soveltaminen-2027-08-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270801T000000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:[EU] Soveltaminen: Yhdyskuntajätevesien käsittely (uudelleenlaadittu)
@@ -1923,7 +1923,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/3019/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0365-soveltaminen-2026-11-29@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261129T000000Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:[EU] Soveltaminen: Moottoriajoneuvojen ja moottorien sekä moottoriajoneuvoihin tarkoitettujen järjestelmien\, komponenttien ja erillisten teknisten yksiköiden tyyppihyväksyntä niid
@@ -1932,7 +1932,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1257/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0365-maaraaika-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[EU] Määräaika: Moottoriajoneuvojen ja moottorien sekä moottoriajoneuvoihin tarkoitettujen järjestelmien\, komponenttien ja erillisten teknisten yksiköiden tyyppihyväksyntä niid
@@ -1941,7 +1941,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1257/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0396-maaraaika-2027-02-12@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270212T000000Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:[EU] Määräaika: Pakkaus- ja pakkausjäteasetus (PPWR)
@@ -1950,7 +1950,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2025/40/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0398-maaraaika-2027-05-20@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270520T000000Z
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270521
 SUMMARY:[EU] Määräaika: Unionin rajoittavien toimenpiteiden rikkomiseen liittyvien rikosten ja seuraamusten määrittely
@@ -1959,7 +1959,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/1226/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0432-maaraaika-2026-12-31@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:[EU] Määräaika: Aineiden ja seosten luokituksesta\, merkinnöistä ja pakkaamisesta annetun Euroopan parlamentin ja neuvoston asetuksen (EY) N:o 1272/2008 muuttaminen
@@ -1968,7 +1968,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/2865/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2022-0432-soveltaminen-2027-01-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Soveltaminen: Aineiden ja seosten luokituksesta\, merkinnöistä ja pakkaamisesta annetun Euroopan parlamentin ja neuvoston asetuksen (EY) N:o 1272/2008 muuttaminen
@@ -1977,7 +1977,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/2865/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0049-soveltaminen-2027-05-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[EU] Soveltaminen: Asetuksen (EU) 2019/1009 muuttaminen EU-lannoitevalmisteiden digitaalisten tuoteselosteiden osalta
@@ -1986,7 +1986,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/2516/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0079-maaraaika-2027-05-24@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270524T000000Z
 DTSTART;VALUE=DATE:20270524
 DTEND;VALUE=DATE:20270525
 SUMMARY:[EU] Määräaika: Puitteiden vahvistaminen kriittisten raaka-aineiden turvatun ja kestävän tarjonnan varmistamiseksi ja asetusten (EU) 168/2013\, (EU) 2018/858\, 2018/1724 ja (EU) 
@@ -1995,7 +1995,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/1252/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0089-maaraaika-2027-07-31@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270731T000000Z
 DTSTART;VALUE=DATE:20270731
 DTEND;VALUE=DATE:20270801
 SUMMARY:[EU] Määräaika: Direktiivien 2009/102/EY ja (EU) 2017/1132 muuttaminen digitaalisten välineiden ja prosessien käytön laajentamiseksi ja parantamiseksi yhtiöoikeuden alalla
@@ -2004,7 +2004,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/25/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0093-soveltaminen-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[EU] Soveltaminen: Rikosoikeudellisten menettelyjen siirtäminen
@@ -2013,7 +2013,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/3011/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0109-maaraaika-2027-02-05@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270205T000000Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:[EU] Määräaika: Toimenpiteet solidaarisuuden ja valmiuksien vahvistamiseksi unionissa kyberturvallisuusuhkien ja -poikkeamien havaitsemista sekä niihin varautumista ja reagoimi
@@ -2022,7 +2022,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2025/38/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0156-maaraaika-2027-07-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270702
 SUMMARY:[EU] Määräaika: Unionin tullikoodeksi\, Euroopan unionin tulliviranomaisen perustaminen ja asetuksen (EU) N:o 952/2013 kumoaminen
@@ -2031,7 +2031,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/2108/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0156-soveltaminen-2027-09-21@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270921T000000Z
 DTSTART;VALUE=DATE:20270921
 DTEND;VALUE=DATE:20270922
 SUMMARY:[EU] Soveltaminen: Unionin tullikoodeksi\, Euroopan unionin tulliviranomaisen perustaminen ja asetuksen (EU) N:o 952/2013 kumoaminen
@@ -2040,7 +2040,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/2108/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0171-maaraaika-2027-07-06@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270706T000000Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270707
 SUMMARY:[EU] Määräaika: Alusten aiheuttamasta ympäristön pilaantumisesta ja pilaamisrikoksista määrättävistä seuraamuksista\, myös rikosoikeudellisista seuraamuksista\, annetun direktiiv
@@ -2049,7 +2049,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2024/3101/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0177-maaraaika-2026-11-02@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261102T000000Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:[EU] Määräaika: Ympäristöön\, yhteiskuntaan ja hyvään hallintotapaan (ESG) liittyvän luokitustoiminnan läpinäkyvyys ja eheys
@@ -2058,7 +2058,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2024/3005/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0234-maaraaika-2027-06-17@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270617T000000Z
 DTSTART;VALUE=DATE:20270617
 DTEND;VALUE=DATE:20270618
 SUMMARY:[EU] Määräaika: Jätteistä annetun direktiivin 2008/98/EY muuttaminen
@@ -2067,7 +2067,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2025/1892/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0284-maaraaika-2027-06-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[EU] Määräaika: Ajoneuvojen suunnittelua koskevat kiertotalousvaatimukset ja romuajoneuvojen jätehuolto\, asetusten (EU) 2018/858 ja 2019/1020 muuttaminen sekä direktiivien 2000
@@ -2076,7 +2076,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1738/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2023-0284-maaraaika-2027-09-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270930T000000Z
 DTSTART;VALUE=DATE:20270930
 DTEND;VALUE=DATE:20271001
 SUMMARY:[EU] Määräaika: Ajoneuvojen suunnittelua koskevat kiertotalousvaatimukset ja romuajoneuvojen jätehuolto\, asetusten (EU) 2018/858 ja 2019/1020 muuttaminen sekä direktiivien 2000
@@ -2085,7 +2085,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1738/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2024-0061-maaraaika-2027-06-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[EU] Määräaika: Euroopan puolustusteollisuusohjelma (EDIP) ja puolustustarvikkeiden oikea-aikaisen saatavuuden ja toimituksen varmistamista koskeva toimenpidekehys
@@ -2094,7 +2094,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2025/2643/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2024-0318-soveltaminen-2027-09-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270910T000000Z
 DTSTART;VALUE=DATE:20270910
 DTEND;VALUE=DATE:20270911
 SUMMARY:[EU] Soveltaminen: Hyvän kauppatavan vastaisista käytännöistä yritysten välisissä suhteissa maataloustuote- ja elintarvikeketjussa annetun direktiivin (EU) 2019/633 täytäntöönpano
@@ -2103,7 +2103,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/697/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0045-maaraaika-2027-03-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270319T000000Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:[EU] Määräaika: Omnibus I: CSRD- ja CSDDD-kevennykset
@@ -2112,7 +2112,7 @@ URL:https://eur-lex.europa.eu/eli/dir/2026/470/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0071-soveltaminen-2027-09-19@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270919T000000Z
 DTSTART;VALUE=DATE:20270919
 DTEND;VALUE=DATE:20270920
 SUMMARY:[EU] Soveltaminen: Asetusten (EU) N:o 1308/2013\, (EU) 2021/2115 ja (EU) N:o 251/2014 muuttaminen viinialan ja maustettujen viinituotteiden tiettyjen kaupan pitämistä koskevien sää
@@ -2121,7 +2121,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/471/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0251-maaraaika-2027-06-30@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:[EU] Määräaika: Makrotaloudellisen rahoitusavun myöntäminen Jordanian hašemiittiselle kuningaskunnalle
@@ -2130,7 +2130,7 @@ URL:https://eur-lex.europa.eu/eli/dec/2026/188/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0261-maaraaika-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[EU] Määräaika: Tiettyjen Amerikan yhdysvalloista peräisin olevien tavaroiden tuontiin sovellettavien tullien mukauttaminen ja tariffikiintiöiden avaaminen tiettyjen Amerikan y
@@ -2139,7 +2139,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1455/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0261-maaraaika-2027-01-02@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270102T000000Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 SUMMARY:[EU] Määräaika: Tiettyjen Amerikan yhdysvalloista peräisin olevien tavaroiden tuontiin sovellettavien tullien mukauttaminen ja tariffikiintiöiden avaaminen tiettyjen Amerikan y
@@ -2148,7 +2148,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1455/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0429-maaraaika-2027-02-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
 DTEND;VALUE=DATE:20270202
 SUMMARY:[EU] Määräaika: Asetuksen (EU) 2021/1232 muuttaminen sen soveltamisajan jatkamiseksi
@@ -2157,7 +2157,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0429-maaraaika-2027-04-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270401T000000Z
 DTSTART;VALUE=DATE:20270401
 DTEND;VALUE=DATE:20270402
 SUMMARY:[EU] Määräaika: Asetuksen (EU) 2021/1232 muuttaminen sen soveltamisajan jatkamiseksi
@@ -2166,7 +2166,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0429-maaraaika-2027-08-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20270801T000000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
 SUMMARY:[EU] Määräaika: Asetuksen (EU) 2021/1232 muuttaminen sen soveltamisajan jatkamiseksi
@@ -2175,7 +2175,7 @@ URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18352-lausunto-2026-12-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261210T000000Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan meri-\, kalatalous- ja vesiviljelyrahasto – yksinkertaistamista ja WTO:n kalastustukisopimuksen sisällyttämistä koskeva muutos
@@ -2184,7 +2184,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-15912-lausunto-2026-12-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261210T000000Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Oikeudenmukaista työvoiman liikkuvuutta koskeva paketti: eurooppalainen sosiaaliturvapassi
@@ -2193,7 +2193,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
@@ -2202,7 +2202,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14450-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:[EU] Lausuntoaika päättyy: Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista
@@ -2211,7 +2211,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-15112-lausunto-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[EU] Lausuntoaika päättyy: Verotuksen alan hallinnollista yhteistyötä koskevat EU:n säännöt – uudelleenlaatiminen
@@ -2220,7 +2220,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19418-lausunto-2026-12-03@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261203T000000Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:[EU] Lausuntoaika päättyy: Lasten verkkoturvallisuus – digitaalisten verkkoympäristöjen vastuullisuuden ja luotettavuuden turvaaminen (EU KIDS ACT)
@@ -2229,7 +2229,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-17712-lausunto-2026-10-26@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:[EU] Lausuntoaika päättyy: Jätteet – varhaisvaroituskertomus 2027
@@ -2238,7 +2238,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19293-lausunto-2026-12-14@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan datakeskukset – vähimmäistehokkuusvaatimukset
@@ -2247,7 +2247,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19293-lausunto-2026-12-14@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan datakeskukset – vähimmäistehokkuusvaatimukset
@@ -2256,7 +2256,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14861-lausunto-2026-10-16@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261016T000000Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:[EU] Lausuntoaika päättyy: Luettelo OECD:n ulkopuolisista maista\, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta
@@ -2265,7 +2265,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-15492-lausunto-2026-12-10@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261210T000000Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
@@ -2274,7 +2274,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-16912-lausunto-2026-11-05@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261105T000000Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:[EU] Lausuntoaika päättyy: Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti
@@ -2283,7 +2283,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
@@ -2292,7 +2292,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
@@ -2301,7 +2301,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[EU] Lausuntoaika päättyy: Kansainvälisten julkisten hankintojen välineen uudelleentarkastelu
@@ -2310,7 +2310,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[EU] Lausuntoaika päättyy: Kansainvälisten julkisten hankintojen välineen uudelleentarkastelu
@@ -2319,7 +2319,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14549-lausunto-2026-11-03@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261103T000000Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:[EU] Lausuntoaika päättyy: Meriliikennettä\, ilmailua ja kiinteitä laitoksia koskevan EU:n päästökauppajärjestelmän sekä markkinavakausvarannon uudelleentarkastelu
@@ -2328,7 +2328,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-16872-lausunto-2026-10-15@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:[EU] Lausuntoaika päättyy: Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen
@@ -2337,7 +2337,7 @@ URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14628-lausunto-2026-11-11@saadosseuranta
-DTSTAMP:20261015T215305Z
+DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä

@@ -376,7 +376,8 @@ def build_ics(items: list[dict]) -> str:
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//saadosseuranta//FI", "CALSCALE:GREGORIAN",
              "X-WR-CALNAME:Säädösseuranta – määräajat", "X-WR-TIMEZONE:Europe/Helsinki"]
     lo, hi = (TODAY - dt.timedelta(days=7)).isoformat(), (TODAY + dt.timedelta(days=400)).isoformat()
-    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    # DTSTAMP is required by RFC 5545; deriving it from the event date (instead of "now") keeps the
+    # file byte-identical between runs unless a deadline actually changes, so git stays quiet.
     for it in items:
         for e in it["events"]:
             kind = e.get("kind")
@@ -389,7 +390,7 @@ def build_ics(items: list[dict]) -> str:
             nxt = (d + dt.timedelta(days=1)).strftime("%Y%m%d")
             summary = f"[{'FI' if it['scope'] == 'fi' else 'EU'}] {ICS_KINDS[kind]}: {it['title']}"
             desc = f"{e.get('label', '')} · {it['ref']}" + (f" · {it['source']}" if it.get("source") else "")
-            lines += ["BEGIN:VEVENT", f"UID:{it['id']}-{kind}-{day}@saadosseuranta", f"DTSTAMP:{stamp}",
+            lines += ["BEGIN:VEVENT", f"UID:{it['id']}-{kind}-{day}@saadosseuranta", f"DTSTAMP:{d.strftime('%Y%m%d')}T000000Z",
                       f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}", f"DTEND;VALUE=DATE:{nxt}",
                       f"SUMMARY:{esc_(summary)}", f"DESCRIPTION:{esc_(desc)}"]
             if it.get("source"):
