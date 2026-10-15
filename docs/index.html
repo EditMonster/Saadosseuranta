@@ -4,31 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Kansallisen ja EU-lainsäädännön seuranta: lausuntoajat, eduskuntakäsittely, voimaantulot ja määräajat aikajanalla.">
-<meta name="color-scheme" content="dark light">
-<link rel="icon" href="logo-dark.png">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="logo-light.png">
 <title>Säädösseuranta</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Layout: ops-console. Hairline status bar, mono microlabels, one signal colour (amber) for anything
-   that demands action; everything else is bone-white on graphite. Dark first, light as a toggle. */
+/* Layout: ops-console on white. Hairline status bar, mono microlabels, one signal colour (amber) for
+   anything that demands action; everything else is ink on white. Dark variant behind the Teema toggle. */
 :root{
+  --bg:#ffffff; --bg2:#fafaf8; --panel:#ffffff; --panel2:#f3f2ee;
+  --line:#dddcd5; --line2:#bdbab2; --fg:#121212; --muted:#6a6963; --dim:#a4a29a;
+  --signal:#b4700c; --signal-dim:rgba(180,112,12,.12);
+  --hatch:rgba(18,18,18,.18); --grid:rgba(18,18,18,.04);
+  --sans:"Geist","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --label-w:300px; --row-h:72px; --radius:2px;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
   --bg:#0a0a0b; --bg2:#101112; --panel:#131415; --panel2:#18191b;
   --line:#242628; --line2:#35373a; --fg:#ecebe6; --muted:#8e8d87; --dim:#55554f;
   --signal:#e5a33a; --signal-dim:rgba(229,163,58,.16);
   --hatch:rgba(236,235,230,.22); --grid:rgba(236,235,230,.035);
-  --sans:"Geist","Helvetica Neue",Arial,system-ui,sans-serif;
-  --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --label-w:300px; --row-h:72px; --radius:2px;
   color-scheme:dark;
-}
-:root[data-theme="light"]{
-  --bg:#f4f3ef; --bg2:#fbfaf7; --panel:#ffffff; --panel2:#f1f0ec;
-  --line:#d9d7d0; --line2:#bcb9b1; --fg:#121212; --muted:#6a6963; --dim:#a4a29a;
-  --signal:#b4700c; --signal-dim:rgba(180,112,12,.12);
-  --hatch:rgba(18,18,18,.18); --grid:rgba(18,18,18,.045);
-  color-scheme:light;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -63,9 +63,9 @@ a:hover{border-color:var(--fg)}
 .top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding-block:22px 0;border-bottom:1px solid var(--fg)}
 .brand{display:flex;align-items:center;gap:16px;min-width:0;padding-bottom:14px}
 .logo{height:44px;width:auto;display:block}
-.logo.light{display:none}
-:root[data-theme="light"] .logo.dark{display:none}
-:root[data-theme="light"] .logo.light{display:block}
+.logo.dark{display:none}
+:root[data-theme="dark"] .logo.light{display:none}
+:root[data-theme="dark"] .logo.dark{display:block}
 .name{font-weight:600;font-size:20px;letter-spacing:-.01em;line-height:1.1}
 .sub{color:var(--muted);font-size:12px;margin-top:4px}
 .tabs{display:flex;gap:2px;flex-wrap:wrap}
@@ -139,7 +139,7 @@ a:hover{border-color:var(--fg)}
 .tl-head .track{position:relative;overflow:hidden}
 .year{position:absolute;top:0;bottom:0;display:flex;align-items:flex-start;padding-top:6px;padding-left:6px;font-family:var(--mono);font-size:11px;color:var(--fg);border-left:1px solid var(--line2)}
 .q{position:absolute;top:0;bottom:0;border-left:1px dotted var(--line);font-family:var(--mono);font-size:9.5px;color:var(--dim);padding-left:3px;display:flex;align-items:flex-end;padding-bottom:3px}
-.today-tag{position:absolute;bottom:4px;transform:translateX(-50%);background:var(--signal);color:#0a0a0b;font-family:var(--mono);font-size:10px;letter-spacing:.06em;padding:2px 6px;white-space:nowrap}
+.today-tag{position:absolute;bottom:4px;transform:translateX(-50%);background:var(--signal);color:#ffffff;font-family:var(--mono);font-size:10px;letter-spacing:.06em;padding:2px 6px;white-space:nowrap}
 .grid{position:absolute;top:46px;bottom:0;left:var(--label-w);right:0;pointer-events:none;z-index:0}
 .grid .yl{position:absolute;top:0;bottom:0;border-left:1px solid var(--line2);opacity:.7}
 .grid .ql{position:absolute;top:0;bottom:0;border-left:1px dotted var(--line)}
@@ -377,12 +377,12 @@ let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
 function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics]})); }catch(e){} }
 
-/* theme: dark by default, light on request */
-(()=>{ let t=null; try{ t=localStorage.getItem("saadosseuranta-theme"); }catch(e){} if(t==="light") document.documentElement.setAttribute("data-theme","light"); })();
+/* theme: white by default, dark on request */
+(()=>{ let t=null; try{ t=localStorage.getItem("saadosseuranta-theme"); }catch(e){} if(t==="dark") document.documentElement.setAttribute("data-theme","dark"); })();
 document.getElementById("theme").addEventListener("click",()=>{
-  const light=document.documentElement.getAttribute("data-theme")==="light";
-  if(light) document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme","light");
-  try{ localStorage.setItem("saadosseuranta-theme",light?"dark":"light"); }catch(e){}
+  const dark=document.documentElement.getAttribute("data-theme")==="dark";
+  if(dark) document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme","dark");
+  try{ localStorage.setItem("saadosseuranta-theme",dark?"light":"dark"); }catch(e){}
 });
 
 /* ---------- helpers ---------- */
