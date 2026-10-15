@@ -299,6 +299,28 @@ th.sortable:hover{color:var(--fg)}
 .kpi[data-goto]:hover .micro{color:var(--fg)}
 @media (max-width:900px){ .hk-row{grid-template-columns:96px minmax(0,1fr)} .hk-side{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;margin-top:8px} .hk-side .links{flex-direction:row;gap:14px} }
 
+/* Folders, hiding */
+.sel{font:inherit;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--panel);border:1px solid var(--line2);border-radius:var(--radius);padding:4px 6px;max-width:240px}
+.sel.active{border-color:var(--signal);color:var(--signal)}
+.pill.fold{border-color:var(--line2);color:var(--fg);text-transform:none;letter-spacing:.03em}
+.hide{font-size:15px;line-height:1;color:var(--dim);padding:0 3px;opacity:0;flex:none}
+.row:hover .hide,.hk-row:hover .hide,tr.r:hover .hide,.hide:focus-visible,.hide[data-restore]{opacity:1}
+.hide:hover{color:var(--signal)}
+.hide[data-restore]{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:2px 6px;border-radius:var(--radius);color:var(--muted)}
+.fchips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.fchips .chip{text-transform:none;letter-spacing:.03em;font-size:11px}
+.fnew{display:inline-flex;gap:4px;align-items:center}
+.fnew input,.frow input,#folder-new{font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:var(--radius);padding:4px 7px;background:var(--panel);color:var(--fg);min-width:0}
+.fnew input{width:160px}
+#folder-new{flex:1;min-width:180px}
+.frow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.frow input{width:100%}
+.frow .n{font-family:var(--mono);font-size:10.5px;color:var(--muted);white-space:nowrap}
+.frow .acts{display:flex;gap:6px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:9px 14px;border-radius:var(--radius);font-size:12.5px;z-index:70;display:flex;gap:16px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+.toast button{color:var(--signal);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase}
+.filter-note{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);white-space:nowrap}
+
 /* Sync modal */
 .modal{position:fixed;z-index:62;top:50%;left:50%;transform:translate(-50%,-50%);width:min(560px,calc(100% - 32px));max-height:calc(100% - 32px);overflow:auto;padding:18px 20px}
 .modal .sub{margin:6px 0 0;color:var(--muted);font-size:12.5px}
@@ -359,6 +381,7 @@ th.sortable:hover{color:var(--fg)}
   <div class="chips" id="ptopics" hidden><span class="micro chips-title">Toimiala</span></div>
   <div class="tools">
     <label class="toggle"><input type="checkbox" id="follow-only"> Vain seuranta <span id="n-follow" class="mono"></span></label>
+    <label class="toggle" for="folder-filter">Kansio</label><select id="folder-filter" class="sel" aria-label="Kansio"></select><button class="linkbtn" id="open-folders" title="Luo, nimeä ja poista kansioita">Hallitse</button>
     <label class="toggle" id="open-only-wrap"><input type="checkbox" id="open-only"> Vain lausuttavissa</label>
     <div class="hk-tools" id="hk-tools" hidden>
       <div class="seg" role="group" aria-label="Hankinnan taso"><button data-scope="all" aria-pressed="true">Kaikki</button><button data-scope="eu" aria-pressed="false">EU-kynnysarvo</button><button data-scope="fi" aria-pressed="false">Kansallinen</button></div>
@@ -375,6 +398,7 @@ th.sortable:hover{color:var(--fg)}
     <div class="kpis" id="kpis"></div>
     <div class="cols">
       <div class="panel"><h3><span>Seurannassa</span><span><span id="h-follow"></span> · <button class="linkbtn" id="open-sync" title="Siirrä tähdet ja aihealuevalinta toiselle koneelle">Siirrä toiselle koneelle</button></span></h3><ul class="list" id="l-follow"></ul></div>
+      <div class="panel"><h3><span>Kansiot</span><span><span id="h-folders"></span> · <button class="linkbtn" id="open-folders2">Hallitse</button></span></h3><ul class="list" id="l-folders"></ul></div>
       <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
@@ -428,13 +452,21 @@ th.sortable:hover{color:var(--fg)}
 <div class="modal panel" id="sync" role="dialog" aria-modal="true" aria-labelledby="sync-title" hidden>
   <div class="drawer-top"><h3 id="sync-title" style="margin:0">Seurantalista toiselle koneelle</h3><button class="close" id="sync-close" aria-label="Sulje">×</button></div>
   <p class="sub" id="sync-summary"></p>
-  <p class="sub">Tähdet ja aihealuevalinta tallentuvat tähän selaimeen. Avaa siirtolinkki toisella koneella, niin sama seuranta on käytössä sielläkin.</p>
+  <p class="sub">Tähdet, kansiot, piilotukset ja aihealuevalinta tallentuvat tähän selaimeen. Avaa siirtolinkki toisella koneella, niin sama seuranta on käytössä sielläkin.</p>
   <div class="sync-row"><button class="follow-btn" id="sync-link">Kopioi siirtolinkki</button><button class="follow-btn" id="sync-copy">Kopioi koodi</button><button class="follow-btn" id="sync-clear">Tyhjennä seuranta</button></div>
   <label class="micro" for="sync-code">Koodi</label>
   <textarea id="sync-code" class="sync-ta" readonly></textarea>
   <label class="micro" for="sync-in">Tuo: liitä linkki tai koodi</label>
   <textarea id="sync-in" class="sync-ta" placeholder="https://… tai koodi"></textarea>
   <div class="sync-row"><button class="follow-btn" id="sync-merge">Tuo ja yhdistä</button><button class="follow-btn" id="sync-replace">Tuo ja korvaa</button><span class="micro" id="sync-msg"></span></div>
+</div>
+<div class="scrim" id="folders-scrim" hidden></div>
+<div class="modal panel" id="folders" role="dialog" aria-modal="true" aria-labelledby="folders-title" hidden>
+  <div class="drawer-top"><h3 id="folders-title" style="margin:0">Kansiot</h3><button class="close" id="folders-close" aria-label="Sulje">×</button></div>
+  <p class="sub">Kansioon voi viedä säädöksiä, EU-menettelyjä ja kilpailutuksia; sama kohde voi olla useassa kansiossa. Kansion valinta yläpalkista rajaa kaikki näkymät – myös Tilannekuvan – kansion kohteisiin. Kansiot, piilotukset ja tähdet tallentuvat tähän selaimeen, ja ne siirtyvät toiselle koneelle Seurannassa-paneelin siirtolinkillä.</p>
+  <div class="sync-row"><input id="folder-new" placeholder="Uuden kansion nimi, esim. Asiakas X tai Lausuttavat" aria-label="Uuden kansion nimi"><button class="follow-btn" id="folder-add">Luo kansio</button></div>
+  <div id="folder-rows"></div>
+  <p class="sub" id="folders-hidden"></p>
 </div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden>
@@ -447,6 +479,7 @@ th.sortable:hover{color:var(--fg)}
   <p class="summary" id="dr-summary"></p>
   <div id="dr-facts"></div>
   <div id="dr-src"></div>
+  <div id="dr-folders"></div>
   <div id="dr-changes"></div>
   <h4 id="dr-h-mini">Aikajana</h4>
   <div class="mini" id="dr-mini"></div>
@@ -476,33 +509,61 @@ const daysTo = d => Math.round((d-TODAY)/DAY);
 
 /* ---------- state ---------- */
 const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set(), lajit:new Set(["laki","eu","kuuleminen","kirjelma"]),
-  ptopics:new Set(), hkScope:"all", hkWithin:0, hkDps:false, hkShown:150 };
+  ptopics:new Set(), hkScope:"all", hkWithin:0, hkDps:false, hkShown:150, folders:[], hidden:new Set(), folderFilter:"" };
 let CHANGES=[]; let CHANGE_BY_ID={};
 try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(Array.isArray(s.lajit)) state.lajit=new Set(s.lajit); if(s.tab in TABHASH) state.tab=s.tab;
-  if(Array.isArray(s.ptopics)) state.ptopics=new Set(s.ptopics); if(["all","eu","fi"].includes(s.hkScope)) state.hkScope=s.hkScope; if([0,7,14,30].includes(s.hkWithin)) state.hkWithin=s.hkWithin; state.hkDps=!!s.hkDps; }catch(e){}
+  if(Array.isArray(s.ptopics)) state.ptopics=new Set(s.ptopics); if(["all","eu","fi"].includes(s.hkScope)) state.hkScope=s.hkScope; if([0,7,14,30].includes(s.hkWithin)) state.hkWithin=s.hkWithin; state.hkDps=!!s.hkDps; if(typeof s.folderFilter==="string") state.folderFilter=s.folderFilter; }catch(e){}
+/* folders + hidden items: personal organisation, kept in this browser (and movable with the transfer link) */
+try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-folders")||"[]"); if(Array.isArray(f)) state.folders=f.filter(x=>x&&typeof x.id==="string"&&typeof x.name==="string").map(x=>({id:x.id,name:x.name,items:Array.isArray(x.items)?x.items.filter(i=>typeof i==="string"):[]})); }catch(e){}
+try{ const h=JSON.parse(localStorage.getItem("saadosseuranta-hidden")||"[]"); if(Array.isArray(h)) state.hidden=new Set(h.filter(i=>typeof i==="string")); }catch(e){}
+function persistFolders(){ try{ localStorage.setItem("saadosseuranta-folders",JSON.stringify(state.folders)); }catch(e){} }
+function persistHidden(){ try{ localStorage.setItem("saadosseuranta-hidden",JSON.stringify([...state.hidden])); }catch(e){} }
+const folderById=id=>state.folders.find(f=>f.id===id);
+function newFolderId(){ return "k"+Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
+function addFolder(name){ name=(name||"").trim().slice(0,60); if(!name) return null; const ex=state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); if(ex) return ex; const f={id:newFolderId(),name,items:[]}; state.folders.push(f); persistFolders(); return f; }
+function toggleInFolder(fid,id){ const f=folderById(fid); if(!f) return; const i=f.items.indexOf(id); if(i>=0) f.items.splice(i,1); else f.items.push(id); persistFolders(); }
+function foldersOf(id){ return state.folders.filter(f=>f.items.includes(id)); }
+function folderBadge(id){ const fs=foldersOf(id); if(!fs.length) return ""; return `<span class="pill fold" title="${esc(fs.map(f=>f.name).join(", "))}">▣ ${esc(fs[0].name)}${fs.length>1?" +"+(fs.length-1):""}</span>`; }
+function hideBtnHTML(id){ if(state.hidden.has(id)) return `<button class="hide" data-hide="${esc(id)}" data-restore="1" title="Palauta näkyviin">Palauta</button>`; return `<button class="hide" data-hide="${esc(id)}" title="Piilota näkymistä" aria-label="Piilota">×</button>`; }
+let toastTimer=null;
+function toast(msg,undoFn){ let el=document.getElementById("toast"); if(!el){ el=document.createElement("div"); el.id="toast"; el.className="toast"; document.body.appendChild(el); } el.innerHTML=`<span>${esc(msg)}</span>${undoFn?'<button id="toast-undo">Kumoa</button>':""}`; el.hidden=false; if(undoFn) document.getElementById("toast-undo").addEventListener("click",()=>{ undoFn(); el.hidden=true; }); clearTimeout(toastTimer); toastTimer=setTimeout(()=>{ el.hidden=true; },6000); }
+function toggleHidden(id){
+  const it=findItem(id); const title=it?it.title:id;
+  if(state.hidden.has(id)){ state.hidden.delete(id); persistHidden(); render(); toast("Palautettu näkyviin: "+title.slice(0,60)); }
+  else { state.hidden.add(id); persistHidden(); if(!drawer.hidden&&drawer.dataset.id===id) closeDrawer(); render(); toast("Piilotettu: "+title.slice(0,60)+" (Kansio › Piilotetut)",()=>{ state.hidden.delete(id); persistHidden(); render(); }); }
+}
+/* visibility rules shared by every view: hidden items only in the Piilotetut view, folder filter narrows to that folder */
+function baseVisible(it){
+  if(state.folderFilter==="__hidden") return state.hidden.has(it.id);
+  if(state.hidden.has(it.id)) return false;
+  if(state.folderFilter){ const f=folderById(state.folderFilter); if(!f) return true; return f.items.includes(it.id); }
+  return true;
+}
 try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-follow")||"[]"); if(Array.isArray(f)) state.follow=new Set(f); }catch(e){}
 function persistFollow(){ try{ localStorage.setItem("saadosseuranta-follow",JSON.stringify([...state.follow])); }catch(e){} }
 function toggleFollow(id){ if(state.follow.has(id)) state.follow.delete(id); else state.follow.add(id); persistFollow(); render(); if(!drawer.hidden&&drawer.dataset.id===id) syncDrawerFollow(id); }
 /* follow-list transfer between devices: base64url JSON in a link (?s=) or as a pasted code */
 const b64e=s=>btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
 const b64d=s=>decodeURIComponent(escape(atob(s.replace(/-/g,"+").replace(/_/g,"/")+"=".repeat((4-s.length%4)%4))));
-function syncCode(){ return b64e(JSON.stringify({v:1,f:[...state.follow],t:[...state.topics],p:[...state.ptopics]})); }
+function syncCode(){ return b64e(JSON.stringify({v:2,f:[...state.follow],t:[...state.topics],p:[...state.ptopics],k:state.folders.map(f=>({n:f.name,i:f.items})),h:[...state.hidden]})); }
 function parseSync(text){
   let s=(text||"").trim(); if(!s) return null;
   try{ const u=new URL(s); s=u.searchParams.get("s")||s; }catch(e){ const m=s.match(/[?&]s=([A-Za-z0-9_-]+)/); if(m) s=m[1]; }
-  try{ const o=JSON.parse(b64d(s)); if(o&&Array.isArray(o.f)) return {f:o.f.filter(x=>typeof x==="string"),t:Array.isArray(o.t)?o.t.filter(x=>typeof x==="string"):[],p:Array.isArray(o.p)?o.p.filter(x=>typeof x==="string"):[]}; }catch(e){}
+  try{ const o=JSON.parse(b64d(s)); if(o&&Array.isArray(o.f)) return {f:o.f.filter(x=>typeof x==="string"),t:Array.isArray(o.t)?o.t.filter(x=>typeof x==="string"):[],p:Array.isArray(o.p)?o.p.filter(x=>typeof x==="string"):[],
+    k:Array.isArray(o.k)?o.k.filter(x=>x&&typeof x.n==="string").map(x=>({n:x.n.slice(0,60),i:Array.isArray(x.i)?x.i.filter(y=>typeof y==="string"):[]})):[],h:Array.isArray(o.h)?o.h.filter(x=>typeof x==="string"):[]}; }catch(e){}
   return null;
 }
 function applySync(o,replace){
-  if(replace){ state.follow=new Set(o.f); state.topics=new Set(o.t); state.ptopics=new Set(o.p||[]); } else { o.f.forEach(x=>state.follow.add(x)); o.t.forEach(x=>state.topics.add(x)); (o.p||[]).forEach(x=>state.ptopics.add(x)); }
-  persistFollow(); persist();
+  if(replace){ state.follow=new Set(o.f); state.topics=new Set(o.t); state.ptopics=new Set(o.p||[]); state.folders=(o.k||[]).map(k=>({id:newFolderId(),name:k.n,items:k.i.slice()})); state.hidden=new Set(o.h||[]); state.folderFilter=""; }
+  else { o.f.forEach(x=>state.follow.add(x)); o.t.forEach(x=>state.topics.add(x)); (o.p||[]).forEach(x=>state.ptopics.add(x)); (o.k||[]).forEach(k=>{ const f=addFolder(k.n); if(f) k.i.forEach(i=>{ if(!f.items.includes(i)) f.items.push(i); }); }); (o.h||[]).forEach(x=>state.hidden.add(x)); }
+  persistFollow(); persistFolders(); persistHidden(); persist();
 }
 (()=>{ const q=new URLSearchParams(location.search); const o=q.get("s")?parseSync(q.get("s")):null;
   if(o){ applySync(o,false); try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){} window.__synced=o.f.length; } })();
 const syncEl=document.getElementById("sync"), syncScrim=document.getElementById("sync-scrim");
 function openSync(){
   document.getElementById("sync-code").value=syncCode();
-  document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} kohdetta · ${state.topics.size?state.topics.size+" aihealuetta":"kaikki aihealueet"} · ${state.ptopics.size?state.ptopics.size+" toimialaa":"kaikki toimialat"}.`;
+  document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} kohdetta · ${state.folders.length} kansiota (${state.folders.reduce((n,f)=>n+f.items.length,0)} kohdetta) · ${state.hidden.size} piilotettua · ${state.topics.size?state.topics.size+" aihealuetta":"kaikki aihealueet"}.`;
   document.getElementById("sync-msg").textContent=""; document.getElementById("sync-in").value="";
   syncEl.hidden=false; syncScrim.hidden=false; document.getElementById("sync-close").focus();
 }
@@ -514,7 +575,7 @@ syncScrim.addEventListener("click",closeSync);
 document.getElementById("sync-copy").addEventListener("click",e=>copyText(syncCode(),e.currentTarget,"Koodi kopioitu"));
 document.getElementById("sync-link").addEventListener("click",e=>copyText(location.origin+location.pathname+"?s="+syncCode()+"#tilannekuva",e.currentTarget,"Linkki kopioitu"));
 document.getElementById("sync-clear").addEventListener("click",()=>{ state.follow.clear(); persistFollow(); render(); openSync(); document.getElementById("sync-msg").textContent="Seurantalista tyhjennetty."; });
-function doImport(replace){ const o=parseSync(document.getElementById("sync-in").value); const msg=document.getElementById("sync-msg"); if(!o){ msg.textContent="Koodia ei tunnistettu."; return; } applySync(o,replace); render(); msg.textContent=`Tuotu: ${o.f.length} säädöstä, ${o.t.length} aihealuetta (${replace?"korvattu":"yhdistetty"}).`; document.getElementById("sync-code").value=syncCode(); document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} säädöstä.`; }
+function doImport(replace){ const o=parseSync(document.getElementById("sync-in").value); const msg=document.getElementById("sync-msg"); if(!o){ msg.textContent="Koodia ei tunnistettu."; return; } applySync(o,replace); render(); msg.textContent=`Tuotu: ${o.f.length} tähteä, ${(o.k||[]).length} kansiota, ${(o.h||[]).length} piilotusta, ${o.t.length} aihealuetta (${replace?"korvattu":"yhdistetty"}).`; document.getElementById("sync-code").value=syncCode(); document.getElementById("sync-summary").textContent=`Seurannassa ${state.follow.size} säädöstä.`; }
 document.getElementById("sync-merge").addEventListener("click",()=>doImport(false));
 document.getElementById("sync-replace").addEventListener("click",()=>doImport(true));
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!syncEl.hidden) closeSync(); });
@@ -522,7 +583,7 @@ function starHTML(id){ const on=state.follow.has(id); return `<button class="sta
 function changeBadge(id){ const c=CHANGE_BY_ID[id]; if(!c) return ""; const n=-daysTo(pd(c.date)); if(n>14) return ""; return `<span class="pill chg" title="${esc(c.text)}">muuttunut ${n===0?"tänään":n+" pv"}</span>`; }
 let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
-function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics],lajit:[...state.lajit],ptopics:[...state.ptopics],hkScope:state.hkScope,hkWithin:state.hkWithin,hkDps:state.hkDps})); }catch(e){} }
+function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics],lajit:[...state.lajit],ptopics:[...state.ptopics],hkScope:state.hkScope,hkWithin:state.hkWithin,hkDps:state.hkDps,folderFilter:state.folderFilter})); }catch(e){} }
 
 /* theme: white by default; the segmented control picks light or dark and the choice is remembered */
 function setTheme(name){
@@ -554,6 +615,7 @@ function entryDate(it){
   const v=ev.find(e=>e.kind==="voimaan")||ev[0]; return {date:pd(v.date),label:v.label,kind:v.kind};
 }
 function matches(it){
+  if(!baseVisible(it)) return false;
   if(!state.lajit.has(it.laji||"laki")) return false;
   if(state.topics.size && !it.topics.some(t=>state.topics.has(t))) return false;
   if(state.openOnly && !openConsultation(it)) return false;
@@ -603,13 +665,14 @@ function tenderEvents(it){
   return ev;
 }
 function matchesTender(it){
+  if(!baseVisible(it)) return false;
   if(state.ptopics.size && !it.topics.some(t=>state.ptopics.has(t))) return false;
   if(state.followOnly && !state.follow.has(it.id)) return false;
   if(state.hkScope==="eu" && !it.eu) return false;
   if(state.hkScope==="fi" && it.eu) return false;
   if(it.dps && !state.hkDps && !state.follow.has(it.id)) return false;
   const info=deadlineInfo(it);
-  if(it.status!=="avoin"||info.over){ if(!(state.followOnly&&state.follow.has(it.id)) && !state.q) return false; }
+  if(it.status!=="avoin"||info.over){ if(!(state.followOnly&&state.follow.has(it.id)) && !state.q && !state.folderFilter) return false; }
   else if(state.hkWithin && info.days>state.hkWithin) return false;
   if(state.q){ const q=state.q.toLowerCase(); const hay=[it.title,it.buyer,it.summary,it.cpvLabel,it.cpv,it.kind,it.procedure,it.noticeNumber,it.topics.join(" "),(it.lotTitles||[]).join(" ")].join(" ").toLowerCase(); if(!hay.includes(q)) return false; }
   return true;
@@ -641,7 +704,7 @@ function renderTenders(){
     return `<div class="hk-row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">
       <div class="cd"><div class="big ${di.cls}">${esc(di.big)}</div><div class="when">${esc(di.when)}</div><div class="what">${esc(di.what)} viimeistään</div></div>
       <div style="min-width:0"><div class="t">${esc(it.title)}</div><div class="buyer">${esc(it.buyer||"")}${it.cpvLabel?` · ${esc(it.cpvLabel)}`:""}</div>${it.summary?`<div class="sum">${esc(it.summary)}</div>`:""}<div class="facts">${factsHTML(it,false)}</div></div>
-      <div class="hk-side"><div class="head"><div class="topiclist">${it.topics.map(t=>`<span>${esc(t)}</span>`).join("")}</div>${starHTML(it.id)}</div>
+      <div class="hk-side"><div class="head"><div class="topiclist">${it.topics.map(t=>`<span>${esc(t)}</span>`).join("")}${folderBadge(it.id)}</div><span style="display:flex;gap:2px">${starHTML(it.id)}${hideBtnHTML(it.id)}</span></div>
         <div class="links"><a class="primary" href="${esc(it.url)}" target="_blank" rel="noopener" title="Alkuperäinen ilmoitus Hilmassa">Avaa ilmoitus Hilmassa ↗</a>${it.docsUrl?`<a href="${esc(it.docsUrl)}" target="_blank" rel="noopener" title="${esc(it.docsUrl)}">Tarjouspyyntöasiakirjat ↗</a>`:""}${it.tedUrl?`<a href="${esc(it.tedUrl)}" target="_blank" rel="noopener">TED ↗</a>`:""}</div></div>
     </div>`; }).join("");
   if(items.length>shown.length) root.insertAdjacentHTML("beforeend",`<button class="more" id="hk-more">Näytä lisää · ${shown.length} / ${items.length}</button>`);
@@ -676,7 +739,7 @@ function renderTimeline(root, items, opts={}){
   items.forEach(it=>{
     const st=statusOf(it); const nx=nextEvent(it);
     let row=`<div class="row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">`;
-    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${changeBadge(it.id)}</div>`;
+    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${changeBadge(it.id)}${opts.mini?"":folderBadge(it.id)}</div>`;
     row+=`<div class="next">${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(nx.label)}`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(it.ministry||it.procedure) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
     row+=`</div><div class="track">`;
@@ -738,12 +801,20 @@ function renderNow(){
     ["Kilpailutuksia 7 pv",TENDERS_LOADED?TENDERS.filter(t=>t.status==="avoin"&&!t.dps&&(!state.ptopics.size||t.topics.some(x=>state.ptopics.has(x)))&&!deadlineInfo(t).over&&deadlineInfo(t).days<=7).length:"…","",(state.ptopics.size?"valituilla toimialoilla ":"")+"sulkeutuu viikon sisällä →","hk"],
   ].map(([h,v,c,d,g])=>`<div class="panel kpi"${g?` data-goto="${g}" role="button" tabindex="0"`:""}><div class="micro">${h}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
   const li=(it,date,label,extra)=>{ const n=daysTo(date); return `<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${n>=0&&n<=14?"soon":""}">${fmt(date)}${n>=0?`<br>${n===0?"tänään":n+" pv"}`:""}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}${extra?" · "+esc(extra):""}</div></span><span class="k">${esc(label)}</span></li>`; };
-  const fol=DATA.filter(it=>state.follow.has(it.id)&&(!state.topics.size||it.topics.some(t=>state.topics.has(t)))).map(it=>({it,nx:nextEvent(it)}));
-  TENDERS.filter(it=>state.follow.has(it.id)&&(!state.ptopics.size||it.topics.some(t=>state.ptopics.has(t)))).forEach(it=>{ const di=deadlineInfo(it); fol.push({it,nx:di.over||it.status!=="avoin"?null:{date:hkDay(di.d),label:(di.what==="tarjous"?"Tarjoukset":"Osallistumishakemukset")+" viimeistään"},hk:di}); });
+  const fol=DATA.filter(it=>state.follow.has(it.id)&&baseVisible(it)&&(!state.topics.size||it.topics.some(t=>state.topics.has(t)))).map(it=>({it,nx:nextEvent(it)}));
+  TENDERS.filter(it=>state.follow.has(it.id)&&baseVisible(it)&&(!state.ptopics.size||it.topics.some(t=>state.ptopics.has(t)))).forEach(it=>{ const di=deadlineInfo(it); fol.push({it,nx:di.over||it.status!=="avoin"?null:{date:hkDay(di.d),label:(di.what==="tarjous"?"Tarjoukset":"Osallistumishakemukset")+" viimeistään"},hk:di}); });
   fol.sort((a,b)=>{ if(a.nx&&b.nx) return a.nx.date-b.nx.date; if(a.nx) return -1; if(b.nx) return 1; return a.it.title.localeCompare(b.it.title); });
   const liT=(it,di)=>`<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${di.cls==="soon"?"soon":""}">${fmt(hkDay(di.d))}<br>${esc(di.big)}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">Hankinta · ${esc(it.buyer||"")}</div></span><span class="k">${esc(di.what)} viimeistään</span></li>`;
   document.getElementById("l-follow").innerHTML=fol.map(({it,nx,hk})=>hk?liT(it,hk):(nx?li(it,nx.date,nx.label):`<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d">–</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)} · ${esc(it.status)}</div></span><span class="k">ei tulevia vaiheita</span></li>`)).join("")||'<li class="empty">Merkitse säädös tai kilpailutus tähdellä ☆, niin se nousee tähän</li>';
   document.getElementById("h-follow").textContent=fol.length+" kpl";
+  const frows=state.folders.map(f=>{
+    const its=f.items.map(findItem).filter(Boolean); let nx=null;
+    its.forEach(it=>{ let n=null; if(it.scope==="hankinta"){ const di=deadlineInfo(it); if(!di.over&&it.status==="avoin") n={date:hkDay(di.d),label:(di.what==="tarjous"?"Tarjoukset":"Osallistumishakemukset")+" viimeistään",it}; } else { const e=nextEvent(it); if(e) n={date:e.date,label:e.label,it}; } if(n&&(!nx||n.date<nx.date)) nx=n; });
+    const on=state.folderFilter===f.id;
+    return `<li data-fid="${esc(f.id)}" tabindex="0" role="button" aria-pressed="${on}"><span class="d">${its.length} kpl</span><span style="min-width:0"><div class="t">${on?"▣":"▢"} ${esc(f.name)}</div><div class="m">${nx?`seuraava ${fmt(nx.date)} · ${esc(nx.label)} · ${esc(nx.it.title)}`:(its.length?"ei tulevia vaiheita":"tyhjä kansio")}</div></span><span class="k">${on?"valittu":"rajaa"}</span></li>`; }).join("");
+  const hidN=[...state.hidden].filter(findItem).length;
+  document.getElementById("l-folders").innerHTML=(frows||'<li class="empty">Luo kansio ja vie siihen kohteita säädöksen tai kilpailutuksen tiedoista (▢ Kansiot)</li>')+(hidN?`<li data-fid="__hidden" tabindex="0" role="button"><span class="d">${hidN} kpl</span><span style="min-width:0"><div class="t">${state.folderFilter==="__hidden"?"▣":"▢"} Piilotetut</div><div class="m">piilotetut kohteet – palauta avaamalla</div></span><span class="k">${state.folderFilter==="__hidden"?"valittu":"näytä"}</span></li>`:"");
+  document.getElementById("h-folders").textContent=state.folders.length+" kansiota";
   const ch=CHANGES.filter(c=>-daysTo(pd(c.date))<=14).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).slice(0,60);
   document.getElementById("l-changes").innerHTML=ch.map(c=>{ const it=DATA.find(i=>i.id===c.id); const n=-daysTo(pd(c.date)); return `<li data-id="${esc(c.id)}" tabindex="0" role="button"><span class="d">${fmt(pd(c.date))}<br>${n===0?"tänään":n+" pv sitten"}</span><span style="min-width:0"><div class="t">${state.follow.has(c.id)?"★ ":""}${esc(it.title)}</div><div class="c">${esc(c.text)}</div><div class="m">${c.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}</div></span><span class="k">${esc(c.type)}</span></li>`; }).join("")||'<li class="empty">Ei muutoksia 14 päivän sisällä – loki täyttyy päivittäisistä ajoista</li>';
   document.getElementById("h-changes").textContent=ch.length+" / 14 pv";
@@ -762,7 +833,7 @@ function renderDone(items){
   rows.sort((a,b)=>{ const da=a.ed?a.ed.date:0, db=b.ed?b.ed.date:0; return state.sortDesc?db-da:da-db; });
   rows.forEach(({it,ed})=>{
     body.insertAdjacentHTML("beforeend",`<tr class="r" tabindex="0" data-id="${esc(it.id)}">
-      <td><div class="head" style="display:flex;gap:8px"><div class="t" style="flex:1">${esc(it.title)}</div>${starHTML(it.id)}</div><div class="ref">${esc(it.ref)} ${changeBadge(it.id)}</div></td>
+      <td><div class="head" style="display:flex;gap:8px"><div class="t" style="flex:1">${esc(it.title)}</div>${starHTML(it.id)}${hideBtnHTML(it.id)}</div><div class="ref">${esc(it.ref)} ${changeBadge(it.id)} ${folderBadge(it.id)}</div></td>
       <td><span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span></td>
       <td><div class="topiclist">${it.topics.map(t=>`<span>${esc(t)}</span>`).join("")}</div></td>
       <td class="date">${ed?fmt(ed.date):"–"}${ed&&ed.kind==="soveltaminen"?`<div class="ref">sovelletaan</div>`:""}${ed&&ed.label&&/ehdotettu/i.test(ed.label)?`<div class="ref">ehdotettu</div>`:""}</td>
@@ -800,6 +871,7 @@ function openTender(it){
   drawer.dataset.id=it.id;
   document.getElementById("dr-changes").innerHTML="";
   document.getElementById("dr-src").innerHTML=`<h4>Linkit</h4><div class="srclinks">${links.join("")}</div>`;
+  renderDrawerFolders(it.id);
   const ev=tenderEvents(it);
   renderTimeline(document.getElementById("dr-mini"), [Object.assign({},it,{events:ev,ref:it.kind})], {mini:true,labels:true,tight:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
@@ -827,6 +899,7 @@ function openItem(id){
   const myCh=CHANGES.filter(c=>c.id===it.id).slice(0,8);
   document.getElementById("dr-changes").innerHTML=myCh.length?`<h4>Muutokset</h4><ul class="vlist">${myCh.map(c=>`<li class="past"><div class="d">${fmt(pd(c.date))}</div><div class="l">${esc(c.text)}</div></li>`).join("")}</ul>`:"";
   document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="micro" style="margin-top:8px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}`;
+  renderDrawerFolders(it.id);
   renderTimeline(document.getElementById("dr-mini"), [it], {mini:true,labels:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
   it.events.forEach(e=>{
@@ -839,6 +912,17 @@ function openItem(id){
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
+function renderDrawerFolders(id){
+  const chips=state.folders.map(f=>`<button class="chip${f.items.includes(id)?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${f.items.includes(id)}">${f.items.includes(id)?"▣":"▢"} ${esc(f.name)}</button>`).join("");
+  const hid=state.hidden.has(id);
+  document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4><div class="fchips">${chips}<span class="fnew"><input id="dr-fnew" placeholder="${state.folders.length?"Uusi kansio":"Luo ensimmäinen kansio"}" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fadd">Lisää</button></span></div>
+    <div style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
+}
+document.addEventListener("click",e=>{
+  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id); render(); return; }
+  if(e.target.closest("#dr-fadd")){ const inp=document.getElementById("dr-fnew"); const f=addFolder(inp.value); if(f){ const id=drawer.dataset.id; if(!f.items.includes(id)) f.items.push(id); persistFolders(); renderDrawerFolders(id); render(); } else inp.focus(); return; }
+});
+document.addEventListener("keydown",e=>{ if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById("dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
 function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
@@ -865,6 +949,8 @@ document.addEventListener("click",e=>{
   const pl=e.target.closest("#dr-permalink");
   if(pl){ e.preventDefault(); const url=location.href.split("#")[0]+pl.getAttribute("href"); try{ navigator.clipboard.writeText(url).then(()=>{pl.textContent="Linkki kopioitu";}).catch(()=>{pl.textContent=url;}); }catch(err){ pl.textContent=url; } return; }
   const st=e.target.closest("[data-follow]"); if(st){ e.preventDefault(); e.stopPropagation(); toggleFollow(st.dataset.follow); return; }
+  const hd=e.target.closest("[data-hide]"); if(hd){ e.preventDefault(); e.stopPropagation(); toggleHidden(hd.dataset.hide); return; }
+  const fl=e.target.closest("#l-folders li[data-fid]"); if(fl){ state.folderFilter=state.folderFilter===fl.dataset.fid?"":fl.dataset.fid; persist(); render(); return; }
   const ev=e.target.closest(".ev"); if(ev){ e.stopPropagation(); openItem(ev.dataset.id); return; }
   if(e.target.closest(".hk-row a")) return;
   const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id], .hk-row[data-id]"); if(row&&!row.closest(".mini")) openItem(row.dataset.id);
@@ -872,6 +958,7 @@ document.addEventListener("click",e=>{
 document.addEventListener("keydown",e=>{
   if(e.key!=="Enter"&&e.key!==" ") return;
   if(e.target.closest("a,button,input,select")) return;
+  const fl=e.target.closest("#l-folders li[data-fid]"); if(fl){ e.preventDefault(); fl.click(); return; }
   const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id], .hk-row[data-id]"); if(row&&!row.closest(".mini")){ e.preventDefault(); openItem(row.dataset.id); }
 });
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{ state.tab=b.dataset.tab; persist(); render(); }));
@@ -898,6 +985,35 @@ document.querySelectorAll("#hk-tools [data-scope]").forEach(b=>b.addEventListene
 document.getElementById("hk-within").addEventListener("change",e=>{ state.hkWithin=Number(e.target.value)||0; state.hkShown=150; persist(); render(); });
 document.getElementById("hk-dps").addEventListener("change",e=>{ state.hkDps=e.target.checked; state.hkShown=150; persist(); render(); });
 document.addEventListener("click",e=>{ const k=e.target.closest(".kpi[data-goto]"); if(k){ state.tab=k.dataset.goto; persist(); render(); window.scrollTo({top:0}); } });
+const folderSel=document.getElementById("folder-filter");
+function buildFolderSelect(){
+  const opts=[`<option value="">Kaikki kohteet</option>`].concat(state.folders.map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`));
+  opts.push(`<option value="__hidden">Piilotetut (${state.hidden.size})</option>`);
+  folderSel.innerHTML=opts.join(""); if(state.folderFilter&&state.folderFilter!=="__hidden"&&!folderById(state.folderFilter)) state.folderFilter="";
+  folderSel.value=state.folderFilter; folderSel.classList.toggle("active",!!state.folderFilter);
+}
+folderSel.addEventListener("change",()=>{ state.folderFilter=folderSel.value; state.hkShown=150; persist(); render(); });
+const foldersEl=document.getElementById("folders"), foldersScrim=document.getElementById("folders-scrim");
+let pendingDelete=null;
+function renderFolderRows(){
+  const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id)));
+  document.getElementById("folder-rows").innerHTML=state.folders.map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button>${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei kansioita vielä</p>';
+  document.getElementById("folders-hidden").textContent=`Piilotettuja kohteita: ${state.hidden.size}. Ne löytyvät Kansio-valikon kohdasta Piilotetut, josta ne voi palauttaa.`;
+}
+function openFolders(){ pendingDelete=null; renderFolderRows(); document.getElementById("folder-new").value=""; foldersEl.hidden=false; foldersScrim.hidden=false; document.getElementById("folder-new").focus(); }
+function closeFolders(){ foldersEl.hidden=true; foldersScrim.hidden=true; pendingDelete=null; }
+document.getElementById("open-folders").addEventListener("click",openFolders);
+document.getElementById("open-folders2").addEventListener("click",openFolders);
+document.getElementById("folders-close").addEventListener("click",closeFolders);
+foldersScrim.addEventListener("click",closeFolders);
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!foldersEl.hidden) closeFolders(); });
+document.getElementById("folder-add").addEventListener("click",()=>{ const inp=document.getElementById("folder-new"); const f=addFolder(inp.value); if(f){ inp.value=""; renderFolderRows(); render(); } else inp.focus(); });
+foldersEl.addEventListener("change",e=>{ const r=e.target.closest("[data-frename]"); if(r){ const f=folderById(r.dataset.frename); const name=r.value.trim().slice(0,60); if(f&&name){ f.name=name; persistFolders(); render(); } else if(f) r.value=f.name; } });
+foldersEl.addEventListener("click",e=>{
+  const o=e.target.closest("[data-fopen]"); if(o){ state.folderFilter=o.dataset.fopen; persist(); closeFolders(); render(); return; }
+  const c=e.target.closest("[data-fclean]"); if(c){ const f=folderById(c.dataset.fclean); const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id))); if(f){ f.items=f.items.filter(i=>all.has(i)); persistFolders(); renderFolderRows(); render(); } return; }
+  const d=e.target.closest("[data-fdel]"); if(d){ const id=d.dataset.fdel; if(pendingDelete!==id){ pendingDelete=id; renderFolderRows(); return; } state.folders=state.folders.filter(f=>f.id!==id); if(state.folderFilter===id) state.folderFilter=""; pendingDelete=null; persistFolders(); persist(); renderFolderRows(); render(); }
+});
 const lajitEl=document.getElementById("lajit");
 function buildLajiChips(counts){
   lajitEl.querySelectorAll(".chip").forEach(c=>c.remove());
@@ -919,6 +1035,7 @@ function render(){
   topicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.topics.size===0):String(state.topics.has(c.dataset.topic))));
   ptopicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.ptopics.size===0):String(state.ptopics.has(c.dataset.topic))));
   lajitEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(state.lajit.has(c.dataset.laji))));
+  buildFolderSelect();
   const hk=state.tab==="hk";
   lajitEl.hidden=hk; topicsEl.hidden=hk; ptopicsEl.hidden=!hk; document.getElementById("open-only-wrap").hidden=hk; document.getElementById("hk-tools").hidden=!hk;
   document.querySelectorAll("#hk-tools [data-scope]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.scope===state.hkScope)));
@@ -937,8 +1054,10 @@ function render(){
   if(state.tab==="done") renderDone(done);
   if(state.tab==="hk") renderTenders();
   document.getElementById("n-follow").textContent=state.follow.size?`(${state.follow.size})`:"";
-  if(hk) document.getElementById("count").textContent=`${hkItems.length} kilpailutusta`+(state.ptopics.size?` · ${state.ptopics.size} toimialaa`:"");
-  else { const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab]; document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:""); }
+  const fnote=state.folderFilter==="__hidden"?" · Piilotetut":(state.folderFilter&&folderById(state.folderFilter)?` · Kansio: ${folderById(state.folderFilter).name}`:"");
+  if(hk) document.getElementById("count").textContent=`${hkItems.length} kilpailutusta`+(state.ptopics.size?` · ${state.ptopics.size} toimialaa`:"")+fnote;
+  else { const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab]; document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"")+fnote; }
+  document.getElementById("count").classList.toggle("filter-note",!!state.folderFilter);
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
 
