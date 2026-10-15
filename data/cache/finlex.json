@@ -1,6 +1,1578 @@
 {
- "fetched": "2026-10-15T14:28:17",
+ "fetched": "2026-10-15T19:11:27",
  "items": {
+  "319/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "319/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/319",
+   "voimaan": "2026-07-01"
+  },
+  "321/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "321/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/321",
+   "voimaan": "2026-05-01"
+  },
+  "322/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "322/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/322",
+   "voimaan": "2026-05-01"
+  },
+  "323/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "323/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/323",
+   "voimaan": "2027-01-01"
+  },
+  "324/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "324/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/324",
+   "voimaan": "2027-01-01"
+  },
+  "325/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "325/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/325",
+   "voimaan": "2027-01-01"
+  },
+  "326/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "326/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/326",
+   "voimaan": "2026-05-01"
+  },
+  "327/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "327/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/327",
+   "voimaan": "2026-05-01"
+  },
+  "334/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "334/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/334",
+   "voimaan": "2026-05-09"
+  },
+  "335/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "335/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/335",
+   "voimaan": "2026-05-09"
+  },
+  "344/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "344/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/344",
+   "voimaan": "2026-08-01"
+  },
+  "345/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "345/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/345",
+   "voimaan": "2026-08-01"
+  },
+  "346/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "346/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/346",
+   "voimaan": "2026-08-01"
+  },
+  "347/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "347/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/347",
+   "voimaan": "2026-08-01"
+  },
+  "348/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "348/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/348",
+   "voimaan": "2026-05-15"
+  },
+  "349/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "349/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/349",
+   "voimaan": "2026-05-15"
+  },
+  "350/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "350/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/350",
+   "voimaan": "2026-05-15"
+  },
+  "351/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "351/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/351",
+   "voimaan": "2026-05-15"
+  },
+  "352/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "352/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/352",
+   "voimaan": "2026-06-01"
+  },
+  "353/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "353/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/353",
+   "voimaan": "2026-06-01"
+  },
+  "354/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "354/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/354",
+   "voimaan": "2026-06-01"
+  },
+  "355/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "355/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/355",
+   "voimaan": "2026-06-01"
+  },
+  "356/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "356/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/356",
+   "voimaan": null
+  },
+  "372/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "372/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/372",
+   "voimaan": "2026-05-25"
+  },
+  "373/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "373/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/373",
+   "voimaan": "2026-05-25"
+  },
+  "374/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "374/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/374",
+   "voimaan": "2026-05-25"
+  },
+  "375/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "375/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/375",
+   "voimaan": "2026-06-01"
+  },
+  "376/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "376/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/376",
+   "voimaan": "2026-06-01"
+  },
+  "377/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "377/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/377",
+   "voimaan": "2027-01-01"
+  },
+  "378/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "378/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/378",
+   "voimaan": "2027-01-01"
+  },
+  "379/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "379/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/379",
+   "voimaan": "2027-01-01"
+  },
+  "380/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "380/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/380",
+   "voimaan": "2026-09-01"
+  },
+  "381/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "381/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/381",
+   "voimaan": "2026-09-01"
+  },
+  "382/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "382/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/382",
+   "voimaan": "2026-09-01"
+  },
+  "383/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "383/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/383",
+   "voimaan": "2026-09-01"
+  },
+  "384/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "384/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/384",
+   "voimaan": "2026-09-01"
+  },
+  "385/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "385/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/385",
+   "voimaan": "2026-09-01"
+  },
+  "386/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "386/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/386",
+   "voimaan": "2026-09-01"
+  },
+  "387/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "387/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/387",
+   "voimaan": "2026-09-01"
+  },
+  "388/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "388/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/388",
+   "voimaan": "2026-09-01"
+  },
+  "389/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "389/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/389",
+   "voimaan": "2026-09-01"
+  },
+  "390/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "390/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/390",
+   "voimaan": "2026-09-01"
+  },
+  "391/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "391/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/391",
+   "voimaan": "2026-06-01"
+  },
+  "392/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "392/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/392",
+   "voimaan": "2026-06-01"
+  },
+  "393/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "393/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/393",
+   "voimaan": "2026-06-01"
+  },
+  "394/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "394/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/394",
+   "voimaan": "2026-06-01"
+  },
+  "395/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "395/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/395",
+   "voimaan": "2027-01-01"
+  },
+  "396/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "396/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/396",
+   "voimaan": "2027-01-01"
+  },
+  "397/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "397/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/397",
+   "voimaan": "2027-01-01"
+  },
+  "398/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "398/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/398",
+   "voimaan": "2026-09-01"
+  },
+  "399/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "399/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/399",
+   "voimaan": "2026-09-01"
+  },
+  "400/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "400/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/400",
+   "voimaan": "2026-09-01"
+  },
+  "401/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "401/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/401",
+   "voimaan": "2026-09-01"
+  },
+  "402/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "402/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/402",
+   "voimaan": null
+  },
+  "403/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "403/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/403",
+   "voimaan": "2026-09-01"
+  },
+  "404/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "404/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/404",
+   "voimaan": "2026-09-01"
+  },
+  "405/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "405/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/405",
+   "voimaan": "2026-05-29"
+  },
+  "406/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "406/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/406",
+   "voimaan": "2026-06-01"
+  },
+  "411/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "411/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/411",
+   "voimaan": "2026-06-01"
+  },
+  "412/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "412/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/412",
+   "voimaan": "2026-06-01"
+  },
+  "413/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "413/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/413",
+   "voimaan": "2026-06-01"
+  },
+  "414/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "414/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/414",
+   "voimaan": "2026-06-01"
+  },
+  "415/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "415/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/415",
+   "voimaan": "2026-06-01"
+  },
+  "416/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "416/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/416",
+   "voimaan": "2026-06-01"
+  },
+  "417/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "417/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/417",
+   "voimaan": "2026-06-01"
+  },
+  "418/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "418/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/418",
+   "voimaan": "2026-06-01"
+  },
+  "419/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "419/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/419",
+   "voimaan": "2026-06-01"
+  },
+  "420/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "420/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/420",
+   "voimaan": "2026-06-01"
+  },
+  "421/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "421/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/421",
+   "voimaan": "2026-06-01"
+  },
+  "422/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "422/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/422",
+   "voimaan": "2026-06-01"
+  },
+  "423/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "423/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/423",
+   "voimaan": "2026-06-01"
+  },
+  "424/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "424/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/424",
+   "voimaan": "2026-06-01"
+  },
+  "425/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "425/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/425",
+   "voimaan": "2026-06-01"
+  },
+  "426/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "426/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/426",
+   "voimaan": "2026-06-01"
+  },
+  "427/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "427/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/427",
+   "voimaan": "2026-06-01"
+  },
+  "428/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "428/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/428",
+   "voimaan": "2026-06-01"
+  },
+  "429/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "429/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/429",
+   "voimaan": "2026-06-01"
+  },
+  "430/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "430/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/430",
+   "voimaan": "2026-06-01"
+  },
+  "431/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "431/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/431",
+   "voimaan": "2026-06-01"
+  },
+  "432/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "432/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/432",
+   "voimaan": "2026-06-01"
+  },
+  "433/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "433/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/433",
+   "voimaan": "2026-06-01"
+  },
+  "434/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "434/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/434",
+   "voimaan": "2026-06-01"
+  },
+  "435/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "435/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/435",
+   "voimaan": "2027-07-01"
+  },
+  "436/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "436/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/436",
+   "voimaan": "2026-06-01"
+  },
+  "437/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "437/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/437",
+   "voimaan": "2026-06-01"
+  },
+  "438/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "438/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/438",
+   "voimaan": "2026-06-01"
+  },
+  "439/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "439/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/439",
+   "voimaan": "2026-06-01"
+  },
+  "440/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "440/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/440",
+   "voimaan": "2026-06-01"
+  },
+  "441/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "441/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/441",
+   "voimaan": "2026-06-01"
+  },
+  "442/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "442/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/442",
+   "voimaan": "2026-06-01"
+  },
+  "443/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "443/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/443",
+   "voimaan": "2026-06-01"
+  },
+  "444/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "444/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/444",
+   "voimaan": "2026-06-01"
+  },
+  "445/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "445/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/445",
+   "voimaan": "2026-06-01"
+  },
+  "446/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "446/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/446",
+   "voimaan": "2026-06-01"
+  },
+  "447/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "447/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/447",
+   "voimaan": "2026-06-01"
+  },
+  "448/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "448/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/448",
+   "voimaan": "2026-06-01"
+  },
+  "449/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "449/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/449",
+   "voimaan": "2026-06-01"
+  },
+  "450/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "450/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/450",
+   "voimaan": "2026-06-01"
+  },
+  "451/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "451/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/451",
+   "voimaan": "2026-06-01"
+  },
+  "452/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "452/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/452",
+   "voimaan": "2026-06-01"
+  },
+  "454/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "454/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/454",
+   "voimaan": null
+  },
+  "455/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "455/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/455",
+   "voimaan": "2026-09-01"
+  },
+  "458/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "458/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/458",
+   "voimaan": null
+  },
+  "459/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "459/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/459",
+   "voimaan": "2026-10-01"
+  },
+  "460/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "460/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/460",
+   "voimaan": "2026-10-01"
+  },
+  "461/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "461/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/461",
+   "voimaan": "2026-10-01"
+  },
+  "462/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "462/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/462",
+   "voimaan": "2026-10-01"
+  },
+  "463/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "463/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/463",
+   "voimaan": "2026-10-01"
+  },
+  "464/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "464/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/464",
+   "voimaan": "2026-07-01"
+  },
+  "465/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "465/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/465",
+   "voimaan": "2026-07-01"
+  },
+  "466/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "466/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/466",
+   "voimaan": "2026-09-01"
+  },
+  "467/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "467/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/467",
+   "voimaan": "2028-08-01"
+  },
+  "468/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "468/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/468",
+   "voimaan": "2028-08-01"
+  },
+  "471/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "471/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/471",
+   "voimaan": "2026-06-05"
+  },
+  "480/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "480/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/480",
+   "voimaan": "2026-06-12"
+  },
+  "481/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "481/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/481",
+   "voimaan": "2026-06-12"
+  },
+  "482/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "482/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/482",
+   "voimaan": "2026-06-12"
+  },
+  "483/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "483/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/483",
+   "voimaan": "2026-06-12"
+  },
+  "484/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "484/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/484",
+   "voimaan": "2026-06-12"
+  },
+  "485/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "485/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/485",
+   "voimaan": "2026-06-12"
+  },
+  "486/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "486/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/486",
+   "voimaan": "2026-06-12"
+  },
+  "487/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "487/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/487",
+   "voimaan": "2026-06-12"
+  },
+  "488/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "488/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/488",
+   "voimaan": "2026-06-12"
+  },
+  "489/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "489/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/489",
+   "voimaan": "2026-06-12"
+  },
+  "490/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "490/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/490",
+   "voimaan": "2026-06-12"
+  },
+  "491/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "491/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/491",
+   "voimaan": "2026-06-12"
+  },
+  "492/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "492/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/492",
+   "voimaan": "2026-06-12"
+  },
+  "493/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "493/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/493",
+   "voimaan": "2026-06-12"
+  },
+  "494/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "494/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/494",
+   "voimaan": "2026-06-12"
+  },
+  "495/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "495/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/495",
+   "voimaan": "2026-06-12"
+  },
+  "496/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "496/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/496",
+   "voimaan": "2026-06-12"
+  },
+  "497/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "497/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/497",
+   "voimaan": "2026-06-12"
+  },
+  "498/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "498/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/498",
+   "voimaan": "2026-06-12"
+  },
+  "499/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "499/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/499",
+   "voimaan": "2026-06-12"
+  },
+  "500/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "500/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/500",
+   "voimaan": "2026-06-12"
+  },
+  "501/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "501/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/501",
+   "voimaan": "2026-06-12"
+  },
+  "502/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "502/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/502",
+   "voimaan": null
+  },
+  "509/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "509/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/509",
+   "voimaan": "2026-06-22"
+  },
+  "510/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "510/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/510",
+   "voimaan": "2026-06-22"
+  },
+  "514/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "514/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/514",
+   "voimaan": "2026-06-19"
+  },
+  "515/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "515/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/515",
+   "voimaan": "2026-06-19"
+  },
+  "516/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "516/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/516",
+   "voimaan": "2026-06-19"
+  },
+  "517/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "517/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/517",
+   "voimaan": "2026-06-19"
+  },
+  "518/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "518/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/518",
+   "voimaan": "2026-06-19"
+  },
+  "519/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "519/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/519",
+   "voimaan": "2026-06-18"
+  },
+  "520/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "520/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/520",
+   "voimaan": "2026-06-18"
+  },
+  "521/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "521/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/521",
+   "voimaan": "2026-06-18"
+  },
+  "522/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "522/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/522",
+   "voimaan": "2026-06-18"
+  },
+  "523/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "523/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/523",
+   "voimaan": "2026-10-01"
+  },
+  "524/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "524/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/524",
+   "voimaan": "2026-10-01"
+  },
+  "525/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [
+    "2024-01-01"
+   ],
+   "sk": "525/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/525",
+   "voimaan": "2026-10-01"
+  },
+  "526/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "526/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/526",
+   "voimaan": "2026-10-01"
+  },
+  "527/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "527/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/527",
+   "voimaan": "2026-10-01"
+  },
+  "528/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "528/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/528",
+   "voimaan": "2026-10-01"
+  },
+  "529/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "529/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/529",
+   "voimaan": "2026-07-01"
+  },
+  "530/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "530/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/530",
+   "voimaan": "2026-07-01"
+  },
+  "531/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "531/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/531",
+   "voimaan": "2026-10-01"
+  },
+  "532/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "532/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/532",
+   "voimaan": "2026-10-01"
+  },
+  "533/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "533/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/533",
+   "voimaan": "2026-07-01"
+  },
+  "535/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "535/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/535",
+   "voimaan": "2026-10-01"
+  },
+  "537/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "537/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/537",
+   "voimaan": "2026-07-01"
+  },
+  "538/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "538/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/538",
+   "voimaan": "2026-07-01"
+  },
+  "539/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "539/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/539",
+   "voimaan": "2026-07-01"
+  },
+  "540/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "540/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/540",
+   "voimaan": "2026-09-01"
+  },
+  "541/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "541/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/541",
+   "voimaan": "2026-09-01"
+  },
+  "542/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "542/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/542",
+   "voimaan": "2026-09-01"
+  },
+  "543/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "543/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/543",
+   "voimaan": "2026-09-01"
+  },
+  "544/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "544/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/544",
+   "voimaan": "2026-07-01"
+  },
+  "545/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "545/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/545",
+   "voimaan": "2026-07-01"
+  },
+  "546/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "546/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/546",
+   "voimaan": "2026-07-01"
+  },
+  "547/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "547/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/547",
+   "voimaan": "2027-01-01"
+  },
+  "548/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "548/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/548",
+   "voimaan": "2026-09-01"
+  },
+  "549/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "549/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/549",
+   "voimaan": "2026-08-05"
+  },
+  "550/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "550/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/550",
+   "voimaan": "2026-08-05"
+  },
+  "552/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "552/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/552",
+   "voimaan": "2027-01-01"
+  },
+  "553/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "553/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/553",
+   "voimaan": "2027-01-01"
+  },
+  "554/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "554/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/554",
+   "voimaan": "2027-01-01"
+  },
+  "555/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "555/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/555",
+   "voimaan": "2026-06-30"
+  },
+  "556/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "556/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/556",
+   "voimaan": "2026-06-30"
+  },
+  "557/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "557/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/557",
+   "voimaan": "2026-06-30"
+  },
+  "558/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "558/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/558",
+   "voimaan": "2026-06-30"
+  },
+  "559/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "559/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/559",
+   "voimaan": "2026-06-30"
+  },
+  "560/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "560/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/560",
+   "voimaan": "2027-01-01"
+  },
+  "561/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "561/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/561",
+   "voimaan": "2026-07-01"
+  },
+  "562/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "562/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/562",
+   "voimaan": "2026-07-01"
+  },
+  "563/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "563/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/563",
+   "voimaan": "2026-07-01"
+  },
+  "564/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "564/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/564",
+   "voimaan": "2026-07-01"
+  },
+  "565/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [
+    "2026-07-01"
+   ],
+   "sk": "565/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/565",
+   "voimaan": "2015-01-01"
+  },
+  "566/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "566/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/566",
+   "voimaan": "2026-07-01"
+  },
+  "573/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "573/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/573",
+   "voimaan": null
+  },
+  "574/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "574/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/574",
+   "voimaan": "2026-07-31"
+  },
+  "575/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "575/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/575",
+   "voimaan": null
+  },
+  "576/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "576/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/576",
+   "voimaan": null
+  },
+  "577/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "577/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/577",
+   "voimaan": null
+  },
+  "578/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "578/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/578",
+   "voimaan": null
+  },
+  "579/2026": {
+   "fetched": "2026-10-15",
+   "muutVoimaantulot": [],
+   "sk": "579/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/579",
+   "voimaan": null
+  },
   "580/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
