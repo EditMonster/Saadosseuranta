@@ -170,6 +170,8 @@ a:hover{border-color:var(--fg)}
 .label .head .t{flex:1;min-width:0}
 .list .c{font-size:12.5px;color:var(--fg)}
 .list .c b{font-weight:500;color:var(--signal)}
+.linkbtn{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line2)}
+.linkbtn:hover{color:var(--fg);border-color:var(--fg)}
 .follow-btn{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:4px 10px;border-radius:var(--radius);color:var(--muted)}
 .follow-btn[aria-pressed="true"]{border-color:var(--signal);color:var(--signal);background:var(--signal-dim)}
 .track{position:relative;min-width:0}
@@ -278,7 +280,6 @@ th.sortable:hover{color:var(--fg)}
 <div class="status" id="status">
   <div class="sys" id="sys"><span><i class="led"></i>Ladataan aineistoa…</span></div>
   <div class="ctl">
-    <button id="open-sync" title="Vie tai tuo seurantalista toiselle koneelle">Seuranta <span id="sync-n"></span></button>
     <a href="data/saadosseuranta.ics" title="Määräajat kalenteriin (.ics)">Kalenteri</a>
     <a href="https://github.com/EditMonster/Saadosseuranta" target="_blank" rel="noopener">GitHub</a>
     <div class="seg" role="group" aria-label="Ulkoasu">
@@ -318,7 +319,7 @@ th.sortable:hover{color:var(--fg)}
   <section class="view" id="view-now" role="tabpanel" aria-labelledby="tab-now">
     <div class="kpis" id="kpis"></div>
     <div class="cols">
-      <div class="panel"><h3><span>Seurannassa</span><span id="h-follow"></span></h3><ul class="list" id="l-follow"></ul></div>
+      <div class="panel"><h3><span>Seurannassa</span><span><span id="h-follow"></span> · <button class="linkbtn" id="open-sync" title="Siirrä tähdet ja aihealuevalinta toiselle koneelle">Siirrä toiselle koneelle</button></span></h3><ul class="list" id="l-follow"></ul></div>
       <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
@@ -363,9 +364,9 @@ th.sortable:hover{color:var(--fg)}
 <div class="tip" id="tip" hidden></div>
 <div class="scrim" id="sync-scrim" hidden></div>
 <div class="modal panel" id="sync" role="dialog" aria-modal="true" aria-labelledby="sync-title" hidden>
-  <div class="drawer-top"><h3 id="sync-title" style="margin:0">Seurantalistan siirto</h3><button class="close" id="sync-close" aria-label="Sulje">×</button></div>
+  <div class="drawer-top"><h3 id="sync-title" style="margin:0">Seurantalista toiselle koneelle</h3><button class="close" id="sync-close" aria-label="Sulje">×</button></div>
   <p class="sub" id="sync-summary"></p>
-  <p class="sub">Seurantalista ja aihealuevalinta tallentuvat selaimeen. Toiselle koneelle ne siirtyvät linkillä tai koodilla.</p>
+  <p class="sub">Tähdet ja aihealuevalinta tallentuvat tähän selaimeen. Avaa siirtolinkki toisella koneella, niin sama seuranta on käytössä sielläkin.</p>
   <div class="sync-row"><button class="follow-btn" id="sync-link">Kopioi siirtolinkki</button><button class="follow-btn" id="sync-copy">Kopioi koodi</button><button class="follow-btn" id="sync-clear">Tyhjennä seuranta</button></div>
   <label class="micro" for="sync-code">Koodi</label>
   <textarea id="sync-code" class="sync-ta" readonly></textarea>
@@ -720,7 +721,6 @@ function render(){
   if(state.tab==="eu"){ document.getElementById("legend-eu").innerHTML=legendHTML("eu"); renderTimeline(document.getElementById("tl-eu"), eu.slice().sort(sortNext)); }
   if(state.tab==="done") renderDone(done);
   document.getElementById("n-follow").textContent=state.follow.size?`(${state.follow.size})`:"";
-  document.getElementById("sync-n").textContent=state.follow.size?`(${state.follow.size})`:"";
   const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab];
   document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"");
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
