@@ -5,7 +5,7 @@ lausuntoajat, eduskuntakäsittely, hyväksyminen, vahvistus, voimaantulot ja EU-
 vaakasuuntaisina aikajanoina, suodatettavissa aihealueittain.
 
 Sivu on staattinen (`docs/`), aineisto on yksi JSON-tiedosto (`docs/data/items.json`), ja
-GitHub Actions ajaa hakuskriptit joka aamu ja committaa muuttuneen aineiston. Käyttökustannus
+GitHub Actions ajaa hakuskriptit arkisin kolmesti päivässä (viikonloppuisin kerran) ja committaa muuttuneen aineiston. Käyttökustannus
 on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
 ## Sivun näkymät
@@ -62,7 +62,7 @@ docs/                GitHub Pages -sivu: index.html, logot, data/items.json + me
 3. **Settings → Actions → General → Workflow permissions: Read and write permissions** (jotta
    workflow voi committata aineiston).
 4. Aja workflow kerran käsin: **Actions → Päivitä säädösaineisto → Run workflow.** Sen jälkeen se
-   ajaa itsensä joka aamu klo 06:40 UTC.
+   ajaa itsensä arkisin kolmesti (7:40, 12:40 ja 16:40 Suomen talviaikaa) ja viikonloppuisin kerran aamulla.
 
 Paikallisesti:
 
@@ -89,7 +89,7 @@ python -m http.server -d docs 8000  # http://localhost:8000
 
 | Erä | Hinta |
 |---|---|
-| GitHub Actions, julkinen repo | 0 € (yksityisessä repossa 2 000 min/kk ilmaiseksi; ajo kestää 3–8 min/pv ≈ 150–250 min/kk) |
+| GitHub Actions, julkinen repo | 0 € (yksityisessä repossa 2 000 min/kk ilmaiseksi; 3 ajoa/arkipäivä × ~8 min ≈ 550 min/kk) |
 | GitHub Pages | 0 € |
 | Rajapinnat (Hankeikkuna, eduskunta, Finlex, EP, Cellar) | 0 €, avointa dataa |
 | Oma verkkotunnus (valinnainen) | ~10–15 €/v |

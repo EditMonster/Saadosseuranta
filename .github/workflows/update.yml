@@ -2,8 +2,10 @@ name: Päivitä säädösaineisto
 
 on:
   schedule:
-    # Joka päivä klo 06:40 UTC = 08:40/09:40 Suomen aikaa
-    - cron: "40 6 * * *"
+    # Arkisin kolmesti: 05:40, 10:40 ja 14:40 UTC = 7:40, 12:40 ja 16:40 talviaikaan (8:40, 13:40, 17:40 kesäaikaan)
+    - cron: "40 5,10,14 * * 1-5"
+    # Viikonloppuisin kerran aamulla
+    - cron: "40 6 * * 0,6"
   workflow_dispatch:
 
 permissions:
