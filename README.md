@@ -56,10 +56,13 @@ config/
 scripts/
   fetch_hankeikkuna.py  fetch_eduskunta.py  fetch_finlex.py  fetch_eu.py  fetch_ue.py  fetch_hys.py  fetch_hankinnat.py
   build.py           yhdistää välimuistit -> docs/data/items.json (+ kutsuu build_hankinnat.py -> docs/data/hankinnat.json)
-  update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita
+  update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita; kirjaa lähteiden tilan health.json-tiedostoon
+  health_report.py   lähdevahti: avaa/sulkee GitHub-issuen lähteen epäonnistuessa toistuvasti
+tests/               eheystestit (test_data.py) ja selaimen savutesti (test_smoke.py)
 data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys on nopea; Hilma-välimuisti haetaan joka ajossa eikä sitä versioida)
 docs/                GitHub Pages -sivu: index.html, logot, data/items.json + hankinnat.json + meta.json + changes.json + saadosseuranta.ics
-.github/workflows/update.yml   ajastettu ajo (arkisin 3×, viikonloppuisin 1×)
+.github/workflows/update.yml   ajastettu ajo (arkisin 3×, viikonloppuisin 1×) -> eheystestit -> commit -> lähdevahti -> julkaisu
+.github/workflows/deploy.yml   testit joka pushille ja Pages-julkaisu testien takana
 ```
 
 ## Käyttöönotto
@@ -95,6 +98,23 @@ python -m http.server -d docs 8000  # http://localhost:8000
 * Finlex rajoittaa pyyntöjä: voimaantulot haetaan enintään 200 säädökselle per ajo, loput seuraavana
   päivänä. Jo haetut säilyvät välimuistissa.
 * Jos jokin lähde on alhaalla, ajo käyttää sen edellistä välimuistia ja kirjaa virheen lokiin.
+
+## Laadunvarmistus
+
+* **Testit** (`tests/`): `test_data.py` tarkistaa rakennetun aineiston rakenteen ja määrät (tunnisteet, päivämäärät,
+  linkit, laskurit, kalenteritiedosto) alle sekunnissa; `test_smoke.py` ajaa sivun oikeassa selaimessa (Playwright +
+  Chromium) ja käy läpi välilehdet, kohteen avaamisen, tähden, kansioon lisäämisen, piilotuksen, suodattimet,
+  siirtokoodin, teeman ja pysyvän linkin – myös sen, että valinnat säilyvät uudelleenlatauksen yli. Paikallisesti:
+  `pip install -r requirements-dev.txt && python -m playwright install chromium && pytest`.
+* **Jokainen push** ajaa testit (`deploy.yml`). Kun Pagesin lähteeksi on valittu **Settings → Pages → Source:
+  GitHub Actions**, sivu julkaistaan vasta testien mentyä läpi, eli rikkinäinen versio ei korvaa toimivaa. Jos lähde
+  on vielä *Deploy from a branch*, testit ajetaan silti ja epäonnistuminen näkyy commitin punaisena ruksina.
+* **Päivitysajo** ajaa eheystestit ennen aineiston committia; `build.py`:n raja-arvot estävät lisäksi tyhjän tai
+  epäilyttävän pienen aineiston julkaisun.
+* **Lähdevahti**: jokaisen lähteen onnistuminen kirjataan (`data/cache/health.json`). Jos lähde epäonnistuu kolme
+  ajoa peräkkäin, `scripts/health_report.py` avaa repoon issuen (GitHub lähettää siitä sähköpostin) ja sulkee sen
+  itsestään, kun lähde toipuu. Sivun yläpalkki näyttää samalla varoituksen "Lähde ei päivity" – muut lähteet ja
+  edellinen onnistunut aineisto pysyvät käytössä.
 
 ## Kustannus
 

@@ -520,6 +520,9 @@ def main():
                        "hankinnat7": (hank.get("counts") or {}).get("sulkeutuu7", 0)},
             "topics": list(topics_cfg.keys()) + ["Muut"],
             "hankintaTopics": hank.get("topics") or [],
+            # per-source health from update.py: the page warns when a source keeps failing
+            "health": {k: {"ok": bool(v.get("ok", True)), "streak": int(v.get("streak", 0)), "last_ok": v.get("last_ok")}
+                       for k, v in load_json(CACHE_DIR / "health.json", {}).items() if not k.startswith("_")},
             "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
                       "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep)},

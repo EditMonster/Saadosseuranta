@@ -10,6 +10,9 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: update
@@ -27,10 +30,14 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Hae lähteet ja rakenna aineisto
         run: python scripts/update.py
+
+      # Rikkinäistä aineistoa ei committata: build.py:n raja-arvot + rakenteen eheystestit.
+      - name: Aineiston eheys
+        run: pytest tests/test_data.py -q
 
       - name: Tallenna muutokset
         run: |
@@ -43,3 +50,19 @@ jobs:
             git commit -m "Aineisto päivitetty $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      # Lähdevahti: avaa issuen (= sähköposti), kun lähde on epäonnistunut 3 ajoa peräkkäin, ja sulkee sen, kun lähde toipuu.
+      - name: Lähdevahti
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/health_report.py --issue
+
+  # Botin push ei käynnistä muita työnkulkuja, joten testit ja Pages-julkaisu kutsutaan tästä.
+  julkaise:
+    needs: update
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

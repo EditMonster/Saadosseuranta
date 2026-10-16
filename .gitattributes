@@ -1,0 +1,2 @@
+# Kalenteritiedosto vaatii CRLF-rivinvaihdot (RFC 5545); git ei saa normalisoida niitä
+*.ics -text

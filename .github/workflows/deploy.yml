@@ -1,0 +1,87 @@
+name: Testaa ja julkaise
+
+# Jokainen push main-haaraan ajaa aineiston eheystestit ja selaimessa ajettavan savutestin.
+# Kun GitHub Pagesin lähteeksi on valittu "GitHub Actions" (Settings → Pages → Source), sivu
+# julkaistaan vasta testien mentyä läpi – rikkinäinen versio ei korvaa toimivaa. Jos Pages
+# julkaistaan vielä suoraan main-haarasta, testit ajetaan silti ja epäonnistuminen näkyy
+# punaisena ruksina commitin kohdalla ja sähköpostina.
+#
+# Päivitysajo (update.yml) kutsuu tätä työnkulkua aineistocommitin jälkeen (workflow_call),
+# koska botin omat pushit eivät käynnistä workflow-ajoja.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Testit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # pull requestissa testataan PR:n sisältö, muuten aina main-haaran kärki (myös botin tuore aineistocommit)
+          ref: ${{ github.event_name == 'pull_request' && github.ref || 'main' }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - name: Playwright-selain (välimuistista)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements-dev.txt') }}
+      - run: python -m playwright install --with-deps chromium
+      - name: Aineiston eheys
+        run: pytest tests/test_data.py -q
+      - name: Savutesti selaimessa
+        run: pytest tests/test_smoke.py -q
+
+  deploy:
+    name: Julkaise GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - name: Tarkista Pagesin julkaisutapa
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || echo unknown)
+          echo "type=$type" >> "$GITHUB_OUTPUT"
+          echo "Pages build_type: $type"
+      - name: Huomautus
+        if: steps.pages.outputs.type != 'workflow'
+        run: |
+          echo "::notice title=Pages julkaistaan suoraan main-haarasta::Testit ajettiin, mutta ne eivät vielä portita julkaisua. Vaihda Settings → Pages → Source: GitHub Actions, niin sivu julkaistaan vasta testien mentyä läpi."
+      - uses: actions/configure-pages@v5
+        if: steps.pages.outputs.type == 'workflow'
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.pages.outputs.type == 'workflow'
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        if: steps.pages.outputs.type == 'workflow'

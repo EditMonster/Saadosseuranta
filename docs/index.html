@@ -55,6 +55,8 @@ a:hover{border-color:var(--fg)}
 .status .sys span b{color:var(--fg);font-weight:500}
 .led{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--signal);margin-right:6px;vertical-align:middle;box-shadow:0 0 6px var(--signal)}
 .led.ok{background:var(--fg);box-shadow:none}
+.status .warn{color:var(--signal)}
+.status .warn b{color:var(--signal)}
 .status .ctl{display:flex;gap:10px;align-items:center}
 .status .ctl button,.status .ctl a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:4px 8px;border-radius:var(--radius)}
 .status .ctl button:hover,.status .ctl a:hover{color:var(--fg);border-color:var(--line2)}
@@ -1120,6 +1122,16 @@ function render(){
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
 
+const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma"};
+function renderStatus(){
+  const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
+  const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
+  const bad=Object.entries(META.health||{}).filter(([k,h])=>(h.streak||0)>=2).sort((a,b)=>b[1].streak-a[1].streak);
+  let html=`<span><i class="led ${ageH!==null&&ageH<36&&!bad.length?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span>`;
+  html+=`<span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span>`;
+  if(bad.length) html+=`<span class="warn" title="${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} ajoa peräkkäin epäonnistunut, viimeksi onnistui ${h.last_ok?new Date(h.last_ok).toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}`).join("\n"))}">Lähde ei päivity: <b>${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k} (${h.streak} ajoa)`).join(", "))}</b> · näytetään edellinen aineisto</span>`;
+  document.getElementById("sys").innerHTML=html;
+}
 function loadTenders(){
   fetch("data/hankinnat.json?v="+v,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(h=>{
     TENDERS=(h.items||[]).filter(t=>t.deadline).map(t=>Object.assign({topics:[],events:[]},t)); TENDERS_LOADED=true;
@@ -1139,9 +1151,7 @@ Promise.all([
   CHANGES=(ch&&ch.changes)||[]; CHANGE_BY_ID={}; CHANGES.forEach(c=>{ if(!CHANGE_BY_ID[c.id]||CHANGE_BY_ID[c.id].date<c.date) CHANGE_BY_ID[c.id]=c; });
   DATA.forEach(it=>{ it.events=(it.events||[]).slice().sort((a,b)=>a.date.localeCompare(b.date)); it.topics=it.topics||[]; });
   buildTopicChips(META.topics||TOPICS); buildLajiChips(META.lajit||{}); buildPTopicChips(META.hankintaTopics||[]);
-  const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
-  const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
-  document.getElementById("sys").innerHTML=`<span><i class="led ${ageH!==null&&ageH<36?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span><span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span>`;
+  renderStatus();
   render();
   if(window.__synced){ document.getElementById("sys").insertAdjacentHTML("beforeend",`<span><b>Seurantalista tuotu linkistä (${window.__synced})</b></span>`); }
   if(pendingItem&&DATA.some(i=>i.id===pendingItem)) openItem(pendingItem);

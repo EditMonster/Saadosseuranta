@@ -1,7 +1,12 @@
 """Run the whole pipeline: fetch sources (each tolerant of the others failing),
-then build docs/data/items.json."""
+then build docs/data/items.json + hankinnat.json.
+
+Every source's outcome is recorded in data/cache/health.json (consecutive failure streak,
+last success, last error). build.py copies the summary into meta.json so the page can show
+"Lähde ei päivity", and scripts/health_report.py turns a long streak into a GitHub issue."""
 from __future__ import annotations
 
+import datetime as dt
 import sys
 import traceback
 
@@ -13,8 +18,9 @@ import fetch_hankeikkuna
 import fetch_hankinnat
 import fetch_hys
 import fetch_ue
-from common import log
+from common import CACHE_DIR, load_json, log, save_json
 
+HEALTH = CACHE_DIR / "health.json"
 STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
@@ -27,15 +33,23 @@ STEPS = [
 
 
 def main(only: list[str] | None = None) -> int:
+    health = load_json(HEALTH, {})
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     failures = []
     for name, fn in STEPS:
         if only and name not in only:
             continue
+        h = health.setdefault(name, {"streak": 0})
         try:
             fn()
+            h.update({"ok": True, "streak": 0, "last_ok": now, "last_error": None})
         except Exception:  # noqa: BLE001
             failures.append(name)
-            log(f"ERROR in {name}:\n{traceback.format_exc()}")
+            tb = traceback.format_exc()
+            h.update({"ok": False, "streak": int(h.get("streak", 0)) + 1, "last_fail": now,
+                      "last_error": (tb.strip().splitlines() or ["?"])[-1][:300]})
+            log(f"ERROR in {name} (peräkkäisiä epäonnistumisia {h['streak']}):\n{tb}")
+    save_json(HEALTH, health)
     build.main()
     if failures:
         log(f"valmis, mutta epäonnistuneet vaiheet: {failures} (vanha välimuisti käytössä)")
