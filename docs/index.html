@@ -317,12 +317,18 @@ th.sortable:hover{color:var(--fg)}
 .fdrop-btn .caret{font-family:var(--mono);font-size:11px;color:var(--muted);flex:none}
 .fdrop-menu{border:1px solid var(--fg);border-top:0;padding:8px;background:var(--panel)}
 .flist{max-height:190px;overflow-y:auto;border:1px solid var(--line);background:var(--bg2);margin-top:6px}
-.flist label{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 10px;border-top:1px solid var(--line);cursor:pointer;font-size:12.5px}
-.flist label:first-child{border-top:0}
-.flist label:hover{background:var(--panel2)}
-.flist label.on{font-weight:500}
-.flist input{accent-color:var(--fg);margin:0}
-.flist .n{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.flist .fr{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:6px 8px 6px 10px;border-top:1px solid var(--line);cursor:pointer;font-size:12.5px;width:100%;text-align:left}
+.flist .fr:first-child{border-top:0}
+.flist .fr:hover{background:var(--panel2)}
+.flist .fr.on{font-weight:500}
+.flist .fr .chk{font-size:13px;width:14px;color:var(--muted)}
+.flist .fr.on .chk{color:var(--fg)}
+.flist .fr .fname{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flist .fr .n{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.flist .fr .act{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);border-radius:var(--radius);padding:2px 7px;color:var(--muted);white-space:nowrap}
+.flist .fr:hover .act{border-color:var(--fg);color:var(--fg)}
+.flist .fr.on .act{border-color:var(--signal);color:var(--signal)}
+.fdrop-btn .lbl.add{color:var(--fg)}
 .flist .none{padding:10px;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
 .fsearch{width:100%;font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:var(--radius);padding:5px 8px;background:var(--panel);color:var(--fg);margin-top:6px}
 .fcreate{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}
@@ -951,12 +957,12 @@ let fdropOpen=false;
 function renderDrawerFolders(id,filter,focusFid){
   const q=(filter||"").toLowerCase();
   const fs=sortedFolders().filter(f=>!q||f.name.toLowerCase().includes(q));
-  const rows=fs.map(f=>{ const on=f.items.includes(id); return `<label class="${on?"on":""}"><input type="checkbox" data-ftoggle="${esc(f.id)}"${on?" checked":""}><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(f.name)}</span><span class="n">${f.items.length}</span></label>`; }).join("");
+  const rows=fs.map(f=>{ const on=f.items.includes(id); return `<button type="button" class="fr${on?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${on}" title="${on?"Poista tästä kansiosta":"Lisää tähän kansioon"}"><span class="chk">${on?"▣":"▢"}</span><span class="fname">${esc(f.name)}</span><span class="n">${f.items.length}</span><span class="act">${on?"Poista":"Lisää"}</span></button>`; }).join("");
   const hid=state.hidden.has(id);
   const mine=foldersOf(id).map(f=>f.name);
-  const label=mine.length?`▣ ${esc(mine.join(", "))}`:(state.folders.length?"Ei kansiossa – valitse kansio":"Ei kansioita – luo ensimmäinen");
+  const label=mine.length?`▣ ${esc(mine.join(", "))}`:(state.folders.length?"＋ Lisää kansioon":"＋ Luo kansio ja lisää tämä");
   document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4>
-    <div class="fdrop"><button class="fdrop-btn" id="dr-fdrop-btn" aria-expanded="${fdropOpen}" aria-controls="dr-fdrop-menu"><span class="lbl${mine.length?"":" dim"}">${label}</span><span class="caret">${mine.length?mine.length+" · ":""}${fdropOpen?"▴":"▾"}</span></button>
+    <div class="fdrop"><button type="button" class="fdrop-btn" id="dr-fdrop-btn" aria-expanded="${fdropOpen}" aria-controls="dr-fdrop-menu" title="${fdropOpen?"Sulje kansiolista":"Avaa kansiolista: lisää tai poista kohde kansioista"}"><span class="lbl${mine.length?"":" add"}">${label}</span><span class="caret">${mine.length?mine.length+" kansiota · ":""}${fdropOpen?"Sulje ▴":"Muokkaa ▾"}</span></button>
     <div class="fdrop-menu" id="dr-fdrop-menu"${fdropOpen?"":" hidden"}>
       ${state.folders.length>6?`<input class="fsearch" id="dr-fsearch" placeholder="Hae kansiota" aria-label="Hae kansiota" value="${esc(filter||"")}" style="margin-top:0">`:""}
       ${state.folders.length?`<div class="flist" id="dr-flist"${state.folders.length>6?"":' style="margin-top:0"'}>${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
@@ -964,15 +970,15 @@ function renderDrawerFolders(id,filter,focusFid){
     </div></div>
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
   if(fdropOpen){
-    if(focusFid){ const cb=document.querySelector(`#dr-flist [data-ftoggle="${CSS.escape(focusFid)}"]`); if(cb) cb.focus(); }
+    if(focusFid){ const cb=[...document.querySelectorAll("#dr-flist [data-ftoggle]")].find(x=>x.dataset.ftoggle===focusFid); if(cb) cb.focus(); }
     else if(filter!==undefined){ const s=document.getElementById("dr-fsearch"); if(s){ s.focus(); s.setSelectionRange(s.value.length,s.value.length); } }
   }
 }
 document.addEventListener("input",e=>{ if(e.target.id==="dr-fsearch") renderDrawerFolders(drawer.dataset.id,e.target.value); });
 document.addEventListener("click",e=>{
-  if(e.target.closest("#dr-fdrop-btn")){ fdropOpen=!fdropOpen; renderDrawerFolders(drawer.dataset.id); if(fdropOpen){ const s=document.getElementById("dr-fsearch")||document.getElementById("dr-fnew"); const first=document.querySelector("#dr-flist input"); (first||s)?.focus(); } return; }
-  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; const s=document.getElementById("dr-fsearch"); toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id,s?s.value:undefined,ft.dataset.ftoggle); render(); return; }
-  if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); fdropOpen=true; renderDrawerFolders(id); render(); const ni=document.getElementById("dr-fnew"); if(ni) ni.focus(); toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
+  if(e.target.closest("#dr-fdrop-btn")){ e.preventDefault(); fdropOpen=!fdropOpen; renderDrawerFolders(drawer.dataset.id); if(fdropOpen){ const s=document.getElementById("dr-fsearch")||document.getElementById("dr-fnew"); const first=document.querySelector("#dr-flist [data-ftoggle]"); const el=first||s; if(el) el.focus(); } return; }
+  const ft=e.target.closest("[data-ftoggle]"); if(ft){ e.preventDefault(); const id=drawer.dataset.id; const f=folderById(ft.dataset.ftoggle); if(!f) return; const s=document.getElementById("dr-fsearch"); const wasIn=f.items.includes(id); toggleInFolder(f.id,id); renderDrawerFolders(id,s?s.value:undefined,f.id); render(); toast(wasIn?`Poistettu kansiosta ${f.name}`:`Lisätty kansioon ${f.name}`); return; }
+  if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); fdropOpen=true; renderDrawerFolders(id); render(); const ni=document.getElementById("dr-fnew"); if(ni) ni.focus(); inp.value=""; toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
 });
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&fdropOpen&&!drawer.hidden){ e.stopImmediatePropagation(); fdropOpen=false; renderDrawerFolders(drawer.dataset.id); document.getElementById("dr-fdrop-btn").focus(); return; }
   if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
