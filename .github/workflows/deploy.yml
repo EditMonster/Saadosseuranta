@@ -31,11 +31,11 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           # pull requestissa testataan PR:n sisältö, muuten aina main-haaran kärki (myös botin tuore aineistocommit)
           ref: ${{ github.event_name == 'pull_request' && github.ref || 'main' }}
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -61,7 +61,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           ref: main
       - name: Tarkista Pagesin julkaisutapa
