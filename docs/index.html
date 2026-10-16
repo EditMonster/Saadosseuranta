@@ -320,6 +320,13 @@ th.sortable:hover{color:var(--fg)}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:9px 14px;border-radius:var(--radius);font-size:12.5px;z-index:70;display:flex;gap:16px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.25)}
 .toast button{color:var(--signal);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase}
 .filter-note{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--signal);white-space:nowrap}
+.fsel{gap:5px;padding-top:2px}
+.fsel .chip{text-transform:none;letter-spacing:.03em;font-size:11px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fsel .chip .n{opacity:.6;margin-left:5px}
+.fsel .chip.ghost{border-style:dashed;color:var(--dim)}
+.finfo{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.4}
+.finfo b{color:var(--fg);font-weight:500}
+.finfo .mono{font-size:11px}
 
 /* Sync modal */
 .modal{position:fixed;z-index:62;top:50%;left:50%;transform:translate(-50%,-50%);width:min(560px,calc(100% - 32px));max-height:calc(100% - 32px);overflow:auto;padding:18px 20px}
@@ -398,7 +405,7 @@ th.sortable:hover{color:var(--fg)}
     <div class="kpis" id="kpis"></div>
     <div class="cols">
       <div class="panel"><h3><span>Seurannassa</span><span><span id="h-follow"></span> · <button class="linkbtn" id="open-sync" title="Siirrä tähdet ja aihealuevalinta toiselle koneelle">Siirrä toiselle koneelle</button></span></h3><ul class="list" id="l-follow"></ul></div>
-      <div class="panel"><h3><span>Kansiot</span><span><span id="h-folders"></span> · <button class="linkbtn" id="open-folders2">Hallitse</button></span></h3><ul class="list" id="l-folders"></ul></div>
+      <div class="panel"><h3><span>Kansiot</span><span><span id="h-folders"></span> · <button class="linkbtn" id="open-folders2">Hallitse</button></span></h3><div class="chips fsel" id="l-folders"></div><div class="finfo" id="l-folder-info"></div></div>
       <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
@@ -797,7 +804,7 @@ function renderNow(){
     ["Vaiheita 14 pv",in14,in14?"signal":"","määräaikaa tai vaihetta kahden viikon sisällä"],
     ["Voimaan 30 pv",voimaan30,"","voimaantuloa tai soveltamisvaihetta"],
     ["EU-määräajat 60 pv",euMaar,"","täytäntöönpanon tai säädöksen määräaikaa"],
-    ["Muutoksia 7 pv",CHANGES.filter(c=>-daysTo(pd(c.date))<=7).length,"","uutta tai muuttunutta vaihetta"],
+    ["Muutoksia 7 pv",CHANGES.filter(c=>-daysTo(pd(c.date))<=7).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).length,"","uutta tai muuttunutta vaihetta"],
     ["Kilpailutuksia 7 pv",TENDERS_LOADED?TENDERS.filter(t=>t.status==="avoin"&&!t.dps&&(!state.ptopics.size||t.topics.some(x=>state.ptopics.has(x)))&&!deadlineInfo(t).over&&deadlineInfo(t).days<=7).length:"…","",(state.ptopics.size?"valituilla toimialoilla ":"")+"sulkeutuu viikon sisällä →","hk"],
   ].map(([h,v,c,d,g])=>`<div class="panel kpi"${g?` data-goto="${g}" role="button" tabindex="0"`:""}><div class="micro">${h}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
   const li=(it,date,label,extra)=>{ const n=daysTo(date); return `<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${n>=0&&n<=14?"soon":""}">${fmt(date)}${n>=0?`<br>${n===0?"tänään":n+" pv"}`:""}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}${extra?" · "+esc(extra):""}</div></span><span class="k">${esc(label)}</span></li>`; };
@@ -807,13 +814,20 @@ function renderNow(){
   const liT=(it,di)=>`<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${di.cls==="soon"?"soon":""}">${fmt(hkDay(di.d))}<br>${esc(di.big)}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">Hankinta · ${esc(it.buyer||"")}</div></span><span class="k">${esc(di.what)} viimeistään</span></li>`;
   document.getElementById("l-follow").innerHTML=fol.map(({it,nx,hk})=>hk?liT(it,hk):(nx?li(it,nx.date,nx.label):`<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d">–</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${it.scope==="fi"?"FI":"EU"} · ${esc(it.ref)} · ${esc(it.status)}</div></span><span class="k">ei tulevia vaiheita</span></li>`)).join("")||'<li class="empty">Merkitse säädös tai kilpailutus tähdellä ☆, niin se nousee tähän</li>';
   document.getElementById("h-follow").textContent=fol.length+" kpl";
-  const frows=state.folders.map(f=>{
-    const its=f.items.map(findItem).filter(Boolean); let nx=null;
-    its.forEach(it=>{ let n=null; if(it.scope==="hankinta"){ const di=deadlineInfo(it); if(!di.over&&it.status==="avoin") n={date:hkDay(di.d),label:(di.what==="tarjous"?"Tarjoukset":"Osallistumishakemukset")+" viimeistään",it}; } else { const e=nextEvent(it); if(e) n={date:e.date,label:e.label,it}; } if(n&&(!nx||n.date<nx.date)) nx=n; });
-    const on=state.folderFilter===f.id;
-    return `<li data-fid="${esc(f.id)}" tabindex="0" role="button" aria-pressed="${on}"><span class="d">${its.length} kpl</span><span style="min-width:0"><div class="t">${on?"▣":"▢"} ${esc(f.name)}</div><div class="m">${nx?`seuraava ${fmt(nx.date)} · ${esc(nx.label)} · ${esc(nx.it.title)}`:(its.length?"ei tulevia vaiheita":"tyhjä kansio")}</div></span><span class="k">${on?"valittu":"rajaa"}</span></li>`; }).join("");
+  const folderNext=f=>{ let nx=null; f.items.map(findItem).filter(Boolean).forEach(it=>{ let n=null; if(it.scope==="hankinta"){ const di=deadlineInfo(it); if(!di.over&&it.status==="avoin") n={date:hkDay(di.d),label:(di.what==="tarjous"?"Tarjoukset":"Osallistumishakemukset")+" viimeistään",it}; } else { const e=nextEvent(it); if(e) n={date:e.date,label:e.label,it}; } if(n&&(!nx||n.date<nx.date)) nx=n; }); return nx; };
   const hidN=[...state.hidden].filter(findItem).length;
-  document.getElementById("l-folders").innerHTML=(frows||'<li class="empty">Luo kansio ja vie siihen kohteita säädöksen tai kilpailutuksen tiedoista (▢ Kansiot)</li>')+(hidN?`<li data-fid="__hidden" tabindex="0" role="button"><span class="d">${hidN} kpl</span><span style="min-width:0"><div class="t">${state.folderFilter==="__hidden"?"▣":"▢"} Piilotetut</div><div class="m">piilotetut kohteet – palauta avaamalla</div></span><span class="k">${state.folderFilter==="__hidden"?"valittu":"näytä"}</span></li>`:"");
+  const chip=(fid,label,n,title)=>`<button class="chip" data-fid="${esc(fid)}" aria-pressed="${state.folderFilter===fid}" title="${esc(title||"")}">${esc(label)}${n!=null?`<span class="n">${n}</span>`:""}</button>`;
+  let chips=chip("","Kaikki kohteet",null,"Ei kansiorajausta");
+  chips+=state.folders.map(f=>{ const n=f.items.filter(findItem).length; const nx=folderNext(f); return chip(f.id,f.name,n,nx?`Seuraava ${fmt(nx.date)} · ${nx.label}`:"Ei tulevia vaiheita"); }).join("");
+  if(hidN) chips+=chip("__hidden","Piilotetut",hidN,"Piilotetut kohteet – palauta avaamalla");
+  if(!state.folders.length) chips+=`<button class="chip ghost" id="open-folders3">+ Luo ensimmäinen kansio</button>`;
+  document.getElementById("l-folders").innerHTML=chips;
+  const sel=state.folderFilter&&state.folderFilter!=="__hidden"?folderById(state.folderFilter):null;
+  let info;
+  if(state.folderFilter==="__hidden") info=`<b>Piilotetut</b> · ${hidN} kohdetta. Näkymät näyttävät nyt vain piilotetut; palauta kohde sen riviltä tai tiedoista.`;
+  else if(sel){ const its=sel.items.map(findItem).filter(Boolean); const nx=folderNext(sel); const miss=sel.items.length-its.length; info=`<b>${esc(sel.name)}</b> · ${its.length} kohdetta${miss?` (${miss} ei enää aineistossa)`:""} · ${its.filter(i=>i.scope!=="hankinta").length} säädöstä, ${its.filter(i=>i.scope==="hankinta").length} kilpailutusta. ${nx?`Seuraava <b>${fmt(nx.date)}</b> <span class="mono">${esc(nx.label)}</span> – ${esc(nx.it.title)}`:"Ei tulevia vaiheita."} Tilannekuva ja välilehdet on rajattu tähän kansioon.`; }
+  else info=state.folders.length?`Valitse kansio, niin Tilannekuva, aikajanat ja kilpailutukset rajautuvat sen kohteisiin. Kohde viedään kansioon sen tiedoista (▢ Kansiot ja näkyvyys).`:`Kansioihin voi koota esimerkiksi asiakkaan tai toimeksiannon säädökset ja kilpailutukset. Luo kansio tästä tai kohteen tiedoista.`;
+  document.getElementById("l-folder-info").innerHTML=info;
   document.getElementById("h-folders").textContent=state.folders.length+" kansiota";
   const ch=CHANGES.filter(c=>-daysTo(pd(c.date))<=14).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).slice(0,60);
   document.getElementById("l-changes").innerHTML=ch.map(c=>{ const it=DATA.find(i=>i.id===c.id); const n=-daysTo(pd(c.date)); return `<li data-id="${esc(c.id)}" tabindex="0" role="button"><span class="d">${fmt(pd(c.date))}<br>${n===0?"tänään":n+" pv sitten"}</span><span style="min-width:0"><div class="t">${state.follow.has(c.id)?"★ ":""}${esc(it.title)}</div><div class="c">${esc(c.text)}</div><div class="m">${c.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}</div></span><span class="k">${esc(c.type)}</span></li>`; }).join("")||'<li class="empty">Ei muutoksia 14 päivän sisällä – loki täyttyy päivittäisistä ajoista</li>';
@@ -950,7 +964,8 @@ document.addEventListener("click",e=>{
   if(pl){ e.preventDefault(); const url=location.href.split("#")[0]+pl.getAttribute("href"); try{ navigator.clipboard.writeText(url).then(()=>{pl.textContent="Linkki kopioitu";}).catch(()=>{pl.textContent=url;}); }catch(err){ pl.textContent=url; } return; }
   const st=e.target.closest("[data-follow]"); if(st){ e.preventDefault(); e.stopPropagation(); toggleFollow(st.dataset.follow); return; }
   const hd=e.target.closest("[data-hide]"); if(hd){ e.preventDefault(); e.stopPropagation(); toggleHidden(hd.dataset.hide); return; }
-  const fl=e.target.closest("#l-folders li[data-fid]"); if(fl){ state.folderFilter=state.folderFilter===fl.dataset.fid?"":fl.dataset.fid; persist(); render(); return; }
+  if(e.target.closest("#open-folders3")){ openFolders(); return; }
+  const fl=e.target.closest("#l-folders [data-fid]"); if(fl){ const fid=fl.dataset.fid; state.folderFilter=(fid&&state.folderFilter===fid)?"":fid; state.hkShown=150; persist(); render(); return; }
   const ev=e.target.closest(".ev"); if(ev){ e.stopPropagation(); openItem(ev.dataset.id); return; }
   if(e.target.closest(".hk-row a")) return;
   const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id], .hk-row[data-id]"); if(row&&!row.closest(".mini")) openItem(row.dataset.id);
@@ -958,7 +973,6 @@ document.addEventListener("click",e=>{
 document.addEventListener("keydown",e=>{
   if(e.key!=="Enter"&&e.key!==" ") return;
   if(e.target.closest("a,button,input,select")) return;
-  const fl=e.target.closest("#l-folders li[data-fid]"); if(fl){ e.preventDefault(); fl.click(); return; }
   const row=e.target.closest(".row[data-id], tr.r[data-id], .list li[data-id], .hk-row[data-id]"); if(row&&!row.closest(".mini")){ e.preventDefault(); openItem(row.dataset.id); }
 });
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{ state.tab=b.dataset.tab; persist(); render(); }));
