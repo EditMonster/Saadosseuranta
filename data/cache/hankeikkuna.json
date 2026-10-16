@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-16T07:49:34",
+ "fetched": "2026-10-16T10:06:34",
  "items": [
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -601,7 +601,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-15T23:57:27",
+   "muokattu": "2026-10-16T08:38:02",
    "nimi": "Hallituksen esitys laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -707,7 +707,7 @@
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
-   "esittelyviikko": 44,
+   "esittelyviikko": 47,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -723,7 +723,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-12T11:39:33",
+   "muokattu": "2026-10-16T10:05:53",
    "nimi": "Hallituksen esitys eduskunnalle Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-, kehitys-, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -2224,7 +2224,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-16T05:38:13",
+   "muokattu": "2026-10-16T09:25:29",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -9077,6 +9077,79 @@
    "valmistumisPaiva": null
   },
   {
+   "annettuEduskunnalle": "2026-03-26",
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö - CSRD-sisältömuutos",
+     "pvm": "2025-10-27",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/bd3e3e26-4b85-4b3b-a7fd-10d115767910/LAUSUNTOPYYNTO_20251027121139.PDF"
+    },
+    {
+     "nimi": "HE-LUONNOS CSRD-SISÄLTÖMUUTOKSET 27102025",
+     "pvm": "2025-10-27",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/12dba53b-dbfe-4fc6-8de3-bc8923fa507f/LAUSUNTOPYYNTO_20251027121139.PDF"
+    },
+    {
+     "nimi": "Utkast - huvudsakliga innehåll och lagförslag 27102025",
+     "pvm": "2025-10-27",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/56ca237c-d2fb-4f21-b116-3e42f9d95f62/LAUSUNTOPYYNTO_20251027121139.PDF"
+    }
+   ],
+   "asiasanat": [
+    "tilinpäätös",
+    "yritysvastuu"
+   ],
+   "esittelyviikko": 13,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2025-10-27",
+     "end": "2025-11-24",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-06-16",
+     "end": "2026-06-16",
+     "kind": "muu",
+     "label": "Lakien vahvistaminen",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [
+    "EV 73/2026"
+   ],
+   "heNumerot": [
+    "HE 38/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "laji": "laki",
+   "ministerio": "työ- ja elinkeinoministeriö",
+   "muokattu": "2026-10-16T09:07:30",
+   "nimi": "Hallituksen esitys eduskunnalle laeiksi kirjanpitolain ja tilintarkastuslain muuttamisesta",
+   "rauennut": false,
+   "skNumerot": [
+    "555/2026",
+    "556/2026",
+    "557/2026",
+    "558/2026",
+    "559/2026"
+   ],
+   "teemat": [],
+   "tiivistelma": "Esityksessä ehdotetaan säädettäväksi laki kirjanpitolain muuttamisesta ja laki tilintarkastuslain 3 luvun muuttamisesta. Lakien myötä kestävyysraportointivelvollisten piiri supistuisi nykyisestä ja raportointivaatimukset kevenisivät. Ehdotuksella pantaisiin täytäntöön kestävyysraportointia koskevan niin sanotun muutosdirektiivin säännökset.",
+   "tila": "KAYNNISSA",
+   "tunnus": "TEM096:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM096:00/2025",
+   "uuid": "542a0cbf-2da2-4b84-ba14-efc4d1aa5f73",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-06-16"
+  },
+  {
    "annettuEduskunnalle": null,
    "asetettu": null,
    "asiakirjat": [
@@ -9122,7 +9195,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-16T07:45:45",
+   "muokattu": "2026-10-16T08:10:02",
    "nimi": "Väliaikainen poikkeaminen vesivoimalaitoksen lupamääräyksistä sähköjärjestelmän tasapainottamiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -12918,7 +12991,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-16T00:14:54",
+   "muokattu": "2026-10-16T09:58:31",
    "nimi": "Hallituksen esityksen valmistelu; henkilöstön joustava käyttö (Nato-säädösmuutokset)",
    "rauennut": false,
    "skNumerot": [],
@@ -13240,7 +13313,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-16T07:42:43",
+   "muokattu": "2026-10-16T09:31:47",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -13789,7 +13862,7 @@
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-05-21T10:52:23",
+   "muokattu": "2026-10-16T09:15:07",
    "nimi": "Hallituksen esitys laeiksi kirjanpitolain, kaupparekisterilain ja tilintarkastuslain muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -13892,7 +13965,7 @@
    "heTila": "POISTETTU_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-16T06:07:02",
+   "muokattu": "2026-10-16T09:42:28",
    "nimi": "Pelastustoimen henkilötietojen käsittelyä ja tiedonsaantioikeuksia koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -24740,78 +24813,6 @@
    "valmistumisPaiva": "2022-12-13"
   },
   {
-   "annettuEduskunnalle": "2026-04-30",
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö; Henkilötietojen käsittely Syyttäjälaitoksessa - erityissääntelyn tarve",
-     "pvm": "2022-10-26",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/7945cada-4b2d-47fb-a894-2c2021077b97/LAUSUNTOPYYNTO_20221026130021.PDF"
-    },
-    {
-     "nimi": "Lausuntotiivistelmä",
-     "pvm": "2022-12-30",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/58e26f2b-11a0-4a87-af55-1fdccbbfe76b/YHTEENVETO_20240614093433.PDF"
-    },
-    {
-     "nimi": "Lausuntopyyntö; Luonnos hallituksen esitykseksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta",
-     "pvm": "2025-11-25",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/10d74cb5-2c3d-4758-8227-b448e02adb3b/LAUSUNTOPYYNTO_20251125100456.PDF"
-    },
-    {
-     "nimi": "Begäran om utlåtande; Utkast till regeringens proposition om ändring av lagen om Åklagarmyndigheten och lagen om justitieförvaltningens nationella informationsresurs",
-     "pvm": "2025-11-25",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/feb9c218-e872-42f2-83cb-5eb39c5a64c0/LAUSUNTOPYYNTO_20251125100456.PDF"
-    }
-   ],
-   "asiasanat": [
-    "informaatio-oikeus",
-    "tietosuoja",
-    "syyttäjät"
-   ],
-   "esittelyviikko": 18,
-   "esittelyvuosi": 2026,
-   "etapit": [
-    {
-     "date": "2022-10-26",
-     "end": "2022-12-15",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö",
-     "tyyppi": "LAUSUNTOKIERROS"
-    },
-    {
-     "date": "2025-11-25",
-     "end": "2026-01-13",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [
-    "HE 77/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "laji": "laki",
-   "ministerio": "oikeusministeriö",
-   "muokattu": "2026-05-04T08:35:36",
-   "nimi": "Syyttäjälaitoksen henkilötietojen käsittelyn sääntelytarpeen arviointi",
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Hankkeessa laaditaan ensi vaiheessa arviomuistio, jonka tarkoituksena on selvittää henkilötietojen käsittelyä Syyttäjälaitoksessa koskevan lainsäädännön muutos- ja täydennystarpeet sekä esittää arvio tarkoituksenmukaisimmasta sääntelyratkaisusta. Sen jälkeen hankkeessa valmistellaan luonnos hallituksen esitykseksi.",
-   "tila": "KAYNNISSA",
-   "tunnus": "OM029:00/2022",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM029:00/2022",
-   "uuid": "4864d8d2-676a-41cb-8ff8-b12490aee2df",
-   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
-   "valmistumisPaiva": null
-  },
-  {
    "annettuEduskunnalle": null,
    "asetettu": "2022-05-01",
    "asiakirjat": [],
@@ -25974,7 +25975,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-09-21T07:35:07",
+   "muokattu": "2026-10-16T09:25:08",
    "nimi": "Alusöljy- ja  aluskemikaalivahinkojen jälkitorjuntaa koskeva säädösvalmisteluhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -28644,79 +28645,6 @@
    "uuid": "b6c5b909-adfe-499a-8d62-c04a83c26fd1",
    "valmisteluvaihe": "LAUSUNTOMENETTELY",
    "valmistumisPaiva": "2026-12-31"
-  },
-  {
-   "annettuEduskunnalle": "2026-03-26",
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö - CSRD-sisältömuutos",
-     "pvm": "2025-10-27",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/bd3e3e26-4b85-4b3b-a7fd-10d115767910/LAUSUNTOPYYNTO_20251027121139.PDF"
-    },
-    {
-     "nimi": "HE-LUONNOS CSRD-SISÄLTÖMUUTOKSET 27102025",
-     "pvm": "2025-10-27",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/12dba53b-dbfe-4fc6-8de3-bc8923fa507f/LAUSUNTOPYYNTO_20251027121139.PDF"
-    },
-    {
-     "nimi": "Utkast - huvudsakliga innehåll och lagförslag 27102025",
-     "pvm": "2025-10-27",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/542a0cbf-2da2-4b84-ba14-efc4d1aa5f73/56ca237c-d2fb-4f21-b116-3e42f9d95f62/LAUSUNTOPYYNTO_20251027121139.PDF"
-    }
-   ],
-   "asiasanat": [
-    "tilinpäätös",
-    "yritysvastuu"
-   ],
-   "esittelyviikko": 13,
-   "esittelyvuosi": 2026,
-   "etapit": [
-    {
-     "date": "2025-10-27",
-     "end": "2025-11-24",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    },
-    {
-     "date": "2026-06-16",
-     "end": "2026-06-16",
-     "kind": "muu",
-     "label": "Lakien vahvistaminen",
-     "tyyppi": "SAADOS"
-    }
-   ],
-   "evNumerot": [
-    "EV 73/2026"
-   ],
-   "heNumerot": [
-    "HE 38/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "laji": "laki",
-   "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-06-25T07:08:25",
-   "nimi": "Hallituksen esitys eduskunnalle laeiksi kirjanpitolain ja tilintarkastuslain muuttamisesta",
-   "rauennut": false,
-   "skNumerot": [
-    "555/2026",
-    "556/2026",
-    "557/2026",
-    "558/2026",
-    "559/2026"
-   ],
-   "teemat": [],
-   "tiivistelma": "Esityksessä ehdotetaan säädettäväksi laki kirjanpitolain muuttamisesta ja laki tilintarkastuslain 3 luvun muuttamisesta. Lakien myötä kestävyysraportointivelvollisten piiri supistuisi nykyisestä ja raportointivaatimukset kevenisivät. Ehdotuksella pantaisiin täytäntöön kestävyysraportointia koskevan niin sanotun muutosdirektiivin säännökset.",
-   "tila": "PAATTYNYT",
-   "tunnus": "TEM096:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM096:00/2025",
-   "uuid": "542a0cbf-2da2-4b84-ba14-efc4d1aa5f73",
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-06-16"
   },
   {
    "annettuEduskunnalle": "2025-12-18",
@@ -32281,7 +32209,7 @@
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2025-11-28T08:08:30",
+   "muokattu": "2026-10-16T09:10:56",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kirjanpitolain muuttamisesta annetun lain voimaantulosäännöksen muuttamisesta",
    "rauennut": false,
    "skNumerot": [
@@ -56638,6 +56566,92 @@
    "valmistumisPaiva": "2023-03-23"
   },
   {
+   "annettuEduskunnalle": "2026-04-30",
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö; Henkilötietojen käsittely Syyttäjälaitoksessa - erityissääntelyn tarve",
+     "pvm": "2022-10-26",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/7945cada-4b2d-47fb-a894-2c2021077b97/LAUSUNTOPYYNTO_20221026130021.PDF"
+    },
+    {
+     "nimi": "Lausuntotiivistelmä",
+     "pvm": "2022-12-30",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/58e26f2b-11a0-4a87-af55-1fdccbbfe76b/YHTEENVETO_20240614093433.PDF"
+    },
+    {
+     "nimi": "Lausuntopyyntö; Luonnos hallituksen esitykseksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta",
+     "pvm": "2025-11-25",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/10d74cb5-2c3d-4758-8227-b448e02adb3b/LAUSUNTOPYYNTO_20251125100456.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande; Utkast till regeringens proposition om ändring av lagen om Åklagarmyndigheten och lagen om justitieförvaltningens nationella informationsresurs",
+     "pvm": "2025-11-25",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4864d8d2-676a-41cb-8ff8-b12490aee2df/feb9c218-e872-42f2-83cb-5eb39c5a64c0/LAUSUNTOPYYNTO_20251125100456.PDF"
+    }
+   ],
+   "asiasanat": [
+    "informaatio-oikeus",
+    "tietosuoja",
+    "syyttäjät"
+   ],
+   "esittelyviikko": 18,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2022-10-26",
+     "end": "2022-12-15",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2025-11-25",
+     "end": "2026-01-13",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-10-16",
+     "end": null,
+     "kind": "muu",
+     "label": "Lakien vahvistaminen",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2026-10-16",
+     "end": null,
+     "kind": "muu",
+     "label": "Hanke on valmistunut.",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [
+    "HE 77/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "laji": "laki",
+   "ministerio": "oikeusministeriö",
+   "muokattu": "2026-10-16T08:53:14",
+   "nimi": "Syyttäjälaitoksen henkilötietojen käsittelyn sääntelytarpeen arviointi",
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Hankkeessa laaditaan ensi vaiheessa arviomuistio, jonka tarkoituksena on selvittää henkilötietojen käsittelyä Syyttäjälaitoksessa koskevan lainsäädännön muutos- ja täydennystarpeet sekä esittää arvio tarkoituksenmukaisimmasta sääntelyratkaisusta. Sen jälkeen hankkeessa valmistellaan luonnos hallituksen esitykseksi.",
+   "tila": "PAATTYNYT",
+   "tunnus": "OM029:00/2022",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM029:00/2022",
+   "uuid": "4864d8d2-676a-41cb-8ff8-b12490aee2df",
+   "valmisteluvaihe": "VALMISTUNUT",
+   "valmistumisPaiva": "2026-10-16"
+  },
+  {
    "annettuEduskunnalle": "2022-10-20",
    "asetettu": "2022-05-02",
    "asiakirjat": [
@@ -67620,7 +67634,7 @@
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-01-23T10:36:07",
+   "muokattu": "2026-10-16T09:21:48",
    "nimi": "Kotitalouksien velkaantumista rajoittavat makrovakauden valvontavälineet",
    "rauennut": false,
    "skNumerot": [
@@ -70308,13 +70322,21 @@
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-10-16",
+     "end": "2026-11-30",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-08-25T08:36:59",
+   "muokattu": "2026-10-16T10:06:26",
    "nimi": "Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
