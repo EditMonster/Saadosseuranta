@@ -308,11 +308,23 @@ th.sortable:hover{color:var(--fg)}
 .hide:hover{color:var(--signal)}
 .hide[data-restore]{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:2px 6px;border-radius:var(--radius);color:var(--muted)}
 .fchips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.flist{max-height:196px;overflow-y:auto;border:1px solid var(--line);background:var(--bg2);margin-top:6px}
+.flist label{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 10px;border-top:1px solid var(--line);cursor:pointer;font-size:12.5px}
+.flist label:first-child{border-top:0}
+.flist label:hover{background:var(--panel2)}
+.flist label.on{font-weight:500}
+.flist input{accent-color:var(--fg);margin:0}
+.flist .n{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.flist .none{padding:10px;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+.fsearch{width:100%;font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:var(--radius);padding:5px 8px;background:var(--panel);color:var(--fg);margin-top:6px}
+.fcreate{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.fcreate input{flex:1;min-width:160px;font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:var(--radius);padding:5px 8px;background:var(--panel);color:var(--fg)}
 .fchips .chip{text-transform:none;letter-spacing:.03em;font-size:11px}
 .fnew{display:inline-flex;gap:4px;align-items:center}
 .fnew input,.frow input,#folder-new{font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:var(--radius);padding:4px 7px;background:var(--panel);color:var(--fg);min-width:0}
 .fnew input{width:160px}
 #folder-new{flex:1;min-width:180px}
+#folder-rows{max-height:46vh;overflow-y:auto}
 .frow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
 .frow input{width:100%}
 .frow .n{font-family:var(--mono);font-size:10.5px;color:var(--muted);white-space:nowrap}
@@ -526,6 +538,7 @@ try{ const h=JSON.parse(localStorage.getItem("saadosseuranta-hidden")||"[]"); if
 function persistFolders(){ try{ localStorage.setItem("saadosseuranta-folders",JSON.stringify(state.folders)); }catch(e){} }
 function persistHidden(){ try{ localStorage.setItem("saadosseuranta-hidden",JSON.stringify([...state.hidden])); }catch(e){} }
 const folderById=id=>state.folders.find(f=>f.id===id);
+const sortedFolders=()=>state.folders.slice().sort((a,b)=>a.name.localeCompare(b.name,"fi"));
 function newFolderId(){ return "k"+Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
 function addFolder(name){ name=(name||"").trim().slice(0,60); if(!name) return null; const ex=state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); if(ex) return ex; const f={id:newFolderId(),name,items:[]}; state.folders.push(f); persistFolders(); return f; }
 function toggleInFolder(fid,id){ const f=folderById(fid); if(!f) return; const i=f.items.indexOf(id); if(i>=0) f.items.splice(i,1); else f.items.push(id); persistFolders(); }
@@ -818,7 +831,7 @@ function renderNow(){
   const hidN=[...state.hidden].filter(findItem).length;
   const chip=(fid,label,n,title)=>`<button class="chip" data-fid="${esc(fid)}" aria-pressed="${state.folderFilter===fid}" title="${esc(title||"")}">${esc(label)}${n!=null?`<span class="n">${n}</span>`:""}</button>`;
   let chips=chip("","Kaikki kohteet",null,"Ei kansiorajausta");
-  chips+=state.folders.map(f=>{ const n=f.items.filter(findItem).length; const nx=folderNext(f); return chip(f.id,f.name,n,nx?`Seuraava ${fmt(nx.date)} · ${nx.label}`:"Ei tulevia vaiheita"); }).join("");
+  chips+=sortedFolders().map(f=>{ const n=f.items.filter(findItem).length; const nx=folderNext(f); return chip(f.id,f.name,n,nx?`Seuraava ${fmt(nx.date)} · ${nx.label}`:"Ei tulevia vaiheita"); }).join("");
   if(hidN) chips+=chip("__hidden","Piilotetut",hidN,"Piilotetut kohteet – palauta avaamalla");
   if(!state.folders.length) chips+=`<button class="chip ghost" id="open-folders3">+ Luo ensimmäinen kansio</button>`;
   document.getElementById("l-folders").innerHTML=chips;
@@ -926,17 +939,26 @@ function openItem(id){
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
-function renderDrawerFolders(id){
-  const chips=state.folders.map(f=>`<button class="chip${f.items.includes(id)?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${f.items.includes(id)}">${f.items.includes(id)?"▣":"▢"} ${esc(f.name)}</button>`).join("");
+function renderDrawerFolders(id,filter){
+  const q=(filter||"").toLowerCase();
+  const fs=sortedFolders().filter(f=>!q||f.name.toLowerCase().includes(q));
+  const rows=fs.map(f=>{ const on=f.items.includes(id); return `<label class="${on?"on":""}"><input type="checkbox" data-ftoggle="${esc(f.id)}"${on?" checked":""}><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(f.name)}</span><span class="n">${f.items.length}</span></label>`; }).join("");
   const hid=state.hidden.has(id);
-  document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4><div class="fchips">${chips}<span class="fnew"><input id="dr-fnew" placeholder="${state.folders.length?"Uusi kansio":"Luo ensimmäinen kansio"}" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fadd">Lisää</button></span></div>
-    <div style="margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
+  const inF=foldersOf(id).length;
+  document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4>
+    <div class="micro">${state.folders.length?`${inF?`Kohde on ${inF} kansiossa`:"Kohde ei ole kansiossa"} · rastita kansiot, joihin kohde kuuluu`:"Ei vielä kansioita – luo ensimmäinen alla"}</div>
+    ${state.folders.length>6?`<input class="fsearch" id="dr-fsearch" placeholder="Hae kansiota" aria-label="Hae kansiota" value="${esc(filter||"")}">`:""}
+    ${state.folders.length?`<div class="flist" id="dr-flist">${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
+    <div class="fcreate"><input id="dr-fnew" placeholder="Uuden kansion nimi" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fcreate" title="Luo tyhjä kansio lisäämättä tätä kohdetta">Luo kansio</button><button class="follow-btn" id="dr-fadd" title="Luo kansio ja lisää tämä kohde siihen">Luo ja lisää tämä</button></div>
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
+  const s=document.getElementById("dr-fsearch"); if(s&&filter!==undefined){ s.focus(); s.setSelectionRange(s.value.length,s.value.length); }
 }
+document.addEventListener("input",e=>{ if(e.target.id==="dr-fsearch") renderDrawerFolders(drawer.dataset.id,e.target.value); });
 document.addEventListener("click",e=>{
-  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id); render(); return; }
-  if(e.target.closest("#dr-fadd")){ const inp=document.getElementById("dr-fnew"); const f=addFolder(inp.value); if(f){ const id=drawer.dataset.id; if(!f.items.includes(id)) f.items.push(id); persistFolders(); renderDrawerFolders(id); render(); } else inp.focus(); return; }
+  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; const s=document.getElementById("dr-fsearch"); toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id,s?s.value:undefined); render(); return; }
+  if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); renderDrawerFolders(id); render(); toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
 });
-document.addEventListener("keydown",e=>{ if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById("dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
+document.addEventListener("keydown",e=>{ if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
 function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
@@ -1001,7 +1023,7 @@ document.getElementById("hk-dps").addEventListener("change",e=>{ state.hkDps=e.t
 document.addEventListener("click",e=>{ const k=e.target.closest(".kpi[data-goto]"); if(k){ state.tab=k.dataset.goto; persist(); render(); window.scrollTo({top:0}); } });
 const folderSel=document.getElementById("folder-filter");
 function buildFolderSelect(){
-  const opts=[`<option value="">Kaikki kohteet</option>`].concat(state.folders.map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`));
+  const opts=[`<option value="">Kaikki kohteet</option>`].concat(sortedFolders().map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`));
   opts.push(`<option value="__hidden">Piilotetut (${state.hidden.size})</option>`);
   folderSel.innerHTML=opts.join(""); if(state.folderFilter&&state.folderFilter!=="__hidden"&&!folderById(state.folderFilter)) state.folderFilter="";
   folderSel.value=state.folderFilter; folderSel.classList.toggle("active",!!state.folderFilter);
@@ -1011,7 +1033,7 @@ const foldersEl=document.getElementById("folders"), foldersScrim=document.getEle
 let pendingDelete=null;
 function renderFolderRows(){
   const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id)));
-  document.getElementById("folder-rows").innerHTML=state.folders.map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button>${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei kansioita vielä</p>';
+  document.getElementById("folder-rows").innerHTML=sortedFolders().map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button>${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei kansioita vielä</p>';
   document.getElementById("folders-hidden").textContent=`Piilotettuja kohteita: ${state.hidden.size}. Ne löytyvät Kansio-valikon kohdasta Piilotetut, josta ne voi palauttaa.`;
 }
 function openFolders(){ pendingDelete=null; renderFolderRows(); document.getElementById("folder-new").value=""; foldersEl.hidden=false; foldersScrim.hidden=false; document.getElementById("folder-new").focus(); }
