@@ -314,6 +314,10 @@ th.sortable:hover{color:var(--fg)}
 /* Folders, hiding */
 .sel{font:inherit;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--panel);border:1px solid var(--line2);border-radius:var(--radius);padding:4px 6px;max-width:240px}
 .sel.active{border-color:var(--signal);color:var(--signal)}
+.pill.fi{border-color:var(--fg);color:var(--fg);text-transform:none;letter-spacing:.03em}
+.label .parties{font-family:var(--sans);font-size:11px;color:var(--dim);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.label .parties b{color:var(--fg);font-weight:600}
+.dl .plist{margin:0;padding:0;list-style:none}.dl .plist li{margin:0 0 3px}.dl .plist li b{font-weight:600}
 .pill.fold{border-color:var(--line2);color:var(--fg);text-transform:none;letter-spacing:.03em}
 .hide{font-size:15px;line-height:1;color:var(--dim);padding:0 3px;opacity:0;flex:none}
 .row:hover .hide,.hk-row:hover .hide,tr.r:hover .hide,.hide:focus-visible,.hide[data-restore]{opacity:1}
@@ -433,6 +437,7 @@ th.sortable:hover{color:var(--fg)}
     <div class="hk-tools" id="yk-tools" hidden>
       <div class="seg" role="group" aria-label="Viranomainen"><button data-ykscope="all" aria-pressed="true">Kaikki</button><button data-ykscope="fi" aria-pressed="false">KKV</button><button data-ykscope="eu" aria-pressed="false">EU-komissio</button></div>
       <label class="toggle"><input type="checkbox" id="yk-open" checked> Vain vireillä</label>
+      <label class="toggle" title="Komission tapaukset, joissa jokin osapuoli on suomalainen (EUVL:n ennakkoilmoituksen mukaan); KKV:n tapaukset näkyvät aina"><input type="checkbox" id="yk-fi"> Suomalainen osapuoli</label>
     </div>
     <div class="hk-tools" id="hk-tools" hidden>
       <div class="seg" role="group" aria-label="Hankinnan vaihe" id="hk-stages"><button data-stage="tulossa" aria-pressed="false" title="Ennakkoilmoitukset ja markkinakartoitukset – mitä on tulossa">Tulossa <span class="n"></span></button><button data-stage="avoin" aria-pressed="true" title="Tarjousaika avoinna">Avoinna <span class="n"></span></button><button data-stage="ratkaistu" aria-pressed="false" title="Jälki-ilmoitukset: kuka voitti">Ratkaistu <span class="n"></span></button><button data-stage="suorahankinta" aria-pressed="false" title="Suorahankinnan avoimuusilmoitukset – 14 päivän valitusaika">Suorahankinnat <span class="n"></span></button></div>
@@ -571,10 +576,10 @@ const MONTHS_FI=["tammi","helmi","maalis","huhti","touko","kesä","heinä","elo"
 
 /* ---------- state ---------- */
 const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set(), lajit:new Set(["laki","eu","kuuleminen","kirjelma"]),
-  ptopics:new Set(), hkScope:"all", hkWithin:0, hkDps:false, hkShown:150, hkStage:"avoin", yktopics:new Set(), ykScope:"all", ykOpen:true, folders:[], hidden:new Set(), folderFilter:"" };
+  ptopics:new Set(), hkScope:"all", hkWithin:0, hkDps:false, hkShown:150, hkStage:"avoin", yktopics:new Set(), ykScope:"all", ykOpen:true, ykFi:false, folders:[], hidden:new Set(), folderFilter:"" };
 let CHANGES=[]; let CHANGE_BY_ID={};
 try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(Array.isArray(s.lajit)) state.lajit=new Set(s.lajit); if(s.tab in TABHASH) state.tab=s.tab;
-  if(Array.isArray(s.ptopics)) state.ptopics=new Set(s.ptopics); if(["all","eu","fi"].includes(s.hkScope)) state.hkScope=s.hkScope; if([0,7,14,30].includes(s.hkWithin)) state.hkWithin=s.hkWithin; state.hkDps=!!s.hkDps; if(typeof s.folderFilter==="string") state.folderFilter=s.folderFilter; if(["tulossa","avoin","ratkaistu","suorahankinta"].includes(s.hkStage)) state.hkStage=s.hkStage; if(Array.isArray(s.yktopics)) state.yktopics=new Set(s.yktopics); if(["all","fi","eu"].includes(s.ykScope)) state.ykScope=s.ykScope; if(typeof s.ykOpen==="boolean") state.ykOpen=s.ykOpen; }catch(e){}
+  if(Array.isArray(s.ptopics)) state.ptopics=new Set(s.ptopics); if(["all","eu","fi"].includes(s.hkScope)) state.hkScope=s.hkScope; if([0,7,14,30].includes(s.hkWithin)) state.hkWithin=s.hkWithin; state.hkDps=!!s.hkDps; if(typeof s.folderFilter==="string") state.folderFilter=s.folderFilter; if(["tulossa","avoin","ratkaistu","suorahankinta"].includes(s.hkStage)) state.hkStage=s.hkStage; if(Array.isArray(s.yktopics)) state.yktopics=new Set(s.yktopics); if(["all","fi","eu"].includes(s.ykScope)) state.ykScope=s.ykScope; if(typeof s.ykOpen==="boolean") state.ykOpen=s.ykOpen; if(typeof s.ykFi==="boolean") state.ykFi=s.ykFi; }catch(e){}
 /* folders + hidden items: personal organisation, kept in this browser (and movable with the transfer link) */
 try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-folders")||"[]"); if(Array.isArray(f)) state.folders=f.filter(x=>x&&typeof x.id==="string"&&typeof x.name==="string").map(x=>({id:x.id,name:x.name,items:Array.isArray(x.items)?x.items.filter(i=>typeof i==="string"):[]})); }catch(e){}
 try{ const h=JSON.parse(localStorage.getItem("saadosseuranta-hidden")||"[]"); if(Array.isArray(h)) state.hidden=new Set(h.filter(i=>typeof i==="string")); }catch(e){}
@@ -646,7 +651,7 @@ function starHTML(id){ const on=state.follow.has(id); return `<button class="sta
 function changeBadge(id){ const c=CHANGE_BY_ID[id]; if(!c) return ""; const n=-daysTo(pd(c.date)); if(n>14) return ""; return `<span class="pill chg" title="${esc(c.text)}">muuttunut ${n===0?"tänään":n+" pv"}</span>`; }
 let pendingItem=null;
 (()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]) state.tab=HASHTAB[h]; else if(h) pendingItem=h; })();
-function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics],lajit:[...state.lajit],ptopics:[...state.ptopics],hkScope:state.hkScope,hkWithin:state.hkWithin,hkDps:state.hkDps,folderFilter:state.folderFilter,hkStage:state.hkStage,yktopics:[...state.yktopics],ykScope:state.ykScope,ykOpen:state.ykOpen})); }catch(e){} }
+function persist(){ try{ localStorage.setItem("saadosseuranta",JSON.stringify({tab:state.tab,topics:[...state.topics],lajit:[...state.lajit],ptopics:[...state.ptopics],hkScope:state.hkScope,hkWithin:state.hkWithin,hkDps:state.hkDps,folderFilter:state.folderFilter,hkStage:state.hkStage,yktopics:[...state.yktopics],ykScope:state.ykScope,ykOpen:state.ykOpen,ykFi:state.ykFi})); }catch(e){} }
 
 /* theme: white by default; the segmented control picks light or dark and the choice is remembered */
 function setTheme(name){
@@ -811,11 +816,27 @@ function matchesMerger(it){
   if(state.followOnly && !state.follow.has(it.id)) return false;
   if(state.ykScope==="fi" && it.authority!=="KKV") return false;
   if(state.ykScope==="eu" && it.authority!=="EU") return false;
+  if(state.ykFi && !it.fiParty) return false;
   if(state.yktopics.size && !it.topics.some(t=>state.yktopics.has(t))) return false;
   if(state.ykOpen && !YK_OPEN.has(it.status) && !(state.followOnly&&state.follow.has(it.id)) && !state.q && !state.folderFilter) return false;
-  if(state.q){ const q=state.q.toLowerCase(); const hay=[it.title,it.ref,it.summary,it.decision,it.status,it.ministry,it.topics.join(" ")].join(" ").toLowerCase(); if(!hay.includes(q)) return false; }
+  if(state.q){ const q=state.q.toLowerCase(); const hay=[it.title,it.ref,it.summary,it.decision,it.status,it.ministry,it.topics.join(" "),partiesText(it)].join(" ").toLowerCase(); if(!hay.includes(q)) return false; }
   return true;
 }
+function mergerFactsHTML(it){
+  const rows=[];
+  if(it.parties&&it.parties.length) rows.push(["Osapuolet",`<ul class="plist">${it.parties.map(p=>`<li>${p.fi?"<b>":""}${esc(p.name)}${p.short&&p.short!==p.name?` (${esc(p.short)})`:""}${p.fi?"</b>":""}${p.country?` – ${esc(p.country)}`:""}</li>`).join("")}</ul>`]);
+  if(it.authority==="EU"&&it.fiParty) rows.push(["Suomalainen osapuoli",`<span class="pill fi">Kyllä</span> <span class="micro">EUVL:n ennakkoilmoituksen mukaan</span>`]);
+  if(it.noticeDate&&it.observationsEnd){ const end=pd(it.observationsEnd); const n=daysTo(end); rows.push(["Kolmansien huomautukset",`EUVL:ssä ${fmt(pd(it.noticeDate))}${it.noticeRef?` (${esc(it.noticeRef)})`:""} · huomautukset komissiolle viimeistään <b>${fmt(end)}</b>${n>=0?` <span class="pill open">${n===0?"tänään":n+" pv"}</span>`:" (päättynyt)"}`]); }
+  if(it.activities&&it.activities.length) rows.push(["Liiketoiminta",`<ul class="plist">${it.activities.map(a=>`<li>${esc(a)}</li>`).join("")}</ul>`]);
+  if(it.simplified) rows.push(["Menettely",esc(it.simplified)]);
+  if(it.phase1End&&!it.done) rows.push([it.authority==="KKV"?"1. vaiheen määräaika":"Alustava määräaika (vaihe 1)",fmt(pd(it.phase1End))]);
+  if(it.phase2End&&!it.done) rows.push(["Jatkokäsittelyn määräaika",fmt(pd(it.phase2End))]);
+  if(!rows.length) return "";
+  const note=it.authority==="EU"?`<p class="micro" style="margin-top:8px">Määräajat ovat komission julkaisemia alustavia määräaikoja (sulautuma-asetus 139/2004, 10 art.); kellon keskeytykset ja pidennykset näkyvät vaiheina. Kolmannet voivat esittää huomautuksia ennakkoilmoituksen julkaisusta lukien (yleensä 10 päivää).</p>`:`<p class="micro" style="margin-top:8px">Määräajat ovat KKV:n ilmoittamia (kilpailulaki 26 §: 1. vaihe 23 työpäivää, jatkokäsittely 69 työpäivää). Kuulemisen määräaikaan mennessä kilpailijat ja asiakkaat voivat lausua kaupasta.</p>`;
+  return `<h4>Tiedot</h4><dl class="dl">${rows.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${v}</dd>`).join("")}</dl>${note}`;
+}
+function partiesText(it){ return (it.parties||[]).map(p=>p.name+" "+(p.country||"")).join(" "); }
+function partiesHTML(it,max){ const ps=(it.parties||[]); return ps.slice(0,max||ps.length).map(p=>`${p.fi?"<b>":""}${esc(p.name)}${p.country?" ("+esc(p.country)+")":""}${p.fi?"</b>":""}`).join(" · ")+(max&&ps.length>max?` · +${ps.length-max}`:""); }
 function mergersFiltered(){ return MERGERS.filter(matchesMerger).sort((a,b)=>{ const oa=YK_OPEN.has(a.status)?0:1, ob=YK_OPEN.has(b.status)?0:1; if(oa!==ob) return oa-ob; if(oa===0){ const na=nextEvent(a), nb=nextEvent(b); if(na&&nb) return na.date-nb.date; if(na) return -1; if(nb) return 1; } return String(b.decided||"").localeCompare(String(a.decided||""))||a.id.localeCompare(b.id); }); }
 
 /* ---------- timeline ---------- */
@@ -850,7 +871,8 @@ function renderTimeline(root, items, opts={}){
   items.forEach(it=>{
     const st=statusOf(it); const nx=nextEvent(it);
     let row=`<div class="row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">`;
-    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${changeBadge(it.id)}${opts.mini?"":folderBadge(it.id)}</div>`;
+    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${it.fiParty&&it.authority==="EU"?'<span class="pill fi" title="Jokin osapuoli on suomalainen (EUVL:n ennakkoilmoitus)">FI-osapuoli</span>':""}${changeBadge(it.id)}${opts.mini?"":folderBadge(it.id)}</div>`;
+    if(!opts.mini&&it.parties&&it.parties.length) row+=`<div class="parties" title="${esc(it.parties.map(p=>p.name+(p.country?" ("+p.country+")":"")).join(" · "))}">${partiesHTML(it,3)}</div>`;
     row+=`<div class="next">${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(nx.label)}`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(it.ministry||it.procedure) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
     row+=`</div><div class="track">`;
@@ -877,7 +899,7 @@ function renderTimeline(root, items, opts={}){
   if(!opts.mini) requestAnimationFrame(()=>{ const w=inner.scrollWidth; const tx=labelW+(w-labelW)*x(TODAY)/100; root.scrollLeft=Math.max(0,tx-root.clientWidth*0.55); });
 }
 function legendHTML(scope){
-  if(scope==="yk") return `<span><i class="lg bar"></i>Kuuleminen (KKV)</span><span><i class="lg bar open"></i>Lausuttavissa nyt</span><span><i class="lg bar2"></i>Käsittely</span><span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg deadline"></i>Määräaika</span><span><i class="lg today"></i>Tänään</span>`;
+  if(scope==="yk") return `<span><i class="lg bar"></i>Kuuleminen (KKV) / huomautusaika (EUVL)</span><span><i class="lg bar open"></i>Lausuttavissa nyt</span><span><i class="lg bar2"></i>Käsittely</span><span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg deadline"></i>Määräaika</span><span><i class="lg today"></i>Tänään</span>`;
   return `<span><i class="lg bar"></i>Lausuntoaika</span><span><i class="lg bar open"></i>Lausuttavissa nyt</span><span><i class="lg bar2"></i>${scope==="fi"?"Eduskuntakäsittely":"Lainsäädäntömenettely"}</span>`+
     (scope==="eu"?`<span><i class="lg bar3"></i>Siirtymäaika</span>`:"")+
     `<span><i class="lg"></i>Vaihe</span><span><i class="lg future"></i>Tuleva</span><span><i class="lg diamond"></i>Voimaantulo / soveltaminen</span><span><i class="lg deadline"></i>Määräaika</span>`+(scope==="eu"?`<span><i class="lg kanta"></i>Suomen kanta (U/E)</span>`:"")+`<span><i class="lg today"></i>Tänään</span>`;
@@ -910,14 +932,14 @@ function renderNow(){
     ["Voimaan 30 pv",voimaan30,"","voimaantuloa tai soveltamisvaihetta"],
     ["EU-määräajat 60 pv",euMaar,"","täytäntöönpanon tai säädöksen määräaikaa"],
     ["Muutoksia 7 pv",CHANGES.filter(c=>-daysTo(pd(c.date))<=7).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).length,"","uutta tai muuttunutta vaihetta"],
-    ["Yrityskauppoja vireillä",MERGERS_LOADED?MERGERS.filter(m=>YK_OPEN.has(m.status)&&baseVisible(m)).length:"…","",MERGERS_LOADED?`KKV ${MERGERS.filter(m=>YK_OPEN.has(m.status)&&m.authority==="KKV"&&baseVisible(m)).length} · komissio ${MERGERS.filter(m=>YK_OPEN.has(m.status)&&m.authority==="EU"&&baseVisible(m)).length} →`:"","yk"],
+    ["Yrityskauppoja vireillä",MERGERS_LOADED?MERGERS.filter(m=>YK_OPEN.has(m.status)&&baseVisible(m)).length:"…","",MERGERS_LOADED?`KKV ${MERGERS.filter(m=>YK_OPEN.has(m.status)&&m.authority==="KKV"&&baseVisible(m)).length} · komissio ${MERGERS.filter(m=>YK_OPEN.has(m.status)&&m.authority==="EU"&&baseVisible(m)).length}${(n=>n?` (FI-osapuoli ${n})`:"")(MERGERS.filter(m=>YK_OPEN.has(m.status)&&m.authority==="EU"&&m.fiParty&&baseVisible(m)).length)} →`:"","yk"],
     ["Kilpailutuksia 7 pv",TENDERS_LOADED?TENDERS.filter(t=>stageOf(t)==="avoin"&&t.status==="avoin"&&!t.dps&&(!state.ptopics.size||t.topics.some(x=>state.ptopics.has(x)))&&!deadlineInfo(t).over&&deadlineInfo(t).days<=7).length:"…","",(state.ptopics.size?"valituilla toimialoilla ":"")+"sulkeutuu viikon sisällä →","hk"],
   ].map(([h,v,c,d,g])=>`<div class="panel kpi"${g?` data-goto="${g}" role="button" tabindex="0"`:""}><div class="micro">${h}</div><div class="v ${c}">${v}</div><div class="d">${d}</div></div>`).join("");
   const li=(it,date,label,extra)=>{ const n=daysTo(date); return `<li data-id="${esc(it.id)}" tabindex="0" role="button"><span class="d ${n>=0&&n<=14?"soon":""}">${fmt(date)}${n>=0?`<br>${n===0?"tänään":n+" pv"}`:""}</span><span style="min-width:0"><div class="t">${esc(it.title)}</div><div class="m">${esc(scopeTag(it))} · ${esc(it.ref)}${extra?" · "+esc(extra):""}</div></span><span class="k">${esc(label)}</span></li>`; };
   const fol=DATA.filter(it=>state.follow.has(it.id)&&baseVisible(it)&&(!state.topics.size||it.topics.some(t=>state.topics.has(t)))).map(it=>({it,nx:nextEvent(it)}));
   MERGERS.filter(it=>state.follow.has(it.id)&&baseVisible(it)).forEach(it=>fol.push({it,nx:nextEvent(it)}));
-  // KKV cases and followed EU cases also feed "Seuraavat 60 päivää" and "Lausuntokierrokset käynnissä"
-  MERGERS.filter(it=>baseVisible(it)&&YK_OPEN.has(it.status)&&(it.authority==="KKV"||state.follow.has(it.id))).forEach(it=>{
+  // KKV cases, EU cases with a Finnish party and followed EU cases also feed "Seuraavat 60 päivää" and "Lausuntokierrokset käynnissä"
+  MERGERS.filter(it=>baseVisible(it)&&YK_OPEN.has(it.status)&&(it.authority==="KKV"||it.fiParty||state.follow.has(it.id))).forEach(it=>{
     it.events.forEach(e=>{ if(e.kind==="maaraaika"){ const n=daysTo(pd(e.date)); if(n>=0&&n<=horizon) next.push({it,date:pd(e.date),label:e.label,kind:e.kind}); } });
     const oc=openConsultation(it); if(oc) open.push({it,e:oc});
   });
@@ -1022,13 +1044,13 @@ function openItem(id){
   const it=findItem(id); if(!it) return;
   if(it.scope==="hankinta"){ openTender(it); return; }
   lastFocus=document.activeElement; fdropOpen=false;
-  document.getElementById("dr-facts").innerHTML="";
+  document.getElementById("dr-facts").innerHTML=it.scope==="yrityskauppa"?mergerFactsHTML(it):"";
   const st=statusOf(it);
   document.getElementById("dr-kicker").innerHTML=`<span class="pill scope">${esc(scopeTag(it))}</span>${it.ref.startsWith(it.kind)?"":`<span>${esc(it.kind)}</span>`}<span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>`;
   document.getElementById("dr-title").textContent=it.fullTitle||it.title;
   document.getElementById("dr-topics").innerHTML=it.topics.map(t=>`<span>${esc(t)}</span>`).join("");
   document.getElementById("dr-summary").textContent=it.summary||"";
-  const L=it.links||{}; const names={hankeikkuna:"Hankeikkuna (valtioneuvosto.fi)",finlex:"Finlex: hallituksen esitys",saadoskokoelma:"Finlex: säädöskokoelma",eurlex:"EUR-Lex",oeil:"EP Legislative Observatory",kkv:"KKV: tapauksen sivu",kkvpaatos:"KKV: päätös",comp:"Komission tapaussivu (DG COMP)"};
+  const L=it.links||{}; const names={hankeikkuna:"Hankeikkuna (valtioneuvosto.fi)",finlex:"Finlex: hallituksen esitys",saadoskokoelma:"Finlex: säädöskokoelma",eurlex:"EUR-Lex",oeil:"EP Legislative Observatory",kkv:"KKV: tapauksen sivu",kkvpaatos:"KKV: päätös",comp:"Komission tapaussivu (DG COMP)",euvl:"EUVL: ennakkoilmoitus (EUR-Lex)"};
   const links=Object.entries(L).filter(([k,v])=>v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(names[k]||k)}</a>`);
   if(!links.length&&it.source) links.push(`<a href="${esc(it.source)}" target="_blank" rel="noopener">Lähde</a>`);
   links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
@@ -1153,6 +1175,7 @@ function buildYkTopicChips(list){
 yktopicsEl.addEventListener("click",e=>{ const b=e.target.closest(".chip"); if(!b) return; if(b.dataset.topic==="*") state.yktopics.clear(); else { state.yktopics.has(b.dataset.topic)?state.yktopics.delete(b.dataset.topic):state.yktopics.add(b.dataset.topic); } persist(); render(); });
 document.querySelectorAll("#yk-tools [data-ykscope]").forEach(b=>b.addEventListener("click",()=>{ state.ykScope=b.dataset.ykscope; persist(); render(); }));
 document.getElementById("yk-open").addEventListener("change",e=>{ state.ykOpen=e.target.checked; persist(); render(); });
+document.getElementById("yk-fi").addEventListener("change",e=>{ state.ykFi=e.target.checked; persist(); render(); });
 const folderSel=document.getElementById("folder-filter");
 function buildFolderSelect(){
   const opts=[`<option value="">Kaikki kohteet</option>`].concat(sortedFolders().map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`));
@@ -1208,7 +1231,7 @@ function render(){
   lajitEl.hidden=hk||yk; topicsEl.hidden=hk||yk; ptopicsEl.hidden=!hk; yktopicsEl.hidden=!yk; document.getElementById("open-only-wrap").hidden=hk||yk; document.getElementById("hk-tools").hidden=!hk; document.getElementById("yk-tools").hidden=!yk;
   yktopicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.yktopics.size===0):String(state.yktopics.has(c.dataset.topic))));
   document.querySelectorAll("#yk-tools [data-ykscope]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.ykscope===state.ykScope)));
-  document.getElementById("yk-open").checked=state.ykOpen;
+  document.getElementById("yk-open").checked=state.ykOpen; document.getElementById("yk-fi").checked=state.ykFi;
   document.querySelectorAll("#hk-tools [data-scope]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.scope===state.hkScope)));
   document.querySelectorAll("#hk-stages [data-stage]").forEach(b=>{ b.setAttribute("aria-pressed",String(b.dataset.stage===state.hkStage)); const live={avoin:"avoin",tulossa:"tulossa",suorahankinta:"valitusaika",ratkaistu:"ratkaistu"}[b.dataset.stage]; b.querySelector(".n").textContent=TENDERS_LOADED?TENDERS.filter(x=>stageOf(x)===b.dataset.stage&&x.status===live&&!deadlineInfo(x).over&&(b.dataset.stage!=="avoin"||!x.dps)).length:""; });
   document.getElementById("hk-within").hidden=false; document.getElementById("hk-within").querySelectorAll("option").forEach(o=>{ if(o.value!=="0") o.textContent=(state.hkStage==="ratkaistu"?"Ratkaistu ":"Sulkeutuu ")+o.value+" pv"; }); document.getElementById("hk-dps").parentElement.hidden=state.hkStage!=="avoin";

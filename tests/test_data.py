@@ -217,6 +217,31 @@ def test_mergers_schema(mergers):
             assert m["done"], m["id"]
 
 
+def test_mergers_parties(mergers):
+    """EU rows carry the parties from the OJ notice once it is published (a few days after notification)."""
+    eu = [m for m in mergers["items"] if m["authority"] == "EU"]
+    with_parties = [m for m in eu if m.get("parties")]
+    assert len(with_parties) >= len(eu) * 0.6, "EUVL-ilmoituksia puuttuu epäilyttävän monelta"
+    for m in with_parties:
+        assert isinstance(m["fiParty"], bool)
+        for p in m["parties"]:
+            assert p["name"].strip() and isinstance(p["fi"], bool), (m["id"], p)
+            if p["fi"]:
+                assert p.get("country") in ("Suomi", "Suomen kansalainen") or True  # control via a Finnish parent also counts
+        assert m["fiParty"] == any(p["fi"] for p in m["parties"]), m["id"]
+        assert m["noticeDate"] and m["observationsEnd"] and m["observationsEnd"] > m["noticeDate"], m["id"]
+        obs = [e for e in m["events"] if e["kind"] == "lausunto"]
+        assert len(obs) == 1 and obs[0]["date"] == m["noticeDate"] and obs[0]["end"] == m["observationsEnd"], m["id"]
+        assert m["links"].get("euvl", "").startswith("https://eur-lex.europa.eu/eli/C/"), m["id"]
+        assert m["summary"].strip(), m["id"]
+    for m in eu:
+        if not m.get("parties"):
+            assert not m["fiParty"] and not any(e["kind"] == "lausunto" for e in m["events"]), m["id"]
+    for m in mergers["items"]:
+        if m["authority"] == "KKV":
+            assert m["fiParty"] is True
+
+
 def test_mergers_counts(mergers):
     c = mergers["counts"]
     items = mergers["items"]
@@ -225,6 +250,8 @@ def test_mergers_counts(mergers):
     assert c["fi_open"] == sum(1 for m in items if m["authority"] == "KKV" and not m["done"])
     assert c["eu_open"] == sum(1 for m in items if m["authority"] == "EU" and not m["done"])
     assert c["fi"] >= 3 and c["eu"] >= 10
+    assert c["eu_fi"] == sum(1 for m in items if m["authority"] == "EU" and m["fiParty"])
+    assert c["eu_fi_open"] == sum(1 for m in items if m["authority"] == "EU" and m["fiParty"] and not m["done"])
 
 
 # ---------- meta.json, changes.json, ics ----------

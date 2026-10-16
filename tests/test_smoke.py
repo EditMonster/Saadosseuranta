@@ -291,6 +291,24 @@ def test_mergers_tab(page, base_url):
     page.click("#tl-yk .row[data-id] >> nth=0")
     assert "M." in page.text_content("#dr-kicker") and "Komission tapaussivu" in page.text_content("#dr-src")
     page.keyboard.press("Escape")
+    # Finnish party filter: KKV rows stay, EU rows reduce to those with a Finnish party (FI-osapuoli badge, bold party)
+    page.click("#yk-tools [data-ykscope='all']")
+    page.check("#yk-fi")
+    fi_rows = page.locator("#tl-yk .row[data-id]").count()
+    assert kkv <= fi_rows < total
+    assert page.locator("#tl-yk .row[data-id^='yk-eu-'] .pill.fi").count() == fi_rows - kkv
+    assert page.locator("#tl-yk .row[data-id^='yk-eu-']:not(:has(.pill.fi))").count() == 0
+    page.reload(); page.wait_for_function("typeof MERGERS_LOADED !== 'undefined' && MERGERS_LOADED === true")
+    assert page.is_checked("#yk-fi") and page.locator("#tl-yk .row[data-id]").count() == fi_rows
+    page.uncheck("#yk-fi")
+    # an EU case with the OJ notice shows parties with countries and the observation window in the drawer
+    page.click("#yk-tools [data-ykscope='eu']")
+    row = page.locator("#tl-yk .row[data-id^='yk-eu-']:has(.parties)").first
+    row.click(); page.wait_for_selector("#drawer:not([hidden])")
+    facts = page.text_content("#dr-facts")
+    assert "Osapuolet" in facts and "Kolmansien huomautukset" in facts and "EUVL:ssä" in facts
+    assert "EUVL: ennakkoilmoitus" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
     # decided cases appear when 'Vain vireillä' is off
     page.click("#yk-tools [data-ykscope='all']")
     page.uncheck("#yk-open")

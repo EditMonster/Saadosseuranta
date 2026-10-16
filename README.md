@@ -26,7 +26,7 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
   * *Suorahankinnat* – suorahankinnan avoimuusilmoitukset ja kansalliset suorahankintailmoitukset, joille lasketaan 14 päivän valitusajan päättyminen julkaisusta (hankintalaki 147 § 3 mom.; sopimuksen saa tehdä aikaisintaan 14 päivän kuluttua julkaisusta, 131 §).
 
   Saman hankintamenettelyn ilmoitukset (ennakkoilmoitus → hankintailmoitus → korjausilmoitus → jälki-ilmoitus) on linkitetty toisiinsa: kohteen tiedoissa on *Saman hankinnan muut ilmoitukset* ja sen aikajanalla näkyvät kaikki vaiheet. Suodattimet: *Toimiala* (15 CPV-pohjaista luokkaa, `config/hankinnat.yaml`), EU-kynnysarvo / kansallinen, sulkeutuu (tai ratkaistu) 7/14/30 pv, haku. Tähditetty kilpailutus näkyy Tilannekuvan *Seurannassa*-paneelissa ja säilyy 14 päivää määräajan jälkeen tilassa *päättynyt* (tai *poistunut*, jos ilmoitus katosi Hilmasta ennen määräaikaa).
-* **Yrityskaupat** – yrityskauppavalvonnan vireillä olevat tapaukset KKV:ssa ja Euroopan komissiossa (DG COMP) aikajanana, jossa näkyvät viranomaisen omat lakisääteiset määräajat: KKV:n tapauksista ilmoituksen saapuminen, kuulemisen määräaika (jolloin kilpailija tai asiakas voi lausua), ensimmäisen vaiheen määräaika (23 työpäivää) ja jatkokäsittelyyn siirrettyjen jatkokäsittelyn määräaika (69 työpäivää); komission tapauksista ilmoituspäivä, komission julkaisema alustava määräaika (vaihe 1: 25 työpäivää; vaihe 2 pidempi), yksinkertaistettu menettely, väitetiedoksianto, määräajan pidennykset ja päätökset oikeusperustoineen (6(1)(b), 6(1)(c), 8(2) …). Suodattimet: *Toimiala* (KKV-tapaukset omana luokkanaan, komission tapaukset NACE-pääluokan mukaan), KKV / komissio, *Vain vireillä* (oletus; pois päältä näkyvät myös viimeisten 90 päivän päätökset: hyväksytty sellaisenaan, ehdollisena, kielletty, peruutettu). Kohteen tiedoissa on tapauksen tiivistelmä (KKV:n oma tiivistelmä tai ilmoittajan kuvaus kaupasta) ja linkit KKV:n tapaussivulle ja päätökseen tai komission tapaussivulle. Määräaikoja ei lasketa itse – ne luetaan viranomaisen sivulta, jotta kellon pysäytykset ja pidennykset tulevat oikein. Tilannekuvan *Yrityskauppoja vireillä* -laskuri vie välilehdelle; KKV:n kuulemiset näkyvät *Lausuntokierrokset käynnissä* -paneelissa ja määräajat *Seuraavat 60 päivää* -listassa.
+* **Yrityskaupat** – yrityskauppavalvonnan vireillä olevat tapaukset KKV:ssa ja Euroopan komissiossa (DG COMP) aikajanana, jossa näkyvät viranomaisen omat lakisääteiset määräajat: KKV:n tapauksista ilmoituksen saapuminen, kuulemisen määräaika (jolloin kilpailija tai asiakas voi lausua), ensimmäisen vaiheen määräaika (23 työpäivää) ja jatkokäsittelyyn siirrettyjen jatkokäsittelyn määräaika (69 työpäivää); komission tapauksista ilmoituspäivä, EUVL:n ennakkoilmoitus ja sen avaama kolmansien huomautusaika (yleensä 10 päivää julkaisusta – EU-tason "milloin voi lausua"), komission julkaisema alustava määräaika (vaihe 1: 25 työpäivää; vaihe 2 pidempi), kellon keskeytykset tietopyynnön vuoksi (11 art. 3 kohta), määräajan pidennykset (10 art. 3 kohta), sitoumusten toimittaminen, väitetiedoksianto ja päätökset oikeusperustoineen (6(1)(b), 6(1)(c), 8(2) …). EUVL:n ennakkoilmoituksesta luetaan myös **osapuolet kotimaineen**, joten komission tapauksista tunnistetaan ne, joissa on suomalainen osapuoli (merkintä *FI-osapuoli*, suodatin *Suomalainen osapuoli*; myös suomalaisen emoyhtiön määräysvallassa oleva osapuoli lasketaan). Suodattimet: *Toimiala* (KKV-tapaukset omana luokkanaan, komission tapaukset NACE-pääluokan mukaan), KKV / komissio, *Vain vireillä* (oletus; pois päältä näkyvät myös viimeisten 90 päivän päätökset: hyväksytty sellaisenaan, ehdollisena, kielletty, peruutettu), *Suomalainen osapuoli*; haku löytää myös osapuolen nimellä. Kohteen tiedoissa on tapauksen tiivistelmä (KKV:n oma tiivistelmä tai ilmoittajan kuvaus kaupasta; komission tapauksista EUVL-ilmoituksen kuvaus kaupasta ja osapuolten liiketoiminnasta), osapuolet, huomautusajan päättyminen ja linkit KKV:n tapaussivulle ja päätökseen tai komission tapaussivulle ja EUVL-ilmoitukseen. Määräaikoja ei lasketa itse – ne luetaan viranomaisen sivulta, jotta kellon pysäytykset ja pidennykset tulevat oikein. Tilannekuvan *Yrityskauppoja vireillä* -laskuri vie välilehdelle; KKV:n kuulemiset ja suomalaisosapuolisten komission tapausten huomautusajat näkyvät *Lausuntokierrokset käynnissä* -paneelissa ja niiden määräajat *Seuraavat 60 päivää* -listassa.
 * Jokaisella säädöksellä on pysyvä linkki (`…/#fi-he-129-2026`), joka avaa sen aikajanan suoraan.
 * `data/saadosseuranta.ics` – kaikki tulevat määräajat kalenteriin (Google/Outlook/Apple: "tilaa kalenteri osoitteesta").
 * Ulkoasu valittavissa yläpalkista: *Vaalea* (oletus) tai *Tumma*; valinta muistetaan selaimessa.
@@ -45,14 +45,15 @@ on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 | Komission Have your say | Julkiset kuulemiset, kannanottopyynnöt ja palauteajat ehdotuksista sekä delegoiduista ja täytäntöönpanosäädöksistä (EU-tason "milloin voi lausua") | `https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives` |
 | Hilma (hankintailmoitukset.fi) | Kaikki avoimet hankintailmoitukset, voimassa olevat ennakkoilmoitukset ja markkinakartoitukset, viimeisten 30 päivän jälki-ilmoitukset (voittaja, arvo) sekä suorahankintailmoitukset: määräaika, kuvaus, hankintayksikkö, CPV, menettely, arvioitu arvo, osat, linkit ilmoitukseen ja tarjouspyyntöön; saman menettelyn ilmoitukset linkitetään `procedureId`-tunnuksella; CPV-nimikkeistö suomeksi. Suomalaiset EU-kynnysarvon ylittävät ilmoitukset julkaistaan Hilman kautta myös TED:issä, joten TED:iä ei tarvita erikseen | `https://www.hankintailmoitukset.fi/search/eformnotices` – sama julkinen hakuindeksi, jota Hilman oma hakusivu käyttää (ei avainta). Varalla dokumentoitu *Hilma avoin rajapinta* (`api.hankintailmoitukset.fi/avp`), joka vaatii maksuttoman API-avaimen |
 | KKV – yrityskauppavalvonta | Vireillä olevat yrityskaupat (diaarinumero, osapuolet, ilmoituksen saapuminen, kuulemisen määräaika, 1. vaiheen määräaika, jatkokäsittelyn siirto ja määräaika, ilmoittajan kuvaus kaupasta) sekä viimeisten 90 päivän päätökset | `kkv.fi/paatokset/vireilla-olevat-yrityskaupat/` ja `…/kilpailuasiat/yrityskauppavalvonta/` (HTML; sivuston oma REST-rajapinta ei julkaise näitä sisältötyyppejä) |
-| Euroopan komissio, DG COMP | Komissiolle viimeisten 120 päivän aikana ilmoitetut yrityskaupat ja kaikki vaiheen 2 tutkinnat: ilmoituspäivä, alustava määräaika, vaihe, yksinkertaistettu menettely, NACE-toimiala, päätökset oikeusperustoineen | `webgate.ec.europa.eu/es/search-api` – sama julkinen hakurajapinta, jota `competition-cases.ec.europa.eu` käyttää (ei kirjautumista) |
+| Euroopan komissio, DG COMP | Komissiolle viimeisten 120 päivän aikana ilmoitetut yrityskaupat ja kaikki vaiheen 2 tutkinnat: ilmoituspäivä, alustava määräaika, vaihe, yksinkertaistettu menettely, NACE-toimiala, komission määräaikatapahtumat (keskeytykset, pidennykset, sitoumukset), päätökset oikeusperustoineen | `webgate.ec.europa.eu/es/search-api` – sama julkinen hakurajapinta, jota `competition-cases.ec.europa.eu` käyttää (ei kirjautumista) |
+| EU:n virallinen lehti (Cellar) | Yrityskeskittymien ennakkoilmoitukset suomeksi: osapuolet kotimaineen, kaupan kuvaus, osapuolten liiketoiminta, huomautusaika | `publications.europa.eu/resource/oj/C_<vuosi><numero>` (XHTML, `Accept-Language: fi`); EUR-Lex itse on botti­suojan takana, joten se on vain linkkinä |
 
 Mitä **ei** seurata (lisättävissä): neuvoston käsittelyvaiheet (yleisnäkemys, hyväksyntä – neuvostolla
 ei ole yksinkertaista avointa rajapintaa), hyväksytyt delegoidut säädökset muuten kuin kuulemisvaiheessa,
 tuomioistuinratkaisut, kansalaisaloitteet. Hankinnoista ei seurata muiden maiden TED-ilmoituksia eikä Hilman
 ulkopuolisia pienhankintoja; kilpailutusten tiivistelmä on poimiva (ei kielimallia), joten se on aina hankintayksikön
 omaa tekstiä. Yrityskaupoista ei seurata markkinaoikeuden käsittelyä (KKV:n kieltoesitykset näkyvät päätöksenä), eikä
-komission tapauksista tunnisteta erikseen suomalaisia osapuolia – ne löytyvät haulla osapuolen nimellä. `lausuntopalvelu.fi` ja `valtioneuvosto.fi` estävät ohjelmalliset
+komission tapausten suomalaisuutta tunnisteta ennen EUVL-ilmoituksen julkaisua (muutama päivä ilmoituksesta) – siihen asti ne löytyvät haulla otsikon nimellä. `lausuntopalvelu.fi` ja `valtioneuvosto.fi` estävät ohjelmalliset
 haut (Cloudflare), joten lausuntokierrokset tulevat Hankeikkunasta, joka on sama tieto.
 
 ## Rakenne
@@ -67,7 +68,7 @@ config/
   overrides.json     käsin lisätyt tapahtumat, korjaukset ja lyhyet näyttönimet (id:n mukaan)
 scripts/
   fetch_hankeikkuna.py  fetch_eduskunta.py  fetch_finlex.py  fetch_eu.py  fetch_ue.py  fetch_hys.py
-  fetch_hankinnat.py  fetch_kkv.py  fetch_eu_mergers.py
+  fetch_hankinnat.py  fetch_kkv.py  fetch_eu_mergers.py  eu_notice.py (EUVL:n ennakkoilmoitusten jäsennys)
   build.py           yhdistää välimuistit -> docs/data/items.json (+ build_hankinnat.py -> hankinnat.json, build_yrityskaupat.py -> yrityskaupat.json)
   update.py          ajaa kaiken; yhden lähteen virhe ei kaada muita; kirjaa lähteiden tilan health.json-tiedostoon
   health_report.py   lähdevahti: avaa/sulkee GitHub-issuen lähteen epäonnistuessa toistuvasti
@@ -107,8 +108,10 @@ python -m http.server -d docs 8000  # http://localhost:8000
   `hankinnat.min_items` ilmoitusta tai haku epäonnistuu, edellinen `hankinnat.json` jää voimaan. Jälki-ilmoituksia
   näytetään `hankinnat.award_days` päivää (30).
 * **Yrityskaupat**: `config/settings.yaml` → `yrityskaupat.keep_decided_days` (kuinka kauan päätetyt näkyvät, 90) ja
-  `eu_notified_days` (kuinka vanhoja komission ilmoituksia haetaan, 120; vaiheen 2 tapaukset haetaan aina). KKV:n
-  sivuston rakenteen muutos näkyy lähdevahdissa (`kkv`), komission rajapinnan muutos lähteenä `eu_mergers`.
+  `eu_notified_days` (kuinka vanhoja komission ilmoituksia haetaan, 120; vaiheen 2 tapaukset haetaan aina). EUVL-ilmoitus
+  haetaan kerran per tapaus (enintään 60 uutta per ajo) ja säilytetään välimuistissa; jäsennyksen epäonnistuminen ei kaada
+  ajoa, tapaus näkyy silloin ilman osapuolia. KKV:n sivuston rakenteen muutos näkyy lähdevahdissa (`kkv`), komission
+  rajapinnan muutos lähteenä `eu_mergers`.
 * **Uusi EU-säädös seurantaan**: lisää menettelytunnus `config/eu_watchlist.yaml`-tiedostoon.
 * **Käsin tunnettu päivämäärä** (esim. omnibus-asetuksen siirtämä soveltamispäivä): `config/overrides.json`.
   Käsin lisätyt päivät näkyvät katkoviivalla ja merkinnällä "tarkistamaton", ellei `confirmed: true`.
@@ -139,7 +142,7 @@ python -m http.server -d docs 8000  # http://localhost:8000
 |---|---|
 | GitHub Actions, julkinen repo | 0 € (yksityisessä repossa 2 000 min/kk ilmaiseksi; 3 ajoa/arkipäivä × ~8 min ≈ 550 min/kk) |
 | GitHub Pages | 0 € |
-| Rajapinnat (Hankeikkuna, eduskunta, Finlex, EP, Cellar, Have your say, Hilma, KKV, komissio) | 0 €, avointa dataa |
+| Rajapinnat (Hankeikkuna, eduskunta, Finlex, EP, Cellar, Have your say, Hilma, KKV, komissio, EUVL) | 0 €, avointa dataa |
 | Oma verkkotunnus (valinnainen) | ~10–15 €/v |
 | Tekoälytiivistelmät (valinnainen, ei vielä kytketty) | muutama euro/kk Haiku-luokan mallilla |
 

@@ -3,7 +3,11 @@ the statutory clock as timeline events:
 
   KKV:  ilmoitus saapunut → kuuleminen (lausunnot) → 1. vaiheen määräaika (23 työpäivää)
         → [siirretty jatkokäsittelyyn → jatkokäsittelyn määräaika (69 työpäivää)] → päätös
-  EU:   notification → provisional deadline (25 working days; phase 2: 90+) → decision(s)
+  EU:   notification → OJ notice (third-party observations, 10 days) → provisional deadline
+        (25 working days; phase 2: 90+) → clock stops / extensions → decision(s)
+
+EU cases carry the parties with their countries from the Official Journal notice, so cases with a
+Finnish party (fiParty) can be filtered and surface in Tilannekuva like KKV cases.
 
 Deadlines are the authorities' own (KKV prints them on the case page, DG COMP publishes the
 provisional deadline), never recomputed here – clock stops and extensions are theirs to know.
@@ -21,6 +25,38 @@ OPEN_STATES = {"vireillä", "jatkokäsittelyssä"}
 
 def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+def cut(s: str, n: int) -> str:
+    s = re.sub(r"\s+", " ", s or "").strip()
+    if len(s) <= n:
+        return s
+    c = s[:n]
+    return c[: c.rfind(". ") + 1] if ". " in c[n // 3:] else c.rstrip() + "…"
+
+
+def timeline_event(e: dict) -> dict | None:
+    """The Commission's own deadline events (caseTimelineEvents) in Finnish."""
+    desc = e.get("description") or ""
+    m = re.search(r"(\d{2})/(\d{2})/(\d{4})", desc)
+    date = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else e.get("date")
+    if not date:
+        return None
+    typ = e.get("type") or ""
+    wd = re.search(r"(\d+)\s+working days", desc)
+    if typ == "MEvent59" or "suspended" in desc:
+        label = "Määräaika keskeytetty – tietopyyntö (Art. 11(3))"
+    elif typ == "MEvent60" or "suspension" in desc and "ended" in desc:
+        label = "Määräajan keskeytys päättyi (Art. 11(3))"
+    elif typ in ("MEvent10", "MEvent58") or "extension" in desc:
+        label = f"Määräaikaa pidennetty {wd.group(1) + ' tp ' if wd else ''}(Art. 10(3))"
+    elif typ == "MEvent3" or "Commitments" in desc:
+        label = "Sitoumukset toimitettu komissiolle" + (" (vaihe 1)" if "N/1" in desc else "")
+    elif typ == "MEvent30" or "Art. 9" in desc:
+        label = "Jäsenvaltion siirtopyyntö (Art. 9)"
+    else:
+        label = "Määräaika muuttunut" + (f": {desc[:80]}" if desc else "")
+    return {"date": date, "label": label, "kind": "muu"}
 
 
 def build_yrityskaupat(settings) -> dict | None:
@@ -76,7 +112,7 @@ def build_yrityskaupat(settings) -> dict | None:
             "status": status, "phase": 2 if c.get("phase2Start") else 1, "done": status not in OPEN_STATES,
             "notified": c.get("notified"), "hearingEnd": c.get("hearingEnd"), "phase1End": c.get("phase1End"),
             "phase2Start": c.get("phase2Start"), "phase2End": c.get("phase2End"), "decided": decided, "decision": decision,
-            "topics": ["Kansallinen (KKV)"], "summary": c.get("summary") or "",
+            "topics": ["Kansallinen (KKV)"], "summary": c.get("summary") or "", "fiParty": True,
             "ministry": "Kilpailu- ja kuluttajavirasto · " + ("kilpailulain 26 § – jatkokäsittely" if c.get("phase2Start") else "kilpailulain 26 § – 1. vaihe"),
             "source": c.get("url"), "links": {k: v for k, v in {"kkv": c.get("url"), "kkvpaatos": c.get("decisionUrl") if c.get("decisionUrl") != c.get("url") else None}.items() if v},
             "events": ev, "updated": c.get("seen"),
@@ -101,11 +137,22 @@ def build_yrityskaupat(settings) -> dict | None:
         m = re.search(r"Sector_([A-V])_", sect)
         letter = m.group(1) if m else None
         sector_label = nace.get(letter) if letter else None
+        notice = c.get("notice") or {}
+        parties = [{k: v for k, v in p.items() if k in ("name", "short", "country", "fi")} for p in notice.get("parties") or []]
+        fi_party = bool(notice.get("fi"))
         ev = []
         if c.get("notified"):
             ev.append({"date": c["notified"], "label": "Ilmoitus komissiolle", "kind": "he"})
         if c.get("renotified"):
             ev.append({"date": c["renotified"], "label": "Ilmoitettu uudelleen", "kind": "muu"})
+        if notice.get("published") and notice.get("observationsEnd"):
+            ev.append({"date": notice["published"], "end": notice["observationsEnd"], "kind": "lausunto",
+                       "label": f"Ennakkoilmoitus EUVL:ssä – kolmansien huomautukset komissiolle ({notice.get('observationDays', 10)} pv)"})
+        for te in c.get("timeline") or []:
+            x = timeline_event(te)
+            if x:
+                ev.append(x)
+        seen_ext = {(x["date"], x["label"][:18]) for x in ev}  # the timeline names the extension precisely; drop the bare decision twin
         for d in decs:
             if not d.get("date"):
                 continue
@@ -115,11 +162,17 @@ def build_yrityskaupat(settings) -> dict | None:
                   "kielletty": "Kielletty – " + lab, "peruutettu": "Ilmoitus peruutettu"}.get(st)
             if not fi:
                 fi = {"DecisionType20545": "Väitetiedoksianto (Art. 18)", "DecisionType20665": "Määräaikaa pidennetty (Art. 10(3))"}.get(d["type"], lab)
+            if (d["date"], fi[:18]) in seen_ext:
+                continue
             ev.append({"date": d["date"], "label": fi, "kind": "hyvaksytty" if st in ("hyväksytty", "hyväksytty ehdoin") else ("muu" if st not in ("kielletty",) else "vahvistettu")})
         if c.get("deadline") and not concluded:
             ev.append({"date": c["deadline"], "label": "Määräaika" + (" (vaihe 2)" if phase2 else " (vaihe 1, 25 työpäivää)"), "kind": "maaraaika"})
         ev.sort(key=lambda e: (e["date"], e.get("end") or ""))
         simp = {"MEsimplified": "yksinkertaistettu menettely", "MEsupersimplified": "erittäin yksinkertaistettu menettely", "MEnormal": "normaali menettely"}.get(c.get("simplified") or "", "")
+        summary = cut(" ".join(x for x in (notice.get("transaction"), notice.get("jv")) if x), 700)
+        links = {"comp": f"https://competition-cases.ec.europa.eu/cases/{num}"}
+        if notice.get("url"):
+            links["euvl"] = notice["url"]
         rows.append({
             "id": f"yk-eu-{num.replace('.', '-')}", "scope": "yrityskauppa", "laji": "yrityskauppa", "authority": "EU",
             "kind": "Yrityskauppa (komissio)", "title": c.get("title") or num, "ref": num,
@@ -127,9 +180,11 @@ def build_yrityskaupat(settings) -> dict | None:
             "notified": c.get("notified"), "phase1End": c.get("deadline") if not phase2 else None, "phase2End": c.get("deadline") if phase2 else None,
             "decided": decided, "decision": dec_labels.get(last["type"]) if last else None,
             "topics": [sector_label] if sector_label else ["Muut"], "sector": sect or None, "simplified": simp,
-            "summary": "", "ministry": "Euroopan komissio, DG COMP · sulautuma-asetus 139/2004" + (f" · {simp}" if simp else "") + (f" · NACE {sect.split('_')[-1]}" if sect else ""),
+            "parties": parties, "fiParty": fi_party, "activities": [cut(a, 500) for a in notice.get("activities") or []],
+            "noticeDate": notice.get("published"), "observationsEnd": notice.get("observationsEnd"), "noticeRef": notice.get("reference"),
+            "summary": summary, "ministry": "Euroopan komissio, DG COMP · sulautuma-asetus 139/2004" + (f" · {simp}" if simp else "") + (f" · NACE {sect.split('_')[-1]}" if sect else ""),
             "source": f"https://competition-cases.ec.europa.eu/cases/{num}",
-            "links": {"comp": f"https://competition-cases.ec.europa.eu/cases/{num}"},
+            "links": links,
             "events": ev, "updated": None,
         })
 
@@ -137,7 +192,9 @@ def build_yrityskaupat(settings) -> dict | None:
     counts = {"fi": sum(1 for r in rows if r["authority"] == "KKV"), "eu": sum(1 for r in rows if r["authority"] == "EU"),
               "fi_open": sum(1 for r in rows if r["authority"] == "KKV" and r["status"] in OPEN_STATES),
               "eu_open": sum(1 for r in rows if r["authority"] == "EU" and r["status"] in OPEN_STATES),
-              "phase2": sum(1 for r in rows if r["status"] == "jatkokäsittelyssä")}
+              "phase2": sum(1 for r in rows if r["status"] == "jatkokäsittelyssä"),
+              "eu_fi": sum(1 for r in rows if r["authority"] == "EU" and r["fiParty"]),
+              "eu_fi_open": sum(1 for r in rows if r["authority"] == "EU" and r["fiParty"] and r["status"] in OPEN_STATES)}
     payload = {"items": rows, "counts": counts, "topics": ["Kansallinen (KKV)"] + list(nace.values()) + ["Muut"]}
     if len(rows) < 5 and len(prev.get("items", [])) >= 5:
         log(f"ERROR yrityskaupat: vain {len(rows)} tapausta; edellinen tiedosto säilytetään")
