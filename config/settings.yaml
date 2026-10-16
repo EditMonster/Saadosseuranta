@@ -40,3 +40,9 @@ hankinnat:
   min_items: 100
   # Jälki-ilmoitukset (ratkaistut hankinnat) näytetään näin monta päivää julkaisusta
   award_days: 30
+
+yrityskaupat:
+  # KKV:n ja komission yrityskauppavalvonta: kuinka monta päivää ratkaistut tapaukset pidetään mukana,
+  # ja kuinka vanhoja komission ilmoituksia haetaan (vaihe 2 -tapaukset haetaan aina)
+  keep_decided_days: 90
+  eu_notified_days: 120

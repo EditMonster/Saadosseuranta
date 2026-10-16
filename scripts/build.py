@@ -5,6 +5,7 @@ import datetime as dt
 import re
 
 from build_hankinnat import build_hankinnat
+from build_yrityskaupat import build_yrityskaupat
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, days_ago, is_future, load_json, load_yaml, log, save_json
 
 HE_PREFIX = re.compile(r"^hallituksen esitys (eduskunnalle )?", re.I)
@@ -510,6 +511,7 @@ def main():
     # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
     # notices a week) and a different page segment. None written = previous file stays in place.
     hank = build_hankinnat(settings) or load_json(OUT_DIR / "hankinnat.json", {})
+    yk = build_yrityskaupat(settings) or load_json(OUT_DIR / "yrityskaupat.json", {})
     open_now = [i for i in keep if i["scope"] == "fi" and i["status"] == "lausunnolla"]
     meta = {"generated": dt.datetime.now().isoformat(timespec="seconds"), "today": TODAY.isoformat(),
             "counts": {"fi": sum(i["scope"] == "fi" and not i["done"] for i in keep),
@@ -517,9 +519,12 @@ def main():
                        "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now),
                        "changes7": sum(1 for r in changes if r["date"] >= (TODAY - dt.timedelta(days=7)).isoformat()),
                        "hankinnat": (hank.get("counts") or {}).get("avoinna", 0),
-                       "hankinnat7": (hank.get("counts") or {}).get("sulkeutuu7", 0)},
+                       "hankinnat7": (hank.get("counts") or {}).get("sulkeutuu7", 0),
+                       "yrityskaupat": (yk.get("counts") or {}).get("fi_open", 0) + (yk.get("counts") or {}).get("eu_open", 0),
+                       "yrityskaupat_fi": (yk.get("counts") or {}).get("fi_open", 0)},
             "topics": list(topics_cfg.keys()) + ["Muut"],
             "hankintaTopics": hank.get("topics") or [],
+            "yrityskauppaTopics": yk.get("topics") or [],
             # per-source health from update.py: the page warns when a source keeps failing
             "health": {k: {"ok": bool(v.get("ok", True)), "streak": int(v.get("streak", 0)), "last_ok": v.get("last_ok")}
                        for k, v in load_json(CACHE_DIR / "health.json", {}).items() if not k.startswith("_")},
@@ -529,7 +534,8 @@ def main():
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
                         "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)",
-                        "Hilma – julkiset hankinnat (hankintailmoitukset.fi)"]}
+                        "Hilma – julkiset hankinnat (hankintailmoitukset.fi)", "KKV – yrityskauppavalvonta (kkv.fi)",
+                        "Euroopan komissio, DG COMP – yrityskauppatapaukset (competition-cases.ec.europa.eu)"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
     minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})

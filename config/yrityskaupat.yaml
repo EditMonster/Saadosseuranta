@@ -1,0 +1,288 @@
+_kuvaus: 'Yrityskauppavalvonnan asetukset: komission päätöstyyppien tunnisteet (casereferencedata-API), niiden suomenkieliset
+  tilat ja NACE-toimialat.'
+eu_paatostyypit:
+  DecisionType10: 4064/89 Art. 7(4) (PN)
+  DecisionType100: 4064/89 Not notif. not a concent.
+  DecisionType110: 4064/89 Not notif. miscellaneous
+  DecisionType120: 4064/89 The case is pending for a long period
+  DecisionType1200: 4064/89 Effective competition restored
+  DecisionType1210: Aborted / withdrawn
+  DecisionType1215: 4064/89 Compatibility (non notif. operation)
+  DecisionType1220: 4064/89 Implementing decision
+  DecisionType1225: 4064/89 Art. 6(3)(a)
+  DecisionType1230: 4064/89 Art. 6(3)(b)
+  DecisionType1235: 4064/89 Art. 7(4)
+  DecisionType1240: Art. 8(4)
+  DecisionType1245: Art. 8(5)(a)
+  DecisionType1250: Art. 8(5)(b)
+  DecisionType1255: 4064/89 Art. 11 (AddProc)
+  DecisionType1260: 4064/89 Art. 13 (AddProc)
+  DecisionType1265: Art. 14
+  DecisionType1270: Art. 15
+  DecisionType1275: Art. 18 (Statement of Objections)
+  DecisionType1280: Art. 19 (Advisory Committee)
+  DecisionType1290: Art. 21(3)
+  DecisionType1295: 4064/89 Art. 22(4) (AddProc)
+  DecisionType130: 4064/89 Aborted / withdrawn (PN)
+  DecisionType1300: 4064/89 No substance
+  DecisionType140: 4064/89 Art. 346 TFEU (ex Art. 296 EC Treaty)
+  DecisionType1400: Effective competition restored
+  DecisionType1410: Aborted / withdrawn
+  DecisionType1415: 139/2004 Compatibility (non notif. operation)
+  DecisionType1420: Implementing decision
+  DecisionType1425: Art. 6(3)(a)
+  DecisionType1430: Art. 6(3)(b)
+  DecisionType1440: Art. 8(4)a
+  DecisionType1445: Art. 8(5)(a)
+  DecisionType1450: Art. 8(5)(b)
+  DecisionType1455: 139/2004 Art. 11 (AddProc)
+  DecisionType1460: 139/2004 Art. 13 (AddProc)
+  DecisionType1465: Art. 14
+  DecisionType1470: Art. 15
+  DecisionType1475: Art. 18 (Statement of Objections)
+  DecisionType1480: Art. 19 (Advisory Committee)
+  DecisionType1490: Art. 21(4)
+  DecisionType1500: No substance
+  DecisionType160: 4064/89 Cooperative JV - Transfer to CJV
+  DecisionType170: 4064/89 Transfer back to CMS
+  DecisionType171: 4064/89 Particular sectorial merger - Transfer to CJV
+  DecisionType20: 4064/89 Art. 11 (PN)
+  DecisionType20100: 139/2004 Not notif. not a concentration
+  DecisionType20110: 139/2004 Not notif. miscellaneous
+  DecisionType20120: 139/2004 The case is pending for a long period
+  DecisionType201203: Art. 4(4) - Partial referral
+  DecisionType201220: Art. 4(4) - Full referral
+  DecisionType201240: Art. 4(4) - No referral
+  DecisionType201250: Purchaser approval
+  DecisionType201260: Purchaser approval
+  DecisionType201270: 139/2004 Prolongation of remedy deadline (Art. 6(1)(b) and 6(2))
+  DecisionType201280: 139/2004 Prolongation of remedy deadline (Art. 8(2))
+  DecisionType201290: Decision under remedy review clause
+  DecisionType20130: 139/2004 (PN) Aborted / withdrawn (PN)
+  DecisionType201300: Decision under remedy review clause
+  DecisionType201310: Art. 22 Full referral
+  DecisionType201311: 139/2004 Approval of trustee
+  DecisionType201312: 139/2004 Rejection of proposed trustee
+  DecisionType201313: 139/2004 Art. 4(5) - Member State disagreement
+  DecisionType201314: Art. 22 Refusal of referral
+  DecisionType201315: 139/2004 Art. 19(2) preliminary rejection letter prior to refusal under Article 9 (N/1)
+  DecisionType201316: Art. 4(5) - Referral
+  DecisionType201317: Art. 7(3) refusal
+  DecisionType201318: 139/2004 Art. 19(2) preliminary rejection letter prior to refusal under Article 9 (N/2)
+  DecisionType201319: 139/2004 (LIT) test
+  DecisionType201320: 139/2004 2/3 rule
+  DecisionType201321: 139/2004 Not notif. not a concentration
+  DecisionType201322: 139/2004 (CONS) Aborted / withdrawn (CONS)
+  DecisionType201323: 139/2004 The consultation is pending for a long period
+  DecisionType201324: 139/2004 Not notif. miscellaneous
+  DecisionType201325: 139/2004 < 5 billion (Art. 1(2))
+  DecisionType201326: 139/2004 < 250 million (Art. 1(2))
+  DecisionType201327: 139/2004 < 2.5 billion (Art. 1(3))
+  DecisionType201328: 139/2004 < 100 million (Art. 1(3))
+  DecisionType201329: 139/2004 < 25 million (Art. 1(3))
+  DecisionType201330: 139/2004 Art. 346 TFEU (ex Art. 296 EC Treaty)
+  DecisionType201333: Art. 11
+  DecisionType201334: Decision under remedy review clause
+  DecisionType201335: Decision rejecting a claim for legal professional privilege (Art. 11(3))
+  DecisionType201337: Art. 4(4) - Member state disagreement
+  DecisionType201338: Decision under remedy review clause
+  DecisionType201339: Art. 4(5) - Form RS withdrawn
+  DecisionType201340: Art. 4(4) - Form RS withdrawn
+  DecisionType201341: Art. 8(5)(b)
+  DecisionType201342: Art. 8(5)(b) provisional decision
+  DecisionType201343: Art. 8(4)(b)
+  DecisionType201344: Art. 18 (Statement of Objections)
+  DecisionType201345: Rejection of a request to act
+  DecisionType201346: Closure of proceedings
+  DecisionType2014: Art. 7(3)
+  DecisionType20140: 139/2004 Art. 346 TFEU (ex Art. 296 EC Treaty)
+  DecisionType2016: Art. 21(4)
+  DecisionType2020: 139/2004 Art. 11
+  DecisionType20201: Art. 5(2) - Incompleteness
+  DecisionType20212: Art. 6(1)(b) with conditions & obligations
+  DecisionType20214: Art. 7(3)
+  DecisionType20216: Art. 21(4)
+  DecisionType2022201353: 'Rejection of a request to act '
+  DecisionType2022201354: Art. 21(4) Preliminary Assessment
+  DecisionType2022201355: Modification of Art. 8(2) with conditions & obligations
+  DecisionType2022201356: Modification of Art. 6(1)(b) with conditions & obligations
+  DecisionType2022201357: Art. 8(5)(c)
+  DecisionType20230: Art. 9(3) partial referral
+  DecisionType2023201359: Art. 18 (Statement of Objections on a derogation request under Art. 7)
+  DecisionType20240: Art. 9(3) refusal of referral
+  DecisionType2024201360: Art. 11
+  DecisionType2024201361: Withdrawal of Art. 6(1)(c) decision
+  DecisionType2024201362: Withdrawal of Art. 8(3) decision
+  DecisionType2024201363: Withdrawal of Art. 8(5)(a) decision
+  DecisionType2024201364: Withdrawal of Art. 8(5)(c) decision
+  DecisionType2024201365: Withdrawal of Art. 14 decision
+  DecisionType2024201366: Withdrawal of Art. 8(4)(a) decision
+  DecisionType20250: 139/2004 Art. 11 (N/1)
+  DecisionType20260: 139/2004 Art. 13 (N/1)
+  DecisionType202601: 139/2004 Corrigendum
+  DecisionType202602: 139/2004 Correcting decision
+  DecisionType20270: Art. 14
+  DecisionType20280: Art. 15
+  DecisionType2030: 139/2004 Art. 13
+  DecisionType20300: Art. 6(1)(a)
+  DecisionType20310: Art. 6(1)(b)
+  DecisionType20320: Art. 6(1)(c)
+  DecisionType20325: Art. 6(3)
+  DecisionType20330: Art. 9(3) full referral
+  DecisionType20380: Art. 22(4)
+  DecisionType2040: Art. 14
+  DecisionType20475: 139/2004 Art. 10(6) (N/1)
+  DecisionType20480: '139/2004 No decision taken during the month of notif. effective '
+  DecisionType20490: Withdrawn
+  DecisionType2050: Art. 15
+  DecisionType20503: Art. 5(2) - Incompleteness
+  DecisionType20510: Art. 9(3) partial referral
+  DecisionType20520: 139/2004 Art. 13 (N/2)
+  DecisionType20530: Art. 14
+  DecisionType20540: Art. 15
+  DecisionType20545: Art. 18 (Statement of Objections)
+  DecisionType20560: Art. 19 (Advisory Committee)
+  DecisionType20570: 139/2004 Art. 11 (N/2)
+  DecisionType20580: 139/2004 Art. 13(3)
+  DecisionType20600: Art. 8(2) with conditions & obligations
+  DecisionType20610: Art. 8(3)
+  DecisionType20620: Art. 9(3) refusal of referral
+  DecisionType20650: Art. 9(3) full referral
+  DecisionType20665: Art. 10(3)
+  DecisionType20670: 139/2004 No decision taken during the period notif. effective
+  DecisionType20680: Aborted / withdrawn
+  DecisionType20682: Art. 8(1)
+  DecisionType20683: Art. 8(4)(a)
+  DecisionType20684: Art. 8(4)(b)
+  DecisionType20685: Art. 8(6)(a)
+  DecisionType20686: Art. 8(6)(b)
+  DecisionType20687: Art. 8(7)(a)
+  DecisionType20688: Art. 8(7)(b)
+  DecisionType20689: Art. 7(3)
+  DecisionType20690: Art. 21(4)
+  DecisionType2070: 139/2004 Art. 1(2) < 5 billion
+  DecisionType20700: 139/2004 The parties fulfilled the conditions
+  DecisionType20710: 139/2004 Art. 8(4)/8(5) Procedure opened
+  DecisionType20720: 139/2004 Concentration aborted
+  DecisionType20730: Decision on the implementation of remedies
+  DecisionType2080: '139/2004 Art. 1(2) < 250 million '
+  DecisionType2082: 139/2004 Art. 1(3) < 2.5 billion
+  DecisionType2084: 139/2004 Art. 1(3) < 100 million
+  DecisionType2086: 139/2004 Art. 1(3) < 25 million
+  DecisionType2090: 2/3 rule
+  DecisionType210: 4064/89 Art. 7(2) (N/1)
+  DecisionType220: 4064/89 Art. 7(4) (N/1)
+  DecisionType230: Art. 9(3) partial referral
+  DecisionType240: Art. 9(3) refusal of referral
+  DecisionType250: 4064/89 Art. 11 (N/1)
+  DecisionType260: 4064/89 Art. 13 (N/1)
+  DecisionType270: Art. 14
+  DecisionType280: Art. 15
+  DecisionType290: Art. 21(3)
+  DecisionType30: 4064/89 Art. 13(3)
+  DecisionType300: Art. 6(1)(a)
+  DecisionType310: Art. 6(1)(b)
+  DecisionType320: Art. 6(1)(c)
+  DecisionType325: Art. 6(3)
+  DecisionType330: Art. 9(3) full referral
+  DecisionType380: Art. 22(4)
+  DecisionType40: Art. 14
+  DecisionType440: Art. 6(1)(b) with conditions & obligations
+  DecisionType475: 4064/89 Art. 10(6) (N/1)
+  DecisionType480: '4064/89 No decision taken during the month of notif. effective '
+  DecisionType490: Withdrawn
+  DecisionType497: 4064/89 Particular sectorial merger - Transfer to CJV
+  DecisionType498: 4064/89 Cooperative JV - Transfer to CJV
+  DecisionType499: 4064/89 Transfer back to CMS
+  DecisionType50: Art. 15
+  DecisionType500: 4064/89 Art. 7(4) (N/2)
+  DecisionType505: 4064/89 Art. 7(2) (N/2)
+  DecisionType510: Art. 9(3) partial referral
+  DecisionType520: 4064/89 Art. 13 (N/2)
+  DecisionType530: Art. 14
+  DecisionType540: Art. 15
+  DecisionType545: Art. 18 (Statement of Objections)
+  DecisionType550: 4064/89 Art. 21(3)
+  DecisionType560: Art. 19 (Advisory Committee)
+  DecisionType570: 4064/89 Art. 11 (N/2)
+  DecisionType580: 4064/89 Art. 13(3)
+  DecisionType590: Art. 8(2)
+  DecisionType60: Art. 21(3)
+  DecisionType600: Art. 8(2) with conditions & obligations
+  DecisionType610: Art. 8(3)
+  DecisionType620: Art. 9(3) refusal of referral
+  DecisionType650: Art. 22(4)
+  DecisionType664: Art. 8(4)
+  DecisionType665: 4064/89 Art. 10(6) (N/2)
+  DecisionType670: 4064/89 No decision taken during the period notif. effective
+  DecisionType680: Aborted / withdrawn (N/2)
+  DecisionType699: 4064/89 Transfer back to CMS
+  DecisionType70: 4064/89 < 5 billion (Art. 1(2))
+  DecisionType700: 4064/89 The parties fulfilled the conditions
+  DecisionType710: 4064/89 Art. 8(4)/8(5) Procedure opened
+  DecisionType720: 4064/89 Concentration aborted
+  DecisionType730: Implementing decision
+  DecisionType80: 4064/89 < 250 million (Art. 1(2))
+  DecisionType82: 4064/89 < 2.5 billion (Art. 1(3))
+  DecisionType84: 4064/89 < 100 million (Art. 1(3))
+  DecisionType86: 4064/89 < 25 million (Art. 1(3))
+  DecisionType90: 4064/89 2/3 rule
+  DecisionType91: Art. 5(3) - Emergence of new facts during procedure
+  DecisionType92: Art. 5(3) - Emergence of new facts during procedure
+eu_tila:
+  DecisionType20310: hyväksytty
+  DecisionType20300: ei soveltamisalassa
+  DecisionType20212: hyväksytty ehdoin
+  DecisionType20320: jatkokäsittelyssä
+  DecisionType20682: hyväksytty
+  DecisionType20600: hyväksytty ehdoin
+  DecisionType590: hyväksytty ehdoin
+  DecisionType20610: kielletty
+  DecisionType20490: peruutettu
+  DecisionType1410: peruutettu
+  DecisionType20330: siirretty jäsenvaltiolle
+  DecisionType20650: siirretty jäsenvaltiolle
+  DecisionType20230: siirretty osittain
+  DecisionType20510: siirretty osittain
+  DecisionType201316: siirretty komissiolle
+  DecisionType201310: siirretty komissiolle
+  DecisionType201220: siirretty jäsenvaltiolle
+  DecisionType1430: hyväksytty
+eu_tila_selite:
+  hyväksytty: Komissio hyväksyi yrityskaupan
+  hyväksytty ehdoin: Hyväksytty sitoumuksin
+  kielletty: Komissio kielsi yrityskaupan
+  jatkokäsittelyssä: Perusteellinen tutkinta (vaihe 2) käynnissä
+  peruutettu: Ilmoitus peruutettu
+  ei soveltamisalassa: Ei sulautuma-asetuksen soveltamisalassa
+nace:
+  A: Maa- ja metsätalous
+  B: Kaivostoiminta
+  C: Teollisuus
+  D: Energia
+  E: Vesi- ja jätehuolto
+  F: Rakentaminen
+  G: Kauppa
+  H: Kuljetus ja varastointi
+  I: Majoitus ja ravitsemus
+  J: Kustannus- ja mediatoiminta
+  K: Televiestintä ja IT
+  L: Rahoitus ja vakuutus
+  M: Kiinteistöala
+  N: Asiantuntijapalvelut
+  O: Hallinto- ja tukipalvelut
+  P: Julkinen hallinto
+  Q: Koulutus
+  R: Terveys- ja sosiaalipalvelut
+  S: Kulttuuri ja virkistys
+  T: Muut palvelut
+  U: Kotitaloudet
+  V: Kansainväliset järjestöt
+kkv_tila:
+  Yrityskaupan hyväksyminen sellaisenaan: hyväksytty
+  Yrityskaupan hyväksyminen ehdollisena: hyväksytty ehdoin
+  Yrityskaupan kieltäminen: kielletty
+  Esitys yrityskaupan kieltämisestä: kieltoesitys markkinaoikeudelle
+  Asian käsittelyn raukeaminen: rauennut
+  Yrityskaupan hyväksyminen: hyväksytty
+_nace_huom: 'Komission tapaushaku käyttää NACE Rev. 2.1 -pääluokkia (2025): esim. L = rahoitus, O = hallinto- ja tukipalvelut.'

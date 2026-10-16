@@ -40,6 +40,11 @@ def tenders():
 
 
 @pytest.fixture(scope="module")
+def mergers():
+    return json.loads((DATA / "yrityskaupat.json").read_text(encoding="utf-8"))
+
+
+@pytest.fixture(scope="module")
 def meta():
     return json.loads((DATA / "meta.json").read_text(encoding="utf-8"))
 
@@ -171,9 +176,60 @@ def test_closed_tenders_are_recent(tenders, settings):
     assert not old, f"vanhoja suorahankintoja ei siivottu: {old[:5]}"
 
 
+# ---------- yrityskaupat.json (merger control) ----------
+
+YK_STATUS = {"vireillä", "jatkokäsittelyssä", "hyväksytty", "hyväksytty ehdoin", "kielletty", "peruutettu", "siirretty jäsenvaltiolle",
+             "siirretty osittain", "siirretty komissiolle", "ei soveltamisalassa", "päätetty", "poistunut listalta", "rauennut",
+             "kieltoesitys markkinaoikeudelle"}
+
+
+def test_mergers_schema(mergers):
+    items = mergers["items"]
+    assert len(items) >= 5
+    ids = [m["id"] for m in items]
+    assert len(ids) == len(set(ids))
+    assert {m["authority"] for m in items} == {"KKV", "EU"}
+    topics = set(mergers["topics"])
+    for m in items:
+        assert m["id"].startswith("yk-fi-" if m["authority"] == "KKV" else "yk-eu-"), m["id"]
+        assert m["scope"] == "yrityskauppa" and m["laji"] == "yrityskauppa", m["id"]
+        assert m["title"].strip() and m["ref"], m["id"]
+        assert m["status"] in YK_STATUS, (m["id"], m["status"])
+        assert isinstance(m["done"], bool) and m["done"] == (m["status"] not in ("vireillä", "jatkokäsittelyssä")), m["id"]
+        assert m["phase"] in (1, 2), m["id"]
+        assert set(m["topics"]) <= topics, (m["id"], m["topics"])
+        assert m["source"].startswith("https://"), m["id"]
+        for k in ("notified", "hearingEnd", "phase1End", "phase2Start", "phase2End", "decided"):
+            if m.get(k):
+                assert DATE.match(m[k]), (m["id"], k, m[k])
+        dates = [e["date"] for e in m["events"]]
+        assert dates == sorted(dates), m["id"]
+        for e in m["events"]:
+            assert e["kind"] in EVENT_KINDS and e["label"], (m["id"], e)
+        if m["status"] in ("vireillä", "jatkokäsittelyssä"):
+            assert any(e["kind"] == "maaraaika" for e in m["events"]) or m["authority"] == "EU", f"{m['id']}: vireillä ilman määräaikaa"
+        if m["authority"] == "KKV" and m["status"] == "vireillä":
+            assert m.get("notified") and m.get("phase1End") and m["phase1End"] > m["notified"], m["id"]
+            assert m.get("hearingEnd"), m["id"]
+        if m["status"] == "jatkokäsittelyssä" and m["authority"] == "KKV":
+            assert m.get("phase2Start") and m.get("phase2End"), m["id"]
+        if m["decided"]:
+            assert m["done"], m["id"]
+
+
+def test_mergers_counts(mergers):
+    c = mergers["counts"]
+    items = mergers["items"]
+    assert c["fi"] == sum(1 for m in items if m["authority"] == "KKV")
+    assert c["eu"] == sum(1 for m in items if m["authority"] == "EU")
+    assert c["fi_open"] == sum(1 for m in items if m["authority"] == "KKV" and not m["done"])
+    assert c["eu_open"] == sum(1 for m in items if m["authority"] == "EU" and not m["done"])
+    assert c["fi"] >= 3 and c["eu"] >= 10
+
+
 # ---------- meta.json, changes.json, ics ----------
 
-def test_meta(meta, items, tenders):
+def test_meta(meta, items, tenders, mergers):
     gen = dt.datetime.fromisoformat(meta["generated"])
     assert gen.year >= 2026
     c = meta["counts"]
@@ -183,7 +239,9 @@ def test_meta(meta, items, tenders):
     assert c["eu"] == sum(1 for i in items if i["scope"] == "eu" and not i["done"])
     assert c["done"] == sum(1 for i in items if i["done"])
     assert c["hankinnat"] == tenders["counts"]["avoinna"]
-    assert len(meta["sources"]) >= 7
+    assert c["yrityskaupat"] == mergers["counts"]["fi_open"] + mergers["counts"]["eu_open"]
+    assert meta["yrityskauppaTopics"] == mergers["topics"]
+    assert len(meta["sources"]) >= 9
     assert meta["topics"][-1] == "Muut" and len(meta["topics"]) >= 10
     assert meta["hankintaTopics"] == tenders["topics"]
     assert set(meta["lajit"]) == LAJIT

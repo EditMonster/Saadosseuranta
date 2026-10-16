@@ -1,0 +1,2157 @@
+{
+ "cases": {
+  "M.11895": {
+   "caseNumber": "M.11895",
+   "deadline": "2027-02-25",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20320"
+    }
+   ],
+   "initiated": "2025-01-20",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-07",
+   "phase": "FormalInvestigationPhase2Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.55",
+   "simplified": "MEnormal",
+   "title": "XXXLUTZ / PORTA"
+  },
+  "M.11903": {
+   "caseNumber": "M.11903",
+   "deadline": "2026-10-12",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2025-01-28",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.21",
+   "simplified": "MEnormal",
+   "title": "CM / BUNGE / BTZ"
+  },
+  "M.11944": {
+   "caseNumber": "M.11944",
+   "deadline": "2026-11-30",
+   "decisions": [
+    {
+     "date": "2025-05-22",
+     "type": "DecisionType20490"
+    },
+    {
+     "date": "2025-11-04",
+     "type": "DecisionType20320"
+    },
+    {
+     "date": "2026-09-16",
+     "type": "DecisionType20545"
+    }
+   ],
+   "initiated": "2025-03-03",
+   "lastDecision": "2026-09-16",
+   "notified": "2025-04-23",
+   "phase": "FormalInvestigationPhase2Merger",
+   "renotified": "2025-09-16",
+   "sector": "NaceV2Sector_B_07.29",
+   "simplified": "MEnormal",
+   "title": "MMG / BRAZILIAN NICKEL BUSINESS OF ANGLO AMERICAN"
+  },
+  "M.12082": {
+   "caseNumber": "M.12082",
+   "deadline": "2026-09-28",
+   "decisions": [
+    {
+     "date": "2026-09-15",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2025-07-07",
+   "lastDecision": "2026-09-15",
+   "notified": "2026-08-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_38.21",
+   "simplified": "MEsimplified",
+   "title": "BAG / EVI / REMEX / BAUREKA"
+  },
+  "M.12236": {
+   "caseNumber": "M.12236",
+   "deadline": null,
+   "decisions": [
+    {
+     "date": "2026-07-22",
+     "type": "DecisionType20320"
+    }
+   ],
+   "initiated": "2025-11-03",
+   "lastDecision": "2026-07-22",
+   "notified": "2026-06-16",
+   "phase": "FormalInvestigationPhase2Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_B_09.1",
+   "simplified": "MEnormal",
+   "title": "SAIPEM / SUBSEA7"
+  },
+  "M.12258": {
+   "caseNumber": "M.12258",
+   "deadline": "2026-11-18",
+   "decisions": [],
+   "initiated": "2025-11-24",
+   "lastDecision": null,
+   "notified": "2026-10-13",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_77.11",
+   "simplified": "MEsimplified",
+   "title": "VOLKSWAGEN / EUROPCAR"
+  },
+  "M.12269": {
+   "caseNumber": "M.12269",
+   "deadline": "2026-10-22",
+   "decisions": [],
+   "initiated": "2025-12-02",
+   "lastDecision": null,
+   "notified": "2026-09-17",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.30",
+   "simplified": "MEnormal",
+   "title": "AKZONOBEL / AXALTA"
+  },
+  "M.12270": {
+   "caseNumber": "M.12270",
+   "deadline": "2026-12-09",
+   "decisions": [
+    {
+     "date": "2026-04-28",
+     "type": "DecisionType20320"
+    },
+    {
+     "date": "2026-08-25",
+     "type": "DecisionType20545"
+    },
+    {
+     "date": "2026-10-05",
+     "type": "DecisionType20665"
+    }
+   ],
+   "initiated": "2025-12-09",
+   "lastDecision": "2026-10-05",
+   "notified": "2026-03-19",
+   "phase": "FormalInvestigationPhase2Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_17.11",
+   "simplified": "MEnormal",
+   "title": "UPM-KYMMENE / SAPPI / JV"
+  },
+  "M.12298": {
+   "caseNumber": "M.12298",
+   "deadline": "2026-11-12",
+   "decisions": [],
+   "initiated": "2025-12-22",
+   "lastDecision": null,
+   "notified": "2026-10-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_K_63.10",
+   "simplified": "MEsupersimplified",
+   "title": "SNOWHAWK / ARES / MACQUARIE / DATA REALTY GROUP / PRIME DATA CENTRES"
+  },
+  "M.12324": {
+   "caseNumber": "M.12324",
+   "deadline": "2026-10-09",
+   "decisions": [
+    {
+     "date": "2026-10-09",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-01-19",
+   "lastDecision": "2026-10-09",
+   "notified": "2026-09-04",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_29.32",
+   "simplified": "MEnormal",
+   "title": "HARMAN / ZF CAPRI"
+  },
+  "M.12325": {
+   "caseNumber": "M.12325",
+   "deadline": "2026-08-28",
+   "decisions": [
+    {
+     "date": "2026-08-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-01-19",
+   "lastDecision": "2026-08-17",
+   "notified": "2026-07-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_H_52.10",
+   "simplified": "MEsimplified",
+   "title": "NYK / SNL / AVENIR"
+  },
+  "M.12330": {
+   "caseNumber": "M.12330",
+   "deadline": null,
+   "decisions": [
+    {
+     "date": "2026-10-13",
+     "type": "DecisionType20212"
+    }
+   ],
+   "initiated": "2026-01-19",
+   "lastDecision": "2026-10-13",
+   "notified": "2026-08-25",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.46",
+   "simplified": "MEnormal",
+   "title": "KIMBERLY-CLARK / KENVUE"
+  },
+  "M.12341": {
+   "caseNumber": "M.12341",
+   "deadline": "2026-08-21",
+   "decisions": [
+    {
+     "date": "2026-08-21",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-01-26",
+   "lastDecision": "2026-08-21",
+   "notified": "2026-07-02",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_K_61.10",
+   "simplified": "MEnormal",
+   "title": "ORANGE / APG / NEXERA"
+  },
+  "M.12347": {
+   "caseNumber": "M.12347",
+   "deadline": "2026-08-07",
+   "decisions": [
+    {
+     "date": "2026-07-27",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-02-02",
+   "lastDecision": "2026-07-27",
+   "notified": "2026-07-02",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.2",
+   "simplified": "MEsupersimplified",
+   "title": "BROOKFIELD / LUNATE"
+  },
+  "M.12356": {
+   "caseNumber": "M.12356",
+   "deadline": "2026-09-29",
+   "decisions": [
+    {
+     "date": "2026-09-16",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-02-13",
+   "lastDecision": "2026-09-16",
+   "notified": "2026-08-25",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.20",
+   "simplified": "MEsupersimplified",
+   "title": "SBB / HELSANA GROUP / HMS"
+  },
+  "M.12362": {
+   "caseNumber": "M.12362",
+   "deadline": "2026-08-17",
+   "decisions": [
+    {
+     "date": "2026-08-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-02-16",
+   "lastDecision": "2026-08-17",
+   "notified": "2026-07-10",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_H_53.2",
+   "simplified": "MEnormal",
+   "title": "FEDEX / ADVENT / A&R / INPOST"
+  },
+  "M.12364": {
+   "caseNumber": "M.12364",
+   "deadline": "2026-10-19",
+   "decisions": [],
+   "initiated": "2026-02-16",
+   "lastDecision": null,
+   "notified": "2026-09-14",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_79.90",
+   "simplified": "MEnormal",
+   "title": "EPG / FNAC DARTY GROUP"
+  },
+  "M.12372": {
+   "caseNumber": "M.12372",
+   "deadline": "2026-09-22",
+   "decisions": [
+    {
+     "date": "2026-04-22",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-09-22",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-02-23",
+   "lastDecision": "2026-09-22",
+   "notified": "2026-08-18",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.3",
+   "simplified": "MEnormal",
+   "title": "HENKEL / STAHL PARENT"
+  },
+  "M.12390": {
+   "caseNumber": "M.12390",
+   "deadline": "2026-08-31",
+   "decisions": [
+    {
+     "date": "2026-08-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-03-09",
+   "lastDecision": "2026-08-31",
+   "notified": "2026-07-27",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_22.22",
+   "simplified": "MEnormal",
+   "title": "COBEGA / PORTOBELLO / SONAB / CAIBA / NOSOPLAS"
+  },
+  "M.12394": {
+   "caseNumber": "M.12394",
+   "deadline": "2026-08-11",
+   "decisions": [
+    {
+     "date": "2026-08-11",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-03-16",
+   "lastDecision": "2026-08-11",
+   "notified": "2026-07-06",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_63.1",
+   "simplified": "MEnormal",
+   "title": "CPPIB / EQUINIX / ATNORTH"
+  },
+  "M.12401": {
+   "caseNumber": "M.12401",
+   "deadline": "2026-10-26",
+   "decisions": [
+    {
+     "date": "2026-10-13",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-03-23",
+   "lastDecision": "2026-10-13",
+   "notified": "2026-09-21",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.12",
+   "simplified": "MEsupersimplified",
+   "title": "SUN TRINITY / MHCCE / BRUC JAPAN / BRUC JAPAN 2"
+  },
+  "M.12405": {
+   "caseNumber": "M.12405",
+   "deadline": "2026-11-16",
+   "decisions": [],
+   "initiated": "2026-03-23",
+   "lastDecision": null,
+   "notified": "2026-10-09",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.19",
+   "simplified": "MEnormal",
+   "title": "UNICREDIT / COMMERZBANK"
+  },
+  "M.12406": {
+   "caseNumber": "M.12406",
+   "deadline": "2026-09-02",
+   "decisions": [
+    {
+     "date": "2026-08-20",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-03-23",
+   "lastDecision": "2026-08-20",
+   "notified": "2026-07-29",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.81",
+   "simplified": "MEsimplified",
+   "title": "CMA CGM / TOTALENERGIES / JV"
+  },
+  "M.12417": {
+   "caseNumber": "M.12417",
+   "deadline": "2026-08-04",
+   "decisions": [
+    {
+     "date": "2026-07-22",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-03-30",
+   "lastDecision": "2026-07-22",
+   "notified": "2026-06-29",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_63.10",
+   "simplified": "MEsimplified",
+   "title": "SAUDI ARAMCO / PIF / HUMAIN"
+  },
+  "M.12423": {
+   "caseNumber": "M.12423",
+   "deadline": "2026-09-09",
+   "decisions": [
+    {
+     "date": "2026-08-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-01",
+   "lastDecision": "2026-08-31",
+   "notified": "2026-08-05",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_30.3",
+   "simplified": "MEsimplified",
+   "title": "ACITURRI AEROENGINES / TIKEHAU CAPITAL / AERIAN"
+  },
+  "M.12427": {
+   "caseNumber": "M.12427",
+   "deadline": "2026-08-19",
+   "decisions": [
+    {
+     "date": "2026-08-06",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-07",
+   "lastDecision": "2026-08-06",
+   "notified": "2026-07-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.16",
+   "simplified": "MEsupersimplified",
+   "title": "APOLLO FUNDS / KKR / ATLANTIC AVIATION HOLDINGS"
+  },
+  "M.12428": {
+   "caseNumber": "M.12428",
+   "deadline": "2026-10-12",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-07",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_24.20",
+   "simplified": "MEnormal",
+   "title": "TENARIS / ARTROM"
+  },
+  "M.12435": {
+   "caseNumber": "M.12435",
+   "deadline": "2026-10-28",
+   "decisions": [
+    {
+     "date": "2026-10-15",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-13",
+   "lastDecision": "2026-10-15",
+   "notified": "2026-09-23",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_27.2",
+   "simplified": "MEsimplified",
+   "title": "GIM / EFMS / AES"
+  },
+  "M.12436": {
+   "caseNumber": "M.12436",
+   "deadline": "2026-08-28",
+   "decisions": [
+    {
+     "date": "2026-08-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-20",
+   "lastDecision": "2026-08-17",
+   "notified": "2026-07-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_66.19",
+   "simplified": "MEsimplified",
+   "title": "WARBURG PINCUS / NETFONDS"
+  },
+  "M.12447": {
+   "caseNumber": "M.12447",
+   "deadline": "2026-08-27",
+   "decisions": [
+    {
+     "date": "2026-08-14",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-27",
+   "lastDecision": "2026-08-14",
+   "notified": "2026-07-23",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_10.89",
+   "simplified": "MEsimplified",
+   "title": "FLAMINGO / FONDO NAZCA IV / HERBEX"
+  },
+  "M.12451": {
+   "caseNumber": "M.12451",
+   "deadline": "2026-08-19",
+   "decisions": [
+    {
+     "date": "2026-08-07",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-27",
+   "lastDecision": "2026-08-07",
+   "notified": "2026-07-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "title": "KHAZNA / ENI / JV"
+  },
+  "M.12452": {
+   "caseNumber": "M.12452",
+   "deadline": "2026-09-24",
+   "decisions": [
+    {
+     "date": "2026-09-15",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-04-27",
+   "lastDecision": "2026-09-15",
+   "notified": "2026-08-20",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_30.3",
+   "simplified": "MEsimplified",
+   "title": "BLACKSTONE / TINICUM / SENIOR / AEROFLOW"
+  },
+  "M.12454": {
+   "caseNumber": "M.12454",
+   "deadline": "2026-08-18",
+   "decisions": [
+    {
+     "date": "2026-08-05",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-04",
+   "lastDecision": "2026-08-05",
+   "notified": "2026-07-13",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_27.5",
+   "simplified": "MEsupersimplified",
+   "title": "ELECTROLUX / MIDEA / JVs"
+  },
+  "M.12457": {
+   "caseNumber": "M.12457",
+   "deadline": "2026-08-13",
+   "decisions": [
+    {
+     "date": "2026-07-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-04",
+   "lastDecision": "2026-07-31",
+   "notified": "2026-07-08",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_22.22",
+   "simplified": "MEsimplified",
+   "title": "INDORAMA / BLACKSTONE / EPL / INDOVIDA INDIA"
+  },
+  "M.12461": {
+   "caseNumber": "M.12461",
+   "deadline": "2026-08-04",
+   "decisions": [
+    {
+     "date": "2026-07-22",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-04",
+   "lastDecision": "2026-07-22",
+   "notified": "2026-06-29",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.15",
+   "simplified": "MEsimplified",
+   "title": "ARES / ENI / PLENITUDE"
+  },
+  "M.12464": {
+   "caseNumber": "M.12464",
+   "deadline": "2026-08-28",
+   "decisions": [
+    {
+     "date": "2026-08-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-11",
+   "lastDecision": "2026-08-17",
+   "notified": "2026-07-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_65.12",
+   "simplified": "MEsimplified",
+   "title": "HLA VISTAHERMOSA / SANOPTIS / OFTALVIST"
+  },
+  "M.12472": {
+   "caseNumber": "M.12472",
+   "deadline": "2026-08-18",
+   "decisions": [
+    {
+     "date": "2026-08-05",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-08-05",
+   "notified": "2026-07-13",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_F_42.11",
+   "simplified": "MEsimplified",
+   "title": "STRABAG / ABERDEEN / MAK"
+  },
+  "M.12473": {
+   "caseNumber": "M.12473",
+   "deadline": "2026-09-04",
+   "decisions": [
+    {
+     "date": "2026-08-25",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-08-25",
+   "notified": "2026-07-31",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_F_42.22",
+   "simplified": "MEsimplified",
+   "title": "BLACKSTONE / NORLYS / EWH / EUROWIND ENERGY"
+  },
+  "M.12474": {
+   "caseNumber": "M.12474",
+   "deadline": "2026-07-30",
+   "decisions": [
+    {
+     "date": "2026-07-20",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-07-20",
+   "notified": "2026-06-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.82",
+   "simplified": "MEsimplified",
+   "title": "TAIFU KECHUANG / PROSPERITY KINGSFIELD"
+  },
+  "M.12475": {
+   "caseNumber": "M.12475",
+   "deadline": "2026-11-06",
+   "decisions": [],
+   "initiated": "2026-05-18",
+   "lastDecision": null,
+   "notified": "2026-10-01",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.74",
+   "simplified": "MEnormal",
+   "title": "AMPLIFON / GN HEARING"
+  },
+  "M.12476": {
+   "caseNumber": "M.12476",
+   "deadline": "2026-08-25",
+   "decisions": [
+    {
+     "date": "2026-08-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-08-12",
+   "notified": "2026-07-20",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.20",
+   "simplified": "MEsimplified",
+   "title": "VERDANE / TELENOR / CONNEXION / BLDNG"
+  },
+  "M.12478": {
+   "caseNumber": "M.12478",
+   "deadline": "2026-10-19",
+   "decisions": [],
+   "initiated": "2026-05-18",
+   "lastDecision": null,
+   "notified": "2026-09-14",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.12",
+   "simplified": "MEnormal",
+   "title": "SMO / MERMEC"
+  },
+  "M.12479": {
+   "caseNumber": "M.12479",
+   "deadline": "2026-08-20",
+   "decisions": [
+    {
+     "date": "2026-08-07",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-08-07",
+   "notified": "2026-07-15",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_B_08.99",
+   "simplified": "MEsimplified",
+   "title": "GBL / CVC / RECORDATI"
+  },
+  "M.12480": {
+   "caseNumber": "M.12480",
+   "deadline": "2026-10-26",
+   "decisions": [
+    {
+     "date": "2026-08-31",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-10-14",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-10",
+   "lastDecision": "2026-10-14",
+   "notified": "2026-09-21",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_30.20",
+   "simplified": "MEsimplified",
+   "title": "WATERLAND / BODE / VENTURA"
+  },
+  "M.12481": {
+   "caseNumber": "M.12481",
+   "deadline": "2026-08-28",
+   "decisions": [
+    {
+     "date": "2026-08-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-18",
+   "lastDecision": "2026-08-17",
+   "notified": "2026-07-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.21",
+   "simplified": "MEsimplified",
+   "title": "CENTERBRIDGE / SANTANDER / EBURY"
+  },
+  "M.12483": {
+   "caseNumber": "M.12483",
+   "deadline": "2026-10-15",
+   "decisions": [
+    {
+     "date": "2026-10-05",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-26",
+   "lastDecision": "2026-10-05",
+   "notified": "2026-09-10",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_O_77.21",
+   "simplified": "MEsimplified",
+   "title": "VWFS / DML"
+  },
+  "M.12484": {
+   "caseNumber": "M.12484",
+   "deadline": "2026-11-09",
+   "decisions": [],
+   "initiated": "2026-05-26",
+   "lastDecision": null,
+   "notified": "2026-10-02",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_77.35",
+   "simplified": "MEsimplified",
+   "title": "ITOCHU / TC / ACG"
+  },
+  "M.12486": {
+   "caseNumber": "M.12486",
+   "deadline": "2026-08-05",
+   "decisions": [
+    {
+     "date": "2026-07-23",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-26",
+   "lastDecision": "2026-07-23",
+   "notified": "2026-06-30",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_17.21",
+   "simplified": "MEsimplified",
+   "title": "SAICA / THIMM"
+  },
+  "M.12488": {
+   "caseNumber": "M.12488",
+   "deadline": "2026-07-28",
+   "decisions": [
+    {
+     "date": "2026-07-20",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-26",
+   "lastDecision": "2026-07-20",
+   "notified": "2026-06-22",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_37.0",
+   "simplified": "MEsupersimplified",
+   "title": "ASTERION / MACQUARIE / SOUTHERN WATER"
+  },
+  "M.12491": {
+   "caseNumber": "M.12491",
+   "deadline": "2026-08-05",
+   "decisions": [
+    {
+     "date": "2026-07-23",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-05-26",
+   "lastDecision": "2026-07-23",
+   "notified": "2026-06-30",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_38.21",
+   "simplified": "MEsimplified",
+   "title": "DERICHEBOURG ENVIRONNEMENT / SCHOLZ GROUP"
+  },
+  "M.12496": {
+   "caseNumber": "M.12496",
+   "deadline": "2026-08-19",
+   "decisions": [
+    {
+     "date": "2026-08-06",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-01",
+   "lastDecision": "2026-08-06",
+   "notified": "2026-07-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.91",
+   "simplified": "MEsimplified",
+   "title": "NASPERS / EMAG"
+  },
+  "M.12497": {
+   "caseNumber": "M.12497",
+   "deadline": "2026-09-15",
+   "decisions": [
+    {
+     "date": "2026-09-10",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-01",
+   "lastDecision": "2026-09-10",
+   "notified": "2026-08-11",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.12",
+   "simplified": "MEsimplified",
+   "title": "SANAD SERVICES / TIKEHAU CAPITAL / REVIMA"
+  },
+  "M.12498": {
+   "caseNumber": "M.12498",
+   "deadline": "2026-08-28",
+   "decisions": [
+    {
+     "date": "2026-08-19",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-01",
+   "lastDecision": "2026-08-19",
+   "notified": "2026-07-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_63.10",
+   "simplified": "MEsimplified",
+   "title": "ACS AIID / TELEFÓNICA / BANCO SANTANDER / SETT / JV"
+  },
+  "M.12501": {
+   "caseNumber": "M.12501",
+   "deadline": "2026-09-04",
+   "decisions": [
+    {
+     "date": "2026-08-25",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-01",
+   "lastDecision": "2026-08-25",
+   "notified": "2026-07-31",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.47",
+   "simplified": "MEsimplified",
+   "title": "SOMNIGROUP / LEGGETT & PLATT"
+  },
+  "M.12502": {
+   "caseNumber": "M.12502",
+   "deadline": "2026-09-18",
+   "decisions": [
+    {
+     "date": "2026-09-07",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-09-07",
+   "notified": "2026-08-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.1",
+   "simplified": "MEsimplified",
+   "title": "PLD / NBIM / HAMBURG LOGISTICS PROPERTY ASSET"
+  },
+  "M.12503": {
+   "caseNumber": "M.12503",
+   "deadline": "2026-08-20",
+   "decisions": [
+    {
+     "date": "2026-08-07",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-08-07",
+   "notified": "2026-07-15",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.81",
+   "simplified": "MEsimplified",
+   "title": "GAHL / MERCEDES-BENZ (CERTAIN ASSETS)"
+  },
+  "M.12504": {
+   "caseNumber": "M.12504",
+   "deadline": "2026-08-26",
+   "decisions": [
+    {
+     "date": "2026-08-13",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-08-13",
+   "notified": "2026-07-22",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.1",
+   "simplified": "MEsimplified",
+   "title": "MITSUBISHI HC CAPITAL / BROOKFIELD / MHBF RENEWABLES"
+  },
+  "M.12506": {
+   "caseNumber": "M.12506",
+   "deadline": "2026-09-28",
+   "decisions": [
+    {
+     "date": "2026-09-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-21",
+   "lastDecision": "2026-09-17",
+   "notified": "2026-08-24",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_H_49.50",
+   "simplified": "MEsupersimplified",
+   "title": "PUBLIGAS / PUBLI-T"
+  },
+  "M.12507": {
+   "caseNumber": "M.12507",
+   "deadline": "2026-08-24",
+   "decisions": [
+    {
+     "date": "2026-08-13",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-08-13",
+   "notified": "2026-07-17",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.2",
+   "simplified": "MEsimplified",
+   "title": "LTM / RANDSTAD (DIGITAL SOLUTIONS BUSINESS)"
+  },
+  "M.12508": {
+   "caseNumber": "M.12508",
+   "deadline": "2026-08-18",
+   "decisions": [
+    {
+     "date": "2026-08-05",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-08-05",
+   "notified": "2026-07-13",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.7",
+   "simplified": "MEsupersimplified",
+   "title": "IGA HOLDING / UNIFREE / JV"
+  },
+  "M.12510": {
+   "caseNumber": "M.12510",
+   "deadline": "2026-08-25",
+   "decisions": [
+    {
+     "date": "2026-08-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-08",
+   "lastDecision": "2026-08-12",
+   "notified": "2026-07-20",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.15",
+   "simplified": "MEsupersimplified",
+   "title": "MERCEDES-BENZ / BMW / SERES / IONCHI"
+  },
+  "M.12513": {
+   "caseNumber": "M.12513",
+   "deadline": "2026-10-08",
+   "decisions": [
+    {
+     "date": "2026-09-25",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-15",
+   "lastDecision": "2026-09-25",
+   "notified": "2026-09-03",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.16",
+   "simplified": "MEsimplified",
+   "title": "AEQUITA / SABIC EUROPE"
+  },
+  "M.12514": {
+   "caseNumber": "M.12514",
+   "deadline": "2026-08-07",
+   "decisions": [
+    {
+     "date": "2026-07-27",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-15",
+   "lastDecision": "2026-07-27",
+   "notified": "2026-07-02",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.42",
+   "simplified": "MEsimplified",
+   "title": "FRASERS / HUGO BOSS"
+  },
+  "M.12515": {
+   "caseNumber": "M.12515",
+   "deadline": "2026-09-08",
+   "decisions": [
+    {
+     "date": "2026-08-27",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-15",
+   "lastDecision": "2026-08-27",
+   "notified": "2026-08-04",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.19",
+   "simplified": "MEsimplified",
+   "title": "EEP / ARA PARTNERS / STONEPEAK / ANWIM"
+  },
+  "M.12516": {
+   "caseNumber": "M.12516",
+   "deadline": "2026-10-07",
+   "decisions": [
+    {
+     "date": "2026-09-24",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-15",
+   "lastDecision": "2026-09-24",
+   "notified": "2026-09-02",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.64",
+   "simplified": "MEsimplified",
+   "title": "KESKO / DAHL (DENMARK, NORWAY, SWEDEN)"
+  },
+  "M.12517": {
+   "caseNumber": "M.12517",
+   "deadline": "2026-09-10",
+   "decisions": [
+    {
+     "date": "2026-07-28",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-09-01",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-15",
+   "lastDecision": "2026-09-01",
+   "notified": "2026-08-06",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.14",
+   "simplified": "MEsupersimplified",
+   "title": "MUTARES / SYNTHOMER"
+  },
+  "M.12522": {
+   "caseNumber": "M.12522",
+   "deadline": "2026-10-14",
+   "decisions": [
+    {
+     "date": "2026-10-01",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-22",
+   "lastDecision": "2026-10-01",
+   "notified": "2026-09-09",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_29.32",
+   "simplified": "MEsimplified",
+   "title": "BOSCH / TATA SONS / JV"
+  },
+  "M.12524": {
+   "caseNumber": "M.12524",
+   "deadline": "2026-10-08",
+   "decisions": [
+    {
+     "date": "2026-09-28",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-22",
+   "lastDecision": "2026-09-28",
+   "notified": "2026-09-03",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.72",
+   "simplified": "MEsimplified",
+   "title": "AEQUITA / RHEINMETALL AUTOMOTIVE"
+  },
+  "M.12527": {
+   "caseNumber": "M.12527",
+   "deadline": "2026-08-25",
+   "decisions": [
+    {
+     "date": "2026-08-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-22",
+   "lastDecision": "2026-08-12",
+   "notified": "2026-07-20",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.12",
+   "simplified": "MEsimplified",
+   "title": "BAIN CAPITAL / VOLKSWAGEN / EVERLLENCE"
+  },
+  "M.12528": {
+   "caseNumber": "M.12528",
+   "deadline": "2026-10-14",
+   "decisions": [
+    {
+     "date": "2026-10-05",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-22",
+   "lastDecision": "2026-10-05",
+   "notified": "2026-09-09",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_J_58.2",
+   "simplified": "MEsimplified",
+   "title": "ACCENTURE / INDX / ALFAHEALTH"
+  },
+  "M.12530": {
+   "caseNumber": "M.12530",
+   "deadline": "2026-08-19",
+   "decisions": [
+    {
+     "date": "2026-08-11",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-22",
+   "lastDecision": "2026-08-11",
+   "notified": "2026-07-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_38.21",
+   "simplified": "MEsupersimplified",
+   "title": "ATLAS HOLDINGS / KPS / JV"
+  },
+  "M.12532": {
+   "caseNumber": "M.12532",
+   "deadline": "2026-08-13",
+   "decisions": [
+    {
+     "date": "2026-07-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-29",
+   "lastDecision": "2026-07-31",
+   "notified": "2026-07-08",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.12",
+   "simplified": "MEsupersimplified",
+   "title": "PSPIB / JNBP / F2"
+  },
+  "M.12533": {
+   "caseNumber": "M.12533",
+   "deadline": "2026-09-15",
+   "decisions": [
+    {
+     "date": "2026-09-04",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-29",
+   "lastDecision": "2026-09-04",
+   "notified": "2026-08-11",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_10.7",
+   "simplified": "MEsupersimplified",
+   "title": "ABF/ WILMAR / HEBEI MAURI"
+  },
+  "M.12534": {
+   "caseNumber": "M.12534",
+   "deadline": "2026-09-23",
+   "decisions": [
+    {
+     "date": "2026-08-19",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-09-11",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-29",
+   "lastDecision": "2026-09-11",
+   "notified": "2026-08-19",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_N_71.12",
+   "simplified": "MEsimplified",
+   "title": "EFMS / EXOLAUNCH"
+  },
+  "M.12535": {
+   "caseNumber": "M.12535",
+   "deadline": "2026-08-13",
+   "decisions": [
+    {
+     "date": "2026-07-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-29",
+   "lastDecision": "2026-07-31",
+   "notified": "2026-07-08",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_36",
+   "simplified": "MEsupersimplified",
+   "title": "IV3 / RAKIZA / MAJIS"
+  },
+  "M.12536": {
+   "caseNumber": "M.12536",
+   "deadline": "2026-08-14",
+   "decisions": [
+    {
+     "date": "2026-08-03",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-06-29",
+   "lastDecision": "2026-08-03",
+   "notified": "2026-07-09",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.12",
+   "simplified": "MEsupersimplified",
+   "title": "TRITON / FLENDER"
+  },
+  "M.12537": {
+   "caseNumber": "M.12537",
+   "deadline": "2026-10-21",
+   "decisions": [
+    {
+     "date": "2026-10-08",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-06",
+   "lastDecision": "2026-10-08",
+   "notified": "2026-09-16",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_H_52.24",
+   "simplified": "MEsimplified",
+   "title": "POSCO FLOW / LX PANTOS / JV"
+  },
+  "M.12538": {
+   "caseNumber": "M.12538",
+   "deadline": "2026-08-14",
+   "decisions": [
+    {
+     "date": "2026-08-03",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-06",
+   "lastDecision": "2026-08-03",
+   "notified": "2026-07-09",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_F_42.9",
+   "simplified": "MEsupersimplified",
+   "title": "HIG EU MM LBO II / TERRAS"
+  },
+  "M.12540": {
+   "caseNumber": "M.12540",
+   "deadline": "2026-11-10",
+   "decisions": [],
+   "initiated": "2026-07-06",
+   "lastDecision": null,
+   "notified": "2026-10-05",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.2",
+   "simplified": "MEsimplified",
+   "title": "AP EJENDOMME / CAPMAN AIFM / COPENHAGEN TOWERS HOTEL / SCANDIC WEBERS"
+  },
+  "M.12542": {
+   "caseNumber": "M.12542",
+   "deadline": "2026-10-27",
+   "decisions": [],
+   "initiated": "2026-07-06",
+   "lastDecision": null,
+   "notified": "2026-09-22",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "title": "BLACKSTONE / ESSENDI / HOTEL PORTFOLIO"
+  },
+  "M.12543": {
+   "caseNumber": "M.12543",
+   "deadline": "2026-09-04",
+   "decisions": [
+    {
+     "date": "2026-08-24",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-06",
+   "lastDecision": "2026-08-24",
+   "notified": "2026-07-31",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.16",
+   "simplified": "MEsupersimplified",
+   "title": "INEOS / SINOPEC / JV"
+  },
+  "M.12545": {
+   "caseNumber": "M.12545",
+   "deadline": "2026-08-31",
+   "decisions": [
+    {
+     "date": "2026-08-18",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-06",
+   "lastDecision": "2026-08-18",
+   "notified": "2026-07-27",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_E_37",
+   "simplified": "MEsimplified",
+   "title": "MSI / NICOLLIN SAS / SMN / NHE / NICOLLIN EAU / MP3D"
+  },
+  "M.12546": {
+   "caseNumber": "M.12546",
+   "deadline": "2026-10-19",
+   "decisions": [
+    {
+     "date": "2026-10-06",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-06",
+   "lastDecision": "2026-10-06",
+   "notified": "2026-09-14",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "title": "SAMSUNG / GS E&C / JV"
+  },
+  "M.12548": {
+   "caseNumber": "M.12548",
+   "deadline": "2026-10-30",
+   "decisions": [],
+   "initiated": "2026-07-06",
+   "lastDecision": null,
+   "notified": "2026-09-25",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_10.8",
+   "simplified": "MEsimplified",
+   "title": "VITAMIN WELL GROUP / EMPWR NUTRITION GROUP"
+  },
+  "M.12550": {
+   "caseNumber": "M.12550",
+   "deadline": "2026-10-21",
+   "decisions": [
+    {
+     "date": "2026-10-08",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-13",
+   "lastDecision": "2026-10-08",
+   "notified": "2026-09-16",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_29.32",
+   "simplified": "MEsupersimplified",
+   "title": "DANA / EATON (MOBILITY BUSINESS)"
+  },
+  "M.12551": {
+   "caseNumber": "M.12551",
+   "deadline": "2026-10-23",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-13",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-18",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_28.99",
+   "simplified": "MEsimplified",
+   "title": "LONE STAR FUNDS / CONTITECH"
+  },
+  "M.12553": {
+   "caseNumber": "M.12553",
+   "deadline": "2026-08-24",
+   "decisions": [
+    {
+     "date": "2026-08-11",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-13",
+   "lastDecision": "2026-08-11",
+   "notified": "2026-07-17",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_T_95.31",
+   "simplified": "MEsupersimplified",
+   "title": "INTEROGO / RMS"
+  },
+  "M.12554": {
+   "caseNumber": "M.12554",
+   "deadline": "2026-10-05",
+   "decisions": [
+    {
+     "date": "2026-08-25",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-09-22",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-13",
+   "lastDecision": "2026-09-22",
+   "notified": "2026-08-31",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_21.2",
+   "simplified": "MEsupersimplified",
+   "title": "EQT FUNDS / CORZA BIOSURGERY BUSINESS"
+  },
+  "M.12562": {
+   "caseNumber": "M.12562",
+   "deadline": "2026-11-11",
+   "decisions": [],
+   "initiated": "2026-07-20",
+   "lastDecision": null,
+   "notified": "2026-10-06",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.16",
+   "simplified": "MEsimplified",
+   "title": "HYPERION / CFA / BOOST AIR"
+  },
+  "M.12563": {
+   "caseNumber": "M.12563",
+   "deadline": "2026-09-11",
+   "decisions": [
+    {
+     "date": "2026-09-01",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-09-01",
+   "notified": "2026-08-07",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_F_43.24",
+   "simplified": "MEsimplified",
+   "title": "CHARTERHOUSE / BATIBIG"
+  },
+  "M.12565": {
+   "caseNumber": "M.12565",
+   "deadline": "2026-10-05",
+   "decisions": [
+    {
+     "date": "2026-09-22",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-09-22",
+   "notified": "2026-08-31",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.2",
+   "simplified": "MEsimplified",
+   "title": "FRANCISCO PARTNERS / HEIDELBERG MATERIALS / COMMAND ALKON"
+  },
+  "M.12567": {
+   "caseNumber": "M.12567",
+   "deadline": "2026-10-08",
+   "decisions": [
+    {
+     "date": "2026-09-25",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-09-25",
+   "notified": "2026-09-03",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_61.10",
+   "simplified": "MEsimplified",
+   "title": "SOCIÉTÉ GÉNÉRALE / VODAFONE / OXG GLASFASER"
+  },
+  "M.12570": {
+   "caseNumber": "M.12570",
+   "deadline": "2026-09-03",
+   "decisions": [
+    {
+     "date": "2026-08-21",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-08-21",
+   "notified": "2026-07-30",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.14",
+   "simplified": "MEsupersimplified",
+   "title": "C2X / CPCM / JV"
+  },
+  "M.12571": {
+   "caseNumber": "M.12571",
+   "deadline": "2026-09-30",
+   "decisions": [
+    {
+     "date": "2026-09-17",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-09-17",
+   "notified": "2026-08-26",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62",
+   "simplified": "MEsimplified",
+   "title": "VINCI ENERGIES / ALL FOR ONE GROUP"
+  },
+  "M.12574": {
+   "caseNumber": "M.12574",
+   "deadline": "2026-11-11",
+   "decisions": [],
+   "initiated": "2026-07-27",
+   "lastDecision": null,
+   "notified": "2026-10-06",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_E_38.1",
+   "simplified": "MEsimplified",
+   "title": "CVC / ROCCAFORTE / ECO ERIDANIA"
+  },
+  "M.12575": {
+   "caseNumber": "M.12575",
+   "deadline": "2026-09-11",
+   "decisions": [
+    {
+     "date": "2026-08-31",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-27",
+   "lastDecision": "2026-08-31",
+   "notified": "2026-08-07",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62",
+   "simplified": "MEsimplified",
+   "title": "ACCENTURE / VTS"
+  },
+  "M.12578": {
+   "caseNumber": "M.12578",
+   "deadline": "2026-09-03",
+   "decisions": [
+    {
+     "date": "2026-08-25",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-27",
+   "lastDecision": "2026-08-25",
+   "notified": "2026-07-30",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_A_02.10",
+   "simplified": "MEsupersimplified",
+   "title": "BCI / APG / TIG / HANCOCK ASSETS"
+  },
+  "M.12583": {
+   "caseNumber": "M.12583",
+   "deadline": "2026-10-26",
+   "decisions": [
+    {
+     "date": "2026-10-14",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-07-28",
+   "lastDecision": "2026-10-14",
+   "notified": "2026-09-21",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.12",
+   "simplified": "MEsimplified",
+   "title": "GROUPE CREDIT AGRICOLE / GROUPE PRIMEO ENERGIE / GROUPE PRIMEO ENERGIE FRANCE"
+  },
+  "M.12585": {
+   "caseNumber": "M.12585",
+   "deadline": "2026-11-16",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notified": "2026-10-09",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_21.20",
+   "simplified": "MEsimplified",
+   "title": "BC PARTNERS / ACS DOBFAR / INFORLIFE"
+  },
+  "M.12586": {
+   "caseNumber": "M.12586",
+   "deadline": "2026-10-23",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-03",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-18",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.9",
+   "simplified": "MEsimplified",
+   "title": "OTP BANK / LUMINOR HOLDING"
+  },
+  "M.12587": {
+   "caseNumber": "M.12587",
+   "deadline": "2026-11-19",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notified": "2026-10-14",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_22.12",
+   "simplified": "MEsimplified",
+   "title": "DANFOSS / ALFA GOMMA"
+  },
+  "M.12591": {
+   "caseNumber": "M.12591",
+   "deadline": "2026-10-27",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notified": "2026-09-22",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_81.10",
+   "simplified": "MEsimplified",
+   "title": "OCS / MITIE"
+  },
+  "M.12592": {
+   "caseNumber": "M.12592",
+   "deadline": "2026-09-25",
+   "decisions": [
+    {
+     "date": "2026-09-14",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-03",
+   "lastDecision": "2026-09-14",
+   "notified": "2026-08-21",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_D_35.14",
+   "simplified": "MEsimplified",
+   "title": "IBERDROLA / CARUNA"
+  },
+  "M.12594": {
+   "caseNumber": "M.12594",
+   "deadline": "2026-11-12",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notified": "2026-10-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_66.22",
+   "simplified": "MEsimplified",
+   "title": "CINVEN / LA CAISSE / OPTIO"
+  },
+  "M.12595": {
+   "caseNumber": "M.12595",
+   "deadline": "2026-11-06",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notified": "2026-10-01",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_N_71.20",
+   "simplified": "MEsimplified",
+   "title": "BRIDGEPOINT / GBA GROUP"
+  },
+  "M.12596": {
+   "caseNumber": "M.12596",
+   "deadline": "2026-10-12",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-03",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.34",
+   "simplified": "MEsupersimplified",
+   "title": "PLATINUM EQUITY GROUP / NESTLÉ / NESTLÉ WATERS JV"
+  },
+  "M.12598": {
+   "caseNumber": "M.12598",
+   "deadline": null,
+   "decisions": [
+    {
+     "date": "2026-10-06",
+     "type": "DecisionType20490"
+    }
+   ],
+   "initiated": "2026-08-10",
+   "lastDecision": "2026-10-06",
+   "notified": "2026-09-10",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_25.40",
+   "simplified": "MEsimplified",
+   "title": "ACCIAIERIA ARVEDI / AMCLN"
+  },
+  "M.12600": {
+   "caseNumber": "M.12600",
+   "deadline": "2026-11-12",
+   "decisions": [],
+   "initiated": "2026-08-10",
+   "lastDecision": null,
+   "notified": "2026-10-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.42",
+   "simplified": "MEsimplified",
+   "title": "PORTOBELLO / BLUEGEM / SUAVINEX BEABA GROUP"
+  },
+  "M.12601": {
+   "caseNumber": "M.12601",
+   "deadline": "2026-09-21",
+   "decisions": [
+    {
+     "date": "2026-09-11",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-10",
+   "lastDecision": "2026-09-11",
+   "notified": "2026-08-17",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_26.20",
+   "simplified": "MEsupersimplified",
+   "title": "ALLIANZ / INGENICO"
+  },
+  "M.12602": {
+   "caseNumber": "M.12602",
+   "deadline": "2026-10-20",
+   "decisions": [
+    {
+     "date": "2026-10-07",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-10",
+   "lastDecision": "2026-10-07",
+   "notified": "2026-09-15",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_22.22",
+   "simplified": "MEsimplified",
+   "title": "AP / GERRESHEIMER (PRIMARY PACKAGING PLASTICS BUSINESS)"
+  },
+  "M.12604": {
+   "caseNumber": "M.12604",
+   "deadline": "2026-10-07",
+   "decisions": [
+    {
+     "date": "2026-08-18",
+     "type": "DecisionType20490"
+    },
+    {
+     "date": "2026-09-29",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-10",
+   "lastDecision": "2026-09-29",
+   "notified": "2026-08-17",
+   "phase": null,
+   "renotified": "2026-09-02",
+   "sector": "NaceV2Sector_C_27.12",
+   "simplified": "MEsimplified",
+   "title": "PARTNERS GROUP / AVK"
+  },
+  "M.12610": {
+   "caseNumber": "M.12610",
+   "deadline": "2026-10-05",
+   "decisions": [
+    {
+     "date": "2026-09-24",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-17",
+   "lastDecision": "2026-09-24",
+   "notified": "2026-08-31",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_L_66.29",
+   "simplified": "MEsupersimplified",
+   "title": "GENSTAR CAPITAL / STONE POINT / ASCENSUS GROUP"
+  },
+  "M.12612": {
+   "caseNumber": "M.12612",
+   "deadline": "2026-10-06",
+   "decisions": [
+    {
+     "date": "2026-09-24",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-17",
+   "lastDecision": "2026-09-24",
+   "notified": "2026-09-01",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_C_17.25",
+   "simplified": "MEsupersimplified",
+   "title": "M&G / ARINI / RENO DE MEDICI"
+  },
+  "M.12613": {
+   "caseNumber": "M.12613",
+   "deadline": "2026-10-01",
+   "decisions": [
+    {
+     "date": "2026-09-23",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-17",
+   "lastDecision": "2026-09-23",
+   "notified": "2026-08-27",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.91",
+   "simplified": "MEsupersimplified",
+   "title": "PG / EURAZEO /AROMA-ZONE / LH 91"
+  },
+  "M.12616": {
+   "caseNumber": "M.12616",
+   "deadline": "2026-11-13",
+   "decisions": [],
+   "initiated": "2026-08-24",
+   "lastDecision": null,
+   "notified": "2026-10-08",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.63",
+   "simplified": "MEsupersimplified",
+   "title": "ITOCHU / HCM / YHCM"
+  },
+  "M.12618": {
+   "caseNumber": "M.12618",
+   "deadline": "2026-11-03",
+   "decisions": [],
+   "initiated": "2026-08-24",
+   "lastDecision": null,
+   "notified": "2026-09-28",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_K_63.1",
+   "simplified": "MEsimplified",
+   "title": "QVP / NEURON / ROBERT DYCZKOWSKI / BARTOLOMIEJ ROMANSKI / RTB"
+  },
+  "M.12620": {
+   "caseNumber": "M.12620",
+   "deadline": "2026-10-12",
+   "decisions": [
+    {
+     "date": "2026-09-29",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-08-24",
+   "lastDecision": "2026-09-29",
+   "notified": "2026-09-07",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.84",
+   "simplified": "MEsimplified",
+   "title": "AEA / BCI / RENSA FILTRATION"
+  },
+  "M.12623": {
+   "caseNumber": "M.12623",
+   "deadline": "2026-11-17",
+   "decisions": [],
+   "initiated": "2026-08-31",
+   "lastDecision": null,
+   "notified": "2026-10-12",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_N_71.12",
+   "simplified": "MEsimplified",
+   "title": "ARDIAN / TECHNOLOGY & STRATEGY"
+  },
+  "M.12624": {
+   "caseNumber": "M.12624",
+   "deadline": "2026-11-12",
+   "decisions": [],
+   "initiated": "2026-08-31",
+   "lastDecision": null,
+   "notified": "2026-10-07",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.15",
+   "simplified": "MEsimplified",
+   "title": "OCP GROUP / KI GROUP / JFC1"
+  },
+  "M.12632": {
+   "caseNumber": "M.12632",
+   "deadline": "2026-10-22",
+   "decisions": [
+    {
+     "date": "2026-10-12",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-09-08",
+   "lastDecision": "2026-10-12",
+   "notified": "2026-09-17",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_N_69.1",
+   "simplified": "MEsupersimplified",
+   "title": "MGIF / AWARE / SERV"
+  },
+  "M.12633": {
+   "caseNumber": "M.12633",
+   "deadline": "2026-10-22",
+   "decisions": [
+    {
+     "date": "2026-10-09",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-09-08",
+   "lastDecision": "2026-10-09",
+   "notified": "2026-09-17",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_61.20",
+   "simplified": "MEsupersimplified",
+   "title": "DIGITALBRIDGE / TDAM / L&G / BTP / VODAFONE ANTENNELOCATIES / JV"
+  },
+  "M.12635": {
+   "caseNumber": "M.12635",
+   "deadline": "2026-10-28",
+   "decisions": [
+    {
+     "date": "2026-10-15",
+     "type": "DecisionType20310"
+    }
+   ],
+   "initiated": "2026-09-14",
+   "lastDecision": "2026-10-15",
+   "notified": "2026-09-23",
+   "phase": null,
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.9",
+   "simplified": "MEsimplified",
+   "title": "ITOCHU / DENTSU / DENTSU SOKEN"
+  },
+  "M.12641": {
+   "caseNumber": "M.12641",
+   "deadline": "2026-11-11",
+   "decisions": [
+    {
+     "date": "2026-10-01",
+     "type": "DecisionType20490"
+    }
+   ],
+   "initiated": "2026-09-14",
+   "lastDecision": "2026-10-01",
+   "notified": "2026-09-28",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": "2026-10-06",
+   "sector": "NaceV2Sector_G_47.27",
+   "simplified": "MEsupersimplified",
+   "title": "L CATTERTON / ALTAS / FULLSCRIPT"
+  },
+  "M.12661": {
+   "caseNumber": "M.12661",
+   "deadline": "2026-11-13",
+   "decisions": [],
+   "initiated": "2026-10-05",
+   "lastDecision": null,
+   "notified": "2026-10-08",
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_25.53",
+   "simplified": "MEsupersimplified",
+   "title": "VERITAS / BODYCOTE"
+  }
+ },
+ "fetched": "2026-10-16T09:43:30Z"
+}

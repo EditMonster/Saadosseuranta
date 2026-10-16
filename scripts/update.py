@@ -13,10 +13,12 @@ import traceback
 import build
 import fetch_eduskunta
 import fetch_eu
+import fetch_eu_mergers
 import fetch_finlex
 import fetch_hankeikkuna
 import fetch_hankinnat
 import fetch_hys
+import fetch_kkv
 import fetch_ue
 from common import CACHE_DIR, load_json, log, save_json
 
@@ -29,6 +31,8 @@ STEPS = [
     ("ue", fetch_ue.main),
     ("hys", fetch_hys.main),
     ("hankinnat", fetch_hankinnat.main),
+    ("kkv", fetch_kkv.main),
+    ("eu_mergers", fetch_eu_mergers.main),
 ]
 
 

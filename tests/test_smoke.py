@@ -62,6 +62,7 @@ def goto(pg, base_url, hash_=""):
     pg.goto(base_url + hash_, wait_until="networkidle")
     pg.wait_for_function("typeof DATA !== 'undefined' && DATA.length > 0")
     pg.wait_for_function("typeof TENDERS_LOADED !== 'undefined' && TENDERS_LOADED === true")
+    pg.wait_for_function("typeof MERGERS_LOADED !== 'undefined' && MERGERS_LOADED === true")
 
 
 def ls(pg, key):
@@ -84,6 +85,7 @@ def test_page_loads_with_data(page, base_url):
     ("eu", "#tl-eu .row[data-id]", 20),
     ("done", "#done-body tr.r", 20),
     ("hk", "#hk-list .hk-row", 20),
+    ("yk", "#tl-yk .row[data-id]", 5),
 ])
 def test_tabs_render_rows(page, base_url, tab, selector, minimum):
     goto(page, base_url)
@@ -265,6 +267,42 @@ def test_tender_lifecycle_stages(page, base_url):
         assert page.locator("#dr-facts [data-open]").count() >= 1
         page.click("#dr-facts [data-open] >> nth=0")
         assert page.evaluate("document.getElementById('drawer').dataset.id") != rid
+
+
+def test_mergers_tab(page, base_url):
+    goto(page, base_url, "#yrityskaupat")
+    assert page.locator("#yktopics").is_visible() and page.locator("#yk-tools").is_visible() and page.locator("#lajit").is_hidden()
+    total = page.locator("#tl-yk .row[data-id]").count()
+    assert total >= 5 and "yrityskauppaa" in page.text_content("#count")
+    # KKV rows carry the statutory dates; the hearing shows as an open consultation
+    page.click("#yk-tools [data-ykscope='fi']")
+    kkv = page.locator("#tl-yk .row[data-id]").count()
+    assert 0 < kkv < total
+    page.click("#tl-yk .row[data-id] >> nth=0")
+    page.wait_for_selector("#drawer:not([hidden])")
+    kicker = page.text_content("#dr-kicker")
+    assert "KKV" in kicker and "KKV/" in kicker
+    vaiheet = page.text_content("#dr-list")
+    assert "Ilmoitus saapunut" in vaiheet and "määräaika" in vaiheet
+    assert "KKV: tapauksen sivu" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
+    # EU rows: provisional deadline from DG COMP
+    page.click("#yk-tools [data-ykscope='eu']")
+    page.click("#tl-yk .row[data-id] >> nth=0")
+    assert "M." in page.text_content("#dr-kicker") and "Komission tapaussivu" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
+    # decided cases appear when 'Vain vireillä' is off
+    page.click("#yk-tools [data-ykscope='all']")
+    page.uncheck("#yk-open")
+    assert page.locator("#tl-yk .row[data-id]").count() > total
+    page.check("#yk-open")
+    # follow a case -> Tilannekuva KPI and Seurannassa list
+    page.click("#tl-yk .row[data-id] >> nth=0")
+    mid = page.evaluate("document.getElementById('drawer').dataset.id")
+    page.click("#dr-follow"); page.keyboard.press("Escape")
+    page.click("#tab-now")
+    assert "Yrityskauppoja vireillä" in page.text_content("#kpis")
+    assert page.locator(f"#l-follow li[data-id='{mid}']").count() == 1
 
 
 def test_legislation_filters(page, base_url):
