@@ -104,39 +104,71 @@ def test_tenders_minimum(tenders, settings):
     assert tenders["topics"] and tenders["topics"][-1] == "Muut"
 
 
+STAGES = {"tulossa", "avoin", "ratkaistu", "suorahankinta"}
+LIVE = {"tulossa": "tulossa", "avoin": "avoin", "ratkaistu": "ratkaistu", "suorahankinta": "valitusaika"}
+
+
 def test_tenders_schema(tenders):
     ids = [t["id"] for t in tenders["items"]]
     assert len(ids) == len(set(ids)), "päällekkäisiä kilpailutustunnisteita"
     topics = set(tenders["topics"])
     for t in tenders["items"]:
+        st = t["stage"]
         assert t["id"].startswith("hk-"), t["id"]
         assert t["scope"] == "hankinta" and t["laji"] == "kilpailutus", t["id"]
+        assert st in STAGES, (t["id"], st)
         assert t["title"].strip(), t["id"]
-        assert DATETIME.match(t["deadline"]), (t["id"], t["deadline"])
-        assert t["deadlineKind"] in ("tarjous", "osallistumishakemus"), t["id"]
-        assert t["status"] in TENDER_STATUS, t["id"]
+        assert t["status"] in TENDER_STATUS | {"tulossa", "ratkaistu", "valitusaika"}, (t["id"], t["status"])
         assert t["url"].startswith("https://www.hankintailmoitukset.fi/"), (t["id"], t["url"])
         assert t["topics"] and set(t["topics"]) <= topics, (t["id"], t["topics"])
         assert len(t.get("summary", "")) <= 500, t["id"]
         if t.get("published"):
             assert DATE.match(t["published"]), t["id"]
+        if st == "avoin":
+            assert DATETIME.match(t["deadline"]), (t["id"], t.get("deadline"))
+            assert t["deadlineKind"] in ("tarjous", "osallistumishakemus"), t["id"]
+        if st == "tulossa" and t.get("deadline"):
+            assert DATETIME.match(t["deadline"]) and t["deadlineKind"] == "vastaus", t["id"]
+        if st == "suorahankinta":
+            assert DATE.match(t["appealEnd"]), t["id"]
+            assert (dt.date.fromisoformat(t["appealEnd"]) - dt.date.fromisoformat(t["published"])).days == tenders["appealDays"], t["id"]
+        if st == "ratkaistu":
+            assert t["published"] >= (dt.date.today() - dt.timedelta(days=tenders["awardDays"] + 2)).isoformat(), t["id"]
+        if t.get("amount") is not None:
+            assert isinstance(t["amount"], (int, float)) and t["amount"] >= 0, t["id"]
         if t.get("value") is not None:
             assert isinstance(t["value"], (int, float)) and t["value"] >= 0, t["id"]
         for k in ("docsUrl", "tedUrl"):
             if t.get(k):
                 assert t[k].startswith("http"), (t["id"], k)
+        for e in t.get("events", []):
+            assert DATE.match(e["date"]) and e["label"] and e["kind"] in EVENT_KINDS, (t["id"], e)
+        for r in t.get("related", []):
+            assert r["id"] in set(ids) and r["stage"] in STAGES, (t["id"], r)
 
 
-def test_tenders_sorted_by_deadline(tenders):
-    dl = [t["deadline"] for t in tenders["items"]]
-    assert dl == sorted(dl)
+def test_tenders_have_all_stages(tenders):
+    present = {t["stage"] for t in tenders["items"]}
+    assert present == STAGES, f"vaiheita puuttuu: {STAGES - present}"
+    c = tenders["counts"]
+    assert c["tulossa"] > 0 and c["ratkaistu"] > 0, c
+
+
+def test_tenders_lifecycle_links_are_mutual(tenders):
+    by_id = {t["id"]: t for t in tenders["items"]}
+    for t in tenders["items"]:
+        for r in t.get("related", []):
+            back = [x["id"] for x in by_id[r["id"]].get("related", [])]
+            assert t["id"] in back, (t["id"], r["id"])
 
 
 def test_closed_tenders_are_recent(tenders, settings):
     keep = int(settings.get("hankinnat", {}).get("keep_closed_days", 14))
     cutoff = (dt.date.today() - dt.timedelta(days=keep + 2)).isoformat()
-    old = [t["id"] for t in tenders["items"] if t["status"] != "avoin" and t["deadline"][:10] < cutoff]
+    old = [t["id"] for t in tenders["items"] if t["stage"] == "avoin" and t["status"] != "avoin" and t["deadline"][:10] < cutoff]
     assert not old, f"vanhoja päättyneitä ei siivottu: {old[:5]}"
+    old = [t["id"] for t in tenders["items"] if t["stage"] == "suorahankinta" and t["appealEnd"] < cutoff]
+    assert not old, f"vanhoja suorahankintoja ei siivottu: {old[:5]}"
 
 
 # ---------- meta.json, changes.json, ics ----------

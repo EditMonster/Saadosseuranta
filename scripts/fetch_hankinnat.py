@@ -1,4 +1,6 @@
-"""Hilma (hankintailmoitukset.fi): open public-procurement notices = tenders you can still bid on.
+"""Hilma (hankintailmoitukset.fi): the public-procurement lifecycle – prior information notices and
+market consultations (what is coming), open contract notices (what you can bid on), award notices
+(who won) and ex-ante transparency notices for direct awards (14-day appeal window).
 
 Source: the public search index behind hankintailmoitukset.fi/fi/search (Azure Cognitive Search
 fronted by Hilma; no key, same query the site itself issues). It covers every Finnish notice –
@@ -30,7 +32,8 @@ KEEP = ("id", "noticeId", "procedureId", "oldProcurementProjectId", "isEForms", 
         "nutsCodes", "cpvCodes", "procedureType", "procurementTypeCode", "estimatedValue", "currency",
         "includesFrameworkAgreement", "includesDynamicPurcharingSystem", "isEuProcurement", "isNationalProcurement",
         "isNationalSmallValueProcurement", "isCorrigendum", "isCancelled", "previousSearchIds", "noticeNumber",
-        "tedPublicationId", "noticeOjsNumber", "procurementDocumentsUrl", "tenderingInHilma")
+        "tedPublicationId", "noticeOjsNumber", "procurementDocumentsUrl", "tenderingInHilma", "winnerOrganisations",
+        "noticeResultTotalAmount", "noticeResultTotalAmountCurrency")
 DESC_MAX = 3000
 LOT_DESC_MAX = 300
 
@@ -50,10 +53,8 @@ def _trim(n: dict) -> dict:
     return out
 
 
-def fetch_open() -> tuple[list[dict], int]:
-    """All notices the Hilma search page lists as open (contract notices whose listing has not expired)."""
-    flt = (f"(search.in(mainType, 'ContractNotices|NationalNotices', '|') and expirationDate ge {TODAY.isoformat()}T00:00:00Z)"
-           " and isPlan eq false")
+def fetch_filter(flt: str) -> tuple[list[dict], int]:
+    """Page through one Hilma search filter (max 1000 per page)."""
     items, skip, total = [], 0, None
     while True:
         params = {"queryType": "full", "$top": PAGE, "$skip": skip, "searchMode": "all", "$orderby": "datePublished desc",
@@ -95,9 +96,28 @@ def refresh_cpv(max_age_days: int):
     log(f"hilma: {len(labels)} CPV-nimikettä -> {CPV_OUT}")
 
 
+def fetch_open() -> tuple[list[dict], int]:
+    """Contract notices the Hilma search page lists as open (listing not expired)."""
+    return fetch_filter(f"(search.in(mainType, 'ContractNotices|NationalNotices', '|') and expirationDate ge {TODAY.isoformat()}T00:00:00Z)"
+                        " and isPlan eq false")
+
+
+def fetch_prior() -> tuple[list[dict], int]:
+    """Prior information notices, market consultations and ex-ante transparency notices still listed."""
+    return fetch_filter(f"search.in(mainType, 'PriorInformationNotices', '|') and expirationDate ge {TODAY.isoformat()}T00:00:00Z"
+                        " and isPlan eq false")
+
+
+def fetch_awards(days: int) -> tuple[list[dict], int]:
+    """Contract award notices (incl. national direct-award notices) published in the last `days` days."""
+    since = (TODAY - dt.timedelta(days=days)).isoformat()
+    return fetch_filter(f"search.in(mainType, 'ContractAwardNotices', '|') and datePublished ge {since}T00:00:00Z and isPlan eq false")
+
+
 def main():
     settings = load_yaml(CONFIG_DIR / "settings.yaml").get("hankinnat", {})
     min_items = int(settings.get("min_items", 100))
+    award_days = int(settings.get("award_days", 30))
     try:
         refresh_cpv(int(settings.get("cpv_refresh_days", 90)))
     except Exception as e:  # noqa: BLE001
@@ -109,16 +129,27 @@ def main():
         raise RuntimeError(f"Hilma palautti vain {len(ids)} ilmoitusta (raja {min_items}); vanha aineisto säilytetään")
     if total and len(ids) < 0.9 * total:
         log(f"warn: hilma ilmoitti {total} ilmoitusta mutta sivutus antoi {len(ids)}")
+    # The other lifecycle stages are optional: a failure there must not lose the open tenders.
+    prior, awards = [], []
+    try:
+        prior, _ = fetch_prior()
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: ennakkoilmoitusten haku epäonnistui: {e}")
+    try:
+        awards, _ = fetch_awards(award_days)
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: jälki-ilmoitusten haku epäonnistui: {e}")
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     seen = set()
     items = []
-    for n in raw:
+    for n in raw + prior + awards:
         if n.get("id") in seen:
             continue
         seen.add(n.get("id"))
         items.append(_trim(n))
     save_json(OUT, {"fetched": now, "openCount": total, "items": items}, compact=True)
-    log(f"hilma: {len(items)} avointa kilpailutusta (Hilma: {total}) -> {OUT}")
+    log(f"hilma: {len(ids)} avointa kilpailutusta (Hilma: {total}), {len(prior)} ennakko-/avoimuusilmoitusta, "
+        f"{len(awards)} jälki-ilmoitusta ({award_days} pv) -> {OUT}")
 
 
 if __name__ == "__main__":

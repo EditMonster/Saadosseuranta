@@ -38,3 +38,5 @@ hankinnat:
   keep_closed_days: 14
   cpv_refresh_days: 90
   min_items: 100
+  # Jälki-ilmoitukset (ratkaistut hankinnat) näytetään näin monta päivää julkaisusta
+  award_days: 30

@@ -46,6 +46,38 @@ tyypit:
   "9912": Pienhankinta
   "9913": Pienhankinta – SOTE ja erityiset palvelut
   "9906": Kansallinen suunnittelukilpailu
+  "E1": Markkinakartoitusilmoitus
+  "9901": Kansallinen ennakkoilmoitus / markkinakartoitus
+  "4": Ennakkoilmoitus
+  "5": Ohjeellinen kausi-ilmoitus – erityisalat
+  "6": Ennakkoilmoitus – puolustus ja turvallisuus
+  "7": Ennakkoilmoitus määräaikojen lyhentämiseksi
+  "8": Ohjeellinen kausi-ilmoitus määräaikojen lyhentämiseksi – erityisalat
+  "9": Ennakkoilmoitus määräaikojen lyhentämiseksi – puolustus ja turvallisuus
+  "25": Suorahankinnan avoimuusilmoitus
+  "26": Suorahankinnan avoimuusilmoitus – erityisalat
+  "27": Suorahankinnan avoimuusilmoitus – puolustus ja turvallisuus
+  "28": Suorahankinnan avoimuusilmoitus – käyttöoikeussopimus
+  "9905": Kansallinen suorahankintailmoitus
+  "29": Jälki-ilmoitus
+  "30": Jälki-ilmoitus – erityisalat
+  "31": Jälki-ilmoitus – puolustus ja turvallisuus
+  "32": Jälki-ilmoitus – käyttöoikeussopimus
+  "33": Jälki-ilmoitus – SOTE ja erityiset palvelut
+  "34": Jälki-ilmoitus – erityisalat – SOTE ja erityiset palvelut
+  "35": Jälki-ilmoitus – käyttöoikeussopimus – SOTE ja erityiset palvelut
+  "36": Suunnittelukilpailun tulokset
+  "37": Suunnittelukilpailun tulokset – erityisalat
+  "E4": Kansallinen jälki-ilmoitus
+  "300": Jälki-ilmoitus
+
+# Hankinnan vaihe päätellään ilmoituksen päätyypistä (mainType); nämä tyyppikoodit poikkeavat päätyypistään:
+# suorahankinnan avoimuusilmoitukset (eF25–28) ovat Hilmassa ennakkoilmoitusten joukossa ja kansallinen
+# suorahankintailmoitus (9905) jälki-ilmoitusten joukossa. Suorahankinnasta voi valittaa 14 päivän kuluessa
+# ilmoituksen julkaisemisesta (hankintalaki 147 § 3 mom.), ja sopimuksen saa tehdä aikaisintaan 14 päivän
+# kuluttua julkaisusta (131 §) – siksi niille lasketaan tarkka valitusajan päättymispäivä.
+suorahankinta_tyypit: ["25", "26", "27", "28", "9905"]
+valitusaika_paivia: 14
 
 menettelyt:
   open: Avoin menettely

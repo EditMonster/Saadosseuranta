@@ -234,6 +234,39 @@ def test_tender_filters(page, base_url):
     assert "Ei kilpailutuksia" in page.text_content("#hk-list")
 
 
+def test_tender_lifecycle_stages(page, base_url):
+    goto(page, base_url, "#kilpailutukset")
+    assert page.get_attribute("#hk-stages [data-stage='avoin']", "aria-pressed") == "true"
+    open_n = int(page.text_content("#count").split()[0])
+    for stage, word in (("tulossa", "tulossa"), ("ratkaistu", "ratkaistua"), ("suorahankinta", "suorahankintaa")):
+        page.click(f"#hk-stages [data-stage='{stage}']")
+        n = int(page.text_content("#count").split()[0])
+        assert n > 0 and word in page.text_content("#count"), stage
+        first = page.locator("#hk-list .hk-row").first
+        assert page.evaluate("id=>TENDERS.find(t=>t.id===id).stage", first.get_attribute("data-id")) == stage
+    # ratkaistu: winner shown, drawer carries the appeal-period note
+    page.click("#hk-list .hk-row >> nth=0")
+    assert "Valitusaika" in page.text_content("#dr-facts")
+    page.keyboard.press("Escape")
+    # suorahankinta: appeal deadline = published + 14 days, shown as the countdown
+    page.click("#hk-stages [data-stage='suorahankinta']")
+    page.click("#hk-list .hk-row >> nth=0")
+    facts = page.text_content("#dr-facts")
+    assert "147 §" in facts and "14 päivää" in facts
+    assert "Valitusaika päättyy" in page.text_content("#dr-list")
+    page.keyboard.press("Escape")
+    # tab badge keeps counting open tenders regardless of the stage being viewed
+    assert int(page.text_content("#n-hk")) == open_n
+    # a procedure with several notices links them both ways
+    rid = page.evaluate("(TENDERS.find(t=>t.related&&t.related.length)||{}).id")
+    if rid:
+        goto(page, base_url, "#" + rid)
+        page.wait_for_selector("#drawer:not([hidden])")
+        assert page.locator("#dr-facts [data-open]").count() >= 1
+        page.click("#dr-facts [data-open] >> nth=0")
+        assert page.evaluate("document.getElementById('drawer').dataset.id") != rid
+
+
 def test_legislation_filters(page, base_url):
     goto(page, base_url, "#kansallinen")
     total = page.locator("#tl-fi .row[data-id]").count()

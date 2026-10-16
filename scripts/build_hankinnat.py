@@ -1,8 +1,11 @@
-"""Turn the Hilma cache into docs/data/hankinnat.json: one compact row per open tender with the
-time left to bid, a short extractive summary of what is being procured, and the link to the
-original notice. Rules that matter:
+"""Turn the Hilma cache into docs/data/hankinnat.json: one compact row per notice across the whole
+procurement lifecycle – stage "tulossa" (prior information / market consultation), "avoin" (open
+tender: time left to bid), "ratkaistu" (award notice: winner, value) and "suorahankinta" (ex-ante
+transparency notice: exact 14-day appeal window) – with a short extractive summary of what is being
+procured, the link to the original notice, and the other notices of the same procedure linked
+together as one timeline. Rules that matter:
 
-* only notices with a bid/participation deadline; cancelled notices are dropped;
+* open tenders need a bid/participation deadline; cancelled notices are dropped;
 * a corrigendum replaces the notice it corrects (Hilma lists both; the old one is dropped);
 * dynamic purchasing systems (DPS) are kept but flagged – their "deadline" is the end of the
   system's validity, often years away, and the page hides them behind a toggle;
@@ -119,16 +122,30 @@ def build_hankinnat(settings) -> dict | None:
     part = set(cfg.get("osallistumishakemus") or [])
     scfg = cfg.get("tiivistelma") or {}
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    direct_types = {str(x) for x in (cfg.get("suorahankinta_tyypit") or [])}
+    appeal_days = int(cfg.get("valitusaika_paivia", 14))
+    award_days = int(hcfg.get("award_days", 30))
+
+    def stage_of(n: dict) -> str:
+        if str(n.get("type")) in direct_types:
+            return "suorahankinta"
+        mt = n.get("mainType") or ""
+        if mt == "ContractAwardNotices":
+            return "ratkaistu"
+        if mt == "PriorInformationNotices":
+            return "tulossa"
+        return "avoin"
 
     raw = cache["items"]
     superseded = {pid for n in raw for pid in (n.get("previousSearchIds") or [])}
     rows, by_id = [], {}
     dropped = {"peruttu": 0, "ei määräaikaa": 0, "korvattu": 0}
     for n in raw:
+        stage = stage_of(n)
         if n.get("isCancelled"):
             dropped["peruttu"] += 1
             continue
-        if not n.get("deadline"):
+        if stage == "avoin" and not n.get("deadline"):
             dropped["ei määräaikaa"] += 1
             continue
         if n.get("id") in superseded:
@@ -155,13 +172,28 @@ def build_hankinnat(settings) -> dict | None:
         if not value and len(lots) == 1 and lots[0].get("estimatedValue"):
             value, cur = lots[0]["estimatedValue"], lots[0].get("currency")
         ted = n.get("tedPublicationId")
+        published = (n.get("datePublished") or "")[:10] or None
+        appeal_end = None
+        if stage == "suorahankinta" and published:
+            appeal_end = (dt.date.fromisoformat(published) + dt.timedelta(days=appeal_days)).isoformat()
+        winner = (n.get("winnerOrganisations") or "").strip() or None
+        amount = n.get("noticeResultTotalAmount")
+        if stage == "ratkaistu" and not amount:
+            lot_amounts = [l.get("lotResultTotalAmount") for l in lots if l.get("lotResultTotalAmount")]
+            amount = sum(lot_amounts) if lot_amounts else None
         row = {
-            "id": f"hk-{n['id']}", "scope": "hankinta", "laji": "kilpailutus",
-            "kind": types.get(str(n.get("type")), "Hankintailmoitus"),
+            "id": f"hk-{n['id']}", "scope": "hankinta", "laji": "kilpailutus", "stage": stage,
+            "kind": types.get(str(n.get("type")), {"tulossa": "Ennakkoilmoitus", "ratkaistu": "Jälki-ilmoitus",
+                                                 "suorahankinta": "Suorahankintailmoitus"}.get(stage, "Hankintailmoitus")),
             "title": title[:220], "buyer": _lang(n, "organisationName")[:160] or None,
             "buyerId": n.get("organisationNationalRegistrationNumber") or None,
-            "deadline": n["deadline"], "deadlineKind": "osallistumishakemus" if (proc in part or dps) else "tarjous",
-            "published": (n.get("datePublished") or "")[:10] or None,
+            "deadline": n.get("deadline") if stage in ("avoin", "tulossa") else None,
+            "deadlineKind": ("vastaus" if stage == "tulossa" else ("osallistumishakemus" if (proc in part or dps) else "tarjous")),
+            "appealEnd": appeal_end, "winner": winner[:200] if winner else None,
+            "amount": amount, "amountCurrency": (n.get("noticeResultTotalAmountCurrency") or "EUR") if amount else None,
+            "expires": (n.get("expirationDate") or "")[:10] or None,
+            "procKey": (f"p{n['procedureId']}" if n.get("procedureId") else (f"o{n['oldProcurementProjectId']}" if n.get("oldProcurementProjectId") else None)),
+            "published": published,
             "procedure": procs.get(proc, proc or None), "nature": nature,
             "cpv": cpv or None, "cpvLabel": labels.get(cpv) or None, "topics": topics,
             "value": value, "currency": cur if value else None,
@@ -169,32 +201,96 @@ def build_hankinnat(settings) -> dict | None:
             "framework": bool(n.get("includesFrameworkAgreement")), "dps": dps,
             "corrigendum": bool(n.get("isCorrigendum")), "lots": len(lots) if len(lots) > 1 else 0,
             "lotTitles": [clean(_lang(l, "title"))[:90] for l in lots[:8]] if len(lots) > 1 else [],
-            "summary": summarise(title, desc, lots, scfg),
+            "summary": summarise(title, desc, lots, scfg if stage == "avoin" else {**scfg, "max_merkkia": 300}),
             "url": notice_url(n), "docsUrl": n.get("procurementDocumentsUrl") or None,
             "tedUrl": f"https://ted.europa.eu/fi/notice/-/detail/{ted}" if ted else None,
-            "noticeNumber": n.get("noticeNumber") or None, "status": "avoin",
+            "noticeNumber": n.get("noticeNumber") or None,
         }
-        row = {k: v for k, v in row.items() if v not in (None, "", [], False, 0)} | {"status": "avoin"}
+        # status per stage: avoin/tulossa live until their deadline, suorahankinta until the appeal window closes
+        keep_from = (TODAY - dt.timedelta(days=keep_days)).isoformat()
+        if stage == "avoin":
+            status = "avoin"
+        elif stage == "tulossa":
+            dl = (n.get("deadline") or "")[:10]
+            if dl and dl < keep_from:
+                continue
+            status = "tulossa" if (not dl or dl >= TODAY.isoformat()) else "päättynyt"
+        elif stage == "suorahankinta":
+            if not appeal_end or appeal_end < keep_from:
+                continue
+            status = "valitusaika" if appeal_end >= TODAY.isoformat() else "päättynyt"
+        else:
+            status = "ratkaistu"
+            row["lotTitles"] = []
+        row = {k: v for k, v in row.items() if v not in (None, "", [], False, 0)} | {"status": status}
         rows.append(row)
         by_id[row["id"]] = row
 
-    # Carry over what vanished since the previous build (deadline passed or withdrawn)
+    # Carry over open tenders that vanished since the previous build (deadline passed or withdrawn)
     cutoff = (TODAY - dt.timedelta(days=keep_days)).isoformat()
     carried = 0
     for o in prev_items:
-        if o["id"] in by_id or (o.get("deadline") or "")[:10] < cutoff:
+        if o["id"] in by_id or o.get("stage", "avoin") != "avoin" or (o.get("deadline") or "")[:10] < cutoff:
             continue
         o = dict(o)
+        o["stage"] = "avoin"
         o["status"] = "päättynyt" if o.get("deadline", "") < now else "poistunut"
+        o.pop("events", None)
+        o.pop("related", None)
         rows.append(o)
+        by_id[o["id"]] = o
         carried += 1
-    rows.sort(key=lambda r: (r.get("deadline") or "", r["id"]))
-    open_rows = [r for r in rows if r["status"] == "avoin" and r["deadline"] > now]
+
+    # Lifecycle: notices of the same procedure share one timeline and link to each other
+    by_proc: dict[str, list[dict]] = {}
+    for r in rows:
+        if r.get("procKey"):
+            by_proc.setdefault(r["procKey"], []).append(r)
+    for r in rows:
+        group = sorted(by_proc.get(r.get("procKey") or "", [r]), key=lambda x: x.get("published") or "")
+        ev = []
+        for g in group:
+            st, pub = g.get("stage", "avoin"), g.get("published")
+            if not pub:
+                continue
+            if st == "tulossa":
+                if g.get("deadline"):
+                    ev.append({"date": pub, "end": g["deadline"][:10], "label": "Markkinakartoitus – vastaukset", "kind": "lausunto"})
+                else:
+                    ev.append({"date": pub, "label": g.get("kind", "Ennakkoilmoitus") + " julkaistu", "kind": "ehdotus"})
+            elif st == "avoin":
+                ev.append({"date": pub, "label": "Hankintailmoitus julkaistu", "kind": "he"})
+                if g.get("deadline"):
+                    ev.append({"date": g["deadline"][:10], "label": ("Osallistumishakemukset" if g.get("deadlineKind") == "osallistumishakemus" else "Tarjoukset") + " viimeistään", "kind": "maaraaika"})
+            elif st == "ratkaistu":
+                ev.append({"date": pub, "label": "Jälki-ilmoitus julkaistu" + (f" – {g['winner'][:60]}" if g.get("winner") else ""), "kind": "hyvaksytty"})
+            elif st == "suorahankinta":
+                ev.append({"date": pub, "label": "Suorahankinnan ilmoitus julkaistu", "kind": "julkaistu"})
+                if g.get("appealEnd"):
+                    ev.append({"date": g["appealEnd"], "label": "Valitusaika päättyy (14 pv julkaisusta)", "kind": "maaraaika"})
+        ev.sort(key=lambda e: (e["date"], e.get("end") or ""))
+        r["events"] = ev
+        rel = [{"id": g["id"], "stage": g.get("stage", "avoin"), "kind": g.get("kind"), "published": g.get("published")} for g in group if g["id"] != r["id"]]
+        if rel:
+            r["related"] = rel
+
+    def sort_key(r):
+        st = r.get("stage", "avoin")
+        key = r.get("deadline") or r.get("appealEnd") or r.get("expires") or ""
+        if st == "ratkaistu":
+            key = "~" + (r.get("published") or "")  # newest decided last in ascending order; page sorts desc
+        return (key, r["id"])
+    rows.sort(key=sort_key)
+    open_rows = [r for r in rows if r["status"] == "avoin" and r.get("deadline", "") > now]
     soon = (TODAY + dt.timedelta(days=7)).isoformat()
     counts = {"avoinna": sum(1 for r in open_rows if not r.get("dps")), "dps": sum(1 for r in open_rows if r.get("dps")),
               "sulkeutuu7": sum(1 for r in open_rows if not r.get("dps") and r["deadline"][:10] <= soon),
-              "eu": sum(1 for r in open_rows if r.get("eu") and not r.get("dps"))}
-    payload = {"items": rows, "counts": counts, "topics": list((cfg.get("toimialat") or {}).keys()) + ["Muut"]}
+              "eu": sum(1 for r in open_rows if r.get("eu") and not r.get("dps")),
+              "tulossa": sum(1 for r in rows if r["status"] == "tulossa"),
+              "ratkaistu": sum(1 for r in rows if r["status"] == "ratkaistu"),
+              "suorahankinta": sum(1 for r in rows if r["status"] == "valitusaika")}
+    payload = {"items": rows, "counts": counts, "topics": list((cfg.get("toimialat") or {}).keys()) + ["Muut"],
+               "awardDays": award_days, "appealDays": appeal_days}
     minimum = int(hcfg.get("min_items", 100))
     if len(open_rows) < minimum and len(prev_items) >= minimum:
         log(f"ERROR hankinnat: vain {len(open_rows)} avointa (raja {minimum}); edellinen hankinnat.json säilytetään")
