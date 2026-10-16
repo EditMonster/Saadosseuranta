@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-15T21:44:56",
+ "fetched": "2026-10-16T07:49:34",
  "items": [
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -542,7 +542,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T07:40:22",
+   "muokattu": "2026-10-15T22:46:43",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kuntalain 137 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -601,7 +601,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-12T20:42:15",
+   "muokattu": "2026-10-15T23:57:27",
    "nimi": "Hallituksen esitys laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -882,7 +882,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-15T12:15:29",
+   "muokattu": "2026-10-16T05:48:06",
    "nimi": "Hallituksen esitys laiksi sähkömarkkinalain muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -1757,7 +1757,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-14T17:57:34",
+   "muokattu": "2026-10-15T22:39:42",
    "nimi": "Hallituksen esitys eduskunnalle laiksi tuloverolain 10 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -2224,7 +2224,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-15T05:58:33",
+   "muokattu": "2026-10-16T05:38:13",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -7982,7 +7982,7 @@
     "maksukyvyttömyys",
     "ulosotto"
    ],
-   "esittelyviikko": 37,
+   "esittelyviikko": 43,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -7998,7 +7998,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-09-24T13:25:49",
+   "muokattu": "2026-10-16T07:46:25",
    "nimi": "Ylivelkaantuneiden velallisten aseman helpottaminen ulosotossa",
    "rauennut": false,
    "skNumerot": [],
@@ -9049,42 +9049,6 @@
    "valmistumisPaiva": null
   },
   {
-   "annettuEduskunnalle": "2026-05-21",
-   "asetettu": null,
-   "asiakirjat": [],
-   "asiasanat": [],
-   "esittelyviikko": 21,
-   "esittelyvuosi": 2026,
-   "etapit": [
-    {
-     "date": "2025-12-22",
-     "end": "2026-02-15",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [
-    "HE 94/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "laji": "laki",
-   "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-07-07T08:55:19",
-   "nimi": "Hallituksen esitys eduskunnalle työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta",
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Hankkeessa valmistellaan tarvittavat lakimuutokset työvoimaviranomaisten oikeudesta saada ja käsitellä työnhakijoiden tulotietoja nykyistä laajemmin työllisyyden edistämiseksi ja samalla edistetään hallituksen budjettiriihessä 2025 linjaamaa työllisyyspakettia. Lait on tarkoitettu tulemaan voimaan 1.11.2026.",
-   "tila": "KAYNNISSA",
-   "tunnus": "TEM100:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM100:00/2025",
-   "uuid": "b6c5b909-adfe-499a-8d62-c04a83c26fd1",
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
-   "valmistumisPaiva": "2026-12-31"
-  },
-  {
    "annettuEduskunnalle": "2025-11-13",
    "asetettu": null,
    "asiakirjat": [],
@@ -9135,7 +9099,7 @@
     "sähköntuotanto",
     "vesivoimalat"
    ],
-   "esittelyviikko": 42,
+   "esittelyviikko": 43,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -9158,7 +9122,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-09-30T07:53:35",
+   "muokattu": "2026-10-16T07:45:45",
    "nimi": "Väliaikainen poikkeaminen vesivoimalaitoksen lupamääräyksistä sähköjärjestelmän tasapainottamiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -9625,6 +9589,18 @@
    "asetettu": "2025-09-10",
    "asiakirjat": [
     {
+     "nimi": "202605~1",
+     "pvm": "2026-05-07",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/8027c856-eee7-451b-951b-9af63c7809fb/0d846ce3-536b-407c-a14b-8b0fde1a130d/LAUSUNTOPYYNTO_20261016071420.PDF"
+    },
+    {
+     "nimi": "HE pakkotyöasetus_luonnos 7.5.2026",
+     "pvm": "2026-05-07",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/8027c856-eee7-451b-951b-9af63c7809fb/f62df5f5-3cd2-4a1b-9086-b91394f0ad4f/LAUSUNTOPYYNTO_20261016071420.PDF"
+    },
+    {
      "nimi": "Lausuntoyhteenveto HE laiksi EU:n pakkotyöasetuksen täytäntöönpanemiseksi",
      "pvm": "2026-09-01",
      "tyyppi": "YHTEENVETO",
@@ -9639,13 +9615,21 @@
    ],
    "esittelyviikko": 45,
    "esittelyvuosi": 2026,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-05-07",
+     "end": "2026-06-18",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-08T05:43:25",
+   "muokattu": "2026-10-16T07:17:38",
    "nimi": "EU:n pakkotyöasetuksen kansallinen täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -10849,7 +10833,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-14T18:15:34",
+   "muokattu": "2026-10-15T22:42:03",
    "nimi": "Hallituksen esitys eduskunnalle kommandiittiyhtiömuotoisia rahastoja koskevan verolainsäädännön uudistamiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -12934,7 +12918,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-15T10:22:36",
+   "muokattu": "2026-10-16T00:14:54",
    "nimi": "Hallituksen esityksen valmistelu; henkilöstön joustava käyttö (Nato-säädösmuutokset)",
    "rauennut": false,
    "skNumerot": [],
@@ -13233,7 +13217,7 @@
     "rikosprosessi",
     "uhrit"
    ],
-   "esittelyviikko": 44,
+   "esittelyviikko": 45,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -13256,7 +13240,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-15T13:11:23",
+   "muokattu": "2026-10-16T07:42:43",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -13905,10 +13889,10 @@
    ],
    "evNumerot": [],
    "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heTila": "POISTETTU_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-13T08:30:16",
+   "muokattu": "2026-10-16T06:07:02",
    "nimi": "Pelastustoimen henkilötietojen käsittelyä ja tiedonsaantioikeuksia koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -15983,83 +15967,6 @@
    "uuid": "2e0cf778-7473-4a25-9ac6-22100819fc55",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-12-30"
-  },
-  {
-   "annettuEduskunnalle": "2025-09-22",
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "VL_ Lausuntopyyntö_ Luonnos hallituksen esitykseksi eduskunnalle laiksi elatustukilain, lapsen elatuksesta annetun lain sekä tulotietojärjestelmästä annetun lain muuttamisesta",
-     "pvm": "2025-06-02",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/d40d7a2e-5070-4cad-8e36-9dcae2e33467/LAUSUNTOPYYNTO_20250603060844.MSG"
-    },
-    {
-     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi eduskunnalle laiksi elatustukilain",
-     "pvm": "2025-06-03",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/33ecdd2c-eb10-4643-86a2-f2cd7019844e/LAUSUNTOPYYNTO_20250603060844.PDF"
-    },
-    {
-     "nimi": "Utkast till regeringens proposition till riksdagen med förslag till lag",
-     "pvm": "2025-06-03",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/0665280a-5b6c-483e-a6ae-177e0cce8787/LAUSUNTOPYYNTO_20250603060844.PDF"
-    },
-    {
-     "nimi": "Lausuntoyhteenveto",
-     "pvm": "2025-07-09",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/385a40a9-c443-40c0-a61b-db60e16926da/YHTEENVETO_20250711100111.PDF"
-    }
-   ],
-   "asiasanat": [
-    "elatustuki",
-    "elatusturva"
-   ],
-   "esittelyviikko": 39,
-   "esittelyvuosi": 2025,
-   "etapit": [
-    {
-     "date": "2025-03-12",
-     "end": "2026-01-01",
-     "kind": "muu",
-     "label": "Säädös",
-     "tyyppi": "SAADOS"
-    },
-    {
-     "date": "2025-06-02",
-     "end": "2025-06-30",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [
-    "EV 128/2025"
-   ],
-   "heNumerot": [
-    "HE 115/2025"
-   ],
-   "heTila": "ANNETTU_EK",
-   "laji": "laki",
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-14T10:16:03",
-   "nimi": "Hallituksen esitys eduskunnalle laeiksi elatustukilain, lapsen elatuksesta annetun lain sekä tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta",
-   "rauennut": false,
-   "skNumerot": [
-    "1054/2025",
-    "1055/2025",
-    "1056/2025"
-   ],
-   "teemat": [],
-   "tiivistelma": "Pääministeri Orpon hallituksen hallitusohjelmakirjauksen mukaan hallitus selvittää mahdollisuuksia parantaa lapsen asemaa vaikeissa erotilanteissa ja oikeusprosessissa. Hallituksen julkisen talouden suunnitelmaan on kirjattu, että elatustukea uudistetaan tarkistamalla elatustuen tasoa säännöllisin väliajoin vanhempien tulotietojen perusteella.",
-   "tila": "KAYNNISSA",
-   "tunnus": "STM002:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM002:00/2025",
-   "uuid": "3f216f70-74a1-4865-a40d-2f30f72b7b39",
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-08-31"
   },
   {
    "annettuEduskunnalle": "2025-04-03",
@@ -18976,7 +18883,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-14T09:26:39",
+   "muokattu": "2026-10-16T06:04:35",
    "nimi": "Hallituksen esitys laiksi ulkomaisten sijoitusten seurannasta ja lupamenettelyistä",
    "rauennut": false,
    "skNumerot": [],
@@ -20333,14 +20240,16 @@
      "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
-   "evNumerot": [],
+   "evNumerot": [
+    "EV 129/2026"
+   ],
    "heNumerot": [
     "HE 85/2026"
    ],
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-06-07T08:09:08",
+   "muokattu": "2026-10-16T05:55:29",
    "nimi": "Julkisen hallinnon tietojärjestelmien vaatimustenmukaisuuden arvioinnin ajantasaistaminen ja tehostaminen",
    "rauennut": false,
    "skNumerot": [],
@@ -28696,6 +28605,47 @@
    "valmistumisPaiva": "2026-12-31"
   },
   {
+   "annettuEduskunnalle": "2026-05-21",
+   "asetettu": null,
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": 21,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2025-12-22",
+     "end": "2026-02-15",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [
+    "EV 123/2026"
+   ],
+   "heNumerot": [
+    "HE 94/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "laji": "laki",
+   "ministerio": "työ- ja elinkeinoministeriö",
+   "muokattu": "2026-10-16T07:11:23",
+   "nimi": "Hallituksen esitys eduskunnalle työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta",
+   "rauennut": false,
+   "skNumerot": [
+    "887",
+    "888"
+   ],
+   "teemat": [],
+   "tiivistelma": "Hankkeessa valmistellaan tarvittavat lakimuutokset työvoimaviranomaisten oikeudesta saada ja käsitellä työnhakijoiden tulotietoja nykyistä laajemmin työllisyyden edistämiseksi ja samalla edistetään hallituksen budjettiriihessä 2025 linjaamaa työllisyyspakettia. Lait on tarkoitettu tulemaan voimaan 1.11.2026.",
+   "tila": "PAATTYNYT",
+   "tunnus": "TEM100:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM100:00/2025",
+   "uuid": "b6c5b909-adfe-499a-8d62-c04a83c26fd1",
+   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmistumisPaiva": "2026-12-31"
+  },
+  {
    "annettuEduskunnalle": "2026-03-26",
    "asetettu": null,
    "asiakirjat": [
@@ -34592,6 +34542,83 @@
    "uuid": "e620cc63-f665-496b-bf76-cc00547bda31",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-06-27"
+  },
+  {
+   "annettuEduskunnalle": "2025-09-22",
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "VL_ Lausuntopyyntö_ Luonnos hallituksen esitykseksi eduskunnalle laiksi elatustukilain, lapsen elatuksesta annetun lain sekä tulotietojärjestelmästä annetun lain muuttamisesta",
+     "pvm": "2025-06-02",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/d40d7a2e-5070-4cad-8e36-9dcae2e33467/LAUSUNTOPYYNTO_20250603060844.MSG"
+    },
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi eduskunnalle laiksi elatustukilain",
+     "pvm": "2025-06-03",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/33ecdd2c-eb10-4643-86a2-f2cd7019844e/LAUSUNTOPYYNTO_20250603060844.PDF"
+    },
+    {
+     "nimi": "Utkast till regeringens proposition till riksdagen med förslag till lag",
+     "pvm": "2025-06-03",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/0665280a-5b6c-483e-a6ae-177e0cce8787/LAUSUNTOPYYNTO_20250603060844.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto",
+     "pvm": "2025-07-09",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f216f70-74a1-4865-a40d-2f30f72b7b39/385a40a9-c443-40c0-a61b-db60e16926da/YHTEENVETO_20250711100111.PDF"
+    }
+   ],
+   "asiasanat": [
+    "elatustuki",
+    "elatusturva"
+   ],
+   "esittelyviikko": 39,
+   "esittelyvuosi": 2025,
+   "etapit": [
+    {
+     "date": "2025-03-12",
+     "end": "2026-01-01",
+     "kind": "muu",
+     "label": "Säädös",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2025-06-02",
+     "end": "2025-06-30",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [
+    "EV 128/2025"
+   ],
+   "heNumerot": [
+    "HE 115/2025"
+   ],
+   "heTila": "ANNETTU_EK",
+   "laji": "laki",
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-16T06:27:32",
+   "nimi": "Hallituksen esitys eduskunnalle laeiksi elatustukilain, lapsen elatuksesta annetun lain sekä tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta",
+   "rauennut": false,
+   "skNumerot": [
+    "1054/2025",
+    "1055/2025",
+    "1056/2025"
+   ],
+   "teemat": [],
+   "tiivistelma": "Pääministeri Orpon hallituksen hallitusohjelmakirjauksen mukaan hallitus selvittää mahdollisuuksia parantaa lapsen asemaa vaikeissa erotilanteissa ja oikeusprosessissa. Hallituksen julkisen talouden suunnitelmaan on kirjattu, että elatustukea uudistetaan tarkistamalla elatustuen tasoa säännöllisin väliajoin vanhempien tulotietojen perusteella.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM002:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM002:00/2025",
+   "uuid": "3f216f70-74a1-4865-a40d-2f30f72b7b39",
+   "valmisteluvaihe": "VALMISTUNUT",
+   "valmistumisPaiva": "2026-08-31"
   },
   {
    "annettuEduskunnalle": "2025-09-22",
@@ -68286,7 +68313,7 @@
    "heTila": null,
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2025-09-08T07:22:33",
+   "muokattu": "2026-10-16T07:06:11",
    "nimi": "Lahjusrikoksia koskevien säännösten muutostarpeet",
    "rauennut": false,
    "skNumerot": [
@@ -68442,7 +68469,7 @@
    "heTila": "POISTETTU_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-03-02T12:15:41",
+   "muokattu": "2026-10-16T07:46:30",
    "nimi": "Ahvenanmaan itsehallintolain kokonaisuudistus",
    "rauennut": false,
    "skNumerot": [],
@@ -70378,7 +70405,7 @@
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-09-09T09:51:09",
+   "muokattu": "2026-10-16T07:47:39",
    "nimi": "Sosiaali- ja terveysministeriön asetus Terveyden ja hyvinvoinnin laitoksen maksullisista suoritteista",
    "rauennut": false,
    "skNumerot": [],

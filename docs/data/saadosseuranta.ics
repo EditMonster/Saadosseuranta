@@ -572,15 +572,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 116/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/116
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-94-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[FI] Voimaan: Laeiksi työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 94/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-117-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1148,6 +1139,15 @@ DESCRIPTION:Voimaan (597/2026) · 597/2026 · HE 78/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/78
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-94-2026-voimaan-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[FI] Voimaan: Laeiksi työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 94/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-25-2026-voimaan-2027-05-01@saadosseuranta
 DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
@@ -1218,6 +1218,15 @@ DTEND;VALUE=DATE:20270131
 SUMMARY:[FI] Voimaan: Laiksi vakuutusyhtiölain muuttamisesta ja eräiksi siihen liittyviksi laeiksi
 DESCRIPTION:Voimaan (600/2026) · 600/2026 · HE 43/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-114-2025-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi sairausvakuutuslain 4 luvun muuttamisesta
+DESCRIPTION:Voimaan (1053/2025) · 1053/2025 · HE 114/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/114
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/114
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-15-2026-voimaan-2027-01-01@saadosseuranta
@@ -1577,6 +1586,15 @@ DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:[EU] Määräaika: Kulutusluotot
 DESCRIPTION:Täytäntöönpanon määräaika · (EU) 2023/2225 · https://eur-lex.europa.eu/eli/dir/2023/2225/oj
+URL:https://eur-lex.europa.eu/eli/dir/2023/2225/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2021-0171-maaraaika-2027-11-20@saadosseuranta
+DTSTAMP:20271120T000000Z
+DTSTART;VALUE=DATE:20271120
+DTEND;VALUE=DATE:20271121
+SUMMARY:[EU] Määräaika: Kulutusluotot
+DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) · (EU) 2023/2225 · https://eur-lex.europa.eu/eli/dir/2023/2225/oj
 URL:https://eur-lex.europa.eu/eli/dir/2023/2225/oj
 END:VEVENT
 BEGIN:VEVENT
@@ -2264,10 +2282,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.euro
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-10@saadosseuranta
-DTSTAMP:20261210T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
+UID:eu-hys-15492-lausunto-2026-12-11@saadosseuranta
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2327,15 +2345,6 @@ DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-16872-lausunto-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Lausuntoaika päättyy: Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen
-DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-hys-14628-lausunto-2026-11-11@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -2343,5 +2352,14 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-16872-lausunto-2026-10-15@saadosseuranta
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:[EU] Lausuntoaika päättyy: Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen
+DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
 END:VEVENT
 END:VCALENDAR

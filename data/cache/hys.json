@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-15T21:52:56",
+ "fetched": "2026-10-16T07:57:08",
  "items": [
   {
    "actType": "PROP_REG",
@@ -7,7 +7,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-10",
+     "end": "2026-12-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -25,7 +25,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-10",
+     "end": "2026-12-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -205,7 +205,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-10",
+     "end": "2026-12-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -548,30 +548,12 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en"
   },
   {
-   "actType": "DIR",
-   "actTypeLabel": "Direktiivi",
-   "id": 16152,
-   "periods": [
-    {
-     "end": "2026-10-15",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-17"
-    }
-   ],
-   "reference": "Ares(2025)11233920",
-   "status": "ACTIVE",
-   "title_en": "Amendment of the Toy Safety Directive - Lilial, BPA, phenol and BIT",
-   "title_fi": "Leluturvallisuusdirektiivin päivitys – liliaalin kieltäminen, bisfenoli A:n raja-arvon alentaminen ja lisäyksessä C olevien standardien viitetietojen poistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16152_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-10",
+     "end": "2026-12-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -710,24 +692,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en"
   },
   {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 16872,
-   "periods": [
-    {
-     "end": "2026-10-15",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-08-20"
-    }
-   ],
-   "reference": "Ares(2026)1535676",
-   "status": "ACTIVE",
-   "title_en": "Omnibus simplification of energy-efficient product legislation",
-   "title_fi": "Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en"
-  },
-  {
    "actType": "COMMUNIC",
    "actTypeLabel": "Tiedonanto",
    "id": 18194,
@@ -744,30 +708,6 @@
    "title_en": "EU Strategy on victims’ rights (2026 – 2030)",
    "title_fi": "Uhrien oikeuksia koskeva EU:n strategia",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18194_en"
-  },
-  {
-   "actType": "EVL",
-   "actTypeLabel": "EVL",
-   "id": 17172,
-   "periods": [
-    {
-     "end": "2026-10-15",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-23"
-    },
-    {
-     "end": "2026-10-15",
-     "open": true,
-     "stage": "OPC_LAUNCHED",
-     "start": "2026-07-23"
-    }
-   ],
-   "reference": "Ares(2026)2318110",
-   "status": "ACTIVE",
-   "title_en": "Evaluation of Regulation (EU) 2021/821 (the ‘Dual-Use Regulation’)",
-   "title_fi": "Kaksikäyttötuotteiden vientivalvonta – kaksikäyttötuoteasetuksen arviointi",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17172_en"
   },
   {
    "actType": "PROP_REG",
@@ -894,6 +834,60 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "DIR",
+   "actTypeLabel": "Direktiivi",
+   "id": 16152,
+   "periods": [
+    {
+     "end": "2026-10-15",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-17"
+    }
+   ],
+   "reference": "Ares(2025)11233920",
+   "status": "ACTIVE",
+   "title_en": "Amendment of the Toy Safety Directive - Lilial, BPA, phenol and BIT",
+   "title_fi": "Leluturvallisuusdirektiivin päivitys – liliaalin kieltäminen, bisfenoli A:n raja-arvon alentaminen ja lisäyksessä C olevien standardien viitetietojen poistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16152_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 16872,
+   "periods": [
+    {
+     "end": "2026-10-15",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-08-20"
+    }
+   ],
+   "reference": "Ares(2026)1535676",
+   "status": "ACTIVE",
+   "title_en": "Omnibus simplification of energy-efficient product legislation",
+   "title_fi": "Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en"
+  },
+  {
+   "actType": "EVL",
+   "actTypeLabel": "EVL",
+   "id": 17172,
+   "periods": [
+    {
+     "end": "2026-10-15",
+     "open": false,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-07-23"
+    }
+   ],
+   "reference": "Ares(2026)2318110",
+   "status": "ACTIVE",
+   "title_en": "Evaluation of Regulation (EU) 2021/821 (the ‘Dual-Use Regulation’)",
+   "title_fi": "Kaksikäyttötuotteiden vientivalvonta – kaksikäyttötuoteasetuksen arviointi",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17172_en"
   },
   {
    "actType": "EVL",
