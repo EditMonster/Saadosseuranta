@@ -308,7 +308,15 @@ th.sortable:hover{color:var(--fg)}
 .hide:hover{color:var(--signal)}
 .hide[data-restore]{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:2px 6px;border-radius:var(--radius);color:var(--muted)}
 .fchips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
-.flist{max-height:196px;overflow-y:auto;border:1px solid var(--line);background:var(--bg2);margin-top:6px}
+.fdrop{margin-top:6px}
+.fdrop-btn{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;border:1px solid var(--line2);border-radius:var(--radius);padding:7px 10px;font-size:12.5px;background:var(--panel);color:var(--fg)}
+.fdrop-btn:hover{border-color:var(--fg)}
+.fdrop-btn[aria-expanded="true"]{border-color:var(--fg);border-bottom-left-radius:0;border-bottom-right-radius:0}
+.fdrop-btn .lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.fdrop-btn .lbl.dim{color:var(--muted)}
+.fdrop-btn .caret{font-family:var(--mono);font-size:11px;color:var(--muted);flex:none}
+.fdrop-menu{border:1px solid var(--fg);border-top:0;padding:8px;background:var(--panel)}
+.flist{max-height:190px;overflow-y:auto;border:1px solid var(--line);background:var(--bg2);margin-top:6px}
 .flist label{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 10px;border-top:1px solid var(--line);cursor:pointer;font-size:12.5px}
 .flist label:first-child{border-top:0}
 .flist label:hover{background:var(--panel2)}
@@ -873,7 +881,7 @@ const drawer=document.getElementById("drawer"), scrim=document.getElementById("s
 let lastFocus=null;
 function findItem(id){ return DATA.find(i=>i.id===id)||TENDERS.find(i=>i.id===id); }
 function openTender(it){
-  lastFocus=document.activeElement;
+  lastFocus=document.activeElement; fdropOpen=false;
   const di=deadlineInfo(it);
   document.getElementById("dr-kicker").innerHTML=`<span class="pill scope">Hankinta</span><span>${esc(it.kind)}</span>${it.noticeNumber?`<span>Hilma ${esc(it.noticeNumber)}</span>`:""}<span class="pill ${di.over||it.status!=="avoin"?"":"open"}">${esc(di.over||it.status!=="avoin"?di.big:(di.what+" · "+di.big))}</span>`;
   document.getElementById("dr-title").textContent=it.title;
@@ -910,7 +918,7 @@ function openTender(it){
 function openItem(id){
   const it=findItem(id); if(!it) return;
   if(it.scope==="hankinta"){ openTender(it); return; }
-  lastFocus=document.activeElement;
+  lastFocus=document.activeElement; fdropOpen=false;
   document.getElementById("dr-facts").innerHTML="";
   const st=statusOf(it);
   document.getElementById("dr-kicker").innerHTML=`<span class="pill scope">${it.scope==="fi"?"FI":"EU"}</span>${it.ref.startsWith(it.kind)?"":`<span>${esc(it.kind)}</span>`}<span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>`;
@@ -939,26 +947,35 @@ function openItem(id){
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
-function renderDrawerFolders(id,filter){
+let fdropOpen=false;
+function renderDrawerFolders(id,filter,focusFid){
   const q=(filter||"").toLowerCase();
   const fs=sortedFolders().filter(f=>!q||f.name.toLowerCase().includes(q));
   const rows=fs.map(f=>{ const on=f.items.includes(id); return `<label class="${on?"on":""}"><input type="checkbox" data-ftoggle="${esc(f.id)}"${on?" checked":""}><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(f.name)}</span><span class="n">${f.items.length}</span></label>`; }).join("");
   const hid=state.hidden.has(id);
-  const inF=foldersOf(id).length;
+  const mine=foldersOf(id).map(f=>f.name);
+  const label=mine.length?`▣ ${esc(mine.join(", "))}`:(state.folders.length?"Ei kansiossa – valitse kansio":"Ei kansioita – luo ensimmäinen");
   document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4>
-    <div class="micro">${state.folders.length?`${inF?`Kohde on ${inF} kansiossa`:"Kohde ei ole kansiossa"} · rastita kansiot, joihin kohde kuuluu`:"Ei vielä kansioita – luo ensimmäinen alla"}</div>
-    ${state.folders.length>6?`<input class="fsearch" id="dr-fsearch" placeholder="Hae kansiota" aria-label="Hae kansiota" value="${esc(filter||"")}">`:""}
-    ${state.folders.length?`<div class="flist" id="dr-flist">${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
-    <div class="fcreate"><input id="dr-fnew" placeholder="Uuden kansion nimi" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fcreate" title="Luo tyhjä kansio lisäämättä tätä kohdetta">Luo kansio</button><button class="follow-btn" id="dr-fadd" title="Luo kansio ja lisää tämä kohde siihen">Luo ja lisää tämä</button></div>
+    <div class="fdrop"><button class="fdrop-btn" id="dr-fdrop-btn" aria-expanded="${fdropOpen}" aria-controls="dr-fdrop-menu"><span class="lbl${mine.length?"":" dim"}">${label}</span><span class="caret">${mine.length?mine.length+" · ":""}${fdropOpen?"▴":"▾"}</span></button>
+    <div class="fdrop-menu" id="dr-fdrop-menu"${fdropOpen?"":" hidden"}>
+      ${state.folders.length>6?`<input class="fsearch" id="dr-fsearch" placeholder="Hae kansiota" aria-label="Hae kansiota" value="${esc(filter||"")}" style="margin-top:0">`:""}
+      ${state.folders.length?`<div class="flist" id="dr-flist"${state.folders.length>6?"":' style="margin-top:0"'}>${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
+      <div class="fcreate"><input id="dr-fnew" placeholder="Uuden kansion nimi" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fcreate" title="Luo tyhjä kansio lisäämättä tätä kohdetta">Luo kansio</button><button class="follow-btn" id="dr-fadd" title="Luo kansio ja lisää tämä kohde siihen">Luo ja lisää tämä</button></div>
+    </div></div>
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
-  const s=document.getElementById("dr-fsearch"); if(s&&filter!==undefined){ s.focus(); s.setSelectionRange(s.value.length,s.value.length); }
+  if(fdropOpen){
+    if(focusFid){ const cb=document.querySelector(`#dr-flist [data-ftoggle="${CSS.escape(focusFid)}"]`); if(cb) cb.focus(); }
+    else if(filter!==undefined){ const s=document.getElementById("dr-fsearch"); if(s){ s.focus(); s.setSelectionRange(s.value.length,s.value.length); } }
+  }
 }
 document.addEventListener("input",e=>{ if(e.target.id==="dr-fsearch") renderDrawerFolders(drawer.dataset.id,e.target.value); });
 document.addEventListener("click",e=>{
-  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; const s=document.getElementById("dr-fsearch"); toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id,s?s.value:undefined); render(); return; }
-  if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); renderDrawerFolders(id); render(); toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
+  if(e.target.closest("#dr-fdrop-btn")){ fdropOpen=!fdropOpen; renderDrawerFolders(drawer.dataset.id); if(fdropOpen){ const s=document.getElementById("dr-fsearch")||document.getElementById("dr-fnew"); const first=document.querySelector("#dr-flist input"); (first||s)?.focus(); } return; }
+  const ft=e.target.closest("[data-ftoggle]"); if(ft){ const id=drawer.dataset.id; const s=document.getElementById("dr-fsearch"); toggleInFolder(ft.dataset.ftoggle,id); renderDrawerFolders(id,s?s.value:undefined,ft.dataset.ftoggle); render(); return; }
+  if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); fdropOpen=true; renderDrawerFolders(id); render(); const ni=document.getElementById("dr-fnew"); if(ni) ni.focus(); toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
 });
-document.addEventListener("keydown",e=>{ if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&fdropOpen&&!drawer.hidden){ e.stopImmediatePropagation(); fdropOpen=false; renderDrawerFolders(drawer.dataset.id); document.getElementById("dr-fdrop-btn").focus(); return; }
+  if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
 function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
