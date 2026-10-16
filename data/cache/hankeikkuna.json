@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-16T10:06:34",
+ "fetched": "2026-10-16T15:00:08",
  "items": [
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -723,7 +723,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-16T10:05:53",
+   "muokattu": "2026-10-16T10:09:53",
    "nimi": "Hallituksen esitys eduskunnalle Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-, kehitys-, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -2224,7 +2224,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-16T09:25:29",
+   "muokattu": "2026-10-16T14:59:19",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -6732,7 +6732,7 @@
    "heTila": null,
    "laji": "laki",
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-06-02T07:34:25",
+   "muokattu": "2026-10-16T11:34:22",
    "nimi": "Hallituksen esitys uuden ajokorttidirektiivin ja EU:n ajokieltosääntöjen täytäntöönpanemiseksi",
    "rauennut": false,
    "skNumerot": [],
@@ -8555,7 +8555,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-09-25T04:55:27",
+   "muokattu": "2026-10-16T11:35:04",
    "nimi": "Liikenneturvallisuuteen liittyvien liikennerikkomusten rajat ylittävää tietojenvaihtoa koskevan CBE-muutosdirektiivin ja eurooppalaisen vammaisten henkilöiden pysäköintilupasääntelyn täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -8897,7 +8897,7 @@
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-09-25T06:46:56",
+   "muokattu": "2026-10-16T11:35:18",
    "nimi": "Hallituksen esitys eduskunnalle Maailman postiliiton yleissopimuksen toisen lisäpöytäkirjan hyväksymiseksi ja voimaansaattamiseksi sekä laiksi postilain 77 §:n muuttamisesta.",
    "rauennut": false,
    "skNumerot": [],
@@ -8964,7 +8964,7 @@
    "heTila": "ANNETTU_EK",
    "laji": "laki",
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-09-10T13:59:54",
+   "muokattu": "2026-10-16T11:34:41",
    "nimi": "Hallituksen esitys laiksi ajoneuvolain muuttamisesta sekä siihen liittyviksi laeiksi (liikkuvat työkoneet ja Euro 7 -asetusten täytäntöönpano)",
    "rauennut": false,
    "skNumerot": [],
@@ -12991,7 +12991,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-16T09:58:31",
+   "muokattu": "2026-10-16T11:48:44",
    "nimi": "Hallituksen esityksen valmistelu; henkilöstön joustava käyttö (Nato-säädösmuutokset)",
    "rauennut": false,
    "skNumerot": [],
@@ -13313,7 +13313,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-16T09:31:47",
+   "muokattu": "2026-10-16T10:46:57",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -24045,18 +24045,6 @@
    "asetettu": "2023-03-24",
    "asiakirjat": [
     {
-     "nimi": "Lausuntopyyntö_Ahvenanmaa-työryhmän 2023 mietintö_ Selvitys eräistä Ahvenanmaan itsehallinnon kehittämiseen liittyvistä kysymyksenasetteluista",
-     "pvm": "2024-12-16",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/79b4ba6d-94dd-4dfd-8cd8-767d9f3ccc24/935e331a-eb3a-47e0-8843-122a93bf5d80/LAUSUNTOPYYNTO_20250207093831.PDF"
-    },
-    {
-     "nimi": "Utlåtandebegäran_Ålandsarbetsgruppens 2023 betänkande med utredning av vissa frågeställningar i anslutning till Ålands",
-     "pvm": "2024-12-16",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/79b4ba6d-94dd-4dfd-8cd8-767d9f3ccc24/9ed2bf0d-b26b-4b1c-93a1-844917db2c69/LAUSUNTOPYYNTO_20250207093831.PDF"
-    },
-    {
      "nimi": "Lausuntoyhteenveto Ahvenanmaa-työryhmän toinen mietintö",
      "pvm": "2025-04-01",
      "tyyppi": "YHTEENVETO",
@@ -24079,6 +24067,18 @@
      "pvm": "2025-06-18",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/79b4ba6d-94dd-4dfd-8cd8-767d9f3ccc24/8dd1e183-a7e6-48bb-afb7-99a6e9899723/LAUSUNTOPYYNTO_20250618132956.PDF"
+    },
+    {
+     "nimi": "Lausuntopyyntö - HE laeiksi Ahvenanmaan itsehallintolain muuttamisesta ja väliaikaisesta muuttamisesta ja kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta kansallisen turvallisuude",
+     "pvm": "2026-10-13",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/79b4ba6d-94dd-4dfd-8cd8-767d9f3ccc24/b40a6d0b-6fb1-47f8-a4bf-37824e835e37/LAUSUNTOPYYNTO_20261016122111.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande - RP till riksdagen med förslag till lagar om ändring och temporär ändring av självstyrelselagen för Åland och om ändring av 2 § i lagen om inlösen av fast egendom och särskild",
+     "pvm": "2026-10-13",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/79b4ba6d-94dd-4dfd-8cd8-767d9f3ccc24/8fa23a69-2ac6-4b3d-afab-0bc47ad21cfe/LAUSUNTOPYYNTO_20261016122111.PDF"
     }
    ],
    "asiasanat": [
@@ -24108,6 +24108,13 @@
      "kind": "lausunto",
      "label": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi Ahvenanmaan itsehallintolain muuttamisesta",
      "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-10-16",
+     "end": "2026-10-22",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö: Hallituksen esitys eduskunnalle laeiksi Ahvenanmaan itsehallintolain muuttamisesta ja väliaikaisesta muuttamisesta ja kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta kansallisen turvallisuuden varmistamiseksi annetun lain 2 §:n muuttamisesta",
+     "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
    "evNumerot": [],
@@ -24115,7 +24122,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-14T13:26:19",
+   "muokattu": "2026-10-16T12:22:09",
    "nimi": "Ahvenanmaan itsehallintolain selvitys- ja muutoshanke –työryhmä (HE laiksi Ahvenanmaan itsehallintolain muuttamisesta)",
    "rauennut": false,
    "skNumerot": [],
@@ -68517,10 +68524,16 @@
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-15T12:50:51",
+   "muokattu": "2026-10-16T12:32:52",
    "nimi": "Valtioneuvoston asetukset liittyen hallituksen esitykseen eduskunnalle sosiaaliturvaetuuksien valtion osuuksien maksamisesta",
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "898/2026",
+    "899/2026",
+    "900/2026",
+    "901/2026",
+    "902/2026"
+   ],
    "teemat": [],
    "tiivistelma": "",
    "tila": "KAYNNISSA",
@@ -69836,7 +69849,7 @@
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-15T09:19:35",
+   "muokattu": "2026-10-16T12:44:46",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen",
    "rauennut": false,
    "skNumerot": [],
@@ -70318,7 +70331,38 @@
   {
    "annettuEduskunnalle": null,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2026-10-16",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/79b5f2e2-51e0-42bd-a740-c76826b2c3ae/LAUSUNTOPYYNTO_20261016104103.PDF"
+    },
+    {
+     "nimi": "Luonnos vna Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun vnan muuttamisesta",
+     "pvm": "2026-10-16",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/81a99f8a-34a7-4729-ac65-f13c946aa9bd/LAUSUNTOPYYNTO_20261016104103.PDF"
+    },
+    {
+     "nimi": "Muistioluonnos vna Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun vnan muuttamisesta",
+     "pvm": "2026-10-16",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/a7d7d1c0-ecb4-4ce9-b4cb-078767a811d3/LAUSUNTOPYYNTO_20261016104103.PDF"
+    },
+    {
+     "nimi": "Utkast till förordning",
+     "pvm": "2026-10-16",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/23f43fb4-1d9a-45bf-a094-9c1909d4057b/LAUSUNTOPYYNTO_20261016104103.PDF"
+    },
+    {
+     "nimi": "Lausuntopyyntö SV",
+     "pvm": "2026-10-16",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/7e16de29-5cae-4aff-9d3e-d5efa540e183/LAUSUNTOPYYNTO_20261016104103.PDF"
+    }
+   ],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
@@ -70336,7 +70380,7 @@
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-16T10:06:26",
+   "muokattu": "2026-10-16T10:41:03",
    "nimi": "Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -99662,6 +99706,50 @@
    "uuid": "97cfca94-6cdc-4dfa-ac6f-bfc1302284e2",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2020-01-17"
+  },
+  {
+   "annettuEduskunnalle": null,
+   "asetettu": "2019-01-02",
+   "asiakirjat": [
+    {
+     "nimi": "FÖRORDNING OM AVSIKTLIG UTSÄTTNING AV GENETISKT MODIFIERADE ORGANISMER",
+     "pvm": "2019-07-08",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/980b6790-b883-4e8b-9726-588c5220873a/0611dbf9-aa7e-4b0f-b17e-51fb5ec53d57/LAUSUNTOPYYNTO_20190807074430.pdf"
+    },
+    {
+     "nimi": "Asetus geneettisesti muunnettujen organismien tarkoituksellisesta levittämisestä",
+     "pvm": "2019-07-08",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/980b6790-b883-4e8b-9726-588c5220873a/5cf04794-2af5-44fc-b76d-06cc79d81739/LAUSUNTOPYYNTO_20190926055037.pdf"
+    }
+   ],
+   "asiasanat": [
+    "ympäristövaikutusten arviointi",
+    "geenitekniikka",
+    "muuntogeeniset eliöt",
+    "hakemukset"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "laji": "asetus",
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-16T10:22:04",
+   "nimi": "Sosiaali- ja terveysministeriön asetus muuntogeenisten organismien tarkoituksellisesta levittämisestä",
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Asetuksella pannaan täytäntöön geneettisesti muunnettujen organismien ympäristöriskinarvioinnista annettu komission direktiivi (EU) 2018/350. Uudistuksella päivitetään muuntogeenisiä organismeja sisältävien tuotteiden ja kenttäkokeiden hakemusten sisältöä ja ympäristöriskinarviointia koskevat vaatimukset.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM054:00/2019",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM054:00/2019",
+   "uuid": "980b6790-b883-4e8b-9726-588c5220873a",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2019-09-30"
   },
   {
    "annettuEduskunnalle": null,

@@ -378,7 +378,7 @@
   },
   "M.12269": {
    "caseNumber": "M.12269",
-   "deadline": "2026-10-22",
+   "deadline": "2026-11-06",
    "decisions": [],
    "initiated": "2025-12-02",
    "lastDecision": null,
@@ -423,7 +423,13 @@
    "renotified": null,
    "sector": "NaceV2Sector_C_20.30",
    "simplified": "MEnormal",
-   "timeline": [],
+   "timeline": [
+    {
+     "date": "2026-10-15",
+     "description": "Changed deadline - Commitments submitted in N/1 on 15/10/2026",
+     "type": "MEvent3"
+    }
+   ],
    "title": "AKZONOBEL / AXALTA"
   },
   "M.12270": {
@@ -7547,7 +7553,41 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "VERITAS / BODYCOTE"
+  },
+  "M.12664": {
+   "caseNumber": "M.12664",
+   "deadline": "2026-11-23",
+   "decisions": [],
+   "initiated": "2026-10-05",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-16",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_J_58.29",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "BLACKSTONE / CLEARLAKE / DISCOVERY EDUCATION"
+  },
+  "M.12665": {
+   "caseNumber": "M.12665",
+   "deadline": "2026-11-20",
+   "decisions": [],
+   "initiated": "2026-10-05",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-15",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_80",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "CVC DIF / CARLYLE / BAUWATCH GROUP"
   }
  },
- "fetched": "2026-10-16T10:23:28Z"
+ "fetched": "2026-10-16T15:08:15Z"
 }
