@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import time
 from zoneinfo import ZoneInfo
 
@@ -83,7 +84,10 @@ def main():
     acts = r.json().get("list") or []
     if len(acts) < 500:
         raise RuntimeError(f"regdel: vain {len(acts)} delegoitua säädöstä – rajapinta on ehkä muuttunut")
-    old = (load_json(OUT, {}) or {}).get("acts") or {}
+    cache = load_json(OUT, {}) or {}
+    old = cache.get("acts") or {}
+    skip = cache.get("skip") or {}   # acts looked at and found too old: {id: status} – not fetched again unless the status changes
+    new_skip: dict[str, str] = {}
     keep: dict[str, dict] = {}
     for a in acts:
         st = a.get("delegatedActStatus")
@@ -91,10 +95,20 @@ def main():
         if st in OPEN or st in WAITING:
             pass
         elif st in CLOSED:
-            # recently concluded acts: the register's updateDate is the only cheap signal before we have the events
+            # recently concluded acts: before we have the events, the act's own year (C-number / CELEX) is the
+            # only cheap signal – the register's updateDate is touched in bulk and would make us fetch everything
             prev = old.get(aid)
-            upd = day(a.get("updateDate")) or "0000"
-            if not (upd >= cutoff or (prev and (prev.get("publication") or prev.get("objection") or "0000") >= cutoff)):
+            years = re.findall(r"C\((\d{4})\)|^3(\d{4})", (a.get("cCode") or "") + " " + (a.get("celexNumber") or ""))
+            year = max((int(y[0] or y[1]) for y in years), default=0)
+            if skip.get(aid) == st:
+                new_skip[aid] = st
+                continue
+            if prev:
+                if (prev.get("publication") or prev.get("objection") or prev.get("adoption") or "0000") < cutoff:
+                    new_skip[aid] = st
+                    continue
+            elif year < TODAY.year - 1:
+                new_skip[aid] = st
                 continue
         else:
             continue  # PLANNED / ON_HOLD: not yet adopted (the feedback phase is covered by Have your say)
@@ -106,9 +120,12 @@ def main():
         rec["policyArea"] = pa.get("shortName")
         rec["policyAreaName"] = pa.get("longName")
         prev = old.get(aid) or {}
-        if prev.get("updateDate") == rec["updateDate"] and prev.get("events") is not None:
-            rec["events"], rec["deadlines"] = prev["events"], prev["deadlines"]
+        fresh = prev.get("events") is not None and prev.get("delegatedActStatus") == st and (
+            st in CLOSED or prev.get("eventsFetched") == TODAY.isoformat())
+        if fresh:
+            rec["events"], rec["deadlines"], rec["eventsFetched"] = prev["events"], prev["deadlines"], prev.get("eventsFetched")
         else:
+            rec["eventsFetched"] = TODAY.isoformat()
             try:
                 evs = get(s, f"delegatedActs/{aid}/events")
                 dls = get(s, f"delegatedActs/{aid}/deadlines")
@@ -124,9 +141,11 @@ def main():
         rec["adoption"] = next((e["date"] for e in rec["events"] if e["type"] in ("DA_ADOPTION", "DA_URGENT_ADOPTION")), None)
         rec["publication"] = next((e["date"] for e in rec["events"] if e["type"] in ("DA_PUBLICATION", "DA_URGENT_PUB")), None)
         rec["objection"] = next((e["date"] for e in rec["events"] if e["type"] in ("DA_OBJECTION", "DA_WITHDRAWAL", "DA_CANCELLATION")), None)
-        if st in CLOSED and (rec["publication"] or rec["objection"] or day(a.get("updateDate")) or "0000") < cutoff:
+        if st in CLOSED and (rec["publication"] or rec["objection"] or rec["adoption"] or "0000") < cutoff:
+            new_skip[aid] = st
             continue
         if st not in CLOSED and (rec["adoption"] or "0000") < stale:
+            new_skip[aid] = st
             continue  # the register holds a few never-closed records from years ago
         # Finnish title and entry into force from Cellar once the act is in the Official Journal (cached by CELEX)
         if rec.get("celexNumber"):
@@ -139,7 +158,7 @@ def main():
                 except Exception as e:  # noqa: BLE001
                     log(f"warn: regdel cellar {rec['celexNumber']}: {e}")
         keep[aid] = rec
-    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "acts": keep})
+    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "acts": keep, "skip": new_skip})
     n_open = sum(1 for v in keep.values() if v["delegatedActStatus"] in OPEN)
     log(f"regdel: {len(acts)} delegoitua säädöstä rekisterissä, {len(keep)} seurannassa ({n_open} vastustamisaika käynnissä, "
         f"{sum(1 for v in keep.values() if v['delegatedActStatus'] in WAITING)} odottaa julkaisua) -> {OUT}")

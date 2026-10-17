@@ -2354,10 +2354,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-12@saadosseuranta
-DTSTAMP:20261212T000000Z
-DTSTART;VALUE=DATE:20261212
-DTEND;VALUE=DATE:20261213
+UID:eu-hys-15492-lausunto-2026-12-13@saadosseuranta
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2442,5 +2442,446 @@ DTEND;VALUE=DATE:20261016
 SUMMARY:[EU] Lausuntoaika päättyy: Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2024/3012 of the European Parliament and of the Council by establishing the certificati
+DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)4666 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2723
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2723
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2734-maaraaika-2026-11-02@saadosseuranta
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2019/1700 of the European Parliament and of the Council by specifying the number and ti
+DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)4526 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2734
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2734
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2806-maaraaika-2026-11-08@saadosseuranta
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the Annex to Regulation (EU) 2019/452 of the European Parliament and of the Council establishing a framework
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6107 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2858-maaraaika-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) 2017/584 as regards certain organi
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6845 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2858
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2858
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2861-maaraaika-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2024/2841 as regards setting the QR code on the physical version of the European Disabil
+DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)4534 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2882-soveltaminen-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/797\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/689 muuttamisesta sinikieliviruksen aiheuttaman ta
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)903 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2882
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2882
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2883-soveltaminen-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/796\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/687 muuttamisesta sinikieliviruksen aiheuttaman ta
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)902 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2883
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2883
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2884-soveltaminen-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/795\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/688 muuttamisesta siltä osin kuin on kyse sinikiel
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)901 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2884
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2884
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2885-soveltaminen-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/794\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/686 muuttamisesta siltä osin kuin on kyse sinikiel
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)900 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2885
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2885
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2893-maaraaika-2026-12-08@saadosseuranta
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) 2018/1108 as regards the criteria 
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6179 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2893
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2893
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2899-maaraaika-2026-10-16@saadosseuranta
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2009/138/EC of the European Parliament and of the Council with regard to regulatory tech
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4973 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2899
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2899
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2909-voimaan-2026-11-03@saadosseuranta
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1519\, annettu 6 päivänä heinäkuuta 2026\, komission delegoidussa asetuksessa (EU) 2017/392 vahvistettujen teknisten sääntely
+DESCRIPTION:Voimaan · C(2026)4642 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2909-soveltaminen-2027-11-03@saadosseuranta
+DTSTAMP:20271103T000000Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1519\, annettu 6 päivänä heinäkuuta 2026\, komission delegoidussa asetuksessa (EU) 2017/392 vahvistettujen teknisten sääntely
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)4642 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2917-maaraaika-2026-11-07@saadosseuranta
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards long-chain perfluorocarbo
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2923-maaraaika-2026-11-11@saadosseuranta
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards medium chain chlorinated 
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6262 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2923
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2923
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2926-maaraaika-2026-10-21@saadosseuranta
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2022/2104 supplementing Regulation (EU) No 1308/2013 of the European Parliament an
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2931-maaraaika-2026-10-14@saadosseuranta
+DTSTAMP:20261014T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... on supplementing Regulation (EU) 2023/1542 of the European Parliament and of the Council as regards derogations for t
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5031 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2931
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2931
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2962-maaraaika-2026-11-15@saadosseuranta
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… supplementing Directive 2005/36/EC of the European Parliament and of the Council by establishing a common training fra
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6196 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2962
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2962
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2970-soveltaminen-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1221\, annettu 4 päivänä kesäkuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 575/2013 muuttamisesta väliaik
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)3647 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2970
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2970
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2983-maaraaika-2027-01-21@saadosseuranta
+DTSTAMP:20270121T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/… supplementing Directive (EU) 2023/1791 of the European Parliament and of the Council and amending Commission Delegated 
+DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)3472 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2983
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2983
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2993-maaraaika-2027-01-08@saadosseuranta
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2015/35 as regards the simplified calculation of the risk margin
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7016 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2993
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2993
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2994-maaraaika-2027-01-09@saadosseuranta
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive 2009/138/EC of the European Parliament and of the Council with regard to regulatory technical
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7021 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2994
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2994
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2995-voimaan-2026-11-03@saadosseuranta
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1536\, annettu 6 päivänä heinäkuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 909/2014 täydentämisestä toim
+DESCRIPTION:Voimaan · C(2026)4640 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2995-soveltaminen-2026-12-07@saadosseuranta
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1536\, annettu 6 päivänä heinäkuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 909/2014 täydentämisestä toim
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)4640 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2995-soveltaminen-2027-07-01@saadosseuranta
+DTSTAMP:20270701T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1536\, annettu 6 päivänä heinäkuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 909/2014 täydentämisestä toim
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)4640 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2995-soveltaminen-2027-10-11@saadosseuranta
+DTSTAMP:20271011T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1536\, annettu 6 päivänä heinäkuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 909/2014 täydentämisestä toim
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)4640 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2995
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2996-maaraaika-2026-11-25@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending the Annexes to Directive 2008/68/EC of the European Parliament and of the Council to take into account scient
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6701 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2996
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2996
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3013-maaraaika-2026-12-17@saadosseuranta
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive 2013/36/EU of the European Parliament and of the Council with regard to regulatory technical 
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6463 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3013
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3013
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3021-voimaan-2026-11-10@saadosseuranta
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1563\, annettu 3 päivänä heinäkuuta 2026\, delegoidun asetuksen (EU) 2023/2772 muuttamisesta tiettyjen kestävyysraportointist
+DESCRIPTION:Voimaan · C(2026)5010 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3021
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3021
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3021-soveltaminen-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1563\, annettu 3 päivänä heinäkuuta 2026\, delegoidun asetuksen (EU) 2023/2772 muuttamisesta tiettyjen kestävyysraportointist
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)5010 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3021
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3021
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3028-maaraaika-2026-11-18@saadosseuranta
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2022/2371 of the European Parliament and of the Council as regards the granting of part
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4673 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3028
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3028
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3032-maaraaika-2026-11-10@saadosseuranta
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Council Directive 2001/112/EC as regards processing aids for yeast fermentation
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6140 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3032
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3032
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3038-maaraaika-2026-11-14@saadosseuranta
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2021/821 of the European Parliament and of the Council as regards the list of dual-use items
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6323 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3038
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3038
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3044-maaraaika-2026-10-14@saadosseuranta
+DTSTAMP:20261014T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) No 149/2013 as regards the clearin
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4861 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3044
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3044
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3049-maaraaika-2026-10-13@saadosseuranta
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulations (EU) 2017/583 as regards transparency 
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4777 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3049
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3049
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3052-soveltaminen-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1560\, annettu 3 päivänä heinäkuuta 2026\, Euroopan parlamentin ja neuvoston direktiivin 2013/34/EU täydentämisestä vahvistam
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)5011 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3052
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3052
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3054-maaraaika-2026-10-10@saadosseuranta
+DTSTAMP:20261010T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending Directive 2009/43/EC of the European Parliament and of the Council as regards the updating of the list of def
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4573 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3054
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3054
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3062-maaraaika-2026-11-17@saadosseuranta
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2022/126 supplementing Regulation (EU) 2021/2115 of the European Parliament and of
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6339 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3062
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3062
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3074-maaraaika-2026-11-18@saadosseuranta
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2022/1644 as regards certain criteria for the selection of samples
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6511 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3074
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3074
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3107-maaraaika-2026-11-07@saadosseuranta
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Annex II to Regulation (EU) No 1233/2011 of the European Parliament and of the Council on the application of
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6097 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3107
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3107
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3111-maaraaika-2026-11-10@saadosseuranta
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2023/2053 of the European Parliament and of the Council establishing a multiannual managemen
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6210 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3111
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3111
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3112-maaraaika-2026-12-08@saadosseuranta
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards technical measures for th
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7015 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3112
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3112
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3115-maaraaika-2026-11-04@saadosseuranta
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards measures to reduce incide
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6205 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3118-maaraaika-2026-10-12@saadosseuranta
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DECISION (EU) …/… amending Decision 2001/171/EC as regards crystal glass packaging
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5778 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for granting the special incentive arrangement for sustainable developmen
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6211 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3134-maaraaika-2026-11-10@saadosseuranta
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for the temporary withdrawal of preferential arrangements and the adoptio
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6214 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3143-maaraaika-2026-10-21@saadosseuranta
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2026/2108 of the European Parliament and of the Council by establishing the amount of t
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3149-maaraaika-2026-11-08@saadosseuranta
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) No 965/2012 as regards the flight and duty time limitations and rest requirements for air ta
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6142 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3155-maaraaika-2027-02-02@saadosseuranta
+DTSTAMP:20270202T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... correcting certain language versions of Delegated Regulation (EU) 2021/2178 supplementing Regulation (EU) 2020/852 of
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6909 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
 END:VEVENT
 END:VCALENDAR
