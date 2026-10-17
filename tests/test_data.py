@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DATETIME = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$")
-LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen"}
+LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen", "delegoitu"}
 SCOPES = {"fi", "eu"}
 EVENT_KINDS = {"lausunto", "he", "eduskunta", "hyvaksytty", "vahvistettu", "voimaan", "maaraaika", "muu", "ehdotus", "sopu",
                "parlamentti", "neuvosto", "julkaistu", "soveltaminen", "kanta"}
@@ -109,7 +109,7 @@ def test_tenders_minimum(tenders, settings):
     assert tenders["topics"] and tenders["topics"][-1] == "Muut"
 
 
-STAGES = {"tulossa", "avoin", "ratkaistu", "suorahankinta"}
+STAGES = {"tulossa", "avoin", "ratkaistu", "suorahankinta", "mao"}
 LIVE = {"tulossa": "tulossa", "avoin": "avoin", "ratkaistu": "ratkaistu", "suorahankinta": "valitusaika"}
 
 
@@ -119,13 +119,15 @@ def test_tenders_schema(tenders):
     topics = set(tenders["topics"])
     for t in tenders["items"]:
         st = t["stage"]
-        assert t["id"].startswith("hk-"), t["id"]
-        assert t["scope"] == "hankinta" and t["laji"] == "kilpailutus", t["id"]
         assert st in STAGES, (t["id"], st)
+        assert t["scope"] == "hankinta" and t["laji"] == "kilpailutus", t["id"]
         assert t["title"].strip(), t["id"]
+        assert t["topics"] and set(t["topics"]) <= topics, (t["id"], t["topics"])
+        if st == "mao":
+            continue  # Market Court rows are checked in test_market_court_rows
+        assert t["id"].startswith("hk-"), t["id"]
         assert t["status"] in TENDER_STATUS | {"tulossa", "ratkaistu", "valitusaika"}, (t["id"], t["status"])
         assert t["url"].startswith("https://www.hankintailmoitukset.fi/"), (t["id"], t["url"])
-        assert t["topics"] and set(t["topics"]) <= topics, (t["id"], t["topics"])
         assert len(t.get("summary", "")) <= 500, t["id"]
         if t.get("published"):
             assert DATE.match(t["published"]), t["id"]
@@ -176,11 +178,87 @@ def test_closed_tenders_are_recent(tenders, settings):
     assert not old, f"vanhoja suorahankintoja ei siivottu: {old[:5]}"
 
 
+# ---------- Council stages and delegated acts (items.json) ----------
+
+def test_council_stages(items):
+    eu = [i for i in items if i["scope"] == "eu" and i["laji"] == "eu"]
+    council = [e for i in eu for e in i["events"] if e.get("src") == "neuvosto"]
+    assert len(council) >= 50, "neuvoston vaiheita puuttuu"
+    labels = {e["label"] for e in council}
+    assert any(l.startswith("Neuvoston yleisnäkemys") for l in labels) and any(l.startswith("Neuvosto hyväksyi") for l in labels)
+    for e in council:
+        assert e["kind"] in ("neuvosto", "sopu", "parlamentti", "muu") and DATE.match(e["date"])
+    # routine "discussed in Council" marks are dropped once the act is adopted
+    for i in eu:
+        if any(e["label"].startswith("Neuvosto hyväksyi") for e in i["events"]):
+            assert not any("(viimeisin)" in e["label"] for e in i["events"]), i["id"]
+
+
+def test_delegated_acts(items, meta):
+    da = [i for i in items if i["laji"] == "delegoitu"]
+    assert len(da) >= 20 and meta["lajit"]["delegoitu"] == len(da)
+    for i in da:
+        assert i["id"].startswith("eu-da-") and i["scope"] == "eu"
+        assert i["status"] in ("vastustamisaika", "odottaa julkaisua", "julkaistu", "voimassa", "vastustettu", "peruutettu"), (i["id"], i["status"])
+        assert i["done"] == (i["status"] in ("julkaistu", "voimassa", "vastustettu", "peruutettu"))
+        assert DATE.match(i["objectionEnd"]) and i["objectionMonths"]
+        assert i["links"].get("regdel", "").startswith("https://webgate.ec.europa.eu/regdel/")
+        kinds = [e["kind"] for e in i["events"]]
+        assert "ehdotus" in kinds, i["id"]
+        if i["status"] in ("vastustamisaika", "odottaa julkaisua"):
+            assert any(e["kind"] == "maaraaika" and e["date"] == i["objectionEnd"] for e in i["events"]), i["id"]
+        if i["status"] == "vastustamisaika":
+            assert i["objectionEnd"] >= meta["today"], i["id"]
+        if i["status"] in ("julkaistu", "voimassa"):
+            assert "julkaistu" in kinds and i.get("celex"), i["id"]
+    assert sum(1 for i in da if i["status"] == "vastustamisaika") >= 5
+
+
+def test_consultations_present(meta):
+    assert meta["lajit"]["kuuleminen"] >= 10, "Have your say -kuulemiset puuttuvat (lähde palautti tyhjää?)"
+
+
+# ---------- Market Court rows (hankinnat.json, stage mao) ----------
+
+def test_market_court_rows(tenders):
+    items = tenders["items"]
+    mao = [t for t in tenders["items"] if t.get("stage") == "mao"]
+    assert len(mao) >= 30
+    assert tenders["counts"]["mao"] == sum(1 for t in mao if t["status"] == "vireillä") >= 20
+    assert tenders["counts"]["mao_ratkaistu"] == sum(1 for t in mao if t["status"] == "ratkaistu") >= 5
+    ids = [t["id"] for t in mao]
+    assert len(ids) == len(set(ids))
+    for t in mao:
+        assert t["id"].startswith(("mao-v-", "mao-r-")) and t["buyer"] and t["title"], t["id"]
+        assert t["status"] in ("vireillä", "ratkaistu", "poistunut"), t["id"]
+        assert t["kind"] in ("Valitus markkinaoikeudessa", "Markkinaoikeuden ratkaisu")
+        assert t["url"].startswith("https://www.markkinaoikeus.fi/"), t["id"]
+        dates = [e["date"] for e in t["events"]]
+        assert dates == sorted(dates), t["id"]
+        if t["status"] == "vireillä":
+            assert DATE.match(t["filed"]) and any(e["label"].startswith("Valitus vireille") for e in t["events"]), t["id"]
+            assert not t.get("ruled")
+        if t["status"] == "ratkaistu":
+            assert t["maoNumber"].startswith("MAO:") and DATE.match(t["ruled"]) and t["maoUrl"], t["id"]
+            kho = [e for e in t["events"] if e["kind"] == "maaraaika"]
+            assert len(kho) == 1 and kho[0]["confirmed"] is False and kho[0]["date"] > t["ruled"], t["id"]
+            assert t.get("outcome"), t["id"]
+        for r in t.get("related") or []:
+            assert r["id"].startswith("hk-"), (t["id"], r)
+    # reverse links from Hilma notices to the appeal
+    back = [t for t in tenders["items"] if t.get("stage") != "mao" and any(r.get("stage") == "mao" for r in t.get("related") or [])]
+    for t in back:
+        for r in t["related"]:
+            if r.get("stage") == "mao":
+                assert r["id"] in ids, (t["id"], r)
+
+
 # ---------- yrityskaupat.json (merger control) ----------
 
 YK_STATUS = {"vireillä", "jatkokäsittelyssä", "hyväksytty", "hyväksytty ehdoin", "kielletty", "peruutettu", "siirretty jäsenvaltiolle",
              "siirretty osittain", "siirretty komissiolle", "ei soveltamisalassa", "päätetty", "poistunut listalta", "rauennut",
-             "kieltoesitys markkinaoikeudelle"}
+             "kieltoesitys markkinaoikeudessa", "yrityskauppa kielletty", "esitys hylätty", "ehtoja muutettu", "ratkaistu markkinaoikeudessa"}
+YK_OPEN = {"vireillä", "jatkokäsittelyssä", "kieltoesitys markkinaoikeudessa"}
 
 
 def test_mergers_schema(mergers):
@@ -195,7 +273,7 @@ def test_mergers_schema(mergers):
         assert m["scope"] == "yrityskauppa" and m["laji"] == "yrityskauppa", m["id"]
         assert m["title"].strip() and m["ref"], m["id"]
         assert m["status"] in YK_STATUS, (m["id"], m["status"])
-        assert isinstance(m["done"], bool) and m["done"] == (m["status"] not in ("vireillä", "jatkokäsittelyssä")), m["id"]
+        assert isinstance(m["done"], bool) and m["done"] == (m["status"] not in YK_OPEN), m["id"]
         assert m["phase"] in (1, 2), m["id"]
         assert set(m["topics"]) <= topics, (m["id"], m["topics"])
         assert m["source"].startswith("https://"), m["id"]
@@ -206,8 +284,10 @@ def test_mergers_schema(mergers):
         assert dates == sorted(dates), m["id"]
         for e in m["events"]:
             assert e["kind"] in EVENT_KINDS and e["label"], (m["id"], e)
-        if m["status"] in ("vireillä", "jatkokäsittelyssä"):
+        if m["status"] in YK_OPEN:
             assert any(e["kind"] == "maaraaika" for e in m["events"]) or m["authority"] == "EU", f"{m['id']}: vireillä ilman määräaikaa"
+        if m["status"] == "kieltoesitys markkinaoikeudessa":
+            assert m.get("maoProposal") and any("kilpailulaki 29 §" in e["label"] for e in m["events"]), m["id"]
         if m["authority"] == "KKV" and m["status"] == "vireillä":
             assert m.get("notified") and m.get("phase1End") and m["phase1End"] > m["notified"], m["id"]
             assert m.get("hearingEnd"), m["id"]
@@ -268,7 +348,7 @@ def test_meta(meta, items, tenders, mergers):
     assert c["hankinnat"] == tenders["counts"]["avoinna"]
     assert c["yrityskaupat"] == mergers["counts"]["fi_open"] + mergers["counts"]["eu_open"]
     assert meta["yrityskauppaTopics"] == mergers["topics"]
-    assert len(meta["sources"]) >= 9
+    assert len(meta["sources"]) >= 12
     assert meta["topics"][-1] == "Muut" and len(meta["topics"]) >= 10
     assert meta["hankintaTopics"] == tenders["topics"]
     assert set(meta["lajit"]) == LAJIT

@@ -18,6 +18,7 @@ import datetime as dt
 import re
 
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, load_json, load_yaml, log, save_json
+from build_mao import mao_rows
 
 CACHE = CACHE_DIR / "hankinnat.json"
 OUT = OUT_DIR / "hankinnat.json"
@@ -274,10 +275,18 @@ def build_hankinnat(settings) -> dict | None:
         if rel:
             r["related"] = rel
 
+    # Market Court appeals and rulings (stage "mao"), linked to the Hilma notices they concern
+    try:
+        mao = mao_rows(settings, rows, cfg)
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: markkinaoikeuden rivit ohitettu: {e}")
+        mao = []
+    rows.extend(mao)
+
     def sort_key(r):
         st = r.get("stage", "avoin")
         key = r.get("deadline") or r.get("appealEnd") or r.get("expires") or ""
-        if st == "ratkaistu":
+        if st in ("ratkaistu", "mao"):
             key = "~" + (r.get("published") or "")  # newest decided last in ascending order; page sorts desc
         return (key, r["id"])
     rows.sort(key=sort_key)
@@ -288,7 +297,8 @@ def build_hankinnat(settings) -> dict | None:
               "eu": sum(1 for r in open_rows if r.get("eu") and not r.get("dps")),
               "tulossa": sum(1 for r in rows if r["status"] == "tulossa"),
               "ratkaistu": sum(1 for r in rows if r["status"] == "ratkaistu"),
-              "suorahankinta": sum(1 for r in rows if r["status"] == "valitusaika")}
+              "suorahankinta": sum(1 for r in rows if r["status"] == "valitusaika"),
+              "mao": sum(1 for r in mao if r["status"] == "vireillä"), "mao_ratkaistu": sum(1 for r in mao if r["status"] == "ratkaistu")}
     payload = {"items": rows, "counts": counts, "topics": list((cfg.get("toimialat") or {}).keys()) + ["Muut"],
                "awardDays": award_days, "appealDays": appeal_days}
     minimum = int(hcfg.get("min_items", 100))

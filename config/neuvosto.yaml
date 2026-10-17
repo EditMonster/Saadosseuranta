@@ -1,0 +1,36 @@
+# Neuvoston (ja trilogien) käsittelyvaiheet EU-menettelyjen aikajanalle.
+#
+# Lähde: julkaisutoimiston Cellar, menettelyn (dossier) "legal event" -tapahtumat eli entinen PreLex-
+# tietokanta. Tapahtumatyypit ovat julkaisutoimiston auktoriteettitaulun koodeja (resource/authority/event),
+# joilla on viralliset suomenkieliset nimet; tässä käytetään lyhyempiä aikajanalle sopivia nimiä.
+#
+# pida: all = kaikki tapahtumat, last = vain viimeisin (toistuvat käsittelyt työryhmässä, Coreperissa ja
+# neuvostossa näytetään vain viimeisimmän kerran, jotta aikajana ei tukkeudu).
+tapahtumat:
+  ADP_APPRGEN_byCONSIL:              {nimi: "Neuvoston yleisnäkemys", kind: neuvosto, pida: all}
+  PART_APPRGEN_byCONSIL:             {nimi: "Neuvoston osittainen yleisnäkemys", kind: neuvosto, pida: all}
+  ADP_MAND_NGT_INST_COREPER_byCONSIL: {nimi: "Neuvoston neuvotteluvaltuudet (Coreper)", kind: neuvosto, pida: last}
+  ADP_NEGMAN_SPCOM_byCONSIL:         {nimi: "Neuvoston neuvotteluvaltuudet (maatalouden erityiskomitea)", kind: neuvosto, pida: last}
+  AGR_byCONSIL:                      {nimi: "Neuvoston poliittinen yhteisymmärrys", kind: neuvosto, pida: all}
+  NGT_INST_byEP_CONSIL_COM:          {nimi: "Trilogi (EP, neuvosto, komissio)", kind: muu, pida: all}
+  ENDORSE_AGRPROV_COREPER_byCONSIL:  {nimi: "Coreper vahvisti alustavan sovun", kind: sopu, pida: last}
+  ENDORSE_AGRPROV_SPCO_byCONSIL:     {nimi: "Maatalouden erityiskomitea vahvisti alustavan sovun", kind: sopu, pida: last}
+  ENDORSE_AGRPROV_byCONSIL:          {nimi: "Neuvosto vahvisti alustavan sovun", kind: sopu, pida: last}
+  ADP_R1_POS_byCONSIL:               {nimi: "Neuvoston ensimmäisen käsittelyn kanta", kind: neuvosto, pida: last}
+  ADP_R1_byCONSIL:                   {nimi: "Neuvoston ensimmäisen käsittelyn kanta", kind: neuvosto, pida: last}
+  APR_R2_POS_CONSIL_byEP:            {nimi: "Parlamentti hyväksyi neuvoston kannan (2. käsittely)", kind: parlamentti, pida: last}
+  APR_R1_byCONSIL:                   {nimi: "Neuvosto hyväksyi – säädös annettu", kind: neuvosto, pida: last}
+  APR_R2_byCONSIL:                   {nimi: "Neuvosto hyväksyi EP:n tarkistukset – säädös annettu", kind: neuvosto, pida: last}
+  ADP_R3_byCONSIL:                   {nimi: "Neuvosto hyväksyi sovittelukomitean tekstin – säädös annettu", kind: neuvosto, pida: last}
+  ADP_FRM_byCONSIL:                  {nimi: "Säädös annettu (neuvosto)", kind: neuvosto, pida: last}
+  RJ_byCONSIL:                       {nimi: "Neuvosto hylkäsi", kind: neuvosto, pida: last}
+  ADP_NO_byCONSIL:                   {nimi: "Neuvosto ei hyväksynyt", kind: neuvosto, pida: last}
+  ADP_ACTDENO_byEP_CONSIL:           {nimi: "Säädöstä ei katsota annetuksi", kind: neuvosto, pida: last}
+  DIS_byCONSIL:                      {nimi: "Käsittely neuvostossa tai sen valmisteluelimissä (viimeisin)", kind: neuvosto, pida: last}
+  DELIB_WP_byCONSIL:                 {nimi: "Käsittely neuvoston työryhmässä (viimeisin)", kind: neuvosto, pida: last}
+  DELIB_COREPER_byCONSIL:            {nimi: "Käsittely Coreperissa (viimeisin)", kind: neuvosto, pida: last}
+  DELIB_SPCO_byCONSIL:               {nimi: "Käsittely maatalouden erityiskomiteassa (viimeisin)", kind: neuvosto, pida: last}
+  DELIB_byCONSIL:                    {nimi: "Keskustelu neuvostossa (viimeisin)", kind: neuvosto, pida: last}
+
+# Tyypit, joiden perusteella menettelyn tila on "neuvotteluissa" (neuvostolla on kanta tai valtuudet)
+neuvottelut: [ADP_APPRGEN_byCONSIL, PART_APPRGEN_byCONSIL, ADP_MAND_NGT_INST_COREPER_byCONSIL, ADP_NEGMAN_SPCOM_byCONSIL, NGT_INST_byEP_CONSIL_COM, ENDORSE_AGRPROV_COREPER_byCONSIL, ENDORSE_AGRPROV_SPCO_byCONSIL, ENDORSE_AGRPROV_byCONSIL]

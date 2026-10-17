@@ -281,8 +281,18 @@ nace:
 kkv_tila:
   Yrityskaupan hyväksyminen sellaisenaan: hyväksytty
   Yrityskaupan hyväksyminen ehdollisena: hyväksytty ehdoin
-  Yrityskaupan kieltäminen: kielletty
-  Esitys yrityskaupan kieltämisestä: kieltoesitys markkinaoikeudelle
-  Asian käsittelyn raukeaminen: rauennut
   Yrityskaupan hyväksyminen: hyväksytty
+  Yrityskaupan kieltäminen: kielletty
+  Esitys yrityskaupan kieltämisestä: kieltoesitys markkinaoikeudessa
+  Muut yrityskaupparatkaisut - Esitys markkinaoikeudelle: kieltoesitys markkinaoikeudessa
+  Muut yrityskaupparatkaisut: päätetty
+  Muut yrityskauppapäätökset - Ehtomuutoshakemus: ehtoja muutettu
+  Asian käsittelyn raukeaminen: rauennut
+# KKV:n päätöslistan otsikot, jotka eivät päätä asiaa vaan siirtävät sen seuraavaan vaiheeseen
+kkv_valivaihe:
+  "jatkoselvitykseen ryhtyminen": jatkokäsittely
+  "Esitys markkinaoikeudelle": kieltoesitys
+# Kieltoesitys: markkinaoikeuden on ratkaistava asia 3 kuukaudessa esityksen tekemisestä, muuten kauppa
+# katsotaan hyväksytyksi (kilpailulaki 29 § 2 mom.); KKV:n hyväksymispäätöksestä ei voi valittaa.
+mao_maaraaika_kk: 3
 _nace_huom: 'Komission tapaushaku käyttää NACE Rev. 2.1 -pääluokkia (2025): esim. L = rahoitus, O = hallinto- ja tukipalvelut.'

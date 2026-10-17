@@ -132,8 +132,9 @@ def main():
     for p in decisions:
         if p["date"] < cutoff:
             continue
-        known = next((k for k, v in cases.items() if v.get("url") == p["url"] and v.get("decision")), None)
-        if known:
+        # interim entries ("jatkoselvitykseen ryhtyminen", "Esitys markkinaoikeudelle") move the case on but do not close it
+        interim = "jatkoselvityks" in p["status"].lower() or "markkinaoikeu" in p["status"].lower()
+        if any(v.get("decisionUrl") == p["url"] or (p["url"] in (v.get("interim") or {}).values()) for v in cases.values()):
             continue
         try:
             d = parse_case(p["url"])
@@ -142,6 +143,21 @@ def main():
             continue
         key = d.get("diaari") or p["url"]
         prev = cases.get(key, {})
+        if interim:
+            merged = {**prev, **{k: v for k, v in d.items() if v is not None and not prev.get(k)}}
+            kind = "jatkokäsittely" if "jatkoselvityks" in p["status"].lower() else "kieltoesitys"
+            merged.setdefault("interim", {})[kind] = p["url"]
+            merged.setdefault("interimDates", {})[kind] = d.get("decided") or p["date"]
+            if kind == "jatkokäsittely" and not merged.get("phase2Start"):
+                merged["phase2Start"] = d.get("decided") or p["date"]
+            merged["pending"] = bool(prev.get("pending", True)) if key in fetched_pending else prev.get("pending", kind == "kieltoesitys")
+            merged.pop("decided", None) if merged.get("pending") else None
+            if key not in fetched_pending and kind == "kieltoesitys":
+                merged["pending"] = True  # in the Market Court: still open for our purposes
+            merged.update({"listTitle": merged.get("listTitle") or p["title"], "url": merged.get("url") or p["url"], "seen": TODAY.isoformat()})
+            cases[key] = merged
+            new_dec += 1
+            continue
         merged = {**prev, **{k: v for k, v in d.items() if v is not None}}
         merged.update({"listTitle": p["title"], "decision": p["status"], "decided": d.get("decided") or p["date"], "pending": False,
                        "decisionUrl": p["url"], "seen": TODAY.isoformat()})
@@ -151,8 +167,9 @@ def main():
         new_dec += 1
 
     # A case that was pending last run but is no longer listed and has no decision: mark as no longer pending
+    # (a case sent to the Market Court by a prohibition proposal stays open until the court rules)
     for k, v in cases.items():
-        if v.get("pending") and k not in fetched_pending:
+        if v.get("pending") and k not in fetched_pending and "kieltoesitys" not in (v.get("interim") or {}):
             v["pending"] = False
             v.setdefault("missingSince", TODAY.isoformat())
     # forget old decided/missing cases

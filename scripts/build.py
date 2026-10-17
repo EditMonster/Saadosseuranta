@@ -305,8 +305,148 @@ def celex_ref(celex: str) -> tuple[str, str]:
     return f"(EU) {m.group(1)}/{int(m.group(3))}", kind
 
 
+def council_timeline(raw: list[dict], cfg: dict) -> list[dict]:
+    """Cellar/PreLex Council events -> timeline events per config/neuvosto.yaml (repeated meetings: latest only)."""
+    types = cfg.get("tapahtumat") or {}
+    adopted = {"APR_R1_byCONSIL", "APR_R2_byCONSIL", "ADP_R3_byCONSIL", "ADP_FRM_byCONSIL"}
+    done = any(e.get("type") in adopted for e in raw or [])
+    out, last = [], {}
+    for e in raw or []:
+        spec = types.get(e.get("type"))
+        if not spec:
+            continue
+        if done and e["type"].startswith(("DIS_", "DELIB_")):
+            continue  # routine "discussed in Council" marks add nothing once the act has been adopted
+        ev = {"date": e["date"], "label": spec["nimi"], "kind": spec.get("kind", "neuvosto"), "confirmed": True, "src": "neuvosto"}
+        if spec.get("pida") == "last":
+            last[e["type"]] = ev
+        else:
+            out.append(ev)
+    return out + list(last.values())
+
+
+def add_months(d: str, months: float) -> str:
+    """Period expressed in months ends on the same day number of the last month (Reg. 1182/71 art. 3)."""
+    base = dt.date.fromisoformat(d)
+    whole = int(months)
+    y, m = divmod(base.month - 1 + whole, 12)
+    y, m = base.year + y, m + 1
+    last = (dt.date(y + (m == 12), (m % 12) + 1, 1) - dt.timedelta(days=1)).day
+    out = dt.date(y, m, min(base.day, last))
+    if months != whole:  # half months are not used in practice; keep arithmetic safe
+        out += dt.timedelta(days=round((months - whole) * 30))
+    return out.isoformat()
+
+
+def build_delegated(topics_cfg, settings) -> list[dict]:
+    """Commission delegated acts in the Parliament/Council objection period (and recently concluded)."""
+    acts = (load_json(CACHE_DIR / "regdel.json", {}) or {}).get("acts") or {}
+    cfg = load_yaml(CONFIG_DIR / "delegoidut.yaml") or {}
+    inst = cfg.get("toimielin") or {}
+    types = cfg.get("tyyppi") or {}
+    states = cfg.get("tila") or {}
+    dg_topic = cfg.get("paaosasto") or {}
+    items = []
+    for aid, a in acts.items():
+        evs = a.get("events") or []
+        adoption = a.get("adoption")
+        if not adoption:
+            continue
+        notified = next((e["date"] for e in evs if e["type"] == "DA_NOTIFICATION" and e["date"]), None)
+        start = max(adoption, notified) if notified else adoption
+        cellar = a.get("cellar") or {}
+        title_fi = (cellar.get("title_fi") or "").replace("\xa0", " ").strip()
+        title_en = (a.get("completeTitle") or a.get("shortTitle") or "").strip()
+        title = title_fi or title_en
+        text = " ".join([a.get("shortTitle") or "", title_en, title_fi, a.get("summary") or "", (a.get("basicAct") or {}).get("title") or ""])
+        topics = classify(text, topics_cfg)
+        if topics == ["Muut"] and dg_topic.get(a.get("policyArea")):
+            topics = [dg_topic[a["policyArea"]]]
+        # objection periods: the longest per institution, plus any extension that institution took
+        months: dict[str, float] = {}
+        for d in a.get("deadlines") or []:
+            if d.get("institution") in ("PARLIAMENT", "COUNCIL") and d.get("type") == "ORIGINAL" and d.get("months"):
+                months[d["institution"]] = max(months.get(d["institution"], 0), float(d["months"]))
+        if not months:
+            raw = str((a.get("basicAct") or {}).get("deadlineRaw") or "2")
+            m0 = re.match(r"(\d+(?:\.\d+)?)", raw)
+            months = {"PARLIAMENT": float(m0.group(1)) if m0 else 2.0, "COUNCIL": float(m0.group(1)) if m0 else 2.0}
+        extended = {}
+        for e in evs:
+            if e["type"] == "DA_EXTENSION" and e.get("institution") in months:
+                extended[e["institution"]] = float(e.get("months") or months[e["institution"]])
+        ends = {k: add_months(start, v + extended.get(k, 0)) for k, v in months.items()}
+        deadline = max(ends.values())
+        ev = []
+        fb = [e for e in evs if e["type"] == "DA_PUBLIC_FEEDBACK" and e["date"]]
+        fb_end = next((e["date"] for e in evs if e["type"] == "DA_PUBLIC_FEEDBACK_END" and e["date"]), None)
+        if fb and fb_end and fb_end > fb[0]["date"]:
+            ev.append({"date": fb[0]["date"], "end": fb_end, "label": "Palauteaika luonnoksesta (Have your say)", "kind": "lausunto", "confirmed": True})
+        ev.append({"date": adoption, "label": f"Komissio antoi delegoidun säädöksen {a.get('cCode') or ''}".strip(), "kind": "ehdotus", "confirmed": True})
+        if notified and notified != adoption:
+            ev.append({"date": notified, "label": "Toimitettu parlamentille ja neuvostolle", "kind": "muu", "confirmed": True})
+        early = set()
+        objected = withdrawn = published = None
+        for e in evs:
+            who = inst.get(e.get("institution"), e.get("institution") or "")
+            kind = "parlamentti" if e.get("institution") == "PARLIAMENT" else ("neuvosto" if e.get("institution") == "COUNCIL" else "muu")
+            if e["type"] == "DA_EXTENSION":
+                ev.append({"date": e["date"], "label": f"{who} pidensi vastustamisaikaa {int(float(e.get('months') or 0)) or ''} kk".replace("  ", " "), "kind": kind, "confirmed": True})
+            elif e["type"] == "DA_EARLY_NON_OBJECTION":
+                early.add(e.get("institution")); ev.append({"date": e["date"], "label": f"{who}: ei vastusta", "kind": kind, "confirmed": True})
+            elif e["type"] == "DA_OBJECTION":
+                objected = e["date"]; ev.append({"date": e["date"], "label": f"{who} vastusti – säädös ei tule voimaan", "kind": kind, "confirmed": True})
+            elif e["type"] == "DA_OBJECTION_NOT_APPROVED":
+                ev.append({"date": e["date"], "label": f"{who}: vastustusesitys hylättiin", "kind": kind, "confirmed": True})
+            elif e["type"] == "DA_EARLY_NON_OBJECTION_NOT_APPROVED":
+                ev.append({"date": e["date"], "label": f"{who}: ennenaikaista hyväksyntää ei annettu", "kind": kind, "confirmed": True})
+            elif e["type"] in ("DA_WITHDRAWAL", "DA_CANCELLATION"):
+                withdrawn = e["date"]; ev.append({"date": e["date"], "label": "Komissio peruutti säädöksen", "kind": "muu", "confirmed": True})
+            elif e["type"] in ("DA_PUBLICATION", "DA_URGENT_PUB"):
+                published = e["date"]; ev.append({"date": e["date"], "label": "Julkaistu EUVL:ssä", "kind": "julkaistu", "confirmed": True})
+            elif e["type"] == "DA_CORRIGENDUM":
+                ev.append({"date": e["date"], "label": "Oikaisu julkaistu", "kind": "muu", "confirmed": True})
+        if cellar.get("oj") and not published:
+            published = cellar["oj"]; ev.append({"date": published, "label": "Julkaistu EUVL:ssä", "kind": "julkaistu", "confirmed": True})
+        for d in cellar.get("eif") or []:
+            ev.append({"date": d, "label": "Voimaan" if d == (cellar.get("eif") or [d])[0] else "Soveltaminen (vaihe)", "kind": "voimaan" if d == (cellar.get("eif") or [d])[0] else "soveltaminen", "confirmed": True})
+        st = a.get("delegatedActStatus")
+        status = states.get(st, st.lower() if st else "")
+        if status == "vastustamisaika" and (early >= {"PARLIAMENT", "COUNCIL"} or deadline < TODAY.isoformat()):
+            status = "odottaa julkaisua"
+        if status in ("vastustamisaika", "odottaa julkaisua") and not objected and not withdrawn:
+            ev.append({"date": deadline, "label": "Vastustamisaika päättyy" + (" (pidennetty)" if extended else "") + " – EP ja neuvosto", "kind": "maaraaika", "confirmed": True})
+        elif status == "julkaistu" and not objected:
+            ev.append({"date": deadline, "label": "Vastustamisaika päättyi", "kind": "maaraaika", "confirmed": True})
+        if status == "julkaistu" and cellar.get("inForce") == "1" and cellar.get("eif") and cellar["eif"][0] <= TODAY.isoformat():
+            status = "voimassa"
+        ev = sorted({(e["date"], e["label"]): e for e in ev if e.get("date")}.values(), key=lambda e: (e["date"], e["label"]))
+        done = status in ("julkaistu", "voimassa", "vastustettu", "peruutettu")
+        ba = a.get("basicAct") or {}
+        ba_celex = ba.get("celex")
+        links = {"regdel": f"https://webgate.ec.europa.eu/regdel/#/delegatedActs/{aid}"}
+        if a.get("celexNumber"):
+            links["eurlex"] = f"https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:{a['celexNumber']}"
+        if ba_celex:
+            links["perussaados"] = f"https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:{ba_celex}"
+        kind = types.get(a.get("delegatedActType"), "Delegoitu säädös")
+        ref = a.get("cCode") or a.get("celexNumber") or f"regdel {aid}"
+        summary = (a.get("summary") or "").strip()
+        if not title_fi and title_en:
+            summary = (summary + " " if summary else "") + "(Suomenkielinen nimi tulee EUVL-julkaisun myötä.)"
+        items.append({"id": f"eu-da-{aid}", "scope": "eu", "laji": "delegoitu", "kind": kind, "title": short_title(title)[:160] if title_fi else title[:160],
+                      "fullTitle": title, "ref": ref, "topics": topics, "status": status, "done": done,
+                      "summary": summary[:700], "source": links["regdel"], "links": links,
+                      "ministry": "Euroopan komissio" + (f", {a.get('policyAreaName')}" if a.get("policyAreaName") else "") + (f" · perussäädös {ba.get('code')}" if ba.get("code") else ""),
+                      "objectionEnd": deadline, "objectionMonths": {inst.get(k, k): v + extended.get(k, 0) for k, v in months.items()},
+                      "events": ev, "celex": a.get("celexNumber"), "updated": None})
+    return items
+
+
 def build_eu(topics_cfg, settings, watch) -> list[dict]:
     eu = load_json(CACHE_DIR / "eu.json", {"items": {}})["items"]
+    council_cfg = load_yaml(CONFIG_DIR / "neuvosto.yaml") or {}
+    negotiating = set(council_cfg.get("neuvottelut") or [])
     watched = {re.sub(r"\(.*\)", "", w).strip().replace("/", "-") for w in (watch.get("procedures") or [])}
     watched = {f"{a}-{b}" for a, b in (w.split("-") for w in watched)}
     items = []
@@ -322,6 +462,8 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
         if c.get("proposalDate"):
             ev.append({"date": c["proposalDate"][:10], "label": f"Komission ehdotus{(' ' + c['proposal']) if c.get('proposal') else ''}", "kind": "ehdotus", "confirmed": True})
         ev += rec.get("events", [])
+        ev += council_timeline(rec.get("council"), council_cfg)
+        in_negotiations = any(e.get("type") in negotiating for e in rec.get("council") or [])
         act = None
         if acts:
             act = sorted(acts.values(), key=lambda a: a["celex"])[0]
@@ -348,7 +490,7 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
             source = f"https://eur-lex.europa.eu/eli/{ {'R':'reg','L':'dir','D':'dec'}[m.group(2)] }/{m.group(1)}/{int(m.group(3))}/oj" if m else None
         else:
             ref, kind = rec.get("ref", pid), "Ehdotus"
-            status = "neuvotteluissa" if any(e["kind"] in ("sopu", "parlamentti") and e["label"].startswith(("Parlamentin", "Alustava")) for e in ev) else "komission ehdotus"
+            status = "neuvotteluissa" if in_negotiations or any(e["kind"] in ("sopu", "parlamentti") and e["label"].startswith(("Parlamentin", "Alustava")) for e in ev) else "komission ehdotus"
             done = False
             source = f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={rec.get('ref', pid)}"
         if done:
@@ -493,7 +635,8 @@ def main():
     eu = build_eu(topics_cfg, settings, watch)
     kirjelmat = attach_ue(eu, topics_cfg)
     kuulemiset = build_hys(topics_cfg, settings)
-    items = fi + asetukset + eu + kirjelmat + kuulemiset
+    delegoidut = build_delegated(topics_cfg, settings)
+    items = fi + asetukset + eu + kirjelmat + kuulemiset + delegoidut
     # drop lapsed proposals older than 90 days and completed national items beyond max age
     keep = []
     for it in items:
@@ -530,12 +673,16 @@ def main():
                        for k, v in load_json(CACHE_DIR / "health.json", {}).items() if not k.startswith("_")},
             "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
-                      "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep)},
+                      "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep),
+                      "delegoitu": sum(i.get("laji") == "delegoitu" for i in keep)},
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
                         "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)",
                         "Hilma – julkiset hankinnat (hankintailmoitukset.fi)", "KKV – yrityskauppavalvonta (kkv.fi)",
-                        "Euroopan komissio, DG COMP – yrityskauppatapaukset (competition-cases.ec.europa.eu)"]}
+                        "Euroopan komissio, DG COMP – yrityskauppatapaukset (competition-cases.ec.europa.eu)",
+                        "EU:n virallinen lehti – yrityskeskittymien ennakkoilmoitukset (publications.europa.eu)",
+                        "Komission delegoitujen säädösten rekisteri (webgate.ec.europa.eu/regdel)",
+                        "Markkinaoikeus – vireillä olevat hankinta-asiat ja ratkaisut (markkinaoikeus.fi)"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
     minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})

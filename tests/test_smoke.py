@@ -257,6 +257,24 @@ def test_tender_lifecycle_stages(page, base_url):
     assert "147 §" in facts and "14 päivää" in facts
     assert "Valitusaika päättyy" in page.text_content("#dr-list")
     page.keyboard.press("Escape")
+    # markkinaoikeus: pending appeals by default, rulings behind the sub-toggle, drawer with the KHO note
+    page.click("#hk-stages [data-stage='mao']")
+    assert "valitusta markkinaoikeudessa" in page.text_content("#count") and page.locator("#hk-mao-tools").is_visible()
+    first = page.locator("#hk-list .hk-row").first
+    assert "vireillä" in first.locator(".cd .big").text_content()
+    first.click()
+    facts = page.text_content("#dr-facts")
+    assert "Vireille markkinaoikeudessa" in facts and "148 §" in facts
+    assert "Vireillä olevat hankinta-asiat" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
+    page.click("#hk-mao-tools [data-mao='ratkaistu']")
+    assert "markkinaoikeuden ratkaisua" in page.text_content("#count")
+    page.click("#hk-list .hk-row >> nth=0")
+    facts = page.text_content("#dr-facts")
+    assert "Lopputulos" in facts and "165 §" in facts and "MAO:" in facts
+    assert "KHO:een" in page.text_content("#dr-list") and "arvio" in page.text_content("#dr-list")
+    page.keyboard.press("Escape")
+    page.click("#hk-mao-tools [data-mao='vireilla']")
     # tab badge keeps counting open tenders regardless of the stage being viewed
     assert int(page.text_content("#n-hk")) == open_n
     # a procedure with several notices links them both ways
@@ -267,6 +285,30 @@ def test_tender_lifecycle_stages(page, base_url):
         assert page.locator("#dr-facts [data-open]").count() >= 1
         page.click("#dr-facts [data-open] >> nth=0")
         assert page.evaluate("document.getElementById('drawer').dataset.id") != rid
+
+
+def test_eu_council_and_delegated(page, base_url):
+    goto(page, base_url, "#eu")
+    # delegated acts are a laji chip of their own and render with the objection-window span
+    assert page.locator("#lajit .chip[data-laji='delegoitu']").count() == 1
+    da = page.locator("#tl-eu .row[data-id^='eu-da-']")
+    assert da.count() >= 10
+    da.first.click(); page.wait_for_selector("#drawer:not([hidden])")
+    kicker = page.text_content("#dr-kicker"); steps = page.text_content("#dr-list")
+    assert "Delegoitu" in kicker and "Komissio antoi delegoidun säädöksen" in steps and "Vastustamisaika" in steps
+    assert "Delegoitujen säädösten rekisteri" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
+    # turning the chip off removes them
+    page.click("#lajit .chip[data-laji='delegoitu']")
+    assert page.locator("#tl-eu .row[data-id^='eu-da-']").count() == 0
+    page.click("#lajit .chip[data-laji='delegoitu']")
+    # Council stages appear on ordinary procedures (general approach / adoption by Council)
+    it = page.evaluate("(()=>{const i=DATA.find(i=>i.laji==='eu'&&i.events.some(e=>e.label.startsWith('Neuvoston yleisnäkemys'))&&i.events.some(e=>e.label.startsWith('Neuvosto hyväksyi'))); return {id:i.id,title:i.title};})()")
+    page.fill("#q", it["title"][:30])
+    page.click(f"#tl-eu .row[data-id='{it['id']}']"); page.wait_for_selector("#drawer:not([hidden])")
+    steps = page.text_content("#dr-list")
+    assert "Neuvoston yleisnäkemys" in steps and "Neuvosto hyväksyi" in steps
+    page.keyboard.press("Escape"); page.fill("#q", "")
 
 
 def test_mergers_tab(page, base_url):

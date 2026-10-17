@@ -1,0 +1,45 @@
+# Delegoidut säädökset hyväksymisen jälkeen (komission delegoitujen säädösten rekisteri).
+#
+# Vastustamisaika: parlamentti ja neuvosto voivat vastustaa delegoitua säädöstä perussäädöksessä
+# säädetyssä ajassa (SEUT 290 art.; tavallisesti 2 kk + 2 kk pidennys, finanssialan teknisissä
+# standardeissa 1 kk / 3 kk). Aika lasketaan säädöksen toimittamisesta toimielimille; rekisteri kirjaa
+# hyväksymispäivän ja erillisen tiedoksiantopäivän vain, jos se poikkeaa. Jos kumpikaan toimielin ei
+# vastusta määräajassa (tai molemmat ilmoittavat etukäteen, etteivät vastusta), säädös julkaistaan EUVL:ssä.
+toimielin:
+  PARLIAMENT: Euroopan parlamentti
+  COUNCIL: Neuvosto
+  COMMISSION: Komissio
+tyyppi:
+  REGULATION: Delegoitu asetus
+  DIRECTIVE: Delegoitu direktiivi
+  DECISION: Delegoitu päätös
+tila:
+  ADOPTED: vastustamisaika
+  NOTIFIED: vastustamisaika
+  SCRUTINY_FINISHED: odottaa julkaisua
+  SCRUTINY_FINISHED_URGENCY_PROCEDURE: odottaa julkaisua
+  PUBLISHED: julkaistu
+  PUBLISHED_URGENCY_PROCEDURE: julkaistu
+  OBJECTED: vastustettu
+  WITHDRAWN: peruutettu
+  CANCELLED: peruutettu
+# Komission pääosasto -> aihealue, kun avainsanat eivät osu (aihealueiden nimet = config/topics.yaml)
+paaosasto:
+  FISMA: Yhtiö ja rahoitus
+  TAXUD: Verotus
+  JUST: Rikos ja prosessi
+  EMPL: Työoikeus
+  SANTE: Sote ja koulutus
+  AGRI: Kuluttaja ja tuotteet
+  MARE: Kestävyys ja ympäristö
+  ENV: Kestävyys ja ympäristö
+  CLIMA: Kestävyys ja ympäristö
+  ENER: Kestävyys ja ympäristö
+  MOVE: Kuluttaja ja tuotteet
+  GROW: Kuluttaja ja tuotteet
+  TRADE: Kansainväliset sopimukset
+  CNECT: Tietosuoja ja digi
+  HOME: Maahanmuutto
+  DEFIS: Turvallisuus ja puolustus
+  ESTAT: Hallinto ja hankinnat
+  DGT: Hallinto ja hankinnat

@@ -20,7 +20,26 @@ import re
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, load_json, load_yaml, log, save_json
 
 OUT = OUT_DIR / "yrityskaupat.json"
-OPEN_STATES = {"vireillä", "jatkokäsittelyssä"}
+OPEN_STATES = {"vireillä", "jatkokäsittelyssä", "kieltoesitys markkinaoikeudessa"}
+STOP = {"oy", "ab", "oyj", "ky", "ltd", "group", "holding", "yhtiöt", "suomi", "finland", "osakeyhtiö"}
+
+
+def company_tokens(s: str) -> set[str]:
+    return {w for w in re.sub(r"[^a-zåäö0-9 ]+", " ", (s or "").lower()).split() if len(w) >= 4 and w not in STOP}
+
+
+def mao_merger_ruling(title: str, mao_decisions: dict) -> dict | None:
+    """The Market Court's ruling on a KKV prohibition proposal, matched by the parties' names."""
+    want = company_tokens(title)
+    best = None
+    for d in mao_decisions.values():
+        if not d.get("merger"):
+            continue
+        have = company_tokens((d.get("parties") or "") + " " + (d.get("keywords") or "") + " " + (d.get("background") or "")[:300])
+        hit = len(want & have)
+        if hit and (best is None or hit > best[0]):
+            best = (hit, d)
+    return best[1] if best else None
 
 
 def slug(s: str) -> str:
@@ -70,6 +89,8 @@ def build_yrityskaupat(settings) -> dict | None:
     cutoff = (TODAY - dt.timedelta(days=keep_days)).isoformat()
     kkv = load_json(CACHE_DIR / "kkv.json", {}).get("cases") or {}
     eu = load_json(CACHE_DIR / "eu_mergers.json", {}).get("cases") or {}
+    mao_dec = (load_json(CACHE_DIR / "mao.json", {}) or {}).get("decisions") or {}
+    mao_months = int(cfg.get("mao_maaraaika_kk", 3))
     prev = load_json(OUT, {"items": []})
     if not kkv and not eu:
         log("yrityskaupat: ei välimuistia, edellinen tiedosto säilytetään")
@@ -84,7 +105,16 @@ def build_yrityskaupat(settings) -> dict | None:
         title = (c.get("parties") or c.get("listTitle") or diaari).strip()
         decided = c.get("decided") if not c.get("pending") else None
         decision = c.get("decision")
-        if c.get("pending"):
+        interim = c.get("interim") or {}
+        interim_dates = c.get("interimDates") or {}
+        proposal = interim_dates.get("kieltoesitys")
+        ruling = mao_merger_ruling(title, mao_dec) if proposal else None
+        if ruling and ruling.get("date") and ruling["date"] >= proposal:
+            status = ruling.get("outcome") or "ratkaistu markkinaoikeudessa"
+            decided, decision = ruling["date"], f"Markkinaoikeus: {ruling.get('outcome') or 'ratkaisu'} ({ruling.get('number')})"
+        elif proposal:
+            status = "kieltoesitys markkinaoikeudessa"
+        elif c.get("pending"):
             status = "jatkokäsittelyssä" if c.get("phase2Start") else "vireillä"
         elif decision:
             status = kkv_state.get(decision, "päätetty")
@@ -101,9 +131,19 @@ def build_yrityskaupat(settings) -> dict | None:
             ev.append({"date": c["phase1End"], "label": "1. vaiheen määräaika (23 työpäivää)", "kind": "maaraaika"})
         if c.get("phase2Start"):
             ev.append({"date": c["phase2Start"], "label": "Siirretty jatkokäsittelyyn", "kind": "muu"})
-        if c.get("phase2End") and not decided:
+        if c.get("phase2End") and not decided and not proposal:
             ev.append({"date": c["phase2End"], "label": "Jatkokäsittelyn määräaika (69 työpäivää)", "kind": "maaraaika"})
-        if decided:
+        if proposal:
+            ev.append({"date": proposal, "label": "KKV:n kieltoesitys markkinaoikeudelle", "kind": "vahvistettu"})
+            pd_ = dt.date.fromisoformat(proposal)
+            y, m0 = divmod(pd_.month - 1 + mao_months, 12)
+            mao_dl = dt.date(pd_.year + y, m0 + 1, min(pd_.day, 28)).isoformat()
+            if not (ruling and ruling.get("date")):
+                ev.append({"date": mao_dl, "label": f"Markkinaoikeuden ratkaisun määräaika ({mao_months} kk esityksestä, kilpailulaki 29 §)", "kind": "maaraaika"})
+            if ruling and ruling.get("date"):
+                ev.append({"date": ruling["date"], "label": f"Markkinaoikeuden ratkaisu {ruling.get('number') or ''} – {ruling.get('outcome') or 'ratkaistu'}".strip(),
+                           "kind": "muu" if "kiel" in (ruling.get("outcome") or "") else "hyvaksytty"})
+        elif decided:
             ev.append({"date": decided, "label": decision or "Päätös", "kind": "hyvaksytty" if status.startswith("hyväksytty") else "muu"})
         ev.sort(key=lambda e: (e["date"], e.get("end") or ""))
         rows.append({
@@ -113,8 +153,10 @@ def build_yrityskaupat(settings) -> dict | None:
             "notified": c.get("notified"), "hearingEnd": c.get("hearingEnd"), "phase1End": c.get("phase1End"),
             "phase2Start": c.get("phase2Start"), "phase2End": c.get("phase2End"), "decided": decided, "decision": decision,
             "topics": ["Kansallinen (KKV)"], "summary": c.get("summary") or "", "fiParty": True,
-            "ministry": "Kilpailu- ja kuluttajavirasto · " + ("kilpailulain 26 § – jatkokäsittely" if c.get("phase2Start") else "kilpailulain 26 § – 1. vaihe"),
-            "source": c.get("url"), "links": {k: v for k, v in {"kkv": c.get("url"), "kkvpaatos": c.get("decisionUrl") if c.get("decisionUrl") != c.get("url") else None}.items() if v},
+            "ministry": "Kilpailu- ja kuluttajavirasto · " + ("kilpailulain 25 § – kieltoesitys markkinaoikeudessa" if proposal else ("kilpailulain 26 § – jatkokäsittely" if c.get("phase2Start") else "kilpailulain 26 § – 1. vaihe")),
+            "source": c.get("url"), "links": {k: v for k, v in {"kkv": c.get("url"), "kkvpaatos": c.get("decisionUrl") if c.get("decisionUrl") != c.get("url") else None,
+                                                                   "kkvesitys": interim.get("kieltoesitys"), "kkvjatko": interim.get("jatkokäsittely"), "mao": (ruling or {}).get("url")}.items() if v},
+            "maoProposal": proposal, "maoRuling": (ruling or {}).get("number"),
             "events": ev, "updated": c.get("seen"),
         })
 
@@ -193,6 +235,7 @@ def build_yrityskaupat(settings) -> dict | None:
               "fi_open": sum(1 for r in rows if r["authority"] == "KKV" and r["status"] in OPEN_STATES),
               "eu_open": sum(1 for r in rows if r["authority"] == "EU" and r["status"] in OPEN_STATES),
               "phase2": sum(1 for r in rows if r["status"] == "jatkokäsittelyssä"),
+              "mao": sum(1 for r in rows if r["status"] == "kieltoesitys markkinaoikeudessa"),
               "eu_fi": sum(1 for r in rows if r["authority"] == "EU" and r["fiParty"]),
               "eu_fi_open": sum(1 for r in rows if r["authority"] == "EU" and r["fiParty"] and r["status"] in OPEN_STATES)}
     payload = {"items": rows, "counts": counts, "topics": ["Kansallinen (KKV)"] + list(nace.values()) + ["Muut"]}

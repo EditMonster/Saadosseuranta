@@ -20,6 +20,25 @@ toimialat:
   Turvallisuus ja puolustus: ["35", "797"]
   Koulutus, tutkimus ja kulttuuri: ["73", "80", "92"]
 
+# Markkinaoikeuden hankinta-asioilla ei ole CPV-koodia: toimiala päätellään hankintapäätöksen kuvauksesta
+# näillä avainsanoilla (pieni kirjain, osuma riittää; enintään kolme toimialaa, muuten "Muut").
+mao_toimialat:
+  Rakentaminen ja infra: ["urakka", "rakennus", "rakentami", "saneeraus", "peruskorjaus", "silta", "katu", "väylä", "tie ", "infra", "asfaltt", "maanrakennus", "kvr"]
+  Suunnittelu ja tekninen konsultointi: ["suunnittelu", "rakennuttaminen", "valvonta", "konsultointi", "arkkitehti"]
+  ICT ja ohjelmistot: ["tietojärjestelm", "ohjelmisto", "it-", "ict", "tietohallin", "pilvipalvelu", "järjestelmä", "sovellus", "tietoliikenne", "lisenssi", "digit"]
+  Sosiaali- ja terveyspalvelut: ["sosiaali", "terveys", "hoiva", "asumispalvelu", "päihde", "vammais", "kotihoito", "lääkäri", "hoitaja", "kuntoutus", "lastensuojelu", "hyvinvointialue"]
+  Lääkkeet ja hoitotarvikkeet: ["lääk", "hoitotarvik", "laboratorio", "apteekki", "rokot"]
+  Koneet, laitteet ja tarvikkeet: ["laite", "kone", "kalusto", "tarvik", "kamera", "varust", "mittari", "kaluste"]
+  Ajoneuvot ja kuljetus: ["kuljetus", "ajoneuvo", "auto", "bussi", "linja-auto", "logistiik", "muutto", "lentok", "laiva"]
+  Kiinteistö- ja huoltopalvelut: ["siivous", "kiinteistönhoito", "huolto", "vartiointi", "ruokapalvelu", "ateria", "pesula", "jätehuolto", "kunnossapito"]
+  Energia ja polttoaineet: ["sähkö", "energia", "lämpö", "polttoaine", "kaukolämpö", "aurinko"]
+  Ympäristö, viheralueet ja jätehuolto: ["ympäristö", "viher", "puisto", "jäte", "vesihuolto", "jätevesi"]
+  Elintarvikkeet ja ruokapalvelut: ["elintarvik", "ruoka", "ateria", "catering"]
+  Turvallisuus ja puolustus: ["turvallisuus", "puolustus", "vartio", "valvontajärjestelm", "pelastus"]
+  Koulutus, tutkimus ja kulttuuri: ["koulutus", "opetus", "tutkimus", "kulttuuri", "kirjasto", "museo", "liikunta"]
+  Konsultointi ja liike-elämän palvelut: ["asiantuntijapalvelu", "konsultti", "rekrytointi", "viestintä", "markkinointi", "henkilöstövuokraus", "tulkk", "käännös"]
+  Lakipalvelut: ["lakipalvelu", "oikeudelli", "asianajo", "perintä"]
+
 # Ilmoitustyypit (Hilman type-kenttä) suomeksi. eForms-numerot = TED eF-lomakkeet,
 # E3 = kansallinen eForms-ilmoitus, 9xxx = vanhan Hilman kansalliset lomakkeet, 200/2100 = vanhat TED F02/F21.
 tyypit:

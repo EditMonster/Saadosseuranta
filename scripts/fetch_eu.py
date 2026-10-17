@@ -6,7 +6,10 @@ Sources
   provisional agreements, signature, OJ publication)
 * Publications Office Cellar SPARQL   https://publications.europa.eu/webapi/rdf/sparql
   (dossier -> Commission proposal date, adopted act CELEX, entry into force,
-  staged application dates, transposition deadlines, in-force flag)
+  staged application dates, transposition deadlines, in-force flag; and the dossier's
+  legal events from the former PreLex database – this is where the Council's stages live:
+  general approach, Coreper negotiating mandate, endorsement of the provisional agreement,
+  adoption of the act – typed with the Publications Office's event authority codes)
 """
 from __future__ import annotations
 
@@ -152,6 +155,47 @@ SELECT ?pcelex ?pdate ?adopted ?acelex WHERE {{
     return out
 
 
+COUNCIL_TYPES = ("CONSIL", "AGRPROV", "NGT_INST")   # event type codes worth keeping (Council + trilogue milestones)
+
+
+def council_events(pids: list[str]) -> dict[str, list[dict]]:
+    """Dossier legal events (PreLex) for many procedures in a few batched queries: {pid: [{date, type}]}."""
+    out: dict[str, list[dict]] = {}
+    idents = {}
+    for pid in pids:
+        year, num = pid.split("-", 1)
+        m = re.match(r"(\d+)([A-Za-z]*)$", num)
+        if m:
+            idents[f"procedure:{year}_{int(m.group(1))}{m.group(2).upper()}"] = pid
+    keys = list(idents)
+    for i in range(0, len(keys), 100):
+        chunk = keys[i:i + 100]
+        vals = ", ".join(f'"{k}"' for k in chunk)
+        q = f"""
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+SELECT ?id ?date ?type WHERE {{
+  ?d cdm:dossier_identifier ?id . FILTER(STR(?id) IN ({vals}))
+  ?e cdm:event_legal_part_of_dossier ?d . ?e cdm:event_legal_date ?date . ?e cdm:event_legal_type ?type .
+  FILTER({" || ".join(f'CONTAINS(STR(?type), "{t}")' for t in COUNCIL_TYPES)})
+}}"""
+        try:
+            rows = _sparql(q)
+        except Exception as e:  # noqa: BLE001
+            log(f"warn: neuvoston vaiheet (erä {i // 100 + 1}): {e}")
+            continue
+        for b in rows:
+            pid = idents.get(b["id"]["value"])
+            if not pid:
+                continue
+            typ = str(b["type"]["value"]).split("/")[-1]
+            date = b["date"]["value"][:10]
+            if re.match(r"\d{4}-\d{2}-\d{2}$", date):
+                out.setdefault(pid, []).append({"date": date, "type": typ})
+    for pid, evs in out.items():
+        evs.sort(key=lambda e: (e["date"], e["type"]))
+    return out
+
+
 def is_final(rec: dict) -> bool:
     acts = rec.get("cellar", {}).get("acts", {})
     if not acts:
@@ -226,6 +270,13 @@ def main():
                 done += 1
                 if done % 25 == 0:
                     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": cache})
+    # Council stages for every procedure that is not long finished (a handful of batched Cellar queries)
+    active = [pid for pid, rec in cache.items() if not rec.get("final") or (days_ago(rec.get("fetched")) or 0) < 60]
+    council = council_events(active)
+    for pid in active:
+        if pid in council:
+            cache[pid]["council"] = council[pid]
+    log(f"eu: neuvoston vaiheet {sum(len(v) for v in council.values())} tapahtumaa {len(council)} menettelyssä")
     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": cache})
     log(f"eu: päivitetty {done}, epäonnistui {failed}, yhteensä {len(cache)} -> {OUT}")
 

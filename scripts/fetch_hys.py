@@ -65,6 +65,10 @@ def main():
                 "status": c.get("initiativeStatus"), "periods": sorted(periods, key=lambda p: p["start"]),
                 "url": f"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/{iid}_en",
             })
+    if len(items) < 10:
+        # an empty or near-empty answer is an outage, not the truth: keep the previous cache and let the
+        # source watchdog count the failure instead of silently emptying the EU-kuulemiset list
+        raise RuntimeError(f"have your say palautti vain {len(items)} aloitetta – rajapinta ei vastaa tai on muuttunut")
     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": items})
     log(f"have your say: {len(items)} aloitetta (avoin tai päättynyt ≤ {keep_closed_days} pv) -> {OUT}")
 

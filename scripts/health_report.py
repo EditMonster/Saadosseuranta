@@ -22,7 +22,8 @@ HEALTH = ROOT / "data" / "cache" / "health.json"
 LABEL = "lahdevahti"
 THRESHOLD = int(os.environ.get("HEALTH_THRESHOLD", "3"))
 NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "finlex": "Finlex", "eu": "EP + Cellar",
-         "ue": "U/E-kirjelmät (eduskunta)", "hys": "Have your say", "hankinnat": "Hilma", "kkv": "KKV yrityskaupat", "eu_mergers": "Komissio yrityskaupat"}
+         "ue": "U/E-kirjelmät (eduskunta)", "hys": "Have your say", "hankinnat": "Hilma", "kkv": "KKV yrityskaupat", "eu_mergers": "Komissio yrityskaupat",
+         "regdel": "Delegoitujen säädösten rekisteri", "mao": "Markkinaoikeus"}
 
 
 def gh(*args: str, check: bool = True) -> str:

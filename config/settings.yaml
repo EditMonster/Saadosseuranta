@@ -46,3 +46,13 @@ yrityskaupat:
   # ja kuinka vanhoja komission ilmoituksia haetaan (vaihe 2 -tapaukset haetaan aina)
   keep_decided_days: 90
   eu_notified_days: 120
+
+# Delegoidut säädökset hyväksymisen jälkeen (komission delegoitujen säädösten rekisteri)
+delegoidut:
+  keep_days: 90          # kuinka kauan julkaistut / vastustetut / peruutetut säädökset näkyvät
+  stale_days: 400        # rekisterissä on muutama vanha tapaus, jota ei koskaan päätetty – ne ohitetaan
+
+# Markkinaoikeuden hankinta-asiat (vireillä-luettelo ja ratkaisut) sekä kilpailuasioiden ratkaisut
+markkinaoikeus:
+  keep_days: 90          # kuinka kauan ratkaistut ja luettelosta poistuneet asiat näkyvät
+  kho_valitusaika_paivia: 30   # valitusaika KHO:een (valituslupa, hankintalaki 165 §) – arvio antopäivästä

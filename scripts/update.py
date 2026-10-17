@@ -1,5 +1,5 @@
 """Run the whole pipeline: fetch sources (each tolerant of the others failing),
-then build docs/data/items.json + hankinnat.json.
+then build docs/data/items.json + hankinnat.json + yrityskaupat.json.
 
 Every source's outcome is recorded in data/cache/health.json (consecutive failure streak,
 last success, last error). build.py copies the summary into meta.json so the page can show
@@ -19,6 +19,8 @@ import fetch_hankeikkuna
 import fetch_hankinnat
 import fetch_hys
 import fetch_kkv
+import fetch_mao
+import fetch_regdel
 import fetch_ue
 from common import CACHE_DIR, load_json, log, save_json
 
@@ -33,6 +35,8 @@ STEPS = [
     ("hankinnat", fetch_hankinnat.main),
     ("kkv", fetch_kkv.main),
     ("eu_mergers", fetch_eu_mergers.main),
+    ("regdel", fetch_regdel.main),
+    ("mao", fetch_mao.main),
 ]
 
 
