@@ -1,6 +1,42 @@
 {
- "fetched": "2026-10-16T15:07:58",
+ "fetched": "2026-10-17T11:17:57",
  "items": [
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19032,
+   "periods": [
+    {
+     "end": "2026-11-13",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-16"
+    }
+   ],
+   "reference": "Ares(2026)7687804",
+   "status": "ACTIVE",
+   "title_en": "Strengthening and modernising the European Training Foundation",
+   "title_fi": "Euroopan koulutussäätiön vahvistaminen ja nykyaikaistaminen – ehdotus asetukseksi",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19032_en"
+  },
+  {
+   "actType": "DIR",
+   "actTypeLabel": "Direktiivi",
+   "id": 19475,
+   "periods": [
+    {
+     "end": "2026-11-13",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-16"
+    }
+   ],
+   "reference": "Ares(2026)9529146",
+   "status": "ACTIVE",
+   "title_en": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock ",
+   "title_fi": "Nitraatit – lannasta talteenotettua typpeä koskevien sääntöjen laajentaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475_en"
+  },
   {
    "actType": "REG_IMPL",
    "actTypeLabel": "Täytäntöönpanoasetus",
@@ -25,7 +61,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-11",
+     "end": "2026-12-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -43,7 +79,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-11",
+     "end": "2026-12-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -223,7 +259,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-11",
+     "end": "2026-12-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -530,48 +566,12 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19332_en"
   },
   {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 18659,
-   "periods": [
-    {
-     "end": "2026-10-16",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-18"
-    }
-   ],
-   "reference": "Ares(2026)6560484",
-   "status": "ACTIVE",
-   "title_en": "Alignment of the renewals of seven low-risk active substances to the renewals of substances with similar properties",
-   "title_fi": "Elintarviketurvallisuus – torjunta-aineiden hyväksynnät (uusimismenettelyt)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18659_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 14861,
-   "periods": [
-    {
-     "end": "2026-10-16",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-18"
-    }
-   ],
-   "reference": "Ares(2025)7729795",
-   "status": "ACTIVE",
-   "title_en": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
-   "title_fi": "Luettelo OECD:n ulkopuolisista maista, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-11",
+     "end": "2026-12-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -766,24 +766,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 16413,
-   "periods": [
-    {
-     "end": "2026-10-16",
-     "open": true,
-     "stage": "OPC_LAUNCHED",
-     "start": "2026-07-10"
-    }
-   ],
-   "reference": "Ares(2026)430890",
-   "status": "ACTIVE",
-   "title_en": "European partnerships implemented as joint undertakings under Horizon Europe (2028-2034)",
-   "title_fi": "Horisontti Eurooppa – Yhteisyrityksinä toteutettavat eurooppalaiset kumppanuudet",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16413_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 14628,
    "periods": [
     {
@@ -836,6 +818,24 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
   },
   {
+   "actType": "PROP_DEC",
+   "actTypeLabel": "Päätösehdotus",
+   "id": 18804,
+   "periods": [
+    {
+     "end": "2026-09-11",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-07-14"
+    }
+   ],
+   "reference": "Ares(2026)7004765",
+   "status": "ACTIVE",
+   "title_en": "The Union Position for the World Radiocommunication Conference 2027 ",
+   "title_fi": "Maailman radioviestintäkonferenssi 2027 – EU:n kanta",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18804_en"
+  },
+  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19222,
@@ -852,6 +852,42 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 14861,
+   "periods": [
+    {
+     "end": "2026-10-16",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-18"
+    }
+   ],
+   "reference": "Ares(2025)7729795",
+   "status": "ACTIVE",
+   "title_en": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
+   "title_fi": "Luettelo OECD:n ulkopuolisista maista, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en"
+  },
+  {
+   "actType": "DEC_IMPL",
+   "actTypeLabel": "Täytäntöönpanopäätös",
+   "id": 18659,
+   "periods": [
+    {
+     "end": "2026-10-16",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-18"
+    }
+   ],
+   "reference": "Ares(2026)6560484",
+   "status": "ACTIVE",
+   "title_en": "Alignment of the renewals of seven low-risk active substances to the renewals of substances with similar properties",
+   "title_fi": "Elintarviketurvallisuus – torjunta-aineiden hyväksynnät (uusimismenettelyt)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18659_en"
   },
   {
    "actType": "DIR",
@@ -978,6 +1014,24 @@
    "title_en": "Revision of the EIT Regulation and of the Strategic Innovation Agenda",
    "title_fi": "Euroopan innovaatio- ja teknologiainstituutti – EIT-asetuksen ja strategisen innovaatio-ohjelman tarkistaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18892_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 16413,
+   "periods": [
+    {
+     "end": "2026-10-16",
+     "open": false,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-07-10"
+    }
+   ],
+   "reference": "Ares(2026)430890",
+   "status": "ACTIVE",
+   "title_en": "European partnerships implemented as joint undertakings under Horizon Europe (2028-2034)",
+   "title_fi": "Horisontti Eurooppa – Yhteisyrityksinä toteutettavat eurooppalaiset kumppanuudet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16413_en"
   },
   {
    "actType": "PROP_DEC",
@@ -1656,24 +1710,6 @@
    "title_en": "Farm Sustainability Data Network – compiling data on farm sustainability",
    "title_fi": "Maatilojen kestävyyden tietoverkko (FSDN) kokoaa maatilojen kestävyyttä koskevia tietoja yhteen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16854_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 18576,
-   "periods": [
-    {
-     "end": "2026-08-17",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-20"
-    }
-   ],
-   "reference": "Ares(2026)6383107",
-   "status": "ACTIVE",
-   "title_en": "Declaration without testing of reaction to fire",
-   "title_fi": "Paloteknisen käyttäytymisen ilmoittaminen testaamatta",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18576_en"
   },
   {
    "actType": "DEC_DEL",

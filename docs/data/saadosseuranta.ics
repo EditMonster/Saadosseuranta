@@ -68,15 +68,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 229/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/229
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-cd699943-lausunto-2026-10-09@saadosseuranta
-DTSTAMP:20261009T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi sähkömarkkinalain muuttamisesta
-DESCRIPTION:Lausuntokierros · TEM043:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM043:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM043:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-hanke-9cc761f9-lausunto-2026-10-14@saadosseuranta
 DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261014
@@ -345,15 +336,6 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi metsityksen määräaikaisesta tukemisesta annetun lain muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 178/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/178
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/178
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-hanke-58b24f67-lausunto-2026-10-09@saadosseuranta
-DTSTAMP:20261009T000000Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi tekijänoikeuslain muuttamisesta
-DESCRIPTION:Lausuntokierros · OKM067:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=OKM067:00/2025
-URL:https://valtioneuvosto.fi/hanke?tunnus=OKM067:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-128-2026-voimaan-2027-06-01@saadosseuranta
@@ -1238,6 +1220,15 @@ DESCRIPTION:Voimaan (614/2026) · 612/2026 · HE 15/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/15
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-33-2025-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi liikenteen palveluista annetun lain väliaikaisesta muuttamisesta
+DESCRIPTION:Voimaan (378/2025) · 378/2025 · HE 33/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/33
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/33
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-8-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1254,6 +1245,15 @@ DTEND;VALUE=DATE:20270602
 SUMMARY:[FI] Voimaan: Laiksi sakon ja rikesakon määräämisestä annetun lain muuttamisesta ja siihen liittyviksi laeiksi
 DESCRIPTION:Voimaan (695/2026) · 695/2026 · HE 5/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/5
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/5
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-17-2025-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi tuloverolain sekä eräiden muiden verolakien muuttamisesta
+DESCRIPTION:Voimaan (377/2025) · 377/2025 · HE 17/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/17
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/17
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-43-2025-voimaan-2027-01-04@saadosseuranta
@@ -2354,19 +2354,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14861-lausunto-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[EU] Lausuntoaika päättyy: Luettelo OECD:n ulkopuolisista maista\, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta
-DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-11@saadosseuranta
-DTSTAMP:20261211T000000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
+UID:eu-hys-15492-lausunto-2026-12-12@saadosseuranta
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2433,6 +2424,15 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-14861-lausunto-2026-10-16@saadosseuranta
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:[EU] Lausuntoaika päättyy: Luettelo OECD:n ulkopuolisista maista\, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta
+DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-16872-lausunto-2026-10-15@saadosseuranta
