@@ -338,7 +338,7 @@ def test_mergers_counts(mergers):
 
 def test_meta(meta, items, tenders, mergers):
     gen = dt.datetime.fromisoformat(meta["generated"])
-    assert gen.year >= 2026
+    assert gen.year >= 2026 and gen.tzinfo is not None, "generated-aikaleimassa on oltava aikavyöhyke (sivu näyttää sen paikallisaikana)"
     c = meta["counts"]
     for k in ("fi", "eu", "done", "lausunnolla", "changes7", "hankinnat", "hankinnat7"):
         assert isinstance(c[k], int) and c[k] >= 0, k

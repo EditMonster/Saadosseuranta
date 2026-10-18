@@ -1,0 +1,35 @@
+name: Päivitysvahti
+
+# Varmistaa päivittäin, että automaattinen päivitys oikeasti pyörii: lukee julkaistun sivun
+# aineiston iän, pitää update.yml:n käytössä (GitHub poistaa ajastetut työnkulut käytöstä 60 päivän
+# hiljaiselon jälkeen – enable-kutsu nollaa laskurin), käynnistää päivityksen uudelleen ja avaa
+# issuen, jos aineisto on vanhentunut. Ajetaan eri aikaan kuin päivitysajot.
+
+on:
+  schedule:
+    - cron: "20 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  issues: write
+  contents: read
+
+concurrency:
+  group: vahti
+  cancel-in-progress: false
+
+jobs:
+  vahti:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Tarkista päivityksen tila
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAX_AGE_HOURS: "30"
+        run: python scripts/vahti.py check

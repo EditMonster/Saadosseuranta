@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
   pages: write
   id-token: write
 
@@ -48,7 +49,14 @@ jobs:
             echo "Ei muutoksia."
           else
             git commit -m "Aineisto päivitetty $(date -u +%Y-%m-%d)"
-            git push
+            # Jos main on ehtinyt liikkua ajon aikana (käsin tehty push), rebase ja yritä uudelleen
+            for i in 1 2 3; do
+              git push && break
+              echo "push epäonnistui, yritys $i: haetaan uusin main ja tehdään rebase"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep 10
+            done
           fi
 
       # Lähdevahti: avaa issuen (= sähköposti), kun lähde on epäonnistunut 3 ajoa peräkkäin, ja sulkee sen, kun lähde toipuu.
@@ -57,6 +65,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/health_report.py --issue
+
+      # Ajovahti: koko ajon epäonnistuminen avaa issuen (linkki lokiin); seuraava onnistunut ajo sulkee sen.
+      - name: Ajon tulos
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/vahti.py run-result --status ${{ job.status == 'success' && 'success' || 'failure' }} --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
   # Botin push ei käynnistä muita työnkulkuja, joten testit ja Pages-julkaisu kutsutaan tästä.
   julkaise:

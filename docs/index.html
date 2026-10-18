@@ -1300,6 +1300,7 @@ function renderStatus(){
   let html=`<span><i class="led ${ageH!==null&&ageH<36&&!bad.length?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span>`;
   html+=`<span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span><span>Yrityskauppoja vireillä <b>${c.yrityskaupat??"–"}</b></span>`;
   if(bad.length) html+=`<span class="warn" title="${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} ajoa peräkkäin epäonnistunut, viimeksi onnistui ${h.last_ok?new Date(h.last_ok).toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}`).join("\n"))}">Lähde ei päivity: <b>${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k} (${h.streak} ajoa)`).join(", "))}</b> · näytetään edellinen aineisto</span>`;
+  if(ageH!==null&&ageH>=36) html+=`<span class="warn" title="Aineisto rakennetaan arkisin kolmesti ja viikonloppuisin kerran. Päivitysvahti käynnistää ajon uudelleen ja avaa GitHub-issuen, jos aineisto vanhenee.">Aineisto ei ole päivittynyt <b>${ageH<72?ageH+" tuntiin":Math.round(ageH/24)+" päivään"}</b> – päivitysajo on voinut pysähtyä</span>`;
   document.getElementById("sys").innerHTML=html;
 }
 function loadMergers(){

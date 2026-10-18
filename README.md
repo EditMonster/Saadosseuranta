@@ -86,6 +86,7 @@ data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys
 docs/                GitHub Pages -sivu: index.html, logot, data/items.json + hankinnat.json + yrityskaupat.json + meta.json + changes.json + saadosseuranta.ics
 .github/workflows/update.yml   ajastettu ajo (arkisin 3×, viikonloppuisin 1×) -> eheystestit -> commit -> lähdevahti -> julkaisu
 .github/workflows/deploy.yml   testit joka pushille ja Pages-julkaisu testien takana
+.github/workflows/vahti.yml    päivitysvahti: aineiston ikä julkaistulla sivulla, työnkulun käytössäolo, uudelleenkäynnistys, issue
 ```
 
 ## Käyttöönotto
@@ -151,6 +152,34 @@ python -m http.server -d docs 8000  # http://localhost:8000
   ajoa peräkkäin, `scripts/health_report.py` avaa repoon issuen (GitHub lähettää siitä sähköpostin) ja sulkee sen
   itsestään, kun lähde toipuu. Sivun yläpalkki näyttää samalla varoituksen "Lähde ei päivity" – muut lähteet ja
   edellinen onnistunut aineisto pysyvät käytössä.
+* **Päivitysvahti** (`vahti.yml`, päivittäin 07:20 UTC, `scripts/vahti.py`): lukee julkaistun sivun `meta.json`-tiedoston
+  ja laskee aineiston iän. Jos aineisto on yli 30 tuntia vanhaa, vahti käynnistää päivitysajon uudelleen ja avaa issuen
+  *Päivitys on pysähtynyt* (sulkeutuu itsestään, kun aineisto on taas tuoretta). Samalla se varmistaa, että `update.yml`
+  on käytössä, ja kutsuu GitHubin enable-rajapintaa – GitHub poistaa ajastetut työnkulut käytöstä 60 päivän hiljaiselon
+  jälkeen, ja kutsu nollaa laskurin. Päivitysajo itse raportoi tuloksensa: epäonnistunut ajo avaa issuen *Päivitysajo
+  epäonnistui* (linkki lokiin), seuraava onnistunut sulkee sen. Sivun yläpalkki varoittaa, jos aineisto on yli 36 tuntia
+  vanhaa. GitHubin ajastus on parhaan kyvyn mukainen: ajot alkavat tyypillisesti 5–30 minuuttia myöhässä, hiljaisessa
+  repossa joskus tunteja, ja yksittäinen ajo voi jäädä väliin – siksi raja on 30 tuntia eikä esimerkiksi 8.
+* **Botin push ei kaadu käsin tehtyyn pushiin**: jos main on liikkunut ajon aikana, aineistocommit rebasetaan ja push
+  yritetään uudelleen (kolmesti).
+
+### Mitä tehdä, jos sähköpostiin tulee issue
+
+| Issue | Mitä se tarkoittaa | Mitä tehdä |
+|---|---|---|
+| *Lähde ei päivity* (`lahdevahti`) | Yksi lähde on epäonnistunut ≥ 3 ajoa; sivu näyttää sen osalta edellistä aineistoa | Avaa ajon loki (Actions → Päivitä säädösaineisto): usein lähteen rakenne tai osoite on muuttunut → korjaa `scripts/fetch_*.py`. Issue sulkeutuu itsestään, kun lähde toipuu. |
+| *Päivitysajo epäonnistui* (`ajovirhe`) | Koko ajo kaatui (esim. build-raja-arvo, testi, GitHubin verkko) | Katso loki; yksittäinen kerta korjaantuu yleensä seuraavassa ajossa. Jos `Aineiston eheys` -testi kaatuu, lähde on muuttanut tietosisältöä – korjaa jäsennys tai testin oletus. |
+| *Päivitys on pysähtynyt* (`paivitysvahti`) | Julkaistu aineisto on yli 30 h vanhaa – ajo ei käynnisty tai ei julkaise | Vahti on jo käynnistänyt ajon uudelleen. Jos issue ei sulkeudu vuorokaudessa: Actions-välilehdellä tarkista, että *Päivitä säädösaineisto* on käytössä (Enable workflow) ja aja se käsin; tarkista Settings → Pages. |
+
+### Pitkän ajan ylläpito
+
+* **Repon koko kasvaa** noin 0,5–1 MB per aineistocommit (pakattuna), eli suuruusluokkaa 0,3–0,5 GB vuodessa. GitHub
+  suosittelee alle 1 GB:n repoja; ennen sitä aineistohistoria kannattaa tiivistää (`git filter-repo` `docs/data`- ja
+  `data/cache`-poluille, pakotettu push) tai siirtää julkaisu Pages-artefaktiksi (Settings → Pages → Source: GitHub
+  Actions), jolloin `docs/data` voidaan jättää versioimatta. Actions käyttää matalaa kloonia, joten CI ei hidastu sitä ennen.
+* **Dependabot** tekee kuukausittain PR:t toimintojen ja kirjastojen päivityksistä; testit ajetaan PR:lle ennen yhdistämistä.
+* **Pages-lähteen vaihto** `GitHub Actions` -tilaan on edelleen suositeltava käsin tehtävä asetus: silloin myös käsin tehty
+  rikkinäinen push ei pääse julkaistuun sivuun ennen testejä.
 
 ## Kustannus
 

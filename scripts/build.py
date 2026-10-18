@@ -656,7 +656,7 @@ def main():
     hank = build_hankinnat(settings) or load_json(OUT_DIR / "hankinnat.json", {})
     yk = build_yrityskaupat(settings) or load_json(OUT_DIR / "yrityskaupat.json", {})
     open_now = [i for i in keep if i["scope"] == "fi" and i["status"] == "lausunnolla"]
-    meta = {"generated": dt.datetime.now().isoformat(timespec="seconds"), "today": TODAY.isoformat(),
+    meta = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "today": TODAY.isoformat(),  # with offset: the page shows it in local time
             "counts": {"fi": sum(i["scope"] == "fi" and not i["done"] for i in keep),
                        "eu": sum(i["scope"] == "eu" and not i["done"] for i in keep),
                        "done": sum(i["done"] for i in keep), "lausunnolla": len(open_now),
