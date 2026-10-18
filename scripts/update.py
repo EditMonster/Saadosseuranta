@@ -21,6 +21,7 @@ import fetch_eu_signals
 import fetch_finlex
 import fetch_hankeikkuna
 import fetch_hankinnat
+import fetch_hediff
 import fetch_history
 import fetch_hys
 import fetch_kkv
@@ -42,6 +43,7 @@ STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
     ("vaski", fetch_vaski.main),
+    ("hediff", fetch_hediff.main),
     ("finlex", fetch_finlex.main),
     ("eu", fetch_eu.main),
     ("eu_signals", fetch_eu_signals.main),

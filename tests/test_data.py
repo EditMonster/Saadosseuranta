@@ -495,3 +495,18 @@ def test_rulings(items):
     for i in linked[:50]:
         for c in i["caseLaw"]:
             assert c["id"] in set(ids) and c.get("court") and c.get("title"), (i["id"], c)
+
+
+def test_he_diffs(items):
+    """HE-diff files: one per bill with parallel texts and/or a committee diff, ops round-trip-safe."""
+    diffs = {p.stem: p for p in (DATA / "diff").glob("*.json")}
+    with_n = [i for i in items if i.get("diffN")]
+    assert len(with_n) >= 30 and len(diffs) >= len(with_n) * 0.9
+    for it in with_n[:40]:
+        d = json.loads(diffs[it["id"]].read_text(encoding="utf-8"))
+        assert d["id"] == it["id"] and d["steps"]
+        for st in d["steps"]:
+            assert st["kind"] in ("he", "mietinto") and st["laws"]
+            for law in st["laws"]:
+                for s in law["sections"]:
+                    assert s["id"] and all(op[0] in ("=", "+", "-", "…") for op in s["ops"]), (it["id"], s["id"])

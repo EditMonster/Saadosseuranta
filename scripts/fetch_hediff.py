@@ -67,6 +67,7 @@ from __future__ import annotations
 
 import datetime as dt
 import difflib
+import os
 import io
 import json
 import re
@@ -81,7 +82,7 @@ ATTACHMENT_ROWS = "https://avoindata.eduskunta.fi/api/v1/tables/Attachment/rows"
 OUT = CACHE_DIR / "hediff.json"
 
 MAX_HE = 120              # HE document fetches per run (the rest next run)
-TIME_BUDGET = 25 * 60     # seconds; stop starting new HEs after this
+TIME_BUDGET = int(os.environ.get("HEDIFF_BUDGET_S", 8 * 60))  # seconds; stop starting new HEs after this (scheduled runs share a 45-min job)
 WINDOW_DAYS = 540         # HE given within this many days
 CONFIRMED_DAYS = 60       # final HEs stay this long after vahvistus
 PACE = 1.0                # seconds between requests
