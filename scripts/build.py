@@ -885,7 +885,19 @@ def main():
                         "Euroopan komissio, DG COMP – yrityskauppatapaukset (competition-cases.ec.europa.eu)",
                         "EU:n virallinen lehti – yrityskeskittymien ennakkoilmoitukset (publications.europa.eu)",
                         "Komission delegoitujen säädösten rekisteri (webgate.ec.europa.eu/regdel)",
-                        "Markkinaoikeus – vireillä olevat hankinta-asiat ja ratkaisut (markkinaoikeus.fi)"]}
+                        "Markkinaoikeus – vireillä olevat hankinta-asiat ja ratkaisut (markkinaoikeus.fi)",
+                        "Eduskunnan avoin data – valiokuntien esityslistat, asiantuntijalausunnot, mietinnöt, KK/LA/TPA/KAA, EUN-muistiot",
+                        "Valtioneuvoston Hankeikkuna – lausuntokierrosten lausunnot ja HE-suunnitelma",
+                        "Avoimuusrekisteri (VTV, public.api.avoimuusrekisteri.fi)",
+                        "Korkein oikeus, korkein hallinto-oikeus, työtuomioistuin, markkinaoikeus – ratkaisut", "Finlex – hovi- ja hallinto-oikeuksien ratkaisut, tietosuojavaltuutettu",
+                        "EU-tuomioistuin – tuomiot, julkisasiamiehen ratkaisuehdotukset ja suomalaiset ennakkoratkaisupyynnöt (Cellar)",
+                        "Finanssivalvonta, ESMA, EBA, EIOPA, EDPB – kuulemiset ja ohjeet", "Verohallinto – syventävät ohjeet ja KVL:n ennakkoratkaisut (vero.fi)",
+                        "Traficom – määräykset ja määräyshankepäätökset", "Komission asiakirjarekisteri – suunnitellut hyväksynnät ja työohjelma",
+                        "EU:n neuvosto – Coreperin ja neuvoston esityslistat (Cellar)", "Euroopan parlamentti – täysistuntoennusteet (OEIL, data.europarl.europa.eu)",
+                        "Komissio – rikkomusmenettelyt Suomea vastaan", "Komitologiarekisteri – täytäntöönpanosäädökset", "EU-pakotteet (Cellar, EUVL L)",
+                        "Hilma – sopimuskaudet ja kilpailutussuunnitelmat", "Hankintakalenterit: Hansel, HUS, Espoo, Senaatti, Tampere, Tuomi, LUVN",
+                        "TED (api.ted.europa.eu) – SE, EE, DK, NO", "Helsingin kaupungin päätöspalvelu – hankintapäätökset",
+                        "Tutkihankintoja.fi (Valtiokonttori) – valtion toimittajat", "KKV – hankintojen valvonta ja kilpailunrajoitusasiat"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.
     minimums = settings.get("sanity", {"fi": 100, "eu": 30, "done": 50})
