@@ -1,0 +1,476 @@
+# Oikeuskäytäntö: mitkä tuomioistuimet haetaan ja miten ratkaisujen säädösviittaukset tulkitaan.
+#
+# Lähteet: tuomioistuinten omat sivustot (korkeinoikeus.fi, kho.fi, tyotuomioistuin.fi,
+# vakuutusoikeus.fi, markkinaoikeus.fi – julkaisevat samana päivänä) ja www.finlex.fi:n vuosiluettelot
+# (hovi- ja hallinto-oikeudet, joilla ei ole omaa julkaisukanavaa; 1–7 pv viive). EUT ja Suomen
+# tuomioistuinten ennakkoratkaisupyynnöt haetaan Publications Officen Cellar-tietokannasta (eut-lohko).
+
+# Kuinka monta päivää ratkaisut pidetään mukana (antopäivästä). Vireillä olevat suomalaiset
+# ennakkoratkaisupyynnöt pidetään aina, kunnes niihin on annettu tuomio.
+keep_days: 120
+
+courts:
+  KKO:
+    name: Korkein oikeus
+    enabled: true
+    source: rss                      # https://<host>/feed/rss-feed?post_type=ratkaisu + ratkaisusivu
+    host: www.korkeinoikeus.fi
+    finlex: korkein-oikeus/ennakkopaatokset   # Finlex-osoite: www.finlex.fi/fi/oikeuskaytanto/<finlex>/<vuosi>/<n>
+    fallback_finlex: true            # jos oma sivusto ei vastaa, haetaan Finlexin vuosiluettelosta
+    kind: Ennakkopäätös
+  KHO:
+    name: Korkein hallinto-oikeus
+    enabled: true
+    source: kho                      # kho.fi:n RSS on rikki -> arkistosivu (content-lift-lista) + ratkaisusivu
+    archive: https://www.kho.fi/kho-paatokset/ennakkopaatokset/arkisto/
+    finlex: korkein-hallinto-oikeus/ennakkopaatokset
+    fallback_finlex: true            # jos oma sivusto ei vastaa, haetaan Finlexin vuosiluettelosta
+    kind: Vuosikirjapäätös
+    # Muut julkaistut päätökset (ECLI ...:T2501) samasta arkistomuodosta; noin 200/v, oletuksena pois
+    muut: false
+    muut_archive: https://www.kho.fi/kho-paatokset/muut-julkaistut-paatokset/arkisto/
+  TT:
+    name: Työtuomioistuin
+    enabled: true
+    source: rss
+    host: www.tyotuomioistuin.fi
+    finlex: tyotuomioistuin
+    fallback_finlex: true            # jos oma sivusto ei vastaa, haetaan Finlexin vuosiluettelosta
+    kind: Tuomio
+  VakO:
+    name: Vakuutusoikeus
+    enabled: false
+    source: rss
+    host: www.vakuutusoikeus.fi
+    finlex: vakuutusoikeus
+    fallback_finlex: true            # jos oma sivusto ei vastaa, haetaan Finlexin vuosiluettelosta
+    kind: Ratkaisu
+  MAO:
+    name: Markkinaoikeus
+    enabled: true
+    source: mao                      # vain IPR- ja markkinaoikeudelliset asiat; hankinta- ja kilpailuasiat hoitaa fetch_mao.py
+    categories:
+      ipr: https://www.markkinaoikeus.fi/ratkaisut/teollis-ja-tekijanoikeudelliset-asiat/
+      markkinaoikeudellinen: https://www.markkinaoikeus.fi/ratkaisut/markkinaoikeudelliset-asiat/
+    finlex: markkinaoikeus
+    kind: Ratkaisu
+  HO:
+    name: Hovioikeudet
+    enabled: true
+    source: finlex
+    finlex: hovioikeudet
+    kind: Ratkaisu
+  HaO:
+    name: Hallinto-oikeudet
+    enabled: true
+    source: finlex
+    finlex: hallinto-oikeudet
+    kind: Ratkaisu
+
+# www.finlex.fi rajoittaa pyyntöjä (429 alle 1,5 s välein); sivut ovat 200–500 kt
+finlex:
+  delay: 1.5
+  max_pages_per_run: 40            # uusia ratkaisusivuja enintään per ajo (loput seuraavalla kerralla)
+
+# Aihealueluokittelun lisäavainsanat ratkaisuille (yhdistetään config/topics.yaml:n listoihin; sama logiikka:
+# avainsana saa olla sanan alku, kirjainkoko ei merkitse). Ratkaisujen asiasanat ovat suppeampia kuin säädösten nimet.
+aihealueet:
+  Rikos ja prosessi:
+    - syyteoikeus
+    - syyte
+    - rangaist
+    - tutkintavank
+    - oikeudenkäynnin julkisuus
+    - todistel
+    - menettämisseuraamu
+    - oikeudenkäyntikulu
+    - ennakkoratkaisupyyntö
+  Työoikeus:
+    - työsuhteen päättäminen
+    - työehtosopimu
+    - luottamuspula
+    - palkkasaatav
+    - lomautt
+  Verotus:
+    - osakaslaina
+    - pääomatulo
+    - verovuo
+    - tuloverolaki
+    - elinkeinotulo
+  Kuluttaja ja tuotteet:
+    - sopimaton menettely
+    - tavaramerk
+    - patent
+    - tekijänoikeu
+    - mallioikeu
+    - toiminimi
+    - liikesalaisuu
+    - markkinaoikeudelli
+  Hallinto ja hankinnat:
+    - julkinen hankinta
+    - valituslupa
+    - asiakirjajulkisuus
+    - tietopyyntö
+  Sote ja koulutus:
+    - asumistu
+    - työeläke
+    - tapaturma
+    - kuntoutu
+    - toimeentulotu
+  Maahanmuutto:
+    - kansainvälistä suojelua
+    - turvapaikanhak
+    - oleskelulup
+    - karkott
+
+# Lyhenne -> säädösnumero. Lyhenteet ovat Finlexin lyhenneluettelon ja KKO:n otsikkorivien muodossa
+# ("RL 24 luku 12 §", "TutkintavankeusL 2 luku 1 § 3 mom"). Tuntemattomat lyhenteet jäävät rawRefs-kenttään.
+statutes:
+  RL: 39/1889
+  OK: 4/1734
+  ROL: 689/1997
+  PKL: 806/2011
+  ETL: 805/2011
+  PoliisiL: 872/2011
+  HL: 434/2003
+  HOL: 808/2019
+  HLL: 586/1996
+  PL: 731/1999
+  KuntaL: 410/2015
+  JulkL: 621/1999
+  TietosuojaL: 1050/2018
+  YTJulkL: 370/2007
+  HTJulkL: 381/2007
+  KielL: 423/2003
+  YhdenvertaisuusL: 1325/2014
+  Tasa-arvoL: 609/1986
+  TSL: 55/2001
+  MerityösopimusL: 756/2011
+  TAL: 872/2019
+  VLL: 162/2005
+  TEhtoL: 436/1946
+  YTL: 1333/2021
+  TyötapaturmaL: 459/2015
+  TyTAL: 459/2015
+  TyEL: 395/2006
+  YEL: 1272/2006
+  KEL: 568/2007
+  SVL: 1224/2004
+  TTL: 1290/2002
+  OYL: 624/2006
+  AOYL: 1599/2009
+  AsOYL: 1599/2009
+  OKL: 421/2013
+  SäätiöL: 487/2015
+  YhdistysL: 503/1989
+  KPL: 1336/1997
+  TilintarkastusL: 1141/2015
+  AML: 746/2012
+  SipaL: 747/2012
+  LLL: 610/2014
+  RahanpesuL: 444/2017
+  VakSopL: 543/1994
+  LiikVakL: 460/2016
+  KonkL: 120/2004
+  YrSanL: 47/1993
+  VJL: 57/1993
+  UK: 705/2007
+  TakSL: 758/1991
+  VanhL: 728/2003
+  TakausL: 361/1999
+  KorkoL: 633/1982
+  VKL: 622/1947
+  OikTL: 228/1929
+  PerintäL: 513/1999
+  VahL: 412/1974
+  KL: 355/1987
+  KSL: 38/1978
+  SopMenL: 1061/1978
+  LiikesalaisuusL: 595/2018
+  TavaramerkkiL: 544/2019
+  PatL: 550/1967
+  TekijäL: 404/1961
+  MallioikeusL: 221/1971
+  ToiminimiL: 128/1979
+  KilpL: 948/2011
+  HankL: 1397/2016
+  HankintaL: 1397/2016
+  ErityisalojenHankL: 1398/2016
+  VML: 1558/1995
+  OVML: 768/2016
+  AVL: 1501/1993
+  TVL: 1535/1992
+  EVL: 360/1968
+  PerVL: 378/1940
+  VSVL: 931/1996
+  EPL: 1118/1996
+  KiVL: 654/1992
+  ValmisteverotusL: 182/2010
+  AutoveroL: 777/2020
+  TulliL: 304/2016
+  MK: 540/1995
+  KML: 554/1995
+  AHVL: 481/1995
+  LHVL: 482/1995
+  MRL: 132/1999
+  AKL: 132/1999
+  RakL: 751/2023
+  YSL: 527/2014
+  LSL: 9/2023
+  VL: 587/2011
+  JäteL: 646/2011
+  KaivosL: 621/2011
+  MetsäL: 1093/1996
+  LunastusL: 603/1977
+  YVAL: 252/2017
+  YmpVahL: 737/1994
+  AL: 234/1929
+  PK: 40/1965
+  LHL: 361/1983
+  ElatusL: 704/1975
+  HolhTL: 442/1999
+  LastensuojeluL: 417/2007
+  SHL: 1301/2014
+  THL: 1326/2010
+  PotL: 785/1992
+  MTL: 1116/1990
+  VammaispalveluL: 675/2023
+  UlkL: 301/2004
+  UlkomaalaisL: 301/2004
+  OikeusapuL: 257/2002
+  MetsästysL: 615/1993
+  YksityistieL: 560/2018
+  VirkamiesL: 750/1994
+  ToimeentulotukiL: 1412/1997
+  AsiakasmaksuL: 734/1992
+  KansalaisuusL: 359/2003
+  VankL: 767/2005
+  TutkintavankeusL: 768/2005
+  YhdyskuntaseuraamusL: 400/2015
+  RikosrekisteriL: 770/1993
+  RikosvahinkoL: 1204/2005
+  EU-luovuttamisL: 1286/2003
+  OikApuL: 257/2002
+  VälimiesmenettelyL: 967/1992
+  TLL: 729/2018
+  AjokorttiL: 386/2011
+  AmpumaaseL: 1/1998
+  JärjestysL: 612/2003
+  SVPL: 917/2014
+  EläkkeensaajanAsumistukiL: 571/2007
+  YleinenAsumistukiL: 938/2014
+  OpintotukiL: 65/1994
+  PerusopetusL: 628/1998
+  YliopistoL: 558/2009
+  VarhaiskasvatusL: 540/2018
+
+# Säädöksen koko nimi (nominatiivi, pienellä) -> säädösnumero. Käytetään, kun ratkaisu nimeää lain
+# kokonaan ("Tuloverolaki 53 a §", "Laki eläkkeensaajan asumistuesta 9 §") tai tiivistelmän tekstissä
+# ("tuloverolain 53 a §:n nojalla", "eläkkeensaajan asumistuesta annetun lain 9 §"). Taivutusmuodot
+# johdetaan automaattisesti (laki -> lain, kaari -> kaaren, "laki X:stä" -> "X:stä annetun lain").
+names:
+  rikoslaki: 39/1889
+  oikeudenkäymiskaari: 4/1734
+  laki oikeudenkäynnistä rikosasioissa: 689/1997
+  pakkokeinolaki: 806/2011
+  esitutkintalaki: 805/2011
+  poliisilaki: 872/2011
+  hallintolaki: 434/2003
+  laki oikeudenkäynnistä hallintoasioissa: 808/2019
+  hallintolainkäyttölaki: 586/1996
+  perustuslaki: 731/1999
+  kuntalaki: 410/2015
+  laki viranomaisten toiminnan julkisuudesta: 621/1999
+  julkisuuslaki: 621/1999
+  tietosuojalaki: 1050/2018
+  laki oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa: 370/2007
+  laki oikeudenkäynnin julkisuudesta hallintotuomioistuimissa: 381/2007
+  kielilaki: 423/2003
+  yhdenvertaisuuslaki: 1325/2014
+  laki naisten ja miesten välisestä tasa-arvosta: 609/1986
+  työsopimuslaki: 55/2001
+  merityösopimuslaki: 756/2011
+  työaikalaki: 872/2019
+  vuosilomalaki: 162/2005
+  työehtosopimuslaki: 436/1946
+  laki yhteistoiminnasta yrityksissä: 1333/2021
+  yhteistoimintalaki: 1333/2021
+  työtapaturma- ja ammattitautilaki: 459/2015
+  työntekijän eläkelaki: 395/2006
+  yrittäjän eläkelaki: 1272/2006
+  kansaneläkelaki: 568/2007
+  sairausvakuutuslaki: 1224/2004
+  työttömyysturvalaki: 1290/2002
+  laki eläkkeensaajan asumistuesta: 571/2007
+  laki yleisestä asumistuesta: 938/2014
+  osakeyhtiölaki: 624/2006
+  asunto-osakeyhtiölaki: 1599/2009
+  osuuskuntalaki: 421/2013
+  säätiölaki: 487/2015
+  yhdistyslaki: 503/1989
+  kirjanpitolaki: 1336/1997
+  tilintarkastuslaki: 1141/2015
+  arvopaperimarkkinalaki: 746/2012
+  sijoituspalvelulaki: 747/2012
+  laki luottolaitostoiminnasta: 610/2014
+  laki rahanpesun ja terrorismin rahoittamisen estämisestä: 444/2017
+  vakuutussopimuslaki: 543/1994
+  liikennevakuutuslaki: 460/2016
+  konkurssilaki: 120/2004
+  laki yrityksen saneerauksesta: 47/1993
+  laki yksityishenkilön velkajärjestelystä: 57/1993
+  ulosottokaari: 705/2007
+  laki takaisinsaannista konkurssipesään: 758/1991
+  laki velan vanhentumisesta: 728/2003
+  laki takauksesta ja vierasvelkapanttauksesta: 361/1999
+  korkolaki: 633/1982
+  velkakirjalaki: 622/1947
+  laki varallisuusoikeudellisista oikeustoimista: 228/1929
+  laki saatavien perinnästä: 513/1999
+  vahingonkorvauslaki: 412/1974
+  kauppalaki: 355/1987
+  kuluttajansuojalaki: 38/1978
+  laki sopimattomasta menettelystä elinkeinotoiminnassa: 1061/1978
+  liikesalaisuuslaki: 595/2018
+  tavaramerkkilaki: 544/2019
+  patenttilaki: 550/1967
+  tekijänoikeuslaki: 404/1961
+  mallioikeuslaki: 221/1971
+  toiminimilaki: 128/1979
+  kilpailulaki: 948/2011
+  hankintalaki: 1397/2016
+  laki julkisista hankinnoista ja käyttöoikeussopimuksista: 1397/2016
+  laki vesi- ja energiahuollon, liikenteen ja postipalvelujen alalla toimivien yksiköiden hankinnoista ja käyttöoikeussopimuksista: 1398/2016
+  laki verotusmenettelystä: 1558/1995
+  laki oma-aloitteisten verojen verotusmenettelystä: 768/2016
+  arvonlisäverolaki: 1501/1993
+  tuloverolaki: 1535/1992
+  laki elinkeinotulon verottamisesta: 360/1968
+  elinkeinoverolaki: 360/1968
+  perintö- ja lahjaverolaki: 378/1940
+  varainsiirtoverolaki: 931/1996
+  ennakkoperintälaki: 1118/1996
+  kiinteistöverolaki: 654/1992
+  valmisteverotuslaki: 182/2010
+  autoverolaki: 777/2020
+  tullilaki: 304/2016
+  maakaari: 540/1995
+  kiinteistönmuodostamislaki: 554/1995
+  laki asuinhuoneiston vuokrauksesta: 481/1995
+  laki liikehuoneiston vuokrauksesta: 482/1995
+  maankäyttö- ja rakennuslaki: 132/1999
+  alueidenkäyttölaki: 132/1999
+  rakentamislaki: 751/2023
+  ympäristönsuojelulaki: 527/2014
+  luonnonsuojelulaki: 9/2023
+  vesilaki: 587/2011
+  jätelaki: 646/2011
+  kaivoslaki: 621/2011
+  metsälaki: 1093/1996
+  laki kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta: 603/1977
+  laki ympäristövaikutusten arviointimenettelystä: 252/2017
+  laki ympäristövahinkojen korvaamisesta: 737/1994
+  avioliittolaki: 234/1929
+  perintökaari: 40/1965
+  laki lapsen huollosta ja tapaamisoikeudesta: 361/1983
+  laki lapsen elatuksesta: 704/1975
+  laki holhoustoimesta: 442/1999
+  lastensuojelulaki: 417/2007
+  sosiaalihuoltolaki: 1301/2014
+  terveydenhuoltolaki: 1326/2010
+  laki potilaan asemasta ja oikeuksista: 785/1992
+  mielenterveyslaki: 1116/1990
+  vammaispalvelulaki: 675/2023
+  ulkomaalaislaki: 301/2004
+  kansalaisuuslaki: 359/2003
+  vankeuslaki: 767/2005
+  tutkintavankeuslaki: 768/2005
+  laki yhdyskuntaseuraamusten täytäntöönpanosta: 400/2015
+  rikosrekisterilaki: 770/1993
+  rikosvahinkolaki: 1204/2005
+  laki rikoksen johdosta tapahtuvasta luovuttamisesta suomen ja muiden euroopan unionin jäsenvaltioiden välillä: 1286/2003
+  oikeusapulaki: 257/2002
+  laki välimiesmenettelystä: 967/1992
+  tieliikennelaki: 729/2018
+  ajokorttilaki: 386/2011
+  ampuma-aselaki: 1/1998
+  järjestyslaki: 612/2003
+  laki sähköisen viestinnän palveluista: 917/2014
+  opintotukilaki: 65/1994
+  perusopetuslaki: 628/1998
+  yliopistolaki: 558/2009
+  varhaiskasvatuslaki: 540/2018
+  laki sosiaali- ja terveydenhuollon järjestämisestä: 612/2021
+  laki kansainvälistä suojelua hakevan vastaanotosta: 746/2011
+  suomen perustuslaki: 731/1999
+  valtion virkamieslaki: 750/1994
+  laki toimeentulotuesta: 1412/1997
+  laki hyvinvointialueesta: 611/2021
+  laki hyvinvointialueiden rahoituksesta: 617/2021
+  laki sosiaali- ja terveydenhuollon asiakasmaksuista: 734/1992
+  laki oikeudenkäynnin viivästymisen hyvittämisestä: 362/2009
+  laki julkisesta notaarista: 420/2014
+  laki ulkomaisten väliyhteisöjen osakkaiden verotuksesta: 1217/1994
+  väliyhteisölaki: 1217/1994
+  laki kehitysvammaisten erityishuollosta: 519/1977
+  ahvenanmaan maanhankintalaki: 3/1975
+  metsästyslaki: 615/1993
+  yksityistielaki: 560/2018
+  laki ikääntyneen väestön toimintakyvyn tukemisesta sekä iäkkäiden sosiaali- ja terveyspalveluista: 980/2012
+  laki sosiaalihuollon asiakkaan asemasta ja oikeuksista: 812/2000
+  laki yksityisyyden suojasta työelämässä: 759/2004
+  laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta: 44/2006
+  laki julkisista hankinnoista: 348/2007
+  laki oikeudenkäynnistä markkinaoikeudessa: 100/2013
+  laki kuluttajariitalautakunnasta: 8/2007
+  laki asianajajista: 496/1958
+  laki lähestymiskiellosta: 898/1998
+  laki sakon täytäntöönpanosta: 672/2002
+  laki rikoksen johdosta tapahtuvasta luovuttamisesta: 456/1970
+  laki yleisestä oikeusavusta: 257/2002
+
+# Euroopan unionin tuomioistuin (Cellar SPARQL). Pidetään tuomiot ja julkisasiamiehen ratkaisuehdotukset,
+# jotka (a) ovat lähtöisin Suomesta (originates_in_country FIN), (b) kuuluvat vireillä olevaan suomalaiseen
+# ennakkoratkaisupyyntöön (asianumero), (c) tulkitsevat seurattua EU-säädöstä (CELEX data/cache/eu.json:ssa
+# tai watch_celex-listalla) tai (d) joiden aihealuekoodi on subject_codes-listalla. Suomalaiset
+# ennakkoratkaisupyynnöt (EUVL C -ilmoitukset) haetaan aina.
+eut:
+  days: 45                 # tuomiot ja ratkaisuehdotukset viimeisiltä n päivältä (sama ikkuna kysytään joka ajo:
+                           # maa-, aihe- ja otsikkotiedot täydentyvät Cellarissa päiviä–viikkoja myöhemmin)
+  references_since: "2024-01-01"   # ennakkoratkaisupyyntöilmoitukset tästä julkaisupäivästä alkaen
+  text_fetches_per_run: 12         # suomenkielisiä tekstejä (tuomiolauselma, ratkaisuehdotuksen otsake, kysymykset) enintään per ajo
+  watch_celex: []                  # lisäksi seurattavat säädökset, esim. ["32016R0679", "32014L0024"]
+  subject_codes:                   # case-law-subject-matter -koodit (kaikki 186 suomeksi: config/eut_aiheet.yaml)
+    - MAPU      # Julkiset hankinnat
+    - MARC      # Euroopan unionin julkiset hankinnat
+    - TVA       # Arvonlisävero
+    - FISC      # Verotus
+    - ACCI      # Valmisteverot
+    - UDOU      # Tulliliitto ja yhteinen tullitariffi
+    - CODO      # Tullikoodeksi
+    - PDON      # Henkilötietojen suoja
+    - DOCU      # Asiakirjajulkisuus
+    - CONS      # Kuluttajansuoja
+    - MARQ      # Tavaramerkit
+    - DADV      # Tekijänoikeus ja lähioikeudet
+    - BREV      # Patentit
+    - PIIC      # Teollisoikeudet ja kaupalliset oikeudet
+    - CONC      # Kilpailu
+    - ENTE      # Kartellit tai muut yhteisjärjestelyt
+    - PODO      # Määräävä markkina-asema
+    - MERG      # Yrityskeskittymät
+    - AIDE      # Valtiontuki
+    - RMSN      # Digitaalisten markkinoiden ja palvelujen sääntely
+    - SEFI      # Rahoituspalvelut
+    - ENER      # Energiapolitiikka
+    - ENVI      # Ympäristö
+    - EQEG      # Kasvihuonekaasujen päästöoikeuksien kauppa
+    - DSOC      # Sosiaalilainsäädäntö
+    - PSOC      # Sosiaalipolitiikka
+    - EMPL      # Työllisyys
+    - SESO      # Sosiaaliturva
+    - LPSE      # Palvelujen tarjoamisen vapaus
+    - ETAB      # Sijoittautumisvapaus
+    - COJC      # Oikeudellinen yhteistyö yksityisoikeudellisissa asioissa
+    - ASIL      # Turvapaikkapolitiikka
+    - IMMI      # Maahanmuuttopolitiikka

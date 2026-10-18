@@ -64,6 +64,7 @@ def goto(pg, base_url, hash_=""):
     pg.wait_for_function("typeof TENDERS_LOADED !== 'undefined' && TENDERS_LOADED === true")
     pg.wait_for_function("typeof MERGERS_LOADED !== 'undefined' && MERGERS_LOADED === true")
     pg.wait_for_function("typeof SHARED_LOADED !== 'undefined' && SHARED_LOADED === true")
+    pg.wait_for_function("typeof RULINGS_LOADED !== 'undefined' && RULINGS_LOADED === true")
 
 
 def ls(pg, key):
@@ -491,3 +492,69 @@ def test_theme_persists(page, base_url):
     assert page.get_attribute("html", "data-theme") == "dark"
     page.click("#theme-light")
     assert page.get_attribute("html", "data-theme") is None
+
+
+def test_rulings_tab(page, base_url):
+    goto(page, base_url, "#ratkaisut")
+    assert page.locator("#rk-tools").is_visible() and page.locator("#lajit").is_hidden()
+    assert int(page.text_content("#n-rk")) >= 60
+    rows = page.locator("#rk-body tr.r")
+    assert rows.count() >= 50 and "ratkaisua" in page.text_content("#count")
+    courts = page.locator("#rk-courts [data-court]").all_text_contents()
+    assert any(c.startswith("KKO") for c in courts) and any(c.startswith("EUT") for c in courts)
+    # only pending Finnish references
+    page.check("#rk-pending")
+    page.wait_for_timeout(200)
+    pend = rows.count()
+    assert 1 <= pend <= 30
+    page.click("#rk-body tr.r >> nth=0")
+    page.wait_for_selector("#drawer:not([hidden])")
+    facts = page.text_content("#dr-facts")
+    assert "Ennakkoratkaisupyynnön esittäjä" in facts and "vireillä" in page.text_content("#dr-kicker")
+    assert "Jaa Teamsiin" in page.text_content("#dr-src")
+    page.keyboard.press("Escape")
+    page.uncheck("#rk-pending")
+    # court filter narrows, statute links open the statute row
+    page.click("#rk-courts [data-court='KKO']")
+    page.wait_for_timeout(200)
+    assert 0 < rows.count() < 60
+    assert page.evaluate("[...state.rkCourts]") == ["KKO"]
+    sid = page.evaluate("(RULINGS.find(r=>r.court==='KKO'&&(r.related||[]).length)||{}).id")
+    if sid:
+        page.evaluate(f"openItem('{sid}')")
+        page.wait_for_selector("#drawer:not([hidden])")
+        assert page.locator("#dr-mini a[data-id]").count() >= 1
+        page.click("#dr-mini a[data-id] >> nth=0")
+        page.wait_for_timeout(300)
+        assert page.text_content("#dr-kicker").startswith("FI") or "FI" in page.text_content("#dr-kicker")
+        page.keyboard.press("Escape")
+    page.click("#rk-courts [data-court='*']")
+
+
+def test_influence_drawer_and_signals(page, base_url):
+    goto(page, base_url, "#kansallinen")
+    assert page.locator("#tl-fi .infl-pill").count() >= 5
+    iid = page.evaluate("(DATA.find(i=>i.influenceN&&i.influenceN.lausunnot&&i.influenceN.kuulemiset)||{}).id")
+    assert iid
+    page.evaluate(f"openItem('{iid}')")
+    page.wait_for_selector("#drawer:not([hidden])")
+    page.wait_for_function("document.querySelector('#dr-influence .grp')!==null")
+    txt = page.text_content("#dr-influence")
+    assert "Lausuntokierros:" in txt and "Valiokuntakuulemiset:" in txt
+    assert page.locator("#dr-influence .orgs span").count() >= 3
+    page.keyboard.press("Escape")
+    # a planned week is shown as a forecast event and in the plan line
+    pid = page.evaluate("(DATA.find(i=>i.plan&&i.events.some(e=>e.kind==='ennuste'))||{}).id")
+    assert pid
+    page.evaluate(f"openItem('{pid}')")
+    page.wait_for_selector("#drawer:not([hidden])")
+    assert "Lainsäädäntösuunnitelma" in page.text_content("#dr-src") and "arvio" in page.text_content("#dr-list")
+    page.keyboard.press("Escape")
+    goto(page, base_url, "#tilannekuva")
+    assert page.locator("#l-act li").count() >= 1 and page.locator("#l-sig li").count() >= 1
+    assert "Ladataan" not in page.text_content("#l-act")
+    tags = page.evaluate("influenceWindows().map(w=>w.tag)")
+    assert any(t in ("Lausuntokierros", "Kuuleminen", "Markkinakartoitus", "Valiokuntakuuleminen") for t in tags)
+    page.click("#l-sig li >> nth=0")
+    page.wait_for_selector("#drawer:not([hidden])")
+    page.keyboard.press("Escape")

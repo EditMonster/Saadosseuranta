@@ -72,3 +72,51 @@ vaski:
   report_keep_days: 400       # mietinnöt ja lausunnot
   motion_keep_days: 120       # kirjalliset kysymykset, laki-, toimenpide- ja kansalaisaloitteet
   backfill_max_requests: 700  # kuluvan vuoden mietintöjen kertatäydennys (jatkuu seuraavalla ajolla, jos raja täyttyy)
+
+# TED (EU:n virallinen lehti S, api.ted.europa.eu v3): naapurimaiden hankinta- ja ennakkoilmoitukset
+# samoilta toimialoilta kuin Hilma-seuranta. Suomen ilmoitukset tulevat Hilmasta, joten FI ei ole listalla.
+ted:
+  enabled: true
+  maat: ["SE", "EE", "DK", "NO"]   # ISO 3166-1 alpha-2 lainausmerkeissä (YAML lukisi NO:n epätotena); TEDiin SWE EST DNK NOR
+  days: 7                  # kuinka monen päivän julkaisut haetaan joka ajossa (ilmoitus säilyy määräaikaansa asti)
+  cpv: []                  # tyhjä = config/hankinnat.yaml toimialojen CPV-etuliitteet ("72*"-muodossa)
+  pin_days: 90             # ennakkoilmoitukset (pin-*) ilman määräaikaa pidetään näin monta päivää julkaisusta
+
+# Kuntien hankintapäätökset: Helsinki (Ahjo / paatokset.hel.fi, avoin Elasticsearch-välityspalvelin); Oulu (Tweb-RSS) valinnaisena.
+# days = kuinka monen päivän päätökset haetaan, keep_days = kuinka kauan päätös näkyy (valitusaika on arvio: päätös + 7 + 14 pv)
+paatokset:
+  days: 45
+  keep_days: 60
+  helsinki: true
+  oulu: false
+
+# Tutkihankintoja.fi (valtion ostolaskut, Hansel/Valtiokonttori, CC BY 4.0): hankintayksikön suurimmat toimittajat viimeisten 12 kk ajalta.
+# key = sivuston oma julkinen avain selainpaketista (assets/index-*.js, "subscription-key="); sivusto voi vaihtaa sen – 401/403 keskeyttää haun.
+# kategoriat = Hilman CPV-toimiala -> Tutkihankintoja-hankintakategoria(t), joiden toimittajat haetaan toimialan kilpailutuksille
+toimittajat:
+  enabled: true
+  key: "7215f8f3b03b49f68855f801a2bf725c"
+  max_buyers: 40
+  refresh_days: 30
+  kategoriat:
+    Rakentaminen ja infra: ["Rakentaminen", "Alueet ja väylät"]
+    Suunnittelu ja tekninen konsultointi: ["Asiantuntija- ja toimistopalvelut", "Rakentaminen"]
+    ICT ja ohjelmistot: ["ICT-hankinnat (tavarat, palvelut ja ohjelmistot)"]
+    Sosiaali- ja terveyspalvelut: ["Henkilöstöpalvelut"]
+    Lääkkeet ja hoitotarvikkeet: ["Aineet, tarvikkeet ja tavarat"]
+    Lakipalvelut: ["Asiantuntija- ja toimistopalvelut"]
+    Konsultointi ja liike-elämän palvelut: ["Asiantuntija- ja toimistopalvelut", "Hallinnolliset palvelut"]
+    Koneet, laitteet ja tarvikkeet: ["Koneet, laitteet ja kuljetusvälineet", "Aineet, tarvikkeet ja tavarat"]
+    Ajoneuvot ja kuljetus: ["Koneet, laitteet ja kuljetusvälineet", "Matkustus- ja kuljetuspalvelut"]
+    Kiinteistö- ja huoltopalvelut: ["Rakennusten ja alueiden ylläpito"]
+    Energia ja polttoaineet: ["Rakennusten ja alueiden ylläpito", "Aineet, tarvikkeet ja tavarat"]
+    Ympäristö, viheralueet ja jätehuolto: ["Alueet ja väylät", "Rakennusten ja alueiden ylläpito"]
+    Elintarvikkeet ja ruokapalvelut: ["Majoitus- ja ravitsemispalvelut"]
+    Turvallisuus ja puolustus: ["Rakennusten ja alueiden ylläpito", "Koneet, laitteet ja kuljetusvälineet"]
+    Koulutus, tutkimus ja kulttuuri: ["Koulutus- ja kulttuuripalvelut"]
+
+# KKV:n muu valvonta: hankintojen valvonta, esitykset markkinaoikeudelle, kielto-/sitoumus-/toimitusvelvoiteratkaisut, kilpailuneutraliteetti
+# (+ päätössyöte samana päivänä). pages = montako listaussivua (10 tapausta/sivu) luokkaa kohden luetaan ajossa
+kkv_valvonta:
+  keep_days: 180
+  pages: 3

@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DATETIME = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$")
-LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen", "delegoitu"}
+LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen", "delegoitu", "signaali", "ohje", "taytantoonpano", "pakote"}
 SCOPES = {"fi", "eu"}
 EVENT_KINDS = {"lausunto", "he", "eduskunta", "hyvaksytty", "vahvistettu", "voimaan", "maaraaika", "muu", "ehdotus", "sopu", "ennuste",
                "parlamentti", "neuvosto", "julkaistu", "soveltaminen", "kanta"}
@@ -187,10 +187,12 @@ def test_council_stages(items):
     labels = {e["label"] for e in council}
     assert any(l.startswith("Neuvoston yleisnäkemys") for l in labels) and any(l.startswith("Neuvosto hyväksyi") for l in labels)
     for e in council:
-        assert e["kind"] in ("neuvosto", "sopu", "parlamentti", "muu") and DATE.match(e["date"])
+        assert e["kind"] in ("neuvosto", "sopu", "parlamentti", "muu", "ennuste") and DATE.match(e["date"])
+        if e["kind"] == "ennuste":  # a planned Coreper/Council agenda item is a forecast: future, unconfirmed, marked
+            assert e.get("confirmed") is False and e["label"].endswith("(esityslistalla)") and e["date"] >= (dt.date.today() - dt.timedelta(days=2)).isoformat()
     # routine "discussed in Council" marks are dropped once the act is adopted
     for i in eu:
-        if any(e["label"].startswith("Neuvosto hyväksyi") for e in i["events"]):
+        if any(e["label"].startswith("Neuvosto hyväksyi") and e["kind"] != "ennuste" for e in i["events"]):
             assert not any("(viimeisin)" in e["label"] for e in i["events"]), i["id"]
 
 
@@ -386,7 +388,7 @@ def test_meta(meta, items, tenders, mergers):
     assert len(meta["sources"]) >= 12
     assert meta["topics"][-1] == "Muut" and len(meta["topics"]) >= 10
     assert meta["hankintaTopics"] == tenders["topics"]
-    assert set(meta["lajit"]) == LAJIT
+    assert set(meta["lajit"]) <= LAJIT and {"laki", "eu", "signaali"} <= set(meta["lajit"])
     for name, h in (meta.get("health") or {}).items():
         assert isinstance(h.get("streak", 0), int), name
 
@@ -438,3 +440,33 @@ def test_influence_and_plan(items):
     for it in items:
         if any(e["kind"] == "he" for e in it["events"]):
             assert not any(e["kind"] == "ennuste" and "Suunniteltu antaminen" in e["label"] for e in it["events"]), it["id"]
+
+
+def test_rulings(items):
+    """Oikeuskäytäntö: courts + CJEU rows, statute references resolved and linked to statute rows."""
+    r = json.loads((DATA / "ratkaisut.json").read_text(encoding="utf-8"))
+    rows = r["items"]
+    assert len(rows) >= 60 and r["counts"]["total"] == len(rows)
+    ids = [x["id"] for x in rows]
+    assert len(ids) == len(set(ids))
+    courts = {x["court"] for x in rows}
+    assert {"KKO", "KHO", "EUT"} <= courts
+    by_id = {i["id"] for i in items}
+    for x in rows:
+        assert x["scope"] == "ratkaisu" and re.match(r"^r-[a-z]+-", x["id"]), x["id"]
+        assert DATE.match(x["date"]) and x["title"].strip() and x["court"] and x["kind"], x["id"]
+        assert x["status"] in {"annettu", "vireillä", "ei lainvoimainen", "lainvoimainen", "valitettu"} or x["status"].startswith("KHO"), (x["id"], x["status"])
+        assert isinstance(x["topics"], list) and x["topics"], x["id"]
+        for s in x.get("statutes") or []:
+            assert s.get("sk") or s.get("celex"), (x["id"], s)
+        for rid in x.get("related") or []:
+            assert rid in by_id, (x["id"], rid)
+        if x["status"] == "vireillä":
+            assert x["court"] == "EUT" and x.get("referringCourt") and x.get("fi") is True
+    assert any(x["status"] == "vireillä" for x in rows), "vireillä olevia ennakkoratkaisupyyntöjä ei löytynyt"
+    assert sum(1 for x in rows if x.get("statutes")) >= 40
+    linked = [i for i in items if i.get("caseLaw")]
+    assert len(linked) >= 30
+    for i in linked[:50]:
+        for c in i["caseLaw"]:
+            assert c["id"] in set(ids) and c.get("court") and c.get("title"), (i["id"], c)

@@ -1,0 +1,191 @@
+# EUT:n asiaryhmäkoodit (Publications Officen case-law-subject-matter-luettelo) suomeksi.
+# Tuotettu Cellarin SPARQL-kyselyllä (skos:prefLabel, fi); fetch_curia.py lukee tämän eikä kysy nimiä verkosta.
+# code: suomenkielinen nimi | englanninkielinen nimi
+
+subjects:
+  ACCI: "Valmisteverot"  # Excise duties
+  ACIN: "Kansainväliset sopimukset"  # International agreements
+  ACTE: "Toimielinten säädökset, päätökset ja muut toimet"  # Acts of the institutions
+  ADHE: "Uusien jäsenvaltioiden liittyminen"  # New accessions
+  AELE: "Euroopan vapaakauppajärjestö (EFTA)"  # European Free Trade Association (EFTA)
+  AGRI: "Maatalous"  # Agriculture
+  AID: "Valtiontuki"  # State aid
+  AIDE: "Valtiontuki"  # State aid
+  APPR: "Hankintakeskus"  # Supply Agency
+  ASIL: "Turvapaikkapolitiikka"  # Asylum policy
+  ASSO: "Assosiaatiosopimukset"  # Association agreements
+  ASSU: "Vakuutukset"  # Insurance
+  AXT: "Ulkoinen toiminta"  # External action
+  BCE: "Euroopan keskuspankki (EKP)"  # European Central Bank (ECB)
+  BEI: "Euroopan investointipankki"  # European Investment Bank
+  BPAI: "Maksutase"  # Balance of payments
+  BREV: "Patentit"  # Patents
+  BRUX: "27.9.1968 tehty Brysselin yleissopimus"  # Brussels Convention of 27 September 1968
+  BUDG: "Talousarvio"  # Budget
+  CAFI: "Rahoituskehys"  # Financial framework
+  CDEV: "Kehitysyhteistyö"  # Development cooperation
+  CDOU: "Tulliyhteistyö"  # Customs cooperation
+  CHDF: "Perusoikeuskirja"  # Charter of Fundamental Rights
+  CHIM: "Kemikaalit"  # Chemicals
+  CITU: "Unionin kansalaisuus"  # Citizenship of the Union
+  CLTA: "Tariffiluokittelu"  # Tariff classification
+  CLUG: "16.9.1988 tehty Luganon yleissopimus"  # Lugano Convention of 16 September 1988
+  CMPT: "Toimivalta"  # Jurisdiction
+  COAD: "Hallinnollinen yhteistyö"  # Administrative cooperation
+  CODO: "Tullikoodeksi"  # Customs Code
+  COES: "Taloudellinen, sosiaalinen ja alueellinen yhteenkuuluvuus"  # Economic, social and territorial cohesion
+  COJC: "Oikeudellinen yhteistyö yksityisoikeudellisissa asioissa"  # Judicial cooperation in civil matters
+  COJP: "Oikeudellinen yhteistyö rikosasioissa"  # Judicial cooperation in criminal matters
+  COMB: "Polttoaineet - Hiili laajassa merkityksessä"  # Fuels - coal in the broad sense
+  COMP: "Välityslauseke"  # Arbitration clause
+  CONC: "Kilpailu"  # Competition
+  CONJ: "Suhdannepolitiikka"  # Conjunctural policy
+  CONS: "Kuluttajansuoja"  # Consumer protection
+  COPO: "Poliisiyhteistyö"  # Police cooperation
+  COPT: "Talous- rahoitus- ja tekninen yhteistyö kolmansien maiden kanssa"  # Economic, financial and technical cooperation with third countries
+  CORE: "Tiiviimpi yhteistyö"  # Closer cooperation
+  CPJP: "Poliisiyhteistyö ja oikeudellinen yhteistyö rikosasioissa"  # Police and judicial cooperation in criminal matters
+  CROM: "19.6.1980 tehty Rooman yleissopimus"  # Rome Convention of 19 June 1980
+  CULT: "Kulttuuri"  # Culture
+  DADV: "Tekijänoikeus ja lähioikeudet"  # Copyright and related rights
+  DDES: "Maahantulo- ja oleskeluoikeus"  # Right of entry and residence
+  DECH: "Jätteet"  # Waste
+  DEMO: "Mallit"  # Designs
+  DFON: "Perusoikeudet"  # Fundamental rights
+  DGEN: "Yleiset määräykset ja loppumääräykset"  # General and final provisions
+  DIFF: "Tiedon levittäminen"  # Dissemination of knowledge
+  DIPL: "Diplomaattisuhteet"  # Diplomatic relations
+  DISC: "Syrjimättömyys"  # Non-discrimination
+  DOCU: "Asiakirjajulkisuus"  # Access to documents
+  DRIN: "Toimielimiä koskeva oikeus"  # Law governing the institutions
+  DSOC: "Sosiaalilainsäädäntö"  # Social provisions
+  DUMP: "Polkumyynti"  # Dumping
+  EFJS: "Koulutus, ammatillinen koulutus, nuoriso ja urheilu"  # Education, vocational training, youth and sport
+  EGA: "Yhdenvertainen kohtelu"  # Equal treatment
+  ELSJ: "Vapauden, turvallisuuden ja oikeuden alue"  # Area of freedom, security and justice
+  EMPL: "Työllisyys"  # Employment
+  ENCO: "Kartellit ja yrityskeskittymät"  # Agreements and concentrations
+  ENER: "Energiapolitiikka"  # Energy
+  ENTC: "Yhteisyritykset"  # Joint undertakings
+  ENTE: "Kartellit tai muut yhteisjärjestelyt"  # Agreements, decisions and concerted practices
+  ENTR: "Yhteisöoikeus"  # Company law
+  ENVC: "Ympäristö ja kuluttajat"  # Environment and consumers
+  ENVI: "Ympäristö"  # Environment
+  EPU: "Julkiset yritykset"  # Public undertakings
+  EQEG: "Kasvihuonekaasujen päästöoikeuksien kauppa"  # Greenhouse gas emission allowance trading
+  ESPA: "Avaruusala"  # Space
+  ETAB: "Sijoittautumisvapaus"  # Freedom of establishment
+  EURO: "Euro"  # Euro
+  EXEC: "Täytäntöönpano"  # Enforcement
+  FA: "Maatalousrahastot"  # Agricultural funds
+  FAI: "Rajat, turvapaikka ja maahanmuutto"  # Borders, asylum and immigration
+  FC: "Koheesiorahasto"  # Cohesion fund
+  FEDE: "Euroopan aluekehitysrahasto (EAKR)"  # European Regional Development Fund (ERDF)
+  FINA: "Varainhoitoa koskevat määräykset"  # Financial provisions
+  FISC: "Verotus"  # Taxation
+  FRON: "Rajatarkastukset"  # Border checks
+  FSE: "Euroopan sosiaalirahasto (ESR)"  # European Social Fund (ESF)
+  GATT: "Tullitariffeja ja kauppaa koskeva yleissopimus (GATT)"  # General Agreement on Tariffs and Trade (GATT)
+  HUMA: "Humanitaarinen apu"  # Humanitarian aid
+  IAPA: "Matkustajille annettava korvaus ja apu"  # Compensation and assistance to passengers
+  ICT: "Tieto- ja viestintäteknologiat"  # Information and Communications Technology
+  IMMI: "Maahanmuuttopolitiikka"  # Immigration policy
+  IMPK: "95 artiklan mukaiset säännökset"  # Provisions implementing Article 95
+  INDR: "Muut välilliset verot"  # Other forms of indirect taxation
+  INFO: "Tiedot ja tarkastukset"  # Information and checks
+  INTE: "Sisäinen verotus"  # Internal taxation
+  INVE: "Investoinnit"  # Investments
+  JUAI: "Oikeus- ja sisäasiat"  # Justice and home affairs
+  LCCA: "Pääomien vapaa liikkuvuus"  # Free movement of capital
+  LCMA: "Tavaroiden vapaa liikkuvuus"  # Free movement of goods
+  LCPE: "Henkilöiden vapaa liikkuvuus"  # Freedom of movement for persons
+  LCT: "Työntekijöiden vapaa liikkuvuus"  # Freedom of movement for workers
+  LPSE: "Palvelujen tarjoamisen vapaus"  # Freedom to provide services
+  LUFR: "Petosten torjunta"  # Combating fraud
+  MAPU: "Julkiset hankinnat"  # Public procurement
+  MARC: "Euroopan unionin julkiset hankinnat"  # European Union public contracts
+  MARI: "Sisämarkkinat - Periaatteet"  # Internal market - Principles
+  MARQ: "Tavaramerkit"  # Trade marks
+  MCAD: "Tasausmaksut – Liittyminen"  # Accession compensatory amounts
+  MCNU: "Ydinalan yhteismarkkinat"  # Nuclear common market
+  MEEQ: "Vaikutuksiltaan vastaavat toimenpiteet"  # Measures having equivalent effect
+  MERG: "Yrityskeskittymät"  # Concentrations between undertakings
+  MNA: "Kansalliset monopolit"  # State monopolies
+  MONA: "Rahapoliittiset toimet maatalouden alalla"  # Monetary measures in the field of agriculture
+  MRES: "Rajoittavat toimenpiteet"  # Restrictive measures
+  NAT: "Kansalaisuuteen perustuvan syrjinnän kielto"  # Non-discrimination on grounds of nationality
+  NDCU: "Syrjintäkielto ja unionin kansalaisuus"  # Non-discrimination and citizenship of the Union
+  NRT: "Standardit ja tekniset määräykset"  # Technical standards and regulations
+  NUCL: "Ydinenergia"  # Nuclear energy
+  OBVE: "Kasvilajikkeet"  # Plant varieties
+  OCMA: "Yhteinen markkinajärjestely"  # Common organisation of the markets
+  OMC: "Maailman kauppajärjestö (WTO)"  # World Trade Organisation (WTO)
+  OP_DATPRO: "Alustavat tiedot"  # Provisional data
+  PADI: "Suorat tuet"  # Direct payments
+  PCIV: "Pelastustoimi"  # Civil protection
+  PDON: "Henkilötietojen suoja"  # Protection of personal data
+  PECH: "Kalastus"  # Fisheries
+  PEM: "Talous- ja rahapolitiikka"  # Economic and monetary policy
+  PENU: "Puute"  # Shortage
+  PERE: "Romuraudan tasaus"  # Equalisation of ferrous scrap
+  PESC: "Yhteinen ulko- ja turvallisuuspolitiikka"  # Common foreign and security policy
+  PHAR: "Lääkevalmisteet ja kosmeettiset valmisteet"  # Pharmaceutical and cosmetic products
+  PHYT: "Kasvinsuojelulainsäädäntö"  # Plant health legislation
+  PIIC: "Teollisoikeudet ja kaupalliset oikeudet"  # Intellectual, industrial and commercial property
+  PIND: "Teollisuuspolitiikka"  # Industrial policy
+  POCC: "Yhteinen kauppapolitiikka"  # Common commercial policy
+  PODO: "Määräävä markkina-asema"  # Dominant position
+  POLL: "Saasteet"  # Pollution
+  PREG: "Aluepolitiikka"  # Regional policy
+  PREL: "Maksut ja lainat"  # Levies and loans
+  PRET: "Avustukset ja lainat"  # Loans and subsidies
+  PRIN: "Unionin oikeuden periaatteet"  # Principles of Union law
+  PRIV: "Erioikeudet ja vapaudet"  # Privileges and immunities
+  PRIX: "Hinnat"  # Prices
+  PRO: "Teollisoikeudet"  # Industrial property
+  PROC: "Erityiset menettelyt"  # Special forms of procedure
+  PROD: "Tuotanto"  # Production
+  PROJ: "Tuomioistuinmenettely"  # Judicial procedure
+  PROP: "Omistusoikeus"  # System of property ownership
+  PSOC: "Sosiaalipolitiikka"  # Social policy
+  PTOM: "Merentakaisten maiden ja alueiden assosiaatio"  # Association of the Overseas Countries and Territories
+  QPRO: "Oikeudenkäyntimenettelyä koskevat seikat"  # Procedural matters
+  QUOT: "Tuotantokiintiöt"  # Production quotas
+  RAPL: "Lainsäädännön lähentäminen"  # Approximation of laws
+  RASC: "Pääoman hankinnasta kannettavat välilliset verot"  # Indirect taxation on the raising of capital
+  RDTE: "Tutkimus ja teknologinen kehittäminen sekä avaruusala"  # Research and technological development and space
+  REAC: "Kemikaalien rekisteröinti, arviointi, lupamenettelyt ja rajoitukset (REACH-asetus)"  # Registration, evaluation, authorisation and restriction of chemicals (REACH Regulation)
+  RECH: "Tutkimuksen kehittäminen"  # Research development
+  RESP: "Sopimussuhteen ulkopuolinen vastuu"  # Non-contractual liability
+  RETR: "Euroopan laajuiset verkot"  # Trans-European networks
+  RFCE: "Yhteinen yritysverojärjestelmä"  # Common corporate tax regime
+  RINF: "Tutkimus, tiedotus, opetus, tilastot"  # Research, information, education, statistics
+  RMN: "Digitaalisten markkinoiden sääntely"  # Regulation of digital markets
+  RMSN: "Digitaalisten markkinoiden ja palvelujen sääntely"  # Regulation of digital markets and services
+  RPRO: "Omat varat"  # Own resources
+  RSN: "Digitaalisten palvelujen sääntely"  # Regulation of digital services
+  RSTR: "Määrälliset rajoitukset"  # Quantitative restrictions
+  SANI: "Terveyden suojelu"  # Health and safety
+  SANT: "Kansanterveys"  # Public health
+  SAUV: "Suojatoimenpiteet"  # Safeguard measures
+  SEALI: "Elintarviketurvallisuus"  # Food safety
+  SEAR: "Lentoturvallisuus"  # Aviation safety
+  SEBC: "Euroopan keskuspankkijärjestelmä"  # European System of Central Banks
+  SECR: "Salassapitoa koskevat määräykset"  # Security grading
+  SECU: "Ydinmateriaalivalvonta"  # Safeguards
+  SEFI: "Rahoituspalvelut"  # Financial services
+  SESO: "Sosiaaliturva"  # Social security
+  SIDE: "Terästeollisuus - Teräs laajassa merkityksessä"  # Steel industry - Steel in the broad sense
+  SOLI: "Yhteisvastuulauseke"  # Solidarity clause
+  STAT: "Henkilöstösäännöt"  # Staff Regulations of Officials
+  SUB: "Tuet"  # Subsidies
+  SUM: "Sisämarkkinoita vääristävät ulkomaiset tuet"  # Foreign subsidies distorting the internal market
+  SUR: "Valvontajärjestelmä"  # Monitoring system
+  SURV: "Luottolaitosten valvonta"  # Supervision of credit institutions
+  TEEQ: "Vaikutukseltaan vastaavat maksut"  # Charges having equivalent effect
+  TOUR: "Matkailu"  # Tourism
+  TRAN: "Liikenne"  # Transport
+  TUC: "Yhteinen yhtenäistetty tullitariffi"  # Unified common tariff
+  TVA: "Arvonlisävero"  # Value added tax
+  UDOU: "Tulliliitto ja yhteinen tullitariffi"  # Customs Union and Common Customs Tariff
+  VETE: "Eläinlääkintälainsäädäntö"  # Veterinary legislation

@@ -1,0 +1,692 @@
+{
+ "total": {
+  "value": 293,
+  "relation": "eq"
+ },
+ "items": [
+  {
+   "id": "18443",
+   "type": "regulation",
+   "uuid": "6cc12ac4-345f-49a0-80c1-65d47d479c1a",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Kaksi- ja kolmipyöräisten ajoneuvojen, nelipyörien, kevyiden sähköajoneuvojen, niiden perävaunujen sekä kevyiden automaattisten tavarankuljettimien rakenne ja varusteet (2026)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-30T11:06:56",
+   "updated": "2026-09-30T11:06:56",
+   "listing_sort_date": "2026-09-30T11:06:56",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "76",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/kaksi-ja-kolmipyoraisten-ajoneuvojen-nelipyorien-kevyiden-sahkoajoneuvojen-niiden-peravaunujen-seka-kevyiden-automaattisten-tavarankuljettimien-rakenne-ja-varusteet-2026",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/893577/03.04.03.00/2025",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2026-09-29T15:00:00",
+   "expire": null,
+   "text": "<p>Tällä määräyksellä Liikenne- ja viestintävirasto Traficom antaa ajoneuvolain (82/2021):&nbsp;</p><ol type=\"1\"><li>13 §:ssä tarkoitetut määräykset kevyiden automaattisten tavarankuljettimien, kaksi- ja kolmipyöräisten ajoneuvojen, nelipyörien, niiden perävaunujen sekä kevyiden sähköajoneuvojen rakennetta, ominaisuuksia, hallintalaitteita ja varusteita koskevista vaatimuksista, valmistenumeroa ja valmistajan kilpeä koskevista vaatimuksista sekä järjestelmistä, komponenteista, erillisistä teknisistä yksiköistä, osista ja varusteista;&nbsp;</li><li>6 §:ssä tarkoitetut tarkemmat määräykset L-luokan ajoneuvon energia- ja ympäristövaikutusten rajoittamista koskevista osien ja ominaisuuksien teknisistä vaatimuksista;&nbsp;</li><li>49 §:ssä tarkoitetut tarkemmat määräykset vaatimustenmukaisuuden osoittamisessa noudatettavien menettelyjen käytännön toteuttamisesta L-luokan ajoneuvon kansallisessa piensarjatyyppihyväksynnässä;&nbsp;</li><li>139 §:n 5 momentissa tarkoitetut tarkemmat määräykset L-luokan ajoneuvon vaatimustenmukaisuuden osoittamisen käytännön toteuttamisesta rekisteröintikatsastuksessa;&nbsp;</li><li>144 §:n 2 momentissa tarkoitetut tarkemmat määräykset L-luokan ajoneuvon vaatimustenmukaisuuden osoittamisen käytännön toteuttamisesta muutoskatsastuksessa;&nbsp;</li><li>29 a",
+   "link": {
+    "title": "Kaksi- ja kolmipyöräisten ajoneuvojen, nelipyörien, kevyiden sähköajoneuvojen, niiden perävaunujen sekä kevyiden automaattisten tavarankuljettimien rakenne ja varusteet (Finlex)",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-tieliikenne/2026/26",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "18415",
+   "type": "regulation",
+   "uuid": "92728bb5-9092-4ee1-8440-71524f689141",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Merenkulun tiedonhallintajärjestelmä ",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-24T14:10:32",
+   "updated": "2026-09-24T14:10:32",
+   "listing_sort_date": "2026-09-24T14:10:32",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "103",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "17",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/merenkulun-tiedonhallintajarjestelma",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/645183/03.04.01.00/2024",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2026-10-01T15:00:00",
+   "expire": null,
+   "text": "<p>Merenkulun tiedonhallintajärjestelmä -määräys, voimassa 1.10.2026 alkaen.</p>",
+   "link": {
+    "title": "Määräys",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-meriliikenne/2026/21",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "18390",
+   "type": "regulation",
+   "uuid": "462f2b17-fde8-4279-b2ed-831b09f983ca",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Rekisterikilpien ja siirtomerkkien mitoista ja muista teknisistä ominaisuuksista (1.1.2027)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-23T09:31:15",
+   "updated": "2026-09-23T09:31:15",
+   "listing_sort_date": "2026-09-23T09:31:15",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "74",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "56",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/rekisterikilpien-ja-siirtomerkkien-mitoista-ja-muista-teknisista-ominaisuuksista-112027",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/881368/03.04.03.00/2025",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2027-01-01T14:00:00",
+   "expire": null,
+   "text": "<p>Liikenne- ja viestintävirasto Traficom antaa tällä määräyksellä ajoneuvolain 99 §:n 3 momentissa ja 118 §:n 5 momentissa tarkoitetut tarkemmat määräykset Suomessa annettavien ajoneuvojen rekisterikilpien ja siirtomerkkien mitoista ja muista teknisistä ominaisuuksista.&nbsp;</p><p>Rekisterikilpien ja siirtomerkkien mitoista ja muista teknisistä ominaisuuksista koskevaan määräykseen (TRAFICOM/881368/03.04.03.00/2025) on lisätty taksiliikenteessä käytettävät taksikilvet ajoneuvoluokittain.</p><p>Uusi määräys tulee voimaan 1.1.2027 ja kumoaa aiemman vuonna 2024 voimaan tulleen määräyksen Rekisterikilpien ja siirtomerkkien mitoista ja muista teknisistä ominaisuuksista (TRAFICOM/65798/03.04.03.00/2024).</p>",
+   "link": {
+    "title": "Rekisterikilpien ja siirtomerkkien mitat ja muut tekniset ominaisuudet (Finlex)",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-tieliikenne/2026/20",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "18394",
+   "type": "regulation",
+   "uuid": "a37aa233-2e3b-45df-a9be-065e557a9643",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Määräyshankepäätös: Traktorien, moottorityökoneiden ja maastoajoneuvojen, niiden perävaunujen, muiden kuin autoon kytkettäväksi tarkoitettujen hinattavien laitteiden sekä eläinten vetämien ajoneuvojen rakenne ja varusteet (2026)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-21T10:09:29",
+   "updated": "2026-09-21T10:09:29",
+   "listing_sort_date": "2026-09-21T10:09:29",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "78",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "48",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/maarayshankepaatos-traktorien-moottorityokoneiden-ja-maastoajoneuvojen-niiden-peravaunujen-muiden-kuin-autoon-kytkettavaksi-tarkoitettujen-hinattavien-laitteiden-seka-elainten-vetamien-ajoneuvojen-rakenne-ja-varusteet-2026",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/273851/03.04.03.00/2026",
+   "regulation_type_name": [
+    "Määräyshankepäätös"
+   ],
+   "valid_from": "2026-09-18T15:00:00",
+   "expire": null,
+   "text": "<p>Määräyshankkeen tavoitteena on ensisijaisesti tehdä lainsäädännön muutoksista johtuvat tarpeelliset muutokset voimassa olevaan määräykseen traktorien, moottorityökoneiden ja maastoajoneuvojen, niiden perävaunujen, muiden kuin autoon kytkettäväksi tarkoitettujen hinattavien laitteiden sekä eläinten vetämien ajoneuvojen rakenne ja varusteet (TRAFICOM/75637/03.04.03.00/2020, nk. <em>traktorimääräys</em>), joka on tullut voimaan 1.3.2021.&nbsp;</p><p>Nyt käynnistettävän määräyshankkeen tavoitteena on ensisijaisesti:</p><ul><li>tehdä liikkuvien työkoneiden EU-lainsäädännön vaatimat muutokset voimassa olevaan määräykseen,</li><li>selkeyttää vaihtoehtoisia vaatimuksia pienempien, tieliikennekäytössä olevien, traktoreiden varustelussa,</li><li>huomioida valaisimia ja heijastimia koskevissa vaatimuksissa uusimmat E-säännöt sekä valaisimien tekninen kehitys, sekä</li><li>päivittää moottorityökoneita ja maastoajoneuvoja koskevat vaatimukset yhteensopiviksi automaattisen ajojärjestelmän ja radio-ohjauksen kanssa.</li></ul><p>Tavoitteena on antaa päivitetyt määräykset keväällä 2027.&nbsp;</p><p>Hankkeessa arvioidaan lisäksi määräyksen sisältöä rinnakkain traktorin käyttövoiman, renkaiden ja vanteiden muuttamista koskevan määräyksen (TRAFICOM/265762/03.04.03.00/2025)&nbsp;kanssa ja siirrett",
+   "link": {
+    "title": "Määräyshankepäätös: Traktorien, moottorityökoneiden ja maastoajoneuvojen, niiden perävaunujen, muiden kuin autoon kytkettäväksi tarkoitettujen hinattavien laitteiden sekä eläinten vetämien ajoneuvojen rakenne ja varusteet (2026)",
+    "url": "/files/media/regulation/M%C3%A4%C3%A4r%C3%A4yshankep%C3%A4%C3%A4t%C3%B6s%20Traktorien%20rakenne%20ja%20varusteet%202026.pdf",
+    "extension": "pdf",
+    "file_size": "599,67 KB",
+    "external": false,
+    "private": false
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "18395",
+   "type": "regulation",
+   "uuid": "479e6c7d-6d4f-43f5-b741-e8bf9e2c9a44",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Määräyshankepäätös: Traktorin käyttövoiman, renkaiden ja vanteiden muuttaminen (2026)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-21T10:09:07",
+   "updated": "2026-09-21T10:09:07",
+   "listing_sort_date": "2026-09-21T10:09:07",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "78",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "48",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/maarayshankepaatos-traktorin-kayttovoiman-renkaiden-ja-vanteiden-muuttaminen-2026",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/523417/03.04.03.00/2026",
+   "regulation_type_name": [
+    "Määräyshankepäätös"
+   ],
+   "valid_from": "2026-09-18T15:00:00",
+   "expire": null,
+   "text": "<p>Määräyshankkeen tavoitteena on ensisijaisesti tehdä lainsäädännön muutoksista johtuvat tarpeelliset muutokset voimassa olevaan määräykseen traktorin käyttövoiman, renkaiden ja vanteiden muuttaminen (TRAFICOM/265762/03.04.03.00/2025), joka on tullut voimaan 19.9.2025.</p><p>Hankkeessa määräykseen lisättäisiin vaihtoehtoisia vaatimustenmukaisuuden osoittamistapoja traktoreille. Uusilla vaatimuksilla pyrittäisiin selkeyttämään oikeustilaa huomioimalla kansalliset erityistarpeet pienempien, tieliikennekäytössä olevien, traktoreiden varustelussa.&nbsp;</p><p>Tavoitteena on antaa määräys keväällä 2027.</p><p>Lisäksi hankkeessa arvioidaan määräyksen sisältöä rinnakkain viraston nk. traktorimääräyksen (TRAFICOM/75637/03.04.03.00/2020) kanssa ja siirretään sisältöä tarpeellisin osin määräysten välillä.</p>",
+   "link": {
+    "title": "Määräyshankepäätös: Traktorin käyttövoiman, renkaiden ja vanteiden muuttaminen (2026)",
+    "url": "/files/media/regulation/M%C3%A4%C3%A4r%C3%A4yshankep%C3%A4%C3%A4t%C3%B6s%20Traktorien%20rakennemuutosm%C3%A4%C3%A4r%C3%A4ys%202026.pdf",
+    "extension": "pdf",
+    "file_size": "438,31 KB",
+    "external": false,
+    "private": false
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "17655",
+   "type": "regulation",
+   "uuid": "a99b5cac-9b50-4ae4-b0ee-e1047bcfedba",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Määräyshankepäätös: Vaarallisten aineiden ADR-ajolupa- ja turvallisuusneuvonantajan koe",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-07T15:20:53",
+   "updated": "2026-09-07T15:20:53",
+   "listing_sort_date": "2026-09-07T15:20:53",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "76",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "72",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "56",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "48",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/maarayshankepaatos-vaarallisten-aineiden-adr-ajolupa-ja-turvallisuusneuvonantajan-koe",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/506773/03.04.03.00/2026",
+   "regulation_type_name": [
+    "Määräyshankepäätös"
+   ],
+   "valid_from": "2026-09-07T15:00:00",
+   "expire": null,
+   "text": "<p>Liikenne- ja viestintävirasto Traficom on muuttanut kuljettajantutkintojen teoriakokeeseen ja taksinkuljettajan kokeeseen liittyviä määräyksiä vuoden 2026 aikana. Eri määräysten sisältö pysyy samanlaisena, kun päivitetään myös vaarallisten aineiden ADR-ajolupa- ja turvallisuusneuvonantajan koemääräystä.</p><p>Koetilassa kiellettyjä asioita selkeytetään siten, että vilppikokonaisuus on selkeämpi. Lisäksi määräyksessä varmistetaan, ettei sääntelyssä ole päällekkäisyyksiä ja selkeytetään kokonaisuuksia.</p><p>Määräyksen muutoksella olisi vaikutuksia teoriakokeessa vilpillisesti toimiviin henkilöihin. Määräysmuutoksella on vaikutuksia myös koetta suorittaviin henkilöihin, jos kokeen hyväksytysti saamiseksi vaadittavaa pistemäärää nostetaan.</p><p>Tavoitteena on saattaa määräys voimaan 1.1.2027.</p><p>Määräyshanke liittyy saman aikaisesti avattuun määräyshankkeeseen kuorma- ja linja-auton kuljettajien perustason ammattipätevyyskoulutuksen teoriakokeen muuttamisesta (TRAFICOM/506766/03.04.03.00/2026).</p>",
+   "link": {
+    "title": "Määräyshankepäätös: Vaarallisten aineiden ADR-ajolupa- ja turvallisuusneuvonantajan koe",
+    "url": "/files/media/regulation/M%C3%A4%C3%A4r%C3%A4yshankep%C3%A4%C3%A4t%C3%B6s%20Vaarallisten%20aineiden%20ADR-ajolupa-%20ja%20turvallisuusneuvonantajan%20koe.pdf",
+    "extension": "pdf",
+    "file_size": "86,08 KB",
+    "external": false,
+    "private": false
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "17654",
+   "type": "regulation",
+   "uuid": "063741b5-e53c-44de-bca6-feb2682305b7",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Määräyshankepäätös: Kuorma- ja linja-auton kuljettajien perustason ammattipätevyyskoulutuksen teoriakoe",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-07T15:14:56",
+   "updated": "2026-09-07T15:19:18",
+   "listing_sort_date": "2026-09-07T15:14:56",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "72",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "56",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "48",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/maarayshankepaatos-kuorma-ja-linja-auton-kuljettajien-perustason-ammattipatevyyskoulutuksen-teoriakoe",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/506766/03.04.03.00/2026",
+   "regulation_type_name": [
+    "Määräyshankepäätös"
+   ],
+   "valid_from": "2026-09-07T15:00:00",
+   "expire": null,
+   "text": "<p>Liikenne- ja viestintävirasto Traficom on muuttanut kuljettajantutkintojen teoriakokeeseen ja taksinkuljettajan kokeeseen liittyviä määräyksiä vuoden 2026 aikana. Eri määräysten sisältö pysyy samanlaisena, kun päivitetään myös kuorma- ja linja-auton kuljettajien perustason ammattipätevyyskoulutukseen liittyvän teoriakokeen määräystä.</p><p>Koetilassa kiellettyjä asioita selkeytetään siten, että vilppikokonaisuus on selkeämpi. Lisäksi määräyksessä varmistetaan, ettei sääntelyssä ole päällekkäisyyksiä ja selkeytetään kokonaisuuksia.</p><p>Määräyksen muutoksella olisi vaikutuksia teoriakokeessa vilpillisesti toimiviin henkilöihin. Muutoksella voi olla vaikutuksia myös kokeessa tulkkaavien toimintaan. Määräysmuutoksella on vaikutuksia myös koetta suorittaviin henkilöihin, jos kokeen hyväksytysti saamiseksi vaadittavaa pistemäärää nostetaan.</p><p>Tavoitteena on saattaa määräys voimaan 1.1.2027.</p><p>Määräyshanke liittyy samaan aikaan avoinna olevaan määräyksen vaarallisten aineiden ADR-ajolupa- ja turvallisuusneuvonantajan kokeen muuttamisesta&nbsp;TRAFICOM/506773/03.04.03.00/2026.</p>",
+   "link": {
+    "title": "Määräyshankepäätös: Kuorma- ja linja-auton kuljettajien perustason ammattipätevyyskoulutuksen teoriakoe",
+    "url": "/files/media/regulation/M%C3%A4%C3%A4r%C3%A4yshankep%C3%A4%C3%A4t%C3%B6s%20Kuorma-%20ja%20linja-auton%20kuljettajien%20perustason%20am-mattip%C3%A4tevyyskoulutuksen%20teoriakoe.pdf",
+    "extension": "pdf",
+    "file_size": "86,65 KB",
+    "external": false,
+    "private": false
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "17629",
+   "type": "regulation",
+   "uuid": "5e6d560f-f48d-45c8-9be5-263337665710",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Ajoneuvojen määräaikaiskatsastuksen arvosteluperusteet (1.2.2027)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-02T08:29:44",
+   "updated": "2026-09-02T08:29:44",
+   "listing_sort_date": "2026-09-02T08:29:44",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "78",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/ajoneuvojen-maaraaikaiskatsastuksen-arvosteluperusteet-122027",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/883911/03.04.03.00/2025",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2027-02-01T14:00:00",
+   "expire": null,
+   "text": "<p>Liikenne- ja viestintävirastoTraficom on antanut uuden määräyksen Ajoneuvojen määräaikaiskatsastuksen arvosteluperusteet (TRAFICOM/883911/03.04.03.00/2025).</p><p>Määräyksessä on huomioitu taksilainsäädännön muutokset:</p><ul><li>Pakollisen taksamittarin tarkastaminen katsastuksessa alkaa 1.2.2027.&nbsp;</li><li>Taksikilpien edellytysten tarkastaminen katsastuksessa alkaa 1.7.2027 taksikilpien tullessa pakollisiksi taksiliikenteessä käytettäviin ajoneuvoihin.</li></ul><p>Lisäksi määräyksessä on yhtenäistetty ajoneuvojen eri akseleilla olevien renkaiden vaurioiden sekä tuulilasin ja sivuikkunoiden tummennusten arvostelua. Pakokaasupäästöjen tarkastamista koskevassa kohdassa on huomioitu myös Euro 7 -päästötason mukaiset ajoneuvot.</p><p>Uusi määräys tulee voimaan 1.2.2027 ja kumoaa samalla aiemman, vuonna 2022 voimaan tuleen ajoneuvojen määräaikaiskatsastuksen arvosteluperusteita koskevan määräyksen (TRAFICOM/423528/03.04.03.00/2020).</p>",
+   "link": {
+    "title": "Ajoneuvojen määräaikaiskatsastuksen arvosteluperusteet (Finlex)",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-tieliikenne/2026/19",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "17628",
+   "type": "regulation",
+   "uuid": "a6c723a8-4177-4195-b639-05a560e37fab",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Taksamittarin tekniset vaatimukset (1.2.2027)",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-09-02T08:26:43",
+   "updated": "2026-09-02T08:26:43",
+   "listing_sort_date": "2026-09-02T08:26:43",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "78",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "66",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "16",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "74",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "56",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/taksamittarin-tekniset-vaatimukset-122027",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": null,
+   "group_machine_name": null,
+   "regulation_number": "TRAFICOM/699423/03.04.03.00/2025",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2027-02-01T14:00:00",
+   "expire": null,
+   "text": "<p>Liikenteen palveluista annetun lain (320/2017) 15 a §:n 1 momentin ja ajoneuvolain (82/2021) 13 §:n 7 momentin mukaisesti taksiliikenteessä käytettävässä ajoneuvossa on oltava mittauslaitelain (707/2011) vaatimukset täyttävä taksamittari.</p><p>Tällä määräyksellä Liikenne- ja viestintävirasto Traficom antaa liikenteen palveluista annetun lain 15 a §:n 3 momentissa tarkoitetut tarkemmat tekniset määräykset taksamittarista ja sillä kerättyjen tietojen säilyttämisestä.&nbsp;</p><p>Määräys kumoaa Liikenne- ja viestintäviraston 16.4.2021 antaman määräyksen Taksamittarin tekniset vaatimukset (TRAFICOM/423523/03.04.03.00/2020).</p>",
+   "link": {
+    "title": "Taksamittarin tekniset vaatimukset (Finlex)",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-tieliikenne/2026/17",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  },
+  {
+   "id": "17625",
+   "type": "regulation",
+   "uuid": "0d306549-dd27-4aae-aeed-150650fef4e3",
+   "content_category": "Säädökset ja määräykset",
+   "title": "Kaupunkiraideliikennemääräys",
+   "description": null,
+   "description_link": null,
+   "hero_image": null,
+   "subtitle": null,
+   "subtitle_link": null,
+   "status": true,
+   "draft": false,
+   "archived": false,
+   "promoted": false,
+   "created": "2026-08-31T16:09:34",
+   "updated": "2026-08-31T16:15:33",
+   "listing_sort_date": "2026-08-31T16:09:34",
+   "ingress": null,
+   "short_description": null,
+   "body": null,
+   "summary": null,
+   "is_wide": false,
+   "taxonomy_terms": [
+    {
+     "id": "84",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "18",
+     "vocabulary": "tags"
+    },
+    {
+     "id": "47",
+     "vocabulary": "regulation_types"
+    }
+   ],
+   "path": "/fi/saadokset/kaupunkiraideliikennemaarays-0",
+   "search_title": null,
+   "chatbot": false,
+   "promote_to_main": false,
+   "hide_dates": false,
+   "hidden_from_search": false,
+   "keha_tracking": false,
+   "show_left_navigation": false,
+   "group_id": "1",
+   "group_machine_name": "traficom",
+   "regulation_number": "TRAFICOM/837908/03.04.02.00/2025",
+   "regulation_type_name": [
+    "Määräys"
+   ],
+   "valid_from": "2026-09-07T15:00:00",
+   "expire": null,
+   "text": "<p>Määräystä sovelletaan metro- ja raitioliikenteeseen (kaupunkiraideliikenne) sekä metrorataverkon ja raitiorataverkon hallintaan.</p>",
+   "link": {
+    "title": "Lue kaupunkiraideliikennemääräys",
+    "url": "https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/traficom-rautatieliikenne/2026/18",
+    "external": true,
+    "link_to": "url"
+   },
+   "langcode": "fi"
+  }
+ ]
+}

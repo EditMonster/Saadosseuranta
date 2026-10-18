@@ -12,6 +12,8 @@ import traceback
 
 import build
 import fetch_avoimuus
+import fetch_caselaw
+import fetch_curia
 import fetch_eduskunta
 import fetch_eu
 import fetch_eu_mergers
@@ -22,13 +24,16 @@ import fetch_hys
 import fetch_kkv
 import fetch_mao
 import fetch_regdel
+import fetch_toimiala
 import fetch_ue
+import fetch_vaski
 from common import CACHE_DIR, load_json, log, save_json
 
 HEALTH = CACHE_DIR / "health.json"
 STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
+    ("vaski", fetch_vaski.main),
     ("finlex", fetch_finlex.main),
     ("eu", fetch_eu.main),
     ("ue", fetch_ue.main),
@@ -39,6 +44,9 @@ STEPS = [
     ("regdel", fetch_regdel.main),
     ("mao", fetch_mao.main),
     ("avoimuus", fetch_avoimuus.main),
+    ("caselaw", fetch_caselaw.main),
+    ("curia", fetch_curia.main),
+    ("toimiala", fetch_toimiala.main),
 ]
 
 

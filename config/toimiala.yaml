@@ -1,0 +1,205 @@
+# Toimialakerros: valvovien viranomaisten kuulemiset (laji "kuuleminen"), ohjeet ja määräykset
+# (laji "ohje") sekä ratkaisut (laji "ratkaisu" → docs/data/ratkaisut.json). Yksi lohko per lähde.
+#
+# Yhteiset kentät:
+#   enabled     haetaanko lähde (scripts/fetch_toimiala.py ohittaa pois kytketyt)
+#   authority   viranomaisen näyttönimi (items[].authority)
+#   scope       "fi" kotimaiset viranomaiset, "eu" EU-virastot
+#   laji        "kuuleminen" | "ohje" | "ratkaisu"
+#   aihealueet  config/topics.yaml:n aihealueet, joita käytetään kun avainsanaluokittelu ei osu; kun
+#               aihealueet_aina: true, ne lisätään aina (yhden alan viranomainen: Fiva, Vero, TSV, EDPB, ESAt)
+#   keep_days   kuinka monta päivää antopäivästä ohjeet/ratkaisut pidetään mukana (oletus 120);
+#               kuulemiset pidetään määräaika + consultation_grace_days
+#
+# Kohteliaisuus: enintään yksi pyyntö sekunnissa per palvelin; EBA:n robots.txt pyytää Crawl-delay 10,
+# joten EBA:lta haetaan enintään max_details_per_run yksityiskohtasivua ajossa. Yksityiskohtasivut
+# haetaan vain uusille tunnisteille (välimuisti data/cache/toimiala.json).
+
+defaults:
+  keep_days: 120
+  consultation_grace_days: 30     # päättynyt kuuleminen näkyy vielä näin monta päivää määräajan jälkeen
+  unknown_deadline_days: 45       # jos määräaikaa ei saada, kuuleminen on "lausunnolla" näin monta päivää julkaisusta
+  request_interval: 1.0           # sekuntia pyyntöjen välillä samalle palvelimelle
+  max_details_per_run: 30         # yksityiskohtasivujen yläraja per lähde per ajo (loput seuraavissa ajoissa)
+
+sources:
+
+  # ---- Finanssivalvonta (ei RSS-syötettä; HTML-listaukset) ----
+  fiva_tiedotteet:
+    enabled: true
+    authority: Finanssivalvonta
+    scope: fi
+    laji: ohje
+    aihealueet: ["Yhtiö ja rahoitus"]
+    aihealueet_aina: true
+    keep_days: 120
+    urls:
+      valvottavatiedotteet: https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/
+      lehdistotiedotteet: https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/lehdistotiedotteet/
+    # Mukaan otetaan tiedotteet, joiden otsikko koskee määräyksiä ja ohjeita (MOK N/YYYY), hallinnollisia
+    # seuraamuksia (seuraamusmaksu, julkinen varoitus, rikemaksu, hallinto-oikeuden ratkaisu niistä) tai
+    # lausuntopyyntöä ("Lausuntoaika päättyy d.m.yyyy" → laji kuuleminen). esa_guidelines lisää tiedotteet,
+    # joissa Fiva ilmoittaa noudattavansa EBA/ESMA/EIOPA-ohjeita ("soveltaminen alkaa d.m.yyyy").
+    esa_guidelines: true
+
+  fiva_lausuntopyynnot:
+    enabled: true
+    authority: Finanssivalvonta
+    scope: fi
+    laji: kuuleminen
+    aihealueet: ["Yhtiö ja rahoitus"]
+    aihealueet_aina: true
+    url: https://www.finanssivalvonta.fi/saantely/lausuntopyynnot/
+    # Määräaika ei ole listasivulla: se otetaan samaan aikaan (±10 pv) julkaistusta valvottavatiedotteesta
+    # ("Lausuntoaika päättyy …"); muuten rivi saa deadlineUnknown: true. lausuntopalvelu.fi on estetty (ks. alla).
+    match_window_days: 10
+
+  # ---- Euroopan valvontaviranomaiset ----
+  esma_consultations:
+    enabled: true
+    authority: ESMA
+    scope: eu
+    laji: kuuleminen
+    aihealueet: ["Yhtiö ja rahoitus"]
+    aihealueet_aina: true
+    url: https://www.esma.europa.eu/press-news/consultations
+    pages: 1                      # 20 riviä/sivu; uusimmat ensin, päättyneet jäävät listalle
+
+  eba_consultations:
+    enabled: true
+    authority: EBA
+    scope: eu
+    laji: kuuleminen
+    aihealueet: ["Yhtiö ja rahoitus"]
+    aihealueet_aina: true
+    url: https://www.eba.europa.eu/publications-and-media/consultations
+    crawl_delay: 10               # robots.txt: Crawl-delay 10
+    max_details_per_run: 5        # määräaika varmistetaan yksityiskohtasivulta vain uusille riveille
+
+  eiopa_consultations:
+    enabled: true
+    authority: EIOPA
+    scope: eu
+    laji: kuuleminen
+    aihealueet: ["Yhtiö ja rahoitus"]
+    aihealueet_aina: true
+    rss: https://www.eiopa.europa.eu/node/4764/rss_en
+    listing: https://www.eiopa.europa.eu/browse/consultations-and-surveys_en
+    pages: 2                      # 10 riviä/sivu; listaus antaa määräajan, yksityiskohtasivu vain jos se puuttuu
+
+  # ---- Euroopan tietosuojaneuvosto ----
+  edpb_consultations:
+    enabled: true
+    authority: EDPB
+    scope: eu
+    laji: kuuleminen
+    aihealueet: ["Tietosuoja ja digi"]
+    aihealueet_aina: true
+    url: https://www.edpb.europa.eu/public-consultations_en
+
+  edpb_guidelines:
+    enabled: true
+    authority: EDPB
+    scope: eu
+    laji: ohje
+    aihealueet: ["Tietosuoja ja digi"]
+    aihealueet_aina: true
+    keep_days: 120
+    # Luettelo sisältää myös kuulemisversiot: ohje, jonka numero on avoimessa kuulemisessa, saa tilan "luonnos"
+    url: "https://www.edpb.europa.eu/documents_en?type%5Bguidance%7Cguideline%5D=guidance%7Cguideline"
+
+  # ---- Verohallinto (julkinen JSON-hakurajapinta) ----
+  vero_ohjeet:
+    enabled: true
+    authority: Verohallinto
+    scope: fi
+    laji: ohje
+    aihealueet: ["Verotus"]
+    aihealueet_aina: true
+    keep_days: 120
+    api: https://www.vero.fi/api/search/results
+    rootFilter: 5361
+    typeId: 7
+    pageSize: 50
+    max_details_per_run: 30       # antopäivä, diaarinumero ja "korvaa ohjeen" ovat vain ohjesivulla
+
+  vero_kvl:
+    enabled: true
+    authority: Keskusverolautakunta
+    scope: fi
+    laji: ratkaisu
+    aihealueet: ["Verotus"]
+    aihealueet_aina: true
+    keep_days: 120
+    api: https://www.vero.fi/api/search/results
+    rootFilter: 11068
+    typeId: 10
+    pageSize: 50
+    max_details_per_run: 30
+    refresh_days: 30              # "Ei lainvoimainen" -ratkaisut luetaan uudelleen näin usein (KHO:n ratkaisu päivittyy sivulle)
+
+  # ---- Traficom (JSON-hakurajapinta) ----
+  traficom_maaraykset:
+    enabled: true
+    authority: Traficom
+    scope: fi
+    laji: ohje
+    aihealueet: ["Tietosuoja ja digi"]
+    keep_days: 120
+    api: https://www.traficom.fi/search
+    size: 50
+    # 47 Määräys (status "annettu"/"voimassa"), 48 Määräyshankepäätös = ilmoitus määräyshankkeen käynnistymisestä
+    # (status "luonnos"; itse määräysluonnoksen lausuntokierros on lausuntopalvelu.fi:ssä)
+    regulation_types: {47: Määräys, 48: Määräyshankepäätös}
+
+  # ---- Tietosuojavaltuutetun ratkaisut Finlexistä (tietosuoja.fi on Cloudflare-estetty) ----
+  tsv_finlex:
+    enabled: true
+    authority: Tietosuojavaltuutettu
+    scope: fi
+    laji: ratkaisu
+    aihealueet: ["Tietosuoja ja digi"]
+    aihealueet_aina: true
+    keep_days: 120
+    url: https://www.finlex.fi/fi/viranomaiset/tietosuojavaltuutettu/{year}
+    # kuluva vuosi aina; edellinen vuosi myös tammi–helmikuussa, jotta keep_days-ikkuna ei katkea vuodenvaihteessa
+
+  # ---- Estetyt lähteet ----
+  # Nämä YJA-alustan sivustot ja lausuntopalvelu.fi vastaavat tästä ympäristöstä Cloudflaren JS-haasteella
+  # (403 "Just a moment…") kaikille poluille. Estoa ei kierretä. Kokeile GitHub Actions -ajurista; jos
+  # sivut aukeavat sieltä, kytke päälle ja toteuta jäsennin (YJA-listauksilla on yleensä RSS-syöte).
+  energiavirasto:
+    enabled: false                # Cloudflare-estetty tästä ympäristöstä
+    authority: Energiavirasto
+    scope: fi
+    laji: ohje
+    aihealueet: ["Kestävyys ja ympäristö"]
+    url: https://energiavirasto.fi/
+  valvira:
+    enabled: false                # Cloudflare-estetty tästä ympäristöstä (lvv.fi)
+    authority: Valvira
+    scope: fi
+    laji: ohje
+    aihealueet: ["Sote ja koulutus"]
+    url: https://lvv.fi/
+  fimea:
+    enabled: false                # Cloudflare-estetty tästä ympäristöstä
+    authority: Fimea
+    scope: fi
+    laji: ohje
+    aihealueet: ["Sote ja koulutus"]
+    url: https://fimea.fi/
+  tukes:
+    enabled: false                # Cloudflare-estetty tästä ympäristöstä
+    authority: Tukes
+    scope: fi
+    laji: ohje
+    aihealueet: ["Kuluttaja ja tuotteet"]
+    url: https://tukes.fi/
+  lausuntopalvelu:
+    enabled: false                # Cloudflare-estetty tästä ympäristöstä; sisältäisi Fivan ja Traficomin määräysluonnosten lausuntokierrokset määräaikoineen
+    authority: lausuntopalvelu.fi
+    scope: fi
+    laji: kuuleminen
+    aihealueet: ["Hallinto ja hankinnat"]
+    url: https://www.lausuntopalvelu.fi/FI/Proposal/Open

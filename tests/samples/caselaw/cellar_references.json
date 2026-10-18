@@ -1,0 +1,330 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "w",
+   "celex",
+   "oj",
+   "pub",
+   "lodged",
+   "title_fi",
+   "title_en",
+   "legislation",
+   "eurovoc"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/042e7726-83d6-11f1-bf5e-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62026CN0463"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2026/3644"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-07-20"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-05-11"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-463/26, Järvehi: Ennakkoratkaisupyyntö, jonka Korkein oikeus (Suomi) on esittänyt 11.5.2026 – A osakeyhtiö v. B:n kaupunki"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-463/26, Järvehi: Request for a preliminary ruling from the Korkein Oikeus (Finland) lodged on 11 May 2026 – A Ltd v The City of B"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "1476,1835,5559,5582,6210"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/1118f346-6dd7-11f1-ae88-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62026CN0373"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2026/3164"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-06-22"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-04-21"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-373/26, Atopää: Ennakkoratkaisupyyntö, jonka Markkinaoikeus (Suomi) on esittänyt 21.4.2026 – Atopää Oy v. Lupa- ja valvontavirasto"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-373/26, Atopää: Request for a preliminary ruling from the Markkinaoikeus (Finland) lodged on 21 April 2026 – Atopää Oy v Lupa- ja valvontavirasto"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "1395,1425,2192,2434,2803,2897,4373,4374,6089,6775"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/93c7779c-0ad9-11f1-8870-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025CN0784"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2026/782"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-02-16"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-12-05"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-784/25, Eläketurvakeskus: Ennakkoratkaisupyyntö, jonka Vakuutusoikeus (Suomi) on esittänyt 5.12.2025 – A v. Eläketurvakeskus"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-784/25, Eläketurvakeskus: Request for a preliminary ruling from the Vakuutusoikeus (Finland) lodged on 5 December 2025 – A v Eläketurvakeskus"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "1019,1047,2084,3359,3527,3751,4028,4151"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/010e474b-fa61-11f0-8da5-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025CN0713"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2026/297"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-01-26"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-11-10"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-713/25, Suomen Elintarviketyöläisten Liitto: Ennakkoratkaisupyyntö, jonka työtuomioistuin (Suomi) on esittänyt 10.11.2025 – Suomen Elintarviketyöläisten Liitto SEL ry v. Elintarviketeollisuusliitto ry"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-713/25, Suomen Elintarviketyöläisten Liitto: Request for a preliminary ruling from the Työtuomioistuin (Finland) lodged on 10 November 2025 – Suomen Elintarviketyöläisten Liitto SEL ry v Elintarviketeollisuusliitto ry"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "108,1133,194,2619,4548,688"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/fa68866b-7bd5-11f0-9af8-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025CN0390"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2025/4439"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-08-18"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-06-13"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-390/25, HUS-yhtymä: Ennakkoratkaisupyyntö, jonka Korkein hallinto-oikeus (Suomi) on esittänyt 13.6.2025 – HUS-yhtymä"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-390/25, HUS-yhtymä: Request for a preliminary ruling from the Korkein hallinto-oikeus (Finland) lodged on 13 June 2025 – HUS-yhtymä"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "20,2218,4219,c_4c7717f3"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/061f3433-4594-11f0-b9f2-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025TN0184"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2025/3061"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-06-10"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-02-28"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia T-184/25, Veronsaajien oikeudenvalvontayksikkö: Ennakkoratkaisupyyntö, jonka Korkein hallinto-oikeus (Suomi) on esittänyt 28. helmikuuta 2025 – Veronsaajien oikeudenvalvontayksikkö v. A Oy"
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case T-184/25, Veronsaajien oikeudenvalvontayksikkö: Request for a preliminary ruling from the Korkein hallinto-oikeus (Finland) made on 28 February 2025 – Veronsaajien oikeudenvalvontayksikkö v A Oy"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "1130,1452,2098,285,4585,4663,5582,935"
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/d71a02d8-f7d7-11ef-b7db-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62024CN0906"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "C/2025/1223"
+    },
+    "pub": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2025-03-03"
+    },
+    "lodged": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2024-12-31"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Asia C-906/24, Sirto: Ennakkoratkaisupyyntö, jonka Korkein hallinto-oikeus (Suomi) on esittänyt 31.12.2024 – A ym."
+    },
+    "title_en": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Case C-906/24, Sirto: Request for a preliminary ruling from the Korkein hallinto-oikeus (Finland) lodged on 31 December 2024 – A and Others"
+    },
+    "legislation": {
+     "type": "literal",
+     "value": ""
+    },
+    "eurovoc": {
+     "type": "literal",
+     "value": "1634,2828,3526,3906,3916,4004,5296,5390,793,950"
+    }
+   }
+  ]
+ }
+}

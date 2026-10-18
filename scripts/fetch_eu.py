@@ -173,9 +173,10 @@ def council_events(pids: list[str]) -> dict[str, list[dict]]:
         vals = ", ".join(f'"{k}"' for k in chunk)
         q = f"""
 PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
-SELECT ?id ?date ?type WHERE {{
+SELECT ?id ?date ?type ?st WHERE {{
   ?d cdm:dossier_identifier ?id . FILTER(STR(?id) IN ({vals}))
   ?e cdm:event_legal_part_of_dossier ?d . ?e cdm:event_legal_date ?date . ?e cdm:event_legal_type ?type .
+  OPTIONAL {{ ?e cdm:event_legal_has-status_event-status ?st }}
   FILTER({" || ".join(f'CONTAINS(STR(?type), "{t}")' for t in COUNCIL_TYPES)})
 }}"""
         try:
@@ -189,8 +190,14 @@ SELECT ?id ?date ?type WHERE {{
                 continue
             typ = str(b["type"]["value"]).split("/")[-1]
             date = b["date"]["value"][:10]
+            status = str((b.get("st") or {}).get("value") or "").split("/")[-1]  # PROJECTED = planned (Council agenda), CANCELLED = dropped
+            if status == "CANCELLED":
+                continue
             if re.match(r"\d{4}-\d{2}-\d{2}$", date):
-                out.setdefault(pid, []).append({"date": date, "type": typ})
+                ev = {"date": date, "type": typ}
+                if status == "PROJECTED":
+                    ev["projected"] = True
+                out.setdefault(pid, []).append(ev)
     for pid, evs in out.items():
         evs.sort(key=lambda e: (e["date"], e["type"]))
     return out

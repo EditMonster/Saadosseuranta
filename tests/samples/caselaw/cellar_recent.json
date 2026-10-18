@@ -1,0 +1,322 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "w",
+   "celex",
+   "case",
+   "type",
+   "date",
+   "ecli",
+   "title_fi",
+   "countries",
+   "procedure",
+   "subject",
+   "interprets"
+  ]
+ },
+ "results": {
+  "bindings": [
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/9d2b90a6-c876-11f1-a77b-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62023CJ0695"
+    },
+    "case": {
+     "type": "literal",
+     "value": "C-695/23"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/JUDG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:C:2026:872"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Unionin tuomioistuimen tuomio (kymmenes jaosto) 15.10.2026.#Galina Evgenyevna Pumpyanskaya vastaan Euroopan unionin neuvosto.#Muutoksenhaku – Ukrainaan kohdistuvan sotilaallisen hyökkäyksen johdosta toteutetut rajoittavat toimenpiteet – Päätös 2014/145/YUTP – 2 artiklan 1 kohdan loppuosa – Sellaiseen luonnolliseen henkilöön kohdistetut rajoittavat toimenpiteet, joka on lähellä rajoittavien toimenpiteiden kohteena itsekin olevaa toista luonnollista henkilöä – Lähellä olemisen käsite kahden sellaisen henkilön tapauksessa, joita yhdistää perheside.#Asia C-695/23 P."
+    },
+    "countries": {
+     "type": "literal",
+     "value": ""
+    },
+    "procedure": {
+     "type": "literal",
+     "value": "ANNU,PVOI"
+    },
+    "subject": {
+     "type": "literal",
+     "value": "MRES"
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/1f92f9ec-c884-11f1-a77b-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62024CC0627"
+    },
+    "case": {
+     "type": "literal",
+     "value": "C-627/24"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/OPIN_AG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:C:2026:861"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Julkisasiamies A. Biondi ratkaisuehdotus 15.10.2026.###"
+    },
+    "countries": {
+     "type": "literal",
+     "value": ""
+    },
+    "procedure": {
+     "type": "literal",
+     "value": ""
+    },
+    "subject": {
+     "type": "literal",
+     "value": ""
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/1e8b127e-c877-11f1-a77b-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62024CJ0580"
+    },
+    "case": {
+     "type": "literal",
+     "value": "C-580/24"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/JUDG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:C:2026:865"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Unionin tuomioistuimen tuomio (viides jaosto) 15.10.2026.#Sofiyska gradska prokuratura vastaan LY.#Sofiyski gradski sad esittämä Ennakkoratkaisupyyntö.#Ennakkoratkaisupyyntö – Oikeudellinen yhteistyö rikosasioissa – Eurooppalainen pidätysmääräys – Puitepäätös 2002/584/YOS – 12 artikla – Etsityn henkilön pitäminen säilössä – 23 artikla – Määräaika kyseisen henkilön luovuttamiselle – Kansallinen säännöstö, jossa säädetään velvollisuudesta pitää etsitty henkilö säilössä vankilassa siihen saakka, kunnes hänet luovutetaan pidätysmääräyksen antaneeseen jäsenvaltioon – Euroopan unionin perusoikeuskirjan 6 artikla – Oikeus vapauteen ja henkilökohtaiseen turvallisuuteen.#Asia C-580/24."
+    },
+    "countries": {
+     "type": "literal",
+     "value": "BGR"
+    },
+    "procedure": {
+     "type": "literal",
+     "value": "PREJ"
+    },
+    "subject": {
+     "type": "literal",
+     "value": "COJP,COPO"
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/87eb80ac-c7b2-11f1-a77b-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025TJ0569"
+    },
+    "case": {
+     "type": "literal",
+     "value": "T-569/25"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/JUDG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:T:2026:666"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Unionin yleisen tuomioistuimen tuomio (laajennettu toinen jaosto) 14.10.2026.#X-GmbH vastaan Finanzamt Y.#Bundesfinanzhof esittämä Ennakkoratkaisupyyntö.#Ennakkoratkaisupyyntö – Verotus – Yhteinen arvonlisäverojärjestelmä – Voittomarginaalijärjestelmä – Direktiivin 2006/112/EY 314 artikla – Se, että kansalliset veroviranomaiset epäävät verovelvolliselta oikeuden soveltaa voittomarginaalijärjestelmää – Vilpitön mieli – Kansallinen erityismenettely – Tehokkuusperiaate.#Asia T-569/25."
+    },
+    "countries": {
+     "type": "literal",
+     "value": "DEU"
+    },
+    "procedure": {
+     "type": "literal",
+     "value": "PREJ"
+    },
+    "subject": {
+     "type": "literal",
+     "value": "TVA"
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/a55a6127-c228-11f1-988f-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025TJ0773"
+    },
+    "case": {
+     "type": "literal",
+     "value": "T-773/25"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/JUDG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-07"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:T:2026:638"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Unionin yleisen tuomioistuimen tuomio (laajennettu toinen jaosto) 7.10.2026.#Finanzamt für Großbetriebe vastaan F GmbH.#Verwaltungsgerichtshof esittämä Ennakkoratkaisupyyntö.#Ennakkoratkaisupyyntö – Verotus – Yhteinen arvonlisäverojärjestelmä – Yhteisön sisäiset kolmikantakaupat – Direktiivin 2006/112 42 artiklan a alakohta – Kolmikantakauppoja koskeva vapaaehtoinen yksinkertaistamisjärjestelmä – Sellaisen laskun laatiminen myöhässä, joka sisältää maininnan käännetystä veronmaksuvelvollisuudesta.#Asia T-773/25."
+    },
+    "countries": {
+     "type": "literal",
+     "value": "AUT"
+    },
+    "procedure": {
+     "type": "literal",
+     "value": "PREJ"
+    },
+    "subject": {
+     "type": "literal",
+     "value": "TVA"
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   },
+   {
+    "w": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/cellar/398775ef-c87a-11f1-a77b-01aa75ed71a1"
+    },
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "62025CJ0402"
+    },
+    "case": {
+     "type": "literal",
+     "value": "C-402/25"
+    },
+    "type": {
+     "type": "uri",
+     "value": "http://publications.europa.eu/resource/authority/resource-type/JUDG"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "ecli": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ECLI:EU:C:2026:870"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Unionin tuomioistuimen tuomio (seitsemäs jaosto) 15.10.2026.#Plungės rajono savivaldybės administracija vastaan Viešųjų pirkimų tarnyba.#Lietuvos administracinių ginčų komisija esittämä Ennakkoratkaisupyyntö.#Ennakkoratkaisupyyntö – Julkiset hankinnat – Direktiivi 2014/24/EU – Hankintasopimuksen tekeminen – 57 artiklan 4 kohdan ensimmäisen alakohdan h alakohta sekä 6 ja 7 kohta – Vapaaehtoiset perusteet hankintamenettelystä poissulkemiseksi – Talouden toimijan pätevyysvaatimusten täyttymisestä esittämät väärät tiedot – Merkitseminen vääriä tietoja julkisessa hankintamenettelyssä esittäneiden toimittajien luetteloon – 18 artiklan 1 kohta – Suhteellisuusperiaate – Direktiivi 89/665/ETY – 1 artikla – Oikeus tehokkaisiin oikeussuojakeinoihin.#Asia C-402/25."
+    },
+    "countries": {
+     "type": "literal",
+     "value": "LTU"
+    },
+    "procedure": {
+     "type": "literal",
+     "value": "PREJ"
+    },
+    "subject": {
+     "type": "literal",
+     "value": "ETAB,LPSE,MAPU"
+    },
+    "interprets": {
+     "type": "literal",
+     "value": ""
+    }
+   }
+  ]
+ }
+}

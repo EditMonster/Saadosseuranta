@@ -152,6 +152,31 @@ def agenda_events(influence: dict | None) -> list[dict]:
     return ev
 
 
+MOTION_KIND = {"KK": "Kirjallinen kysymys", "LA": "Lakialoite", "TPA": "Toimenpidealoite", "KAA": "Kansalaisaloite"}
+
+
+def build_motions(topics_cfg) -> list[dict]:
+    """Weak early signals from parliament: written questions, legislative and other motions, citizens' initiatives
+    (Vaski). One row each, laji "signaali"; they sort to the bottom of the national view because they carry no
+    future stage, and surface through topics, search and the Tilannekuva signal panel."""
+    vaski = load_json(CACHE_DIR / "vaski.json", {}) or {}
+    items = []
+    for m in vaski.get("motions") or []:
+        typ = m.get("type")
+        if typ not in MOTION_KIND or not m.get("date"):
+            continue
+        tunnus = (m.get("tunnus") or "").replace(" vp", "")
+        num = tunnus.split(" ", 1)[-1].replace("/", "-")
+        text = " ".join([m.get("title") or "", m.get("text") or "", " ".join(m.get("keywords") or [])])
+        title = re.sub(r"^(Kirjallinen kysymys|Lakialoite|Toimenpidealoite|Kansalaisaloite)\s+", "", m.get("title") or "", flags=re.I)
+        items.append({"id": f"fi-{typ.lower()}-{num}", "scope": "fi", "laji": "signaali", "kind": MOTION_KIND[typ], "title": short_title(title[:1].upper() + title[1:])[:160],
+                      "fullTitle": m.get("title"), "ref": tunnus, "topics": classify(text, topics_cfg), "status": "vireillä", "done": False,
+                      "summary": (m.get("text") or "")[:400], "source": m.get("url"), "links": {"eduskunta": m.get("url")} if m.get("url") else {},
+                      "ministry": "", "authority": "eduskunta", "signer": m.get("firstSigner"), "party": m.get("party"), "signers": m.get("signers"),
+                      "events": [{"date": m["date"], "label": f"{MOTION_KIND[typ]} jätetty" + (f" – {m['firstSigner']}" + (f" ({m['party']})" if m.get("party") else "") if m.get("firstSigner") else ""), "kind": "muu", "confirmed": True}]})
+    return items
+
+
 def build_fi(topics_cfg, settings) -> list[dict]:
     hk = load_json(CACHE_DIR / "hankeikkuna.json", {"items": []})["items"]
     ek = load_json(CACHE_DIR / "eduskunta.json", {"items": {}})["items"]
@@ -402,7 +427,7 @@ def build_hys(topics_cfg, settings) -> list[dict]:
         now_open = any(e["date"] <= TODAY.isoformat() <= e["end"] for e in ev)
         upcoming = any(e["date"] > TODAY.isoformat() for e in ev)
         status = "lausunnolla" if now_open else ("palauteaika tulossa" if upcoming else "palauteaika päättynyt")
-        items.append({"id": f"eu-hys-{h['id']}", "scope": "eu", "laji": "kuuleminen", "kind": "EU-kuuleminen", "title": title[:160],
+        items.append({"id": f"eu-hys-{h['id']}", "scope": "eu", "laji": "kuuleminen", "kind": "EU-kuuleminen", "authority": "Komissio", "title": title[:160],
                       "fullTitle": h.get("title_en") or title, "ref": h.get("actTypeLabel") or "Komission aloite", "topics": topics,
                       "status": status, "done": False, "summary": (f"{h.get('actTypeLabel') or ''} · {h.get('reference') or ''}").strip(" ·"),
                       "source": h["url"], "links": {"haveyoursay": h["url"]}, "events": ev, "updated": None})
@@ -428,7 +453,7 @@ def council_timeline(raw: list[dict], cfg: dict) -> list[dict]:
     """Cellar/PreLex Council events -> timeline events per config/neuvosto.yaml (repeated meetings: latest only)."""
     types = cfg.get("tapahtumat") or {}
     adopted = {"APR_R1_byCONSIL", "APR_R2_byCONSIL", "ADP_R3_byCONSIL", "ADP_FRM_byCONSIL"}
-    done = any(e.get("type") in adopted for e in raw or [])
+    done = any(e.get("type") in adopted and not e.get("projected") for e in raw or [])
     out, last = [], {}
     for e in raw or []:
         spec = types.get(e.get("type"))
@@ -436,6 +461,12 @@ def council_timeline(raw: list[dict], cfg: dict) -> list[dict]:
             continue
         if done and e["type"].startswith(("DIS_", "DELIB_")):
             continue  # routine "discussed in Council" marks add nothing once the act has been adopted
+        if e.get("projected"):
+            # planned on a published Council/Coreper agenda, not yet held: a forecast, never a past stage
+            if e["date"] < TODAY.isoformat():
+                continue
+            out.append({"date": e["date"], "label": spec["nimi"] + " (esityslistalla)", "kind": "ennuste", "confirmed": False, "src": "neuvosto"})
+            continue
         ev = {"date": e["date"], "label": spec["nimi"], "kind": spec.get("kind", "neuvosto"), "confirmed": True, "src": "neuvosto"}
         if spec.get("pida") == "last":
             last[e["type"]] = ev
@@ -773,7 +804,16 @@ def main():
     kirjelmat = attach_ue(eu, topics_cfg)
     kuulemiset = build_hys(topics_cfg, settings)
     delegoidut = build_delegated(topics_cfg, settings)
-    items = fi + asetukset + eu + kirjelmat + kuulemiset + delegoidut
+    motions = build_motions(topics_cfg)
+    # sector layer: regulator consultations and guidance (Fiva, ESMA/EBA/EIOPA, EDPB, Vero, Traficom) + KVL/TSV rulings
+    try:
+        from build_toimiala import build_toimiala
+
+        toim = build_toimiala(topics_cfg, settings)
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: toimiala: {e}")
+        toim = {"items": [], "rulings": []}
+    items = fi + asetukset + eu + kirjelmat + kuulemiset + delegoidut + motions + toim["items"]
     # drop lapsed proposals older than 90 days and completed national items beyond max age
     keep = []
     for it in items:
@@ -787,6 +827,19 @@ def main():
             continue
         keep.append(it)
     apply_overrides(keep)
+    # Case law (courts + CJEU) lives in docs/data/ratkaisut.json; each statute row gets its newest related rulings.
+    try:
+        from build_ratkaisut import build_ratkaisut  # imported here: the module itself imports classify from build
+
+        rk = build_ratkaisut(keep, toim.get("rulings") or [])
+        for it in keep:
+            cl = (rk.get("byItem") or {}).get(it["id"])
+            if cl:
+                it["caseLaw"] = cl
+        rk_counts = (rk.get("payload") or {}).get("counts") or {}
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: ratkaisut: {e}")
+        rk_counts = {}
     changes = update_changelog(keep, settings)
     # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
     # notices a week) and a different page segment. None written = previous file stays in place.
@@ -801,7 +854,8 @@ def main():
                        "hankinnat": (hank.get("counts") or {}).get("avoinna", 0),
                        "hankinnat7": (hank.get("counts") or {}).get("sulkeutuu7", 0),
                        "yrityskaupat": (yk.get("counts") or {}).get("fi_open", 0) + (yk.get("counts") or {}).get("eu_open", 0),
-                       "yrityskaupat_fi": (yk.get("counts") or {}).get("fi_open", 0)},
+                       "yrityskaupat_fi": (yk.get("counts") or {}).get("fi_open", 0),
+                       "ratkaisut": rk_counts.get("total", 0), "ratkaisut_fi": rk_counts.get("fi", 0), "erp_vireilla": rk_counts.get("erp_vireilla", 0)},
             "topics": list(topics_cfg.keys()) + ["Muut"],
             "hankintaTopics": hank.get("topics") or [],
             "yrityskauppaTopics": yk.get("topics") or [],
@@ -811,7 +865,8 @@ def main():
             "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
                       "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep),
-                      "delegoitu": sum(i.get("laji") == "delegoitu" for i in keep)},
+                      "delegoitu": sum(i.get("laji") == "delegoitu" for i in keep),
+                      "signaali": sum(i.get("laji") == "signaali" for i in keep), "ohje": sum(i.get("laji") == "ohje" for i in keep)},
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
                         "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)",
