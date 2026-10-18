@@ -1,0 +1,457 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "date",
+   "type",
+   "docref",
+   "pid",
+   "dtitle",
+   "dispatch"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-19"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ADP_NEGMAN_SPCOM_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ST 14473 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_237"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 1308/2013 as regards"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-19"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "APR_R1_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ST 13720 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_232"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2004/37/EC as regards the addi"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4577 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_395"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL suspending the application of the rules on the a"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-17"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4577 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_360"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2016/679, (EU) 2018/17"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-17"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "DELIB_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4574 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_97"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2014/45/EU on periodic roadwor"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "DELIB_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4574 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_358"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the establishment of European Business Wallet"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "DELIB_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4574 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2026_85"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a DECISION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Decision (EU) 2015/1814 as regards ceasin"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "DELIB_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4574 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2026_203"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/943, as regards fu"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-21"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ENDORSE_AGRPROV_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4577 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+     "value": "procedure:2024_35"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on combating the sexual abuse and sexual exploita"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-17"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-23"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4574 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2026_74"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on THE 28TH REGIME CORPORATE LEGAL FRAMEWORK - '"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-26"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "APR_R1_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4478 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+     "value": "procedure:2023_134"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 1999/62/EC, Council Directive "
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-26"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "APR_R1_byCONSIL"
+    },
+    "docref": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "CM 4478 2026 INIT"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "procedure:2025_311"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1173/2011 and (EU) "
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-20"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "VOTE_byEP"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+     "value": "procedure:2023_169"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on jurisdiction, applicable law, recognition and"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    }
+   },
+   {
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-20"
+    },
+    "type": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "VOTE_byEP"
+    },
+    "pid": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+     "value": "procedure:2023_437"
+    },
+    "dtitle": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 261/2004, (EC) No 1"
+    },
+    "dispatch": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-17"
+    }
+   }
+  ]
+ }
+}

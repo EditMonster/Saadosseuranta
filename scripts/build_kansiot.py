@@ -35,7 +35,9 @@ def _lower_list(v) -> list[str]:
 
 
 def _text(it: dict) -> str:
-    return " ".join(str(it.get(k) or "") for k in ("title", "fullTitle", "summary", "buyer", "appellant", "cpvLabel", "ref")).lower()
+    kw = it.get("keywords")
+    extra = " ".join(kw) if isinstance(kw, list) else str(kw or "")
+    return (" ".join(str(it.get(k) or "") for k in ("title", "fullTitle", "summary", "buyer", "appellant", "cpvLabel", "ref", "authority")) + " " + extra).lower()
 
 
 def matches(it: dict, rules: dict) -> bool:
@@ -70,6 +72,18 @@ def matches(it: dict, rules: dict) -> bool:
             return False
         if rules.get("vain_avoimet") and it.get("status") not in OPEN_TENDER:
             return False
+    elif scope == "ratkaisu":
+        courts = _lower_list(rules.get("tuomioistuimet"))
+        if courts and (it.get("court") or "").lower() not in courts:
+            return False  # courts restrict; topics/keywords select
+        aih = _lower_list(rules.get("aihealueet"))
+        if aih:
+            pos += 1
+            hit += any(t.lower() in aih for t in it.get("topics") or [])
+        if not aih and not rules.get("hakusanat"):
+            return bool(courts)  # courts alone = everything those courts publish
+        if not courts and not aih:
+            return False  # keywords alone never pull in case law (too noisy)
     elif scope == "yrityskauppa":
         yk = rules.get("yrityskaupat") or {}
         if not yk and not rules.get("hakusanat"):
@@ -137,9 +151,10 @@ def next_deadline(it: dict) -> dict | None:
     return best
 
 
-def build_kansiot(items: list[dict], tenders: list[dict], mergers: list[dict], ics_fn) -> dict:
-    by_id = {it["id"]: it for it in items + tenders + mergers}
-    rows_all = items + tenders + mergers
+def build_kansiot(items: list[dict], tenders: list[dict], mergers: list[dict], ics_fn, rulings: list[dict] | None = None) -> dict:
+    rulings = rulings or []
+    by_id = {it["id"]: it for it in items + tenders + mergers + rulings}
+    rows_all = items + tenders + mergers + rulings
     folders = []
     OUT_ICS.mkdir(parents=True, exist_ok=True)
     wanted_files = set()
@@ -175,7 +190,8 @@ def build_kansiot(items: list[dict], tenders: list[dict], mergers: list[dict], i
             "example": bool(cfg.get("esimerkki")), "items": ids, "explicit": [x for x in explicit if x in by_id], "missing": missing,
             "ruleCount": len(auto), "rules": rules, "next": nxt[:5],
             "counts": {"fi": sum(1 for r in rows if r.get("scope") == "fi"), "eu": sum(1 for r in rows if r.get("scope") == "eu"),
-                       "hankinta": sum(1 for r in rows if r.get("scope") == "hankinta"), "yrityskauppa": sum(1 for r in rows if r.get("scope") == "yrityskauppa")},
+                       "hankinta": sum(1 for r in rows if r.get("scope") == "hankinta"), "yrityskauppa": sum(1 for r in rows if r.get("scope") == "yrityskauppa"),
+                       "ratkaisu": sum(1 for r in rows if r.get("scope") == "ratkaisu")},
             "ics": f"data/kansiot/{fid}.ics", "atom": f"data/kansiot/{fid}.xml", "config": f"config/kansiot/{fid}.yaml",
             "edit": f"https://github.com/{REPO}/edit/main/config/kansiot/{fid}.yaml",
         })

@@ -1,0 +1,90 @@
+{
+ "content": [
+  {
+   "version": 2,
+   "documentReference": "117917",
+   "title": "COMMISSION IMPLEMENTING REGULATION (EU) …/... of XXX authorising an exemption pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council, with regard to the placing on the market of fluorinated greenhouse gases in certain types of indoor-installed monoblock heat pumps",
+   "meetingCode": "CMTD(2026)1404",
+   "committeeCode": "C128300",
+   "committeeTitle": "Committee on fluorinated greenhouse gases",
+   "creationDate": "2026-10-16T13:21:52.652288Z",
+   "updateDate": "2026-10-16T13:45:23.202379Z",
+   "meetingStartDate": "2026-10-05T22:00:00Z",
+   "meetingEndDate": "2026-10-05T22:00:00Z",
+   "documentType": {
+    "id": 2,
+    "label": "label.draft_implementing_act",
+    "letter": "D"
+   }
+  },
+  {
+   "version": 2,
+   "documentReference": "117912",
+   "title": "COMMISSION IMPLEMENTING REGULATION (EU) …/... of XXX authorising an exemption pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council with regard to the use of fluorinated greenhouse gases in certain commercial laundry equipment with heat pumps",
+   "meetingCode": "CMTD(2026)1404",
+   "committeeCode": "C128300",
+   "committeeTitle": "Committee on fluorinated greenhouse gases",
+   "creationDate": "2026-10-16T10:37:40.206391Z",
+   "updateDate": "2026-10-16T14:02:32.302590Z",
+   "meetingStartDate": "2026-10-05T22:00:00Z",
+   "meetingEndDate": "2026-10-05T22:00:00Z",
+   "documentType": {
+    "id": 2,
+    "label": "label.draft_implementing_act",
+    "letter": "D"
+   }
+  },
+  {
+   "version": 3,
+   "documentReference": "118512",
+   "title": "COMMISSION IMPLEMENTING DECISION of XXX on the financing of the programme for the Union’s action in the field of health (‘EU4Health Programme’) and the adoption of the work programme for 2026",
+   "meetingCode": "CMTD(2026)1756",
+   "committeeCode": "C62400",
+   "committeeTitle": "The EU4Health Programme Committee",
+   "creationDate": "2026-10-16T08:41:09.847280Z",
+   "updateDate": "2026-10-16T12:50:15.579605Z",
+   "meetingStartDate": "2026-10-13T22:00:00Z",
+   "meetingEndDate": "2026-10-13T22:00:00Z",
+   "documentType": {
+    "id": 2,
+    "label": "label.draft_implementing_act",
+    "letter": "D"
+   }
+  }
+ ],
+ "pageable": {
+  "pageNumber": 0,
+  "pageSize": 20,
+  "sort": [
+   {
+    "direction": "DESC",
+    "property": "creationDate",
+    "ignoreCase": false,
+    "nullHandling": "NATIVE",
+    "ascending": false,
+    "descending": true
+   }
+  ],
+  "offset": 0,
+  "paged": true,
+  "unpaged": false
+ },
+ "last": false,
+ "totalElements": 95,
+ "totalPages": 5,
+ "sort": [
+  {
+   "direction": "DESC",
+   "property": "creationDate",
+   "ignoreCase": false,
+   "nullHandling": "NATIVE",
+   "ascending": false,
+   "descending": true
+  }
+ ],
+ "numberOfElements": 20,
+ "size": 20,
+ "number": 0,
+ "first": true,
+ "empty": false
+}

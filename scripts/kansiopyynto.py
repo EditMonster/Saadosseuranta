@@ -45,7 +45,7 @@ def gh(*args: str) -> str:
 
 
 RULE_KEYS = {"aihealueet": list, "lajit": list, "toimialat": list, "hankintayksikot": list, "kilpailutusvaiheet": list, "hakusanat": list,
-             "vain_avoimet": bool, "enintaan": int, "yrityskaupat": dict}
+             "tuomioistuimet": list, "vain_avoimet": bool, "enintaan": int, "yrityskaupat": dict}
 MERGER_KEYS = {"vain_suomalaiset": bool, "osapuolet": list, "toimialat": list}
 
 

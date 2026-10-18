@@ -1,0 +1,377 @@
+# Ennakoivat EU-signaalit: komission suunnitelmat, neuvoston ja Coreperin esityslistat, parlamentin
+# aikatauluennusteet, rikkomusmenettelyt Suomea vastaan, komitologia (täytäntöönpanosäädökset),
+# pakotemuutokset ja valtioneuvoston neuvostokokousmuistiot (EUN-asiakirjat).
+#
+# Hakija: scripts/fetch_eu_signals.py -> data/cache/eu_signals.json (lohkot forward, council, forecasts,
+# infringements, comitology, sanctions, eun; jokaisella oma health-merkintä, joten yhden lähteen vika ei
+# kaada muita). Rakentaja: scripts/build_eu_signals.py (puhtaat funktiot, build.py kutsuu).
+# Aihealueiden nimet = config/topics.yaml.
+
+# (a) Komission ennakkosuunnitelmat – komission asiakirjarekisteri (ec.europa.eu/transparency/documents-register)
+komissio:
+  enabled: true
+  # Viikoittainen "Liste des points prévus à l'ordre du jour des prochaines réunions de la Commission"
+  # (SEC-asiakirja, tyyppi TENTAT_AGENDA_COM_MEETING): montako uusinta listaa pidetään (edellinen
+  # mahdollistaa siirtymien havaitsemisen) ja kuinka monta päivää menneet kokouspäivät säilytetään
+  weekly_lists: 2
+  keep_days: 14
+  search_days: 60            # kuinka vanhoja listoja rekisteristä haetaan
+  # Komission työohjelman liite I (uudet aloitteet, viitteellinen vuosineljännes)
+  cwp:
+    enabled: true
+    keywords: "Commission work programme"
+    languages: [fi, en]      # suomenkielinen liite kun saatavilla, englanti rinnalle nimien täsmäytystä varten
+    max_age_days: 450        # vanhempaa työohjelmaa ei enää käytetä
+  # Vastuuhenkilölyhenteet listalla -> komissaarin nimi (näytetään rivillä)
+  vastuuhenkilot:
+    PRESIDENT: "puheenjohtaja von der Leyen"
+    RIBERA: "Ribera (EVP)"
+    VIRKKUNEN: "Virkkunen (EVP)"
+    SÉJOURNÉ: "Séjourné (EVP)"
+    SEJOURNE: "Séjourné (EVP)"
+    FITTO: "Fitto (EVP)"
+    MÎNZATU: "Mînzatu (EVP)"
+    MINZATU: "Mînzatu (EVP)"
+    KALLAS: "Kallas (HR/VP)"
+    DOMBROVSKIS: "Dombrovskis"
+    ŠEFČOVIČ: "Šefčovič"
+    SEFCOVIC: "Šefčovič"
+
+# Komission suunnitelmien yhdistäminen (viikkolista + työohjelma) ja säilytys
+planned_initiatives:
+  weekly_list: true           # viikkolistan kohdat mukaan signaaleina
+  cwp: true                   # työohjelman aloitteet mukaan signaaleina
+  match_threshold: 0.62       # otsikoiden samankaltaisuus (0–1), jolla viikkolistan kohta ja työohjelman aloite yhdistetään
+  keep_past_days: 60          # suunniteltu päivä (vuosineljänneksen loppu) saa olla enintään näin monta päivää menneisyydessä
+  quarter_month_offset: 1     # Q -> tapahtumapäivä: vuosineljänneksen (1 + offset). kuukauden 1. päivä (Q2 -> 1.5.)
+
+# (b) Neuvoston ja Coreperin esityslistat – julkaisutoimiston Cellar (CONSIL FilePlanning: AGENDA_DRAFT_CONSIL)
+neuvosto:
+  enabled: true
+  lookback_days: 14           # esityslistat, jotka on annettu tällä välillä (kattaa n. 3 viikkoa eteenpäin)
+  keep_days: 7                # pidetyt kokoukset pudotetaan näin monen päivän jälkeen
+  include_working_parties: false   # työryhmien esityslistat (paljon rivejä, vähän ennakointiarvoa)
+  elimet:                     # Cellarin englanninkielinen ilmaisun nimi -> suomi
+    "PERMANENT REPRESENTATIVES COMMITTEE (Part 1)": "Coreper I"
+    "PERMANENT REPRESENTATIVES COMMITTEE (Part 2)": "Coreper II"
+    "SPECIAL COMMITTEE ON AGRICULTURE": "Maatalouden erityiskomitea"
+  kokoonpanot:                # "COUNCIL OF THE EUROPEAN UNION (<kokoonpano>)" -> suomi
+    "General Affairs": "Yleisten asioiden neuvosto"
+    "Foreign Affairs": "Ulkoasiainneuvosto"
+    "Foreign Affairs (Trade)": "Ulkoasiainneuvosto (kauppa)"
+    "Foreign Affairs (Defence)": "Ulkoasiainneuvosto (puolustus)"
+    "Foreign Affairs (Development)": "Ulkoasiainneuvosto (kehitys)"
+    "Economic and Financial Affairs": "Talous- ja rahoitusasioiden neuvosto (Ecofin)"
+    "Economic and Financial Affairs (Budget)": "Talous- ja rahoitusasioiden neuvosto (budjetti)"
+    "Justice and Home Affairs": "Oikeus- ja sisäasioiden neuvosto"
+    "Employment, Social Policy, Health and Consumer Affairs": "Työllisyys-, sosiaalipolitiikka-, terveys- ja kuluttaja-asioiden neuvosto"
+    "Competitiveness (Internal Market, Industry, Research and Space)": "Kilpailukykyneuvosto"
+    "Competitiveness (Internal Market, Industry and Research)": "Kilpailukykyneuvosto"
+    "Transport, Telecommunications and Energy": "Liikenne-, televiestintä- ja energianeuvosto"
+    "Transport, Telecommunications and Energy (Transport)": "Liikenne-, televiestintä- ja energianeuvosto (liikenne)"
+    "Transport, Telecommunications and Energy (Telecommunications)": "Liikenne-, televiestintä- ja energianeuvosto (televiestintä)"
+    "Transport, Telecommunications and Energy (Energy)": "Liikenne-, televiestintä- ja energianeuvosto (energia)"
+    "Agriculture and Fisheries": "Maatalous- ja kalastusneuvosto"
+    "Environment": "Ympäristöneuvosto"
+    "Education, Youth, Culture and Sport": "Koulutus-, nuoriso-, kulttuuri- ja urheiluneuvosto"
+  # Cellarin suunniteltujen tapahtumien tyypit -> aikajanan nimi (muut tyypit: "esityslistalla")
+  tapahtumat:
+    DELIB_COREPER_byCONSIL: "käsittely"
+    ADP_MAND_NGT_INST_COREPER_byCONSIL: "neuvotteluvaltuudet"
+    ENDORSE_AGRPROV_COREPER_byCONSIL: "alustavan sovun vahvistaminen"
+    ADP_NEGMAN_SPCOM_byCONSIL: "neuvotteluvaltuudet"
+    PART_APPRGEN_byCONSIL: "osittainen yleisnäkemys"
+    ADP_APPRGEN_byCONSIL: "yleisnäkemys"
+    APR_R1_byCONSIL: "säädöksen hyväksyminen (A-kohta)"
+    APR_R2_byCONSIL: "säädöksen hyväksyminen (2. käsittely)"
+    ADP_R1_POS_byCONSIL: "ensimmäisen käsittelyn kanta"
+    AGR_byCONSIL: "poliittinen yhteisymmärrys"
+    DELIB_byCONSIL: "keskustelu"
+    DIS_byCONSIL: "käsittely"
+
+# (c) Parlamentin aikatauluennusteet – OEIL (Legislative Observatory) ennustelohko + EP:n avoimen datan
+# täysistunnon esityslistat (data.europarl.europa.eu; nopeusraja: enintään 1 pyyntö / 2–3 s)
+ennusteet:
+  enabled: true
+  max_per_run: 50             # montako OEIL-menettelyä haetaan yhdellä ajolla (vakaassa tilassa riittää n. 30/pv)
+  refresh_days: 7             # ennuste haetaan uudelleen näin usein (seurantalistan menettelyt: päivittäin)
+  watchlist_refresh_days: 1
+  delay_seconds: 1.0          # OEIL-pyyntöjen väli
+  ep_agenda: true             # EP:n täysistunnon esityslistat (tarkat äänestyspäivät, suomenkieliset otsikot)
+  ep_agenda_sittings: 4       # montako seuraavaa istuntopäivää haetaan (yksi istuntoviikko = 4 päivää)
+  ep_delay_seconds: 3.0
+  # OEIL:n ennustetekstit -> luokka (plenary = täysistunto, committee = valiokunnan äänestys); muut -> otherForecasts
+  luokat:
+    plenary: ["vote in plenary", "indicative plenary sitting date", "debate in plenary", "plenary sitting"]
+    committee: ["committee", "vote scheduled in committee", "indicative committee"]
+
+# (d) Komission rikkomusmenettelypäätökset Suomea vastaan (ec.europa.eu/implementing-eu-law, JSON-rajapinta)
+rikkomukset:
+  enabled: true
+  member_state: FI
+  keep_days: 400              # päätökset tältä ajalta + kaikki avoimet asiat
+  # Päätöstyypin alku (englanti) -> vaihe suomeksi (järjestys: tarkin ensin)
+  vaiheet:
+    "Additional letter of formal notice": "täydentävä virallinen ilmoitus"
+    "Additional formal notice": "täydentävä virallinen ilmoitus"
+    "Formal notice Art. 260": "virallinen ilmoitus (SEUT 260 art., tuomion noudattamatta jättäminen)"
+    "Letter of formal notice Art. 260": "virallinen ilmoitus (SEUT 260 art., tuomion noudattamatta jättäminen)"
+    "Formal notice": "virallinen ilmoitus"
+    "Letter of formal notice": "virallinen ilmoitus"
+    "Additional reasoned opinion": "täydentävä perusteltu lausunto"
+    "Reasoned opinion": "perusteltu lausunto"
+    "Referral to Court Art. 260": "kanne unionin tuomioistuimeen (SEUT 260 art., uhkasakko)"
+    "Referral to Court": "kanne unionin tuomioistuimeen"
+    "Second referral": "toinen kanne unionin tuomioistuimeen (SEUT 260 art.)"
+    "Closing of the case": "asian lopettaminen"
+    "Closure": "asian lopettaminen"
+    "Withdrawal": "kanteen peruuttaminen"
+    "Judgment": "unionin tuomioistuimen tuomio"
+  tyypit:
+    "Non-communication": "täytäntöönpanotoimista ei ole ilmoitettu (direktiivin kansallinen täytäntöönpano myöhässä)"
+    "Non-communication of transposition measures for directives": "täytäntöönpanotoimista ei ole ilmoitettu (direktiivin kansallinen täytäntöönpano myöhässä)"
+    "Non-conformity": "kansallinen lainsäädäntö ei vastaa EU-oikeutta"
+    "Bad application": "EU-oikeuden virheellinen soveltaminen"
+    "Regulations - treaties - decisions": "asetuksen, perussopimuksen tai päätöksen rikkominen"
+  # Komission politiikanala (policyAreas) -> aihealue, kun avainsanat eivät osu
+  politiikanalat:
+    "Waste": "Kestävyys ja ympäristö"
+    "Air": "Kestävyys ja ympäristö"
+    "Water": "Kestävyys ja ympäristö"
+    "Nature": "Kestävyys ja ympäristö"
+    "Climate": "Kestävyys ja ympäristö"
+    "Energy efficiency": "Kestävyys ja ympäristö"
+    "Electricity produced from renewable energy sources": "Kestävyys ja ympäristö"
+    "Internal market for electricity and natural gas": "Kestävyys ja ympäristö"
+    "Chemicals": "Kestävyys ja ympäristö"
+    "Consumer protection": "Kuluttaja ja tuotteet"
+    "Construction and machinery/ Machinery and equipment": "Kuluttaja ja tuotteet"
+    "Product safety": "Kuluttaja ja tuotteet"
+    "Labour law": "Työoikeus"
+    "Health and safety at work": "Työoikeus"
+    "Anti-discrimination and gender equality": "Työoikeus"
+    "Free movement of workers": "Työoikeus"
+    "Social security coordination": "Sote ja koulutus"
+    "Public health": "Sote ja koulutus"
+    "Firearms": "Turvallisuus ja puolustus"
+    "Asylum": "Maahanmuutto"
+    "Migration": "Maahanmuutto"
+    "Borders and visas": "Maahanmuutto"
+    "Taxation": "Verotus"
+    "Direct taxation": "Verotus"
+    "Indirect taxation": "Verotus"
+    "Customs": "Verotus"
+    "Public procurement": "Hallinto ja hankinnat"
+    "Financial services": "Yhtiö ja rahoitus"
+    "Company law": "Yhtiö ja rahoitus"
+    "Anti-money laundering": "Yhtiö ja rahoitus"
+    "Data protection": "Tietosuoja ja digi"
+    "Digital": "Tietosuoja ja digi"
+    "Telecommunications": "Tietosuoja ja digi"
+    "Cybersecurity": "Tekoäly ja kyber"
+    "Criminal law": "Rikos ja prosessi"
+    "Judicial cooperation": "Rikos ja prosessi"
+    "Transport": "Kuluttaja ja tuotteet"
+
+# (e) Komitologiarekisteri – täytäntöönpanosäädösluonnokset ja komiteoiden äänestykset
+# (ec.europa.eu/transparency/comitology-register; JSON-haku + päivittäinen CSV-aineisto draftMeasures)
+komitologia:
+  enabled: true
+  days: 75                    # säädösluonnokset, joiden komiteakäsittely on alkanut tai tila muuttunut tällä välillä
+  csv_refresh_hours: 20       # 64 MB:n CSV-aineisto (tilat, lausunnot, äänestyslomakkeet) haetaan enintään kerran päivässä
+  max_detail_per_run: 40      # asiakirjakohtaiset haut (perussäädöksen CELEX, pääosasto) – uusimmat ensin, välimuistitetaan
+  exclude_title_patterns:     # massapäätökset, joilla ei ole lainsäädännöllistä ennakointiarvoa
+    - "award of (one|two|three|\\d+) grants?"
+    - "marketing authori[sz]ation"
+    - "renewal of the marketing"
+    - "renewing the approval of the active substance"
+    - "approving .* as an active substance"
+    - "non-renewal of the approval"
+    - "authorising the placing on the market of (products containing|foods|a food)"
+    - "novel food"
+    - "work programme .* for the implementation of"
+    - "financing decision"
+    - "annual action plan"
+    - "individual measure in favour"
+    - "ETIAS|SIS II|Eurodac"   # tekniset eritelmät
+    - "Explanatory notes to the Combined Nomenclature"
+    - "Union authorisation for the biocidal product"
+    - "maximum residue levels? for"
+    - "adopting the \\d{4} work programme"
+  # Rekisterin tilat (CSV: Status) -> rivin tila
+  tilat:
+    "Draft Implementing Act submitted to Committee": "äänestys tulossa"
+    "Draft Implementing Act submitted to committee": "äänestys tulossa"
+    "Sent to committee": "äänestys tulossa"
+    "Amendment (New draft)": "äänestys tulossa"
+    "Postponed": "lykätty"
+    "Postponed to next meeting": "lykätty"
+    "Positive opinion": "hyväksytty komiteassa"
+    "Adoption": "hyväksytty komiteassa"
+    "Opinion of the committee (if necessary by vote)": "hyväksytty komiteassa"
+    "Cmte fav. opinion and measure sent to EP and Council": "hyväksytty komiteassa"
+    "No opposition by EP/Council": "hyväksytty komiteassa"
+    "No opinion": "ei lausuntoa"
+    "No opinion of the Appeal Committee": "ei lausuntoa"
+    "Negative opinion": "kielteinen lausunto"
+    "Appeal Committee": "muutoksenhakukomiteassa"
+    "Adopted by Commission": "annettu"
+    "Act adopted remains in Force": "annettu"
+    "Withdrawn": "peruutettu"
+  lausunnot:                  # CSV: Opinion
+    "Favourable": "puoltava"
+    "Positive": "puoltava"
+    "Unfavourable": "kielteinen"
+    "Negative": "kielteinen"
+    "No opinion": "ei lausuntoa"
+  # Pääosasto (CSV: Service, englanninkielinen pitkä nimi) -> aihealue, kun avainsanat eivät osu
+  paaosastot:
+    "Financial Stability, Financial Services and Capital Markets Union": "Yhtiö ja rahoitus"
+    "Taxation and Customs Union": "Verotus"
+    "Justice and Consumers": "Rikos ja prosessi"
+    "Employment, Social Affairs and Inclusion": "Työoikeus"
+    "Health and Food Safety": "Sote ja koulutus"
+    "Environment": "Kestävyys ja ympäristö"
+    "Climate Action": "Kestävyys ja ympäristö"
+    "Energy": "Kestävyys ja ympäristö"
+    "Maritime Affairs and Fisheries": "Kestävyys ja ympäristö"
+    "Agriculture and Rural Development": "Kuluttaja ja tuotteet"
+    "Mobility and Transport": "Kuluttaja ja tuotteet"
+    "Internal Market, Industry, Entrepreneurship and SMEs": "Kuluttaja ja tuotteet"
+    "Communications Networks, Content and Technology": "Tietosuoja ja digi"
+    "Migration and Home Affairs": "Maahanmuutto"
+    "Defence Industry and Space": "Turvallisuus ja puolustus"
+    "Trade": "Kansainväliset sopimukset"
+    "Eurostat": "Hallinto ja hankinnat"
+
+# (f) EU:n rajoittavat toimenpiteet (pakotteet) – Cellar: EUVL L -säädökset, joiden englanninkielinen nimi
+# sisältää "restrictive measures" (suomenkielinen nimi vaihtelee, siksi englanti suodattimena)
+pakotteet:
+  enabled: true
+  days: 60                    # julkaisupäivä tällä välillä haetaan
+  keep_days: 120
+  topics_default: ["Turvallisuus ja puolustus"]
+  # Järjestelmän nimi: ensin muutetun perussäädöksen CELEX, sitten avainsana nimessä (fi tai en); muuten "muu"
+  regimes:
+    - label: "Venäjä"
+      celex: [32014R0833, 32014D0512, 32014R0269, 32014D0145, 32022R0263, 32022D0266, 32014R0692, 32014D0386]
+      keywords: ["Ukrainan alueellista koskemattomuutta", "territorial integrity, sovereignty and independence of Ukraine", "Venäjän", "Russia", "Krimin", "Crimea"]
+    - label: "Venäjän hybridiuhat"
+      celex: [32024R2642, 32024D2643]
+      keywords: ["destabilising activities", "vakautta horjuttavien toimien"]
+    - label: "Valko-Venäjä"
+      celex: [32006R0765, 32012D0642]
+      keywords: ["Belarus", "Valko-Venäjä"]
+    - label: "Iran"
+      celex: [32012R0267, 32010D0413, 32011R0359, 32011D0235, 32023R1529, 32023D1532]
+      keywords: ["Iran"]
+    - label: "Pohjois-Korea"
+      celex: [32017R1509, 32016D0849]
+      keywords: ["Democratic People's Republic of Korea", "Korean demokraattisen kansantasavallan"]
+    - label: "Syyria"
+      celex: [32012R0036, 32013D0255]
+      keywords: ["Syria", "Syyria"]
+    - label: "Libya"
+      celex: [32016R0044, 32015D1333]
+      keywords: ["Libya"]
+    - label: "terrorismi"
+      celex: [32001R2580, 32001E0931, 32002R0881, 32016R1686, 32016D1693]
+      keywords: ["terrorism", "terroris", "ISIL", "Al-Qaida"]
+    - label: "kyberhyökkäykset"
+      celex: [32019R0796, 32019D0797]
+      keywords: ["cyber-attacks", "kyberhyökkäy"]
+    - label: "ihmisoikeudet"
+      celex: [32020R1998, 32020D1999]
+      keywords: ["serious human rights violations", "vakavien ihmisoikeusloukkausten"]
+    - label: "kemialliset aseet"
+      celex: [32018R1542, 32018D1544]
+      keywords: ["chemical weapons", "kemiallisten aseiden"]
+    - label: "Moldova"
+      celex: [32023R0888, 32023D0891]
+      keywords: ["Moldova"]
+    - label: "Sudan"
+      keywords: ["Sudan"]
+    - label: "Niger"
+      keywords: ["Niger"]
+    - label: "Guinea"
+      celex: [32009R1284, 32010D0638]
+      keywords: ["Guinea"]
+    - label: "Nicaragua"
+      celex: [32019R1716, 32019D1720]
+      keywords: ["Nicaragua"]
+    - label: "Venezuela"
+      celex: [32017R2063, 32017D2074]
+      keywords: ["Venezuela"]
+    - label: "Myanmar"
+      celex: [32013R0401, 32013D0184]
+      keywords: ["Myanmar", "Burma"]
+    - label: "Hamas ja PIJ"
+      celex: [32024R0385, 32024D0385]
+      keywords: ["Hamas", "Palestinian Islamic Jihad"]
+    - label: "Länsiranta (väkivaltaiset siirtokuntalaiset)"
+      celex: [32024R1428, 32024D1429]
+      keywords: ["West Bank", "Länsiranna"]
+    - label: "Haiti"
+      keywords: ["Haiti"]
+    - label: "Mali"
+      keywords: ["Mali"]
+    - label: "Kongon demokraattinen tasavalta"
+      keywords: ["Democratic Republic of the Congo", "Kongon demokraatti"]
+    - label: "Zimbabwe"
+      keywords: ["Zimbabwe"]
+    - label: "Turkki (porausoperaatiot)"
+      keywords: ["drilling activities", "porauksen"]
+    - label: "Guatemala"
+      keywords: ["Guatemala"]
+    - label: "Bosnia ja Hertsegovina"
+      keywords: ["Bosnia"]
+    - label: "Irak"
+      keywords: ["Iraq", "Irak"]
+    - label: "Jemen"
+      keywords: ["Yemen", "Jemen"]
+    - label: "Libanon"
+      keywords: ["Lebanon", "Libanon"]
+    - label: "Somalia"
+      keywords: ["Somalia"]
+    - label: "Etelä-Sudan"
+      keywords: ["South Sudan"]
+    - label: "Keski-Afrikan tasavalta"
+      keywords: ["Central African Republic"]
+    - label: "Burundi"
+      keywords: ["Burundi"]
+    - label: "Tunisia"
+      keywords: ["Tunisia"]
+    - label: "Egypti"
+      keywords: ["Egypt"]
+
+# (g) Valtioneuvoston kanslian neuvostokokousmuistiot eduskunnalle – EUN n/yyyy vp (avoindata.eduskunta.fi, VaskiData)
+# Korvaa Cloudflaren takana olevan valtioneuvosto.fi:n EU-ministerivaliokunnan asialistat: sama kokous, sama
+# Suomen kanta, noin viikkoa ennen neuvoston kokousta.
+eun:
+  enabled: true
+  keep_days: 30               # pidetyt kokoukset pudotetaan näin monen päivän jälkeen
+  backfill: 40                # ensimmäisellä ajolla haetaan näin monta uusinta numeroa
+  miss_limit: 4               # numerointi loppuu, kun näin monta peräkkäistä numeroa puuttuu
+  partial_retry_days: 21      # vain käsittelytietorivillä (ei VNK:n muistiota) olevat haetaan uudelleen tämän ajan
+  # Neuvoston kokoonpano (nimekkeestä, osamerkkijono, ensimmäinen osuma voittaa) -> aihealue, kun asiasanat eivät osu
+  kokoonpano_aihealue:
+    "kauppa": "Kansainväliset sopimukset"
+    "puolustus": "Turvallisuus ja puolustus"
+    "Ulkoasiain": "Turvallisuus ja puolustus"
+    "Yleisten asioiden": "Hallinto ja hankinnat"
+    "Eurooppa-neuvosto": "Hallinto ja hankinnat"
+    "Talous- ja rahoitus": "Yhtiö ja rahoitus"
+    "valtiovarainministeri": "Yhtiö ja rahoitus"
+    "Oikeus- ja sisä": "Rikos ja prosessi"
+    "oikeusministeri": "Rikos ja prosessi"
+    "sisäministeri": "Maahanmuutto"
+    "Työllisyys": "Työoikeus"
+    "terveysministeri": "Sote ja koulutus"
+    "Kilpailukyky": "Kuluttaja ja tuotteet"
+    "televiestintä": "Tietosuoja ja digi"
+    "Liikenne": "Kuluttaja ja tuotteet"
+    "energia": "Kestävyys ja ympäristö"
+    "Maatalous": "Kestävyys ja ympäristö"
+    "Ympäristö": "Kestävyys ja ympäristö"
+    "Koulutus": "Sote ja koulutus"
+    "kulttuuri": "Sote ja koulutus"

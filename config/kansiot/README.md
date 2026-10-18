@@ -20,10 +20,11 @@ kohteet:
   - hk-EF-28755
 saannot:
   aihealueet: [Hallinto ja hankinnat]              # säädökset ja EU-asiat (config/topics.yaml)
-  lajit: [laki, eu, delegoitu]                     # rajaa säädökset lajeihin (laki, asetus, eu, delegoitu, kuuleminen, kirjelma)
+  lajit: [laki, eu, delegoitu]                     # rajaa säädökset lajeihin (laki, asetus, eu, delegoitu, taytantoonpano, pakote, kuuleminen, ohje, kirjelma, signaali)
   toimialat: [Lakipalvelut, ICT ja ohjelmistot]    # kilpailutukset (config/hankinnat.yaml)
   hankintayksikot: [Hansel Oy, Helsingin kaupunki] # kilpailutukset, osuma hankintayksikön nimen alusta
-  kilpailutusvaiheet: [avoin, tulossa, mao]        # tulossa, avoin, ratkaistu, suorahankinta, mao (oletus: kaikki)
+  kilpailutusvaiheet: [avoin, tulossa, mao]        # tulossa, avoin, ratkaistu, suorahankinta, mao, paatos, ennuste, kalenteri (oletus: kaikki)
+  tuomioistuimet: [KKO, KHO, EUT]                  # oikeuskäytäntö: KKO, KHO, HO, HaO, TT, MAO, KVL, TSV, EUT (aihealueet/hakusanat rajaavat)
   hakusanat: [hankintalaki, kilpailutus]           # otsikko tai tiivistelmä sisältää sanan (ei kirjainkokoa)
   yrityskaupat:
     vain_suomalaiset: true                         # KKV:n tapaukset ja komission tapaukset, joissa suomalainen osapuoli

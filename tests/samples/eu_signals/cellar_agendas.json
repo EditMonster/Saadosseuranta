@@ -1,0 +1,319 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "id",
+   "date",
+   "title",
+   "hasFi",
+   "dossiers",
+   "meeting_dates"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_14473_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "SPECIAL COMMITTEE ON AGRICULTURE"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2025_237"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-19"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:CM_4577_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "PERMANENT REPRESENTATIVES COMMITTEE (Part 2)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2024_35 procedure:2025_360 procedure:2025_395"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-21"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_13720_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "COUNCIL OF THE EUROPEAN UNION (Employment, Social Policy, Health and Consumer Affairs)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2025_232"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-19"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:CM_4574_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-16"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "PERMANENT REPRESENTATIVES COMMITTEE (Part 1)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2025_358 procedure:2025_97 procedure:2026_74 procedure:2026_85"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-21,2026-10-23"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_14210_2026_REV_1"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-13"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "PERMANENT REPRESENTATIVES COMMITTEE (Part 1)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2025_399 procedure:2025_404 procedure:2025_97"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-14"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_14082_2026_REV_1"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-12"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "COUNCIL OF THE EUROPEAN UNION (General Affairs)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2024_98 procedure:2025_106 procedure:2025_360 procedure:2025_391 procedure:2025_393 procedure:2025_394 procedure:2025_395 procedure:2025_396 procedure:2025_397 procedure:2025_409 procedure:2025_422 procedure:2025_424 procedure:2025_555 procedure:2026_169"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-13"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_14110_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "COUNCIL OF THE EUROPEAN UNION (Foreign Affairs)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2026_78"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-12"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_13742_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "COUNCIL OF THE EUROPEAN UNION (Environment)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2026_210 procedure:2026_212"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-12"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:CM_4478_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "COUNCIL OF THE EUROPEAN UNION (Agriculture and Fisheries)"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2023_134 procedure:2025_311"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-26"
+    }
+   },
+   {
+    "id": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "consil:ST_14199_2026_INIT"
+    },
+    "date": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-09"
+    },
+    "title": {
+     "type": "literal",
+     "xml:lang": "en",
+     "value": "SPECIAL COMMITTEE ON AGRICULTURE"
+    },
+    "hasFi": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "value": "1"
+    },
+    "dossiers": {
+     "type": "literal",
+     "value": "procedure:2025_237 procedure:2025_417"
+    },
+    "meeting_dates": {
+     "type": "literal",
+     "value": "2026-10-12"
+    }
+   }
+  ]
+ }
+}

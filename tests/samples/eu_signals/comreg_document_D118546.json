@@ -1,0 +1,83 @@
+{
+ "id": 157070,
+ "title": "COMMISSION IMPLEMENTING REGULATION (EU) …/… of XXX on the methodology for the identification of third countries posing a specific and serious threat to the Union’s financial system as referred to under Article 31 of Regulation (EU) 2024/1624 of the European Parliament and of the Council  (Text with EEA relevance)",
+ "comment": null,
+ "documentReference": "118546",
+ "discloseToPublic": false,
+ "version": 1,
+ "creationDate": "2026-10-15T12:31:30.265315Z",
+ "updateDate": "2026-10-15T14:57:00.278724Z",
+ "documentType": {
+  "id": 2,
+  "description": "label.draft_implementing_act",
+  "letter": "D"
+ },
+ "documentStatus": {
+  "id": 4,
+  "description": "label.transmitted"
+ },
+ "meeting": {
+  "id": 49442,
+  "code": "CMTD(2026)1764",
+  "startDate": "2026-10-05T22:00:00Z",
+  "endDate": "2026-10-05T22:00:00Z",
+  "meetingType": {
+   "id": 1,
+   "description": "label.committee_meeting"
+  },
+  "dg": {
+   "id": 13,
+   "code": "FISMA",
+   "validFrom": "2019-03-12T16:09:47Z",
+   "validTo": null
+  },
+  "committee": {
+   "id": 3171,
+   "code": "C132800",
+   "abolishedSince": null,
+   "rulesProcedures": null,
+   "dg": {
+    "id": 13,
+    "code": "FISMA",
+    "validFrom": "2019-03-12T16:09:47Z",
+    "validTo": null
+   },
+   "parentCommittee": null,
+   "dgCommittees": [],
+   "basicLegalActProcedures": null
+  }
+ },
+ "implementingAct": {
+  "id": 91777,
+  "description": null,
+  "stage": {
+   "stage": "label.draft_implementing_examination",
+   "stageDate": "2026-09-29T22:00:00Z",
+   "stageUrl": null
+  },
+  "basicActId": {
+   "id": 7503,
+   "code": "REG/2024/1624/",
+   "celexNumber": "32024R1624",
+   "basicActType": null,
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1624",
+   "publicationDate": "2024-06-18T22:00:00Z",
+   "entryIntoForceDate": "2024-07-08T22:00:00Z",
+   "entryInForce": true,
+   "olp": true,
+   "creationDate": "2026-07-14T09:29:08.441027Z",
+   "updateDate": "2026-07-22T23:08:44.835Z",
+   "title": "Regulation (EU) 2024/1624 of the European Parliament and of the Council of 31 May 2024 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing (Text with EEA relevance)",
+   "isFromEurLex": null,
+   "basicLegalActStatus": "IN_FORCE"
+  },
+  "legislativeProcedure": {
+   "id": 1,
+   "article": "Art. 5, 6 and 7",
+   "description": "label.examination",
+   "ternaryRelationshipId": null
+  }
+ },
+ "votingSheet": null,
+ "maxVersion": 1
+}

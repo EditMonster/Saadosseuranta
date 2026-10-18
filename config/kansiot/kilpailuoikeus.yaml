@@ -7,6 +7,7 @@ kohteet: []
 saannot:
   hakusanat: [kilpailulaki, kilpailunrajoitus, kilpailuoikeu, yrityskauppavalvon]
   lajit: [laki, eu, delegoitu, kuuleminen]
+  tuomioistuimet: [MAO, EUT]     # oikeuskäytäntö: markkinaoikeuden kilpailu-/IPR-ratkaisut ja EU-tuomioistuin (hakusanat rajaavat)
   yrityskaupat:
     vain_suomalaiset: true
   vain_avoimet: true

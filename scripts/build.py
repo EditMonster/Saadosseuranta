@@ -715,7 +715,7 @@ CHANGE_KINDS = {"voimaan", "soveltaminen", "maaraaika", "lausunto", "he", "hyvak
 def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> list[dict]:
     """Diff two data sets into human-readable change rows (what the Tilannekuva 'Muutokset' panel shows)."""
     old = {i["id"]: i for i in old_items}
-    old_lajit = {i.get("laji", "laki") for i in old_items}
+    old_lajit = {(i.get("laji", "laki"), i.get("authority") or "") for i in old_items}  # a brand-new source is not "news" on its first run
     out = []
 
     def add(it, typ, text):
@@ -728,7 +728,7 @@ def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> l
     for it in new_items:
         o = old.get(it["id"])
         if not o:
-            if it.get("laji", "laki") in old_lajit:
+            if (it.get("laji", "laki"), it.get("authority") or "") in old_lajit:
                 add(it, "uusi", f"Uusi: {it.get('kind', 'säädös')} ({it['status']})")
             continue
         if it.get("status") != o.get("status"):
@@ -801,6 +801,15 @@ def main():
     fi = build_fi(topics_cfg, settings)
     asetukset = build_asetukset(topics_cfg, settings)
     eu = build_eu(topics_cfg, settings, watch)
+    # forward-looking EU signals: EP forecasts and Coreper/Council agendas on the procedures, plus standalone rows
+    eu_sig: dict = {"signals": [], "implementing": [], "sanctions": []}
+    try:
+        from build_eu_signals import attach_eu_forecasts, implementing_items, sanction_items, signal_items
+
+        attach_eu_forecasts(eu)
+        eu_sig = {"signals": signal_items(topics_cfg), "implementing": implementing_items(topics_cfg), "sanctions": sanction_items(topics_cfg)}
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: EU-ennakointi: {e}")
     kirjelmat = attach_ue(eu, topics_cfg)
     kuulemiset = build_hys(topics_cfg, settings)
     delegoidut = build_delegated(topics_cfg, settings)
@@ -813,7 +822,7 @@ def main():
     except Exception as e:  # noqa: BLE001
         log(f"warn: toimiala: {e}")
         toim = {"items": [], "rulings": []}
-    items = fi + asetukset + eu + kirjelmat + kuulemiset + delegoidut + motions + toim["items"]
+    items = fi + asetukset + eu + kirjelmat + kuulemiset + delegoidut + motions + toim["items"] + eu_sig["signals"] + eu_sig["implementing"] + eu_sig["sanctions"]
     # drop lapsed proposals older than 90 days and completed national items beyond max age
     keep = []
     for it in items:
@@ -828,6 +837,7 @@ def main():
         keep.append(it)
     apply_overrides(keep)
     # Case law (courts + CJEU) lives in docs/data/ratkaisut.json; each statute row gets its newest related rulings.
+    rk: dict = {}
     try:
         from build_ratkaisut import build_ratkaisut  # imported here: the module itself imports classify from build
 
@@ -866,7 +876,8 @@ def main():
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),
                       "kuuleminen": sum(i.get("laji") == "kuuleminen" for i in keep),
                       "delegoitu": sum(i.get("laji") == "delegoitu" for i in keep),
-                      "signaali": sum(i.get("laji") == "signaali" for i in keep), "ohje": sum(i.get("laji") == "ohje" for i in keep)},
+                      "signaali": sum(i.get("laji") == "signaali" for i in keep), "ohje": sum(i.get("laji") == "ohje" for i in keep),
+                      "taytantoonpano": sum(i.get("laji") == "taytantoonpano" for i in keep), "pakote": sum(i.get("laji") == "pakote" for i in keep)},
             "sources": ["Valtioneuvoston Hankeikkuna (api.hankeikkuna.fi)", "Eduskunnan avoin data (avoindata.eduskunta.fi)",
                         "Finlex (finlex.fi)", "Euroopan parlamentin avoin data (data.europarl.europa.eu)",
                         "EU:n julkaisutoimiston Cellar (publications.europa.eu)", "Komission Have your say (ec.europa.eu)",
@@ -902,7 +913,8 @@ def main():
     log(f"build: {c} -> {OUT_DIR / 'items.json'} + meta.json")
     # Shared team folders (config/kansiot/*.yaml) -> docs/data/kansiot.json + one calendar feed per folder
     try:
-        build_kansiot(keep, hank.get("items") or [], yk.get("items") or [], build_ics)
+        build_kansiot(keep, hank.get("items") or [], yk.get("items") or [], build_ics,
+                      ((rk.get("payload") or {}).get("items") if isinstance(rk, dict) else None) or [])
     except Exception as e:  # noqa: BLE001
         log(f"ERROR kansiot: {e}")
 

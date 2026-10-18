@@ -647,10 +647,10 @@ const daysTo = d => Math.round((d-TODAY)/DAY);
 const MONTHS_FI=["tammi","helmi","maalis","huhti","touko","kesä","heinä","elo","syys","loka","marras","joulu"];
 
 /* ---------- state ---------- */
-const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set(), lajit:new Set(["laki","eu","delegoitu","taytantoonpano","pakote","kuuleminen","ohje","kirjelma","signaali"]),
+const state = { tab:"now", topics:new Set(), q:"", sortDesc:true, openOnly:false, followOnly:false, follow:new Set(), lajit:new Set(["laki","eu","delegoitu","kuuleminen","ohje","kirjelma","signaali"]),
   ptopics:new Set(), hkScope:"all", hkWithin:0, hkDps:false, hkShown:150, hkStage:"avoin", hkMao:"vireilla", hkCountry:"FI", yktopics:new Set(), ykScope:"all", ykOpen:true, ykFi:false, ykSegment:"yrityskauppa", rkCourts:new Set(), rkFi:false, rkPending:false, rkShown:150, folders:[], hidden:new Set(), folderFilter:"" };
 let CHANGES=[]; let CHANGE_BY_ID={};
-try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(Array.isArray(s.lajit)){ state.lajit=new Set(s.lajit); if(!(s.lajiVersion>=2)) state.lajit.add("delegoitu"); if(!(s.lajiVersion>=3)) ["taytantoonpano","pakote","ohje","signaali"].forEach(l=>state.lajit.add(l)); } if(s.tab in TABHASH) state.tab=s.tab;
+try{ const s=JSON.parse(localStorage.getItem("saadosseuranta")||"{}"); if(s.topics) state.topics=new Set(s.topics); if(Array.isArray(s.lajit)){ state.lajit=new Set(s.lajit); if(!(s.lajiVersion>=2)) state.lajit.add("delegoitu"); if(!(s.lajiVersion>=3)) ["ohje","signaali"].forEach(l=>state.lajit.add(l)); } if(s.tab in TABHASH) state.tab=s.tab;
   if(Array.isArray(s.rkCourts)) state.rkCourts=new Set(s.rkCourts); if(typeof s.rkFi==="boolean") state.rkFi=s.rkFi;
   if(Array.isArray(s.ptopics)) state.ptopics=new Set(s.ptopics); if(["all","eu","fi"].includes(s.hkScope)) state.hkScope=s.hkScope; if([0,7,14,30].includes(s.hkWithin)) state.hkWithin=s.hkWithin; if(typeof s.hkCountry==="string") state.hkCountry=s.hkCountry; state.hkDps=!!s.hkDps; if(typeof s.folderFilter==="string") state.folderFilter=s.folderFilter; if(["tulossa","avoin","ratkaistu","suorahankinta","mao"].includes(s.hkStage)) state.hkStage=s.hkStage; if(["vireilla","ratkaistu"].includes(s.hkMao)) state.hkMao=s.hkMao; if(Array.isArray(s.yktopics)) state.yktopics=new Set(s.yktopics); if(["all","fi","eu"].includes(s.ykScope)) state.ykScope=s.ykScope; if(typeof s.ykOpen==="boolean") state.ykOpen=s.ykOpen; if(typeof s.ykFi==="boolean") state.ykFi=s.ykFi; }catch(e){}
 /* folders + hidden items: personal organisation, kept in this browser (and movable with the transfer link) */
@@ -1397,7 +1397,7 @@ function openItem(id){
   document.getElementById("dr-title").textContent=it.fullTitle||it.title;
   document.getElementById("dr-topics").innerHTML=it.topics.map(t=>`<span>${esc(t)}</span>`).join("");
   document.getElementById("dr-summary").textContent=it.summary||"";
-  const L=it.links||{}; const names={hankeikkuna:"Hankeikkuna (valtioneuvosto.fi)",finlex:"Finlex: hallituksen esitys",saadoskokoelma:"Finlex: säädöskokoelma",eurlex:"EUR-Lex",oeil:"EP Legislative Observatory",kkv:"KKV: tapauksen sivu",kkvpaatos:"KKV: päätös",comp:"Komission tapaussivu (DG COMP)",euvl:"EUVL: ennakkoilmoitus (EUR-Lex)",regdel:"Delegoitujen säädösten rekisteri",perussaados:"Perussäädös (EUR-Lex)",kkvesitys:"KKV: kieltoesitys markkinaoikeudelle",kkvjatko:"KKV: päätös jatkokäsittelystä",mao:"Markkinaoikeuden ratkaisu"};
+  const L=it.links||{}; const names={hankeikkuna:"Hankeikkuna (valtioneuvosto.fi)",finlex:"Finlex: hallituksen esitys",saadoskokoelma:"Finlex: säädöskokoelma",eurlex:"EUR-Lex",oeil:"EP Legislative Observatory",kkv:"KKV: tapauksen sivu",kkvpaatos:"KKV: päätös",comp:"Komission tapaussivu (DG COMP)",euvl:"EUVL: ennakkoilmoitus (EUR-Lex)",regdel:"Delegoitujen säädösten rekisteri",perussaados:"Perussäädös (EUR-Lex)",kkvesitys:"KKV: kieltoesitys markkinaoikeudelle",kkvjatko:"KKV: päätös jatkokäsittelystä",mao:"Markkinaoikeuden ratkaisu",eli:"Säädös (ELI, EUR-Lex)",eduskunta:"eduskunta.fi",source:"Lähde",tiedote:"Tiedote",lausuntopalvelu:"lausuntopalvelu.fi",pdf:"PDF",presscorner:"Komission tiedote",oeilpdf:"OEIL (ennusteet)",comreg:"Komitologiarekisteri",hys:"Have your say",docreg:"Komission asiakirjarekisteri",curia:"EU-tuomioistuin",infr:"Rikkomusmenettely (komissio)",vaski:"Eduskunta (asiakirja)"};
   const links=Object.entries(L).filter(([k,v])=>v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(names[k]||k)}</a>`);
   if(!links.length&&it.source) links.push(`<a href="${esc(it.source)}" target="_blank" rel="noopener">Lähde</a>`);
   links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
@@ -1543,7 +1543,8 @@ folderSel.addEventListener("change",()=>{ state.folderFilter=folderSel.value; st
 const foldersEl=document.getElementById("folders"), foldersScrim=document.getElementById("folders-scrim");
 let pendingDelete=null;
 let teamFormOpen=null;
-const RULE_TOPICS=()=>META.topics||TOPICS, RULE_TOIMIALAT=()=>META.hankintaTopics||[], RULE_STAGES=[["tulossa","Tulossa"],["avoin","Avoinna"],["ratkaistu","Ratkaistu"],["suorahankinta","Suorahankinnat"],["mao","Markkinaoikeus"]];
+const RULE_TOPICS=()=>META.topics||TOPICS, RULE_TOIMIALAT=()=>META.hankintaTopics||[], RULE_STAGES=[["tulossa","Tulossa"],["avoin","Avoinna"],["ratkaistu","Ratkaistu"],["suorahankinta","Suorahankinnat"],["mao","Markkinaoikeus"],["paatos","Hankintapäätökset"],["ennuste","Ennusteet"],["kalenteri","Kalenterit"]];
+const RULE_COURTS=[["KKO","KKO"],["KHO","KHO"],["HO","Hovioikeudet"],["HaO","Hallinto-oikeudet"],["TT","Työtuomioistuin"],["MAO","Markkinaoikeus (IPR, markkinaoik.)"],["KVL","Keskusverolautakunta"],["TSV","Tietosuojavaltuutettu"],["EUT","EU-tuomioistuin"]];
 function teamFormHTML(o){
   const r=(o.folder&&o.folder.rules)||{}; const yk=r.yrityskaupat||{};
   const opts=(name,list,sel)=>`<div class="opts">${list.map(v=>{ const [val,lab]=Array.isArray(v)?v:[v,v]; return `<label><input type="checkbox" name="${name}" value="${esc(val)}"${(sel||[]).includes(val)?" checked":""}>${esc(lab)}</label>`; }).join("")}</div>`;
@@ -1556,6 +1557,7 @@ function teamFormHTML(o){
       <label>Säädöslajit</label>${opts("lajit",LAJIT,r.lajit)}
       <label>Kilpailutusten toimialat</label>${opts("toimialat",RULE_TOIMIALAT(),r.toimialat)}
       <label>Kilpailutusten vaiheet</label>${opts("kilpailutusvaiheet",RULE_STAGES,r.kilpailutusvaiheet)}
+      <label>Tuomioistuimet (oikeuskäytäntö)</label>${opts("tuomioistuimet",RULE_COURTS,r.tuomioistuimet)}
       <label>Hankintayksiköt (pilkulla eroteltuna, osuma nimen alusta)</label><input type="text" name="hankintayksikot" value="${esc((r.hankintayksikot||[]).join(", "))}">
       <label>Hakusanat (pilkulla eroteltuna; otsikko tai tiivistelmä sisältää)</label><input type="text" name="hakusanat" value="${esc((r.hakusanat||[]).join(", "))}">
       <label>Yrityskaupat</label><div class="opts"><label><input type="checkbox" name="vain_suomalaiset"${yk.vain_suomalaiset?" checked":""}>vain suomalaiset osapuolet</label></div>
@@ -1570,7 +1572,7 @@ function readTeamForm(el){
   const list=s=>s.split(",").map(x=>x.trim()).filter(Boolean).slice(0,30);
   const r={};
   if(checked("aihealueet").length) r.aihealueet=checked("aihealueet"); if(checked("lajit").length) r.lajit=checked("lajit");
-  if(checked("toimialat").length) r.toimialat=checked("toimialat"); if(checked("kilpailutusvaiheet").length) r.kilpailutusvaiheet=checked("kilpailutusvaiheet");
+  if(checked("toimialat").length) r.toimialat=checked("toimialat"); if(checked("kilpailutusvaiheet").length) r.kilpailutusvaiheet=checked("kilpailutusvaiheet"); if(checked("tuomioistuimet").length) r.tuomioistuimet=checked("tuomioistuimet");
   if(list(val("hankintayksikot")).length) r.hankintayksikot=list(val("hankintayksikot")); if(list(val("hakusanat")).length) r.hakusanat=list(val("hakusanat"));
   const yk={}; if(el.querySelector('[name="vain_suomalaiset"]').checked) yk.vain_suomalaiset=true; if(list(val("osapuolet")).length) yk.osapuolet=list(val("osapuolet")); if(Object.keys(yk).length) r.yrityskaupat=yk;
   if(el.querySelector('[name="vain_avoimet"]').checked&&Object.keys(r).length) r.vain_avoimet=true;

@@ -1,0 +1,279 @@
+{
+ "head": {
+  "link": [],
+  "vars": [
+   "celex",
+   "oj",
+   "eif",
+   "title_fi",
+   "amends",
+   "oj_ref"
+  ]
+ },
+ "results": {
+  "distinct": false,
+  "ordered": true,
+  "bindings": [
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2332"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2332, annettu 15 päivänä lokakuuta 2026, rajoittavista toimenpiteistä Ukrainan alueellista koskemattomuutta, suvereniteettia ja itsenäisyyttä heikentävien tai uhkaavien toimien johdosta annetun päätöksen 2014/145/YUTP muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32014D0145"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026R2333"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston täytäntöönpanoasetus (EU) 2026/2333, annettu 15 päivänä lokakuuta 2026, Ukrainan alueellista koskemattomuutta, suvereniteettia ja itsenäisyyttä heikentävien tai uhkaavien toimien johdosta määrättävistä rajoittavista toimenpiteistä annetun asetuksen (EU) N:o 269/2014 täytäntöönpanosta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32014R0269"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2312"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston täytäntöönpanopäätös (YUTP) 2026/2312, annettu 13 päivänä lokakuuta 2026, Valko-Venäjän tilanteen johdosta ja sen johdosta, että Valko-Venäjä on osallisena Venäjän Ukrainaa vastaan kohdistamassa hyökkäyksessä, määrättävistä rajoittavista toimenpiteistä annetun päätöksen 2012/642/YUTP täytäntöönpanosta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32012D0642"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2317"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2317, annettu 13 päivänä lokakuuta 2026, Guinean tilanteen johdosta määrättävistä rajoittavista toimenpiteistä annetun päätöksen 2010/638/YUTP muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32010D0638"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026R2313"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston täytäntöönpanoasetus (EU) 2026/2313, annettu 13 päivänä lokakuuta 2026, Valko-Venäjän tilanteen johdosta ja sen johdosta, että Valko-Venäjä on osallisena Venäjän Ukrainaa vastaan kohdistamassa hyökkäyksessä, määrättävistä rajoittavista toimenpiteistä annetun asetuksen (EY) N:o 765/2006 täytäntöönpanosta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32006R0765"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026R2318"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-15"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston täytäntöönpanoasetus (EU) 2026/2318, annettu 13 päivänä lokakuuta 2026, Guinean tilanteen johdosta määrättävistä rajoittavista toimenpiteistä annetun asetuksen (EU) N:o 1284/2009 täytäntöönpanosta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32009R1284"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2286"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-13"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-14"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2286, annettu 12 päivänä lokakuuta 2026, rajoittavista toimenpiteistä kemiallisten aseiden leviämisen ja käytön torjumiseksi annetun päätöksen (YUTP) 2018/1544 muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32018D1544"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2242"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-12"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-13"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2242, annettu 9 päivänä lokakuuta 2026, Libyan tilanteen johdosta määrättävistä rajoittavista toimenpiteistä annetun päätöksen (YUTP) 2015/1333 muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32015D1333"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2272"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-12"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-13"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2272, annettu 9 päivänä lokakuuta 2026, Nicaraguan tilanteen johdosta määrättävistä rajoittavista toimenpiteistä annetun päätöksen (YUTP) 2019/1720 muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32019D1720"
+    }
+   },
+   {
+    "celex": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#string",
+     "value": "32026D2277"
+    },
+    "oj": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-12"
+    },
+    "eif": {
+     "type": "literal",
+     "datatype": "http://www.w3.org/2001/XMLSchema#date",
+     "value": "2026-10-13"
+    },
+    "title_fi": {
+     "type": "literal",
+     "xml:lang": "fi",
+     "value": "Neuvoston päätös (YUTP) 2026/2277, annettu 9 päivänä lokakuuta 2026, Nigerin tilanteen johdosta määrättävistä rajoittavista toimenpiteistä annetun päätöksen (YUTP) 2023/2287 muuttamisesta"
+    },
+    "amends": {
+     "type": "literal",
+     "value": "32023D2287"
+    }
+   }
+  ]
+ }
+}
