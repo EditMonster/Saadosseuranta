@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-18T06:51:22",
+ "fetched": "2026-10-18T11:04:49",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -8134,10 +8134,6 @@
      "type": "DIS_byCONSIL"
     },
     {
-     "date": "2022-06-08",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
      "date": "2022-10-19",
      "type": "DIS_byCONSIL"
     },
@@ -8298,34 +8294,6 @@
     },
     {
      "date": "2025-06-27",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-07-17",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-17",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-26",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-15",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-29",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-12",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-26",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -9463,10 +9431,6 @@
     {
      "date": "2025-05-20",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-05-27",
-     "type": "APR_R1_byCONSIL"
     },
     {
      "date": "2025-06-03",
@@ -12488,10 +12452,6 @@
     {
      "date": "2022-12-16",
      "type": "DIS_byCONSIL"
-    },
-    {
-     "date": "2022-12-19",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2023-03-27",
@@ -22119,10 +22079,6 @@
      "type": "APR_R1_byCONSIL"
     },
     {
-     "date": "2024-10-11",
-     "type": "APR_R1_byCONSIL"
-    },
-    {
      "date": "2024-10-23",
      "type": "SIGN_byEP_CONSIL"
     }
@@ -25314,10 +25270,6 @@
      "type": "ADP_APPRGEN_byCONSIL"
     },
     {
-     "date": "2025-06-13",
-     "type": "ADP_APPRGEN_byCONSIL"
-    },
-    {
      "date": "2025-07-09",
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
@@ -25356,10 +25308,6 @@
     {
      "date": "2025-12-05",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-12-08",
-     "type": "ENDORSE_AGRPROV_byCONSIL"
     },
     {
      "date": "2025-12-11",
@@ -27963,10 +27911,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-09-22",
-     "type": "ADP_R1_POS_byCONSIL"
-    },
-    {
      "date": "2025-09-29",
      "type": "ADP_R1_POS_byCONSIL"
     },
@@ -28135,10 +28079,6 @@
     {
      "date": "2025-06-05",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2025-09-22",
-     "type": "ADP_R1_POS_byCONSIL"
     },
     {
      "date": "2025-09-29",
@@ -28907,7 +28847,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-10-18",
    "final": false,
    "pid": "2023-0077B",
    "ref": "2023/0077B(COD)",
@@ -29413,10 +29353,6 @@
     {
      "date": "2024-06-17",
      "type": "DIS_byCONSIL"
-    },
-    {
-     "date": "2024-06-24",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2024-06-25",
@@ -32268,10 +32204,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-05-14",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-05-21",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -32297,10 +32229,6 @@
     },
     {
      "date": "2025-07-09",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-03",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -32487,10 +32415,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-05-14",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-05-21",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -32666,10 +32590,6 @@
      "type": "DIS_byCONSIL"
     },
     {
-     "date": "2024-12-18",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-05-08",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -32743,10 +32663,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-02-18",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-03-04",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -32788,6 +32704,7 @@
     },
     {
      "date": "2026-10-26",
+     "projected": true,
      "type": "APR_R1_byCONSIL"
     }
    ],
@@ -32972,10 +32889,6 @@
     {
      "date": "2025-10-20",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-29",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2025-11-13",
@@ -33815,10 +33728,6 @@
     },
     {
      "date": "2025-11-20",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-20",
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
@@ -34431,14 +34340,6 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-04-15",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-03",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-05",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
@@ -34538,14 +34439,6 @@
     {
      "date": "2025-12-17",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-04-15",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-03",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-05",
@@ -36771,10 +36664,6 @@
      "type": "DIS_byCONSIL"
     },
     {
-     "date": "2024-06-26",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2024-07-02",
      "type": "DIS_byCONSIL"
     },
@@ -36808,14 +36697,6 @@
     },
     {
      "date": "2025-12-05",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-12-10",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-12-19",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -37054,23 +36935,11 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-02-11",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-04-24",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-05-28",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-06-12",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-17",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -37943,10 +37812,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-12-03",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-12-05",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -38145,10 +38010,6 @@
     {
      "date": "2024-06-07",
      "type": "DIS_byCONSIL"
-    },
-    {
-     "date": "2024-06-18",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2024-07-03",
@@ -42758,10 +42619,6 @@
     {
      "date": "2025-07-24",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-12-08",
-     "type": "APR_R1_byCONSIL"
     }
    ],
    "events": [
@@ -42851,10 +42708,6 @@
     {
      "date": "2024-05-02",
      "type": "DIS_byCONSIL"
-    },
-    {
-     "date": "2024-06-24",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2024-06-26",
@@ -43901,10 +43754,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-12-10",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-12-19",
      "type": "DELIB_COREPER_byCONSIL"
     }
@@ -44295,32 +44144,8 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2025-07-08",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-02",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-09-23",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2025-09-30",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-14",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-28",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-10",
-     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2025-12-05",
@@ -44333,10 +44158,6 @@
     {
      "date": "2025-12-11",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-01-28",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
     {
      "date": "2026-02-10",
@@ -45055,14 +44876,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-12-03",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-12-09",
-     "type": "ENDORSE_AGRPROV_byCONSIL"
-    },
-    {
      "date": "2026-01-09",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -45132,6 +44945,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     }
    ],
@@ -45271,14 +45085,6 @@
     {
      "date": "2024-07-10",
      "type": "DIS_byCONSIL"
-    },
-    {
-     "date": "2024-12-11",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2024-12-17",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2025-06-18",
@@ -45476,10 +45282,6 @@
     {
      "date": "2026-06-29",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-06-30",
-     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -45794,10 +45596,6 @@
     {
      "date": "2025-04-14",
      "type": "SIGN_byEP_CONSIL"
-    },
-    {
-     "date": "2025-09-23",
-     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -46213,10 +46011,6 @@
    },
    "council": [
     {
-     "date": "2024-12-04",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2024-12-11",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -46390,10 +46184,6 @@
     {
      "date": "2024-11-22",
      "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2024-12-02",
-     "type": "APR_R1_byCONSIL"
     },
     {
      "date": "2024-12-04",
@@ -46803,16 +46593,8 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-11-26",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-11-27",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-12-03",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2025-12-04",
@@ -46922,10 +46704,6 @@
     },
     {
      "date": "2025-09-24",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-10-01",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
@@ -47088,14 +46866,6 @@
     {
      "date": "2025-07-18",
      "type": "SIGN_byEP_CONSIL"
-    },
-    {
-     "date": "2025-09-29",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-10-27",
-     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -47473,10 +47243,6 @@
     {
      "date": "2026-06-23",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-06-26",
-     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -47690,10 +47456,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-05-07",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-06-11",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -47891,10 +47653,6 @@
     },
     {
      "date": "2025-03-11",
-     "type": "ADP_APPRGEN_byCONSIL"
-    },
-    {
-     "date": "2025-03-11",
      "type": "DELIB_byCONSIL"
     },
     {
@@ -47947,10 +47705,6 @@
     },
     {
      "date": "2025-07-18",
-     "type": "ADP_APPRGEN_byCONSIL"
-    },
-    {
-     "date": "2025-07-18",
      "type": "DELIB_byCONSIL"
     },
     {
@@ -47960,10 +47714,6 @@
     {
      "date": "2025-10-08",
      "type": "SIGN_byEP_CONSIL"
-    },
-    {
-     "date": "2025-10-15",
-     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -48358,10 +48108,6 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2025-12-03",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-12-05",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -48649,10 +48395,6 @@
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
-     "date": "2025-05-27",
-     "type": "APR_R1_byCONSIL"
-    },
-    {
      "date": "2025-06-05",
      "type": "APR_R1_byCONSIL"
     },
@@ -48787,10 +48529,6 @@
    },
    "council": [
     {
-     "date": "2025-04-23",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-05-13",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -48827,16 +48565,8 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-09-25",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-08",
      "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-10-09",
-     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2025-10-14",
@@ -48875,16 +48605,8 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-04-15",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-04-22",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-05-05",
-     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-05-18",
@@ -49901,6 +49623,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -49973,14 +49696,6 @@
     {
      "date": "2025-09-08",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-03",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-19",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2025-11-26",
@@ -50471,14 +50186,6 @@
      "type": "APR_AGRPROV_CONSIL_byEP_CMT"
     },
     {
-     "date": "2026-09-30",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-10-09",
-     "type": "ADP_R1_POS_byCONSIL"
-    },
-    {
      "date": "2026-10-13",
      "type": "APR_R1_byCONSIL"
     }
@@ -50765,10 +50472,6 @@
     },
     {
      "date": "2025-09-17",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-09-17",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -50828,10 +50531,6 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-06-10",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-12",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -50842,10 +50541,6 @@
     {
      "date": "2026-06-16",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-06-24",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-26",
@@ -50942,10 +50637,6 @@
     },
     {
      "date": "2025-09-17",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-09-17",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -50985,10 +50676,6 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-04-17",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-05-11",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -51023,10 +50710,6 @@
     {
      "date": "2026-06-16",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-06-24",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-26",
@@ -51088,10 +50771,6 @@
    },
    "council": [
     {
-     "date": "2025-07-11",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-09-08",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -51110,10 +50789,6 @@
     {
      "date": "2025-11-12",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-19",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2025-11-26",
@@ -51337,18 +51012,6 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2026-06-24",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-24",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-26",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-26",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
@@ -51526,10 +51189,6 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2026-06-24",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-26",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
@@ -51615,22 +51274,6 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2025-11-03",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-07",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-12",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-11-19",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-11-21",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -51661,10 +51304,6 @@
     {
      "date": "2026-05-19",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-05-20",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-05-22",
@@ -51770,10 +51409,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-07-09",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-07-14",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -51782,36 +51417,12 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2025-07-23",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-05",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-24",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-29",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-15",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2025-10-17",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-21",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2025-11-07",
-     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2025-11-19",
@@ -51860,10 +51471,6 @@
     {
      "date": "2026-05-19",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-05-20",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-05-22",
@@ -51989,14 +51596,6 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2025-10-27",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-11-07",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-11-19",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -52055,10 +51654,6 @@
     {
      "date": "2026-05-18",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-05-20",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-05-22",
@@ -52564,10 +52159,6 @@
     },
     {
      "date": "2025-12-15",
-     "type": "ADP_APPRGEN_byCONSIL"
-    },
-    {
-     "date": "2025-12-15",
      "type": "PART_APPRGEN_byCONSIL"
     }
    ],
@@ -52781,15 +52372,7 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-05-08",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-05-13",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-17",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -52805,10 +52388,6 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-07-03",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-07-22",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
@@ -52818,6 +52397,7 @@
     },
     {
      "date": "2026-10-19",
+     "projected": true,
      "type": "APR_R1_byCONSIL"
     }
    ],
@@ -52904,20 +52484,12 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2026-06-22",
-     "type": "PART_APPRGEN_byCONSIL"
-    },
-    {
      "date": "2026-06-30",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-09-23",
      "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-09-28",
-     "type": "PART_APPRGEN_byCONSIL"
     },
     {
      "date": "2026-09-29",
@@ -53001,10 +52573,6 @@
     {
      "date": "2025-10-21",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2025-10-24",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
      "date": "2025-10-29",
@@ -53161,6 +52729,7 @@
     },
     {
      "date": "2026-10-19",
+     "projected": true,
      "type": "ADP_NEGMAN_SPCOM_byCONSIL"
     }
    ],
@@ -53190,10 +52759,6 @@
    "council": [
     {
      "date": "2025-09-30",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-03-04",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -53228,10 +52793,6 @@
     {
      "date": "2025-09-30",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-16",
-     "type": "PART_APPRGEN_byCONSIL"
     },
     {
      "date": "2026-06-24",
@@ -53287,16 +52848,8 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-03-04",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-03-26",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-04-01",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-05-06",
@@ -53308,10 +52861,6 @@
     },
     {
      "date": "2026-06-03",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-08",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -53456,10 +53005,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-15",
-     "type": "DELIB_SPCO_byCONSIL"
-    },
-    {
      "date": "2026-06-23",
      "type": "DELIB_byCONSIL"
     },
@@ -53496,10 +53041,6 @@
      "type": "DELIB_SPCO_byCONSIL"
     },
     {
-     "date": "2026-09-14",
-     "type": "DELIB_SPCO_byCONSIL"
-    },
-    {
      "date": "2026-09-28",
      "type": "DELIB_byCONSIL"
     },
@@ -53513,6 +53054,7 @@
     },
     {
      "date": "2026-10-26",
+     "projected": true,
      "type": "PART_APPRGEN_byCONSIL"
     }
    ],
@@ -53540,14 +53082,6 @@
     "proposalDate": "2025-07-30"
    },
    "council": [
-    {
-     "date": "2026-02-11",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-02-25",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
     {
      "date": "2026-03-11",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
@@ -54239,10 +53773,6 @@
    },
    "council": [
     {
-     "date": "2025-10-06",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-16",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -54280,6 +53810,7 @@
     },
     {
      "date": "2026-10-26",
+     "projected": true,
      "type": "APR_R1_byCONSIL"
     }
    ],
@@ -54326,10 +53857,6 @@
    },
    "council": [
     {
-     "date": "2025-10-06",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-16",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -54367,6 +53894,7 @@
     },
     {
      "date": "2026-10-26",
+     "projected": true,
      "type": "APR_R1_byCONSIL"
     }
    ],
@@ -54450,14 +53978,6 @@
     {
      "date": "2025-12-17",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2025-12-19",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2025-12-22",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     },
     {
      "date": "2026-01-09",
@@ -54822,6 +54342,7 @@
     },
     {
      "date": "2026-10-26",
+     "projected": true,
      "type": "APR_R1_byCONSIL"
     }
    ],
@@ -54917,6 +54438,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -55138,10 +54660,6 @@
    },
    "council": [
     {
-     "date": "2025-12-01",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-12-05",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -55210,10 +54728,6 @@
      "type": "DELIB_byCONSIL"
     },
     {
-     "date": "2026-06-26",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-07-01",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -55251,6 +54765,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
    ],
@@ -55374,10 +54889,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-05-21",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-06-26",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
@@ -55472,10 +54983,6 @@
    },
    "council": [
     {
-     "date": "2026-01-09",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-01-19",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -55490,10 +54997,6 @@
     {
      "date": "2026-06-10",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-06-17",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-19",
@@ -55577,15 +55080,12 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-08",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-10",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-12",
+     "projected": true,
      "type": "DELIB_byCONSIL"
     },
     {
@@ -55712,10 +55212,6 @@
     {
      "date": "2026-06-02",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-08",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-10",
@@ -55883,10 +55379,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-08",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-10",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -55901,10 +55393,6 @@
     {
      "date": "2026-06-16",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-24",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-26",
@@ -56180,10 +55668,6 @@
     {
      "date": "2026-06-17",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-24",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
      "date": "2026-07-01",
@@ -56502,6 +55986,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
    ],
@@ -56903,10 +56388,6 @@
      "type": "NGT_INST_byEP_CONSIL_COM"
     },
     {
-     "date": "2026-10-07",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-10-09",
      "type": "DELIB_COREPER_byCONSIL"
     }
@@ -56960,10 +56441,6 @@
     {
      "date": "2026-05-28",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-03",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-03",
@@ -57067,10 +56544,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-03",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-05",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -57103,10 +56576,6 @@
     "proposalDate": "2025-12-16"
    },
    "council": [
-    {
-     "date": "2026-06-03",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
     {
      "date": "2026-06-05",
      "type": "DELIB_COREPER_byCONSIL"
@@ -57556,16 +57025,8 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-06-12",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-16",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-06-26",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
      "date": "2026-07-01",
@@ -57678,10 +57139,6 @@
     {
      "date": "2026-02-26",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-04-21",
-     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -57721,10 +57178,6 @@
    },
    "council": [
     {
-     "date": "2026-02-04",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-02-05",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -57734,10 +57187,6 @@
     },
     {
      "date": "2026-04-01",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-04-21",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -57823,10 +57272,6 @@
     },
     {
      "date": "2026-06-05",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-17",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -57960,15 +57405,7 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-05-20",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-05",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-08",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -57985,10 +57422,6 @@
     },
     {
      "date": "2026-06-26",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-26",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -58002,10 +57435,6 @@
     {
      "date": "2026-07-16",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-07-22",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-09-22",
@@ -58140,10 +57569,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-04-01",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-04-20",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -58152,32 +57577,12 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-05-20",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-05",
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-08",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-10",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-12",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-16",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-06-26",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
      "date": "2026-06-26",
@@ -58194,10 +57599,6 @@
     {
      "date": "2026-07-16",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-07-22",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-09-22",
@@ -58263,10 +57664,6 @@
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
-     "date": "2026-03-04",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-03-11",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -58285,18 +57682,6 @@
     {
      "date": "2026-03-16",
      "type": "NGT_INST_byEP_CONSIL_COM"
-    },
-    {
-     "date": "2026-03-18",
-     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-03-27",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-03-30",
-     "type": "APR_R1_byCONSIL"
     },
     {
      "date": "2026-06-26",
@@ -58414,10 +57799,6 @@
     {
      "date": "2025-09-02",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2025-09-18",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2025-10-29",
@@ -58646,10 +58027,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-09-24",
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
      "date": "2025-10-15",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -58765,10 +58142,6 @@
    },
    "council": [
     {
-     "date": "2025-09-02",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-03",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -58879,10 +58252,6 @@
    },
    "council": [
     {
-     "date": "2025-09-02",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-10-03",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -58895,16 +58264,8 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2025-11-20",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2025-11-21",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-04",
-     "type": "PART_APPRGEN_byCONSIL"
     }
    ],
    "events": [
@@ -59002,10 +58363,6 @@
     {
      "date": "2025-12-09",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-01-12",
-     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-01-16",
@@ -59118,10 +58475,6 @@
     {
      "date": "2026-05-29",
      "type": "DELIB_byCONSIL"
-    },
-    {
-     "date": "2026-05-29",
-     "type": "PART_APPRGEN_byCONSIL"
     },
     {
      "date": "2026-06-04",
@@ -59242,10 +58595,6 @@
     {
      "date": "2026-04-29",
      "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-05-12",
-     "type": "ADP_APPRGEN_byCONSIL"
     },
     {
      "date": "2026-05-12",
@@ -59469,10 +58818,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-06-08",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-06-10",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -59495,10 +58840,6 @@
     {
      "date": "2026-09-29",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-10-07",
-     "type": "DELIB_COREPER_byCONSIL"
     },
     {
      "date": "2026-10-11",
@@ -59635,10 +58976,6 @@
     },
     {
      "date": "2026-02-18",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-02-25",
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -60141,10 +59478,6 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-01-23",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-01-28",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -60228,10 +59561,6 @@
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
-     "date": "2026-01-23",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-01-28",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
@@ -60298,10 +59627,6 @@
    "council": [
     {
      "date": "2026-02-02",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-02-09",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -60461,10 +59786,6 @@
     "proposalDate": "2026-01-20"
    },
    "council": [
-    {
-     "date": "2026-02-02",
-     "type": "DELIB_WP_byCONSIL"
-    },
     {
      "date": "2026-05-28",
      "type": "DELIB_WP_byCONSIL"
@@ -60853,10 +60174,6 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
-     "date": "2026-07-01",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-07-02",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -61019,6 +60336,7 @@
     },
     {
      "date": "2026-10-23",
+     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
    ],
@@ -61047,23 +60365,11 @@
    },
    "council": [
     {
-     "date": "2026-03-31",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-04-15",
      "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-04-21",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-05-05",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-05-22",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -61191,19 +60497,12 @@
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
-     "date": "2026-09-16",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-09-23",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {
-     "date": "2026-10-07",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
      "date": "2026-10-21",
+     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -61804,10 +61103,6 @@
    },
    "council": [
     {
-     "date": "2026-03-23",
-     "type": "DELIB_WP_byCONSIL"
-    },
-    {
      "date": "2026-07-08",
      "type": "DELIB_WP_byCONSIL"
     },
@@ -61999,6 +61294,7 @@
     },
     {
      "date": "2026-10-21",
+     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -62298,10 +61594,6 @@
     "proposalDate": "2026-09-09"
    },
    "council": [
-    {
-     "date": "2026-09-11",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
     {
      "date": "2026-09-16",
      "type": "DELIB_WP_byCONSIL"
