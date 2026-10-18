@@ -95,6 +95,24 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 234/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/234
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-252-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi yrityspalvelujen asiakastietojärjestelmästä annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 252/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/252
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/252
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-251-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi verontilityslain muuttamisesta ja väliaikaisesta muuttamisesta sekä tuloverolain muuttamisesta ja väliaikaisesta muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 251/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/251
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/251
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-hanke-f7cb4c79-lausunto-2026-10-18@saadosseuranta
 DTSTAMP:20261018T000000Z
 DTSTART;VALUE=DATE:20261018
@@ -532,7 +550,7 @@ DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:[FI] Voimaan: Eräiden sosiaaliturvaetuuksien valtion osuuksien maksamista koskevien säännösten muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 89/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/89
+DESCRIPTION:Ehdotettu voimaantulo · 889/2026 · HE 89/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/89
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/89
 END:VEVENT
 BEGIN:VEVENT
@@ -687,6 +705,15 @@ DTEND;VALUE=DATE:20270802
 SUMMARY:[FI] Voimaan: Laiksi taiteen perusopetuksesta ja siihen liittyviksi laeiksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 115/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/115
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/115
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-254-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi yhteistoimintalain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 254/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/254
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/254
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-118-2026-voimaan-2027-01-01@saadosseuranta
@@ -896,6 +923,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 97/2026 vp · https://www.finlex.fi/fi/h
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/97
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-250-2026-voimaan-2027-07-01@saadosseuranta
+DTSTAMP:20270701T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[FI] Voimaan: Luottolaitoslainsäädännön uudistamiseksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 250/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/250
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/250
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-109-2026-voimaan-2027-04-01@saadosseuranta
 DTSTAMP:20270401T000000Z
 DTSTART;VALUE=DATE:20270401
@@ -1090,7 +1126,7 @@ DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:[FI] Voimaan: Laiksi tuloverolain muuttamisesta ja väliaikaisesta muuttamisesta
-DESCRIPTION:Voimaan (873/2026) · HE 113/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
+DESCRIPTION:Voimaan (873/2026) · 873/2026 · HE 113/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
 END:VEVENT
 BEGIN:VEVENT
@@ -1126,7 +1162,7 @@ DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Voimaan: Laeiksi työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 94/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
+DESCRIPTION:Ehdotettu voimaantulo · 887/2026 · HE 94/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
 END:VEVENT
 BEGIN:VEVENT
@@ -1135,7 +1171,7 @@ DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:[FI] Voimaan: Rikosseuraamuslaitoksen organisaation ja rikosseuraamusalan koulutusjärjestelmän uudistamista koskevaksi lainsäädännöksi
-DESCRIPTION:Voimaan (876/2026) · HE 25/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
+DESCRIPTION:Voimaan (876/2026) · 876/2026 · HE 25/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
 END:VEVENT
 BEGIN:VEVENT
