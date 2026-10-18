@@ -50,6 +50,15 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-059656 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37832/enotice/59656
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-59709-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Digitaalisten palvelujen kehittäjäkumppanuushankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059709 · https://www.hankintailmoitukset.fi/fi/public/procedure/38830/enotice/59709
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38830/enotice/59709
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-59515-maaraaika-2026-10-22-hankintatiimi@saadosseuranta
 DTSTAMP:20261022T000000Z
 DTSTART;VALUE=DATE:20261022
@@ -1758,14 +1767,5 @@ DTEND;VALUE=DATE:20261031
 SUMMARY:[Hankinta] Määräaika: HRM- ja palkkajärjestelmän hankinta
 DESCRIPTION:Tarjoukset viimeistään · 2026-057907 · https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/57907
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/57907
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-57983-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: Adobe-käyttöoikeudet ja niihin liittyvä jakelu- ja hallintapalvelu
-DESCRIPTION:Tarjoukset viimeistään · 2026-057983 · https://www.hankintailmoitukset.fi/fi/public/procedure/37749/enotice/57983
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37749/enotice/57983
 END:VEVENT
 END:VCALENDAR
