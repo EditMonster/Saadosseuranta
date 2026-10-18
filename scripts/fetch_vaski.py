@@ -492,8 +492,56 @@ def prune(cache: dict, cfg: dict) -> None:
 
 
 # ----------------------------------------------------------------------------- API access
+_ROWS_ONLY = False  # set when the batch endpoint refuses us (seen: HTTP 403 from GitHub Actions' network) → page the rows endpoint instead
+_PAGE_FIRST: dict[int, int | None] = {}  # rows-endpoint page → first Id on it (None = empty page)
+
+
+def _rows_page(page: int, per_page: int = 100) -> dict:
+    return get_json(f"{API}/rows", params={"perPage": per_page, "page": page}, timeout=180)
+
+
+def _page_first_id(page: int, per_page: int) -> int | None:
+    if page not in _PAGE_FIRST:
+        rows = _rows_page(page, per_page).get("rowData") or []
+        _PAGE_FIRST[page] = int(rows[0][0]) if rows else None
+    return _PAGE_FIRST[page]
+
+
+def _batch_via_rows(start: int, per_page: int = 100) -> dict:
+    """Emulate `batch?pkStartValue=start` with the plain rows listing, which is ordered by Id: binary-search the page
+    whose Ids straddle `start`, then return that page's rows from `start` on (topped up from the next page)."""
+    lo, hi = 0, 4096
+    while _page_first_id(hi, per_page) is not None:  # find an empty page beyond the end
+        lo, hi = hi, hi * 2
+    while hi - lo > 1:  # invariant: page lo has rows with first Id <= start-or-exists, page hi is beyond
+        mid = (lo + hi) // 2
+        first = _page_first_id(mid, per_page)
+        if first is not None and first <= start:
+            lo = mid
+        else:
+            hi = mid
+    data = _rows_page(lo, per_page)
+    rows = [r for r in (data.get("rowData") or []) if int(r[0]) >= start]
+    more = len(rows) >= per_page  # a full page: the scan loop asks again from the last Id + 1
+    if not more:
+        nxt = (_rows_page(lo + 1, per_page).get("rowData") or [])
+        extra = [r for r in nxt if int(r[0]) >= start]
+        rows += extra[: per_page - len(rows)]
+        more = len(extra) > per_page - (len(rows) - len(extra[: per_page - len(rows)])) or len(nxt) >= per_page
+    return {"rowData": rows, "rowCount": len(rows), "hasMore": more, "pkLastValue": int(rows[-1][0]) if rows else None, "pkStartValue": start}
+
+
 def fetch_batch(start: int, per_page: int = 100) -> dict:
-    return get_json(f"{API}/batch", params={"pkName": "Id", "pkStartValue": start, "perPage": per_page}, timeout=180)
+    global _ROWS_ONLY
+    if not _ROWS_ONLY:
+        try:
+            return get_json(f"{API}/batch", params={"pkName": "Id", "pkStartValue": start, "perPage": per_page}, timeout=180)
+        except Exception as e:  # noqa: BLE001
+            if "403" not in str(e) and "404" not in str(e):
+                raise
+            log(f"warn: vaski batch-rajapinta kieltäytyi ({str(e)[:80]}) – käytetään rows-sivutusta")
+            _ROWS_ONLY = True
+    return _batch_via_rows(start, per_page)
 
 
 def find_max_id(lower: int) -> int:
