@@ -607,3 +607,46 @@ def test_competition_enforcement_segment(page, base_url):
     page.click("#yk-segment [data-yksegment='yrityskauppa']")
     page.wait_for_timeout(200)
     assert "yrityskauppaa" in page.text_content("#count")
+
+
+def test_action_drafts(page, base_url):
+    goto(page, base_url, "#kansallinen")
+    iid = page.evaluate("(DATA.find(i=>i.scope==='fi'&&i.laji==='laki'&&openConsultation(i))||{}).id")
+    assert iid
+    page.evaluate(f"openItem('{iid}')")
+    page.wait_for_selector("#drawer:not([hidden])")
+    labels = page.locator("#dr-actions [data-act]").all_text_contents()
+    assert "Lausuntoluonnos" in labels and any("Tiivistelmä" in l for l in labels)
+    page.click("#dr-actions [data-act='lausunto']")
+    page.wait_for_selector("#act:not([hidden])")
+    body = page.input_value("#act-body")
+    assert "LAUSUNTO LUONNOKSESTA" in body and "Yksityiskohtaiset huomiot" in body and iid in body
+    assert page.get_attribute("#act-mail", "href").startswith("mailto:") and "teams.microsoft.com/share" in page.get_attribute("#act-teams", "href")
+    page.fill("#act-subject", "Testi")
+    assert "subject=Testi" in page.get_attribute("#act-mail", "href")
+    page.click("#act-close")
+    assert page.locator("#act").is_hidden()
+    page.keyboard.press("Escape")
+    # procurement decision → document request and appeal skeleton with the statutory references
+    pid = page.evaluate("(TENDERS.find(t=>t.stage==='paatos'&&t.status==='valitusaika')||{}).id")
+    if pid:
+        page.evaluate(f"openItem('{pid}')")
+        page.wait_for_selector("#drawer:not([hidden])")
+        page.click("#dr-actions [data-act='asiakirjapyynto']")
+        page.wait_for_selector("#act:not([hidden])")
+        assert "621/1999" in page.input_value("#act-body") and "14 § 4 mom." in page.input_value("#act-body")
+        page.click("#act-close")
+        page.click("#dr-actions [data-act='oikaisu']")
+        page.wait_for_selector("#act:not([hidden])")
+        assert "146–148 §" in page.input_value("#act-body")
+        page.click("#act-close")
+        page.keyboard.press("Escape")
+    mid = page.evaluate("(MERGERS.find(m=>m.authority==='EU'&&openConsultation(m))||{}).id")
+    if mid:
+        page.evaluate(f"openItem('{mid}')")
+        page.wait_for_selector("#drawer:not([hidden])")
+        page.click("#dr-actions [data-act='huomautus']")
+        page.wait_for_selector("#act:not([hidden])")
+        assert page.input_value("#act-to") == "COMP-MERGER-REGISTRY@ec.europa.eu"
+        page.click("#act-close")
+        page.keyboard.press("Escape")

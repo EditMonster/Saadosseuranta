@@ -211,6 +211,10 @@ a:hover{border-color:var(--fg)}
 .infl li{margin:2px 0}
 .infl .dec{font-weight:600}
 .plan-pill{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.modal.act{width:min(760px,calc(100% - 32px))}
+.actions{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
+.actions .follow-btn{font-size:12px}
+.actions .micro{align-self:center}
 .pill.infl-pill{border-style:dashed;color:var(--dim)}
 .ev.up{margin-top:-10px}.ev.down{margin-top:10px}
 .ev-label{position:absolute;transform:translateX(-50%);font-size:10.5px;white-space:nowrap;color:var(--fg);text-align:center;line-height:1.25;pointer-events:none}
@@ -591,6 +595,18 @@ th.sortable:hover{color:var(--fg)}
   <div id="folder-rows"></div>
   <p class="sub" id="folders-hidden"></p>
 </div>
+<div class="scrim" id="act-scrim" hidden></div>
+<div class="modal panel act" id="act" role="dialog" aria-modal="true" aria-labelledby="act-title" hidden>
+  <div class="drawer-top"><h3 id="act-title" style="margin:0">Luonnos</h3><button class="close" id="act-close" aria-label="Sulje">×</button></div>
+  <p class="sub" id="act-hint"></p>
+  <div class="teamform">
+    <label for="act-to">Vastaanottaja</label><input type="text" id="act-to" autocomplete="off" placeholder="(täydennä)">
+    <label for="act-subject">Aihe</label><input type="text" id="act-subject" autocomplete="off">
+    <label for="act-body">Teksti – muokattavissa</label><textarea id="act-body" rows="18" spellcheck="true"></textarea>
+    <div class="row"><button class="follow-btn" id="act-copy">Kopioi teksti</button><a class="follow-btn" id="act-mail" href="#" target="_blank" rel="noopener">Avaa Outlookissa</a><a class="follow-btn" id="act-teams" href="#" target="_blank" rel="noopener">Jaa Teamsiin</a><span class="msg" id="act-msg"></span></div>
+  </div>
+  <p class="micro" style="margin-top:10px">Luonnos on koottu rivin tiedoista; määräajat, pykäläviittaukset ja vastaanottaja on tarkistettava ennen lähettämistä. Mikään ei lähde tältä sivulta – teksti kopioidaan omaan sähköpostiin tai Teamsiin.</p>
+</div>
 <div class="modal panel" id="share" role="dialog" aria-modal="true" aria-labelledby="share-title" hidden>
   <div class="drawer-top"><h3 id="share-title" style="margin:0">Jakamisen asetukset</h3><button class="close" id="share-close" aria-label="Sulje">×</button></div>
   <p class="sub">Tiimikansioiden muutokset (kohteen lisäys, uusi kansio, säännöt) tehdään suoraan tästä sivusta. Sivu tarvitsee siihen <b>tiimin avaimen</b>, jonka saat tiimisi ylläpitäjältä – esimerkiksi Teamsin kautta. Avain tallentuu vain tähän selaimeen. Muutos toteutuu automaattisesti noin minuutissa, ja sivu kertoo, kun se on valmis.</p>
@@ -614,6 +630,7 @@ th.sortable:hover{color:var(--fg)}
   <p class="summary" id="dr-summary"></p>
   <div id="dr-facts"></div>
   <div id="dr-src"></div>
+  <div id="dr-actions"></div>
   <div id="dr-folders"></div>
   <div id="dr-changes"></div>
   <div id="dr-influence"></div>
@@ -1258,6 +1275,97 @@ function signalEvents(){
   return out.sort((a,b)=>(a.days<0)-(b.days<0)||a.date-b.date).filter(s=>(perTag[s.tag]=(perTag[s.tag]||0)+1)<=12).slice(0,40);
 }
 
+/* ---------- Toimi: ready-made drafts from the row's own facts (nothing is sent from the page) ---------- */
+const ORG="[Organisaatio]", ME="[Nimi, tehtävä, puhelin]";
+const fmtD=d=>d?fmt(pd(d)):"[pvm]";
+const nextOf=(it,kind)=>(it.events||[]).find(e=>e.kind===kind&&pd(e.end||e.date)>=TODAY);
+const linkOf=it=>SITE()+"#"+it.id;
+const MINISTRY_MAIL={VNK:"vnk",UM:"um",OM:"om",SM:"sm",PLM:"plm",VM:"vm",OKM:"okm",MMM:"mmm",LVM:"lvm",TEM:"tem",STM:"stm",YM:"ym"};
+const ministryMail=it=>{ const m=(it.tunnus||"").match(/^([A-Z]{2,3})\d/); const k=m&&MINISTRY_MAIL[m[1]]; return k?`kirjaamo.${k}@gov.fi (tarkista) / lausuntopalvelu.fi`:"[ministeriön kirjaamo / lausuntopalvelu.fi]"; };
+const COMMITTEE_ABBR={PeV:"perustuslakivaliokunta",UaV:"ulkoasiainvaliokunta",VaV:"valtiovarainvaliokunta",TrV:"tarkastusvaliokunta",HaV:"hallintovaliokunta",LaV:"lakivaliokunta",LiV:"liikenne- ja viestintävaliokunta",MmV:"maa- ja metsätalousvaliokunta",PuV:"puolustusvaliokunta",SiV:"sivistysvaliokunta",StV:"sosiaali- ja terveysvaliokunta",TaV:"talousvaliokunta",TiV:"tiedusteluvalvontavaliokunta",TuV:"tulevaisuusvaliokunta",TyV:"työelämä- ja tasa-arvovaliokunta",YmV:"ympäristövaliokunta",SuV:"suuri valiokunta"};
+function briefText(it){
+  const st=it.scope==="hankinta"?deadlineInfo(it):null; const nx=it.scope==="hankinta"?(st&&!st.none&&!st.over?`${st.label} ${st.when}`:""):(nextEvent(it)?`${nextEvent(it).label} ${fmt(nextEvent(it).date)}`:"");
+  const L=it.links||{}; const src=it.url||it.source||Object.values(L)[0]||"";
+  return `${it.fullTitle||it.title}\n${[it.ref,it.kind,it.buyer,it.ministry,it.authority,it.court].filter(Boolean).join(" · ")}\nTila: ${it.status||""}${nx?`\nSeuraava: ${nx}`:""}${it.summary?`\n\n${it.summary.slice(0,500)}`:""}\n\nSäädösseuranta: ${linkOf(it)}${src?`\nLähde: ${src}`:""}`;
+}
+function actionsFor(it){
+  const A=[]; const add=(key,label,hint,build)=>A.push({key,label,hint,build});
+  const inf=(INFLUENCE||{})[it.id]||{};
+  if(it.scope==="fi"||it.scope==="eu"){
+    const oc=openConsultation(it);
+    if(oc&&it.laji!=="kuuleminen") add("lausunto","Lausuntoluonnos",`Lausuntoaika päättyy ${fmtD(oc.end)}`,()=>{
+      const others=inf.lausunnot?`\n\nMuut lausunnonantajat tähän mennessä (${inf.lausunnot.n}): ${(inf.lausunnot.orgs||[]).slice(0,8).join(", ")}${inf.lausunnot.n>8?" …":""}.`:"";
+      return {to:ministryMail(it),subject:`Lausunto: ${it.fullTitle||it.title}${it.tunnus?` (${it.tunnus})`:""}`,
+        body:`${it.ministry||"[Ministeriö]"}\nKirjaamo\n\nViite: ${it.ref||it.tunnus||""}${it.tunnus&&it.ref!==it.tunnus?` · ${it.tunnus}`:""}; lausuntopyyntö, lausuntoaika päättyy ${fmtD(oc.end)}\n\nLAUSUNTO LUONNOKSESTA: ${(it.fullTitle||it.title).toUpperCase()}\n\n${ORG} kiittää mahdollisuudesta lausua ja esittää lausuntonaan seuraavaa.\n\n1. Yleiset huomiot\n[Kanta ehdotuksen tavoitteisiin ja keskeisiin keinoihin. Mitä kannatetaan, mitä ei, ja miksi.]\n\n2. Yksityiskohtaiset huomiot pykälittäin\n[§ – huomio – ehdotettu muotoilu]\n[§ – huomio – ehdotettu muotoilu]\n\n3. Vaikutusten arviointi\n[Taloudelliset, hallinnolliset ja muut vaikutukset ${ORG}:n / toimialan näkökulmasta; mitä arviosta puuttuu.]\n\n4. Voimaantulo ja siirtymäajat\n[Riittävätkö ehdotetut siirtymäajat; tarvittavat muutokset.]\n\n5. Yhteenveto\n[Keskeiset muutosehdotukset luettelona.]${others}\n\n${ME}\n${ORG}\n\n(Lausuntopalvelu: ${inf.lausunnot&&inf.lausunnot.url?inf.lausunnot.url:"[linkki]"} · Säädösseuranta: ${linkOf(it)})`};
+    });
+    if(it.laji==="kuuleminen"&&oc) add("palaute","Palauteluonnos kuulemiseen",`${it.authority||"Viranomainen"} · päättyy ${fmtD(oc.end)}`,()=>({to:(it.links||{}).source||it.source||"",subject:`${it.authority==="Komissio"?"Feedback":"Palaute"}: ${it.title}`,
+      body:`${it.authority||""} – ${it.title}\nViite: ${it.ref||""} · palauteaika päättyy ${fmtD(oc.end)}\n\n${it.authority==="Komissio"?"[Feedback is typically submitted in the Have your say portal; a Finnish or English text is accepted.]\n\n":""}1. Kanta ehdotukseen / kysymyksiin\n[…]\n\n2. Vaikutukset ${ORG}:n toimintaan\n[…]\n\n3. Ehdotukset\n[…]\n\n${ME}\n${ORG}\n\nSäädösseuranta: ${linkOf(it)}`}));
+    const hearing=(it.events||[]).find(e=>/esityslistalla/.test(e.label)&&pd(e.date)>=TODAY);
+    const inCommittee=it.scope==="fi"&&it.laji==="laki"&&(it.events||[]).some(e=>e.kind==="he")&&!(it.events||[]).some(e=>e.kind==="hyvaksytty"||e.kind==="vahvistettu");
+    if(inCommittee) add("kuuleminen","Pyyntö tulla kuulluksi valiokunnassa",hearing?`Esityslistalla ${fmtD(hearing.date)}`:"Valiokuntakäsittely käynnissä",()=>{
+      const ab=(hearing&&(hearing.label.match(/\(([A-Za-z]+)\)/)||[])[1])||""; const com=(ab&&COMMITTEE_ABBR[ab])||(it.committees||[])[0]||"[valiokunta]"; const abbr=Object.entries(COMMITTEE_ABBR).find(([k,v])=>v===com.toLowerCase());
+      return {to:abbr?`${abbr[0].toLowerCase()}@eduskunta.fi`:"[valiokunnan sihteeristö]",subject:`${it.ref} – pyyntö tulla kuulluksi / kirjallinen asiantuntijalausunto`,
+        body:`${com.charAt(0).toUpperCase()+com.slice(1)}\nValiokuntaneuvos\n\nAsia: ${it.ref} ${it.fullTitle||it.title}\n\n${ORG} pyytää kohteliaimmin, että se kutsutaan kuultavaksi valiokuntaan asian ${it.ref} käsittelyssä${hearing?` (asiantuntijakuuleminen esityslistalla ${fmtD(hearing.date)})`:""}, tai vaihtoehtoisesti että valiokunta ottaa vastaan ${ORG}:n kirjallisen asiantuntijalausunnon.\n\nPerustelu: [miksi ${ORG}:lla on asiassa erityistä asiantuntemusta tai se on esityksen keskeinen kohderyhmä – 2–4 virkettä].\n\nKeskeiset huomiot, joihin kuuleminen kohdistuisi:\n1. [§ / teema]\n2. [§ / teema]\n3. [§ / teema]\n\nKuultavaksi ehdotetaan: ${ME}.\n\nYstävällisin terveisin\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)}${inf.kuulemiset&&inf.kuulemiset.length?` · tähän mennessä kuultu ${inf.kuulemiset.reduce((s,k)=>s+(k.heard||[]).length,0)} asiantuntijaa`:""})`};
+    });
+    if(it.laji==="delegoitu"&&it.status==="vastustamisaika") add("vastustus","Viesti vastustamisajasta (MEP / ministeriö)",`Vastustamisaika päättyy ${fmtD(it.objectionEnd)}`,()=>({to:"[europarlamentaarikko / vastuuministeriön EU-asiantuntija]",subject:`Delegoitu säädös ${it.ref} – vastustamisaika päättyy ${fmtD(it.objectionEnd)}`,
+      body:`Hyvä [nimi],\n\nKomissio on antanut delegoidun säädöksen ${it.ref} (${it.fullTitle||it.title}). Parlamentin ja neuvoston vastustamisaika päättyy ${fmtD(it.objectionEnd)}.\n\n${ORG}:n näkemys: [kannatamme / vastustamme / pyydämme pidentämään vastustamisaikaa], koska\n1. […]\n2. […]\n\nKonkreettinen toive: [vastustuspäätösehdotus / kysymys komissiolle / pidennys 2 kk].\n\n${ME}\n${ORG}\n\n(Rekisteri: ${(it.links||{}).regdel||""} · Säädösseuranta: ${linkOf(it)})`}));
+  }
+  if(it.scope==="yrityskauppa"){
+    const oc=openConsultation(it);
+    if(it.authority==="EU"&&oc) add("huomautus","Huomautus komissiolle (EUVL-ilmoitus)",`Huomautukset viimeistään ${fmtD(oc.end)}`,()=>({to:"COMP-MERGER-REGISTRY@ec.europa.eu",subject:`Case ${it.ref} – ${it.title} – observations`,
+      body:`European Commission\nDirectorate-General for Competition – Merger Registry\n\nCase ${it.ref} – ${it.title}\nPrior notification published in the Official Journal ${it.noticeRef?`(${it.noticeRef}) `:""}on ${fmtD(it.noticeDate)}; observations by ${fmtD(oc.end)}.\n\n${ORG} submits the following observations on the notified concentration.\n\n1. Interest of ${ORG} in the case\n[Competitor / customer / supplier in Finland; relevant markets.]\n\n2. Affected markets and competitive concerns\n[Market definition (product, geographic – Finland), market shares, closeness of competition, barriers to entry, input foreclosure etc.]\n\n3. Requested action\n[In-depth investigation / commitments / no concern.]\n\n[Confidentiality: please treat sections … as business secrets.]\n\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)})`}));
+    if(it.authority==="KKV"&&oc) add("kkv","Lausunto KKV:lle yrityskaupasta",`Kuulemisen määräaika ${fmtD(oc.end)}`,()=>({to:"kirjaamo@kkv.fi",subject:`${it.ref} – lausunto yrityskaupasta ${it.title}`,
+      body:`Kilpailu- ja kuluttajavirasto\nKirjaamo\n\nAsia: ${it.ref} – ${it.title}\nViite: KKV:n kuuleminen yrityskaupasta, määräaika ${fmtD(oc.end)}\n\n${ORG} esittää lausuntonaan seuraavaa.\n\n1. ${ORG}:n asema markkinoilla\n[kilpailija / asiakas / toimittaja; relevantit markkinat Suomessa]\n\n2. Yrityskaupan vaikutukset kilpailuun\n[markkinamäärittely, markkinaosuudet, kilpailun läheisyys, alalle tulon esteet, asiakkaiden vaihtoehdot]\n\n3. Johtopäätös ja pyyntö\n[jatkoselvitys / ehdot / ei huomautettavaa]\n\n[Liikesalaisuudet merkitty.]\n\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)})`}));
+  }
+  if(it.scope==="hankinta"){
+    const st=stageOf(it); const di=deadlineInfo(it);
+    if(st==="avoin"&&it.status==="avoin"&&!di.over) add("kysymykset","Kysymykset tarjouspyynnöstä",`Tarjoukset ${di.when}`,()=>({to:"[hankintayksikön yhteyshenkilö / tarjouspalvelun kysymyslomake]",subject:`Kysymyksiä tarjouspyyntöön: ${it.title}${it.noticeNumber?` (Hilma ${it.noticeNumber})`:""}`,
+      body:`${it.buyer||"[Hankintayksikkö]"}\n\nTarjouspyyntö: ${it.title}${it.noticeNumber?` · Hilma ${it.noticeNumber}`:""}\nTarjousten määräaika: ${di.when}\n\n${ORG} esittää seuraavat kysymykset ja täsmennyspyynnöt:\n\n1. Soveltuvuusvaatimukset: [kysymys]\n2. Vähimmäisvaatimukset / tekniset vaatimukset: [kysymys]\n3. Vertailuperusteet ja pisteytys: [kysymys]\n4. Sopimusehdot (vastuunrajoitus, hinnantarkistus, optiot): [kysymys]\n5. Hankinnan laajuus ja volyymit: [kysymys]\n\nPyydämme vastauksia hyvissä ajoin ennen tarjousajan päättymistä ja tarvittaessa tarjousajan pidentämistä.\n\n${ME}\n${ORG}\n\n(Hilma: ${it.url} · Säädösseuranta: ${linkOf(it)})`}));
+    if(st==="tulossa") add("markkinakartoitus","Vastaus markkinakartoitukseen / tietopyyntöön",di.none?"Ennakkoilmoitus":`Vastaukset ${di.when}`,()=>({to:"[hankintayksikön yhteyshenkilö]",subject:`Vastaus markkinakartoitukseen: ${it.title}`,
+      body:`${it.buyer||"[Hankintayksikkö]"}\n\nMarkkinakartoitus (hankintalaki 1397/2016, 65 §): ${it.title}\n\n${ORG} kiittää mahdollisuudesta osallistua markkinakartoitukseen ja esittää seuraavaa.\n\n1. ${ORG} lyhyesti ja referenssit vastaavista toimituksista\n[…]\n\n2. Huomiot suunnitellusta hankinnan kohteesta ja laajuudesta\n[mikä on toteutettavissa, mikä ei; vaihtoehtoiset ratkaisumallit]\n\n3. Ehdotukset soveltuvuus- ja vertailuperusteiksi\n[laatu vs. hinta, osatarjoukset, pienten toimijoiden osallistuminen]\n\n4. Sopimusmalli, sopimuskausi ja optiot\n[…]\n\n5. Aikataulu ja käyttöönotto\n[…]\n\nOlemme käytettävissä markkinavuoropuheluun.\n\n${ME}\n${ORG}\n\n(Hilma: ${it.url} · Säädösseuranta: ${linkOf(it)})`}));
+    if(st==="ratkaistu"||st==="paatos"||(st==="suorahankinta")) add("asiakirjapyynto","Asiakirjapyyntö: päätös, vertailu ja voittanut tarjous",st==="paatos"?`Päätös ${fmtD(it.decisionDate)}`:(it.published?`Jälki-ilmoitus ${fmtD(it.published)}`:""),()=>({to:"[hankintayksikön kirjaamo]",subject:`Asiakirjapyyntö (julkisuuslaki 621/1999): ${it.title}`,
+      body:`${it.buyer||"[Hankintayksikkö]"}\nKirjaamo\n\nAsia: ${it.title}${it.noticeNumber?` · Hilma ${it.noticeNumber}`:""}${it.decisionDate?` · hankintapäätös ${fmtD(it.decisionDate)}`:""}${it.winner?` · valittu toimittaja ${it.winner}`:""}\n\nPyydän viranomaisten toiminnan julkisuudesta annetun lain (621/1999) nojalla jäljennökset seuraavista asiakirjoista:\n1. hankintapäätös perusteluineen ja liitteineen;\n2. tarjousten vertailutaulukko ja pisteytyksen perustelut;\n3. voittaneen tarjouksen julkiset osat, mukaan lukien tarjousvertailussa käytetty kokonaishinta ja muut vertailuun vaikuttaneet tiedot (julkisuuslaki 11 § 2 mom. 6 kohta);\n4. hankintayksikön arvio tarjoukseen merkityistä liikesalaisuuksista (julkisuuslaki 24 § 1 mom. 20 kohta) perusteluineen.\n\n${ORG} on ${st==="paatos"||it.related?"hankintamenettelyyn osallistuneena tarjoajana asianosainen (julkisuuslaki 11 §; hankintalaki 1397/2016, 138 §)":"[asianosainen tarjoajana (julkisuuslaki 11 §) / pyytää yleisöjulkisia asiakirjoja (julkisuuslaki 9 §)]"}. Pyydän toimittamaan asiakirjat sähköisesti osoitteeseen [sähköposti] viipymättä ja viimeistään kahden viikon kuluessa pyynnöstä (julkisuuslaki 14 § 4 mom.). Jos pyyntö evätään osittain, pyydän kirjallisen, valituskelpoisen päätöksen perusteluineen.\n\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)})`}));
+    if((st==="paatos"&&it.status==="valitusaika")||(st==="suorahankinta"&&it.status==="valitusaika")||(st==="ratkaistu"&&it.published&&daysTo(pd(it.published))>=-21)) add("oikaisu","Hankintaoikaisuvaatimus / valitus markkinaoikeuteen – runko",it.appealEnd?`Valitusaika (arvio) ${fmtD(it.appealEnd)}`:"14 pv tiedoksisaannista",()=>({to:st==="suorahankinta"?"markkinaoikeus@oikeus.fi":"[hankintayksikön kirjaamo] / markkinaoikeus@oikeus.fi",subject:`${st==="suorahankinta"?"Valitus":"Hankintaoikaisuvaatimus ja valitus"}: ${it.title}`,
+      body:`${st==="suorahankinta"?"MARKKINAOIKEUDELLE":"HANKINTAOIKAISUVAATIMUS hankintayksikölle (hankintalaki 1397/2016, 132–135 §) ja VALITUS markkinaoikeudelle (146–148 §)"}\n\nHankintayksikkö: ${it.buyer||"[hankintayksikkö]"}\nHankinta: ${it.title}${it.noticeNumber?` · Hilma ${it.noticeNumber}`:""}\n${st==="suorahankinta"?`Suorahankintailmoitus julkaistu ${fmtD(it.published)}; valitusaika 14 päivää julkaisusta (147 § 3 mom.)`:`Hankintapäätös ${fmtD(it.decisionDate||it.published)}${it.decisionMaker?` (${it.decisionMaker})`:""}; tiedoksisaanti [pvm] – määräaika 14 päivää tiedoksisaannista (hankintaoikaisu 133 §, valitus 147 §)`}\n${st==="paatos"&&it.appealEnd?`Säädösseurannan arvio määräajasta: ${fmtD(it.appealEnd)} (tarkista tiedoksisaannista)`:""}\n\nVAATIMUKSET\n1. [Hankintapäätös on kumottava / hankintayksikköä kielletään tekemästä sopimusta (150 §) / tehottomuusseuraamus, seuraamusmaksu tai hyvitysmaksu (154 §)]\n2. [Täytäntöönpanon väliaikainen kieltäminen (151 §)]\n3. [Oikeudenkäyntikulut]\n\nPERUSTELUT\n1. Tapahtumien kulku\n[…]\n2. Virhe menettelyssä\n[tarjouspyynnön vastaisuus / vertailuperusteiden soveltaminen / tarjoajien tasapuolinen kohtelu (3 §) / perustelujen puutteellisuus (123 §) / suorahankinnan edellytykset (40–41 §)]\n3. Virheen vaikutus lopputulokseen\n[…]\n\nTODISTEET\n[hankintapäätös, tarjouspyyntö, vertailutaulukko, oma tarjous, kirjeenvaihto]\n\nILMOITUS HANKINTAYKSIKÖLLE (148 §): valittaja ilmoittaa hankintayksikölle kirjallisesti asian saattamisesta markkinaoikeuden käsiteltäväksi.\n\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)})`}));
+    if(st==="ennuste"||st==="kalenteri") add("vuoropuhelu","Yhteydenotto: markkinavuoropuhelu ennen kilpailutusta",st==="ennuste"?`Sopimus päättyy ${fmtD(it.contractEnd)}`:(it.plannedText||""),()=>({to:"[hankintayksikön hankintapäällikkö / kategoriavastaava]",subject:`Markkinavuoropuhelu: ${it.title}`,
+      body:`${it.buyer||"[Hankintayksikkö]"}\n\nHyvä [nimi],\n\n${st==="ennuste"?`Nykyinen sopimus (${it.title}${it.incumbent?`, toimittaja ${it.incumbent}`:""}) päättyy ${fmtD(it.contractEnd)}${it.contractEndWithOptions&&it.contractEndWithOptions!==it.contractEnd?` (optiot käytettynä ${fmtD(it.contractEndWithOptions)})`:""}.`:`Hankintakalenterinne mukaan kilpailutus "${it.title}" on suunnitteilla${it.plannedText?` (${it.plannedText})`:""}.`} ${ORG} on kiinnostunut osallistumaan tulevaan kilpailutukseen ja ehdottaa markkinavuoropuhelua (hankintalaki 1397/2016, 65 §) ennen tarjouspyynnön viimeistelyä.\n\nVoisimme tuoda vuoropuheluun:\n1. [ratkaisuvaihtoehdot ja markkinan tilanne]\n2. [huomiot nykyisen sopimusmallin toimivuudesta]\n3. [ehdotukset vertailuperusteista ja sopimuskaudesta]\n\nSopiiko lyhyt tapaaminen [viikolla X]?\n\n${ME}\n${ORG}\n\n(Säädösseuranta: ${linkOf(it)})`}));
+    if(st==="mao"&&it.status==="vireillä"&&it.related&&it.related.length) add("seuranta","Muistio: valitus markkinaoikeudessa (sopimuksen tekemisen kielto)",`Vireille ${fmtD(it.filed)}`,()=>({to:"",subject:`Muistio: ${it.title} – valitus markkinaoikeudessa`,body:`${briefText(it)}\n\nHuomio: EU-kynnysarvon ylittävässä hankinnassa hankintayksikkö ei saa tehdä sopimusta, jos asia on saatettu markkinaoikeuden käsiteltäväksi (hankintalaki 150 §); kansallisessa hankinnassa markkinaoikeus voi kieltää täytäntöönpanon väliaikaisesti (151 §). [Tarkista tilanne hankintayksiköltä.]`}));
+  }
+  if(it.scope==="ratkaisu") add("muistio","Muistion runko ratkaisusta",it.ref||"",()=>({to:"",subject:`Muistio: ${it.ref||it.court} – ${it.title}`,
+    body:`MUISTIO\n\nRatkaisu: ${it.ref||""} (${it.courtName||it.court}), ${fmtD(it.date)}${it.ecli?` · ${it.ecli}`:""}\nAsiasanat: ${(it.keywords||[]).join(", ")}\nSäädökset: ${(it.statutes||[]).map(s=>(s.sk||s.celex||"")+(s.section?" "+s.section:"")).join("; ")||"–"}\n\n1. Oikeuskysymys\n[…]\n\n2. Tosiseikat lyhyesti\n[…]\n\n3. Ratkaisu ja perustelujen ydin (ratio)\n${it.summary?it.summary.slice(0,700):"[…]"}\n\n4. Merkitys ${ORG}:lle / asiakkaille\n[…]\n\n5. Toimenpiteet\n[…]\n\nLähde: ${it.url||""}\nSäädösseuranta: ${linkOf(it)}`}));
+  add("brief","Tiivistelmä tiimille (Teams)","Otsikko, tila, seuraava määräaika, linkit",()=>({to:"",subject:(it.fullTitle||it.title).slice(0,120),body:briefText(it)}));
+  return A;
+}
+function renderActions(it){
+  const el=document.getElementById("dr-actions"); if(!el) return;
+  const acts=actionsFor(it);
+  el.innerHTML=`<div class="actions"><span class="micro">Toimi:</span>${acts.map(a=>`<button class="follow-btn" data-act="${esc(a.key)}" title="${esc(a.hint||"")}">${esc(a.label)}</button>`).join("")}</div>`;
+}
+let actItem=null, actList=[];
+const actEl=document.getElementById("act"), actScrim=document.getElementById("act-scrim");
+function openAction(it,key){
+  actItem=it; actList=actionsFor(it); const a=actList.find(x=>x.key===key); if(!a) return;
+  const d=a.build();
+  document.getElementById("act-title").textContent=a.label;
+  document.getElementById("act-hint").textContent=a.hint||"";
+  document.getElementById("act-to").value=d.to||""; document.getElementById("act-subject").value=d.subject||""; document.getElementById("act-body").value=d.body||"";
+  document.getElementById("act-msg").textContent="";
+  syncActLinks();
+  actEl.hidden=false; actScrim.hidden=false; document.getElementById("act-body").focus();
+}
+function syncActLinks(){
+  const to=document.getElementById("act-to").value.trim(), subj=document.getElementById("act-subject").value, body=document.getElementById("act-body").value;
+  const short=body.length>1800?body.slice(0,1800)+"\n\n[… teksti jatkuu – kopioi koko teksti Kopioi-painikkeella]":body;
+  document.getElementById("act-mail").href=`mailto:${/@/.test(to)?encodeURIComponent(to):""}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(short)}`;
+  document.getElementById("act-teams").href=teamsShareUrl(actItem?linkOf(actItem):SITE(),(subj+"\n\n"+body).slice(0,600));
+}
+["act-to","act-subject","act-body"].forEach(id=>document.getElementById(id).addEventListener("input",syncActLinks));
+document.getElementById("act-copy").addEventListener("click",e=>{ const to=document.getElementById("act-to").value.trim(); const txt=(to?`Vastaanottaja: ${to}\n`:"")+`Aihe: ${document.getElementById("act-subject").value}\n\n${document.getElementById("act-body").value}`; copyText(txt,e.currentTarget,"Kopioitu"); });
+function closeAction(){ actEl.hidden=true; actScrim.hidden=true; }
+document.getElementById("act-close").addEventListener("click",closeAction); actScrim.addEventListener("click",closeAction);
+document.addEventListener("click",e=>{ const b=e.target.closest("#dr-actions [data-act]"); if(!b) return; e.preventDefault(); const it=findItem(drawer.dataset.id); if(it) loadInfluence().then(()=>openAction(it,b.dataset.act)); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!actEl.hidden){ e.stopPropagation(); closeAction(); } },true);
+
 /* ---------- completed table ---------- */
 function renderDone(items){
   const body=document.getElementById("done-body"); body.innerHTML="";
@@ -1327,9 +1435,9 @@ function openTender(it){
   links.push(`<a href="${esc(teamsShareUrl(SITE()+"#"+it.id,it.title.slice(0,180)))}" target="_blank" rel="noopener" title="Jaa Teams-kanavaan tai -keskusteluun">Jaa Teamsiin</a>`);
   links.push(`<button class="follow-btn" id="dr-follow" data-follow="${esc(it.id)}" aria-pressed="${state.follow.has(it.id)}">${state.follow.has(it.id)?"★ Seurannassa":"☆ Seuraa"}</button>`);
   drawer.dataset.id=it.id;
-  document.getElementById("dr-changes").innerHTML="";
+  document.getElementById("dr-changes").innerHTML=""; document.getElementById("dr-influence").innerHTML="";
   document.getElementById("dr-src").innerHTML=`<h4>Linkit</h4><div class="srclinks">${links.join("")}</div>`;
-  renderDrawerFolders(it.id);
+  renderDrawerFolders(it.id); renderActions(it);
   const ev=tenderEvents(it);
   renderTimeline(document.getElementById("dr-mini"), [Object.assign({},it,{events:ev,ref:it.kind})], {mini:true,labels:true,tight:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
@@ -1416,7 +1524,7 @@ function openItem(id){
       <div class="d">${fmt(d)}${end?" – "+fmt(end):""}</div>
       <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?`<span class="unc">${e.kind==="ennuste"?"arvio":"tarkistamaton"}</span>`:""}</div></li>`);
   });
-  renderInfluence(it);
+  renderInfluence(it); renderActions(it);
   drawer.hidden=false; scrim.hidden=false; document.body.style.overflow="hidden";
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
@@ -1783,7 +1891,7 @@ function openRuling(it){
   drawer.dataset.id=it.id;
   document.getElementById("dr-changes").innerHTML=""; document.getElementById("dr-influence").innerHTML="";
   document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>`;
-  renderDrawerFolders(it.id);
+  renderDrawerFolders(it.id); renderActions(it);
   const rel=(it.related||[]).map(findItem).filter(Boolean);
   document.getElementById("dr-mini").innerHTML=rel.length?`<div class="micro" style="margin-bottom:6px">Liittyy säädöksiin:</div><ul class="vlist">${rel.map(x=>`<li class="past"><div class="d">${esc(scopeTag(x))}</div><div class="l"><a href="#${esc(x.id)}" data-id="${esc(x.id)}">${esc(x.title)}</a> <span class="micro">${esc(x.ref)}</span></div></li>`).join("")}</ul>`:"";
   const list=document.getElementById("dr-list"); list.innerHTML="";
