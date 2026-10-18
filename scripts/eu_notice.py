@@ -16,6 +16,7 @@ import html
 import re
 
 from common import http
+from maaraajat import eu_deadline
 
 UA = {"User-Agent": "Mozilla/5.0 saadosseuranta/1.0 (+https://github.com/EditMonster/Saadosseuranta)",
       "Accept": "application/xhtml+xml, text/html;q=0.9", "Accept-Language": "fi"}
@@ -141,7 +142,10 @@ def parse_notice(text: str) -> dict | None:
     m = re.search(r"(\d+)\s+päivän kuluessa tämän ilmoituksen julkaisupäivästä", text)
     d["observationDays"] = int(m.group(1)) if m else 10
     if d["published"]:
-        d["observationsEnd"] = (dt.date.fromisoformat(d["published"]) + dt.timedelta(days=d["observationDays"])).isoformat()
+        # Reg. 1182/71 art. 3: the publication day is not counted; a Saturday, Sunday or holiday end moves to the next working day
+        res = eu_deadline(d["published"], days=d["observationDays"])
+        d["observationsEnd"] = res["date"]
+        d["observationsShifted"] = res["shifted"]
     d["fi"] = any(p["fi"] for p in parties)
     return d
 

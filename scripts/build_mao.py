@@ -16,6 +16,7 @@ import datetime as dt
 import re
 
 from common import CACHE_DIR, CONFIG_DIR, TODAY, load_json, load_yaml
+from maaraajat import fi_deadline, shifted_note_fi
 from fetch_mao import PENDING, norm
 
 OUTCOME_KIND = {"valitus hylätty": "hyvaksytty", "jätetty tutkimatta": "hyvaksytty", "rauennut": "muu", "poistettu käsittelystä": "muu"}
@@ -72,8 +73,13 @@ def mao_rows(settings: dict, tenders: list[dict], hcfg: dict) -> list[dict]:
         if d.get("date"):
             ev.append({"date": d["date"], "label": f"Markkinaoikeuden ratkaisu {d.get('number') or ''} – {d.get('outcome') or 'ratkaistu'}".strip(),
                        "kind": OUTCOME_KIND.get(d.get("outcome") or "", "vahvistettu")})
-            ev.append({"date": (dt.date.fromisoformat(d["date"]) + dt.timedelta(days=kho_days)).isoformat(),
-                       "label": f"Valitusaika KHO:een päättyy (arvio: {kho_days} pv antopäivästä; valituslupa)", "kind": "maaraaika", "confirmed": False})
+            # 30 days from service (hankintalaki 165 §, laki oikeudenkäynnistä hallintoasioissa 13 §); service is not public,
+            # so count from the date of the ruling = the earliest possible end, shifted per 150/1930 5 §
+            res = fi_deadline(d["date"], days=kho_days)
+            ev.append({"date": res["date"],
+                       "label": f"Valitusaika KHO:een päättyy aikaisintaan (arvio: {kho_days} pv tiedoksisaannista, laskettu antopäivästä; "
+                                f"postitse tiedoksianto 7. päivänä lähettämisestä; valituslupa){shifted_note_fi(res)}",
+                       "kind": "maaraaika", "confirmed": False})
         return ev
 
     def link(row: dict, matches: list[dict], kind: str):

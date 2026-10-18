@@ -18,6 +18,7 @@ import datetime as dt
 import re
 
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, load_json, load_yaml, log, save_json
+from maaraajat import fi_deadline, shifted_note_fi
 from build_mao import mao_rows
 
 CACHE = CACHE_DIR / "hankinnat.json"
@@ -174,9 +175,12 @@ def build_hankinnat(settings) -> dict | None:
             value, cur = lots[0]["estimatedValue"], lots[0].get("currency")
         ted = n.get("tedPublicationId")
         published = (n.get("datePublished") or "")[:10] or None
-        appeal_end = None
+        appeal_end = appeal_basis = None
         if stage == "suorahankinta" and published:
-            appeal_end = (dt.date.fromisoformat(published) + dt.timedelta(days=appeal_days)).isoformat()
+            # hankintalaki 147 § 3 mom.: 14 days from publication of the notice; 150/1930 2 § and 5 §
+            res = fi_deadline(published, days=appeal_days)
+            appeal_end = res["date"]
+            appeal_basis = f"{appeal_days} pv suorahankintailmoituksen julkaisusta (hankintalaki 147 § 3 mom.){shifted_note_fi(res)}"
         winner = (n.get("winnerOrganisations") or "").strip() or None
         amount = n.get("noticeResultTotalAmount")
         if stage == "ratkaistu" and not amount:
@@ -190,7 +194,7 @@ def build_hankinnat(settings) -> dict | None:
             "buyerId": n.get("organisationNationalRegistrationNumber") or None,
             "deadline": n.get("deadline") if stage in ("avoin", "tulossa") else None,
             "deadlineKind": ("vastaus" if stage == "tulossa" else ("osallistumishakemus" if (proc in part or dps) else "tarjous")),
-            "appealEnd": appeal_end, "winner": winner[:200] if winner else None,
+            "appealEnd": appeal_end, "appealBasis": appeal_basis, "winner": winner[:200] if winner else None,
             "amount": amount, "amountCurrency": (n.get("noticeResultTotalAmountCurrency") or "EUR") if amount else None,
             "expires": (n.get("expirationDate") or "")[:10] or None,
             "procKey": (f"p{n['procedureId']}" if n.get("procedureId") else (f"o{n['oldProcurementProjectId']}" if n.get("oldProcurementProjectId") else None)),

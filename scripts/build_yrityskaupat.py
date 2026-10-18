@@ -18,6 +18,7 @@ import datetime as dt
 import re
 
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, load_json, load_yaml, log, save_json
+from maaraajat import eu_deadline, shifted_note_eu
 
 OUT = OUT_DIR / "yrityskaupat.json"
 OPEN_STATES = {"vireillä", "jatkokäsittelyssä", "kieltoesitys markkinaoikeudessa"}
@@ -179,7 +180,11 @@ def build_yrityskaupat(settings) -> dict | None:
         m = re.search(r"Sector_([A-V])_", sect)
         letter = m.group(1) if m else None
         sector_label = nace.get(letter) if letter else None
-        notice = c.get("notice") or {}
+        notice = dict(c.get("notice") or {})
+        obs_note = ""
+        if notice.get("published"):  # recompute: cached notices predate the Reg. 1182/71 weekend/holiday shift
+            res = eu_deadline(notice["published"], days=int(notice.get("observationDays") or 10))
+            notice["observationsEnd"], obs_note = res["date"], shifted_note_eu(res)
         parties = [{k: v for k, v in p.items() if k in ("name", "short", "country", "fi")} for p in notice.get("parties") or []]
         fi_party = bool(notice.get("fi"))
         ev = []
@@ -189,7 +194,7 @@ def build_yrityskaupat(settings) -> dict | None:
             ev.append({"date": c["renotified"], "label": "Ilmoitettu uudelleen", "kind": "muu"})
         if notice.get("published") and notice.get("observationsEnd"):
             ev.append({"date": notice["published"], "end": notice["observationsEnd"], "kind": "lausunto",
-                       "label": f"Ennakkoilmoitus EUVL:ssä – kolmansien huomautukset komissiolle ({notice.get('observationDays', 10)} pv)"})
+                       "label": f"Ennakkoilmoitus EUVL:ssä – kolmansien huomautukset komissiolle ({notice.get('observationDays', 10)} pv julkaisusta){obs_note}"})
         for te in c.get("timeline") or []:
             x = timeline_event(te)
             if x:

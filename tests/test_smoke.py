@@ -256,7 +256,7 @@ def test_tender_lifecycle_stages(page, base_url):
     page.click("#hk-stages [data-stage='suorahankinta']")
     page.click("#hk-list .hk-row >> nth=0")
     facts = page.text_content("#dr-facts")
-    assert "147 §" in facts and "14 päivää" in facts
+    assert "147 §" in facts and ("14 päivää" in facts or "14 pv" in facts)
     assert "Valitusaika päättyy" in page.text_content("#dr-list")
     page.keyboard.press("Escape")
     # markkinaoikeus: pending appeals by default, rulings behind the sub-toggle, drawer with the KHO note

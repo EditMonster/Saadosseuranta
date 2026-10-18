@@ -8,6 +8,7 @@ from build_hankinnat import build_hankinnat
 from build_kansiot import build_kansiot
 from build_yrityskaupat import build_yrityskaupat
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, days_ago, is_future, load_json, load_yaml, log, save_json
+from maaraajat import add_months as _add_months, eu_deadline, shifted_note_eu
 
 HE_PREFIX = re.compile(r"^hallituksen esitys (eduskunnalle )?", re.I)
 
@@ -476,16 +477,8 @@ def council_timeline(raw: list[dict], cfg: dict) -> list[dict]:
 
 
 def add_months(d: str, months: float) -> str:
-    """Period expressed in months ends on the same day number of the last month (Reg. 1182/71 art. 3)."""
-    base = dt.date.fromisoformat(d)
-    whole = int(months)
-    y, m = divmod(base.month - 1 + whole, 12)
-    y, m = base.year + y, m + 1
-    last = (dt.date(y + (m == 12), (m % 12) + 1, 1) - dt.timedelta(days=1)).day
-    out = dt.date(y, m, min(base.day, last))
-    if months != whole:  # half months are not used in practice; keep arithmetic safe
-        out += dt.timedelta(days=round((months - whole) * 30))
-    return out.isoformat()
+    """Period expressed in months ends on the same day number of the last month (Reg. 1182/71 art. 3(2)(c))."""
+    return _add_months(d, months).isoformat()
 
 
 def build_delegated(topics_cfg, settings) -> list[dict]:
@@ -525,8 +518,10 @@ def build_delegated(topics_cfg, settings) -> list[dict]:
         for e in evs:
             if e["type"] == "DA_EXTENSION" and e.get("institution") in months:
                 extended[e["institution"]] = float(e.get("months") or months[e["institution"]])
-        ends = {k: add_months(start, v + extended.get(k, 0)) for k, v in months.items()}
-        deadline = max(ends.values())
+        # Reg. 1182/71 art. 3: month periods end on the same date; an end on a Saturday, Sunday or holiday moves to the next working day
+        ends = {k: eu_deadline(start, months=v + extended.get(k, 0)) for k, v in months.items()}
+        last = max(ends.values(), key=lambda r: r["date"])
+        deadline, deadline_note = last["date"], shifted_note_eu(last)
         ev = []
         fb = [e for e in evs if e["type"] == "DA_PUBLIC_FEEDBACK" and e["date"]]
         fb_end = next((e["date"] for e in evs if e["type"] == "DA_PUBLIC_FEEDBACK_END" and e["date"]), None)
@@ -565,7 +560,7 @@ def build_delegated(topics_cfg, settings) -> list[dict]:
         if status == "vastustamisaika" and (early >= {"PARLIAMENT", "COUNCIL"} or deadline < TODAY.isoformat()):
             status = "odottaa julkaisua"
         if status in ("vastustamisaika", "odottaa julkaisua") and not objected and not withdrawn:
-            ev.append({"date": deadline, "label": "Vastustamisaika päättyy" + (" (pidennetty)" if extended else "") + " – EP ja neuvosto", "kind": "maaraaika", "confirmed": True})
+            ev.append({"date": deadline, "label": "Vastustamisaika päättyy" + (" (pidennetty)" if extended else "") + " – EP ja neuvosto" + deadline_note, "kind": "maaraaika", "confirmed": True})
         elif status == "julkaistu" and not objected:
             ev.append({"date": deadline, "label": "Vastustamisaika päättyi", "kind": "maaraaika", "confirmed": True})
         if status == "julkaistu" and cellar.get("inForce") == "1" and cellar.get("eif") and cellar["eif"][0] <= TODAY.isoformat():

@@ -1,5 +1,5 @@
 """Yksikkötestit valvontalähteille tallennetuilla näytteillä (tests/samples/valvonta): Helsingin
-hankintapäätösten jäsennys (Elasticsearch-osuma + päätössivu), 21 päivän valitusaika-arvio ja
+hankintapäätösten jäsennys (Elasticsearch-osuma + päätössivu), valitusajan vaihteluväli (150/1930) ja
 linkitys ostajan ja päätöspäivän perusteella, Tutkihankintoja-vastausten jäsennys ja ostajien
 täsmäytys, KKV:n valvontalistausten ja tapaussivujen jäsennys sekä rakentajien rivimuodot.
 Ei verkkoa: HTTP korvataan näytteillä monkeypatchilla."""
@@ -22,6 +22,7 @@ import fetch_kkv_valvonta  # noqa: E402
 import fetch_paatokset  # noqa: E402
 import fetch_toimittajat  # noqa: E402
 from common import TODAY  # noqa: E402
+from maaraajat import fi_deadline  # noqa: E402
 
 
 class Resp:
@@ -132,7 +133,7 @@ def test_oulu_rss(monkeypatch):
     assert not any("luokanopettajan" in i["title"] for i in items)  # staffing decisions are not procurement
 
 
-# ---------- build_valvonta.decision_rows: 21-day estimate, linking by buyer + date ----------
+# ---------- build_valvonta.decision_rows: appeal window range (150/1930), linking by buyer + date ----------
 
 def _decision(did="acaebb52-992c-487d-a321-9b20e04e956e", date="2026-10-15", **over):
     d = {"id": did, "city": "Helsinki", "issueId": "HEL 2026-000013", "issueSubject": "Hankinta, yhteishankinta, henkilöturvajärjestelmä ja siihen liittyvät palvelut, kaupunginkanslia",
@@ -162,14 +163,16 @@ def test_decision_row_shape_and_appeal_estimate(monkeypatch, settings, hcfg):
     assert r["winner"] == "Loihde Trust Oy; Tunstall Oy" and r["losers"] == ["Ascom Oy"]
     assert r["value"] == 7000000 and r["currency"] == "EUR"
     assert r["status"] == "valitusaika"
-    assert r["appealEnd"] == (TODAY + dt.timedelta(days=21)).isoformat()
+    early, late = fi_deadline(today, days=14)["date"], fi_deadline(today, days=21)["date"]
+    assert r["appealEnd"] == early and r.get("appealEndLatest") == late and "133 §" in r["appealBasis"]
     assert r["url"].startswith("https://paatokset.hel.fi/")
     assert r["topics"] and "ICT ja ohjelmistot" in r["topics"] or r["topics"] == ["Muut"] or r["topics"]
     labels = [e["label"] for e in r["events"]]
     assert "Hankintapäätös" in labels and "Hankintailmoitus julkaistu" in labels
     dl = [e for e in r["events"] if e["kind"] == "maaraaika"]
-    assert len(dl) == 1 and dl[0]["confirmed"] is False and dl[0]["date"] == r["appealEnd"]
-    assert dl[0]["label"].startswith("Hankintaoikaisu / valitus markkinaoikeuteen 14 pv tiedoksisaannista (arvio")
+    assert [e["date"] for e in dl] == [early, late] and all(e["confirmed"] is False for e in dl)
+    assert dl[0]["label"].startswith("Hankintaoikaisu / valitus markkinaoikeuteen: määräaika päättyy aikaisintaan")
+    assert "viimeistään" in dl[1]["label"]
     dates = [e["date"] for e in r["events"]]
     assert dates == sorted(dates)
     assert "related" not in r
@@ -179,7 +182,7 @@ def test_decision_row_expired(monkeypatch, settings, hcfg):
     old = (TODAY - dt.timedelta(days=30)).isoformat()
     _cache(monkeypatch, {"b": _decision("b", old)})
     r = build_valvonta.decision_rows(settings, [], hcfg, [])[0]
-    assert r["status"] == "päättynyt" and r["appealEnd"] == (TODAY - dt.timedelta(days=9)).isoformat()
+    assert r["status"] == "päättynyt" and r["appealEnd"] == fi_deadline(old, days=14)["date"]
     older = (TODAY - dt.timedelta(days=int(settings["paatokset"]["keep_days"]) + 1)).isoformat()
     _cache(monkeypatch, {"c": _decision("c", older)})
     assert build_valvonta.decision_rows(settings, [], hcfg, []) == []
@@ -191,8 +194,8 @@ def test_decision_no_appeal_right(monkeypatch, settings, hcfg):
                          "n": _decision("n", today, muutoksenhakukielto=True, valitusosoitus=False, oikaisuohje=False)})
     rows = {r["id"]: r for r in build_valvonta.decision_rows(settings, [], hcfg, [])}
     k, n = rows["hk-pt-k"], rows["hk-pt-n"]
-    assert k["status"] == "valitusaika" and [e for e in k["events"] if e["kind"] == "maaraaika"][0]["label"].startswith("Hankintaoikaisu 14 pv")
-    assert n["status"] == "päättynyt" and "appealEnd" not in n and not any(e["kind"] == "maaraaika" for e in n["events"])
+    assert k["status"] == "valitusaika" and [e for e in k["events"] if e["kind"] == "maaraaika"][0]["label"].startswith("Hankintaoikaisu: ")
+    assert n["status"] == "päättynyt" and "appealEnd" not in n and "appealEndLatest" not in n and not any(e["kind"] == "maaraaika" for e in n["events"])
 
 
 def test_decision_links_to_hilma_and_market_court(monkeypatch, settings, hcfg):
@@ -391,3 +394,18 @@ def test_kkv_valvonta_rows(monkeypatch, settings, hcfg):
         assert r["published"] == d and r["summary"] and r["title"] and r["url"].startswith("https://www.kkv.fi/")
         for e in r["events"]:
             assert e["date"] and e["label"] and e["kind"] in ("muu", "vahvistettu")
+
+
+def test_decision_known_service_date(monkeypatch, settings, hcfg):
+    # Oulu publishes the service date: one deadline, 14 days from it, moved off a weekend/holiday
+    _cache(monkeypatch, {"o": _decision("o", TODAY.isoformat(), served=TODAY.isoformat())})
+    r = build_valvonta.decision_rows(settings, [], hcfg, [])[0]
+    assert r["appealEnd"] == fi_deadline(TODAY, days=14)["date"] and "appealEndLatest" not in r
+    assert len([e for e in r["events"] if e["kind"] == "maaraaika"]) == 1
+
+
+def test_appeal_window_shifts_off_holidays():
+    # decided Thu 10.12.2026: +14 = Thu 24.12. (jouluaatto) -> Mon 28.12.; +21 = Thu 31.12. (ordinary weekday)
+    w = build_valvonta.appeal_window("2026-12-10")
+    assert w["earliest"] == "2026-12-28" and w["latest"] == "2026-12-31"
+    assert "jouluaatto" in w["basis"] and "5 §" in w["basis"]

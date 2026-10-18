@@ -2,9 +2,10 @@
 written by fetch_paatokset, fetch_toimittajat and fetch_kkv_valvonta (no network):
 
 * decision_rows()      – municipal procurement decisions (stage "paatos"): the appeal window is
-                         14 days from service of the decision (hankintalaki 147 §); the date of
-                         service is not public, so the window is shown as an estimate of
-                         decision date + 7 + 14 days. Rows link to the Hilma notice (HEL/Cloudia
+                         14 days from service of the decision (hankintalaki 133 §, 147 §); the date of
+                         service is not public, so the window is a range: earliest = sent
+                         electronically on the decision day, latest = letter sent that day (7 + 14),
+                         both shifted off weekends/holidays (150/1930 5 §). Rows link to the Hilma notice (HEL/Cloudia
                          number, notice date or title match within the same buyer) and to a pending
                          Market Court appeal of the same buyer against a decision of the same date.
 * attach_incumbents()  – the buyer's largest suppliers of the last 12 months (Tutkihankintoja) on
@@ -23,10 +24,13 @@ from common import CACHE_DIR, CONFIG_DIR, TODAY, load_json, load_yaml
 from build_mao import classify_subject
 from fetch_mao import norm
 from fetch_toimittajat import match_buyer
+from maaraajat import fi_deadline, shifted_note_fi
 
-SERVICE_DAYS = 7      # estimated days from decision to service by electronic means / letter
-APPEAL_DAYS = 14      # hankintalaki 147 § 1 mom.
-APPEAL_LABEL = "Hankintaoikaisu / valitus markkinaoikeuteen 14 pv tiedoksisaannista (arvio: tiedoksianto 7 pv)"
+# Service of a procurement decision (hankintalaki 127–128 §): sent electronically, it is served on the day the message is
+# available to the recipient – in practice the sending day; sent by letter, on the 7th day after sending. The sending day is
+# not public, so the window is shown as a range: earliest = served on the decision day, latest = letter sent that day.
+LETTER_DAYS = 7
+APPEAL_DAYS = 14      # hankintaoikaisu 133 §, valitus markkinaoikeuteen 147 § 1 mom.
 CITY = {"Helsinki": "Helsingin kaupunki", "Oulu": "Oulun kaupunki"}
 STOP = {"hankinta", "hankinnan", "palvelut", "palvelujen", "palveluiden", "kaupunki", "kaupungin", "helsingin", "helsinki", "toimiala",
         "toimialan", "puitejärjestely", "puitejärjestelyyn", "kokonaisurakka", "urakka", "sekä", "siihen", "liittyvät", "kaupunginkanslia",
@@ -69,8 +73,18 @@ def overlap(a: set[str], b: set[str]) -> float:
     return len(a & b) / min(len(a), len(b))
 
 
-def _plus(iso: str, days: int) -> str:
-    return (dt.date.fromisoformat(iso) + dt.timedelta(days=days)).isoformat()
+def appeal_window(decided: str, served: str | None = None) -> dict:
+    """Last day for hankintaoikaisu / appeal to the Market Court (14 days from service, 150/1930 2 § and 5 §).
+    -> {"earliest", "latest", "basis"}; with a known service date both ends are the same day."""
+    if served:
+        r = fi_deadline(served, days=APPEAL_DAYS)
+        return {"earliest": r["date"], "latest": r["date"],
+                "basis": f"{APPEAL_DAYS} pv tiedoksisaannista {served[8:10].lstrip('0')}.{served[5:7].lstrip('0')}. (hankintalaki 133 §, 147 §){shifted_note_fi(r)}"}
+    e = fi_deadline(decided, days=APPEAL_DAYS)
+    l = fi_deadline(decided, days=LETTER_DAYS + APPEAL_DAYS)
+    return {"earliest": e["date"], "latest": l["date"],
+            "basis": (f"{APPEAL_DAYS} pv tiedoksisaannista (hankintalaki 133 §, 147 §); tiedoksisaantipäivä ei ole julkinen: aikaisintaan, jos päätös "
+                      f"lähetettiin sähköisesti päätöspäivänä{shifted_note_fi(e)}; kirjeellä tiedoksi 7. päivänä lähettämisestä (128 §){shifted_note_fi(l)}")}
 
 
 def _related(row: dict, kind: str | None = None) -> dict:
@@ -116,13 +130,14 @@ def decision_rows(settings: dict, tenders: list[dict], hcfg: dict, mao_rows: lis
         maker = d.get("maker") or ""
         buyer = f"{CITY.get(city, city)} – {maker}" if maker else CITY.get(city, city)
         served = d.get("served")
-        appeal_end = _plus(served, APPEAL_DAYS) if served else _plus(date, SERVICE_DAYS + APPEAL_DAYS)
+        win = appeal_window(date, served)
+        appeal_end, appeal_latest = win["earliest"], win["latest"]
         # a page that carries MUUTOKSENHAKUKIELTO without the Market Court instructions leaves only the
         # hankintaoikaisu (if its instructions are there) – or nothing to appeal at all
         no_appeal = bool(d.get("muutoksenhakukielto")) and not d.get("valitusosoitus")
         if no_appeal and not d.get("oikaisuohje"):
-            appeal_end = None
-        status = "valitusaika" if appeal_end and appeal_end >= today else "päättynyt"
+            appeal_end = appeal_latest = None
+        status = "valitusaika" if appeal_latest and appeal_latest >= today else "päättynyt"
         winners = [w["name"] for w in d.get("winners") or []]
         losers = [w["name"] for w in d.get("losers") or []]
         title = d.get("title") or d.get("issueSubject") or did
@@ -133,7 +148,8 @@ def decision_rows(settings: dict, tenders: list[dict], hcfg: dict, mao_rows: lis
             "issueId": d.get("issueId"), "issueSubject": d.get("issueSubject"), "decisionType": d.get("type"),
             "winner": "; ".join(winners)[:300] or None, "winners": winners[:12] or None, "losers": losers[:12] or None,
             "value": d.get("value"), "currency": "EUR" if d.get("value") else None,
-            "status": status, "appealEnd": appeal_end, "served": served, "visible": d.get("visible"),
+            "status": status, "appealEnd": appeal_end, "appealEndLatest": appeal_latest if appeal_latest != appeal_end else None,
+            "appealBasis": (win["basis"] if appeal_end else None), "served": served, "visible": d.get("visible"),
             "valitusosoitus": d.get("valitusosoitus"), "oikaisuohje": d.get("oikaisuohje"), "muutoksenhakukielto": d.get("muutoksenhakukielto"),
             "hilmaNo": d.get("hilmaNo"), "helRefs": d.get("helRefs"), "noticeDate": d.get("noticeDate"),
             "dps": d.get("dps"), "framework": d.get("framework"), "direct": d.get("category") == "Hankinta ilman kilpailutusta" or d.get("type") == "suorahankinta" or None,
@@ -146,12 +162,15 @@ def decision_rows(settings: dict, tenders: list[dict], hcfg: dict, mao_rows: lis
         if d.get("visible") and d["visible"] != date:
             ev.append({"date": d["visible"], "label": "Päätös tullut nähtäväksi", "kind": "julkaistu"})
         if appeal_end:
-            label = APPEAL_LABEL
-            if no_appeal:
-                label = "Hankintaoikaisu 14 pv tiedoksisaannista (arvio: tiedoksianto 7 pv; ei valitusoikeutta markkinaoikeuteen)"
-            if served:
-                label = label.replace("(arvio: tiedoksianto 7 pv", f"(tiedoksianto alkaen {served}")
-            ev.append({"date": appeal_end, "label": label, "kind": "maaraaika", "confirmed": False})
+            what = "Hankintaoikaisu" + ("" if no_appeal else " / valitus markkinaoikeuteen")
+            tail = " – ei valitusoikeutta markkinaoikeuteen" if no_appeal else ""
+            if appeal_latest and appeal_latest != appeal_end:
+                ev.append({"date": appeal_end, "label": f"{what}: määräaika päättyy aikaisintaan (sähköinen tiedoksianto päätöspäivänä){tail}",
+                           "kind": "maaraaika", "confirmed": False})
+                ev.append({"date": appeal_latest, "label": f"{what}: määräaika päättyy viimeistään (kirje lähetetty päätöspäivänä, tiedoksi 7. päivänä){tail}",
+                           "kind": "maaraaika", "confirmed": False})
+            else:
+                ev.append({"date": appeal_end, "label": f"{what}: {win['basis']}{tail}", "kind": "maaraaika", "confirmed": False})
 
         # --- Hilma notice: number, notice date or title match within the same buyer ---
         cands = city_tenders.get(city) or []

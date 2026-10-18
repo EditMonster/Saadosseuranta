@@ -8,10 +8,14 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import sys
 from pathlib import Path
 
 import pytest
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+from maaraajat import fi_deadline  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
@@ -152,7 +156,7 @@ def test_tenders_schema(tenders):
             assert DATETIME.match(t["deadline"]) and t["deadlineKind"] == "vastaus", t["id"]
         if st == "suorahankinta":
             assert DATE.match(t["appealEnd"]), t["id"]
-            assert (dt.date.fromisoformat(t["appealEnd"]) - dt.date.fromisoformat(t["published"])).days == tenders["appealDays"], t["id"]
+            assert t["appealEnd"] == fi_deadline(t["published"], days=tenders["appealDays"])["date"], t["id"]  # 150/1930 5 §
         if st == "ratkaistu":
             assert t["published"] >= (dt.date.today() - dt.timedelta(days=tenders["awardDays"] + 2)).isoformat(), t["id"]
         if t.get("amount") is not None:
