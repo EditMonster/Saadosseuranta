@@ -588,6 +588,52 @@ def scan(cache: dict, start: int, stats: dict, max_pages: int = 400) -> int:
     return last
 
 
+def scan_by_tunnus(cache: dict, stats: dict, miss_limit: int = 3, max_probes: int = 400) -> None:
+    """Discover new documents without any table listing: committee agendas (<Vk>E n/yyyy vp), minutes (<Vk>P),
+    reports/statements (<Vk>M, <Vk>L) and motions (KK, LA, TPA, KAA) are numbered sequentially per year, so probe
+    the next numbers after the highest one seen until `miss_limit` consecutive misses. Expert statements (EDK ids)
+    cannot be enumerated this way; the hearings themselves still arrive through the HE käsittelytiedot."""
+    year = TODAY.year
+    seen: dict[str, int] = cache.setdefault("lastNums", {})
+    if not seen:  # seed from what the cache already holds
+        for key in list(cache.get("agendas") or {}) + list(cache.get("reports") or {}):
+            parts = split_tunnus(key)
+            if parts and parts[3] == year:
+                k = f"{parts[0]}{parts[1]}"
+                seen[k] = max(seen.get(k, 0), parts[2])
+        for m in cache.get("motions") or []:
+            mm = re.match(r"^(KK|LA|TPA|KAA) (\d+)/(\d{4}) vp$", m.get("tunnus") or "")
+            if mm and int(mm.group(3)) == year:
+                seen[mm.group(1)] = max(seen.get(mm.group(1), 0), int(mm.group(2)))
+    series = [f"{c}{s}" for c in COMMITTEES for s in ("E", "M", "L")] + ["KK", "LA", "TPA", "KAA"]  # minutes (P) add nothing the agendas lack
+    probes = 0
+    for key in series:
+        n, misses = seen.get(key, 0) + 1, 0
+        while misses < miss_limit and probes < max_probes:
+            tunnus = f"{key} {n}/{year} vp"
+            probes += 1
+            try:
+                rows = [r for r in fetch_by_tunnus(tunnus) if (r[4] or "").strip() == tunnus]
+            except Exception as e:  # noqa: BLE001
+                log(f"warn: vaski {tunnus}: {e}")
+                break
+            if rows:
+                misses = 0
+                seen[key] = n
+                for row in rows:
+                    stats["rows"] += 1
+                    try:
+                        absorb(cache, row[1] or "", row[4], (row[3] or "")[:19].replace(" ", "T") or None, stats)
+                    except Exception as e:  # noqa: BLE001
+                        stats["bad"] += 1
+                        log(f"warn: vaski rivi {row[0]} ({row[4]}): {e}")
+            else:
+                misses += 1
+            n += 1
+            time.sleep(0.1)
+    stats["probes"] = probes
+
+
 def refresh_agendas(cache: dict, stats: dict, limit: int = 40) -> None:
     """Agendas are re-published in place (same Id) when experts are added: re-read the upcoming ones."""
     today = TODAY.isoformat()
@@ -668,9 +714,18 @@ def main():
         max_id = find_max_id(max(row_count, 1000))
         start = max(1, max_id - int(cfg.get("bootstrap_rows", 6000)))
         log(f"vaski: ensimmäinen ajo, suurin Id {max_id}, luetaan rivit {start}–")
-    last = scan(cache, start, stats)
-    cache["lastId"] = max(cache["lastId"], last)
-    log(f"vaski: luettu {stats['rows']} riviä Id {start}–{cache['lastId']} ({time.time() - t0:.0f} s)")
+    try:
+        last = scan(cache, start, stats)
+        cache["lastId"] = max(cache["lastId"], last)
+        log(f"vaski: luettu {stats['rows']} riviä Id {start}–{cache['lastId']} ({time.time() - t0:.0f} s)")
+    except Exception as e:  # noqa: BLE001
+        # Both listing endpoints refused (seen: HTTP 403 for unfiltered listings from GitHub Actions' network, while
+        # filtered `columnName=Eduskuntatunnus` lookups work). Fall back to enumerating the sequential tunnus numbers.
+        if "403" not in str(e) and "404" not in str(e):
+            raise
+        log(f"warn: vaski listaus kieltäytyi ({str(e)[:90]}) – luetaan tunnuksittain")
+        scan_by_tunnus(cache, stats)
+        log(f"vaski: tunnuksittain luettu {stats['rows']} riviä ({stats.get('probes', 0)} hakua, {time.time() - t0:.0f} s)")
 
     # 2) upcoming agendas may have changed in place
     refresh_agendas(cache, stats)
