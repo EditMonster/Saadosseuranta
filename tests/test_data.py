@@ -346,7 +346,13 @@ def test_team_folders(items, tenders, mergers):
         assert set(f["items"]) <= ids, (f["id"], [i for i in f["items"] if i not in ids][:5])
         assert len(f["items"]) == len(set(f["items"]))
         assert set(f["explicit"]) <= set(f["items"]) and f["ruleCount"] == len(f["items"]) - len(f["explicit"])
-        assert f["ics"] == f"data/kansiot/{f['id']}.ics" and f["edit"].endswith(f"config/kansiot/{f['id']}.yaml")
+        assert f["ics"] == f"data/kansiot/{f['id']}.ics" and f["atom"] == f"data/kansiot/{f['id']}.xml" and f["edit"].endswith(f"config/kansiot/{f['id']}.yaml")
+        import xml.etree.ElementTree as ET
+        root = ET.parse(DATA / "kansiot" / f"{f['id']}.xml").getroot()
+        assert root.tag == "{http://www.w3.org/2005/Atom}feed"
+        for e in root.findall("{http://www.w3.org/2005/Atom}entry"):
+            assert e.find("{http://www.w3.org/2005/Atom}id").text.startswith(f"urn:saadosseuranta:{f['id']}:")
+            assert e.find("{http://www.w3.org/2005/Atom}link").get("href").startswith(k["site"])
         assert (ROOT / "config" / "kansiot" / f"{f['id']}.yaml").exists()
         with open(DATA / "kansiot" / f"{f['id']}.ics", encoding="utf-8", newline="") as fh:
             ics = fh.read()
@@ -359,7 +365,8 @@ def test_team_folders(items, tenders, mergers):
     ex = [f for f in k["folders"] if f["example"]]
     assert all(len(f["items"]) >= 1 for f in ex)
     # feeds for folders that no longer exist are removed
-    assert {p.stem for p in (DATA / "kansiot").glob("*.ics")} == {f["id"] for f in k["folders"]}
+    assert {p.stem for p in (DATA / "kansiot").glob("*.ics")} == {f["id"] for f in k["folders"]} == {p.stem for p in (DATA / "kansiot").glob("*.xml")}
+    assert k["apiUrl"] == f"https://api.github.com/repos/{k['repo']}/issues" and k["site"].startswith("https://")
 
 
 # ---------- meta.json, changes.json, ics ----------

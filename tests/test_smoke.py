@@ -300,8 +300,8 @@ def test_team_folders(page, base_url):
     f = max(shared, key=lambda x: x["n"])
     page.click(f"#l-folders .chip.shared[data-fid='{f['id']}']")
     info = page.text_content("#l-folder-info")
-    assert "tiimikansio" in info and "Kalenterisyöte" in info and "Muokkaa GitHubissa" in info
-    assert page.locator(f"#l-folder-info a[href='{f['ics']}']").count() == 1
+    assert "tiimikansio" in info and "Outlook" in info and "Jaa Teamsiin" in info
+    assert page.locator("#l-folder-info a[href$='" + f["ics"] + "']").count() == 2  # https and webcal
     assert page.evaluate("state.folderFilter") == f["id"]
     visible = page.evaluate("DATA.filter(baseVisible).length + TENDERS.filter(baseVisible).length + MERGERS.filter(baseVisible).length")
     assert 0 < visible <= f["n"]
@@ -311,23 +311,81 @@ def test_team_folders(page, base_url):
     # manager: team section with feed + GitHub links; own folder gets share + calendar actions
     page.click("#open-folders")
     assert page.locator("#folder-rows .frow.shared").count() == len(shared)
-    assert page.locator("#folder-rows .frow.shared a[href$='.ics']").count() == len(shared)
-    assert page.locator("#folder-rows .frow.shared a[href*='github.com']").count() == len(shared)
+    assert page.locator("#folder-rows .frow.shared a[href$='.ics']").count() == 3 * len(shared)  # Outlook, webcal, .ics
+    assert page.locator("#folder-rows .frow.shared [data-fedit]").count() == len(shared)
     page.fill("#folder-new", "Oma kansio"); page.click("#folder-add")
     own = page.locator("#folder-rows .frow:not(.shared)").first
-    assert "Jaa tiimikansioksi" in own.text_content()
-    href = own.locator("a").first.get_attribute("href")
-    assert href.startswith("https://github.com/") and "filename=config%2Fkansiot%2Foma-kansio.yaml" in href and "value=nimi" in href
+    assert "Jaa tiimikansioksi" in own.text_content() and own.locator("[data-fics]").count() == 1
     page.click("#folders-close")
-    # drawer: team folders appear with a proposal link (GitHub issue) instead of add/remove
+    # drawer: team folders appear as in-page actions (handled by the key, see test_team_sharing_in_page)
     page.locator("#folder-filter").select_option("")
     page.click("#tab-fi"); page.click("#tl-fi .row[data-id] >> nth=0"); page.wait_for_selector("#drawer:not([hidden])")
     page.click("#dr-fdrop-btn")
     rows = page.locator("#dr-flist .fr.shared")
-    assert rows.count() == len(shared)
-    phref = rows.first.get_attribute("href")
-    assert "/issues/new?title=%5Bkansio%5D" in phref and "kansio%3A" in phref
+    assert rows.count() == len(shared) and rows.first.get_attribute("data-fteam") == "t:" + shared[0]["id"].replace("t:", "")
     page.keyboard.press("Escape")
+
+
+def test_team_sharing_in_page(page, base_url):
+    """Team-folder changes are filed from the page with the team key (GitHub API stubbed here) and reported back."""
+    posted = []
+
+    def gh(route, request):
+        url = request.url
+        if request.method == "POST" and url.endswith("/issues"):
+            posted.append(json.loads(request.post_data))
+            route.fulfill(status=201, content_type="application/json", body=json.dumps({"number": 99, "state": "open"}))
+        elif url.endswith("/issues/99"):
+            route.fulfill(status=201, content_type="application/json", body=json.dumps({"number": 99, "state": "closed", "comments": 1}))
+        elif url.endswith("/issues/99/comments"):
+            route.fulfill(status=200, content_type="application/json", body=json.dumps([{"body": "Lisätty kansioon **X** (`x`): `y`"}]))
+        elif request.method == "GET" and "/repos/" in url:
+            route.fulfill(status=200, content_type="application/json", body=json.dumps({"full_name": "EditMonster/Saadosseuranta"}),
+                          headers={"github-authentication-token-expiration": "2027-06-01 10:00:00 UTC", "access-control-expose-headers": "github-authentication-token-expiration"})
+        else:
+            route.fulfill(status=404, body="{}")
+
+    page.route("https://api.github.com/**", gh)
+    goto(page, base_url, "#kansallinen")
+    shared = page.evaluate("SHARED.map(f=>f.key)")
+    # without a key, a team action opens the settings dialog instead of failing silently
+    page.click("#tl-fi .row[data-id] >> nth=0"); page.wait_for_selector("#drawer:not([hidden])"); page.click("#dr-fdrop-btn")
+    page.click("#dr-flist .fr.shared >> nth=0")
+    assert page.locator("#share").is_visible() and "avain" in page.text_content("#share-msg")
+    page.fill("#share-name", "Testi T."); page.fill("#share-key", "github_pat_TEST"); page.click("#share-test")
+    page.wait_for_function("document.getElementById('share-msg').textContent.includes('toimii')")
+    assert "2027" in page.text_content("#share-msg")
+    page.click("#share-close")
+    # with the key, the same click files the request and the row shows it as pending, then applied
+    item = page.evaluate("drawer.dataset.id")
+    page.click("#dr-flist .fr.shared >> nth=0")
+    page.wait_for_function("document.getElementById('toast') && document.getElementById('toast').textContent.includes('#99')")
+    assert posted[-1]["title"].startswith("[kansio] Lisää:") and f"- {item} " in posted[-1]["body"] and "ehdottaja: Testi T." in posted[-1]["body"]
+    assert f"kansio: {shared[0]}" in posted[-1]["body"]
+    page.wait_for_function("document.getElementById('toast').textContent.includes('Lisätty kansioon')", timeout=20000)
+    assert page.evaluate(f"SHARED[0].items.includes('{item}')")
+    page.keyboard.press("Escape"); page.keyboard.press("Escape")
+    # manager: a new team folder with rules is composed in the page
+    page.click("#open-folders"); page.click("#team-new")
+    page.fill(".teamform [name=nimi]", "Verotiimi"); page.click(".teamform details summary")
+    page.check(".teamform [name=aihealueet][value='Verotus']"); page.fill(".teamform [name=hakusanat]", "arvonlisävero, tulovero")
+    page.click(".teamform [data-teamsubmit]")
+    page.wait_for_function("document.getElementById('toast').textContent.includes('#99')")
+    body = posted[-1]["body"]
+    assert "toiminto: uusi" in body and "nimi: Verotiimi" in body
+    rules = json.loads([l for l in body.split("\n") if l.startswith("saannot:")][0][len("saannot:"):])
+    assert rules["aihealueet"] == ["Verotus"] and rules["hakusanat"] == ["arvonlisävero", "tulovero"] and rules["vain_avoimet"] is True
+    # team folder rows offer the user's own channels: calendar subscriptions and Teams
+    row = page.locator("#folder-rows .frow.shared").first
+    for label in ("Outlook", "Google", "webcal", "Jaa Teamsiin", "Teams-ilmoitukset"):
+        assert row.locator(f"a:has-text('{label}')").count() == 1, label
+    assert "teams.microsoft.com/share" in row.locator("a:has-text('Jaa Teamsiin')").get_attribute("href")
+    assert row.locator("a:has-text('Teams-ilmoitukset')").get_attribute("href").endswith(".xml")
+    assert page.locator("#folder-rows .frow.shared [data-fedit]").count() == len(shared)
+    page.click("#folders-close")
+    # the key survives a reload; ?k= opens a team folder directly
+    page.goto(base_url + "/?k=t:" + shared[0] + "#tilannekuva"); page.wait_for_function("typeof SHARED_LOADED !== 'undefined' && SHARED_LOADED === true")
+    assert page.evaluate("state.folderFilter") == "t:" + shared[0] and page.evaluate("hasKey()")
 
 
 def test_eu_council_and_delegated(page, base_url):

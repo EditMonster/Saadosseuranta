@@ -33,9 +33,36 @@ saannot:
   enintaan: 300                                    # enimmäismäärä sääntöjen tuomia kohteita (uusimmat ensin)
 ```
 
-Kaikki kentät ovat valinnaisia paitsi `nimi`. Kansion voi luoda myös sivulta: Kansiot › Hallitse › oman kansion
-kohdalla *Jaa tiimikansioksi* avaa GitHubiin valmiiksi täytetyn tiedoston. Muutosehdotukset (kohteen lisäys tai
-poisto) tehdään sivulta *Ehdota*-painikkeella: se avaa GitHub-issuen, jonka `kansiopyynto.yml`-työnkulku toteuttaa
-automaattisesti, jos ehdottajalla on kirjoitusoikeus repoon – muuten ylläpitäjä hyväksyy sen kommentilla `/hyvaksy`.
+Kaikki kentät ovat valinnaisia paitsi `nimi`.
+
+## Muokkaus sivulta (ilman GitHubia)
+
+Tiimi ei normaalisti koske näihin tiedostoihin: kansiot luodaan, muokataan ja poistetaan sivulta (Kansiot › Hallitse ›
+*Uusi tiimikansio*, tiimikansion *Muokkaa* / *Poista*, oman kansion *Jaa tiimikansioksi*, kohteen tiedoissa tiimikansion
+nimi lisää tai poistaa kohteen). Sivu tarvitsee **tiimin avaimen** (*Jakamisen asetukset*): sillä se avaa repoon
+`[kansio] …` -issuen, jonka `kansiopyynto.yml` toteuttaa, kommentoi ja sulkee noin minuutissa; sivu näyttää muutoksen heti
+ja vahvistaa sen, kun pyyntö on käsitelty. Issuen runko on konekielinen (`kansio:`, `toiminto: lisaa|poista|uusi|muokkaa|poista_kansio`,
+`nimi:`, `kuvaus:`, `saannot:` JSON, `ehdottaja:`, `kohteet:`), ja `scripts/kansiopyynto.py` tarkistaa tunnisteet aineistoa
+vasten ja suodattaa säännöt sallittuihin avaimiin ennen kuin kirjoittaa YAMLin. Ilman avainta tehty issue jää odottamaan
+ylläpitäjän kommenttia `/hyvaksy`.
+
+**Ylläpitäjä: tiimin avain (kerran).** GitHub → Settings → Developer settings → Personal access tokens → Fine-grained →
+*Generate new token*: Repository access *Only select repositories* → tämä repo; Permissions → Repository permissions →
+*Issues: Read and write* (Metadata: Read tulee mukana); voimassaolo enintään vuosi. Kopioi `github_pat_…` ja jaa se
+tiimille Teamsissä (yksityisviesti tai kanavan kiinnitetty viesti). Avain ei pääse koodiin, aineistoon eikä asetuksiin; jos
+se vuotaa, poista se GitHubista – pahin seuraus on turhia issueita. Uusi avain ennen voimassaolon päättymistä, vanha pois.
+
+## Teams ja Outlook
+
+* **Jaa Teamsiin** (kansion rivillä ja kohteen tiedoissa) avaa Teamsin jakoikkunan valmiilla linkillä (`?k=<tunnus>` avaa
+  sivun kansio valittuna).
+* **Kalenteri**: *Outlook* lisää syötteen Microsoft 365 -kalenteriin "Internet-kalenterina" (päivittyy itsestään), *Google*
+  Google-kalenteriin, *webcal* Appleen tai muuhun sovellukseen; *.ics* on raaka osoite.
+* **Teams-ilmoitukset** Power Automatella (ei vaadi ylläpitäjää, Teamsin vakiokäyttäjä riittää): Power Automate →
+  *Create* → *Automated cloud flow* → trigger **"When a feed item is published" (RSS)**, *The RSS feed URL* = kansion
+  Atom-osoite (`https://editmonster.github.io/Saadosseuranta/data/kansiot/<tunnus>.xml`, sivulla *Teams-ilmoitukset
+  (syöte)*) → action **"Post message in a chat or channel"** (Teams), *Post as* Flow bot, *Post in* Channel, viestiin
+  dynaamiset kentät *Feed title* ja *Primary feed link*. Syötteessä on yksi merkintä per kohde ja määräaika (60 päivän
+  sisällä), tunnisteena `urn:saadosseuranta:<tunnus>:<kohde>:<laji>:<pvm>`, joten sama määräaika postataan vain kerran.
 
 Jaetut kansiot ovat julkisia siinä missä repokin: älä kirjoita niihin asiakas- tai toimeksiantotietoa.

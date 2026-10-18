@@ -325,6 +325,20 @@ th.sortable:hover{color:var(--fg)}
 .hide[data-restore]{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:2px 6px;border-radius:var(--radius);color:var(--muted)}
 .fchips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .chip.shared{border-style:dashed}
+.teamform{border:1px solid var(--line2);border-radius:var(--radius);padding:10px 12px;margin:8px 0 12px;background:var(--panel)}
+.frow .teamform{grid-column:1/-1}
+#folders{width:min(760px,calc(100% - 32px))}
+.teamform label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:8px 0 3px}
+.teamform input[type=text],.teamform input[type=password],.teamform textarea{width:100%;font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line2);border-radius:var(--radius);background:var(--bg);color:var(--fg)}
+.teamform .opts{display:flex;flex-wrap:wrap;gap:4px}
+.teamform .opts label{display:inline-flex;align-items:center;gap:4px;margin:0;border:1px solid var(--line2);border-radius:999px;padding:2px 8px;font-size:11px;text-transform:none;letter-spacing:.02em;cursor:pointer}
+.teamform .opts input{margin:0}
+.teamform .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.teamform .msg{font-size:12px;color:var(--muted)}
+.teamform .msg.ok{color:var(--signal)}
+.share-links{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:6px;font-size:12px}
+.share-links a{text-decoration:underline;text-underline-offset:2px;color:var(--fg)}
+.pill.pending{border-style:dashed;color:var(--muted)}
 .flist .fr.shared{text-decoration:none;color:inherit}
 .flist .fr.shared .act{color:var(--muted)}
 .frow.shared{border-left:3px solid var(--line2);padding-left:8px;grid-template-columns:minmax(0,1fr) auto}
@@ -537,10 +551,22 @@ th.sortable:hover{color:var(--fg)}
 <div class="scrim" id="folders-scrim" hidden></div>
 <div class="modal panel" id="folders" role="dialog" aria-modal="true" aria-labelledby="folders-title" hidden>
   <div class="drawer-top"><h3 id="folders-title" style="margin:0">Kansiot</h3><button class="close" id="folders-close" aria-label="Sulje">×</button></div>
-  <p class="sub">Kansioon voi viedä säädöksiä, EU-menettelyjä, kilpailutuksia ja yrityskauppoja; sama kohde voi olla useassa kansiossa. Kansion valinta yläpalkista rajaa kaikki näkymät – myös Tilannekuvan – kansion kohteisiin. <b>Omat kansiot</b> tallentuvat tähän selaimeen (siirtolinkki Seurannassa-paneelista). <b>Tiimikansiot</b> ovat jaettuja: ne määritellään repon tiedostoissa <span class="mono">config/kansiot/</span>, näkyvät kaikille ja saavat oman kalenterisyötteen, joka päivittyy automaattisesti; sisältö voi olla kiinteitä kohteita tai sääntöjä (aihealue, toimiala, hankintayksikkö, hakusana, yrityskaupan osapuoli), jolloin kansio toimii tiimin seurantaprofiilina.</p>
+  <p class="sub">Kansioon voi viedä säädöksiä, EU-menettelyjä, kilpailutuksia ja yrityskauppoja; sama kohde voi olla useassa kansiossa. Kansion valinta yläpalkista rajaa kaikki näkymät – myös Tilannekuvan – kansion kohteisiin. <b>Omat kansiot</b> tallentuvat tähän selaimeen (siirtolinkki Seurannassa-paneelista). <b>Tiimikansiot</b> ovat jaettuja: kaikki näkevät ne, ja jokaisella on oma kalenterisyöte (Outlook, Google, webcal) sekä Teams-ilmoitussyöte. Sisältö voi olla kiinteitä kohteita tai sääntöjä (aihealue, toimiala, hankintayksikkö, hakusana, yrityskaupan osapuoli), jolloin kansio toimii tiimin seurantaprofiilina ja täyttyy itsestään. Muutokset tehdään tästä sivusta tiimin avaimella (Jakamisen asetukset) ja ne toteutuvat automaattisesti noin minuutissa.</p>
   <div class="sync-row"><input id="folder-new" placeholder="Uuden kansion nimi, esim. Asiakas X tai Lausuttavat" aria-label="Uuden kansion nimi"><button class="follow-btn" id="folder-add">Luo kansio</button></div>
   <div id="folder-rows"></div>
   <p class="sub" id="folders-hidden"></p>
+</div>
+<div class="modal panel" id="share" role="dialog" aria-modal="true" aria-labelledby="share-title" hidden>
+  <div class="drawer-top"><h3 id="share-title" style="margin:0">Jakamisen asetukset</h3><button class="close" id="share-close" aria-label="Sulje">×</button></div>
+  <p class="sub">Tiimikansioiden muutokset (kohteen lisäys, uusi kansio, säännöt) tehdään suoraan tästä sivusta. Sivu tarvitsee siihen <b>tiimin avaimen</b>, jonka saat tiimisi ylläpitäjältä – esimerkiksi Teamsin kautta. Avain tallentuu vain tähän selaimeen. Muutos toteutuu automaattisesti noin minuutissa, ja sivu kertoo, kun se on valmis.</p>
+  <div class="teamform">
+    <label for="share-name">Oma nimi (näkyy muutoshistoriassa)</label><input type="text" id="share-name" placeholder="esim. Anna V." autocomplete="off">
+    <label for="share-key">Tiimin avain</label><input type="password" id="share-key" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+    <div class="row"><button class="follow-btn" id="share-test">Tarkista ja tallenna</button><button class="follow-btn" id="share-forget">Unohda avain</button><span class="msg" id="share-msg"></span></div>
+  </div>
+  <details><summary class="micro" style="cursor:pointer">Ylläpitäjälle: näin teet tiimin avaimen (kerran)</summary>
+    <p class="sub">Avain on GitHubin <i>fine-grained personal access token</i>, joka saa tehdä tässä repossa vain yhden asian: avata muutospyyntöjä (issues). Se ei pääse koodiin eikä aineistoon. <a id="share-token-link" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Luo avain GitHubissa</a> → <i>Repository access: Only select repositories</i> → valitse tämä repo → <i>Permissions → Issues: Read and write</i> (Metadata tulee automaattisesti) → voimassaolo enintään vuosi. Jaa avain tiimille Teamsissä. Jos avain vuotaa, poista se GitHubista – vahinko rajoittuu turhiin pyyntöihin, jotka näkyvät repon issueissa. Kansiot ovat julkisia siinä missä repokin: ei asiakas- tai toimeksiantotietoa.</p>
+  </details>
 </div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden>
@@ -601,11 +627,81 @@ const sortedFolders=()=>state.folders.slice().sort((a,b)=>a.name.localeCompare(b
 const sortedShared=()=>SHARED.slice().sort((a,b)=>a.name.localeCompare(b.name,"fi"));
 function loadShared(){
   fetch("data/kansiot.json?v="+v,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(k=>{
-    KANSIOT={repo:k.repo||"",newUrl:k.newUrl||"",issueUrl:k.issueUrl||""};
+    KANSIOT={repo:k.repo||"",newUrl:k.newUrl||"",issueUrl:k.issueUrl||"",apiUrl:k.apiUrl||"",site:k.site||""};
     SHARED=(k.folders||[]).map(f=>Object.assign({},f,{id:"t:"+f.id,key:f.id,shared:true,items:(f.items||[]).slice()}));
+    if(window.__openFolder&&SHARED.some(f=>f.id===window.__openFolder)){ state.folderFilter=window.__openFolder; window.__openFolder=null; persist(); }
     SHARED_LOADED=true; render();
   }).catch(()=>{ SHARED_LOADED=true; });
 }
+/* In-page sharing: the page files the change request itself with the team key (a GitHub token that may only open
+   issues in this repo); the repo's workflow applies it and republishes within minutes. */
+let SHARE={name:"",token:""};
+try{ const s=JSON.parse(localStorage.getItem("saadosseuranta-share")||"{}"); if(s&&typeof s==="object"){ SHARE.name=String(s.name||"").slice(0,60); SHARE.token=String(s.token||""); } }catch(e){}
+function persistShare(){ try{ localStorage.setItem("saadosseuranta-share",JSON.stringify(SHARE)); }catch(e){} }
+const hasKey=()=>!!SHARE.token;
+const ghHeaders=()=>({"Authorization":"Bearer "+SHARE.token,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"});
+const PENDING=new Map(); /* folder id -> Set(item ids) with a request in flight (optimistic badge) */
+function requestBody(r){
+  const lines=[`kansio: ${r.kansio||"uusi"}`,`toiminto: ${r.toiminto}`];
+  if(r.nimi) lines.push(`nimi: ${r.nimi}`); if(r.kuvaus!=null) lines.push(`kuvaus: ${r.kuvaus}`);
+  if(r.saannot) lines.push(`saannot: ${JSON.stringify(r.saannot)}`);
+  if(SHARE.name) lines.push(`ehdottaja: ${SHARE.name}`);
+  lines.push("kohteet:"); (r.kohteet||[]).forEach(id=>{ const it=findItem(id); lines.push(`- ${id} — ${it?it.title.replace(/\n/g," ").slice(0,90):""}`); });
+  lines.push("",`(Lähetetty Säädösseurannan sivulta${SHARE.name?" – "+SHARE.name:""}. Työnkulku toteuttaa pyynnön automaattisesti.)`);
+  return lines.join("\n");
+}
+function requestTitle(r){
+  const f=r.kansio&&r.kansio!=="uusi"?SHARED.find(x=>x.key===r.kansio):null; const fname=f?f.name:(r.nimi||"");
+  const first=(r.kohteet||[])[0]; const it=first?findItem(first):null; const n=(r.kohteet||[]).length;
+  const what=it?it.title.slice(0,60)+(n>1?` (+${n-1})`:""):(n?`${n} kohdetta`:"");
+  return `[kansio] ${({lisaa:"Lisää",poista:"Poista",uusi:"Uusi kansio",muokkaa:"Muokkaa",poista_kansio:"Poista kansio"})[r.toiminto]||r.toiminto}${what?": "+what:""}${fname?" – "+fname:""}`;
+}
+async function teamRequest(r){
+  if(!hasKey()){ openShare("Tähän tarvitaan tiimin avain. Pyydä se tiimisi ylläpitäjältä (Teams) ja tallenna se tähän."); return false; }
+  if(!KANSIOT.apiUrl){ toast("Jakamisen osoite puuttuu aineistosta – päivitä sivu."); return false; }
+  const key=r.kansio&&r.kansio!=="uusi"?"t:"+r.kansio:null;
+  if(key&&(r.toiminto==="lisaa"||r.toiminto==="poista")){ if(!PENDING.has(key)) PENDING.set(key,new Set()); (r.kohteet||[]).forEach(id=>PENDING.get(key).add(id)); }
+  toast("Lähetetään pyyntöä…");
+  let res;
+  try{ res=await fetch(KANSIOT.apiUrl,{method:"POST",headers:Object.assign({"Content-Type":"application/json"},ghHeaders()),body:JSON.stringify({title:requestTitle(r),body:requestBody(r)})}); }
+  catch(e){ clearPending(key,r); toast("Pyyntöä ei saatu lähetettyä (verkko). Yritä uudelleen."); return false; }
+  if(res.status===401||res.status===403){ clearPending(key,r); openShare(res.status===401?"Avain ei kelpaa tai se on vanhentunut – pyydä uusi avain ylläpitäjältä.":"Avaimella ei ole oikeutta muutospyyntöihin tässä repossa (tarvitaan Issues: Read and write)."); return false; }
+  if(!res.ok){ clearPending(key,r); toast(`Pyyntö epäonnistui (${res.status}).`); return false; }
+  const issue=await res.json();
+  toast(`Pyyntö lähetetty (#${issue.number}) – toteutuu noin minuutissa, sivu päivittyy itsestään.`);
+  watchIssue(issue.number,key,r);
+  if(!drawer.hidden) renderDrawerFolders(drawer.dataset.id);
+  return true;
+}
+function clearPending(key,r){ if(key&&PENDING.has(key)){ (r.kohteet||[]).forEach(id=>PENDING.get(key).delete(id)); if(!PENDING.get(key).size) PENDING.delete(key); } }
+async function watchIssue(number,key,r){
+  const url=KANSIOT.apiUrl+"/"+number; const t0=Date.now();
+  while(Date.now()-t0<5*60*1000){
+    await new Promise(ok=>setTimeout(ok,8000));
+    let st; try{ const res=await fetch(url,{headers:ghHeaders(),cache:"no-store"}); if(!res.ok) continue; st=await res.json(); }catch(e){ continue; }
+    if(st.state==="closed"){
+      let note="Muutos tehty."; try{ const c=await (await fetch(url+"/comments",{headers:ghHeaders()})).json(); const last=c[c.length-1]; if(last) note=last.body.split("\n")[0].replace(/\*\*/g,"").replace(/`/g,""); }catch(e){}
+      toast(note+" Sivu hakee päivitetyt kansiot…");
+      applyOptimistic(key,r); clearPending(key,r); render(); if(!drawer.hidden) renderDrawerFolders(drawer.dataset.id);
+      setTimeout(()=>{ loadShared(); },90*1000); setTimeout(()=>{ loadShared(); },4*60*1000);
+      return;
+    }
+    if(st.comments>0){ try{ const c=await (await fetch(url+"/comments",{headers:ghHeaders()})).json(); const last=c[c.length-1]; if(last&&/odottaa ylläpitäjän/i.test(last.body)){ toast("Pyyntö odottaa ylläpitäjän hyväksyntää – ylläpitäjä saa siitä tiedon."); clearPending(key,r); return; } if(last&&/ei toteutettu/i.test(last.body)){ toast("Pyyntöä ei voitu toteuttaa: "+last.body.split("\n")[0].slice(0,120)); clearPending(key,r); return; } }catch(e){} }
+  }
+  clearPending(key,r); toast("Pyyntö on lähetetty, mutta vahvistus viipyy – tarkista myöhemmin.");
+}
+function applyOptimistic(key,r){
+  const f=key?SHARED.find(x=>x.id===key):null;
+  if(f&&r.toiminto==="lisaa") (r.kohteet||[]).forEach(id=>{ if(!f.items.includes(id)) f.items.push(id); });
+  if(f&&r.toiminto==="poista") f.items=f.items.filter(id=>!(r.kohteet||[]).includes(id));
+  if(f&&r.toiminto==="muokkaa"){ if(r.nimi) f.name=r.nimi; if(r.kuvaus!=null) f.desc=r.kuvaus; if(r.saannot) f.rules=r.saannot; }
+  if(f&&r.toiminto==="poista_kansio"){ SHARED=SHARED.filter(x=>x.id!==key); if(state.folderFilter===key) state.folderFilter=""; }
+}
+/* Teams / Outlook / Google hand-offs – the user's own channels, no GitHub involved */
+const SITE=()=>(KANSIOT.site||location.origin+location.pathname.replace(/[^/]*$/,""));
+const teamsShareUrl=(href,text)=>`https://teams.microsoft.com/share?href=${encodeURIComponent(href)}&msgText=${encodeURIComponent(text)}`;
+function calendarLinks(icsRel,name){ const abs=SITE()+icsRel; const webcal=abs.replace(/^https?:/,"webcal:"); return `<a href="https://outlook.office.com/calendar/0/addfromweb?url=${encodeURIComponent(abs)}&name=${encodeURIComponent(name)}" target="_blank" rel="noopener" title="Tilaa Outlookiin (Microsoft 365)">Outlook</a><a href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener" title="Tilaa Google-kalenteriin">Google</a><a href="${esc(webcal)}" title="Tilaa muuhun kalenteriin (webcal)">webcal</a><a href="${esc(abs)}" title="Kalenterisyötteen osoite (.ics)">.ics</a>`; }
+function folderShareLinks(f){ const link=SITE()+"?k="+encodeURIComponent(f.id)+"#tilannekuva"; return `<div class="share-links"><span class="micro">Kalenteri:</span>${calendarLinks(f.ics,"Säädösseuranta – "+f.name)}<span class="micro">·</span><a href="${esc(teamsShareUrl(link,"Säädösseuranta – tiimikansio "+f.name))}" target="_blank" rel="noopener" title="Jaa kansion linkki Teams-kanavaan tai -keskusteluun">Jaa Teamsiin</a><a href="${esc(SITE()+f.atom)}" title="Atom-syöte: Power Automate → 'When a feed item is published' → Teams-kanava saa jokaisen tulevan määräajan viestinä">Teams-ilmoitukset (syöte)</a></div>`; }
 /* GitHub hand-offs: shared folders live in config/kansiot/*.yaml; the page only prepares the request */
 const slugify=s=>(s||"").toLowerCase().replace(/[äå]/g,"a").replace(/ö/g,"o").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40)||"kansio";
 function folderYaml(f){ const lines=[`nimi: ${JSON.stringify(f.name)}`,`kuvaus: ""`,`omistaja: ""`,`kohteet:`]; f.items.forEach(id=>{ const it=findItem(id); lines.push(`  - ${id}${it?`   # ${it.title.replace(/\n/g," ").slice(0,70)}`:""}`); }); lines.push(`saannot: {}`,``,`# Säännöt (valinnaisia): aihealueet, lajit, toimialat, hankintayksikot, kilpailutusvaiheet, hakusanat, yrityskaupat, vain_avoimet, enintaan`,`# – katso config/kansiot/README.md`); return lines.join("\n"); }
@@ -668,7 +764,8 @@ function applySync(o,replace){
   persistFollow(); persistFolders(); persistHidden(); persist();
 }
 (()=>{ const q=new URLSearchParams(location.search); const o=q.get("s")?parseSync(q.get("s")):null;
-  if(o){ applySync(o,false); try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){} window.__synced=o.f.length; } })();
+  if(o){ applySync(o,false); try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){} window.__synced=o.f.length; }
+  if(q.get("k")){ window.__openFolder=q.get("k"); try{ history.replaceState(null,"",location.pathname+location.hash); }catch(e){} } })();
 const syncEl=document.getElementById("sync"), syncScrim=document.getElementById("sync-scrim");
 function openSync(){
   document.getElementById("sync-code").value=syncCode();
@@ -1018,7 +1115,7 @@ function renderNow(){
   if(state.folderFilter==="__hidden") info=`<b>Piilotetut</b> · ${hidN} kohdetta. Näkymät näyttävät nyt vain piilotetut; palauta kohde sen riviltä tai tiedoista.`;
   else if(sel){ const its=sel.items.map(findItem).filter(Boolean); const nx=folderNext(sel); const miss=sel.items.length-its.length; const kinds=`${its.filter(i=>i.scope==="fi"||i.scope==="eu").length} säädöstä, ${its.filter(i=>i.scope==="hankinta").length} kilpailutusta, ${its.filter(i=>i.scope==="yrityskauppa").length} yrityskauppaa`;
     info=`<b>${sel.shared?"⧉ ":""}${esc(sel.name)}</b>${sel.shared?` <span class="pill fold">tiimikansio</span>`:""} · ${its.length} kohdetta${miss?` (${miss} ei enää aineistossa)`:""} · ${kinds}. ${nx?`Seuraava <b>${fmt(nx.date)}</b> <span class="mono">${esc(nx.label)}</span> – ${esc(nx.it.title)}`:"Ei tulevia vaiheita."} Tilannekuva ja välilehdet on rajattu tähän kansioon.`;
-    if(sel.shared) info+=`<div style="margin-top:6px">${sel.desc?esc(sel.desc)+" · ":""}${sel.ruleCount?`${sel.ruleCount} kohdetta sääntöjen perusteella, ${sel.explicit.length} kiinteää · `:""}<a href="${esc(sel.ics)}" title="Tilaa tiimin määräajat kalenteriin (webcal/ics)">Kalenterisyöte (.ics)</a> · <a href="${esc(sel.edit)}" target="_blank" rel="noopener">Muokkaa GitHubissa</a>${sel.owner?` · yhteyshenkilö: ${esc(sel.owner)}`:""}</div>`; }
+    if(sel.shared) info+=`<div style="margin-top:6px">${sel.desc?esc(sel.desc)+" · ":""}${sel.ruleCount?`${sel.ruleCount} kohdetta sääntöjen perusteella, ${sel.explicit.length} kiinteää`:""}${sel.owner?` · yhteyshenkilö: ${esc(sel.owner)}`:""}</div>${folderShareLinks(sel)}`; }
   else info=state.folders.length?`Valitse kansio, niin Tilannekuva, aikajanat ja kilpailutukset rajautuvat sen kohteisiin. Kohde viedään kansioon sen tiedoista (▢ Kansiot ja näkyvyys).`:`Kansioihin voi koota esimerkiksi asiakkaan tai toimeksiannon säädökset ja kilpailutukset. Luo kansio tästä tai kohteen tiedoista.`;
   document.getElementById("l-folder-info").innerHTML=info;
   document.getElementById("h-folders").textContent=state.folders.length+" omaa"+(SHARED.length?` · ${SHARED.length} tiimi`:"");
@@ -1098,6 +1195,7 @@ function openTender(it){
   if(it.docsUrl) links.push(`<a href="${esc(it.docsUrl)}" target="_blank" rel="noopener">Tarjouspyyntöasiakirjat</a>`);
   if(it.tedUrl) links.push(`<a href="${esc(it.tedUrl)}" target="_blank" rel="noopener">TED</a>`);
   links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
+  links.push(`<a href="${esc(teamsShareUrl(SITE()+"#"+it.id,it.title.slice(0,180)))}" target="_blank" rel="noopener" title="Jaa Teams-kanavaan tai -keskusteluun">Jaa Teamsiin</a>`);
   links.push(`<button class="follow-btn" id="dr-follow" data-follow="${esc(it.id)}" aria-pressed="${state.follow.has(it.id)}">${state.follow.has(it.id)?"★ Seurannassa":"☆ Seuraa"}</button>`);
   drawer.dataset.id=it.id;
   document.getElementById("dr-changes").innerHTML="";
@@ -1125,6 +1223,7 @@ function openItem(id){
   const links=Object.entries(L).filter(([k,v])=>v).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(names[k]||k)}</a>`);
   if(!links.length&&it.source) links.push(`<a href="${esc(it.source)}" target="_blank" rel="noopener">Lähde</a>`);
   links.push(`<a href="#${esc(it.id)}" id="dr-permalink">Pysyvä linkki</a>`);
+  links.push(`<a href="${esc(teamsShareUrl(SITE()+"#"+it.id,(it.fullTitle||it.title).slice(0,180)))}" target="_blank" rel="noopener" title="Jaa Teams-kanavaan tai -keskusteluun">Jaa Teamsiin</a>`);
   links.push(`<button class="follow-btn" id="dr-follow" data-follow="${esc(it.id)}" aria-pressed="${state.follow.has(it.id)}">${state.follow.has(it.id)?"★ Seurannassa":"☆ Seuraa"}</button>`);
   drawer.dataset.id=it.id;
   const myCh=CHANGES.filter(c=>c.id===it.id).slice(0,8);
@@ -1148,7 +1247,7 @@ function renderDrawerFolders(id,filter,focusFid){
   const q=(filter||"").toLowerCase();
   const fs=sortedFolders().filter(f=>!q||f.name.toLowerCase().includes(q));
   const rows=fs.map(f=>{ const on=f.items.includes(id); return `<button type="button" class="fr${on?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${on}" title="${on?"Poista tästä kansiosta":"Lisää tähän kansioon"}"><span class="chk">${on?"▣":"▢"}</span><span class="fname">${esc(f.name)}</span><span class="n">${f.items.length}</span><span class="act">${on?"Poista":"Lisää"}</span></button>`; }).join("")
-    +sortedShared().filter(f=>!q||f.name.toLowerCase().includes(q)).map(f=>{ const on=f.items.includes(id); return `<a class="fr shared${on?" on":""}" href="${esc(proposalUrl(f,on?"poista":"lisaa",[id]))}" target="_blank" rel="noopener" data-fproposal="${esc(f.id)}" title="${on?"Kohde on tässä tiimikansiossa – ehdota poistoa GitHub-issuella":"Ehdota lisäystä tiimikansioon GitHub-issuella (toteutuu automaattisesti, jos sinulla on kirjoitusoikeus)"}"><span class="chk">${on?"⧉":"⬚"}</span><span class="fname">${esc(f.name)} <span class="micro">tiimi</span></span><span class="n">${f.items.length}</span><span class="act">${on?"Ehdota poistoa ↗":"Ehdota ↗"}</span></a>`; }).join("");
+    +sortedShared().filter(f=>!q||f.name.toLowerCase().includes(q)).map(f=>{ const on=f.items.includes(id); const pend=PENDING.has(f.id)&&PENDING.get(f.id).has(id); return `<button type="button" class="fr shared${on?" on":""}" data-fteam="${esc(f.id)}" aria-pressed="${on}" title="${pend?"Pyyntö käsittelyssä":(on?"Poista tästä tiimikansiosta (kaikilta)":"Lisää tähän tiimikansioon (kaikille)")}"${pend?" disabled":""}><span class="chk">${on?"⧉":"⬚"}</span><span class="fname">${esc(f.name)} <span class="micro">tiimi</span></span><span class="n">${f.items.length}</span><span class="act">${pend?"Käsitellään…":(on?"Poista":"Lisää")}</span></button>`; }).join("");
   const hid=state.hidden.has(id);
   const mine=foldersOf(id).map(f=>(f.shared?"⧉ ":"")+f.name);
   const label=mine.length?`▣ ${esc(mine.join(", "))}`:((state.folders.length||SHARED.length)?"＋ Lisää kansioon":"＋ Luo kansio ja lisää tämä");
@@ -1168,6 +1267,7 @@ function renderDrawerFolders(id,filter,focusFid){
 document.addEventListener("input",e=>{ if(e.target.id==="dr-fsearch") renderDrawerFolders(drawer.dataset.id,e.target.value); });
 document.addEventListener("click",e=>{
   if(e.target.closest("#dr-fdrop-btn")){ e.preventDefault(); fdropOpen=!fdropOpen; renderDrawerFolders(drawer.dataset.id); if(fdropOpen){ const s=document.getElementById("dr-fsearch")||document.getElementById("dr-fnew"); const first=document.querySelector("#dr-flist [data-ftoggle]"); const el=first||s; if(el) el.focus(); } return; }
+  const tm=e.target.closest("[data-fteam]"); if(tm){ e.preventDefault(); const id=drawer.dataset.id; const f=folderById(tm.dataset.fteam); if(!f) return; teamRequest({kansio:f.key,toiminto:f.items.includes(id)?"poista":"lisaa",kohteet:[id]}); return; }
   const ft=e.target.closest("[data-ftoggle]"); if(ft){ e.preventDefault(); const id=drawer.dataset.id; const f=folderById(ft.dataset.ftoggle); if(!f) return; const s=document.getElementById("dr-fsearch"); const wasIn=f.items.includes(id); toggleInFolder(f.id,id); renderDrawerFolders(id,s?s.value:undefined,f.id); render(); toast(wasIn?`Poistettu kansiosta ${f.name}`:`Lisätty kansioon ${f.name}`); return; }
   if(e.target.closest("#dr-fadd")||e.target.closest("#dr-fcreate")){ const addToo=!!e.target.closest("#dr-fadd"); const inp=document.getElementById("dr-fnew"); const name=inp.value.trim(); if(!name){ inp.focus(); return; } const existed=!!state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); const f=addFolder(name); const id=drawer.dataset.id; if(addToo&&!f.items.includes(id)) f.items.push(id); persistFolders(); fdropOpen=true; renderDrawerFolders(id); render(); const ni=document.getElementById("dr-fnew"); if(ni) ni.focus(); inp.value=""; toast(existed?`Kansio "${f.name}" oli jo olemassa${addToo?" – kohde lisätty":""}`:(addToo?`Kansio "${f.name}" luotu ja kohde lisätty`:`Kansio "${f.name}" luotu (tyhjä)`)); return; }
 });
@@ -1261,25 +1361,92 @@ function buildFolderSelect(){
 folderSel.addEventListener("change",()=>{ state.folderFilter=folderSel.value; state.hkShown=150; persist(); render(); });
 const foldersEl=document.getElementById("folders"), foldersScrim=document.getElementById("folders-scrim");
 let pendingDelete=null;
+let teamFormOpen=null;
+const RULE_TOPICS=()=>META.topics||TOPICS, RULE_TOIMIALAT=()=>META.hankintaTopics||[], RULE_STAGES=[["tulossa","Tulossa"],["avoin","Avoinna"],["ratkaistu","Ratkaistu"],["suorahankinta","Suorahankinnat"],["mao","Markkinaoikeus"]];
+function teamFormHTML(o){
+  const r=(o.folder&&o.folder.rules)||{}; const yk=r.yrityskaupat||{};
+  const opts=(name,list,sel)=>`<div class="opts">${list.map(v=>{ const [val,lab]=Array.isArray(v)?v:[v,v]; return `<label><input type="checkbox" name="${name}" value="${esc(val)}"${(sel||[]).includes(val)?" checked":""}>${esc(lab)}</label>`; }).join("")}</div>`;
+  return `<div class="teamform" data-mode="${o.mode}" data-fid="${esc(o.folder?o.folder.key:"")}" data-items="${esc((o.items||[]).join(","))}">
+    <label>Kansion nimi</label><input type="text" name="nimi" value="${esc(o.folder?o.folder.name:(o.name||""))}" maxlength="80">
+    <label>Kuvaus</label><input type="text" name="kuvaus" value="${esc(o.folder?o.folder.desc||"":"")}" maxlength="300" placeholder="Mitä tämä kansio seuraa ja kenelle">
+    ${o.items&&o.items.length?`<p class="micro" style="margin:8px 0 0">Kansioon viedään ${o.items.length} kohdetta omasta kansiostasi.</p>`:""}
+    <details${Object.keys(r).length?" open":""}><summary class="micro" style="cursor:pointer;margin-top:8px">Säännöt – kansio täyttyy itsestään (valinnainen)</summary>
+      <label>Säädösten aihealueet</label>${opts("aihealueet",RULE_TOPICS(),r.aihealueet)}
+      <label>Säädöslajit</label>${opts("lajit",LAJIT,r.lajit)}
+      <label>Kilpailutusten toimialat</label>${opts("toimialat",RULE_TOIMIALAT(),r.toimialat)}
+      <label>Kilpailutusten vaiheet</label>${opts("kilpailutusvaiheet",RULE_STAGES,r.kilpailutusvaiheet)}
+      <label>Hankintayksiköt (pilkulla eroteltuna, osuma nimen alusta)</label><input type="text" name="hankintayksikot" value="${esc((r.hankintayksikot||[]).join(", "))}">
+      <label>Hakusanat (pilkulla eroteltuna; otsikko tai tiivistelmä sisältää)</label><input type="text" name="hakusanat" value="${esc((r.hakusanat||[]).join(", "))}">
+      <label>Yrityskaupat</label><div class="opts"><label><input type="checkbox" name="vain_suomalaiset"${yk.vain_suomalaiset?" checked":""}>vain suomalaiset osapuolet</label></div>
+      <label>Osapuolet (pilkulla eroteltuna, nimen osa)</label><input type="text" name="osapuolet" value="${esc((yk.osapuolet||[]).join(", "))}">
+      <div class="opts" style="margin-top:8px"><label><input type="checkbox" name="vain_avoimet"${r.vain_avoimet!==false?" checked":""}>vain keskeneräiset (avoimet kilpailutukset, vireillä olevat yrityskaupat, voimaan tulemattomat säädökset)</label></div>
+    </details>
+    <div class="row"><button class="follow-btn" data-teamsubmit="1">${o.mode==="uusi"?"Luo tiimikansio":"Tallenna muutokset"}</button><button class="follow-btn" data-teamcancel="1">Peruuta</button><span class="msg">Toteutuu automaattisesti noin minuutissa; kaikki näkevät sen.</span></div>
+  </div>`;
+}
+function readTeamForm(el){
+  const val=n=>(el.querySelector(`[name="${n}"]`)||{}).value||""; const checked=n=>[...el.querySelectorAll(`[name="${n}"]:checked`)].map(x=>x.value);
+  const list=s=>s.split(",").map(x=>x.trim()).filter(Boolean).slice(0,30);
+  const r={};
+  if(checked("aihealueet").length) r.aihealueet=checked("aihealueet"); if(checked("lajit").length) r.lajit=checked("lajit");
+  if(checked("toimialat").length) r.toimialat=checked("toimialat"); if(checked("kilpailutusvaiheet").length) r.kilpailutusvaiheet=checked("kilpailutusvaiheet");
+  if(list(val("hankintayksikot")).length) r.hankintayksikot=list(val("hankintayksikot")); if(list(val("hakusanat")).length) r.hakusanat=list(val("hakusanat"));
+  const yk={}; if(el.querySelector('[name="vain_suomalaiset"]').checked) yk.vain_suomalaiset=true; if(list(val("osapuolet")).length) yk.osapuolet=list(val("osapuolet")); if(Object.keys(yk).length) r.yrityskaupat=yk;
+  if(el.querySelector('[name="vain_avoimet"]').checked&&Object.keys(r).length) r.vain_avoimet=true;
+  return {nimi:val("nimi").trim().slice(0,80),kuvaus:val("kuvaus").trim().slice(0,300),saannot:r};
+}
+async function submitTeamForm(el){
+  const f=readTeamForm(el); const mode=el.dataset.mode; const items=(el.dataset.items||"").split(",").filter(Boolean);
+  if(!f.nimi){ el.querySelector('[name="nimi"]').focus(); return; }
+  const req=mode==="uusi"?{kansio:"uusi",toiminto:"uusi",nimi:f.nimi,kuvaus:f.kuvaus,saannot:f.saannot,kohteet:items}:{kansio:el.dataset.fid,toiminto:"muokkaa",nimi:f.nimi,kuvaus:f.kuvaus,saannot:f.saannot};
+  const ok=await teamRequest(req); if(ok){ teamFormOpen=null; renderFolderRows(); }
+}
+const shareEl=document.getElementById("share");
+function openShare(msg){ document.getElementById("share-name").value=SHARE.name; document.getElementById("share-key").value=SHARE.token; const m=document.getElementById("share-msg"); m.textContent=msg||(hasKey()?"Avain on tallennettu tähän selaimeen.":""); m.className="msg"; shareEl.hidden=false; foldersScrim.hidden=false; document.getElementById(hasKey()?"share-name":"share-key").focus(); }
+function closeShare(){ shareEl.hidden=true; if(foldersEl.hidden) foldersScrim.hidden=true; }
+document.getElementById("share-close").addEventListener("click",closeShare);
+document.getElementById("share-forget").addEventListener("click",()=>{ SHARE={name:SHARE.name,token:""}; persistShare(); document.getElementById("share-key").value=""; const m=document.getElementById("share-msg"); m.textContent="Avain poistettu tästä selaimesta."; m.className="msg"; if(!foldersEl.hidden) renderFolderRows(); });
+document.getElementById("share-test").addEventListener("click",async()=>{
+  const name=document.getElementById("share-name").value.trim().slice(0,60), key=document.getElementById("share-key").value.trim(); const m=document.getElementById("share-msg");
+  if(!key){ m.textContent="Liitä tiimin avain."; m.className="msg"; return; }
+  m.textContent="Tarkistetaan…"; m.className="msg";
+  try{
+    const res=await fetch("https://api.github.com/repos/"+KANSIOT.repo,{headers:{"Authorization":"Bearer "+key,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"},cache:"no-store"});
+    if(res.status===401){ m.textContent="Avain ei kelpaa (401). Tarkista, että kopioit sen kokonaan, tai pyydä uusi."; return; }
+    if(!res.ok){ m.textContent=`Avain ei toimi tässä repossa (${res.status}).`; return; }
+    const exp=res.headers.get("github-authentication-token-expiration");
+    SHARE={name,token:key}; persistShare();
+    m.textContent="Avain toimii ja on tallennettu."+(exp?` Voimassa ${new Date(exp).toLocaleDateString("fi-FI")} asti.`:""); m.className="msg ok";
+    if(!foldersEl.hidden) renderFolderRows(); if(!drawer.hidden) renderDrawerFolders(drawer.dataset.id);
+  }catch(e){ m.textContent="Yhteys GitHubin rajapintaan ei onnistunut (verkko tai estolista)."; }
+});
 function renderFolderRows(){
   const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id)));
-  const own=sortedFolders().map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><button class="follow-btn" data-fics="${esc(f.id)}" title="Lataa kansion määräajat kalenteritiedostona (.ics)">Kalenteri</button>${KANSIOT.newUrl?`<a href="${esc(shareFolderUrl(f))}" target="_blank" rel="noopener" title="Avaa GitHubiin valmiiksi täytetyn kansiotiedoston – tallennettuna siitä tulee kaikille näkyvä tiimikansio, jolla on oma kalenterisyöte">Jaa tiimikansioksi ↗</a>`:""}${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei omia kansioita vielä</p>';
-  const shared=sortedShared().map(f=>`<div class="frow shared" data-fid="${esc(f.id)}"><span class="fname" style="font-weight:600">⧉ ${esc(f.name)}${f.example?' <span class="micro">(esimerkki)</span>':""}</span><span class="n">${f.items.length} kohdetta${f.ruleCount?` · ${f.ruleCount} säännöillä`:""}${f.owner?` · ${esc(f.owner)}`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><a href="${esc(f.ics)}" title="Tilaa kalenteriin: kopioi linkki kalenteriohjelman 'tilaa kalenteri osoitteesta' -kohtaan">Kalenterisyöte</a><a href="${esc(f.edit)}" target="_blank" rel="noopener">Muokkaa GitHubissa ↗</a></span>${f.desc?`<div class="desc">${esc(f.desc)}</div>`:""}</div>`).join("");
-  document.getElementById("folder-rows").innerHTML=`<h4 style="margin:10px 0 4px">Omat kansiot <span class="micro">tässä selaimessa</span></h4>${own}<h4 style="margin:16px 0 4px">Tiimikansiot <span class="micro">jaetut – kaikki näkevät, ylläpidetään GitHubissa (config/kansiot)</span></h4>${shared||'<p class="empty">Ei tiimikansioita. Oman kansion kohdalla "Jaa tiimikansioksi" luo ensimmäisen.</p>'}`;
+  const own=sortedFolders().map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><button class="follow-btn" data-fics="${esc(f.id)}" title="Lataa kansion määräajat kalenteritiedostona (.ics)">Kalenteri</button><button class="follow-btn" data-fshare="${esc(f.id)}" title="Tee tästä kaikille näkyvä tiimikansio, jolla on oma kalenterisyöte">Jaa tiimikansioksi</button>${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>${teamFormOpen==="share:"+f.id?teamFormHTML({mode:"uusi",name:f.name,items:f.items}):""}`; }).join("")||'<p class="empty">Ei omia kansioita vielä</p>';
+  const shared=sortedShared().map(f=>`<div class="frow shared" data-fid="${esc(f.id)}"><span class="fname" style="font-weight:600">⧉ ${esc(f.name)}${f.example?' <span class="micro">(esimerkki)</span>':""}</span><span class="n">${f.items.length} kohdetta${f.ruleCount?` · ${f.ruleCount} säännöillä`:""}${f.owner?` · ${esc(f.owner)}`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><button class="follow-btn" data-fedit="${esc(f.id)}" title="Nimi, kuvaus ja säännöt">Muokkaa</button><button class="follow-btn" data-fteamdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista kansio"}</button></span>${f.desc?`<div class="desc">${esc(f.desc)}</div>`:""}<div class="desc">${folderShareLinks(f)}</div>${teamFormOpen==="edit:"+f.id?teamFormHTML({mode:"muokkaa",folder:f}):""}</div>`).join("");
+  document.getElementById("folder-rows").innerHTML=`<h4 style="margin:10px 0 4px">Omat kansiot <span class="micro">tässä selaimessa</span></h4>${own}<h4 style="margin:16px 0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><span>Tiimikansiot <span class="micro">jaetut – kaikki näkevät</span></span><span><button class="follow-btn" id="team-new">+ Uusi tiimikansio</button> <button class="follow-btn" id="share-open" title="${hasKey()?"Tiimin avain on tallennettu tähän selaimeen":"Tiimin avainta ei ole – pyydä se ylläpitäjältä"}">${hasKey()?"Jakamisen asetukset ✓":"Jakamisen asetukset"}</button></span></h4>${teamFormOpen==="new"?teamFormHTML({mode:"uusi",name:"",items:[]}):""}${shared||'<p class="empty">Ei tiimikansioita vielä – luo ensimmäinen "+ Uusi tiimikansio" -painikkeesta tai jaa oma kansio.</p>'}`;
   document.getElementById("folders-hidden").textContent=`Piilotettuja kohteita: ${state.hidden.size}. Ne löytyvät Kansio-valikon kohdasta Piilotetut, josta ne voi palauttaa.`;
 }
 function openFolders(){ pendingDelete=null; renderFolderRows(); document.getElementById("folder-new").value=""; foldersEl.hidden=false; foldersScrim.hidden=false; document.getElementById("folder-new").focus(); }
-function closeFolders(){ foldersEl.hidden=true; foldersScrim.hidden=true; pendingDelete=null; }
+function closeFolders(){ foldersEl.hidden=true; if(shareEl.hidden) foldersScrim.hidden=true; pendingDelete=null; teamFormOpen=null; }
 document.getElementById("open-folders").addEventListener("click",openFolders);
 document.getElementById("open-folders2").addEventListener("click",openFolders);
 document.getElementById("folders-close").addEventListener("click",closeFolders);
 foldersScrim.addEventListener("click",closeFolders);
-document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!foldersEl.hidden) closeFolders(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!shareEl.hidden) closeShare(); else if(e.key==="Escape"&&!foldersEl.hidden) closeFolders(); });
+foldersScrim.addEventListener("click",closeShare);
 document.getElementById("folder-add").addEventListener("click",()=>{ const inp=document.getElementById("folder-new"); const f=addFolder(inp.value); if(f){ inp.value=""; renderFolderRows(); render(); } else inp.focus(); });
 foldersEl.addEventListener("change",e=>{ const r=e.target.closest("[data-frename]"); if(r){ const f=folderById(r.dataset.frename); const name=r.value.trim().slice(0,60); if(f&&name){ f.name=name; persistFolders(); render(); } else if(f) r.value=f.name; } });
 foldersEl.addEventListener("click",e=>{
   const o=e.target.closest("[data-fopen]"); if(o){ state.folderFilter=o.dataset.fopen; persist(); closeFolders(); render(); return; }
   const ic=e.target.closest("[data-fics]"); if(ic){ const f=folderById(ic.dataset.fics); if(f){ downloadIcs(f.items.map(findItem).filter(Boolean),"Säädösseuranta – "+f.name,slugify(f.name)+".ics"); toast(`Kalenteritiedosto ladattu: ${f.name}`); } return; }
+  const sh=e.target.closest("[data-fshare]"); if(sh){ if(!hasKey()){ openShare("Oman kansion jakaminen tiimikansioksi tehdään tästä sivusta tiimin avaimella. Pyydä avain tiimisi ylläpitäjältä."); return; } teamFormOpen=teamFormOpen==="share:"+sh.dataset.fshare?null:"share:"+sh.dataset.fshare; renderFolderRows(); return; }
+  const ed=e.target.closest("[data-fedit]"); if(ed){ if(!hasKey()){ openShare("Tiimikansion muokkaus tehdään tästä sivusta tiimin avaimella."); return; } teamFormOpen=teamFormOpen==="edit:"+ed.dataset.fedit?null:"edit:"+ed.dataset.fedit; renderFolderRows(); return; }
+  if(e.target.closest("#team-new")){ if(!hasKey()){ openShare("Uuden tiimikansion luonti tehdään tästä sivusta tiimin avaimella."); return; } teamFormOpen=teamFormOpen==="new"?null:"new"; renderFolderRows(); return; }
+  if(e.target.closest("#share-open")){ openShare(); return; }
+  const td=e.target.closest("[data-fteamdel]"); if(td){ const id=td.dataset.fteamdel; if(!hasKey()){ openShare("Tiimikansion poisto tehdään tästä sivusta tiimin avaimella."); return; } if(pendingDelete!==id){ pendingDelete=id; renderFolderRows(); return; } const f=folderById(id); pendingDelete=null; renderFolderRows(); if(f) teamRequest({kansio:f.key,toiminto:"poista_kansio"}); return; }
+  const tf=e.target.closest("[data-teamsubmit]"); if(tf){ submitTeamForm(tf.closest(".teamform")); return; }
+  if(e.target.closest("[data-teamcancel]")){ teamFormOpen=null; renderFolderRows(); return; }
   const c=e.target.closest("[data-fclean]"); if(c){ const f=folderById(c.dataset.fclean); const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id))); if(f){ f.items=f.items.filter(i=>all.has(i)); persistFolders(); renderFolderRows(); render(); } return; }
   const d=e.target.closest("[data-fdel]"); if(d){ const id=d.dataset.fdel; if(pendingDelete!==id){ pendingDelete=id; renderFolderRows(); return; } state.folders=state.folders.filter(f=>f.id!==id); if(state.folderFilter===id) state.folderFilter=""; pendingDelete=null; persistFolders(); persist(); renderFolderRows(); render(); }
 });

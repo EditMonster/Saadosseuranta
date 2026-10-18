@@ -3,8 +3,9 @@
 A team folder is a list of fixed item ids plus rules (topics, sectors, buyers, keywords, merger
 parties …) that are resolved against the freshly built data on every run, so the folder works as a
 team's monitoring profile. Every folder gets its own subscribable calendar feed of upcoming deadlines.
-The page shows these folders read-only next to the user's own browser-local folders; changes go
-through GitHub (edit the YAML, or an issue that kansiopyynto.yml applies).
+The page shows these folders next to the user's own browser-local folders and edits them in place with the
+team key: it opens an issue that kansiopyynto.yml applies (the YAML can also be edited directly). Each
+folder also gets an Atom feed of upcoming deadlines for Teams notifications via Power Automate.
 """
 from __future__ import annotations
 
@@ -19,6 +20,7 @@ KANSIOT_DIR = CONFIG_DIR / "kansiot"
 OUT_JSON = OUT_DIR / "kansiot.json"
 OUT_ICS = OUT_DIR / "kansiot"
 REPO = os.environ.get("GITHUB_REPOSITORY", "EditMonster/Saadosseuranta")
+SITE = os.environ.get("SITE_URL", "https://editmonster.github.io/Saadosseuranta/")
 OPEN_TENDER = {"avoin", "tulossa", "valitusaika", "vireillä"}
 OPEN_MERGER = {"vireillä", "jatkokäsittelyssä", "kieltoesitys markkinaoikeudessa"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,40}$")
@@ -96,6 +98,33 @@ def matches(it: dict, rules: dict) -> bool:
     return pos > 0 and hit > 0
 
 
+def atom_feed(fid: str, name: str, rows: list[dict], site: str) -> str:
+    """Atom feed of the folder's upcoming deadlines (next 60 days): one entry per item+deadline, so a
+    Power Automate / Teams "when a feed item is published" flow posts each new deadline once."""
+    import html as _h
+    today = TODAY.isoformat()
+    hi = (TODAY + dt.timedelta(days=60)).isoformat()
+    entries = []
+    for it in rows:
+        for e in it.get("events") or []:
+            if e.get("kind") not in ("maaraaika", "lausunto", "voimaan", "soveltaminen"):
+                continue
+            day = e.get("end") if e.get("kind") == "lausunto" else e.get("date")
+            if not day or day < today or day > hi:
+                continue
+            tag = {"fi": "FI", "eu": "EU", "hankinta": "Hankinta", "yrityskauppa": it.get("authority") or "Yrityskauppa"}.get(it.get("scope"), "")
+            link = f"{site}#{it['id']}"
+            title = f"{day[8:10].lstrip('0')}.{day[5:7].lstrip('0')}.{day[:4]} · {e.get('label') or e.get('kind')} – {it.get('title')}"
+            body = f"[{tag}] {it.get('title')}\n{e.get('label') or ''}: {day}" + (f"\n{it.get('summary')[:300]}" if it.get("summary") else "") + f"\n{link}"
+            entries.append((day, f"<entry><title>{_h.escape(title)}</title><link href=\"{_h.escape(link)}\"/><id>urn:saadosseuranta:{fid}:{it['id']}:{e.get('kind')}:{day}</id>"
+                            f"<updated>{day}T06:00:00Z</updated><summary>{_h.escape(body)}</summary></entry>"))
+    entries.sort(key=lambda x: x[0])
+    upd = (entries[0][0] if entries else today) + "T06:00:00Z"
+    return ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">"
+            f"<title>Säädösseuranta – {_h.escape(name)} – tulevat määräajat</title><link href=\"{site}data/kansiot/{fid}.xml\" rel=\"self\"/>"
+            f"<link href=\"{site}\"/><id>urn:saadosseuranta:{fid}</id><updated>{upd}</updated>" + "".join(x[1] for x in entries) + "</feed>\n")
+
+
 def next_deadline(it: dict) -> dict | None:
     today = TODAY.isoformat()
     best = None
@@ -139,21 +168,22 @@ def build_kansiot(items: list[dict], tenders: list[dict], mergers: list[dict], i
         nxt = sorted((d for d in (next_deadline(r) for r in rows) if d), key=lambda d: d["date"])
         ics_name = f"Säädösseuranta – {name}"
         (OUT_ICS / f"{fid}.ics").write_text(ics_fn(rows, ics_name, f"-{fid}"), encoding="utf-8")
-        wanted_files.add(f"{fid}.ics")
+        (OUT_ICS / f"{fid}.xml").write_text(atom_feed(fid, name, rows, SITE), encoding="utf-8")
+        wanted_files.update({f"{fid}.ics", f"{fid}.xml"})
         folders.append({
             "id": fid, "name": name, "desc": str(cfg.get("kuvaus") or "").strip()[:300], "owner": str(cfg.get("omistaja") or "").strip()[:80],
             "example": bool(cfg.get("esimerkki")), "items": ids, "explicit": [x for x in explicit if x in by_id], "missing": missing,
             "ruleCount": len(auto), "rules": rules, "next": nxt[:5],
             "counts": {"fi": sum(1 for r in rows if r.get("scope") == "fi"), "eu": sum(1 for r in rows if r.get("scope") == "eu"),
                        "hankinta": sum(1 for r in rows if r.get("scope") == "hankinta"), "yrityskauppa": sum(1 for r in rows if r.get("scope") == "yrityskauppa")},
-            "ics": f"data/kansiot/{fid}.ics", "config": f"config/kansiot/{fid}.yaml",
+            "ics": f"data/kansiot/{fid}.ics", "atom": f"data/kansiot/{fid}.xml", "config": f"config/kansiot/{fid}.yaml",
             "edit": f"https://github.com/{REPO}/edit/main/config/kansiot/{fid}.yaml",
         })
-    for old in OUT_ICS.glob("*.ics"):
+    for old in list(OUT_ICS.glob("*.ics")) + list(OUT_ICS.glob("*.xml")):
         if old.name not in wanted_files:
             old.unlink()
-    payload = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "repo": REPO, "folders": folders,
-               "newUrl": f"https://github.com/{REPO}/new/main", "issueUrl": f"https://github.com/{REPO}/issues/new"}
+    payload = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "repo": REPO, "site": SITE, "folders": folders,
+               "newUrl": f"https://github.com/{REPO}/new/main", "issueUrl": f"https://github.com/{REPO}/issues/new", "apiUrl": f"https://api.github.com/repos/{REPO}/issues"}
     save_json(OUT_JSON, payload, compact=True)
     log(f"kansiot: {len(folders)} tiimikansiota ({', '.join(f'{f['id']}={len(f['items'])}' for f in folders)}) -> {OUT_JSON}")
     return payload
