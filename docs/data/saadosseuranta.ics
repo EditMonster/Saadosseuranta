@@ -1220,6 +1220,15 @@ DESCRIPTION:Voimaan (614/2026) · 612/2026 · HE 15/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/15
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-125-2024-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi kansaneläkelain ja Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun lain muuttamisesta sekä eräiksi muiksi laeiksi
+DESCRIPTION:Voimaan (736/2024) · 733/2024 · HE 125/2024 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2024/125
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2024/125
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-33-2025-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-17T23:56:32",
+ "fetched": "2026-10-18T06:40:42",
  "items": [
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -542,7 +542,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T22:46:43",
+   "muokattu": "2026-10-18T03:06:22",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kuntalain 137 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -882,7 +882,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-16T05:48:06",
+   "muokattu": "2026-10-18T03:48:43",
    "nimi": "Hallituksen esitys laiksi sähkömarkkinalain muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -1757,7 +1757,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T22:39:42",
+   "muokattu": "2026-10-18T03:13:17",
    "nimi": "Hallituksen esitys eduskunnalle laiksi tuloverolain 10 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -2224,7 +2224,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-16T14:59:19",
+   "muokattu": "2026-10-18T04:06:17",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "rauennut": false,
    "skNumerot": [],
@@ -5791,7 +5791,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-11T05:46:44",
+   "muokattu": "2026-10-18T03:53:09",
    "nimi": "Hallituksen esitys eduskunnalle laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
@@ -12991,7 +12991,7 @@
    "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
    "laji": "laki",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-16T11:48:44",
+   "muokattu": "2026-10-18T04:25:00",
    "nimi": "Hallituksen esityksen valmistelu; henkilöstön joustava käyttö (Nato-säädösmuutokset)",
    "rauennut": false,
    "skNumerot": [],
@@ -13313,7 +13313,7 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "laji": "laki",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-16T10:46:57",
+   "muokattu": "2026-10-18T03:25:37",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "rauennut": false,
    "skNumerot": [],
@@ -37237,71 +37237,6 @@
    "uuid": "dcae123b-4771-46ca-8885-6a42612fbb54",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-03-14"
-  },
-  {
-   "annettuEduskunnalle": "2024-12-19",
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö",
-     "pvm": "2024-09-13",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/128b46df-c4b6-420a-afbf-5546c6b22748/2051f494-5b02-4a47-acc4-b6d57adf9909/LAUSUNTOPYYNTO_20240913062538.pdf"
-    },
-    {
-     "nimi": "HE luonnos",
-     "pvm": "2024-09-13",
-     "tyyppi": "ESITYS",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/128b46df-c4b6-420a-afbf-5546c6b22748/dbe9e131-7a78-4ea3-80aa-6215b0bc5d81/ESITYS_20240913062640.pdf"
-    }
-   ],
-   "asiasanat": [
-    "rahoitusmarkkinat"
-   ],
-   "esittelyviikko": 51,
-   "esittelyvuosi": 2024,
-   "etapit": [
-    {
-     "date": "2024-09-13",
-     "end": "2024-10-18",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [
-    "EV 31/2025"
-   ],
-   "heNumerot": [
-    "HE 208/2024"
-   ],
-   "heTila": "ANNETTU_EK",
-   "laji": "laki",
-   "ministerio": "valtiovarainministeriö",
-   "muokattu": "2025-04-25T09:31:45",
-   "nimi": "NPL-direktiivin täytäntöönpano",
-   "rauennut": false,
-   "skNumerot": [
-    "161/2025",
-    "162/2025",
-    "163/2025",
-    "164/2025",
-    "165/2025",
-    "166/2025",
-    "167/2025",
-    "168/2025",
-    "169/2025"
-   ],
-   "teemat": [
-    "Rahoitusmarkkinat"
-   ],
-   "tiivistelma": "Esityksessä ehdotetaan säädettäväksi laki luotonostajista ja luotonhallinnoijista, jossa säädettäisiin luottolaitoksen myöntämän järjestämättömän luoton ostajia sekä ostajien puolesta toteutettavaa tällaisen luoton hallinnointia koskevista vaatimuksista.  Esityksellä pannaan täytäntöön luotonhallinnoijista ja luotonostajista annettu direktiivi.",
-   "tila": "PAATTYNYT",
-   "tunnus": "VM119:00/2024",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM119:00/2024",
-   "uuid": "128b46df-c4b6-420a-afbf-5546c6b22748",
-   "valmisteluvaihe": "VALTIONEUVOSTON_PAATOKSENTEKO",
-   "valmistumisPaiva": "2025-04-25"
   },
   {
    "annettuEduskunnalle": "2025-05-22",
@@ -70046,7 +69981,7 @@
    "heTila": null,
    "laji": "asetus",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-13T19:13:52",
+   "muokattu": "2026-10-18T04:01:12",
    "nimi": "Valtioneuvoston asetus alueellisista toimeentulotukiasioiden neuvottelukunnista annetun valtioneuvoston asetuksen 1 §:n muuttamisesta",
    "rauennut": false,
    "skNumerot": [],
