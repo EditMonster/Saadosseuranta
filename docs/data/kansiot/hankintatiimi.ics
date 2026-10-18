@@ -5,6 +5,51 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-59654-maaraaika-2026-10-26-hankintatiimi@saadosseuranta
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[Hankinta] Määräaika: Seudullisen kaupunkipyöräjärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059654 · https://www.hankintailmoitukset.fi/fi/public/procedure/19292/enotice/59654
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/19292/enotice/59654
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-59654-maaraaika-2026-11-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[Hankinta] Määräaika: Seudullisen kaupunkipyöräjärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059654 · https://www.hankintailmoitukset.fi/fi/public/procedure/19292/enotice/59654
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/19292/enotice/59654
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-59665-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[Hankinta] Määräaika: Asian- ja dokumentinhallintaratkaisu\, Keiteleen kunta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059665 · https://www.hankintailmoitukset.fi/fi/public/procedure/38331/enotice/59665
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38331/enotice/59665
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-59653-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[Hankinta] Määräaika: ICT-asiantuntijapalveluiden puitejärjestely 2026-2030 osa-alue 14 Tekoälyn asiantuntijapalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-059653 · https://www.hankintailmoitukset.fi/fi/public/procedure/37833/enotice/59653
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37833/enotice/59653
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-59656-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[Hankinta] Määräaika: ICT-asiantuntijapalveluiden puitejärjestely 2026-2030 osa-alue 12 Perus ICT asiantuntijapalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-059656 · https://www.hankintailmoitukset.fi/fi/public/procedure/37832/enotice/59656
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37832/enotice/59656
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-59515-maaraaika-2026-10-22-hankintatiimi@saadosseuranta
 DTSTAMP:20261022T000000Z
 DTSTART;VALUE=DATE:20261022
@@ -1256,15 +1301,6 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-059075 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38017/enotice/59075
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-EF-58912-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[Hankinta] Määräaika: Asian- ja dokumentinhallintaratkaisu\, Keiteleen kunta
-DESCRIPTION:Tarjoukset viimeistään · 2026-058912 · https://www.hankintailmoitukset.fi/fi/public/procedure/38331/enotice/58912
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38331/enotice/58912
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-EF-58847-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
 DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
@@ -1616,24 +1652,6 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-058113 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37831/enotice/58113
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-EF-58114-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[Hankinta] Määräaika: ICT-asiantuntijapalveluiden puitejärjestely 2026-2030 osa-alue 12 Perus ICT asiantuntijapalvelut
-DESCRIPTION:Tarjoukset viimeistään · 2026-058114 · https://www.hankintailmoitukset.fi/fi/public/procedure/37832/enotice/58114
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37832/enotice/58114
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-58115-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[Hankinta] Määräaika: ICT-asiantuntijapalveluiden puitejärjestely 2026-2030 osa-alue 14 Tekoälyn asiantuntijapalvelut
-DESCRIPTION:Tarjoukset viimeistään · 2026-058115 · https://www.hankintailmoitukset.fi/fi/public/procedure/37833/enotice/58115
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37833/enotice/58115
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-EF-58212-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -1749,14 +1767,5 @@ DTEND;VALUE=DATE:20261031
 SUMMARY:[Hankinta] Määräaika: Adobe-käyttöoikeudet ja niihin liittyvä jakelu- ja hallintapalvelu
 DESCRIPTION:Tarjoukset viimeistään · 2026-057983 · https://www.hankintailmoitukset.fi/fi/public/procedure/37749/enotice/57983
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37749/enotice/57983
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-57285-maaraaika-2026-10-20-hankintatiimi@saadosseuranta
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:[Hankinta] Määräaika: Tampereen seudun teollisuusalueiden infrastruktuuri- ja tonttitietopalvelu
-DESCRIPTION:Tarjoukset viimeistään · 2026-057285 · https://www.hankintailmoitukset.fi/fi/public/procedure/37349/enotice/57285
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37349/enotice/57285
 END:VEVENT
 END:VCALENDAR
