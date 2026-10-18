@@ -19,7 +19,7 @@ DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 DATETIME = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$")
 LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen", "delegoitu"}
 SCOPES = {"fi", "eu"}
-EVENT_KINDS = {"lausunto", "he", "eduskunta", "hyvaksytty", "vahvistettu", "voimaan", "maaraaika", "muu", "ehdotus", "sopu",
+EVENT_KINDS = {"lausunto", "he", "eduskunta", "hyvaksytty", "vahvistettu", "voimaan", "maaraaika", "muu", "ehdotus", "sopu", "ennuste",
                "parlamentti", "neuvosto", "julkaistu", "soveltaminen", "kanta"}
 TENDER_STATUS = {"avoin", "päättynyt", "poistunut"}
 
@@ -409,3 +409,32 @@ def test_ics():
     for ev in events:
         assert "UID:" in ev and "DTSTART;VALUE=DATE:" in ev and "SUMMARY:" in ev and "DTSTAMP:" in ev
     assert "\r\n" in txt
+
+
+def test_influence_and_plan(items):
+    """Vaikuttaminen: who answered, who was heard, who lobbied – and the legislative plan as forecast events."""
+    vaik = json.loads((DATA / "vaikuttaminen.json").read_text(encoding="utf-8"))["items"]
+    with_counts = [i for i in items if i.get("influenceN")]
+    assert len(with_counts) >= 100 and len(vaik) >= 100
+    for it in with_counts[:200]:
+        n = it["influenceN"]
+        assert set(n) == {"lausunnot", "kuulemiset", "mietinnot", "lobbaus", "asiantuntijalausunnot", "esityslistat"}
+        inf = vaik[it["id"]]
+        if n["lausunnot"]:
+            assert inf["lausunnot"]["n"] == n["lausunnot"] and isinstance(inf["lausunnot"]["orgs"], list)
+        for h in inf.get("kuulemiset") or []:
+            assert DATE.match(h["date"]) and (h["heard"] or h["written"] or h["none"])
+        if n["lobbaus"]:
+            assert inf["lobbaus"]["orgs"] and inf["lobbaus"]["terms"]
+    assert any(i.get("influenceN", {}).get("lobbaus") for i in items), "avoimuusrekisteri linkitys puuttuu"
+    assert any(i.get("influenceN", {}).get("kuulemiset") for i in items), "valiokuntakuulemiset puuttuvat"
+    plans = [i for i in items if i.get("plan")]
+    assert len(plans) >= 50
+    for it in plans[:100]:
+        assert DATE.match(it["plan"]["date"]) and re.match(r"^\d{1,2}/\d{4}$", it["plan"]["week"])
+    forecasts = [e for i in items for e in i["events"] if e["kind"] == "ennuste"]
+    assert forecasts and all(e.get("confirmed") is False and DATE.match(e["date"]) for e in forecasts)
+    # a planned week never appears on a proposal that has already been given
+    for it in items:
+        if any(e["kind"] == "he" for e in it["events"]):
+            assert not any(e["kind"] == "ennuste" and "Suunniteltu antaminen" in e["label"] for e in it["events"]), it["id"]

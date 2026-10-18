@@ -56,3 +56,19 @@ delegoidut:
 markkinaoikeus:
   keep_days: 90          # kuinka kauan ratkaistut ja luettelosta poistuneet asiat näkyvät
   kho_valitusaika_paivia: 30   # valitusaika KHO:een (valituslupa, hankintalaki 165 §) – arvio antopäivästä
+
+# Vaikuttamisen jäljet: ketkä lausuivat (Hankeikkunan LAUSUNTO-asiakirjat) ja ketkä lobbasivat (avoimuusrekisteri)
+vaikuttaminen:
+  avoimuusrekisteri:
+    terms: 2             # montako viimeisintä päättynyttä ilmoituskautta (6 kk) haetaan
+    refresh_days: 1      # rekisteri pyytää kevyttä käyttöä: haetaan enintään kerran päivässä
+
+# Eduskunnan valiokuntasyöte (avoindata.eduskunta.fi, VaskiData): esityslistat ja kuultavat, asiantuntijalausunnot,
+# valiokuntien mietinnöt ja lausunnot sekä kirjalliset kysymykset ja aloitteet
+vaski:
+  bootstrap_rows: 6000        # ensimmäisellä ajolla luetaan näin monta uusinta riviä (≈ 6 viikkoa istuntokaudella)
+  agenda_keep_days: 7         # pidetyt kokoukset pudotetaan näin monen päivän jälkeen
+  statement_keep_days: 400    # asia pysyy mukana, kun sillä on lausunto tältä ajalta
+  report_keep_days: 400       # mietinnöt ja lausunnot
+  motion_keep_days: 120       # kirjalliset kysymykset, laki-, toimenpide- ja kansalaisaloitteet
+  backfill_max_requests: 700  # kuluvan vuoden mietintöjen kertatäydennys (jatkuu seuraavalla ajolla, jos raja täyttyy)

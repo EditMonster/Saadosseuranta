@@ -73,8 +73,18 @@ def parse_kasittely(x: str) -> dict:
             d = vah.group(1).strip()
             dd = re.match(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", d)
             out["vahvistettu"] = f"{dd.group(3)}-{int(dd.group(2)):02d}-{int(dd.group(1)):02d}" if dd else None
+    out["hearings"] = []
+    out["reports"] = []
     for m in re.finditer(rf'<{TAG}ToimenpideJulkaisu[^>]*kasittelyvaiheKoodi="([^"]+)"[^>]*tapahtumaPvm="([^"]+)"[^>]*>(.*?)</{TAG}ToimenpideJulkaisu>', x, re.S):
         code, date, body = m.group(1), m.group(2), m.group(3)
+        cm = re.search(rf"<{TAG}KokousToimija>.*?<{TAG}YhteisoTeksti>([^<]+)<", body, re.S)
+        committee_name = html.unescape(cm.group(1)).strip() if cm else None
+        if code == "ATKUUL":  # asiantuntijakuuleminen: who was heard, who sent a written statement, who had nothing to say
+            out["hearings"].append(parse_hearing(body, date, committee_name))
+            continue
+        if code == "VKPM":  # the committee report's own tunnus (HaVM 26/2025 vp) – lets us fetch the report itself
+            for ref in re.findall(rf'<{TAG}Muu1Viite[^>]*muuTunnus="([^"]+ vp)"', body):
+                out["reports"].append({"tunnus": html.unescape(ref), "date": date, "committee": committee_name})
         if code not in STAGES:
             continue
         txt = _text(body)
@@ -84,6 +94,34 @@ def parse_kasittely(x: str) -> dict:
             out["committees"].append(com.group(1))
     out["stages"].sort(key=lambda s: s["date"])
     return out
+
+
+def parse_hearing(body: str, date: str, committee: str | None) -> dict:
+    """One ATKUUL stage: FraasiToimija blocks grouped by FraasiRyhma (default = heard in person,
+    LausuntoVastaanotettu = written statement, EiLausuttavaa = nothing to say)."""
+    heard, written, none = [], [], []
+    group = "heard"
+    for part in re.split(rf"(?=<{TAG}FraasiRyhma\b)|(?=<{TAG}FraasiToimija\b)", body):
+        gm = re.match(rf'<{TAG}FraasiRyhma[^>]*fraasiRyhmitysKoodi="([^"]+)"', part)
+        if gm:
+            group = {"LausuntoVastaanotettu": "written", "EiLausuttavaa": "none"}.get(gm.group(1), "heard")
+            continue
+        if not re.match(rf"<{TAG}FraasiToimija\b", part):
+            continue
+        org = re.search(rf"<{TAG}FraasiYhteisoTeksti>([^<]*)<", part)
+        fn = re.search(rf"<{TAG}FraasiEtuNimi>([^<]*)<", part)
+        ln = re.search(rf"<{TAG}FraasiSukuNimi>([^<]*)<", part)
+        pos = re.search(rf"<{TAG}FraasiAsemaTeksti>([^<]*)<", part)
+        org_s = html.unescape(org.group(1)).strip() if org else ""
+        name = " ".join(html.unescape(g.group(1)).strip() for g in (fn, ln) if g and g.group(1).strip())
+        if group == "heard":
+            heard.append({"name": name or None, "org": org_s or None, "title": html.unescape(pos.group(1)).strip() if pos else None})
+        elif group == "written":
+            written.append(org_s or name)
+        else:
+            none.append(org_s or name)
+    return {"date": date, "committee": committee, "heard": [h for h in heard if h["org"] or h["name"]],
+            "written": [w for w in written if w], "none": [n for n in none if n]}
 
 
 def parse_proposal_text(x: str) -> dict:
@@ -138,7 +176,7 @@ def main():
     done, failed = 0, 0
     for num in sorted(nums, key=lambda n: (int(n.split("/")[1]), int(n.split("/")[0]))):
         old = cache.get(num)
-        if old:
+        if old and "hearings" in old:  # records from before the hearing/report parsing are refreshed once
             age = days_ago(old.get("fetched")) or 0
             if (old.get("final") and age < 60) or (not old.get("final") and age < 1):
                 continue

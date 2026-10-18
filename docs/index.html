@@ -199,6 +199,19 @@ a:hover{border-color:var(--fg)}
 .ev.kind-maaraaika{border-radius:0;background:var(--panel);border-color:var(--signal);width:10px;height:10px}
 .ev.kind-maaraaika.past{background:var(--signal)}
 .ev.unconfirmed{border-style:dashed}
+.ev.kind-ennuste{border-style:dotted;background:var(--panel);width:11px;height:11px}
+.vlist li.kind-ennuste::before{border-style:dotted;background:var(--panel)}
+.infl h4{margin:14px 0 6px}
+.infl .grp{margin:0 0 10px}
+.infl .orgs{display:flex;flex-wrap:wrap;gap:4px 6px;margin-top:4px}
+.infl .orgs span{font-size:12px;padding:1px 7px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.infl .orgs span.more{border-style:dashed;color:var(--dim)}
+.infl .m{font-size:12px;color:var(--dim)}
+.infl ul{margin:4px 0 0 0;padding-left:16px;font-size:13px}
+.infl li{margin:2px 0}
+.infl .dec{font-weight:600}
+.plan-pill{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.pill.infl-pill{border-style:dashed;color:var(--dim)}
 .ev.up{margin-top:-10px}.ev.down{margin-top:10px}
 .ev-label{position:absolute;transform:translateX(-50%);font-size:10.5px;white-space:nowrap;color:var(--fg);text-align:center;line-height:1.25;pointer-events:none}
 .ev-label .d{display:block;font-family:var(--mono);font-size:10px;color:var(--muted)}
@@ -481,6 +494,8 @@ th.sortable:hover{color:var(--fg)}
       <div class="panel"><h3><span>Seurannassa</span><span><span id="h-follow"></span> · <button class="linkbtn" id="open-sync" title="Siirrä tähdet ja aihealuevalinta toiselle koneelle">Siirrä toiselle koneelle</button></span></h3><ul class="list" id="l-follow"></ul></div>
       <div class="panel"><h3><span>Kansiot</span><span><span id="h-folders"></span> · <button class="linkbtn" id="open-folders2">Hallitse</button></span></h3><div class="chips fsel" id="l-folders"></div><div class="finfo" id="l-folder-info"></div></div>
       <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
+      <div class="panel"><h3><span>Vaikuta nyt <span class="micro" style="font-weight:400">avoimet vaikutusikkunat</span></span><span id="h-act"></span></h3><ul class="list" id="l-act"></ul></div>
+      <div class="panel"><h3><span>Ennakoivat signaalit <span class="micro" style="font-weight:400">ennen virallista vaihetta</span></span><span id="h-sig"></span></h3><ul class="list" id="l-sig"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
       <div class="panel"><h3><span>Uusimmat vaiheet</span><span>14 pv</span></h3><ul class="list" id="l-recent"></ul></div>
@@ -581,6 +596,7 @@ th.sortable:hover{color:var(--fg)}
   <div id="dr-src"></div>
   <div id="dr-folders"></div>
   <div id="dr-changes"></div>
+  <div id="dr-influence"></div>
   <h4 id="dr-h-mini">Aikajana</h4>
   <div class="mini" id="dr-mini"></div>
   <h4 id="dr-h-list">Vaiheet</h4>
@@ -592,7 +608,7 @@ let DATA = [];
 let META = {};
 const TOPICS = ["Työoikeus","Yhtiö ja rahoitus","Tietosuoja ja digi","Tekoäly ja kyber","Kestävyys ja ympäristö","Kuluttaja ja tuotteet","Verotus","Rikos ja prosessi","Hallinto ja hankinnat","Maahanmuutto"];
 const LAJIT=[["laki","Lait (HE)"],["asetus","Asetukset"],["eu","EU-säädökset"],["delegoitu","EU-delegoidut"],["kuuleminen","EU-kuulemiset"],["kirjelma","U/E-kirjelmät"]];
-const KIND_LABEL = {kanta:"Suomen kanta (U/E-kirjelmä)",lausunto:"Lausuntoaika",he:"HE annettu eduskunnalle",eduskunta:"Eduskuntakäsittely",hyvaksytty:"Eduskunta hyväksynyt",vahvistettu:"Vahvistettu",voimaan:"Voimaantulo",maaraaika:"Määräaika",muu:"Vaihe",ehdotus:"Komission ehdotus",sopu:"Poliittinen sopu",parlamentti:"Parlamentti",neuvosto:"Neuvosto",julkaistu:"Julkaistu EUVL:ssä",soveltaminen:"Soveltaminen alkaa"};
+const KIND_LABEL = {kanta:"Suomen kanta (U/E-kirjelmä)",lausunto:"Lausuntoaika",he:"HE annettu eduskunnalle",eduskunta:"Eduskuntakäsittely",hyvaksytty:"Eduskunta hyväksynyt",vahvistettu:"Vahvistettu",voimaan:"Voimaantulo",maaraaika:"Määräaika",muu:"Vaihe",ehdotus:"Komission ehdotus",sopu:"Poliittinen sopu",parlamentti:"Parlamentti",neuvosto:"Neuvosto",julkaistu:"Julkaistu EUVL:ssä",soveltaminen:"Soveltaminen alkaa",ennuste:"Ennuste (arvio)"};
 const STATUS_CLASS = {lausunnolla:"open",voimassa:"voimassa",vahvistettu:"voimassa",annettu:"voimassa","voimassa, soveltaminen vaiheittain":"voimassa",vastustamisaika:"open"};
 const TABHASH = {now:"tilannekuva",fi:"kansallinen",eu:"eu",done:"valmiit",hk:"kilpailutukset",yk:"yrityskaupat"};
 const HASHTAB = {tilannekuva:"now",kansallinen:"fi",eu:"eu",valmiit:"done",kilpailutukset:"hk",yrityskaupat:"yk"};
@@ -1023,7 +1039,7 @@ function renderTimeline(root, items, opts={}){
   items.forEach(it=>{
     const st=statusOf(it); const nx=nextEvent(it);
     let row=`<div class="row" role="button" tabindex="0" data-id="${esc(it.id)}" aria-label="${esc(it.title)}">`;
-    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${it.fiParty&&it.authority==="EU"?'<span class="pill fi" title="Jokin osapuoli on suomalainen (EUVL:n ennakkoilmoitus)">FI-osapuoli</span>':""}${changeBadge(it.id)}${opts.mini?"":folderBadge(it.id)}</div>`;
+    row+=`<div class="label"><div class="head"><div class="t">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${it.fiParty&&it.authority==="EU"?'<span class="pill fi" title="Jokin osapuoli on suomalainen (EUVL:n ennakkoilmoitus)">FI-osapuoli</span>':""}${changeBadge(it.id)}${opts.mini?"":influenceBadge(it)+folderBadge(it.id)}</div>`;
     if(!opts.mini&&it.parties&&it.parties.length) row+=`<div class="parties" title="${esc(it.parties.map(p=>p.name+(p.country?" ("+p.country+")":"")).join(" · "))}">${partiesHTML(it,3)}</div>`;
     row+=`<div class="next">${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(nx.label)}`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(it.ministry||it.procedure) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
@@ -1124,9 +1140,55 @@ function renderNow(){
   document.getElementById("h-changes").textContent=ch.length+" / 14 pv";
   document.getElementById("l-open").innerHTML=open.map(({it,e})=>li(it,pd(e.end),"päättyy",it.ministry)).join("")||'<li class="empty">Ei avoimia lausuntokierroksia</li>';
   document.getElementById("h-open").textContent=open.length+" kpl";
+  document.getElementById("l-act").innerHTML=influenceWindows().map(w=>`<li data-id="${esc(w.it.id)}" tabindex="0" role="button"><span class="d ${w.days<=7?"soon":""}">${fmt(w.end)}<br>${w.days===0?"tänään":w.days+" pv"}</span><span style="min-width:0"><div class="t">${esc(w.it.title)}</div><div class="m">${esc(w.tag)} · ${esc(w.who)}</div></span><span class="k">${esc(w.how)}</span></li>`).join("")||'<li class="empty">Ei avoimia vaikutusikkunoita</li>';
+  document.getElementById("h-act").textContent=influenceWindows().length+" kpl";
+  const sig=signalEvents();
+  document.getElementById("l-sig").innerHTML=sig.map(s=>`<li data-id="${esc(s.it.id)}" tabindex="0" role="button"><span class="d ${s.days>=0&&s.days<=7?"soon":""}">${fmt(s.date)}<br>${s.days<0?"myöhässä "+(-s.days)+" pv":s.days===0?"tänään":s.days+" pv"}</span><span style="min-width:0"><div class="t">${esc(s.it.title)}</div><div class="m">${esc(s.tag)} · ${esc(s.who)}</div></span><span class="k">${esc(s.how)}</span></li>`).join("")||'<li class="empty">Ei ennakoivia signaaleja</li>';
+  document.getElementById("h-sig").textContent=sig.length+" kpl";
   document.getElementById("l-next").innerHTML=next.slice(0,40).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 60 päivän sisällä</li>';
   document.getElementById("h-next").textContent=next.length+" vaihetta";
   document.getElementById("l-recent").innerHTML=recent.slice(0,30).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 14 päivän sisällä</li>';
+}
+
+/* Open influence windows across all datasets: where the user can still change the outcome, and how. */
+function influenceWindows(){
+  const out=[]; const push=(it,end,tag,who,how)=>{ const d=pd(end); const n=daysTo(d); if(n>=0&&n<=120) out.push({it,end:d,days:n,tag,who,how}); };
+  DATA.filter(matches).forEach(it=>{
+    if(it.done) return;
+    const oc=openConsultation(it);
+    if(oc) push(it,oc.end,it.laji==="kuuleminen"?"Kuuleminen":"Lausuntokierros",it.authority||it.ministry||(it.scope==="eu"?"EU":"FI"),it.laji==="kuuleminen"?"Anna palaute":"Anna lausunto");
+    if(it.laji==="delegoitu"&&it.status==="vastustamisaika"&&it.objectionEnd) push(it,it.objectionEnd,"Vastustamisaika","EP ja neuvosto","Vaikuta MEP:iin / ministeriöön");
+    if(it.scope==="fi"&&it.laji==="laki"&&it.events.some(e=>e.kind==="he")&&!it.events.some(e=>e.kind==="hyvaksytty"||e.kind==="vahvistettu")){ const last=it.events.filter(e=>e.kind==="valiokunta"&&pd(e.date)<=TODAY).slice(-1)[0]; if(last&&daysTo(pd(last.date))>=-45) push(it,new Date(TODAY.getTime()+14*864e5),"Valiokuntakäsittely",(it.committees||[])[0]||"eduskunta","Pyydä tulla kuulluksi"); }
+  });
+  if(MERGERS_LOADED) MERGERS.filter(it=>baseVisible(it)&&(it.authority==="KKV"||it.fiParty||state.follow.has(it.id))).forEach(it=>{ const oc=openConsultation(it); if(oc&&YK_OPEN.has(it.status)) push(it,oc.end,it.authority==="KKV"?"Kuuleminen (KKV)":"Huomautusaika (EUVL)",it.authority==="KKV"?"KKV":"Komissio",it.authority==="KKV"?"Anna lausunto":"Huomautus komissiolle"); });
+  if(TENDERS_LOADED) TENDERS.filter(baseVisible).forEach(it=>{
+    if(state.ptopics.size&&!it.topics.some(x=>state.ptopics.has(x))) return;
+    (it.events||[]).filter(e=>e.kind==="lausunto"&&e.end&&pd(e.date)<=TODAY&&pd(e.end)>=TODAY).forEach(e=>push(it,e.end,"Markkinakartoitus",it.buyer||"","Vastaa – vaikuta tarjouspyyntöön"));
+    if(it.status==="valitusaika"){ const e=(it.events||[]).find(x=>x.kind==="maaraaika"); if(e) push(it,e.date,"Suorahankinnan valitusaika",it.buyer||"","Valitus markkinaoikeuteen"); }
+  });
+  const perTag={}; // no single window type (e.g. market consultations) may crowd out the others
+  return out.sort((a,b)=>a.end-b.end).filter(w=>(perTag[w.tag]=(perTag[w.tag]||0)+1)<=8).slice(0,40);
+}
+
+/* Forward-looking signals: planned HE weeks, committee agendas, re-tender forecasts, planned notices – things that
+   are not yet official stages but tell what is coming. */
+function signalEvents(){
+  const out=[]; const push=(it,date,tag,who,how)=>{ const d=pd(date); const n=daysTo(d); if(n>=-30&&n<=120) out.push({it,date:d,days:n,tag,who,how}); };
+  DATA.filter(matches).forEach(it=>{
+    if(it.done) return;
+    it.events.forEach(e=>{
+      if(e.kind==="ennuste") push(it,e.date,it.scope==="fi"?"Lainsäädäntösuunnitelma":"Ennuste",it.ministry||it.authority||"",e.label.replace(/\s*\(lainsäädäntösuunnitelma\)/,""));
+      else if(e.kind==="eduskunta"&&/esityslistalla/.test(e.label)&&pd(e.date)>=TODAY) push(it,e.date,"Valiokunnan esityslista","eduskunta",e.label.replace(/^Valiokunnan esityslistalla\s*/,""));
+    });
+    if(it.plan&&it.plan.state==="POISTETTU_ISTUNTOKAUDEN_AIKANA"&&it.plan.dropped&&daysTo(pd(it.plan.dropped))>=-30) out.push({it,date:pd(it.plan.dropped),days:daysTo(pd(it.plan.dropped)),tag:"Lainsäädäntösuunnitelma",who:it.ministry||"",how:"Poistettu istuntokauden HE-luettelosta"});
+  });
+  if(TENDERS_LOADED) TENDERS.filter(baseVisible).forEach(it=>{
+    if(!["ennuste","kalenteri"].includes(stageOf(it))) return;
+    if(state.ptopics.size&&!it.topics.some(x=>state.ptopics.has(x))) return;
+    const e=(it.events||[]).find(x=>x.kind==="ennuste"); if(e) push(it,e.date,stageOf(it)==="ennuste"?"Uudelleenkilpailutus (ennuste)":"Hankintakalenteri",it.buyer||"",e.label);
+  });
+  const perTag={};
+  return out.sort((a,b)=>(a.days<0)-(b.days<0)||a.date-b.date).filter(s=>(perTag[s.tag]=(perTag[s.tag]||0)+1)<=12).slice(0,40);
 }
 
 /* ---------- completed table ---------- */
@@ -1209,6 +1271,54 @@ function openTender(it){
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
 }
+function influenceBadge(it){
+  const n=it.influenceN; if(!n) return "";
+  const parts=[]; if(n.lausunnot) parts.push(n.lausunnot+" lausuntoa"); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
+  if(!parts.length) return "";
+  return `<span class="pill infl-pill" title="Vaikuttaminen: ketkä lausuivat, keitä kuultiin, ketkä lobbasivat – avaa rivi">${esc(parts.join(" · "))}</span>`;
+}
+function planLine(it){
+  const p=it.plan; if(!p) return "";
+  const given=it.events.some(e=>e.kind==="he");
+  let s=given?`Lainsäädäntösuunnitelma: vko ${esc(p.week)}`:`Lainsäädäntösuunnitelma: suunniteltu antaminen vko ${esc(p.week)} (${fmt(pd(p.date))})`;
+  if(p.previous) s+=` · siirtynyt (aiemmin vko ${esc(p.previous)})`;
+  if(p.state==="POISTETTU_ISTUNTOKAUDEN_AIKANA") s=`Lainsäädäntösuunnitelma: <b>poistettu istuntokauden HE-luettelosta</b>${p.dropped?" "+fmt(pd(p.dropped)):""}`;
+  else if(p.state==="LISATTY_ISTUNTOKAUDEN_AIKANA") s+=` · lisätty kesken istuntokauden${p.added?" "+fmt(pd(p.added)):""}`;
+  if(p.urgent) s+=" · kiireellinen"; if(p.pev) s+=" · PeV:n lausunto tarvitaan";
+  return `<div class="micro plan-pill" style="margin-top:6px">${s}</div>`;
+}
+let INFLUENCE=null, INFLUENCE_P=null;
+function loadInfluence(){
+  if(INFLUENCE) return Promise.resolve(INFLUENCE);
+  if(window.__INFLUENCE){ INFLUENCE=window.__INFLUENCE; return Promise.resolve(INFLUENCE); }
+  INFLUENCE_P=INFLUENCE_P||fetch("data/vaikuttaminen.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(j=>INFLUENCE=(j&&j.items)||{}).catch(()=>INFLUENCE={});
+  return INFLUENCE_P;
+}
+const orgChips=(list,max)=>{ list=list||[]; const shown=list.slice(0,max||12); return `<div class="orgs">${shown.map(o=>`<span>${esc(o)}</span>`).join("")}${list.length>shown.length?`<span class="more">+${list.length-shown.length} muuta</span>`:""}</div>`; };
+function influenceHTML(inf){
+  if(!inf) return "";
+  let h='<div class="infl"><h4>Vaikuttaminen</h4>';
+  const L=inf.lausunnot;
+  if(L) h+=`<div class="grp"><div><b>Lausuntokierros:</b> ${L.n} lausuntoa${L.eiLausuttavaa?` (${L.eiLausuttavaa} ”ei lausuttavaa”)`:""}${L.viimeisin?` · viimeisin ${fmt(pd(L.viimeisin))}`:""}${L.url?` · <a href="${esc(L.url)}" target="_blank" rel="noopener">lausuntopalvelu.fi</a>`:""}</div>${orgChips(L.orgs,14)}</div>`;
+  (inf.esityslistat||[]).filter(a=>(a.start||"")>=TODAY.toISOString().slice(0,10)).forEach(a=>{ h+=`<div class="grp"><div><b>Valiokunnan esityslistalla</b> ${fmt(pd(a.start.slice(0,10)))} · ${esc(a.committeeName||a.committee||"")} · ${esc(a.stageName||a.stage||"")}${a.experts&&a.experts.length?` · kuultavina ${a.experts.length}`:""}</div>${a.experts&&a.experts.length?orgChips(a.experts.map(x=>x.org||x.name).filter(Boolean),10):""}${a.written&&a.written.length?`<div class="m">Kirjalliset lausunnot: ${esc(a.written.slice(0,8).join(", "))}${a.written.length>8?" …":""}</div>`:""}</div>`; });
+  const K=inf.kuulemiset||[];
+  if(K.length){ const orgs=[...new Set(K.flatMap(k=>(k.heard||[]).map(x=>x.org).concat(k.written||[]).filter(Boolean)))]; const nH=K.reduce((s,k)=>s+(k.heard||[]).length,0), nW=K.reduce((s,k)=>s+(k.written||[]).length,0);
+    h+=`<div class="grp"><div><b>Valiokuntakuulemiset:</b> ${K.length} kuulemista · ${nH} kuultavaa, ${nW} kirjallista lausuntoa (${esc([...new Set(K.map(k=>k.committee).filter(Boolean))].join(", "))})</div>${orgChips(orgs,16)}</div>`; }
+  const M=inf.mietinnot||[];
+  if(M.length) h+=`<div class="grp"><div><b>Valiokunnan mietintö/lausunto:</b></div><ul>${M.map(m=>`<li>${m.url?`<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.tunnus)}</a>`:esc(m.tunnus)} ${fmt(pd(m.date))}${m.decision?` – <span class="dec">${esc(m.decision)}</span>`:""}${m.changedSections&&m.changedSections.length?` · muutettu: ${esc(m.changedSections.slice(0,8).join(", "))}${m.changedSections.length>8?" …":""}`:""}${m.dissent?` · vastalauseita ${m.dissent}${m.dissentParties&&m.dissentParties.length?" ("+esc(m.dissentParties.join(", "))+")":""}`:""}</li>`).join("")}</ul></div>`;
+  const A=inf.asiantuntijalausunnot||[];
+  if(A.length) h+=`<div class="grp"><div><b>Asiantuntijalausunnot eduskunnassa:</b> ${A.length} kpl</div><ul>${A.slice(0,12).map(s=>`<li>${fmt(pd(s.date))} ${esc(s.committee||"")} – ${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.org||s.person||s.title||"lausunto")}</a>`:esc(s.org||s.person||"")}</li>`).join("")}${A.length>12?`<li class="m">… ja ${A.length-12} muuta</li>`:""}</ul></div>`;
+  const B=inf.lobbaus;
+  if(B) h+=`<div class="grp"><div><b>Avoimuusrekisteri:</b> ${B.n} toimintailmoitusta, ${B.contacts} yhteydenottoa (${esc((B.terms||[]).join(", "))})${B.targets&&B.targets.length?` · kohteet: ${esc(B.targets.map(x=>x.name.replace(/\s*\([A-ZÄÖ]+\)$/,"")+" "+x.n).join(", "))}`:""}</div>${orgChips(B.orgs,14)}${B.customers&&B.customers.length?`<div class="m">Asiakkaiden puolesta: ${esc(B.customers.join(", "))}</div>`:""}${B.methods&&B.methods.length?`<div class="m">${esc(B.methods.map(x=>x.name+" "+x.n).join(" · "))}</div>`:""}</div>`;
+  return h+"</div>";
+}
+function renderInfluence(it){
+  const el=document.getElementById("dr-influence"); if(!el) return;
+  const n=it.influenceN; el.innerHTML="";
+  if(!n||!Object.values(n).some(v=>v)) return;
+  el.innerHTML='<div class="infl"><h4>Vaikuttaminen</h4><div class="m">Ladataan…</div></div>';
+  loadInfluence().then(all=>{ if(drawer.dataset.id!==it.id) return; el.innerHTML=influenceHTML(all[it.id]); });
+}
 function openItem(id){
   const it=findItem(id); if(!it) return;
   if(it.scope==="hankinta"){ openTender(it); return; }
@@ -1228,7 +1338,7 @@ function openItem(id){
   drawer.dataset.id=it.id;
   const myCh=CHANGES.filter(c=>c.id===it.id).slice(0,8);
   document.getElementById("dr-changes").innerHTML=myCh.length?`<h4>Muutokset</h4><ul class="vlist">${myCh.map(c=>`<li class="past"><div class="d">${fmt(pd(c.date))}</div><div class="l">${esc(c.text)}</div></li>`).join("")}</ul>`:"";
-  document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="micro" style="margin-top:8px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}`;
+  document.getElementById("dr-src").innerHTML=`<div class="srclinks">${links.join("")}</div>${it.ministry?`<div class="micro" style="margin-top:8px">${esc(it.ministry)}${it.committees&&it.committees.length?" · "+esc(it.committees.join(", ")):""}</div>`:""}${planLine(it)}`;
   renderDrawerFolders(it.id);
   renderTimeline(document.getElementById("dr-mini"), [it], {mini:true,labels:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
@@ -1236,8 +1346,9 @@ function openItem(id){
     const d=pd(e.date), end=e.end?pd(e.end):null; const past=(end||d)<=TODAY; const now=end&&d<=TODAY&&end>=TODAY;
     list.insertAdjacentHTML("beforeend",`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}">
       <div class="d">${fmt(d)}${end?" – "+fmt(end):""}</div>
-      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?'<span class="unc">tarkistamaton</span>':""}</div></li>`);
+      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?`<span class="unc">${e.kind==="ennuste"?"arvio":"tarkistamaton"}</span>`:""}</div></li>`);
   });
+  renderInfluence(it);
   drawer.hidden=false; scrim.hidden=false; document.body.style.overflow="hidden";
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();
@@ -1508,7 +1619,7 @@ function render(){
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
 
-const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus"};
+const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus",avoimuus:"avoimuusrekisteri",vaski:"eduskunta (valiokunnat)",caselaw:"tuomioistuimet",curia:"EU-tuomioistuin",toimiala:"toimialakerros",sopimuskaudet:"Hilma (sopimuskaudet)",suunnitelmat:"kilpailutussuunnitelmat",ted:"TED",paatokset:"hankintapäätökset",toimittajat:"Tutkihankintoja",kkv_valvonta:"KKV (valvonta)",eu_signals:"EU-ennakointi"};
 function renderStatus(){
   const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
   const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;

@@ -6,6 +6,7 @@ API: https://api.hankeikkuna.fi/api  (public, no key)
 from __future__ import annotations
 
 import datetime as dt
+import re
 
 from common import CACHE_DIR, TODAY, get_json, log, post_json, save_json
 
@@ -61,6 +62,29 @@ def search(body: dict) -> list[dict]:
     return results
 
 
+NO_STATEMENT_RE = re.compile(r"ei lausu(?:ttavaa|ntoa)|inget utlåtande|ingenting att yttra", re.I)
+
+
+def summarise_statements(docs: list[dict], lausuntopalvelu: str | None) -> dict | None:
+    """Who answered the consultation: the LAUSUNTO documents ministries file in Hankeikkuna (organisation,
+    date, PDF). Kept as a compact summary – counts, the organisations (≤80), the latest date – not the texts."""
+    if not docs:
+        return None
+    orgs: dict[str, int] = {}
+    none = 0
+    latest = ""
+    for d in docs:
+        org = _fi(d.get("laatija")) or _fi(d.get("nimi")).split(";")[0].strip()
+        org = re.sub(r"\s*\(\d+\)\s*$", "", org).strip()
+        if NO_STATEMENT_RE.search(_fi(d.get("nimi"))):
+            none += 1
+        if org:
+            orgs[org] = orgs.get(org, 0) + 1
+        latest = max(latest, d.get("laatimispaiva") or (d.get("luotu") or "")[:10] or "")
+    return {"n": len(docs), "eiLausuttavaa": none, "orgs": sorted(orgs, key=lambda o: (-orgs[o], o))[:80],
+            "viimeisin": latest or None, "url": lausuntopalvelu}
+
+
 def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
     k = r["kohde"]
     he = (r.get("lainsaadanto") or {}).get("heTiedot") or {}
@@ -73,10 +97,14 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
         etapit.append({"date": e["alku"], "end": e.get("loppu"), "label": _fi(e.get("nimi")) or label,
                        "kind": kind, "tyyppi": e["tyyppi"]})
     docs = []
+    statements = []
     for d in r.get("asiakirjat") or []:
         if d.get("tyyppi") in ("LAUSUNTOPYYNTO", "ESITYS", "YHTEENVETO") and d.get("url"):
             docs.append({"tyyppi": d["tyyppi"], "nimi": _fi(d.get("nimi")), "url": d["url"],
                          "pvm": d.get("laatimispaiva") or (d.get("luotu") or "")[:10]})
+        elif d.get("tyyppi") == "LAUSUNTO":
+            statements.append(d)
+    lausuntopalvelu = next((_fi(l.get("url")) for l in r.get("linkit") or [] if "lausuntopalvelu" in (_fi(l.get("url")) or "")), None)
     return {
         "uuid": k["uuid"],
         "tunnus": k.get("tunnus"),
@@ -97,9 +125,16 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
         "annettuEduskunnalle": tila.get("annettuEduskunnallePaiva"),
         "esittelyvuosi": tila.get("esittelyvuosi"),
         "esittelyviikko": tila.get("esittelyviikko"),
+        "vanhaEsittelyviikko": tila.get("vanhaEsittelyviikko"),
+        "vanhaEsittelyvuosi": tila.get("vanhaEsittelyvuosi"),
+        "lisattyPaiva": tila.get("ilmoitettuLisattavaksiPaiva"),
+        "poistettuPaiva": tila.get("ilmoitettuPoistettavaksiPaiva"),
+        "kiireellinen": bool(he.get("kiireellinen")),
+        "pevLausunto": he.get("perustuslakivaliokunnanLausuntoVaaditaan") == "KYLLA",
         "rauennut": bool(he.get("rauennut")),
         "etapit": sorted(etapit, key=lambda e: e["date"]),
         "asiakirjat": sorted(docs, key=lambda d: d["pvm"] or "")[-6:],
+        "lausunnot": summarise_statements(statements, lausuntopalvelu),
         "url": f"https://valtioneuvosto.fi/hanke?tunnus={k.get('tunnus')}" if k.get("tunnus") else None,
     }
 

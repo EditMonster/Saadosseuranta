@@ -11,6 +11,7 @@ import sys
 import traceback
 
 import build
+import fetch_avoimuus
 import fetch_eduskunta
 import fetch_eu
 import fetch_eu_mergers
@@ -37,6 +38,7 @@ STEPS = [
     ("eu_mergers", fetch_eu_mergers.main),
     ("regdel", fetch_regdel.main),
     ("mao", fetch_mao.main),
+    ("avoimuus", fetch_avoimuus.main),
 ]
 
 

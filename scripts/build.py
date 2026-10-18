@@ -43,10 +43,121 @@ def status_class_fi(ev: list[dict], has_he: bool, vahvistettu: bool, rauennut: b
     return "valmistelussa"
 
 
+def week_thursday(year: int, week: int) -> str | None:
+    """Government proposals are given at Thursday's plenary session of the Government: the planned ISO week → that Thursday."""
+    try:
+        return dt.date.fromisocalendar(int(year), int(week), 4).isoformat()
+    except (ValueError, TypeError):
+        return None
+
+
+def plan_info(p: dict) -> dict | None:
+    """The legislative plan (lainsäädäntösuunnitelma) as entered in Hankeikkuna: planned week, slip, dropped/added mid-session."""
+    if not p.get("esittelyviikko") or not p.get("esittelyvuosi"):
+        return None
+    date = week_thursday(p["esittelyvuosi"], p["esittelyviikko"])
+    if not date:
+        return None
+    out = {"date": date, "week": f"{p['esittelyviikko']}/{p['esittelyvuosi']}", "state": p.get("heTila")}
+    if p.get("vanhaEsittelyviikko") and p.get("vanhaEsittelyvuosi") and (p["vanhaEsittelyviikko"], p["vanhaEsittelyvuosi"]) != (p["esittelyviikko"], p["esittelyvuosi"]):
+        out["previous"] = f"{p['vanhaEsittelyviikko']}/{p['vanhaEsittelyvuosi']}"
+    if p.get("kiireellinen"):
+        out["urgent"] = True
+    if p.get("pevLausunto"):
+        out["pev"] = True
+    if p.get("poistettuPaiva"):
+        out["dropped"] = p["poistettuPaiva"]
+    if p.get("lisattyPaiva"):
+        out["added"] = p["lisattyPaiva"]
+    return out
+
+
+def plan_events(plan: dict | None, he_given: bool) -> list[dict]:
+    if not plan or he_given or plan.get("state") == "POISTETTU_ISTUNTOKAUDEN_AIKANA":
+        return []
+    late = plan["date"] < TODAY.isoformat()
+    label = f"Suunniteltu antaminen eduskunnalle vko {plan['week']} (lainsäädäntösuunnitelma)"
+    if plan.get("previous"):
+        label += f" – siirtynyt, aiemmin vko {plan['previous']}"
+    if late:
+        label += " – ei vielä annettu"
+    return [{"date": plan["date"], "label": label, "kind": "ennuste", "confirmed": False}]
+
+
+def hearing_events(rec: dict | None) -> list[dict]:
+    ev = []
+    for h in (rec or {}).get("hearings") or []:
+        n_heard, n_written = len(h.get("heard") or []), len(h.get("written") or [])
+        if not n_heard and not n_written:
+            continue
+        com = (h.get("committee") or "valiokunta")
+        parts = []
+        if n_heard:
+            parts.append(f"{n_heard} kuultavaa")
+        if n_written:
+            parts.append(f"{n_written} kirjallista lausuntoa")
+        ev.append({"date": h["date"], "label": f"Asiantuntijakuuleminen ({com}): " + ", ".join(parts), "kind": "eduskunta", "confirmed": True})
+    return ev
+
+
+def influence_for(p: dict | None, rec: dict | None, hes: list[str], lobby: dict, vaski: dict) -> dict | None:
+    """Everything the page shows under "Vaikuttaminen": who answered the consultation (Hankeikkuna LAUSUNTO
+    documents), who was heard in committee (käsittelytiedot), the committee report (Vaski) and who lobbied
+    (avoimuusrekisteri, keyed by the Hankeikkuna tunnus or an HE number)."""
+    out: dict = {}
+    if p and p.get("lausunnot"):
+        out["lausunnot"] = {**p["lausunnot"], "orgs": (p["lausunnot"].get("orgs") or [])[:40]}
+    hearings = [h for h in ((rec or {}).get("hearings") or []) if h.get("heard") or h.get("written") or h.get("none")]
+    if hearings:
+        out["kuulemiset"] = hearings
+    reports = []
+    for r in (rec or {}).get("reports") or []:
+        det = (vaski.get("reports") or {}).get(r["tunnus"]) or {}
+        reports.append({**r, **{k: det[k] for k in ("decision", "decisionText", "changedSections", "changedLaws", "dissent", "dissentParties", "experts", "url") if k in det}})
+    if reports:
+        out["mietinnot"] = reports
+    keys = ([p["tunnus"]] if p and p.get("tunnus") else []) + list(hes)
+    lob = None
+    for k in keys:
+        lob = (lobby.get("byProject") or {}).get(k) or (lobby.get("byHE") or {}).get(k)
+        if lob:
+            break
+    if lob:
+        out["lobbaus"] = lob
+    stm = []
+    for k in [f"HE {h} vp" for h in hes]:
+        stm.extend((vaski.get("statements") or {}).get(k) or [])
+    if stm:
+        out["asiantuntijalausunnot"] = sorted(stm, key=lambda s: s.get("date") or "", reverse=True)[:60]
+    agendas = []
+    for a in (vaski.get("agendas") or {}).values():
+        for it in a.get("items") or []:
+            if it.get("asia") in {f"HE {h} vp" for h in hes}:
+                agendas.append({"start": a.get("start"), "committee": a.get("committee"), "committeeName": a.get("committeeName"), "stage": it.get("stage"),
+                                "stageName": it.get("stageName"), "experts": it.get("experts") or [], "written": it.get("written") or []})
+    if agendas:
+        out["esityslistat"] = sorted(agendas, key=lambda a: a.get("start") or "")
+    return out or None
+
+
+def agenda_events(influence: dict | None) -> list[dict]:
+    """Upcoming committee meetings from published agendas (2–4 days ahead): the window to ask to be heard."""
+    ev = []
+    for a in (influence or {}).get("esityslistat") or []:
+        day = (a.get("start") or "")[:10]
+        if not day or day < TODAY.isoformat():
+            continue
+        who = f" – {len(a['experts'])} kuultavaa" if a.get("experts") else ""
+        ev.append({"date": day, "label": f"Valiokunnan esityslistalla ({a.get('committee') or ''}): {a.get('stageName') or a.get('stage') or 'käsittely'}{who}", "kind": "eduskunta", "confirmed": True})
+    return ev
+
+
 def build_fi(topics_cfg, settings) -> list[dict]:
     hk = load_json(CACHE_DIR / "hankeikkuna.json", {"items": []})["items"]
     ek = load_json(CACHE_DIR / "eduskunta.json", {"items": {}})["items"]
     fx = load_json(CACHE_DIR / "finlex.json", {"items": {}})["items"]
+    lobby = load_json(CACHE_DIR / "avoimuus.json", {}) or {}
+    vaski = load_json(CACHE_DIR / "vaski.json", {}) or {}
     items, used_he = [], set()
 
     def eduskunta_events(rec: dict) -> list[dict]:
@@ -110,9 +221,13 @@ def build_fi(topics_cfg, settings) -> list[dict]:
                     ev.append({"date": d["pvm"], "label": "Lausuntopyyntö lähetetty", "kind": "lausunto", "confirmed": True, "url": d["url"]})
                     break
         if rec:
-            ev += eduskunta_events(rec)
+            ev += eduskunta_events(rec) + hearing_events(rec)
         elif p.get("annettuEduskunnalle"):
             ev.append({"date": p["annettuEduskunnalle"], "label": "HE annettu eduskunnalle", "kind": "he", "confirmed": True})
+        plan = plan_info(p)
+        ev += plan_events(plan, bool(hes) or bool(p.get("annettuEduskunnalle")))
+        influence = influence_for(p, rec, hes, lobby, vaski)
+        ev += agenda_events(influence)
         sks = list(dict.fromkeys((rec.get("sk", []) if rec else []) + (p.get("skNumerot") or [])))
         vev = finlex_events(sks)
         ev += vev
@@ -140,12 +255,15 @@ def build_fi(topics_cfg, settings) -> list[dict]:
                           has_he=bool(hes), vahvistettu=bool((rec or {}).get("vahvistettu")), rauennut=rauennut,
                           summary=summary, source=links.get("finlex") or p.get("url"), links=links, ministry=p.get("ministerio", ""),
                           text=text, extra={"tunnus": p.get("tunnus"), "sk": sks, "heNumerot": hes, "teemat": p.get("teemat", []),
-                                             "committees": (rec or {}).get("committees", []), "updated": p.get("muokattu")}))
+                                             "committees": (rec or {}).get("committees", []), "updated": p.get("muokattu"),
+                                             "plan": plan, "influence": influence}))
     # proposals known to Eduskunta/Finlex but not linked to a Hankeikkuna project
     for num, rec in ek.items():
         if num in used_he or not rec.get("title"):
             continue
-        ev = eduskunta_events(rec) + finlex_events(rec.get("sk", []))
+        ev = eduskunta_events(rec) + hearing_events(rec) + finlex_events(rec.get("sk", []))
+        influence = influence_for(None, rec, [num], lobby, vaski)
+        ev += agenda_events(influence)
         if not any(e["kind"] == "voimaan" for e in ev) and rec.get("ehdotettuVoimaantulo"):
             ev.append({"date": rec["ehdotettuVoimaantulo"], "label": "Ehdotettu voimaantulo", "kind": "voimaan", "confirmed": True})
         if rec.get("lausuntoaika") and all(rec["lausuntoaika"]):
@@ -157,7 +275,7 @@ def build_fi(topics_cfg, settings) -> list[dict]:
         ref2 = f"{rec['sk'][0]} · HE {num} vp" if rec.get("vahvistettu") and rec.get("sk") else f"HE {num} vp"
         items.append(make(f"fi-he-{n}-{y}", rec["title"], ref2, ev, has_he=True, vahvistettu=bool(rec.get("vahvistettu")),
                           rauennut=rec.get("tila") == "Rauennut", summary=summary, source=links["finlex"], links=links, ministry="",
-                          text=text, extra={"sk": rec.get("sk", []), "heNumerot": [num], "committees": rec.get("committees", [])}))
+                          text=text, extra={"sk": rec.get("sk", []), "heNumerot": [num], "committees": rec.get("committees", []), "influence": influence}))
     return items
 
 
@@ -593,6 +711,8 @@ def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> l
             key = (e["date"], e.get("end"), e["label"])
             if key in old_ev:
                 continue
+            if e["label"].startswith("Asiantuntijakuuleminen") and e["date"] < (dt.date.fromisoformat(day) - dt.timedelta(days=14)).isoformat():
+                continue  # backfilled hearing history is not news
             prev = old_by_label.get(e["label"])
             if prev and e["label"] not in seen_labels and (prev["date"] != e["date"] or prev.get("end") != e.get("end")):
                 seen_labels.add(e["label"])
@@ -709,6 +829,18 @@ def main():
         raise SystemExit(2)
     # items.json is deterministic (no timestamp) so git only records real content changes;
     # meta.json carries the run timestamp and counts.
+    # The influence details (who answered, who was heard, who lobbied) are bulky and only needed when a
+    # row is opened: they go to vaikuttaminen.json and the item keeps a count summary for badges.
+    influence = {}
+    for it in keep:
+        inf = it.pop("influence", None)
+        if not inf:
+            continue
+        influence[it["id"]] = inf
+        it["influenceN"] = {"lausunnot": (inf.get("lausunnot") or {}).get("n", 0), "kuulemiset": len(inf.get("kuulemiset") or []),
+                            "mietinnot": len(inf.get("mietinnot") or []), "lobbaus": (inf.get("lobbaus") or {}).get("n", 0),
+                            "asiantuntijalausunnot": len(inf.get("asiantuntijalausunnot") or []), "esityslistat": len(inf.get("esityslistat") or [])}
+    save_json(OUT_DIR / "vaikuttaminen.json", {"items": influence}, compact=True)
     save_json(OUT_DIR / "items.json", {"items": keep}, compact=True)
     save_json(OUT_DIR / "meta.json", meta, compact=True)
     (OUT_DIR / "saadosseuranta.ics").write_text(build_ics(keep), encoding="utf-8")
