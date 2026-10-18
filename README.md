@@ -97,8 +97,9 @@ docs/                GitHub Pages -sivu: index.html, logot, data/items.json + ha
 ## Käyttöönotto
 
 1. Luo GitHub-repo ja työnnä tämä sisältö sinne.
-2. **Settings → Pages → Source: Deploy from a branch → `main` / `/docs`.** Sivu tulee osoitteeseen
-   `https://<käyttäjä>.github.io/<repo>/`.
+2. **Settings → Pages → Source: GitHub Actions.** `deploy.yml` julkaisee `docs/`-hakemiston testien mentyä läpi; sivu
+   tulee osoitteeseen `https://<käyttäjä>.github.io/<repo>/`. (Vaihtoehto *Deploy from a branch → main /docs* toimii
+   myös, mutta silloin testit eivät portita julkaisua.)
 3. **Settings → Actions → General → Workflow permissions: Read and write permissions** (jotta
    workflow voi committata aineiston).
 4. Aja workflow kerran käsin: **Actions → Päivitä säädösaineisto → Run workflow.** Sen jälkeen se
@@ -187,8 +188,9 @@ python -m http.server -d docs 8000  # http://localhost:8000
   `data/cache`-poluille, pakotettu push) tai siirtää julkaisu Pages-artefaktiksi (Settings → Pages → Source: GitHub
   Actions), jolloin `docs/data` voidaan jättää versioimatta. Actions käyttää matalaa kloonia, joten CI ei hidastu sitä ennen.
 * **Dependabot** tekee kuukausittain PR:t toimintojen ja kirjastojen päivityksistä; testit ajetaan PR:lle ennen yhdistämistä.
-* **Pages-lähteen vaihto** `GitHub Actions` -tilaan on edelleen suositeltava käsin tehtävä asetus: silloin myös käsin tehty
-  rikkinäinen push ei pääse julkaistuun sivuun ennen testejä.
+* **Pages julkaistaan Actionsista** (Settings → Pages → Source: GitHub Actions): jokainen julkaisu kulkee `deploy.yml`:n
+  testien läpi, myös käsin tehty push. Siksi jokaisen aineistoa committaavan työnkulun (`update.yml`, `kansiopyynto.yml`)
+  on kutsuttava `deploy.yml`:ää – pelkkä push main-haaraan ei enää julkaise.
 
 ## Kustannus
 

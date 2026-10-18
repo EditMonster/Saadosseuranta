@@ -14,6 +14,8 @@ on:
 permissions:
   contents: write
   issues: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: kansiopyynto
@@ -61,6 +63,15 @@ jobs:
           msg=$(python -c "import json;print(json.load(open('.kansiopyynto.json'))['message'])")
           gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} --body "$msg"
           gh issue close ${{ github.event.issue.number }} -R ${{ github.repository }}
+
+  # Pages julkaistaan Actionsista, joten botin commit ei julkaise itsestään: ajetaan testit ja julkaisu heti.
+  julkaise:
+    needs: toteuta
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
   odottaa:
     if: >-
