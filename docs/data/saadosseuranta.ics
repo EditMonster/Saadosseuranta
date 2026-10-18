@@ -1364,24 +1364,6 @@ DESCRIPTION:Voimaan (898/2026) · 898/2026 · https://www.finlex.fi/fi/lainsaada
 URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-16bb79ef-voimaan-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liittyen hallituksen esitykseen eduskunnalle sosiaaliturvaetuuksien valtion osuuksien maksamisesta
-DESCRIPTION:Voimaan (899/2026) · 898/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-16bb79ef-voimaan-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liittyen hallituksen esitykseen eduskunnalle sosiaaliturvaetuuksien valtion osuuksien maksamisesta
-DESCRIPTION:Voimaan (900/2026) · 898/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-16bb79ef-voimaan-2026-12-06@saadosseuranta
 DTSTAMP:20261206T000000Z
 DTSTART;VALUE=DATE:20261206
@@ -2363,15 +2345,6 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19293-lausunto-2026-12-14@saadosseuranta
-DTSTAMP:20261214T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
-SUMMARY:[EU] Lausuntoaika päättyy: Euroopan datakeskukset – vähimmäistehokkuusvaatimukset
-DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-hys-15492-lausunto-2026-12-13@saadosseuranta
 DTSTAMP:20261213T000000Z
 DTSTART;VALUE=DATE:20261213
@@ -2397,24 +2370,6 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
 DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
-DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
-DTSTAMP:20261201T000000Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:[EU] Lausuntoaika päättyy: Kansainvälisten julkisten hankintojen välineen uudelleentarkastelu
-DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18512_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18512_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
