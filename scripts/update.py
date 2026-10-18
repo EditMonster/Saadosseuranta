@@ -43,7 +43,6 @@ STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
     ("vaski", fetch_vaski.main),
-    ("hediff", fetch_hediff.main),
     ("finlex", fetch_finlex.main),
     ("eu", fetch_eu.main),
     ("eu_signals", fetch_eu_signals.main),
@@ -65,6 +64,7 @@ STEPS = [
     ("curia", fetch_curia.main),
     ("toimiala", fetch_toimiala.main),
     ("history", fetch_history.main),
+    ("hediff", fetch_hediff.main),  # last: eduskunta's API throttles after the vaski/eduskunta steps
 ]
 
 

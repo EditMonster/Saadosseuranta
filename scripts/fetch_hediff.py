@@ -984,6 +984,11 @@ def main():
             failures += 1
             stats["failed"] += 1
             log(f"warn: hediff HE {num}: {str(e)[:160]}")
+            if "403" in str(e) or "429" in str(e):
+                # throttled (seen from GitHub Actions after the other eduskunta steps): keep what we have, resume next run
+                log(f"hediff: rajapinta rajoitti pyyntöjä ({str(e)[:80]}) – jatketaan seuraavalla ajolla")
+                stats["throttled"] = True
+                break
             if failures >= 3 and (stats["he"] <= failures or isinstance(e, RuntimeError)):
                 save_json(OUT, {"fetched": cache.get("fetched"), "he": he_cache}, compact=True)
                 raise RuntimeError(f"vaski ei vastaa: {e}") from e
