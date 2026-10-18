@@ -384,8 +384,9 @@ def test_team_sharing_in_page(page, base_url):
     assert page.locator("#folder-rows .frow.shared [data-fedit]").count() == len(shared)
     page.click("#folders-close")
     # the key survives a reload; ?k= opens a team folder directly
-    page.goto(base_url + "/?k=t:" + shared[0] + "#tilannekuva"); page.wait_for_function("typeof SHARED_LOADED !== 'undefined' && SHARED_LOADED === true")
+    page.goto(base_url + "/?k=" + shared[0] + "#tilannekuva"); page.wait_for_function("typeof SHARED_LOADED !== 'undefined' && SHARED_LOADED === true")
     assert page.evaluate("state.folderFilter") == "t:" + shared[0] and page.evaluate("hasKey()")
+    assert ("%3Fk%3D" + shared[0]) in page.evaluate("folderShareLinks(SHARED[0])")  # Teams share link carries ?k=<tunnus>, without the t: prefix
 
 
 def test_eu_council_and_delegated(page, base_url):
