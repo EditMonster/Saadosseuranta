@@ -1,55 +1,67 @@
 {
  "eduskunta": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "eu": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "eu_mergers": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "finlex": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "hankeikkuna": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "hankinnat": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "hys": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "kkv": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
+  "ok": true,
+  "streak": 0
+ },
+ "mao": {
+  "last_error": null,
+  "last_ok": "2026-10-17T23:56:25Z",
+  "ok": true,
+  "streak": 0
+ },
+ "regdel": {
+  "last_error": null,
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  },
  "ue": {
   "last_error": null,
-  "last_ok": "2026-10-17T11:08:59Z",
+  "last_ok": "2026-10-17T23:56:25Z",
   "ok": true,
   "streak": 0
  }

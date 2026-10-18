@@ -1274,6 +1274,15 @@ DESCRIPTION:Voimaan (1395/2025) · 1394/2025 · HE 118/2025 vp · https://www.fi
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/118
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-216-2024-voimaan-2027-01-04@saadosseuranta
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[FI] Voimaan: Laeiksi tulotietojärjestelmästä annetun lain ja positiivisesta luottotietorekisteristä annetun lain 22 ja 25 §:n muuttamisesta
+DESCRIPTION:Voimaan (199/2025) · 199/2025 · HE 216/2024 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2024/216
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2024/216
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-120-2025-voimaan-2026-11-20@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
