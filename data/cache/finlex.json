@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-18T12:18:57",
+ "fetched": "2026-10-18T12:40:05",
  "items": {
   "10/2025": {
    "fetched": "2026-10-18",
@@ -17,6 +17,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/10",
    "voimaan": "2027-07-01"
   },
+  "1000/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1000/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1000",
+   "voimaan": "2025-01-01"
+  },
   "1000/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -32,6 +40,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1000",
    "voimaan": "2026-04-01"
+  },
+  "1001/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1001/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1001",
+   "voimaan": "2023-12-01"
   },
   "1001/2024": {
    "fetched": "2026-10-18",
@@ -169,6 +185,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1011",
    "voimaan": "2025-03-01"
   },
+  "1012/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1012/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1012",
+   "voimaan": "2024-01-01"
+  },
   "1012/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -184,6 +208,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1013",
    "voimaan": "2025-03-01"
+  },
+  "1014/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1014/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1014",
+   "voimaan": "2023-12-01"
   },
   "1014/2024": {
    "fetched": "2026-10-18",
@@ -249,6 +281,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1022",
    "voimaan": "2026-01-01"
   },
+  "1023/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1023/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1023",
+   "voimaan": "2024-01-01"
+  },
   "1023/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -273,6 +313,30 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1024",
    "voimaan": "2026-01-01"
   },
+  "1029/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1029/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1029",
+   "voimaan": "2023-11-24"
+  },
+  "103/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "103/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/103",
+   "voimaan": "2024-03-13"
+  },
+  "1030/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1030/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1030",
+   "voimaan": "2023-12-01"
+  },
   "1032/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -296,6 +360,38 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1034",
    "voimaan": "2026-01-01"
+  },
+  "1035/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1035/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1035",
+   "voimaan": "2024-01-01"
+  },
+  "1036/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1036/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1036",
+   "voimaan": "2024-01-01"
+  },
+  "1037/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1037/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1037",
+   "voimaan": "2024-01-01"
+  },
+  "1040/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1040/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1040",
+   "voimaan": "2024-01-01"
   },
   "1041/2025": {
    "fetched": "2026-10-16",
@@ -345,6 +441,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1046",
    "voimaan": "2026-01-01"
   },
+  "1047/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1047/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1047",
+   "voimaan": "2023-12-01"
+  },
+  "1048/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1048/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1048",
+   "voimaan": "2024-01-01"
+  },
   "1048/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -360,6 +472,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1049",
    "voimaan": "2026-01-01"
+  },
+  "105/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "105/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/105",
+   "voimaan": "2024-04-01"
   },
   "1050/2025": {
    "fetched": "2026-10-16",
@@ -457,6 +577,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1059",
    "voimaan": "2026-01-01"
   },
+  "106/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "106/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/106",
+   "voimaan": "2024-04-01"
+  },
   "1060/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -464,6 +592,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1060",
    "voimaan": "2026-01-01"
+  },
+  "1061/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1061/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1061",
+   "voimaan": "2024-01-01"
   },
   "1062/2024": {
    "fetched": "2026-10-18",
@@ -577,6 +713,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/107",
    "voimaan": "2026-04-01"
   },
+  "1070/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1070/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1070",
+   "voimaan": "2024-01-01"
+  },
   "1070/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -608,6 +752,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1072",
    "voimaan": "2026-01-01"
+  },
+  "1073/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1073/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1073",
+   "voimaan": "2023-12-15"
   },
   "1073/2024": {
    "fetched": "2026-10-18",
@@ -689,6 +841,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1077",
    "voimaan": "2026-01-01"
   },
+  "1078/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1078/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1078",
+   "voimaan": "2024-01-01"
+  },
   "1078/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -744,6 +904,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1080",
    "voimaan": "2026-01-01"
+  },
+  "1081/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1081/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1081",
+   "voimaan": "2024-01-01"
   },
   "1081/2024": {
    "fetched": "2026-10-18",
@@ -809,6 +977,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1086",
    "voimaan": "2025-12-08"
   },
+  "1087/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1087/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1087",
+   "voimaan": "2024-01-01"
+  },
   "1087/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -817,6 +993,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1087",
    "voimaan": "2026-01-01"
   },
+  "1088/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1088/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1088",
+   "voimaan": "2024-01-01"
+  },
+  "1089/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1089/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1089",
+   "voimaan": "2024-01-01"
+  },
   "1089/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -824,6 +1016,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1089",
    "voimaan": "2025-01-01"
+  },
+  "1090/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1090/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1090",
+   "voimaan": "2024-01-01"
   },
   "1090/2024": {
    "fetched": "2026-10-18",
@@ -841,6 +1041,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1090",
    "voimaan": "2025-12-14"
   },
+  "1091/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1091/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1091",
+   "voimaan": "2024-01-01"
+  },
   "1091/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -848,6 +1056,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1091",
    "voimaan": "2026-08-01"
+  },
+  "1092/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1092/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1092",
+   "voimaan": "2024-01-01"
   },
   "1092/2024": {
    "fetched": "2026-10-18",
@@ -857,6 +1073,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1092",
    "voimaan": "2026-08-01"
   },
+  "1093/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1093/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1093",
+   "voimaan": "2024-01-01"
+  },
   "1093/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -864,6 +1088,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1093",
    "voimaan": "2026-08-01"
+  },
+  "1094/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1094/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1094",
+   "voimaan": "2024-01-01"
   },
   "1094/2024": {
    "fetched": "2026-10-18",
@@ -873,6 +1105,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1094",
    "voimaan": "2026-08-01"
   },
+  "1095/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1095/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1095",
+   "voimaan": "2024-01-01"
+  },
   "1095/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -880,6 +1120,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1095",
    "voimaan": "2026-08-01"
+  },
+  "1096/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1096/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1096",
+   "voimaan": "2024-01-01"
   },
   "1096/2024": {
    "fetched": "2026-10-18",
@@ -929,6 +1177,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1098",
    "voimaan": "2026-04-01"
   },
+  "1099/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1099/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1099",
+   "voimaan": "2023-12-15"
+  },
   "1099/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -945,6 +1201,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1099",
    "voimaan": "2026-04-01"
   },
+  "11/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "11/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/11",
+   "voimaan": "2024-01-15"
+  },
   "11/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -960,6 +1224,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/11",
    "voimaan": "2027-07-01"
+  },
+  "1100/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1100/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1100",
+   "voimaan": "2024-04-18"
   },
   "1100/2024": {
    "fetched": "2026-10-18",
@@ -984,6 +1256,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1102",
    "voimaan": "2025-01-01"
+  },
+  "1103/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1103/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1103",
+   "voimaan": "2024-01-01"
   },
   "1103/2024": {
    "fetched": "2026-10-18",
@@ -1024,6 +1304,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1105",
    "voimaan": "2026-01-01"
+  },
+  "1106/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1106/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1106",
+   "voimaan": "2023-12-19"
   },
   "1106/2024": {
    "fetched": "2026-10-18",
@@ -1073,6 +1361,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1108",
    "voimaan": "2026-01-01"
   },
+  "1109/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1109/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1109",
+   "voimaan": "2024-01-01"
+  },
   "1109/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1096,6 +1392,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/111",
    "voimaan": "2026-03-05"
+  },
+  "1110/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1110/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1110",
+   "voimaan": "2024-01-01"
   },
   "1110/2024": {
    "fetched": "2026-10-18",
@@ -1177,6 +1481,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1114",
    "voimaan": "2025-12-15"
   },
+  "1115/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1115/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1115",
+   "voimaan": "2024-01-01"
+  },
   "1115/2024": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1192,6 +1504,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1115",
    "voimaan": "2025-12-15"
+  },
+  "1116/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1116/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1116",
+   "voimaan": "2024-01-01"
   },
   "1116/2024": {
    "fetched": "2026-10-18",
@@ -1210,6 +1530,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1116",
    "voimaan": "2026-01-01"
+  },
+  "1117/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1117/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1117",
+   "voimaan": "2024-01-01"
   },
   "1117/2024": {
    "fetched": "2026-10-18",
@@ -1291,6 +1619,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1122",
    "voimaan": "2026-01-01"
   },
+  "1127/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1127/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1127",
+   "voimaan": "2024-01-01"
+  },
+  "113/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "113/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/113",
+   "voimaan": "2024-04-05"
+  },
   "113/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1307,6 +1651,72 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/113",
    "voimaan": "2026-05-01"
   },
+  "1130/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1130/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1130",
+   "voimaan": "2024-03-01"
+  },
+  "1131/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1131/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1131",
+   "voimaan": "2024-01-01"
+  },
+  "1132/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [
+    "2022-01-01"
+   ],
+   "sk": "1132/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1132",
+   "voimaan": "2023-12-31"
+  },
+  "1133/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1133/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1133",
+   "voimaan": "2025-01-01"
+  },
+  "1134/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1134/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1134",
+   "voimaan": "2025-01-01"
+  },
+  "1135/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1135/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1135",
+   "voimaan": "2025-01-01"
+  },
+  "1136/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1136/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1136",
+   "voimaan": "2025-01-01"
+  },
+  "1139/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1139/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1139",
+   "voimaan": "2024-11-01"
+  },
   "114/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -1314,6 +1724,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/114",
    "voimaan": "2026-05-01"
+  },
+  "1140/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1140/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1140",
+   "voimaan": "2024-11-01"
   },
   "1140/2025": {
    "fetched": "2026-10-16",
@@ -1323,6 +1741,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1140",
    "voimaan": "2026-01-01"
   },
+  "1141/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1141/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1141",
+   "voimaan": "2024-01-01"
+  },
   "1141/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1330,6 +1756,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1141",
    "voimaan": "2026-01-01"
+  },
+  "1142/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1142/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1142",
+   "voimaan": "2024-01-01"
   },
   "1142/2025": {
    "fetched": "2026-10-16",
@@ -1427,6 +1861,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1152",
    "voimaan": "2026-01-01"
   },
+  "1153/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1153/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1153",
+   "voimaan": "2024-01-01"
+  },
   "1153/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1458,6 +1900,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1156",
    "voimaan": "2026-01-01"
+  },
+  "1157/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1157/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1157",
+   "voimaan": "2024-01-01"
   },
   "1157/2025": {
    "fetched": "2026-10-16",
@@ -1549,6 +1999,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1169",
    "voimaan": "2025-12-15"
   },
+  "117/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "117/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/117",
+   "voimaan": "2024-04-01"
+  },
   "117/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -1565,6 +2023,44 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1173",
    "voimaan": "2026-01-01"
   },
+  "1174/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1174/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1174",
+   "voimaan": "2024-01-01"
+  },
+  "1176/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [
+    "2023-03-06"
+   ],
+   "sk": "1176/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1176",
+   "voimaan": "2023-12-31"
+  },
+  "1177/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [
+    "2023-12-31"
+   ],
+   "sk": "1177/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1177",
+   "voimaan": "2023-03-06"
+  },
+  "1178/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [
+    "2023-12-31"
+   ],
+   "sk": "1178/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1178",
+   "voimaan": "2023-03-06"
+  },
   "1178/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1573,6 +2069,126 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1178",
    "voimaan": "2026-01-01"
   },
+  "1179/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1179/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1179",
+   "voimaan": "2024-01-01"
+  },
+  "1181/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1181/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1181",
+   "voimaan": "2024-01-01"
+  },
+  "1182/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1182/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1182",
+   "voimaan": "2024-01-02"
+  },
+  "1183/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1183/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1183",
+   "voimaan": "2024-01-02"
+  },
+  "1186/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1186/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1186",
+   "voimaan": "2024-12-28"
+  },
+  "1187/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1187/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1187",
+   "voimaan": "2023-12-29"
+  },
+  "119/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "119/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/119",
+   "voimaan": "2024-05-01"
+  },
+  "1191/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1191/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1191",
+   "voimaan": "2024-01-01"
+  },
+  "1192/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1192/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1192",
+   "voimaan": "2024-01-01"
+  },
+  "1193/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1193/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1193",
+   "voimaan": "2024-01-01"
+  },
+  "1194/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1194/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1194",
+   "voimaan": "2024-01-01"
+  },
+  "1195/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1195/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1195",
+   "voimaan": "2024-01-01"
+  },
+  "1196/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1196/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1196",
+   "voimaan": "2024-01-01"
+  },
+  "1197/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1197/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1197",
+   "voimaan": "2024-01-01"
+  },
+  "1198/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1198/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1198",
+   "voimaan": "2024-01-01"
+  },
   "1198/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1580,6 +2196,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1198",
    "voimaan": "2026-01-01"
+  },
+  "1199/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1199/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1199",
+   "voimaan": "2024-01-01"
   },
   "1199/2025": {
    "fetched": "2026-10-16",
@@ -1605,6 +2229,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/12",
    "voimaan": "2027-07-01"
   },
+  "1200/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1200/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1200",
+   "voimaan": "2024-01-01"
+  },
   "1204/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1612,6 +2244,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1204",
    "voimaan": "2026-01-01"
+  },
+  "1205/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1205/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1205",
+   "voimaan": "2024-01-01"
   },
   "1205/2025": {
    "fetched": "2026-10-16",
@@ -1653,6 +2293,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1209",
    "voimaan": "2026-01-01"
   },
+  "121/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "121/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/121",
+   "voimaan": null
+  },
   "1210/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1668,6 +2316,38 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1215",
    "voimaan": "2026-01-01"
+  },
+  "1216/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1216/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1216",
+   "voimaan": "2024-01-01"
+  },
+  "1217/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1217/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1217",
+   "voimaan": null
+  },
+  "1218/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1218/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1218",
+   "voimaan": null
+  },
+  "122/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "122/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/122",
+   "voimaan": null
   },
   "1220/2025": {
    "fetched": "2026-10-16",
@@ -1685,6 +2365,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1221",
    "voimaan": "2026-01-01"
   },
+  "1225/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1225/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1225",
+   "voimaan": "2024-01-01"
+  },
+  "1226/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1226/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1226",
+   "voimaan": "2024-01-01"
+  },
   "1227/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1701,6 +2397,62 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1228",
    "voimaan": "2026-01-01"
   },
+  "1231/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1231/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1231",
+   "voimaan": "2025-01-01"
+  },
+  "1232/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1232/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1232",
+   "voimaan": "2025-01-01"
+  },
+  "1233/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1233/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1233",
+   "voimaan": "2025-01-01"
+  },
+  "1234/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1234/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1234",
+   "voimaan": "2025-01-01"
+  },
+  "1237/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1237/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1237",
+   "voimaan": "2024-01-01"
+  },
+  "1238/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1238/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1238",
+   "voimaan": "2024-02-01"
+  },
+  "1239/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1239/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1239",
+   "voimaan": "2024-02-01"
+  },
   "124/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1708,6 +2460,38 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/124",
    "voimaan": "2025-04-08"
+  },
+  "1240/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1240/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1240",
+   "voimaan": "2024-01-01"
+  },
+  "1241/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1241/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1241",
+   "voimaan": "2024-04-01"
+  },
+  "1247/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1247/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1247",
+   "voimaan": "2024-01-01"
+  },
+  "1249/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1249/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1249",
+   "voimaan": "2023-12-31"
   },
   "125/2025": {
    "fetched": "2026-10-18",
@@ -1717,6 +2501,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/125",
    "voimaan": "2025-04-08"
   },
+  "1250/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1250/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1250",
+   "voimaan": "2023-12-31"
+  },
+  "1251/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1251/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1251",
+   "voimaan": "2023-12-31"
+  },
   "1251/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1724,6 +2524,38 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1251",
    "voimaan": "2026-01-01"
+  },
+  "1252/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1252/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1252",
+   "voimaan": "2023-12-31"
+  },
+  "1253/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1253/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1253",
+   "voimaan": "2023-12-31"
+  },
+  "1254/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1254/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1254",
+   "voimaan": "2023-12-31"
+  },
+  "1255/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1255/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1255",
+   "voimaan": "2023-12-31"
   },
   "1255/2025": {
    "fetched": "2026-10-16",
@@ -1733,6 +2565,38 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1255",
    "voimaan": "2026-01-01"
   },
+  "1256/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1256/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1256",
+   "voimaan": "2023-12-31"
+  },
+  "1257/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1257/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1257",
+   "voimaan": "2023-12-31"
+  },
+  "1258/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1258/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1258",
+   "voimaan": "2023-12-31"
+  },
+  "1259/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1259/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1259",
+   "voimaan": "2023-12-31"
+  },
   "126/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1740,6 +2604,30 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/126",
    "voimaan": "2025-04-08"
+  },
+  "1260/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1260/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1260",
+   "voimaan": "2023-12-31"
+  },
+  "1261/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1261/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1261",
+   "voimaan": "2023-12-31"
+  },
+  "1262/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1262/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1262",
+   "voimaan": "2023-12-31"
   },
   "1263/2025": {
    "fetched": "2026-10-16",
@@ -1765,6 +2653,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/127",
    "voimaan": "2025-04-08"
   },
+  "1270/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1270/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1270",
+   "voimaan": "2024-01-01"
+  },
+  "1271/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1271/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1271",
+   "voimaan": "2024-01-01"
+  },
   "1271/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1772,6 +2676,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1271",
    "voimaan": "2026-01-01"
+  },
+  "1272/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1272/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1272",
+   "voimaan": "2024-01-01"
   },
   "1276/2025": {
    "fetched": "2026-10-16",
@@ -1781,6 +2693,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1276",
    "voimaan": "2026-01-01"
   },
+  "1279/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1279/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1279",
+   "voimaan": "2024-01-01"
+  },
   "128/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1788,6 +2708,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/128",
    "voimaan": "2025-04-08"
+  },
+  "1280/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1280/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1280",
+   "voimaan": "2024-01-01"
   },
   "1280/2025": {
    "fetched": "2026-10-16",
@@ -1805,6 +2733,38 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1281",
    "voimaan": "2026-01-01"
   },
+  "1283/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1283/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1283",
+   "voimaan": "2024-01-01"
+  },
+  "1284/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1284/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1284",
+   "voimaan": "2024-01-01"
+  },
+  "1288/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1288/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1288",
+   "voimaan": "2024-01-01"
+  },
+  "1289/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1289/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1289",
+   "voimaan": "2024-01-01"
+  },
   "129/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -1820,6 +2780,38 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1292",
    "voimaan": "2026-01-01"
+  },
+  "1296/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1296/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1296",
+   "voimaan": "2024-01-01"
+  },
+  "1297/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1297/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1297",
+   "voimaan": "2024-01-01"
+  },
+  "1298/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1298/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1298",
+   "voimaan": "2024-01-01"
+  },
+  "1299/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1299/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1299",
+   "voimaan": "2024-01-01"
   },
   "13/2025": {
    "fetched": "2026-10-18",
@@ -1845,6 +2837,22 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/130",
    "voimaan": "2025-04-08"
   },
+  "1300/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1300/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1300",
+   "voimaan": "2024-01-01"
+  },
+  "1301/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1301/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1301",
+   "voimaan": "2024-01-01"
+  },
   "1301/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1852,6 +2860,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1301",
    "voimaan": "2026-01-01"
+  },
+  "1302/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1302/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1302",
+   "voimaan": "2024-04-01"
   },
   "1302/2025": {
    "fetched": "2026-10-16",
@@ -1861,6 +2877,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1302",
    "voimaan": "2026-01-01"
   },
+  "1303/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1303/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1303",
+   "voimaan": "2024-01-01"
+  },
   "1303/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1868,6 +2892,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1303",
    "voimaan": "2026-01-01"
+  },
+  "1304/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1304/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1304",
+   "voimaan": "2024-04-01"
   },
   "1304/2025": {
    "fetched": "2026-10-16",
@@ -1877,6 +2909,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1304",
    "voimaan": "2026-01-01"
   },
+  "1305/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1305/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1305",
+   "voimaan": "2024-01-01"
+  },
   "1305/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1885,6 +2925,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1305",
    "voimaan": "2026-01-01"
   },
+  "1306/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1306/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1306",
+   "voimaan": "2024-01-01"
+  },
   "1306/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1892,6 +2940,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1306",
    "voimaan": "2026-01-01"
+  },
+  "1307/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1307/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1307",
+   "voimaan": "2024-01-01"
   },
   "1307/2025": {
    "fetched": "2026-10-16",
@@ -1933,6 +2989,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1310",
    "voimaan": "2026-01-01"
   },
+  "1311/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1311/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1311",
+   "voimaan": "2024-01-01"
+  },
   "1311/2025": {
    "fetched": "2026-10-16",
    "muutVoimaantulot": [],
@@ -1940,6 +3004,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1311",
    "voimaan": "2026-01-01"
+  },
+  "1312/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "1312/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1312",
+   "voimaan": "2024-01-01"
   },
   "1312/2025": {
    "fetched": "2026-10-16",
@@ -2993,6 +4065,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1449",
    "voimaan": "2026-01-01"
   },
+  "145/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "145/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/145",
+   "voimaan": "2024-04-04"
+  },
   "145/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3257,6 +4337,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1479",
    "voimaan": "2026-05-01"
   },
+  "148/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "148/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/148",
+   "voimaan": "2025-01-01"
+  },
   "148/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3344,6 +4432,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1489",
    "voimaan": "2026-01-01"
+  },
+  "149/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "149/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/149",
+   "voimaan": "2025-01-01"
   },
   "149/2025": {
    "fetched": "2026-10-17",
@@ -3497,6 +4593,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1505",
    "voimaan": "2026-01-01"
   },
+  "151/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "151/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/151",
+   "voimaan": "2024-04-04"
+  },
   "16/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -3545,6 +4649,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/163",
    "voimaan": "2026-11-20"
   },
+  "164/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "164/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/164",
+   "voimaan": "2024-06-01"
+  },
   "164/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3561,6 +4673,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/164",
    "voimaan": "2026-11-20"
   },
+  "165/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "165/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/165",
+   "voimaan": "2024-06-01"
+  },
   "165/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3576,6 +4696,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/165",
    "voimaan": "2026-06-19"
+  },
+  "166/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "166/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/166",
+   "voimaan": "2024-05-01"
   },
   "166/2025": {
    "fetched": "2026-10-17",
@@ -3641,6 +4769,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/169",
    "voimaan": "2026-03-20"
   },
+  "17/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "17/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/17",
+   "voimaan": null
+  },
   "17/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -3681,6 +4817,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/171",
    "voimaan": "2025-06-01"
   },
+  "172/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "172/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/172",
+   "voimaan": "2025-01-01"
+  },
   "172/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3697,6 +4841,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/173",
    "voimaan": "2025-06-01"
   },
+  "174/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "174/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/174",
+   "voimaan": "2024-04-24"
+  },
   "174/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3705,6 +4857,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/174",
    "voimaan": "2025-06-01"
   },
+  "175/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "175/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/175",
+   "voimaan": "2024-04-25"
+  },
   "175/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -3712,6 +4872,22 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/175",
    "voimaan": "2025-04-28"
+  },
+  "176/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "176/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/176",
+   "voimaan": "2024-04-27"
+  },
+  "177/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "177/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/177",
+   "voimaan": "2024-04-27"
   },
   "177/2025": {
    "fetched": "2026-10-17",
@@ -3728,6 +4904,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/177",
    "voimaan": "2026-04-01"
+  },
+  "178/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "178/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/178",
+   "voimaan": "2024-05-01"
   },
   "178/2025": {
    "fetched": "2026-10-17",
@@ -4113,6 +5297,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/202",
    "voimaan": "2025-07-01"
   },
+  "203/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "203/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/203",
+   "voimaan": "2024-07-01"
+  },
   "203/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4161,6 +5353,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/206",
    "voimaan": "2026-01-01"
   },
+  "207/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "207/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/207",
+   "voimaan": null
+  },
   "207/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4168,6 +5368,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/207",
    "voimaan": "2026-04-01"
+  },
+  "208/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "208/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/208",
+   "voimaan": "2024-05-02"
   },
   "208/2026": {
    "fetched": "2026-10-15",
@@ -4281,6 +5489,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/216",
    "voimaan": "2026-04-14"
   },
+  "217/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "217/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/217",
+   "voimaan": "2024-05-15"
+  },
   "217/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4297,6 +5513,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/217",
    "voimaan": "2026-04-14"
   },
+  "218/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "218/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/218",
+   "voimaan": "2024-06-01"
+  },
   "218/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4304,6 +5528,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/218",
    "voimaan": "2026-04-14"
+  },
+  "219/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "219/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/219",
+   "voimaan": "2024-06-01"
   },
   "219/2025": {
    "fetched": "2026-10-17",
@@ -4328,6 +5560,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/22",
    "voimaan": "2027-07-01"
+  },
+  "220/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "220/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/220",
+   "voimaan": "2024-06-01"
   },
   "220/2025": {
    "fetched": "2026-10-17",
@@ -4385,6 +5625,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/223",
    "voimaan": "2026-04-14"
   },
+  "224/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "224/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/224",
+   "voimaan": "2024-05-13"
+  },
   "224/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4392,6 +5640,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/224",
    "voimaan": "2026-04-14"
+  },
+  "225/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "225/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/225",
+   "voimaan": "2024-05-13"
   },
   "225/2026": {
    "fetched": "2026-10-15",
@@ -4401,6 +5657,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/225",
    "voimaan": null
   },
+  "226/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "226/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/226",
+   "voimaan": "2025-01-01"
+  },
   "226/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4408,6 +5672,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/226",
    "voimaan": "2026-04-14"
+  },
+  "227/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "227/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/227",
+   "voimaan": "2024-05-13"
   },
   "227/2026": {
    "fetched": "2026-10-15",
@@ -4417,6 +5689,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/227",
    "voimaan": "2026-04-14"
   },
+  "228/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "228/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/228",
+   "voimaan": "2025-01-01"
+  },
   "228/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4424,6 +5704,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/228",
    "voimaan": "2026-04-14"
+  },
+  "229/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "229/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/229",
+   "voimaan": "2024-05-13"
   },
   "229/2025": {
    "fetched": "2026-10-17",
@@ -4449,6 +5737,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/23",
    "voimaan": "2026-03-01"
   },
+  "230/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "230/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/230",
+   "voimaan": "2024-05-13"
+  },
   "230/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4456,6 +5752,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/230",
    "voimaan": "2026-04-14"
+  },
+  "231/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "231/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/231",
+   "voimaan": "2024-05-13"
   },
   "231/2026": {
    "fetched": "2026-10-15",
@@ -4465,6 +5769,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/231",
    "voimaan": "2026-04-14"
   },
+  "232/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "232/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/232",
+   "voimaan": "2024-05-13"
+  },
   "232/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4473,6 +5785,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/232",
    "voimaan": "2026-04-14"
   },
+  "233/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "233/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/233",
+   "voimaan": "2024-05-13"
+  },
   "233/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4480,6 +5800,54 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/233",
    "voimaan": "2026-04-14"
+  },
+  "234/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "234/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/234",
+   "voimaan": "2024-05-13"
+  },
+  "235/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "235/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/235",
+   "voimaan": "2024-05-13"
+  },
+  "236/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "236/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/236",
+   "voimaan": "2024-05-13"
+  },
+  "237/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "237/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/237",
+   "voimaan": "2024-05-13"
+  },
+  "238/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "238/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/238",
+   "voimaan": "2024-06-01"
+  },
+  "239/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "239/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/239",
+   "voimaan": "2024-06-01"
   },
   "239/2025": {
    "fetched": "2026-10-17",
@@ -4523,6 +5891,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/245",
    "voimaan": "2025-08-01"
   },
+  "246/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "246/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/246",
+   "voimaan": "2024-05-18"
+  },
   "246/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4531,6 +5907,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/246",
    "voimaan": "2025-06-01"
   },
+  "247/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "247/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/247",
+   "voimaan": "2024-05-18"
+  },
   "247/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4538,6 +5922,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/247",
    "voimaan": "2025-06-01"
+  },
+  "248/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "248/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/248",
+   "voimaan": "2024-05-18"
   },
   "248/2025": {
    "fetched": "2026-10-17",
@@ -4554,6 +5946,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/248",
    "voimaan": "2026-04-16"
+  },
+  "249/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "249/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/249",
+   "voimaan": "2024-05-18"
   },
   "249/2025": {
    "fetched": "2026-10-17",
@@ -4579,6 +5979,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/25",
    "voimaan": "2027-07-01"
   },
+  "250/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "250/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/250",
+   "voimaan": "2024-05-18"
+  },
   "250/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4595,6 +6003,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/250",
    "voimaan": "2026-04-16"
   },
+  "251/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "251/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/251",
+   "voimaan": "2024-05-18"
+  },
   "251/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4610,6 +6026,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/251",
    "voimaan": "2026-04-16"
+  },
+  "252/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "252/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/252",
+   "voimaan": "2024-05-18"
   },
   "252/2025": {
    "fetched": "2026-10-17",
@@ -4723,6 +6147,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/26",
    "voimaan": "2026-02-01"
   },
+  "260/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "260/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/260",
+   "voimaan": null
+  },
   "260/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4738,6 +6170,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/260",
    "voimaan": "2026-04-20"
+  },
+  "261/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "261/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/261",
+   "voimaan": null
   },
   "261/2025": {
    "fetched": "2026-10-17",
@@ -4755,6 +6195,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/261",
    "voimaan": "2026-04-20"
   },
+  "262/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "262/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/262",
+   "voimaan": "2024-06-15"
+  },
   "262/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -4762,6 +6210,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/262",
    "voimaan": "2026-04-20"
+  },
+  "263/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "263/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/263",
+   "voimaan": "2024-06-15"
   },
   "264/2026": {
    "fetched": "2026-10-15",
@@ -4786,6 +6242,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/266",
    "voimaan": "2026-04-22"
+  },
+  "267/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "267/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/267",
+   "voimaan": "2024-07-01"
   },
   "267/2026": {
    "fetched": "2026-10-15",
@@ -4883,6 +6347,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/273",
    "voimaan": "2026-06-01"
   },
+  "274/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "274/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/274",
+   "voimaan": "2024-06-01"
+  },
   "274/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4899,6 +6371,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/274",
    "voimaan": "2026-04-21"
   },
+  "275/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "275/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/275",
+   "voimaan": "2024-08-01"
+  },
   "275/2025": {
    "fetched": "2026-10-17",
    "muutVoimaantulot": [],
@@ -4914,6 +6394,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/275",
    "voimaan": "2026-04-21"
+  },
+  "276/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "276/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/276",
+   "voimaan": "2024-08-01"
   },
   "276/2025": {
    "fetched": "2026-10-17",
@@ -6284,6 +7772,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/359",
    "voimaan": "2024-07-01"
+  },
+  "36/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "36/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/36",
+   "voimaan": "2024-01-01"
   },
   "36/2026": {
    "fetched": "2026-10-15",
@@ -9683,6 +11179,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/539",
    "voimaan": "2026-07-01"
   },
+  "54/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "54/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/54",
+   "voimaan": "2024-02-18"
+  },
   "54/2026": {
    "fetched": "2026-10-15",
    "muutVoimaantulot": [],
@@ -9858,6 +11362,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/549",
    "voimaan": "2026-08-05"
+  },
+  "55/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "55/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/55",
+   "voimaan": "2024-02-01"
   },
   "55/2026": {
    "fetched": "2026-10-15",
@@ -10252,6 +11764,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/569",
    "voimaan": "2026-07-01"
+  },
+  "57/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "57/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/57",
+   "voimaan": "2024-04-01"
   },
   "57/2026": {
    "fetched": "2026-10-15",
@@ -11785,6 +13305,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/649",
    "voimaan": "2026-08-12"
   },
+  "65/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "65/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/65",
+   "voimaan": null
+  },
   "65/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -12348,6 +13876,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/689",
    "voimaan": "2026-07-10"
+  },
+  "69/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "69/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/69",
+   "voimaan": "2024-02-15"
   },
   "69/2026": {
    "fetched": "2026-10-15",
@@ -16165,6 +17701,14 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/9",
    "voimaan": "2026-02-01"
   },
+  "90/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "90/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/90",
+   "voimaan": "2024-03-01"
+  },
   "90/2025": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -16279,6 +17823,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/906",
    "voimaan": "2025-01-01"
+  },
+  "91/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "91/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/91",
+   "voimaan": "2024-03-01"
   },
   "91/2025": {
    "fetched": "2026-10-18",
@@ -16613,6 +18165,14 @@
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/939",
    "voimaan": "2025-12-01"
+  },
+  "94/2024": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "94/2024",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/94",
+   "voimaan": "2024-03-01"
   },
   "94/2025": {
    "fetched": "2026-10-18",
@@ -17182,6 +18742,14 @@
    "sk": "998/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/998",
+   "voimaan": "2025-01-01"
+  },
+  "999/2023": {
+   "fetched": "2026-10-18",
+   "muutVoimaantulot": [],
+   "sk": "999/2023",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/999",
    "voimaan": "2025-01-01"
   },
   "999/2024": {
