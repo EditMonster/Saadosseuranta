@@ -1,0 +1,12 @@
+# Esimerkkikansio – poista tiedosto tai muokkaa omaksesi.
+nimi: Kilpailuoikeus (esimerkki)
+kuvaus: Suomalaiset yrityskaupat KKV:ssa ja komissiossa sekä kilpailulainsäädännön muutokset
+omistaja: esimerkki
+esimerkki: true
+kohteet: []
+saannot:
+  hakusanat: [kilpailulaki, kilpailunrajoitus, kilpailuoikeu, yrityskauppavalvon]
+  lajit: [laki, eu, delegoitu, kuuleminen]
+  yrityskaupat:
+    vain_suomalaiset: true
+  vain_avoimet: true

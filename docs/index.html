@@ -324,6 +324,15 @@ th.sortable:hover{color:var(--fg)}
 .hide:hover{color:var(--signal)}
 .hide[data-restore]{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line2);padding:2px 6px;border-radius:var(--radius);color:var(--muted)}
 .fchips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.chip.shared{border-style:dashed}
+.flist .fr.shared{text-decoration:none;color:inherit}
+.flist .fr.shared .act{color:var(--muted)}
+.frow.shared{border-left:3px solid var(--line2);padding-left:8px;grid-template-columns:minmax(0,1fr) auto}
+.frow.shared .fname{font-size:13px;white-space:normal}
+.frow.shared .n{grid-column:1;white-space:normal}
+.frow.shared .acts{grid-column:2;grid-row:1/3;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.frow .desc{grid-column:1/-1;font-size:12px;color:var(--muted);margin-top:-4px}
+.frow .acts a{font-size:11.5px;text-decoration:underline;text-underline-offset:2px;color:var(--fg);margin-right:8px}
 .fdrop{margin-top:6px}
 .fdrop-btn{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;border:1px solid var(--line2);border-radius:var(--radius);padding:7px 10px;font-size:12.5px;background:var(--panel);color:var(--fg)}
 .fdrop-btn:hover{border-color:var(--fg)}
@@ -528,7 +537,7 @@ th.sortable:hover{color:var(--fg)}
 <div class="scrim" id="folders-scrim" hidden></div>
 <div class="modal panel" id="folders" role="dialog" aria-modal="true" aria-labelledby="folders-title" hidden>
   <div class="drawer-top"><h3 id="folders-title" style="margin:0">Kansiot</h3><button class="close" id="folders-close" aria-label="Sulje">×</button></div>
-  <p class="sub">Kansioon voi viedä säädöksiä, EU-menettelyjä ja kilpailutuksia; sama kohde voi olla useassa kansiossa. Kansion valinta yläpalkista rajaa kaikki näkymät – myös Tilannekuvan – kansion kohteisiin. Kansiot, piilotukset ja tähdet tallentuvat tähän selaimeen, ja ne siirtyvät toiselle koneelle Seurannassa-paneelin siirtolinkillä.</p>
+  <p class="sub">Kansioon voi viedä säädöksiä, EU-menettelyjä, kilpailutuksia ja yrityskauppoja; sama kohde voi olla useassa kansiossa. Kansion valinta yläpalkista rajaa kaikki näkymät – myös Tilannekuvan – kansion kohteisiin. <b>Omat kansiot</b> tallentuvat tähän selaimeen (siirtolinkki Seurannassa-paneelista). <b>Tiimikansiot</b> ovat jaettuja: ne määritellään repon tiedostoissa <span class="mono">config/kansiot/</span>, näkyvät kaikille ja saavat oman kalenterisyötteen, joka päivittyy automaattisesti; sisältö voi olla kiinteitä kohteita tai sääntöjä (aihealue, toimiala, hankintayksikkö, hakusana, yrityskaupan osapuoli), jolloin kansio toimii tiimin seurantaprofiilina.</p>
   <div class="sync-row"><input id="folder-new" placeholder="Uuden kansion nimi, esim. Asiakas X tai Lausuttavat" aria-label="Uuden kansion nimi"><button class="follow-btn" id="folder-add">Luo kansio</button></div>
   <div id="folder-rows"></div>
   <p class="sub" id="folders-hidden"></p>
@@ -586,13 +595,44 @@ try{ const f=JSON.parse(localStorage.getItem("saadosseuranta-folders")||"[]"); i
 try{ const h=JSON.parse(localStorage.getItem("saadosseuranta-hidden")||"[]"); if(Array.isArray(h)) state.hidden=new Set(h.filter(i=>typeof i==="string")); }catch(e){}
 function persistFolders(){ try{ localStorage.setItem("saadosseuranta-folders",JSON.stringify(state.folders)); }catch(e){} }
 function persistHidden(){ try{ localStorage.setItem("saadosseuranta-hidden",JSON.stringify([...state.hidden])); }catch(e){} }
-const folderById=id=>state.folders.find(f=>f.id===id);
+let SHARED=[]; let SHARED_LOADED=false; let KANSIOT={repo:"",newUrl:"",issueUrl:""};
+const folderById=id=>state.folders.find(f=>f.id===id)||SHARED.find(f=>f.id===id);
 const sortedFolders=()=>state.folders.slice().sort((a,b)=>a.name.localeCompare(b.name,"fi"));
+const sortedShared=()=>SHARED.slice().sort((a,b)=>a.name.localeCompare(b.name,"fi"));
+function loadShared(){
+  fetch("data/kansiot.json?v="+v,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(k=>{
+    KANSIOT={repo:k.repo||"",newUrl:k.newUrl||"",issueUrl:k.issueUrl||""};
+    SHARED=(k.folders||[]).map(f=>Object.assign({},f,{id:"t:"+f.id,key:f.id,shared:true,items:(f.items||[]).slice()}));
+    SHARED_LOADED=true; render();
+  }).catch(()=>{ SHARED_LOADED=true; });
+}
+/* GitHub hand-offs: shared folders live in config/kansiot/*.yaml; the page only prepares the request */
+const slugify=s=>(s||"").toLowerCase().replace(/[äå]/g,"a").replace(/ö/g,"o").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40)||"kansio";
+function folderYaml(f){ const lines=[`nimi: ${JSON.stringify(f.name)}`,`kuvaus: ""`,`omistaja: ""`,`kohteet:`]; f.items.forEach(id=>{ const it=findItem(id); lines.push(`  - ${id}${it?`   # ${it.title.replace(/\n/g," ").slice(0,70)}`:""}`); }); lines.push(`saannot: {}`,``,`# Säännöt (valinnaisia): aihealueet, lajit, toimialat, hankintayksikot, kilpailutusvaiheet, hakusanat, yrityskaupat, vain_avoimet, enintaan`,`# – katso config/kansiot/README.md`); return lines.join("\n"); }
+function shareFolderUrl(f){ return `${KANSIOT.newUrl}?filename=${encodeURIComponent("config/kansiot/"+slugify(f.name)+".yaml")}&value=${encodeURIComponent(folderYaml(f))}`; }
+function proposalUrl(f,action,ids){
+  const its=ids.map(id=>({id,it:findItem(id)}));
+  const title=`[kansio] ${action==="poista"?"Poista":"Lisää"}: ${its[0]&&its[0].it?its[0].it.title.slice(0,60):ids[0]}${ids.length>1?` (+${ids.length-1})`:""} – ${f.name}`;
+  const body=[`kansio: ${f.key}`,`toiminto: ${action}`,`kohteet:`].concat(its.map(({id,it})=>`- ${id} — ${it?it.title.replace(/\n/g," ").slice(0,90):""}`)).concat(["",`(Luotu Säädösseurannan sivulta. Työnkulku toteuttaa pyynnön automaattisesti, jos ehdottajalla on kirjoitusoikeus repoon; muuten ylläpitäjä hyväksyy sen kommentilla /hyvaksy.)`]).join("\n");
+  return `${KANSIOT.issueUrl}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}
+/* calendar file for any set of rows, built in the browser (own folders and the follow list have no server-side feed) */
+const ICS_KINDS_JS={voimaan:"Voimaan",soveltaminen:"Soveltaminen",maaraaika:"Määräaika",lausunto:"Lausuntoaika päättyy"};
+function icsFor(rows,name){
+  const E=s=>String(s).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g," ");
+  const ymd=d=>d.toISOString().slice(0,10).replace(/-/g,""); const lo=new Date(TODAY-7*DAY), hi=new Date(+TODAY+400*DAY);
+  const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//saadosseuranta//FI","CALSCALE:GREGORIAN",`X-WR-CALNAME:${E(name)}`,"X-WR-TIMEZONE:Europe/Helsinki"]; const seen=new Set();
+  rows.forEach(it=>{ (it.events||[]).forEach(e=>{ const k=e.kind; if(!ICS_KINDS_JS[k]) return; const day=k==="lausunto"?e.end:e.date; if(!day) return; const d=pd(day); if(d<lo||d>hi) return; const uid=`${it.id}-${k}-${day}@saadosseuranta`; if(seen.has(uid)) return; seen.add(uid);
+    const tag=it.scope==="fi"?"FI":(it.scope==="hankinta"?"Hankinta":(it.scope==="yrityskauppa"?(it.authority||"Yrityskauppa"):"EU")); const url=it.source||it.url||"";
+    L.push("BEGIN:VEVENT",`UID:${uid}`,`DTSTAMP:${ymd(d)}T000000Z`,`DTSTART;VALUE=DATE:${ymd(d)}`,`DTEND;VALUE=DATE:${ymd(new Date(+d+DAY))}`,`SUMMARY:${E(`[${tag}] ${ICS_KINDS_JS[k]}: ${it.title}${e.confirmed===false?" (arvio)":""}`)}`,`DESCRIPTION:${E(`${e.label||""} · ${it.ref||it.maoNumber||it.buyer||""}${url?" · "+url:""}`)}`); if(url) L.push(`URL:${url}`); L.push("END:VEVENT"); }); });
+  L.push("END:VCALENDAR"); return L.join("\r\n")+"\r\n";
+}
+function downloadIcs(rows,name,file){ const blob=new Blob([icsFor(rows,name)],{type:"text/calendar;charset=utf-8"}); const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=file; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },500); }
 function newFolderId(){ return "k"+Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
 function addFolder(name){ name=(name||"").trim().slice(0,60); if(!name) return null; const ex=state.folders.find(f=>f.name.toLowerCase()===name.toLowerCase()); if(ex) return ex; const f={id:newFolderId(),name,items:[]}; state.folders.push(f); persistFolders(); return f; }
-function toggleInFolder(fid,id){ const f=folderById(fid); if(!f) return; const i=f.items.indexOf(id); if(i>=0) f.items.splice(i,1); else f.items.push(id); persistFolders(); }
-function foldersOf(id){ return state.folders.filter(f=>f.items.includes(id)); }
-function folderBadge(id){ const fs=foldersOf(id); if(!fs.length) return ""; return `<span class="pill fold" title="${esc(fs.map(f=>f.name).join(", "))}">▣ ${esc(fs[0].name)}${fs.length>1?" +"+(fs.length-1):""}</span>`; }
+function toggleInFolder(fid,id){ const f=folderById(fid); if(!f||f.shared) return; const i=f.items.indexOf(id); if(i>=0) f.items.splice(i,1); else f.items.push(id); persistFolders(); }
+function foldersOf(id){ return state.folders.filter(f=>f.items.includes(id)).concat(SHARED.filter(f=>f.items.includes(id))); }
+function folderBadge(id){ const fs=foldersOf(id); if(!fs.length) return ""; return `<span class="pill fold" title="${esc(fs.map(f=>(f.shared?"⧉ ":"")+f.name).join(", "))}">${fs[0].shared?"⧉":"▣"} ${esc(fs[0].name)}${fs.length>1?" +"+(fs.length-1):""}</span>`; }
 function hideBtnHTML(id){ if(state.hidden.has(id)) return `<button class="hide" data-hide="${esc(id)}" data-restore="1" title="Palauta näkyviin">Palauta</button>`; return `<button class="hide" data-hide="${esc(id)}" title="Piilota näkymistä" aria-label="Piilota">×</button>`; }
 let toastTimer=null;
 function toast(msg,undoFn){ let el=document.getElementById("toast"); if(!el){ el=document.createElement("div"); el.id="toast"; el.className="toast"; document.body.appendChild(el); } el.innerHTML=`<span>${esc(msg)}</span>${undoFn?'<button id="toast-undo">Kumoa</button>':""}`; el.hidden=false; if(undoFn) document.getElementById("toast-undo").addEventListener("click",()=>{ undoFn(); el.hidden=true; }); clearTimeout(toastTimer); toastTimer=setTimeout(()=>{ el.hidden=true; },6000); }
@@ -969,16 +1009,19 @@ function renderNow(){
   const chip=(fid,label,n,title)=>`<button class="chip" data-fid="${esc(fid)}" aria-pressed="${state.folderFilter===fid}" title="${esc(title||"")}">${esc(label)}${n!=null?`<span class="n">${n}</span>`:""}</button>`;
   let chips=chip("","Kaikki kohteet",null,"Ei kansiorajausta");
   chips+=sortedFolders().map(f=>{ const n=f.items.filter(findItem).length; const nx=folderNext(f); return chip(f.id,f.name,n,nx?`Seuraava ${fmt(nx.date)} · ${nx.label}`:"Ei tulevia vaiheita"); }).join("");
+  chips+=sortedShared().map(f=>{ const n=f.items.filter(findItem).length; const nx=folderNext(f); return chip(f.id,"⧉ "+f.name,n,`Tiimikansio (jaettu, kaikki näkevät)${f.desc?" – "+f.desc:""}. ${nx?`Seuraava ${fmt(nx.date)} · ${nx.label}`:"Ei tulevia vaiheita"}`).replace('class="chip"','class="chip shared"'); }).join("");
   if(hidN) chips+=chip("__hidden","Piilotetut",hidN,"Piilotetut kohteet – palauta avaamalla");
   if(!state.folders.length) chips+=`<button class="chip ghost" id="open-folders3">+ Luo ensimmäinen kansio</button>`;
   document.getElementById("l-folders").innerHTML=chips;
   const sel=state.folderFilter&&state.folderFilter!=="__hidden"?folderById(state.folderFilter):null;
   let info;
   if(state.folderFilter==="__hidden") info=`<b>Piilotetut</b> · ${hidN} kohdetta. Näkymät näyttävät nyt vain piilotetut; palauta kohde sen riviltä tai tiedoista.`;
-  else if(sel){ const its=sel.items.map(findItem).filter(Boolean); const nx=folderNext(sel); const miss=sel.items.length-its.length; info=`<b>${esc(sel.name)}</b> · ${its.length} kohdetta${miss?` (${miss} ei enää aineistossa)`:""} · ${its.filter(i=>i.scope!=="hankinta").length} säädöstä, ${its.filter(i=>i.scope==="hankinta").length} kilpailutusta. ${nx?`Seuraava <b>${fmt(nx.date)}</b> <span class="mono">${esc(nx.label)}</span> – ${esc(nx.it.title)}`:"Ei tulevia vaiheita."} Tilannekuva ja välilehdet on rajattu tähän kansioon.`; }
+  else if(sel){ const its=sel.items.map(findItem).filter(Boolean); const nx=folderNext(sel); const miss=sel.items.length-its.length; const kinds=`${its.filter(i=>i.scope==="fi"||i.scope==="eu").length} säädöstä, ${its.filter(i=>i.scope==="hankinta").length} kilpailutusta, ${its.filter(i=>i.scope==="yrityskauppa").length} yrityskauppaa`;
+    info=`<b>${sel.shared?"⧉ ":""}${esc(sel.name)}</b>${sel.shared?` <span class="pill fold">tiimikansio</span>`:""} · ${its.length} kohdetta${miss?` (${miss} ei enää aineistossa)`:""} · ${kinds}. ${nx?`Seuraava <b>${fmt(nx.date)}</b> <span class="mono">${esc(nx.label)}</span> – ${esc(nx.it.title)}`:"Ei tulevia vaiheita."} Tilannekuva ja välilehdet on rajattu tähän kansioon.`;
+    if(sel.shared) info+=`<div style="margin-top:6px">${sel.desc?esc(sel.desc)+" · ":""}${sel.ruleCount?`${sel.ruleCount} kohdetta sääntöjen perusteella, ${sel.explicit.length} kiinteää · `:""}<a href="${esc(sel.ics)}" title="Tilaa tiimin määräajat kalenteriin (webcal/ics)">Kalenterisyöte (.ics)</a> · <a href="${esc(sel.edit)}" target="_blank" rel="noopener">Muokkaa GitHubissa</a>${sel.owner?` · yhteyshenkilö: ${esc(sel.owner)}`:""}</div>`; }
   else info=state.folders.length?`Valitse kansio, niin Tilannekuva, aikajanat ja kilpailutukset rajautuvat sen kohteisiin. Kohde viedään kansioon sen tiedoista (▢ Kansiot ja näkyvyys).`:`Kansioihin voi koota esimerkiksi asiakkaan tai toimeksiannon säädökset ja kilpailutukset. Luo kansio tästä tai kohteen tiedoista.`;
   document.getElementById("l-folder-info").innerHTML=info;
-  document.getElementById("h-folders").textContent=state.folders.length+" kansiota";
+  document.getElementById("h-folders").textContent=state.folders.length+" omaa"+(SHARED.length?` · ${SHARED.length} tiimi`:"");
   const ch=CHANGES.filter(c=>-daysTo(pd(c.date))<=14).filter(c=>{ const it=DATA.find(i=>i.id===c.id); return it&&matches(it); }).slice(0,60);
   document.getElementById("l-changes").innerHTML=ch.map(c=>{ const it=DATA.find(i=>i.id===c.id); const n=-daysTo(pd(c.date)); return `<li data-id="${esc(c.id)}" tabindex="0" role="button"><span class="d">${fmt(pd(c.date))}<br>${n===0?"tänään":n+" pv sitten"}</span><span style="min-width:0"><div class="t">${state.follow.has(c.id)?"★ ":""}${esc(it.title)}</div><div class="c">${esc(c.text)}</div><div class="m">${c.scope==="fi"?"FI":"EU"} · ${esc(it.ref)}</div></span><span class="k">${esc(c.type)}</span></li>`; }).join("")||'<li class="empty">Ei muutoksia 14 päivän sisällä – loki täyttyy päivittäisistä ajoista</li>';
   document.getElementById("h-changes").textContent=ch.length+" / 14 pv";
@@ -1104,15 +1147,16 @@ let fdropOpen=false;
 function renderDrawerFolders(id,filter,focusFid){
   const q=(filter||"").toLowerCase();
   const fs=sortedFolders().filter(f=>!q||f.name.toLowerCase().includes(q));
-  const rows=fs.map(f=>{ const on=f.items.includes(id); return `<button type="button" class="fr${on?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${on}" title="${on?"Poista tästä kansiosta":"Lisää tähän kansioon"}"><span class="chk">${on?"▣":"▢"}</span><span class="fname">${esc(f.name)}</span><span class="n">${f.items.length}</span><span class="act">${on?"Poista":"Lisää"}</span></button>`; }).join("");
+  const rows=fs.map(f=>{ const on=f.items.includes(id); return `<button type="button" class="fr${on?" on":""}" data-ftoggle="${esc(f.id)}" aria-pressed="${on}" title="${on?"Poista tästä kansiosta":"Lisää tähän kansioon"}"><span class="chk">${on?"▣":"▢"}</span><span class="fname">${esc(f.name)}</span><span class="n">${f.items.length}</span><span class="act">${on?"Poista":"Lisää"}</span></button>`; }).join("")
+    +sortedShared().filter(f=>!q||f.name.toLowerCase().includes(q)).map(f=>{ const on=f.items.includes(id); return `<a class="fr shared${on?" on":""}" href="${esc(proposalUrl(f,on?"poista":"lisaa",[id]))}" target="_blank" rel="noopener" data-fproposal="${esc(f.id)}" title="${on?"Kohde on tässä tiimikansiossa – ehdota poistoa GitHub-issuella":"Ehdota lisäystä tiimikansioon GitHub-issuella (toteutuu automaattisesti, jos sinulla on kirjoitusoikeus)"}"><span class="chk">${on?"⧉":"⬚"}</span><span class="fname">${esc(f.name)} <span class="micro">tiimi</span></span><span class="n">${f.items.length}</span><span class="act">${on?"Ehdota poistoa ↗":"Ehdota ↗"}</span></a>`; }).join("");
   const hid=state.hidden.has(id);
-  const mine=foldersOf(id).map(f=>f.name);
-  const label=mine.length?`▣ ${esc(mine.join(", "))}`:(state.folders.length?"＋ Lisää kansioon":"＋ Luo kansio ja lisää tämä");
+  const mine=foldersOf(id).map(f=>(f.shared?"⧉ ":"")+f.name);
+  const label=mine.length?`▣ ${esc(mine.join(", "))}`:((state.folders.length||SHARED.length)?"＋ Lisää kansioon":"＋ Luo kansio ja lisää tämä");
   document.getElementById("dr-folders").innerHTML=`<h4>Kansiot ja näkyvyys</h4>
     <div class="fdrop"><button type="button" class="fdrop-btn" id="dr-fdrop-btn" aria-expanded="${fdropOpen}" aria-controls="dr-fdrop-menu" title="${fdropOpen?"Sulje kansiolista":"Avaa kansiolista: lisää tai poista kohde kansioista"}"><span class="lbl${mine.length?"":" add"}">${label}</span><span class="caret">${mine.length?mine.length+" kansiota · ":""}${fdropOpen?"Sulje ▴":"Muokkaa ▾"}</span></button>
     <div class="fdrop-menu" id="dr-fdrop-menu"${fdropOpen?"":" hidden"}>
       ${state.folders.length>6?`<input class="fsearch" id="dr-fsearch" placeholder="Hae kansiota" aria-label="Hae kansiota" value="${esc(filter||"")}" style="margin-top:0">`:""}
-      ${state.folders.length?`<div class="flist" id="dr-flist"${state.folders.length>6?"":' style="margin-top:0"'}>${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
+      ${(state.folders.length||SHARED.length)?`<div class="flist" id="dr-flist"${state.folders.length>6?"":' style="margin-top:0"'}>${rows||'<div class="none">Ei osumia</div>'}</div>`:""}
       <div class="fcreate"><input id="dr-fnew" placeholder="Uuden kansion nimi" aria-label="Uuden kansion nimi"><button class="follow-btn" id="dr-fcreate" title="Luo tyhjä kansio lisäämättä tätä kohdetta">Luo kansio</button><button class="follow-btn" id="dr-fadd" title="Luo kansio ja lisää tämä kohde siihen">Luo ja lisää tämä</button></div>
     </div></div>
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="follow-btn" data-hide="${esc(id)}" aria-pressed="${hid}">${hid?"Palauta näkyviin":"Piilota näkymistä"}</button><span class="micro">${hid?"Piilotettu – näkyy vain Kansio › Piilotetut":"Piilotettu kohde poistuu kaikista näkymistä ja laskureista; löytyy Kansio › Piilotetut"}</span></div>`;
@@ -1207,7 +1251,9 @@ document.getElementById("yk-open").addEventListener("change",e=>{ state.ykOpen=e
 document.getElementById("yk-fi").addEventListener("change",e=>{ state.ykFi=e.target.checked; persist(); render(); });
 const folderSel=document.getElementById("folder-filter");
 function buildFolderSelect(){
-  const opts=[`<option value="">Kaikki kohteet</option>`].concat(sortedFolders().map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`));
+  const opts=[`<option value="">Kaikki kohteet</option>`];
+  if(state.folders.length) opts.push(`<optgroup label="Omat kansiot">`+sortedFolders().map(f=>`<option value="${esc(f.id)}">▣ ${esc(f.name)} (${f.items.length})</option>`).join("")+`</optgroup>`);
+  if(SHARED.length) opts.push(`<optgroup label="Tiimikansiot (jaetut)">`+sortedShared().map(f=>`<option value="${esc(f.id)}">⧉ ${esc(f.name)} (${f.items.length})</option>`).join("")+`</optgroup>`);
   opts.push(`<option value="__hidden">Piilotetut (${state.hidden.size})</option>`);
   folderSel.innerHTML=opts.join(""); if(state.folderFilter&&state.folderFilter!=="__hidden"&&!folderById(state.folderFilter)) state.folderFilter="";
   folderSel.value=state.folderFilter; folderSel.classList.toggle("active",!!state.folderFilter);
@@ -1217,7 +1263,9 @@ const foldersEl=document.getElementById("folders"), foldersScrim=document.getEle
 let pendingDelete=null;
 function renderFolderRows(){
   const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id)));
-  document.getElementById("folder-rows").innerHTML=sortedFolders().map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button>${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei kansioita vielä</p>';
+  const own=sortedFolders().map(f=>{ const miss=f.items.filter(i=>!all.has(i)).length; return `<div class="frow" data-fid="${esc(f.id)}"><input value="${esc(f.name)}" aria-label="Kansion nimi" data-frename="${esc(f.id)}"><span class="n">${f.items.length} kohdetta${miss?` · ${miss} ei enää aineistossa`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><button class="follow-btn" data-fics="${esc(f.id)}" title="Lataa kansion määräajat kalenteritiedostona (.ics)">Kalenteri</button>${KANSIOT.newUrl?`<a href="${esc(shareFolderUrl(f))}" target="_blank" rel="noopener" title="Avaa GitHubiin valmiiksi täytetyn kansiotiedoston – tallennettuna siitä tulee kaikille näkyvä tiimikansio, jolla on oma kalenterisyöte">Jaa tiimikansioksi ↗</a>`:""}${miss?`<button class="follow-btn" data-fclean="${esc(f.id)}" title="Poista kohteet, joita ei enää ole aineistossa">Siivoa</button>`:""}<button class="follow-btn" data-fdel="${esc(f.id)}"${pendingDelete===f.id?' style="border-color:var(--signal);color:var(--signal)"':""}>${pendingDelete===f.id?"Vahvista poisto":"Poista"}</button></span></div>`; }).join("")||'<p class="empty">Ei omia kansioita vielä</p>';
+  const shared=sortedShared().map(f=>`<div class="frow shared" data-fid="${esc(f.id)}"><span class="fname" style="font-weight:600">⧉ ${esc(f.name)}${f.example?' <span class="micro">(esimerkki)</span>':""}</span><span class="n">${f.items.length} kohdetta${f.ruleCount?` · ${f.ruleCount} säännöillä`:""}${f.owner?` · ${esc(f.owner)}`:""}</span><span class="acts"><button class="follow-btn" data-fopen="${esc(f.id)}">Näytä</button><a href="${esc(f.ics)}" title="Tilaa kalenteriin: kopioi linkki kalenteriohjelman 'tilaa kalenteri osoitteesta' -kohtaan">Kalenterisyöte</a><a href="${esc(f.edit)}" target="_blank" rel="noopener">Muokkaa GitHubissa ↗</a></span>${f.desc?`<div class="desc">${esc(f.desc)}</div>`:""}</div>`).join("");
+  document.getElementById("folder-rows").innerHTML=`<h4 style="margin:10px 0 4px">Omat kansiot <span class="micro">tässä selaimessa</span></h4>${own}<h4 style="margin:16px 0 4px">Tiimikansiot <span class="micro">jaetut – kaikki näkevät, ylläpidetään GitHubissa (config/kansiot)</span></h4>${shared||'<p class="empty">Ei tiimikansioita. Oman kansion kohdalla "Jaa tiimikansioksi" luo ensimmäisen.</p>'}`;
   document.getElementById("folders-hidden").textContent=`Piilotettuja kohteita: ${state.hidden.size}. Ne löytyvät Kansio-valikon kohdasta Piilotetut, josta ne voi palauttaa.`;
 }
 function openFolders(){ pendingDelete=null; renderFolderRows(); document.getElementById("folder-new").value=""; foldersEl.hidden=false; foldersScrim.hidden=false; document.getElementById("folder-new").focus(); }
@@ -1231,6 +1279,7 @@ document.getElementById("folder-add").addEventListener("click",()=>{ const inp=d
 foldersEl.addEventListener("change",e=>{ const r=e.target.closest("[data-frename]"); if(r){ const f=folderById(r.dataset.frename); const name=r.value.trim().slice(0,60); if(f&&name){ f.name=name; persistFolders(); render(); } else if(f) r.value=f.name; } });
 foldersEl.addEventListener("click",e=>{
   const o=e.target.closest("[data-fopen]"); if(o){ state.folderFilter=o.dataset.fopen; persist(); closeFolders(); render(); return; }
+  const ic=e.target.closest("[data-fics]"); if(ic){ const f=folderById(ic.dataset.fics); if(f){ downloadIcs(f.items.map(findItem).filter(Boolean),"Säädösseuranta – "+f.name,slugify(f.name)+".ics"); toast(`Kalenteritiedosto ladattu: ${f.name}`); } return; }
   const c=e.target.closest("[data-fclean]"); if(c){ const f=folderById(c.dataset.fclean); const all=new Set(DATA.map(i=>i.id).concat(TENDERS.map(i=>i.id))); if(f){ f.items=f.items.filter(i=>all.has(i)); persistFolders(); renderFolderRows(); render(); } return; }
   const d=e.target.closest("[data-fdel]"); if(d){ const id=d.dataset.fdel; if(pendingDelete!==id){ pendingDelete=id; renderFolderRows(); return; } state.folders=state.folders.filter(f=>f.id!==id); if(state.folderFilter===id) state.folderFilter=""; pendingDelete=null; persistFolders(); persist(); renderFolderRows(); render(); }
 });
@@ -1334,7 +1383,7 @@ Promise.all([
   render();
   if(window.__synced){ document.getElementById("sys").insertAdjacentHTML("beforeend",`<span><b>Seurantalista tuotu linkistä (${window.__synced})</b></span>`); }
   if(pendingItem&&DATA.some(i=>i.id===pendingItem)) openItem(pendingItem);
-  loadTenders(); loadMergers();
+  loadTenders(); loadMergers(); loadShared();
 }).catch(e=>{ document.getElementById("sys").innerHTML='<span><i class="led"></i>Aineistoa ei voitu ladata (data/items.json)</span>'; document.querySelectorAll(".tl,#kpis").forEach(x=>x.innerHTML='<p class="empty">Aineistoa ei voitu ladata – aja scripts/update.py tai tarkista GitHub Actions</p>'); });
 </script>
 </body>

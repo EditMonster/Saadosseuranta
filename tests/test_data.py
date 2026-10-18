@@ -334,6 +334,34 @@ def test_mergers_counts(mergers):
     assert c["eu_fi_open"] == sum(1 for m in items if m["authority"] == "EU" and m["fiParty"] and not m["done"])
 
 
+# ---------- kansiot.json + per-folder calendar feeds (shared team folders) ----------
+
+def test_team_folders(items, tenders, mergers):
+    k = json.loads((DATA / "kansiot.json").read_text(encoding="utf-8"))
+    assert k["repo"] and k["newUrl"].startswith("https://github.com/") and k["issueUrl"].endswith("/issues/new")
+    ids = {i["id"] for i in items} | {t["id"] for t in tenders["items"]} | {m["id"] for m in mergers["items"]}
+    assert len(k["folders"]) >= 1
+    for f in k["folders"]:
+        assert re.match(r"^[a-z0-9][a-z0-9-]{1,40}$", f["id"]) and f["name"].strip(), f
+        assert set(f["items"]) <= ids, (f["id"], [i for i in f["items"] if i not in ids][:5])
+        assert len(f["items"]) == len(set(f["items"]))
+        assert set(f["explicit"]) <= set(f["items"]) and f["ruleCount"] == len(f["items"]) - len(f["explicit"])
+        assert f["ics"] == f"data/kansiot/{f['id']}.ics" and f["edit"].endswith(f"config/kansiot/{f['id']}.yaml")
+        assert (ROOT / "config" / "kansiot" / f"{f['id']}.yaml").exists()
+        with open(DATA / "kansiot" / f"{f['id']}.ics", encoding="utf-8", newline="") as fh:
+            ics = fh.read()
+        assert ics.startswith("BEGIN:VCALENDAR\r\n") and ics.endswith("END:VCALENDAR\r\n")
+        assert f"X-WR-CALNAME:Säädösseuranta – {f['name']}".split("\r\n")[0] in ics.replace("\\,", ",")
+        assert ics.count("BEGIN:VEVENT") == ics.count("END:VEVENT")
+        for n in f["next"]:
+            assert DATE.match(n["date"]) and n["id"] in ids
+    # the example folders ship with rules and resolve to something
+    ex = [f for f in k["folders"] if f["example"]]
+    assert all(len(f["items"]) >= 1 for f in ex)
+    # feeds for folders that no longer exist are removed
+    assert {p.stem for p in (DATA / "kansiot").glob("*.ics")} == {f["id"] for f in k["folders"]}
+
+
 # ---------- meta.json, changes.json, ics ----------
 
 def test_meta(meta, items, tenders, mergers):

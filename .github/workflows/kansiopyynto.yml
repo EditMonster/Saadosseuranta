@@ -1,0 +1,77 @@
+name: Kansiopyyntö
+
+# Toteuttaa tiimikansion muutosehdotuksen, joka on tullut sivulta GitHub-issuena ("[kansio] …").
+# Issuen avaaja, jolla on kirjoitusoikeus repoon (owner, member, collaborator), saa muutoksen heti;
+# muiden ehdotus odottaa, kunnes ylläpitäjä kommentoi issueen "/hyvaksy". Skripti tarkistaa tunnisteet
+# julkaistua aineistoa vasten ja muokkaa vain config/kansiot/<tunnus>.yaml-tiedostoa.
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: kansiopyynto
+  cancel-in-progress: false
+
+jobs:
+  toteuta:
+    if: >-
+      startsWith(github.event.issue.title, '[kansio]') && (
+        (github.event_name == 'issues' && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
+        (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/hyvaksy') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+      )
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Toteuta pyyntö
+        id: apply
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          python scripts/kansiopyynto.py ${{ github.event.issue.number }}
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Tallenna muutokset
+        if: steps.apply.outputs.code == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "saadosseuranta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add config/kansiot docs/data/kansiot.json docs/data/kansiot
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+          else
+            git commit -m "Tiimikansio: $(python -c "import json;print(json.load(open('.kansiopyynto.json'))['fid'])") (#${{ github.event.issue.number }})"
+            for i in 1 2 3; do git push && break; git fetch origin main; git rebase origin/main || { git rebase --abort; exit 1; }; sleep 10; done
+          fi
+          msg=$(python -c "import json;print(json.load(open('.kansiopyynto.json'))['message'])")
+          gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} --body "$msg"
+          gh issue close ${{ github.event.issue.number }} -R ${{ github.repository }}
+
+  odottaa:
+    if: >-
+      github.event_name == 'issues' && github.event.action == 'opened' && startsWith(github.event.issue.title, '[kansio]') &&
+      !contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} --body "Kiitos ehdotuksesta. Se odottaa ylläpitäjän hyväksyntää: ylläpitäjä toteuttaa sen kommentoimalla tähän **/hyvaksy**."

@@ -5,6 +5,7 @@ import datetime as dt
 import re
 
 from build_hankinnat import build_hankinnat
+from build_kansiot import build_kansiot
 from build_yrityskaupat import build_yrityskaupat
 from common import CACHE_DIR, CONFIG_DIR, OUT_DIR, TODAY, days_ago, is_future, load_json, load_yaml, log, save_json
 
@@ -512,32 +513,48 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
 ICS_KINDS = {"voimaan": "Voimaan", "soveltaminen": "Soveltaminen", "maaraaika": "Määräaika", "lausunto": "Lausuntoaika päättyy"}
 
 
-def build_ics(items: list[dict]) -> str:
-    """All-day calendar events for upcoming deadlines (next 400 days), importable into any calendar."""
+ICS_TAG = {"fi": "FI", "eu": "EU", "hankinta": "Hankinta", "yrityskauppa": "Yrityskauppa"}
+
+
+def build_ics(items: list[dict], name: str = "Säädösseuranta – määräajat", uid_suffix: str = "") -> str:
+    """All-day calendar events for upcoming deadlines (next 400 days), importable into any calendar.
+    Works for every row type (statutes, EU files, tenders, merger cases, delegated acts) via their events."""
     def esc_(s):
         return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", " ")
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//saadosseuranta//FI", "CALSCALE:GREGORIAN",
-             "X-WR-CALNAME:Säädösseuranta – määräajat", "X-WR-TIMEZONE:Europe/Helsinki"]
+             f"X-WR-CALNAME:{esc_(name)}", "X-WR-TIMEZONE:Europe/Helsinki"]
     lo, hi = (TODAY - dt.timedelta(days=7)).isoformat(), (TODAY + dt.timedelta(days=400)).isoformat()
     # DTSTAMP is required by RFC 5545; deriving it from the event date (instead of "now") keeps the
     # file byte-identical between runs unless a deadline actually changes, so git stays quiet.
+    seen = set()
     for it in items:
-        for e in it["events"]:
+        url = it.get("source") or it.get("url")
+        ref = it.get("ref") or it.get("maoNumber") or it.get("noticeNumber") or it.get("buyer") or ""
+        for e in it.get("events") or []:
             kind = e.get("kind")
             if kind not in ICS_KINDS:
                 continue
             day = e.get("end") if kind == "lausunto" else e["date"]
             if not day or day < lo or day > hi:
                 continue
+            uid = f"{it['id']}-{kind}-{day}{uid_suffix}@saadosseuranta"
+            if uid in seen:
+                continue
+            seen.add(uid)
             d = dt.date.fromisoformat(day)
             nxt = (d + dt.timedelta(days=1)).strftime("%Y%m%d")
-            summary = f"[{'FI' if it['scope'] == 'fi' else 'EU'}] {ICS_KINDS[kind]}: {it['title']}"
-            desc = f"{e.get('label', '')} · {it['ref']}" + (f" · {it['source']}" if it.get("source") else "")
-            lines += ["BEGIN:VEVENT", f"UID:{it['id']}-{kind}-{day}@saadosseuranta", f"DTSTAMP:{d.strftime('%Y%m%d')}T000000Z",
+            tag = ICS_TAG.get(it.get("scope"), "EU")
+            if it.get("scope") == "yrityskauppa":
+                tag = it.get("authority") or tag
+            summary = f"[{tag}] {ICS_KINDS[kind]}: {it['title']}"
+            if e.get("confirmed") is False:
+                summary += " (arvio)"
+            desc = f"{e.get('label', '')} · {ref}".strip(" ·") + (f" · {url}" if url else "")
+            lines += ["BEGIN:VEVENT", f"UID:{uid}", f"DTSTAMP:{d.strftime('%Y%m%d')}T000000Z",
                       f"DTSTART;VALUE=DATE:{d.strftime('%Y%m%d')}", f"DTEND;VALUE=DATE:{nxt}",
                       f"SUMMARY:{esc_(summary)}", f"DESCRIPTION:{esc_(desc)}"]
-            if it.get("source"):
-                lines.append(f"URL:{it['source']}")
+            if url:
+                lines.append(f"URL:{url}")
             lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
@@ -696,6 +713,11 @@ def main():
     save_json(OUT_DIR / "meta.json", meta, compact=True)
     (OUT_DIR / "saadosseuranta.ics").write_text(build_ics(keep), encoding="utf-8")
     log(f"build: {c} -> {OUT_DIR / 'items.json'} + meta.json")
+    # Shared team folders (config/kansiot/*.yaml) -> docs/data/kansiot.json + one calendar feed per folder
+    try:
+        build_kansiot(keep, hank.get("items") or [], yk.get("items") or [], build_ics)
+    except Exception as e:  # noqa: BLE001
+        log(f"ERROR kansiot: {e}")
 
 
 if __name__ == "__main__":

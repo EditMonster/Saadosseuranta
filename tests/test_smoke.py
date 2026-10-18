@@ -63,6 +63,7 @@ def goto(pg, base_url, hash_=""):
     pg.wait_for_function("typeof DATA !== 'undefined' && DATA.length > 0")
     pg.wait_for_function("typeof TENDERS_LOADED !== 'undefined' && TENDERS_LOADED === true")
     pg.wait_for_function("typeof MERGERS_LOADED !== 'undefined' && MERGERS_LOADED === true")
+    pg.wait_for_function("typeof SHARED_LOADED !== 'undefined' && SHARED_LOADED === true")
 
 
 def ls(pg, key):
@@ -285,6 +286,48 @@ def test_tender_lifecycle_stages(page, base_url):
         assert page.locator("#dr-facts [data-open]").count() >= 1
         page.click("#dr-facts [data-open] >> nth=0")
         assert page.evaluate("document.getElementById('drawer').dataset.id") != rid
+
+
+def test_team_folders(page, base_url):
+    goto(page, base_url, "#tilannekuva")
+    shared = page.evaluate("SHARED.map(f=>({id:f.id,name:f.name,n:f.items.length,ics:f.ics}))")
+    assert len(shared) >= 1
+    # selector lists them under their own group, Tilannekuva shows them as dashed chips
+    assert page.locator("#folder-filter optgroup[label^='Tiimikansiot'] option").count() == len(shared)
+    assert page.locator("#l-folders .chip.shared").count() == len(shared)
+    assert "tiimi" in page.text_content("#h-folders")
+    # choosing a team folder narrows every view to its items and shows the feed + edit links
+    f = max(shared, key=lambda x: x["n"])
+    page.click(f"#l-folders .chip.shared[data-fid='{f['id']}']")
+    info = page.text_content("#l-folder-info")
+    assert "tiimikansio" in info and "Kalenterisyöte" in info and "Muokkaa GitHubissa" in info
+    assert page.locator(f"#l-folder-info a[href='{f['ics']}']").count() == 1
+    assert page.evaluate("state.folderFilter") == f["id"]
+    visible = page.evaluate("DATA.filter(baseVisible).length + TENDERS.filter(baseVisible).length + MERGERS.filter(baseVisible).length")
+    assert 0 < visible <= f["n"]
+    # the feed itself is served and is a calendar
+    ics = page.request.get(base_url + "/" + f["ics"]).text()
+    assert ics.startswith("BEGIN:VCALENDAR") and "X-WR-CALNAME:" in ics
+    # manager: team section with feed + GitHub links; own folder gets share + calendar actions
+    page.click("#open-folders")
+    assert page.locator("#folder-rows .frow.shared").count() == len(shared)
+    assert page.locator("#folder-rows .frow.shared a[href$='.ics']").count() == len(shared)
+    assert page.locator("#folder-rows .frow.shared a[href*='github.com']").count() == len(shared)
+    page.fill("#folder-new", "Oma kansio"); page.click("#folder-add")
+    own = page.locator("#folder-rows .frow:not(.shared)").first
+    assert "Jaa tiimikansioksi" in own.text_content()
+    href = own.locator("a").first.get_attribute("href")
+    assert href.startswith("https://github.com/") and "filename=config%2Fkansiot%2Foma-kansio.yaml" in href and "value=nimi" in href
+    page.click("#folders-close")
+    # drawer: team folders appear with a proposal link (GitHub issue) instead of add/remove
+    page.locator("#folder-filter").select_option("")
+    page.click("#tab-fi"); page.click("#tl-fi .row[data-id] >> nth=0"); page.wait_for_selector("#drawer:not([hidden])")
+    page.click("#dr-fdrop-btn")
+    rows = page.locator("#dr-flist .fr.shared")
+    assert rows.count() == len(shared)
+    phref = rows.first.get_attribute("href")
+    assert "/issues/new?title=%5Bkansio%5D" in phref and "kansio%3A" in phref
+    page.keyboard.press("Escape")
 
 
 def test_eu_council_and_delegated(page, base_url):

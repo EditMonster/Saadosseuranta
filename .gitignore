@@ -5,3 +5,4 @@ data/*.log
 .DS_Store
 # Hilma-välimuisti haetaan joka ajossa uudelleen (6 MB, ei syytä versioida)
 data/cache/hankinnat.json
+.kansiopyynto.json
