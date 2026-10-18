@@ -109,7 +109,7 @@ def test_tenders_minimum(tenders, settings):
     assert tenders["topics"] and tenders["topics"][-1] == "Muut"
 
 
-STAGES = {"tulossa", "avoin", "ratkaistu", "suorahankinta", "mao"}
+STAGES = {"tulossa", "avoin", "ratkaistu", "suorahankinta", "mao", "paatos", "ennuste", "kalenteri"}
 LIVE = {"tulossa": "tulossa", "avoin": "avoin", "ratkaistu": "ratkaistu", "suorahankinta": "valitusaika"}
 
 
@@ -126,8 +126,22 @@ def test_tenders_schema(tenders):
         if st == "mao":
             continue  # Market Court rows are checked in test_market_court_rows
         assert t["id"].startswith("hk-"), t["id"]
-        assert t["status"] in TENDER_STATUS | {"tulossa", "ratkaistu", "valitusaika"}, (t["id"], t["status"])
-        assert t["url"].startswith("https://www.hankintailmoitukset.fi/"), (t["id"], t["url"])
+        assert t["status"] in TENDER_STATUS | {"tulossa", "ratkaistu", "valitusaika", "ennuste", "suunniteltu", "julkaistu Hilmassa"}, (t["id"], t["status"])
+        if t.get("country"):  # TED rows link to TED
+            assert t["id"].startswith("hk-ted-") and t["url"].startswith("https://ted.europa.eu/"), (t["id"], t["url"])
+        elif st == "paatos":
+            assert t["id"].startswith("hk-pt-") and t["url"].startswith("https://") and t.get("decisionDate"), t["id"]
+            assert t.get("appealEnd") or t["status"] == "päättynyt", t["id"]  # muutoksenhakukielto: no appeal window
+            assert t["status"] in ("valitusaika", "päättynyt"), t["id"]
+        elif st == "kalenteri":
+            assert t["id"].startswith("hk-kal-") and t["url"].startswith("https://") and t.get("plannedDate") and t["status"] in ("suunniteltu", "julkaistu Hilmassa"), t["id"]
+            assert any(e["kind"] == "ennuste" and e.get("confirmed") is False for e in t["events"]), t["id"]
+        elif st == "ennuste":
+            assert t["id"].startswith("hk-enn-") and t["url"].startswith("https://www.hankintailmoitukset.fi/") and DATE.match(t["contractEnd"]), t["id"]
+            assert t["forecastWindow"]["from"] <= t["forecastWindow"]["to"] <= t["contractEnd"] and t["status"] == "ennuste", t["id"]
+            assert any(e["label"].startswith("Sopimuskausi päättyy") for e in t["events"]), t["id"]
+        else:
+            assert t["url"].startswith("https://www.hankintailmoitukset.fi/"), (t["id"], t["url"])
         assert len(t.get("summary", "")) <= 500, t["id"]
         if t.get("published"):
             assert DATE.match(t["published"]), t["id"]
@@ -230,6 +244,10 @@ def test_market_court_rows(tenders):
     assert tenders["counts"]["mao_ratkaistu"] == sum(1 for t in mao if t["status"] == "ratkaistu") >= 5
     ids = [t["id"] for t in mao]
     assert len(ids) == len(set(ids))
+    kkv = [t for t in mao if t["id"].startswith("hk-kkv-")]  # KKV's procurement supervision shares the stage
+    for t in kkv:
+        assert t["kind"].startswith("KKV") and t["url"].startswith("https://www.kkv.fi/") and t["status"] in ("päätetty", "esitys markkinaoikeudessa"), t["id"]
+    mao = [t for t in mao if not t["id"].startswith("hk-kkv-")]
     for t in mao:
         assert t["id"].startswith(("mao-v-", "mao-r-")) and t["buyer"] and t["title"], t["id"]
         assert t["status"] in ("vireillä", "ratkaistu", "poistunut"), t["id"]
@@ -270,6 +288,11 @@ def test_mergers_schema(mergers):
     assert len(ids) == len(set(ids))
     assert {m["authority"] for m in items} == {"KKV", "EU"}
     topics = set(mergers["topics"])
+    kr = [m for m in items if m.get("segment") == "kilpailunrajoitus"]
+    for m in kr:
+        assert m["id"].startswith("kr-") and m["authority"] == "KKV" and m["title"] and m["url"].startswith("https://www.kkv.fi/"), m["id"]
+        assert isinstance(m.get("parties"), list) and isinstance(m["done"], bool), m["id"]
+    items = [m for m in items if m.get("segment", "yrityskauppa") == "yrityskauppa"]
     for m in items:
         assert m["id"].startswith("yk-fi-" if m["authority"] == "KKV" else "yk-eu-"), m["id"]
         assert m["scope"] == "yrityskauppa" and m["laji"] == "yrityskauppa", m["id"]
@@ -326,7 +349,9 @@ def test_mergers_parties(mergers):
 
 def test_mergers_counts(mergers):
     c = mergers["counts"]
-    items = mergers["items"]
+    kr = [m for m in mergers["items"] if m.get("segment") == "kilpailunrajoitus"]
+    assert c["kilpailunrajoitus"] == len(kr) and c["kilpailunrajoitus_open"] == sum(1 for m in kr if not m["done"])
+    items = [m for m in mergers["items"] if m.get("segment", "yrityskauppa") == "yrityskauppa"]
     assert c["fi"] == sum(1 for m in items if m["authority"] == "KKV")
     assert c["eu"] == sum(1 for m in items if m["authority"] == "EU")
     assert c["fi_open"] == sum(1 for m in items if m["authority"] == "KKV" and not m["done"])

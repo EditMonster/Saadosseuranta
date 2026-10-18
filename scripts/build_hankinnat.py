@@ -233,6 +233,8 @@ def build_hankinnat(settings) -> dict | None:
     for o in prev_items:
         if o["id"] in by_id or o.get("stage", "avoin") != "avoin" or (o.get("deadline") or "")[:10] < cutoff:
             continue
+        if o.get("country") or not str(o["id"]).startswith("hk-") or str(o["id"]).startswith(("hk-ted-", "hk-kal-", "hk-enn-", "hk-pt-", "hk-kkv-")):
+            continue  # only Hilma notices are carried over; TED and forward-looking rows are rebuilt from their own caches
         o = dict(o)
         o["stage"] = "avoin"
         o["status"] = "päättynyt" if o.get("deadline", "") < now else "poistunut"
@@ -282,23 +284,55 @@ def build_hankinnat(settings) -> dict | None:
         log(f"warn: markkinaoikeuden rivit ohitettu: {e}")
         mao = []
     rows.extend(mao)
+    # Helsinki procurement decisions (stage "paatos"), KKV's procurement supervision (stage "mao") and incumbent
+    # suppliers from Tutkihankintoja; each optional: a failure leaves the rest of the file intact
+    extra_counts: dict[str, int] = {}
+    try:
+        from build_valvonta import attach_incumbents, decision_rows, kkv_valvonta_rows
+
+        paat = decision_rows(settings, rows, cfg, mao)
+        rows.extend(paat)
+        kkv = kkv_valvonta_rows(settings, cfg).get("hankinta") or []
+        rows.extend(kkv)
+        attach_incumbents(rows, settings)
+        extra_counts = {"paatos": sum(1 for r in paat if r.get("status") == "valitusaika"), "paatos_all": len(paat), "kkv_valvonta": len(kkv),
+                        "incumbents": sum(1 for r in rows if r.get("incumbents"))}
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: hankintapäätökset / KKV-valvonta / toimittajat ohitettu: {e}")
+    # Forward-looking rows: re-tender forecasts from contract periods, buyers' procurement plans, TED by country
+    try:
+        from build_ennakointi import forecast_rows, link_back, plan_rows, ted_rows
+
+        enn = forecast_rows(settings, rows, cfg)
+        kal = plan_rows(settings, rows, cfg)
+        ted = ted_rows(settings, cfg)
+        link_back(rows, enn + kal)
+        rows.extend(enn + kal + ted)
+        extra_counts.update({"ennuste": len(enn), "kalenteri": len(kal), "ted": len(ted)})
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: ennusteet / kalenterit / TED ohitettu: {e}")
 
     def sort_key(r):
         st = r.get("stage", "avoin")
         key = r.get("deadline") or r.get("appealEnd") or r.get("expires") or ""
-        if st in ("ratkaistu", "mao"):
-            key = "~" + (r.get("published") or "")  # newest decided last in ascending order; page sorts desc
+        if st in ("ratkaistu", "mao", "paatos"):
+            key = "~" + (r.get("published") or r.get("decisionDate") or "")  # newest decided last in ascending order; page sorts desc
+        elif st in ("ennuste", "kalenteri"):
+            key = r.get("forecastWindow", {}).get("from") if isinstance(r.get("forecastWindow"), dict) else None
+            key = key or r.get("plannedDate") or r.get("contractEnd") or ""
         return (key, r["id"])
     rows.sort(key=sort_key)
-    open_rows = [r for r in rows if r["status"] == "avoin" and r.get("deadline", "") > now]
+    # KPI counts cover Finnish Hilma notices only: TED rows (country set) and forward-looking rows have their own counters
+    hilma = [r for r in rows if not r.get("country") and r.get("stage", "avoin") in ("avoin", "tulossa", "ratkaistu", "suorahankinta")]
+    open_rows = [r for r in hilma if r["status"] == "avoin" and r.get("deadline", "") > now]
     soon = (TODAY + dt.timedelta(days=7)).isoformat()
     counts = {"avoinna": sum(1 for r in open_rows if not r.get("dps")), "dps": sum(1 for r in open_rows if r.get("dps")),
               "sulkeutuu7": sum(1 for r in open_rows if not r.get("dps") and r["deadline"][:10] <= soon),
               "eu": sum(1 for r in open_rows if r.get("eu") and not r.get("dps")),
-              "tulossa": sum(1 for r in rows if r["status"] == "tulossa"),
-              "ratkaistu": sum(1 for r in rows if r["status"] == "ratkaistu"),
-              "suorahankinta": sum(1 for r in rows if r["status"] == "valitusaika"),
-              "mao": sum(1 for r in mao if r["status"] == "vireillä"), "mao_ratkaistu": sum(1 for r in mao if r["status"] == "ratkaistu")}
+              "tulossa": sum(1 for r in hilma if r["status"] == "tulossa"),
+              "ratkaistu": sum(1 for r in hilma if r["status"] == "ratkaistu"),
+              "suorahankinta": sum(1 for r in hilma if r["status"] == "valitusaika"),
+              "mao": sum(1 for r in mao if r["status"] == "vireillä"), "mao_ratkaistu": sum(1 for r in mao if r["status"] == "ratkaistu"), **extra_counts}
     payload = {"items": rows, "counts": counts, "topics": list((cfg.get("toimialat") or {}).keys()) + ["Muut"],
                "awardDays": award_days, "appealDays": appeal_days}
     minimum = int(hcfg.get("min_items", 100))

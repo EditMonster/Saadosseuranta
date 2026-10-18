@@ -1,0 +1,80 @@
+# Hankintayksiköiden omat hankintakalenterit ja kilpailutussuunnitelmat (scripts/fetch_suunnitelmat.py).
+#
+# Hilman kilpailutussuunnitelmat ($filter=isPlan eq true) haetaan aina erikseen; tässä ovat yksiköiden omat
+# sivut, joita Hilma ei kata. Jokaiselle lähteelle: nimi (hankintayksikön nimi riveillä), url tai urls,
+# tyyppi (jäsennin fetch_suunnitelmat.PARSERS-taulussa), enabled sekä hilma_nimet = nimet, joilla sama
+# yksikkö esiintyy Hilma-ilmoituksissa (suunnitelman ja julkaistun ilmoituksen yhdistämiseen).
+# Epäonnistunut lähde säilyttää edelliset rivinsä; vain jos Hilma-suunnitelmat JA kaikki kalenterit
+# epäonnistuvat, ajo keskeytyy.
+#
+# Suunniteltu julkaisuajankohta muunnetaan arviopäiväksi (plannedDate): vuosineljännes → neljänneksen toisen
+# kuukauden 1. päivä, kuukausi → 15. päivä, kevät 15.4., kesä 15.7., syksy 15.10., talvi 15.1.
+# Kun kalenteri kertoo vain sopimuskauden alun, ilmoitus arvioidaan ennen sitä (ks. jäsentimien kuvaukset).
+
+kalenterit:
+  hansel:
+    nimi: Hansel Oy
+    tyyppi: hansel
+    # htmx-fragmentit (10 korttia/sivu): esiselvityksessä ja tulossa olevat sekä käynnissä olevat
+    # yhteishankinnat, joiden voimassaolon päättyminen ennakoi seuraajan kilpailutusta
+    urls:
+      - https://www.hansel.fi/yhteishankinnat/fragment/?tila=esiselvityksessa&tyyppi=kaikki
+      - https://www.hansel.fi/yhteishankinnat/fragment/?tila=tulossa&tyyppi=kaikki
+      - https://www.hansel.fi/yhteishankinnat/fragment/?tila=kaynnissa&tyyppi=kaikki
+    sivu: https://www.hansel.fi/yhteishankinnat/
+    hilma_nimet: ["Hansel Oy"]
+    enabled: true
+  hus:
+    nimi: HUS-yhtymä
+    tyyppi: hus_xlsx
+    # sivulta poimitaan kuukausittain vaihtuva xlsx-linkki (href sisältää "tulevat-ja-valmistelussa")
+    url: https://www.hus.fi/ammattilaiselle/ammattilaisten-palvelut-ja-ohjeet/hankintapalvelut
+    hilma_nimet: ["HUS-yhtymä", "HUS Logistiikka"]
+    enabled: true
+  espoo:
+    nimi: Espoon kaupunki
+    tyyppi: espoo_table
+    url: https://www.espoo.fi/fi/tyoelama/business-espoo-yritysten-parhaaksi/tavoitteena-kasvu/hankinnat/espoon-kaupungin-hankintakalenteri
+    hilma_nimet: ["Espoon kaupunki"]
+    enabled: true
+  senaatti:
+    nimi: Senaatti-kiinteistöt
+    tyyppi: senaatti_table
+    url: https://www.senaatti.fi/tietoa-meista/hankinnat/kilpailutuskalenteri/
+    hilma_nimet: ["Senaatti-kiinteistöt", "Puolustuskiinteistöt", "Senaatti-konserni"]
+    enabled: true
+  tampere:
+    nimi: Tampereen kaupunki
+    tyyppi: tampere_json
+    url: https://toimittaja-asiointi.tampere.fi/api/ProcurementCalendar/getall/
+    sivu: https://www.tampere.fi/tyo-ja-yrittaminen/hankinnat/tulevat-hankinnat
+    hilma_nimet: ["Tampereen kaupunki"]
+    enabled: true
+  tuomi:
+    nimi: Tuomi Logistiikka Oy
+    tyyppi: tuomi_accordion
+    url: https://www.tuomi.fi/palvelut/hankinta/hankintakalenteri/
+    hilma_nimet: ["Tuomi Logistiikka Oy"]
+    enabled: true
+  luvn:
+    nimi: Länsi-Uudenmaan hyvinvointialue
+    tyyppi: luvn_accordion
+    url: https://www.luvn.fi/fi/tietoa-meista/omavalvonta-ja-palveluntuottajien-ohjaus/hankinnat
+    hilma_nimet: ["Länsi-Uudenmaan hyvinvointialue"]
+    enabled: true
+  vantaa:
+    nimi: Vantaan kaupunki
+    tyyppi: vantaa_pdf
+    # Kuukausittain vaihtuva PDF (Excel-tuloste, 16 s.): vaatii pdftotext-jäsentimen; lisäksi vantaa.fi
+    # ei vastaa requests-kirjastolle (aikakatkaisu), curl toimii – ei vielä toteutettu
+    url: https://www.vantaa.fi/fi/kaupunki-ja-paatoksenteko/talous-ja-strategia/hankinnat
+    hilma_nimet: ["Vantaan kaupunki"]
+    enabled: false
+  pirha:
+    nimi: Pirkanmaan hyvinvointialue
+    tyyppi: pirha_pdf
+    # Hankintasuunnitelma 2026–2027 on 63-sivuinen PDF taulukoineen (pdfplumber); päivittyy kahdesti
+    # vuodessa – tavara- ja ICT-hankinnat näkyvät jo Tuomi Logistiikan kalenterissa. Ei vielä toteutettu
+    url: https://www.pirha.fi/documents/d/guest/pirkanmaan-hyvinvointialueen-hankintasuunnitelma
+    hilma_nimet: ["Pirkanmaan hyvinvointialue"]
+    enabled: false

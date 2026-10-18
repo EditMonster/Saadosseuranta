@@ -1,0 +1,532 @@
+
+
+
+<div class="htmx-loaded-content w-full">
+  
+  
+    <h2 class="js-results-heading text-xl md:text-3xl font-maven font-medium text-graphite mb-8">
+      Löysimme 21 tulosta
+    </h2>
+    
+  
+
+  
+
+    
+      <div class="flex flex-col my-8 text-2sm">
+
+        <div class="block text-2sm text-graphite font-maven mb-2">Valitut suodatusehdot</div>
+
+        <div class="flex flex-wrap">
+
+          
+          
+
+          
+          
+          
+
+          
+          
+
+          
+          
+
+          
+          
+
+          
+          
+            <p class="inline-flex space-x-2 items-center text-blue-gray bg-white rounded-full border border-grey-accent px-3 py-1 mr-3 mb-2">
+              <span>Tulossa</span>
+            </p>
+          
+
+          
+          
+
+          
+          <button
+            id="js-reset-filters"
+            class="inline-flex space-x-2 items-center text-blue-gray bg-white rounded-full border border-grey-accent pl-3 pr-2 py-1 mr-3 mb-2 hover:ring-2 hover:ring-bright-blue hover:border-bright-blue focus:ring-2 focus:ring-bright-blue focus:border-bright-blue"
+          >
+            <span>Poista kaikki suodatukset</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+              <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+            </svg>
+          </button>
+
+          
+          <div
+            hx-get="/yhteishankinnat/fragment/"
+            hx-trigger="
+              click from:[id='js-reset-filters']"
+            hx-target="#results"
+            hx-swap="innerHTML"
+            hx-include="
+              [name='liittyminen-mahdollista'],
+              [name='omat'],
+              [name='haku'],
+              [name='kategoria'],
+              [name='tila'],
+              [name='kayttovelvoite'],
+              [name='time_to_join'],
+              [name='tyyppi']"
+            hx-indicator=".htmx-loading, #results"
+            class="hidden"
+          ></div>
+        </div>
+
+      </div>
+
+      <div class="relative inset-0 flex items-center my-6" aria-hidden="true">
+        <div class="w-full border-t border-grey"></div>
+      </div>
+    
+
+  
+
+  <div id="result-list">
+    <ul class="space-y-8">
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/hyvinvointialueiden-leasingpalvelut-00862/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Talous_rahoitus_2017_5.svg');" aria-hidden="true"></span>
+              Hyvinvointialueiden leasingpalvelut 2027 (00862)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Puitejärjestely on suunnattu hyvinvointialueille ja hyvinvointialueiden yhtiöille.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.01.2027 - 31.12.2028</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Kilpailutuksessa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/kevyet-ajoneuvot-palveluineen-00720/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Ajoneuvo_kuljetus_2017_5.svg');" aria-hidden="true"></span>
+              Kevyet kulkuneuvot 2026 (00720)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Puitejärjestelyä voidaan jatkaa enintään kahdella vuodella.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 15.12.2026 - 14.12.2028</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Kilpailutuksessa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/kuntien-leasingpalvelut-00861/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Talous_rahoitus_2017_5.svg');" aria-hidden="true"></span>
+              Kuntien leasingpalvelut 2027 (00861)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Puitejärjestely on suunnattu kunnille, kaupungeille, näiden yhtiöille, kuntayhtymille ja muille kuntaorganisaatioille sekä seurakunnille.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.01.2027 - 31.12.2028</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Kilpailutuksessa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/ulkomaan-majoituspalvelut-00710/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Majoitus_kokous_2017_5.svg');" aria-hidden="true"></span>
+              Ulkomaan majoituspalvelut 2027 (00710)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Puitejärjestelyä voidaan jatkaa enintään kahdella vuodella.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.01.2027 - 31.12.2028</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Kilpailutuksessa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/valtion-leasingpalvelut-00709/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Talous_rahoitus_2017_5.svg');" aria-hidden="true"></span>
+              Valtion leasingpalvelut 2027 (00709)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Puitejärjestelyä voidaan jatkaa enintään kahdella vuodella.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.01.2027 - 31.12.2028</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Kilpailutuksessa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/henkilostovuokraus-00719/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Henkilosto_terveys_2017_5.svg');" aria-hidden="true"></span>
+              Henkilöstövuokraus 2027 (00719)
+            </div>
+          
+            </a>
+          
+
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole enää mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.03.2027 - 28.02.2031</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Valmistelussa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/hyvinvointialueiden-elintarvikkeet-00729/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Elintarvikkeet_ravintola_2021__5.svg');" aria-hidden="true"></span>
+              Hyvinvointialueiden elintarvikkeet 2027 (00729)
+            </div>
+          
+            </a>
+          
+
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liity viimeistään: 15.12.2026</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.10.2027 - 31.01.2032</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Valmistelussa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/koulu-ja-askartelutarvikkeet-00730/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Toimistot_kalusteet_2021__5.svg');" aria-hidden="true"></span>
+              Koulu- ja askartelutarvikkeet 2028 (00730)
+            </div>
+          
+            </a>
+          
+
+            
+            <span class="font-sans text-sm text-blue-gray ml-16 mb-2">
+              Sopimuskausi on kaksi vuotta, jota Hanselin on mahdollista jatkaa kahdella optiovuodella.
+            </span>
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liittyminen ei ole vielä mahdollista</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.01.2028 - 31.12.2029</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Valmistelussa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/kuntien-elintarvikkeet-00876/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Elintarvikkeet_ravintola_2021__5.svg');" aria-hidden="true"></span>
+              Kuntien elintarvikkeet 2027 (00876)
+            </div>
+          
+            </a>
+          
+
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liity viimeistään: 15.02.2027</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.10.2027 - 31.01.2032</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Valmistelussa</div>
+          </div>
+        </li>
+
+      
+
+        
+          
+          
+            <li class="card-link flex flex-col h-full rounded-lg shadow-md border overflow-hidden w-full bg-white px-6 py-4 relative hover:ring hover:ring-bright-blue transform duration-200 ">
+              <a href="/yhteishankinnat/rekrytointipalvelut-00713/" class="text-blue">
+          
+            <div class="text-xl font-maven font-medium rounded p-1 -ml-1 inline-flex items-center">
+              <span class="rounded-full w-10 h-10 mr-6 bg-no-repeat shrink-0" style="background-image: url('/static/images/category_icons/svg/Henkilosto_terveys_2017_5.svg');" aria-hidden="true"></span>
+              Rekrytointipalvelut 2027 (00713)
+            </div>
+          
+            </a>
+          
+
+            
+          <div class="flex flex-col lg:inline-flex lg:flex-row items-start mt-2 lg:items-center lg:space-x-6 space-y-2 lg:space-y-0">
+            
+              <span class="bg-light-blue text-graphite rounded-full px-2 py-1 text-xs font-medium">
+                Puitejärjestely
+              </span>
+            
+            
+            
+              
+                
+                  <div class="text-sm">Liity viimeistään: 15.11.2026</div>
+                
+              
+            
+            
+            <div class="text-sm"><span class="font-medium">Voimassaoloaika:</span> 01.04.2027 - 31.03.2031</div>
+            
+            <div class="text-sm"><span class="font-medium">Vaihe:</span> Valmistelussa</div>
+          </div>
+        </li>
+
+      
+    </ul>
+
+      
+        
+          <div
+            hx-get="/yhteishankinnat/fragment/"
+            hx-trigger="click from:[name='js-load-more']"
+            hx-target="#result-list"
+            hx-swap="beforeend"
+            hx-include="
+            [name='liittyminen-mahdollista'],
+            [name='kaytettavissani'],
+            [name='omat'],
+            [name='haku'],
+            [name='kategoria'],
+            [name='tila'],
+            [name='kayttovelvoite'], [name='time_to_join'],
+            [name='tyyppi'],
+            [name='organization'], [name='page']"
+            class="hidden"
+            ></div>
+            
+
+          <div class="w-full flex items-center justify-center mt-8">
+            <button id="js-load-more-1"
+                    name="js-load-more"
+                    class="items-center px-6 py-2 border-2 border-transparent shadow-sm text-base font-medium rounded-full text-white bg-blue hover:bg-blue-accent hover:ring-bright-blue hover:ring focus:outline-none focus:ring focus:ring-bright-blue" onclick="this.remove(event);"
+                    >Lataa lisää tuloksia</button>
+            <input type="hidden" name="page" value="2">
+          </div>
+
+        
+      
+
+  </div>
+</div>

@@ -22,9 +22,15 @@ import fetch_hankeikkuna
 import fetch_hankinnat
 import fetch_hys
 import fetch_kkv
+import fetch_kkv_valvonta
 import fetch_mao
+import fetch_paatokset
 import fetch_regdel
+import fetch_sopimuskaudet
+import fetch_suunnitelmat
+import fetch_ted
 import fetch_toimiala
+import fetch_toimittajat
 import fetch_ue
 import fetch_vaski
 from common import CACHE_DIR, load_json, log, save_json
@@ -39,6 +45,12 @@ STEPS = [
     ("ue", fetch_ue.main),
     ("hys", fetch_hys.main),
     ("hankinnat", fetch_hankinnat.main),
+    ("sopimuskaudet", fetch_sopimuskaudet.main),
+    ("suunnitelmat", fetch_suunnitelmat.main),
+    ("ted", fetch_ted.main),
+    ("paatokset", fetch_paatokset.main),
+    ("toimittajat", fetch_toimittajat.main),
+    ("kkv_valvonta", fetch_kkv_valvonta.main),
     ("kkv", fetch_kkv.main),
     ("eu_mergers", fetch_eu_mergers.main),
     ("regdel", fetch_regdel.main),

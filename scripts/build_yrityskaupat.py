@@ -231,8 +231,26 @@ def build_yrityskaupat(settings) -> dict | None:
         })
 
     rows.sort(key=lambda r: (0 if r["status"] in OPEN_STATES else 1, r.get("phase1End") or r.get("phase2End") or "9999", r["id"]))
-    counts = {"fi": sum(1 for r in rows if r["authority"] == "KKV"), "eu": sum(1 for r in rows if r["authority"] == "EU"),
-              "fi_open": sum(1 for r in rows if r["authority"] == "KKV" and r["status"] in OPEN_STATES),
+    for r in rows:
+        r.setdefault("segment", "yrityskauppa")
+    # KKV's competition enforcement (cartels, abuse, commitments, neutrality; proposals to the Market Court) shares the tab
+    kr: list[dict] = []
+    try:
+        from build_valvonta import kkv_valvonta_rows
+
+        kr = kkv_valvonta_rows(settings).get("kilpailu") or []
+        for r in kr:
+            r.setdefault("segment", "kilpailunrajoitus")
+            r.setdefault("authority", "KKV")
+            r.setdefault("fiParty", True)
+            if isinstance(r.get("parties"), str):  # same shape as merger rows: [{name, country?}]
+                r["parties"] = [{"name": p.strip(), "country": "Suomi", "fi": True} for p in re.split(r"[;,]\s*", r["parties"]) if p.strip()][:12]
+        rows.extend(kr)
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: KKV:n kilpailunrajoitusasiat ohitettu: {e}")
+    counts = {"fi": sum(1 for r in rows if r["authority"] == "KKV" and r.get("segment") == "yrityskauppa"), "eu": sum(1 for r in rows if r["authority"] == "EU"),
+              "kilpailunrajoitus": len(kr), "kilpailunrajoitus_open": sum(1 for r in kr if not r.get("done")),
+              "fi_open": sum(1 for r in rows if r["authority"] == "KKV" and r.get("segment") == "yrityskauppa" and r["status"] in OPEN_STATES),
               "eu_open": sum(1 for r in rows if r["authority"] == "EU" and r["status"] in OPEN_STATES),
               "phase2": sum(1 for r in rows if r["status"] == "jatkokäsittelyssä"),
               "mao": sum(1 for r in rows if r["status"] == "kieltoesitys markkinaoikeudessa"),

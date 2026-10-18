@@ -558,3 +558,52 @@ def test_influence_drawer_and_signals(page, base_url):
     page.click("#l-sig li >> nth=0")
     page.wait_for_selector("#drawer:not([hidden])")
     page.keyboard.press("Escape")
+
+
+def test_tender_forward_stages_and_ted(page, base_url):
+    goto(page, base_url, "#kilpailutukset")
+    labels = page.locator("#hk-stages button").all_text_contents()
+    assert any(l.startswith("Päätökset") for l in labels) and any(l.startswith("Ennusteet") for l in labels) and any(l.startswith("Kalenterit") for l in labels)
+    page.click("#hk-stages [data-stage='ennuste']")
+    page.wait_for_timeout(200)
+    assert page.locator(".hk-row").count() >= 5 and "ennustetta" in page.text_content("#count")
+    first = page.locator(".hk-row").first.inner_text()
+    assert "sopimus päättyy" in first and "arvio" in first.lower()
+    page.click(".hk-row >> nth=0")
+    page.wait_for_selector("#drawer:not([hidden])")
+    assert "Sopimuskausi päättyy" in page.text_content("#dr-list") and "arvio" in page.text_content("#dr-list")
+    page.keyboard.press("Escape")
+    page.click("#hk-stages [data-stage='kalenteri']")
+    page.wait_for_timeout(200)
+    assert page.locator(".hk-row").count() >= 20 and "suunniteltua" in page.text_content("#count")
+    page.click("#hk-stages [data-stage='paatos']")
+    page.wait_for_timeout(200)
+    assert page.locator(".hk-row").count() >= 10
+    assert "valitusaika päättyy" in page.locator(".hk-row").first.inner_text().lower()
+    # TED: another country shows its own notices, Finland hides them
+    opts = page.locator("#hk-country option").all_text_contents()
+    assert len(opts) >= 2 and opts[0].startswith("Suomi")
+    page.click("#hk-stages [data-stage='avoin']")
+    page.select_option("#hk-country", "SE")
+    page.wait_for_timeout(200)
+    assert "SE (TED)" in page.text_content("#count") and page.locator(".hk-row").count() >= 10
+    assert "TED:ssä" in page.locator(".hk-row").first.inner_text()
+    page.select_option("#hk-country", "FI")
+    page.wait_for_timeout(200)
+    assert page.evaluate("TENDERS.filter(matchesTender).every(t=>!t.country)")
+
+
+def test_competition_enforcement_segment(page, base_url):
+    goto(page, base_url, "#yrityskaupat")
+    page.click("#yk-segment [data-yksegment='kilpailunrajoitus']")
+    page.wait_for_timeout(200)
+    assert "kilpailunrajoitusasiaa" in page.text_content("#count")
+    n = page.locator("#tl-yk .row[data-id]").count()
+    if n:
+        page.click("#tl-yk .row[data-id] >> nth=0")
+        page.wait_for_selector("#drawer:not([hidden])")
+        assert "KKV" in page.text_content("#dr-kicker") and "Osapuolet" in page.text_content("#dr-facts")
+        page.keyboard.press("Escape")
+    page.click("#yk-segment [data-yksegment='yrityskauppa']")
+    page.wait_for_timeout(200)
+    assert "yrityskauppaa" in page.text_content("#count")
