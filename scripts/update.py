@@ -21,6 +21,7 @@ import fetch_eu_signals
 import fetch_finlex
 import fetch_hankeikkuna
 import fetch_hankinnat
+import fetch_history
 import fetch_hys
 import fetch_kkv
 import fetch_kkv_valvonta
@@ -61,6 +62,7 @@ STEPS = [
     ("caselaw", fetch_caselaw.main),
     ("curia", fetch_curia.main),
     ("toimiala", fetch_toimiala.main),
+    ("history", fetch_history.main),
 ]
 
 

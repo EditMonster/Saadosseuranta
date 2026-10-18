@@ -1409,6 +1409,7 @@ function loadTilastot(){ if(TILASTOT) return Promise.resolve(TILASTOT); if(windo
   return TILASTOT_P=TILASTOT_P||fetch("data/tilastot.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>TILASTOT=j||{}).catch(()=>TILASTOT={}); }
 const pct=x=>x==null?"–":Math.round(x*100)+" %";
 const mdn=o=>o&&o.median!=null?`${o.median} pv (mediaani, n=${o.n})`:null;
+const mval=o=>o==null?null:(typeof o==="object"?o.median:o);
 const cap=s=>s?s[0].toUpperCase()+s.slice(1):s;
 function statsLines(it,S){
   const out=[]; if(!S) return out;
@@ -1416,7 +1417,7 @@ function statsLines(it,S){
     const E=S.eduskunta||{}; const com=(it.committees||[])[0]; const c=com&&(E.byCommittee||{})[com]; const m=it.ministry&&(E.byMinistry||{})[it.ministry];
     if(c&&mdn(c.heToReport)) out.push(`${cap(com)}: mietintö tyypillisesti ${mdn(c.heToReport)} HE:n antamisesta; ${pct(c.reportChangedShare)} mietinnöistä muuttaa esitystä.`);
     else if(E.overall&&mdn(E.overall.heToReport)) out.push(`Mietintö tyypillisesti ${mdn(E.overall.heToReport)} HE:n antamisesta; ${pct(E.overall.reportChangedShare)} mietinnöistä muuttaa esitystä.`);
-    if(m&&mdn(m.heToConfirmation)) out.push(`${cap(it.ministry)}: HE:stä vahvistukseen tyypillisesti ${mdn(m.heToConfirmation)}${m.statementsMedian!=null?`; lausuntoja tyypillisesti ${m.statementsMedian}`:""}.`);
+    if(m&&mdn(m.heToConfirmation)) out.push(`${cap(it.ministry)}: HE:stä vahvistukseen tyypillisesti ${mdn(m.heToConfirmation)}${mval(m.statementsMedian)!=null?`; lausuntoja tyypillisesti ${mval(m.statementsMedian)}`:""}.`);
     const P=S.suunnitelma; if(it.plan&&P&&P.n) out.push(`Lainsäädäntösuunnitelma: ${pct(P.onTimeShare)} HE:istä annetaan suunniteltuna viikkona (±1), ${pct(P.slippedShare)} siirtyy (n=${P.n}).`);
   }
   if(it.scope==="hankinta"){
@@ -1426,9 +1427,9 @@ function statsLines(it,S){
     const cat=(it.topics||[])[0]; const bc=cat&&(M.byCategory||{})[cat]; if(bc&&bc.n>=3&&bc.upheldShare!=null) out.push(`${cat}: markkinaoikeus kumosi tai määräsi seuraamuksen ${pct(bc.upheldShare)} ratkaisuista (n=${bc.n}).`);
     const div=String(it.cpv||"").slice(0,2); const cm=div&&(H.contractMonthsByCpv||{})[div]; if(cm&&cm.median!=null) out.push(`Sopimuskausi tässä CPV-jaossa (${div}) tyypillisesti ${cm.median} kk (n=${cm.n}).`);
     const td=div&&(H.tenderDaysByCpv||{})[div]; if(td&&td.median!=null&&stageOf(it)==="avoin") out.push(`Tarjousaika tässä CPV-jaossa tyypillisesti ${td.median} pv (n=${td.n}).`);
-    const rc=it.buyer&&(H.retenderCadenceByBuyer||{})[it.buyer]; if(rc&&rc.medianMonths) out.push(`Hankintayksikkö kilpailuttaa uudelleen tyypillisesti ${rc.medianMonths} kk välein (n=${rc.n}).`);
+    const rc=it.buyer&&(H.retenderCadenceByBuyer||{})[it.buyer]; if(rc&&mval(rc.medianMonths)) out.push(`Hankintayksikkö kilpailuttaa uudelleen tyypillisesti ${mval(rc.medianMonths)} kk välein (n=${rc.n}).`);
   }
-  if(it.scope==="yrityskauppa"&&it.authority==="KKV"&&it.segment!=="kilpailunrajoitus"){ const K=S.kkv||{}; if(K.n) out.push(`KKV: jatkoselvitykseen ${pct(K.phase2Share)} ilmoituksista, ehdoin hyväksyttiin ${pct(K.conditionsShare)} (n=${K.n}); 1. vaihe tyypillisesti ${K.medianDaysPhase1??"–"} pv.`); }
+  if(it.scope==="yrityskauppa"&&it.authority==="KKV"&&it.segment!=="kilpailunrajoitus"){ const K=S.kkv||{}; if(K.n) out.push(`KKV: jatkoselvitykseen ${pct(K.phase2Share)} ilmoituksista, ehdoin hyväksyttiin ${pct(K.conditionsShare)} (n=${K.n}); 1. vaihe tyypillisesti ${mval(K.medianDaysPhase1)??"–"} pv.`); }
   if(it.laji==="delegoitu"){ const D=S.delegoidut||{}; if(D.n) out.push(`Delegoiduista säädöksistä vastustettiin ${pct(D.objectedShare)}, peruutettiin ${pct(D.withdrawnShare)} (n=${D.n}).`); }
   return out;
 }
@@ -1446,7 +1447,7 @@ function renderTilastotPanel(){
     if(mdn(E.heToConfirmation)) L.push(["Eduskunta",`HE → vahvistus ${mdn(E.heToConfirmation)}`]);
     if(P.n) L.push(["Suunnitelma",`${pct(P.onTimeShare)} annetaan suunniteltuna viikkona, ${pct(P.slippedShare)} siirtyy, ${pct(P.droppedShare)} poistetaan (n=${P.n})`]);
     if(M.n) L.push(["Markkinaoikeus",`${pct(M.upheldShare)} hankintaratkaisuista kumoaa tai määrää seuraamuksen; hylätty ${pct((M.outcomes||{})["valitus hylätty"])} (n=${M.n}${M.since?", "+M.since+" alkaen":""})`]);
-    if(K.n) L.push(["KKV",`jatkoselvitykseen ${pct(K.phase2Share)}, ehdoin ${pct(K.conditionsShare)}; 1. vaihe ${K.medianDaysPhase1??"–"} pv (n=${K.n})`]);
+    if(K.n) L.push(["KKV",`jatkoselvitykseen ${pct(K.phase2Share)}, ehdoin ${pct(K.conditionsShare)}; 1. vaihe ${mval(K.medianDaysPhase1)??"–"} pv (n=${K.n})`]);
     if(D.n) L.push(["Delegoidut",`vastustettu ${pct(D.objectedShare)}, peruutettu ${pct(D.withdrawnShare)} (n=${D.n})`]);
     el.innerHTML=L.map(([k,v])=>`<li><span class="d">${esc(k)}</span><span style="min-width:0"><div class="m">${esc(v)}</div></span></li>`).join("")||'<li class="empty">Tilastot kertyvät ajojen myötä</li>';
   });
