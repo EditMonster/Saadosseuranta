@@ -216,6 +216,14 @@ a:hover{border-color:var(--fg)}
 .actions .follow-btn{font-size:12px}
 .actions .micro{align-self:center}
 .pill.infl-pill{border-style:dashed;color:var(--dim)}
+.diff .law{font-weight:600;margin:10px 0 4px}
+.diff .sec{border-left:2px solid var(--line);padding:2px 0 6px 10px;margin:6px 0;font-size:13px;line-height:1.55}
+.diff .sec .sid{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.diff ins{background:color-mix(in srgb,#2e9e5b 22%,transparent);text-decoration:none;border-radius:2px}
+.diff del{background:color-mix(in srgb,#c8483c 20%,transparent);text-decoration:line-through;border-radius:2px}
+.diff .ell{color:var(--dim);font-style:italic}
+.diff .tabs{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}
+.stats-ctx li{font-size:13px;margin:2px 0}
 .ev.up{margin-top:-10px}.ev.down{margin-top:10px}
 .ev-label{position:absolute;transform:translateX(-50%);font-size:10.5px;white-space:nowrap;color:var(--fg);text-align:center;line-height:1.25;pointer-events:none}
 .ev-label .d{display:block;font-family:var(--mono);font-size:10px;color:var(--muted)}
@@ -507,6 +515,7 @@ th.sortable:hover{color:var(--fg)}
       <div class="panel"><h3><span>Kansiot</span><span><span id="h-folders"></span> · <button class="linkbtn" id="open-folders2">Hallitse</button></span></h3><div class="chips fsel" id="l-folders"></div><div class="finfo" id="l-folder-info"></div></div>
       <div class="panel"><h3><span>Mitä on muuttunut</span><span id="h-changes">14 pv</span></h3><ul class="list" id="l-changes"></ul></div>
       <div class="panel"><h3><span>Vaikuta nyt <span class="micro" style="font-weight:400">avoimet vaikutusikkunat</span></span><span id="h-act"></span></h3><ul class="list" id="l-act"></ul></div>
+      <div class="panel"><h3><span>Tilastot <span class="micro" style="font-weight:400">kertyvästä historiasta</span></span><span></span></h3><ul class="list" id="l-stats"></ul></div>
       <div class="panel"><h3><span>Ennakoivat signaalit <span class="micro" style="font-weight:400">ennen virallista vaihetta</span></span><span id="h-sig"></span></h3><ul class="list" id="l-sig"></ul></div>
       <div class="panel"><h3><span>Lausuntokierrokset käynnissä</span><span id="h-open"></span></h3><ul class="list" id="l-open"></ul></div>
       <div class="panel"><h3><span>Seuraavat 60 päivää</span><span id="h-next"></span></h3><ul class="list" id="l-next"></ul></div>
@@ -634,6 +643,8 @@ th.sortable:hover{color:var(--fg)}
   <div id="dr-folders"></div>
   <div id="dr-changes"></div>
   <div id="dr-influence"></div>
+  <div id="dr-diff"></div>
+  <div id="dr-stats"></div>
   <h4 id="dr-h-mini">Aikajana</h4>
   <div class="mini" id="dr-mini"></div>
   <h4 id="dr-h-list">Vaiheet</h4>
@@ -1229,6 +1240,7 @@ function renderNow(){
   const sig=signalEvents();
   document.getElementById("l-sig").innerHTML=sig.map(s=>`<li data-id="${esc(s.it.id)}" tabindex="0" role="button"><span class="d ${s.days>=0&&s.days<=7?"soon":""}">${fmt(s.date)}<br>${s.days<0?"myöhässä "+(-s.days)+" pv":s.days===0?"tänään":s.days+" pv"}</span><span style="min-width:0"><div class="t">${esc(s.it.title)}</div><div class="m">${esc(s.tag)} · ${esc(s.who)}</div></span><span class="k">${esc(s.how)}</span></li>`).join("")||'<li class="empty">Ei ennakoivia signaaleja</li>';
   document.getElementById("h-sig").textContent=sig.length+" kpl";
+  renderTilastotPanel();
   document.getElementById("l-next").innerHTML=next.slice(0,40).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 60 päivän sisällä</li>';
   document.getElementById("h-next").textContent=next.length+" vaihetta";
   document.getElementById("l-recent").innerHTML=recent.slice(0,30).map(n=>li(n.it,n.date,n.label)).join("")||'<li class="empty">Ei vaiheita 14 päivän sisällä</li>';
@@ -1366,6 +1378,80 @@ document.getElementById("act-close").addEventListener("click",closeAction); actS
 document.addEventListener("click",e=>{ const b=e.target.closest("#dr-actions [data-act]"); if(!b) return; e.preventDefault(); const it=findItem(drawer.dataset.id); if(it) loadInfluence().then(()=>openAction(it,b.dataset.act)); });
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!actEl.hidden){ e.stopPropagation(); closeAction(); } },true);
 
+/* ---------- HE-diff: what changes in the law text (lazy, one file per HE) ---------- */
+const DIFF_CACHE={};
+function loadDiff(id){
+  if(window.__DIFFS&&window.__DIFFS[id]) return Promise.resolve(window.__DIFFS[id]);
+  if(DIFF_CACHE[id]) return DIFF_CACHE[id];
+  return DIFF_CACHE[id]=fetch("data/diff/"+encodeURIComponent(id)+".json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null);
+}
+function opsHTML(ops){ return (ops||[]).map(([k,txt])=>k==="="?esc(txt):k==="+"?`<ins>${esc(txt)}</ins>`:k==="-"?`<del>${esc(txt)}</del>`:`<span class="ell">[… ${esc(txt)} …]</span>`).join(" "); }
+function stepHTML(st){
+  return (st.laws||[]).map(l=>`<div class="law">${esc(l.name)}</div>${(l.sections||[]).map(s=>`<div class="sec"><div class="sid">${esc(s.id)}${s.heading?" "+esc(s.heading):""}${s.new?" · uusi pykälä":""}${s.removed?" · kumotaan":""}</div>${opsHTML(s.ops)}</div>`).join("")}`).join("");
+}
+function renderDiff(it){
+  const el=document.getElementById("dr-diff"); if(!el) return; el.innerHTML="";
+  if(!it.diffN) return;
+  el.innerHTML='<div class="diff"><h4>Mikä muuttuu</h4><div class="micro">Ladataan…</div></div>';
+  loadDiff(it.id).then(d=>{
+    if(drawer.dataset.id!==it.id) return;
+    if(!d||!(d.steps||[]).length){ el.innerHTML=""; return; }
+    const steps=d.steps; let cur=steps.length-1; const sm=d.summary||{};
+    const head=[sm.he&&sm.he.sections?`HE muuttaa ${sm.he.sections} pykälää ${sm.he.laws} laissa${sm.he.new?` (${sm.he.new} uutta)`:""}`:"", sm.mietinto&&sm.mietinto.sections?`valiokunta muutti ${sm.mietinto.sections} pykälää`:""].filter(Boolean).join(" · ");
+    const draw=()=>{ el.innerHTML=`<div class="diff"><h4>Mikä muuttuu</h4><div class="micro">${esc(head)}${head?". ":""}<ins>lisätty</ins> <del>poistettu</del></div><div class="tabs">${steps.map((s,i)=>`<button class="follow-btn" data-dstep="${i}" aria-pressed="${i===cur}">${esc(s.label)}</button>`).join("")}</div>${stepHTML(steps[cur])}</div>`;
+      el.querySelectorAll("[data-dstep]").forEach(b=>b.addEventListener("click",()=>{ cur=+b.dataset.dstep; draw(); })); };
+    draw();
+  });
+}
+/* ---------- Tilastot: context from accumulated history ---------- */
+let TILASTOT=null, TILASTOT_P=null;
+function loadTilastot(){ if(TILASTOT) return Promise.resolve(TILASTOT); if(window.__TILASTOT){ TILASTOT=window.__TILASTOT; return Promise.resolve(TILASTOT); }
+  return TILASTOT_P=TILASTOT_P||fetch("data/tilastot.json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>TILASTOT=j||{}).catch(()=>TILASTOT={}); }
+const pct=x=>x==null?"–":Math.round(x*100)+" %";
+const mdn=o=>o&&o.median!=null?`${o.median} pv (mediaani, n=${o.n})`:null;
+const cap=s=>s?s[0].toUpperCase()+s.slice(1):s;
+function statsLines(it,S){
+  const out=[]; if(!S) return out;
+  if(it.scope==="fi"&&it.laji==="laki"){
+    const E=S.eduskunta||{}; const com=(it.committees||[])[0]; const c=com&&(E.byCommittee||{})[com]; const m=it.ministry&&(E.byMinistry||{})[it.ministry];
+    if(c&&mdn(c.heToReport)) out.push(`${cap(com)}: mietintö tyypillisesti ${mdn(c.heToReport)} HE:n antamisesta; ${pct(c.reportChangedShare)} mietinnöistä muuttaa esitystä.`);
+    else if(E.overall&&mdn(E.overall.heToReport)) out.push(`Mietintö tyypillisesti ${mdn(E.overall.heToReport)} HE:n antamisesta; ${pct(E.overall.reportChangedShare)} mietinnöistä muuttaa esitystä.`);
+    if(m&&mdn(m.heToConfirmation)) out.push(`${cap(it.ministry)}: HE:stä vahvistukseen tyypillisesti ${mdn(m.heToConfirmation)}${m.statementsMedian!=null?`; lausuntoja tyypillisesti ${m.statementsMedian}`:""}.`);
+    const P=S.suunnitelma; if(it.plan&&P&&P.n) out.push(`Lainsäädäntösuunnitelma: ${pct(P.onTimeShare)} HE:istä annetaan suunniteltuna viikkona (±1), ${pct(P.slippedShare)} siirtyy (n=${P.n}).`);
+  }
+  if(it.scope==="hankinta"){
+    const M=S.mao||{}; const H=S.hankinnat||{};
+    const b=it.buyer&&((M.byBuyer||{})[it.buyer]); if(b&&b.n>=3) out.push(`${it.buyer}: markkinaoikeudessa ${b.n} ratkaisua, joista ${pct(b.upheldShare)} kumosi päätöksen tai määräsi seuraamuksen.`);
+    const ap=it.buyer&&(M.appealsPerBuyer90||{})[it.buyer]; if(ap) out.push(`Hankintayksikön päätöksistä ${ap} valitusta markkinaoikeuteen viimeisten 90 päivän aikana.`);
+    const cat=(it.topics||[])[0]; const bc=cat&&(M.byCategory||{})[cat]; if(bc&&bc.n>=3&&bc.upheldShare!=null) out.push(`${cat}: markkinaoikeus kumosi tai määräsi seuraamuksen ${pct(bc.upheldShare)} ratkaisuista (n=${bc.n}).`);
+    const div=String(it.cpv||"").slice(0,2); const cm=div&&(H.contractMonthsByCpv||{})[div]; if(cm&&cm.median!=null) out.push(`Sopimuskausi tässä CPV-jaossa (${div}) tyypillisesti ${cm.median} kk (n=${cm.n}).`);
+    const td=div&&(H.tenderDaysByCpv||{})[div]; if(td&&td.median!=null&&stageOf(it)==="avoin") out.push(`Tarjousaika tässä CPV-jaossa tyypillisesti ${td.median} pv (n=${td.n}).`);
+    const rc=it.buyer&&(H.retenderCadenceByBuyer||{})[it.buyer]; if(rc&&rc.medianMonths) out.push(`Hankintayksikkö kilpailuttaa uudelleen tyypillisesti ${rc.medianMonths} kk välein (n=${rc.n}).`);
+  }
+  if(it.scope==="yrityskauppa"&&it.authority==="KKV"&&it.segment!=="kilpailunrajoitus"){ const K=S.kkv||{}; if(K.n) out.push(`KKV: jatkoselvitykseen ${pct(K.phase2Share)} ilmoituksista, ehdoin hyväksyttiin ${pct(K.conditionsShare)} (n=${K.n}); 1. vaihe tyypillisesti ${K.medianDaysPhase1??"–"} pv.`); }
+  if(it.laji==="delegoitu"){ const D=S.delegoidut||{}; if(D.n) out.push(`Delegoiduista säädöksistä vastustettiin ${pct(D.objectedShare)}, peruutettiin ${pct(D.withdrawnShare)} (n=${D.n}).`); }
+  return out;
+}
+function renderStatsCtx(it){
+  const el=document.getElementById("dr-stats"); if(!el) return; el.innerHTML="";
+  loadTilastot().then(S=>{ if(drawer.dataset.id!==it.id) return; const L=statsLines(it,S); el.innerHTML=L.length?`<h4>Tilastot</h4><ul class="stats-ctx">${L.map(l=>`<li>${esc(l)}</li>`).join("")}</ul><p class="micro">Kertyvästä historiasta laskettuja mediaaneja ja osuuksia (n = tapausten määrä) – vertailukohtia, eivät ennusteita yksittäisestä asiasta.</p>`:""; });
+}
+/* Tilannekuva panel: headline numbers */
+function renderTilastotPanel(){
+  const el=document.getElementById("l-stats"); if(!el) return;
+  loadTilastot().then(S=>{
+    if(!S||!Object.keys(S).length){ el.innerHTML='<li class="empty">Tilastot kertyvät ajojen myötä</li>'; return; }
+    const L=[]; const E=(S.eduskunta||{}).overall||{}; const P=S.suunnitelma||{}; const M=S.mao||{}; const K=S.kkv||{}; const D=S.delegoidut||{};
+    if(mdn(E.heToReport)) L.push(["Eduskunta",`HE → mietintö ${mdn(E.heToReport)}; ${pct(E.reportChangedShare)} mietinnöistä muuttaa esitystä`]);
+    if(mdn(E.heToConfirmation)) L.push(["Eduskunta",`HE → vahvistus ${mdn(E.heToConfirmation)}`]);
+    if(P.n) L.push(["Suunnitelma",`${pct(P.onTimeShare)} annetaan suunniteltuna viikkona, ${pct(P.slippedShare)} siirtyy, ${pct(P.droppedShare)} poistetaan (n=${P.n})`]);
+    if(M.n) L.push(["Markkinaoikeus",`${pct(M.upheldShare)} hankintaratkaisuista kumoaa tai määrää seuraamuksen; hylätty ${pct((M.outcomes||{})["valitus hylätty"])} (n=${M.n}${M.since?", "+M.since+" alkaen":""})`]);
+    if(K.n) L.push(["KKV",`jatkoselvitykseen ${pct(K.phase2Share)}, ehdoin ${pct(K.conditionsShare)}; 1. vaihe ${K.medianDaysPhase1??"–"} pv (n=${K.n})`]);
+    if(D.n) L.push(["Delegoidut",`vastustettu ${pct(D.objectedShare)}, peruutettu ${pct(D.withdrawnShare)} (n=${D.n})`]);
+    el.innerHTML=L.map(([k,v])=>`<li><span class="d">${esc(k)}</span><span style="min-width:0"><div class="m">${esc(v)}</div></span></li>`).join("")||'<li class="empty">Tilastot kertyvät ajojen myötä</li>';
+  });
+}
+
 /* ---------- completed table ---------- */
 function renderDone(items){
   const body=document.getElementById("done-body"); body.innerHTML="";
@@ -1435,9 +1521,9 @@ function openTender(it){
   links.push(`<a href="${esc(teamsShareUrl(SITE()+"#"+it.id,it.title.slice(0,180)))}" target="_blank" rel="noopener" title="Jaa Teams-kanavaan tai -keskusteluun">Jaa Teamsiin</a>`);
   links.push(`<button class="follow-btn" id="dr-follow" data-follow="${esc(it.id)}" aria-pressed="${state.follow.has(it.id)}">${state.follow.has(it.id)?"★ Seurannassa":"☆ Seuraa"}</button>`);
   drawer.dataset.id=it.id;
-  document.getElementById("dr-changes").innerHTML=""; document.getElementById("dr-influence").innerHTML="";
+  document.getElementById("dr-changes").innerHTML=""; document.getElementById("dr-influence").innerHTML=""; document.getElementById("dr-diff").innerHTML=""; document.getElementById("dr-stats").innerHTML="";
   document.getElementById("dr-src").innerHTML=`<h4>Linkit</h4><div class="srclinks">${links.join("")}</div>`;
-  renderDrawerFolders(it.id); renderActions(it);
+  renderDrawerFolders(it.id); renderActions(it); renderDiff(it); renderStatsCtx(it);
   const ev=tenderEvents(it);
   renderTimeline(document.getElementById("dr-mini"), [Object.assign({},it,{events:ev,ref:it.kind})], {mini:true,labels:true,tight:true});
   const list=document.getElementById("dr-list"); list.innerHTML="";
@@ -1447,8 +1533,9 @@ function openTender(it){
   document.getElementById("dr-close").focus();
 }
 function influenceBadge(it){
-  const n=it.influenceN; if(!n) return "";
+  const n=it.influenceN||{}; if(!it.influenceN&&!it.diffN) return "";
   const parts=[]; if(n.lausunnot) parts.push(n.lausunnot+" lausuntoa"); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
+  if(it.diffN&&it.diffN.he&&it.diffN.he.sections) parts.push(it.diffN.he.sections+" § muuttuu");
   if(!parts.length) return "";
   return `<span class="pill infl-pill" title="Vaikuttaminen: ketkä lausuivat, keitä kuultiin, ketkä lobbasivat – avaa rivi">${esc(parts.join(" · "))}</span>`;
 }
@@ -1524,7 +1611,7 @@ function openItem(id){
       <div class="d">${fmt(d)}${end?" – "+fmt(end):""}</div>
       <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':""}${e.confirmed===false?`<span class="unc">${e.kind==="ennuste"?"arvio":"tarkistamaton"}</span>`:""}</div></li>`);
   });
-  renderInfluence(it); renderActions(it);
+  renderInfluence(it); renderActions(it); renderDiff(it); renderStatsCtx(it);
   drawer.hidden=false; scrim.hidden=false; document.body.style.overflow="hidden";
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
   document.getElementById("dr-close").focus();

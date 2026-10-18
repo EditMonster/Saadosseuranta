@@ -27,7 +27,8 @@ NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "fi
          "avoimuus": "Avoimuusrekisteri", "vaski": "Eduskunta – valiokunnat (Vaski)", "caselaw": "Oikeuskäytäntö (tuomioistuimet)", "curia": "EU-tuomioistuin (Cellar)",
          "toimiala": "Toimialakerros (Fiva, ESMA/EBA/EIOPA, EDPB, Vero, Traficom)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
          "ted": "TED", "paatokset": "Hankintapäätökset (Helsinki)", "toimittajat": "Tutkihankintoja", "kkv_valvonta": "KKV – kilpailu- ja hankintavalvonta",
-         "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)"}
+         "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)",
+         "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)"}
 
 
 def gh(*args: str, check: bool = True) -> str:

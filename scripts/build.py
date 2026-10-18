@@ -850,11 +850,28 @@ def main():
     except Exception as e:  # noqa: BLE001
         log(f"warn: ratkaisut: {e}")
         rk_counts = {}
+    # HE-diff: what changes in the law text (parallel texts) and what the committee changed – one file per HE
+    try:
+        from build_hediff import build_hediff
+
+        diff_n = build_hediff(keep) or {}
+        for it in keep:
+            if it["id"] in diff_n:
+                it["diffN"] = diff_n[it["id"]]
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: hediff: {e}")
     changes = update_changelog(keep, settings)
     # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
     # notices a week) and a different page segment. None written = previous file stays in place.
     hank = build_hankinnat(settings) or load_json(OUT_DIR / "hankinnat.json", {})
     yk = build_yrityskaupat(settings) or load_json(OUT_DIR / "yrityskaupat.json", {})
+    # Statistics from accumulated history (läpimenoajat, MAO-jakaumat, KKV, sopimuskaudet) – docs/data/tilastot.json
+    try:
+        from build_tilastot import build_tilastot
+
+        build_tilastot(keep, hank.get("items") or [])
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: tilastot: {e}")
     open_now = [i for i in keep if i["scope"] == "fi" and i["status"] == "lausunnolla"]
     meta = {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "today": TODAY.isoformat(),  # with offset: the page shows it in local time
             "counts": {"fi": sum(i["scope"] == "fi" and not i["done"] for i in keep),
