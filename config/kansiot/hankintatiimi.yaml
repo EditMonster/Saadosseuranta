@@ -1,13 +1,23 @@
-# Esimerkkikansio – poista tiedosto tai muokkaa omaksesi.
 nimi: Hankintatiimi (esimerkki)
 kuvaus: Julkisten hankintojen seurantaprofiili – hankintalain muutokset, laki- ja ICT-alan kilpailutukset sekä markkinaoikeuden hankinta-asiat
 omistaja: esimerkki
-esimerkki: true
-kohteet: []
+kohteet:
+- mao-v-1837f9b48436
 saannot:
-  lajit: [laki, eu, delegoitu]
-  toimialat: [Lakipalvelut, ICT ja ohjelmistot]
-  kilpailutusvaiheet: [avoin, mao]
-  hakusanat: [hankintalaki, julkisista hankinnoista, hankintamenettely, käyttöoikeussopimuks]
+  lajit:
+  - laki
+  - eu
+  - delegoitu
+  toimialat:
+  - Lakipalvelut
+  - ICT ja ohjelmistot
+  kilpailutusvaiheet:
+  - avoin
+  - mao
+  hakusanat:
+  - hankintalaki
+  - julkisista hankinnoista
+  - hankintamenettely
+  - käyttöoikeussopimuks
   vain_avoimet: true
   enintaan: 200
