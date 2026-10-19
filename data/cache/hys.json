@@ -1,6 +1,42 @@
 {
- "fetched": "2026-10-18T17:22:58",
+ "fetched": "2026-10-19T11:24:37",
  "items": [
+  {
+   "actType": "DEC_DEL",
+   "actTypeLabel": "Delegoitu päätös",
+   "id": 19225,
+   "periods": [
+    {
+     "end": "2026-11-16",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-19"
+    }
+   ],
+   "reference": "Ares(2026)8456971",
+   "status": "ACTIVE",
+   "title_en": "Approval of unilateral extension of ETS1 scope by Sweden",
+   "title_fi": "Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 16473,
+   "periods": [
+    {
+     "end": "2026-11-16",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-19"
+    }
+   ],
+   "reference": "Ares(2026)568530",
+   "status": "ACTIVE",
+   "title_en": "Commission Implementing Regulation on access rights to certain parts of the battery passport",
+   "title_fi": "Akut – akkupassin tiettyjen osien käyttöoikeudet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16473_en"
+  },
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
@@ -61,7 +97,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-13",
+     "end": "2026-12-14",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -79,7 +115,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-13",
+     "end": "2026-12-14",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -259,7 +295,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-13",
+     "end": "2026-12-14",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -571,7 +607,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-13",
+     "end": "2026-12-14",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -816,24 +852,6 @@
    "title_en": "Housing simplification package",
    "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
-  },
-  {
-   "actType": "PROP_DEC",
-   "actTypeLabel": "Päätösehdotus",
-   "id": 18804,
-   "periods": [
-    {
-     "end": "2026-09-11",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-14"
-    }
-   ],
-   "reference": "Ares(2026)7004765",
-   "status": "ACTIVE",
-   "title_en": "The Union Position for the World Radiocommunication Conference 2027 ",
-   "title_fi": "Maailman radioviestintäkonferenssi 2027 – EU:n kanta",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18804_en"
   },
   {
    "actType": "PROP_REG",
@@ -1692,24 +1710,6 @@
    "title_en": "Allow authorities of 3rd countries to start using ELAN (Electronic Agricultural non customs formalities system)",
    "title_fi": "EU:n ulkopuoliset maat voivat alkaa käyttää EU:n muuta kuin tullialaa koskevien maatalouden muodollisuuksien sähköistä järjestelmää (ELAN) vuonna 2026",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15473_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 16854,
-   "periods": [
-    {
-     "end": "2026-08-19",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-22"
-    }
-   ],
-   "reference": "Ares(2026)1510018",
-   "status": "ACTIVE",
-   "title_en": "Farm Sustainability Data Network – compiling data on farm sustainability",
-   "title_fi": "Maatilojen kestävyyden tietoverkko (FSDN) kokoaa maatilojen kestävyyttä koskevia tietoja yhteen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16854_en"
   },
   {
    "actType": "DEC_DEL",

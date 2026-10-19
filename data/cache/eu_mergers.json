@@ -2411,66 +2411,6 @@
    "timeline": [],
    "title": "BLACKSTONE / NORLYS / EWH / EUROWIND ENERGY"
   },
-  "M.12474": {
-   "caseNumber": "M.12474",
-   "deadline": "2026-07-30",
-   "decisions": [
-    {
-     "date": "2026-07-20",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-18",
-   "lastDecision": "2026-07-20",
-   "notice": {
-    "activities": [
-     "Taifu Kechuang on yrityksen CITIC Group määräysvallassa oleva sijoitusalan holdingyhtiö, jolla ei ole markkinoihin liittyvää liiketoimintaa. Yrityksen CITIC Group maailmanlaajuinen liiketoiminta kattaa kattavat rahoituspalvelut, kehittyneen älykkään valmistuksen, kehittyneet materiaalit, uuden kulutuksen ja uudentyyppisen kaupungistumisen. CITIC Group harjoittaa tytäryhtiöidensä kautta teräsraaka-aineiden ja terästuotteiden kauppaa, jakelua ja valmistusta.",
-     "Prosperity Kingsfield harjoittaa tytäryhtiöidensä kautta pääasiassa teräsraaka-aineiden ja terästuotteiden kauppaa ja jakelua. Se toimii välittäjänä, joka yhdistää ostajat teräksen toimittajiin, raaka-aineiden tuottajiin, erikoistuneisiin teräksen tuottajiin ja varastointipalvelujen tarjoajiin, mutta sillä itsellään ei ole määräysvaltaa teräksen tuottajiin."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-16",
-    "oj": "C:2026:3571:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Kiina",
-        "name": "CITIC Group Corporation"
-       }
-      ],
-      "country": "Shanghai",
-      "fi": false,
-      "name": "Taifu Kechuang Special Steel"
-     },
-     {
-      "country": "Hongkong",
-      "fi": false,
-      "name": "Prosperity Kingsfield Limited",
-      "short": "Prosperity Kingsfield"
-     }
-    ],
-    "published": "2026-07-06",
-    "reference": "C/2026/3571",
-    "simplified": true,
-    "transaction": "Taifu Kechuang hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Prosperity Kingsfield, joka omistaa 100 prosenttia yrityksen Stemcor Global Holdings Limited pääomasta. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3571/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-06-24",
-   "oj": [
-    {
-     "published": "2026-07-06",
-     "reference": "C:2026:3571:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_G_46.82",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "TAIFU KECHUANG / PROSPERITY KINGSFIELD"
-  },
   "M.12475": {
    "caseNumber": "M.12475",
    "deadline": "2026-11-06",
@@ -3017,74 +2957,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "SAICA / THIMM"
-  },
-  "M.12488": {
-   "caseNumber": "M.12488",
-   "deadline": "2026-07-28",
-   "decisions": [
-    {
-     "date": "2026-07-20",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-26",
-   "lastDecision": "2026-07-20",
-   "notice": {
-    "activities": [
-     "Asterion on espanjalainen riippumaton sijoituspalveluyritys, joka on keskittynyt eurooppalaisiin keskisuuren markkina-arvon infrastruktuurisijoituskohteisiin.",
-     "Macquarie Group Limited on monipuolinen rahoituspalvelukonserni, joka tarjoaa asiakkailleen omaisuuden- ja varainhoito-, vähittäis- ja yrityspankki-, neuvonta-, riski- ja pääomaratkaisuja velka-, pääoma-, rahoitus- ja hyödykemarkkinoilla."
-    ],
-    "fi": false,
-    "jv": "Yrityksen Southern Water liiketoimintaan kuuluu vesi- ja jätevesihuoltopalvelujen tarjoaminen Itä- ja Länsi-Sussexissa, Kentissä, Hampshiressa ja Isle of Wightilla Yhdistyneessä kuningaskunnassa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-07-11",
-    "oj": "C:2026:3488:",
-    "parties": [
-     {
-      "country": "Espanja",
-      "fi": false,
-      "name": "Asterion Industrial Partners, SGEIC, S.A.",
-      "short": "Asterion"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Australia",
-        "name": "Macquarie Group Limited"
-       }
-      ],
-      "country": "Luxemburg",
-      "fi": false,
-      "name": "MSCIF Sandstone Ventures S.à r.l",
-      "short": "MSCIF"
-     },
-     {
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "Southern Water Services Limited",
-      "short": "Southern Water"
-     }
-    ],
-    "published": "2026-07-01",
-    "reference": "C/2026/3488",
-    "simplified": true,
-    "transaction": "Asterion ja MGL hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Southern Water. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3488/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-06-22",
-   "oj": [
-    {
-     "published": "2026-07-01",
-     "reference": "C:2026:3488:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_E_37.0",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "ASTERION / MACQUARIE / SOUTHERN WATER"
   },
   "M.12491": {
    "caseNumber": "M.12491",
@@ -7589,5 +7461,5 @@
    "title": "CVC DIF / CARLYLE / BAUWATCH GROUP"
   }
  },
- "fetched": "2026-10-18T17:24:36Z"
+ "fetched": "2026-10-19T11:26:42Z"
 }

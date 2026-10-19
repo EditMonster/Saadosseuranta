@@ -572,15 +572,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 116/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/116
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-117-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laeiksi valtion virkamieslain ja turvallisuusselvityslain 50 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 117/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-194-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1166,6 +1157,15 @@ DESCRIPTION:Voimaan (887/2026) · 887/2026 · HE 94/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-117-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi valtion virkamieslain ja turvallisuusselvityslain 50 §:n muuttamisesta
+DESCRIPTION:Voimaan (906/2026) · HE 117/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-25-2026-voimaan-2027-05-01@saadosseuranta
 DTSTAMP:20270501T000000Z
 DTSTART;VALUE=DATE:20270501
@@ -1387,7 +1387,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
+DESCRIPTION:Voimaan (908/2026) · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
@@ -2300,6 +2300,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19225-lausunto-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Lausuntoaika päättyy: Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti
+DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-16712-lausunto-2026-11-13@saadosseuranta
 DTSTAMP:20261113T000000Z
 DTSTART;VALUE=DATE:20261113
@@ -2381,10 +2390,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-13@saadosseuranta
-DTSTAMP:20261213T000000Z
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
+UID:eu-hys-15492-lausunto-2026-12-14@saadosseuranta
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2892,6 +2901,15 @@ DTEND;VALUE=DATE:20270203
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... correcting certain language versions of Delegated Regulation (EU) 2021/2178 supplementing Regulation (EU) 2020/852 of
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6909 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-toim-fiva-49-2026-voimaan-2026-11-20@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[FI] Voimaan: Muutoksia eräiden luotonantajien ja vertaislainanvälittäjien rekisteröintiä koskeviin määräyksiin ja ohjeisiin 3/2023
+DESCRIPTION:Voimaan · MOK 3/2023 · https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-eraiden-luotonantajien-ja-vertaislainanvalittajien-rekisterointia-koskeviin-maarayksiin-ja-ohjeisiin-32023/
+URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-eraiden-luotonantajien-ja-vertaislainanvalittajien-rekisterointia-koskeviin-maarayksiin-ja-ohjeisiin-32023/
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-eiopa-call-participate-discussion-disclosure-individual-stress-test-results-lausunto-2026-10-28@saadosseuranta
