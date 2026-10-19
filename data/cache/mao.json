@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-19T11:28:01Z",
+ "fetched": "2026-10-19T20:19:40Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -750,6 +750,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "22350b9a84cc",
+   "lastSeen": "2026-10-19"
+  },
+  "24c56a7a5b46": {
+   "buyer": "Helsingin kaupunki",
+   "decisionDate": "2026-10-02",
+   "decisionText": "Helsingin kaupungin perhe- ja sosiaalipalvelut -palvelukokonaisuuden perhe- ja sosiaalipalvelujohtajan päätös 2.10.2026, § 64 Uudenmaan hyvinvointialueiden lastensuojelun ympärivuorokautisten palvelujen hankinta, osa-alue 5: erityistason laitoshoito",
+   "filed": "2026-10-19",
+   "firstSeen": "2026-10-19",
+   "hilmaNo": null,
+   "key": "24c56a7a5b46",
    "lastSeen": "2026-10-19"
   },
   "25a4dbf77458": {

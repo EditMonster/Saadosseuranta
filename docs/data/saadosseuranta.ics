@@ -1490,6 +1490,15 @@ DESCRIPTION:Lausuntokierros luonnoksesta valtioneuvoston asetukseksi · TEM052:0
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM052:00/2026
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-a2009c8f-lausunto-2026-11-13@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[FI] Lausuntoaika päättyy: Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista vuosina 2027-2028
+DESCRIPTION:Lausuntokierros · TEM054:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM054:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM054:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-32ac1aaf-lausunto-2026-11-04@saadosseuranta
 DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
@@ -1578,6 +1587,15 @@ DTEND;VALUE=DATE:20261113
 SUMMARY:[FI] Lausuntoaika päättyy: SPR asetuksen muuttaminen
 DESCRIPTION:Lausuntokierros · SM019:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=SM019:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=SM019:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-1e63defb-lausunto-2026-11-30@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[FI] Lausuntoaika päättyy: Ympäristöministeriön asetusmuutokset rakennusten vesilaitteistoissa käytettävien rakennustuotteiden olennaisia teknisiä vaatimuksia ja tyyppihyväksyntöjä koskien
+DESCRIPTION:Lausuntokierros 19.10.-30.11.2026 · YM035:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM035:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=YM035:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-378ed016-lausunto-2026-11-30@saadosseuranta

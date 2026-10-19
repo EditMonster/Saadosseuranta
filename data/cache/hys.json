@@ -1,6 +1,24 @@
 {
- "fetched": "2026-10-19T11:24:37",
+ "fetched": "2026-10-19T20:17:43",
  "items": [
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 18452,
+   "periods": [
+    {
+     "end": "2026-11-16",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-19"
+    }
+   ],
+   "reference": "Ares(2026)5869805",
+   "status": "ACTIVE",
+   "title_en": "Revision of EU rules on the internal market information system",
+   "title_fi": "Sisämarkkinoiden tietojenvaihtojärjestelmä (IMI) – EU:n sääntöjen tarkistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18452_en"
+  },
   {
    "actType": "DEC_DEL",
    "actTypeLabel": "Delegoitu päätös",
@@ -340,7 +358,7 @@
    "reference": "Ares(2026)9527776",
    "status": "ACTIVE",
    "title_en": "Technical details for air quality projections and implementation reports",
-   "title_fi": null,
+   "title_fi": "Ilmanlaatua koskevat ennusteet ja täytäntöönpanoraportit – tekniset yksityiskohdat",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474_en"
   },
   {

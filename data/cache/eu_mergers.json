@@ -1002,9 +1002,14 @@
   "M.12364": {
    "caseNumber": "M.12364",
    "deadline": "2026-10-19",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-19",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-02-16",
-   "lastDecision": null,
+   "lastDecision": "2026-10-19",
    "notice": {
     "activities": [
      "EPG on sijoitusalan holdingyhtiö, jossa yksinomaista määräysvaltaa käyttää viime kädessä Daniel Křetínský, jolla on viime kädessä määräysvalta myös useissa eri aloilla toimivissa yhteisöissä, mukaan lukien Czech Media Invest, a.s. (CMI), joka on mediaomaisuuden hankintaan ja hallintaan Keski- ja Länsi-Euroopassa keskittyvän konsernin perimmäinen emoyhtiö. Näihin omaisuuseriin kuuluu Ranskaan sijoittautunut kirjankustannuskonserni Editis Holding (Editis), joka myy eri kustantamojensa ja markkinoidensa ranskankielisiä kirjoja ja jakelee kolmansien kustantajien kirjoja kaikentyyppisille vähittäiskauppiaille EU:n ranskankielisessä osassa.",
@@ -1875,6 +1880,23 @@
    "timeline": [],
    "title": "FLAMINGO / FONDO NAZCA IV / HERBEX"
   },
+  "M.12449": {
+   "caseNumber": "M.12449",
+   "deadline": "2026-11-24",
+   "decisions": [],
+   "initiated": "2026-04-27",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-19",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_24.10",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "POSCO / JSW / SAFFRON / PMH"
+  },
   "M.12451": {
    "caseNumber": "M.12451",
    "deadline": "2026-08-19",
@@ -2532,9 +2554,14 @@
   "M.12478": {
    "caseNumber": "M.12478",
    "deadline": "2026-10-19",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-19",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-05-18",
-   "lastDecision": null,
+   "lastDecision": "2026-10-19",
    "notice": {
     "activities": [
      "SMO on osa Siemens-konsernia, jonka liikkumiseen keskittynyt yksikkö toimii koko rautateiden arvoketjussa ja tarjoaa liikkuvaan kalustoon liittyviä tuotteita, palveluja ja diagnostisia ratkaisuja, merkinantojärjestelmiä, rautateiden sähköistämispalveluja, digitaalisia ratkaisuja ja huoltopalveluja.",
@@ -2578,7 +2605,7 @@
      "reference": "C:2026:4930:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_33.12",
    "simplified": "MEnormal",
@@ -4869,9 +4896,14 @@
   "M.12542": {
    "caseNumber": "M.12542",
    "deadline": "2026-10-27",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-16",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-06",
-   "lastDecision": null,
+   "lastDecision": "2026-10-16",
    "notice": {
     "activities": [
      "Blackstone on maailmanlaajuisesti toimiva vaihtoehtoisten sijoitusten hallintapalvelujen tarjoaja.",
@@ -4916,7 +4948,7 @@
      "reference": "C:2026:5040:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_M_68.20",
    "simplified": "MEsimplified",
@@ -5988,6 +6020,23 @@
    "timeline": [],
    "title": "BCI / APG / TIG / HANCOCK ASSETS"
   },
+  "M.12581": {
+   "caseNumber": "M.12581",
+   "deadline": "2026-11-24",
+   "decisions": [],
+   "initiated": "2026-07-28",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-19",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "CDC / DK / HPC / ECLAIRION"
+  },
   "M.12583": {
    "caseNumber": "M.12583",
    "deadline": "2026-10-26",
@@ -6055,10 +6104,50 @@
    "decisions": [],
    "initiated": "2026-08-03",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "BC Partners Fund XII on sijoitusrahasto, jota BC Partners neuvoo ja hallinnoi. BC Partners on vaihtoehtoisten sijoitusten hoitaja, joka keskittyy yksityiseen pääomaan, luottoihin ja kiinteistösijoituksiin.",
+     "ACSD on lääkeyhtiö, joka valmistaa vaikuttavia farmaseuttisia aineita ja valmiita lääkkeitä sekä kiinteässä että injektoitavassa muodossa."
+    ],
+    "fi": false,
+    "jv": "InfoRLife on sveitsiläinen lääkeyhtiö, joka on tällä hetkellä yrityksen ACSD yksinomaisessa määräysvallassa ja joka on erikoistunut sairaaloille tarkoitettujen käyttövalmiiden geneeristen parenteraalisten valmisteiden steriiliin valmistukseen ja pakkaukseen.",
+    "observationDays": 10,
+    "observationsEnd": "2026-10-29",
+    "observationsShifted": null,
+    "oj": "C:2026:5425:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdistynyt kuningaskunta",
+        "name": "BC Partners LLP"
+       }
+      ],
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "BC Partners Fund XII"
+     },
+     {
+      "country": "Italia",
+      "fi": false,
+      "name": "ACS Dobfar S.p.A.",
+      "short": "ACSD"
+     }
+    ],
+    "published": "2026-10-19",
+    "reference": "C/2026/5425",
+    "simplified": true,
+    "transaction": "BC Partners Fund XII ja ACSD hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä InfoRLife SA (InfoRLife, Sveitsi), joka on tällä hetkellä yrityksen ACSD yksinomaisessa määräysvallassa. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5425/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-09",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-19",
+     "reference": "C:2026:5425:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_21.20",
@@ -6147,9 +6236,14 @@
   "M.12591": {
    "caseNumber": "M.12591",
    "deadline": "2026-10-27",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-16",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-03",
-   "lastDecision": null,
+   "lastDecision": "2026-10-16",
    "notice": {
     "activities": [
      "OCS on kansainvälinen toimitilapalveluyritys, jolla on toimintaa Yhdistyneessä kuningaskunnassa, Irlannissa sekä Aasian, Tyynenmeren ja Lähi-idän alueilla.",
@@ -6193,7 +6287,7 @@
      "reference": "C:2026:5122:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_O_81.10",
    "simplified": "MEsimplified",
@@ -6426,7 +6520,7 @@
      "reference": "C:2026:4931:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_G_46.34",
    "simplified": "MEsupersimplified",
@@ -6435,7 +6529,7 @@
   },
   "M.12598": {
    "caseNumber": "M.12598",
-   "deadline": null,
+   "deadline": "2026-11-23",
    "decisions": [
     {
      "date": "2026-10-06",
@@ -6481,10 +6575,10 @@
      "reference": "C:2026:4892:"
     }
    ],
-   "phase": null,
-   "renotified": null,
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": "2026-10-16",
    "sector": "NaceV2Sector_C_25.40",
-   "simplified": "MEsimplified",
+   "simplified": "MEnormal",
    "timeline": [],
    "title": "ACCIAIERIA ARVEDI / AMCLN"
   },
@@ -7108,10 +7202,62 @@
    "decisions": [],
    "initiated": "2026-08-31",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "KAES kuuluu konserniin KI Group, joka käyttää määräysvaltaa useissa yrityksissä, jotka toimivat seuraavilla aloilla: jalostus ja kemikaalit, prosessi- ja pilaantumisentorjuntalaitteet ja -teknologiat, mineraalit, lannoitteet, hyödykekauppa ja -palvelut, polymeerit ja kuidut, lasi, metsätalous ja kulutustavarat, sähköliittimet, painatus ja pakkaaminen, yritysohjelmistot ja investoinnit. KI Group jakelee tytäryhtiönsä Koch Fertilizer, LLC:n kautta fosfaattilannoitteita Euroopan talousalueen ulkopuolella.",
+     "OCPN kuuluu konserniin OCP Group, joka on fosfaattipohjaisten lannoitteiden maailmanlaajuinen tuottaja, toimittaja ja jakelija. OCP harjoittaa myös raakafosfaatin louhintaa ja myyntiä sekä sen muuntamista fosforihapoksi."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-10-29",
+    "observationsShifted": null,
+    "oj": "C:2026:5426:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Koch, Inc"
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "KAES Phosphate Holdings, LLC",
+      "short": "KAES"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Marokko",
+        "name": "OCP S.A."
+       }
+      ],
+      "country": "Marokko",
+      "fi": false,
+      "name": "OCP Nutricrops S.A.",
+      "short": "OCPN"
+     },
+     {
+      "country": "Marokko",
+      "fi": false,
+      "name": "Jorf Fertilizers Company I, S.A.",
+      "short": "JFC1"
+     }
+    ],
+    "published": "2026-10-19",
+    "reference": "C/2026/5426",
+    "simplified": true,
+    "transaction": "KAES ja OCPN hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä JFC1. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5426/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-07",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-19",
+     "reference": "C:2026:5426:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_20.15",
@@ -7335,6 +7481,23 @@
    "timeline": [],
    "title": "ITOCHU / DENTSU / DENTSU SOKEN"
   },
+  "M.12640": {
+   "caseNumber": "M.12640",
+   "deadline": "2026-11-24",
+   "decisions": [],
+   "initiated": "2026-09-14",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-19",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.2",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "PLD / NBIM / NEUSTADT TARGET ASSET"
+  },
   "M.12641": {
    "caseNumber": "M.12641",
    "deadline": "2026-11-11",
@@ -7461,5 +7624,5 @@
    "title": "CVC DIF / CARLYLE / BAUWATCH GROUP"
   }
  },
- "fetched": "2026-10-19T11:26:42Z"
+ "fetched": "2026-10-19T20:19:09Z"
 }

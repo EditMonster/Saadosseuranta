@@ -167,6 +167,15 @@ DESCRIPTION:Tarjoukset viimeistään · Bollebygds kommun · https://ted.europa.
 URL:https://ted.europa.eu/fi/notice/-/detail/721991-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-59784-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Valkeakosken kaupungin verkkosivujen uudistuksen hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059784 · https://www.hankintailmoitukset.fi/fi/public/procedure/38875/enotice/59784
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38875/enotice/59784
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-721626-2026-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
@@ -1758,14 +1767,5 @@ DTEND;VALUE=DATE:20261103
 SUMMARY:[Hankinta] Määräaika: Työturvallisuusjärjestelmän hankinta
 DESCRIPTION:Tarjoukset viimeistään · 2026-058277 · https://www.hankintailmoitukset.fi/fi/public/procedure/22488/enotice/58277
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/22488/enotice/58277
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-58328-maaraaika-2026-11-02-hankintatiimi@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[Hankinta] Määräaika: Oppikirjat ja digitaaliset opetusmateriaalit
-DESCRIPTION:Tarjoukset viimeistään · 2026-058328 · https://www.hankintailmoitukset.fi/fi/public/procedure/37956/enotice/58328
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37956/enotice/58328
 END:VEVENT
 END:VCALENDAR

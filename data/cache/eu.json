@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-19T11:21:59",
+ "fetched": "2026-10-19T20:15:54",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -53092,6 +53092,10 @@
     {
      "date": "2026-06-10",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-10-13",
+     "type": "NGT_INST_byEP_CONSIL_COM"
     }
    ],
    "events": [
@@ -61873,6 +61877,12 @@
     "proposal": "52026PC0523",
     "proposalDate": "2026-10-01"
    },
+   "council": [
+    {
+     "date": "2026-10-14",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [],
    "fetched": "2026-10-18",
    "final": false,
