@@ -5,6 +5,24 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-59866-maaraaika-2026-10-21-hankintatiimi@saadosseuranta
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:[Hankinta] Määräaika: Porvoon kaupunginkirjaston palautusautomaatin hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059866 · https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-59866-maaraaika-2026-10-23-hankintatiimi@saadosseuranta
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[Hankinta] Määräaika: Porvoon kaupunginkirjaston palautusautomaatin hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059866 · https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-722868-2026-maaraaika-2026-10-29-hankintatiimi@saadosseuranta
 DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
@@ -1263,15 +1281,6 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi hankintatietovarannosta ja siihen liittyviksi laeiksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-59301-maaraaika-2026-10-21-hankintatiimi@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[Hankinta] Määräaika: Porvoon kaupunginkirjaston palautusautomaatin hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-059301 · https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59301
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59301
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-700734-2026-maaraaika-2026-10-21-hankintatiimi@saadosseuranta

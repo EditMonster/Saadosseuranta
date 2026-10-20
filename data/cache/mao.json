@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-20T10:31:10Z",
+ "fetched": "2026-10-20T15:27:28Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1030,6 +1030,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "4ea7f1bfbfd1",
+   "lastSeen": "2026-10-20"
+  },
+  "54ef2e4cefe7": {
+   "buyer": "Kirkkonummen kunta",
+   "decisionDate": "2026-10-06",
+   "decisionText": "Kirkkonummen kunnan kunnanhallituksen hankintapäätös 6.10.2026, § 280, perustietotekniikan palveluiden hankinta",
+   "filed": "2026-10-20",
+   "firstSeen": "2026-10-20",
+   "hilmaNo": null,
+   "key": "54ef2e4cefe7",
    "lastSeen": "2026-10-20"
   },
   "5892d123ccb2": {
@@ -1721,6 +1731,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "d486e17a217f",
+   "lastSeen": "2026-10-20"
+  },
+  "d6349a62b693": {
+   "buyer": "Tampereen kaupunki",
+   "decisionDate": "2026-10-06",
+   "decisionText": "Tampereen kaupungin konsernijohtajan päätös 6.10.2026, § 119, markkinointipalvelun suorahankinta Suomen Salibandyliitto ry:ltä koskien Tampereella järjestettäviä salibandyn miesten MM-​​kilpailuja 2026",
+   "filed": "2026-10-20",
+   "firstSeen": "2026-10-20",
+   "hilmaNo": null,
+   "key": "d6349a62b693",
    "lastSeen": "2026-10-20"
   },
   "d83a77a8a696": {

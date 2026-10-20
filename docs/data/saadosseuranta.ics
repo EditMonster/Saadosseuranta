@@ -1391,6 +1391,15 @@ DESCRIPTION:Voimaan (908/2026) · HE 77/2026 vp · https://www.finlex.fi/fi/hall
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-7865f02b-lausunto-2026-12-01@saadosseuranta
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[FI] Lausuntoaika päättyy: Maa- ja metsätalousministeriön asetus maa- ja metsätalousministeriön maksullisista suoritteista vuosina 2027 ja 2028
+DESCRIPTION:lausuntokierros · MMM046:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=MMM046:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=MMM046:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-e5f8c97f-lausunto-2026-10-30@saadosseuranta
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030

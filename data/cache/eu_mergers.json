@@ -1047,7 +1047,7 @@
      "reference": "C:2026:4981:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_O_79.90",
    "simplified": "MEnormal",
@@ -1348,10 +1348,44 @@
    "decisions": [],
    "initiated": "2026-03-23",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "UniCredit tarjoaa vähittäispankki-, liikepankki-, yksityispankki-, investointipankki-, omaisuudenhoito- ja vakuutuspalveluja Italiassa, Saksassa ja maailmanlaajuisesti,",
+     "Commerzbank tarjoaa yksityispankki-, liikepankki-, investointipankki-, valuuttakauppa-, arvopaperikauppa- ja omaisuudenhoitopalveluja, mukaan lukien investointipankkipalvelut yritys- ja institutionaalisille asiakkaille Saksassa ja maailmanlaajuisesti."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-10-30",
+    "observationsShifted": null,
+    "oj": "C:2026:5439:",
+    "parties": [
+     {
+      "country": "Italia",
+      "fi": false,
+      "name": "UniCredit S.p.A.",
+      "short": "UniCredit"
+     },
+     {
+      "country": "Saksa",
+      "fi": false,
+      "name": "Commerzbank AG",
+      "short": "Commerzbank"
+     }
+    ],
+    "published": "2026-10-20",
+    "reference": "C/2026/5439",
+    "simplified": false,
+    "transaction": "UniCredit hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Commerzbank. Keskittymä toteutetaan 16. maaliskuuta 2026 ilmoitetulla julkisella tarjouksella.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5439/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-09",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-20",
+     "reference": "C:2026:5439:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_L_64.19",
@@ -4882,10 +4916,75 @@
    "decisions": [],
    "initiated": "2026-07-06",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "AP Ejendomme on kiinteistösijoitusyhtiö, joka hankkii, rakennuttaa ja hallinnoi asuin- ja liikekiinteistöjä Tanskassa.",
+     "CapMan AIFM on konserniin CapMan kuuluva vaihtoehtoisten sijoitusrahastojen hoitaja.",
+     "Copenhagen Towers Hotel omistaa Kööpenhaminassa sijaitsevan Crowne Plaza Copenhagen Towers -hotellikiinteistön ja vuokraa sitä ulkopuoliselle toimijalle.",
+     "Scandic Webers on hotellikiinteistö Kööpenhaminassa."
+    ],
+    "fi": true,
+    "observationDays": 10,
+    "observationsEnd": "2026-10-30",
+    "observationsShifted": null,
+    "oj": "C:2026:5532:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Tanska",
+        "name": "Foreningen AP Pension f.m.b.a."
+       }
+      ],
+      "country": "Tanska",
+      "fi": false,
+      "name": "AP Ejendomme P/S",
+      "short": "AP Ejendomme"
+     },
+     {
+      "country": "Suomi",
+      "fi": true,
+      "name": "CapMan AIFM Oy",
+      "short": "CapMan AIFM"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Ruotsi",
+        "name": "Niam VII Denmark Hotel Holding AB"
+       }
+      ],
+      "country": "Tanska",
+      "fi": false,
+      "name": "Copenhagen Towers Hotel ApS",
+      "short": "Copenhagen Towers Hotel"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Tanska",
+        "name": "Jeudan A/S"
+       }
+      ],
+      "country": "Tanska",
+      "fi": false,
+      "name": "Scandic Webers (Tanska), joka on yrityksen Jeudan A/S"
+     }
+    ],
+    "published": "2026-10-20",
+    "reference": "C/2026/5532",
+    "simplified": true,
+    "transaction": "AP Ejendomme ja CapMan AIFM hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksissä Copenhagen Towers Hotel ja Scandic Webers. Keskittymä toteutetaan ostamalla osakkeita ja omaisuutta.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5532/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-05",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-20",
+     "reference": "C:2026:5532:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_M_68.2",
@@ -6032,7 +6131,7 @@
    "oj": [],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
-   "sector": "NaceV2Sector_M_68.20",
+   "sector": "NaceV2Sector_K_63.10",
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "CDC / DK / HPC / ECLAIRION"
@@ -7578,10 +7677,44 @@
    "decisions": [],
    "initiated": "2026-10-05",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Veritas on sijoitusyhtiö, joka keskittyy teknologian ja hallinnon toimialat yhdistäviin yrityksiin.",
+     "Bodycote tarjoaa lämpökäsittely- ja lämpöprosessointipalveluja valmistajille monilla eri teollisuudenaloilla."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-10-30",
+    "observationsShifted": null,
+    "oj": "C:2026:5440:",
+    "parties": [
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Veritas Capital Fund Management, L.L.C.",
+      "short": "Veritas"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Bodycote plc",
+      "short": "Bodycote"
+     }
+    ],
+    "published": "2026-10-20",
+    "reference": "C/2026/5440",
+    "simplified": true,
+    "transaction": "Veritas hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun määräysvallan yrityksessä Bodycote. Keskittymä toteutetaan 1. syyskuuta 2026 ilmoitetulla julkisella tarjouksella.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5440/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-08",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-20",
+     "reference": "C:2026:5440:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_25.53",
@@ -7641,5 +7774,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-20T10:29:52Z"
+ "fetched": "2026-10-20T15:26:49Z"
 }
