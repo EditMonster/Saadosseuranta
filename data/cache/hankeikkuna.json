@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-19T20:12:21",
+ "fetched": "2026-10-20T10:25:04",
  "items": [
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -806,7 +806,7 @@
    "laji": "laki",
    "lausunnot": {
     "eiLausuttavaa": 3,
-    "n": 22,
+    "n": 23,
     "orgs": [
      "Etelä-Savon alueellinen riistaneuvosto",
      "Helsingin hallinto-oikeus",
@@ -817,6 +817,7 @@
      "MTK-Pohjois-Karjala ry",
      "Metsähallitus",
      "Oikeuskanslerin virasto",
+     "Oikeusministeriö",
      "Pohjois-Hämeen alueellinen riistaneuvosto",
      "Pohjois-Savon luonnonsuojelupiiri ry",
      "Rajavartiolaitoksen esikunta",
@@ -832,11 +833,11 @@
      "Varsinais-Suomen alueellinen riistaneuvosto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=7e38efc1-5017-4c8c-a0f2-9ed3049beb9d&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-19"
+    "viimeisin": "2026-10-20"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-19T16:59:09",
+   "muokattu": "2026-10-20T08:40:53",
    "nimi": "Hallituksen esitys laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta",
    "pevLausunto": true,
    "poistettuPaiva": null,
@@ -2066,7 +2067,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-01T07:14:23",
+   "muokattu": "2026-10-20T08:32:11",
    "nimi": "Hallituksen esitys laiksi ympäristövahinkorahastosta annetun lain 2 §:n muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -2867,7 +2868,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-19T16:13:51",
+   "muokattu": "2026-10-20T05:46:59",
    "nimi": "Hallituksen esitys eduskunnalle laiksi tuloverolain 10 §:n muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -3194,8 +3195,8 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-13T07:00:51",
-   "nimi": "Hallituksen esitys eduskunnalle uudeksi ajoneuvoverolaiksi ja eräiksi siihen liittyviksi laeiksi",
+   "muokattu": "2026-10-20T07:33:20",
+   "nimi": "Hallituksen esitys eduskunnalle ajoneuvoverolaiksi ja siihen liittyviksi laeiksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
@@ -3592,7 +3593,7 @@
    "laji": "laki",
    "lausunnot": {
     "eiLausuttavaa": 1,
-    "n": 26,
+    "n": 30,
     "orgs": [
      "Amnesty International Suomen osasto",
      "Diakonissalaitos",
@@ -3600,6 +3601,7 @@
      "Etelä-Karjalan käräjäoikeus",
      "Helsingin hallinto-oikeus",
      "Helsingin käräjäoikeus",
+     "Helsingin poliisilaitos",
      "Kaakkois-Suomen poliisilaitos",
      "Keskusrikospoliisi KRP",
      "Kirkkohallitus",
@@ -3611,7 +3613,9 @@
      "Oikeusministeriö",
      "Pakolaisneuvonta ry",
      "Pelastakaa Lapset ry",
+     "Poliisihallitus",
      "Siirtolaisuusinstituuttisäätiö",
+     "Sisäministeriö",
      "Suomen Asianajajat",
      "Suomen Punainen Risti",
      "Suomen UNICEF ry",
@@ -3619,14 +3623,15 @@
      "Turun hallinto-oikeus",
      "Ulkoministeriö",
      "Valtiovarainministeriö",
-     "Yhdenvertaisuusvaltuutetun toimisto"
+     "Yhdenvertaisuusvaltuutetun toimisto",
+     "Ålands polismyndighet"
     ],
     "url": null,
-    "viimeisin": "2026-10-16"
+    "viimeisin": "2026-10-19"
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-19T16:43:27",
+   "muokattu": "2026-10-20T06:22:22",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -4987,12 +4992,14 @@
    },
    "lisattyPaiva": "2026-06-23",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-08T12:46:12",
+   "muokattu": "2026-10-20T05:13:34",
    "nimi": "Vaaratiedotteesta annetun lain muuttaminen",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "911/2026"
+   ],
    "teemat": [
     "Pelastustoimi"
    ],
@@ -8376,7 +8383,7 @@
    },
    "lisattyPaiva": "2026-04-01",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-09-24T10:45:52",
+   "muokattu": "2026-10-20T09:37:13",
    "nimi": "Valtion tukemien vuokra-asuntojen asukasvalintaa ja asuntojen käyttöä koskevan sääntelyn kehittäminen",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -8992,7 +8999,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-08-27T09:18:51",
+   "muokattu": "2026-10-20T06:29:40",
    "nimi": "Hallituksen esitys varhaiskasvatuslain 31 §:n sekä 75 §:n 5 momentin muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -9727,7 +9734,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-19T09:51:23",
+   "muokattu": "2026-10-20T05:19:11",
    "nimi": "Hallituksen esitys yhdyskuntarakentamislaiksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -9796,7 +9803,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-19T16:19:18",
+   "muokattu": "2026-10-20T05:43:41",
    "nimi": "Hallituksen esitys eduskunnalle laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -10135,7 +10142,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-09T07:13:18",
+   "muokattu": "2026-10-20T08:28:56",
    "nimi": "Hallituksen esitys eduskunnalle kansainvälisestä merityöyleissopimuksesta (MLC) ja EU:n sisävesiliikenteen työaikadirektiivistä johtuvien velvoitteiden täytäntöönpanemiseksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -11048,7 +11055,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-19T06:15:27",
+   "muokattu": "2026-10-20T10:21:06",
    "nimi": "Hallituksen esitys laiksi huoneistotietojärjestelmää koskevan lainsäädännön voimaanpanosta annetun lain muuttamisesta (massakonversio)",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -11989,7 +11996,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtioneuvoston kanslia",
-   "muokattu": "2026-10-13T08:34:26",
+   "muokattu": "2026-10-20T07:33:18",
    "nimi": "Valtioneuvoston turvallisuutta koskevan lainsäädännön kehittäminen",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -12003,7 +12010,7 @@
    "tunnus": "VNK024:00/2025",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=VNK024:00/2025",
    "uuid": "bf6ec87e-308c-44e0-8794-30e5c122c795",
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmisteluvaihe": "JATKOVALMISTELU",
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 36,
    "vanhaEsittelyvuosi": 2026
@@ -12036,7 +12043,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-09-24T10:34:37",
+   "muokattu": "2026-10-20T07:12:37",
    "nimi": "Hallituksen esitys Ukrainan kansainvälisen vaadekomission perustamisesta tehdyn yleissopimuksen hyväksymiseksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -12137,7 +12144,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-09-24T10:36:08",
+   "muokattu": "2026-10-20T07:14:06",
    "nimi": "Hallituksen esitys Ukrainaan kohdistuvaa hyökkäysrikosta käsittelevän erityistuomioistuimen hallintokomiteasta tehdyn laajennetun osittaissopimuksen hyväksymiseksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -13118,7 +13125,7 @@
     }
    ],
    "asiasanat": [],
-   "esittelyviikko": 42,
+   "esittelyviikko": 43,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -13217,7 +13224,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-15T07:16:40",
+   "muokattu": "2026-10-20T06:19:41",
    "nimi": "Hallituksen esitys eduskunnalle SORA-säännösten muuttamista koskevaksi lainsäädännöksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -13231,8 +13238,8 @@
    "uuid": "ed825aaf-982a-4cf3-9368-89246ce55d07",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2027-03-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
+   "vanhaEsittelyviikko": 42,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-08-27",
@@ -13675,7 +13682,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-12T13:48:13",
+   "muokattu": "2026-10-20T05:10:10",
    "nimi": "Hallituksen esitys laiksi vesilain muuttamisesta (merituulivoiman rakentamis- ja purkulakihanke)",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -13811,7 +13818,7 @@
    },
    "lisattyPaiva": "2026-06-12",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-16T07:46:25",
+   "muokattu": "2026-10-20T08:07:54",
    "nimi": "Ylivelkaantuneiden velallisten aseman helpottaminen ulosotossa",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -14337,7 +14344,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-12T10:56:04",
+   "muokattu": "2026-10-20T04:30:50",
    "nimi": "Hallituksen esitys laiksi evankelis-luterilaisen kirkon eläkerahastosta annetun lain muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -15080,12 +15087,11 @@
     "eiLausuttavaa": 1,
     "n": 33,
     "orgs": [
+     "HUS-yhtymä",
      "Valtakunnallinen lääketieteellinen tutkimuseettinen toimikunta TUKIJA",
      "Asiakas- ja potilasturvallisuuskeskus",
      "Eduskunnan oikeusasiamiehen kanslia",
      "HUS Runkopalvelut",
-     "HUS-yhtymä",
-     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
      "Helsingin kaupunki",
      "Helsingin yliopisto",
      "Itä-Suomen yhteistyöalueen alueellinen lääketieteellinen tutkimuseettinen toimikunta",
@@ -15118,7 +15124,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-19T10:35:00",
+   "muokattu": "2026-10-19T21:40:01",
    "nimi": "Hallituksen esitys eduskunnalle laiksi ihmisessä käytettäväksi tarkoitettujen ihmisperäisten aineiden käytöstä sekä siihen liittyviksi laeiksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -16229,7 +16235,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-08-14T08:44:41",
+   "muokattu": "2026-10-20T08:43:12",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta annetun lain 46 a §:n, työterveyslaitoksen toiminnasta ja rahoituksesta annetun lain sekä sosiaali- ja terveydenhuollon asiakastietojen käsittelystä annetun lain 76 §:n muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -17192,7 +17198,7 @@
     "poliisilaki",
     "tiedustelupalvelut"
    ],
-   "esittelyviikko": 40,
+   "esittelyviikko": 43,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -17247,7 +17253,7 @@
    },
    "lisattyPaiva": "2026-08-24",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-19T19:39:01",
+   "muokattu": "2026-10-20T06:36:27",
    "nimi": "Lainsäädäntöhanke siviilitiedustelulainsäädännön ja poliisin henkilötietolain 7 luvun tarkistamiseksi, vaihe 2",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -17263,8 +17269,8 @@
    "uuid": "972da6af-6845-4967-bd45-64f1ffd25827",
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
+   "vanhaEsittelyviikko": 40,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-03-26",
@@ -17524,8 +17530,8 @@
      "Etelä-Savon hyvinvointialue",
      "Familar Oy",
      "HUS Kuntayhtymä",
+     "HUS-yhtymä",
      "Helsingin hallinto-oikeus",
-     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
      "Helsingin kaupunki",
      "Helsingin kaupunki, sosiaali-, terveys- ja pelastustoimiala",
      "Helsingin yliopisto",
@@ -17563,7 +17569,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-14T10:15:02",
+   "muokattu": "2026-10-19T21:32:49",
    "nimi": "Hallituksen esitys lastensuojelulainsäädännön uudistamiseksi; 2. vaihe",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -23734,7 +23740,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-07T06:05:15",
+   "muokattu": "2026-10-20T08:25:43",
    "nimi": "Rikosoikeudellisten menettelyjen siirtäminen (EU-asetusta täydentävä kansallinen lainsäädäntö)",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -29322,7 +29328,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-15T06:29:55",
+   "muokattu": "2026-10-20T08:30:15",
    "nimi": "Hallituksen esitys eräiden tekoälyjärjestelmien valvonnasta annetun lain muuttamiseksi ja eräiksi muiksi laeiksi (tekoälyasetuksen II vaiheen täytäntöönpano)",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -58537,7 +58543,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-15T07:40:21",
+   "muokattu": "2026-10-20T06:50:28",
    "nimi": "Hallituksen esitys laiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 2 §:n ja liitteen muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -98147,6 +98153,47 @@
    "vanhaEsittelyvuosi": null
   },
   {
+   "annettuEduskunnalle": "2022-02-17",
+   "asetettu": "2021-11-01",
+   "asiakirjat": [],
+   "asiasanat": [
+    "ulkomaalaislaki"
+   ],
+   "esittelyviikko": 7,
+   "esittelyvuosi": 2022,
+   "etapit": [],
+   "evNumerot": [
+    "EV 30/2022"
+   ],
+   "heNumerot": [
+    "HE 11/2022"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": true,
+   "laji": "laki",
+   "lausunnot": null,
+   "lisattyPaiva": "2021-12-20",
+   "ministerio": "ulkoministeriö",
+   "muokattu": "2026-10-20T07:54:17",
+   "nimi": "Laki ulkomaalaislain muuttamisesta",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "306/2022"
+   ],
+   "teemat": [],
+   "tiivistelma": "Ulkomaalaislakiin ehdotetaan lisättäväksi uusi pykälä, jossa säädettäisiin viisumin turvaominaisuuksista. Muutoksella pantaisiin täytäntöön yhtenäisestä viisumin kaavaa koskevan neuvoston asetuksen nojalla annettu komission täytäntöönpanopäätös digitaalisen leiman käyttöönotosta yhtenäisessä viisumin kaavassa.",
+   "tila": "PAATTYNYT",
+   "tunnus": "UM016:00/2021",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=UM016:00/2021",
+   "uuid": "5303642e-9876-449d-b229-b9b8365a15d7",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2022-04-29",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
    "annettuEduskunnalle": null,
    "asetettu": null,
    "asiakirjat": [],
@@ -115993,6 +116040,99 @@
   },
   {
    "annettuEduskunnalle": null,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "20260918_Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamis",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/019bea35-3280-43e1-b663-dbfdf60ea89e/LAUSUNTOPYYNTO_20261019075442.PDF"
+    },
+    {
+     "nimi": "VN_26841_2026-OKM-3 Perustelumuistioluonnos_Valtioneuvoston asetus yliopistojen tutkinnoista 10901545_11_1 (2)",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/4fef17fc-1f32-4079-a39c-923dc7c8d00a/LAUSUNTOPYYNTO_20261019075442.PDF"
+    },
+    {
+     "nimi": "VN_26841_2026-OKM-2 Valtioneuvoston asetusluonnos ammattikorkeakouluista annetun valtioneuvos 10900184_8_1 (2)",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/194603d0-8e64-4f1a-bfe9-f9ae7090a224/LAUSUNTOPYYNTO_20261019075442.PDF"
+    },
+    {
+     "nimi": "VN_26841_2026-OKM-1 Valtioneuvoston asetusluonnos yliopistojen tutkinnoista ja erikoistumisk 10900114_10_1 (3)",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/1447a2ef-a8cc-4762-af6f-8f97fbea1157/LAUSUNTOPYYNTO_20261019075442.PDF"
+    },
+    {
+     "nimi": "VN0122651_VNA ammattikorkeakouluista_sv_ah",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/f88bc98c-7421-41ec-8a1f-4478629fdc61/LAUSUNTOPYYNTO_20261019091828.PDF"
+    },
+    {
+     "nimi": "VN0122651_VNA yliopistoista_uh_sv",
+     "pvm": "2026-09-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/d4c71b26-4e93-4b1a-a2a7-0c38be2a2600/LAUSUNTOPYYNTO_20261019091828.PDF"
+    }
+   ],
+   "asiasanat": [
+    "säädöshankkeet",
+    "säädösvalmistelu"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2026-09-18",
+     "end": "2026-10-30",
+     "kind": "lausunto",
+     "label": "Lausuntomenettely",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "eiLausuttavaa": 0,
+    "n": 2,
+    "orgs": [
+     "Oulun yliopisto",
+     "Suomen erityiskasvatuksen liitto SEL ry"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=72d84fb8-9bd0-4a2a-9625-8de9f976421d",
+    "viimeisin": "2026-10-15"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "opetus- ja kulttuuriministeriö",
+   "muokattu": "2026-10-20T10:24:21",
+   "nimi": "Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [
+    "Lainvalmistelun kehittäminen",
+    "Palvelut valtioneuvostolle"
+   ],
+   "tiivistelma": "Ehdotetaan muutettavaksi yliopistojen tutkinnoista ja erikoistumiskoulutuksista annettua valtioneuvoston asetusta.",
+   "tila": "KAYNNISSA",
+   "tunnus": "OKM040:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026",
+   "uuid": "e5f8c97f-d25b-468c-8419-2313c7d7392a",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-12-31",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
    "asetettu": "2026-09-07",
    "asiakirjat": [],
    "asiasanat": [],
@@ -117312,14 +117452,35 @@
   {
    "annettuEduskunnalle": null,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "20261020_Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi elinvoimakeskusten ja Työllisyys-, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028",
+     "pvm": "2026-10-20",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/2bd134b3-f0cc-4706-a8bf-3567e67b30af/LAUSUNTOPYYNTO_20261020052420.PDF"
+    },
+    {
+     "nimi": "20261020_Begäran om utlåtande om utkastet till statsrådets förordning om avgifter som tas ut av livskraftscentralerna samt UF-centret åren 2027–2028",
+     "pvm": "2026-10-20",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/1f0e9f9d-ba49-4d99-b152-0a73e6ad7d1f/LAUSUNTOPYYNTO_20261020052420.PDF"
+    }
+   ],
    "asiasanat": [
     "suoritteet",
     "maksut"
    ],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-10-20",
+     "end": "2026-11-06",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -117328,7 +117489,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-09-23T05:33:18",
+   "muokattu": "2026-10-20T06:18:18",
    "nimi": "Valtioneuvoston asetus elinvoimakeskusten ja Työllisyys-, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -117454,7 +117615,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-19T16:21:40",
+   "muokattu": "2026-10-20T05:47:58",
    "nimi": "Valtioneuvoston asetus eräistä valtioneuvoston yleisistunnossa ratkaistavien työ- ja elinkeinoministeriön toimialaan kuuluvien asioiden maksullisista suoritteista",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -118440,7 +118601,14 @@
   {
    "annettuEduskunnalle": null,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "20261019_Lausuntopyyntö luonnoksesta sosiaali- ja terveysministeriön asetukseksi Terveyden ja hyvinvoinnin laitoksen maksullisista suoritteista_855",
+     "pvm": "2026-10-19",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/9438da5b-ccc1-45f1-97f7-db6c6dcffb36/f66b8f0d-3fd8-43b9-bc4a-9dab382b3eb4/LAUSUNTOPYYNTO_20261020064248.PDF"
+    }
+   ],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
@@ -118453,7 +118621,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-19T11:04:48",
+   "muokattu": "2026-10-20T06:42:48",
    "nimi": "Sosiaali- ja terveysministeriön asetus Terveyden ja hyvinvoinnin laitoksen maksullisista suoritteista",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -121826,7 +121994,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-01T08:27:48",
+   "muokattu": "2026-10-20T07:10:19",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -122799,59 +122967,6 @@
    "tunnus": "OKM077:00/2025",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=OKM077:00/2025",
    "uuid": "f12433f5-35f1-4961-95fd-b778034708bb",
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "asetettu": null,
-   "asiakirjat": [],
-   "asiasanat": [],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2025-12-16",
-     "end": "2026-01-30",
-     "kind": "lausunto",
-     "label": "Lausuntoaika 16.12.2025-30.1.2026",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "eiLausuttavaa": 2,
-    "n": 5,
-    "orgs": [
-     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
-     "Lääketeollisuus ry",
-     "Pohjois-savon sairaanhoitopiirin tutkimuseettinen toimikunta",
-     "Työ- ja elinkeinoministeriö",
-     "Valtiovarainministeriö"
-    ],
-    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5b38d62f-3072-49a5-b615-0443726ad42a",
-    "viimeisin": "2026-01-14"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-01-14T18:10:28",
-   "nimi": "Sosiaali- ja terveysministeriön asetus valtakunnallisen lääketieteellisen tutkimuseettisen toimikunnan lausunnoista perittävistä maksuista 2026-2027",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Hankkeessa valmistellaan uusi sosiaali- ja terveysministeriön asetus valtakunnallisen lääketieteellisen tutkimuseettisen toimikunnan lausunnoista perittävistä maksuista vuosille 2026 ja 2027.",
-   "tila": "KAYNNISSA",
-   "tunnus": "STM191:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM191:00/2025",
-   "uuid": "2fec540d-7ce3-4cd4-b960-4101bf124aec",
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
@@ -133440,6 +133555,59 @@
    "uuid": "81bb092d-d35a-4dd5-bcc1-35fd3803eb14",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-12-09",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "asetettu": null,
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2025-12-16",
+     "end": "2026-01-30",
+     "kind": "lausunto",
+     "label": "Lausuntoaika 16.12.2025-30.1.2026",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "eiLausuttavaa": 2,
+    "n": 5,
+    "orgs": [
+     "HUS-yhtymä",
+     "Lääketeollisuus ry",
+     "Pohjois-savon sairaanhoitopiirin tutkimuseettinen toimikunta",
+     "Työ- ja elinkeinoministeriö",
+     "Valtiovarainministeriö"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5b38d62f-3072-49a5-b615-0443726ad42a",
+    "viimeisin": "2026-01-14"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-20T00:46:56",
+   "nimi": "Sosiaali- ja terveysministeriön asetus valtakunnallisen lääketieteellisen tutkimuseettisen toimikunnan lausunnoista perittävistä maksuista 2026-2027",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Hankkeessa valmistellaan uusi sosiaali- ja terveysministeriön asetus valtakunnallisen lääketieteellisen tutkimuseettisen toimikunnan lausunnoista perittävistä maksuista vuosille 2026 ja 2027.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM191:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM191:00/2025",
+   "uuid": "2fec540d-7ce3-4cd4-b960-4101bf124aec",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

@@ -190,7 +190,7 @@ DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Voimaan: Laiksi vaaratiedotteesta annetun lain 5 ja 7 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 139/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
+DESCRIPTION:Voimaan (911/2026) · HE 139/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
 END:VEVENT
 BEGIN:VEVENT
@@ -1391,6 +1391,15 @@ DESCRIPTION:Voimaan (908/2026) · HE 77/2026 vp · https://www.finlex.fi/fi/hall
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-e5f8c97f-lausunto-2026-10-30@saadosseuranta
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta
+DESCRIPTION:Lausuntomenettely · OKM040:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-16bb79ef-voimaan-2026-10-16@saadosseuranta
 DTSTAMP:20261016T000000Z
 DTSTART;VALUE=DATE:20261016
@@ -1544,6 +1553,15 @@ DESCRIPTION:Lausuntokierros: Yksityistieasetuksen muuttaminen · LVM025:00/2026 
 URL:https://valtioneuvosto.fi/hanke?tunnus=LVM025:00/2026
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-4934bc8e-lausunto-2026-11-06@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus elinvoimakeskusten ja Työllisyys-\, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028
+DESCRIPTION:Lausuntokierros · TEM051:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM051:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM051:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-e19d2053-lausunto-2026-10-23@saadosseuranta
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261023
@@ -1605,15 +1623,6 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta
 DESCRIPTION:Lausuntokierros · STM067:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-611cacbc-lausunto-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[FI] Lausuntoaika päättyy: Uuden ydinenergialain nojalla vuonna 2026 annettavat valtioneuvoston asetukset
-DESCRIPTION:Lausuntokierros · TEM034:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM034:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM034:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-03809642-voimaan-2027-01-01@saadosseuranta
@@ -2408,10 +2417,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-14@saadosseuranta
-DTSTAMP:20261214T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
+UID:eu-hys-15492-lausunto-2026-12-15@saadosseuranta
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2750,6 +2759,15 @@ DESCRIPTION:Soveltaminen (vaihe) · C(2026)5010 · https://webgate.ec.europa.eu/
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3021
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3025-maaraaika-2026-12-21@saadosseuranta
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2018/273 as regards the scheme of authorisations for vine planting and the functio
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 19.12.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)8501 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3025
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3025
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3028-maaraaika-2026-11-18@saadosseuranta
 DTSTAMP:20261118T000000Z
 DTSTART;VALUE=DATE:20261118
@@ -2804,15 +2822,6 @@ DESCRIPTION:Soveltaminen (vaihe) · C(2026)5011 · https://webgate.ec.europa.eu/
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3052
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-3054-maaraaika-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending Directive 2009/43/EC of the European Parliament and of the Council as regards the updating of the list of def
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 10.10.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)4573 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3054
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3054
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-3062-maaraaika-2026-11-17@saadosseuranta
 DTSTAMP:20261117T000000Z
 DTSTART;VALUE=DATE:20261117
@@ -2865,15 +2874,6 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards measures to reduce incide
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6205 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3118-maaraaika-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DECISION (EU) …/… amending Decision 2001/171/EC as regards crystal glass packaging
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5778 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
@@ -3018,15 +3018,6 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Regulatory Technical Standards on prudential requirements for investment firms
 DESCRIPTION:Palauteaika · EBA/CP/2026/17 · https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
 URL:https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-esma-consultation-reporting-framework-under-emir-clearing-activity-recognis-lausunto-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Lausuntoaika päättyy: Consultation on the reporting framework under EMIR for clearing activity at recognised third-country CCPs
-DESCRIPTION:Palauteaika · ESMA12-2121844265-6008 · https://www.esma.europa.eu/press-news/consultations/consultation-reporting-framework-under-emir-clearing-activity-recognised
-URL:https://www.esma.europa.eu/press-news/consultations/consultation-reporting-framework-under-emir-clearing-activity-recognised
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-eba-cp-2026-16-lausunto-2026-11-02@saadosseuranta
@@ -3182,33 +3173,6 @@ DESCRIPTION:Voimaan · (YUTP) 2026/2286 · https://eur-lex.europa.eu/legal-conte
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2286
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-pak-32026R2292-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2292 – Venäjä 269/2014
-DESCRIPTION:Voimaan · (EU) 2026/2292 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2292
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2292
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2281-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2281 – Venäjä 269/2014
-DESCRIPTION:Voimaan · (EU) 2026/2281 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2281
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2281
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2278-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2278 – Pohjois-Korea 2017/1509
-DESCRIPTION:Voimaan · (EU) 2026/2278 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2278
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2278
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-pak-32026R2271-voimaan-2026-10-13@saadosseuranta
 DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
@@ -3225,33 +3189,6 @@ DTEND;VALUE=DATE:20261014
 SUMMARY:[EU] Voimaan: Neuvoston asetus (EU) 2026/2259 – Libya 2016/44
 DESCRIPTION:Voimaan · (EU) 2026/2259 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2259
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2259
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2291-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2291 – Venäjä 2014/145
-DESCRIPTION:Voimaan · (YUTP) 2026/2291 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2291
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2291
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2283-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2283 – Pohjois-Korea 2016/849
-DESCRIPTION:Voimaan · (YUTP) 2026/2283 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2283
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2283
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2279-voimaan-2026-10-12@saadosseuranta
-DTSTAMP:20261012T000000Z
-DTSTART;VALUE=DATE:20261012
-DTEND;VALUE=DATE:20261013
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2279 – Venäjä 2014/145
-DESCRIPTION:Voimaan · (YUTP) 2026/2279 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2279
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2279
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-pak-32026D2277-voimaan-2026-10-13@saadosseuranta

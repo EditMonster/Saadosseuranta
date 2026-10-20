@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-19T20:17:43",
+ "fetched": "2026-10-20T10:27:45",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-14",
+     "end": "2026-12-15",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -133,7 +133,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-14",
+     "end": "2026-12-15",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -313,7 +313,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-14",
+     "end": "2026-12-15",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -602,30 +602,12 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en"
   },
   {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 19332,
-   "periods": [
-    {
-     "end": "2026-10-19",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-21"
-    }
-   ],
-   "reference": "Ares(2026)8907894",
-   "status": "ACTIVE",
-   "title_en": "Amending RTS on buy-back programmes and stabilisation measures",
-   "title_fi": "Tekniset sääntelystandardit – edellytykset takaisinosto-ohjelmille ja vakauttamistoimenpiteille (muutos)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19332_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-14",
+     "end": "2026-12-15",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -888,6 +870,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 19332,
+   "periods": [
+    {
+     "end": "2026-10-19",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-21"
+    }
+   ],
+   "reference": "Ares(2026)8907894",
+   "status": "ACTIVE",
+   "title_en": "Amending RTS on buy-back programmes and stabilisation measures",
+   "title_fi": "Tekniset sääntelystandardit – edellytykset takaisinosto-ohjelmille ja vakauttamistoimenpiteille (muutos)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19332_en"
   },
   {
    "actType": "REG_DEL",
@@ -1710,24 +1710,6 @@
    "title_en": "Amendment of Annexes I and V to Regulation (EU) No 649/2012 on export and import of hazardous chemicals",
    "title_fi": "Vaarallisten kemikaalien vienti ja tuonti – asetuksen (EU) N:o 649/2012 liitteiden I ja V muuttaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15913_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 15473,
-   "periods": [
-    {
-     "end": "2026-08-20",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-23"
-    }
-   ],
-   "reference": "Ares(2025)9158308",
-   "status": "ACTIVE",
-   "title_en": "Allow authorities of 3rd countries to start using ELAN (Electronic Agricultural non customs formalities system)",
-   "title_fi": "EU:n ulkopuoliset maat voivat alkaa käyttää EU:n muuta kuin tullialaa koskevien maatalouden muodollisuuksien sähköistä järjestelmää (ELAN) vuonna 2026",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15473_en"
   },
   {
    "actType": "DEC_DEL",
