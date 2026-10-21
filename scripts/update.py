@@ -3,7 +3,11 @@ then build docs/data/items.json + hankinnat.json + yrityskaupat.json.
 
 Every source's outcome is recorded in data/cache/health.json (consecutive failure streak,
 last success, last error). build.py copies the summary into meta.json so the page can show
-"Lähde ei päivity", and scripts/health_report.py turns a long streak into a GitHub issue."""
+"Lähde ei päivity" / "Huoltokatko lähteessä", and scripts/health_report.py turns a long failure into a GitHub issue.
+A SourceOutage (maintenance page, 5xx, timeouts – see common.http) is recorded as `outage: true`.
+
+Usage: python scripts/update.py [source ...]   (no arguments = every source; scripts/ajastus.py passes the
+failing ones for a retry run)"""
 from __future__ import annotations
 
 import datetime as dt
@@ -36,7 +40,7 @@ import fetch_toimiala
 import fetch_toimittajat
 import fetch_ue
 import fetch_vaski
-from common import CACHE_DIR, load_json, log, save_json
+from common import CACHE_DIR, SourceOutage, load_json, log, save_json
 
 HEALTH = CACHE_DIR / "health.json"
 STEPS = [
@@ -68,6 +72,17 @@ STEPS = [
 ]
 
 
+def is_outage(e: BaseException) -> bool:
+    """A temporary outage at the source (maintenance page, 5xx, timeouts) rather than a broken parser."""
+    seen = set()
+    while e is not None and id(e) not in seen:
+        seen.add(id(e))
+        if isinstance(e, SourceOutage):
+            return True
+        e = e.__cause__ or e.__context__
+    return False
+
+
 def main(only: list[str] | None = None) -> int:
     health = load_json(HEALTH, {})
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -78,12 +93,12 @@ def main(only: list[str] | None = None) -> int:
         h = health.setdefault(name, {"streak": 0})
         try:
             fn()
-            h.update({"ok": True, "streak": 0, "last_ok": now, "last_error": None})
-        except Exception:  # noqa: BLE001
+            h.update({"ok": True, "streak": 0, "last_ok": now, "last_error": None, "outage": False})
+        except Exception as e:  # noqa: BLE001
             failures.append(name)
             tb = traceback.format_exc()
             h.update({"ok": False, "streak": int(h.get("streak", 0)) + 1, "last_fail": now,
-                      "last_error": (tb.strip().splitlines() or ["?"])[-1][:300]})
+                      "last_error": (tb.strip().splitlines() or ["?"])[-1][:300], "outage": is_outage(e)})
             log(f"ERROR in {name} (peräkkäisiä epäonnistumisia {h['streak']}):\n{tb}")
     save_json(HEALTH, health)
     build.main()

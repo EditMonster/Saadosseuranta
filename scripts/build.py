@@ -882,7 +882,8 @@ def main():
             "hankintaTopics": hank.get("topics") or [],
             "yrityskauppaTopics": yk.get("topics") or [],
             # per-source health from update.py: the page warns when a source keeps failing
-            "health": {k: {"ok": bool(v.get("ok", True)), "streak": int(v.get("streak", 0)), "last_ok": v.get("last_ok")}
+            "health": {k: {"ok": bool(v.get("ok", True)), "streak": int(v.get("streak", 0)), "last_ok": v.get("last_ok"),
+                           **({"outage": True, "last_error": re.sub(r"^[\w.]+(Error|Outage|Exception): ", "", v.get("last_error") or "")[:160]} if v.get("outage") and not v.get("ok", True) else {})}
                        for k, v in load_json(CACHE_DIR / "health.json", {}).items() if not k.startswith("_")},
             "lajit": {"laki": sum(i.get("laji") == "laki" for i in keep), "asetus": sum(i.get("laji") == "asetus" for i in keep),
                       "eu": sum(i.get("laji") == "eu" for i in keep), "kirjelma": sum(i.get("laji") == "kirjelma" for i in keep),

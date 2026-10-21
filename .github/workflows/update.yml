@@ -1,12 +1,20 @@
 name: Päivitä säädösaineisto
 
+# Herätys joka tunti; scripts/ajastus.py päättää, ajetaanko (ks. sen ohje):
+#   * täysi ajo arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 Suomen aikaa (kesä-/talviaika huomioiden);
+#     jos GitHub pudottaa tai viivästää herätyksen, väliin jäänyt ajo tehdään seuraavalla tunnilla
+#   * epäonnistuneiden lähteiden uusintayritys 2 tunnin välein klo 7–22 (esim. lähteen huoltokatko)
+#   * muuten herätys päättyy ~15 sekunnissa.
+# Minuutti 11 välttää tasatuntien ruuhkan, jolloin GitHub pudottaa ajastuksia useimmin.
 on:
   schedule:
-    # Arkisin kolmesti: 05:40, 10:40 ja 14:40 UTC = 7:40, 12:40 ja 16:40 talviaikaan (8:40, 13:40, 17:40 kesäaikaan)
-    - cron: "40 5,10,14 * * 1-5"
-    # Viikonloppuisin kerran aamulla
-    - cron: "40 6 * * 0,6"
+    - cron: "11 * * * *"
   workflow_dispatch:
+    inputs:
+      vaiheet:
+        description: "Vain nämä lähteet (välilyönnillä erotettuna, esim. 'mao caselaw'); tyhjä = kaikki"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -20,7 +28,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  ajastin:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      run: ${{ steps.decide.outputs.run }}
+      steps: ${{ steps.decide.outputs.steps }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: |
+            scripts/ajastus.py
+            data/cache/health.json
+          sparse-checkout-cone-mode: false
+      - id: decide
+        env:
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          FORCE_STEPS: ${{ inputs.vaiheet }}
+        run: python3 scripts/ajastus.py
+
   update:
+    needs: ajastin
+    if: needs.ajastin.outputs.run == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
@@ -34,7 +63,9 @@ jobs:
       - run: pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Hae lähteet ja rakenna aineisto
-        run: python scripts/update.py
+        env:
+          VAIHEET: ${{ needs.ajastin.outputs.steps }}
+        run: python scripts/update.py $VAIHEET
 
       # Rikkinäistä aineistoa ei committata: build.py:n raja-arvot + rakenteen eheystestit.
       - name: Aineiston eheys

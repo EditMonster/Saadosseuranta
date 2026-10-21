@@ -1902,15 +1902,20 @@ function render(){
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
 
-const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus",avoimuus:"avoimuusrekisteri",vaski:"eduskunta (valiokunnat)",caselaw:"tuomioistuimet",curia:"EU-tuomioistuin",toimiala:"toimialakerros",sopimuskaudet:"Hilma (sopimuskaudet)",suunnitelmat:"kilpailutussuunnitelmat",ted:"TED",paatokset:"hankintapäätökset",toimittajat:"Tutkihankintoja",kkv_valvonta:"KKV (valvonta)",eu_signals:"EU-ennakointi"};
+const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus",avoimuus:"avoimuusrekisteri",vaski:"eduskunta (valiokunnat)",caselaw:"tuomioistuimet",curia:"EU-tuomioistuin",toimiala:"toimialakerros",sopimuskaudet:"Hilma (sopimuskaudet)",suunnitelmat:"kilpailutussuunnitelmat",ted:"TED",paatokset:"hankintapäätökset",toimittajat:"Tutkihankintoja",kkv_valvonta:"KKV (valvonta)",eu_signals:"EU-ennakointi",hediff:"HE-diff",history:"tilastohistoria"};
 function renderStatus(){
   const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
   const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
-  const bad=Object.entries(META.health||{}).filter(([k,h])=>(h.streak||0)>=2).sort((a,b)=>b[1].streak-a[1].streak);
+  /* a source counts as not updating once it has failed and its last success is over 6 h old (retries run every 2 h) */
+  const since=h=>h.last_ok?(Date.now()-new Date(h.last_ok).getTime())/36e5:1e9;
+  const bad=Object.entries(META.health||{}).filter(([k,h])=>h.ok===false&&((h.streak||0)>=2||since(h)>=6)).sort((a,b)=>since(b[1])-since(a[1]));
+  const outage=bad.filter(([k,h])=>h.outage), broken=bad.filter(([k,h])=>!h.outage);
+  const okTxt=h=>h.last_ok?new Date(h.last_ok).toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–";
   let html=`<span><i class="led ${ageH!==null&&ageH<36&&!bad.length?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span>`;
   html+=`<span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span><span>Yrityskauppoja vireillä <b>${c.yrityskaupat??"–"}</b></span>`;
-  if(bad.length) html+=`<span class="warn" title="${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} ajoa peräkkäin epäonnistunut, viimeksi onnistui ${h.last_ok?new Date(h.last_ok).toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}`).join("\n"))}">Lähde ei päivity: <b>${esc(bad.map(([k,h])=>`${SOURCE_NAMES[k]||k} (${h.streak} ajoa)`).join(", "))}</b> · näytetään edellinen aineisto</span>`;
-  if(ageH!==null&&ageH>=36) html+=`<span class="warn" title="Aineisto rakennetaan arkisin kolmesti ja viikonloppuisin kerran. Päivitysvahti käynnistää ajon uudelleen ja avaa GitHub-issuen, jos aineisto vanhenee.">Aineisto ei ole päivittynyt <b>${ageH<72?ageH+" tuntiin":Math.round(ageH/24)+" päivään"}</b> – päivitysajo on voinut pysähtyä</span>`;
+  if(outage.length) html+=`<span class="warn" title="${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k}: lähteen oma palvelu on poissa käytöstä (${h.last_error||"huoltokatko"}). Viimeksi päivitetty ${okTxt(h)}. Haku yritetään uudelleen kahden tunnin välein.`).join("\n"))}">Huoltokatko lähteessä: <b>${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto, haku yritetään uudelleen</span>`;
+  if(broken.length) html+=`<span class="warn" title="${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} yritystä peräkkäin epäonnistunut, viimeksi onnistui ${okTxt(h)}`).join("\n"))}">Lähde ei päivity: <b>${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto</span>`;
+  if(ageH!==null&&ageH>=36) html+=`<span class="warn" title="Aineisto rakennetaan arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9; epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein. Päivitysvahti käynnistää ajon uudelleen ja avaa GitHub-issuen, jos aineisto vanhenee.">Aineisto ei ole päivittynyt <b>${ageH<72?ageH+" tuntiin":Math.round(ageH/24)+" päivään"}</b> – päivitysajo on voinut pysähtyä</span>`;
   document.getElementById("sys").innerHTML=html;
 }
 function loadRulings(){

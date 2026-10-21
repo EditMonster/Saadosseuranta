@@ -28,6 +28,26 @@ def log(*args):
     print(dt.datetime.now().strftime("%H:%M:%S"), *args, flush=True)
 
 
+class SourceOutage(RuntimeError):
+    """The source itself is temporarily unavailable (maintenance page, 5xx, timeouts) – not a parser problem.
+    update.py records it as a katko: the page says so, the source is retried sooner and no structural alarm is raised."""
+
+
+# Maintenance redirects seen in practice: oikeushallinto sends every court site to vara.<domain> and Helsinki
+# sends hel.fi / paatokset.hel.fi / its APIs to kopio.hel.fi (static backup copy) during an outage.
+MAINTENANCE_HOST = re.compile(r"^(vara|kopio|backup|maintenance|huolto)\.|helfi-backup", re.I)
+OUTAGE_STATUS = {408, 500, 502, 503, 504, 520, 521, 522, 523, 524, 525, 526, 530}
+
+
+def maintenance_redirect(requested: str, final: str) -> str | None:
+    """Host of a maintenance/backup site the request was redirected to, or None."""
+    from urllib.parse import urlparse
+    a, b = urlparse(requested).hostname or "", urlparse(final).hostname or ""
+    if a and b and a != b and MAINTENANCE_HOST.search(b) and not MAINTENANCE_HOST.search(a):
+        return b
+    return None
+
+
 def http(method: str, url: str, *, retries: int = 3, timeout: int = 60, **kw) -> requests.Response:
     last = None
     for attempt in range(retries):
@@ -37,13 +57,21 @@ def http(method: str, url: str, *, retries: int = 3, timeout: int = 60, **kw) ->
                 wait = min(int(r.headers.get("Retry-After", "20") or 20), 120)
                 time.sleep(wait + 1)
                 raise requests.HTTPError(f"429 for {url}", response=r)
-            if r.status_code in (500, 502, 503, 504):
+            if r.status_code in OUTAGE_STATUS:
                 raise requests.HTTPError(f"{r.status_code} for {url}", response=r)
+            host = maintenance_redirect(url, r.url) or next((maintenance_redirect(url, h.headers.get("Location") or "")
+                                                             for h in r.history if maintenance_redirect(url, h.headers.get("Location") or "")), None)
+            if host:
+                raise SourceOutage(f"huoltokatko: {url} ohjautuu varasivulle {host}")
             return r
         except (requests.RequestException, requests.HTTPError) as e:  # noqa: PERF203
             last = e
-            time.sleep(2 * (attempt + 1))
-    raise RuntimeError(f"request failed after {retries} attempts: {url}: {last}")
+            if attempt + 1 < retries:
+                time.sleep(2 * (attempt + 1) ** 2)
+    status = getattr(getattr(last, "response", None), "status_code", None)
+    if status == 429:
+        raise RuntimeError(f"request failed after {retries} attempts: {url}: {last}")
+    raise SourceOutage(f"lähde ei vastaa ({status or type(last).__name__}) {retries} yrityksen jälkeen: {url}: {last}")
 
 
 def get_json(url: str, **kw):

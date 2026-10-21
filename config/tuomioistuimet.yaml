@@ -53,6 +53,8 @@ courts:
       ipr: https://www.markkinaoikeus.fi/ratkaisut/teollis-ja-tekijanoikeudelliset-asiat/
       markkinaoikeudellinen: https://www.markkinaoikeus.fi/ratkaisut/markkinaoikeudelliset-asiat/
     finlex: markkinaoikeus
+    fallback_finlex: true   # oma sivusto huoltokatkolla (vara.markkinaoikeus.fi) → Finlexin vuosiluettelo
+    finlex_exclude: [julkinen hankinta, julkinen hakinta, hankinta-asia]   # hankinta-asiat näkyvät Kilpailutukset-välilehdellä
     kind: Ratkaisu
   HO:
     name: Hovioikeudet

@@ -637,6 +637,17 @@ def run_site_court(court: str, ccfg: dict, cfg: dict, resolver: StatuteResolver,
     return len(listed), new
 
 
+SKIP: set[str] = set()  # Finlex pages already read and left out by `finlex_exclude` (kept in the cache)
+
+
+def excluded(rec: dict, ccfg: dict) -> bool:
+    """True when a Finlex record carries a keyword the court's own site listing leaves out (`finlex_exclude`)."""
+    ex = [x.lower() for x in ccfg.get("finlex_exclude") or []]
+    kws = rec.get("keywords") or []
+    kws = " | ".join(kws if isinstance(kws, list) else [str(kws)]).lower()
+    return bool(ex) and any(x in kws for x in ex)
+
+
 def run_finlex_court(court: str, ccfg: dict, cfg: dict, resolver: StatuteResolver, decisions: dict, cutoff: str, budget: list[int]) -> tuple[int, int]:
     """HO/HaO (and the fallback for the other courts) through the Finlex year listings; budget[0] = pages left this run."""
     fcfg = cfg.get("finlex") or {}
@@ -646,7 +657,7 @@ def run_finlex_court(court: str, ccfg: dict, cfg: dict, resolver: StatuteResolve
     for it in listed:
         ref = it.get("number") or it["href"].rsplit("/", 1)[-1]
         rid = make_id(court, ref, it["href"])
-        if rid in decisions:
+        if rid in decisions or it["href"] in SKIP:
             continue
         if it.get("date") and it["date"] < cutoff:
             continue
@@ -662,6 +673,9 @@ def run_finlex_court(court: str, ccfg: dict, cfg: dict, resolver: StatuteResolve
         base = {"ref": ref, "url": FINLEX + it["href"], "date": it.get("date"), "keywords": it.get("keywords")}
         rec = _normalise(court, ccfg, cfg, resolver, base, parsed, finlex_page=True, href=it["href"])
         rec["url"] = FINLEX + it["href"]
+        if excluded(rec, ccfg):  # e.g. MAO procurement cases: the tender view lists those (fetch_mao)
+            SKIP.add(it["href"])
+            continue
         if not rec.get("date"):
             continue
         if rec["date"] < cutoff:
@@ -680,6 +694,8 @@ def main():
     resolver = StatuteResolver(cfg)
     old = load_json(OUT, {}) or {}
     decisions: dict[str, dict] = dict(old.get("decisions") or {})
+    SKIP.clear()
+    SKIP.update(old.get("skip") or [])
     health: dict[str, dict] = dict(old.get("health") or {})
     budget = [int((cfg.get("finlex") or {}).get("max_pages_per_run", 40))]
     courts = {c: v for c, v in (cfg.get("courts") or {}).items() if v.get("enabled")}
@@ -687,6 +703,7 @@ def main():
     for court, ccfg in courts.items():
         prev = health.get(court) or {}
         t0 = time.time()
+        via = None
         try:
             if ccfg.get("source") == "finlex":
                 n, new = run_finlex_court(court, ccfg, cfg, resolver, decisions, cutoff, budget)
@@ -698,6 +715,7 @@ def main():
                         raise
                     log(f"warn: {court}: oma sivusto ei vastaa ({e}); käytetään Finlexin vuosiluetteloa")
                     n, new = run_finlex_court(court, ccfg, cfg, resolver, decisions, cutoff, budget)
+                    via = f"Finlex (oma sivusto: {str(e)[:120]})"
         except Exception as e:  # noqa: BLE001
             failed.append(court)
             health[court] = {**prev, "ok": False, "error": str(e)[:300], "checked": TODAY.isoformat()}
@@ -709,13 +727,14 @@ def main():
                              "checked": TODAY.isoformat()}
             log(f"warn: {court}: luettelo palautti 0 ratkaisua, aiemmin {prev['n']}")
             continue
-        health[court] = {"ok": True, "error": None, "n": n, "new": new, "checked": TODAY.isoformat()}
+        health[court] = {"ok": True, "error": None, "n": n, "new": new, "checked": TODAY.isoformat(), **({"via": via} if via else {})}
         log(f"{court}: {n} ratkaisua luettelossa, {new} uutta haettu ({time.time() - t0:.0f} s)")
     for court in list(health):
         if court not in courts:
             health.pop(court)
     decisions = {k: v for k, v in decisions.items() if (v.get("date") or "9999") >= cutoff}
-    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "health": health, "decisions": decisions}, compact=True)
+    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "health": health, "decisions": decisions,
+                    "skip": sorted(SKIP)[-2000:]}, compact=True)
     per_court = {c: sum(1 for d in decisions.values() if d["court"] == c) for c in courts}
     log(f"oikeuskäytäntö: {len(decisions)} ratkaisua välimuistissa {per_court} -> {OUT}")
     if budget[0] <= 0:

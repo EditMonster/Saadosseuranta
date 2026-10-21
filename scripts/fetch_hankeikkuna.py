@@ -8,7 +8,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
-from common import CACHE_DIR, TODAY, get_json, log, post_json, save_json
+from common import CACHE_DIR, TODAY, SourceOutage, get_json, log, post_json, save_json
 
 API = "https://api.hankeikkuna.fi/api/v2"
 OUT = CACHE_DIR / "hankeikkuna.json"
@@ -31,6 +31,8 @@ def _lookup(path: str) -> dict[str, str]:
     """uuid -> Finnish name for teemat / asettajat."""
     try:
         data = get_json(f"{API}/{path}")
+    except SourceOutage:
+        raise  # the whole API is down: fail fast instead of waiting through every call's retries
     except Exception as e:  # noqa: BLE001
         log(f"warn: {path} lookup failed: {e}")
         return {}

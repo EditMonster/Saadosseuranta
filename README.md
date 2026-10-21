@@ -8,7 +8,7 @@ tapaukset (KKV ja Euroopan komissio) lakisääteisine määräaikoineen.
 
 Sivu on staattinen (`docs/`), aineisto on kolme JSON-tiedostoa (`docs/data/items.json` säädökset,
 `docs/data/hankinnat.json` kilpailutukset, `docs/data/yrityskaupat.json` yrityskaupat), ja
-GitHub Actions ajaa hakuskriptit arkisin kolmesti päivässä (viikonloppuisin kerran) ja committaa muuttuneen aineiston. Käyttökustannus
+GitHub Actions ajaa hakuskriptit arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 (Suomen aikaa) ja committaa muuttuneen aineiston; epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein. Käyttökustannus
 on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
 ## Sivun näkymät
@@ -130,7 +130,7 @@ tests/               eheystestit (test_data.py), selaimen savutesti (test_smoke.
 data/cache/          lähdekohtaiset välimuistit (committataan, jotta päivitys on nopea; Hilma-välimuisti haetaan joka ajossa eikä sitä versioida)
 docs/                GitHub Pages -sivu: index.html, logot, data/items.json + hankinnat.json + yrityskaupat.json + ratkaisut.json + vaikuttaminen.json
                      + meta.json + changes.json + saadosseuranta.ics + kansiot/
-.github/workflows/update.yml   ajastettu ajo (arkisin 3×, viikonloppuisin 1×) -> eheystestit -> commit -> lähdevahti -> julkaisu
+.github/workflows/update.yml   tunnin välein herättävä ajastin (scripts/ajastus.py) -> ajo -> eheystestit -> commit -> lähdevahti -> julkaisu
 .github/workflows/deploy.yml   testit joka pushille ja Pages-julkaisu testien takana
 .github/workflows/vahti.yml    päivitysvahti: aineiston ikä julkaistulla sivulla, työnkulun käytössäolo, uudelleenkäynnistys, issue
 .github/workflows/kansiopyynto.yml  tiimikansion muutospyyntö issuesta konfiguraatioon ja julkaisuun (tiimin avaimella heti, muuten /hyvaksy)
@@ -145,7 +145,7 @@ docs/                GitHub Pages -sivu: index.html, logot, data/items.json + ha
 3. **Settings → Actions → General → Workflow permissions: Read and write permissions** (jotta
    workflow voi committata aineiston).
 4. Aja workflow kerran käsin: **Actions → Päivitä säädösaineisto → Run workflow.** Sen jälkeen se
-   ajaa itsensä arkisin kolmesti (7:40, 12:40 ja 16:40 Suomen talviaikaa) ja viikonloppuisin kerran aamulla.
+   ajaa itsensä arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 Suomen aikaa (ks. *Ajastin* alla).
 
 Paikallisesti:
 
@@ -202,18 +202,28 @@ python -m http.server -d docs 8000  # http://localhost:8000
   on vielä *Deploy from a branch*, testit ajetaan silti ja epäonnistuminen näkyy commitin punaisena ruksina.
 * **Päivitysajo** ajaa eheystestit ennen aineiston committia; `build.py`:n raja-arvot estävät lisäksi tyhjän tai
   epäilyttävän pienen aineiston julkaisun.
-* **Lähdevahti**: jokaisen lähteen onnistuminen kirjataan (`data/cache/health.json`). Jos lähde epäonnistuu kolme
-  ajoa peräkkäin, `scripts/health_report.py` avaa repoon issuen (GitHub lähettää siitä sähköpostin) ja sulkee sen
+* **Ajastin** (`update.yml` herää joka tunti minuutilla 11, `scripts/ajastus.py` päättää): täysi ajo, kun viimeisin
+  aikataulun mukainen ajohetki (arkisin 7, 12, 16; viikonloppuisin 9; kesä- ja talviaika huomioiden) on ohitettu eikä
+  sen jälkeen ole ajettu – GitHubin pudottama tai viivästämä herätys korjaantuu siis seuraavalla tunnilla. Lisäksi
+  epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein klo 7–22 (vain ne lähteet, `update.py <lähteet>`).
+  Muut herätykset päättyvät ~15 sekunnissa. Käsin: *Run workflow* (valinnaisesti vain tietyt lähteet).
+* **Huoltokatkon tunnistus** (`common.http`): kun lähde ohjaa varasivulle (esim. tuomioistuinten `vara.*`-sivut,
+  Helsingin `kopio.hel.fi`) tai vastaa 5xx/aikakatkaisulla kolmen yrityksen jälkeen, virhe kirjataan *huoltokatkoksi*
+  eikä "rakenne muuttunut" -virheeksi. Sivu kertoo silloin "Huoltokatko lähteessä" ja edellinen aineisto pysyy.
+  Tuomioistuinten ratkaisuille on varalähde: kun KKO:n, KHO:n, TT:n tai markkinaoikeuden oma sivusto ei vastaa,
+  ratkaisut haetaan Finlexin oikeuskäytäntöluetteloista (`fallback_finlex` tiedostossa `config/tuomioistuimet.yaml`).
+* **Lähdevahti**: jokaisen lähteen onnistuminen kirjataan (`data/cache/health.json`). Jos lähde ei ole päivittynyt
+  20 tuntiin (huoltokatkossa 48 tuntiin) uusintayrityksistä huolimatta, `scripts/health_report.py` avaa repoon issuen (GitHub lähettää siitä sähköpostin) ja sulkee sen
   itsestään, kun lähde toipuu. Sivun yläpalkki näyttää samalla varoituksen "Lähde ei päivity" – muut lähteet ja
   edellinen onnistunut aineisto pysyvät käytössä.
 * **Päivitysvahti** (`vahti.yml`, päivittäin 07:20 UTC, `scripts/vahti.py`): lukee julkaistun sivun `meta.json`-tiedoston
-  ja laskee aineiston iän. Jos aineisto on yli 30 tuntia vanhaa, vahti käynnistää päivitysajon uudelleen ja avaa issuen
+  ja laskee aineiston iän (varmistus ajastimen lisäksi). Jos aineisto on yli 30 tuntia vanhaa, vahti käynnistää päivitysajon uudelleen ja avaa issuen
   *Päivitys on pysähtynyt* (sulkeutuu itsestään, kun aineisto on taas tuoretta). Samalla se varmistaa, että `update.yml`
   on käytössä, ja kutsuu GitHubin enable-rajapintaa – GitHub poistaa ajastetut työnkulut käytöstä 60 päivän hiljaiselon
   jälkeen, ja kutsu nollaa laskurin. Päivitysajo itse raportoi tuloksensa: epäonnistunut ajo avaa issuen *Päivitysajo
   epäonnistui* (linkki lokiin), seuraava onnistunut sulkee sen. Sivun yläpalkki varoittaa, jos aineisto on yli 36 tuntia
-  vanhaa. GitHubin ajastus on parhaan kyvyn mukainen: ajot alkavat tyypillisesti 5–30 minuuttia myöhässä, hiljaisessa
-  repossa joskus tunteja, ja yksittäinen ajo voi jäädä väliin – siksi raja on 30 tuntia eikä esimerkiksi 8.
+  vanhaa. GitHubin ajastus on parhaan kyvyn mukainen: ajot alkavat tyypillisesti 5–30 minuuttia myöhässä, joskus tunteja,
+  ja yksittäinen herätys voi jäädä väliin – siksi ajastin herää joka tunti ja tarkistaa itse, onko ajo tehty.
 * **Botin push ei kaadu käsin tehtyyn pushiin**: jos main on liikkunut ajon aikana, aineistocommit rebasetaan ja push
   yritetään uudelleen (kolmesti).
 
