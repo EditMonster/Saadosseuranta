@@ -2318,6 +2318,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19498-lausunto-2027-01-13@saadosseuranta
+DTSTAMP:20270113T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:[EU] Lausuntoaika päättyy: Biopohjaisia raaka-aineita sisältävät muovipakkaukset – EU-säännöt
+DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-19225-lausunto-2026-11-16@saadosseuranta
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116

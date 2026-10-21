@@ -77,6 +77,15 @@ DESCRIPTION:Osallistumishakemukset viimeistään · Swedavia AB · https://ted.e
 URL:https://ted.europa.eu/fi/notice/-/detail/729917-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-59970-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[Hankinta] Määräaika: Geoteknisen ohjelmiston hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-059970 · https://www.hankintailmoitukset.fi/fi/public/procedure/38975/enotice/59970
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38975/enotice/59970
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-729646-2026-maaraaika-2026-11-18-hankintatiimi@saadosseuranta
 DTSTAMP:20261118T000000Z
 DTSTART;VALUE=DATE:20261118
@@ -1794,14 +1803,5 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[Hankinta] Määräaika: Business Tampereen Talous- ja henkilöstöhallintopalvelut
 DESCRIPTION:Tarjoukset viimeistään · 2026-059151 · https://www.hankintailmoitukset.fi/fi/public/procedure/38490/enotice/59151
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38490/enotice/59151
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-59231-maaraaika-2026-11-11-hankintatiimi@saadosseuranta
-DTSTAMP:20261111T000000Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
-SUMMARY:[Hankinta] Määräaika: Rekrytointijärjestelmän hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-059231 · https://www.hankintailmoitukset.fi/fi/public/procedure/38544/enotice/59231
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38544/enotice/59231
 END:VEVENT
 END:VCALENDAR

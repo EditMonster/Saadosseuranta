@@ -1,6 +1,24 @@
 {
- "fetched": "2026-10-21T10:45:47",
+ "fetched": "2026-10-21T15:40:11",
  "items": [
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19498,
+   "periods": [
+    {
+     "end": "2027-01-13",
+     "open": true,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-10-21"
+    }
+   ],
+   "reference": "Ares(2026)9620334",
+   "status": "ACTIVE",
+   "title_en": "EU rules on biobased feedstock in plastic packaging",
+   "title_fi": "Biopohjaisia raaka-aineita sisältävät muovipakkaukset – EU-säännöt",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498_en"
+  },
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",

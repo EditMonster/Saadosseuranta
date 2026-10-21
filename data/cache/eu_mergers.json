@@ -518,10 +518,77 @@
    "decisions": [],
    "initiated": "2025-12-22",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Snowhawk on yksityinen sijoituspalveluyritys, joka sijoittaa teknologian ja digitaalisen infrastruktuurin aloille ja tietoliikennealalle.",
+     "Ares on globaalisti toimiva vaihtoehtoisten sijoitusten hoitaja, joka tarjoaa asiakkailleen täydentäviä ensisijaisia ja toissijaisia sijoitusratkaisuja luotto-, pääomasijoitus-, kiinteistö- ja infrastruktuuriomaisuusluokissa.",
+     "Macquarie on rahoituskonserni, joka tarjoaa asiakkailleen omaisuudenhoito- ja rahoitus-, pankki-, neuvonta-, riski- ja pääomaratkaisuja velka-, pääoma- ja hyödykemarkkinoilla. Sillä on kaupantekohetkellä yrityksen WDCAH kautta määräysvalta yrityksessä Prime Data Centers. WDCAH on holdingyhtiö, joka on yritysten Macquarie ja Ares yhteisessä määräysvallassa.",
+     "DRG on sijoitusrahasto, joka sijoittaa maailmanlaajuisesti datainfrastruktuuritarpeita palveleviin yrityksiin. DRG keskittyy sijoitusstrategiassaan datakeskuksiin, myös niiden toimintaan ja kehittämiseen.",
+     "Prime Data Centers tarjoaa datakeskusinfrastruktuuriratkaisuja ja palveluja, joiden on tarkoitus tukea yritysten datatarpeita painottaen kestävää kehitystä ja tietoturvaa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-02",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5450:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Snowhawk LP"
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Partridge Aggregator LP",
+      "short": "Partridge"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Ares Partners Holdco LLC"
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Ares Management Corporation",
+      "short": "Ares"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Wholesale DC Asset Holdings LLC",
+      "short": "WDCAH"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Data Realty Group",
+      "short": "DRG"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Prime Data Centers LLC",
+      "short": "Prime Data Centers"
+     }
+    ],
+    "published": "2026-10-21",
+    "reference": "C/2026/5450",
+    "simplified": true,
+    "transaction": "Snowhawk on hankkinut sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Prime Data Centers. Keskittymä toteutettiin ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5450/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-07",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-21",
+     "reference": "C:2026:5450:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_K_63.10",
@@ -6191,10 +6258,44 @@
    "decisions": [],
    "initiated": "2026-08-03",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Danfoss valmistaa maailmanlaajuisesti teknisiä komponentteja ja teknologioita jäähdytystä, lämmitystä, ilmastointia, teollisuusautomaatiota, hydrauliikkaa, autojen tehomoduuleja, korkeapainejärjestelmiä ja taajuudenmuuttajia varten.",
+     "Alfa Gomma valmistaa ja jakelee maailmanlaajuisesti nesteiden käsittelyjärjestelmiä hydraulisia ja teollisia sovelluksia varten; näitä ovat esimerkiksi letkut, putket, liittimet, sovittimet sekä kumi- ja kestomuoviputkistot teolliseen käyttöön."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-02",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5449:",
+    "parties": [
+     {
+      "country": "Tanska",
+      "fi": false,
+      "name": "Danfoss A/S",
+      "short": "Danfoss"
+     },
+     {
+      "country": "Italia",
+      "fi": false,
+      "name": "Alfa Gomma S.p.A.",
+      "short": "Alfa Gomma"
+     }
+    ],
+    "published": "2026-10-21",
+    "reference": "C/2026/5449",
+    "simplified": true,
+    "transaction": "Danfoss hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Alfa Gomma. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5449/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-14",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-21",
+     "reference": "C:2026:5449:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_G_46.84",
@@ -7008,9 +7109,14 @@
   "M.12618": {
    "caseNumber": "M.12618",
    "deadline": "2026-11-03",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-20",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-24",
-   "lastDecision": null,
+   "lastDecision": "2026-10-20",
    "notice": {
     "activities": [
      "QVP on Puolan kansalaisen Paweł Chodaczekin määräysvallassa oleva eri alojen yrityksiin, myös teknologiayrityksiin, sijoittava sijoitusväline.",
@@ -7073,7 +7179,7 @@
      "reference": "C:2026:5191:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_K_63.1",
    "simplified": "MEsimplified",
@@ -7644,5 +7750,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-21T10:47:56Z"
+ "fetched": "2026-10-21T15:41:41Z"
 }
