@@ -446,15 +446,6 @@ DESCRIPTION:Voimaan (703/2026) · 702/2026 · HE 66/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/66
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-4bd687c0-lausunto-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[FI] Lausuntoaika päättyy: Suomen ja Australian välisen perhe- ja puolisosopimuksen hyväksymiseksi ja voimaansaattamiseksi
-DESCRIPTION:Lausuntokierros · UM018:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=UM018:00/2025
-URL:https://valtioneuvosto.fi/hanke?tunnus=UM018:00/2025
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-233-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1110,15 +1101,6 @@ DTEND;VALUE=DATE:20261015
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Etelä-Korean kanssa solmitun työlomasopimuksen voimaansaattamisesta
 DESCRIPTION:Lausuntokierros · TEM071:00/2019 · https://valtioneuvosto.fi/hanke?tunnus=TEM071:00/2019
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM071:00/2019
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-he-113-2026-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[FI] Voimaan: Laiksi tuloverolain muuttamisesta ja väliaikaisesta muuttamisesta
-DESCRIPTION:Voimaan (873/2026) · 873/2026 · HE 113/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/113
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
@@ -2354,6 +2336,15 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19517-lausunto-2026-12-16@saadosseuranta
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
+DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-18352-lausunto-2026-12-10@saadosseuranta
 DTSTAMP:20261210T000000Z
 DTSTART;VALUE=DATE:20261210
@@ -2426,10 +2417,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-15@saadosseuranta
-DTSTAMP:20261215T000000Z
-DTSTART;VALUE=DATE:20261215
-DTEND;VALUE=DATE:20261216
+UID:eu-hys-15492-lausunto-2026-12-16@saadosseuranta
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2813,15 +2804,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4861 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3044
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-3049-maaraaika-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulations (EU) 2017/583 as regards transparency 
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4777 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3049
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3049
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-3052-soveltaminen-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -3180,50 +3162,5 @@ DTEND;VALUE=DATE:20261015
 SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2286 – kemialliset aseet 2018/1544
 DESCRIPTION:Voimaan · (YUTP) 2026/2286 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2286
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2286
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2271-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2271 – Nicaragua 2019/1716
-DESCRIPTION:Voimaan · (EU) 2026/2271 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2271
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2271
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2259-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Voimaan: Neuvoston asetus (EU) 2026/2259 – Libya 2016/44
-DESCRIPTION:Voimaan · (EU) 2026/2259 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2259
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2259
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2277-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2277 – Niger 2023/2287
-DESCRIPTION:Voimaan · (YUTP) 2026/2277 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2277
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2277
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2272-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2272 – Nicaragua 2019/1720
-DESCRIPTION:Voimaan · (YUTP) 2026/2272 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2272
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2272
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2242-voimaan-2026-10-13@saadosseuranta
-DTSTAMP:20261013T000000Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2242 – Libya 2015/1333
-DESCRIPTION:Voimaan · (YUTP) 2026/2242 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2242
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2242
 END:VEVENT
 END:VCALENDAR

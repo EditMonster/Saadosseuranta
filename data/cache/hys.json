@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-20T15:24:59",
+ "fetched": "2026-10-21T10:45:47",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-15",
+     "end": "2026-12-16",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -133,7 +133,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-15",
+     "end": "2026-12-16",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -142,7 +142,7 @@
    "reference": "COM(2026)1020",
    "status": "ACTIVE",
    "title_en": "Creation of a European critical communication system",
-   "title_fi": null,
+   "title_fi": "Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en"
   },
   {
@@ -313,7 +313,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-15",
+     "end": "2026-12-16",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -607,7 +607,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-15",
+     "end": "2026-12-16",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -1692,24 +1692,6 @@
    "title_en": "List of high-risk organic and in-conversion products originating from third countries and their control rate",
    "title_fi": "EU:n ulkopuolisista maista tulevat suuririskiset luonnonmukaiset tuotteet ja siirtymävaiheen tuotteet – yksityiskohtainen luettelo",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14328_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 15913,
-   "periods": [
-    {
-     "end": "2026-08-21",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-24"
-    }
-   ],
-   "reference": "Ares(2025)10431158",
-   "status": "ACTIVE",
-   "title_en": "Amendment of Annexes I and V to Regulation (EU) No 649/2012 on export and import of hazardous chemicals",
-   "title_fi": "Vaarallisten kemikaalien vienti ja tuonti – asetuksen (EU) N:o 649/2012 liitteiden I ja V muuttaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15913_en"
   },
   {
    "actType": "DEC_DEL",

@@ -1460,74 +1460,6 @@
    "timeline": [],
    "title": "CMA CGM / TOTALENERGIES / JV"
   },
-  "M.12417": {
-   "caseNumber": "M.12417",
-   "deadline": "2026-08-04",
-   "decisions": [
-    {
-     "date": "2026-07-22",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-03-30",
-   "lastDecision": "2026-07-22",
-   "notice": {
-    "activities": [
-     "Saudi Aramco on Saudi-Arabiaan sijoittautunut julkinen osakeyhtiö. Se harjoittaa pääasiassa hiilivetyaineiden etsintää, tutkimista, poraamista ja talteenottoa sekä jalostusta, valmistusta, jalostusta ja markkinointia.",
-     "PIF on Saudi-Arabian valtion sijoitusrahasto. Sillä on suoria ja epäsuoria sijoituksia useilla aloilla Saudi-Arabiassa ja maailmanlaajuisesti esimerkiksi elintarvike-, maatalous-, energia- ja rahoitusaloilla, valmistusteollisuudessa, kiinteistöalalla, logistiikassa ja digitaalialalla."
-    ],
-    "fi": false,
-    "jv": "HUMAIN on PIF:n Saudi-Arabiassa vuonna 2024 perustama suljettu osakeyhtiö, joka perustettiin toukokuussa 2025 kehittämään ja hallinnoimaan tekoälyteknologioita ja -infrastruktuuria.",
-    "observationDays": 10,
-    "observationsEnd": "2026-07-17",
-    "oj": "C:2026:3609:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Saudi-Arabia",
-        "name": "Saudi Arabian Oil Company"
-       }
-      ],
-      "country": "Saudi-Arabia",
-      "fi": false,
-      "name": "Saudi Aramco Development Company",
-      "short": "SADCO"
-     },
-     {
-      "country": "Saudi-Arabia",
-      "fi": false,
-      "name": "Public Investment Fund",
-      "short": "PIF"
-     },
-     {
-      "country": "Saudi-Arabia",
-      "fi": false,
-      "name": "Al-Mustaqbal Lil-Thaka Al-Istinai Company",
-      "short": "HUMAIN"
-     }
-    ],
-    "published": "2026-07-07",
-    "reference": "C/2026/3609",
-    "simplified": true,
-    "transaction": "Saudi Aramco ja PIF hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä HUMAIN. Keskittymä toteutetaan ostamalla osakkeita ja omaisuutta.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3609/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-06-29",
-   "oj": [
-    {
-     "published": "2026-07-07",
-     "reference": "C:2026:3609:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_K_63.10",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "SAUDI ARAMCO / PIF / HUMAIN"
-  },
   "M.12423": {
    "caseNumber": "M.12423",
    "deadline": "2026-09-09",
@@ -2202,73 +2134,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "INDORAMA / BLACKSTONE / EPL / INDOVIDA INDIA"
-  },
-  "M.12461": {
-   "caseNumber": "M.12461",
-   "deadline": "2026-08-04",
-   "decisions": [
-    {
-     "date": "2026-07-22",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-04",
-   "lastDecision": "2026-07-22",
-   "notice": {
-    "activities": [
-     "Ares on globaalisti toimiva vaihtoehtoisten sijoitusten hoitaja, joka tarjoaa asiakkailleen täydentäviä ensisijaisia ja toissijaisia sijoitusratkaisuja luotto-, kiinteistö-, pääomasijoitus- ja infrastruktuuriomaisuusluokissa.",
-     "Eni on öljy- ja kaasuenergiakonserni, joka toimii maailmanlaajuisesti öljyn ja maakaasun etsinnän, tuotannon, jalostuksen ja markkinoinnin sekä sähkön tuotannon ja myynnin aloilla ja on mukana siirtymisessä vaihtoehtoisiin energiaratkaisuihin."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-18",
-    "oj": "C:2026:3615:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Ares Partners Holdco LLC"
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Ares Management Corporation",
-      "short": "Ares"
-     },
-     {
-      "country": "Italia",
-      "fi": false,
-      "name": "Eni S.p.A",
-      "short": "Eni"
-     },
-     {
-      "country": "Italia",
-      "fi": false,
-      "name": "Eni Plenitude S.p.A Società Benefit",
-      "short": "Eni Plenitude"
-     }
-    ],
-    "published": "2026-07-08",
-    "reference": "C/2026/3615",
-    "simplified": true,
-    "transaction": "Ares ja Eni hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Eni Plenitude. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3615/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-06-29",
-   "oj": [
-    {
-     "published": "2026-07-08",
-     "reference": "C:2026:3615:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_D_35.15",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "ARES / ENI / PLENITUDE"
   },
   "M.12464": {
    "caseNumber": "M.12464",
@@ -5257,9 +5122,14 @@
   "M.12548": {
    "caseNumber": "M.12548",
    "deadline": "2026-10-30",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-20",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-06",
-   "lastDecision": null,
+   "lastDecision": "2026-10-20",
    "notice": {
     "activities": [
      "Vital on holdingyhtiö ja osa Vitamin Well Groupia, joka on terveysvaikutteisten elintarvikkeiden ja juomien alalla toimiva yhtiö, joka markkinoi ja myy proteiinivälipalapatukoita, terveysvaikutteisia juomia ja energiajuomia sekä nautintavalmiita, runsaasti proteiinia sisältäviä pirtelöitä ja juomia Euroopan talousalueella ja maailmanlaajuisesti.",
@@ -5309,7 +5179,7 @@
      "reference": "C:2026:5156:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_10.8",
    "simplified": "MEsimplified",
@@ -6676,7 +6546,7 @@
    ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": "2026-10-16",
-   "sector": "NaceV2Sector_C_25.40",
+   "sector": "NaceV2Sector_G_46.72",
    "simplified": "MEnormal",
    "timeline": [],
    "title": "ACCIAIERIA ARVEDI / AMCLN"
@@ -7774,5 +7644,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-20T15:26:49Z"
+ "fetched": "2026-10-21T10:47:56Z"
 }
