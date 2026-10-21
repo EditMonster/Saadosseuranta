@@ -1,158 +1,183 @@
 {
  "avoimuus": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "caselaw": {
-  "last_error": "RuntimeError: oikeuskäytäntö: ['KKO', 'KHO', 'TT', 'MAO'] palautti 0 ratkaisua vaikka aiemmin löytyi – rakenne muuttunut? (muut lähteet päivitetty)",
+  "last_error": null,
   "last_fail": "2026-10-21T15:36:46Z",
-  "last_ok": "2026-10-20T15:22:37Z",
-  "ok": false,
-  "streak": 2
+  "last_ok": "2026-10-21T16:14:56Z",
+  "ok": true,
+  "outage": false,
+  "streak": 0
  },
  "curia": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "eduskunta": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "eu": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "eu_mergers": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "eu_signals": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "finlex": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "hankeikkuna": {
-  "last_error": "requests.exceptions.HTTPError: 522 Server Error: <none> for url: https://api.hankeikkuna.fi/api/v2/kohteet/haku",
-  "last_fail": "2026-10-21T15:36:46Z",
+  "last_error": "common.SourceOutage: lähde ei vastaa (522) 3 yrityksen jälkeen: https://api.hankeikkuna.fi/api/v2/teemat: 522 for https://api.hankeikkuna.fi/api/v2/teemat",
+  "last_fail": "2026-10-21T16:14:56Z",
   "last_ok": "2026-10-20T15:22:37Z",
   "ok": false,
-  "streak": 2
+  "outage": true,
+  "streak": 3
  },
  "hankinnat": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "hediff": {
   "last_error": null,
   "last_fail": "2026-10-18T17:13:36Z",
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "history": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "hys": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "kkv": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "kkv_valvonta": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "mao": {
-  "last_error": "RuntimeError: markkinaoikeus: vireillä-luettelosta löytyi vain 0 riviä – sivun rakenne on ehkä muuttunut",
-  "last_fail": "2026-10-21T15:36:46Z",
+  "last_error": "common.SourceOutage: huoltokatko: https://www.markkinaoikeus.fi/vireilla-olevat-hankinta-asiat/ ohjautuu varasivulle vara.markkinaoikeus.fi",
+  "last_fail": "2026-10-21T16:14:56Z",
   "last_ok": "2026-10-20T15:22:37Z",
   "ok": false,
-  "streak": 2
+  "outage": true,
+  "streak": 3
  },
  "paatokset": {
-  "last_error": "requests.exceptions.HTTPError: 404 Client Error: The requested content does not exist. for url: https://kopio.hel.fi/paatokset_decisions/_search",
-  "last_fail": "2026-10-21T15:36:46Z",
+  "last_error": "common.SourceOutage: huoltokatko: https://paatokset-elastic-proxy.api.hel.ninja/paatokset_decisions/_search ohjautuu varasivulle kopio.hel.fi",
+  "last_fail": "2026-10-21T16:14:56Z",
   "last_ok": "2026-10-21T10:35:06Z",
   "ok": false,
-  "streak": 1
+  "outage": true,
+  "streak": 2
  },
  "regdel": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "sopimuskaudet": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "suunnitelmat": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "ted": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "toimiala": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "toimittajat": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "ue": {
   "last_error": null,
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  },
  "vaski": {
   "last_error": null,
   "last_fail": "2026-10-18T12:34:15Z",
-  "last_ok": "2026-10-21T15:36:46Z",
+  "last_ok": "2026-10-21T16:14:56Z",
   "ok": true,
+  "outage": false,
   "streak": 0
  }
 }
