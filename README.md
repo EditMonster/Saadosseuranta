@@ -207,6 +207,10 @@ python -m http.server -d docs 8000  # http://localhost:8000
   sen jälkeen ole ajettu – GitHubin pudottama tai viivästämä herätys korjaantuu siis seuraavalla tunnilla. Lisäksi
   epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein klo 7–22 (vain ne lähteet, `update.py <lähteet>`).
   Muut herätykset päättyvät ~15 sekunnissa. Käsin: *Run workflow* (valinnaisesti vain tietyt lähteet).
+  GitHubin omat ajastukset ovat tässä repossa harvoja ja tunteja myöhässä, joten luotettavin herättäjä on ulkoinen
+  cron (esim. cron-job.org) tunnin välein: `POST https://api.github.com/repos/EditMonster/Saadosseuranta/actions/workflows/update.yml/dispatches`,
+  otsakkeet `Authorization: Bearer <fine-grained PAT, vain tämä repo, Actions: Read and write>` ja
+  `Accept: application/vnd.github+json`, runko `{"ref":"main","inputs":{"ajastin":"true"}}` – ajastin päättää silloin itse, ajetaanko.
 * **Huoltokatkon tunnistus** (`common.http`): kun lähde ohjaa varasivulle (esim. tuomioistuinten `vara.*`-sivut,
   Helsingin `kopio.hel.fi`) tai vastaa 5xx/aikakatkaisulla kolmen yrityksen jälkeen, virhe kirjataan *huoltokatkoksi*
   eikä "rakenne muuttunut" -virheeksi. Sivu kertoo silloin "Huoltokatko lähteessä" ja edellinen aineisto pysyy.
