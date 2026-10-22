@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-22T10:11:38",
+ "fetched": "2026-10-22T12:20:50",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -36975,6 +36975,10 @@
     {
      "date": "2026-07-14",
      "type": "APR_AGRPROV_CONSIL_byEP_CMT"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [

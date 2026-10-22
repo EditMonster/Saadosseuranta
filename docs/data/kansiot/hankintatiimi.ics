@@ -122,6 +122,15 @@ DESCRIPTION:Tarjoukset viimeistään · Västerås stad · https://ted.europa.eu
 URL:https://ted.europa.eu/fi/notice/-/detail/732414-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60090-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[Hankinta] Määräaika: Ajoneuvojen ja työkoneiden seurantalaitteiden vuokrauspalvelut ajalle 1.2.2027 - 31.1.2029 (+ 2 vuoden optio)
+DESCRIPTION:Tarjoukset viimeistään · 2026-060090 · https://www.hankintailmoitukset.fi/fi/public/procedure/39039/enotice/60090
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39039/enotice/60090
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-733150-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
 DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
@@ -1803,14 +1812,5 @@ DTEND;VALUE=DATE:20261110
 SUMMARY:[Hankinta] Määräaika: Kontorsmaterial
 DESCRIPTION:Tarjoukset viimeistään · Umeå universitet · https://ted.europa.eu/fi/notice/-/detail/702256-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/702256-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-702266-2026-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[Hankinta] Määräaika: Optomaterial 2026
-DESCRIPTION:Tarjoukset viimeistään · IT Norrbotten AB · https://ted.europa.eu/fi/notice/-/detail/702266-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/702266-2026
 END:VEVENT
 END:VCALENDAR
