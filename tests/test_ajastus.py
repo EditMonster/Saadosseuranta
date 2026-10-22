@@ -60,15 +60,15 @@ def test_on_time_run():
     assert d["run"] and d["steps"] == "" and "myöhässä" not in d["reason"]
 
 
-def test_retry_failing_sources_after_two_hours_in_daytime():
+def test_retry_failing_sources_hourly_in_daytime():
     ran = fi(2026, 10, 21, 7, 11)
     h = health(ran, failing={"mao": ran, "paatokset": ran})
-    assert not ajastus.decide(fi(2026, 10, 21, 8, 11), h)["run"]  # 1 h: wait
-    d = ajastus.decide(fi(2026, 10, 21, 9, 11), h)                  # 2 h: retry only the failing ones
+    assert not ajastus.decide(fi(2026, 10, 21, 7, 51), h)["run"]  # 40 min: wait
+    d = ajastus.decide(fi(2026, 10, 21, 8, 11), h)                  # 1 h: retry only the failing ones
     assert d["run"] and d["steps"] == "mao paatokset"
     # a retry does not count as the full run: the 12:00 slot still triggers a full run
-    h2 = health(ran, failing={"mao": fi(2026, 10, 21, 9, 11), "paatokset": fi(2026, 10, 21, 9, 11)})
-    assert not ajastus.decide(fi(2026, 10, 21, 10, 11), h2)["run"]
+    h2 = health(ran, failing={"mao": fi(2026, 10, 21, 11, 11), "paatokset": fi(2026, 10, 21, 11, 11)})
+    assert not ajastus.decide(fi(2026, 10, 21, 11, 41), h2)["run"]
     d = ajastus.decide(fi(2026, 10, 21, 12, 11), h2)
     assert d["run"] and d["steps"] == ""
 

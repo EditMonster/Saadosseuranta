@@ -1648,17 +1648,34 @@ function wireLausunnot(el){
     apply();
   });
 }
+/* A consultation round has started but its statements are not here yet: say why instead of showing nothing */
+function roundPendingHTML(it,ls,inf){
+  if(it.scope!=="fi"||(ls&&ls.kierros)) return "";
+  const today=TODAY.toISOString().slice(0,10);
+  const round=(it.events||[]).filter(e=>e.kind==="lausunto"&&e.date&&e.date<=today).pop();
+  if(!round) return "";
+  const h=(META.health||{}).hankeikkuna||{}; const L=(inf&&inf.lausunnot)||{};
+  const lp=L.url?` · <a href="${esc(L.url)}" target="_blank" rel="noopener">lausunnot lausuntopalvelu.fi:ssä</a>`:"";
+  const when=round.end?`Lausuntoaika ${fmt(pd(round.date))}–${fmt(pd(round.end))}`:`Lausuntopyyntö ${fmt(pd(round.date))}`;
+  const msg=h.ok===false
+    ? `Lausuntojen tiivistelmät haetaan valtioneuvoston Hankeikkunasta, joka on ollut poissa käytöstä${h.last_ok?` ${new Date(h.last_ok).toLocaleDateString("fi-FI")} alkaen`:""}. Haku yritetään uudelleen tunnin välein, ja tiivistelmät tulevat tähän automaattisesti heti, kun palvelu palaa${L.n?` (${L.n} lausuntoa tiedossa)`:""}.`
+    : (L.n?`${L.n} lausuntoa on annettu; tiivistelmät tulevat seuraavassa päivityksessä.`:`Lausuntoja ei ole vielä julkaistu.`);
+  return `<div class="grp ls"><div><b>Lausuntokierros (ministeriö):</b> ${esc(when)}${lp}</div><div class="m">${esc(msg)}</div></div>`;
+}
 function renderInfluence(it){
   const el=document.getElementById("dr-influence"); if(!el) return;
   const n=it.influenceN; el.innerHTML="";
   const hasLs=!!(it.lausunnotN&&it.lausunnotN.n);
-  if((!n||!Object.values(n).some(v=>v))&&!hasLs) return;
+  const pendingRound=it.scope==="fi"&&(it.events||[]).some(e=>e.kind==="lausunto"&&e.date&&e.date<=TODAY.toISOString().slice(0,10));
+  if((!n||!Object.values(n).some(v=>v))&&!hasLs&&!pendingRound) return;
   el.innerHTML='<div class="infl"><h4>Vaikuttaminen</h4><div class="m">Ladataan…</div></div>';
   Promise.all([loadInfluence(),hasLs?loadLausunnot(it.id):Promise.resolve(null)]).then(([all,ls])=>{
     if(drawer.dataset.id!==it.id) return;
     const inf=all[it.id]; const infl=inf?{...inf}:null;
     if(ls&&ls.eduskunta&&infl) delete infl.asiantuntijalausunnot; /* the summarised list replaces the plain link list */
-    el.innerHTML=lausunnotHTML(ls)+(infl?influenceHTML(infl):"");
+    const pend=roundPendingHTML(it,ls,inf);
+    const lsHTML=lausunnotHTML(ls);
+    el.innerHTML=(pend?(lsHTML?lsHTML.replace('<h4>Annetut lausunnot</h4>','<h4>Annetut lausunnot</h4>'+pend):`<div class="infl"><h4>Annetut lausunnot</h4>${pend}</div>`):lsHTML)+(infl?influenceHTML(infl):"");
     wireLausunnot(el);
   });
 }
@@ -1986,9 +2003,9 @@ function renderStatus(){
   let html=`<span><i class="led ${ageH!==null&&ageH<36&&!bad.length?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span>`;
   if(window.__SNAPSHOT) html+=`<span class="${ageH!==null&&ageH>=36?"warn":""}" title="Tämä on yhden tiedoston tilannevedos, joka ei hae aineistoa verkosta. Sivusto päivittyy itsestään arkisin klo 7, 12 ja 16.">Tilannevedos · ajantasainen sivu: <a href="https://editmonster.github.io/Saadosseuranta/" target="_blank" rel="noopener">editmonster.github.io/Saadosseuranta</a></span>`;
   html+=`<span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span><span>Yrityskauppoja vireillä <b>${c.yrityskaupat??"–"}</b></span>`;
-  if(outage.length) html+=`<span class="warn" title="${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k}: lähteen oma palvelu on poissa käytöstä (${h.last_error||"huoltokatko"}). Viimeksi päivitetty ${okTxt(h)}. Haku yritetään uudelleen kahden tunnin välein.`).join("\n"))}">Huoltokatko lähteessä: <b>${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto, haku yritetään uudelleen</span>`;
+  if(outage.length) html+=`<span class="warn" title="${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k}: lähteen oma palvelu on poissa käytöstä (${h.last_error||"huoltokatko"}). Viimeksi päivitetty ${okTxt(h)}. Haku yritetään uudelleen tunnin välein.`).join("\n"))}">Huoltokatko lähteessä: <b>${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto, haku yritetään uudelleen</span>`;
   if(broken.length) html+=`<span class="warn" title="${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} yritystä peräkkäin epäonnistunut, viimeksi onnistui ${okTxt(h)}`).join("\n"))}">Lähde ei päivity: <b>${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto</span>`;
-  if(ageH!==null&&ageH>=36) html+=`<span class="warn" title="Aineisto rakennetaan arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9; epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein. Päivitysvahti käynnistää ajon uudelleen ja avaa GitHub-issuen, jos aineisto vanhenee.">Aineisto ei ole päivittynyt <b>${ageH<72?ageH+" tuntiin":Math.round(ageH/24)+" päivään"}</b> – päivitysajo on voinut pysähtyä</span>`;
+  if(ageH!==null&&ageH>=36) html+=`<span class="warn" title="Aineisto rakennetaan arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9; epäonnistuneet lähteet yritetään uudelleen tunnin välein. Päivitysvahti käynnistää ajon uudelleen ja avaa GitHub-issuen, jos aineisto vanhenee.">Aineisto ei ole päivittynyt <b>${ageH<72?ageH+" tuntiin":Math.round(ageH/24)+" päivään"}</b> – päivitysajo on voinut pysähtyä</span>`;
   document.getElementById("sys").innerHTML=html;
 }
 function loadRulings(){

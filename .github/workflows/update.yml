@@ -3,7 +3,7 @@ name: Päivitä säädösaineisto
 # Herätys joka tunti; scripts/ajastus.py päättää, ajetaanko (ks. sen ohje):
 #   * täysi ajo arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 Suomen aikaa (kesä-/talviaika huomioiden);
 #     jos GitHub pudottaa tai viivästää herätyksen, väliin jäänyt ajo tehdään seuraavalla tunnilla
-#   * epäonnistuneiden lähteiden uusintayritys 2 tunnin välein klo 7–22 (esim. lähteen huoltokatko)
+#   * epäonnistuneiden lähteiden uusintayritys tunnin välein klo 7–22 (esim. lähteen huoltokatko)
 #   * muuten herätys päättyy ~15 sekunnissa.
 # Minuutti 11 välttää tasatuntien ruuhkan, jolloin GitHub pudottaa ajastuksia useimmin.
 on:

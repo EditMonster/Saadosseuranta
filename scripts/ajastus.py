@@ -31,7 +31,7 @@ HEALTH = ROOT / "data" / "cache" / "health.json"
 TZ = ZoneInfo("Europe/Helsinki")
 WEEKDAY_SLOTS = ["07:00", "12:00", "16:00"]   # ma–pe (herätys tunnin 11. minuutilla)
 WEEKEND_SLOTS = ["09:00"]                     # la–su
-RETRY_HOURS = float(os.environ.get("RETRY_HOURS", "2"))
+RETRY_HOURS = float(os.environ.get("RETRY_HOURS", "1"))
 RETRY_WINDOW = (7, 22)                        # uusintayrityksiä vain klo 7–22 Suomen aikaa
 NEVER_RETRY = {"history"}                     # johdettu aineisto: kulkee täysien ajojen mukana
 

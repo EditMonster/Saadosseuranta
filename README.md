@@ -8,7 +8,7 @@ tapaukset (KKV ja Euroopan komissio) lakisääteisine määräaikoineen.
 
 Sivu on staattinen (`docs/`), aineisto on kolme JSON-tiedostoa (`docs/data/items.json` säädökset,
 `docs/data/hankinnat.json` kilpailutukset, `docs/data/yrityskaupat.json` yrityskaupat), ja
-GitHub Actions ajaa hakuskriptit arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 (Suomen aikaa) ja committaa muuttuneen aineiston; epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein. Käyttökustannus
+GitHub Actions ajaa hakuskriptit arkisin klo 7, 12 ja 16 ja viikonloppuisin klo 9 (Suomen aikaa) ja committaa muuttuneen aineiston; epäonnistuneet lähteet yritetään uudelleen tunnin välein. Käyttökustannus
 on nolla: julkisen repon Actions-minuutit ja GitHub Pages ovat ilmaisia.
 
 ## Sivun näkymät
@@ -219,7 +219,7 @@ python -m http.server -d docs 8000  # http://localhost:8000
 * **Ajastin** (`update.yml` herää joka tunti minuutilla 11, `scripts/ajastus.py` päättää): täysi ajo, kun viimeisin
   aikataulun mukainen ajohetki (arkisin 7, 12, 16; viikonloppuisin 9; kesä- ja talviaika huomioiden) on ohitettu eikä
   sen jälkeen ole ajettu – GitHubin pudottama tai viivästämä herätys korjaantuu siis seuraavalla tunnilla. Lisäksi
-  epäonnistuneet lähteet yritetään uudelleen kahden tunnin välein klo 7–22 (vain ne lähteet, `update.py <lähteet>`).
+  epäonnistuneet lähteet yritetään uudelleen tunnin välein klo 7–22 (vain ne lähteet, `update.py <lähteet>`).
   Muut herätykset päättyvät ~15 sekunnissa. Käsin: *Run workflow* (valinnaisesti vain tietyt lähteet).
   GitHubin omat ajastukset ovat tässä repossa harvoja ja tunteja myöhässä, joten luotettavin herättäjä on ulkoinen
   cron (esim. cron-job.org) tunnin välein: `POST https://api.github.com/repos/EditMonster/Saadosseuranta/actions/workflows/update.yml/dispatches`,
