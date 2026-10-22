@@ -3,28 +3,49 @@ kun rivi avataan, ja rivin omiin tietoihin pieni yhteenveto (kantojen lukumäär
 
 Lähteenä fetch_lausunnot-välimuisti (tiivistelmä ja kanta per asiakirja), johon yhdistetään
 * Hankeikkunan lausuntokierroksen lausunnot (`lausunnot.docs`: järjestö, päivä, PDF) ja
-* eduskunnan valiokuntien asiantuntijalausunnot (Vaski `statements`).
+* eduskunnan valiokuntien asiantuntijalausunnot (Vaski `statements`) – HE:t, U/E-kirjelmät (myös EU-ehdotuksen
+  `kirjelmat`), lakialoitteet, kansalaisaloitteet ja muut asiat, joiden tunnus on rivin viite.
 
 Tiedoston rakenne:
 {"id", "kierros": {"n", "kannat": {kanta: n}, "rivit": [{"org", "date", "stance", "gist", "url", "none"}]},
  "eduskunta": {"n", "kannat", "rivit": [{"org", "person", "committee", "date", "stance", "gist", "url"}]},
  "tiivistetty": <luettujen määrä>, "odottaa": <vielä lukematta>}
 Rivit järjestetään kannan mukaan (vastustavat ensin, sitten varaukselliset, muutosehdotukset, kannattavat,
-muut kannanotot, "ei lausuttavaa" viimeisenä) ja kunkin ryhmän sisällä uusin ensin.
+muut kannanotot, virkamiesesittelyt, "ei lausuttavaa" viimeisenä) ja kunkin ryhmän sisällä uusin ensin.
 """
 from __future__ import annotations
+
+import re
 
 from common import CACHE_DIR, OUT_DIR, load_json, log, save_json
 
 LAUSUNNOT_DIR = OUT_DIR / "lausunnot"
-ORDER = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "ei": 7}
-PER_FILE = 400
+ORDER = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "esittely": 7, "ei": 8}
+PER_FILE = 1000
+
+
+def _norm(ref: str) -> str:
+    return re.sub(r"\s+vp$", "", (ref or "").strip())
+
+
+def parliament_keys(it: dict) -> set[str]:
+    """Vaski asia ids this item answers to: its HE numbers, its own reference (E/U/LA/KAA … letters and
+    motions) and the U/E-kirjelmät linked to an EU proposal."""
+    keys = {f"HE {h}" for h in it.get("heNumerot") or []}
+    ref = _norm(it.get("ref") or "")
+    if re.match(r"^(HE|U|E|UTP|VNS|VNT|K|O|LA|KAA|TPA|TAA|LTA|M) \d+/\d{4}$", ref):
+        keys.add(ref)
+    keys.update(_norm(k) for k in it.get("kirjelmat") or [])
+    return keys
 
 
 def _row(doc: dict, summ: dict | None, extra: dict) -> dict:
     row = {"org": doc.get("org"), "date": doc.get("date"), "url": doc.get("url"), **extra}
     if doc.get("none"):
         row["stance"] = "ei"
+    if not doc.get("url"):
+        row["noFile"] = True   # metadata only (the ministry did not publish the file): nothing to summarise
+        row["read"] = True
     if summ:
         if summ.get("ok") is True:
             row["stance"] = summ.get("stance") or row.get("stance")
@@ -33,6 +54,8 @@ def _row(doc: dict, summ: dict | None, extra: dict) -> dict:
         elif summ.get("ok") == "noText":
             row["stance"] = summ.get("stance") or row.get("stance")
             row["noText"] = True
+        elif summ.get("ok") in ("error", "notPdf"):
+            row["fetchError"] = True   # the link does not lead to a readable file (retried on later runs)
         row["read"] = True
     return {k: v for k, v in row.items() if v not in (None, "", False)}
 
@@ -52,7 +75,9 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict) -> dict[st
     """Writes docs/data/lausunnot/<id>.json for every item that has statements; returns {item_id: summary}
     where summary = {"n", "luettu", "kannat"} for the item's own record."""
     cache = (load_json(CACHE_DIR / "lausunnot.json", {}) or {}).get("docs") or {}
-    statements = vaski.get("statements") or {}
+    statements: dict[str, list] = {}
+    for k, lst in (vaski.get("statements") or {}).items():
+        statements.setdefault(_norm(k), []).extend(lst)
     LAUSUNNOT_DIR.mkdir(parents=True, exist_ok=True)
     out: dict[str, dict] = {}
     keep: set[str] = set()
@@ -65,12 +90,15 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict) -> dict[st
             if sec:
                 sec["url"] = (p["lausunnot"] or {}).get("url")
                 doc["kierros"] = sec
-        rows = []
-        for he in it.get("heNumerot") or []:
-            for s in statements.get(f"HE {he} vp") or []:
+        rows, seen = [], set()
+        for key in sorted(parliament_keys(it)):
+            for s in statements.get(key) or []:
                 sid = s.get("edk") or s.get("url")
+                if sid in seen:
+                    continue
+                seen.add(sid)
                 rows.append(_row({"org": s.get("org") or s.get("person"), "date": s.get("date"), "url": s.get("url")}, cache.get(sid),
-                                 {"person": s.get("person"), "committee": s.get("committee")}))
+                                 {"person": s.get("person"), "committee": s.get("committee"), "asia": key if key != _norm(it.get("ref") or "") and not key.startswith("HE ") else None}))
         sec = _section(rows)
         if sec:
             doc["eduskunta"] = sec

@@ -521,7 +521,7 @@ def test_annetut_lausunnot(items):
     files = {p.stem: p for p in (DATA / "lausunnot").glob("*.json")}
     with_n = [i for i in items if i.get("lausunnotN")]
     assert len(with_n) >= 50 and set(files) == {i["id"] for i in with_n}
-    stances = {"vastustaa", "osin", "varauksin", "muutoksia", "kannattaa", "kanta", "ei"}
+    stances = {"vastustaa", "osin", "varauksin", "muutoksia", "kannattaa", "kanta", "esittely", "ei"}
     read_total = 0
     for it in with_n:
         n = it["lausunnotN"]
@@ -534,7 +534,7 @@ def test_annetut_lausunnot(items):
             if not sec:
                 continue
             total += sec["n"]
-            order = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "ei": 7}
+            order = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "esittely": 7, "ei": 8}
             for r in sec["rivit"]:
                 assert r.get("org") or r.get("person"), (it["id"], r)
                 assert not r.get("date") or DATE.match(r["date"])

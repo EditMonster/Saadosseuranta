@@ -76,13 +76,14 @@ def test_build_lausunnot_files(tmp_path, monkeypatch):
                                         {"id": "d3", "org": "Ministeriö", "date": "2026-02-20", "none": True}]}}}
     vaski = {"statements": {"HE 12/2026 vp": [{"edk": "EDK-1", "org": "Virasto", "person": None, "committee": "TaV", "date": "2026-05-05", "url": "https://www.eduskunta.fi/pdf/EDK-1"}]}}
     out = build_lausunnot.build_lausunnot(items, hk, vaski)
-    assert out == {"fi-he-12-2026": {"n": 4, "luettu": 3, "kannat": {"vastustaa": 1, "ei": 1, "kannattaa": 1}}}
+    assert out == {"fi-he-12-2026": {"n": 4, "luettu": 4, "kannat": {"vastustaa": 1, "ei": 1, "kannattaa": 1}}}
     d = json.loads((tmp_path / "fi-he-12-2026.json").read_text(encoding="utf-8"))
     assert d["kierros"]["n"] == 3 and d["kierros"]["url"].startswith("https://www.lausuntopalvelu.fi/")
     rows = d["kierros"]["rivit"]
     assert [r["org"] for r in rows] == ["Liitto ry", "Kunta", "Ministeriö"]  # opposing first, "ei lausuttavaa" last
     assert rows[0]["stance"] == "vastustaa" and rows[0]["gist"] and rows[1]["noText"] and rows[2]["stance"] == "ei"
-    assert d["eduskunta"]["rivit"][0]["committee"] == "TaV" and d["tiivistetty"] == 3 and d["odottaa"] == 1
+    assert d["eduskunta"]["rivit"][0]["committee"] == "TaV" and d["tiivistetty"] == 4 and d["odottaa"] == 0
+    assert rows[2]["noFile"]  # metadata-only statement: counted as handled, never "pending"
     assert not (tmp_path / "eu-x.json").exists()
     # a stale file from an item that no longer exists is removed
     (tmp_path / "old.json").write_text("{}")
@@ -104,3 +105,39 @@ def test_reclassify_from_stored_signals():
     rec2 = {"ok": True, "stance": "kannattaa", "sig": {"none": False, "opp": [], "sup": ["kannattaa"], "res": [], "con": 0}}
     assert not fl.reclassify(rec2) and rec2["stance"] == "kannattaa"
     assert not fl.reclassify({"ok": "noText"})
+
+
+def test_parliament_keys_cover_letters_motions_and_eu_links():
+    assert build_lausunnot.parliament_keys({"heNumerot": ["12/2026"], "ref": "HE 12/2026 vp"}) == {"HE 12/2026"}
+    assert build_lausunnot.parliament_keys({"ref": "U 27/2026 vp"}) == {"U 27/2026"}
+    assert build_lausunnot.parliament_keys({"ref": "LA 37/2026"}) == {"LA 37/2026"}
+    assert build_lausunnot.parliament_keys({"ref": "COM(2026) 12", "kirjelmat": ["U 54/2026 vp", "U 55/2026 vp"]}) == {"U 54/2026", "U 55/2026"}
+    assert build_lausunnot.parliament_keys({"ref": "OM012:00/2026"}) == set()
+
+
+def test_eu_item_gets_letter_statements_and_presentations_last(tmp_path, monkeypatch):
+    monkeypatch.setattr(build_lausunnot, "LAUSUNNOT_DIR", tmp_path)
+    cache = {"docs": {"E1": {"ok": True, "stance": "esittely", "gist": "Ministeriö esittelee kantaa."},
+                      "E2": {"ok": True, "stance": "kannattaa", "gist": "Liitto kannattaa."}}}
+    monkeypatch.setattr(build_lausunnot, "load_json", lambda path, default: cache if "lausunnot" in str(path) else default)
+    vaski = {"statements": {"U 54/2026 vp": [{"edk": "E1", "org": "valtiovarainministeriö", "person": "A B", "committee": "SuV", "date": "2026-09-01", "url": "u1"},
+                                             {"edk": "E2", "org": "Liitto ry", "committee": "SuV", "date": "2026-09-02", "url": "u2"}]}}
+    out = build_lausunnot.build_lausunnot([{"id": "eu-x", "ref": "COM(2026) 1", "kirjelmat": ["U 54/2026 vp"]}], {}, vaski)
+    assert out["eu-x"]["n"] == 2 and out["eu-x"]["luettu"] == 2
+    rows = json.loads((tmp_path / "eu-x.json").read_text(encoding="utf-8"))["eduskunta"]["rivit"]
+    assert [r["stance"] for r in rows] == ["kannattaa", "esittely"] and rows[0]["asia"] == "U 54/2026"
+
+
+def test_unpublished_statement_is_not_pending(tmp_path, monkeypatch):
+    monkeypatch.setattr(build_lausunnot, "LAUSUNNOT_DIR", tmp_path)
+    monkeypatch.setattr(build_lausunnot, "load_json", lambda path, default: {"docs": {}} if "lausunnot" in str(path) else default)
+    hk = {"u": {"lausunnot": {"docs": [{"id": "x", "org": "Virasto", "date": "2026-01-01"}]}}}
+    out = build_lausunnot.build_lausunnot([{"id": "fi-1", "hankeUuid": "u"}], hk, {})
+    assert out["fi-1"] == {"n": 1, "luettu": 1, "kannat": {}}
+    row = json.loads((tmp_path / "fi-1.json").read_text(encoding="utf-8"))["kierros"]["rivit"][0]
+    assert row["noFile"] and "url" not in row
+
+
+def test_kiitan_is_boilerplate():
+    assert fl.BOILER.search("Kiitän mahdollisuudesta esittää lausunto otsikon teemoista.")
+    assert not fl.OPPOSE_RE.search("jotka olivat omistajuutta vastustaneet kiivaasti")

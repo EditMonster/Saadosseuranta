@@ -357,7 +357,7 @@ def build_asetukset(topics_cfg, settings) -> list[dict]:
                       "title": short_title(title), "fullTitle": title, "ref": (sks[0] if sks else (p.get("tunnus") or "")),
                       "topics": classify(text, topics_cfg), "status": status, "done": done, "summary": summary,
                       "source": links.get("saadoskokoelma") or p.get("url"), "links": links, "ministry": p.get("ministerio", ""),
-                      "events": ev, "tunnus": p.get("tunnus"), "sk": sks, "updated": p.get("muokattu")})
+                      "events": ev, "tunnus": p.get("tunnus"), "hankeUuid": p["uuid"], "sk": sks, "updated": p.get("muokattu")})
     return items
 
 

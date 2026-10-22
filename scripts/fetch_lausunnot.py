@@ -5,7 +5,8 @@ Lähteet (molemmat jo pipeline-välimuistissa, tämä vaihe vain lukee lausuntoj
   järjestön, päivän ja PDF-osoitteen: `lausunnot.docs`). PDF:t ovat api.hankeikkuna.fi/asiakirjat/…
   (CC BY 4.0).
 * Eduskunta (Vaski) – valiokuntien asiantuntijalausunnot (fetch_vaski: `statements`, eduskunta.fi/pdf/EDK-…).
-  Virkamiesten esittelykalvot (ministeriön edustaja) eivät ole kannanottoja, ne jätetään tiivistämättä.
+  Virkamiesten esittelyt (ministeriö esittelee omaa esitystään) tiivistetään myös, kannaksi merkitään "virkamiesesittely".
+  Skannatut lausunnot luetaan tekstintunnistuksella (pdftoppm + tesseract, suomi ja ruotsi), kun työkalut ovat asennettuina.
 
 Tiivistelmä on **sanatarkka ote** lausunnosta, ei tulkinta: lausunnosta valitaan virke (tai kaksi), jossa
 lausunnonantaja ilmaisee kantansa (kannattaa, vastustaa, esittää, pitää …), ja kiitokset, osoitteet ja
@@ -15,7 +16,7 @@ lukija voi tarkistaa otteen alkuperäisestä.
 
 Kerran luettu lausunto ei muutu, joten tulos tallennetaan asiakirjan tunnisteella (data/cache/lausunnot.json)
 ja PDF luetaan vain kerran. Jokainen ajo käsittelee aikabudjetin verran uusia lausuntoja (LAUSUNNOT_BUDGET_S,
-oletus 8 min), tuoreimmat ja käynnissä olevien kierrosten lausunnot ensin.
+oletus 15 min, 4 rinnakkaista hakua), tuoreimmat ja käynnissä olevien kierrosten lausunnot ensin.
 """
 from __future__ import annotations
 
@@ -23,12 +24,18 @@ import datetime as dt
 import io
 import os
 import re
+import threading
 import time
+from collections import deque
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 
 from common import CACHE_DIR, TODAY, SourceOutage, http, load_json, log, save_json
 
 OUT = CACHE_DIR / "lausunnot.json"
-BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 8 * 60))
+BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 15 * 60))
+WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
+PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
+STRIKES = 5
 KEEP_DAYS = 420
 MAX_PAGES = 4
 GIST_MAX = 280
@@ -36,7 +43,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) saadosseuranta/1.0 (+https:
 
 # --- text clean-up ---------------------------------------------------------------------------------------
 BOILER = re.compile(
-    r"kiittä\w* (mahdollisuud|lausuntopyyn|pyynnö)|mahdollisuudesta (lausua|antaa)|lausuntopyyntö\w*\s|lausuntopyyntönne|"
+    r"kiit(t)?ä\w* (mahdollisuud|lausuntopyyn|pyynnö|kutsu)|kiitos (mahdollisuudesta|kutsusta)|mahdollisuudesta (lausua|antaa)|lausuntopyyntö\w*\s|lausuntopyyntönne|"
     r"pyydettynä lausuntona|lausunto asiassa|^asia\s*:|viite\s*:|@|\bpuh\.|puhelin|www\.|https?://|lausuntopalvelu\.fi|"
     r"y-tunnus|postiosoite|käyntiosoite|^\s*(liite|liitteet|jakelu|tiedoksi)\b|allekirjoit|sähköisesti hyväksytty|"
     r"ystävällisin terveisin|kunnioittavasti|^\s*lausunto\s*\d|^\s*\d+\s*\(\d+\)\s*$|lausunnonantajan lausunto|"
@@ -57,7 +64,7 @@ STANCE_VERB = re.compile(
     r"korosta\w*|tukee|tuemme|ei ole huomautettavaa|ei ole lausuttavaa|toivo\w*|vaati\w*|tulisi|pitäisi|on syytä)\b", re.I)
 NONE_RE = re.compile(r"\bei (ole )?(lausuttavaa|lausuntoa|huomautettavaa|kommentoitavaa)\b|ingenting att yttra|inget utlåtande|"
                      r"inga kommentarer|ei näe tarvetta lausua", re.I)
-OPPOSE_RE = re.compile(r"\b(vastusta(a|vat|mme|isi\w*|nut|neet|a jyrkästi)|ei kannata|emme kannata|ei puolla|emme puolla|(ei|emme) voi(da)? (hyväksyä|kannattaa|puoltaa)|"
+OPPOSE_RE = re.compile(r"\b(vastusta(a|vat|mme|isi\w*|a jyrkästi)|ei kannata|emme kannata|ei puolla|emme puolla|(ei|emme) voi(da)? (hyväksyä|kannattaa|puoltaa)|"
                        r"tulee hylätä|on hylättävä|ei tule (toteuttaa|hyväksyä|säätää)|ei pidä [a-zäö ]{0,40}perusteltuna|torju(u|vat|mme|isi\w*|taan)|"
                        r"esittä\w* [a-zäö ,]{0,50}(luopumista|hylkäämistä)|ei (ole )?(hyväksyttäv|kannatettav)\w*)\b", re.I)
 SUPPORT_RE = re.compile(r"\b(kannatta(a|vat|mme)(?! (huomata|todeta|harkita|selvittää|ottaa|pohtia|miettiä))|kannatamme|puolta(a|vat|mme)|"
@@ -67,7 +74,7 @@ SUPPORT_RE = re.compile(r"\b(kannatta(a|vat|mme)(?! (huomata|todeta|harkita|selv
 CONCERN_RE = re.compile(r"\b(kuitenkin|huolestun\w*|huolissa\w*|ongelmallis\w*|riski\w*|puutteellis\w*|riittämät\w*|"
                         r"esittä\w* [a-zäö ,]{0,40}(muutos|tarkennu|täsmennys|lisäy|selvity)\w*|ehdotta\w*|ehdotamme|"
                         r"tulisi|pitäisi|edellyttä\w*|on syytä|on tarpeen)\b", re.I)
-STANCE_LABEL = {"kannattaa": "kannattaa", "varauksin": "kannattaa varauksin", "vastustaa": "vastustaa",
+STANCE_LABEL = {"esittely": "virkamiesesittely", "kannattaa": "kannattaa", "varauksin": "kannattaa varauksin", "vastustaa": "vastustaa",
                 "muutoksia": "muutosehdotuksia", "osin": "vastustaa osin", "ei": "ei lausuttavaa", "kanta": "kannanotto"}
 
 
@@ -140,7 +147,12 @@ def pick_gist(text: str, org: str = "") -> str:
         score -= 2 if s.endswith(":") else 0
         scored.append((score, i, s))
     if not scored:
-        return ""
+        # no sentence passed the filters (slides, tables, very short texts): the first readable sentence(s)
+        plain = [s for s in sents if len(s.split()) >= 5 and not BOILER.search(s) and re.search(r"[a-zäöå]{3}", s)]
+        if not plain:
+            return ""
+        gist = " ".join(plain[:2]) if len(plain[0]) < 120 and len(plain) > 1 else plain[0]
+        return gist if len(gist) <= GIST_MAX else gist[:GIST_MAX].rsplit(" ", 1)[0].rstrip(",;:–-") + " …"
     best = max(scored, key=lambda x: (x[0], -x[1]))
     gist = best[2]
     if len(gist) < 140:                                         # a short main sentence: add the next one when it qualifies it
@@ -187,7 +199,7 @@ def reclassify(rec: dict) -> bool:
     """Re-check a cached record's stored hits against the current vocabulary (drops hits the regexes no longer
     accept) and recompute the stance. Returns True when the stance changed."""
     sig = rec.get("sig")
-    if not sig or rec.get("ok") is not True:
+    if not sig or rec.get("ok") is not True or rec.get("stance") == "esittely":
         return False
     for key, rx in (("opp", OPPOSE_RE), ("sup", SUPPORT_RE), ("res", RESERVE_RE)):
         sig[key] = [h for h in sig.get(key) or [] if rx.fullmatch(h) or rx.search(h)]
@@ -203,10 +215,53 @@ def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
         pages = len(pdf.pages)
         raw = "\n".join((p.extract_text() or "") for p in pdf.pages[:MAX_PAGES])
     text = clean_text(raw)
+    ocr = False
     if len(re.sub(r"\s", "", text)) < 80:
-        return {"ok": "noText", "pages": pages, "stance": "ei" if NONE_RE.search(title) else None}
+        text = clean_text(ocr_pdf(data))  # a scanned statement: read the first pages with Tesseract (Finnish)
+        ocr = True
+        if len(re.sub(r"\s", "", text)) < 80:
+            return {"ok": "noText", "pages": pages, "stance": "ei" if NONE_RE.search(title) else None, "ocrTried": OCR_READY}
     sig = signals(text, title)
-    return {"ok": True, "pages": pages, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+    out = {"ok": True, "pages": pages, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+    if ocr:
+        out["ocr"] = True
+    return out
+
+
+def _ocr_ready() -> bool:
+    import shutil
+    return bool(shutil.which("pdftoppm") and shutil.which("tesseract"))
+
+
+OCR_READY = _ocr_ready()
+
+
+def ocr_pdf(data: bytes, pages: int = 2) -> str:
+    """Text of the first pages of a scanned PDF via pdftoppm + tesseract (fin+swe); '' when the tools are missing."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not (shutil.which("pdftoppm") and shutil.which("tesseract")):
+        return ""
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "in.pdf")
+        with open(src, "wb") as f:
+            f.write(data)
+        try:
+            subprocess.run(["pdftoppm", "-r", "200", "-f", "1", "-l", str(pages), "-png", src, os.path.join(tmp, "p")], check=True, timeout=90,
+                           capture_output=True)
+        except Exception:  # noqa: BLE001
+            return ""
+        langs = subprocess.run(["tesseract", "--list-langs"], capture_output=True, text=True).stdout.split()
+        lang = "+".join(x for x in ("fin", "swe") if x in langs) or "eng"
+        out = []
+        for img in sorted(f for f in os.listdir(tmp) if f.endswith(".png")):
+            try:
+                r = subprocess.run(["tesseract", os.path.join(tmp, img), "-", "-l", lang], capture_output=True, text=True, timeout=90)
+                out.append(r.stdout)
+            except Exception:  # noqa: BLE001
+                continue
+        return "\n".join(out)
 
 
 def summarise_docx(data: bytes, org: str = "", title: str = "") -> dict:
@@ -240,9 +295,10 @@ def candidates(hk: dict, vaski: dict) -> list[dict]:
                         "title": d.get("title") or "", "prio": 0 if open_round else 1})
     for asia, lst in (vaski.get("statements") or {}).items():
         for s in lst:
-            if not s.get("url") or (s.get("date") or "") < lo or is_presentation(s):
+            if not s.get("url") or (s.get("date") or "") < lo:
                 continue
             out.append({"id": s.get("edk") or s["url"], "src": "ek", "url": s["url"], "org": s.get("org") or s.get("person") or "",
+                        "esittely": is_presentation(s),
                         "date": s.get("date"), "title": s.get("title") or "", "prio": 0 if (s.get("date") or "") >= soon else 1})
     out.sort(key=lambda c: c.get("date") or "", reverse=True)
     out.sort(key=lambda c: c["prio"])  # stable: open rounds first, newest first within each group
@@ -263,19 +319,37 @@ def main():
     changed = sum(reclassify(v) for v in docs.values())
     if changed:
         log(f"lausunnot: sanasto muuttunut – {changed} kantaa luokiteltu uudelleen tallennetuista osumista")
-    todo = [c for c in candidates(hk, vaski) if c["id"] not in docs or (docs[c["id"]].get("ok") == "error" and docs[c["id"]].get("tries", 0) < 3)]
+    def needs(c: dict) -> bool:
+        v = docs.get(c["id"])
+        if not v:
+            return True
+        if v.get("ok") == "error":
+            return int(v.get("tries", 0)) < 3
+        if v.get("ok") == "noText":
+            return OCR_READY and not v.get("ocrTried")  # scanned before OCR was available: read again
+        if c.get("esittely") and v.get("ok") is True and v.get("stance") != "esittely":
+            v["stance"] = "esittely"
+        return False
+
+    todo = [c for c in candidates(hk, vaski) if needs(c)]
     log(f"lausunnot: {len(docs)} tiivistetty, {len(todo)} odottaa (budjetti {BUDGET_S} s)")
     t0, done, outage, errors = time.time(), 0, None, 0
     down: set[str] = set()
-    for c in todo:
-        if time.time() - t0 > BUDGET_S:
-            break
-        host = re.sub(r"^https?://([^/]+).*", r"\1", c["url"])
-        if host in down:
-            continue
+    lock = threading.Lock()
+
+    strikes: dict[str, int] = {}
+    gates: dict[str, threading.Semaphore] = {}
+
+    def host_of(url: str) -> str:
+        return re.sub(r"^https?://([^/]+).*", r"\1", url)
+
+    def read_one(c: dict) -> tuple[dict, dict | None, Exception | None]:
         rec = {k: c[k] for k in ("src", "org", "date", "url")}
+        with lock:
+            gate = gates.setdefault(host_of(c["url"]), threading.Semaphore(PER_HOST))
         try:
-            r = http("GET", c["url"], headers=UA, timeout=60, retries=2)
+            with gate:  # at most PER_HOST requests at a time to one server (eduskunta.fi answers 503 when pushed)
+                r = http("GET", c["url"], headers=UA, timeout=60, retries=3)
             r.raise_for_status()
             ctype = (r.headers.get("content-type") or "").lower()
             if r.content[:4] == b"%PDF" or "pdf" in ctype:
@@ -284,20 +358,61 @@ def main():
                 rec.update(summarise_docx(r.content, c["org"], c["title"]))
             else:
                 rec.update({"ok": "notPdf"})
+            if c.get("esittely") and rec.get("ok") is True:
+                rec["stance"] = "esittely"  # the ministry presenting its own proposal: a summary, not a position
+            return c, rec, None
         except SourceOutage as e:
-            down.add(host)
-            outage = e
-            log(f"warn: lausunnot: {host} ei vastaa – jatketaan muilla ({e})")
-            continue
+            return c, None, e
         except Exception as e:  # noqa: BLE001
-            errors += 1
             rec.update({"ok": "error", "error": str(e)[:160], "tries": int((docs.get(c["id"]) or {}).get("tries", 0)) + 1})
-        rec["read"] = TODAY.isoformat()
-        docs[c["id"]] = rec
-        done += 1
-        if done % 100 == 0:
-            _save(docs)  # a run cut short by the job timeout keeps what it read
-        time.sleep(0.4)
+            return c, rec, None
+
+    # one queue per server, served in turn: a slow or failing server never holds every worker
+    queues: dict[str, deque] = {}
+    for c in todo:
+        queues.setdefault(host_of(c["url"]), deque()).append(c)
+    inflight: dict[str, int] = {}
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        running = {}
+
+        def submit_next() -> bool:
+            for host in sorted(queues, key=lambda h: inflight.get(h, 0)):
+                if host in down or not queues[host] or inflight.get(host, 0) >= PER_HOST:
+                    continue
+                c = queues[host].popleft()
+                inflight[host] = inflight.get(host, 0) + 1
+                running[pool.submit(read_one, c)] = host
+                return True
+            return False
+
+        while len(running) < WORKERS and submit_next():
+            pass
+        while running:
+            finished, _ = wait(list(running), return_when=FIRST_COMPLETED)
+            for fut in finished:
+                host = running.pop(fut)
+                inflight[host] -= 1
+                c, rec, err = fut.result()
+                if err is not None:
+                    # one 503 or timeout is not an outage: give up on a server only after STRIKES failures in a row;
+                    # the statement itself is simply tried again on the next run
+                    with lock:
+                        strikes[host] = strikes.get(host, 0) + 1
+                        if strikes[host] >= STRIKES and host not in down:
+                            log(f"warn: lausunnot: {host} ei vastaa {STRIKES} kertaa peräkkäin – jatketaan muilla ({err})")
+                            down.add(host)
+                            outage = err
+                    time.sleep(2)
+                else:
+                    strikes[host] = 0
+                    rec["read"] = TODAY.isoformat()
+                    docs[c["id"]] = rec
+                    done += 1
+                    errors += rec.get("ok") == "error"
+                    if done % 200 == 0:
+                        _save(docs)  # a run cut short by the job timeout keeps what it read
+            while time.time() - t0 <= BUDGET_S and len(running) < WORKERS and submit_next():
+                pass
     _save(docs)
     ok = sum(1 for v in docs.values() if v.get("ok") is True)
     log(f"lausunnot: {done} uutta luettu ({errors} virhettä), yhteensä {ok} tiivistelmää, {len(todo) - done} jäi seuraavaan ajoon -> {OUT}")

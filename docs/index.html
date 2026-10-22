@@ -217,22 +217,24 @@ a:hover{border-color:var(--fg)}
 .ls .kannat button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
 .ls .kannat button b{font-weight:600}
 .ls ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.ls li{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:4px 12px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;align-items:start}
-.ls li .who{font-weight:600;min-width:0;overflow-wrap:anywhere}
-.ls li .who .d{display:block;font-weight:400;font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums}
-.ls li .what{min-width:0}
+.ls li{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;min-width:0}
+.ls li .what{display:block;line-height:1.45;overflow-wrap:anywhere}
 .ls li .what q{quotes:"”" "”";color:var(--fg)}
 .ls li .what q::before,.ls li .what q::after{color:var(--dim)}
 .ls li .what .nt{color:var(--dim);font-style:italic}
+.ls li .who{display:block;margin-top:3px;font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.ls li .who b{color:var(--fg);font-weight:600}
+.ls li .who .d{font-variant-numeric:tabular-nums}
+.ls li .src{display:inline-block;margin-top:2px;font-size:12px}
 .ls .st{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:0 5px;border:1px solid var(--line2);border-radius:var(--radius);margin-right:6px;vertical-align:1px;color:var(--muted);white-space:nowrap}
 .ls .st.vastustaa,.ls .st.osin{border-color:#b3261e;color:#b3261e}
 :root[data-theme="dark"] .ls .st.vastustaa,:root[data-theme="dark"] .ls .st.osin{border-color:#f28b82;color:#f28b82}
 .ls .st.kannattaa{border-color:#2e7d32;color:#2e7d32}
 :root[data-theme="dark"] .ls .st.kannattaa{border-color:#81c995;color:#81c995}
 .ls .st.varauksin,.ls .st.muutoksia{border-color:var(--signal);color:var(--signal)}
-.ls .st.ei{border-style:dashed;color:var(--dim)}
+.ls .st.ei,.ls .st.esittely{border-style:dashed;color:var(--dim)}
 .ls .more{margin-top:6px}
-@media (max-width:560px){.ls li{grid-template-columns:1fr}}
+
 .plan-pill{font-family:var(--mono);font-size:11px;color:var(--dim)}
 .modal.act{width:min(760px,calc(100% - 32px))}
 .actions{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
@@ -1572,7 +1574,7 @@ function influenceBadge(it){
   const n=it.influenceN||{}; if(!it.influenceN&&!it.diffN&&!it.lausunnotN) return "";
   const parts=[]; const K=(it.lausunnotN||{}).kannat||{}; const opp=(K.vastustaa||0)+(K.osin||0);
   if(n.lausunnot) parts.push(n.lausunnot+" lausuntoa"+(opp?` (${opp} vastustaa)`:(K.kannattaa?` (${K.kannattaa} kannattaa)`:"")));
-  else if(it.lausunnotN&&it.lausunnotN.n) parts.push(it.lausunnotN.n+" asiantuntijalausuntoa"+(opp?` (${opp} vastustaa)`:"")); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
+  else if(it.lausunnotN&&it.lausunnotN.n) parts.push(it.lausunnotN.n+" lausuntoa"+(opp?` (${opp} vastustaa)`:(K.kannattaa?` (${K.kannattaa} kannattaa)`:""))); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
   if(it.diffN&&it.diffN.he&&it.diffN.he.sections) parts.push(it.diffN.he.sections+" § muuttuu");
   if(!parts.length) return "";
   return `<span class="pill infl-pill" title="Vaikuttaminen: ketkä lausuivat, keitä kuultiin, ketkä lobbasivat – avaa rivi">${esc(parts.join(" · "))}</span>`;
@@ -1619,14 +1621,19 @@ function loadLausunnot(id){
   if(LS_CACHE[id]) return LS_CACHE[id];
   return LS_CACHE[id]=fetch("data/lausunnot/"+encodeURIComponent(id)+".json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{ if(d) LS_LOADED[id]=d; return d; }).catch(()=>null);
 }
-const ST_LABEL={vastustaa:"vastustaa",osin:"vastustaa osin",varauksin:"kannattaa varauksin",muutoksia:"muutosehdotuksia",kannattaa:"kannattaa",kanta:"kannanotto",ei:"ei lausuttavaa"};
-const ST_ORDER=["vastustaa","osin","varauksin","muutoksia","kannattaa","kanta","ei"];
+const ST_LABEL={vastustaa:"vastustaa",osin:"vastustaa osin",varauksin:"kannattaa varauksin",muutoksia:"muutosehdotuksia",kannattaa:"kannattaa",kanta:"kannanotto",esittely:"virkamiesesittely",ei:"ei lausuttavaa"};
+const ST_ORDER=["vastustaa","osin","varauksin","muutoksia","kannattaa","kanta","esittely","ei"];
 function lausunnotSectionHTML(sec,key,title,note){
   if(!sec||!sec.n) return "";
   const rows=sec.rivit||[]; const K=sec.kannat||{}; const unread=sec.n-(sec.luettu||0);
   const pills=ST_ORDER.filter(k=>K[k]).map(k=>`<button type="button" data-st="${k}" aria-pressed="false"><span class="st ${k}">${esc(ST_LABEL[k])}</span><b>${K[k]}</b></button>`).join("");
-  const li=r=>`<li data-st="${esc(r.stance||"")}"><span class="who">${esc(r.org||r.person||"–")}${r.person&&r.org?`<span class="d">${esc(r.person)}</span>`:""}<span class="d">${r.date?fmt(pd(r.date)):""}${r.committee?" · "+esc(r.committee):""}</span></span><span class="what">${r.stance?`<span class="st ${esc(r.stance)}">${esc(ST_LABEL[r.stance]||r.stance)}</span>`:""}${r.gist?`<q>${esc(r.gist)}</q>`:(r.stance==="ei"?"":(r.noText?`<span class="nt">skannattu asiakirja – ei luettavaa tekstiä</span>`:(r.read?`<span class="nt">kantaa ei tunnistettu – avaa lausunto</span>`:`<span class="nt">ei vielä luettu</span>`)))}${r.url?` <a href="${esc(r.url)}" target="_blank" rel="noopener" title="Avaa lausunto">↗</a>`:""}</span></li>`;
-  return `<div class="grp ls" data-sec="${key}"><div><b>${esc(title)}:</b> ${sec.n} lausuntoa${sec.luettu?` · ${sec.luettu} tiivistetty`:""}${unread>0?` · ${unread} odottaa lukemista`:""}${sec.url?` · <a href="${esc(sec.url)}" target="_blank" rel="noopener">lausuntopalvelu.fi</a>`:""}${note?` <span class="m">${note}</span>`:""}</div>${pills?`<div class="kannat" role="group" aria-label="Suodata kannan mukaan">${pills}</div>`:""}<ol>${rows.map(li).join("")}</ol>${rows.length>8?`<button type="button" class="follow-btn more" data-more="${key}">Näytä kaikki ${rows.length}</button>`:""}${sec.trimmed?`<div class="m">… ja ${sec.trimmed} muuta – kaikki rivit <a href="https://editmonster.github.io/Saadosseuranta/#${esc(drawer.dataset.id||"")}" target="_blank" rel="noopener">sivustolla</a></div>`:""}</div>`;
+  /* one statement: summary first, then who gave it, then the link to the statement itself */
+  const li=r=>{
+    const what=r.gist?`<q>${esc(r.gist)}</q>`:(r.stance==="ei"?`<span class="nt">ei lausuttavaa</span>`:(r.noFile?`<span class="nt">lausuntoa ei ole julkaistu tiedostona – vain antaja ja päivä tiedossa</span>`:r.fetchError?`<span class="nt">lausuntotiedostoa ei saatu haettua – kokeile linkkiä</span>`:r.noText?`<span class="nt">skannattu asiakirja – tekstiä ei saatu luettua</span>`:(r.read?`<span class="nt">lausunnosta ei löytynyt tiivistettävää tekstiä</span>`:`<span class="nt">tiivistetään seuraavassa päivityksessä</span>`)));
+    const who=[`<b>${esc(r.org||r.person||"–")}</b>`, r.person&&r.org?esc(r.person):"", r.date?`<span class="d">${fmt(pd(r.date))}</span>`:"", r.committee?esc(r.committee):"", r.asia?esc(r.asia):""].filter(Boolean).join(" · ");
+    return `<li data-st="${esc(r.stance||"")}"><span class="what">${r.stance&&r.stance!=="ei"?`<span class="st ${esc(r.stance)}">${esc(ST_LABEL[r.stance]||r.stance)}</span>`:""}${what}</span><span class="who">${who}</span>${r.url?`<a class="src" href="${esc(r.url)}" target="_blank" rel="noopener">Avaa lausunto ↗</a>`:""}</li>`;
+  };
+  return `<div class="grp ls" data-sec="${key}"><div><b>${esc(title)}:</b> ${sec.n} lausuntoa${unread>0?` · ${sec.luettu||0} tiivistetty, ${unread} tiivistetään seuraavissa päivityksissä`:" · kaikki tiivistetty"}${sec.url?` · <a href="${esc(sec.url)}" target="_blank" rel="noopener">lausuntopalvelu.fi</a>`:""}${note?` <span class="m">${note}</span>`:""}</div>${pills?`<div class="kannat" role="group" aria-label="Suodata kannan mukaan">${pills}</div>`:""}<ol>${rows.map(li).join("")}</ol>${rows.length>8?`<button type="button" class="follow-btn more" data-more="${key}">Näytä kaikki ${rows.length}</button>`:""}${sec.trimmed?`<div class="m">… ja ${sec.trimmed} muuta – kaikki rivit <a href="https://editmonster.github.io/Saadosseuranta/#${esc(drawer.dataset.id||"")}" target="_blank" rel="noopener">sivustolla</a></div>`:""}</div>`;
 }
 function lausunnotHTML(d){
   if(!d||(!d.kierros&&!d.eduskunta)) return "";
