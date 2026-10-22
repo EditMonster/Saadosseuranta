@@ -15,6 +15,11 @@ on:
         description: "Vain nämä lähteet (välilyönnillä erotettuna, esim. 'mao caselaw'); tyhjä = kaikki"
         required: false
         default: ""
+      ajastin:
+        description: "Anna ajastimen päättää, ajetaanko (ulkoinen herättäjä, esim. cron-job.org, lähettää ajastin=true)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -43,7 +48,7 @@ jobs:
           sparse-checkout-cone-mode: false
       - id: decide
         env:
-          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && !inputs.ajastin && 'true' || 'false' }}
           FORCE_STEPS: ${{ inputs.vaiheet }}
         run: python3 scripts/ajastus.py
 
