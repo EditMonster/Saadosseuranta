@@ -1,0 +1,309 @@
+"""Annetut lausunnot: napakka tiivistelmä jokaisesta jo annetusta lausunnosta ja sen antajasta.
+
+Lähteet (molemmat jo pipeline-välimuistissa, tämä vaihe vain lukee lausuntojen PDF:t):
+* Hankeikkuna – ministeriöiden lausuntokierrosten LAUSUNTO-asiakirjat (fetch_hankeikkuna tallentaa
+  järjestön, päivän ja PDF-osoitteen: `lausunnot.docs`). PDF:t ovat api.hankeikkuna.fi/asiakirjat/…
+  (CC BY 4.0).
+* Eduskunta (Vaski) – valiokuntien asiantuntijalausunnot (fetch_vaski: `statements`, eduskunta.fi/pdf/EDK-…).
+  Virkamiesten esittelykalvot (ministeriön edustaja) eivät ole kannanottoja, ne jätetään tiivistämättä.
+
+Tiivistelmä on **sanatarkka ote** lausunnosta, ei tulkinta: lausunnosta valitaan virke (tai kaksi), jossa
+lausunnonantaja ilmaisee kantansa (kannattaa, vastustaa, esittää, pitää …), ja kiitokset, osoitteet ja
+viitetiedot ohitetaan. Lisäksi sanastoon perustuva suuntaa-antava kanta: kannattaa / kannattaa varauksin /
+vastustaa / muutosehdotuksia / ei lausuttavaa / kannanotto. Kumpikin näkyy sivulla linkin kera, jotta
+lukija voi tarkistaa otteen alkuperäisestä.
+
+Kerran luettu lausunto ei muutu, joten tulos tallennetaan asiakirjan tunnisteella (data/cache/lausunnot.json)
+ja PDF luetaan vain kerran. Jokainen ajo käsittelee aikabudjetin verran uusia lausuntoja (LAUSUNNOT_BUDGET_S,
+oletus 8 min), tuoreimmat ja käynnissä olevien kierrosten lausunnot ensin.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import io
+import os
+import re
+import time
+
+from common import CACHE_DIR, TODAY, SourceOutage, http, load_json, log, save_json
+
+OUT = CACHE_DIR / "lausunnot.json"
+BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 8 * 60))
+KEEP_DAYS = 420
+MAX_PAGES = 4
+GIST_MAX = 280
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) saadosseuranta/1.0 (+https://github.com/EditMonster/Saadosseuranta)"}
+
+# --- text clean-up ---------------------------------------------------------------------------------------
+BOILER = re.compile(
+    r"kiittä\w* (mahdollisuud|lausuntopyyn|pyynnö)|mahdollisuudesta (lausua|antaa)|lausuntopyyntö\w*\s|lausuntopyyntönne|"
+    r"pyydettynä lausuntona|lausunto asiassa|^asia\s*:|viite\s*:|@|\bpuh\.|puhelin|www\.|https?://|lausuntopalvelu\.fi|"
+    r"y-tunnus|postiosoite|käyntiosoite|^\s*(liite|liitteet|jakelu|tiedoksi)\b|allekirjoit|sähköisesti hyväksytty|"
+    r"ystävällisin terveisin|kunnioittavasti|^\s*lausunto\s*\d|^\s*\d+\s*\(\d+\)\s*$|lausunnonantajan lausunto|"
+    r"vastaa(?:ja|jan) (?:nimi|tiedot)|lausunnon antajan (?:nimi|yhteystiedot)|"
+    # document headers and slide furniture that the PDF text puts in front of the first paragraph
+    r"^\s*(HE|U|E|K|VNS|VNT|TAE|LAUSUNTO|ASIANTUNTIJALAUSUNTO|MUISTIO|Asiantuntijalausunto|Lausunto)\b\s*\d|^\s*(HE|U|E|K|VNS) \d+/\d{4} vp|"
+    r"hallituksen esitys eduskunnalle|valtioneuvoston (selvitys|kirjelmä)|^\s*\d{1,2}\.\d{1,2}\.\d{4}|\d{1,2}\.\d{1,2}\.\d{4}\s+\d+\s*$|"
+    r"^\s*lähde:|\(cid:\d+\)|julkinen kuuleminen|valiokunnan kuuleminen|kuuleminen \d{1,2}\.\d{1,2}\.|^\s*[A-ZÄÖÅ][a-zäöå]+ [A-ZÄÖÅ][a-zäöå]+\s*$", re.I)
+# reservations strong enough to turn "kannattaa" into "kannattaa varauksin"
+RESERVE_RE = re.compile(r"\b(kuitenkin|ongelmallis\w*|huolestun\w*|huolissa\w*|puutteellis\w*|riittämät\w*|epäselv\w*|kohtuuton\w*|"
+                        r"(esittä\w*|esitämme|ehdotta\w*|ehdotamme) [a-zäö ,]{0,40}(muutos|muutett|tarkennu|täsmennys|täsmennet|lisäy|poist)\w*|"
+                        r"ei (voida|voi) pitää|ei ole (riittäv|perustel|tarkoituksenmukai)\w*|tulee (muuttaa|täsmentää|tarkentaa|poistaa|korjata)|poistamista|"
+                        r"tulisi (muuttaa|täsmentää|tarkentaa|poistaa|korjata|harkita|selvittää|arvioida))\b", re.I)
+STANCE_VERB = re.compile(
+    r"\b(kannatta\w*|puolta\w*|vastusta\w*|yhtyy|yhdy\w*|ei kannata|ei puolla|esittää|esitämme|ehdotta\w*|ehdotamme|"
+    r"edellyttä\w*|katso\w*|pitää [a-zäöå\- ]{0,60}(tärkeä|hyvä|perustel|kannatettav|ongelmallis|välttämätön|tarpeellis|"
+    r"myönteis|tervetullee|kiirehdittäv|riittämätön|puutteellis|haitallis)\w*|pidämme|suhtautu\w*|huolestun\w*|huolissa\w*|"
+    r"korosta\w*|tukee|tuemme|ei ole huomautettavaa|ei ole lausuttavaa|toivo\w*|vaati\w*|tulisi|pitäisi|on syytä)\b", re.I)
+NONE_RE = re.compile(r"\bei (ole )?(lausuttavaa|lausuntoa|huomautettavaa|kommentoitavaa)\b|ingenting att yttra|inget utlåtande|"
+                     r"inga kommentarer|ei näe tarvetta lausua", re.I)
+OPPOSE_RE = re.compile(r"\b(vastusta(a|vat|mme|isi\w*|nut|neet|a jyrkästi)|ei kannata|emme kannata|ei puolla|emme puolla|(ei|emme) voi(da)? (hyväksyä|kannattaa|puoltaa)|"
+                       r"tulee hylätä|on hylättävä|ei tule (toteuttaa|hyväksyä|säätää)|ei pidä [a-zäö ]{0,40}perusteltuna|torju(u|vat|mme|isi\w*|taan)|"
+                       r"esittä\w* [a-zäö ,]{0,50}(luopumista|hylkäämistä)|ei (ole )?(hyväksyttäv|kannatettav)\w*)\b", re.I)
+SUPPORT_RE = re.compile(r"\b(kannatta(a|vat|mme)(?! (huomata|todeta|harkita|selvittää|ottaa|pohtia|miettiä))|kannatamme|puolta(a|vat|mme)|"
+                        r"yhtyy|yhdymme|(pitää|pidämme|pitävät) [a-zäöå\- ]{0,60}(hyv|kannatettav|perusteltu|myönteis|tervetullee|"
+                        r"oikeansuuntais|tarpeellis)(änä|ana|enä|ena|inä|ina|nä|na|ä|a)\b|suhtautu\w* myönteisesti|tuke(e|vat|mme) (esitystä|ehdotusta|"
+                        r"esitettyä|tavoitetta|ehdotettua|uudistusta|valtioneuvoston kantaa|kantaa|linjau\w*)|(ei ole|ei) huomautettavaa)\b", re.I)
+CONCERN_RE = re.compile(r"\b(kuitenkin|huolestun\w*|huolissa\w*|ongelmallis\w*|riski\w*|puutteellis\w*|riittämät\w*|"
+                        r"esittä\w* [a-zäö ,]{0,40}(muutos|tarkennu|täsmennys|lisäy|selvity)\w*|ehdotta\w*|ehdotamme|"
+                        r"tulisi|pitäisi|edellyttä\w*|on syytä|on tarpeen)\b", re.I)
+STANCE_LABEL = {"kannattaa": "kannattaa", "varauksin": "kannattaa varauksin", "vastustaa": "vastustaa",
+                "muutoksia": "muutosehdotuksia", "osin": "vastustaa osin", "ei": "ei lausuttavaa", "kanta": "kannanotto"}
+
+
+def clean_text(raw: str) -> str:
+    """PDF text -> running text: hyphenation joined, line breaks inside paragraphs removed."""
+    t = raw.replace("­", "").replace("\r", "")
+    t = re.sub(r"(\w)[-‐]\n(?=[a-zäöå])", r"\1", t)          # tavoit-\nteena -> tavoitteena
+    t = re.sub(r"[ \t]+", " ", t)
+    lines = [ln.strip() for ln in t.split("\n")]
+    out, buf = [], []
+    for i, ln in enumerate(lines):
+        nxt = lines[i + 1] if i + 1 < len(lines) else ""
+        if ln and not buf and len(ln) < 70 and not re.search(r"[.!?:,;]$", ln) and nxt[:1].isupper():
+            out.append(ln)  # a heading on its own line: never glue it to the paragraph below
+            continue
+        if not ln:
+            if buf:
+                out.append(" ".join(buf))
+                buf = []
+            continue
+        buf.append(ln)
+        if re.search(r"[.!?:]$", ln) and len(ln) < 60:
+            out.append(" ".join(buf))
+            buf = []
+    if buf:
+        out.append(" ".join(buf))
+    return "\n".join(out)
+
+
+SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÅ0-9\"”(])")
+
+
+def sentences(text: str) -> list[str]:
+    out = []
+    for para in text.split("\n"):
+        for s in SENT_SPLIT.split(para):
+            s = s.strip(" •–-*·\t")
+            if s:
+                out.append(s)
+    return out
+
+
+def _org_tokens(org: str) -> list[str]:
+    org = org or ""
+    toks = [w for w in re.findall(r"[A-ZÄÖÅ][\wäöåÄÖÅ\-]{2,}", org) if w.lower() not in {"suomen", "ry", "oyj", "oy"}]
+    abbr = re.findall(r"\(([A-ZÄÖÅ]{2,8})\)", org) + re.findall(r"\b([A-ZÄÖÅ]{2,8})\b", org)
+    return list(dict.fromkeys(abbr + toks[:2]))
+
+
+def pick_gist(text: str, org: str = "") -> str:
+    """The sentence(s) where the respondent states its position, verbatim, at most GIST_MAX characters."""
+    sents = sentences(text)
+    toks = [t.lower() for t in _org_tokens(org)]
+    scored = []
+    for i, s in enumerate(sents):
+        words = len(s.split())
+        if words < 7 or BOILER.search(s) or not re.search(r"[a-zäöå]{3}", s):
+            continue
+        if sum(c.isdigit() for c in s) > len(s) * 0.12 or s.count("•") or re.search(r"\d+\s*\(\d+\)|\bvp\b", s):
+            continue
+        if sum(1 for ch in s if ch.isupper()) > len(s) * 0.3:  # headings in capitals glued to a paragraph
+            continue
+        low = s.lower()
+        score = 0.0
+        score += 3 * len(STANCE_VERB.findall(s))
+        score += 2 if any(t and t in low for t in toks) or re.search(r"\b(me|meidän|emme|esitämme|pidämme|katsomme|kannatamme)\b", low) else 0
+        score += 2 if (OPPOSE_RE.search(s) or SUPPORT_RE.search(s)) else 0
+        score += max(0.0, 2.0 - i * 0.12)                       # earlier sentences tend to carry the main position
+        score -= 1.5 if words > 50 else 0
+        score -= 2 if s.endswith(":") else 0
+        scored.append((score, i, s))
+    if not scored:
+        return ""
+    best = max(scored, key=lambda x: (x[0], -x[1]))
+    gist = best[2]
+    if len(gist) < 140:                                         # a short main sentence: add the next one when it qualifies it
+        nxt = next((s for sc, i, s in scored if i == best[1] + 1), None)
+        if nxt and (CONCERN_RE.search(nxt) or STANCE_VERB.search(nxt)):
+            gist = f"{gist} {nxt}"
+    if len(gist) > GIST_MAX:
+        cut = gist[:GIST_MAX].rsplit(" ", 1)[0].rstrip(",;:–-")
+        gist = cut + " …"
+    return gist
+
+
+def signals(text: str, title: str = "") -> dict:
+    """The vocabulary hits the stance rests on – stored with the summary so a narrowed vocabulary can be
+    re-applied without re-reading the PDF (`reclassify`)."""
+    hits = lambda rx: [m.group(0).lower() for m in rx.finditer(text)][:12]  # noqa: E731
+    return {"none": bool(NONE_RE.search(title) or (NONE_RE.search(text) and len(text) < 1800)),
+            "opp": hits(OPPOSE_RE), "sup": hits(SUPPORT_RE), "res": hits(RESERVE_RE), "con": len(CONCERN_RE.findall(text))}
+
+
+def decide(sig: dict) -> str:
+    """Suuntaa-antava kanta sanastosta. Key into STANCE_LABEL."""
+    if sig.get("none"):
+        return "ei"
+    opp, sup, strong, weak = len(sig.get("opp") or []), len(sig.get("sup") or []), len(sig.get("res") or []), int(sig.get("con") or 0)
+    if opp and not sup:
+        return "vastustaa"
+    if opp:
+        return "osin"
+    if sup and strong >= 2:
+        return "varauksin"
+    if sup:
+        return "kannattaa"
+    if strong >= 1 or weak >= 4:
+        return "muutoksia"
+    return "kanta"
+
+
+def classify(text: str, title: str = "") -> str:
+    return decide(signals(text, title))
+
+
+def reclassify(rec: dict) -> bool:
+    """Re-check a cached record's stored hits against the current vocabulary (drops hits the regexes no longer
+    accept) and recompute the stance. Returns True when the stance changed."""
+    sig = rec.get("sig")
+    if not sig or rec.get("ok") is not True:
+        return False
+    for key, rx in (("opp", OPPOSE_RE), ("sup", SUPPORT_RE), ("res", RESERVE_RE)):
+        sig[key] = [h for h in sig.get(key) or [] if rx.fullmatch(h) or rx.search(h)]
+    new = decide(sig)
+    changed = new != rec.get("stance")
+    rec["stance"] = new
+    return changed
+
+
+def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
+    import pdfplumber
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        pages = len(pdf.pages)
+        raw = "\n".join((p.extract_text() or "") for p in pdf.pages[:MAX_PAGES])
+    text = clean_text(raw)
+    if len(re.sub(r"\s", "", text)) < 80:
+        return {"ok": "noText", "pages": pages, "stance": "ei" if NONE_RE.search(title) else None}
+    sig = signals(text, title)
+    return {"ok": True, "pages": pages, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+
+
+def summarise_docx(data: bytes, org: str = "", title: str = "") -> dict:
+    import zipfile
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        xml = z.read("word/document.xml").decode("utf-8", "ignore")
+    text = clean_text(re.sub(r"<[^>]+>", "", re.sub(r"</w:p>", "\n", xml)))
+    sig = signals(text, title)
+    return {"ok": True, "pages": None, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+
+
+# --- which statements -------------------------------------------------------------------------------------
+def is_presentation(s: dict) -> bool:
+    """A civil servant's slides in committee (the ministry presenting its own bill), not a position."""
+    org = (s.get("org") or "").lower()
+    return bool(s.get("person")) and ("ministeriö" in org or "valtioneuvoston kanslia" in org)
+
+
+def candidates(hk: dict, vaski: dict) -> list[dict]:
+    """Every statement with a readable file, newest first; open/recent consultation rounds first."""
+    soon = (TODAY - dt.timedelta(days=60)).isoformat()
+    lo = (TODAY - dt.timedelta(days=KEEP_DAYS)).isoformat()
+    out = []
+    for p in (hk.get("items") or []):
+        L = p.get("lausunnot") or {}
+        open_round = any(e.get("kind") == "lausunto" and (e.get("end") or e.get("date") or "") >= soon for e in p.get("etapit") or [])
+        for d in L.get("docs") or []:
+            if not d.get("url") or (d.get("date") or "") < lo:
+                continue
+            out.append({"id": d["id"], "src": "hk", "url": d["url"], "org": d.get("org") or "", "date": d.get("date"),
+                        "title": d.get("title") or "", "prio": 0 if open_round else 1})
+    for asia, lst in (vaski.get("statements") or {}).items():
+        for s in lst:
+            if not s.get("url") or (s.get("date") or "") < lo or is_presentation(s):
+                continue
+            out.append({"id": s.get("edk") or s["url"], "src": "ek", "url": s["url"], "org": s.get("org") or s.get("person") or "",
+                        "date": s.get("date"), "title": s.get("title") or "", "prio": 0 if (s.get("date") or "") >= soon else 1})
+    out.sort(key=lambda c: c.get("date") or "", reverse=True)
+    out.sort(key=lambda c: c["prio"])  # stable: open rounds first, newest first within each group
+    return out
+
+
+def _save(docs: dict) -> None:
+    lo = (TODAY - dt.timedelta(days=KEEP_DAYS + 30)).isoformat()
+    docs = {k: v for k, v in docs.items() if (v.get("date") or "9999") >= lo}
+    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "docs": docs}, compact=True)
+
+
+def main():
+    cache = load_json(OUT, {}) or {}
+    docs: dict = cache.get("docs") or {}
+    hk = load_json(CACHE_DIR / "hankeikkuna.json", {}) or {}
+    vaski = load_json(CACHE_DIR / "vaski.json", {}) or {}
+    changed = sum(reclassify(v) for v in docs.values())
+    if changed:
+        log(f"lausunnot: sanasto muuttunut – {changed} kantaa luokiteltu uudelleen tallennetuista osumista")
+    todo = [c for c in candidates(hk, vaski) if c["id"] not in docs or (docs[c["id"]].get("ok") == "error" and docs[c["id"]].get("tries", 0) < 3)]
+    log(f"lausunnot: {len(docs)} tiivistetty, {len(todo)} odottaa (budjetti {BUDGET_S} s)")
+    t0, done, outage, errors = time.time(), 0, None, 0
+    down: set[str] = set()
+    for c in todo:
+        if time.time() - t0 > BUDGET_S:
+            break
+        host = re.sub(r"^https?://([^/]+).*", r"\1", c["url"])
+        if host in down:
+            continue
+        rec = {k: c[k] for k in ("src", "org", "date", "url")}
+        try:
+            r = http("GET", c["url"], headers=UA, timeout=60, retries=2)
+            r.raise_for_status()
+            ctype = (r.headers.get("content-type") or "").lower()
+            if r.content[:4] == b"%PDF" or "pdf" in ctype:
+                rec.update(summarise_pdf(r.content, c["org"], c["title"]))
+            elif r.content[:2] == b"PK":
+                rec.update(summarise_docx(r.content, c["org"], c["title"]))
+            else:
+                rec.update({"ok": "notPdf"})
+        except SourceOutage as e:
+            down.add(host)
+            outage = e
+            log(f"warn: lausunnot: {host} ei vastaa – jatketaan muilla ({e})")
+            continue
+        except Exception as e:  # noqa: BLE001
+            errors += 1
+            rec.update({"ok": "error", "error": str(e)[:160], "tries": int((docs.get(c["id"]) or {}).get("tries", 0)) + 1})
+        rec["read"] = TODAY.isoformat()
+        docs[c["id"]] = rec
+        done += 1
+        if done % 100 == 0:
+            _save(docs)  # a run cut short by the job timeout keeps what it read
+        time.sleep(0.4)
+    _save(docs)
+    ok = sum(1 for v in docs.values() if v.get("ok") is True)
+    log(f"lausunnot: {done} uutta luettu ({errors} virhettä), yhteensä {ok} tiivistelmää, {len(todo) - done} jäi seuraavaan ajoon -> {OUT}")
+    if outage and not done:
+        raise SourceOutage(f"lausunnot: lähteet eivät vastaa: {sorted(down)}") from outage
+
+
+if __name__ == "__main__":
+    main()

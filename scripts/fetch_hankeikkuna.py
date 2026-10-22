@@ -75,16 +75,21 @@ def summarise_statements(docs: list[dict], lausuntopalvelu: str | None) -> dict 
     orgs: dict[str, int] = {}
     none = 0
     latest = ""
+    files = []
     for d in docs:
         org = _fi(d.get("laatija")) or _fi(d.get("nimi")).split(";")[0].strip()
         org = re.sub(r"\s*\(\d+\)\s*$", "", org).strip()
-        if NO_STATEMENT_RE.search(_fi(d.get("nimi"))):
-            none += 1
+        no = bool(NO_STATEMENT_RE.search(_fi(d.get("nimi"))))
+        none += no
         if org:
             orgs[org] = orgs.get(org, 0) + 1
-        latest = max(latest, d.get("laatimispaiva") or (d.get("luotu") or "")[:10] or "")
+        date = d.get("laatimispaiva") or (d.get("luotu") or "")[:10] or ""
+        latest = max(latest, date)
+        if d.get("uuid"):  # one row per statement for fetch_lausunnot (the PDF is read once, summarised and cached)
+            files.append({k: v for k, v in {"id": d["uuid"], "org": org or None, "date": date or None, "url": d.get("url") or None,
+                                            "title": _fi(d.get("nimi"))[:160] or None, "none": no or None}.items() if v})
     return {"n": len(docs), "eiLausuttavaa": none, "orgs": sorted(orgs, key=lambda o: (-orgs[o], o))[:80],
-            "viimeisin": latest or None, "url": lausuntopalvelu}
+            "viimeisin": latest or None, "url": lausuntopalvelu, "docs": sorted(files, key=lambda f: f.get("date") or "", reverse=True)}
 
 
 def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:

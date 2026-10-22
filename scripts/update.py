@@ -30,6 +30,7 @@ import fetch_history
 import fetch_hys
 import fetch_kkv
 import fetch_kkv_valvonta
+import fetch_lausunnot
 import fetch_mao
 import fetch_paatokset
 import fetch_regdel
@@ -67,6 +68,7 @@ STEPS = [
     ("caselaw", fetch_caselaw.main),
     ("curia", fetch_curia.main),
     ("toimiala", fetch_toimiala.main),
+    ("lausunnot", fetch_lausunnot.main),  # after hankeikkuna + vaski: summarises the statements they list
     ("history", fetch_history.main),
     ("hediff", fetch_hediff.main),  # last: eduskunta's API throttles after the vaski/eduskunta steps
 ]

@@ -53,6 +53,7 @@ a:hover{border-color:var(--fg)}
 .status{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-block:10px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .status .sys{display:flex;gap:18px;flex-wrap:wrap}
 .status .sys span b{color:var(--fg);font-weight:500}
+.status .sys span a{color:var(--fg);text-decoration:underline;text-underline-offset:2px;text-transform:none;letter-spacing:0}
 .led{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--signal);margin-right:6px;vertical-align:middle;box-shadow:0 0 6px var(--signal)}
 .led.ok{background:var(--fg);box-shadow:none}
 .status .warn{color:var(--signal)}
@@ -210,6 +211,28 @@ a:hover{border-color:var(--fg)}
 .infl ul{margin:4px 0 0 0;padding-left:16px;font-size:13px}
 .infl li{margin:2px 0}
 .infl .dec{font-weight:600}
+/* annetut lausunnot: one line per respondent – organisation, stance, verbatim gist */
+.ls .kannat{display:flex;flex-wrap:wrap;gap:4px 6px;margin:4px 0 6px}
+.ls .kannat button{font:inherit;font-size:12px;padding:1px 8px;border:1px solid var(--line2);border-radius:10px;background:var(--panel);color:var(--fg);cursor:pointer}
+.ls .kannat button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.ls .kannat button b{font-weight:600}
+.ls ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ls li{display:grid;grid-template-columns:minmax(120px,170px) 1fr;gap:4px 12px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;align-items:start}
+.ls li .who{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.ls li .who .d{display:block;font-weight:400;font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums}
+.ls li .what{min-width:0}
+.ls li .what q{quotes:"”" "”";color:var(--fg)}
+.ls li .what q::before,.ls li .what q::after{color:var(--dim)}
+.ls li .what .nt{color:var(--dim);font-style:italic}
+.ls .st{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:0 5px;border:1px solid var(--line2);border-radius:var(--radius);margin-right:6px;vertical-align:1px;color:var(--muted);white-space:nowrap}
+.ls .st.vastustaa,.ls .st.osin{border-color:#b3261e;color:#b3261e}
+:root[data-theme="dark"] .ls .st.vastustaa,:root[data-theme="dark"] .ls .st.osin{border-color:#f28b82;color:#f28b82}
+.ls .st.kannattaa{border-color:#2e7d32;color:#2e7d32}
+:root[data-theme="dark"] .ls .st.kannattaa{border-color:#81c995;color:#81c995}
+.ls .st.varauksin,.ls .st.muutoksia{border-color:var(--signal);color:var(--signal)}
+.ls .st.ei{border-style:dashed;color:var(--dim)}
+.ls .more{margin-top:6px}
+@media (max-width:560px){.ls li{grid-template-columns:1fr}}
 .plan-pill{font-family:var(--mono);font-size:11px;color:var(--dim)}
 .modal.act{width:min(760px,calc(100% - 32px))}
 .actions{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
@@ -1309,7 +1332,11 @@ function actionsFor(it){
   if(it.scope==="fi"||it.scope==="eu"){
     const oc=openConsultation(it);
     if(oc&&it.laji!=="kuuleminen") add("lausunto","Lausuntoluonnos",`Lausuntoaika päättyy ${fmtD(oc.end)}`,()=>{
-      const others=inf.lausunnot?`\n\nMuut lausunnonantajat tähän mennessä (${inf.lausunnot.n}): ${(inf.lausunnot.orgs||[]).slice(0,8).join(", ")}${inf.lausunnot.n>8?" …":""}.`:"";
+      const LS=(window.__LAUSUNNOT&&window.__LAUSUNNOT[it.id])||LS_LOADED[it.id]; const K=LS&&LS.kierros&&LS.kierros.kannat||{};
+      const kannat=Object.keys(K).length?` Kannat tähän mennessä: ${ST_ORDER.filter(k=>K[k]).map(k=>`${K[k]} ${ST_LABEL[k]}`).join(", ")}.`:"";
+      const opp=LS&&LS.kierros?(LS.kierros.rivit||[]).filter(r=>(r.stance==="vastustaa"||r.stance==="osin")&&r.gist).slice(0,3):[];
+      const oppTxt=opp.length?`\nVastustavia kantoja: ${opp.map(r=>`${r.org}: ”${r.gist}”`).join(" · ")}`:"";
+      const others=inf.lausunnot?`\n\nMuut lausunnonantajat tähän mennessä (${inf.lausunnot.n}): ${(inf.lausunnot.orgs||[]).slice(0,8).join(", ")}${inf.lausunnot.n>8?" …":""}.${kannat}${oppTxt}`:"";
       return {to:ministryMail(it),subject:`Lausunto: ${it.fullTitle||it.title}${it.tunnus?` (${it.tunnus})`:""}`,
         body:`${it.ministry||"[Ministeriö]"}\nKirjaamo\n\nViite: ${it.ref||it.tunnus||""}${it.tunnus&&it.ref!==it.tunnus?` · ${it.tunnus}`:""}; lausuntopyyntö, lausuntoaika päättyy ${fmtD(oc.end)}\n\nLAUSUNTO LUONNOKSESTA: ${(it.fullTitle||it.title).toUpperCase()}\n\n${ORG} kiittää mahdollisuudesta lausua ja esittää lausuntonaan seuraavaa.\n\n1. Yleiset huomiot\n[Kanta ehdotuksen tavoitteisiin ja keskeisiin keinoihin. Mitä kannatetaan, mitä ei, ja miksi.]\n\n2. Yksityiskohtaiset huomiot pykälittäin\n[§ – huomio – ehdotettu muotoilu]\n[§ – huomio – ehdotettu muotoilu]\n\n3. Vaikutusten arviointi\n[Taloudelliset, hallinnolliset ja muut vaikutukset ${ORG}:n / toimialan näkökulmasta; mitä arviosta puuttuu.]\n\n4. Voimaantulo ja siirtymäajat\n[Riittävätkö ehdotetut siirtymäajat; tarvittavat muutokset.]\n\n5. Yhteenveto\n[Keskeiset muutosehdotukset luettelona.]${others}\n\n${ME}\n${ORG}\n\n(Lausuntopalvelu: ${inf.lausunnot&&inf.lausunnot.url?inf.lausunnot.url:"[linkki]"} · Säädösseuranta: ${linkOf(it)})`};
     });
@@ -1542,8 +1569,10 @@ function openTender(it){
   document.getElementById("dr-close").focus();
 }
 function influenceBadge(it){
-  const n=it.influenceN||{}; if(!it.influenceN&&!it.diffN) return "";
-  const parts=[]; if(n.lausunnot) parts.push(n.lausunnot+" lausuntoa"); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
+  const n=it.influenceN||{}; if(!it.influenceN&&!it.diffN&&!it.lausunnotN) return "";
+  const parts=[]; const K=(it.lausunnotN||{}).kannat||{}; const opp=(K.vastustaa||0)+(K.osin||0);
+  if(n.lausunnot) parts.push(n.lausunnot+" lausuntoa"+(opp?` (${opp} vastustaa)`:(K.kannattaa?` (${K.kannattaa} kannattaa)`:"")));
+  else if(it.lausunnotN&&it.lausunnotN.n) parts.push(it.lausunnotN.n+" asiantuntijalausuntoa"+(opp?` (${opp} vastustaa)`:"")); if(n.kuulemiset) parts.push(n.kuulemiset+" kuulemista"); if(n.lobbaus) parts.push(n.lobbaus+" lobbausilm."); if(n.esityslistat) parts.push("esityslistalla");
   if(it.diffN&&it.diffN.he&&it.diffN.he.sections) parts.push(it.diffN.he.sections+" § muuttuu");
   if(!parts.length) return "";
   return `<span class="pill infl-pill" title="Vaikuttaminen: ketkä lausuivat, keitä kuultiin, ketkä lobbasivat – avaa rivi">${esc(parts.join(" · "))}</span>`;
@@ -1583,12 +1612,48 @@ function influenceHTML(inf){
   if(B) h+=`<div class="grp"><div><b>Avoimuusrekisteri:</b> ${B.n} toimintailmoitusta, ${B.contacts} yhteydenottoa (${esc((B.terms||[]).join(", "))})${B.targets&&B.targets.length?` · kohteet: ${esc(B.targets.map(x=>x.name.replace(/\s*\([A-ZÄÖ]+\)$/,"")+" "+x.n).join(", "))}`:""}</div>${orgChips(B.orgs,14)}${B.customers&&B.customers.length?`<div class="m">Asiakkaiden puolesta: ${esc(B.customers.join(", "))}</div>`:""}${B.methods&&B.methods.length?`<div class="m">${esc(B.methods.map(x=>x.name+" "+x.n).join(" · "))}</div>`:""}</div>`;
   return h+"</div>";
 }
+/* ---------- Annetut lausunnot: napakka ote ja kanta per lausunnonantaja (data/lausunnot/<id>.json, lazy) ---------- */
+const LS_CACHE={}, LS_LOADED={};
+function loadLausunnot(id){
+  if(window.__LAUSUNNOT&&window.__LAUSUNNOT[id]) return Promise.resolve(window.__LAUSUNNOT[id]);
+  if(LS_CACHE[id]) return LS_CACHE[id];
+  return LS_CACHE[id]=fetch("data/lausunnot/"+encodeURIComponent(id)+".json?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{ if(d) LS_LOADED[id]=d; return d; }).catch(()=>null);
+}
+const ST_LABEL={vastustaa:"vastustaa",osin:"vastustaa osin",varauksin:"kannattaa varauksin",muutoksia:"muutosehdotuksia",kannattaa:"kannattaa",kanta:"kannanotto",ei:"ei lausuttavaa"};
+const ST_ORDER=["vastustaa","osin","varauksin","muutoksia","kannattaa","kanta","ei"];
+function lausunnotSectionHTML(sec,key,title,note){
+  if(!sec||!sec.n) return "";
+  const rows=sec.rivit||[]; const K=sec.kannat||{}; const unread=sec.n-(sec.luettu||0);
+  const pills=ST_ORDER.filter(k=>K[k]).map(k=>`<button type="button" data-st="${k}" aria-pressed="false"><span class="st ${k}">${esc(ST_LABEL[k])}</span><b>${K[k]}</b></button>`).join("");
+  const li=r=>`<li data-st="${esc(r.stance||"")}"><span class="who">${esc(r.org||r.person||"–")}${r.person&&r.org?`<span class="d">${esc(r.person)}</span>`:""}<span class="d">${r.date?fmt(pd(r.date)):""}${r.committee?" · "+esc(r.committee):""}</span></span><span class="what">${r.stance?`<span class="st ${esc(r.stance)}">${esc(ST_LABEL[r.stance]||r.stance)}</span>`:""}${r.gist?`<q>${esc(r.gist)}</q>`:(r.stance==="ei"?"":(r.noText?`<span class="nt">skannattu asiakirja – ei luettavaa tekstiä</span>`:(r.read?`<span class="nt">kantaa ei tunnistettu – avaa lausunto</span>`:`<span class="nt">ei vielä luettu</span>`)))}${r.url?` <a href="${esc(r.url)}" target="_blank" rel="noopener" title="Avaa lausunto">↗</a>`:""}</span></li>`;
+  return `<div class="grp ls" data-sec="${key}"><div><b>${esc(title)}:</b> ${sec.n} lausuntoa${sec.luettu?` · ${sec.luettu} tiivistetty`:""}${unread>0?` · ${unread} odottaa lukemista`:""}${sec.url?` · <a href="${esc(sec.url)}" target="_blank" rel="noopener">lausuntopalvelu.fi</a>`:""}${note?` <span class="m">${note}</span>`:""}</div>${pills?`<div class="kannat" role="group" aria-label="Suodata kannan mukaan">${pills}</div>`:""}<ol>${rows.map(li).join("")}</ol>${rows.length>8?`<button type="button" class="follow-btn more" data-more="${key}">Näytä kaikki ${rows.length}</button>`:""}${sec.trimmed?`<div class="m">… ja ${sec.trimmed} muuta – kaikki rivit <a href="https://editmonster.github.io/Saadosseuranta/#${esc(drawer.dataset.id||"")}" target="_blank" rel="noopener">sivustolla</a></div>`:""}</div>`;
+}
+function lausunnotHTML(d){
+  if(!d||(!d.kierros&&!d.eduskunta)) return "";
+  return `<div class="infl"><h4>Annetut lausunnot</h4>${lausunnotSectionHTML(d.kierros,"kierros","Lausuntokierros (ministeriö)")}${lausunnotSectionHTML(d.eduskunta,"eduskunta","Asiantuntijalausunnot eduskunnassa")}<p class="m" style="margin:6px 0 0">Ote on lausunnon oma virke, jossa kanta ilmaistaan; kanta on sanastosta päätelty suuntaa-antava luokitus. Tarkista lausunnosta (↗) ennen kuin vetoat siihen.</p></div>`;
+}
+function wireLausunnot(el){
+  el.querySelectorAll(".ls").forEach(sec=>{
+    const items=[...sec.querySelectorAll("li")]; const more=sec.querySelector("[data-more]"); let filter=null, all=false;
+    const apply=()=>{ let shown=0; items.forEach(li=>{ const ok=!filter||li.dataset.st===filter; const vis=ok&&(all||filter||shown<8); li.hidden=!vis; if(vis) shown++; }); if(more) more.hidden=all||!!filter; };
+    sec.querySelectorAll(".kannat button").forEach(b=>b.addEventListener("click",()=>{ filter=filter===b.dataset.st?null:b.dataset.st; sec.querySelectorAll(".kannat button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.st===filter))); apply(); }));
+    if(more) more.addEventListener("click",()=>{ all=true; apply(); });
+    apply();
+  });
+}
 function renderInfluence(it){
   const el=document.getElementById("dr-influence"); if(!el) return;
   const n=it.influenceN; el.innerHTML="";
-  if(!n||!Object.values(n).some(v=>v)) return;
+  const hasLs=!!(it.lausunnotN&&it.lausunnotN.n);
+  if((!n||!Object.values(n).some(v=>v))&&!hasLs) return;
   el.innerHTML='<div class="infl"><h4>Vaikuttaminen</h4><div class="m">Ladataan…</div></div>';
-  loadInfluence().then(all=>{ if(drawer.dataset.id!==it.id) return; el.innerHTML=influenceHTML(all[it.id]); });
+  Promise.all([loadInfluence(),hasLs?loadLausunnot(it.id):Promise.resolve(null)]).then(([all,ls])=>{
+    if(drawer.dataset.id!==it.id) return;
+    const inf=all[it.id]; const infl=inf?{...inf}:null;
+    if(ls&&ls.eduskunta&&infl) delete infl.asiantuntijalausunnot; /* the summarised list replaces the plain link list */
+    el.innerHTML=lausunnotHTML(ls)+(infl?influenceHTML(infl):"");
+    wireLausunnot(el);
+  });
 }
 function openItem(id){
   const it=findItem(id); if(!it) return;
@@ -1902,7 +1967,7 @@ function render(){
   if(drawer.hidden&&history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]);
 }
 
-const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus",avoimuus:"avoimuusrekisteri",vaski:"eduskunta (valiokunnat)",caselaw:"tuomioistuimet",curia:"EU-tuomioistuin",toimiala:"toimialakerros",sopimuskaudet:"Hilma (sopimuskaudet)",suunnitelmat:"kilpailutussuunnitelmat",ted:"TED",paatokset:"hankintapäätökset",toimittajat:"Tutkihankintoja",kkv_valvonta:"KKV (valvonta)",eu_signals:"EU-ennakointi",hediff:"HE-diff",history:"tilastohistoria"};
+const SOURCE_NAMES={hankeikkuna:"Hankeikkuna",eduskunta:"eduskunta",finlex:"Finlex",eu:"EP/Cellar",ue:"U/E-kirjelmät",hys:"Have your say",hankinnat:"Hilma",kkv:"KKV",eu_mergers:"komissio (yrityskaupat)",regdel:"delegoitujen säädösten rekisteri",mao:"markkinaoikeus",avoimuus:"avoimuusrekisteri",vaski:"eduskunta (valiokunnat)",caselaw:"tuomioistuimet",curia:"EU-tuomioistuin",toimiala:"toimialakerros",sopimuskaudet:"Hilma (sopimuskaudet)",suunnitelmat:"kilpailutussuunnitelmat",ted:"TED",paatokset:"hankintapäätökset",toimittajat:"Tutkihankintoja",kkv_valvonta:"KKV (valvonta)",eu_signals:"EU-ennakointi",hediff:"HE-diff",history:"tilastohistoria",lausunnot:"annetut lausunnot (tiivistelmät)"};
 function renderStatus(){
   const g=META.generated?new Date(META.generated):null; const c=META.counts||{};
   const ageH=g?Math.round((Date.now()-g.getTime())/36e5):null;
@@ -1912,6 +1977,7 @@ function renderStatus(){
   const outage=bad.filter(([k,h])=>h.outage), broken=bad.filter(([k,h])=>!h.outage);
   const okTxt=h=>h.last_ok?new Date(h.last_ok).toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–";
   let html=`<span><i class="led ${ageH!==null&&ageH<36&&!bad.length?"ok":""}"></i>Aineisto <b>${g?g.toLocaleString("fi-FI",{dateStyle:"short",timeStyle:"short"}):"–"}</b>${ageH!==null&&ageH>=36?" · vanhentunut":""}</span>`;
+  if(window.__SNAPSHOT) html+=`<span class="${ageH!==null&&ageH>=36?"warn":""}" title="Tämä on yhden tiedoston tilannevedos, joka ei hae aineistoa verkosta. Sivusto päivittyy itsestään arkisin klo 7, 12 ja 16.">Tilannevedos · ajantasainen sivu: <a href="https://editmonster.github.io/Saadosseuranta/" target="_blank" rel="noopener">editmonster.github.io/Saadosseuranta</a></span>`;
   html+=`<span>Lähteet <b>${(META.sources||[]).length||5}</b></span><span>FI <b>${c.fi??"–"}</b></span><span>EU <b>${c.eu??"–"}</b></span><span>Valmiit <b>${c.done??"–"}</b></span><span>Lausuttavissa <b>${c.lausunnolla??"–"}</b></span><span>Kilpailutuksia <b>${c.hankinnat??"–"}</b></span><span>Yrityskauppoja vireillä <b>${c.yrityskaupat??"–"}</b></span>`;
   if(outage.length) html+=`<span class="warn" title="${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k}: lähteen oma palvelu on poissa käytöstä (${h.last_error||"huoltokatko"}). Viimeksi päivitetty ${okTxt(h)}. Haku yritetään uudelleen kahden tunnin välein.`).join("\n"))}">Huoltokatko lähteessä: <b>${esc(outage.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto, haku yritetään uudelleen</span>`;
   if(broken.length) html+=`<span class="warn" title="${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k}: ${h.streak} yritystä peräkkäin epäonnistunut, viimeksi onnistui ${okTxt(h)}`).join("\n"))}">Lähde ei päivity: <b>${esc(broken.map(([k,h])=>`${SOURCE_NAMES[k]||k} (päivitetty ${okTxt(h)})`).join(", "))}</b> · näytetään edellinen aineisto</span>`;

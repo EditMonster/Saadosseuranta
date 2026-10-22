@@ -31,7 +31,8 @@ NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "fi
          "toimiala": "Toimialakerros (Fiva, ESMA/EBA/EIOPA, EDPB, Vero, Traficom)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
          "ted": "TED", "paatokset": "Hankintapäätökset (Helsinki)", "toimittajat": "Tutkihankintoja", "kkv_valvonta": "KKV – kilpailu- ja hankintavalvonta",
          "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)",
-         "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)"}
+         "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)",
+         "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)"}
 
 
 def alarming(v: dict, now: dt.datetime) -> bool:

@@ -514,3 +514,37 @@ def test_he_diffs(items):
             for law in st["laws"]:
                 for s in law["sections"]:
                     assert s["id"] and all(op[0] in ("=", "+", "-", "…") for op in s["ops"]), (it["id"], s["id"])
+
+
+def test_annetut_lausunnot(items):
+    """Annetut lausunnot: one file per item with statements, stance counts on the item, verbatim gists bounded."""
+    files = {p.stem: p for p in (DATA / "lausunnot").glob("*.json")}
+    with_n = [i for i in items if i.get("lausunnotN")]
+    assert len(with_n) >= 50 and set(files) == {i["id"] for i in with_n}
+    stances = {"vastustaa", "osin", "varauksin", "muutoksia", "kannattaa", "kanta", "ei"}
+    read_total = 0
+    for it in with_n:
+        n = it["lausunnotN"]
+        assert set(n) == {"n", "luettu", "kannat"} and n["n"] >= 1 and 0 <= n["luettu"] <= n["n"] and set(n["kannat"]) <= stances
+        d = json.loads(files[it["id"]].read_text(encoding="utf-8"))
+        assert d["id"] == it["id"] and d["tiivistetty"] == n["luettu"] and d["tiivistetty"] + d["odottaa"] == n["n"]
+        total = 0
+        for key in ("kierros", "eduskunta"):
+            sec = d.get(key)
+            if not sec:
+                continue
+            total += sec["n"]
+            order = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "ei": 7}
+            for r in sec["rivit"]:
+                assert r.get("org") or r.get("person"), (it["id"], r)
+                assert not r.get("date") or DATE.match(r["date"])
+                assert r.get("stance") in stances | {None}
+                assert len(r.get("gist") or "") <= 290
+                if r.get("gist"):
+                    assert r.get("read") and r.get("stance"), (it["id"], r)
+                    read_total += 1
+            groups = [order[r.get("stance")] for r in sec["rivit"]]
+            assert groups == sorted(groups), (it["id"], key)
+        assert total == n["n"]
+    assert read_total >= 100, "yhtään lausuntoa ei ole tiivistetty"
+    assert files[with_n[0]["id"]].stat().st_size < 400_000

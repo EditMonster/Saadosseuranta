@@ -107,7 +107,8 @@ def influence_for(p: dict | None, rec: dict | None, hes: list[str], lobby: dict,
     (avoimuusrekisteri, keyed by the Hankeikkuna tunnus or an HE number)."""
     out: dict = {}
     if p and p.get("lausunnot"):
-        out["lausunnot"] = {**p["lausunnot"], "orgs": (p["lausunnot"].get("orgs") or [])[:40]}
+        # the per-statement rows ("docs") go to docs/data/lausunnot/<id>.json (build_lausunnot), not here
+        out["lausunnot"] = {**{k: v for k, v in p["lausunnot"].items() if k != "docs"}, "orgs": (p["lausunnot"].get("orgs") or [])[:40]}
     hearings = [h for h in ((rec or {}).get("hearings") or []) if h.get("heard") or h.get("written") or h.get("none")]
     if hearings:
         out["kuulemiset"] = hearings
@@ -280,7 +281,7 @@ def build_fi(topics_cfg, settings) -> list[dict]:
         items.append(make(f"fi-he-{hes[0].replace('/', '-')}" if hes else f"fi-hanke-{p['uuid'][:8]}", title, ref, ev,
                           has_he=bool(hes), vahvistettu=bool((rec or {}).get("vahvistettu")), rauennut=rauennut,
                           summary=summary, source=links.get("finlex") or p.get("url"), links=links, ministry=p.get("ministerio", ""),
-                          text=text, extra={"tunnus": p.get("tunnus"), "sk": sks, "heNumerot": hes, "teemat": p.get("teemat", []),
+                          text=text, extra={"tunnus": p.get("tunnus"), "hankeUuid": p["uuid"], "sk": sks, "heNumerot": hes, "teemat": p.get("teemat", []),
                                              "committees": (rec or {}).get("committees", []), "updated": p.get("muokattu"),
                                              "plan": plan, "influence": influence}))
     # proposals known to Eduskunta/Finlex but not linked to a Hankeikkuna project
@@ -855,6 +856,19 @@ def main():
                 it["diffN"] = diff_n[it["id"]]
     except Exception as e:  # noqa: BLE001
         log(f"warn: hediff: {e}")
+    # Annetut lausunnot: napakka ote ja kanta per lausunnonantaja – one file per item, counts on the item
+    try:
+        from build_lausunnot import build_lausunnot
+
+        hk_by_uuid = {p["uuid"]: p for p in (load_json(CACHE_DIR / "hankeikkuna.json", {"items": []}) or {}).get("items") or []}
+        ls_n = build_lausunnot(keep, hk_by_uuid, load_json(CACHE_DIR / "vaski.json", {}) or {})
+        for it in keep:
+            if it["id"] in ls_n:
+                it["lausunnotN"] = ls_n[it["id"]]
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: lausunnot: {e}")
+    for it in keep:
+        it.pop("hankeUuid", None)
     changes = update_changelog(keep, settings)
     # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
     # notices a week) and a different page segment. None written = previous file stays in place.
