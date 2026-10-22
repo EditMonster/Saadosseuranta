@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-22T04:43:22",
+ "fetched": "2026-10-22T10:11:38",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -45693,6 +45693,10 @@
     {
      "date": "2026-10-13",
      "type": "APR_R1_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "SIGN_byEP_CONSIL"
     }
    ],
    "events": [
@@ -51750,6 +51754,10 @@
     {
      "date": "2026-10-09",
      "type": "APR_R1_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "SIGN_byEP_CONSIL"
     }
    ],
    "events": [
@@ -55087,6 +55095,10 @@
     {
      "date": "2026-10-09",
      "type": "APR_R1_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "SIGN_byEP_CONSIL"
     }
    ],
    "events": [
@@ -60511,6 +60523,10 @@
     {
      "date": "2026-10-12",
      "type": "APR_R1_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "SIGN_byEP_CONSIL"
     }
    ],
    "events": [
@@ -62151,6 +62167,22 @@
    "ref": "2026/0308(COD)",
    "stage": "RDG1",
    "title_en": "Use of the European Union Critical Communication System by civil protection services and organisations",
+   "title_fi": ""
+  },
+  "2026-0324": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-10-22",
+   "final": false,
+   "pid": "2026-0324",
+   "ref": "2026/0324(COD)",
+   "stage": "RDG1",
+   "title_en": "",
    "title_fi": ""
   },
   "2026-0325": {

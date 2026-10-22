@@ -3092,6 +3092,15 @@ DESCRIPTION:Palauteaika (Have your say) · D118507/01 · https://ec.europa.eu/tr
 URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118507/1/consult
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-pak-32026R2384-voimaan-2026-10-23@saadosseuranta
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2384 – terrorismi 881/2002
+DESCRIPTION:Voimaan · (EU) 2026/2384 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-pak-32026R2333-voimaan-2026-10-15@saadosseuranta
 DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261015

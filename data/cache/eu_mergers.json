@@ -365,10 +365,50 @@
    "decisions": [],
    "initiated": "2025-11-24",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Volkswagen on konsernin VW Group emoyhtiö. VW Group toimii henkilöautojen, kevyiden hyötyajoneuvojen, kuorma-autojen, bussien, linja-autojen, linja-autojen ja dieselmoottorien alustojen sekä moottoripyörien, mukaan lukien kaikkien näiden varaosat ja tarvikkeet, kehittämisen, valmistuksen, markkinoinnin ja myynnin alalla. VW Group toimii myös ajoneuvojen jakelun alalla,",
+     "Europcar on Europcar-konsernin emoyhtiö, joka tarjoaa useita liikkumisratkaisuja. Niihin kuuluu monenlaisia liikkumiseen liittyviä palveluita, joita ovat erityisesti autojen vuokraus mutta myös pakettiautojen ja vähäisemmässä määrin kuorma-autojen vuokraus sekä autojen yhteiskäyttöpalvelut. Se toimii maailmanlaajuisesti mutta keskittyy Eurooppaan."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-02",
+    "observationsShifted": "Sunday",
+    "oj": "C:2026:5530:",
+    "parties": [
+     {
+      "country": "Saksa",
+      "fi": false,
+      "name": "Volkswagen Aktiengesellschaft",
+      "short": "Volkswagen"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Irlanti",
+        "name": "Gilpin Investments Designated Activity Company"
+       }
+      ],
+      "country": "Ranska",
+      "fi": false,
+      "name": "Europcar Mobility Group S.A.",
+      "short": "Europcar"
+     }
+    ],
+    "published": "2026-10-22",
+    "reference": "C/2026/5530",
+    "simplified": true,
+    "transaction": "Volkswagen hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Europcar. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5530/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-13",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-22",
+     "reference": "C:2026:5530:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_O_77.11",
@@ -7210,10 +7250,50 @@
    "decisions": [],
    "initiated": "2026-08-31",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Ardian on ranskalainen pääomasijoitusyhtiö, joka tytäryhtiöidensä kautta hallinnoi useita sijoitusrahastoja, joilla on suoria tai välillisiä omistusosuuksia monissa toiminnallisissa yhtiöissä eri puolilla maailmaa, ja antaa niille neuvontaa.",
+     "T&S on eurooppalainen konsultointikonserni, joka on erikoistunut tekniikkaan, tietotekniikkaan, digitaalisiin ratkaisuihin ja projektinhallintaan ja toimii pääasiassa Alankomaissa, Belgiassa, Ranskassa, Saksassa, Sveitsissä ja muissa Euroopan maissa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-02",
+    "observationsShifted": "Sunday",
+    "oj": "C:2026:5529:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Ranska",
+        "name": "Ardian Holding SAS"
+       }
+      ],
+      "country": "Ranska",
+      "fi": false,
+      "name": "Ardian Expansion Fund IV B S.L.P ja Ardian Expansion Fund IV EIF Parallel S.L.P",
+      "short": "Ardian"
+     },
+     {
+      "country": "Ranska",
+      "fi": false,
+      "name": "Technology & Strategy SAS",
+      "short": "T&S"
+     }
+    ],
+    "published": "2026-10-22",
+    "reference": "C/2026/5529",
+    "simplified": true,
+    "transaction": "Ardian hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä T&S. Keskittymä toteutetaan sopimuksella, erityisesti osakassopimukseen tehtävällä muutoksella.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5529/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-12",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-22",
+     "reference": "C:2026:5529:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_N_71.12",
@@ -7700,5 +7780,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-22T04:47:40Z"
+ "fetched": "2026-10-22T10:15:23Z"
 }
