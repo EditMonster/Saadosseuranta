@@ -1,6 +1,24 @@
 {
- "fetched": "2026-10-21T16:18:16",
+ "fetched": "2026-10-22T04:45:23",
  "items": [
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 14351,
+   "periods": [
+    {
+     "end": "2026-11-18",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-21"
+    }
+   ],
+   "reference": "Ares(2024)5199286",
+   "status": "ACTIVE",
+   "title_en": "Rules on the certification of eFTI platforms ",
+   "title_fi": "Sähköisten kuljetustietojen (eFTI) alustat – sertifiointia koskevat säännöt",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14351_en"
+  },
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
@@ -133,7 +151,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-16",
+     "end": "2026-12-17",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -151,7 +169,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-16",
+     "end": "2026-12-17",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -331,7 +349,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-16",
+     "end": "2026-12-17",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -560,42 +578,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14569_en"
   },
   {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 17215,
-   "periods": [
-    {
-     "end": "2026-10-21",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-23"
-    }
-   ],
-   "reference": "Ares(2026)2385883",
-   "status": "ACTIVE",
-   "title_en": "Common format for initial and updated National Air Pollution Control Programmes",
-   "title_fi": "Ensimmäisten ja päivitettyjen kansallisten ilmansuojeluohjelmien yhteinen muoto",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19354,
-   "periods": [
-    {
-     "end": "2026-10-21",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-23"
-    }
-   ],
-   "reference": "Ares(2026)8985979",
-   "status": "ACTIVE",
-   "title_en": "Accreditation of aviation qualified entities for certification and oversight",
-   "title_fi": "Ilmailu – pätevien sertifiointi- ja valvontayksiköiden akkreditointi (säännöt ja menettelyt)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19354_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19293,
@@ -625,7 +607,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-16",
+     "end": "2026-12-17",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -888,6 +870,42 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "DEC_IMPL",
+   "actTypeLabel": "Täytäntöönpanopäätös",
+   "id": 17215,
+   "periods": [
+    {
+     "end": "2026-10-21",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-23"
+    }
+   ],
+   "reference": "Ares(2026)2385883",
+   "status": "ACTIVE",
+   "title_en": "Common format for initial and updated National Air Pollution Control Programmes",
+   "title_fi": "Ensimmäisten ja päivitettyjen kansallisten ilmansuojeluohjelmien yhteinen muoto",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19354,
+   "periods": [
+    {
+     "end": "2026-10-21",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-23"
+    }
+   ],
+   "reference": "Ares(2026)8985979",
+   "status": "ACTIVE",
+   "title_en": "Accreditation of aviation qualified entities for certification and oversight",
+   "title_fi": "Ilmailu – pätevien sertifiointi- ja valvontayksiköiden akkreditointi (säännöt ja menettelyt)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19354_en"
   },
   {
    "actType": "REG_DEL",

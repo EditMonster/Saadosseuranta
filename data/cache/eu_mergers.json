@@ -2884,132 +2884,65 @@
    "timeline": [],
    "title": "ITOCHU / TC / ACG"
   },
-  "M.12486": {
-   "caseNumber": "M.12486",
-   "deadline": "2026-08-05",
+  "M.12490": {
+   "caseNumber": "M.12490",
+   "deadline": "2026-11-04",
    "decisions": [
     {
-     "date": "2026-07-23",
+     "date": "2026-07-15",
+     "type": "DecisionType201316"
+    },
+    {
+     "date": "2026-10-21",
      "type": "DecisionType20310"
     }
    ],
    "initiated": "2026-05-26",
-   "lastDecision": "2026-07-23",
+   "lastDecision": "2026-10-21",
    "notice": {
     "activities": [
-     "SAICA kehittää ja tuottaa kierrätyspaperia aaltopahvia varten, ja sen päätoimialat ovat jätehuolto, kierrätyspaperin valmistus ja aaltopahvipakkausratkaisujen tuotanto pääasiassa Euroopassa.",
-     "THIMMin toiminta liittyy erilaisiin pakkauksiin, ja pääasiassa se valmistaa aaltopahvisia pakkauksia ja esillepanoratkaisuja, painaa tuotteita eri tekniikoilla ja tarjoaa niihin liittyviä palveluja ja neuvontaa pääasiassa Euroopassa."
+     "SCB toimii pääasiassa maantiekuljetuskaluston sekä siihen liittyvien tuotteiden ja palvelujen tuotannon ja myynnin alalla.",
+     "BFZT valmistaa ja myy pääasiassa kevyttä maantiekuljetuskalustoa."
     ],
     "fi": false,
     "observationDays": 10,
-    "observationsEnd": "2026-07-19",
-    "oj": "C:2026:3714:",
+    "observationsEnd": "2026-10-19",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5188:",
     "parties": [
      {
-      "controllers": [
-       {
-        "country": "Espanja",
-        "name": "Aragocias S.A."
-       }
-      ],
-      "country": "Espanja",
-      "fi": false,
-      "name": "SA Industrias Celulosa Aragonesa",
-      "short": "SAICA"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Saksa",
-        "name": "THIMM Holding GmbH + Co. KG"
-       }
-      ],
       "country": "Saksa",
       "fi": false,
-      "name": "THIMM Group GmbH + Co. KG",
-      "short": "THIMM"
+      "name": "Schmitz CargoBull AG",
+      "short": "SCB"
+     },
+     {
+      "country": "Itävalta",
+      "fi": false,
+      "name": "Berger Fahrzeugtechnik Ges.m.b.H.",
+      "short": "BFZT"
      }
     ],
-    "published": "2026-07-09",
-    "reference": "C/2026/3714",
+    "published": "2026-10-07",
+    "reference": "C/2026/5188",
     "simplified": true,
-    "transaction": "SAICA hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä THIMM. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3714/oj/fin"
+    "transaction": "SCB hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä BFZT. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5188/oj/fin"
    },
    "noticeTries": 1,
-   "notified": "2026-06-30",
+   "notified": "2026-09-29",
    "oj": [
     {
-     "published": "2026-07-09",
-     "reference": "C:2026:3714:"
+     "published": "2026-10-07",
+     "reference": "C:2026:5188:"
     }
    ],
    "phase": null,
    "renotified": null,
-   "sector": "NaceV2Sector_C_17.21",
+   "sector": "NaceV2Sector_C_29.20",
    "simplified": "MEsimplified",
    "timeline": [],
-   "title": "SAICA / THIMM"
-  },
-  "M.12491": {
-   "caseNumber": "M.12491",
-   "deadline": "2026-08-05",
-   "decisions": [
-    {
-     "date": "2026-07-23",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-26",
-   "lastDecision": "2026-07-23",
-   "notice": {
-    "activities": [
-     "Derichebourg Environnement toimii Euroopassa ja Pohjois-Amerikassa jätehuoltoalalla, erityisesti metallien kierrätyksessä, ja tarjoaa julkisen sektorin palveluja, kuten kaupunkien puhtaanapitopalveluja ja kotitalousjätteen keräystä paikallisviranomaisille.",
-     "Scholz Group toimii Keski- ja Itä-Euroopassa jätteenkäsittelyn ja erityisesti metallien kierrätyksen alalla."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-19",
-    "oj": "C:2026:3716:",
-    "parties": [
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "Derichebourg Environnement SAS",
-      "short": "Derichebourg Environnement"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Hongkong",
-        "name": "Chiho Renewable International Holding Ltd"
-       }
-      ],
-      "country": "Saksa",
-      "fi": false,
-      "name": "Scholz Holding GmbH (Saksa) ja Scholz Recycling GmbH (Saksa), jotka yhdessä tytäryhtiöidensä kanssa muodostavat Scholz-k"
-     }
-    ],
-    "published": "2026-07-09",
-    "reference": "C/2026/3716",
-    "simplified": true,
-    "transaction": "Derichebourg Environnement hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan Scholz-konsernissa. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3716/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-06-30",
-   "oj": [
-    {
-     "published": "2026-07-09",
-     "reference": "C:2026:3716:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_E_38.21",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "DERICHEBOURG ENVIRONNEMENT / SCHOLZ GROUP"
+   "title": "SCHMITZ CARGOBULL / BERGER FAHRZEUGTECHNIK"
   },
   "M.12496": {
    "caseNumber": "M.12496",
@@ -6056,6 +5989,23 @@
    "timeline": [],
    "title": "BCI / APG / TIG / HANCOCK ASSETS"
   },
+  "M.12579": {
+   "caseNumber": "M.12579",
+   "deadline": "2026-11-26",
+   "decisions": [],
+   "initiated": "2026-07-27",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-21",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_29.3",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "SVP / MARELLI  CORPORATION"
+  },
   "M.12581": {
    "caseNumber": "M.12581",
    "deadline": "2026-11-24",
@@ -7750,5 +7700,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-21T16:19:42Z"
+ "fetched": "2026-10-22T04:47:40Z"
 }

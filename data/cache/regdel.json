@@ -30,8 +30,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -53,7 +53,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 1813,
    "objection": null,
    "policyArea": "MARE",
@@ -61,7 +61,7 @@
    "publication": null,
    "shortTitle": "Marine protected areas in the Baltic Sea - conservation measures",
    "summary": "Joint Recommendations submitted by Sweden together with other Member States, for the protection of harbour porpoise in the Kattegat.",
-   "updateDate": 1789596062199
+   "updateDate": 1792620000254
   },
   "2376": {
    "adoption": "2026-07-20",
@@ -93,8 +93,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -116,7 +116,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2376,
    "objection": null,
    "policyArea": "SANTE",
@@ -124,7 +124,7 @@
    "publication": null,
    "shortTitle": "Animal health - Enforcement actions in case of illegal treatment and non-compliance",
    "summary": null,
-   "updateDate": 1790893243658
+   "updateDate": 1792620000339
   },
   "2567": {
    "adoption": "2026-06-12",
@@ -308,7 +308,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -477,9 +477,15 @@
      "institution": "PARLIAMENT",
      "months": 2.0,
      "type": "DA_EXTENSION"
+    },
+    {
+     "date": "2026-10-20",
+     "institution": "PARLIAMENT",
+     "months": null,
+     "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -553,7 +559,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -593,8 +599,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -634,7 +640,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -642,7 +648,7 @@
    "publication": null,
    "shortTitle": "Protective measures against pests of plants – temporary derogations from import prohibitions and requirements",
    "summary": "The draft Delegated Regulation describes the procedure to be followed when a third country wishes to submit a request for derogation from import prohibition or special import requirements for certain plants plant products or other objects, in terms of the content and the submission of the dossier, as well as the procedure to be followed for the assessment of the respective technical dossier submitted by the third country.",
-   "updateDate": 1787561804757
+   "updateDate": 1792620002028
   },
   "2785": {
    "adoption": "2026-05-21",
@@ -764,7 +770,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -891,7 +897,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -994,7 +1000,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -1003,68 +1009,6 @@
    "shortTitle": "European Disability Card and European Parking Card - digital features for the physical versions",
    "summary": "Directive (EU) 2024/2841 establishes the European Disability Card and the European Parking Card to promote freedom of movement and facilitate short stays by persons with disabilities in other Member States than that of which they are a resident. The cards facilitate the access of persons with disabilities to services,  including parking,  in the visited Member States. This delegated act sets digital features for the physical cards to prevent fraud and ensure security and interoperability.",
    "updateDate": 1791324142175
-  },
-  "2870": {
-   "adoption": "2026-05-12",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32016R0429",
-    "code": "reg/2016/429",
-    "deadlineRaw": "2",
-    "procedure": "2013/0136/COD",
-    "title": "Regulation (EU) 2016/429 of the European Parliament and of the Council of 9 March 2016 on transmissible animal diseases and amending and repealing certain acts in the area of animal health (‘Animal Health Law’) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)2983",
-   "celexNumber": "32026R1052",
-   "cellar": {
-    "celex": "32026R1052",
-    "deadlines": [],
-    "eif": [
-     "2026-08-12"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-23",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/1052, annettu 12 päivänä toukokuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2016/429 täydentämisestä tiettyjen eläinten, sukusolujen ja alkioiden ja eläinperäisten tuotteiden lähetysten unioniin saapumista ja saapumisen jälkeisiä siirtoja ja käsittelyä koskevien sääntöjen osalta annetun delegoidun asetuksen (EU) 2020/692 muuttamisesta ja oikaisemisesta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/1052 of 12 May 2026 amending and correcting Delegated Regulation (EU) 2020/692 supplementing Regulation (EU) 2016/429 of the European Parliament and of the Council as regards rules for entry into the Union, and the movement and handling after entry of consignments of certain animals, germinal products and products of animal origin",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-05-12",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-23",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2870,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-07-23",
-   "shortTitle": "Animal health – consignments of certain animals, germinal products and products of animal origin – rules",
-   "summary": null,
-   "updateDate": 1785933503092
   },
   "2882": {
    "adoption": "2026-03-27",
@@ -1381,7 +1325,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1432,7 +1376,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1625,7 +1569,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1762,7 +1706,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1802,8 +1746,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -1843,7 +1787,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2926,
    "objection": null,
    "policyArea": "AGRI",
@@ -1851,7 +1795,7 @@
    "publication": null,
    "shortTitle": "Olive oil - Revision of marketing standards",
    "summary": "The objective of this revision of EU olive oil marketing standards is to bring them in line with the recently adopted changes to the International Olive Council Trade Standard for olive oils and olive pomace oils. It concerns the limit for total sterol content in monovarietal extra virgin olive oil from the Koroneiki or Nocellara del Belice variety and the labelling of such oils.",
-   "updateDate": 1792188211985
+   "updateDate": 1792620000542
   },
   "2931": {
    "adoption": "2026-07-14",
@@ -1906,7 +1850,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2931,
    "objection": null,
    "policyArea": "ENV",
@@ -1995,73 +1939,6 @@
    "summary": "This draft delegated act is required to set out the third-party tasks to be performed by notified bodies in relation to the assessment and verification of the performance of construction products and those related to the fulfilment of requirements.",
    "updateDate": 1787955606994
   },
-  "2940": {
-   "adoption": "2026-04-16",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32013R0575",
-    "code": "reg/2013/575",
-    "deadlineRaw": "1/3",
-    "procedure": "2011/0202/COD",
-    "title": "Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms and amending Regulation (EU) No 648/2012 Text with EEA relevance"
-   },
-   "cCode": "C(2026)2429",
-   "celexNumber": "32026R0849",
-   "cellar": {
-    "celex": "32026R0849",
-    "deadlines": [],
-    "eif": [
-     "2026-08-12"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-23",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/849, annettu 16 päivänä huhtikuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 575/2013 täydentämisestä vastaavan oikeudellisen mekanismin, jolla varmistetaan, että rakenteilla oleva asuinkiinteistö saadaan valmiiksi kohtuullisessa ajassa, täsmentävillä teknisillä sääntelystandardeilla"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/849 of 16 April 2026 supplementing Regulation (EU) No 575/2013 of the European Parliament and of the Council with regard to regulatory technical standards specifying what constitutes an equivalent legal mechanism that ensures that a residential property under construction is completed within a reasonable time frame",
-   "deadlines": [
-    {
-     "institution": "COUNCIL",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-04-16",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-23",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2940,
-   "objection": null,
-   "policyArea": "FISMA",
-   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
-   "publication": "2026-07-23",
-   "shortTitle": "RTS on equivalent legal mechanism",
-   "summary": null,
-   "updateDate": 1784845259926
-  },
   "2945": {
    "adoption": "2025-12-11",
    "adoptionDate": "Q4 2024",
@@ -2105,7 +1982,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2279,8 +2156,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -2290,7 +2167,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2957,
    "objection": null,
    "policyArea": "SANTE",
@@ -2298,7 +2175,7 @@
    "publication": null,
    "shortTitle": "Specific hygiene rules for live bivalve molluscs (amendment)",
    "summary": null,
-   "updateDate": 1787350841198
+   "updateDate": 1792620000829
   },
   "2962": {
    "adoption": "2026-09-15",
@@ -2353,7 +2230,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2393,8 +2270,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -2416,7 +2293,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2963,
    "objection": null,
    "policyArea": "MARE",
@@ -2424,7 +2301,7 @@
    "publication": null,
    "shortTitle": "Common Fisheries Policy – landing obligation – Baltic Sea (salmon)",
    "summary": "The Common Fisheries Policy establishes in principle a landing obligation to avoid wasteful discards. The Commission may however adopt exemptions if certain conditions are fulfilled, e.g. on grounds of high survivability. This delegated act reconducts a 3-year exemption from the landing obligation on grounds of high survivability for salmon caught in the Baltic Sea with certain gears. Such 3-year  exemptions have been in place since 2015.",
-   "updateDate": 1789596061719
+   "updateDate": 1792620001013
   },
   "2968": {
    "adoption": "2026-04-24",
@@ -2634,69 +2511,6 @@
    "shortTitle": "Market risk - own funds requirements",
    "summary": "In light of delays and uncertainties in the implementation of the Basel III standards by major jurisdictions, the European Commission considers it necessary, to preserve a level playing field with third countries in terms of own funds requirements, to explore making use of the empowerment of the co-legislators in Regulation (EU) 2024/1623 in relation to the market risk framework.",
    "updateDate": 1789165250872
-  },
-  "2971": {
-   "adoption": "2026-04-14",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32014L0065",
-    "code": "dir/2014/65",
-    "deadlineRaw": "1/3",
-    "procedure": "2011/0298/COD",
-    "title": "Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014 on markets in financial instruments and amending Directive 2002/92/EC and Directive 2011/61/EU Text with EEA relevance"
-   },
-   "cCode": "C(2026)2300",
-   "celexNumber": "32026R0825",
-   "cellar": {
-    "celex": "32026R0825",
-    "deadlines": [],
-    "eif": [
-     "2026-08-12",
-     "2028-02-12"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-23",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/825, annettu 14 päivänä huhtikuuta 2026, Euroopan parlamentin ja neuvoston direktiivin 2014/65/EU täydentämisestä sijoituspalveluyritysten toimeksiantojen toteuttamisperiaatteiden laatimisessa ja niiden toimivuuden arvioinnissa huomioon otettavia perusteita koskevilla teknisillä sääntelystandardeilla sekä komission delegoitujen asetusten (EU) 2017/575 ja (EU) 2017/576 kumoamisesta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/825 of 14 April 2026 supplementing Directive 2014/65/EU of the European Parliament and of the Council with regard to regulatory technical standards specifying the criteria to be taken into account in establishing and assessing the effectiveness of order execution policies of investment firms and repealing Commission Delegated Regulations (EU) 2017/575 and (EU) 2017/576",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-04-14",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-23",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2971,
-   "objection": null,
-   "policyArea": "FISMA",
-   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
-   "publication": "2026-07-23",
-   "shortTitle": "MiFID II review - RTS on the establishment and assessment of the order execution policies",
-   "summary": null,
-   "updateDate": 1784845263847
   },
   "2973": {
    "adoption": "2026-06-09",
@@ -3090,7 +2904,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -3136,7 +2950,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -3182,7 +2996,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -3303,7 +3117,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -3659,7 +3473,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3821,7 +3635,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3867,7 +3681,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -4107,7 +3921,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -4158,7 +3972,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -4235,57 +4049,6 @@
    "summary": "By the delegated act the Commission establishes a list of cross-border renewable energy projects. These projects are based on a cooperation mechanism between EU countries and provide more benefits compared to a project developed by one of the countries alone. The projects which are included in the list have a special status making them eligible to apply for grants for studies or works under the Connecting Europe Facility.",
    "updateDate": 1789165252099
   },
-  "3044": {
-   "adoption": "2026-07-14",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32012R0648",
-    "code": "reg/2012/648",
-    "deadlineRaw": "1/3",
-    "procedure": "2010/0250/COD",
-    "title": "Regulation (EU) No 648/2012 of the European Parliament and of the Council of 4 July 2012 on OTC derivatives, central counterparties and trade repositories Text with EEA relevance"
-   },
-   "cCode": "C(2026)4861",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) No 149/2013 as regards the clearing thresholds and the mechanisms triggering their review",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-07-14",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-21",
-   "id": 3044,
-   "objection": null,
-   "policyArea": "FISMA",
-   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
-   "publication": null,
-   "shortTitle": "Regulatory technical standard - clearing thresholds and the mechanisms triggering their review",
-   "summary": null,
-   "updateDate": 1792015366335
-  },
   "3048": {
    "adoption": "2026-07-15",
    "adoptionDate": "Q2 2026",
@@ -4316,8 +4079,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -4327,7 +4090,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3048,
    "objection": null,
    "policyArea": "TRADE",
@@ -4335,7 +4098,7 @@
    "publication": null,
    "shortTitle": "Bilateral safeguard clause amendment - MERCOSUR",
    "summary": null,
-   "updateDate": 1787568379003
+   "updateDate": 1792620001298
   },
   "3049": {
    "adoption": "2026-07-13",
@@ -4378,7 +4141,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3049,
    "objection": null,
    "policyArea": "FISMA",
@@ -4560,8 +4323,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "DECISION",
    "events": [
     {
@@ -4571,7 +4334,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -4579,7 +4342,7 @@
    "publication": null,
    "shortTitle": "Evidence of formal qualifications and titles of training courses (amendment)",
    "summary": "The Delegated Decision amends Annex V to Directive 2005/36/EC listing national evidence of qualifications benefitting from cross-border automatic recognition for access to certain regulated professions. As per Article 21a(4) of the Directive, delegated acts update titles adopted by the Member States for evidence of formal qualifications and, where appropriate, the body issuing evidence of formal qualifications, the certificate which accompanies it and the corresponding professional title.",
-   "updateDate": 1787650144333
+   "updateDate": 1792620000619
   },
   "3060": {
    "adoption": "2026-07-20",
@@ -4611,8 +4374,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -4634,7 +4397,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3060,
    "objection": null,
    "policyArea": "MARE",
@@ -4642,7 +4405,7 @@
    "publication": null,
    "shortTitle": "Northern Midsea Bank - repealing measures",
    "summary": null,
-   "updateDate": 1789596062190
+   "updateDate": 1792620000768
   },
   "3062": {
    "adoption": "2026-09-17",
@@ -4721,7 +4484,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -4784,7 +4547,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -4793,6 +4556,52 @@
    "shortTitle": "Official controls on residues of veterinary medicinal products - criteria for the selection of samples",
    "summary": null,
    "updateDate": 1789990647787
+  },
+  "3075": {
+   "adoption": "2026-10-21",
+   "adoptionDate": "Q3 2026",
+   "basicAct": {
+    "celex": "32024R0568",
+    "code": "reg/2024/568",
+    "deadlineRaw": "2",
+    "procedure": null,
+    "title": "Regulation (EU) 2024/568 of the European Parliament and of the Council of 7 February 2024 on fees and charges payable to the European Medicines Agency, amending Regulations (EU) 2017/745 and (EU) 2022/123 of the European Parliament and of the Council and repealing Regulation (EU) No 658/2014 of the European Parliament and of the Council and Council Regulation (EC) No 297/95"
+   },
+   "cCode": "C(2026)7285",
+   "celexNumber": null,
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Annexes I to IV to Regulation (EU) 2024/568 of the European Parliament and of the Council as regards the adjustment of the fees and charges payable to the European Medicines Agency to the inflation rate with effect from 1 January 2027",
+   "deadlines": [
+    {
+     "institution": "COMMISSION",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
+    {
+     "institution": "PARLIAMENT",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    }
+   ],
+   "delegatedActPhase": "SCRUTINY",
+   "delegatedActStatus": "ADOPTED",
+   "delegatedActType": "REGULATION",
+   "events": [
+    {
+     "date": "2026-10-21",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_ADOPTION"
+    }
+   ],
+   "eventsFetched": "2026-10-22",
+   "id": 3075,
+   "objection": null,
+   "policyArea": "SANTE",
+   "policyAreaName": "Health and Food Safety",
+   "publication": null,
+   "shortTitle": "Adjustment of the fees and charges payable to the European Medicines Agency (EMA)",
+   "summary": null,
+   "updateDate": 1792623041761
   },
   "3099": {
    "adoption": "2026-07-28",
@@ -4824,8 +4633,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -4835,7 +4644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3099,
    "objection": null,
    "policyArea": "GROW",
@@ -4843,7 +4652,7 @@
    "publication": null,
    "shortTitle": "EU designs - rules specifying certain proceedings",
    "summary": null,
-   "updateDate": 1791930019215
+   "updateDate": 1792620001174
   },
   "3100": {
    "adoption": "2026-04-20",
@@ -5022,7 +4831,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -5080,7 +4889,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -5143,7 +4952,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -5201,7 +5010,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -5210,6 +5019,52 @@
    "shortTitle": "Incidental catches - Mitigation measures (Common dolphin and other small cetaceans)",
    "summary": ".",
    "updateDate": 1789596061928
+  },
+  "3117": {
+   "adoption": "2026-10-21",
+   "adoptionDate": "09/2026",
+   "basicAct": {
+    "celex": "32017L2397",
+    "code": "dir/2017/2397",
+    "deadlineRaw": "2",
+    "procedure": "2016/0050/COD",
+    "title": "Directive (EU) 2017/2397 of the European Parliament and of the Council of 12 December 2017 on the recognition of professional qualifications in inland navigation and repealing Council Directives 91/672/EEC and 96/50/EC (Text with EEA relevance)"
+   },
+   "cCode": "C(2026)7240",
+   "celexNumber": null,
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Directive (EU) 2017/2397 of the European Parliament and of the Council as regards applicable requirements for certain professional qualifications in inland navigation",
+   "deadlines": [
+    {
+     "institution": "COMMISSION",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
+    {
+     "institution": "PARLIAMENT",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    }
+   ],
+   "delegatedActPhase": "SCRUTINY",
+   "delegatedActStatus": "ADOPTED",
+   "delegatedActType": "REGULATION",
+   "events": [
+    {
+     "date": "2026-10-21",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_ADOPTION"
+    }
+   ],
+   "eventsFetched": "2026-10-22",
+   "id": 3117,
+   "objection": null,
+   "policyArea": "MOVE",
+   "policyAreaName": "Mobility and Transport",
+   "publication": null,
+   "shortTitle": "Standards in the field of Inland Navigation - professional qualifications (amendment)",
+   "summary": null,
+   "updateDate": 1792621581112
   },
   "3118": {
    "adoption": "2026-08-12",
@@ -5241,8 +5096,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "DECISION",
    "events": [
     {
@@ -5252,7 +5107,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3118,
    "objection": null,
    "policyArea": "ENV",
@@ -5260,7 +5115,7 @@
    "publication": null,
    "shortTitle": "Crystal glass packaging – temporary derogation for the lead concentration limits",
    "summary": "N/A",
-   "updateDate": 1790893244495
+   "updateDate": 1792620000874
   },
   "3122": {
    "adoption": "2026-08-06",
@@ -5292,8 +5147,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -5315,7 +5170,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3122,
    "objection": null,
    "policyArea": "MARE",
@@ -5323,7 +5178,7 @@
    "publication": null,
    "shortTitle": "Conservation of fisheries resources and protection of marine ecosystems - red seabream (North Western Waters and South Western Waters)",
    "summary": null,
-   "updateDate": 1789596061558
+   "updateDate": 1792620000921
   },
   "3128": {
    "adoption": "2026-06-26",
@@ -5504,7 +5359,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -5555,7 +5410,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -5668,8 +5523,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -5679,7 +5534,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3143,
    "objection": null,
    "policyArea": "TAXUD",
@@ -5687,7 +5542,7 @@
    "publication": null,
    "shortTitle": "Union Customs Code - amount of the Union handling fee",
    "summary": "The increasing volume of goods sold in distance sales and released for free circulation in the Union has led to a significant rise in the number of data to be processed and subject to risk analysis and controls by customs authorities. This generates substantial additional administrative and operational costs. To ensure the sustainability of customs operations and recover part of those costs, it is appropriate to introduce a Union handling fee on goods sold in distance sales.",
-   "updateDate": 1790089987659
+   "updateDate": 1792620001466
   },
   "3149": {
    "adoption": "2026-09-08",
@@ -5730,7 +5585,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -5776,7 +5631,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-21",
+   "eventsFetched": "2026-10-22",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -5787,7 +5642,7 @@
    "updateDate": 1790985250229
   }
  },
- "fetched": "2026-10-21T16:20:06Z",
+ "fetched": "2026-10-22T04:48:41Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -7267,6 +7122,7 @@
   "2868": "PUBLISHED",
   "2869": "PUBLISHED",
   "287": "PUBLISHED",
+  "2870": "PUBLISHED",
   "2873": "PUBLISHED_URGENCY_PROCEDURE",
   "2876": "PUBLISHED",
   "2878": "PUBLISHED",
@@ -7302,6 +7158,7 @@
   "2936": "PUBLISHED",
   "2938": "PUBLISHED",
   "294": "PUBLISHED",
+  "2940": "PUBLISHED",
   "2942": "PUBLISHED",
   "2943": "PUBLISHED",
   "2944": "PUBLISHED",
@@ -7316,6 +7173,7 @@
   "2961": "PUBLISHED",
   "2967": "PUBLISHED",
   "297": "OBJECTED",
+  "2971": "PUBLISHED",
   "298": "PUBLISHED",
   "2980": "PUBLISHED",
   "2981": "PUBLISHED",
@@ -7331,6 +7189,7 @@
   "303": "PUBLISHED",
   "3030": "PUBLISHED_URGENCY_PROCEDURE",
   "304": "PUBLISHED",
+  "3044": "PUBLISHED",
   "305": "PUBLISHED",
   "3054": "PUBLISHED",
   "3058": "PUBLISHED",

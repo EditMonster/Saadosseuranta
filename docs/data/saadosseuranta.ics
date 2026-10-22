@@ -68,15 +68,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 229/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/229
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-9cc761f9-lausunto-2026-10-14@saadosseuranta
-DTSTAMP:20261014T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Australian kanssa solmitun työlomasopimuksen voimaansaattamisesta
-DESCRIPTION:Lausuntokierros · TEM038:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM038:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM038:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-200-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1092,15 +1083,6 @@ DTEND;VALUE=DATE:20261023
 SUMMARY:[FI] Lausuntoaika päättyy: Ahvenanmaan itsehallintolain selvitys- ja muutoshanke –työryhmä (HE laiksi Ahvenanmaan itsehallintolain muuttamisesta)
 DESCRIPTION:Lausuntopyyntö: Hallituksen esitys eduskunnalle laeiksi Ahvenanmaan itsehallintolain muuttamisesta ja väliaikaisesta muuttamisesta ja kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta kansallisen turvallisuuden varmistamiseksi annetun lain 2 §:n muuttamisesta · OM024:00/2023 · https://valtioneuvosto.fi/hanke?tunnus=OM024:00/2023
 URL:https://valtioneuvosto.fi/hanke?tunnus=OM024:00/2023
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-hanke-8faac772-lausunto-2026-10-14@saadosseuranta
-DTSTAMP:20261014T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Etelä-Korean kanssa solmitun työlomasopimuksen voimaansaattamisesta
-DESCRIPTION:Lausuntokierros · TEM071:00/2019 · https://valtioneuvosto.fi/hanke?tunnus=TEM071:00/2019
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM071:00/2019
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
@@ -2345,10 +2327,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-16@saadosseuranta
-DTSTAMP:20261216T000000Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
+UID:eu-hys-19517-lausunto-2026-12-17@saadosseuranta
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2426,10 +2408,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-16@saadosseuranta
-DTSTAMP:20261216T000000Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
+UID:eu-hys-15492-lausunto-2026-12-17@saadosseuranta
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2642,15 +2624,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5797 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-2931-maaraaika-2026-10-14@saadosseuranta
-DTSTAMP:20261014T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... on supplementing Regulation (EU) 2023/1542 of the European Parliament and of the Council as regards derogations for t
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5031 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2931
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2931
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-2962-maaraaika-2026-11-16@saadosseuranta
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
@@ -2804,15 +2777,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 14.11.202
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3038
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-3044-maaraaika-2026-10-14@saadosseuranta
-DTSTAMP:20261014T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) No 149/2013 as regards the clearin
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4861 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3044
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3044
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-3052-soveltaminen-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -2838,6 +2802,15 @@ DTEND;VALUE=DATE:20261119
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2022/1644 as regards certain criteria for the selection of samples
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6511 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3074
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3074
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3075-maaraaika-2026-12-21@saadosseuranta
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Annexes I to IV to Regulation (EU) 2024/568 of the European Parliament and of the Council as regards the adj
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7285 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3075
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3075
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3107-maaraaika-2026-11-09@saadosseuranta
@@ -2874,6 +2847,15 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards measures to reduce incide
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6205 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3117-maaraaika-2026-12-21@saadosseuranta
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Directive (EU) 2017/2397 of the European Parliament and of the Council as regards applicable requirements fo
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7240 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
@@ -3162,14 +3144,5 @@ DTEND;VALUE=DATE:20261016
 SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanopäätös (YUTP) (YUTP) 2026/2312 – Valko-Venäjä 2012/642
 DESCRIPTION:Voimaan · (YUTP) 2026/2312 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2312
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2312
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2286-voimaan-2026-10-14@saadosseuranta
-DTSTAMP:20261014T000000Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2286 – kemialliset aseet 2018/1544
-DESCRIPTION:Voimaan · (YUTP) 2026/2286 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2286
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2286
 END:VEVENT
 END:VCALENDAR
