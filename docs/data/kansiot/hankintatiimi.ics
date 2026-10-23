@@ -1813,13 +1813,4 @@ SUMMARY:[Hankinta] Määräaika: Tarjouspyyntö Matka ja kululaskusovellus
 DESCRIPTION:Tarjoukset viimeistään · 2026-059434 · https://www.hankintailmoitukset.fi/fi/public/procedure/38672/enotice/59434
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38672/enotice/59434
 END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-706206-2026-maaraaika-2026-10-26-hankintatiimi@saadosseuranta
-DTSTAMP:20261026T000000Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
-SUMMARY:[Hankinta] Määräaika: Upphandling av klientdatorer och tillbehör
-DESCRIPTION:Tarjoukset viimeistään · Post- och Telestyrelsen · https://ted.europa.eu/fi/notice/-/detail/706206-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/706206-2026
-END:VEVENT
 END:VCALENDAR

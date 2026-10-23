@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-23T04:51:54",
+ "fetched": "2026-10-23T10:04:24",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -59249,6 +59249,10 @@
     {
      "date": "2026-09-29",
      "type": "NGT_INST_byEP_CONSIL_COM"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "NGT_INST_byEP_CONSIL_COM"
     }
    ],
    "events": [
@@ -59333,6 +59337,10 @@
     },
     {
      "date": "2026-09-29",
+     "type": "NGT_INST_byEP_CONSIL_COM"
+    },
+    {
+     "date": "2026-10-21",
      "type": "NGT_INST_byEP_CONSIL_COM"
     }
    ],

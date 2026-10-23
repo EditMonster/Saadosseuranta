@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-23T04:58:44Z",
+ "fetched": "2026-10-23T10:09:12Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -610,6 +610,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "0e1738f7e2d8",
+   "lastSeen": "2026-10-23"
+  },
+  "0e8c22febf60": {
+   "buyer": "Etelä-Pohjanmaan hyvinvointialue",
+   "decisionDate": null,
+   "decisionText": "Etelä-Pohjanmaan hyvinvointialueen valitus hankintamenettelystä, Tarjouspyyntö: HYVAEP/1888/2026 / Solunsalpaaja-annosten käyttökuntoon saattamisen turvajärjestelmä (CSTD) 2027-2032",
+   "filed": "2026-10-22",
+   "firstSeen": "2026-10-23",
+   "hilmaNo": null,
+   "key": "0e8c22febf60",
    "lastSeen": "2026-10-23"
   },
   "0eda6f92fea9": {
@@ -1000,6 +1010,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "4bf1156c9dcd",
+   "lastSeen": "2026-10-23"
+  },
+  "4d8723a4ee03": {
+   "buyer": "Hansel Oy",
+   "decisionDate": "2026-10-08",
+   "decisionText": "Hansel Oy:n hankintapäätös 8.10.2026, HANSEL PJ 00862 / Hyvinvointialueiden leasingpalvelut 2027 (00862)",
+   "filed": "2026-10-22",
+   "firstSeen": "2026-10-23",
+   "hilmaNo": null,
+   "key": "4d8723a4ee03",
    "lastSeen": "2026-10-23"
   },
   "4de652ec4605": {
@@ -1731,6 +1751,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "d486e17a217f",
+   "lastSeen": "2026-10-23"
+  },
+  "d5ece844f0aa": {
+   "buyer": "Hansel Oy",
+   "decisionDate": "2026-10-08",
+   "decisionText": "Hansel Oy:n hankintapäätös 8.10.2026, HANSEL PJ 00861 / Kuntien leasingpalvelut 2027 (00861)",
+   "filed": "2026-10-22",
+   "firstSeen": "2026-10-23",
+   "hilmaNo": null,
+   "key": "d5ece844f0aa",
    "lastSeen": "2026-10-23"
   },
   "d6349a62b693": {
