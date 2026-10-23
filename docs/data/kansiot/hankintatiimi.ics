@@ -32,6 +32,24 @@ DESCRIPTION:Tarjoukset viimeistään · Haridus- ja Teadusministeerium · https:
 URL:https://ted.europa.eu/fi/notice/-/detail/735449-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60232-maaraaika-2026-11-13-hankintatiimi@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[Hankinta] Määräaika: Väyläviraston mediatiedotejakelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-060232 · https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/60232
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/60232
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60202-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Virtuaalisen koulutusympäristön hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060202 · https://www.hankintailmoitukset.fi/fi/public/procedure/39105/enotice/60202
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39105/enotice/60202
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-734769-2026-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120

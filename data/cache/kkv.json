@@ -322,6 +322,9 @@
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1455-14-00-10-2026/"
   },
   "KKV/1467/14.00.10/2026": {
+   "decided": "2026-10-23",
+   "decision": "Yrityskaupan hyväksyminen sellaisenaan",
+   "decisionUrl": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-1467-14-00-10-2026/",
    "diaari": "KKV/1467/14.00.10/2026",
    "hearingEnd": "2026-10-22",
    "listDate": "2026-10-15",
@@ -329,10 +332,10 @@
    "listTitle": "Opima AB / Resaltek Oy (Laserkeskus Oy)",
    "notified": "2026-10-15",
    "parties": "Opima AB / Resaltek Oy (Laserkeskus Oy)",
-   "pending": true,
+   "pending": false,
    "phase1End": "2026-11-17",
    "seen": "2026-10-23",
-   "summary": "Nyt ilmoitettavalla yrityskaupalla ruotsalainen Opima AB hankkii 100 % Resaltek Oy:n ja sen kokonaan omistaman tytäryhtiön sekä operatiivisena yhtiönä toimivan Laserkeskus Oy:n (jäljempänä molemmat yhdessä Kohde ) osakekannasta. Yrityskaupassa on siten kyse kilpailulain 21 §:n 1 momentin 1 kohdan mukaisesta määräysvallan hankkimisesta. Yrityskaupan toteuttamisen jälkeen Ilmoittajalla tulee olemaan yksinomainen määräysvalta Kohteessa. Yrityskaupan toteuttaminen edellyttää Kilpailu- ja kuluttajaviraston hyväksynnän Yrityskaupalle.",
+   "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin 15.10.2026 järjestely, jossa Opima AB hankkii yksinomaisen määräysvallan Resaltek Oy:ssä. Molemmat osapuolet toimivat metallin käsittelyn ja sopimusvalmistuksen markkinoilla. Virasto hyväksyi yrityskaupan 23.10.2026.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1467-14-00-10-2026/"
   },
   "KKV/1475/14.00.10/2026": {
@@ -392,5 +395,5 @@
    "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-985-14-00-10-2026/"
   }
  },
- "fetched": "2026-10-23T10:08:38Z"
+ "fetched": "2026-10-23T14:21:38Z"
 }

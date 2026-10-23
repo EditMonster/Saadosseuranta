@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-23T10:04:24",
+ "fetched": "2026-10-23T14:18:25",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -61233,6 +61233,10 @@
     {
      "date": "2026-10-13",
      "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-10-23",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -62240,6 +62244,22 @@
    "ref": "2026/0325(COD)",
    "stage": "RDG1",
    "title_en": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
+   "title_fi": ""
+  },
+  "2026-0329": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-10-23",
+   "final": false,
+   "pid": "2026-0329",
+   "ref": "2026/0329(COD)",
+   "stage": "RDG1",
+   "title_en": "",
    "title_fi": ""
   }
  }

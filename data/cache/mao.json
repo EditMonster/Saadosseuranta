@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-23T10:09:12Z",
+ "fetched": "2026-10-23T14:22:10Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -870,6 +870,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "338383512e91",
+   "lastSeen": "2026-10-23"
+  },
+  "33927c10bcd1": {
+   "buyer": "Hansel Oy",
+   "decisionDate": "2026-10-08",
+   "decisionText": "Hansel Oy:n hankintapäätös 8.10.2026, HANSEL PJ 00709 / Valtion leasingpalvelut 2027 (00709)",
+   "filed": "2026-10-22",
+   "firstSeen": "2026-10-23",
+   "hilmaNo": null,
+   "key": "33927c10bcd1",
    "lastSeen": "2026-10-23"
   },
   "33c76f848b4e": {
@@ -1673,6 +1683,16 @@
    "key": "bc03fbcaa0d9",
    "lastSeen": "2026-10-23"
   },
+  "bcc0d422df56": {
+   "buyer": "Paraisten Seurakuntayhtymä",
+   "decisionDate": "2026-10-07",
+   "decisionText": "Paraisten Seurakuntayhtymän yhteisen kirkkovaltuuston päätös 7.10.2026, § 20, urakoitsijoiden valinta Iniön kirkon korjaukseen, sähköurakka",
+   "filed": "2026-10-23",
+   "firstSeen": "2026-10-23",
+   "hilmaNo": null,
+   "key": "bcc0d422df56",
+   "lastSeen": "2026-10-23"
+  },
   "c5b0a1883801": {
    "buyer": "Kouvolan kaupunki",
    "decisionDate": "2026-07-03",
@@ -2062,7 +2082,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "fa85809a5005",
-   "lastSeen": "2026-10-23"
+   "lastSeen": "2026-10-23",
+   "missingSince": "2026-10-23"
   },
   "fabebdaed955": {
    "buyer": "Pohjois-Pohjanmaan hyvinvointialue",

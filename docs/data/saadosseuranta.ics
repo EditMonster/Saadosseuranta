@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:fi-hanke-1cc5241e-lausunto-2026-11-13@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 l §:n ja biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
+DESCRIPTION:Lausuntokierros · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-248-2026-voimaan-2027-06-01@saadosseuranta
 DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
@@ -84,6 +93,15 @@ DTEND;VALUE=DATE:20270202
 SUMMARY:[FI] Voimaan: Laeiksi kirkkolain 3 ja 8 luvun sekä ortodoksisesta kirkosta annetun lain 74 §:n muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 234/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/234
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/234
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-hanke-274537fe-lausunto-2026-11-11@saadosseuranta
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[FI] Lausuntoaika päättyy: Laiksi Kansallisgalleriasta annetun lain muuttamisesta
+DESCRIPTION:Lausuntopyyntö luonnoksesta hallituksen esitykseksi. · OKM018:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM018:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OKM018:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-252-2026-voimaan-2027-01-01@saadosseuranta
@@ -653,6 +671,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 81/2026 vp · https://www.finlex.fi/fi/h
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-56-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi hyvinvointialueiden rahoituksesta annetun lain ja saariston kehityksen edistämisestä annetun lain muuttamisesta
+DESCRIPTION:Voimaan (690/2026) · 690/2026 · HE 56/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/56
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/56
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-213-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1004,6 +1031,15 @@ DESCRIPTION:Voimaan (10/2026) · 10/2026 · HE 16/2025 vp · https://www.finlex.
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/16
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-13-2025-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Valtion aluehallintouudistusta koskevaksi lainsäädännöksi
+DESCRIPTION:Voimaan (775/2026) · 530/2025 · HE 13/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/13
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/13
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-71-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1130,15 +1166,6 @@ DESCRIPTION:Voimaan (876/2026) · 876/2026 · HE 25/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-56-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laeiksi hyvinvointialueiden rahoituksesta annetun lain ja saariston kehityksen edistämisestä annetun lain muuttamisesta
-DESCRIPTION:Voimaan (690/2026) · 690/2026 · HE 56/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/56
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/56
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-200-2025-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1191,6 +1218,15 @@ DTEND;VALUE=DATE:20270131
 SUMMARY:[FI] Voimaan: Laiksi vakuutusyhtiölain muuttamisesta ja eräiksi siihen liittyviksi laeiksi
 DESCRIPTION:Voimaan (600/2026) · 600/2026 · HE 43/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-80-2026-voimaan-2026-10-27@saadosseuranta
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[FI] Voimaan: Laiksi ulkomaalaislain muuttamisesta
+DESCRIPTION:Voimaan (912/2026) · HE 80/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-114-2025-voimaan-2027-01-01@saadosseuranta
@@ -1310,15 +1346,6 @@ DESCRIPTION:Voimaan (552/2026) · 552/2026 · HE 54/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/54
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-13-2025-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Valtion aluehallintouudistusta koskevaksi lainsäädännöksi
-DESCRIPTION:Voimaan (775/2026) · 530/2025 · HE 13/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/13
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/13
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-24-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1346,6 +1373,42 @@ DESCRIPTION:Voimaan (908/2026) · HE 77/2026 vp · https://www.finlex.fi/fi/hall
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-2697a4b6-lausunto-2026-12-04@saadosseuranta
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[FI] Lausuntoaika päättyy: OKM:n asetus opiskelijaksi ottamisen perusteista lukiokoulutuksessa annetun asetuksen muuttamisesta
+DESCRIPTION:Lausuntokierros · OKM037:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM037:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OKM037:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-b7fd131f-lausunto-2026-12-04@saadosseuranta
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[FI] Lausuntoaika päättyy: OKM:n asetus opiskelijaksi ottamisen perusteista ammatillisessa perustutkintokoulutuksessa annetun asetuksen muuttamisesta
+DESCRIPTION:Lausuntokierros · OKM038:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM038:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OKM038:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-bd5ad2bc-lausunto-2026-11-17@saadosseuranta
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[FI] Lausuntoaika päättyy: Liikenne- ja viestintäministeriön asetus Väyläviraston maksullisista suoritteista vuonna 2027
+DESCRIPTION:Lausuntokierros · LVM048:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM048:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=LVM048:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-d219af81-lausunto-2026-11-17@saadosseuranta
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[FI] Lausuntoaika päättyy: Liikenne- ja viestintäministeriön asetukset Liikenne- ja viestintävirasto Traficomin maksullisista suoritteista vuonna 2027
+DESCRIPTION:Lausuntokierros · LVM047:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM047:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=LVM047:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-7865f02b-lausunto-2026-12-01@saadosseuranta
 DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
@@ -1362,6 +1425,15 @@ DTEND;VALUE=DATE:20261031
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta
 DESCRIPTION:Lausuntomenettely · OKM040:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-92ee5589-lausunto-2026-12-02@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[FI] Lausuntoaika päättyy: Jäteasetuksen muuttaminen (I osa)
+DESCRIPTION:Lausuntopyyntö: Luonnos valtioneuvoston asetukseksi jätteistä annetun valtioneuvoston asetuksen muuttamisesta (osa I) · YM041:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM041:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=YM041:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-16bb79ef-voimaan-2026-10-16@saadosseuranta
@@ -1587,6 +1659,24 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta
 DESCRIPTION:Lausuntokierros · STM067:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-b66e8b10-voimaan-2026-11-12@saadosseuranta
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liikennemerkkejä ja -opasteita koskevan yleissopimuksen muutosten\, liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävän eurooppalaisen sopimuksen muutosten sekä liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävään eurooppalaiseen sopimukseen liitettävän tiemerkintöjä käsittelevän pöytäkirjan muutosten voimaansaattamiseksi
+DESCRIPTION:Voimaan (916/2026) · 916/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
+URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-1d6d0bf7-lausunto-2026-11-18@saadosseuranta
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus yhdyskuntaseuraamusten täytäntöönpanosta annetun valtioneuvoston asetuksen muuttamisesta
+DESCRIPTION:Lausuntopyyntö · OM030:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OM030:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OM030:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-03809642-voimaan-2027-01-01@saadosseuranta
