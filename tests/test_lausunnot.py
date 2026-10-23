@@ -68,7 +68,7 @@ def test_build_lausunnot_files(tmp_path, monkeypatch):
     cache = {"docs": {"d1": {"ok": True, "stance": "vastustaa", "gist": "Liitto vastustaa esitystä."},
                       "d2": {"ok": "noText", "stance": None},
                       "EDK-1": {"ok": True, "stance": "kannattaa", "gist": "Virasto kannattaa esitystä."}}}
-    monkeypatch.setattr(build_lausunnot, "load_json", lambda path, default: cache if "lausunnot" in str(path) else default)
+    monkeypatch.setattr(build_lausunnot, "load_docs", lambda: cache["docs"])
     items = [{"id": "fi-he-12-2026", "hankeUuid": "u1", "heNumerot": ["12/2026"]}, {"id": "eu-x", "heNumerot": []}]
     hk = {"u1": {"lausunnot": {"n": 3, "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=x",
                                "docs": [{"id": "d1", "org": "Liitto ry", "date": "2026-03-01", "url": "https://api.hankeikkuna.fi/a/d1.PDF"},
@@ -119,7 +119,7 @@ def test_eu_item_gets_letter_statements_and_presentations_last(tmp_path, monkeyp
     monkeypatch.setattr(build_lausunnot, "LAUSUNNOT_DIR", tmp_path)
     cache = {"docs": {"E1": {"ok": True, "stance": "esittely", "gist": "Ministeriö esittelee kantaa."},
                       "E2": {"ok": True, "stance": "kannattaa", "gist": "Liitto kannattaa."}}}
-    monkeypatch.setattr(build_lausunnot, "load_json", lambda path, default: cache if "lausunnot" in str(path) else default)
+    monkeypatch.setattr(build_lausunnot, "load_docs", lambda: cache["docs"])
     vaski = {"statements": {"U 54/2026 vp": [{"edk": "E1", "org": "valtiovarainministeriö", "person": "A B", "committee": "SuV", "date": "2026-09-01", "url": "u1"},
                                              {"edk": "E2", "org": "Liitto ry", "committee": "SuV", "date": "2026-09-02", "url": "u2"}]}}
     out = build_lausunnot.build_lausunnot([{"id": "eu-x", "ref": "COM(2026) 1", "kirjelmat": ["U 54/2026 vp"]}], {}, vaski)
@@ -130,7 +130,7 @@ def test_eu_item_gets_letter_statements_and_presentations_last(tmp_path, monkeyp
 
 def test_unpublished_statement_is_not_pending(tmp_path, monkeypatch):
     monkeypatch.setattr(build_lausunnot, "LAUSUNNOT_DIR", tmp_path)
-    monkeypatch.setattr(build_lausunnot, "load_json", lambda path, default: {"docs": {}} if "lausunnot" in str(path) else default)
+    monkeypatch.setattr(build_lausunnot, "load_docs", lambda: {})
     hk = {"u": {"lausunnot": {"docs": [{"id": "x", "org": "Virasto", "date": "2026-01-01"}]}}}
     out = build_lausunnot.build_lausunnot([{"id": "fi-1", "hankeUuid": "u"}], hk, {})
     assert out["fi-1"] == {"n": 1, "luettu": 1, "kannat": {}}
@@ -141,3 +141,16 @@ def test_unpublished_statement_is_not_pending(tmp_path, monkeypatch):
 def test_kiitan_is_boilerplate():
     assert fl.BOILER.search("Kiitän mahdollisuudesta esittää lausunto otsikon teemoista.")
     assert not fl.OPPOSE_RE.search("jotka olivat omistajuutta vastustaneet kiivaasti")
+
+
+def test_shards_roundtrip(tmp_path, monkeypatch):
+    monkeypatch.setattr(fl, "SHARD_DIR", tmp_path / "lausunnot")
+    monkeypatch.setattr(fl, "OUT", tmp_path / "lausunnot.json")
+    (tmp_path / "lausunnot.json").write_text(json.dumps({"docs": {"a": {"src": "hk", "date": "2024-05-01", "ok": True}}}))
+    docs = fl.load_docs()
+    docs["b"] = {"src": "ek", "date": "2026-10-01", "ok": True}
+    fl._save(docs)
+    assert sorted(p.name for p in (tmp_path / "lausunnot").glob("*.json")) == ["ek-2026.json", "hk-2024.json"]
+    assert not (tmp_path / "lausunnot.json").exists() and set(fl.load_docs()) == {"a", "b"}
+    fl._save(fl.load_docs(), keep={"b"})  # a statement no longer listed is dropped, and its empty shard removed
+    assert set(fl.load_docs()) == {"b"} and not (tmp_path / "lausunnot" / "hk-2024.json").exists()

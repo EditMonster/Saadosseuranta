@@ -14,7 +14,7 @@ viitetiedot ohitetaan. Lisäksi sanastoon perustuva suuntaa-antava kanta: kannat
 vastustaa / muutosehdotuksia / ei lausuttavaa / kannanotto. Kumpikin näkyy sivulla linkin kera, jotta
 lukija voi tarkistaa otteen alkuperäisestä.
 
-Kerran luettu lausunto ei muutu, joten tulos tallennetaan asiakirjan tunnisteella (data/cache/lausunnot.json)
+Kerran luettu lausunto ei muutu, joten tulos tallennetaan asiakirjan tunnisteella (data/cache/lausunnot/<lähde>-<vuosi>.json)
 ja PDF luetaan vain kerran. Jokainen ajo käsittelee aikabudjetin verran uusia lausuntoja (LAUSUNNOT_BUDGET_S,
 oletus 15 min, 4 rinnakkaista hakua), tuoreimmat ja käynnissä olevien kierrosten lausunnot ensin.
 """
@@ -31,12 +31,12 @@ from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 
 from common import CACHE_DIR, TODAY, SourceOutage, http, load_json, log, save_json
 
-OUT = CACHE_DIR / "lausunnot.json"
+OUT = CACHE_DIR / "lausunnot.json"          # legacy single file (read once, then replaced by the shards)
+SHARD_DIR = CACHE_DIR / "lausunnot"          # one file per source and year: a run only rewrites the shards it touched
 BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 15 * 60))
 WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
 PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
 STRIKES = 5
-KEEP_DAYS = 420
 MAX_PAGES = 4
 GIST_MAX = 280
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) saadosseuranta/1.0 (+https://github.com/EditMonster/Saadosseuranta)"}
@@ -281,21 +281,21 @@ def is_presentation(s: dict) -> bool:
 
 
 def candidates(hk: dict, vaski: dict) -> list[dict]:
-    """Every statement with a readable file, newest first; open/recent consultation rounds first."""
+    """Every statement with a readable file – however old: a law shown on the page gets all of its statements
+    summarised. Open/recent consultation rounds first, then newest first."""
     soon = (TODAY - dt.timedelta(days=60)).isoformat()
-    lo = (TODAY - dt.timedelta(days=KEEP_DAYS)).isoformat()
     out = []
     for p in (hk.get("items") or []):
         L = p.get("lausunnot") or {}
         open_round = any(e.get("kind") == "lausunto" and (e.get("end") or e.get("date") or "") >= soon for e in p.get("etapit") or [])
         for d in L.get("docs") or []:
-            if not d.get("url") or (d.get("date") or "") < lo:
+            if not d.get("url"):
                 continue
             out.append({"id": d["id"], "src": "hk", "url": d["url"], "org": d.get("org") or "", "date": d.get("date"),
-                        "title": d.get("title") or "", "prio": 0 if open_round else 1})
+                        "title": d.get("title") or "", "prio": 0 if open_round or (d.get("date") or "") >= soon else 1})
     for asia, lst in (vaski.get("statements") or {}).items():
         for s in lst:
-            if not s.get("url") or (s.get("date") or "") < lo:
+            if not s.get("url"):
                 continue
             out.append({"id": s.get("edk") or s["url"], "src": "ek", "url": s["url"], "org": s.get("org") or s.get("person") or "",
                         "esittely": is_presentation(s),
@@ -305,17 +305,42 @@ def candidates(hk: dict, vaski: dict) -> list[dict]:
     return out
 
 
-def _save(docs: dict) -> None:
-    lo = (TODAY - dt.timedelta(days=KEEP_DAYS + 30)).isoformat()
-    docs = {k: v for k, v in docs.items() if (v.get("date") or "9999") >= lo}
-    save_json(OUT, {"fetched": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "docs": docs}, compact=True)
+def _shard(rec: dict) -> str:
+    return f"{rec.get('src') or 'x'}-{(rec.get('date') or '0000')[:4]}"
+
+
+def load_docs() -> dict:
+    """All cached summaries {doc id: record}: the shards plus the legacy single file, if it is still there."""
+    docs = dict((load_json(OUT, {}) or {}).get("docs") or {})
+    for f in sorted(SHARD_DIR.glob("*.json")):
+        docs.update((load_json(f, {}) or {}).get("docs") or {})
+    return docs
+
+
+def _save(docs: dict, keep: set[str] | None = None) -> None:
+    """Write the shards (deterministic, so an untouched shard is byte-identical and git sees no change).
+    `keep` = ids still listed somewhere; records of statements no longer listed are dropped."""
+    if keep is not None:
+        docs = {k: v for k, v in docs.items() if k in keep}
+    shards: dict[str, dict] = {}
+    for k, v in docs.items():
+        shards.setdefault(_shard(v), {})[k] = v
+    SHARD_DIR.mkdir(parents=True, exist_ok=True)
+    for name, part in shards.items():
+        save_json(SHARD_DIR / f"{name}.json", {"docs": part}, compact=True)
+    for f in SHARD_DIR.glob("*.json"):
+        if f.stem not in shards:
+            f.unlink()
+    if OUT.exists():
+        OUT.unlink()
 
 
 def main():
-    cache = load_json(OUT, {}) or {}
-    docs: dict = cache.get("docs") or {}
+    docs: dict = load_docs()
     hk = load_json(CACHE_DIR / "hankeikkuna.json", {}) or {}
     vaski = load_json(CACHE_DIR / "vaski.json", {}) or {}
+    cands = candidates(hk, vaski)
+    listed = {c["id"] for c in cands}
     changed = sum(reclassify(v) for v in docs.values())
     if changed:
         log(f"lausunnot: sanasto muuttunut – {changed} kantaa luokiteltu uudelleen tallennetuista osumista")
@@ -331,7 +356,7 @@ def main():
             v["stance"] = "esittely"
         return False
 
-    todo = [c for c in candidates(hk, vaski) if needs(c)]
+    todo = [c for c in cands if needs(c)]
     log(f"lausunnot: {len(docs)} tiivistetty, {len(todo)} odottaa (budjetti {BUDGET_S} s)")
     t0, done, outage, errors = time.time(), 0, None, 0
     down: set[str] = set()
@@ -410,10 +435,11 @@ def main():
                     done += 1
                     errors += rec.get("ok") == "error"
                     if done % 200 == 0:
-                        _save(docs)  # a run cut short by the job timeout keeps what it read
+                        _save(docs, listed)  # a run cut short by the job timeout keeps what it read
             while time.time() - t0 <= BUDGET_S and len(running) < WORKERS and submit_next():
                 pass
-    _save(docs)
+    # the cache only shrinks when the listings answered (an outage must not wipe what was read)
+    _save(docs, listed if hk.get("items") and vaski.get("statements") else None)
     ok = sum(1 for v in docs.values() if v.get("ok") is True)
     log(f"lausunnot: {done} uutta luettu ({errors} virhettä), yhteensä {ok} tiivistelmää, {len(todo) - done} jäi seuraavaan ajoon -> {OUT}")
     if outage and not done:

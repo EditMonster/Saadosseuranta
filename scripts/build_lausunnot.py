@@ -17,7 +17,8 @@ from __future__ import annotations
 
 import re
 
-from common import CACHE_DIR, OUT_DIR, load_json, log, save_json
+from common import OUT_DIR, log, save_json
+from fetch_lausunnot import load_docs
 
 LAUSUNNOT_DIR = OUT_DIR / "lausunnot"
 ORDER = {"vastustaa": 0, "osin": 1, "varauksin": 2, "muutoksia": 3, "kannattaa": 4, "kanta": 5, None: 6, "esittely": 7, "ei": 8}
@@ -74,7 +75,7 @@ def _section(rows: list[dict]) -> dict | None:
 def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict) -> dict[str, dict]:
     """Writes docs/data/lausunnot/<id>.json for every item that has statements; returns {item_id: summary}
     where summary = {"n", "luettu", "kannat"} for the item's own record."""
-    cache = (load_json(CACHE_DIR / "lausunnot.json", {}) or {}).get("docs") or {}
+    cache = load_docs()
     statements: dict[str, list] = {}
     for k, lst in (vaski.get("statements") or {}).items():
         statements.setdefault(_norm(k), []).extend(lst)
