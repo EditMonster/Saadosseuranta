@@ -958,6 +958,23 @@
    "timeline": [],
    "title": "BROOKFIELD / LUNATE"
   },
+  "M.12349": {
+   "caseNumber": "M.12349",
+   "deadline": "2026-11-27",
+   "decisions": [],
+   "initiated": "2026-02-02",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-22",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.3",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "DBAG / ALLFUNDS GROUP"
+  },
   "M.12356": {
    "caseNumber": "M.12356",
    "deadline": "2026-09-29",
@@ -4038,6 +4055,23 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "MUTARES / SYNTHOMER"
+  },
+  "M.12520": {
+   "caseNumber": "M.12520",
+   "deadline": "2026-11-27",
+   "decisions": [],
+   "initiated": "2026-06-15",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-22",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_K_62.10",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "KONGSBERG / THALES / TNOR / JV"
   },
   "M.12522": {
    "caseNumber": "M.12522",
@@ -7780,5 +7814,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-22T15:32:14Z"
+ "fetched": "2026-10-23T04:57:14Z"
 }

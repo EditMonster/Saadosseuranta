@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-22T15:30:35",
+ "fetched": "2026-10-23T04:54:07",
  "items": [
   {
    "actType": "REG_DEL",
@@ -151,7 +151,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-17",
+     "end": "2026-12-18",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -169,7 +169,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-17",
+     "end": "2026-12-18",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -349,7 +349,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-17",
+     "end": "2026-12-18",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -560,24 +560,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en"
   },
   {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 14569,
-   "periods": [
-    {
-     "end": "2026-10-22",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-24"
-    }
-   ],
-   "reference": "Ares(2025)1825802",
-   "status": "ACTIVE",
-   "title_en": "Amendment of protective measures against pests of plants",
-   "title_fi": "Kasvintuhoojien vastaisten suojatoimenpiteiden muuttaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14569_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19293,
@@ -607,7 +589,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-17",
+     "end": "2026-12-18",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -870,6 +852,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 14569,
+   "periods": [
+    {
+     "end": "2026-10-22",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-24"
+    }
+   ],
+   "reference": "Ares(2025)1825802",
+   "status": "ACTIVE",
+   "title_en": "Amendment of protective measures against pests of plants",
+   "title_fi": "Kasvintuhoojien vastaisten suojatoimenpiteiden muuttaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14569_en"
   },
   {
    "actType": "DEC_IMPL",

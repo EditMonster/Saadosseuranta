@@ -725,15 +725,6 @@ DESCRIPTION:Voimaan (377/2026) · 377/2026 · HE 16/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/16
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-49ef2d6a-lausunto-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[FI] Lausuntoaika päättyy: Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano
-DESCRIPTION:Lausuntopyyntö · OM070:00/2024 · https://valtioneuvosto.fi/hanke?tunnus=OM070:00/2024
-URL:https://valtioneuvosto.fi/hanke?tunnus=OM070:00/2024
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-133-2026-voimaan-2026-11-01@saadosseuranta
 DTSTAMP:20261101T000000Z
 DTSTART;VALUE=DATE:20261101
@@ -2327,10 +2318,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-17@saadosseuranta
-DTSTAMP:20261217T000000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
+UID:eu-hys-19517-lausunto-2026-12-18@saadosseuranta
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2408,10 +2399,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-17@saadosseuranta
-DTSTAMP:20261217T000000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
+UID:eu-hys-15492-lausunto-2026-12-18@saadosseuranta
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2469,15 +2460,6 @@ DTEND;VALUE=DATE:20261017
 SUMMARY:[EU] Lausuntoaika päättyy: Luettelo OECD:n ulkopuolisista maista\, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta
 DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-16872-lausunto-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Lausuntoaika päättyy: Tuotteiden energiatehokkuus – lainsäädännön yksinkertaistaminen
-DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
@@ -2880,8 +2862,26 @@ UID:eu-da-3143-maaraaika-2026-10-21@saadosseuranta
 DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2026/2108 of the European Parliament and of the Council by establishing the amount of t
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
+DESCRIPTION:Vastustamisaika päättyi · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3143-voimaan-2026-10-22@saadosseuranta
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
+DESCRIPTION:Voimaan · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3143-soveltaminen-2026-11-01@saadosseuranta
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
 END:VEVENT
 BEGIN:VEVENT
@@ -3099,59 +3099,5 @@ DTEND;VALUE=DATE:20261024
 SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2384 – terrorismi 881/2002
 DESCRIPTION:Voimaan · (EU) 2026/2384 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2333-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2333 – Venäjä 269/2014
-DESCRIPTION:Voimaan · (EU) 2026/2333 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2333
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2333
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2332-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2332 – Venäjä 2014/145
-DESCRIPTION:Voimaan · (YUTP) 2026/2332 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2332
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2332
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2318-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2318 – Guinea 1284/2009
-DESCRIPTION:Voimaan · (EU) 2026/2318 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2318
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2318
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2313-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2313 – Valko-Venäjä 765/2006
-DESCRIPTION:Voimaan · (EU) 2026/2313 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2313
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2313
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2317-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2317 – Guinea 2010/638
-DESCRIPTION:Voimaan · (YUTP) 2026/2317 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2317
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2317
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2312-voimaan-2026-10-15@saadosseuranta
-DTSTAMP:20261015T000000Z
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261016
-SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanopäätös (YUTP) (YUTP) 2026/2312 – Valko-Venäjä 2012/642
-DESCRIPTION:Voimaan · (YUTP) 2026/2312 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2312
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2312
 END:VEVENT
 END:VCALENDAR
