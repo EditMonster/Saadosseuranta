@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-23T14:20:06",
+ "fetched": "2026-10-24T07:22:43",
  "items": [
   {
    "actType": "REG_DEL",
@@ -151,7 +151,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-18",
+     "end": "2026-12-19",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -169,7 +169,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-18",
+     "end": "2026-12-19",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -349,7 +349,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-18",
+     "end": "2026-12-19",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -589,7 +589,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-18",
+     "end": "2026-12-19",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -1710,24 +1710,6 @@
    "title_en": "Revision of the Network Code on Requirements for Grid Connection of Generators",
    "title_fi": "Sähköntuottajien verkkoliitäntävaatimuksia koskeva verkkosääntö – tarkistus",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14165_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 14328,
-   "periods": [
-    {
-     "end": "2026-08-24",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-27"
-    }
-   ],
-   "reference": "Ares(2024)4758330",
-   "status": "ACTIVE",
-   "title_en": "List of high-risk organic and in-conversion products originating from third countries and their control rate",
-   "title_fi": "EU:n ulkopuolisista maista tulevat suuririskiset luonnonmukaiset tuotteet ja siirtymävaiheen tuotteet – yksityiskohtainen luettelo",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14328_en"
   },
   {
    "actType": "DEC_DEL",

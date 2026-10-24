@@ -761,24 +761,6 @@ DESCRIPTION:Tarjoukset viimeistään · Kriminalvården · https://ted.europa.eu
 URL:https://ted.europa.eu/fi/notice/-/detail/729380-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-EF-59866-maaraaika-2026-10-21-hankintatiimi@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[Hankinta] Määräaika: Porvoon kaupunginkirjaston palautusautomaatin hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-059866 · https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-59866-maaraaika-2026-10-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[Hankinta] Määräaika: Porvoon kaupunginkirjaston palautusautomaatin hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-059866 · https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38140/enotice/59866
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-722868-2026-maaraaika-2026-10-29-hankintatiimi@saadosseuranta
 DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
@@ -1254,15 +1236,6 @@ DTEND;VALUE=DATE:20261121
 SUMMARY:[Hankinta] Määräaika: Digitaalisten palvelujen kehittäjäkumppanuushankinta
 DESCRIPTION:Tarjoukset viimeistään · 2026-059709 · https://www.hankintailmoitukset.fi/fi/public/procedure/38830/enotice/59709
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38830/enotice/59709
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-59527-maaraaika-2026-10-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[Hankinta] Määräaika: Monetra E29/2026 / Palkanlaskentajärjestelmän hankinta hyvinvointialueille Monetra-konserni
-DESCRIPTION:Tarjoukset viimeistään · 2026-059527 · https://www.hankintailmoitukset.fi/fi/public/procedure/37422/enotice/59527
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37422/enotice/59527
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-715274-2026-maaraaika-2026-10-27-hankintatiimi@saadosseuranta

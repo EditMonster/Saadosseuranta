@@ -140,15 +140,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 187/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/187
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-d90876b0-lausunto-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[FI] Lausuntoaika päättyy: EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke
-DESCRIPTION:Lausuntopyyntö · SM013:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=SM013:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=SM013:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-169-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1436,15 +1427,6 @@ DESCRIPTION:Lausuntopyyntö: Luonnos valtioneuvoston asetukseksi jätteistä ann
 URL:https://valtioneuvosto.fi/hanke?tunnus=YM041:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-16bb79ef-voimaan-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liittyen hallituksen esitykseen eduskunnalle sosiaaliturvaetuuksien valtion osuuksien maksamisesta
-DESCRIPTION:Voimaan (898/2026) · 898/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/898
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-16bb79ef-voimaan-2026-12-06@saadosseuranta
 DTSTAMP:20261206T000000Z
 DTSTART;VALUE=DATE:20261206
@@ -2408,10 +2390,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-18@saadosseuranta
-DTSTAMP:20261218T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
+UID:eu-hys-19517-lausunto-2026-12-19@saadosseuranta
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2489,10 +2471,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-18@saadosseuranta
-DTSTAMP:20261218T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
+UID:eu-hys-15492-lausunto-2026-12-19@saadosseuranta
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2541,15 +2523,6 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-14861-lausunto-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[EU] Lausuntoaika päättyy: Luettelo OECD:n ulkopuolisista maista\, joilla on lupa tuoda tiettyjä vaarattomia jätteitä EU:sta
-DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
@@ -2642,15 +2615,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6179 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2893
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-2899-maaraaika-2026-10-16@saadosseuranta
-DTSTAMP:20261016T000000Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2009/138/EC of the European Parliament and of the Council with regard to regulatory tech
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)4973 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2899
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2899
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-2909-voimaan-2026-11-03@saadosseuranta
 DTSTAMP:20261103T000000Z
 DTSTART;VALUE=DATE:20261103
@@ -2691,8 +2655,17 @@ UID:eu-da-2926-maaraaika-2026-10-21@saadosseuranta
 DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2022/2104 supplementing Regulation (EU) No 1308/2013 of the European Parliament an
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
+SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/2358\, annettu 21 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1308/2013 täydentämisestä olii
+DESCRIPTION:Vastustamisaika päättyi · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2926-voimaan-2026-10-24@saadosseuranta
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/2358\, annettu 21 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1308/2013 täydentämisestä olii
+DESCRIPTION:Voimaan · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
 END:VEVENT
 BEGIN:VEVENT
@@ -2793,6 +2766,15 @@ DTEND;VALUE=DATE:20261218
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive 2013/36/EU of the European Parliament and of the Council with regard to regulatory technical 
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6463 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3013
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3013
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3017-maaraaika-2026-12-23@saadosseuranta
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2024/2594 of the European Parliament and of the Council as regards control measures applicab
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7330 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3017
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3017
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3021-voimaan-2026-11-10@saadosseuranta

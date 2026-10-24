@@ -124,7 +124,7 @@
   },
   "M.11944": {
    "caseNumber": "M.11944",
-   "deadline": "2026-11-30",
+   "deadline": "2026-12-21",
    "decisions": [
     {
      "date": "2025-05-22",
@@ -140,7 +140,7 @@
     }
    ],
    "initiated": "2025-03-03",
-   "lastDecision": "2026-09-16",
+   "lastDecision": "2026-09-15",
    "notice": {
     "activities": [
      "MMG toteuttaa ja kehittää kupariin, sinkkiin ja muihin epäjaloihin metalleihin liittyviä hankkeita Australiassa, Kongon demokraattisessa tasavallassa, Botswanassa ja Perussa.",
@@ -196,6 +196,11 @@
    "simplified": "MEnormal",
    "timeline": [
     {
+     "date": "2025-10-14",
+     "description": "Changed deadline - Commitments submitted in N/1 on 14.10.2025",
+     "type": "MEvent3"
+    },
+    {
      "date": "2026-08-12",
      "description": "Changed deadline - suspension under Article 11(3) ended on 12/08/2026",
      "type": "MEvent60"
@@ -206,9 +211,9 @@
      "type": "MEvent59"
     },
     {
-     "date": "2025-10-14",
-     "description": "Changed deadline - Commitments submitted in N/1 on 14.10.2025",
-     "type": "MEvent3"
+     "date": "2026-10-23",
+     "description": "Changed deadline - Commitments submitted in N/2 on 23/10/2026",
+     "type": "MEvent4"
     }
    ],
    "title": "MMG / BRAZILIAN NICKEL BUSINESS OF ANGLO AMERICAN"
@@ -970,7 +975,7 @@
    "oj": [],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
-   "sector": "NaceV2Sector_L_64.3",
+   "sector": "NaceV2Sector_L_66.1",
    "simplified": "MEnormal",
    "timeline": [],
    "title": "DBAG / ALLFUNDS GROUP"
@@ -7819,5 +7824,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-23T14:21:40Z"
+ "fetched": "2026-10-24T07:24:13Z"
 }
