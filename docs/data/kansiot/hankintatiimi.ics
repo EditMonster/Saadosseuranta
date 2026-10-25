@@ -5,6 +5,42 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-60150-maaraaika-2026-11-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[Hankinta] Määräaika: Reskontra- ja perintäjärjestelmän ylläpito ja jatkuva kehitys
+DESCRIPTION:Tarjoukset viimeistään · 2026-060150 · https://www.hankintailmoitukset.fi/fi/public/procedure/37823/enotice/60150
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37823/enotice/60150
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60150-maaraaika-2026-11-05-hankintatiimi@saadosseuranta
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[Hankinta] Määräaika: Reskontra- ja perintäjärjestelmän ylläpito ja jatkuva kehitys
+DESCRIPTION:Tarjoukset viimeistään · 2026-060150 · https://www.hankintailmoitukset.fi/fi/public/procedure/37823/enotice/60150
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37823/enotice/60150
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60125-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[Hankinta] Määräaika: Leikkaustoiminnan ohjausjärjestelmä\, Siun sote
+DESCRIPTION:Tarjoukset viimeistään · 2026-060125 · https://www.hankintailmoitukset.fi/fi/public/procedure/39060/enotice/60125
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39060/enotice/60125
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60170-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[Hankinta] Määräaika: 14589 Keravan kaupungin huoltokirja- ja kunnossapitojärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060170 · https://www.hankintailmoitukset.fi/fi/public/procedure/39081/enotice/60170
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39081/enotice/60170
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-737015-2026-maaraaika-2026-11-02-hankintatiimi@saadosseuranta
 DTSTAMP:20261102T000000Z
 DTSTART;VALUE=DATE:20261102
@@ -1794,14 +1830,5 @@ DTEND;VALUE=DATE:20261118
 SUMMARY:[Hankinta] Määräaika: Arvutivõrguseadmete ostmine
 DESCRIPTION:Tarjoukset viimeistään · Eesti Rahvusringhääling · https://ted.europa.eu/fi/notice/-/detail/711208-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/711208-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-59434-maaraaika-2026-11-19-hankintatiimi@saadosseuranta
-DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:[Hankinta] Määräaika: Tarjouspyyntö Matka ja kululaskusovellus
-DESCRIPTION:Tarjoukset viimeistään · 2026-059434 · https://www.hankintailmoitukset.fi/fi/public/procedure/38672/enotice/59434
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38672/enotice/59434
 END:VEVENT
 END:VCALENDAR

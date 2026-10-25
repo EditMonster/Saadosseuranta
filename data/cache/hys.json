@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-24T07:22:43",
+ "fetched": "2026-10-25T11:40:42",
  "items": [
   {
    "actType": "REG_DEL",
@@ -151,7 +151,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-19",
+     "end": "2026-12-20",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -169,7 +169,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-19",
+     "end": "2026-12-20",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -349,7 +349,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-19",
+     "end": "2026-12-20",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -589,7 +589,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-19",
+     "end": "2026-12-20",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -1692,24 +1692,6 @@
    "title_en": "Removing expired rules. Cross reference to the end date of their recognition for rules for equivalent third countries",
    "title_fi": null,
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18655_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 14165,
-   "periods": [
-    {
-     "end": "2026-08-25",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-08"
-    }
-   ],
-   "reference": "Ares(2024)1318485",
-   "status": "ACTIVE",
-   "title_en": "Revision of the Network Code on Requirements for Grid Connection of Generators",
-   "title_fi": "Sähköntuottajien verkkoliitäntävaatimuksia koskeva verkkosääntö – tarkistus",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14165_en"
   },
   {
    "actType": "DEC_DEL",
