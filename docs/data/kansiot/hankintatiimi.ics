@@ -32,6 +32,15 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-060125 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39060/enotice/60125
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60236-maaraaika-2026-11-25-hankintatiimi@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[Hankinta] Määräaika: Technical Consultancy Services Related to Rolling Stock
+DESCRIPTION:Tarjoukset viimeistään · 2026-060236 · https://www.hankintailmoitukset.fi/fi/public/procedure/39132/enotice/60236
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39132/enotice/60236
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-60170-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
 DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261127
@@ -1821,14 +1830,5 @@ DTEND;VALUE=DATE:20261117
 SUMMARY:[Hankinta] Määräaika: Identitets- och behörighetshantering Karlskrona kommun
 DESCRIPTION:Tarjoukset viimeistään · Karlskrona kommun · https://ted.europa.eu/fi/notice/-/detail/709871-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/709871-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-711208-2026-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
-DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:[Hankinta] Määräaika: Arvutivõrguseadmete ostmine
-DESCRIPTION:Tarjoukset viimeistään · Eesti Rahvusringhääling · https://ted.europa.eu/fi/notice/-/detail/711208-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/711208-2026
 END:VEVENT
 END:VCALENDAR

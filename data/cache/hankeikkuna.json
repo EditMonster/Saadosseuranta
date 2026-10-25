@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-25T11:37:01",
+ "fetched": "2026-10-25T21:25:24",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -169868,6 +169868,826 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
+   "annettuEduskunnalle": "2024-04-18",
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Regeringens proposition till riksdagen med förslag till lag om ändring av tobakslagen",
+     "pvm": "2023-04-28",
+     "tyyppi": "ESITYS",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5ee6a4b2-4561-4276-8fa5-039152f7ab54/ESITYS_20230428141147.PDF"
+    },
+    {
+     "nimi": "TupL_HE_luonnos_lausuntoversio_12102023",
+     "pvm": "2023-10-12",
+     "tyyppi": "ESITYS",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97be3a15-200a-47c6-a4aa-9046168374e6/ESITYS_20231115110126.PDF"
+    },
+    {
+     "nimi": "VN0080742_TobL_RP_UtlåtandetVersion_12102023_sv",
+     "pvm": "2023-10-12",
+     "tyyppi": "ESITYS",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bafa0474-922d-4170-9140-5b1cfeef587f/ESITYS_20231115110126.PDF"
+    },
+    {
+     "nimi": "Lausuntopyyntö_Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
+     "pvm": "2023-11-02",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f74de910-48de-4b4d-8317-7615d07f3196/LAUSUNTOPYYNTO_20231115104547.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande_Regeringens proposition till riksdagen med förslag till lag om ändring av tobakslagen",
+     "pvm": "2023-11-02",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b40e377a-10d5-4a15-bbc2-09a0e65330e8/LAUSUNTOPYYNTO_20231115104547.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto",
+     "pvm": "2023-12-15",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/59c8685c-0c04-4bc2-9731-dd1b92f38db6/YHTEENVETO_20240312115008.pdf"
+    }
+   ],
+   "asiasanat": [
+    "tupakkatuotteet",
+    "nikotiini",
+    "tupakkalaki",
+    "tupakka",
+    "nikotiinituotteet"
+   ],
+   "esittelyviikko": 16,
+   "esittelyvuosi": 2024,
+   "etapit": [
+    {
+     "date": "2023-04-19",
+     "end": "2023-05-22",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö hallituksen esityksen luonnoksesta laiksi tupakkalain muuttamisesta",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2023-10-13",
+     "end": "2023-11-24",
+     "kind": "lausunto",
+     "label": "Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [
+    "EV 76/2024"
+   ],
+   "heNumerot": [
+    "HE 38/2024"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2024-04-03",
+      "id": "aa597b44-7a94-4504-ad31-bf675a590e43",
+      "org": "Strengbergs Habit Factory Ab Oy",
+      "title": "Strengbergs Habit Factory Ab Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/aa597b44-7a94-4504-ad31-bf675a590e43/LAUSUNTO_20240405122021.PDF"
+     },
+     {
+      "date": "2023-12-08",
+      "id": "bc171e16-444a-40cf-85b4-a5a9a56c2f65",
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Opetus- ja kulttuuriministeriö; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bc171e16-444a-40cf-85b4-a5a9a56c2f65/LAUSUNTO_20231214073450.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "f47fba69-3e76-4429-b369-b0c1b3413577",
+      "org": "Tupakkateollisuusliitto ry",
+      "title": "Tupakkateollisuusliitto Ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f47fba69-3e76-4429-b369-b0c1b3413577/LAUSUNTO_20231126111902.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "80dacf57-0615-46a0-8747-9c5e60d20db3",
+      "org": "Suomen Sydänliitto ry",
+      "title": "Suomen Sydänliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/80dacf57-0615-46a0-8747-9c5e60d20db3/LAUSUNTO_20231126113925.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "3fae4460-031d-4eba-be89-2db66b7254dd",
+      "org": "Philip Morris Finland Oy",
+      "title": "Philip Morris Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3fae4460-031d-4eba-be89-2db66b7254dd/LAUSUNTO_20231126114530.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "87bd3a08-8005-4727-87d0-640838567437",
+      "org": "Suomen ASH ry",
+      "title": "Suomen ASH ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/87bd3a08-8005-4727-87d0-640838567437/LAUSUNTO_20231126114834.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "3690547f-e929-41f5-a3da-00b0fd63e2d1",
+      "org": "Suomen ASH ry",
+      "title": "Suomen ASH; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3690547f-e929-41f5-a3da-00b0fd63e2d1/LAUSUNTO_20231126115128.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "b1978c1a-4336-49d2-bf2f-667d41df60cf",
+      "org": "Opetushallitus",
+      "title": "Opetushallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b1978c1a-4336-49d2-bf2f-667d41df60cf/LAUSUNTO_20231126115427.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "f3ea2705-cc48-4984-acdc-5b8ce806db7c",
+      "org": "R-kioski Oy",
+      "title": "R-kioski Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f3ea2705-cc48-4984-acdc-5b8ce806db7c/LAUSUNTO_20231126121149.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "d579d5f2-49ba-42d2-b555-e33e424a7622",
+      "org": "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry",
+      "title": "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d579d5f2-49ba-42d2-b555-e33e424a7622/LAUSUNTO_20231126121458.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "b576a85f-9faf-4b2f-a5ec-e68ef0c638e0",
+      "org": "Suomen terveydenhoitajaliitto STHL ry",
+      "title": "Suomen Terveydenhoitajaliitto STHL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b576a85f-9faf-4b2f-a5ec-e68ef0c638e0/LAUSUNTO_20231126121836.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "398f430d-ddd9-400a-a05f-6ecf80b71004",
+      "org": "Suomen Kuntaliitto ry",
+      "title": "Suomen Kuntaliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/398f430d-ddd9-400a-a05f-6ecf80b71004/LAUSUNTO_20231126122943.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "5be4f3df-4faf-4d0f-95ca-bc6e63ff70ef",
+      "org": "Kuopion kaupunki",
+      "title": "Kuopion kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5be4f3df-4faf-4d0f-95ca-bc6e63ff70ef/LAUSUNTO_20231126123245.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "37c8c6ef-41ce-4ef1-83c7-c12e80037fd0",
+      "org": "Päivittäistavarakauppa ry",
+      "title": "Päivittäistavarakauppa ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/37c8c6ef-41ce-4ef1-83c7-c12e80037fd0/LAUSUNTO_20231126124234.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "d7622f35-7fb3-4b9c-a8bf-866178a0e582",
+      "org": "Filha ry",
+      "title": "Filha ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d7622f35-7fb3-4b9c-a8bf-866178a0e582/LAUSUNTO_20231126124536.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "dd7d0e96-93a4-48c1-9e9f-57d35f6790a9",
+      "org": "Espoon seudun ympäristöterveys",
+      "title": "Espoon seudun ympäristöterveys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/dd7d0e96-93a4-48c1-9e9f-57d35f6790a9/LAUSUNTO_20231126124836.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "f09d2b22-ef8c-4438-80cb-d54c11378d7a",
+      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
+      "title": "Turvallisuus- ja kemikaalivirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f09d2b22-ef8c-4438-80cb-d54c11378d7a/LAUSUNTO_20231126125135.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "954dcdc8-d419-43c8-92fb-a1fd74d9d476",
+      "org": "Suomen Lääkäriliitto - Finlands Läkarförbund",
+      "title": "Suomen Lääkäriliitto - Finlands Läkarförbund; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/954dcdc8-d419-43c8-92fb-a1fd74d9d476/LAUSUNTO_20231126130144.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "7ec26a02-b682-4171-88a1-852485dcedb3",
+      "org": "Auralaki Ky",
+      "title": "Auralaki Ky; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7ec26a02-b682-4171-88a1-852485dcedb3/LAUSUNTO_20231126130446.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "3bbc5d4f-1cbd-4055-922e-dfd2ab70947d",
+      "org": "Wellgio Medical Oy Ltd",
+      "title": "Wellgio Medical Oy Ltd; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3bbc5d4f-1cbd-4055-922e-dfd2ab70947d/LAUSUNTO_20231126131558.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "15e89d5c-8188-4d51-8265-6f75e7ea4a1a",
+      "org": "Valtiovarainministeriö",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/15e89d5c-8188-4d51-8265-6f75e7ea4a1a/LAUSUNTO_20231127121140.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "41e24ca6-3cd3-425b-ad72-8112114daf87",
+      "org": "High Voltage Group Oy",
+      "title": "High Voltage Group Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/41e24ca6-3cd3-425b-ad72-8112114daf87/LAUSUNTO_20231127173706.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "001ac475-3cf2-4b52-ac23-8a65268e786c",
+      "org": "Imperial Brands Finland Oy",
+      "title": "Imperial Brands Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/001ac475-3cf2-4b52-ac23-8a65268e786c/LAUSUNTO_20231127174005.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "920cc860-e134-442d-a4fc-8605cacf639f",
+      "org": "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue",
+      "title": "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/920cc860-e134-442d-a4fc-8605cacf639f/LAUSUNTO_20231127174936.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "4c91f4f8-c89a-40df-9628-f3acddb01787",
+      "org": "Wellgio Medical Oy Ltd",
+      "title": "Wellgio Medical Oy Ltd; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/4c91f4f8-c89a-40df-9628-f3acddb01787/LAUSUNTO_20231127175244.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "4cb40b77-8f16-470c-b62a-575ec23494f1",
+      "org": "HUS Myrkytystietokeskus",
+      "title": "HUS Myrkytystietokeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/4cb40b77-8f16-470c-b62a-575ec23494f1/LAUSUNTO_20231127175543.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "cfb1276d-5796-44c9-a17a-1115ff2b88bf",
+      "org": "British American Tobacco Finland Oy",
+      "title": "British American Tobacco Denmark A/S ja British American Tobacco Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/cfb1276d-5796-44c9-a17a-1115ff2b88bf/LAUSUNTO_20231127175902.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "5c2d2ddf-b4cd-415b-9c12-feacb57f9579",
+      "org": "Länsi-Uudenmaan hyvinvointialue",
+      "title": "Länsi-Uudenmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5c2d2ddf-b4cd-415b-9c12-feacb57f9579/LAUSUNTO_20231127180214.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "5e3b1cff-16ba-4a9e-abb2-cf37782c8259",
+      "org": "Tampereen kaupungin ympäristöterveys",
+      "title": "Tampereen kaupungin ympäristöterveys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5e3b1cff-16ba-4a9e-abb2-cf37782c8259/LAUSUNTO_20231127180525.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "c17c47df-f047-4802-8b0b-1beb53f00c64",
+      "org": "Nordic Nicotine Pouches Alliance",
+      "title": "Nordic Nicotine Pouches Alliance; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c17c47df-f047-4802-8b0b-1beb53f00c64/LAUSUNTO_20231127180841.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "314dc1de-8249-4901-b4d0-2bb3e605bcc3",
+      "org": "Hit Factor",
+      "title": "Hit Factor; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/314dc1de-8249-4901-b4d0-2bb3e605bcc3/LAUSUNTO_20231128172010.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "16031ba2-db23-4790-8418-cb1b8a68856a",
+      "org": "JNTL Consumer Health (Finland) Oy",
+      "title": "JNTL Consumer Health (Finland) Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/16031ba2-db23-4790-8418-cb1b8a68856a/LAUSUNTO_20231128172314.PDF"
+     },
+     {
+      "date": "2023-11-24",
+      "id": "ca57e3aa-4c5f-49a5-bb38-0298f1f6786b",
+      "org": "DAT Suomi - Lääkärit tupakkaa vastaan",
+      "title": "DAT Suomi - Lääkärit tupakkaa vastaan; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ca57e3aa-4c5f-49a5-bb38-0298f1f6786b/LAUSUNTO_20231128172700.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "eeb9fab3-90a4-4fec-abf2-3b83b1d50471",
+      "org": "Ehkäisevä päihdetyö EHYT ry",
+      "title": "Ehkäisevä päihdetyö EHYT ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/eeb9fab3-90a4-4fec-abf2-3b83b1d50471/LAUSUNTO_20231123185116.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "09d3014f-c395-49d0-8257-705a9a500da5",
+      "org": "Allergia-, Iho- ja Astmaliitto ry",
+      "title": "Allergia-, Iho- ja Astmaliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/09d3014f-c395-49d0-8257-705a9a500da5/LAUSUNTO_20231123190052.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "6e926626-bfbc-4985-99a3-c1232e755325",
+      "org": "Etelä-Karjalan hyvinvointialue",
+      "title": "Etelä-Karjalan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6e926626-bfbc-4985-99a3-c1232e755325/LAUSUNTO_20231123193518.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "aa9d5fbf-4036-4aef-b691-5a63b9b6c09e",
+      "org": "Vapers Finland ry",
+      "title": "Vapers Finland ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/aa9d5fbf-4036-4aef-b691-5a63b9b6c09e/LAUSUNTO_20231123194441.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "9c5eff70-ef70-455f-be86-20b8404c69a0",
+      "org": "Pirkanmaan hyvinvointialue",
+      "title": "Pirkanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/9c5eff70-ef70-455f-be86-20b8404c69a0/LAUSUNTO_20231123203402.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "ed3a28b0-7d90-4be2-9461-43df35949eb7",
+      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
+      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ed3a28b0-7d90-4be2-9461-43df35949eb7/LAUSUNTO_20231123204521.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "ebbae999-0195-4876-9208-670bb97bff6d",
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos THL; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ebbae999-0195-4876-9208-670bb97bff6d/LAUSUNTO_20231123211816.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "fe5c5d0a-265b-48e5-8706-e05b85cdd879",
+      "org": "Valo SWE Oy",
+      "title": "Valo SWE Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/fe5c5d0a-265b-48e5-8706-e05b85cdd879/LAUSUNTO_20231126105452.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "37d7f948-0ad0-4b60-a5bd-ef76977b693c",
+      "org": "Kotkan kaupunki",
+      "title": "Kotkan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/37d7f948-0ad0-4b60-a5bd-ef76977b693c/LAUSUNTO_20231126105804.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "50e3fe12-80b5-4b12-8a5a-52ba62735b52",
+      "org": "Porin kaupunki",
+      "title": "Porin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/50e3fe12-80b5-4b12-8a5a-52ba62735b52/LAUSUNTO_20231126110110.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "c63170b3-4030-42d2-a770-52b9559e5890",
+      "org": "Hengitysliitto ry",
+      "title": "Hengitysliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c63170b3-4030-42d2-a770-52b9559e5890/LAUSUNTO_20231126111545.PDF"
+     },
+     {
+      "date": "2023-11-23",
+      "id": "d9b337dc-d392-4f60-8eea-90cf057cbc30",
+      "org": "Ahvenanmaan maakunnan hallitus",
+      "title": "Utlåtande",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d9b337dc-d392-4f60-8eea-90cf057cbc30/LAUSUNTO_20231128072633.PDF"
+     },
+     {
+      "date": "2023-11-22",
+      "id": "6e6c2f42-f241-4536-b34f-98f6c17e0abe",
+      "org": "Tulli",
+      "title": "Tulli; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6e6c2f42-f241-4536-b34f-98f6c17e0abe/LAUSUNTO_20231122172902.PDF"
+     },
+     {
+      "date": "2023-11-22",
+      "id": "c194c8a8-a82a-4d65-99dc-7d0b07bd9faf",
+      "org": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
+      "title": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c194c8a8-a82a-4d65-99dc-7d0b07bd9faf/LAUSUNTO_20231122173208.PDF"
+     },
+     {
+      "date": "2023-11-22",
+      "id": "03f688aa-a775-455b-9711-c2002989b400",
+      "org": "Satakunnan hyvinvointialue",
+      "title": "Satakunnan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/03f688aa-a775-455b-9711-c2002989b400/LAUSUNTO_20231122183922.PDF"
+     },
+     {
+      "date": "2023-11-22",
+      "id": "b1f77a18-0987-446b-8a30-22bc9d001640",
+      "org": "Ehkäisevän päihdetyön järjestöverkosto",
+      "title": "Ehkäisevän päihdetyön järjestöverkosto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b1f77a18-0987-446b-8a30-22bc9d001640/LAUSUNTO_20231122185447.PDF"
+     },
+     {
+      "date": "2023-11-21",
+      "id": "0273f3bc-853a-4879-9167-25e984418a45",
+      "org": "Etelä-Suomen aluehallintovirasto",
+      "title": "Etelä-Suomen aluehallintovirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/0273f3bc-853a-4879-9167-25e984418a45/LAUSUNTO_20231121172156.PDF"
+     },
+     {
+      "date": "2023-11-21",
+      "id": "5baa3aa5-56f7-4d3f-b52a-c4a6431dfe6b",
+      "org": "Kanta-Hämeen hyvinvointialue",
+      "title": "Kanta-Hämeen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5baa3aa5-56f7-4d3f-b52a-c4a6431dfe6b/LAUSUNTO_20231121173130.PDF"
+     },
+     {
+      "date": "2023-11-21",
+      "id": "806c71f7-f93c-4604-a457-69f2ef10febb",
+      "org": "Kainuun hyvinvointialue",
+      "title": "Kainuun hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/806c71f7-f93c-4604-a457-69f2ef10febb/LAUSUNTO_20231121174856.PDF"
+     },
+     {
+      "date": "2023-11-17",
+      "id": "c97f7f99-25b3-4046-b244-a3d05bad9113",
+      "org": "Helsingin kaupunki",
+      "title": "Helsingin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c97f7f99-25b3-4046-b244-a3d05bad9113/LAUSUNTO_20231120174914.PDF"
+     },
+     {
+      "date": "2023-11-17",
+      "id": "7631021f-5629-4044-954f-c75b282050c0",
+      "org": "Suomen Syöpäyhdistys ry",
+      "title": "Suomen Syöpäyhdistys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7631021f-5629-4044-954f-c75b282050c0/LAUSUNTO_20231120175927.PDF"
+     },
+     {
+      "date": "2023-11-17",
+      "id": "3cce00e7-5694-49b8-8775-75bc6e2ec31b",
+      "org": "SOSTE Suomen sosiaali ja terveys ry",
+      "title": "SOSTE Suomen sosiaali ja terveys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3cce00e7-5694-49b8-8775-75bc6e2ec31b/LAUSUNTO_20231120181358.PDF"
+     },
+     {
+      "date": "2023-11-16",
+      "id": "41b29277-dd2c-429f-9062-ce3fb8bf37dc",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/41b29277-dd2c-429f-9062-ce3fb8bf37dc/LAUSUNTO_20231116110806.PDF"
+     },
+     {
+      "date": "2023-11-16",
+      "id": "40492437-8595-4941-8499-7cd7ebb76b9d",
+      "org": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
+      "title": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/40492437-8595-4941-8499-7cd7ebb76b9d/LAUSUNTO_20231120172808.PDF"
+     },
+     {
+      "date": "2023-11-16",
+      "id": "231eb29d-b4a5-4e20-85fa-5060991388c6",
+      "org": "Porvoon kaupunki",
+      "title": "Porvoon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/231eb29d-b4a5-4e20-85fa-5060991388c6/LAUSUNTO_20231120174601.PDF"
+     },
+     {
+      "date": "2023-11-15",
+      "id": "0b475561-26a3-41da-8a22-eb05c7bf6dc1",
+      "org": "Siilinjärven kunta",
+      "title": "Siilinjärven kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/0b475561-26a3-41da-8a22-eb05c7bf6dc1/LAUSUNTO_20231115185106.PDF"
+     },
+     {
+      "date": "2023-11-15",
+      "id": "29452584-90eb-4968-b7c5-da566afaefb6",
+      "org": "Varsinais-Suomen hyvinvointialue",
+      "title": "Varsinais-Suomen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/29452584-90eb-4968-b7c5-da566afaefb6/LAUSUNTO_20231115192717.PDF"
+     },
+     {
+      "date": "2023-11-10",
+      "id": "5922907c-23bf-45f7-b58a-01083499f9c5",
+      "org": "Etelä-Pohjanmaan hyvinvointialue",
+      "title": "Etelä-Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5922907c-23bf-45f7-b58a-01083499f9c5/LAUSUNTO_20231112111551.PDF"
+     },
+     {
+      "date": "2023-11-10",
+      "id": "beb612a2-a05c-41b1-b350-bad3fed6aea8",
+      "org": "Päijät-Hämeen hyvinvointialue",
+      "title": "Päijät-Hämeen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/beb612a2-a05c-41b1-b350-bad3fed6aea8/LAUSUNTO_20231112114021.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "dde9f044-f20e-490f-9d98-cb374c11f3b0",
+      "org": "Ahvenanmaan maakunnan hallitus",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/dde9f044-f20e-490f-9d98-cb374c11f3b0/LAUSUNTO_20230602061300.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "858dfaec-d012-47dc-816f-20711eff0151",
+      "org": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/858dfaec-d012-47dc-816f-20711eff0151/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "675b86aa-b48c-4081-8f0f-490a2fd73516",
+      "org": "Filha ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/675b86aa-b48c-4081-8f0f-490a2fd73516/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "cc498047-0357-4cc1-ad86-ee972d77c1ba",
+      "org": "Espoon seudun ympäristöterveys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/cc498047-0357-4cc1-ad86-ee972d77c1ba/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "97e25af4-65e6-42c6-b903-44a2319f6041",
+      "org": "Vapers Finland ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97e25af4-65e6-42c6-b903-44a2319f6041/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "2d9ca376-27df-48b8-8905-a4c8b0e6f065",
+      "org": "SOSTE Suomen sosiaali ja terveys ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/2d9ca376-27df-48b8-8905-a4c8b0e6f065/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "1c9cd34c-3be3-45bc-a87e-6200999929c9",
+      "org": "Päivittäistavarakauppa ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/1c9cd34c-3be3-45bc-a87e-6200999929c9/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "97d04c53-e333-40ef-bfdc-4ddbeda9d25c",
+      "org": "Tupakkateollisuusliitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97d04c53-e333-40ef-bfdc-4ddbeda9d25c/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "21f137a7-04f6-43d3-a90f-30ffb7e3bcb3",
+      "org": "Ehkäisevän päihdetyön järjestöverkosto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/21f137a7-04f6-43d3-a90f-30ffb7e3bcb3/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "00445509-b111-48ef-914a-d7084c2db0a3",
+      "org": "Syöpäjärjestöt",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/00445509-b111-48ef-914a-d7084c2db0a3/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "99a18654-fa8f-4549-adfe-1bf5051a57b3",
+      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/99a18654-fa8f-4549-adfe-1bf5051a57b3/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "bf97ca80-8bc5-486f-b619-b7d7c242ca03",
+      "org": "Philip Morris Finland Oy",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bf97ca80-8bc5-486f-b619-b7d7c242ca03/LAUSUNTO_20230524053947.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "2e1cbd21-29e9-43b8-bbe0-29f2f9613232",
+      "org": "HUS-yhtymä",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/2e1cbd21-29e9-43b8-bbe0-29f2f9613232/LAUSUNTO_20230524054828.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "b39a3234-8088-4ba5-a4bf-e8f420f6e624",
+      "org": "Suomen Kuntaliitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b39a3234-8088-4ba5-a4bf-e8f420f6e624/LAUSUNTO_20230524054828.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "8e7f4562-d351-4069-a9c2-afc29e352f17",
+      "org": "Niconovum AB",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/8e7f4562-d351-4069-a9c2-afc29e352f17/LAUSUNTO_20230524054828.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "ebc2598c-9ea3-4b93-907e-17d1f4319de6",
+      "org": "British American Tobacco",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ebc2598c-9ea3-4b93-907e-17d1f4319de6/LAUSUNTO_20230524054828.PDF"
+     },
+     {
+      "date": "2023-05-22",
+      "id": "6fb9a7ce-3940-4741-8312-7d1df91e3b7b",
+      "org": "Ehkäisevä päihdetyö EHYT ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6fb9a7ce-3940-4741-8312-7d1df91e3b7b/LAUSUNTO_20230524054828.PDF"
+     },
+     {
+      "date": "2023-05-19",
+      "id": "f739f30b-6bc3-425a-8705-74d114f66028",
+      "org": "Kuopion kaupunki",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f739f30b-6bc3-425a-8705-74d114f66028/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-19",
+      "id": "745f5210-bf0b-4bd7-8077-fff9d1961765",
+      "org": "Opetushallitus",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/745f5210-bf0b-4bd7-8077-fff9d1961765/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-19",
+      "id": "414dac2e-a1b5-49c6-8684-d1ab1919bbb1",
+      "org": "Porin kaupunki",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/414dac2e-a1b5-49c6-8684-d1ab1919bbb1/LAUSUNTO_20230523094216.PDF"
+     },
+     {
+      "date": "2023-05-17",
+      "id": "231c333c-652a-40cf-b2e9-aff58f708726",
+      "org": "Valo SWE Oy",
+      "title": "Valo SWE Oy; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/231c333c-652a-40cf-b2e9-aff58f708726/LAUSUNTO_20230519061429.PDF"
+     },
+     {
+      "date": "2023-05-16",
+      "id": "7f27518b-b0fb-4e27-80c0-278c09095066",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön lausunto luonnoksesta hallituksen esitykseksi laiksi tupakkalain muuttamisesta",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7f27518b-b0fb-4e27-80c0-278c09095066/LAUSUNTO_20230517062901.PDF"
+     },
+     {
+      "date": "2023-05-16",
+      "id": "66b01c8d-6d2c-452d-843d-6453e2b7c2d0",
+      "org": "Hengitysliitto ry",
+      "title": "Hengitysliitto ry; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/66b01c8d-6d2c-452d-843d-6453e2b7c2d0/LAUSUNTO_20230519061606.PDF"
+     },
+     {
+      "date": "2023-05-16",
+      "id": "938eb462-9af2-4090-b6b1-23581f512cd5",
+      "org": "Helsingin kaupunki",
+      "title": "Helsingin kaupunki; Helsingin kaupungin ympäristöterveysyksikön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/938eb462-9af2-4090-b6b1-23581f512cd5/LAUSUNTO_20230519061721.PDF"
+     },
+     {
+      "date": "2023-05-16",
+      "id": "ff482879-a1f2-44da-bc1a-939a6f75e700",
+      "org": "Tulli",
+      "title": "Tulli; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ff482879-a1f2-44da-bc1a-939a6f75e700/LAUSUNTO_20230519061839.PDF"
+     },
+     {
+      "date": "2023-05-15",
+      "id": "22e6fadc-a72b-49a3-8856-9f01a1dab06c",
+      "org": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
+      "title": "Fimea Lääkealan turvallisuus- ja kehittämiskeskus; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/22e6fadc-a72b-49a3-8856-9f01a1dab06c/LAUSUNTO_20230515072336.PDF"
+     },
+     {
+      "date": "2023-05-15",
+      "id": "ff73c764-ac85-4b23-a31d-7196dc7f1aef",
+      "org": "Pohjois-Karjalan Ympäristöterveys",
+      "title": "Pohjois-Karjalan Ympäristöterveys; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ff73c764-ac85-4b23-a31d-7196dc7f1aef/LAUSUNTO_20230515091411.PDF"
+     },
+     {
+      "date": "2023-05-15",
+      "id": "ae32ad73-67d9-4ad8-8598-3a6bf5c655f0",
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos THL; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ae32ad73-67d9-4ad8-8598-3a6bf5c655f0/LAUSUNTO_20230515114234.PDF"
+     },
+     {
+      "date": "2023-05-12",
+      "id": "233c34ea-8b2c-461d-ba37-67af81b112dd",
+      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
+      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/233c34ea-8b2c-461d-ba37-67af81b112dd/LAUSUNTO_20230515071759.PDF"
+     },
+     {
+      "date": "2023-05-10",
+      "id": "de02b652-6bf6-4052-b1f6-17902d6b3b02",
+      "org": "Suomen ASH ry",
+      "title": "Suomen ASH ry; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/de02b652-6bf6-4052-b1f6-17902d6b3b02/LAUSUNTO_20230511071431.PDF"
+     },
+     {
+      "date": "2023-05-05",
+      "id": "a8a6b178-857c-41b5-b4ba-bb981bc87479",
+      "org": "Etelä-Suomen aluehallintovirasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/a8a6b178-857c-41b5-b4ba-bb981bc87479/LAUSUNTO_20230508140400.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 93,
+    "orgs": [
+     "Suomen ASH ry",
+     "Ahvenanmaan maakunnan hallitus",
+     "Ehkäisevä päihdetyö EHYT ry",
+     "Ehkäisevän päihdetyön järjestöverkosto",
+     "Espoon seudun ympäristöterveys",
+     "Etelä-Suomen aluehallintovirasto",
+     "Filha ry",
+     "Helsingin kaupunki",
+     "Hengitysliitto ry",
+     "Kuopion kaupunki",
+     "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
+     "Matkailu- ja Ravintolapalvelut MaRa ry",
+     "Oikeusministeriö",
+     "Opetushallitus",
+     "Philip Morris Finland Oy",
+     "Porin kaupunki",
+     "Päivittäistavarakauppa ry",
+     "SOSTE Suomen sosiaali ja terveys ry",
+     "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
+     "Suomen Kuntaliitto ry",
+     "Terveyden ja hyvinvoinnin laitos THL",
+     "Tulli",
+     "Tupakkateollisuusliitto ry",
+     "Turvallisuus- ja kemikaalivirasto TUKES",
+     "Valo SWE Oy",
+     "Vapers Finland ry",
+     "Wellgio Medical Oy Ltd",
+     "Allergia-, Iho- ja Astmaliitto ry",
+     "Auralaki Ky",
+     "British American Tobacco",
+     "British American Tobacco Finland Oy",
+     "DAT Suomi - Lääkärit tupakkaa vastaan",
+     "Etelä-Karjalan hyvinvointialue",
+     "Etelä-Pohjanmaan hyvinvointialue",
+     "HUS Myrkytystietokeskus",
+     "HUS-yhtymä",
+     "High Voltage Group Oy",
+     "Hit Factor",
+     "Imperial Brands Finland Oy",
+     "JNTL Consumer Health (Finland) Oy",
+     "Kainuun hyvinvointialue",
+     "Kanta-Hämeen hyvinvointialue",
+     "Kotkan kaupunki",
+     "Länsi-Uudenmaan hyvinvointialue",
+     "Niconovum AB",
+     "Nordic Nicotine Pouches Alliance",
+     "Opetus- ja kulttuuriministeriö",
+     "Pirkanmaan hyvinvointialue",
+     "Pohjois-Karjalan Ympäristöterveys",
+     "Porvoon kaupunki",
+     "Päijät-Hämeen hyvinvointialue",
+     "R-kioski Oy",
+     "Satakunnan hyvinvointialue",
+     "Siilinjärven kunta",
+     "Strengbergs Habit Factory Ab Oy",
+     "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry",
+     "Suomen Lääkäriliitto - Finlands Läkarförbund",
+     "Suomen Sydänliitto ry",
+     "Suomen Syöpäyhdistys ry",
+     "Suomen terveydenhoitajaliitto STHL ry",
+     "Syöpäjärjestöt",
+     "Tampereen kaupungin ympäristöterveys",
+     "Valtiovarainministeriö",
+     "Varsinais-Suomen hyvinvointialue",
+     "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue"
+    ],
+    "url": null,
+    "viimeisin": "2024-04-03"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-25T12:50:16",
+   "nimi": "Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Tarkoitus säätää tupakkalaissa ns. nikotiinipussien myynnistä, ominaisuuksista, pakkauksista jne.",
+   "tila": "KAYNNISSA",
+   "tunnus": "STM029:00/2023",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM029:00/2023",
+   "uuid": "7321ad5b-cb05-42a5-9657-30262961158d",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": null,
+   "vanhaEsittelyviikko": 11,
+   "vanhaEsittelyvuosi": 2024
+  },
+  {
    "annettuEduskunnalle": null,
    "asetettu": "2023-02-24",
    "asiakirjat": [],
@@ -337943,826 +338763,6 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": "2024-04-18",
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Regeringens proposition till riksdagen med förslag till lag om ändring av tobakslagen",
-     "pvm": "2023-04-28",
-     "tyyppi": "ESITYS",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5ee6a4b2-4561-4276-8fa5-039152f7ab54/ESITYS_20230428141147.PDF"
-    },
-    {
-     "nimi": "TupL_HE_luonnos_lausuntoversio_12102023",
-     "pvm": "2023-10-12",
-     "tyyppi": "ESITYS",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97be3a15-200a-47c6-a4aa-9046168374e6/ESITYS_20231115110126.PDF"
-    },
-    {
-     "nimi": "VN0080742_TobL_RP_UtlåtandetVersion_12102023_sv",
-     "pvm": "2023-10-12",
-     "tyyppi": "ESITYS",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bafa0474-922d-4170-9140-5b1cfeef587f/ESITYS_20231115110126.PDF"
-    },
-    {
-     "nimi": "Lausuntopyyntö_Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
-     "pvm": "2023-11-02",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f74de910-48de-4b4d-8317-7615d07f3196/LAUSUNTOPYYNTO_20231115104547.PDF"
-    },
-    {
-     "nimi": "Begäran om utlåtande_Regeringens proposition till riksdagen med förslag till lag om ändring av tobakslagen",
-     "pvm": "2023-11-02",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b40e377a-10d5-4a15-bbc2-09a0e65330e8/LAUSUNTOPYYNTO_20231115104547.PDF"
-    },
-    {
-     "nimi": "Lausuntoyhteenveto",
-     "pvm": "2023-12-15",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/59c8685c-0c04-4bc2-9731-dd1b92f38db6/YHTEENVETO_20240312115008.pdf"
-    }
-   ],
-   "asiasanat": [
-    "tupakkatuotteet",
-    "nikotiini",
-    "tupakkalaki",
-    "tupakka",
-    "nikotiinituotteet"
-   ],
-   "esittelyviikko": 16,
-   "esittelyvuosi": 2024,
-   "etapit": [
-    {
-     "date": "2023-04-19",
-     "end": "2023-05-22",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö hallituksen esityksen luonnoksesta laiksi tupakkalain muuttamisesta",
-     "tyyppi": "LAUSUNTOKIERROS"
-    },
-    {
-     "date": "2023-10-13",
-     "end": "2023-11-24",
-     "kind": "lausunto",
-     "label": "Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [
-    "EV 76/2024"
-   ],
-   "heNumerot": [
-    "HE 38/2024"
-   ],
-   "heTila": "ANNETTU_EK",
-   "kiireellinen": false,
-   "laji": "laki",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2024-04-03",
-      "id": "aa597b44-7a94-4504-ad31-bf675a590e43",
-      "org": "Strengbergs Habit Factory Ab Oy",
-      "title": "Strengbergs Habit Factory Ab Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/aa597b44-7a94-4504-ad31-bf675a590e43/LAUSUNTO_20240405122021.PDF"
-     },
-     {
-      "date": "2023-12-08",
-      "id": "bc171e16-444a-40cf-85b4-a5a9a56c2f65",
-      "org": "Opetus- ja kulttuuriministeriö",
-      "title": "Opetus- ja kulttuuriministeriö; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bc171e16-444a-40cf-85b4-a5a9a56c2f65/LAUSUNTO_20231214073450.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "f47fba69-3e76-4429-b369-b0c1b3413577",
-      "org": "Tupakkateollisuusliitto ry",
-      "title": "Tupakkateollisuusliitto Ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f47fba69-3e76-4429-b369-b0c1b3413577/LAUSUNTO_20231126111902.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "80dacf57-0615-46a0-8747-9c5e60d20db3",
-      "org": "Suomen Sydänliitto ry",
-      "title": "Suomen Sydänliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/80dacf57-0615-46a0-8747-9c5e60d20db3/LAUSUNTO_20231126113925.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "3fae4460-031d-4eba-be89-2db66b7254dd",
-      "org": "Philip Morris Finland Oy",
-      "title": "Philip Morris Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3fae4460-031d-4eba-be89-2db66b7254dd/LAUSUNTO_20231126114530.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "87bd3a08-8005-4727-87d0-640838567437",
-      "org": "Suomen ASH ry",
-      "title": "Suomen ASH ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/87bd3a08-8005-4727-87d0-640838567437/LAUSUNTO_20231126114834.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "3690547f-e929-41f5-a3da-00b0fd63e2d1",
-      "org": "Suomen ASH ry",
-      "title": "Suomen ASH; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3690547f-e929-41f5-a3da-00b0fd63e2d1/LAUSUNTO_20231126115128.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "b1978c1a-4336-49d2-bf2f-667d41df60cf",
-      "org": "Opetushallitus",
-      "title": "Opetushallitus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b1978c1a-4336-49d2-bf2f-667d41df60cf/LAUSUNTO_20231126115427.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "f3ea2705-cc48-4984-acdc-5b8ce806db7c",
-      "org": "R-kioski Oy",
-      "title": "R-kioski Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f3ea2705-cc48-4984-acdc-5b8ce806db7c/LAUSUNTO_20231126121149.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "d579d5f2-49ba-42d2-b555-e33e424a7622",
-      "org": "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry",
-      "title": "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d579d5f2-49ba-42d2-b555-e33e424a7622/LAUSUNTO_20231126121458.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "b576a85f-9faf-4b2f-a5ec-e68ef0c638e0",
-      "org": "Suomen terveydenhoitajaliitto STHL ry",
-      "title": "Suomen Terveydenhoitajaliitto STHL ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b576a85f-9faf-4b2f-a5ec-e68ef0c638e0/LAUSUNTO_20231126121836.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "398f430d-ddd9-400a-a05f-6ecf80b71004",
-      "org": "Suomen Kuntaliitto ry",
-      "title": "Suomen Kuntaliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/398f430d-ddd9-400a-a05f-6ecf80b71004/LAUSUNTO_20231126122943.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "5be4f3df-4faf-4d0f-95ca-bc6e63ff70ef",
-      "org": "Kuopion kaupunki",
-      "title": "Kuopion kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5be4f3df-4faf-4d0f-95ca-bc6e63ff70ef/LAUSUNTO_20231126123245.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "37c8c6ef-41ce-4ef1-83c7-c12e80037fd0",
-      "org": "Päivittäistavarakauppa ry",
-      "title": "Päivittäistavarakauppa ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/37c8c6ef-41ce-4ef1-83c7-c12e80037fd0/LAUSUNTO_20231126124234.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "d7622f35-7fb3-4b9c-a8bf-866178a0e582",
-      "org": "Filha ry",
-      "title": "Filha ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d7622f35-7fb3-4b9c-a8bf-866178a0e582/LAUSUNTO_20231126124536.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "dd7d0e96-93a4-48c1-9e9f-57d35f6790a9",
-      "org": "Espoon seudun ympäristöterveys",
-      "title": "Espoon seudun ympäristöterveys; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/dd7d0e96-93a4-48c1-9e9f-57d35f6790a9/LAUSUNTO_20231126124836.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "f09d2b22-ef8c-4438-80cb-d54c11378d7a",
-      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
-      "title": "Turvallisuus- ja kemikaalivirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f09d2b22-ef8c-4438-80cb-d54c11378d7a/LAUSUNTO_20231126125135.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "954dcdc8-d419-43c8-92fb-a1fd74d9d476",
-      "org": "Suomen Lääkäriliitto - Finlands Läkarförbund",
-      "title": "Suomen Lääkäriliitto - Finlands Läkarförbund; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/954dcdc8-d419-43c8-92fb-a1fd74d9d476/LAUSUNTO_20231126130144.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "7ec26a02-b682-4171-88a1-852485dcedb3",
-      "org": "Auralaki Ky",
-      "title": "Auralaki Ky; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7ec26a02-b682-4171-88a1-852485dcedb3/LAUSUNTO_20231126130446.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "3bbc5d4f-1cbd-4055-922e-dfd2ab70947d",
-      "org": "Wellgio Medical Oy Ltd",
-      "title": "Wellgio Medical Oy Ltd; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3bbc5d4f-1cbd-4055-922e-dfd2ab70947d/LAUSUNTO_20231126131558.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "15e89d5c-8188-4d51-8265-6f75e7ea4a1a",
-      "org": "Valtiovarainministeriö",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/15e89d5c-8188-4d51-8265-6f75e7ea4a1a/LAUSUNTO_20231127121140.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "41e24ca6-3cd3-425b-ad72-8112114daf87",
-      "org": "High Voltage Group Oy",
-      "title": "High Voltage Group Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/41e24ca6-3cd3-425b-ad72-8112114daf87/LAUSUNTO_20231127173706.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "001ac475-3cf2-4b52-ac23-8a65268e786c",
-      "org": "Imperial Brands Finland Oy",
-      "title": "Imperial Brands Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/001ac475-3cf2-4b52-ac23-8a65268e786c/LAUSUNTO_20231127174005.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "920cc860-e134-442d-a4fc-8605cacf639f",
-      "org": "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue",
-      "title": "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/920cc860-e134-442d-a4fc-8605cacf639f/LAUSUNTO_20231127174936.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "4c91f4f8-c89a-40df-9628-f3acddb01787",
-      "org": "Wellgio Medical Oy Ltd",
-      "title": "Wellgio Medical Oy Ltd; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/4c91f4f8-c89a-40df-9628-f3acddb01787/LAUSUNTO_20231127175244.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "4cb40b77-8f16-470c-b62a-575ec23494f1",
-      "org": "HUS Myrkytystietokeskus",
-      "title": "HUS Myrkytystietokeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/4cb40b77-8f16-470c-b62a-575ec23494f1/LAUSUNTO_20231127175543.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "cfb1276d-5796-44c9-a17a-1115ff2b88bf",
-      "org": "British American Tobacco Finland Oy",
-      "title": "British American Tobacco Denmark A/S ja British American Tobacco Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/cfb1276d-5796-44c9-a17a-1115ff2b88bf/LAUSUNTO_20231127175902.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "5c2d2ddf-b4cd-415b-9c12-feacb57f9579",
-      "org": "Länsi-Uudenmaan hyvinvointialue",
-      "title": "Länsi-Uudenmaan hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5c2d2ddf-b4cd-415b-9c12-feacb57f9579/LAUSUNTO_20231127180214.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "5e3b1cff-16ba-4a9e-abb2-cf37782c8259",
-      "org": "Tampereen kaupungin ympäristöterveys",
-      "title": "Tampereen kaupungin ympäristöterveys; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5e3b1cff-16ba-4a9e-abb2-cf37782c8259/LAUSUNTO_20231127180525.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "c17c47df-f047-4802-8b0b-1beb53f00c64",
-      "org": "Nordic Nicotine Pouches Alliance",
-      "title": "Nordic Nicotine Pouches Alliance; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c17c47df-f047-4802-8b0b-1beb53f00c64/LAUSUNTO_20231127180841.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "314dc1de-8249-4901-b4d0-2bb3e605bcc3",
-      "org": "Hit Factor",
-      "title": "Hit Factor; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/314dc1de-8249-4901-b4d0-2bb3e605bcc3/LAUSUNTO_20231128172010.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "16031ba2-db23-4790-8418-cb1b8a68856a",
-      "org": "JNTL Consumer Health (Finland) Oy",
-      "title": "JNTL Consumer Health (Finland) Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/16031ba2-db23-4790-8418-cb1b8a68856a/LAUSUNTO_20231128172314.PDF"
-     },
-     {
-      "date": "2023-11-24",
-      "id": "ca57e3aa-4c5f-49a5-bb38-0298f1f6786b",
-      "org": "DAT Suomi - Lääkärit tupakkaa vastaan",
-      "title": "DAT Suomi - Lääkärit tupakkaa vastaan; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ca57e3aa-4c5f-49a5-bb38-0298f1f6786b/LAUSUNTO_20231128172700.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "eeb9fab3-90a4-4fec-abf2-3b83b1d50471",
-      "org": "Ehkäisevä päihdetyö EHYT ry",
-      "title": "Ehkäisevä päihdetyö EHYT ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/eeb9fab3-90a4-4fec-abf2-3b83b1d50471/LAUSUNTO_20231123185116.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "09d3014f-c395-49d0-8257-705a9a500da5",
-      "org": "Allergia-, Iho- ja Astmaliitto ry",
-      "title": "Allergia-, Iho- ja Astmaliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/09d3014f-c395-49d0-8257-705a9a500da5/LAUSUNTO_20231123190052.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "6e926626-bfbc-4985-99a3-c1232e755325",
-      "org": "Etelä-Karjalan hyvinvointialue",
-      "title": "Etelä-Karjalan hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6e926626-bfbc-4985-99a3-c1232e755325/LAUSUNTO_20231123193518.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "aa9d5fbf-4036-4aef-b691-5a63b9b6c09e",
-      "org": "Vapers Finland ry",
-      "title": "Vapers Finland ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/aa9d5fbf-4036-4aef-b691-5a63b9b6c09e/LAUSUNTO_20231123194441.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "9c5eff70-ef70-455f-be86-20b8404c69a0",
-      "org": "Pirkanmaan hyvinvointialue",
-      "title": "Pirkanmaan hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/9c5eff70-ef70-455f-be86-20b8404c69a0/LAUSUNTO_20231123203402.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "ed3a28b0-7d90-4be2-9461-43df35949eb7",
-      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
-      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ed3a28b0-7d90-4be2-9461-43df35949eb7/LAUSUNTO_20231123204521.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "ebbae999-0195-4876-9208-670bb97bff6d",
-      "org": "Terveyden ja hyvinvoinnin laitos THL",
-      "title": "Terveyden ja hyvinvoinnin laitos THL; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ebbae999-0195-4876-9208-670bb97bff6d/LAUSUNTO_20231123211816.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "fe5c5d0a-265b-48e5-8706-e05b85cdd879",
-      "org": "Valo SWE Oy",
-      "title": "Valo SWE Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/fe5c5d0a-265b-48e5-8706-e05b85cdd879/LAUSUNTO_20231126105452.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "37d7f948-0ad0-4b60-a5bd-ef76977b693c",
-      "org": "Kotkan kaupunki",
-      "title": "Kotkan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/37d7f948-0ad0-4b60-a5bd-ef76977b693c/LAUSUNTO_20231126105804.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "50e3fe12-80b5-4b12-8a5a-52ba62735b52",
-      "org": "Porin kaupunki",
-      "title": "Porin kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/50e3fe12-80b5-4b12-8a5a-52ba62735b52/LAUSUNTO_20231126110110.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "c63170b3-4030-42d2-a770-52b9559e5890",
-      "org": "Hengitysliitto ry",
-      "title": "Hengitysliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c63170b3-4030-42d2-a770-52b9559e5890/LAUSUNTO_20231126111545.PDF"
-     },
-     {
-      "date": "2023-11-23",
-      "id": "d9b337dc-d392-4f60-8eea-90cf057cbc30",
-      "org": "Ahvenanmaan maakunnan hallitus",
-      "title": "Utlåtande",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/d9b337dc-d392-4f60-8eea-90cf057cbc30/LAUSUNTO_20231128072633.PDF"
-     },
-     {
-      "date": "2023-11-22",
-      "id": "6e6c2f42-f241-4536-b34f-98f6c17e0abe",
-      "org": "Tulli",
-      "title": "Tulli; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6e6c2f42-f241-4536-b34f-98f6c17e0abe/LAUSUNTO_20231122172902.PDF"
-     },
-     {
-      "date": "2023-11-22",
-      "id": "c194c8a8-a82a-4d65-99dc-7d0b07bd9faf",
-      "org": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
-      "title": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c194c8a8-a82a-4d65-99dc-7d0b07bd9faf/LAUSUNTO_20231122173208.PDF"
-     },
-     {
-      "date": "2023-11-22",
-      "id": "03f688aa-a775-455b-9711-c2002989b400",
-      "org": "Satakunnan hyvinvointialue",
-      "title": "Satakunnan hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/03f688aa-a775-455b-9711-c2002989b400/LAUSUNTO_20231122183922.PDF"
-     },
-     {
-      "date": "2023-11-22",
-      "id": "b1f77a18-0987-446b-8a30-22bc9d001640",
-      "org": "Ehkäisevän päihdetyön järjestöverkosto",
-      "title": "Ehkäisevän päihdetyön järjestöverkosto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b1f77a18-0987-446b-8a30-22bc9d001640/LAUSUNTO_20231122185447.PDF"
-     },
-     {
-      "date": "2023-11-21",
-      "id": "0273f3bc-853a-4879-9167-25e984418a45",
-      "org": "Etelä-Suomen aluehallintovirasto",
-      "title": "Etelä-Suomen aluehallintovirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/0273f3bc-853a-4879-9167-25e984418a45/LAUSUNTO_20231121172156.PDF"
-     },
-     {
-      "date": "2023-11-21",
-      "id": "5baa3aa5-56f7-4d3f-b52a-c4a6431dfe6b",
-      "org": "Kanta-Hämeen hyvinvointialue",
-      "title": "Kanta-Hämeen hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5baa3aa5-56f7-4d3f-b52a-c4a6431dfe6b/LAUSUNTO_20231121173130.PDF"
-     },
-     {
-      "date": "2023-11-21",
-      "id": "806c71f7-f93c-4604-a457-69f2ef10febb",
-      "org": "Kainuun hyvinvointialue",
-      "title": "Kainuun hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/806c71f7-f93c-4604-a457-69f2ef10febb/LAUSUNTO_20231121174856.PDF"
-     },
-     {
-      "date": "2023-11-17",
-      "id": "c97f7f99-25b3-4046-b244-a3d05bad9113",
-      "org": "Helsingin kaupunki",
-      "title": "Helsingin kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/c97f7f99-25b3-4046-b244-a3d05bad9113/LAUSUNTO_20231120174914.PDF"
-     },
-     {
-      "date": "2023-11-17",
-      "id": "7631021f-5629-4044-954f-c75b282050c0",
-      "org": "Suomen Syöpäyhdistys ry",
-      "title": "Suomen Syöpäyhdistys ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7631021f-5629-4044-954f-c75b282050c0/LAUSUNTO_20231120175927.PDF"
-     },
-     {
-      "date": "2023-11-17",
-      "id": "3cce00e7-5694-49b8-8775-75bc6e2ec31b",
-      "org": "SOSTE Suomen sosiaali ja terveys ry",
-      "title": "SOSTE Suomen sosiaali ja terveys ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/3cce00e7-5694-49b8-8775-75bc6e2ec31b/LAUSUNTO_20231120181358.PDF"
-     },
-     {
-      "date": "2023-11-16",
-      "id": "41b29277-dd2c-429f-9062-ce3fb8bf37dc",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/41b29277-dd2c-429f-9062-ce3fb8bf37dc/LAUSUNTO_20231116110806.PDF"
-     },
-     {
-      "date": "2023-11-16",
-      "id": "40492437-8595-4941-8499-7cd7ebb76b9d",
-      "org": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
-      "title": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/40492437-8595-4941-8499-7cd7ebb76b9d/LAUSUNTO_20231120172808.PDF"
-     },
-     {
-      "date": "2023-11-16",
-      "id": "231eb29d-b4a5-4e20-85fa-5060991388c6",
-      "org": "Porvoon kaupunki",
-      "title": "Porvoon kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/231eb29d-b4a5-4e20-85fa-5060991388c6/LAUSUNTO_20231120174601.PDF"
-     },
-     {
-      "date": "2023-11-15",
-      "id": "0b475561-26a3-41da-8a22-eb05c7bf6dc1",
-      "org": "Siilinjärven kunta",
-      "title": "Siilinjärven kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/0b475561-26a3-41da-8a22-eb05c7bf6dc1/LAUSUNTO_20231115185106.PDF"
-     },
-     {
-      "date": "2023-11-15",
-      "id": "29452584-90eb-4968-b7c5-da566afaefb6",
-      "org": "Varsinais-Suomen hyvinvointialue",
-      "title": "Varsinais-Suomen hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/29452584-90eb-4968-b7c5-da566afaefb6/LAUSUNTO_20231115192717.PDF"
-     },
-     {
-      "date": "2023-11-10",
-      "id": "5922907c-23bf-45f7-b58a-01083499f9c5",
-      "org": "Etelä-Pohjanmaan hyvinvointialue",
-      "title": "Etelä-Pohjanmaan hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/5922907c-23bf-45f7-b58a-01083499f9c5/LAUSUNTO_20231112111551.PDF"
-     },
-     {
-      "date": "2023-11-10",
-      "id": "beb612a2-a05c-41b1-b350-bad3fed6aea8",
-      "org": "Päijät-Hämeen hyvinvointialue",
-      "title": "Päijät-Hämeen hyvinvointialue; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/beb612a2-a05c-41b1-b350-bad3fed6aea8/LAUSUNTO_20231112114021.PDF"
-     },
-     {
-      "date": "2023-05-30",
-      "id": "dde9f044-f20e-490f-9d98-cb374c11f3b0",
-      "org": "Ahvenanmaan maakunnan hallitus",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/dde9f044-f20e-490f-9d98-cb374c11f3b0/LAUSUNTO_20230602061300.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "858dfaec-d012-47dc-816f-20711eff0151",
-      "org": "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/858dfaec-d012-47dc-816f-20711eff0151/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "675b86aa-b48c-4081-8f0f-490a2fd73516",
-      "org": "Filha ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/675b86aa-b48c-4081-8f0f-490a2fd73516/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "cc498047-0357-4cc1-ad86-ee972d77c1ba",
-      "org": "Espoon seudun ympäristöterveys",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/cc498047-0357-4cc1-ad86-ee972d77c1ba/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "97e25af4-65e6-42c6-b903-44a2319f6041",
-      "org": "Vapers Finland ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97e25af4-65e6-42c6-b903-44a2319f6041/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "2d9ca376-27df-48b8-8905-a4c8b0e6f065",
-      "org": "SOSTE Suomen sosiaali ja terveys ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/2d9ca376-27df-48b8-8905-a4c8b0e6f065/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "1c9cd34c-3be3-45bc-a87e-6200999929c9",
-      "org": "Päivittäistavarakauppa ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/1c9cd34c-3be3-45bc-a87e-6200999929c9/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "97d04c53-e333-40ef-bfdc-4ddbeda9d25c",
-      "org": "Tupakkateollisuusliitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/97d04c53-e333-40ef-bfdc-4ddbeda9d25c/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "21f137a7-04f6-43d3-a90f-30ffb7e3bcb3",
-      "org": "Ehkäisevän päihdetyön järjestöverkosto",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/21f137a7-04f6-43d3-a90f-30ffb7e3bcb3/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "00445509-b111-48ef-914a-d7084c2db0a3",
-      "org": "Syöpäjärjestöt",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/00445509-b111-48ef-914a-d7084c2db0a3/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "99a18654-fa8f-4549-adfe-1bf5051a57b3",
-      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/99a18654-fa8f-4549-adfe-1bf5051a57b3/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "bf97ca80-8bc5-486f-b619-b7d7c242ca03",
-      "org": "Philip Morris Finland Oy",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/bf97ca80-8bc5-486f-b619-b7d7c242ca03/LAUSUNTO_20230524053947.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "2e1cbd21-29e9-43b8-bbe0-29f2f9613232",
-      "org": "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/2e1cbd21-29e9-43b8-bbe0-29f2f9613232/LAUSUNTO_20230524054828.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "b39a3234-8088-4ba5-a4bf-e8f420f6e624",
-      "org": "Suomen Kuntaliitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/b39a3234-8088-4ba5-a4bf-e8f420f6e624/LAUSUNTO_20230524054828.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "8e7f4562-d351-4069-a9c2-afc29e352f17",
-      "org": "Niconovum AB",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/8e7f4562-d351-4069-a9c2-afc29e352f17/LAUSUNTO_20230524054828.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "ebc2598c-9ea3-4b93-907e-17d1f4319de6",
-      "org": "British American Tobacco",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ebc2598c-9ea3-4b93-907e-17d1f4319de6/LAUSUNTO_20230524054828.PDF"
-     },
-     {
-      "date": "2023-05-22",
-      "id": "6fb9a7ce-3940-4741-8312-7d1df91e3b7b",
-      "org": "Ehkäisevä päihdetyö EHYT ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/6fb9a7ce-3940-4741-8312-7d1df91e3b7b/LAUSUNTO_20230524054828.PDF"
-     },
-     {
-      "date": "2023-05-19",
-      "id": "f739f30b-6bc3-425a-8705-74d114f66028",
-      "org": "Kuopion kaupunki",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/f739f30b-6bc3-425a-8705-74d114f66028/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-19",
-      "id": "745f5210-bf0b-4bd7-8077-fff9d1961765",
-      "org": "Opetushallitus",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/745f5210-bf0b-4bd7-8077-fff9d1961765/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-19",
-      "id": "414dac2e-a1b5-49c6-8684-d1ab1919bbb1",
-      "org": "Porin kaupunki",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/414dac2e-a1b5-49c6-8684-d1ab1919bbb1/LAUSUNTO_20230523094216.PDF"
-     },
-     {
-      "date": "2023-05-17",
-      "id": "231c333c-652a-40cf-b2e9-aff58f708726",
-      "org": "Valo SWE Oy",
-      "title": "Valo SWE Oy; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/231c333c-652a-40cf-b2e9-aff58f708726/LAUSUNTO_20230519061429.PDF"
-     },
-     {
-      "date": "2023-05-16",
-      "id": "7f27518b-b0fb-4e27-80c0-278c09095066",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön lausunto luonnoksesta hallituksen esitykseksi laiksi tupakkalain muuttamisesta",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/7f27518b-b0fb-4e27-80c0-278c09095066/LAUSUNTO_20230517062901.PDF"
-     },
-     {
-      "date": "2023-05-16",
-      "id": "66b01c8d-6d2c-452d-843d-6453e2b7c2d0",
-      "org": "Hengitysliitto ry",
-      "title": "Hengitysliitto ry; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/66b01c8d-6d2c-452d-843d-6453e2b7c2d0/LAUSUNTO_20230519061606.PDF"
-     },
-     {
-      "date": "2023-05-16",
-      "id": "938eb462-9af2-4090-b6b1-23581f512cd5",
-      "org": "Helsingin kaupunki",
-      "title": "Helsingin kaupunki; Helsingin kaupungin ympäristöterveysyksikön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/938eb462-9af2-4090-b6b1-23581f512cd5/LAUSUNTO_20230519061721.PDF"
-     },
-     {
-      "date": "2023-05-16",
-      "id": "ff482879-a1f2-44da-bc1a-939a6f75e700",
-      "org": "Tulli",
-      "title": "Tulli; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ff482879-a1f2-44da-bc1a-939a6f75e700/LAUSUNTO_20230519061839.PDF"
-     },
-     {
-      "date": "2023-05-15",
-      "id": "22e6fadc-a72b-49a3-8856-9f01a1dab06c",
-      "org": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
-      "title": "Fimea Lääkealan turvallisuus- ja kehittämiskeskus; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/22e6fadc-a72b-49a3-8856-9f01a1dab06c/LAUSUNTO_20230515072336.PDF"
-     },
-     {
-      "date": "2023-05-15",
-      "id": "ff73c764-ac85-4b23-a31d-7196dc7f1aef",
-      "org": "Pohjois-Karjalan Ympäristöterveys",
-      "title": "Pohjois-Karjalan Ympäristöterveys; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ff73c764-ac85-4b23-a31d-7196dc7f1aef/LAUSUNTO_20230515091411.PDF"
-     },
-     {
-      "date": "2023-05-15",
-      "id": "ae32ad73-67d9-4ad8-8598-3a6bf5c655f0",
-      "org": "Terveyden ja hyvinvoinnin laitos THL",
-      "title": "Terveyden ja hyvinvoinnin laitos THL; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/ae32ad73-67d9-4ad8-8598-3a6bf5c655f0/LAUSUNTO_20230515114234.PDF"
-     },
-     {
-      "date": "2023-05-12",
-      "id": "233c34ea-8b2c-461d-ba37-67af81b112dd",
-      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
-      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/233c34ea-8b2c-461d-ba37-67af81b112dd/LAUSUNTO_20230515071759.PDF"
-     },
-     {
-      "date": "2023-05-10",
-      "id": "de02b652-6bf6-4052-b1f6-17902d6b3b02",
-      "org": "Suomen ASH ry",
-      "title": "Suomen ASH ry; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/de02b652-6bf6-4052-b1f6-17902d6b3b02/LAUSUNTO_20230511071431.PDF"
-     },
-     {
-      "date": "2023-05-05",
-      "id": "a8a6b178-857c-41b5-b4ba-bb981bc87479",
-      "org": "Etelä-Suomen aluehallintovirasto",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7321ad5b-cb05-42a5-9657-30262961158d/a8a6b178-857c-41b5-b4ba-bb981bc87479/LAUSUNTO_20230508140400.PDF"
-     }
-    ],
-    "eiLausuttavaa": 0,
-    "n": 93,
-    "orgs": [
-     "Suomen ASH ry",
-     "Ahvenanmaan maakunnan hallitus",
-     "Ehkäisevä päihdetyö EHYT ry",
-     "Ehkäisevän päihdetyön järjestöverkosto",
-     "Espoon seudun ympäristöterveys",
-     "Etelä-Suomen aluehallintovirasto",
-     "Filha ry",
-     "Helsingin kaupunki",
-     "Hengitysliitto ry",
-     "Kuopion kaupunki",
-     "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
-     "Matkailu- ja Ravintolapalvelut MaRa ry",
-     "Oikeusministeriö",
-     "Opetushallitus",
-     "Philip Morris Finland Oy",
-     "Porin kaupunki",
-     "Päivittäistavarakauppa ry",
-     "SOSTE Suomen sosiaali ja terveys ry",
-     "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
-     "Suomen Kuntaliitto ry",
-     "Terveyden ja hyvinvoinnin laitos THL",
-     "Tulli",
-     "Tupakkateollisuusliitto ry",
-     "Turvallisuus- ja kemikaalivirasto TUKES",
-     "Valo SWE Oy",
-     "Vapers Finland ry",
-     "Wellgio Medical Oy Ltd",
-     "Allergia-, Iho- ja Astmaliitto ry",
-     "Auralaki Ky",
-     "British American Tobacco",
-     "British American Tobacco Finland Oy",
-     "DAT Suomi - Lääkärit tupakkaa vastaan",
-     "Etelä-Karjalan hyvinvointialue",
-     "Etelä-Pohjanmaan hyvinvointialue",
-     "HUS Myrkytystietokeskus",
-     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
-     "High Voltage Group Oy",
-     "Hit Factor",
-     "Imperial Brands Finland Oy",
-     "JNTL Consumer Health (Finland) Oy",
-     "Kainuun hyvinvointialue",
-     "Kanta-Hämeen hyvinvointialue",
-     "Kotkan kaupunki",
-     "Länsi-Uudenmaan hyvinvointialue",
-     "Niconovum AB",
-     "Nordic Nicotine Pouches Alliance",
-     "Opetus- ja kulttuuriministeriö",
-     "Pirkanmaan hyvinvointialue",
-     "Pohjois-Karjalan Ympäristöterveys",
-     "Porvoon kaupunki",
-     "Päijät-Hämeen hyvinvointialue",
-     "R-kioski Oy",
-     "Satakunnan hyvinvointialue",
-     "Siilinjärven kunta",
-     "Strengbergs Habit Factory Ab Oy",
-     "Suomen Bensiinikauppiaitten ja Liikennepalvelualojen Liitto SBL ry",
-     "Suomen Lääkäriliitto - Finlands Läkarförbund",
-     "Suomen Sydänliitto ry",
-     "Suomen Syöpäyhdistys ry",
-     "Suomen terveydenhoitajaliitto STHL ry",
-     "Syöpäjärjestöt",
-     "Tampereen kaupungin ympäristöterveys",
-     "Valtiovarainministeriö",
-     "Varsinais-Suomen hyvinvointialue",
-     "Ylivieskan ympäristöterveydenhuollon yhteistoiminta-alue"
-    ],
-    "url": null,
-    "viimeisin": "2024-04-03"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2025-06-03T05:26:25",
-   "nimi": "Hallituksen esitys eduskunnalle laiksi tupakkalain muuttamisesta",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Tarkoitus säätää tupakkalaissa ns. nikotiinipussien myynnistä, ominaisuuksista, pakkauksista jne.",
-   "tila": "PAATTYNYT",
-   "tunnus": "STM029:00/2023",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM029:00/2023",
-   "uuid": "7321ad5b-cb05-42a5-9657-30262961158d",
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
-   "vanhaEsittelyviikko": 11,
-   "vanhaEsittelyvuosi": 2024
-  },
-  {
    "annettuEduskunnalle": "2023-09-28",
    "asetettu": null,
    "asiakirjat": [],
@@ -457703,7 +457703,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-04-13T08:58:38",
+   "muokattu": "2026-10-25T12:26:12",
    "nimi": "Valtioneuvoston asetus valtakunnallisesta ja alueellisista tilanne- ja johtokeskusjärjestelyistä sekä muusta pelastustoiminnan johtamisen edellytyksenä olevasta erityisvalmiudesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -512787,7 +512787,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-02-12T01:40:22",
+   "muokattu": "2026-10-25T13:10:10",
    "nimi": "Sosiaali- ja terveysministeriön asetus sosiaali- ja terveydenhuollon henkilöstön täydennyskoulutuksesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -516610,6 +516610,919 @@
   },
   {
    "annettuEduskunnalle": null,
+   "asetettu": "2023-05-04",
+   "asiakirjat": [],
+   "asiasanat": [
+    "kunnat"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2023-05-12",
+     "end": "2023-05-31",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2023-05-31",
+      "id": "5d08c6e3-0ba5-4625-a501-29324b3d06cc",
+      "org": "Nurmeksen kaupunki",
+      "title": "Nurmeksen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/5d08c6e3-0ba5-4625-a501-29324b3d06cc/LAUSUNTO_20230602110517.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "ffc4536d-8212-4f03-b403-c76e779ed601",
+      "org": "Kärsämäen kunta",
+      "title": "Kärsämäen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/ffc4536d-8212-4f03-b403-c76e779ed601/LAUSUNTO_20230602110749.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "b5b070f7-69d9-4b7e-875e-1f8ea8038780",
+      "org": "Sastamalan kaupunki",
+      "title": "Sastamalan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/b5b070f7-69d9-4b7e-875e-1f8ea8038780/LAUSUNTO_20230602110925.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "23d36a17-97c2-4d8b-80b1-7b7f0a2d9b54",
+      "org": "Konneveden kunta",
+      "title": "Konneveden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/23d36a17-97c2-4d8b-80b1-7b7f0a2d9b54/LAUSUNTO_20230602111135.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "802d6463-8693-4c49-97a7-24c976a56719",
+      "org": "Pukkilan kunta",
+      "title": "Pukkilan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/802d6463-8693-4c49-97a7-24c976a56719/LAUSUNTO_20230602111406.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "06c00e5f-ff34-4450-93ba-bfc5e67dbaff",
+      "org": "Iitin kunta",
+      "title": "Iitin kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/06c00e5f-ff34-4450-93ba-bfc5e67dbaff/LAUSUNTO_20230602111625.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "d1e743a5-4360-455b-8468-069d091256ca",
+      "org": "Kauniaisten kaupunki",
+      "title": "Kauniaisten kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/d1e743a5-4360-455b-8468-069d091256ca/LAUSUNTO_20230602111810.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "fca1e20b-2c07-42b2-b082-51895337db30",
+      "org": "Janakkalan kunta",
+      "title": "Janakkalan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/fca1e20b-2c07-42b2-b082-51895337db30/LAUSUNTO_20230602111954.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "8371ce31-1a36-4811-80fa-65ab328e02b4",
+      "org": "Espoon kaupunki",
+      "title": "Espoon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/8371ce31-1a36-4811-80fa-65ab328e02b4/LAUSUNTO_20230602112158.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "49bd5e63-de43-4241-ae46-8c4c53fdd31a",
+      "org": "Puumalan kunta",
+      "title": "Puumalan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/49bd5e63-de43-4241-ae46-8c4c53fdd31a/LAUSUNTO_20230602112337.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "da6a0ac5-da0e-4167-ad5a-02cf2a603798",
+      "org": "Kaustisen kunta",
+      "title": "Kaustisen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/da6a0ac5-da0e-4167-ad5a-02cf2a603798/LAUSUNTO_20230602112514.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "066758a0-578e-4465-946b-156c28f200f2",
+      "org": "Iida Parikka",
+      "title": "Ii; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/066758a0-578e-4465-946b-156c28f200f2/LAUSUNTO_20230602112842.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "7b8dc22e-dacd-46e0-8835-c141469bbd05",
+      "org": "Etelä-Karjalan hyvinvointialue",
+      "title": "Etelä-Karjalan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/7b8dc22e-dacd-46e0-8835-c141469bbd05/LAUSUNTO_20230602113317.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "f9a86fd0-da12-4a76-9f3b-42e8a2537eed",
+      "org": "Virtain kaupunki",
+      "title": "Virtain kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f9a86fd0-da12-4a76-9f3b-42e8a2537eed/LAUSUNTO_20230602113914.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "9cec6e5d-2474-4da5-9da1-125bda436631",
+      "org": "Kurikan kaupunki",
+      "title": "Kurikan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/9cec6e5d-2474-4da5-9da1-125bda436631/LAUSUNTO_20230602114051.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "c70f941b-ea45-408a-9930-1f7c020e55ae",
+      "org": "Sallan kunta",
+      "title": "Sallan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c70f941b-ea45-408a-9930-1f7c020e55ae/LAUSUNTO_20230602114245.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "8aab03d9-16d5-407c-bbe5-999187e6e8ff",
+      "org": "Suomen Kuntaliitto ry",
+      "title": "Suomen Kuntaliitto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/8aab03d9-16d5-407c-bbe5-999187e6e8ff/LAUSUNTO_20230602114418.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "4a396546-902b-4d47-98d4-0c420566c0f1",
+      "org": "Länsi-Uudenmaan hyvinvointialue",
+      "title": "Länsi-Uudenmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/4a396546-902b-4d47-98d4-0c420566c0f1/LAUSUNTO_20230602114615.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "b142d1ee-7b8b-42b9-9c70-a2e7554c1ae0",
+      "org": "Pyhäjoen kunta",
+      "title": "Pyhäjoen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/b142d1ee-7b8b-42b9-9c70-a2e7554c1ae0/LAUSUNTO_20230602114756.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "17336717-51f5-49f4-9689-6f08640f31b1",
+      "org": "Paltamon kunta",
+      "title": "Paltamon kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/17336717-51f5-49f4-9689-6f08640f31b1/LAUSUNTO_20230602114955.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "c8ceff7f-3a9d-4829-9746-5b432e07abe4",
+      "org": "Naantalin kaupunki",
+      "title": "Naantalin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c8ceff7f-3a9d-4829-9746-5b432e07abe4/LAUSUNTO_20230602115128.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "f503e96d-59ff-43b3-84f2-8a26c88458cf",
+      "org": "Satakunnan hyvinvointialue",
+      "title": "Satakunnan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f503e96d-59ff-43b3-84f2-8a26c88458cf/LAUSUNTO_20230602115323.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "66dbdcf9-92f8-4acf-b080-e3017f6feb16",
+      "org": "Karkkilan kaupunki",
+      "title": "Karkkilan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/66dbdcf9-92f8-4acf-b080-e3017f6feb16/LAUSUNTO_20230602115511.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "c1b86a12-870c-4973-9cd1-3450d6ba9711",
+      "org": "Sonkajärven kunta",
+      "title": "Sonkajärven kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c1b86a12-870c-4973-9cd1-3450d6ba9711/LAUSUNTO_20230602115731.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "82d2d909-4cfc-40cd-93b0-199c722c27dd",
+      "org": "Varkauden kaupunki",
+      "title": "Varkauden kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/82d2d909-4cfc-40cd-93b0-199c722c27dd/LAUSUNTO_20230602115922.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "83057821-1947-4042-9eeb-bc23a6404cb2",
+      "org": "Lahden kaupunki",
+      "title": "Lahden kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/83057821-1947-4042-9eeb-bc23a6404cb2/LAUSUNTO_20230602120116.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "893183b8-2c2b-425e-8594-927666ead668",
+      "org": "Ylitornion kunta",
+      "title": "Ylitornion kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/893183b8-2c2b-425e-8594-927666ead668/LAUSUNTO_20230602120314.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "fa877ce4-46fb-4ac9-a862-36903cfff674",
+      "org": "Multian kunta",
+      "title": "Multian kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/fa877ce4-46fb-4ac9-a862-36903cfff674/LAUSUNTO_20230602120453.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "a7aca991-161c-4de5-b714-1c78a23e74b1",
+      "org": "Vantaan ja Keravan hyvinvointialue",
+      "title": "Vantaa-Keravan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a7aca991-161c-4de5-b714-1c78a23e74b1/LAUSUNTO_20230606065108.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "2bc12d44-3fcc-4635-ad65-cfcc4d27206f",
+      "org": "Salon kaupunki",
+      "title": "Salon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/2bc12d44-3fcc-4635-ad65-cfcc4d27206f/LAUSUNTO_20230606065323.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "99f46420-bbbd-4ff3-b6f6-774f4933e73a",
+      "org": "Kainuun hyvinvointialue",
+      "title": "Kainuun hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/99f46420-bbbd-4ff3-b6f6-774f4933e73a/LAUSUNTO_20230606065549.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "f14ae222-837c-4753-bf88-4516e105131b",
+      "org": "Raahen kaupunki",
+      "title": "Raahen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f14ae222-837c-4753-bf88-4516e105131b/LAUSUNTO_20230606065812.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "5f370087-3e23-42d6-9540-90d242de8438",
+      "org": "Leppävirran kunta",
+      "title": "Leppävirran kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/5f370087-3e23-42d6-9540-90d242de8438/LAUSUNTO_20230606070003.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "d5b1a37f-6813-48b9-8927-d1032bf9c31a",
+      "org": "Jakobstad stad / Pietarsaaren kaupunki",
+      "title": "Jakobstad stad / Pietarsaaren kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/d5b1a37f-6813-48b9-8927-d1032bf9c31a/LAUSUNTO_20230606070137.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "55f2d088-bcb1-4a6c-b7bd-c3970ba0affc",
+      "org": "Korsholms kommun / Mustasaaren kunta",
+      "title": "Korsholms kommun / Mustasaaren kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/55f2d088-bcb1-4a6c-b7bd-c3970ba0affc/LAUSUNTO_20230606070325.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "855eb1d5-6d4a-4797-a255-f9dc89b0d0fe",
+      "org": "Heinolan kaupunki",
+      "title": "Heinolan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/855eb1d5-6d4a-4797-a255-f9dc89b0d0fe/LAUSUNTO_20230606070510.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "8aef5f8f-c527-42c4-906d-d46db139f915",
+      "org": "Rääkkylän kunta",
+      "title": "Rääkkylän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/8aef5f8f-c527-42c4-906d-d46db139f915/LAUSUNTO_20230606070643.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "77c62d73-4c39-4caa-9fed-8b260d3b6aa9",
+      "org": "Tampereen kaupunki",
+      "title": "Tampereen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/77c62d73-4c39-4caa-9fed-8b260d3b6aa9/LAUSUNTO_20230606070818.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "ea477144-a865-4521-b4cd-f49f62c95937",
+      "org": "Juvan kunta",
+      "title": "Juvan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/ea477144-a865-4521-b4cd-f49f62c95937/LAUSUNTO_20230606070952.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "0b4b6161-580d-4795-ab78-396fb92965d9",
+      "org": "Sysmän kunta",
+      "title": "Sysmän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/0b4b6161-580d-4795-ab78-396fb92965d9/LAUSUNTO_20230606071147.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "b62e0809-4e44-419e-9647-7614e1c0c0b9",
+      "org": "Pertunmaan kunta",
+      "title": "Pertunmaan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/b62e0809-4e44-419e-9647-7614e1c0c0b9/LAUSUNTO_20230606071340.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "6884033a-f7a3-48e7-929b-017d10be71d2",
+      "org": "Miehikkälän kunta",
+      "title": "Miehikkälän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/6884033a-f7a3-48e7-929b-017d10be71d2/LAUSUNTO_20230606071735.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "3cdba52f-e306-4e27-9463-28d5672e2c76",
+      "org": "Keravan kaupunki",
+      "title": "Keravan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/3cdba52f-e306-4e27-9463-28d5672e2c76/LAUSUNTO_20230606071950.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "3a4235da-87d2-46c0-baf2-27a6633c0a60",
+      "org": "Pohjois-Pohjanmaan hyvinvointialue",
+      "title": "Pohjois-Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/3a4235da-87d2-46c0-baf2-27a6633c0a60/LAUSUNTO_20230606080436.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "57ec547f-26a4-49ae-b5b6-7923476853aa",
+      "org": "Etelä-Pohjanmaan hyvinvointialue",
+      "title": "Etelä-Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/57ec547f-26a4-49ae-b5b6-7923476853aa/LAUSUNTO_20230606080702.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "7a116345-6304-48ab-afee-cf5a75283507",
+      "org": "Oulun kaupunki",
+      "title": "Oulun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/7a116345-6304-48ab-afee-cf5a75283507/LAUSUNTO_20230606080843.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "829457f8-9363-440c-b65e-807a26352c4b",
+      "org": "Ristijärven kunta",
+      "title": "Ristijärven kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/829457f8-9363-440c-b65e-807a26352c4b/LAUSUNTO_20230606081014.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "654ed3e7-9a75-4f13-9537-c8a747d635c3",
+      "org": "Pielaveden kunta",
+      "title": "Pielaveden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/654ed3e7-9a75-4f13-9537-c8a747d635c3/LAUSUNTO_20230606081202.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "3ec2f73e-91ad-46f2-b958-991af2224d0b",
+      "org": "Tornion kaupunki",
+      "title": "Tornion kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/3ec2f73e-91ad-46f2-b958-991af2224d0b/LAUSUNTO_20230606081325.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "513a8277-e72c-4c04-98ce-67d015bc5f5b",
+      "org": "Perhon kunta",
+      "title": "Perhon kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/513a8277-e72c-4c04-98ce-67d015bc5f5b/LAUSUNTO_20230606081442.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "8c9e5cf0-24a3-42b8-9857-78a1ef0a3c47",
+      "org": "Kangasalan kaupunki",
+      "title": "Kangasalan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/8c9e5cf0-24a3-42b8-9857-78a1ef0a3c47/LAUSUNTO_20230606081618.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "a9d29011-86af-47c6-8480-d9bf59646243",
+      "org": "Keski-Uudenmaan hyvinvointialue",
+      "title": "Keski-Uudenmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a9d29011-86af-47c6-8480-d9bf59646243/LAUSUNTO_20230606081808.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "c8cb3d79-0933-46d2-a486-d52451477902",
+      "org": "Keski-Suomen hyvinvointialue",
+      "title": "Keski-Suomen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c8cb3d79-0933-46d2-a486-d52451477902/LAUSUNTO_20230606081952.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "97f9618a-31c8-4290-bac7-b4d25415f640",
+      "org": "Kouvolan kaupunki",
+      "title": "Kouvolan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/97f9618a-31c8-4290-bac7-b4d25415f640/LAUSUNTO_20230606082133.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "742d497a-9263-4867-9ccd-d84fc163518e",
+      "org": "Etelä-Savon hyvinvointialue",
+      "title": "Etelä-Savon hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/742d497a-9263-4867-9ccd-d84fc163518e/LAUSUNTO_20230606082337.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "dff6e53f-b948-4ead-9d34-ffac875be212",
+      "org": "Ylivieskan kaupunki",
+      "title": "Ylivieskan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/dff6e53f-b948-4ead-9d34-ffac875be212/LAUSUNTO_20230606082529.PDF"
+     },
+     {
+      "date": "2023-05-31",
+      "id": "1048834c-0b9e-42eb-af4a-6a1fc2012242",
+      "org": "Järvenpään kaupunki",
+      "title": "Järvenpään kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/1048834c-0b9e-42eb-af4a-6a1fc2012242/LAUSUNTO_20230606082716.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "d4ab4b96-e51e-4fc6-a6c3-cbba278acd20",
+      "org": "Heinolan kaupunki",
+      "title": "Heinolan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/d4ab4b96-e51e-4fc6-a6c3-cbba278acd20/LAUSUNTO_20230602113132.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "c7724875-5d2e-4cf6-95cb-a4bc628c3128",
+      "org": "Helsingin kaupunki",
+      "title": "Helsingin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c7724875-5d2e-4cf6-95cb-a4bc628c3128/LAUSUNTO_20230606083212.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "ebbd9c83-7a33-4804-83b0-40f2efd93de8",
+      "org": "Ilomantsin kunta",
+      "title": "Ilomantsin kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/ebbd9c83-7a33-4804-83b0-40f2efd93de8/LAUSUNTO_20230606083634.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "c13bc648-0919-4b51-a3b2-e594e76268a1",
+      "org": "Hämeenlinnan kaupunki",
+      "title": "Hämeenlinnan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c13bc648-0919-4b51-a3b2-e594e76268a1/LAUSUNTO_20230606083808.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "59443453-c0f8-445e-8450-e3c8fde89f06",
+      "org": "Pohjois-Savon hyvinvointialue",
+      "title": "Pohjois-Savon hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/59443453-c0f8-445e-8450-e3c8fde89f06/LAUSUNTO_20230606083939.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "5139b447-4d04-4a35-a498-3b5a5405d1d1",
+      "org": "Parkanon kaupunki",
+      "title": "Parkanon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/5139b447-4d04-4a35-a498-3b5a5405d1d1/LAUSUNTO_20230606084122.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "4dcb45d5-98ef-4b54-8d6d-b95976fc7ef7",
+      "org": "Kuopion kaupunki",
+      "title": "Kuopion kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/4dcb45d5-98ef-4b54-8d6d-b95976fc7ef7/LAUSUNTO_20230606084324.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "6c2b0a90-1481-49c7-897a-7d10653191ea",
+      "org": "Kajaanin kaupunki",
+      "title": "Kajaanin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/6c2b0a90-1481-49c7-897a-7d10653191ea/LAUSUNTO_20230606084715.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "759fe5bd-45c2-4336-99ff-795d1c2ca001",
+      "org": "Liperin kunta",
+      "title": "Liperin kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/759fe5bd-45c2-4336-99ff-795d1c2ca001/LAUSUNTO_20230606085532.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "0dad917c-466d-4cea-8cb9-9e3147bb7b6e",
+      "org": "Laitilan kaupunki",
+      "title": "Laitilan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/0dad917c-466d-4cea-8cb9-9e3147bb7b6e/LAUSUNTO_20230606085718.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "a8bb767a-ebf6-4b57-a6dd-dc5493cc8117",
+      "org": "Suomussalmen kunta",
+      "title": "Suomussalmen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a8bb767a-ebf6-4b57-a6dd-dc5493cc8117/LAUSUNTO_20230606085911.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "6809e2c5-96a3-45a7-820f-e65556e2bcaa",
+      "org": "Lapin hyvinvointialue",
+      "title": "Lapin hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/6809e2c5-96a3-45a7-820f-e65556e2bcaa/LAUSUNTO_20230606090101.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "a1510994-f7a1-4406-8dca-7069d1461a8d",
+      "org": "Savonlinnan kaupunki",
+      "title": "Savonlinnan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a1510994-f7a1-4406-8dca-7069d1461a8d/LAUSUNTO_20230606090243.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "4561bc52-e7d6-4dfc-b855-cd458b245b87",
+      "org": "Kymenlaakson hyvinvointialue",
+      "title": "Kymenlaakson hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/4561bc52-e7d6-4dfc-b855-cd458b245b87/LAUSUNTO_20230606090453.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "e7b00b4c-5b4f-4208-9dc4-b7730cfbaf5d",
+      "org": "HUS-yhtymä",
+      "title": "Helsingin ja Uudenmaan sairaanhoitopiiri; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/e7b00b4c-5b4f-4208-9dc4-b7730cfbaf5d/LAUSUNTO_20230607074101.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "a3cb3975-8773-4e11-9067-3d36dbec3f31",
+      "org": "Porvoon kaupunki",
+      "title": "Porvoon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a3cb3975-8773-4e11-9067-3d36dbec3f31/LAUSUNTO_20230607074254.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "22a9e89c-c424-457e-b170-3b494b9784d7",
+      "org": "Haminan kaupunki",
+      "title": "Haminan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/22a9e89c-c424-457e-b170-3b494b9784d7/LAUSUNTO_20230607074513.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "908e1fc8-2aef-43e0-ac26-bf687bb2fa7c",
+      "org": "Kontiolahden kunta",
+      "title": "Kontiolahden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/908e1fc8-2aef-43e0-ac26-bf687bb2fa7c/LAUSUNTO_20230607084905.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "eaf31077-b4af-4217-a463-409b3a062c99",
+      "org": "Sotkamon kunta",
+      "title": "Sotkamon kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/eaf31077-b4af-4217-a463-409b3a062c99/LAUSUNTO_20230607085122.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "951038cd-68a5-4ff8-9fad-041f48758e30",
+      "org": "Kankaanpään kaupunki",
+      "title": "Kankaanpään kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/951038cd-68a5-4ff8-9fad-041f48758e30/LAUSUNTO_20230607085345.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "f5105cf8-f99b-48a3-acb0-3b3f8163f610",
+      "org": "Kuhmon kaupunki",
+      "title": "Kuhmon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f5105cf8-f99b-48a3-acb0-3b3f8163f610/LAUSUNTO_20230607085517.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "27e917a5-9da7-41b9-be96-1855e2823086",
+      "org": "Kuusamon kaupunki",
+      "title": "Kuusamon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/27e917a5-9da7-41b9-be96-1855e2823086/LAUSUNTO_20230607085701.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "5b736f9c-e0e5-4c79-a412-a36e41204e52",
+      "org": "Nousiaisten kunta",
+      "title": "Nousiaisten kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/5b736f9c-e0e5-4c79-a412-a36e41204e52/LAUSUNTO_20230607114610.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "93514807-6f80-4efa-ab8f-3d22d66f0ce8",
+      "org": "Siikalatvan kunta",
+      "title": "Siikalatvan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/93514807-6f80-4efa-ab8f-3d22d66f0ce8/LAUSUNTO_20230607114815.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "f0c195a4-86ef-4049-a189-7d65f3d1b76b",
+      "org": "Jyväskylän kaupunki",
+      "title": "Jyväskylän kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f0c195a4-86ef-4049-a189-7d65f3d1b76b/LAUSUNTO_20230607114955.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "50941d27-d7ce-44b8-afd2-360515a9bcf9",
+      "org": "Seinäjoen kaupunki",
+      "title": "Seinäjoen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/50941d27-d7ce-44b8-afd2-360515a9bcf9/LAUSUNTO_20230607115136.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "c3bfef9a-ee6e-4a5c-8107-d37f25d3d9b8",
+      "org": "Teuvan kunta",
+      "title": "Teuvan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/c3bfef9a-ee6e-4a5c-8107-d37f25d3d9b8/LAUSUNTO_20230607115412.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "7c1457eb-1bba-41c6-b6da-d51e16d7d181",
+      "org": "Vaasan kaupunki",
+      "title": "Vaasan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/7c1457eb-1bba-41c6-b6da-d51e16d7d181/LAUSUNTO_20230607115624.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "aee88215-1e65-4ab3-b2fb-bb9ab83be5d6",
+      "org": "Mikkelin kaupunki",
+      "title": "Mikkelin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/aee88215-1e65-4ab3-b2fb-bb9ab83be5d6/LAUSUNTO_20230607115820.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "65383862-5dc0-46a4-a6f2-eebb31e8b804",
+      "org": "Viitasaaren kaupunki",
+      "title": "Viitasaaren kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/65383862-5dc0-46a4-a6f2-eebb31e8b804/LAUSUNTO_20230608083656.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "e518478f-7832-4057-9503-5bbf3db84d49",
+      "org": "Joensuun kaupunki",
+      "title": "Joensuun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/e518478f-7832-4057-9503-5bbf3db84d49/LAUSUNTO_20230608083832.PDF"
+     },
+     {
+      "date": "2023-05-30",
+      "id": "10098844-fe3f-46e9-8315-abd7a2e49209",
+      "org": "Kärkölän kunta",
+      "title": "Kärkölän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/10098844-fe3f-46e9-8315-abd7a2e49209/LAUSUNTO_20230608084001.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "b3395a10-0aa0-4ef0-9dac-4e042f818b05",
+      "org": "Saarijärven kaupunki",
+      "title": "Saarijärven kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/b3395a10-0aa0-4ef0-9dac-4e042f818b05/LAUSUNTO_20230606083341.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "cf46115f-1861-4356-9a08-478abef84acd",
+      "org": "Polvijärven kunta",
+      "title": "Polvijärven kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/cf46115f-1861-4356-9a08-478abef84acd/LAUSUNTO_20230606083515.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "1b05eec0-c7ca-42d6-9c9e-8c09baa5ca67",
+      "org": "Päijät-Hämeen hyvinvointialue",
+      "title": "Päijät-Hämeen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/1b05eec0-c7ca-42d6-9c9e-8c09baa5ca67/LAUSUNTO_20230607131204.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "f85e6c8a-296a-4adf-873a-fa2fabad5e4d",
+      "org": "Toivakan kunta",
+      "title": "Toivakan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/f85e6c8a-296a-4adf-873a-fa2fabad5e4d/LAUSUNTO_20230607131345.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "41e4d8ce-1a1a-4d55-bb53-9066e7ae2eda",
+      "org": "Pohjois-Karjalan hyvinvointialue",
+      "title": "Pohjois-Karjalan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/41e4d8ce-1a1a-4d55-bb53-9066e7ae2eda/LAUSUNTO_20230607131503.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "9fc372b4-ac65-467e-887e-245f9660c159",
+      "org": "Outokummun kaupunki",
+      "title": "Outokummun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/9fc372b4-ac65-467e-887e-245f9660c159/LAUSUNTO_20230608082750.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "ff8c967a-6a3c-4dd5-99c7-e91e21098776",
+      "org": "Pyhtään kunta",
+      "title": "Pyhtään kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/ff8c967a-6a3c-4dd5-99c7-e91e21098776/LAUSUNTO_20230608082935.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "6aad1721-679c-4d3c-80bf-966a40ea97dc",
+      "org": "Kotkan kaupunki",
+      "title": "Kotkan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/6aad1721-679c-4d3c-80bf-966a40ea97dc/LAUSUNTO_20230608083144.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "8dd5cff3-31cf-4a4a-88d0-97aac4beeff4",
+      "org": "Seinäjoen kaupunki",
+      "title": "Seinäjoen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/8dd5cff3-31cf-4a4a-88d0-97aac4beeff4/LAUSUNTO_20230608083336.PDF"
+     },
+     {
+      "date": "2023-05-29",
+      "id": "6cfedb70-f07b-4fe8-be10-a56edf5093bd",
+      "org": "Kaavin kunta",
+      "title": "Kaavin kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/6cfedb70-f07b-4fe8-be10-a56edf5093bd/LAUSUNTO_20230608083514.PDF"
+     },
+     {
+      "date": "2023-05-26",
+      "id": "e7672f1a-db6d-426a-b6f6-25ceecda9bb2",
+      "org": "Heinäveden kunta",
+      "title": "Heinäveden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/e7672f1a-db6d-426a-b6f6-25ceecda9bb2/LAUSUNTO_20230607130844.PDF"
+     },
+     {
+      "date": "2023-05-26",
+      "id": "318d0313-37ca-44bf-9181-f8ba2f3e7aa5",
+      "org": "Petäjäveden kunta",
+      "title": "Petäjäveden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/318d0313-37ca-44bf-9181-f8ba2f3e7aa5/LAUSUNTO_20230607131008.PDF"
+     },
+     {
+      "date": "2023-05-26",
+      "id": "79214602-1ae4-4621-8632-da558f7a5dda",
+      "org": "Hollolan kunta",
+      "title": "Hollolan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/79214602-1ae4-4621-8632-da558f7a5dda/LAUSUNTO_20230608105549.PDF"
+     },
+     {
+      "date": "2023-05-25",
+      "id": "73050f6a-a89e-4fe0-93ef-ff2e712084ae",
+      "org": "Asikkalan kunta",
+      "title": "Asikkalan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/73050f6a-a89e-4fe0-93ef-ff2e712084ae/LAUSUNTO_20230607130341.PDF"
+     },
+     {
+      "date": "2023-05-25",
+      "id": "a34d073e-c73c-444b-b22f-34aea108a6b8",
+      "org": "Joroisten kunta",
+      "title": "Joroisten kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a34d073e-c73c-444b-b22f-34aea108a6b8/LAUSUNTO_20230608105056.PDF"
+     },
+     {
+      "date": "2023-05-25",
+      "id": "fdf21180-81aa-45c1-9016-8b634b85668c",
+      "org": "Kiteen kaupunki",
+      "title": "Kiteen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/fdf21180-81aa-45c1-9016-8b634b85668c/LAUSUNTO_20230608105344.PDF"
+     },
+     {
+      "date": "2023-05-24",
+      "id": "62d5903e-04ba-47fc-a7dd-146523a27590",
+      "org": "Hankasalmen kunta",
+      "title": "Hankasalmen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/62d5903e-04ba-47fc-a7dd-146523a27590/LAUSUNTO_20230608104922.PDF"
+     },
+     {
+      "date": "2023-05-23",
+      "id": "85b2e76f-73e9-40f9-9a25-a9e9050f37e7",
+      "org": "Virolahden kunta",
+      "title": "Virolahden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/85b2e76f-73e9-40f9-9a25-a9e9050f37e7/LAUSUNTO_20230608084535.PDF"
+     },
+     {
+      "date": "2023-05-23",
+      "id": "829bf766-1b1a-44a2-bb94-b54fbd44078f",
+      "org": "Äänekosken kaupunki",
+      "title": "Äänekosken kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/829bf766-1b1a-44a2-bb94-b54fbd44078f/LAUSUNTO_20230608084659.PDF"
+     },
+     {
+      "date": "2023-05-23",
+      "id": "db68fd10-7263-4515-9dc9-2871dac48f10",
+      "org": "Marttilan kunta",
+      "title": "Marttilan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/db68fd10-7263-4515-9dc9-2871dac48f10/LAUSUNTO_20230608084841.PDF"
+     },
+     {
+      "date": "2023-05-23",
+      "id": "acc9047e-54be-4996-923b-7a25582018ea",
+      "org": "Lieksan kaupunki",
+      "title": "Lieksan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/acc9047e-54be-4996-923b-7a25582018ea/LAUSUNTO_20230608085241.PDF"
+     },
+     {
+      "date": "2023-05-23",
+      "id": "a73d1913-5dcb-4b84-a28b-ede03b51bc93",
+      "org": "Karstulan kunta",
+      "title": "Karstulan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e189c8c0-953f-48e1-aef6-53357a0f93e7/a73d1913-5dcb-4b84-a28b-ede03b51bc93/LAUSUNTO_20230608085746.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 111,
+    "orgs": [
+     "Heinolan kaupunki",
+     "Seinäjoen kaupunki",
+     "Asikkalan kunta",
+     "Espoon kaupunki",
+     "Etelä-Karjalan hyvinvointialue",
+     "Etelä-Pohjanmaan hyvinvointialue",
+     "Etelä-Savon hyvinvointialue",
+     "HUS-yhtymä",
+     "Haminan kaupunki",
+     "Hankasalmen kunta",
+     "Heinäveden kunta",
+     "Helsingin kaupunki",
+     "Hollolan kunta",
+     "Hämeenlinnan kaupunki",
+     "Iida Parikka",
+     "Iitin kunta",
+     "Ilomantsin kunta",
+     "Jakobstad stad / Pietarsaaren kaupunki",
+     "Janakkalan kunta",
+     "Joensuun kaupunki",
+     "Joroisten kunta",
+     "Juvan kunta",
+     "Jyväskylän kaupunki",
+     "Järvenpään kaupunki",
+     "Kaavin kunta",
+     "Kainuun hyvinvointialue",
+     "Kajaanin kaupunki",
+     "Kangasalan kaupunki",
+     "Kankaanpään kaupunki",
+     "Karkkilan kaupunki",
+     "Karstulan kunta",
+     "Kauniaisten kaupunki",
+     "Kaustisen kunta",
+     "Keravan kaupunki",
+     "Keski-Suomen hyvinvointialue",
+     "Keski-Uudenmaan hyvinvointialue",
+     "Kiteen kaupunki",
+     "Konneveden kunta",
+     "Kontiolahden kunta",
+     "Korsholms kommun / Mustasaaren kunta",
+     "Kotkan kaupunki",
+     "Kouvolan kaupunki",
+     "Kuhmon kaupunki",
+     "Kuopion kaupunki",
+     "Kurikan kaupunki",
+     "Kuusamon kaupunki",
+     "Kymenlaakson hyvinvointialue",
+     "Kärkölän kunta",
+     "Kärsämäen kunta",
+     "Lahden kaupunki",
+     "Laitilan kaupunki",
+     "Lapin hyvinvointialue",
+     "Leppävirran kunta",
+     "Lieksan kaupunki",
+     "Liperin kunta",
+     "Länsi-Uudenmaan hyvinvointialue",
+     "Marttilan kunta",
+     "Miehikkälän kunta",
+     "Mikkelin kaupunki",
+     "Multian kunta",
+     "Naantalin kaupunki",
+     "Nousiaisten kunta",
+     "Nurmeksen kaupunki",
+     "Oulun kaupunki",
+     "Outokummun kaupunki",
+     "Paltamon kunta",
+     "Parkanon kaupunki",
+     "Perhon kunta",
+     "Pertunmaan kunta",
+     "Petäjäveden kunta",
+     "Pielaveden kunta",
+     "Pohjois-Karjalan hyvinvointialue",
+     "Pohjois-Pohjanmaan hyvinvointialue",
+     "Pohjois-Savon hyvinvointialue",
+     "Polvijärven kunta",
+     "Porvoon kaupunki",
+     "Pukkilan kunta",
+     "Puumalan kunta",
+     "Pyhtään kunta",
+     "Pyhäjoen kunta"
+    ],
+    "url": "http://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9331890b-09d5-4511-9d7c-c25202a5088b",
+    "viimeisin": "2023-05-31"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "valtiovarainministeriö",
+   "muokattu": "2026-10-25T12:39:53",
+   "nimi": "Valtioneuvoston asetus kunnan peruspalvelujen valtionosuudesta annetun asetuksen 7 §:n  muuttamisesta",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "885/2023"
+   ],
+   "teemat": [
+    "Kunta-asiat"
+   ],
+   "tiivistelma": "Kuntien vuoden 2022 tilinpäätöstiedoissa on havaittu olevan kertaluonteisia, sote-uudistuksen rahoituksen siirtoon liittyviä  laskelmia merkittävästi vääristäviä eriä. Asetuksella tarkennettaisiin siirtolaskelmien tarkistamista siten, että  laskelmissa oikaistaan merkittävästi yksittäisen kunnan tai hyvinvointialueen rahoitusta vääristävät erät.",
+   "tila": "PAATTYNYT",
+   "tunnus": "VM050:00/2023",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM050:00/2023",
+   "uuid": "e189c8c0-953f-48e1-aef6-53357a0f93e7",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2023-06-30",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
    "asetettu": "2023-02-07",
    "asiakirjat": [
     {
@@ -517500,7 +518413,7 @@
      {
       "date": "2023-05-02",
       "id": "7d39f454-dc00-4a3a-b106-aac104a48a47",
-      "org": "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
+      "org": "HUS-yhtymä",
       "title": "Helsingin ja Uudenmaan sairaanhoitopiiri HUS; Lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/577612c5-3787-4ad7-aa8a-024434db6b93/7d39f454-dc00-4a3a-b106-aac104a48a47/LAUSUNTO_20230504072504.PDF"
      },
@@ -517559,7 +518472,7 @@
     "orgs": [
      "Terveyden ja hyvinvoinnin laitos THL",
      "Etelä-Karjalan hyvinvointialue",
-     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
+     "HUS-yhtymä",
      "Helsingin kaupunki, sosiaali-, terveys- ja pelastustoimiala",
      "Kanta-Hämeen hyvinvointialue",
      "Keski-Pohjanmaan hyvinvointialue",
@@ -517587,7 +518500,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-02-17T13:53:46",
+   "muokattu": "2026-10-25T13:23:41",
    "nimi": "Valtioneuvoston asetus tartuntataudeista annetun valtioneuvoston asetuksen muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -517846,6 +518759,445 @@
    "uuid": "52790652-eb35-4315-aba3-0c4fb55abdc0",
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2024-12-05",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2023-03-06",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/a24ce6cc-8fc1-4ad0-85e9-d51273bb5369/LAUSUNTOPYYNTO_20230327104933.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto",
+     "pvm": "2023-05-30",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/f9ad01e9-e91f-4dc4-8e5b-93a1ccd1f019/YHTEENVETO_20230530131859.PDF"
+    }
+   ],
+   "asiasanat": [],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2023-03-06",
+     "end": "2023-04-16",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2023-04-18",
+      "id": "db309671-9bcb-4b83-b386-d621628925b8",
+      "org": "Ålands landskapsregering",
+      "title": "Ålands landskapsregering; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/db309671-9bcb-4b83-b386-d621628925b8/LAUSUNTO_20230420053747.PDF"
+     },
+     {
+      "date": "2023-04-16",
+      "id": "500f7c7e-6973-46ae-a42b-2385b0461b7f",
+      "org": "Pohjanmaan hyvinvointialue",
+      "title": "Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/500f7c7e-6973-46ae-a42b-2385b0461b7f/LAUSUNTO_20230418191641.PDF"
+     },
+     {
+      "date": "2023-04-16",
+      "id": "1eaccab7-a0a9-4fe0-af45-34e85bf93cb0",
+      "org": "Metropolia Ammattikorkeakoulu Oy",
+      "title": "Metropolia Ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/1eaccab7-a0a9-4fe0-af45-34e85bf93cb0/LAUSUNTO_20230418191934.PDF"
+     },
+     {
+      "date": "2023-04-16",
+      "id": "ee275b8d-8fe8-4722-83fd-9c69528ee987",
+      "org": "Hyvinvointiala HALI ry",
+      "title": "Hyvinvointiala HALI ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/ee275b8d-8fe8-4722-83fd-9c69528ee987/LAUSUNTO_20230418192230.PDF"
+     },
+     {
+      "date": "2023-04-16",
+      "id": "2ca08e21-7473-4bd9-b727-493046802ef2",
+      "org": "Lounais-Suomen aluehallintovirasto",
+      "title": "Lounais-Suomen aluehallintovirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/2ca08e21-7473-4bd9-b727-493046802ef2/LAUSUNTO_20230418192517.PDF"
+     },
+     {
+      "date": "2023-04-15",
+      "id": "1b845201-700c-4ac4-95a5-93861f217b01",
+      "org": "Suomen Sairaanhoitajat ry",
+      "title": "Suomen Sairaanhoitajat ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/1b845201-700c-4ac4-95a5-93861f217b01/LAUSUNTO_20230418190902.PDF"
+     },
+     {
+      "date": "2023-04-15",
+      "id": "2822d582-5b01-4287-8215-0f37bc84cf05",
+      "org": "Varsinais-Suomen hyvinvointialue",
+      "title": "Varsinais-Suomen hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/2822d582-5b01-4287-8215-0f37bc84cf05/LAUSUNTO_20230418191152.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "c46b3216-27c6-4b2b-a725-d77e0352c365",
+      "org": "Akavan sairaanhoitajat ja Taja ry",
+      "title": "Akavan sairaanhoitajat ja Taja ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/c46b3216-27c6-4b2b-a725-d77e0352c365/LAUSUNTO_20230416140413.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "d652aa17-435d-4ff5-ba87-9d1adf53f085",
+      "org": "LAB-ammattikorkeakoulu Oy",
+      "title": "LAB-ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/d652aa17-435d-4ff5-ba87-9d1adf53f085/LAUSUNTO_20230416140724.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "ef7e2d8d-ba1a-4955-9848-ec3d59168d2e",
+      "org": "Varhaiskasvatuksen opettajien liitto VOL ry",
+      "title": "Varhaiskasvatuksen Opettajien Liitto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/ef7e2d8d-ba1a-4955-9848-ec3d59168d2e/LAUSUNTO_20230418183544.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "1f3e4f19-5cfe-4bb6-8864-be62f712d1cc",
+      "org": "Laurea-ammattikorkeakoulu Oy",
+      "title": "Laurea-ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/1f3e4f19-5cfe-4bb6-8864-be62f712d1cc/LAUSUNTO_20230418183837.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "4aa09c73-bd27-4b4f-a274-c19e74af95cd",
+      "org": "Hämeen ammattikorkeakoulu Oy",
+      "title": "Hämeen ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/4aa09c73-bd27-4b4f-a274-c19e74af95cd/LAUSUNTO_20230418184202.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "f4f9f30d-0759-43c9-a75d-3798490a852c",
+      "org": "Seinäjoen Ammattikorkeakoulu Oy",
+      "title": "Seinäjoen Ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/f4f9f30d-0759-43c9-a75d-3798490a852c/LAUSUNTO_20230418184455.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "ec6a26a0-3c48-4693-a9a0-8770aae0d9ce",
+      "org": "Satakunnan hyvinvointialue",
+      "title": "Satakunnan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/ec6a26a0-3c48-4693-a9a0-8770aae0d9ce/LAUSUNTO_20230418184801.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "428b72fc-7e57-4983-9ac2-6b88b3ed99d4",
+      "org": "Ammattikorkeakoulujen rehtorineuvosto Arene ry",
+      "title": "Ammattikorkeakoulujen rehtorineuvosto Arene ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/428b72fc-7e57-4983-9ac2-6b88b3ed99d4/LAUSUNTO_20230418185134.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "d4bb8027-37c4-4864-b124-e4e416019313",
+      "org": "Pirkanmaan hyvinvointialue",
+      "title": "Pirkanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/d4bb8027-37c4-4864-b124-e4e416019313/LAUSUNTO_20230418185723.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "56aa062c-9bc3-4ed2-84e5-19f31c0861bb",
+      "org": "Lapin ammattikorkeakoulu Oy",
+      "title": "Lapin ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/56aa062c-9bc3-4ed2-84e5-19f31c0861bb/LAUSUNTO_20230418190014.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "e51f0d56-5d87-4d95-932c-edc9615e8f23",
+      "org": "Opetushallitus",
+      "title": "Opetushallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/e51f0d56-5d87-4d95-932c-edc9615e8f23/LAUSUNTO_20230418190312.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "5d428f9b-9e3b-47cc-af90-4f18327eb168",
+      "org": "Satakunnan ammattikorkeakoulu Oy",
+      "title": "Satakunnan ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/5d428f9b-9e3b-47cc-af90-4f18327eb168/LAUSUNTO_20230418190601.PDF"
+     },
+     {
+      "date": "2023-04-14",
+      "id": "e31c2cfc-7c83-4d70-be46-254425e10968",
+      "org": "ISLAB hyvinvointiyhtymä",
+      "title": "ISLAB hyvinvointiyhtymä; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/e31c2cfc-7c83-4d70-be46-254425e10968/LAUSUNTO_20230419183301.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "9d92f9f7-bed0-4ae1-9034-7ee75a088989",
+      "org": "Suomen evankelis-luterilaisen kirkon kirkkohallitus",
+      "title": "Suomen evankelis-luterilaisen kirkon kirkkohallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/9d92f9f7-bed0-4ae1-9034-7ee75a088989/LAUSUNTO_20230413182104.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "ae225975-661c-4e81-b745-d2d431dca6df",
+      "org": "Tehy ry",
+      "title": "Tehy ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/ae225975-661c-4e81-b745-d2d431dca6df/LAUSUNTO_20230418181710.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "c6cf61b4-0dff-4f3f-937d-ea2570a1c608",
+      "org": "Suomen terveydenhoitajaliitto STHL ry",
+      "title": "Suomen Terveydenhoitajaliitto STHL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/c6cf61b4-0dff-4f3f-937d-ea2570a1c608/LAUSUNTO_20230418182011.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "ed3835f4-1064-4988-a1ac-186ad5fcbcde",
+      "org": "HUS-yhtymä",
+      "title": "Helsingin ja Uudenmaan sairaanhoitopiiri HUS; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/ed3835f4-1064-4988-a1ac-186ad5fcbcde/LAUSUNTO_20230418182306.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "1d45b454-c4c7-4520-8170-7b6538ae264f",
+      "org": "Lapin hyvinvointialue",
+      "title": "Lapin hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/1d45b454-c4c7-4520-8170-7b6538ae264f/LAUSUNTO_20230418182553.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "e7da8e8c-6e0b-4fbf-9e92-3dbc0fc20105",
+      "org": "Valtakunnallinen sosiaalityön yliopistoverkosto Sosnet",
+      "title": "Valtakunnallinen sosiaalityön yliopistoverkosto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/e7da8e8c-6e0b-4fbf-9e92-3dbc0fc20105/LAUSUNTO_20230418182912.PDF"
+     },
+     {
+      "date": "2023-04-13",
+      "id": "48f7cce2-52c2-4d15-bdbf-2e5c07493092",
+      "org": "Pohjois-Karjalan hyvinvointialue",
+      "title": "Pohjois-Karjalan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/48f7cce2-52c2-4d15-bdbf-2e5c07493092/LAUSUNTO_20230419183003.PDF"
+     },
+     {
+      "date": "2023-04-12",
+      "id": "d8f417f1-6816-4129-a723-2a379fb5a06b",
+      "org": "Julkisten ja hyvinvointialojen liitto JHL ry",
+      "title": "Julkisten ja hyvinvointialojen liitto JHL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/d8f417f1-6816-4129-a723-2a379fb5a06b/LAUSUNTO_20230413180750.PDF"
+     },
+     {
+      "date": "2023-04-12",
+      "id": "699c6f05-6967-4c75-9f38-f43a99a4b22c",
+      "org": "Vaasan ammattikorkeakoulu Oy - Vasa yrkeshögskola Ab",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/699c6f05-6967-4c75-9f38-f43a99a4b22c/LAUSUNTO_20230414062145.PDF"
+     },
+     {
+      "date": "2023-04-12",
+      "id": "2e7e6aa0-4c7d-4db5-be8c-f283410d85fc",
+      "org": "Kajaanin Ammattikorkeakoulu Oy",
+      "title": "Kajaanin ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/2e7e6aa0-4c7d-4db5-be8c-f283410d85fc/LAUSUNTO_20230417212547.PDF"
+     },
+     {
+      "date": "2023-04-12",
+      "id": "277a75ab-ba00-4281-b026-b59e3e4d4b5f",
+      "org": "Oulun Ammattikorkeakoulu Oy",
+      "title": "Oulun ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/277a75ab-ba00-4281-b026-b59e3e4d4b5f/LAUSUNTO_20230418181412.PDF"
+     },
+     {
+      "date": "2023-04-11",
+      "id": "eefbefdd-42a0-420b-8a6e-0b7d5dfb1178",
+      "org": "Opetusalan Ammattijärjestö OAJ ry",
+      "title": "Opetusalan ammattijärjestö OAJ ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/eefbefdd-42a0-420b-8a6e-0b7d5dfb1178/LAUSUNTO_20230412172754.PDF"
+     },
+     {
+      "date": "2023-04-06",
+      "id": "7efa005d-0c5f-45d4-a5d3-e97be4f21394",
+      "org": "Helsingin kaupunki, sosiaali-, terveys- ja pelastustoimiala",
+      "title": "Helsingin kaupunki, sosiaali-, terveys- ja pelastustoimiala; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/7efa005d-0c5f-45d4-a5d3-e97be4f21394/LAUSUNTO_20230406191101.PDF"
+     },
+     {
+      "date": "2023-04-06",
+      "id": "d974876f-f23b-44bb-abe6-d67de893234e",
+      "org": "Pohjois-Pohjanmaan hyvinvointialue",
+      "title": "Pohjois-Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/d974876f-f23b-44bb-abe6-d67de893234e/LAUSUNTO_20230406191714.PDF"
+     },
+     {
+      "date": "2023-04-05",
+      "id": "a71d7488-567c-44d4-9fec-77893b9aecb9",
+      "org": "Diakonia-ammattikorkeakoulu Oy",
+      "title": "Diakonia-ammattikorkeakoulu OY; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/a71d7488-567c-44d4-9fec-77893b9aecb9/LAUSUNTO_20230405181504.PDF"
+     },
+     {
+      "date": "2023-04-05",
+      "id": "6f5003fb-cb45-468f-b522-3e02372f4c33",
+      "org": "Tampereen ammattikorkeakoulu Oy",
+      "title": "Tampereen ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/6f5003fb-cb45-468f-b522-3e02372f4c33/LAUSUNTO_20230405181928.PDF"
+     },
+     {
+      "date": "2023-04-05",
+      "id": "7f478180-80a3-4c61-9d76-0db047983a65",
+      "org": "Jyväskylän ammattikorkeakoulu Oy",
+      "title": "Jyväskylän ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/7f478180-80a3-4c61-9d76-0db047983a65/LAUSUNTO_20230405182544.PDF"
+     },
+     {
+      "date": "2023-04-05",
+      "id": "57121bd1-41cd-4320-a18f-fb45d2fef6f6",
+      "org": "Tietosuojavaltuutetun toimisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/57121bd1-41cd-4320-a18f-fb45d2fef6f6/LAUSUNTO_20230406095935.PDF"
+     },
+     {
+      "date": "2023-04-04",
+      "id": "9a6ca0f8-7ab1-48b7-b022-4aff2dae9ba2",
+      "org": "Centria-ammattikorkeakoulu Oy",
+      "title": "Centria-ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/9a6ca0f8-7ab1-48b7-b022-4aff2dae9ba2/LAUSUNTO_20230404175837.PDF"
+     },
+     {
+      "date": "2023-04-04",
+      "id": "69976bc5-665a-42fb-848a-3703c7fa742a",
+      "org": "Etelä-Pohjanmaan hyvinvointialue",
+      "title": "Etelä-Pohjanmaan hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/69976bc5-665a-42fb-848a-3703c7fa742a/LAUSUNTO_20230404180526.PDF"
+     },
+     {
+      "date": "2023-04-04",
+      "id": "7db01e98-77c3-4da8-8f63-bbadd4ba4a71",
+      "org": "Pohjois-Savon hyvinvointialue",
+      "title": "Pohjois-Savon hyvinvointialue; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/7db01e98-77c3-4da8-8f63-bbadd4ba4a71/LAUSUNTO_20230404181129.PDF"
+     },
+     {
+      "date": "2023-04-04",
+      "id": "b227728e-87f3-453d-9fab-80487f12735e",
+      "org": "Hyvinvointialueyhtiö Hyvil Oy",
+      "title": "Hyvinvointialueyhtiö Hyvil Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/b227728e-87f3-453d-9fab-80487f12735e/LAUSUNTO_20230405180925.PDF"
+     },
+     {
+      "date": "2023-04-04",
+      "id": "96b53c4d-8211-44f7-811b-4e3caeb05ee8",
+      "org": "Savonia-ammattikorkeakoulu oy",
+      "title": "Savonia-ammattikorkeakoulu Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/96b53c4d-8211-44f7-811b-4e3caeb05ee8/LAUSUNTO_20230405181210.PDF"
+     },
+     {
+      "date": "2023-04-02",
+      "id": "1441329d-29a7-4e51-94c4-cf8b63c988de",
+      "org": "Kaakkois-Suomen Ammattikorkeakoulu Oy",
+      "title": "Kaakkois-Suomen ammattikorkeakoulu; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/1441329d-29a7-4e51-94c4-cf8b63c988de/LAUSUNTO_20230403180128.PDF"
+     },
+     {
+      "date": "2023-03-30",
+      "id": "b0b64f53-4489-4071-95e1-f5449093713a",
+      "org": "Sosiaalialan korkeakoulutettujen ammattijärjestö Talentia",
+      "title": "Sosiaalialan korkeakoulutettujen ammattijärjestö Talentia; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/b0b64f53-4489-4071-95e1-f5449093713a/LAUSUNTO_20230330171402.PDF"
+     },
+     {
+      "date": "2023-03-30",
+      "id": "8d42f80f-8bae-4fdd-b79d-86acb661a62a",
+      "org": "Suomen Fysioterapeutit – Finlands Fysioterapeuter ry",
+      "title": "Suomen Fysioterapeutit – Finlands Fysioterapeuter ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/8d42f80f-8bae-4fdd-b79d-86acb661a62a/LAUSUNTO_20230403175832.PDF"
+     },
+     {
+      "date": "2023-03-23",
+      "id": "8083f7c1-145b-42e7-967f-5c6343e09f95",
+      "org": "Päijät-Hämeen hyvinvointialue",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/be7c92c7-8da0-46c2-856f-43b48c691c67/8083f7c1-145b-42e7-967f-5c6343e09f95/LAUSUNTO_20230403103233.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 47,
+    "orgs": [
+     "Akavan sairaanhoitajat ja Taja ry",
+     "Ammattikorkeakoulujen rehtorineuvosto Arene ry",
+     "Centria-ammattikorkeakoulu Oy",
+     "Diakonia-ammattikorkeakoulu Oy",
+     "Etelä-Pohjanmaan hyvinvointialue",
+     "HUS-yhtymä",
+     "Helsingin kaupunki, sosiaali-, terveys- ja pelastustoimiala",
+     "Hyvinvointiala HALI ry",
+     "Hyvinvointialueyhtiö Hyvil Oy",
+     "Hämeen ammattikorkeakoulu Oy",
+     "ISLAB hyvinvointiyhtymä",
+     "Julkisten ja hyvinvointialojen liitto JHL ry",
+     "Jyväskylän ammattikorkeakoulu Oy",
+     "Kaakkois-Suomen Ammattikorkeakoulu Oy",
+     "Kajaanin Ammattikorkeakoulu Oy",
+     "LAB-ammattikorkeakoulu Oy",
+     "Lapin ammattikorkeakoulu Oy",
+     "Lapin hyvinvointialue",
+     "Laurea-ammattikorkeakoulu Oy",
+     "Lounais-Suomen aluehallintovirasto",
+     "Metropolia Ammattikorkeakoulu Oy",
+     "Opetusalan Ammattijärjestö OAJ ry",
+     "Opetushallitus",
+     "Oulun Ammattikorkeakoulu Oy",
+     "Pirkanmaan hyvinvointialue",
+     "Pohjanmaan hyvinvointialue",
+     "Pohjois-Karjalan hyvinvointialue",
+     "Pohjois-Pohjanmaan hyvinvointialue",
+     "Pohjois-Savon hyvinvointialue",
+     "Päijät-Hämeen hyvinvointialue",
+     "Satakunnan ammattikorkeakoulu Oy",
+     "Satakunnan hyvinvointialue",
+     "Savonia-ammattikorkeakoulu oy",
+     "Seinäjoen Ammattikorkeakoulu Oy",
+     "Sosiaalialan korkeakoulutettujen ammattijärjestö Talentia",
+     "Suomen Fysioterapeutit – Finlands Fysioterapeuter ry",
+     "Suomen Sairaanhoitajat ry",
+     "Suomen evankelis-luterilaisen kirkon kirkkohallitus",
+     "Suomen terveydenhoitajaliitto STHL ry",
+     "Tampereen ammattikorkeakoulu Oy",
+     "Tehy ry",
+     "Tietosuojavaltuutetun toimisto",
+     "Vaasan ammattikorkeakoulu Oy - Vasa yrkeshögskola Ab",
+     "Valtakunnallinen sosiaalityön yliopistoverkosto Sosnet",
+     "Varhaiskasvatuksen opettajien liitto VOL ry",
+     "Varsinais-Suomen hyvinvointialue",
+     "Ålands landskapsregering"
+    ],
+    "url": null,
+    "viimeisin": "2023-04-18"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-25T13:25:25",
+   "nimi": "Sosiaali- ja terveysministeriön asetus ammattikorkeakoulututkintoon sisältyvästä ammattitaitoa edistävästä harjoittelusta suoritettavasta korvauksesta",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Sosiaali- ja terveysministeriön asetuksella annettaan tarkemmat säännökset sosiaali- ja terveysalan ammattikorkeakoulututkintoon sisältyvästä ammattitaitoa edistävästä harjoittelusta suoritettavan korvauksen suuruudesta sekä korvauksen maksamisen perusteista ja muista korvauksen hakemiseen ja maksamiseen liittyvistä menettelyistä.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM008:00/2023",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM008:00/2023",
+   "uuid": "be7c92c7-8da0-46c2-856f-43b48c691c67",
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -521643,7 +522995,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-03-12T11:36:16",
+   "muokattu": "2026-10-25T15:13:17",
    "nimi": "Valtioneuvoston asetus vapaaehtoisista covid-19-rokotuksista annetun valtioneuvoston asetuksen 2 §:n muuttamisesta",
    "pevLausunto": false,
    "poistettuPaiva": null,
