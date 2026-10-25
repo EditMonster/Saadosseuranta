@@ -154,3 +154,33 @@ def test_shards_roundtrip(tmp_path, monkeypatch):
     assert not (tmp_path / "lausunnot.json").exists() and set(fl.load_docs()) == {"a", "b"}
     fl._save(fl.load_docs(), keep={"b"})  # a statement no longer listed is dropped, and its empty shard removed
     assert set(fl.load_docs()) == {"b"} and not (tmp_path / "lausunnot" / "hk-2024.json").exists()
+
+
+def test_msg_statement_reads_the_attachment():
+    import cfb
+    data = (S / "liitteella.msg").read_bytes()
+    parts = cfb.msg_parts(data)
+    assert parts["attachments"] and any(n.lower().endswith((".pdf", ".docx")) for n, _ in parts["attachments"])
+    r = fl.summarise_file(data, "https://x/LAUSUNTO_1.MSG", "", "Suomen Monikkoperheet ry")
+    assert r["ok"] is True and r["via"].startswith("liite ") and r["gist"].startswith("Ehdotamme")
+
+
+def test_msg_body_when_there_is_no_attachment():
+    r = fl.summarise_file((S / "ei_lausuttavaa.msg").read_bytes(), "https://x/L.MSG", "", "Turvallisuus- ja kemikaalivirasto")
+    assert r["ok"] is True and r["stance"] == "ei" and "ei ole lausuttavaa" in r["gist"]
+
+
+def test_office_zip_and_plain_text(tmp_path):
+    import io
+    import zipfile
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("ppt/slides/slide1.xml", "<p:sld><a:p><a:t>Otsikko</a:t></a:p></p:sld>")
+        z.writestr("ppt/slides/slide2.xml", "<p:sld><a:p><a:t>Liitto vastustaa esitystä, koska se heikentää työntekijöiden asemaa merkittävästi ja lisää kustannuksia.</a:t></a:p>"
+                   "<a:p><a:t>Esitys tulee hylätä ja valmistella uudelleen yhdessä työmarkkinaosapuolten kanssa.</a:t></a:p></p:sld>")
+    r = fl.summarise_file(buf.getvalue(), "https://x/L.pptx", "", "Liitto ry")
+    assert r["ok"] is True and r["stance"] == "vastustaa" and "vastustaa" in r["gist"]
+    rtf = rb"{\rtf1\ansi Yhdistys kannattaa esitysluonnosta ja pit\'e4\'e4 sit\'e4 tarpeellisena uudistuksena, joka parantaa asiakkaiden asemaa merkitt\'e4v\'e4sti.}"
+    r = fl.summarise_file(rtf, "https://x/L.RTF", "", "Yhdistys")
+    assert r["ok"] is True and r["stance"] == "kannattaa" and "pitää" in r["gist"]
+    assert fl.summarise_file(b"\x00\x01binary", "https://x/L.bin", "", "x") == {"ok": "notPdf"}

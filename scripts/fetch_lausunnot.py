@@ -36,6 +36,7 @@ SHARD_DIR = CACHE_DIR / "lausunnot"          # one file per source and year: a r
 BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 15 * 60))
 WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
 PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
+FORMAT_VERSION = 2   # 2: Outlook .msg, Word .doc, pptx/odt, plain text/e-mail/RTF and images are read too
 STRIKES = 5
 MAX_PAGES = 4
 GIST_MAX = 280
@@ -264,13 +265,147 @@ def ocr_pdf(data: bytes, pages: int = 2) -> str:
         return "\n".join(out)
 
 
-def summarise_docx(data: bytes, org: str = "", title: str = "") -> dict:
+def summarise_text(text: str, org: str = "", title: str = "", extra: dict | None = None) -> dict:
+    text = clean_text(text or "")
+    if len(re.sub(r"\s", "", text)) < 80:
+        return {"ok": "noText", "pages": None, "stance": "ei" if NONE_RE.search(title) else None, "ocrTried": OCR_READY, **(extra or {})}
+    sig = signals(text, title)
+    return {"ok": True, "pages": None, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org), **(extra or {})}
+
+
+def zip_text(data: bytes) -> str:
+    """Text of an Office Open XML / OpenDocument file: Word, PowerPoint, OpenDocument text, Excel strings."""
     import zipfile
     with zipfile.ZipFile(io.BytesIO(data)) as z:
-        xml = z.read("word/document.xml").decode("utf-8", "ignore")
-    text = clean_text(re.sub(r"<[^>]+>", "", re.sub(r"</w:p>", "\n", xml)))
-    sig = signals(text, title)
-    return {"ok": True, "pages": None, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+        names = z.namelist()
+        parts = (["word/document.xml"] if "word/document.xml" in names else []) or \
+                sorted((n for n in names if re.match(r"ppt/slides/slide\d+\.xml$", n)), key=lambda n: int(re.findall(r"\d+", n)[-1])) or \
+                (["content.xml"] if "content.xml" in names else []) or (["xl/sharedStrings.xml"] if "xl/sharedStrings.xml" in names else [])
+        out = []
+        for n in parts:
+            xml = z.read(n).decode("utf-8", "ignore")
+            xml = re.sub(r"</(w:p|a:p|text:p|text:h|si)>", "\n", xml)
+            out.append(html_unescape(re.sub(r"<[^>]+>", "", xml)))
+    return "\n".join(out)
+
+
+def html_unescape(t: str) -> str:
+    import html
+    return html.unescape(t)
+
+
+def ole_text(data: bytes) -> str:
+    """Readable text from an OLE file (Outlook .msg, Word 97 .doc): the longest runs of UTF-16LE text, and of
+    single-byte text for .doc. Rough but enough to find the sentence that states the position."""
+    runs = re.findall(r"(?:[\x20-\x7e\xa0-\xff\n\r\t]\x00){40,}", data.decode("latin-1"))
+    texts = [r.encode("latin-1").decode("utf-16le", "ignore") for r in runs]
+    if sum(len(t) for t in texts) < 400:  # Word 97 often stores the body as 8-bit text
+        texts += re.findall(r"[\x20-\x7e\xa0-\xff\n\r\t]{60,}", data.decode("cp1252", "ignore"))
+    junk = re.compile(r"\\[a-z]{3,}\d|xmlns|<\w+:|/O=|/OU=|/CN=|EXCHANGE|SMTP|IPM\.|@[\w.-]+\.(fi|com|net|org)|[A-F0-9]{16,}|"
+                      r"endobj|endstream|H4sI|govauth|\.(pdf|docx?|xlsx?)\b|[A-Za-z0-9+/]{30,}|þÿ", re.I)
+
+    def prose(t: str) -> bool:
+        words = t.split()
+        if len(words) < 8:
+            return False
+        lettery = sum(1 for w in words if re.fullmatch(r"[\wäöåÄÖÅ,.;:()\-–!?\"”']+", w))
+        return lettery / len(words) > 0.85 and sum(len(w) for w in words) / len(words) < 11
+
+    texts = [t for t in texts if len(re.findall(r"[a-zäöåA-ZÄÖÅ]{3,}", t)) >= 6 and not junk.search(t) and prose(t)]
+    texts = sorted(set(texts), key=len, reverse=True)[:6]  # the message / document body is the longest run
+    body = "\n".join(texts)
+    if "<html" in body.lower() or "</p>" in body.lower():
+        body = html_unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style|head).*?</\1>", "", body)))
+    return body
+
+
+def plain_text(data: bytes) -> str:
+    """.txt / .eml / .rtf: decode, drop RTF control words and e-mail headers."""
+    for enc in ("utf-8", "cp1252"):
+        try:
+            t = data.decode(enc)
+            break
+        except UnicodeDecodeError:
+            continue
+    if t.lstrip().startswith("{\\rtf"):
+        t = re.sub(r"\\'([0-9a-f]{2})", lambda m: bytes.fromhex(m.group(1)).decode("cp1252"), t)
+        t = re.sub(r"\\[a-z]+-?\d* ?|[{}]", "", t)
+    if re.match(r"^(Received|From|Return-Path|MIME-Version|Subject|Date|To|Content-Type|X-[\w-]+):", t):
+        import email
+        from email import policy
+        msg = email.message_from_bytes(data, policy=policy.default)
+        part = msg.get_body(preferencelist=("plain", "html"))
+        t = part.get_content() if part else t.split("\n\n", 1)[-1]
+    if "<html" in t.lower() or "</p>" in t.lower():
+        t = html_unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style|head).*?</\1>", "", t)))
+    return t
+
+
+def ocr_image(data: bytes) -> str:
+    import shutil
+    import subprocess
+    import tempfile
+    if not shutil.which("tesseract"):
+        return ""
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "img")
+        with open(src, "wb") as f:
+            f.write(data)
+        langs = subprocess.run(["tesseract", "--list-langs"], capture_output=True, text=True).stdout.split()
+        lang = "+".join(x for x in ("fin", "swe") if x in langs) or "eng"
+        try:
+            return subprocess.run(["tesseract", src, "-", "-l", lang], capture_output=True, text=True, timeout=120).stdout
+        except Exception:  # noqa: BLE001
+            return ""
+
+
+def summarise_file(data: bytes, url: str, ctype: str, org: str = "", title: str = "") -> dict:
+    """Any statement file: PDF, Office (docx/pptx/odt), Outlook .msg / Word .doc, plain text / e-mail / RTF, image."""
+    ext = url.rsplit(".", 1)[-1].lower() if "." in url.rsplit("/", 1)[-1] else ""
+    if data[:4] == b"%PDF" or "pdf" in ctype:
+        return summarise_pdf(data, org, title)
+    if data[:2] == b"PK":
+        return summarise_text(zip_text(data), org, title)
+    if data[:4] == b"\xd0\xcf\x11\xe0":
+        if ext == "msg" or b"_\x00_\x00s\x00u\x00b\x00s\x00t\x00g\x001\x00" in data[:200000]:
+            return summarise_msg(data, org, title)
+        return summarise_text(ole_text(data), org, title)
+    if data[:3] == b"\xff\xd8\xff" or data[:4] == b"\x89PNG" or data[:4] in (b"II*\x00", b"MM\x00*") or ext in ("jpg", "jpeg", "png", "tif", "tiff"):
+        return summarise_text(ocr_image(data), org, title, {"ocr": True})
+    if ext in ("txt", "eml", "rtf", "htm", "html") or ctype.startswith(("text/", "message/")):
+        t = plain_text(data)
+        if ext in ("htm", "html") or "html" in ctype:
+            t = html_unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style).*?</\1>", "", t)))
+        return summarise_text(t, org, title)
+    return {"ok": "notPdf"}
+
+
+def summarise_msg(data: bytes, org: str = "", title: str = "") -> dict:
+    """An e-mailed statement: the attachment is usually the statement itself (PDF/Word); the message body is
+    used when there is no readable attachment (or the body is the statement, e.g. "ei lausuttavaa")."""
+    from cfb import msg_parts
+    try:
+        m = msg_parts(data)
+    except Exception:  # noqa: BLE001 – a damaged file: fall back to the raw text runs
+        return summarise_text(ole_text(data), org, title)
+    best = None
+    for name, blob in m["attachments"]:
+        if len(blob) < 2000 and re.search(r"\.(png|jpe?g|gif)$", name, re.I):
+            continue  # signature logos
+        r = summarise_file(blob, name, "", org, title)
+        if r.get("ok") is True and r.get("gist"):
+            if not best or len(r["gist"]) > len(best["gist"]):
+                best = {**r, "via": f"liite {name}"[:120]}
+    if best:
+        return best
+    body = m["body"]
+    if "<html" in body.lower() or "</p>" in body.lower():
+        body = html_unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style|head).*?</\1>", "", body)))
+    return summarise_text(body, org, title)
+
+
+def summarise_docx(data: bytes, org: str = "", title: str = "") -> dict:
+    return summarise_text(zip_text(data), org, title)
 
 
 # --- which statements -------------------------------------------------------------------------------------
@@ -352,6 +487,8 @@ def main():
             return int(v.get("tries", 0)) < 3
         if v.get("ok") == "noText":
             return OCR_READY and not v.get("ocrTried")  # scanned before OCR was available: read again
+        if v.get("ok") == "notPdf" or (v.get("ok") == "error" and "document.xml" in (v.get("error") or "")):
+            return int(v.get("fmt") or 1) < FORMAT_VERSION  # a format the reader learned since: read again
         if c.get("esittely") and v.get("ok") is True and v.get("stance") != "esittely":
             v["stance"] = "esittely"
         return False
@@ -377,12 +514,8 @@ def main():
                 r = http("GET", c["url"], headers=UA, timeout=60, retries=3)
             r.raise_for_status()
             ctype = (r.headers.get("content-type") or "").lower()
-            if r.content[:4] == b"%PDF" or "pdf" in ctype:
-                rec.update(summarise_pdf(r.content, c["org"], c["title"]))
-            elif r.content[:2] == b"PK":
-                rec.update(summarise_docx(r.content, c["org"], c["title"]))
-            else:
-                rec.update({"ok": "notPdf"})
+            rec.update(summarise_file(r.content, c["url"], ctype, c["org"], c["title"]))
+            rec["fmt"] = FORMAT_VERSION
             if c.get("esittely") and rec.get("ok") is True:
                 rec["stance"] = "esittely"  # the ministry presenting its own proposal: a summary, not a position
             return c, rec, None
