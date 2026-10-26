@@ -4083,6 +4083,23 @@
    "timeline": [],
    "title": "AEQUITA / RHEINMETALL AUTOMOTIVE"
   },
+  "M.12526": {
+   "caseNumber": "M.12526",
+   "deadline": "2026-12-01",
+   "decisions": [],
+   "initiated": "2026-06-22",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-26",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_46.82",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "HBIS / DITH"
+  },
   "M.12527": {
    "caseNumber": "M.12527",
    "deadline": "2026-08-25",
@@ -7508,16 +7525,88 @@
    "timeline": [],
    "title": "ITOCHU / DENTSU / DENTSU SOKEN"
   },
+  "M.12637": {
+   "caseNumber": "M.12637",
+   "deadline": "2026-12-01",
+   "decisions": [],
+   "initiated": "2026-09-14",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-26",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "REDEVCO / CBRE IM / GESTOR PORTAL MEDITERRANEO"
+  },
   "M.12640": {
    "caseNumber": "M.12640",
    "deadline": "2026-11-24",
    "decisions": [],
    "initiated": "2026-09-14",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Prologis, L.P. omistaa, hallinnoi ja rakennuttaa kiinteistöjä pääasiassa teollisiin tarkoituksiin Pohjois- ja Etelä-Amerikassa, Euroopassa ja Aasiassa.",
+     "Yrityksen NBIM Nerva S.à r.l. liiketoiminta liittyy Norjan valtion eläkerahaston (Global of Norway) institutionaalisiin sijoituksiin, joissa keskitytään maailmanlaajuisiin sijoituksiin kiinteistösijoitukset mukaan luettuina."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-05",
+    "observationsShifted": null,
+    "oj": "C:2026:5552:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Prolongis, Inc."
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Prologis, L.P. (Yhdysvallat), joka on yrityksen Prolongis, Inc."
+     },
+     {
+      "controllers": [
+       {
+        "country": "Norja",
+        "name": "Norges Bank"
+       }
+      ],
+      "country": "Luxemburg",
+      "fi": false,
+      "name": "NBIM Nerva S.à.r.l."
+     },
+     {
+      "controllers": [
+       {
+        "country": "myyjä",
+        "name": "MAHLE Thermal and Fluid Systems GmbH & Co. KG"
+       }
+      ],
+      "country": "Target Asset",
+      "fi": false,
+      "name": "Kiinteistöomaisuus, joka sijaitsee osoitteessa Raffineriestraße 99, 93333 Neustadt an der Donau (kohteena oleva omaisuus"
+     }
+    ],
+    "published": "2026-10-26",
+    "reference": "C/2026/5552",
+    "simplified": true,
+    "transaction": "Prologis, L.P. ja NBIM Nerva S.à r.l. hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan kohteena olevassa omaisuuserässä (Target Asset). Keskittymä toteutetaan ostamalla omaisuutta.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5552/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-19",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-26",
+     "reference": "C:2026:5552:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_M_68.2",
@@ -7656,10 +7745,44 @@
    "decisions": [],
    "initiated": "2026-10-05",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Blackstone on maailmanlaajuisesti toimiva vaihtoehtoisten sijoitusten hallintapalvelujen tarjoaja.",
+     "Clearlake on yksityinen sijoitusrahasto."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-05",
+    "observationsShifted": null,
+    "oj": "C:2026:5551:",
+    "parties": [
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Blackstone Inc.",
+      "short": "Blackstone"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Clearlake Capital Group, L.P.",
+      "short": "Clearlake"
+     }
+    ],
+    "published": "2026-10-26",
+    "reference": "C/2026/5551",
+    "simplified": true,
+    "transaction": "Blackstone ja Clearlake hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Discovery Education, Inc. (Discovery Education, Yhdysvallat), joka on tällä hetkellä yrityksen Clearlake yksinomaisessa määräysvallassa. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5551/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-16",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-26",
+     "reference": "C:2026:5551:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_J_58.29",
@@ -7702,5 +7825,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-26T06:22:09Z"
+ "fetched": "2026-10-26T14:25:46Z"
 }

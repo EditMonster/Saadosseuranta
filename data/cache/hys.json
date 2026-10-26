@@ -1,6 +1,42 @@
 {
- "fetched": "2026-10-26T06:20:32",
+ "fetched": "2026-10-26T14:23:36",
  "items": [
+  {
+   "actType": "COMMUNIC",
+   "actTypeLabel": "Tiedonanto",
+   "id": 18695,
+   "periods": [
+    {
+     "end": "2026-11-23",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-26"
+    }
+   ],
+   "reference": "Ares(2026)6682358",
+   "status": "ACTIVE",
+   "title_en": "Hydrogen strategy",
+   "title_fi": "Puhdas energia – EU:n uusi vetystrategia",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695_en"
+  },
+  {
+   "actType": "REG",
+   "actTypeLabel": "Asetus",
+   "id": 16772,
+   "periods": [
+    {
+     "end": "2026-11-23",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-26"
+    }
+   ],
+   "reference": "Ares(2026)1302518",
+   "status": "ACTIVE",
+   "title_en": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
+   "title_fi": "Raskaiden hyötyajoneuvojen hiilidioksidipäästöjen määrittämistä koskevan EU:n asetuksen muuttaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772_en"
+  },
   {
    "actType": "REG_DEL",
    "actTypeLabel": "Delegoitu asetus",

@@ -2363,6 +2363,24 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-18695-lausunto-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[EU] Lausuntoaika päättyy: Puhdas energia – EU:n uusi vetystrategia
+DESCRIPTION:Palauteaika · Tiedonanto · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-16772-lausunto-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[EU] Lausuntoaika päättyy: Raskaiden hyötyajoneuvojen hiilidioksidipäästöjen määrittämistä koskevan EU:n asetuksen muuttaminen
+DESCRIPTION:Palaute säädösluonnoksesta · Asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-19498-lausunto-2027-01-13@saadosseuranta
 DTSTAMP:20270113T000000Z
 DTSTART;VALUE=DATE:20270113
@@ -2973,6 +2991,15 @@ DTEND;VALUE=DATE:20270203
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... correcting certain language versions of Delegated Regulation (EU) 2021/2178 supplementing Regulation (EU) 2020/852 of
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6909 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-toim-fiva-52-2026-voimaan-2026-12-31@saadosseuranta
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:[FI] Voimaan: Muutoksia työeläkealaa koskeviin määräyksiin ja ohjeisiin sekä vahinko- ja henkivakuutuksen määräyksiin ja ohjeisiin
+DESCRIPTION:Voimaan · Fiva 52/2026 · https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-tyoelakealaa-koskeviin-maarayksiin-ja-ohjeisiin-seka--vahinko--ja-henkivakuutuksen-maarayksiin-ja-ohjeisiin/
+URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-tyoelakealaa-koskeviin-maarayksiin-ja-ohjeisiin-seka--vahinko--ja-henkivakuutuksen-maarayksiin-ja-ohjeisiin/
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-toim-fiva-49-2026-voimaan-2026-11-20@saadosseuranta

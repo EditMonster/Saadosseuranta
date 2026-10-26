@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-26T06:18:05",
+ "fetched": "2026-10-26T14:20:36",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -56147,6 +56147,10 @@
     {
      "date": "2026-10-21",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-10-23",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -56664,6 +56668,10 @@
     {
      "date": "2026-10-14",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-10-26",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -61422,6 +61430,12 @@
     "proposal": "52026PC0339",
     "proposalDate": "2026-07-03"
    },
+   "council": [
+    {
+     "date": "2026-10-01",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [
     {
      "confirmed": true,

@@ -41,6 +41,15 @@ DESCRIPTION:Tarjoukset viimeistään · Forsvarsbygg · https://ted.europa.eu/fi
 URL:https://ted.europa.eu/fi/notice/-/detail/738299-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60283-maaraaika-2026-11-05-hankintatiimi@saadosseuranta
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[Hankinta] Määräaika: Kameravalvontapalvelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-060283 · https://www.hankintailmoitukset.fi/fi/public/procedure/39161/enotice/60283
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39161/enotice/60283
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-739192-2026-maaraaika-2026-11-05-hankintatiimi@saadosseuranta
 DTSTAMP:20261105T000000Z
 DTSTART;VALUE=DATE:20261105
@@ -1317,15 +1326,6 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[Hankinta] Määräaika: ALM System and Services
 DESCRIPTION:Tarjoukset viimeistään · RIKSGÄLDSKONTORET · https://ted.europa.eu/fi/notice/-/detail/724104-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/724104-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-718790-2026-maaraaika-2026-10-26-hankintatiimi@saadosseuranta
-DTSTAMP:20261026T000000Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
-SUMMARY:[Hankinta] Määräaika: A notification system for sending SMS and voice messages in the stand-by and crisis support tool.
-DESCRIPTION:Tarjoukset viimeistään · Direktoratet for samfunnssikkerhet og beredskap (DSB) · https://ted.europa.eu/fi/notice/-/detail/718790-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/718790-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-721431-2026-maaraaika-2026-10-29-hankintatiimi@saadosseuranta
