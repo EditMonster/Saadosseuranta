@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-25T21:25:24",
+ "fetched": "2026-10-26T06:16:33",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -9717,7 +9717,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-21T07:54:59",
+   "muokattu": "2026-10-26T06:11:15",
    "nimi": "Hallituksen esitys eduskunnalle ajoneuvoverolaiksi ja siihen liittyviksi laeiksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -46948,7 +46948,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-23T11:48:49",
+   "muokattu": "2026-10-26T03:33:05",
    "nimi": "Hallituksen esitys laiksi vesilain muuttamisesta (merituulivoiman rakentamis- ja purkulakihanke)",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -62883,6 +62883,13 @@
      "kind": "lausunto",
      "label": "Lausuntokierros, yhteistoiminta-asiamies",
      "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-10-29",
+     "end": "2026-10-29",
+     "kind": "muu",
+     "label": "Tasavallan Presidentin istunto",
+     "tyyppi": "SAADOS"
     }
    ],
    "evNumerot": [
@@ -63374,7 +63381,7 @@
    },
    "lisattyPaiva": "2025-10-27",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-23T09:02:02",
+   "muokattu": "2026-10-26T06:06:30",
    "nimi": "Hallituksen esitys eduskunnalle työneuvoston ja yhteistoiminta-asiamiehen tehtävien muutoksia koskevaksi lainsäädännöksi",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -118057,7 +118064,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-23T04:57:15",
+   "muokattu": "2026-10-26T06:08:04",
    "nimi": "Pelastuslain toisen vaiheen uudistamishanke",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -134609,7 +134616,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-09-22T12:02:39",
+   "muokattu": "2026-10-26T05:45:07",
    "nimi": "Käytöstä poistettujen maatuulivoimaloiden purku- ja ennallistamisvelvoitteiden lainsäädäntöhanke",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -134624,7 +134631,7 @@
    "url": "https://valtioneuvosto.fi/hanke?tunnus=YM012:00/2024",
    "uuid": "1e7cf532-16aa-45e9-a7da-d1c3e7714897",
    "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-10-31",
+   "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": 38,
    "vanhaEsittelyvuosi": 2026
   },
@@ -427463,7 +427470,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-19T06:03:29",
+   "muokattu": "2026-10-26T06:14:08",
    "nimi": "Valtioneuvoston asetus turvallisten alkuperämaiden määrittämiseksi",
    "pevLausunto": false,
    "poistettuPaiva": null,

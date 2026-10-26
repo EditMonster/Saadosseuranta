@@ -122,15 +122,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 251/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/251
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-f7cb4c79-lausunto-2026-10-18@saadosseuranta
-DTSTAMP:20261018T000000Z
-DTSTART;VALUE=DATE:20261018
-DTEND;VALUE=DATE:20261019
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi tuloverolain 10 §:n muuttamisesta
-DESCRIPTION:Lausuntokierros · VM091:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM091:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM091:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-187-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -2399,10 +2390,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-20@saadosseuranta
-DTSTAMP:20261220T000000Z
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261221
+UID:eu-hys-19517-lausunto-2026-12-21@saadosseuranta
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2480,10 +2471,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-20@saadosseuranta
-DTSTAMP:20261220T000000Z
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261221
+UID:eu-hys-15492-lausunto-2026-12-21@saadosseuranta
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en

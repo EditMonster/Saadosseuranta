@@ -896,73 +896,6 @@
    ],
    "title": "ORANGE / APG / NEXERA"
   },
-  "M.12347": {
-   "caseNumber": "M.12347",
-   "deadline": "2026-08-07",
-   "decisions": [
-    {
-     "date": "2026-07-27",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-02-02",
-   "lastDecision": "2026-07-27",
-   "notice": {
-    "activities": [
-     "Brookfield on maailmanlaajuisesti toimiva varainhoitoyhtiö, jonka päätoimipaikka on Torontossa Kanadassa. Se tarjoaa erilaisia julkisia ja yksityisiä sijoitustuotteita ja -palveluja, joissa keskitytään uusiutuvaan energiaan ja energiasiirtymään, infrastruktuuriin, yksityiseen pääomaan ja kiinteistöihin.",
-     "Lunate toimii maailmanlaajuisesti yksityisillä markkinoilla ja laajemmin omaisuudenhoidon alalla. Sillä on monipuolinen asiakaskunta, johon kuuluu laitoksia, omaisuudenhoitoyhteisöjä ja yrityksiä. Royal Group on Yhdistyneisiin arabiemiirikuntiin sijoittautunut 60 suuren ja keskisuuren yrityksen ryhmittymä."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-24",
-    "oj": "C:2026:3754:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Kanada",
-        "name": "Brookfield Corporation"
-       }
-      ],
-      "country": "Bermuda",
-      "fi": false,
-      "name": "Brookfield Capital Partners Manager Ltd",
-      "short": "Brookfield"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Yhdistyneet arabiemiraatit",
-        "name": "Royal Group Holding LLC"
-       }
-      ],
-      "country": "Yhdistyneet arabiemiraatit",
-      "fi": false,
-      "name": "Lunate Capital Limited",
-      "short": "Lunate"
-     }
-    ],
-    "published": "2026-07-14",
-    "reference": "C/2026/3754",
-    "simplified": true,
-    "transaction": "Brookfield ja Lunate hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan uudessa yhteisyrityksessä. Keskittymä toteutetaan ostamalla uuden yhteisyrityksen osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3754/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-02",
-   "oj": [
-    {
-     "published": "2026-07-14",
-     "reference": "C:2026:3754:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_M_68.2",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "BROOKFIELD / LUNATE"
-  },
   "M.12349": {
    "caseNumber": "M.12349",
    "deadline": "2026-11-27",
@@ -3811,61 +3744,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "AEQUITA / SABIC EUROPE"
-  },
-  "M.12514": {
-   "caseNumber": "M.12514",
-   "deadline": "2026-08-07",
-   "decisions": [
-    {
-     "date": "2026-07-27",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-15",
-   "lastDecision": "2026-07-27",
-   "notice": {
-    "activities": [
-     "Frasers harjoittaa i) urheilu- ja kuntoilutarvikkeiden, ii) laadukkaiden lifestyle-tuotteiden ja iii) luksustuotteiden tukku- ja vähittäiskauppaa.",
-     "Hugo Boss on Frankfurtin pörssissä noteerattu muoti- ja lifestyle-alan yritys. Se toimii premium-segmentillä ja tarjoaa korkealaatuisia naisten ja miesten vaatteita, kenkiä ja asusteita."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-23",
-    "oj": "C:2026:3740:",
-    "parties": [
-     {
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "Frasers Group plc",
-      "short": "Frasers"
-     },
-     {
-      "country": "Saksa",
-      "fi": false,
-      "name": "HUGO BOSS AG",
-      "short": "Hugo Boss"
-     }
-    ],
-    "published": "2026-07-13",
-    "reference": "C/2026/3740",
-    "simplified": true,
-    "transaction": "Frasers hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Hugo Boss. Keskittymä toteutetaan 10. kesäkuuta 2026 ilmoitetulla julkisella tarjouksella.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3740/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-02",
-   "oj": [
-    {
-     "published": "2026-07-13",
-     "reference": "C:2026:3740:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_G_46.42",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "FRASERS / HUGO BOSS"
   },
   "M.12515": {
    "caseNumber": "M.12515",
@@ -7824,5 +7702,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-25T21:30:58Z"
+ "fetched": "2026-10-26T06:22:09Z"
 }
