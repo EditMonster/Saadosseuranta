@@ -98,6 +98,8 @@ def committee_row(d: dict, rep: dict | None, summ: dict | None = None) -> dict:
     if ponsi and len(ponsi) > 420:
         ponsi = ponsi[:420].rsplit(" ", 1)[0].rstrip(",;:") + " …"
     view = (summ or {}).get("gist") if (summ or {}).get("ok") is True else None
+    if view and re.search(r"\b(esitämme|ehdotamme)\b", view, re.I):
+        view = None  # read before COMMITTEE_VERSION 2: the members' dissent, not the committee's view
     gist = ponsi if ponsi and not GENERIC_PONSI.search(ponsi) else None
     if gist and gist.startswith("että "):  # the ponsi is stored without its subject: "että se yhtyy …"
         name = COMMITTEE_NAMES.get(abbr or "") or rep.get("committeeName") or "Valiokunta"
