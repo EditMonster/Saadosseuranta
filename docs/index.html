@@ -773,6 +773,20 @@ th{font-weight:500;color:var(--muted)}
 :root[data-theme="dark"]{--glass-bar:rgba(30,26,23,.9)}
 #gbar,.tabs{background:var(--glass-bar)!important}
 
+
+/* Seuraavan vaiheen teksti: neutraali, oranssi vain kiireelliselle, arviot himmeinä; merkit tekstin päällä */
+.nx-label{border-left-color:var(--line2)!important;z-index:2!important}
+.nx-label.to-left{border-right-color:var(--line2)!important;border-left:0!important}
+.nx-label.urgent{border-left-color:var(--signal)!important}
+.nx-label.urgent.to-left{border-right-color:var(--signal)!important}
+.nx-label.tentative{color:var(--muted)!important;font-style:italic;border-left-style:dashed!important;background:rgba(255,255,255,.55)!important}
+.nx-label.tentative.to-left{border-right-style:dashed!important}
+.nx-label.tentative b{color:var(--muted);font-style:normal}
+.nx-label .tag{font-style:normal;font-size:9.5px;color:var(--dim);border:1px dashed var(--line2);border-radius:6px;padding:0 4px;margin-left:4px}
+.nx-label.below{bottom:auto!important;top:calc(50% + 12px)}
+:root[data-theme="dark"] .nx-label.tentative{background:rgba(30,26,23,.6)!important}
+.ev{z-index:3}
+.ev.unconfirmed{border-style:dashed;background:var(--panel)!important}
 </style>
 </head>
 <body>
@@ -1453,6 +1467,9 @@ const fmtShort=d=>d.getUTCFullYear()===TODAY.getUTCFullYear()?`${d.getUTCDate()}
 function relDays(d){ const n=daysTo(d); if(n===0) return "tänään"; if(n===1) return "huomenna"; if(n===-1) return "eilen"; const a=Math.abs(n); const t=a<60?`${a} pv`:(a<700?`${Math.round(a/30.4)} kk`:`${(a/365).toFixed(1).replace(".",",")} v`); return n>0?`${t} päästä`:`${t} sitten`; }
 /* A stage label as it fits on the line: no planning-system parentheses or "– siirtynyt, aiemmin vko 36/2026" tails
    (the full label stays in the tooltip and in the item's own timeline) */
+/* a date that is a proposal or an estimate, not a decided stage: "Ehdotettu voimaantulo", "Suunniteltu antaminen", ennusteet */
+const TENTATIVE=/^(ehdotettu|suunniteltu|arvioitu|arvio|ennuste|odotettu|todennäköi)/i;
+const isTentative=e=>!!e&&(e.confirmed===false||e.kind==="ennuste"||TENTATIVE.test(e.label||""));
 function shortLabel(l,max=46){
   let t=String(l||"").replace(/\s*\((lainsäädäntösuunnitelma|tarkistamaton|arvio)\)/gi,"").replace(/\s+[–-]\s+siirtynyt.*$/i," · siirtynyt").replace(/\s+/g," ").trim();
   return t.length>max?t.slice(0,max-1).replace(/[\s,;:·–-]+\S*$/,"")+"…":t;
@@ -1523,7 +1540,7 @@ function renderTimeline(root, items, opts={}){
     row+=`<div class="label"><div class="head"><div class="t" title="${esc((it.fullTitle||it.title)+(it.ministry?" · "+it.ministry:""))}">${esc(it.title)}</div>${opts.mini?"":starHTML(it.id)+hideBtnHTML(it.id)}</div><div class="meta"><span>${esc(it.ref)}</span><span class="pill ${st.cls}">${esc(st.text)}</span>${it.fiParty&&it.authority==="EU"?'<span class="pill fi" title="Jokin osapuoli on suomalainen (EUVL:n ennakkoilmoitus)">FI-osapuoli</span>':""}${changeBadge(it.id)}${opts.mini?"":influenceBadge(it,opts.group)+folderBadge(it.id)}</div>`;
     if(!opts.mini&&it.parties&&it.parties.length) row+=`<div class="parties" title="${esc(it.parties.map(p=>p.name+(p.country?" ("+p.country+")":"")).join(" · "))}">${partiesHTML(it,3)}</div>`;
     const nxOnTrack=!opts.labels&&nx&&nx.date>=min&&nx.date<=max&&fit;
-    if(!nxOnTrack) row+=`<div class="next"${nx?` title="${esc(nx.label)}"`:""}>${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(shortLabel(nx.label,60))} <span class="rel">(${relDays(nx.date)})</span>`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
+    if(!nxOnTrack) row+=`<div class="next"${nx?` title="${esc(nx.label)}"`:""}>${nx?`Seuraava · <b>${fmt(nx.date)}</b> ${esc(shortLabel(nx.label,60))}${TENTATIVE.test(nx.label||"")?" (arvio)":""} <span class="rel">(${relDays(nx.date)})</span>`:(it.events.length?"Ei tulevia vaiheita":"Ei päivämäärätietoja vielä")}</div>`;
     if(!opts.group&&(it.ministry||it.procedure)) row+=`<div class="min">${esc(it.ministry||it.procedure)}</div>`;
     row+=`</div><div class="track">`;
     if(stacked) row+=`<div class="t-today" style="left:${xt}%"></div>`;
@@ -1568,7 +1585,7 @@ function renderTimeline(root, items, opts={}){
           const offs=c.v.length===2?[-8,8]:[-14,0,14];
           row+=`<div class="ev-stack" style="left:${px}%;height:${offs[offs.length-1]-offs[0]}px;margin-top:${offs[0]}px" aria-hidden="true"></div>`;
           c.v.forEach((v,i)=>{ const {e,d}=v; const kind=e.kind||"muu"; const lab=e.label||KIND_LABEL[kind]||"";
-            row+=`<button class="ev kind-${esc(kind)} ${d<=TODAY?"past":"future"} stacked${e.confirmed===false?" unconfirmed":""}" style="left:${px}%;margin-top:${offs[i]}px" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}${note}" data-l="${esc(labs)}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
+            row+=`<button class="ev kind-${esc(kind)} ${d<=TODAY?"past":"future"} stacked${isTentative(e)?" unconfirmed":""}" style="left:${px}%;margin-top:${offs[i]}px" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}${note}" data-l="${esc(labs)}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
             v.clustered=true; });
           return;
         }
@@ -1581,7 +1598,7 @@ function renderTimeline(root, items, opts={}){
       let off=""; if(Math.abs(px-prevX)<1.6){ flip=!flip; off=flip?" up":" down"; } else flip=false; prevX=px;
       const kind=e.kind||"muu"; const lab=e.label||KIND_LABEL[kind]||"";
       const lo=evOff.get(e)||0;
-      row+=`<button class="ev kind-${esc(kind)} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}${lo?"":off}" style="left:${px}%${lo?`;margin-top:${lo}px`:""}" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}" data-l="${esc(lab)}${e.confirmed===false?" (tarkistamaton)":""}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
+      row+=`<button class="ev kind-${esc(kind)} ${past?"past":"future"}${isTentative(e)?" unconfirmed":""}${lo?"":off}" style="left:${px}%${lo?`;margin-top:${lo}px`:""}" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}" data-l="${esc(lab)}${e.confirmed===false?" (tarkistamaton)":""}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
       if(opts.labels){
         let tier=tiers.findIndex(v=>px-v>thr); if(tier<0) tier=i%4; tiers[tier]=px;
         row+=`<div class="ev-label ${["above","below","above2","below2"][tier]}" style="left:${px}%"><span class="d">${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}</span>${esc(lab)}</div>`;
@@ -1592,9 +1609,13 @@ function renderTimeline(root, items, opts={}){
       const px=x(nx.date);
       const n=daysTo(nx.date);
       const sameDay=it.events.filter(e=>fmt(pd(e.end&&pd(e.date)<TODAY?e.end:e.date))===fmt(nx.date));
-      const also=sameDay.filter(e=>!(nx.label||"").startsWith(e.label||"\u0000"));
+      const ending=/päättyy$/.test(nx.label||"");
+      const also=sameDay.filter(e=>!(nx.label||"").startsWith(e.label||"\u0000")&&!(ending&&e.end&&fmt(pd(e.end))===fmt(nx.date)));
       const tipNx=[nx.label].concat(also.map(e=>e.label||KIND_LABEL[e.kind]||"")).join("\n");
-      row+=`<div class="nx-label ${px>60?"to-left":"to-right"}${n>=0&&n<=7?" urgent":""}" style="left:${px}%" title="${esc(tipNx)}"><b>${esc(fmtShort(nx.date))}</b> ${esc(shortLabel(nx.label,also.length?36:46))}${also.length?` <span class="also">+${also.length} samana päivänä</span>`:""}${n>=0&&n<=30?` <span class="in">${n===0?"tänään":n===1?"huomenna":n+" pv"}</span>`:""}</div>`;
+      const nxEv=it.events.find(e=>(nx.label||"").startsWith(e.label||"\u0000")&&(fmt(pd(e.date))===fmt(nx.date)||(e.end&&fmt(pd(e.end))===fmt(nx.date))));
+      const tent=isTentative(nxEv)||TENTATIVE.test(nx.label||"");
+      const busyAbove=/class="ev-stack"|class="span [^"]*lane/.test(row);
+      row+=`<div class="nx-label ${px>60?"to-left":"to-right"}${n>=0&&n<=7&&!tent&&(ending||(nxEv&&(nxEv.kind==="maaraaika"||nxEv.kind==="lausunto")))?" urgent":""}${tent?" tentative":""}${busyAbove?" below":""}" style="left:${px}%" title="${esc(tipNx)}${tent?"\n(arvio – ei vielä päätetty)":""}"><b>${esc(fmtShort(nx.date))}</b> ${esc(shortLabel(nx.label,also.length?36:46))}${tent?` <span class="tag">arvio</span>`:""}${also.length?` <span class="also">+${also.length} samana päivänä</span>`:""}${n>=0&&n<=30?` <span class="in">${n===0?"tänään":n===1?"huomenna":n+" pv"}</span>`:""}</div>`;
     }
     if(before.length){ const l=before[before.length-1]; row+=`<span class="edge l" title="${before.length} aiempaa vaihetta – viimeisin ${fmt(l.d)} ${esc(l.e.label||KIND_LABEL[l.e.kind]||"")}">‹ ${before.length}</span>`; }
     if(after.length){ const f=after.slice().sort((p,q)=>p.d-q.d)[0]; row+=`<span class="edge r" title="${after.length} myöhempää vaihetta – ensimmäinen ${fmt(f.d)} ${esc(f.e.label||KIND_LABEL[f.e.kind]||"")}">${esc(fmtShort(f.d))} ${esc(shortLabel(f.e.label||KIND_LABEL[f.e.kind]||"",30))} ›</span>`; }
