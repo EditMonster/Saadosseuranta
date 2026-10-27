@@ -26,6 +26,7 @@ tila:
 # Komission pääosasto -> aihealue, kun avainsanat eivät osu (aihealueiden nimet = config/topics.yaml)
 paaosasto:
   FISMA: Yhtiö ja rahoitus
+  COMP: Kilpailuoikeus
   TAXUD: Verotus
   JUST: Rikos ja prosessi
   EMPL: Työoikeus

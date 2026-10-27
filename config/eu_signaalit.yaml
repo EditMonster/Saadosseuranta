@@ -162,6 +162,10 @@ rikkomukset:
     "Indirect taxation": "Verotus"
     "Customs": "Verotus"
     "Public procurement": "Hallinto ja hankinnat"
+    "Competition": "Kilpailuoikeus"
+    "State aid": "Kilpailuoikeus"
+    "Intellectual property": "Immateriaalioikeudet"
+    "Industrial property": "Immateriaalioikeudet"
     "Financial services": "Yhtiö ja rahoitus"
     "Company law": "Yhtiö ja rahoitus"
     "Anti-money laundering": "Yhtiö ja rahoitus"
@@ -227,6 +231,7 @@ komitologia:
   # Pääosasto (CSV: Service, englanninkielinen pitkä nimi) -> aihealue, kun avainsanat eivät osu
   paaosastot:
     "Financial Stability, Financial Services and Capital Markets Union": "Yhtiö ja rahoitus"
+    "Competition": "Kilpailuoikeus"
     "Taxation and Customs Union": "Verotus"
     "Justice and Consumers": "Rikos ja prosessi"
     "Employment, Social Affairs and Inclusion": "Työoikeus"

@@ -220,8 +220,8 @@ sources:
     aihealueet: ["Hallinto ja hankinnat"]   # oletus, kun virastolla ei ole omaa aihealuetta eikä otsikko osu
     agency_topics:
       energiavirasto: ["Kestävyys ja ympäristö"]
-      kilpailu-ja-kuluttajavirasto: ["Kuluttaja ja tuotteet"]
-      patentti-ja-rekisterihallitus: ["Yhtiö ja rahoitus"]
+      kilpailu-ja-kuluttajavirasto: ["Kuluttaja ja tuotteet", "Kilpailuoikeus"]
+      patentti-ja-rekisterihallitus: ["Yhtiö ja rahoitus", "Immateriaalioikeudet"]
       verohallinto: ["Verotus"]
       valvira: ["Sote ja koulutus"]
       fimea: ["Sote ja koulutus"]

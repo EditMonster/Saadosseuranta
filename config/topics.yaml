@@ -52,6 +52,75 @@ topics:
     - securities
     - insurance
     - anti-money
+  Kilpailuoikeus:
+    - kilpailulain
+    - kilpailulaki
+    - kilpailunrajoitu
+    - kilpailuneutraliteet
+    - kilpailu- ja kuluttajavira
+    - kilpailuviranomai
+    - kilpailuoikeu
+    - kilpailusäännö
+    - määräävän markkina
+    - määräävä markkina
+    - kartelli
+    - yrityskauppavalvon
+    - yrityskeskittym
+    - keskittymävalvon
+    - sulautuma-asetu
+    - valtiontuk
+    - valtiontuen
+    - valtiontuet
+    - digitaalisten markkinoiden
+    - competition
+    - antitrust
+    - merger control
+    - state aid
+    - foreign subsidies
+    - cartel
+    - digital markets act
+  Immateriaalioikeudet:
+    # ei pelkkää "patentti": se osuisi Patentti- ja rekisterihallituksen nimeen (kirjanpito, kaupparekisteri)
+    - patenttilai
+    - patenttilaki
+    - patentin
+    - patentit
+    - patenttien
+    - patentoi
+    - patenttioike
+    - patenttiasi
+    - patenttihakem
+    - eurooppapatent
+    - yhtenäispatent
+    - tavaramerk
+    - tekijänoikeu
+    - mallioikeu
+    - hyödyllisyysmall
+    - liikesalaisuu
+    - toiminimi
+    - immateriaali
+    - kasvinjalostaj
+    - lisäsuojatodistu
+    - maantieteellinen merkint
+    - maantieteelliset merkint
+    - maantieteellisten merkint
+    - verkkotunnu
+    - intellectual property
+    - patents
+    - unitary patent
+    - patent law
+    - patent protection
+    - compulsory licen
+    - trade mark
+    - trademark
+    - copyright
+    - industrial design
+    - design protection
+    - trade secret
+    - geographical indication
+    - supplementary protection certificate
+    - standard essential
+    - plant variet
   Tietosuoja ja digi:
     - tietosuoja
     - henkilötieto
