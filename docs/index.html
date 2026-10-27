@@ -340,7 +340,7 @@ th.sortable:hover{color:var(--fg)}
 /* Eteneminen (vaihepalkki) */
 .stepper-wrap{overflow-x:auto;padding-bottom:4px}
 .stepper{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));min-width:calc(var(--n) * 66px)}
-.stepper li{position:relative;text-align:center;padding:24px 4px 0;font-size:11.5px;line-height:1.3;overflow-wrap:anywhere;hyphens:auto}
+.stepper li{position:relative;text-align:center;padding:24px 4px 0;font-size:11.5px;line-height:1.3;overflow-wrap:break-word;hyphens:manual}
 .stepper li::before{content:"";position:absolute;top:9px;right:50%;width:100%;border-top:2px dashed var(--line2)}
 .stepper li:first-child::before{display:none}
 .stepper li.done::before,.stepper li.now::before,.stepper li.skip::before{border-top:2px solid var(--fg);opacity:.6}
@@ -588,10 +588,10 @@ body{background:var(--room) fixed!important;background-size:cover!important;font
 a{border-bottom-color:rgba(74,58,44,.25)}
 
 /* lasipinnat */
-.glass,.view,.drawer,.modal,#gbar,#grail,.tabs{
+.glass,.view,.drawer,.modal,#gbar,#grail,nav.tabs{
   background:var(--glass);-webkit-backdrop-filter:blur(30px) saturate(160%);backdrop-filter:blur(30px) saturate(160%);
   border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.55)}
-:root[data-theme="dark"] .view,:root[data-theme="dark"] .drawer,:root[data-theme="dark"] #gbar,:root[data-theme="dark"] #grail,:root[data-theme="dark"] .tabs{box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.08)}
+:root[data-theme="dark"] .view,:root[data-theme="dark"] .drawer,:root[data-theme="dark"] #gbar,:root[data-theme="dark"] #grail,:root[data-theme="dark"] nav.tabs{box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.08)}
 
 /* yläpalkki: tervehdys · avustaja · ohjaimet */
 #gbar{position:fixed;z-index:50;top:14px;left:112px;right:28px;height:54px;border-radius:999px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 8px 0 8px}
@@ -649,12 +649,12 @@ a{border-bottom-color:rgba(74,58,44,.25)}
 .sub{font-size:13px;color:var(--muted)}
 
 /* alapalkki: näkymät */
-.tabs{position:fixed;z-index:50;left:50%;bottom:18px;transform:translateX(-50%);border-radius:999px;padding:6px;gap:2px!important;flex-wrap:nowrap!important;max-width:calc(100vw - 40px);overflow-x:auto}
+nav.tabs{position:fixed;z-index:50;left:50%;bottom:18px;transform:translateX(-50%);border-radius:999px;padding:6px;gap:2px!important;flex-wrap:nowrap!important;max-width:calc(100vw - 40px);overflow-x:auto}
 .tab{border:0!important;border-radius:999px!important;background:transparent!important;color:var(--fg)!important;opacity:.72;font-size:13px!important;padding:9px 16px!important;white-space:nowrap}
 .tab:hover{opacity:1;background:rgba(255,255,255,.25)!important}
 .tab[aria-selected="true"]{opacity:1;background:#fff!important;color:#2b241f!important;box-shadow:0 2px 8px rgba(64,44,26,.16)}
 .tab .n{opacity:.55;font-size:11.5px}
-.tabs .plus{flex:none;width:40px;height:40px;margin-left:6px;border-radius:50%;background:#fff;color:#2b241f;display:grid;place-items:center;font-size:22px;line-height:1;box-shadow:0 2px 10px rgba(64,44,26,.2)}
+nav.tabs .plus{flex:none;width:40px;height:40px;margin-left:6px;border-radius:50%;background:#fff;color:#2b241f;display:grid;place-items:center;font-size:22px;line-height:1;box-shadow:0 2px 10px rgba(64,44,26,.2)}
 
 /* suodattimet lasipillereinä */
 .toolbar{border:0!important;padding:4px 6px 14px!important}
@@ -740,7 +740,7 @@ main{margin-top:6px}
 }
 
 /* luettavuus: alapalkki tiiviimpää lasia, tumman tilan aikajanatekstit */
-.tabs{background:var(--glass-strong)!important;-webkit-backdrop-filter:blur(34px) saturate(170%);backdrop-filter:blur(34px) saturate(170%)}
+nav.tabs{background:var(--glass-strong)!important;-webkit-backdrop-filter:blur(34px) saturate(170%);backdrop-filter:blur(34px) saturate(170%)}
 #count,.count{text-transform:none!important;letter-spacing:0!important;font-family:var(--sans)!important}
 :root[data-theme="dark"] .nx-label{background:rgba(30,26,23,.88)!important;color:var(--fg)}
 :root[data-theme="dark"] .span.lausunto{background:repeating-linear-gradient(135deg,transparent 0 3px,var(--hatch) 3px 6px),rgba(30,26,23,.85)!important}
@@ -750,7 +750,7 @@ main{margin-top:6px}
 :root[data-theme="dark"] .tl-zoom button[aria-pressed="true"]{background:#f2ece6!important;color:#1d1815!important}
 :root[data-theme="dark"] .pill{background:rgba(255,255,255,.06)}
 :root[data-theme="dark"] .close{background:rgba(255,255,255,.1)}
-:root[data-theme="dark"] .tabs .plus,:root[data-theme="dark"] .tab[aria-selected="true"]{background:#f2ece6!important;color:#1d1815!important}
+:root[data-theme="dark"] nav.tabs .plus,:root[data-theme="dark"] .tab[aria-selected="true"]{background:#f2ece6!important;color:#1d1815!important}
 @media (max-width:760px){ #gbar .hello{display:none} #gbar .ctl .seg button{padding:6px 9px!important} }
 
 /* ei isoja kirjaimia eikä harvennusta missään; otsikot pitävät tiiviin välistyksen */
@@ -771,7 +771,7 @@ th{font-weight:500;color:var(--muted)}
 :root[data-theme="dark"] .toolbar .seg button[aria-pressed="true"],:root[data-theme="dark"] .view .seg button[aria-pressed="true"]{background:#f2ece6!important;color:#1d1815!important}
 :root{--glass-bar:rgba(250,246,240,.88)}
 :root[data-theme="dark"]{--glass-bar:rgba(30,26,23,.9)}
-#gbar,.tabs{background:var(--glass-bar)!important}
+#gbar,nav.tabs{background:var(--glass-bar)!important}
 
 
 /* Seuraavan vaiheen teksti: neutraali, oranssi vain kiireelliselle, arviot himmeinä; merkit tekstin päällä */
@@ -787,6 +787,30 @@ th{font-weight:500;color:var(--muted)}
 :root[data-theme="dark"] .nx-label.tentative{background:rgba(30,26,23,.6)!important}
 .ev{z-index:3}
 .ev.unconfirmed{border-style:dashed;background:var(--panel)!important}
+
+/* Asian aikajana: lausunnot, valiokunnat ja arviointineuvosto vaiheiden joukossa */
+.vlist li.old{display:none}
+.vlist.showall li.old{display:block}
+.vlist li.vfold{padding:0 0 12px 20px}
+.vlist li.vfold::before{display:none}
+.vlist li.kind-lausunnot::before,.vlist li.kind-vk::before,.vlist li.kind-an::before{border-radius:3px;width:10px;height:10px;left:-6px;background:var(--panel)}
+.vlist li.kind-lausunnot::before{border-color:var(--signal)}
+.vlist li.kind-lausunnot.past::before{background:var(--signal-dim)}
+.vlist li.kind-vk::before{border-radius:0}
+.vlist li.kind-vk.past::before,.vlist li.kind-an.past::before{background:var(--fg)}
+.vlist .vx{margin-top:6px;font-size:12.5px}
+.vlist .vx .stl{display:flex;flex-wrap:wrap;gap:4px 0;margin-bottom:4px}
+.vlist .vx q{display:block;color:var(--fg);opacity:.9;margin:2px 0 4px;line-height:1.4}
+.vlist .vx details{margin-top:2px}
+.vlist .vx summary{cursor:pointer;color:var(--muted);font-size:12px;list-style:none}
+.vlist .vx summary::before{content:"▸ ";font-size:10px}
+.vlist .vx details[open] summary::before{content:"▾ "}
+.vlist .vx .vst{list-style:none;margin:6px 0 0;padding:0;border-left:1px dashed var(--line2)}
+.vlist .vx .vst li{padding:5px 0 7px 12px;position:relative}
+.vlist .vx .vst li::before{display:none}
+.vlist .vx .vst q{margin:2px 0 0;font-size:12px}
+.vlist .vx .vst .d{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.vlist .vx .vst .m,.vlist .vx .m{color:var(--muted);font-size:11.5px}
 </style>
 </head>
 <body>
@@ -987,16 +1011,16 @@ th{font-weight:500;color:var(--muted)}
   <p class="summary" id="dr-summary"></p>
   <div id="dr-facts"></div>
   <div id="dr-src"></div>
+  <h4 id="dr-h-mini">Aikajana</h4>
+  <div class="mini" id="dr-mini"></div>
+  <h4 id="dr-h-list">Vaiheet</h4>
+  <ul class="vlist" id="dr-list"></ul>
   <div id="dr-actions"></div>
   <div id="dr-folders"></div>
   <div id="dr-changes"></div>
   <div id="dr-influence"></div>
   <div id="dr-diff"></div>
   <div id="dr-stats"></div>
-  <h4 id="dr-h-mini">Aikajana</h4>
-  <div class="mini" id="dr-mini"></div>
-  <h4 id="dr-h-list">Vaiheet</h4>
-  <ul class="vlist" id="dr-list"></ul>
 </aside>
 
 <script>
@@ -2162,6 +2186,7 @@ function renderInfluence(it){
     if(ls&&ls.valiokunnat&&ls.valiokunnat.length&&infl) delete infl.mietinnot;  /* … and the committee documents list the report */
     const pend=roundPendingHTML(it,ls,inf);
     const lsHTML=lausunnotHTML(ls,it);
+    if(ls){ const L=document.getElementById("dr-list"); const all=L.classList.contains("showall"); L.innerHTML=vlistHTML(caseEvents(it,ls)); if(all) L.classList.add("showall"); }
     el.innerHTML=(pend?(lsHTML?lsHTML.replace('<h4>Annetut lausunnot</h4>','<h4>Annetut lausunnot</h4>'+pend):`<div class="infl"><h4>Annetut lausunnot</h4>${pend}</div>`):lsHTML)+(infl?influenceHTML(infl):"");
     wireLausunnot(el);
   });
@@ -2171,8 +2196,8 @@ function renderInfluence(it){
 function phaseSteps(it){
   const E=k=>it.events.filter(e=>e.kind===k), f=k=>E(k)[0], l=k=>{ const a=E(k); return a[a.length-1]; };
   const S=(t,e,o={})=>({t,d:e?pd(e.date):null,end:e&&e.end?pd(e.end):null,label:e&&e.label,...o});
-  if(it.scope==="fi"&&it.laji==="laki") return [S("Lausuntokierros",f("lausunto")),S("HE eduskunnalle",f("he")),S("Mietintö",E("eduskunta").find(e=>/mietintö/i.test(e.label||""))),S("Hyväksytty",l("hyvaksytty")),S("Vahvistettu",f("vahvistettu")),S("Voimaan",f("voimaan"))];
-  if(it.scope==="fi"&&it.laji==="asetus") return [S("Lausuntokierros",f("lausunto")),S("Annettu",f("vahvistettu")),S("Voimaan",f("voimaan"))];
+  if(it.scope==="fi"&&it.laji==="laki") return [S("Lausunto\u00adkierros",f("lausunto")),S("HE eduskunnalle",f("he")),S("Mietintö",E("eduskunta").find(e=>/mietintö/i.test(e.label||""))),S("Hyväksytty",l("hyvaksytty")),S("Vahvistettu",f("vahvistettu")),S("Voimaan",f("voimaan"))];
+  if(it.scope==="fi"&&it.laji==="asetus") return [S("Lausunto\u00adkierros",f("lausunto")),S("Annettu",f("vahvistettu")),S("Voimaan",f("voimaan"))];
   if(it.scope==="eu"&&it.laji==="eu"&&f("ehdotus")){
     const app=E("soveltaminen").concat(E("maaraaika")).sort((a,b)=>a.date.localeCompare(b.date));
     return [S("Komission ehdotus",f("ehdotus")),S("Suomen kanta",f("kanta")),S("Parlamentti",l("parlamentti")),S("Poliittinen sopu",f("sopu")),S("Julkaistu EUVL:ssä",f("julkaistu")),S("Voimaan",f("voimaan")),S(app.length&&app[app.length-1].kind==="maaraaika"?"Täytäntöönpano":"Soveltaminen",app[app.length-1])];
@@ -2196,17 +2221,63 @@ function stepperHTML(steps){
 }
 function vlistHTML(events){
   let html="", todayDone=false, nextDone=false, prevKey="";
-  events.forEach(e=>{
+  /* a long history folds: the latest six past entries stay open, older ones behind "Näytä koko historia" */
+  const pastIdx=events.map((e,i)=>pd(e.end||e.date)<=TODAY&&!e.extraHTML?i:-1).filter(i=>i>=0);  /* statements and documents never fold */
+  const fold=pastIdx.length>8?new Set(pastIdx.slice(0,pastIdx.length-6)):new Set();
+  if(fold.size) html+=`<li class="vfold"><button type="button" class="linkbtn" data-vfold>Näytä koko historia · ${fold.size} aiempaa vaihetta</button></li>`;
+  events.forEach((e,i)=>{
     const d=pd(e.date), end=e.end?pd(e.end):null; const past=(end||d)<=TODAY; const now=end&&d<=TODAY&&end>=TODAY;
     const key=e.date+"|"+(e.end||""); const same=key===prevKey; prevKey=key;
     if(!todayDone&&!past&&!now&&d>TODAY){ html+=`<li class="today-div"><span>Tänään ${fmt(TODAY)}</span></li>`; todayDone=true; }
     const isNext=!past&&!nextDone; if(isNext) nextDone=true;
-    html+=`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${isNext?" next":""}${same?" same":""}${e.confirmed===false?" unconfirmed":""}">
+    const tent=typeof isTentative==="function"&&isTentative(e);
+    html+=`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${isNext?" next":""}${same?" same":""}${tent?" unconfirmed":""}${fold.has(i)?" old":""}">
       <div class="d">${same?"samana päivänä":`${fmt(d)}${end?" – "+fmt(end):""} <span class="rel">${esc(relDays(now?end:d))}</span>`}</div>
-      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':(isNext?'<span class="now">seuraavaksi</span>':"")}${e.confirmed===false?`<span class="unc">${e.kind==="ennuste"?"arvio":"tarkistamaton"}</span>`:""}</div></li>`;
+      <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':(isNext?'<span class="now">seuraavaksi</span>':"")}${tent?`<span class="unc">arvio</span>`:""}</div>${e.extraHTML?`<div class="ls vx">${e.extraHTML}</div>`:""}</li>`;
   });
   if(!todayDone&&events.length) html+=`<li class="today-div"><span>Tänään ${fmt(TODAY)}</span></li>`;
   return html;
+}
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-vfold]"); if(!b) return; const ul=b.closest(".vlist"); ul.classList.add("showall"); b.closest("li").remove(); });
+
+/* The case timeline: the item's own stages plus what was said along the way – the consultation round's statements,
+   expert statements to each committee (under the hearing they belong to), committee opinions and reports, and the
+   Council on Regulation's statement – each with a stance summary and the statements behind a fold */
+const COMMITTEE_FI={PeV:"perustuslakivaliokunta",UaV:"ulkoasiainvaliokunta",VaV:"valtiovarainvaliokunta",TrV:"tarkastusvaliokunta",HaV:"hallintovaliokunta",LaV:"lakivaliokunta",LiV:"liikenne- ja viestintävaliokunta",MmV:"maa- ja metsätalousvaliokunta",PuV:"puolustusvaliokunta",SiV:"sivistysvaliokunta",StV:"sosiaali- ja terveysvaliokunta",TaV:"talousvaliokunta",TiV:"tiedusteluvalvontavaliokunta",TuV:"tulevaisuusvaliokunta",TyV:"työelämä- ja tasa-arvovaliokunta",YmV:"ympäristövaliokunta",SuV:"suuri valiokunta"};
+function stanceRow(K){ return ST_ORDER.filter(k=>K&&K[k]).map(k=>`<span class="st ${k}">${esc(ST_LABEL[k])} ${K[k]}</span>`).join(""); }
+function stanceCount(rows){ const K={}; rows.forEach(r=>{ if(r.stance) K[r.stance]=(K[r.stance]||0)+1; }); return K; }
+function stmtList(rows,total,url){
+  const sorted=rows.slice().sort((a,b)=>ST_ORDER.indexOf(a.stance)-ST_ORDER.indexOf(b.stance));
+  const li=sorted.map(r=>`<li>${r.stance?`<span class="st ${esc(r.stance)}">${esc(ST_LABEL[r.stance]||r.stance)}</span>`:""}<b>${esc(r.org||r.person||"–")}</b>${r.person&&r.org?` · ${esc(r.person)}`:""}${r.date?` · <span class="d">${fmt(pd(r.date))}</span>`:""}${r.gist?`<q>${esc(r.gist.length>260?r.gist.slice(0,257)+"…":r.gist)}</q>`:""}${r.url?` <a href="${esc(r.url)}" target="_blank" rel="noopener">Avaa ↗</a>`:""}</li>`).join("");
+  const more=total>rows.length?`<li class="m">+ ${total-rows.length} muuta – kaikki Annetut lausunnot -osiossa${url?` ja <a href="${esc(url)}" target="_blank" rel="noopener">lausuntopalvelussa ↗</a>`:""}</li>`:"";
+  return `<ol class="vst">${li}${more}</ol>`;
+}
+function caseEvents(it,ls){
+  const out=(it.events||[]).map(e=>Object.assign({},e));
+  const attach=(date,test,html)=>{ const ev=out.find(e=>e.date===date&&test(e)); if(ev){ ev.extraHTML=(ev.extraHTML||"")+html; return true; } return false; };
+  if(ls&&ls.kierros&&(ls.kierros.rivit||[]).length){
+    const k=ls.kierros, rows=k.rivit.filter(r=>r.date), ds=rows.map(r=>r.date).sort();
+    if(ds.length){ const n=k.n||rows.length;
+      out.push({date:ds[ds.length-1], kind:"lausunnot", label:`Lausunnot annettu: ${n} lausuntoa${ds[0]!==ds[ds.length-1]?` (${fmtShort(pd(ds[0]))}–${fmtShort(pd(ds[ds.length-1]))})`:""}`,
+        extraHTML:`<div class="stl">${stanceRow(k.kannat||stanceCount(rows))}</div><details><summary>Lausunnonantajat ja tiivistelmät</summary>${stmtList(rows,n,k.url)}</details>`}); }
+  }
+  if(ls&&ls.eduskunta&&(ls.eduskunta.rivit||[]).length){
+    const groups={}; ls.eduskunta.rivit.filter(r=>r.date).forEach(r=>{ const g=r.date+"|"+(r.committee||""); (groups[g]=groups[g]||[]).push(r); });
+    Object.entries(groups).forEach(([g,rows])=>{ const [date,c]=g.split("|"); const name=COMMITTEE_FI[c]||c;
+      const html=`<div class="stl">${stanceRow(stanceCount(rows))}</div><details><summary>${rows.length} asiantuntijalausuntoa${name?` (${esc(name)})`:""}</summary>${stmtList(rows,rows.length)}</details>`;
+      if(!attach(date,e=>/^Asiantuntijakuuleminen/.test(e.label||"")&&(!name||(e.label||"").includes(name)),html))
+        out.push({date,kind:"eduskunta",label:`Asiantuntijalausunnot${name?` (${name})`:""}: ${rows.length}`,extraHTML:html}); });
+  }
+  if(ls&&(ls.valiokunnat||[]).length){
+    ls.valiokunnat.filter(v=>v.date).forEach(v=>{ const name=v.committeeName||COMMITTEE_FI[v.committee]||v.committee||"";
+      const tags=[v.decision?`<span class="st ${v.decision==="hylättäväksi"?"vastustaa":(v.decision==="muutettuna"?"varauksin":"kannattaa")}">${esc(DEC_LABEL[v.decision]||v.decision)}</span>`:"",
+        v.dissent?`<span class="st vastustaa">vastalauseita ${v.dissent}${(v.dissentParties||[]).length?" ("+esc(v.dissentParties.join(", "))+")":""}</span>`:"", v.yhtyy?`<span class="st kannattaa">yhtyy valtioneuvoston kantaan</span>`:""].join("");
+      const html=`<div class="stl">${tags}</div>${v.view||v.gist?`<q>${esc(v.view||v.gist)}</q>`:""}${(v.changedSections||[]).length?`<div class="m">Muutetut kohdat: ${esc(v.changedSections.join(", "))}</div>`:""}${v.url?`<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.tunnus||"Asiakirja")} ↗</a>`:""}`;
+      if(!attach(v.date,e=>/mietintö|valiokunnan lausunto/i.test(e.label||"")&&(!name||(e.label||"").toLowerCase().includes(name.toLowerCase())),html))
+        out.push({date:v.date,kind:"vk",label:`${name?name[0].toUpperCase()+name.slice(1):"Valiokunta"}: ${v.kind==="mietintö"?"mietintö":"lausunto"} ${v.tunnus||""}`.trim(),extraHTML:html}); });
+  }
+  const a=it.arviointineuvosto; if(a&&a.date) out.push({date:a.date,kind:"an",label:`Lainsäädännön arviointineuvoston lausunto${a.label?" – "+a.label:""}`,extraHTML:`${a.fixFirst?`<div class="stl"><span class="st muutoksia">suositti täydentämään ennen antamista</span></div>`:""}${a.text?`<q>${esc(a.text.length>320?a.text.slice(0,317)+"…":a.text)}</q>`:""}`});
+  return out.sort((x,y)=>x.date.localeCompare(y.date)||(x.end||"").localeCompare(y.end||""));
 }
 function openItem(id){
   const it=findItem(id); if(!it) return;
@@ -2234,7 +2305,7 @@ function openItem(id){
   document.getElementById("dr-h-mini").textContent="Eteneminen";
   document.getElementById("dr-h-mini").hidden=!steps; const mini=document.getElementById("dr-mini"); mini.className=steps?"stepper-wrap":"mini"; mini.innerHTML=steps?stepperHTML(steps):"";
   document.getElementById("dr-h-list").textContent="Aikajana";
-  document.getElementById("dr-list").innerHTML=vlistHTML(it.events);
+  document.getElementById("dr-list").innerHTML=vlistHTML(caseEvents(it,null));
   renderInfluence(it); renderActions(it); renderDiff(it); renderStatsCtx(it);
   drawer.hidden=false; scrim.hidden=false; document.body.style.overflow="hidden";
   if(history.replaceState) history.replaceState(null,"","#"+it.id);
@@ -2818,14 +2889,14 @@ Promise.all([
   /* alapalkin plus: uusi kansio */
   const plus=document.createElement("button"); plus.type="button"; plus.className="plus"; plus.title="Uusi kansio"; plus.setAttribute("aria-label","Uusi kansio"); plus.textContent="+";
   plus.addEventListener("click",()=>{ $("#open-folders")&&$("#open-folders").click(); });
-  $(".tabs").appendChild(plus);
+  $("nav.tabs").appendChild(plus);
 
   function sync(){
     TABS.forEach(([k])=>{ const t=document.getElementById("tab-"+k), b=rail.querySelector(`[data-g="${k}"]`); if(t&&b) b.setAttribute("aria-current",String(t.getAttribute("aria-selected")==="true")); });
     const f=$("#follow-only"); rail.querySelector('[data-g="follow"]').setAttribute("aria-pressed",String(!!(f&&f.checked)));
     const sys=$("#sys"); const g=$("#g-sub"); if(sys&&g){ const m=sys.textContent.match(/(\d{1,2}\.\d{1,2}\.\d{4}\s*klo\s*[\d.:]+)/i); g.textContent=m?`Aineisto päivitetty ${m[1]}`:"Säädösseuranta"; }
   }
-  new MutationObserver(sync).observe(document.querySelector(".tabs"),{attributes:true,subtree:true,attributeFilter:["aria-selected"]});
+  new MutationObserver(sync).observe(document.querySelector("nav.tabs"),{attributes:true,subtree:true,attributeFilter:["aria-selected"]});
   new MutationObserver(sync).observe(document.getElementById("sys"),{childList:true,subtree:true,characterData:true});
   document.addEventListener("change",e=>{ if(e.target.id==="follow-only") sync(); });
   sync();
