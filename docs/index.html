@@ -571,10 +571,11 @@ a{border-bottom-color:rgba(74,58,44,.25)}
 #gbar .avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#fff,#e6d7c5);color:#5a4636;font-weight:600;font-size:14px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),0 2px 6px rgba(64,44,26,.15)}
 #gbar .hello{font-weight:600;font-size:14.5px;white-space:nowrap}
 #gbar .hello small{display:block;font-weight:400;font-size:11.5px;color:var(--muted)}
-#gbar .ask{flex:0 1 460px;display:flex;align-items:center;gap:10px;height:38px;border-radius:999px;padding:0 16px 0 8px;background:rgba(255,255,255,.34);border:1px solid rgba(255,255,255,.6);color:var(--muted);font-size:13px;text-align:left;cursor:text;min-width:0}
-:root[data-theme="dark"] #gbar .ask{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}
-#gbar .ask span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#gbar .orb{width:24px;height:24px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#c9b6ff 30%,#7b6cf0 62%,#3e7bd8 100%);box-shadow:0 0 12px rgba(123,108,240,.45)}
+#gbar .glogo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:44px;display:flex;align-items:center;pointer-events:none}
+#gbar .glogo img{height:44px;width:auto;display:block}
+#gbar .glogo .lg-d{display:none}
+:root[data-theme="dark"] #gbar .glogo .lg-l{display:none}
+:root[data-theme="dark"] #gbar .glogo .lg-d{display:block}
 #gbar .ctl{display:flex;gap:6px;align-items:center}
 #gbar .ctl a,#gbar .ctl button{border:0!important;background:rgba(255,255,255,.4);border-radius:999px!important;padding:8px 12px!important;font-size:12px!important;color:var(--fg)!important}
 #gbar .ctl .seg{border:0;background:rgba(255,255,255,.25);border-radius:999px;padding:3px}
@@ -673,7 +674,7 @@ main{margin-top:6px}
   #grail{display:none}
   #gbar{left:10px;right:10px;height:50px}
   #gbar .hello small,#gbar .ctl a{display:none}
-  #gbar .ask{flex:1}
+  #gbar .glogo,#gbar .glogo img{height:32px}
   .view{border-radius:24px;padding:16px 14px!important}
   .name{font-size:24px}
 }
@@ -2527,13 +2528,27 @@ Promise.all([
   /* the page is shared by a team: greet by the name saved in Jakamisen asetukset, if any */
   const nm=(typeof SHARE!=="undefined"&&SHARE.name)?String(SHARE.name).trim():"";
   const av="§";
+  /* the logo in the middle of the bar: the page's own logo files (embedded as data URIs in the artifact) */
+  const lg=[["light","l"],["dark","d"]].map(([k,c])=>{ const im=document.querySelector(".logo."+k); return im?`<img class="lg-${c}" src="${im.getAttribute("src")}" alt="">`:""; }).join("");
   const esc2=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   bar.innerHTML=`<div class="who"><span class="avatar">${av}</span><span class="hello">${hi}${nm?", "+esc2(nm.split(/\s+/)[0]):""}<small id="g-sub">Säädösseuranta</small></span></div>
-    <button class="ask" type="button" id="g-ask"><i class="orb"></i><span>Hae: esim. ”tietosuoja lausuntoaika” tai HE 190/2025</span></button>`;
+    <span class="glogo" aria-hidden="true">${lg}</span>`;
   const ctl=$(".status .ctl"); if(ctl) bar.appendChild(ctl);  /* the page's own controls move here: ids and handlers stay */
   document.body.prepend(bar);
+  /* the logo files carry a faint (3 %) tint over their whole rectangle, invisible on white but a visible box on
+     glass, and their 2 px lines fade when scaled to bar height: redraw them once – tint removed, lines strengthened */
+  bar.querySelectorAll(".glogo img").forEach(im=>{
+    const fix=()=>{ try{
+      const h=88, w=Math.round(im.naturalWidth/im.naturalHeight*h); if(!w) return;
+      const c=document.createElement("canvas"); c.width=w; c.height=h; const x=c.getContext("2d");
+      x.imageSmoothingQuality="high"; x.drawImage(im,0,0,w,h);
+      const d=x.getImageData(0,0,w,h), a=d.data;
+      for(let i=3;i<a.length;i+=4) a[i]=a[i]<16?0:Math.min(255,Math.round(a[i]*2.2));
+      x.putImageData(d,0,0); im.onload=null; im.src=c.toDataURL("image/png");
+    }catch(e){} };
+    if(im.complete&&im.naturalWidth) fix(); else im.onload=fix;
+  });
   bar.addEventListener("click",e=>{ if(e.target.closest(".ctl button")) setTimeout(sync,0); });
-  $("#g-ask").addEventListener("click",()=>{ const q=$("#q"); if(q){ q.scrollIntoView({block:"center",behavior:"smooth"}); setTimeout(()=>q.focus(),250); } });
 
   /* vasen sivupalkki */
   const rail=document.createElement("nav"); rail.id="grail"; rail.setAttribute("aria-label","Näkymät");
