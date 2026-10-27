@@ -1,0 +1,6610 @@
+{
+ "celex": {
+  "32000L0060": {
+   "deadline": "2003-12-22",
+   "measures": [
+    {
+     "date": "2019-01-25",
+     "eif": "2019-02-01",
+     "notif": "2025-03-14",
+     "sk": "138/2019",
+     "title": "Valtioneuvoston asetus ilmoituksenvaraisista eläinsuojista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-03-21",
+     "eif": "2017-04-03",
+     "notif": "2025-03-14",
+     "sk": "157/2017",
+     "title": "Valtioneuvoston asetus talousjätevesien käsittelystä viemäriverkostojen ulkopuolisilla alueilla",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2023-03-30",
+     "eif": "2023-09-01",
+     "notif": "2025-03-14",
+     "sk": "541/2023",
+     "title": "Laki vaarallisten aineiden kuljetuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-13",
+     "eif": "2022-07-16",
+     "notif": "2025-03-14",
+     "sk": "711/2022",
+     "title": "Lannoitelaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1384/2022",
+     "title": "Valtioneuvoston asetus Euroopan unionin ja kansallisten viljelijätukien hyvän maatalouden ja ympäristön vaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "64/2023",
+     "title": "Valtioneuvoston asetus fosforia sisältävien lannoitevalmisteiden ja lannan käytöstä /Statsrådets förordning om användning av gödselprodukter och naturgödsel som innehåller fosfor (64/2023)",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "9/2023",
+     "title": "Luonnosuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1415/1994",
+     "title": "Merensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1250/2014",
+     "title": "Valtioneuvoston asetus eräiden maa- ja puutarhataloudesta peräisin olevien päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1563/2011",
+     "title": "Laki kasvinsuojeluaineista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1352/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus talousveden laadusta ja valvonnasta sekä rakennusten vesilaitteistojen riskienhallinnasta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1280/1994",
+     "title": "Terveydensuojeluasetus",
+     "type": "Asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "763/1994",
+     "title": "Terveydensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "379/2011",
+     "title": "Pelastuslaki (379/2011)",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "620/2010",
+     "title": "Laki tulvariskien hallinnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "119/2001",
+     "title": "Vesihuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "587/2011",
+     "title": "Vesilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "713/2014",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1022/2006",
+     "title": "Valtioneuvoston asetus vesiympäristölle vaarallisista ja haitallisista aineista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1040/2006",
+     "title": "Valtioneuvoston asetus vesienhoidon järjestämisestä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1303/2004",
+     "title": "Valtioneuvoston asetus vesienhoitoalueista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-03-14",
+     "notif": "2025-03-14",
+     "sk": "1299/2004",
+     "title": "Laki vesienhoidon ja merenhoidon järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2016-02-19",
+     "eif": "2016-03-01",
+     "notif": "2016-03-01",
+     "oj": "2016/14",
+     "title": "Landskapsförordning om ändring av vattenförordningen för landskapet Åland (2016/14) 11/02/2016",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-11-04",
+     "notif": "2015-11-04",
+     "oj": "2008/124",
+     "title": "Landskapslag om miljöskydd (2008/124), senast ändrad genom (2015/14)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-10-30",
+     "eif": "2015-11-01",
+     "notif": "2015-11-03",
+     "oj": "2015/84",
+     "title": "Landskapslag om ändring av vattenlagen för landskapet Åland (2015/84) 08/10/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-10-30",
+     "eif": "2015-11-01",
+     "notif": "2015-11-03",
+     "oj": "2015/85",
+     "title": "Landskapsförordning om ändring av vattenförordningen för landskapet Åland(2015/85) 08/10/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2014-12-29",
+     "eif": "2015-01-01",
+     "notif": "2015-01-30",
+     "sk": "1280/2014",
+     "title": "Valtioneuvoston asetus vesienhoidon järjestämisestä annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2009-12-18",
+     "eif": "2010-01-01",
+     "notif": "2015-01-30",
+     "sk": "1069/2009",
+     "title": "Laki Suomen ympäristökeskuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-05-13",
+     "eif": "2014-05-22",
+     "notif": "2015-01-30",
+     "sk": "50/2014",
+     "title": "Sopimus suomalais-norjalaisesta vesienhoitoalueesta",
+     "type": "Muu"
+    },
+    {
+     "date": "2008-02-14",
+     "eif": "2008-04-01",
+     "notif": "2008-07-04",
+     "oj": "2008/39",
+     "title": "LANDSKAPSLAG om ändring av 14 kap. 8 § vattenlagen för landskapet Åland",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2001-06-08",
+     "eif": "2001-07-01",
+     "notif": "2008-07-04",
+     "oj": "2001/30",
+     "title": "LANDSKAPSLAG om miljöskydd och miljötillstånd",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2006-09-14",
+     "eif": "2006-11-01",
+     "notif": "2008-07-04",
+     "oj": "2006/85",
+     "title": "LANDSKAPSLAG om ändring av landskapslagen om miljöskydd och miljötillstånd",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1973-12-14",
+     "eif": "1974-05-01",
+     "notif": "2008-07-04",
+     "oj": "1974/23",
+     "title": "LANDSKAPSLAG om avloppsvattenavgift",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2000-11-09",
+     "eif": "2000-11-15",
+     "notif": "2008-07-04",
+     "oj": "2000/79",
+     "title": "ÅLANDS LANDSKAPSSTYRELSES BESLUT om begränsning av utsläpp i vatten av nitrater från jordbruket",
+     "type": "Beslut"
+    },
+    {
+     "date": "1979-01-30",
+     "eif": "1980-01-01",
+     "notif": "2008-07-04",
+     "oj": "1979/29",
+     "title": "LANDSKAPSLAG om allmänna vatten-och avloppsverk",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2007-03-08",
+     "eif": "2007-04-01",
+     "notif": "2008-07-04",
+     "oj": "2007/15",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2005-04-28",
+     "eif": "2005-06-01",
+     "notif": "2008-07-04",
+     "oj": "2005/22",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2006-12-14",
+     "eif": "2007-01-01",
+     "notif": "2008-07-04",
+     "oj": "2006/125",
+     "title": "LANDSKAPSFÖRORDNING om ändring av 13 § landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1996-11-28",
+     "eif": "1997-01-01",
+     "notif": "2008-07-04",
+     "oj": "1996/77",
+     "title": "Vattenförordning (1996:77) för landskapet Åland",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-10-18",
+     "eif": "2007-12-01",
+     "notif": "2008-07-04",
+     "oj": "2007/95",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2001-06-21",
+     "eif": "2001-07-01",
+     "notif": "2008-07-04",
+     "oj": "2001/35",
+     "title": "Nr 35 LANDSKAPSFÖRORDNING om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-09-20",
+     "eif": "2007-10-15",
+     "notif": "2008-07-04",
+     "oj": "2007/84",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-12-20",
+     "eif": "2008-02-01",
+     "notif": "2008-07-04",
+     "oj": "2007/145",
+     "title": "LANDSKAPSFÖRORDNING om ändring av bilaga 2 i landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-01-11",
+     "eif": "2007-03-01",
+     "notif": "2008-07-04",
+     "oj": "2007/2",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1997-12-30",
+     "eif": "1998-02-01",
+     "notif": "2008-07-04",
+     "oj": "1997/101",
+     "title": "ÅLANDS LANDSKAPSSTYRELSES BESLUT angående tillämpning i landskapet Åland av vissa riksförfattningar om hushållsvatten",
+     "type": "Beslut"
+    },
+    {
+     "date": "2004-12-21",
+     "eif": "2005-03-01",
+     "notif": "2008-07-04",
+     "oj": "2004/55",
+     "title": "ÅLANDS LANDSKAPSREGERINGS BESLUT om ändring av Ålands landskapsstyrelses beslut angående tillämpning i landskapet Åland av vissa riksförfattningar om hushållsvatten",
+     "type": "Beslut"
+    },
+    {
+     "date": "2007-12-20",
+     "notif": "2008-07-04",
+     "oj": "2007/117",
+     "title": "LANDSKAPSLAGom ändring av vattenlagen för landskapet Åland",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2005-11-10",
+     "notif": "2008-07-04",
+     "oj": "2005/76",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1996-09-12",
+     "eif": "1997-01-01",
+     "notif": "2008-07-04",
+     "oj": "1996/61",
+     "title": "Vattenlag (1996:61) för landskapet Åland",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2005-09-15",
+     "eif": "2006-01-01",
+     "notif": "2008-07-04",
+     "oj": "2005/56",
+     "title": "LANDSKAPSLAG om ändring av 5 § landskapslagen om avloppsvattenavgift",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2005-09-15",
+     "eif": "2006-01-01",
+     "notif": "2008-07-04",
+     "oj": "2005/55",
+     "title": "LANDSKAPSLAG om ändring av 13 § landskapslagen om allmänna vatten- och avloppsverk",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2005-09-15",
+     "eif": "2006-01-01",
+     "notif": "2008-07-04",
+     "oj": "2005/54",
+     "title": "LANDSKAPSLAG om ändring av vattenlagen för landskapet Åland",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-06-25",
+     "eif": "1981-05-01",
+     "notif": "2008-06-25",
+     "oj": "SopS 32/1981",
+     "title": "Asetus Norjan kanssa suomalais-norjalaisesta rajavesistökomissiosta tehdyn sopimuksen voimaansaattamisesta",
+     "type": "Tasavallan presidentin asetus"
+    },
+    {
+     "date": "2008-06-25",
+     "eif": "1994-06-01",
+     "notif": "2008-06-25",
+     "sk": "366/1994",
+     "title": "Valtioneuvoston päätös juomaveden valmistamiseen tarkoitetun pintaveden laatuvaatimuksista ja tarkkailusta",
+     "type": "Paatos"
+    },
+    {
+     "date": "2003-06-23",
+     "eif": "2004-01-01",
+     "notif": "2008-06-25",
+     "oj": "542",
+     "title": "Valtioneuvoston asetus talousjätevesien käsittelystä vesihuoltolaitosten viemäriverkostojen ullkopuolisilla alueilla/Statsrådets förordning om behandling av hushållsavloppsvatten i områden utanför vattenverkens avloppsnät",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2000-11-15",
+     "eif": "2000-11-15",
+     "notif": "2008-06-25",
+     "oj": "931",
+     "title": "Valtioneuvoston asetus maataloudesta peräisin olevien nitraattien vesiin pääsyn rajoittamisesta/Statsrådets förordning om begränsning av utsläpp i vattnen av nitrater från jordbruket",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2006-10-18",
+     "eif": "2006-11-01",
+     "notif": "2008-06-25",
+     "oj": "888",
+     "title": "Valtioneuvoston asetus yhdyskuntajätevesistä/Statsrådets förordning om avloppsvatten från tätbebyggelse",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2006-12-28",
+     "eif": "2007-01-01",
+     "notif": "2008-06-25",
+     "oj": "1259",
+     "title": "Laki kasvinsuojeluaineista/Lag om växtskyddsmedel",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-06-25",
+     "eif": "1994-06-01",
+     "notif": "2008-06-25",
+     "sk": "364/1994",
+     "title": "Valtioneuvoston päätös pohjavesien suojelemisesta eräiden ympäristölle tai terveydelle vaarallisten aineiden aiheuttamalta pilaantumiselta/Statsrådets beslut om skydd för grundvatten mot förorening genom vissa miljöfarliga eller hälsofarliga ämnen (364/1994) 19/05/1994",
+     "type": "Beslut"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "160/1997",
+     "title": "Luonnosuojeluasetus/Naturvårdsförordning (160/1997) 14/02/1007, viimeksi muutettu/senast ändring (913/2005) 17/11/2005",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "264/1961",
+     "title": "Vesilaki/Vattenlag (264/1961) 19/05/1961, muutettu viimeksi/senast ändring genom (732/2005) 02/09/2005",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "86/2000",
+     "title": "Ympäristönsuojelulaki/Miljöskyddslag (86/2000) 04/02/2000, muutettu viimeksi/senast ändring genom (346/2008) 23/05/2008",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "oj": "SopS 26/1965",
+     "title": "Asetus Sosialististen Neuvostotasavaltain Liiton kanssa tehdyn rajavesistöjä koskevan sopimuksen voimaansaattamisesta",
+     "type": "Tasavallan presidentin asetus"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "468/2003",
+     "title": "Pelastuslaki/Räddningslag (468/2003) 13/06/2003, muutettu viimeksi/senast ändring genom (348/2008) 23/05/2008",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "55/1995",
+     "title": "Laki ympäristöhallinnosta/Lag om miljöförvaltningen( 55/1995) 24/01/1995, viimeksi muutettu/senast ändring genom (931/2004) 29/10/2004.",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-06-25",
+     "notif": "2008-06-25",
+     "sk": "169/2000",
+     "title": "Ympäristönsuojeluasetus/Miljöskyddsförordning (169/2000) 18/02/2000, muutettu viimeksi/senast ändring genom (889/2006) 12/10/2006",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2003-10-28",
+     "eif": "2003-11-02",
+     "notif": "2008-06-25",
+     "oj": "SopS 67/2003",
+     "title": "Tasavallan presidentin asetus Ruotsin kanssa Euroopan unionin vesipuitedirektiiviin sisältyvien vaatimusten täyttämiseksi noottienvaihdolla tehdyn väliaikaisen sopimuksen voimaansaattamisesta",
+     "type": "Tasavallan presidentin asetus"
+    },
+    {
+     "date": "2006-10-18",
+     "eif": "2006-10-18",
+     "notif": "2007-07-19",
+     "oj": "888",
+     "title": "Valtioneuvoston asetus yhdyskuntajätevesistä Stattsrådets förordning om avloppsvatten från tätbebyggelse.",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2006-11-29",
+     "eif": "2006-11-23",
+     "notif": "2007-07-19",
+     "oj": "1022",
+     "title": "Valtioneuvoston asetus vesiympäristölle vaarallisista ja haitallisista aineista. Statsrådets förordning om ämnen som är farliga för vattenmiljön.",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2006-02-17",
+     "notif": "2007-07-19",
+     "title": "Ympäristöministeriön päätös YM3/401/2006 pintavesien tyypittelystä. Miljöministeriets beslut YM/401/2006 Typindelning av ytvatten",
+     "type": "Ministeriön päätös"
+    },
+    {
+     "date": "2006-10-18",
+     "eif": "2007-12-01",
+     "notif": "2007-07-19",
+     "oj": "889",
+     "title": "Valtioneuvoston asetus ympäristönsuojeluasetuksen muuttamisesta Statsrådets förordning om ändring av miljöskyddsförordningen",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2005-10-07",
+     "eif": "2006-01-01",
+     "notif": "2005-11-28",
+     "sk": "54/2005",
+     "title": "Landskapslag om ändring av vattenlagen för landskapet Åland (54/2005)",
+     "type": "Government decree"
+    },
+    {
+     "date": "2005-10-07",
+     "eif": "2006-01-01",
+     "notif": "2005-11-28",
+     "sk": "55/2005",
+     "title": "Landskapslag om ändring av 13 § i landskapslagen om allmänna vatten- och avloppsverk (55/2005)",
+     "type": "Government decree"
+    },
+    {
+     "date": "2005-10-07",
+     "eif": "2006-01-01",
+     "notif": "2005-11-28",
+     "sk": "56/2005",
+     "title": "Landskapslag om ändring av 5 § i landskapslagen om avloppsvattenavgift (56/2005)",
+     "type": "Government decree"
+    },
+    {
+     "date": "2004-12-31",
+     "eif": "2004-12-31",
+     "notif": "2005-02-15",
+     "oj": "1299",
+     "title": "Laki vesienhoidon järjestämisestä. Lag om vattenvårdsförvaltningen",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32002L0056": {
+   "measures": [
+    {
+     "date": "2001-06-21",
+     "eif": "2001-06-21",
+     "notif": "2007-03-26",
+     "sk": "47/2001",
+     "title": "Ålands landskapsstyrelses beslut om tillämpning i landskapet Åland av riksförfattningar om handel med utsäde.",
+     "type": "Beslut"
+    },
+    {
+     "date": "2001-05-17",
+     "eif": "2001-06-01",
+     "notif": "2007-03-26",
+     "sk": "25/2001",
+     "title": "Landskapslag om tillämpning i landskapet Åland av lagen om handel med utsäde.",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2001-05-17",
+     "eif": "2001-06-01",
+     "notif": "2005-02-04",
+     "oj": "25",
+     "title": "Landskapslag om tillämpning i landskapet Åland av lagen om handel med utsäde",
+     "type": "Government decree"
+    },
+    {
+     "date": "2001-06-21",
+     "eif": "2001-06-21",
+     "notif": "2005-02-04",
+     "oj": "47",
+     "title": "Ålands landskapsstyrelses beslut om tillämpning i landskapet Åland av riksförfattningar om handel med utsäde",
+     "type": "Beslut"
+    },
+    {
+     "date": "2000-11-30",
+     "eif": "2000-12-01",
+     "notif": "2005-02-04",
+     "oj": "1010",
+     "title": "Maa- ja metsätalousministeriön asetus siemenperunan kaupasta",
+     "type": "Ministeriön asetus"
+    }
+   ]
+  },
+  "32003L0087": {
+   "deadline": "2003-12-31",
+   "measures": [
+    {
+     "date": "2021-01-28",
+     "notif": "2021-01-28",
+     "sk": "311/2011",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2007-06-07",
+     "eif": "2007-06-11",
+     "notif": "2009-04-28",
+     "oj": "647",
+     "title": "Kauppa- ja teollisuusministeriön asetus hiilidioksidipäästöjen tarkkailusta ja päästöistä laadittavasta selvityksestä",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2007-10-15",
+     "eif": "2007-10-18",
+     "notif": "2009-04-28",
+     "oj": "888",
+     "title": "Kauppa- ja teollisuusministeriön asetus hiilidioksidipäästöjen todentajien hyväksymismenettelystä ja todentamistehtävän suorittamisesta päästökauppakaudella 2008-2012",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2007-02-27",
+     "eif": "2007-03-01",
+     "notif": "2009-04-28",
+     "oj": "194",
+     "title": "Valtioneuvoston asetus päästökaupasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2007-02-08",
+     "eif": "2007-02-12",
+     "notif": "2007-03-02",
+     "oj": "108",
+     "title": "Laki päästökauppalain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2005-11-10",
+     "eif": "2005-11-01",
+     "notif": "2006-02-14",
+     "sk": "60/2005",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel 60/2005",
+     "type": "Government decree"
+    },
+    {
+     "date": "2006-02-10",
+     "eif": "2006-02-10",
+     "notif": "2006-02-14",
+     "sk": "5/2006",
+     "title": "Republikens presidents förordning om skötseln i landskapet Åland av vissa förvaltningsuppgifter som rör handel med utsläppsrätter avseende växthusgaser 5/2006",
+     "type": "Republikens presidents förordning"
+    },
+    {
+     "date": "2005-11-01",
+     "eif": "2005-11-01",
+     "notif": "2006-01-04",
+     "sk": "60/2005",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel (60/2005)",
+     "type": "Government decree"
+    },
+    {
+     "date": "2004-12-13",
+     "eif": "2004-12-15",
+     "notif": "2004-12-29",
+     "oj": "1083",
+     "title": "Valtioneuvoston asetus päästökauppalain eräiden säännösten voimaantulosta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-12",
+     "oj": "683",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "684",
+     "title": "Laki ympäristönsuojelulain 43 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2004-08-11",
+     "eif": "2004-08-11",
+     "notif": "2004-08-11",
+     "oj": "730",
+     "title": "Valtioneuvoston asetus päästökaupasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "684",
+     "title": "Lag om ändring av 43 § i miljöskyddslagen",
+     "type": "Lag"
+    },
+    {
+     "date": "2004-08-11",
+     "eif": "2004-08-11",
+     "notif": "2004-08-11",
+     "oj": "730",
+     "title": "Statsrådets förordning om utsläppshandel",
+     "type": "Stadsradets förordning"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "685",
+     "title": "Laki Energiamarkkinavirastosta annetun lain 1 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "685",
+     "title": "Lag om ändring av 1 § i lagen om Energimarknadsverket",
+     "type": "Lag"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "683",
+     "title": "Lag om utsläppshandel",
+     "type": "Lag"
+    },
+    {
+     "date": "2004-08-04",
+     "eif": "2004-08-04",
+     "notif": "2004-08-11",
+     "oj": "683",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32008L0050": {
+   "deadline": "2010-06-10",
+   "measures": [
+    {
+     "date": "2023-04-25",
+     "notif": "2023-04-25",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-04-25",
+     "notif": "2023-04-25",
+     "sk": "79/2017",
+     "title": "Ilmanlaadusta annettu valtioneuvoston asetus",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-02-16",
+     "notif": "2017-02-16",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32008L0098": {
+   "deadline": "2010-12-12",
+   "measures": [
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2019-02-13",
+     "oj": "2018:83",
+     "title": "Landskapslagen (2018:83) om tillämpning av rikets avfallslag 04/12/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-13",
+     "eif": "2015-03-16",
+     "notif": "2019-02-13",
+     "oj": "2015:16",
+     "title": "Landskapsförordning (2015:16) om tillämpning på Åland av vissa riksbestämmelser om avfallsförbränning 23/02/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2019-02-13",
+     "oj": "2018:92",
+     "title": "Landskapsförordning (2018:92) om producentansvar 04/12/2018",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2019-02-13",
+     "oj": "2018:90",
+     "title": "Landskapsförordning (2018:90) om avfall 04/12/2018",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2019-02-13",
+     "oj": "2018/84",
+     "title": "Landskapslagen (2018/84) om ändring av landskapslagen om miljöskydd 04/12/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2017-12-12",
+     "eif": "2018-01-01",
+     "notif": "2018-02-13",
+     "sk": "843/2017",
+     "title": "Valtioneuvoston asetus eräiden jätteiden hyödyntämisestä maarakentamisessa",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-02-14",
+     "eif": "2017-04-01",
+     "notif": "2017-02-14",
+     "sk": "99/2017",
+     "title": "Valtioneuvoston asetus jätteistä annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2016-10-05",
+     "notif": "2016-10-05",
+     "oj": "2016/49",
+     "title": "Landskapsförordning (2016/47) om ändring av landskapsförordningen om renhållning",
+     "type": "Åland landskapsförordning"
+    },
+    {
+     "date": "2016-04-13",
+     "notif": "2016-04-13",
+     "oj": "1996/82",
+     "title": "Ålands landskapsregerings beslut (1996/82)om tillämpning i landskapet Åland av riksförfattningar om gödselfabrikat (2011/116)",
+     "type": "Beslut"
+    },
+    {
+     "date": "2016-04-13",
+     "notif": "2016-04-13",
+     "oj": "2007/96",
+     "title": "Landskapslag om tillämpning i landskapet Åland av lagen om gödselfabrikat (2007/96)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1997-10-30",
+     "eif": "1997-12-01",
+     "notif": "2013-08-28",
+     "sk": "962/1997",
+     "title": "Valtioneuvoston päätös pakkauksista ja pakkausjätteistä",
+     "type": "Paatos"
+    },
+    {
+     "date": "2013-07-02",
+     "eif": "2013-07-08",
+     "notif": "2013-08-28",
+     "sk": "527/2013",
+     "title": "Valtioneuvoston asetus käytöstä poistettujen renkaiden erilliskeräyksestä ja hyödyntämisestä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-07-02",
+     "eif": "2013-07-08",
+     "notif": "2013-08-28",
+     "sk": "528/2013",
+     "title": "Valtioneuvoston asetus keräyspaperin erilliskeräyksestä ja kierrätyksestä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2008-06-25",
+     "eif": "2008-09-26",
+     "notif": "2013-08-28",
+     "sk": "422/2008",
+     "title": "Valtioneuvoston asetus paristoista ja akuista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2004-11-25",
+     "eif": "2004-12-01",
+     "notif": "2013-08-28",
+     "sk": "987/2004",
+     "title": "Valtioneuvoston asetus pakkauksista ja pakkausjätteistä annetun valtioneuvoston päätöksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2004-06-30",
+     "eif": "2004-09-01",
+     "notif": "2013-08-28",
+     "sk": "581/2004",
+     "title": "Valtioneuvoston asetus romuajoneuvoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2009-12-31",
+     "eif": "2010-04-01",
+     "notif": "2013-08-28",
+     "sk": "1793/2009",
+     "title": "Valtioneuvoston asetus sähkö- ja elektroniikkalaiteromusta annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-07-02",
+     "eif": "2013-07-08",
+     "notif": "2013-08-28",
+     "sk": "526/2013",
+     "title": "Valtioneuvoston asetus juomapakkausten palautusjärjestelmästä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2004-09-17",
+     "eif": "2005-08-13",
+     "notif": "2013-08-28",
+     "sk": "852/2004",
+     "title": "Valtioneuvoston asetus sähkö- ja elektroniikkalaiteromusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2006-07-14",
+     "eif": "2006-07-15",
+     "notif": "2013-08-28",
+     "sk": "591/2006",
+     "title": "Valtioneuvoston asetus eräiden jätteiden hyödyntämisestä maarakentamisessa",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2005-10-20",
+     "eif": "2005-11-01",
+     "notif": "2013-08-28",
+     "sk": "817/2005",
+     "title": "Valtioneuvoston asetus pakkauksista ja pakkausjätteistä annetun valtioneuvoston päätöksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2010-11-10",
+     "eif": "2010-12-01",
+     "notif": "2013-08-28",
+     "sk": "932/2010",
+     "title": "Valtioneuvoston asetus sähkö- ja elektroniikkalaiteromusta annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2009-09-01",
+     "eif": "2009-09-26",
+     "notif": "2013-08-28",
+     "sk": "668/2009",
+     "title": "Valtioneuvoston asetus paristoista ja akuista annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2012-12-21",
+     "eif": "2013-01-01",
+     "notif": "2013-08-16",
+     "sk": "846/2012",
+     "title": "Valtioneuvoston asetus asfalttiasemien ympäristönsuojeluvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2012-04-23",
+     "eif": "2012-05-01",
+     "notif": "2012-04-25",
+     "sk": "179/2012",
+     "title": "Valtioneuvoston asetus jätteistä/Statsrådets förordning om avfall (179/2012) 23/04/2012",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2012-04-23",
+     "eif": "2012-05-01",
+     "notif": "2012-04-25",
+     "sk": "180/2012",
+     "title": "Valtioneuvoston asetus ympäristönsuojeluasetuksen muuttamisesta/Statsrådets förordning om ändring av miljöskyddsförordningen (180/2012) 23/04/2012",
+     "type": "Valtioneuvoston asetus"
+    }
+   ]
+  },
+  "32009L0138": {
+   "deadline": "2015-03-31",
+   "measures": [
+    {
+     "date": "2020-05-22",
+     "notif": "2020-05-22",
+     "sk": "521/2008",
+     "title": "Vakuutusyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2018-05-17",
+     "notif": "2018-05-17",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2018-05-17",
+     "notif": "2018-05-17",
+     "sk": "543/1994",
+     "title": "Vakuutussopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2018-05-17",
+     "notif": "2018-05-17",
+     "sk": "398/1995",
+     "title": "Laki ulkomaisista vakuutusyhtiöistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2016-06-21",
+     "eif": "2017-01-01",
+     "notif": "2017-07-28",
+     "sk": "460/2016",
+     "title": "Liikennevakuutuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-07-28",
+     "notif": "2017-07-28",
+     "sk": "38/1978",
+     "title": "Kuluttajansuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-07-28",
+     "notif": "2017-07-28",
+     "sk": "746/2012",
+     "title": "Arvopaperimarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "eif": "2008-10-01",
+     "notif": "2015-04-22",
+     "sk": "526/2008",
+     "title": "Laki vakuutusluokista",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "eif": "2008-10-01",
+     "notif": "2015-04-22",
+     "sk": "614/2008",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyrityksen tilinpäätöksestä ja konsernitilinpäätöksestä",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "1250/1987",
+     "title": "Vakuutusyhdistyslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "398/1995",
+     "title": "Laki ulkomaisista vakuutusyhtiöistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2011-03-02",
+     "eif": "2011-06-01",
+     "notif": "2015-04-22",
+     "sk": "177/2011",
+     "title": "Oikeusministeriön asetus henkivakuutuksesta annettavista tiedoista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-03-27",
+     "eif": "2016-01-01",
+     "notif": "2015-04-22",
+     "sk": "304/2015",
+     "title": "Laki vakuutusyhtiölain muuttamisesta annetun lain voimaantulosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "eif": "2013-01-01",
+     "notif": "2015-04-22",
+     "sk": "14/2012",
+     "title": "Finanssivalvonnan Määräykset ja ohjeet: Kirjanpitoa, tilinpäätöstä ja toimintakertomusta koskevat määräykset ja ohjeet: Vakuutusyhtiöt, työeläkevakuutusyhtiöt, vakuutusyhdistykset, vakuutusomistusyhteisöt, kolmannen maan vakuutusyhtiöiden sivuliikkeet ja lailla perustetut eläkelaitokset",
+     "type": "Määräys"
+    },
+    {
+     "date": "2014-09-24",
+     "eif": "2015-01-01",
+     "notif": "2015-04-22",
+     "sk": "726/2014",
+     "title": "Turvallisuusselvityslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-14",
+     "eif": "2016-01-01",
+     "notif": "2015-04-22",
+     "sk": "391/2015",
+     "title": "Oikeusministeriön asetus henkivakuutuksesta annettavista tiedoista annetun oikeusministeriön asetuksen 2 §:n muuttamisesta // Justitieministeriets förordning om ändring av 2 § i justitieministeriets förordning om information om livförsäkring (391/2015) 10/04/2015",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2012-10-24",
+     "eif": "2013-01-01",
+     "notif": "2015-04-22",
+     "sk": "572/2012",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyrityksen tilinpäätöksestä ja konsernitilinpäätöksestä annetun sosiaali- ja terveysministeriön asetuksen 11 ja 15 §:n muuttamisesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-04-10",
+     "eif": "2016-01-01",
+     "notif": "2015-04-22",
+     "sk": "355/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiön toimintasuunnitelmasta /Social- och hälsovårdsministeriets förordning om en verksamhetsplan för försäkringsbolag (355/2015) 20/03/2015",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-04-10",
+     "eif": "2016-01-01",
+     "notif": "2015-04-22",
+     "sk": "356/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiölain 10 luvun mukaisessa vakavaraisuuslaskennassa käytettävästä vastaavuuskorjauksesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "521/2008",
+     "title": "Vakuutusyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "543/1994",
+     "title": "Vakuutussopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "742/2004",
+     "title": "Eurooppayhtiölaki /Lag om europabolag (742/2004) 13/08/2004",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "459/2007",
+     "title": "Tilintarkastuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "872/2011",
+     "title": "Poliisilaki /Polislag (872/2011) 22/07/2011",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "624/2006",
+     "title": "Osakeyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "1339/1997",
+     "title": "Kirjanpitoasetus // Bokföringsförordning (1339/1997) 30/12/1997",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "214/1998",
+     "title": "Laki Suomen Pankista",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "1164/1992",
+     "title": "Vakuutuskassalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "1774/1995",
+     "title": "Eläkesäätiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-22",
+     "notif": "2015-04-22",
+     "sk": "608/1948",
+     "title": "Tapaturmavakuutuslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32010L0075": {
+   "deadline": "2013-01-07",
+   "measures": [
+    {
+     "date": "2018-08-30",
+     "eif": "2018-11-30",
+     "notif": "2021-04-30",
+     "oj": "2018:31",
+     "title": "Landskapslag (2018:31) om miljökonsekvensbedömning och miljöbedömning 01/12/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-12-27",
+     "eif": "2018-12-31",
+     "notif": "2021-04-30",
+     "oj": "2018:83",
+     "title": "Landskapslag (2018:83) om tillämpning av rikets avfallslag 01/01/2019",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-08-30",
+     "eif": "2018-08-31",
+     "notif": "2021-04-30",
+     "oj": "2018:33",
+     "title": "Landskapsförordning (2018:33) om miljökonsekvensbedömning och miljöbedömning 01/09/2018",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2018-03-12",
+     "eif": "2018-03-15",
+     "notif": "2018-03-21",
+     "sk": "167/2018",
+     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta annetun valtioneuvoston asetuksen 6 §:n muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2018-02-13",
+     "eif": "2018-02-15",
+     "notif": "2018-03-21",
+     "sk": "132/2018",
+     "title": "Valtioneuvoston asetus suurten polttolaitosten päästöjen rajoittamisesta annetun valtioneuvoston asetuksen 14 §:n ja liitteen 1 kohdan 4 taulukon muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2018-02-13",
+     "eif": "2018-02-15",
+     "notif": "2018-03-21",
+     "sk": "133/2018",
+     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta annetun valtioneuvoston asetuksen 7 §:n ja liitteen 1 kohdan 5 muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2016-07-11",
+     "eif": "2016-08-01",
+     "notif": "2016-08-11",
+     "sk": "602/2016",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta annetun valtioneuvoston asetuksen 3 §:n 3 momentin muuttamisesta/Statsrådets förordning om ändring av 3 § 3 mom. i statsrådets förordning om miljoskydd (602/2016) 07/06/2016",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-11-10",
+     "eif": "2015-12-01",
+     "notif": "2015-11-18",
+     "sk": "1303/2015",
+     "title": "Valtioneuvoston asetus jätteen polttamisesta annetun valtioneuvoston asetuksen 1 §:n muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-11-10",
+     "eif": "2015-12-01",
+     "notif": "2015-11-18",
+     "sk": "1304/2015",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-03-13",
+     "eif": "2015-03-16",
+     "notif": "2015-03-17",
+     "oj": "2015/14",
+     "title": "Landskapslag om ändring av landskapslagen om miljöskydd (2015/14)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-13",
+     "eif": "2015-03-16",
+     "notif": "2015-03-17",
+     "oj": "2015/16",
+     "title": "Landskapsförordning om tillämpning på Åland av vissa riksbestämmelser om avfallsförbränning (2015/16) 23/02/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-13",
+     "eif": "2015-03-16",
+     "notif": "2015-03-17",
+     "oj": "2015/15",
+     "title": "Landskapsförordning om ändring av landskapsförordningen om miljöskydd (2015/15) 23/02/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-13",
+     "eif": "2015-03-16",
+     "notif": "2015-03-17",
+     "oj": "2017/17",
+     "title": "Landskapsförordning om ändring av landskapsförordningen om tillämpning i landskapet Åland av vissa riksförfattningar rörande åtgärder mot förorening av luften (2015/17) 23/02/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2009/59",
+     "title": "Landskapsförordning om avhjälpande av vissa miljöskador (2009/59) 03/12/2009",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "1977/72",
+     "title": "Landskapslag om allmänna handlingars offentlighet (1977/72) 30/03/1977",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2013/107",
+     "title": "Landskapsförordning om externa räddningsplaner (2013/107) 10/10/2013",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "1981/3",
+     "title": "Landskapslag om renhållning (1981/3) 08/01/1981",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "1998/95",
+     "title": "Djurskyddslag för landskapet Åland (1998/95) 29/09/1998",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2008/108",
+     "title": "Landskapsförordning om utvinningsavfall (2008/108) 25/09/2008",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2008/124",
+     "title": "Landskapslag om miljöskydd (2008/124) 14/10/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2009/31",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel (2009/31) 25/06/2009",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2007/99",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av riksförfattningar om kemikalier och säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/99) 08/11/2007",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2006/106",
+     "title": "Räddningslag för landskapet Åland (2006/10+) 14/11/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2013/75",
+     "title": "Landskapslag om tillämpning av lagen om skydd av djur som används för vetenskapliga ändamål eller undervisningsändamål (2013/75) 12/09/2013",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2001/38",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av vissa riksförfattningar rörande åtgärder mot förorening av luften (2001/38) 21/06/2001",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "1996/61",
+     "title": "Vattenlag för landskapet Åland (1996/61)12/09/1996",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2008/128",
+     "title": "Landskapslag om tillämpning i landskapet Åland av lagen angående vissa grannelagsförhållanden (2008/128) 14/10/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2007/115",
+     "title": "Landskapslag om Ålands miljö- och hälsoskyddsmyndighet (2007/115) 20/12/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2008/9",
+     "title": "Förvaltningslag för landskapet Åland (2008/9) 14/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-03-17",
+     "notif": "2015-03-17",
+     "oj": "2008/130",
+     "title": "Landskapsförordning om miljöskydd (2008/130) 14/10/2008",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-02-03",
+     "eif": "2015-02-05",
+     "notif": "2015-03-03",
+     "sk": "64/2015",
+     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2014-11-18",
+     "eif": "2014-11-20",
+     "notif": "2015-03-03",
+     "sk": "936/2014",
+     "title": "Valtioneuvoston asetus suurten polttolaitosten päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-03-03",
+     "notif": "2015-03-03",
+     "sk": "179/2012",
+     "title": "Valtioneuvoston asetus jätteistä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-03-03",
+     "notif": "2015-03-03",
+     "sk": "151/2013",
+     "title": "Valtioneuvoston asetus jätteen polttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2014-09-08",
+     "eif": "2014-09-10",
+     "notif": "2014-11-03",
+     "sk": "712/2014",
+     "title": "Valtioneuvoston asetus titaanidioksidia tuottavien laitosten ympäristönsuojeluvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2014-07-09",
+     "eif": "2014-09-01",
+     "notif": "2014-11-03",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-11-03",
+     "eif": "1996-12-01",
+     "notif": "2014-11-03",
+     "sk": "586/1996",
+     "title": "Hallintolainkäyttölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-09-08",
+     "eif": "2014-09-10",
+     "notif": "2014-11-03",
+     "sk": "713/2014",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2014-07-09",
+     "eif": "2014-09-01",
+     "notif": "2014-11-03",
+     "sk": "557/2014",
+     "title": "Laki rikoslain 48 luvun 1 ja 3 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2013-11-20",
+     "notif": "2013-11-20",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2003-06-10",
+     "eif": "2004-01-01",
+     "notif": "2013-11-20",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "1981-01-16",
+     "eif": "1981-01-01",
+     "notif": "2013-11-18",
+     "oj": "1981/3",
+     "title": "Landskapslag om renhållning (1981/3) 08/01/1981",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2013-11-18",
+     "oj": "2008/124",
+     "title": "Landskapslag om miljöskydd (2008/124)14/10/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2007-12-19",
+     "eif": "2008-01-01",
+     "notif": "2013-11-18",
+     "oj": "2007/99",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av riksförfattningar om kemikalier och säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/99) 08/11/2007",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1977-08-19",
+     "eif": "1977-09-01",
+     "notif": "2013-11-18",
+     "oj": "1977/72",
+     "title": "Landskapslag om allmänna handlingars offentlighet (1977/72) 19/07/1977",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2013-10-31",
+     "eif": "2013-11-01",
+     "notif": "2013-11-18",
+     "oj": "2013/104",
+     "title": "Landskapsförordning om ändring av landskapsförordningen om utvinningsavfall (2013/104) 10/10/2013",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2003-06-25",
+     "eif": "2003-07-01",
+     "notif": "2013-11-18",
+     "oj": "2003/33",
+     "title": "Landskapsförordning om avfallsförbränning (2003/33) 22/05/2003",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2001-07-09",
+     "eif": "2001-07-01",
+     "notif": "2013-11-18",
+     "oj": "2001/38",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av vissa riksförfattningar rörande åtgärder mot förorening av luften (2001/38) 21/06/2001",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2013-11-18",
+     "oj": "2008/130",
+     "title": "Landskapsförordning om miljöskydd (2008/130) 14/10/2008",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2009-12-30",
+     "eif": "2010-01-01",
+     "notif": "2013-11-18",
+     "oj": "2009/59",
+     "title": "Landskapsförordning om avhjälpande av vissa miljöskador (2009/59) 03/12/2009",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1996-10-08",
+     "eif": "1997-01-01",
+     "notif": "2013-11-18",
+     "oj": "1996/61",
+     "title": "Vattenlag för landskapet Åland (1996/61) 12/09/1996",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-03-28",
+     "eif": "2008-04-01",
+     "notif": "2013-11-18",
+     "oj": "2008/9",
+     "title": "Förvaltningslag för landskapet Åland (2008/9) 14/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2006-10-18",
+     "eif": "2006-11-01",
+     "notif": "2013-11-18",
+     "oj": "2006/82",
+     "title": "Landskapslag om miljökonsekvensbedömning (2006/82) 14/09/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2009-07-09",
+     "eif": "2009-08-01",
+     "notif": "2013-11-18",
+     "oj": "2009/31",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel (2009/31) 25/06/2009",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1990-05-10",
+     "eif": "1990-09-01",
+     "notif": "2013-11-18",
+     "oj": "1990/32",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om kemikalier (1990/32) 09/04/1990",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2007-01-05",
+     "eif": "2007-01-01",
+     "notif": "2013-11-18",
+     "oj": "2006/106",
+     "title": "Räddningslag för landskapet Åland (2006/106) 14/11/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2012-10-30",
+     "eif": "2012-11-01",
+     "notif": "2013-11-18",
+     "oj": "2012/50",
+     "title": "Landskapsförordning (2012:50) om miljökonsekvensbedömning (2012/50) 04/10/2012",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-12-28",
+     "notif": "2013-11-18",
+     "oj": "2007/115",
+     "title": "Landskapslag om Ålands miljö- och hälsoskyddsmyndighet (2007/115) 20/12/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2001-05-31",
+     "eif": "2001-06-04",
+     "notif": "2013-04-25",
+     "sk": "435/2001",
+     "title": "Valtioneuvoston asetus orgaanisten liuottimien käytöstä eräissä toiminnoissa ja laitoksissa aiheutuvien haihtuvien orgaanisten yhdisteiden päästöjen rajoittamisesta/Statsrådets förordning om begränsning av utsläpp av flyktiga organiska föreningar förorsakade av användning av organiska lösningsmedel i vissa verksamheter och anläggningar (435/2001) 23/05/2001",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2010-09-22",
+     "eif": "2010-09-23",
+     "notif": "2013-04-25",
+     "sk": "814/2010",
+     "title": "Valtioneuvoston asetus orgaanisten liuottimien käytöstä eräissä toiminnoissa ja laitoksissa aiheutuvien haihtuvien orgaanisten yhdisteiden päästöjen rajoittamisesta annetun valtioneuvoston asetuksen muuttamisesta/Statsrådets förordning om ändring av statsrådets förordning om begränsning av utsläpp av flyktiga organiska föreningar förorsakade av användning av organiska lösningsmedel i vissa verksamheter och anläggningar (814/2010) 16/09/2010",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-02-06",
+     "eif": "2013-02-20",
+     "notif": "2013-02-21",
+     "sk": "96/2013",
+     "title": "Valtioneuvoston asetus polttoaineteholtaan vähintään 50 megawatin polttolaitosten päästöjen rajoittamisesta/Statsrådets förordning om begränsning av utsläpp från förbränningsanläggningar med en bränsleeffekt på minst 50 megawatt (96/2013) 31/01/2013",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "1999-05-31",
+     "eif": "1999-12-01",
+     "notif": "2013-02-21",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta/Lag om offentlighet i myndigheternas verksamhet (621/1999) 21/05/99",
+     "type": "Laki"
+    },
+    {
+     "date": "2012-10-22",
+     "eif": "2012-10-22",
+     "notif": "2013-02-21",
+     "sk": "560/2012",
+     "title": "Laki ympäristönsuojelulain muuttamisesta/Lag om ändring av miljöskyddslagen (560/2012) 19/10/2012",
+     "type": "Laki"
+    },
+    {
+     "date": "2000-02-24",
+     "eif": "2000-03-01",
+     "notif": "2013-02-21",
+     "sk": "169/2000",
+     "title": "Ympäristönsuojeluasetus/Miljöskyddsförordningen (169/2000) 18/02/2000",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2012-04-23",
+     "eif": "2012-05-01",
+     "notif": "2013-02-21",
+     "sk": "179/2012",
+     "title": "Valtioneuvoston asetus jätteistä/Statsrådet förordning om avfall (179/2012) 19/04/2012",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-02-18",
+     "eif": "2013-02-20",
+     "notif": "2013-02-21",
+     "sk": "152/2013",
+     "title": "Valtioneuvoston asetus ympäristönsuojeluasetuksen 1 ja 20 a §:n muuttamisesta/Statsrådets förordning om ändring av 1 och 20 a § i miljöskyddsförordningen (152/2013) 14/02/2013",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-02-18",
+     "eif": "2013-02-20",
+     "notif": "2013-02-21",
+     "sk": "151/2013",
+     "title": "Valtioneuvoston asetus jätteen polttamisesta/Statsrådets förordning om avfallsförbränning (151/ 2013) 14/02/2013",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2013-02-21",
+     "notif": "2013-02-21",
+     "sk": "86/2000",
+     "title": "Ympäristönsuojelulaki/Miljöskyddslagen(86/2000)04/02/2000",
+     "type": "Laki"
+    },
+    {
+     "date": "2011-06-21",
+     "eif": "2012-05-01",
+     "notif": "2013-02-21",
+     "sk": "646/2011",
+     "title": "Jätelaki/Avfallslagen (646/2011) 17/06/2011",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32011L0092": {
+   "measures": [
+    {
+     "date": "2026-02-17",
+     "notif": "2026-02-17",
+     "sk": "277/2017",
+     "title": "Valtioneuvoston asetus ympäristövaikutusten arviointimenettelystä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-01-24",
+     "eif": "2019-02-01",
+     "notif": "2019-03-12",
+     "sk": "126/2019",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä annetun lain liitteen 1 muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2012-11-15",
+     "notif": "2012-11-15",
+     "oj": "2006/82",
+     "title": "Landskapslag (2006:82) om miljökonsekvensbedömning",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2012-11-15",
+     "notif": "2012-11-15",
+     "oj": "2012/49",
+     "title": "LANDSKAPSLAG om ändring av landskapslagen om miljökonsekvensbedömning",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2012-11-15",
+     "notif": "2012-11-15",
+     "oj": "2012/50",
+     "title": "LANDSKAPSFÖRORDNING om miljökonsekvensbedömning",
+     "type": "Landskapsförordning"
+    }
+   ]
+  },
+  "32011L0095": {
+   "deadline": "2013-12-21",
+   "measures": [
+    {
+     "date": "2025-10-24",
+     "notif": "2025-10-24",
+     "sk": "301/2004",
+     "title": "Ulkomaalaislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-06-11",
+     "eif": "2014-07-01",
+     "notif": "2014-07-24",
+     "sk": "422/2014",
+     "title": "Laki ulkomaalaislain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "916/2012",
+     "title": "Laki julkisesta työvoima- ja yrityspalvelusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "559/1994",
+     "title": "Laki terveydenhuollon ammattihenkilöistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "1386/2010",
+     "title": "Laki kotoutumisen edistämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "631/1998",
+     "title": "Laki ammatillisesta aikuiskoulutuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "710/1982",
+     "title": "Sosiaalihuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "1326/2010",
+     "title": "Terveydenhuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "417/2007",
+     "title": "Lastensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "746/2011",
+     "title": "Laki kansainvälistä suojelua hakevan vastaanotosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "531/1986",
+     "title": "Laki ulkomailla suoritettujen korkeakouluopintojen tuottamasta virkakelpoisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "201/1994",
+     "title": "Kotikuntalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "21/2004",
+     "title": "Yhdenvertaisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "29/2000",
+     "title": "Laki eläinlääkärinammatin harjoittamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2014-07-24",
+     "notif": "2014-07-24",
+     "sk": "272/2005",
+     "title": "Laki sosiaalihuollon ammatillisen henkilöstön kelpoisuuksista",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32012L0018": {
+   "deadline": "2015-05-31",
+   "measures": [
+    {
+     "date": "2026-06-01",
+     "notif": "2026-06-01",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-01",
+     "notif": "2026-06-01",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-17",
+     "notif": "2026-02-17",
+     "sk": "685/2015",
+     "title": "Valtioneuvoston asetus vaarallisten kemikaalien käsittelyn ja varastoinnin valvonnasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-05-29",
+     "eif": "2015-06-01",
+     "notif": "2024-06-04",
+     "sk": "685/2015",
+     "title": "Valtioneuvoston asetus vaarallisten kemikaalien käsittelyn ja varastoinnin valvonnasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2022-02-21",
+     "notif": "2022-02-21",
+     "sk": "1286/2019",
+     "title": "Sisäministeriön asetus ulkoisista pelastussuunnitelmista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2022-02-18",
+     "notif": "2022-02-18",
+     "sk": "819/2015",
+     "title": "Valtioneuvoston asetus räjähteiden valmistuksen ja varastoinnin valvonnasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-05-16",
+     "eif": "2017-05-15",
+     "notif": "2020-12-09",
+     "sk": "252/2017",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2005-04-11",
+     "eif": "2005-05-31",
+     "notif": "2020-12-09",
+     "sk": "200/2005",
+     "title": "Laki viranomaisten suunnitelmien ja ohjelmien ympäristövaikutusten arvioinnista",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-07-07",
+     "eif": "2019-12-31",
+     "notif": "2020-12-09",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "201/1994",
+     "title": "Kotikuntalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "410/2015",
+     "title": "Kuntalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2020-12-09",
+     "notif": "2020-12-09",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2016-09-29",
+     "notif": "2016-09-29",
+     "oj": "1997/73",
+     "title": "Kommunallag för landskapet Åland (1997/73)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2016-09-29",
+     "notif": "2016-09-29",
+     "oj": "1977/72",
+     "title": "Landskapslag om allmänna handlingars offentlighet (1977/72) 30/03/1977",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2016-02-19",
+     "eif": "2016-03-01",
+     "notif": "2016-09-13",
+     "oj": "2016/7",
+     "title": "Landskapsförordning om ändring av landskapsförordningen om tillämpning i landskapet Åland av riksförfattningar om kemikalier och säkerhet vid hantering av farliga kemikalier och explosiva varor (2016/7) 28/01/2016",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2008/102",
+     "title": "Plan- och bygglag för landskapet Åland(2008/102)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2013/107",
+     "title": "Landskapsförordning om externa räddningsplaner (2013/107) 10/10/2013",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2007/99",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av riksförfattningar om kemikalier och säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/99) 08/11/2007",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2008/107",
+     "title": "Plan- och byggförordning för landskapet Åland (2008/107)",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2007/98",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/98)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-18",
+     "notif": "2015-12-18",
+     "oj": "2006/106",
+     "title": "Räddningslag för landskapet Åland (2006/106) 14/11/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-08-27",
+     "eif": "2015-09-01",
+     "notif": "2015-08-27",
+     "sk": "1101/2015",
+     "title": "Valtioneuvoston asetus räjähteiden valmistuksen, käsittelyn ja varastoinnin turvallisuusvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2012-12-27",
+     "eif": "2013-01-01",
+     "notif": "2015-07-03",
+     "sk": "856/2012",
+     "title": "Valtioneuvoston asetus vaarallisten kemikaalien teollisen käsittelyn ja varastoinnin turvallisuusvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-05-29",
+     "eif": "2015-06-01",
+     "notif": "2015-07-03",
+     "sk": "686/2015",
+     "title": "Valtioneuvoston asetus vaarallisten kemikaalien teollisen käsittelyn ja varastoinnin turvallisuusvaatimuksista annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2012-12-27",
+     "eif": "2013-01-01",
+     "notif": "2015-07-03",
+     "sk": "858/2012",
+     "title": "Valtioneuvoston asetus nestekaasulaitosten turvallisuusvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "1999-09-16",
+     "eif": "2000-01-01",
+     "notif": "2015-06-03",
+     "sk": "895/1999",
+     "title": "Maankäyttö- ja rakennusasetus",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2009-07-14",
+     "eif": "2009-07-15",
+     "notif": "2015-06-03",
+     "sk": "551/2009",
+     "title": "Valtioneuvoston asetus maakaasun käsittelyn turvallisuudesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "1999-02-12",
+     "eif": "2000-01-01",
+     "notif": "2015-06-03",
+     "sk": "132/1999",
+     "title": "Maankäyttö- ja rakennuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2011-05-03",
+     "eif": "2011-07-01",
+     "notif": "2015-06-03",
+     "sk": "379/2011",
+     "title": "Pelastuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "1999-09-30",
+     "eif": "2000-01-01",
+     "notif": "2015-06-03",
+     "sk": "922/1999",
+     "title": "Valtioneuvoston päätös työntekijöille aiheutuvan suuronnettomuusvaaran torjunnasta",
+     "type": "Paatos"
+    },
+    {
+     "date": "2015-06-03",
+     "eif": "2009-03-01",
+     "notif": "2015-06-03",
+     "oj": "YM/2008/223",
+     "title": "Valtioneuvoston päätös valtakunnallisten alueidenkäyttötavoitteiden tarkistamisesta",
+     "type": "Paatos"
+    },
+    {
+     "date": "2007-12-19",
+     "eif": "2008-01-01",
+     "notif": "2014-04-16",
+     "oj": "2007/98",
+     "title": "Landskapslag om tillämpning i landskapet Åland av riksförfattningar om säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/98) 08/11/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2007-12-19",
+     "eif": "2008-01-01",
+     "notif": "2014-04-16",
+     "oj": "2007/99",
+     "title": "Landskapsförordning om tillämpning i landskapet Åland av riksförfattningar om kemikalier och säkerhet vid hantering av farliga kemikalier och explosiva varor (2007/99) 08/11/2007",
+     "type": "Landskapsförordning"
+    }
+   ]
+  },
+  "32012L0034": {
+   "deadline": "2015-06-16",
+   "measures": [
+    {
+     "date": "2020-12-30",
+     "eif": "2021-01-31",
+     "notif": "2021-01-20",
+     "sk": "1254/2020",
+     "title": "Laki raideliikennelain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2018-06-27",
+     "eif": "2018-07-01",
+     "notif": "2018-06-27",
+     "oj": "366284/03.04.02.00/2017",
+     "title": "Liikenteen turvallisuusviraston määräys: Rautatieyrityksen toimiluvan hakeminen",
+     "type": "Hallinnolliset toimet"
+    },
+    {
+     "date": "2015-12-18",
+     "eif": "2015-12-18",
+     "notif": "2015-12-18",
+     "sk": "1490/2015",
+     "title": "Valtioneuvoston asetus aikataulukaudesta ja kapasiteetin jakamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-12-07",
+     "eif": "2015-12-08",
+     "notif": "2015-12-18",
+     "sk": "1395/2015",
+     "title": "Laki ratalain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-12-07",
+     "eif": "2015-12-08",
+     "notif": "2015-12-18",
+     "sk": "1394/2015",
+     "title": "Laki rautatielain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-12-18",
+     "eif": "2015-12-18",
+     "notif": "2015-12-18",
+     "sk": "1489/2015",
+     "title": "Valtioneuvoston asetus rautatieliikenteen harjoittajille tarjottavista palveluista",
+     "type": "Valtioneuvoston asetus"
+    }
+   ]
+  },
+  "32014L0036": {
+   "deadline": "2016-09-30",
+   "measures": [
+    {
+     "date": "2025-04-07",
+     "notif": "2025-04-07",
+     "sk": "966/2017",
+     "title": "Valtioneuvoston asetus maa- ja metsätalouden sekä matkailun alaan kuuluvista kausiluonteista toimintaa sisältävistä toimialoista/ Valtioneuvoston asetus maa- ja metsätalouden sekä matkailun alaan kuuluvista kausiluonteista toimintaa sisältävistä toimialoista (966/2017)",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-04-07",
+     "notif": "2025-04-07",
+     "sk": "907/2017",
+     "title": "Laki kolmansien maiden kansalaisten maahantulon ja oleskelun edellytyksistä kausityöntekijöinä työskentelyä varten/ Lag om villkor för tredjelandsmedborgares inresa och vistelse för säsongsanställning (907/2017)",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "911/2017",
+     "title": "Laki asumiseen perustuvan sosiaaliturvalainsäädännön soveltamisesta annetun lain 3 c §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "914/2017",
+     "title": "Laki kansanterveyslain 14 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "912/2017",
+     "title": "Laki työttömyysturvalain 1 luvun 8 a §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "917/2017",
+     "title": "Laki lasten kotihoidon ja yksityisen hoidon tuesta annetun lain 3 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "913/2017",
+     "title": "Laki työttömyysetuuksien rahoituksesta annetun lain 12 a §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "915/2017",
+     "title": "Laki erikoissairaanhoitolain 3 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "916/2017",
+     "title": "Laki lapsilisälain 1 a §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "909/2017",
+     "title": "Laki ulkomaalaislain 77 ja 79 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-20",
+     "eif": "2018-01-01",
+     "notif": "2018-02-01",
+     "sk": "910/2017",
+     "title": "Laki ulkomaalaisrekisteristä annetun lain muuttamisesta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32016L0797": {
+   "deadline": "2019-06-16",
+   "measures": [
+    {
+     "date": "2020-12-30",
+     "eif": "2021-01-31",
+     "notif": "2021-01-20",
+     "sk": "1254/2020",
+     "title": "Laki raideliikennelain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-01-17",
+     "eif": "2021-01-31",
+     "notif": "2021-01-20",
+     "sk": "11/2021",
+     "title": "Valtioneuvoston asetus rautatiejärjestelmän yhteentoimivuudesta annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-03-13",
+     "eif": "2019-06-16",
+     "notif": "2019-04-04",
+     "sk": "284/2019",
+     "title": "Valtioneuvoston asetus rautatiejärjestelmän yhteentoimivuudesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2018-12-31",
+     "eif": "2019-01-01",
+     "notif": "2019-04-04",
+     "sk": "1302/2018",
+     "title": "Raideliikennelaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32016L0800": {
+   "deadline": "2019-06-11",
+   "measures": [
+    {
+     "date": "2026-06-18",
+     "notif": "2026-06-18",
+     "sk": "633/2010",
+     "title": "Laki nuoren rikoksesta epäillyn tilanteen selvittämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-04-20",
+     "eif": "2024-01-01",
+     "notif": "2024-02-20",
+     "sk": "703/2023",
+     "title": "Laki sosiaali- ja terveydenhuollon asiakastietojen käsittelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-02-20",
+     "eif": "1991-08-21",
+     "notif": "2024-02-20",
+     "sk": "1130/1991",
+     "title": "Asetus lapsen oikeuksia koskevan yleissopimuksen voimaansaattamisesta sekä yleissopimuksen eräiden määräysten hyväksymisestä annetun lain voimaantulosta",
+     "type": "Asetus"
+    },
+    {
+     "date": "2024-02-20",
+     "notif": "2024-02-20",
+     "sk": "1129/1991",
+     "title": "Laki lapsen oikeuksia koskevan yleissopimuksen eräiden määräysten hyväksymisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "628/1998",
+     "title": "Perusopetuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "841/2006",
+     "title": "Laki poliisin säilyttämien henkilöiden kohtelusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "805/2011",
+     "title": "Esitutkintalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "768/2005",
+     "title": "Tutkintavankeuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "754/2010",
+     "title": "Laki sakon ja rikesakon määräämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "110/1992",
+     "title": "Laki poliisin hallinnosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "806/2011",
+     "title": "Pakkokeinolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "750/1994",
+     "title": "Valtion virkamieslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "158/1996",
+     "title": "Asetus poliisin hallinnosta",
+     "type": "Asetus"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "370/2007",
+     "title": "Laki oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "417/2007",
+     "title": "Lastensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "689/1997",
+     "title": "Laki oikeudenkäynnistä rikosasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "122/2014",
+     "title": "Valtioneuvoston asetus esitutkinnasta, pakkokeinoista ja salaisesta tiedonhankinnasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-10",
+     "notif": "2019-06-10",
+     "sk": "1286/2003",
+     "title": "Laki rikoksen johdosta tapahtuvasta luovuttamisesta Suomen ja muiden Euroopan unionin jäsenvaltioiden välillä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32018L2001": {
+   "deadline": "2021-06-30",
+   "measures": [
+    {
+     "date": "2025-05-07",
+     "notif": "2025-05-07",
+     "sk": "498/2023",
+     "title": "Laki sähköntoimitussopimusten vertailuvälineestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-04-26",
+     "eif": "2025-01-01",
+     "notif": "2024-01-31",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-01-31",
+     "notif": "2024-01-31",
+     "sk": "393/2013",
+     "title": "Laki biopolttoaineista, bionesteistä ja biomassapolttoaineista",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-01-31",
+     "notif": "2024-01-31",
+     "sk": "6/2021",
+     "title": "Valtioneuvoston asetus biopolttoaineista, bionesteistä ja biomassapolttoaineista (6/2021)",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2024-01-31",
+     "notif": "2024-01-31",
+     "sk": "446/2007",
+     "title": "Laki uusiutuvien polttoaineiden käytön edistämisestä liikenteessä",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-03-29",
+     "eif": "2023-06-01",
+     "notif": "2023-06-14",
+     "sk": "498/2023",
+     "title": "Laki sähköntoimitussopimusten vertailuvälineestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-06-14",
+     "notif": "2023-06-14",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2008-03-28",
+     "eif": "2008-04-01",
+     "notif": "2023-06-06",
+     "oj": "2008:9",
+     "title": "Förvaltningslagen (2008:9) för landskapet Åland 14/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2022-12-12",
+     "eif": "2022-12-15",
+     "notif": "2023-06-06",
+     "oj": "2022:79",
+     "title": "Landskapslag (2022:79) om tillämpning på Åland av lagen om ursprungsgaranti för energi 01/12/2022",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1993-06-30",
+     "eif": "1993-07-01",
+     "notif": "2023-06-06",
+     "oj": "1993:27",
+     "title": "Landskapslagen (1993:27) om grunderna för avgifter till landskapet 17/06/1993",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2016-04-29",
+     "eif": "2016-05-01",
+     "notif": "2023-06-06",
+     "oj": "2016:20",
+     "title": "Landskapslag (2016:20) om energieffektivitet 24/03/2016",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2023-03-02",
+     "eif": "2023-03-02",
+     "notif": "2023-04-25",
+     "sk": "262/2023",
+     "title": "Valtioneuvoston asetus energiatuen myöntämisen yleisistä ehdoista vuosina 2023-2027",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-08-18",
+     "eif": "2021-11-01",
+     "notif": "2023-04-25",
+     "sk": "767/2021",
+     "title": "Valtioneuvoston asetus sähkötoimitusten selvityksestä ja mittauksesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2023-04-25",
+     "notif": "2023-04-25",
+     "sk": "588/2013",
+     "title": "Sähkömarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-04-25",
+     "notif": "2023-04-25",
+     "sk": "1260/1996",
+     "title": "Laki sähkön ja eräiden polttoaineiden valmisteverosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-08-17",
+     "notif": "2023-04-25",
+     "sk": "758/2021",
+     "title": "Laki valtionavustuksesta yritystoiminnan kehittämiseksi vuosina 2021–2028",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-12-03",
+     "eif": "2021-12-03",
+     "notif": "2022-02-25",
+     "sk": "1050/2021",
+     "title": "Laki energian alkuperätakuista",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-12-09",
+     "eif": "2021-12-09",
+     "notif": "2022-02-25",
+     "sk": "1081/2021",
+     "title": "Valtioneuvoston asetus energian alkuperätakuista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2022-02-25",
+     "notif": "2022-02-25",
+     "sk": "132/1999",
+     "title": "Maankäyttö- ja rakennuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2011-12-28",
+     "eif": "2012-01-01",
+     "notif": "2021-10-06",
+     "oj": "2011:111",
+     "title": "Landskapslag (2011:111) om tillämpning i landskapet Åland av lagen om främjande av användningen av biodrivmedel för transport 08/12/2011",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-09-28",
+     "eif": "2018-10-01",
+     "notif": "2021-10-06",
+     "oj": "2018:41",
+     "title": "Landskapslag (2018:41) om tillämpning på Åland av rikslagstiftning om biodrivmedel och flytande biobränsle samt om minskning av växthusgasutsläpp från vissa drivmedel 30/08/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2006-09-12",
+     "eif": "2006-10-01",
+     "notif": "2021-10-06",
+     "oj": "2006:77",
+     "title": "Landskapslag (2006:77) om tillämpning i landskapet av lagen om certifiering och angivande av elens ursprung 08/08/2006",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2021-10-06",
+     "oj": "2015:102",
+     "title": "Landskapslag (2015:102) om tillämpning i landskapet Åland av rikslagstiftning om elmarknaden 19/11/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2021-10-06",
+     "oj": "2015:108",
+     "title": "Landskapsförordning (2015:108) om tillämpning i landskapet Åland av riksförfattningar om elmarknaden 19/11/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2017-05-14",
+     "eif": "2017-05-15",
+     "notif": "2021-06-30",
+     "sk": "277/2017",
+     "title": "Valtioneuvoston asetus ympäristövaikutusten arviointimenettelystä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-07-07",
+     "eif": "2019-12-31",
+     "notif": "2021-06-30",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-10-14",
+     "eif": "2019-12-31",
+     "notif": "2021-06-30",
+     "sk": "1008/2019",
+     "title": "Valtioneuvoston asetus maakaasun toimitusten selvityksestä ja mittauksesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2021-06-30",
+     "notif": "2021-06-30",
+     "sk": "252/2017",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-30",
+     "notif": "2021-06-30",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-30",
+     "notif": "2021-06-30",
+     "sk": "713/2014",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-06-30",
+     "notif": "2021-06-30",
+     "sk": "150/1992",
+     "title": "Valtion maksuperustelaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-03",
+     "eif": "2017-12-31",
+     "notif": "2021-06-29",
+     "sk": "788/2017",
+     "title": "Valtioneuvoston asetus rakennuksissa käytettävien energiamuotojen kertoimien lukuarvoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2020-12-27",
+     "eif": "2020-12-31",
+     "notif": "2021-06-29",
+     "sk": "1113/2020",
+     "title": "Valtion talousarvio vuodelle 2021",
+     "type": "Päätös"
+    },
+    {
+     "date": "2017-12-26",
+     "eif": "2017-12-31",
+     "notif": "2021-06-29",
+     "sk": "1010/2017",
+     "title": "Ympäristöministeriön asetus uuden rakennuksen energiatehokkuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2021-03-28",
+     "eif": "2021-03-28",
+     "notif": "2021-06-29",
+     "sk": "254/2021",
+     "title": "Valtioneuvoston asetus lämmityksen, jäähdytyksen ja veden kulutus- ja laskutustiedoista ja kustannusten jakamisesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2015-03-23",
+     "eif": "2015-03-23",
+     "notif": "2021-06-29",
+     "sk": "240/2015",
+     "title": "Valtioneuvoston asetus maatalouden rakennetuesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2020-06-30",
+     "eif": "2020-06-30",
+     "notif": "2021-06-29",
+     "sk": "511/2020",
+     "title": "Vuoden 2020 IV lisätalousarvio",
+     "type": "Päätös"
+    },
+    {
+     "date": "2009-02-12",
+     "eif": "2009-02-28",
+     "notif": "2021-06-29",
+     "sk": "65/2009",
+     "title": "Valtioneuvoston asetus sähkömarkkinoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2020-12-30",
+     "eif": "2020-12-31",
+     "notif": "2021-06-29",
+     "sk": "1272/2020",
+     "title": "Valtioneuvoston asetus elinkeino-, liikenne- ja ympäristökeskusten, työ- ja elinkeinotoimistojen sekä kehittämis- ja hallintokeskuksen maksullisista suoritteista vuonna 2021",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-12-26",
+     "eif": "2019-12-31",
+     "notif": "2021-06-29",
+     "sk": "1341/2019",
+     "title": "Valtioneuvoston asetus asuinrakennusten energia-avustuksista vuosina 2020–2022",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "636/2013",
+     "title": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "895/1999",
+     "title": "Maankäyttö- ja rakennusasetus",
+     "type": "Asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "80/2015",
+     "title": "Valtioneuvoston asetus maaseudun yritystuesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "498/2018",
+     "title": "Valtioneuvoston asetus sähköisen liikenteen ja biokaasun liikennekäytön infrastruktuurituesta vuosina 2018–2021",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "241/2015",
+     "title": "Valtioneuvoston asetus maatilan investointituen kohdentamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "1241/2019",
+     "title": "Työ- ja elinkeinoministeriön asetus Energiaviraston maksullisista suoritteista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "oj": "4/13",
+     "title": "Ympäristöministeriön asetus rakennuksen energiatehokkuuden parantamisesta korjaus- ja muutostöissä",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2016-04-19",
+     "eif": "2016-10-02",
+     "notif": "2021-06-29",
+     "sk": "273/2016",
+     "title": "Työ- ja elinkeinoministeriön asetus sähkökaupassa ja sähköntoimitusten selvityksessä noudatettavasta tiedonvaihdosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2020-12-28",
+     "eif": "2021-06-29",
+     "notif": "2021-06-28",
+     "sk": "1145/2020",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-03-31",
+     "eif": "2019-03-31",
+     "notif": "2021-06-28",
+     "sk": "416/2019",
+     "title": "Laki hiilen energiakäytön kieltämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "170/2018",
+     "title": "Laki eräiden polttoaineiden elinkaarenaikaisten kasvihuonekaasupäästöjen vähentämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "1476/2007",
+     "title": "Laki maatalouden rakennetuista",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "688/2001",
+     "title": "Valtionavustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "418/2019",
+     "title": "Laki biopolttoöljyn käytön edistämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "28/2014",
+     "title": "Laki maaseudun kehittämisen tukemisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "182/2010",
+     "title": "Valmisteverotuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "311/2011",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "587/2017",
+     "title": "Maakaasumarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "34/2010",
+     "title": "Laki lentoliikenteen päästökaupasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "38/2015",
+     "title": "Laki tiettyjen uusiutuvaa energiaa käyttävien energiajärjestelmien asentajien kouluttajan hyväksymisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-23",
+     "eif": "2020-08-31",
+     "notif": "2021-06-28",
+     "sk": "764/2019",
+     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "1472/1994",
+     "title": "Laki nestemäisten polttoaineiden valmisteverosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "590/2013",
+     "title": "Laki sähkö- ja maakaasumarkkinoiden valvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "50/2013",
+     "title": "Laki rakennuksen energiatodistuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "13/2003",
+     "title": "Laki sähköisestä asioinnista viranomaistoiminnassa",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32019L1152": {
+   "deadline": "2022-08-01",
+   "measures": [
+    {
+     "date": "2022-10-10",
+     "notif": "2022-10-10",
+     "sk": "1054/1993",
+     "title": "Kirkkolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-10-10",
+     "notif": "2022-10-10",
+     "sk": "304/2003",
+     "title": "Laki kunnan ja hyvinvointialueen viranhaltijasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-10-10",
+     "notif": "2022-10-10",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-10-10",
+     "notif": "2022-10-10",
+     "sk": "750/1994",
+     "title": "Valtion virkamieslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-10-10",
+     "notif": "2022-10-10",
+     "sk": "1166/1998",
+     "title": "Laki Suomen Pankin virkamiehistä",
+     "type": "Laki"
+    },
+    {
+     "date": "1998-05-19",
+     "eif": "1998-07-01",
+     "notif": "2022-08-16",
+     "oj": "1998:44",
+     "title": "Landskapslag (1998:44) om tillämpning i landskapet Åland av arbetstidslagen 07/05/1998 inklusive ändringar",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2022-07-07",
+     "eif": "2022-08-01",
+     "notif": "2022-08-16",
+     "oj": "2022:54",
+     "title": "Landskapslag (2022:54) om ändring av tjänstemannalagen för landskapet Åland 14/07/2022",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1987-08-27",
+     "eif": "1988-03-01",
+     "notif": "2022-08-16",
+     "oj": "1987:61",
+     "title": "Tjänstemannalag (1987:61) för landskapet Åland 06/08/1987 (inklusive ändringar)",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1978-05-11",
+     "eif": "1978-07-01",
+     "notif": "2022-08-16",
+     "oj": "1978:22",
+     "title": "Landskapslag (1978:22) om tjänstekollektivavtal 19/04/1978 inklusive ändringar",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "1325/2014",
+     "title": "Yhdenvertaisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "609/1986",
+     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "872/2019",
+     "title": "Työaikalaki (872/2019)",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "55/2001",
+     "title": "Työsopimuslaki (55/2001)",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "44/2006",
+     "title": "Laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta (44/2006)",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-07-26",
+     "notif": "2022-07-26",
+     "sk": "756/2011",
+     "title": "Merityösopimuslaki (756/2011)",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32022L2464": {
+   "deadline": "2024-07-06",
+   "measures": [
+    {
+     "date": "2024-11-12",
+     "eif": "2024-11-15",
+     "notif": "2024-11-15",
+     "sk": "605/2024",
+     "title": "Laki kirjanpitolain 1 ja 7 luvun muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta (878/2008)",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "1442/2015",
+     "title": "Työ- ja elinkeinoministeriön asetus tilintarkastajan hyväksymisedellytyksistä",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "624/2006",
+     "title": "Osakeyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "746/2012",
+     "title": "Arvopaperimarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "1020/2012",
+     "title": "Valtiovarainministeriön asetus arvopaperin liikkeeseenlaskijan säännöllisestä tiedonantovelvollisuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2024-10-01",
+     "notif": "2024-10-01",
+     "sk": "1141/2015",
+     "title": "Tilintarkastuslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32022L2555": {
+   "deadline": "2024-10-17",
+   "measures": [
+    {
+     "date": "2025-12-23",
+     "eif": "2026-01-01",
+     "notif": "2026-09-15",
+     "oj": "2025:93",
+     "title": "LANDSKAPSLAG (2025:93) om ändring av landskapslagen om cybersäkerhet och motståndskraft 11/12/2025",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2026-06-10",
+     "notif": "2026-06-10",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-10",
+     "notif": "2026-06-10",
+     "sk": "917/2014",
+     "title": "Laki sähköisen viestinnän palveluista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-08-29",
+     "eif": "2025-09-01",
+     "notif": "2025-10-17",
+     "oj": "2025:57",
+     "title": "LANDSKAPSLAG (2025:57) om cybersäkerhet och motståndskraft 14/08/2025",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2025-07-09",
+     "notif": "2025-07-09",
+     "sk": "124/2025",
+     "title": "Kyberturvallisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-09",
+     "notif": "2025-07-09",
+     "sk": "906/2019",
+     "title": "Laki julkisen hallinnon tiedonhallinnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "672/2002",
+     "title": "Laki sakon täytäntöönpanosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "96/2023",
+     "title": "Laki maa-asemista ja eräistä tutkista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "870/2013",
+     "title": "Laki Energiavirastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "119/2001",
+     "title": "Vesihuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "703/2023",
+     "title": "Laki sosiaali- ja terveydenhuollon asiakastietojen käsittelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-06-04",
+     "notif": "2025-06-04",
+     "sk": "590/2013",
+     "title": "Laki sähkö- ja maakaasumarkkinoiden valvonnasta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L0958": {
+   "deadline": "2023-12-31",
+   "measures": [
+    {
+     "date": "2025-07-01",
+     "notif": "2025-07-01",
+     "sk": "1270/2023",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L0959": {
+   "deadline": "2023-12-31",
+   "measures": [
+    {
+     "date": "2025-07-23",
+     "notif": "2025-07-23",
+     "sk": "1270/2023",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-29",
+     "notif": "2025-01-29",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-12-31",
+     "eif": "2025-01-01",
+     "notif": "2025-01-23",
+     "sk": "1066/2024",
+     "title": "Laki fossiilisen polttoaineen jakelun päästökaupasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-12-29",
+     "eif": "2024-01-01",
+     "notif": "2025-01-23",
+     "sk": "1270/2023",
+     "title": "Päästökauppalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-23",
+     "notif": "2025-01-23",
+     "sk": "621/1999",
+     "title": "Laki viranomaisen toiminnan julkisuudesta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L0970": {
+   "deadline": "2026-06-07",
+   "measures": []
+  },
+  "32023L0977": {
+   "deadline": "2024-12-12",
+   "measures": [
+    {
+     "date": "2024-12-19",
+     "eif": "2024-12-20",
+     "notif": "2024-12-20",
+     "sk": "806/2024",
+     "title": "Laki Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisestä tietojenvaihdosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-12-19",
+     "eif": "2024-12-20",
+     "notif": "2024-12-20",
+     "sk": "806/2024",
+     "title": "Laki Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisestä tietojenvaihdosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-12-20",
+     "notif": "2024-12-20",
+     "sk": "906/2019",
+     "title": "Laki julkisen hallinnon tiedonhallinnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-12-20",
+     "notif": "2024-12-20",
+     "sk": "1054/2018",
+     "title": "Laki henkilötietojen käsittelystä rikosasioissa ja kansallisen turvallisuuden ylläpitämisen yhteydessä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L1544": {
+   "deadline": "2026-02-18",
+   "measures": [
+    {
+     "date": "2026-05-29",
+     "eif": "2026-06-01",
+     "notif": "2026-06-15",
+     "sk": "437/2026",
+     "title": "Laki nimettyjen toimipaikkojen nimeämistä ja laillisten edustajien nimittämistä koskevista yhdenmukaistetuista säännöistä sähköisten todisteiden keräämiseksi rikosoikeudellisissa menettelyissä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-15",
+     "notif": "2026-06-15",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-15",
+     "notif": "2026-06-15",
+     "sk": "672/2002",
+     "title": "Laki sakon täytäntöönpanosta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L1791": {
+   "deadline": "2024-01-11",
+   "measures": [
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2026-02-27",
+     "oj": "2015:102",
+     "title": "Landskapslag (2015:102) om tillämpning i landskapet Åland av rikslagstiftning om elmarknaden 19/11/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2026-02-27",
+     "oj": "2015:103",
+     "title": "Landskapslag (2015:103) om Ålands energimyndighet 19/11/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2016-04-29",
+     "eif": "2016-05-01",
+     "notif": "2026-02-27",
+     "oj": "2016:20",
+     "title": "Landskapslag (2016:20) om energieffektivitet 24/03/2016",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "590/2013",
+     "title": "Laki sähkö- ja maakaasumarkkinoiden valvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "502/2023",
+     "title": "Laki energiamarkkinariitalautakunnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "588/2013",
+     "title": "Sähkömarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "587/2017",
+     "title": "Maakaasumarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "1397/2016",
+     "title": "Laki julkisista hankinnoista ja käyttöoikeussopimuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-01-13",
+     "notif": "2026-01-13",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-10",
+     "notif": "2025-01-10",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L2123": {
+   "deadline": "2025-11-01",
+   "measures": [
+    {
+     "date": "2024-12-19",
+     "eif": "2024-12-20",
+     "notif": "2025-10-23",
+     "sk": "806/2024",
+     "title": "Laki Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisestä tietojenvaihdosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-10-23",
+     "notif": "2025-10-23",
+     "sk": "650/2019",
+     "title": "Laki henkilötietojen käsittelystä Tullissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-10-23",
+     "notif": "2025-10-23",
+     "sk": "639/2019",
+     "title": "Laki henkilötietojen käsittelystä Rajavartiolaitoksessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-10-23",
+     "notif": "2025-10-23",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-10-23",
+     "notif": "2025-10-23",
+     "sk": "616/2019",
+     "title": "Laki henkilötietojen käsittelystä poliisitoimessa",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L2225": {
+   "deadline": "2025-11-20",
+   "measures": [
+    {
+     "date": "2026-03-24",
+     "notif": "2026-03-24",
+     "sk": "789/2010",
+     "title": "Valtioneuvoston asetus luottosopimuksesta kuluttajalle annettavista tiedoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-03-16",
+     "eif": "2026-11-20",
+     "notif": "2026-03-19",
+     "sk": "164/2026",
+     "title": "Valtioneuvoston asetus luotonantajien ja luotonvälittäjien ammatillisista vaatimuksista eräissä kuluttajaluotoissa",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-01-21",
+     "eif": "2026-11-20",
+     "notif": "2026-02-04",
+     "sk": "33/2026",
+     "title": "Laki eräiden kuluttajaluottojen välittäjistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "1123/2016",
+     "title": "Oikeusministeriön asetus kuluttajaluoton todellisesta vuosikorosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "38/1978",
+     "title": "Kuluttajansuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "1696/2015",
+     "title": "Laki muussa kuin viranomaisessa tapahtuvasta kuluttajariitojen ratkaisemisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "186/2023",
+     "title": "Laki eräiden luotonantajien ja luotonvälittäjien rekisteröinnistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "234/2018",
+     "title": "Laki vakuutusten tarjoamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "444/2017",
+     "title": "Laki rahanpesun ja terrorismin rahoittamisen estämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "1325/2014",
+     "title": "Yhdenvertaisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "813/2017",
+     "title": "Laki talous- ja velkaneuvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "543/1994",
+     "title": "Vakuutussopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "513/1999",
+     "title": "Laki saatavien perinnästä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "1209/2023",
+     "title": "Laki Finanssivalvonnan valvontamaksuista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "739/2022",
+     "title": "Laki positiivisesta luottotietorekisteristä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "566/2020",
+     "title": "Laki kuluttajansuojaviranomaisten eräistä toimivaltuuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "8/2007",
+     "title": "Laki kuluttajariitalautakunnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "610/2014",
+     "title": "Laki luottolaitostoiminnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "661/2012",
+     "title": "Laki Kilpailu- ja kuluttajavirastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "852/2016",
+     "title": "Laki asunto-omaisuuteen liittyvien kuluttajaluottojen välittäjistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-04",
+     "notif": "2026-02-04",
+     "sk": "527/2007",
+     "title": "Luottotietolaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L2413": {
+   "deadline": "2024-07-01",
+   "measures": [
+    {
+     "date": "2026-09-14",
+     "notif": "2026-09-14",
+     "sk": "254/2021",
+     "title": "Valtioneuvoston asetus lämmityksen, jäähdytyksen ja veden kulutus- ja laskutustiedoista ja kustannusten jakamisesta (254/2021)",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-10",
+     "notif": "2026-07-10",
+     "sk": "280/2004",
+     "title": "Tilastolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2007-12-19",
+     "eif": "2008-01-01",
+     "notif": "2026-03-27",
+     "oj": "2007:98",
+     "title": "Landskapslag (2007:98) om tillämpning i landskapet Åland av riksförfattningar om säkerhet vid hantering av farliga kemikalier och explosiva varor 29/10/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2007-12-19",
+     "eif": "2008-01-01",
+     "notif": "2026-03-27",
+     "oj": "2007:98",
+     "title": "Landskapslag (2007:98) om tillämpning i landskapet Åland av riksförfattningar om säkerhet vid hantering av farliga kemikalier och explosiva varor 29/10/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2022-05-31",
+     "eif": "2022-06-01",
+     "notif": "2026-03-25",
+     "oj": "2022:34",
+     "title": "Landskapsförordning (2022:34) om tillämpning av statsrådets förordning om förbruknings- och faktureringsuppgifter och fördelning av kostnaderna i fråga om värme, kyla och vatten 19/05/2022",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2024-08-29",
+     "eif": "2024-09-01",
+     "notif": "2026-03-25",
+     "oj": "2024:56",
+     "title": "Landskapsförordning (2024:56) om tillämpning på Åland av statsrådets förordning om ursprungsgarantier för energi 15/08/2024",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-12-28",
+     "eif": "2008-01-01",
+     "notif": "2026-03-25",
+     "oj": "2007:115",
+     "title": "Landskapslag (2007:115) om Ålands miljö- och hälsoskyddsmyndighet 31/08/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2022-12-12",
+     "eif": "2022-12-15",
+     "notif": "2026-03-25",
+     "oj": "2022:79",
+     "title": "Landskapslag (2022:79) om tillämpning på Åland av lagen om ursprungsgaranti för energi 1/12/2022",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-08-31",
+     "eif": "2018-09-01",
+     "notif": "2026-03-25",
+     "oj": "2018:31",
+     "title": "Landskapslag (2018:31) om miljökonsekvensbedömning och miljöbedömning 27/06/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2026-03-25",
+     "oj": "2008:130",
+     "title": "Landskapsförordning (2008:130) om miljöskydd 14/10/2008",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2008-10-03",
+     "eif": "2008-10-01",
+     "notif": "2026-03-25",
+     "oj": "2008:102",
+     "title": "Plan och bygglag (2008:102) för landskapet Åland 01/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2001-07-09",
+     "eif": "2001-07-01",
+     "notif": "2026-03-25",
+     "oj": "2001:38",
+     "title": "Landskapsförordning (2001:38) om tillämpning i landskapet Åland av vissa riksförfattningar rörande åtgärder mot förorening av luften 21/06/2001",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2025-10-24",
+     "eif": "2025-11-01",
+     "notif": "2026-03-25",
+     "oj": "2025:67",
+     "title": "Landskapslag (2025:67) om kontaktpunkt, tillståndsprocesser för förnybar energi och områden för främjande av förnybar energi 03/10/2025",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-03-28",
+     "eif": "2008-04-01",
+     "notif": "2026-03-25",
+     "oj": "2008:9",
+     "title": "FÖRVALTNINGSLAG (2008:9) för landskapet Åland 01/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2026-03-25",
+     "oj": "2008:124",
+     "title": "Landskapslag (2008:124) om miljöskydd 01/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2026-03-25",
+     "oj": "2015:102",
+     "title": "LANDSKAPSLAG (2015:102) om tillämpning i landskapet Åland av rikslagstiftning om elmarknaden 09/10/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1997-11-21",
+     "eif": "1998-01-01",
+     "notif": "2026-03-25",
+     "oj": "1997:73",
+     "title": "Kommunallag (1997:73) för landskapet Åland 05/09/1997",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2011-12-29",
+     "eif": "2012-01-01",
+     "notif": "2026-03-25",
+     "oj": "2011:111",
+     "title": "Landskapslag (2011:111) om tillämpning i landskapet Åland av lagen om främjande av användningen av biodrivmedel för transport 8/12/2011",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2015-02-27",
+     "eif": "2015-03-01",
+     "notif": "2026-03-25",
+     "oj": "2015:5",
+     "title": "Landskapsförordning (2015:5) om Ålands byggbestämmelsesamling 29/01/2015",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1996-10-08",
+     "eif": "1997-01-01",
+     "notif": "2026-03-25",
+     "oj": "1996:61",
+     "title": "Vattenlag (1996:61) för landskapet Åland 12/09/1996",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2024-06-20",
+     "eif": "2024-07-01",
+     "notif": "2026-03-25",
+     "oj": "2024:43",
+     "title": "Landskapsförordning (2024:43) om tillämpning på Åland av riksförfattningar om elmarknaden 06/06/2024",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2021-08-31",
+     "eif": "2022-01-01",
+     "notif": "2026-03-25",
+     "oj": "2021:79",
+     "title": "Offentlighetslag (2021:79) för Åland 18/06/2021",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2026-03-13",
+     "eif": "1998-09-01",
+     "notif": "2026-03-25",
+     "oj": "1998:82",
+     "title": "Landskapslag (1998:82) om naturvård 10/07/1998",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-08-31",
+     "eif": "2018-09-01",
+     "notif": "2026-03-25",
+     "oj": "2018:33",
+     "title": "Landskapsförordning (2018:33) om miljökonsekvensbedömning och miljöbedömning 05/07/2018",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "1993-06-30",
+     "eif": "1993-07-01",
+     "notif": "2026-03-25",
+     "oj": "1993:27",
+     "title": "Landskapslag (1993:27) om grunderna för avgifter till landskapet 11/06/1993",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2025-10-24",
+     "eif": "2025-11-01",
+     "notif": "2026-03-25",
+     "oj": "2025:71",
+     "title": "Landskapslag (2025:71) om tillämpning på Åland av lagen om biodrivmedel, flytande biobränslen och biomassabränslen 09/10/2025",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2016-04-29",
+     "eif": "2016-05-01",
+     "notif": "2026-03-25",
+     "oj": "2016:20",
+     "title": "Landskapslag (2016:20) om energieffektivitet 18/03/2016",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2025-02-11",
+     "eif": "2025-03-01",
+     "notif": "2026-03-25",
+     "oj": "2025:11",
+     "title": "Landskapsförordning (2025:11) om fastställande av byggnadens energianvändning vid normalt brukande och ett normalår 23/01/2025",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2025-12-29",
+     "eif": "2026-01-01",
+     "notif": "2026-03-03",
+     "sk": "1334/2025",
+     "title": "Työ- ja elinkeinoministeriön asetus Energiaviraston maksullisista suoritteista vuosina 2026-2028",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2025-12-16",
+     "eif": "2026-01-01",
+     "notif": "2026-03-03",
+     "sk": "1178/2025",
+     "title": "Valtioneuvoston asetus elinvoimakeskusten sekä Työllisyys-, kehittämis- ja hallintokeskuksen maksuista vuonna 2026",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-03-03",
+     "notif": "2026-03-03",
+     "sk": "590/2013",
+     "title": "Laki sähkö- ja maakaasumarkkinoiden valvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-03-03",
+     "notif": "2026-03-03",
+     "sk": "587/2017",
+     "title": "Maakaasumarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-03-03",
+     "notif": "2026-03-03",
+     "sk": "883/2022",
+     "title": "Valtioneuvoston asetus moottoribensiinin, dieselöljyn ja eräiden muiden nestemäisten polttoaineiden laatuvaatimuksista (883/2022)",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-03-03",
+     "notif": "2026-03-03",
+     "sk": "588/2013",
+     "title": "Sähkömarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-03-03",
+     "notif": "2026-03-03",
+     "sk": "446/2007",
+     "title": "Laki uusiutuvien polttoaineiden käytön edistämisestä liikenteessä",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-12-27",
+     "eif": "2018-01-01",
+     "notif": "2025-09-15",
+     "sk": "1010/2017",
+     "title": "Ympäristöministeriön asetus uuden rakennuksen energiatehokkuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2024-12-18",
+     "eif": "2025-01-01",
+     "notif": "2025-09-15",
+     "sk": "797/2024",
+     "title": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista vuosina 2025–2026",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2024-12-31",
+     "eif": "2025-01-01",
+     "notif": "2025-09-15",
+     "sk": "1063/2024",
+     "title": "Valtioneuvoston asetus rakentamisen suunnittelutehtävien ja työnjohtotehtävien vaativuusluokkien määräytymisestä sekä tehtävissä edellytettävistä koulutuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-12-04",
+     "eif": "2018-01-01",
+     "notif": "2025-09-15",
+     "sk": "788/2017",
+     "title": "Valtioneuvoston asetus rakennuksissa käytettävien energiamuotojen kertoimien lukuarvoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2021-12-03",
+     "eif": "2021-12-03",
+     "notif": "2025-09-15",
+     "sk": "1050/2021",
+     "title": "Laki energian alkuperätakuista",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-12-09",
+     "eif": "2021-12-09",
+     "notif": "2025-09-15",
+     "sk": "1081/2021",
+     "title": "Valtioneuvoston asetus energian alkuperätakuista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2023-04-26",
+     "eif": "2025-01-01",
+     "notif": "2025-09-15",
+     "sk": "812/2023",
+     "title": "Laki rakentamisen suunnittelu- tai työnjohtotehtävissä toimivien pätevyyden osoittamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-10",
+     "eif": "2025-01-13",
+     "notif": "2025-09-15",
+     "sk": "2/2025",
+     "title": "Valtioneuvoston asetus teollisuuden tuotantoprosessien vähähiilistämisen ja energiatehokkuuden edistämiseen sekä ilmastoneutraaliin talouteen siirtymisen edistämiseen myönnettävästä avustuksesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-04-08",
+     "eif": "2025-05-01",
+     "notif": "2025-09-15",
+     "sk": "148/2025",
+     "title": "Laki eräiden suurten ilmastoneutraaliin talouteen tähtäävien investointien verohyvityksestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-09-15",
+     "sk": "823/2025",
+     "title": "Laki eräiden ympäristöasioiden käsittelystä Lupa- ja valvontavirastossa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "895/1999",
+     "title": "Maankäyttö- ja rakennusasetus",
+     "type": "Asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "71/2023",
+     "title": "Laki metsätalouden määräaikaisesta kannustejärjestelmästä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1112/2021",
+     "title": "Valtioneuvoston asetus Suomen elpymis- ja palautumissuunnitelman mukaisia energiainvestointeja vuosina 2022–2026 koskevasta tuesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "9/2023",
+     "title": "Luonnonsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1397/2010",
+     "title": "Valtioneuvoston asetus uusiutuvilla energialähteillä tuotetun sähkön tuotantotuesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "262/2023",
+     "title": "Valtioneuvoston asetus energiatuen myöntämisen yleisistä ehdoista vuosina 2023–2027",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1087/2013",
+     "title": "Laki metsätuhojen torjunnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "132/1999",
+     "title": "Alueidenkäyttölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "252/2017",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "6/2021",
+     "title": "Valtioneuvoston asetus eräiden polttoaineiden kestävyyskriteereistä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "150/1992",
+     "title": "Valtion maksuperustelaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "277/2017",
+     "title": "Valtioneuvoston asetus ympäristövaikutusten arviointimenettelystä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "587/2011",
+     "title": "Vesilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "764/2019",
+     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "347/2005",
+     "title": "Valtioneuvoston asetus viranomaisten suunnitelmien ja ohjelmien ympäristövaikutusten arvioinnista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "38/2015",
+     "title": "Laki tiettyjen uusiutuvaa energiaa käyttävien energiajärjestelmien asentajien kouluttajan hyväksymisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1145/2020",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "603/1977",
+     "title": "Laki kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta (603/1977)",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "713/2014",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1396/2010",
+     "title": "Laki uusiutuvilla energialähteillä tuotetun sähkön tuotantotuesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "864/2014",
+     "title": "Ilmailulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "1093/1996",
+     "title": "Metsälaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-15",
+     "notif": "2025-09-15",
+     "sk": "200/2005",
+     "title": "Laki viranomaisten suunnitelmien ja ohjelmien ympäristövaikutusten arvioinnista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-09-12",
+     "notif": "2025-09-12",
+     "sk": "393/2013",
+     "title": "Laki eräiden polttoaineiden kestävyyskriteereistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-11",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "697/2025",
+     "title": "Laki ilmailulain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "823/2025",
+     "title": "Laki eräiden ympäristöasioiden käsittelystä Lupa- ja valvontavirastossa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "825/2025",
+     "title": "Laki ympäristönsuojelulain väliaikaisesta muuttamisesta annetun lain voimaantulosäännöksen muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "831/2025",
+     "title": "Laki rakentamislain 81 §:n kumoamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2025-08-18",
+     "notif": "2025-07-28",
+     "sk": "837/2025",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä annetun lain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "833/2025",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta annetun lain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "838/2025",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä annetun lain 3 ja 5 §:n muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-14",
+     "eif": "2026-01-01",
+     "notif": "2025-07-28",
+     "sk": "827/2025",
+     "title": "Laki vesilain väliaikaisesta muuttamisesta annetun lain voimaantulosäännöksen muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "898/2009",
+     "title": "Laki ympäristönsuojelu- ja vesiasioiden käsittelystä aluehallintovirastossa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "1145/2020",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "864/2014",
+     "title": "Ilmailulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "587/2011",
+     "title": "Vesilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "132/1999",
+     "title": "Alueidenkäyttölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "603/1977",
+     "title": "Laki kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta (603/1977)",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-07-28",
+     "notif": "2025-07-28",
+     "sk": "252/2017",
+     "title": "Laki ympäristövaikutusten arviointimenettelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-12-23",
+     "eif": "2025-01-01",
+     "notif": "2025-01-29",
+     "sk": "844/2024",
+     "title": "Laki eräiden polttoaineiden elinkaarenaikaisten kasvihuonekaasupäästöjen vähentämisestä annetun lain kumoamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-29",
+     "notif": "2025-01-29",
+     "sk": "393/2013",
+     "title": "Laki biopolttoaineista, bionesteistä ja biomassapolttoaineista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-29",
+     "notif": "2025-01-29",
+     "sk": "1299/2004",
+     "title": "Laki vesienhoidon ja merenhoidon järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2024-07-30",
+     "notif": "2024-07-30",
+     "sk": "9/2023",
+     "title": "Luonnonsuojelulaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L2661": {
+   "deadline": "2025-03-21",
+   "measures": [
+    {
+     "date": "2026-06-25",
+     "eif": "2026-07-01",
+     "notif": "2026-07-03",
+     "oj": "2026:45",
+     "title": "Landskapslag (2026:45) om tillämpning på Åland av lagen om digitala informationstjänster för trafiksystemet, 04/06/2026",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2025-11-18",
+     "eif": "2026-01-01",
+     "notif": "2025-12-02",
+     "sk": "992/2025",
+     "title": "Laki liikennejärjestelmän digitaalisista tietopalveluista",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32023L2668": {
+   "deadline": "2025-12-21",
+   "measures": [
+    {
+     "date": "2024-03-25",
+     "eif": "2024-04-05",
+     "notif": "2025-12-12",
+     "sk": "113/2024",
+     "title": "Valtioneuvoston asetus syöpäsairauden vaaraa aiheuttavista, perimää vaurioittavista ja lisääntymiselle vaarallisista tekijöistä työssä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2015-06-18",
+     "eif": "2016-01-01",
+     "notif": "2025-12-12",
+     "sk": "769/2015",
+     "title": "Valtioneuvoston asetus ammattitautiluettelosta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "452/2020",
+     "title": "Laki syöpäsairauden vaaraa aiheuttaville, perimää vaurioittaville ja lisääntymiselle vaarallisille tekijöille ammatissaan altistuvien luettelosta ja rekisteristä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "873/2015",
+     "title": "Maatalousyrittäjän työtapaturma- ja ammattitautilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "978/2021",
+     "title": "Valtioneuvoston asetus jätteistä",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "44/2006",
+     "title": "Laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "1050/2018",
+     "title": "Tietosuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "906/2019",
+     "title": "Laki julkisen hallinnon tiedonhallinnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "831/1994",
+     "title": "Arkistolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "684/2015",
+     "title": "Laki eräistä asbestipurkutyötä koskevista vaatimuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "798/2015",
+     "title": "Valtioneuvoston asetus asbestityön turvallisuudesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "oj": "459/2015)",
+     "title": "Työtapaturma- ja ammattitautilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "703/2023",
+     "title": "Laki sosiaali- ja terveydenhuollon asiakastietojen käsittelystä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "159/1978",
+     "title": "Laki työterveyslaitoksen toiminnasta ja rahoituksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-12",
+     "notif": "2025-12-12",
+     "sk": "1485/2001",
+     "title": "Valtioneuvoston asetus terveystarkastuksista erityistä sairastumisen vaaraa aiheuttavissa töissä",
+     "type": "Valtioneuvoston asetus"
+    }
+   ]
+  },
+  "32023L2673": {
+   "deadline": "2025-12-19",
+   "measures": [
+    {
+     "date": "2026-03-24",
+     "notif": "2026-03-24",
+     "sk": "110/2014",
+     "title": "Oikeusministeriön asetus kuluttajansuojalain 6 luvussa tarkoitetuista peruuttamislomakkeesta ja peruuttamisohjeista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-02-06",
+     "notif": "2026-02-06",
+     "sk": "38/1978",
+     "title": "Kuluttajansuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2010-04-30",
+     "notif": "2026-02-06",
+     "sk": "290/2010",
+     "title": "Maksupalvelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-06",
+     "notif": "2026-02-06",
+     "sk": "566/2020",
+     "title": "Laki kuluttajansuojaviranomaisten eräistä toimivaltuuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-06",
+     "notif": "2026-02-06",
+     "sk": "460/2016",
+     "title": "Liikennevakuutuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-06",
+     "notif": "2026-02-06",
+     "sk": "213/2022",
+     "title": "Laki yleiseurooppalaisen yksilöllisen eläketuotteen tarjoamista ja jakelua koskevan Euroopan unionin asetuksen täydentämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-06",
+     "notif": "2026-02-06",
+     "sk": "543/1994",
+     "title": "Vakuutussopimuslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0299": {
+   "deadline": "2024-12-31",
+   "measures": [
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2025-02-04",
+     "oj": "2008:124",
+     "title": "Landskapslag (2008:124) om miljöskydd 14/10/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2024-12-03",
+     "notif": "2024-12-03",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0325": {
+   "deadline": "2025-07-22",
+   "measures": [
+    {
+     "date": "2025-09-23",
+     "notif": "2025-09-23",
+     "sk": "145/1998",
+     "title": "Ampuma-aseasetus",
+     "type": "Asetus"
+    },
+    {
+     "date": "2025-09-23",
+     "notif": "2025-09-23",
+     "sk": "1/1998",
+     "title": "Ampuma-aselaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0790": {
+   "deadline": "2025-09-29",
+   "measures": [
+    {
+     "date": "2025-08-19",
+     "notif": "2025-08-19",
+     "sk": "747/2012",
+     "title": "Sijoituspalvelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-08-19",
+     "notif": "2025-08-19",
+     "sk": "1070/2017",
+     "title": "Laki kaupankäynnistä rahoitusvälineillä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0825": {
+   "deadline": "2026-03-27",
+   "measures": [
+    {
+     "date": "2026-07-06",
+     "eif": "2026-09-27",
+     "notif": "2026-07-07",
+     "sk": "664/2026",
+     "title": "Valtioneuvoston asetus kuluttajien kannalta sopimattomasta kaupallisesta menettelystä markkinoinnissa ja asiakassuhteissa",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-07",
+     "notif": "2026-07-07",
+     "sk": "38/1978",
+     "title": "Kuluttajansuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-07-07",
+     "notif": "2026-07-07",
+     "sk": "566/2020",
+     "title": "Laki kuluttajansuojaviranomaisten eräistä toimivaltuuksista",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0884": {
+   "deadline": "2025-10-09",
+   "measures": [
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2026-04-16",
+     "oj": "2018:83",
+     "title": "LANDSKAPSLAG (2018:83) om tillämpning av rikets avfallslag 04/12/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-12-28",
+     "eif": "2019-01-01",
+     "notif": "2026-04-16",
+     "oj": "2018:92",
+     "title": "LANDSKAPSFÖRORDNING (2018:92) om producentansvar 04/12/2018",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2026-04-08",
+     "notif": "2026-04-08",
+     "sk": "519/2014",
+     "title": "Valtioneuvoston asetus sähkö- ja elektroniikkalaiteromusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-04-08",
+     "notif": "2026-04-08",
+     "sk": "646/2011",
+     "title": "Jätelaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L0927": {
+   "deadline": "2026-04-16",
+   "measures": [
+    {
+     "date": "2026-03-31",
+     "notif": "2026-03-31",
+     "sk": "162/2014",
+     "title": "Laki vaihtoehtorahastojen hoitajista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-03-31",
+     "notif": "2026-03-31",
+     "sk": "213/2019",
+     "title": "Sijoitusrahastolaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1069": {
+   "deadline": "2026-05-07",
+   "measures": [
+    {
+     "date": "2026-05-08",
+     "eif": "2026-05-09",
+     "notif": "2026-05-08",
+     "sk": "334/2026",
+     "title": "Laki julkiseen keskusteluun osallistuvien henkilöiden suojelemisesta rajat ylittäviltä häirintäkanteilta",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-04-17",
+     "eif": "2015-10-01",
+     "notif": "2026-05-08",
+     "sk": "426/2015",
+     "title": "Laki kansainvälisestä oikeusavusta sekä tuomioiden tunnustamisesta ja täytäntöönpanosta siviili- ja kauppaoikeuden alalla",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-08",
+     "notif": "2026-05-08",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1203": {
+   "deadline": "2026-05-21",
+   "measures": [
+    {
+     "date": "2024-12-19",
+     "eif": "2024-12-20",
+     "notif": "2026-05-19",
+     "sk": "806/2024",
+     "title": "Laki Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisestä tietojenvaihdosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2017-04-13",
+     "eif": "2017-05-01",
+     "notif": "2026-05-19",
+     "sk": "214/2017",
+     "title": "Laki Euroopan unionin lainvalvontayhteistyövirastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "9/2023",
+     "title": "Luonnonsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1171/2022",
+     "title": "Laki Euroopan unionin ja kansallisen oikeuden rikkomisesta ilmoittavien henkilöiden suojelusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1712/2015",
+     "title": "Laki huviveneiden turvallisuudesta ja päästövaatimuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1672/2009",
+     "title": "Merenkulun ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "88/2015",
+     "title": "Laki todistajansuojeluohjelmasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1140/2016",
+     "title": "Laki räjähteiden vaatimustenmukaisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "599/2013",
+     "title": "Kemikaalilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "32/2019",
+     "title": "Laki Syyttäjälaitoksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1709/2015",
+     "title": "Laki vieraslajeista aiheutuvien riskien hallinnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "387/2013",
+     "title": "Laki vaarallisten aineiden käytön rajoittamisesta sähkö- ja elektroniikkalaitteissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "805/2011",
+     "title": "Esitutkintalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "108/2018",
+     "title": "Laki rikostorjunnasta Rajavartiolaitoksessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "oj": "19.12.1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "672/2002",
+     "title": "Laki sakon täytäntöönpanosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "623/2015",
+     "title": "Laki rikostorjunnasta Tullissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "616/2019",
+     "title": "Laki henkilötietojen käsittelystä poliisitoimessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "555/1981",
+     "title": "Maa-aineslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "295/2012",
+     "title": "Laki rikosoikeudellisia menettelyjä koskevien toimivaltaristiriitojen ehkäisemisestä ja ratkaisemisesta sekä esitutkinnan ja syytetoimien siirtämisestä Suomen ja muiden Euroopan unionin jäsenvaltioiden välillä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "89/2025",
+     "title": "Laki sotilaskurinpidosta ja rikostorjunnasta Puolustusvoimissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "689/1997",
+     "title": "Laki oikeudenkäynnistä rikosasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "898/1998",
+     "title": "Laki lähestymiskiellosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "621/2011",
+     "title": "Kaivoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "650/2019",
+     "title": "Laki henkilötietojen käsittelystä Tullissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "661/2009",
+     "title": "Laki väestötietojärjestelmästä ja Digi- ja väestötietoviraston varmennepalveluista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "646/2011",
+     "title": "Jätelaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "257/2002",
+     "title": "Oikeusapulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1232/2019",
+     "title": "Laki Suomen osallistumisesta Euroopan unionin rikosoikeudellisen yhteistyön viraston (Eurojust) toimintaan",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "859/2018",
+     "title": "Säteilylaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "806/2011",
+     "title": "Pakkokeinolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "669/2015",
+     "title": "Laki rikosuhrimaksusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "66/2021",
+     "title": "Laki Suomen osallistumisesta Euroopan syyttäjänviraston (EPPO) toimintaan",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "180/2015",
+     "title": "Laki pyroteknisten tuotteiden vaatimustenmukaisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1059/1985",
+     "title": "Laki liiketoimintakiellosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1054/2018",
+     "title": "Laki henkilötietojen käsittelystä rikosasioissa ja kansallisen turvallisuuden ylläpitämisen yhteydessä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "1563/2011",
+     "title": "Laki kasvinsuojeluaineista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "587/2011",
+     "title": "Vesilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "639/2019",
+     "title": "Laki henkilötietojen käsittelystä Rajavartiolaitoksessa",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1226": {
+   "deadline": "2025-05-20",
+   "measures": [
+    {
+     "date": "2024-12-19",
+     "eif": "2024-12-20",
+     "notif": "2025-05-20",
+     "sk": "806/2024",
+     "title": "Laki Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisestä tietojenvaihdosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "1059/1985",
+     "title": "Laki liiketoimintakiellosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "659/1967",
+     "title": "Laki eräiden Suomelle Yhdistyneiden Kansakuntien ja Euroopan unionin jäsenenä kuuluvien velvoitusten täyttämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "616/2019",
+     "title": "Laki henkilötietojen käsittelystä poliisitoimessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "1171/2022",
+     "title": "Laki Euroopan unionin ja kansallisen oikeuden rikkomisesta ilmoittavien henkilöiden suojelusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "639/2019",
+     "title": "Laki henkilötietojen käsittelystä Rajavartiolaitoksessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "66/2021",
+     "title": "Laki Suomen osallistumisesta Euroopan syyttäjänviraston (EPPO) toimintaan",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "806/2011",
+     "title": "Pakkokeinolaki/ Tvångsmedelslag (806/2011)",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "oj": "19.12.1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2015-05-28",
+     "notif": "2025-05-20",
+     "oj": "1.1.1986",
+     "title": "Laki rikosuhrimaksusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "650/2019",
+     "title": "Laki henkilötietojen käsittelystä Tullissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "805/2011",
+     "title": "Esitutkintalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-05-20",
+     "notif": "2025-05-20",
+     "sk": "1054/2018",
+     "title": "Laki henkilötietojen käsittelystä rikosasioissa ja kansallisen turvallisuuden ylläpitämisen yhteydessä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1233": {
+   "deadline": "2026-05-21",
+   "measures": [
+    {
+     "date": "2026-06-05",
+     "eif": "1998-08-21",
+     "notif": "2026-06-05",
+     "sk": "632/1998",
+     "title": "Laki vapaasta sivistystyöstä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-29",
+     "eif": "2026-01-01",
+     "notif": "2026-06-05",
+     "sk": "1336/2025",
+     "title": "Sisäministeriön asetus Maahanmuuttoviraston suoritteiden maksullisuudesta vuonna 2026",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "714/2018",
+     "title": "Lukiolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "531/2017",
+     "title": "Laki ammatillisesta koulutuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "16/2019",
+     "title": "Laki asumisperusteisesta sosiaaliturvasta rajat ylittävissä tilanteissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1214/2020",
+     "title": "Oppivelvollisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "738/2002",
+     "title": "Työturvallisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "301/2004",
+     "title": "Ulkomaalaislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "545/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus asunnon ja muun oleskelutilan terveydellisistä olosuhteista sekä ulkopuolisten asiantuntijoiden pätevyysvaatimuksista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "55/2001",
+     "title": "Työsopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "224/2024",
+     "title": "Laki kolmansien maiden kansalaisten maahantulon ja oleskelun edellytyksistä korkeaa osaamistasoa vaativaa työtä varten",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "872/2019",
+     "title": "Työaikalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1384/2015",
+     "title": "Laki ammattipätevyyden tunnustamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "379/2011",
+     "title": "Pelastuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "436/1946",
+     "title": "Työehtosopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "628/1998",
+     "title": "Perusopetuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "646/1974",
+     "title": "Laki oikeudenkäynnistä työtuomioistuimessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "393/2021",
+     "title": "Laki asumisoikeusasunnoista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "390/2005",
+     "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "162/2005",
+     "title": "Vuosilomalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "44/2006",
+     "title": "Laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1190/1993",
+     "title": "Aravarajoituslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "763/1994",
+     "title": "Terveydensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "574/2016",
+     "title": "Laki vuokratalojen rakentamislainojen lyhytaikaisesta korkotuesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "380/2023",
+     "title": "Laki työvoimapalveluiden järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1535/1992",
+     "title": "Tuloverolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1383/2001",
+     "title": "Työterveyshuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "604/2001",
+     "title": "Laki vuokra-asuntolainojen ja asumisoikeustalolainojen korkotuesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1260": {
+   "deadline": "2026-11-23",
+   "measures": []
+  },
+  "32024L1265": {
+   "deadline": "2025-12-31",
+   "measures": [
+    {
+     "date": "2026-03-30",
+     "eif": "2026-04-01",
+     "notif": "2026-03-31",
+     "sk": "202/2026",
+     "title": "Valtioneuvoston asetus julkisen talouden suunnitelmasta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-02-03",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "107/2026",
+     "title": "Laki huoltovarmuuden turvaamisesta ja Huoltovarmuuskeskuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "521/2008",
+     "title": "Vakuutusyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "731/1999",
+     "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1195/2014",
+     "title": "Laki rahoitusvakausviranomaisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "731/2001",
+     "title": "Laki Kansaneläkelaitoksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "657/1966",
+     "title": "Laki maatilatalouden kehittämisrahastosta (657/1966)",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1062/2010",
+     "title": "Laki valtion liikelaitoksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "423/1988",
+     "title": "Laki valtion talousarviosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "611/2021",
+     "title": "Laki hyvinvointialueesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1243/1992",
+     "title": "Asetus valtion talousarviosta",
+     "type": "Asetus"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "354/1997",
+     "title": "Laki työeläkevakuutusyhtiöistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "555/1998",
+     "title": "Laki työttömyysetuuksien rahoituksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1262/2022",
+     "title": "Laki ympäristövahinkorahastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "990/1987",
+     "title": "Ydinenergialaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "410/2015",
+     "title": "Kuntalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1297/2006",
+     "title": "Laki valtion eläkerahastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "1206/1994",
+     "title": "Laki maatalouden interventiorahastosta (1206/1994)",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "306/2003",
+     "title": "Palosuojelurahastolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "676/2000",
+     "title": "Laki valtiontalouden tarkastusvirastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "558/2009",
+     "title": "Yliopistolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "745/1998",
+     "title": "Laki valtion televisio- ja radiorahastosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1441/2025",
+     "title": "Laki talouspolitiikan arviointineuvostosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1458/2025",
+     "title": "Laki valtion erityisrahoitustoiminnasta ja sen järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1440/2025",
+     "title": "Laki julkisen talouden hoitamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "161/2004",
+     "title": "Valtioneuvoston asetus Valtion ydinjätehuoltorahastosta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "487/2015",
+     "title": "Säätiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "624/2006",
+     "title": "Osakeyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "455/2008",
+     "title": "Valtioneuvoston asetus Huoltovarmuuskeskuksesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-02-20",
+     "notif": "2026-02-20",
+     "sk": "862/1998",
+     "title": "Valtioneuvoston asetus Työllisyysrahaston ohjesäännöstä",
+     "type": "Valtioneuvoston asetus"
+    }
+   ]
+  },
+  "32024L1275": {
+   "deadline": "2025-01-01",
+   "measures": [
+    {
+     "date": "1999-06-03",
+     "eif": "1999-07-01",
+     "notif": "2026-10-21",
+     "oj": "1999:19",
+     "title": "Hyreslag (1999:19) för landskapet Åland 15/04/1999",
+     "type": "Lag"
+    },
+    {
+     "date": "2025-02-11",
+     "eif": "2025-03-01",
+     "notif": "2026-10-21",
+     "oj": "2025:11",
+     "title": "LANDSKAPSFÖRORDNING (2025:11) om fastställande av byggnadens energianvändning vid normalt brukande och ett normalår 23/01/2025",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2025-02-11",
+     "eif": "2025-03-01",
+     "notif": "2026-10-21",
+     "oj": "2025:10",
+     "title": "LANDSKAPSFÖRORDNING (2025:10) om energideklaration för byggnader 23/01/2025",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2025-10-24",
+     "eif": "2025-11-01",
+     "notif": "2026-10-21",
+     "oj": "2025:67",
+     "title": "LANDSKAPSLAG (2025:67) om kontaktpunkt, tillståndsprocesser för förnybar energi och områden för främjande av förnybar energi 09/10/2025",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-10-14",
+     "eif": "2008-10-01",
+     "notif": "2026-10-21",
+     "oj": "2008:107",
+     "title": "Plan- och byggförordning (2008:107) för landskapet Åland 18/09/2008",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2014-06-30",
+     "eif": "2015-01-01",
+     "notif": "2026-10-21",
+     "oj": "2014:31",
+     "title": "Landskapslag (2014:31) om energideklaration för byggnader 12/06/2014",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-10-03",
+     "eif": "2008-10-01",
+     "notif": "2026-10-21",
+     "oj": "2008:102",
+     "title": "Plan- och bygglag (2008:102) för landskapet Åland 28/08/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "1999-07-22",
+     "eif": "1999-09-01",
+     "notif": "2026-10-21",
+     "oj": "1999:40",
+     "title": "Landskapslag (1999:40) om bostadsproduktion 24/06/1999",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2020-10-28",
+     "eif": "2021-01-01",
+     "notif": "2026-05-29",
+     "sk": "718/2020",
+     "title": "Ympäristöministeriön asetus eräiden rakennuksen teknisten järjestelmien energiatehokkuuden vaatimuksista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2017-12-27",
+     "eif": "2018-01-01",
+     "notif": "2026-05-29",
+     "sk": "1009/2017",
+     "title": "Ympäristöministeriön asetus uuden rakennuksen sisäilmastosta ja ilmanvaihdosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-22",
+     "eif": "2026-05-22",
+     "notif": "2026-05-29",
+     "sk": "365/2026",
+     "title": "Ympäristöministeriön asetus päästöttömän rakennuksen tunnuksesta energiatodistuksessa",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-01-09",
+     "eif": "2026-01-09",
+     "notif": "2026-05-29",
+     "sk": "2/2026",
+     "title": "Valtioneuvoston asetus uuden rakennuksen hiilijalanjäljen raja-arvoista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2017-12-27",
+     "eif": "2018-01-01",
+     "notif": "2026-05-29",
+     "sk": "1010/2017",
+     "title": "Ympäristöministeriön asetus uuden rakennuksen energiatehokkuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2024-12-30",
+     "eif": "2026-01-01",
+     "notif": "2026-05-29",
+     "sk": "1027/2024",
+     "title": "Ympäristöministeriön asetus rakennuksen ilmastoselvityksestä ja rakennustuoteluettelosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "848/2017",
+     "title": "Ympäristöministeriön asetus rakennusten paloturvallisuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "50/2013",
+     "title": "Laki rakennuksen energiatodistuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "1048/2017",
+     "title": "Ympäristöministeriön asetus rakennuksen energiatodistuksesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "1145/2020",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "733/2020",
+     "title": "Laki rakennusten varustamisesta sähköajoneuvojen latauspisteillä ja latauspistevalmiuksilla sekä automaatio- ja ohjausjärjestelmillä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "147/2015",
+     "title": "Laki rakennusten energiatodistustietojärjestelmästä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1405": {
+   "deadline": "2025-09-14",
+   "measures": [
+    {
+     "date": "2011-12-29",
+     "eif": "2012-01-01",
+     "notif": "2025-11-20",
+     "oj": "2011:111",
+     "title": "Landskapslag (2011:111) om tillämpning i landskapet Åland av lagen om främjande av användningen av biodrivmedel för transport 08/12/2011",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2025-11-04",
+     "notif": "2025-11-04",
+     "sk": "446/2007",
+     "title": "Laki uusiutuvien polttoaineiden käytön edistämisestä liikenteessä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1438": {
+   "deadline": "2025-12-14",
+   "measures": [
+    {
+     "date": "2023-12-22",
+     "eif": "2024-01-01",
+     "notif": "2025-12-03",
+     "oj": "2023/133",
+     "title": "LANDSKAPSFÖRORDNING (2023/133) om tillämpning på Åland av riksförfattningar om livsmedel och livsmedelshygien 07/12/2023",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2025-05-14",
+     "eif": "2026-06-14",
+     "notif": "2025-06-13",
+     "sk": "227/2025",
+     "title": "Maa- ja metsätalousministeriön asetus hedelmätäysmehuista ja tietyistä vastaavista valmisteista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2025-05-13",
+     "eif": "2026-06-14",
+     "notif": "2025-06-13",
+     "sk": "224/2025",
+     "title": "Maa- ja metsätalousministeriön asetus hunajasta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2025-05-13",
+     "eif": "2026-06-14",
+     "notif": "2025-06-13",
+     "sk": "225/2025",
+     "title": "Maa- ja metsätalousministeriön asetus tietyistä osittain tai kokonaan kuivatuista säilötyistä maidoista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2025-05-14",
+     "eif": "2026-06-14",
+     "notif": "2025-06-13",
+     "sk": "226/2025",
+     "title": "Maa- ja metsätalousministeriön asetus hedelmähilloista ja tietyistä vastaavista valmisteistä",
+     "type": "Ministeriön asetus"
+    }
+   ]
+  },
+  "32024L1499": {
+   "deadline": "2026-06-19",
+   "measures": [
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "750/1994",
+     "title": "Valtion virkamieslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "1050/2018",
+     "title": "Tietosuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "728/2021",
+     "title": "Laki valtion palveluiden saatavuuden ja toimintojen sijoittamisen perusteista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "609/1986",
+     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "1325/2014",
+     "title": "Yhdenvertaisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "306/2019",
+     "title": "Laki digitaalisten palvelujen tarjoamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "1328/2014",
+     "title": "Laki tasa-arvovaltuutetusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "1326/2014",
+     "title": "Laki yhdenvertaisuusvaltuutetusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "1327/2014",
+     "title": "Laki yhdenvertaisuus- ja tasa-arvolautakunnasta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1500": {
+   "deadline": "2026-06-19",
+   "measures": []
+  },
+  "32024L1619": {
+   "deadline": "2026-01-10",
+   "measures": []
+  },
+  "32024L1640": {
+   "deadline": "2025-07-10",
+   "measures": [
+    {
+     "date": "2023-03-30",
+     "eif": "2023-06-01",
+     "notif": "2025-05-21",
+     "sk": "564/2023",
+     "title": "Kaupparekisterilaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1654": {
+   "deadline": "2027-07-10",
+   "measures": []
+  },
+  "32024L1711": {
+   "deadline": "2025-01-17",
+   "measures": [
+    {
+     "date": "2025-11-12",
+     "notif": "2025-11-12",
+     "sk": "588/2013",
+     "title": "Sähkömarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2021-08-18",
+     "eif": "2021-11-01",
+     "notif": "2025-01-22",
+     "sk": "767/2021",
+     "title": "Valtioneuvoston asetus sähköntoimitusten selvityksestä ja mittauksesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2020-12-29",
+     "eif": "2021-06-30",
+     "notif": "2025-01-22",
+     "sk": "1145/2020",
+     "title": "Laki uusiutuvan energian tuotantolaitosten lupamenettelyistä ja eräistä muista hallinnollisista menettelyistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2023-03-29",
+     "eif": "2023-06-01",
+     "notif": "2025-01-22",
+     "sk": "498/2023",
+     "title": "Laki sähköntoimitussopimusten vertailuvälineestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-22",
+     "notif": "2025-01-22",
+     "sk": "1412/1997",
+     "title": "Laki toimeentulotuesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-22",
+     "notif": "2025-01-22",
+     "sk": "813/2017",
+     "title": "Laki talous- ja velkaneuvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-22",
+     "notif": "2025-01-22",
+     "sk": "588/2013",
+     "title": "Sähkömarkkinalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-01-22",
+     "notif": "2025-01-22",
+     "sk": "590/2013",
+     "title": "Laki sähkö- ja maakaasumarkkinoiden valvonnasta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1712": {
+   "deadline": "2026-07-15",
+   "measures": [
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1354/2014",
+     "title": "Laki valtion varoista maksettavasta korvauksesta turvakotipalvelun tuottajalle",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "442/1999",
+     "title": "Laki holhoustoimesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "301/2004",
+     "title": "Ulkomaalaislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "746/2011",
+     "title": "Laki kansainvälistä suojelua hakevan vastaanotosta sekä ihmiskaupan uhrin tunnistamisesta ja auttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "812/2000",
+     "title": "Laki sosiaalihuollon asiakkaan asemasta ja oikeuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "805/2011",
+     "title": "Esitutkintalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1301/2014",
+     "title": "Sosiaalihuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "361/1983",
+     "title": "Laki lapsen huollosta ja tapaamisoikeudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "417/2007",
+     "title": "Lastensuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1326/2010",
+     "title": "Terveydenhuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1326/2014",
+     "title": "Laki yhdenvertaisuusvaltuutetusta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1760": {
+   "deadline": "2028-07-26",
+   "measures": []
+  },
+  "32024L1785": {
+   "deadline": "2026-07-01",
+   "measures": [
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "936/2014",
+     "title": "Valtioneuvoston asetus suurten polttolaitosten päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "64/2015",
+     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "151/2013",
+     "title": "Valtioneuvoston asetus jätteen polttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "737/1994",
+     "title": "Laki ympäristövahinkojen korvaamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "712/2014",
+     "title": "Valtioneuvoston asetus titaanidioksidia tuottavien laitosten ympäristönsuojeluvaatimuksista",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "713/2014",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "629/2012",
+     "title": "Valtioneuvoston asetus sikojen suojelusta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2026-07-14",
+     "notif": "2026-07-14",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L1788": {
+   "deadline": "2026-08-05",
+   "measures": [
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "393/2013",
+     "title": "Laki eräiden polttoaineiden kestävyyskriteereistä",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L2749": {
+   "deadline": "2026-05-29",
+   "measures": [
+    {
+     "date": "2026-07-09",
+     "eif": "2026-07-11",
+     "notif": "2026-08-03",
+     "sk": "683/2026",
+     "title": "Laki eräiden tuotteiden saattamisesta markkinoille sisämarkkinoiden hätätilan aikana",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-08-03",
+     "notif": "2026-08-03",
+     "sk": "278/2016",
+     "title": "Laki eräitä tuoteryhmiä koskevista ilmoitetuista laitoksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-08-03",
+     "notif": "2026-08-03",
+     "sk": "1137/2016",
+     "title": "Laki eräiden tuotteiden markkinavalvonnasta",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32024L2831": {
+   "deadline": "2026-12-02",
+   "measures": []
+  },
+  "32024L2839": {
+   "deadline": "2025-11-28",
+   "measures": []
+  },
+  "32024L2853": {
+   "deadline": "2026-12-09",
+   "measures": []
+  },
+  "32024L2881": {
+   "deadline": "2026-12-11",
+   "measures": []
+  },
+  "32024L3019": {
+   "deadline": "2027-07-31",
+   "measures": []
+  },
+  "32024L3101": {
+   "deadline": "2027-07-06",
+   "measures": []
+  },
+  "32025L0001": {
+   "deadline": "2027-01-29",
+   "measures": []
+  },
+  "32025L0002": {
+   "deadline": "2027-01-29",
+   "measures": [
+    {
+     "date": "2026-09-08",
+     "eif": "2027-01-30",
+     "notif": "2026-10-06",
+     "sk": "808/2026",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiölain 10 luvun mukaisessa vakavaraisuuslaskennassa käytettävän volatiliteettikorjauksen laskemisesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "304/2015",
+     "title": "Laki vakuutusyhtiölain muuttamisesta annetun lain voimaantulosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "1141/2015",
+     "title": "Tilintarkastuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "398/1995",
+     "title": "Laki ulkomaisista vakuutusyhtiöistä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "355/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiön toimintasuunnitelmasta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "621/1999",
+     "title": "Laki viranomaisten toiminnan julkisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "356/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiölain 10 luvun mukaisessa vakavaraisuuslaskennassa käytettävästä vastaavuuskorjauksesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "521/2008",
+     "title": "Vakuutusyhtiölaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32025L0025": {
+   "deadline": "2027-07-31",
+   "measures": []
+  },
+  "32025L0149": {
+   "deadline": "2025-06-30",
+   "measures": [
+    {
+     "date": "2025-06-25",
+     "eif": "2025-07-01",
+     "notif": "2025-08-04",
+     "oj": "2025:50",
+     "title": "Landskapsförordning om ändring av landskapsförordningen om tillämpning på Åland av riksförfattningar om transport farliga ämnen 17/06/2025",
+     "type": "Landskapsförordning"
+    }
+   ]
+  },
+  "32025L0794": {
+   "deadline": "2025-12-31",
+   "measures": [
+    {
+     "date": "2026-01-22",
+     "notif": "2026-01-22",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32025L1892": {
+   "deadline": "2027-06-17",
+   "measures": []
+  },
+  "32025L2459": {
+   "measures": []
+  },
+  "32025L2482": {
+   "deadline": "2029-01-02",
+   "measures": []
+  },
+  "32025L2647": {
+   "deadline": "2028-03-20",
+   "measures": []
+  },
+  "32026L0074": {
+   "deadline": "2026-07-31",
+   "measures": [
+    {
+     "date": "2026-10-15",
+     "notif": "2026-10-15",
+     "sk": "38/1978",
+     "title": "Kuluttajansuojalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-15",
+     "notif": "2026-10-15",
+     "sk": "646/2011",
+     "title": "Jätelaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32026L0470": {
+   "deadline": "2027-03-19",
+   "measures": [
+    {
+     "date": "2026-06-30",
+     "notif": "2026-06-30",
+     "sk": "1336/1997",
+     "title": "Kirjanpitolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-30",
+     "notif": "2026-06-30",
+     "sk": "1141/2015",
+     "title": "Tilintarkastuslaki",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32026L0706": {
+   "deadline": "2028-04-10",
+   "measures": []
+  },
+  "32026L0805": {
+   "deadline": "2027-12-21",
+   "measures": []
+  }
+ },
+ "fetched": "2026-10-27T22:03:26"
+}

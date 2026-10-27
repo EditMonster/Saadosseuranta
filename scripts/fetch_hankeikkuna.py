@@ -92,6 +92,9 @@ def summarise_statements(docs: list[dict], lausuntopalvelu: str | None) -> dict 
             "viimeisin": latest or None, "url": lausuntopalvelu, "docs": sorted(files, key=lambda f: f.get("date") or "", reverse=True)}
 
 
+PREP_MAX = 150  # newest documents kept per project (a long työryhmä can publish a hundred pöytäkirjat)
+
+
 def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
     k = r["kohde"]
     he = (r.get("lainsaadanto") or {}).get("heTiedot") or {}
@@ -105,7 +108,11 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
                        "kind": kind, "tyyppi": e["tyyppi"]})
     docs = []
     statements = []
+    prep = []  # every other public document of the project (asettamispäätös, pöytäkirjat, HE-luonnos, mietintö …)
     for d in r.get("asiakirjat") or []:
+        if d.get("tyyppi") != "LAUSUNTO" and d.get("url"):
+            prep.append({"t": d.get("tyyppi"), "n": _fi(d.get("nimi")) or "", "u": d["url"],
+                         "d": d.get("laatimispaiva") or (d.get("luotu") or "")[:10] or None})
         if d.get("tyyppi") in ("LAUSUNTOPYYNTO", "ESITYS", "YHTEENVETO") and d.get("url"):
             docs.append({"tyyppi": d["tyyppi"], "nimi": _fi(d.get("nimi")), "url": d["url"],
                          "pvm": d.get("laatimispaiva") or (d.get("luotu") or "")[:10]})
@@ -142,6 +149,7 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
         "rauennut": bool(he.get("rauennut")),
         "etapit": sorted(etapit, key=lambda e: e["date"]),
         "asiakirjat": sorted(docs, key=lambda d: d["pvm"] or "")[-6:],
+        "valmistelu": sorted(prep, key=lambda d: d["d"] or "")[-PREP_MAX:],
         "lausunnot": summarise_statements(statements, lausuntopalvelu),
         "url": f"https://valtioneuvosto.fi/hanke?tunnus={k.get('tunnus')}" if k.get("tunnus") else None,
     }

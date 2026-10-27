@@ -30,13 +30,16 @@ NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "fi
          "ue": "U/E-kirjelmät (eduskunta)", "hys": "Have your say", "hankinnat": "Hilma", "kkv": "KKV yrityskaupat", "eu_mergers": "Komissio yrityskaupat",
          "regdel": "Delegoitujen säädösten rekisteri", "mao": "Markkinaoikeus",
          "avoimuus": "Avoimuusrekisteri", "vaski": "Eduskunta – valiokunnat (Vaski)", "caselaw": "Oikeuskäytäntö (tuomioistuimet)", "curia": "EU-tuomioistuin (Cellar)",
-         "toimiala": "Toimialakerros (Fiva, EBA/EIOPA, EDPB, Vero, Traficom, oikeusasiamies, oikeuskansleri, TES, määräyskokoelmat)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
+         "toimiala": "Toimialakerros (Fiva, EBA/EIOPA, EDPB, Vero, Traficom, oikeusasiamies, oikeuskansleri, TES, määräyskokoelmat, KKO:n valitusluvat, KRIL, YVTltk)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
          "ted": "TED", "paatokset": "Hankintapäätökset (Helsinki)", "toimittajat": "Tutkihankintoja", "kkv_valvonta": "KKV – kilpailu- ja hankintavalvonta",
          "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)",
          "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)",
          "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)",
          "asiat": "Eduskunta.fi – asioiden asiantuntijalausunnot ja valiokuntien lausunnot",
-         "arviointineuvosto": "Lainsäädännön arviointineuvosto (HE-tekstit)"}
+         "arviointineuvosto": "Lainsäädännön arviointineuvosto, HE:n sisältö ja säätämisjärjestys (HE-tekstit)",
+         "oeil": "EU-menettelyjen asiakirjat (OEIL: mietinnöt, vaikutustenarvioinnit, EDPS)",
+         "nim": "EU-direktiivien kansalliset täytäntöönpanotoimet (Cellar)",
+         "taysistunto": "Täysistunto (äänestykset, puheenvuorot, eduskunnan vastauksen lausumat)"}
 
 
 def alarming(v: dict, now: dt.datetime) -> bool:

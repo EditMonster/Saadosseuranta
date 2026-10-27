@@ -113,6 +113,109 @@ def committee_row(d: dict, rep: dict | None, summ: dict | None = None) -> dict:
     return {k: v for k, v in row.items() if v not in (None, "", [], 0)}
 
 
+# ---- valmisteluasiakirjat (Hankeikkuna): the few documents that mark a step get their own timeline entry, the routine
+# rest (pöytäkirjat, kutsut, toimikausipäätökset …) is folded into one "Valmisteluasiakirjat (N)" entry ----
+SWEDISH = re.compile(r"\b(Begäran om utlåtande|Begäran|Översättning|betänkande|Möteskallelse|Styrgruppen|Promemoria|Regeringens proposition|"
+                     r"utkast|Sammandrag|Sammanfattning|remiss|Arbetsgrupp\w*|Lag om|Förordning)\b|\bpå svenska\b|_sv\b|\(sv\)|\bSV\b(?!_)|"
+                     r"ruotsinkieli|ruotsiksi|ruotsinnos|käännös", re.I)
+DISSENT = re.compile(r"eriävä|eriäv\w+ mielipi|erimielisyy", re.I)
+DRAFT = re.compile(r"\bHE[-_ ]?luonno|esitysluonno|luonnos\w*[^.]{0,50}(?:hallituksen esity|\bHE\b|laiksi|lai(?:n|en) muuttami|asetukse|asetus)|"
+                   r"(?:hallituksen esity\w*|asetu\w*)[^.]{0,30}luonno|\bluonnos(?:\s+\d|$)", re.I)
+REPORT = re.compile(r"mietint|selvity|raportti|arviointi|loppuraportti|julkaisu \d|työryhmän ehdotu|esiselvity", re.I)
+IMPACT = re.compile(r"vaikutusarvi|vaikutusten arvi|yritysvaikutu|vaikutusarvio", re.I)
+SETUP = re.compile(r"asettamispäätö|asettaminen|säädöshankepäätö|hankepäätö", re.I)
+ROUTINE_GROUP = {"POYTAKIRJA": "Pöytäkirjat ja muistiot", "MUISTIO": "Pöytäkirjat ja muistiot", "KUTSU": "Kokouskutsut",
+                 "PAATOS": "Päätökset ja kirjeet", "KIRJE": "Päätökset ja kirjeet", "LIITE": "Esitykset, liitteet ja julkaisut",
+                 "ESITYS": "Esitykset, liitteet ja julkaisut", "JULKAISU": "Esitykset, liitteet ja julkaisut",
+                 "LAUSUNTOPYYNTO": "Lausuntopyynnöt ja kyselyt"}
+KEY_LIMIT = {"asettaminen": 2, "luonnos": 3, "mietinto": 3, "yhteenveto": 2, "eriava": 6, "vaikutus": 2, "lausuntopyynto": 3}
+KEY_LABEL = {"asettaminen": "Hanke asetettu", "luonnos": "Luonnos hallituksen esitykseksi", "mietinto": "Työryhmän mietintö tai selvitys",
+             "yhteenveto": "Lausuntoyhteenveto", "eriava": "Eriävä mielipide", "vaikutus": "Vaikutusarvio", "lausuntopyynto": "Lausuntopyyntö"}
+
+
+def prep_category(d: dict) -> str | None:
+    t, n = d.get("t") or "", d.get("n") or ""
+    if DISSENT.search(n):
+        return "eriava"
+    if t == "ASETTAMISPAATOS" or (t in ("SUUNNITELMA", "PAATOS") and SETUP.search(n)):
+        return "asettaminen"
+    if t == "YHTEENVETO" and re.search(r"lausun|palaute|kuulemi", n, re.I):
+        return "yhteenveto"
+    if DRAFT.search(n) and t not in ("KUTSU", "POYTAKIRJA"):
+        return "luonnos"
+    if IMPACT.search(n):
+        return "vaikutus"
+    if t in ("MIETINTO", "RAPORTTI") and not re.search(r"ei lausuttavaa|arviointineuvoston lausunto", n, re.I):
+        return "mietinto"
+    if t == "JULKAISU" and REPORT.search(n):
+        return "mietinto"
+    if t == "LAUSUNTOPYYNTO":
+        return "lausuntopyynto"
+    return None
+
+
+def prep_section(docs: list[dict]) -> dict | None:
+    """{"keskeiset": [{"date", "cat", "label", "docs": [{"n", "u"}]}], "muut": {"n", "first", "last", "groups": [{"label",
+    "rivit": [{"d", "n", "u"}]}]}} from a project's documents (fetch_hankeikkuna `valmistelu`). Swedish versions of the
+    same document are left out; key documents of one kind on one day are one entry."""
+    seen, key, routine = set(), {}, {}
+    for d in docs or []:
+        n = re.sub(r"\s+", " ", (d.get("n") or "").replace("_", " ")).strip()
+        n = re.sub(r"\.(pdf|docx?|xlsx?|pptx?)$", "", n, flags=re.I)
+        if not d.get("u") or not n or SWEDISH.search(d.get("n") or ""):
+            continue
+        sig = (d.get("t"), n.lower(), d.get("d"))
+        if sig in seen:
+            continue
+        seen.add(sig)
+        cat = prep_category(d)
+        row = {"n": n, "u": d["u"]}
+        if cat and d.get("d"):
+            key.setdefault((cat, d["d"]), []).append(row)
+        else:
+            routine.setdefault(ROUTINE_GROUP.get(d.get("t") or "", "Muut asiakirjat"), []).append({"d": d.get("d"), **row})
+    # a draft sent out for comments the same day is one step: "Luonnos hallituksen esitykseksi lausunnolle"
+    to_comment = set()
+    for (cat, date) in [k for k in key if k[0] == "lausuntopyynto"]:
+        if ("luonnos", date) in key:
+            key[("luonnos", date)] += key.pop((cat, date))
+            to_comment.add(date)
+    entries = []
+    by_cat: dict[str, list] = {}
+    for (cat, date), rows in key.items():
+        label = KEY_LABEL[cat] + (" lausunnolle" if cat == "luonnos" and date in to_comment else "")
+        by_cat.setdefault(cat, []).append({"date": date, "cat": cat, "label": label, "docs": rows[:6]})
+    for cat, lst in by_cat.items():
+        lst.sort(key=lambda e: e["date"])
+        lim = KEY_LIMIT.get(cat)
+        if lim and len(lst) > lim:  # older ones of a frequent kind go with the routine documents
+            for e in lst[:-lim] if cat != "asettaminen" else lst[lim:]:
+                for r in e["docs"]:
+                    routine.setdefault("Muut asiakirjat" if cat != "lausuntopyynto" else ROUTINE_GROUP["LAUSUNTOPYYNTO"], []).append({"d": e["date"], **r})
+            lst = lst[-lim:] if cat != "asettaminen" else lst[:lim]
+        entries += lst
+    out: dict = {}
+    if entries:
+        out["keskeiset"] = sorted(entries, key=lambda e: e["date"])
+    rows_all = [r for rows in routine.values() for r in rows]
+    if rows_all:
+        ds = sorted(r["d"] for r in rows_all if r.get("d"))
+        order = list(ROUTINE_GROUP.values()) + ["Muut asiakirjat"]
+        groups = [{"label": g, "rivit": sorted(rows, key=lambda r: r.get("d") or "", reverse=True)}
+                  for g, rows in sorted(routine.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99)]
+        out["muut"] = {"n": len(rows_all), "first": ds[0] if ds else None, "last": ds[-1] if ds else None, "groups": groups}
+    return out or None
+
+
+def _extra_caches() -> tuple[dict, dict, dict, dict]:
+    """HE texts (summary, enactment order), plenary records, directives' national measures, OEIL documents."""
+    from common import CACHE_DIR, load_json
+    return ((load_json(CACHE_DIR / "arviointineuvosto.json", {}) or {}).get("he") or {},
+            (load_json(CACHE_DIR / "taysistunto.json", {}) or {}).get("he") or {},
+            (load_json(CACHE_DIR / "nim.json", {}) or {}).get("celex") or {},
+            (load_json(CACHE_DIR / "oeil.json", {}) or {}).get("proc") or {})
+
+
 def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict, asiat: dict | None = None) -> dict[str, dict]:
     """Writes docs/data/lausunnot/<id>.json for every item that has statements or committee documents; returns
     {item_id: summary} where summary = {"n", "luettu", "kannat", "valiokunnat"} for the item's own record."""
@@ -132,6 +235,7 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict, asiat: dic
     for t, r in (vaski.get("reports") or {}).items():  # reports VaskiData saw for a matter the asia pages have not listed yet
         if r.get("asia") and not any(d["tunnus"] == t for d in committee_docs.get(_norm(r["asia"]), [])):
             committee_docs.setdefault(_norm(r["asia"]), []).append({"tunnus": t, "kind": r.get("kind"), "date": r.get("date"), "committee": r.get("committee")})
+    he_text, plenary, nim, oeil = _extra_caches()
     LAUSUNNOT_DIR.mkdir(parents=True, exist_ok=True)
     out: dict[str, dict] = {}
     keep: set[str] = set()
@@ -167,7 +271,26 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict, asiat: dic
         if vk:
             # opinions first (they come before the lead committee's report), then by date
             doc["valiokunnat"] = sorted(vk, key=lambda r: (r.get("kind") == "mietintö", r.get("date") or "", r["tunnus"]))
-        if "kierros" not in doc and "eduskunta" not in doc and "valiokunnat" not in doc:
+        if p and p.get("valmistelu"):
+            prep = prep_section(p["valmistelu"])
+            if prep:
+                doc["valmistelu"] = prep
+        hes = [k[3:] for k in sorted(parliament_keys(it)) if k.startswith("HE ")]
+        for h in hes[:1]:  # the item's own HE (a project with several HEs is rare; the first is the main one)
+            t = he_text.get(h) or {}
+            if t.get("sisalto") or t.get("sj"):
+                doc["he"] = {k: v for k, v in {"tunnus": f"HE {h} vp", "sisalto": t.get("sisalto"), "sj": t.get("sj")}.items() if v}
+            pl = plenary.get(h) or {}
+            if pl.get("kasittelyt") or pl.get("aanestykset") or pl.get("lausumat"):
+                doc["taysistunto"] = {k: pl.get(k) for k in ("ev", "lausumat", "kasittelyt", "aanestykset") if pl.get(k)}
+        n_rec = nim.get(it.get("celex") or "") if it.get("scope") == "eu" else None
+        if n_rec and (n_rec.get("measures") or n_rec.get("deadline")):
+            doc["nim"] = {k: v for k, v in {"deadline": n_rec.get("deadline"), "measures": n_rec.get("measures")[:60]}.items() if v}
+        o_rec = oeil.get(it.get("procedure") or "") if it.get("scope") == "eu" else None
+        if o_rec and (o_rec.get("docs") or o_rec.get("np")):
+            doc["eu_asiakirjat"] = {k: v for k, v in {"docs": o_rec.get("docs"), "np": o_rec.get("np"),
+                                                      "url": f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={it['procedure']}"}.items() if v}
+        if not any(k in doc for k in ("kierros", "eduskunta", "valiokunnat", "valmistelu", "he", "taysistunto", "nim", "eu_asiakirjat")):
             continue
         n = sum(doc[k]["n"] for k in ("kierros", "eduskunta") if k in doc)
         read = sum(doc[k]["luettu"] for k in ("kierros", "eduskunta") if k in doc)
@@ -179,6 +302,9 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict, asiat: dic
         save_json(LAUSUNNOT_DIR / f"{it['id']}.json", doc, compact=True)
         keep.add(f"{it['id']}.json")
         out[it["id"]] = {"n": n, "luettu": read, "kannat": kannat, "valiokunnat": len(doc.get("valiokunnat") or [])}
+        extra = [k for k in ("valmistelu", "he", "taysistunto", "nim", "eu_asiakirjat") if k in doc]
+        if extra:
+            out[it["id"]]["x"] = extra  # the drawer loads the file for these too
     for f in LAUSUNNOT_DIR.glob("*.json"):
         if f.name not in keep:
             f.unlink()

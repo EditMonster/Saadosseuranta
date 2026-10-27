@@ -207,6 +207,44 @@ sources:
     keep_days: 365
     url: https://www.finlex.fi/fi/viranomaiset/tyoehtosopimukset/{year}
 
+  # KKO:n myöntämät valitusluvat: tulevat ennakkopäätökset ja niiden oikeuskysymys jo ennen ratkaisua
+  kko_valitusluvat:
+    enabled: true
+    name: kko_valitusluvat
+    authority: Korkein oikeus
+    scope: fi
+    laji: ratkaisu
+    kind: Valituslupa myönnetty
+    keep_days: 365
+    url: https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/valitusluvat/{year}
+
+  # Lautakunnat (Työneuvoston ja tekijänoikeusneuvoston sivut ovat valtioneuvoston palvelimella Cloudflaren takana)
+  kril_ratkaisut:
+    enabled: true
+    name: kril_ratkaisut
+    authority: Kuluttajariitalautakunta
+    scope: fi
+    laji: ratkaisu
+    id_prefix: kril
+    aihealueet: ["Kuluttaja ja tuotteet"]
+    aihealueet_aina: true
+    keep_days: 120
+    feeds:
+      - {url: "https://www.kuluttajariita.fi/feed/rss-feed?post_type=paatos", kind: Ratkaisusuositus}
+
+  yvtltk_ratkaisut:
+    enabled: true
+    name: yvtltk_ratkaisut
+    authority: Yhdenvertaisuus- ja tasa-arvolautakunta
+    scope: fi
+    laji: ratkaisu
+    id_prefix: yvtltk
+    aihealueet: ["Työoikeus", "Hallinto ja hankinnat"]
+    keep_days: 730
+    feeds:
+      - {url: "https://www.yvtltk.fi/feed/rss-feed?post_type=tapausseloste", kind: Tapausseloste}
+      - {url: "https://www.yvtltk.fi/feed/rss-feed?post_type=lausunto", kind: Lausunto}
+
   # Virastojen ja ministeriöiden määräyskokoelmat (annetut määräykset; Traficom ja Fiva luetaan omista lähteistään)
   maaraykset_finlex:
     enabled: true

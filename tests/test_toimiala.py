@@ -51,12 +51,13 @@ def test_config_shape(cfg_all, topics):
     srcs = cfg_all["sources"]
     assert {"fiva_tiedotteet", "fiva_lausuntopyynnot", "esma_consultations", "eba_consultations", "eiopa_consultations",
             "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex",
-            "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex"} <= set(srcs)
+            "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex", "kko_valitusluvat", "kril_ratkaisut",
+            "yvtltk_ratkaisut"} <= set(srcs)
     for name, s in srcs.items():
         assert s["scope"] in ("fi", "eu"), name
         assert s["laji"] in ("kuuleminen", "ohje", "ratkaisu"), name
         assert s["authority"], name
-        for t in s["aihealueet"]:
+        for t in s.get("aihealueet") or []:
             assert t in topics, f"{name}: aihealue {t!r} puuttuu topics.yaml:stä"
         if s["enabled"]:
             assert name in ft.RUNNERS, f"{name}: ei hakijaa"
@@ -297,6 +298,10 @@ def fetched(cfg_all):
         "tiedotteet-ja-julkaisut/valvottavatiedotteet/": "fiva_valvottavatiedotteet.html",
         "tiedotteet-ja-julkaisut/lehdistotiedotteet/": "fiva_valvottavatiedotteet.html",
         "saantely/lausuntopyynnot/": "fiva_lausuntopyynnot.html",
+        "korkein-oikeus/valitusluvat/2026/253": "finlex_kko_valituslupa.html",
+        "korkein-oikeus/valitusluvat/2026/": "finlex_kko_valitusluvat.html",
+        "post_type=paatos": "kril_paatokset.xml",
+        "post_type=tapausseloste": "yvtltk_tapausselosteet.xml",
         "esma.europa.eu/press-news/consultations": "esma_consultations.html",
         "consultation-draft-rts-operational-risk-management-framework": "eba_consultation_item.html",
         "eba.europa.eu/publications-and-media/consultations": "eba_consultations.html",
@@ -410,7 +415,7 @@ def test_builder_shape(fetched, tmp_path, monkeypatch, topics):
     assert all(i["deadlineUnknown"] for i in items if i["id"].startswith("fi-toim-fiva-lp-"))
     # rulings
     for r in rulings:
-        assert r["scope"] == "ratkaisu" and r["court"] in ("KVL", "TSV", "EOA", "OKV", "TES") and r["fi"] is True and r["statutes"] == [] and r["topics"]
+        assert r["scope"] == "ratkaisu" and r["court"] in ("KVL", "TSV", "EOA", "OKV", "TES", "KKO", "KRIL", "YVTltk") and r["fi"] is True and r["statutes"] == [] and r["topics"]
         assert re.match(ISO, r["date"]) and r["url"] and r["links"] and r["id"].startswith(f"r-{r['court'].lower()}-")
     kvl = {r["id"]: r for r in rulings}["r-kvl-2026-29"]
     assert kvl["courtName"] == "Keskusverolautakunta" and kvl["kind"] == "Ennakkoratkaisu (KVL)" and kvl["status"] == "ei lainvoimainen"

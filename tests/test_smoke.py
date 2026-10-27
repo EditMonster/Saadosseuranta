@@ -502,11 +502,16 @@ def test_rulings_tab(page, base_url):
     assert rows.count() >= 50 and "ratkaisua" in page.text_content("#count")
     courts = page.locator("#rk-courts [data-court]").all_text_contents()
     assert any(c.startswith("KKO") for c in courts) and any(c.startswith("EUT") for c in courts)
-    # only pending Finnish references
+    # KKO's leaves to appeal are pending rulings too; the toggle hides them
     page.check("#rk-pending")
     page.wait_for_timeout(200)
+    if page.evaluate("RULINGS.some(r=>r.kind==='Valituslupa myönnetty')"):
+        assert rows.count() >= 10 and "Valituslupa myönnetty" in page.text_content("#rk-body")
+    page.uncheck("#rk-vl")
+    page.wait_for_timeout(200)
+    # only pending Finnish references
     pend = rows.count()
-    assert 1 <= pend <= 30
+    assert 1 <= pend <= 30 and "Valituslupa myönnetty" not in page.text_content("#rk-body")
     page.click("#rk-body tr.r >> nth=0")
     page.wait_for_selector("#drawer:not([hidden])")
     facts = page.text_content("#dr-facts")

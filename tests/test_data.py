@@ -490,9 +490,11 @@ def test_rulings(items):
             assert s.get("sk") or s.get("celex"), (x["id"], s)
         for rid in x.get("related") or []:
             assert rid in by_id, (x["id"], rid)
-        if x["status"] == "vireillä":
+        if x["status"] == "vireillä" and x.get("kind") == "Valituslupa myönnetty":
+            assert x["court"] == "KKO" and x["ref"].startswith("KKO VL:") and x.get("date"), x["id"]
+        elif x["status"] == "vireillä":
             assert x["court"] == "EUT" and x.get("referringCourt") and x.get("fi") is True
-    assert any(x["status"] == "vireillä" for x in rows), "vireillä olevia ennakkoratkaisupyyntöjä ei löytynyt"
+    assert any(x["status"] == "vireillä" and x["court"] == "EUT" for x in rows), "vireillä olevia ennakkoratkaisupyyntöjä ei löytynyt"
     assert sum(1 for x in rows if x.get("statutes")) >= 40
     linked = [i for i in items if i.get("caseLaw")]
     assert len(linked) >= 30
@@ -525,7 +527,8 @@ def test_annetut_lausunnot(items):
     read_total = 0
     for it in with_n:
         n = it["lausunnotN"]
-        assert set(n) == {"n", "luettu", "kannat", "valiokunnat"} and (n["n"] or n["valiokunnat"]) and 0 <= n["luettu"] <= n["n"]
+        assert set(n) - {"x"} == {"n", "luettu", "kannat", "valiokunnat"} and (n["n"] or n["valiokunnat"] or n.get("x")) and 0 <= n["luettu"] <= n["n"]
+        assert set(n.get("x") or []) <= {"valmistelu", "he", "taysistunto", "nim", "eu_asiakirjat"}
         assert set(n["kannat"]) <= stances
         d = json.loads(files[it["id"]].read_text(encoding="utf-8"))
         assert d["id"] == it["id"] and d["tiivistetty"] == n["luettu"] and d["tiivistetty"] + d["odottaa"] == n["n"]

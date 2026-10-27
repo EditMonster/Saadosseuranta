@@ -24,7 +24,8 @@ OUT = CACHE_DIR / "arviointineuvosto.json"
 MAX_PER_RUN = int(os.environ.get("ARVIOINTINEUVOSTO_MAX", "80"))
 BUDGET_S = int(os.environ.get("ARVIOINTINEUVOSTO_BUDGET_S", "300"))
 TEXT_MAX = 900
-VERSION = 2  # 2: subsections, the noudattaa/täyttää grade scale and the "korjattava ennen antamista" recommendation
+VERSION = 4  # 2: subsections, grade scale, "korjattava ennen antamista"; 3: pääasiallinen sisältö and säätämisjärjestys; 4: section end
+SISALTO_MAX = 1400
 
 HEAD = re.compile(r"(?:^|\s)(\d{1,2}(?:\.\d{1,2}){0,3})\s+(?=[A-ZÄÖ][a-zäöå]+[\s,])")  # "6.3 Lainsäädännön …", "7 Säännöskohtaiset …"
 TITLE = re.compile(r"Lainsäädännön arviointineuvoston lausunto\b")
@@ -121,6 +122,54 @@ def extract(text: str) -> dict:
     return rec
 
 
+SISALTO = re.compile(r"<(?:\w+:)?SisaltoKuvaus\b[^>]*>(.*?)</(?:\w+:)?SisaltoKuvaus>", re.S)
+SJ_HEAD = re.compile(r"(?:^|\s)\d{1,2}(?:\.\d{1,2}){0,2}\s+(?:Suhde perustuslakiin ja )?säätämisjärjestys\b", re.I)
+SJ_ORDER = [
+    ("supistettu", re.compile(r"supistetussa perustuslainsäätämisjärjestyksessä|supistetussa perustuslain säätämisjärjestyksessä", re.I)),
+    ("perustuslaki", re.compile(r"(?<!ei )(?<!ole )perustuslain säätämisjärjestyksessä|perustuslainsäätämisjärjestyksessä", re.I)),
+    ("tavallinen", re.compile(r"(?:tavallisessa|tavanomaisessa) lainsäätämisjärjestyksessä|tavallisen lain säätämisjärjestyksessä", re.I)),
+]
+PEV = re.compile(r"suotava\w*,? että (?:eduskunnan )?perustuslakivaliokunta\b|perustuslakivaliokunnan lausunto\w*\s+(?:\w+\s+){0,3}(?:pyydet|pyytä|hanki|hankit)|(?:pyytää|pyydetään|hankkia|hankitaan|syytä pyytää)\s+(?:\w+\s+){0,3}perustuslakivaliokunnan lausunto", re.I)
+SJ_LABEL = {"tavallinen": "tavallinen lainsäätämisjärjestys", "perustuslaki": "perustuslain säätämisjärjestys",
+            "supistettu": "supistettu perustuslain säätämisjärjestys"}
+
+
+def he_content(xml: str) -> dict:
+    """The HE's own summary (Esityksen pääasiallinen sisältö) and the government's view of the enactment procedure:
+    {"sisalto": text, "sj": {"order", "pev", "text"}} with empty parts left out."""
+    out: dict = {}
+    m = SISALTO.search(xml or "")
+    if m:
+        t = flat(m.group(1))
+        t = re.sub(r"^(?:Esityksen )?pääasiallinen sisältö\s*", "", t, flags=re.I)
+        if t:
+            out["sisalto"] = _trim(t, SISALTO_MAX)
+    text = flat(xml or "")
+    heads = list(SJ_HEAD.finditer(text))
+    body = ""
+    if heads:
+        start = heads[-1].end()
+        stop = len(text)
+        for rx in (r"\sPonsi\s", r"\sEdellä esitetyn perusteella annetaan eduskunnan\s", r"\sLakiehdotus\s", r"\sLakiehdotukset?\s+\d+\.\s", r"\sSopimusten? hyväksyminen\s"):
+            mm = re.search(rx, text[start + 40:])  # not the section's own first words ("Lakiehdotus on käsiteltävä …")
+            if mm:
+                stop = min(stop, start + 40 + mm.start())
+        body = text[start:stop]
+    sents = _sentences(body)
+    concl = [re.sub(r"^Johtopäätö\w*\s+", "", x) for x in sents if re.search(r"säätämisjärjestyks", x, re.I)]
+    pev = [x for x in sents if PEV.search(x)]
+    if concl or pev:
+        tail = list(dict.fromkeys(([concl[-1]] if concl else []) + ([pev[-1]] if pev else [])))
+        order = next((k for k, rx in SJ_ORDER if concl and rx.search(concl[-1])), None)
+        sj = {"text": _trim(" ".join(tail), 520)}
+        if order:
+            sj["order"] = order
+        if pev:
+            sj["pev"] = True
+        out["sj"] = sj
+    return out
+
+
 def wanted() -> list[str]:
     """Every HE known to the pipeline (eduskunta cache + Hankeikkuna HE numbers), newest first."""
     ek = (load_json(CACHE_DIR / "eduskunta.json", {}) or {}).get("items") or {}
@@ -156,11 +205,14 @@ def main() -> None:
         if not doc or len(doc[1] or "") < 20000:  # not yet in the open data (only the käsittelytiedot row): next run
             continue
         rec = extract(flat(doc[1]))
+        rec.update(he_content(doc[1]))
         rec["checked"] = dt.date.today().isoformat()
         rec["v"] = VERSION
         he[num] = rec
         done += 1
         found += bool(rec.get("found"))
+        if done % 40 == 0:  # a long refill keeps what it has read so far
+            save_json(OUT, cache)
     cache["fetched"] = dt.datetime.now().isoformat(timespec="seconds")
     save_json(OUT, cache)
     total = sum(1 for v in he.values() if v.get("found"))

@@ -24,9 +24,11 @@ from common import CACHE_DIR, CONFIG_DIR, TODAY, load_json, load_yaml
 
 COURTS = {"vero_kvl": ("KVL", "Keskusverolautakunta"), "tsv_finlex": ("TSV", "Tietosuojavaltuutettu"),
           "eoa_finlex": ("EOA", "Eduskunnan oikeusasiamies"), "okv_finlex": ("OKV", "Valtioneuvoston oikeuskansleri"),
-          "tes_finlex": ("TES", "Työehtosopimuksen yleissitovuuden vahvistamislautakunta")}
+          "tes_finlex": ("TES", "Työehtosopimuksen yleissitovuuden vahvistamislautakunta"),
+          "kko_valitusluvat": ("KKO", "Korkein oikeus"), "kril_ratkaisut": ("KRIL", "Kuluttajariitalautakunta"),
+          "yvtltk_ratkaisut": ("YVTltk", "Yhdenvertaisuus- ja tasa-arvolautakunta")}
 LINK_NAMES = {"hankeikkuna_kuulemiset": "hankeikkuna", "vero_kvl": "vero", "vero_ohjeet": "vero", "tsv_finlex": "finlex", "eoa_finlex": "finlex", "okv_finlex": "finlex",
-              "tes_finlex": "finlex", "maaraykset_finlex": "finlex"}
+              "tes_finlex": "finlex", "maaraykset_finlex": "finlex", "kko_valitusluvat": "finlex"}
 
 
 def classify(text: str, topics_cfg: dict) -> list[str]:

@@ -69,6 +69,7 @@ def test_build_lausunnot_files(tmp_path, monkeypatch):
                       "d2": {"ok": "noText", "stance": None},
                       "EDK-1": {"ok": True, "stance": "kannattaa", "gist": "Virasto kannattaa esitystä."}}}
     monkeypatch.setattr(build_lausunnot, "load_docs", lambda: cache["docs"])
+    monkeypatch.setattr(build_lausunnot, "_extra_caches", lambda: ({}, {}, {}, {}))
     items = [{"id": "fi-he-12-2026", "hankeUuid": "u1", "heNumerot": ["12/2026"]}, {"id": "eu-x", "heNumerot": []}]
     hk = {"u1": {"lausunnot": {"n": 3, "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=x",
                                "docs": [{"id": "d1", "org": "Liitto ry", "date": "2026-03-01", "url": "https://api.hankeikkuna.fi/a/d1.PDF"},
@@ -120,6 +121,7 @@ def test_eu_item_gets_letter_statements_and_presentations_last(tmp_path, monkeyp
     cache = {"docs": {"E1": {"ok": True, "stance": "esittely", "gist": "Ministeriö esittelee kantaa."},
                       "E2": {"ok": True, "stance": "kannattaa", "gist": "Liitto kannattaa."}}}
     monkeypatch.setattr(build_lausunnot, "load_docs", lambda: cache["docs"])
+    monkeypatch.setattr(build_lausunnot, "_extra_caches", lambda: ({}, {}, {}, {}))
     vaski = {"statements": {"U 54/2026 vp": [{"edk": "E1", "org": "valtiovarainministeriö", "person": "A B", "committee": "SuV", "date": "2026-09-01", "url": "u1"},
                                              {"edk": "E2", "org": "Liitto ry", "committee": "SuV", "date": "2026-09-02", "url": "u2"}]}}
     out = build_lausunnot.build_lausunnot([{"id": "eu-x", "ref": "COM(2026) 1", "kirjelmat": ["U 54/2026 vp"]}], {}, vaski, {})
@@ -254,3 +256,26 @@ def test_committee_ponsi_gets_its_subject():
     row = bl.committee_row({"tunnus": "YmVL 29/2026 vp", "committee": "YmV", "kind": "lausunto"},
                            {"decisionText": "että se yhtyy asiassa valtioneuvoston kantaan edellä esitetyin painotuksin."})
     assert row["gist"].startswith("Ympäristövaliokunta esittää, että se yhtyy") and row["yhtyy"]
+
+
+def test_build_lausunnot_extra_sections(tmp_path, monkeypatch):
+    """Preparatory documents, the HE's own summary, the plenary record and – for EU items – the national measures and
+    OEIL documents go to the same file; the item's summary lists them in "x" so the drawer loads the file."""
+    monkeypatch.setattr(build_lausunnot, "LAUSUNNOT_DIR", tmp_path)
+    monkeypatch.setattr(build_lausunnot, "load_docs", lambda: {})
+    he = {"5/2026": {"sisalto": "Esityksessä ehdotetaan.", "sj": {"order": "tavallinen", "text": "Tavallinen."}}}
+    pl = {"5/2026": {"aanestykset": [{"date": "2026-06-01", "tulos": [100, 50, 0, 49]}], "lausumat": ["Eduskunta edellyttää."], "ev": "EV 1/2026 vp"}}
+    nim = {"32024L0001": {"deadline": "2026-01-01", "measures": []}}
+    oeil = {"2023/0001(COD)": {"docs": [{"group": "EP", "label": "Parlamentin valiokunnan mietintö", "ref": "A9-1/2024", "date": "2024-01-01"}], "np": 2}}
+    monkeypatch.setattr(build_lausunnot, "_extra_caches", lambda: (he, pl, nim, oeil))
+    items = [{"id": "fi-he-5-2026", "hankeUuid": "u1", "heNumerot": ["5/2026"]},
+             {"id": "eu-2023-0001", "scope": "eu", "celex": "32024L0001", "procedure": "2023/0001(COD)"}]
+    hk = {"u1": {"valmistelu": [{"t": "ASETTAMISPAATOS", "n": "Asettamispäätös", "d": "2025-01-01", "u": "https://x/a.pdf"}]}}
+    out = build_lausunnot.build_lausunnot(items, hk, {}, {})
+    assert out["fi-he-5-2026"]["x"] == ["valmistelu", "he", "taysistunto"] and out["fi-he-5-2026"]["n"] == 0
+    assert out["eu-2023-0001"]["x"] == ["nim", "eu_asiakirjat"]
+    d = json.loads((tmp_path / "fi-he-5-2026.json").read_text(encoding="utf-8"))
+    assert d["he"]["tunnus"] == "HE 5/2026 vp" and d["taysistunto"]["lausumat"] == ["Eduskunta edellyttää."]
+    assert d["valmistelu"]["keskeiset"][0]["label"] == "Hanke asetettu"
+    e = json.loads((tmp_path / "eu-2023-0001.json").read_text(encoding="utf-8"))
+    assert e["nim"] == {"deadline": "2026-01-01"} and e["eu_asiakirjat"]["np"] == 2 and e["eu_asiakirjat"]["url"].endswith("2023/0001(COD)")

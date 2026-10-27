@@ -1039,6 +1039,126 @@ def run_finlex_list(cfg: dict, prev: list[dict], rows_all: dict, client: Client,
     return list(out.values())
 
 
+KKO_VL_ITEM = re.compile(r'__documentListItem"')
+KKO_VL_HREF = re.compile(r'"href":"(/fi/oikeuskaytanto/korkein-oikeus/valitusluvat/(\d{4})/(\d+))"')
+KKO_VL_REF = re.compile(r'"children":"(KKO VL:\d{4}-\d+)"')
+KKO_VL_TOKEN = re.compile(r'\["\$","div","([^"]+)",\{"className":"[^"]*__chip|\["\$","\$1","([^"]+)",\{')
+KKO_VL_TITLE = re.compile(r"<title>\s*KKO VL:[^|]*\|\s*(\d{1,2}\.\d{1,2}\.\d{4})")
+KKO_VL_MAX_DETAIL = 40  # new cards whose date and question are read per run (Finlex is rate limited)
+
+
+def parse_kko_valitusluvat(h: str) -> list[dict]:
+    """The supreme court's leave-to-appeal listing: one entry per card – reference, url and keywords ("Todistelu –
+    Hyödyntämiskielto"). The listing has no dates; they come from each card's own page."""
+    h2 = h.replace('\\"', '"')
+    parts = KKO_VL_ITEM.split(h2)[1:]
+    out, seen = [], set()
+    for part in parts:
+        m = KKO_VL_HREF.search(part)
+        if not m or m.group(1) in seen:
+            continue
+        seen.add(m.group(1))
+        ref = KKO_VL_REF.search(part)
+        kws: list[str] = []
+        for chip, sub in KKO_VL_TOKEN.findall(part):
+            if chip:
+                kws.append(chip)
+            elif sub and kws:
+                kws[-1] = f"{kws[-1]} – {sub}" if " – " not in kws[-1] else f"{kws[-1]}, {sub}"
+        out.append({"path": m.group(1), "year": int(m.group(2)), "n": int(m.group(3)),
+                    "ref": ref.group(1) if ref else f"KKO VL:{m.group(2)}-{m.group(3)}", "keywords": kws})
+    return out
+
+
+def parse_kko_valituslupa(h: str) -> dict:
+    """A card's own page: the date (page title) and the question the leave was granted on."""
+    out: dict = {}
+    m = KKO_VL_TITLE.search(h)
+    if m:
+        out["date"] = iso_dmy(m.group(1))
+    h2 = h.replace('\\"', '"')
+    start = h2.find("Valitusluvat | Korkein oikeus")
+    stop = h2.find("Valituslupakortti sisältää")
+    window = h2[start:stop] if 0 <= start < stop else h2
+    texts = [clean(re.sub(r"(\\+n|\s)+", " ", t)) for t in re.findall(r'"children":"([^"]{40,})"', window)]
+    texts = [t for t in texts if not t.startswith(("KKO VL:", "Finlex on", "Voit antaa"))]
+    q = next((t for t in texts if re.match(r"(Kysymys|Kysymykset|Onko|Oliko|Voiko|Saako|Miten|Mitä)\b", t)), texts[-1] if texts else None)
+    if q:
+        out["summary"] = q
+    return out
+
+
+def run_kko_valitusluvat(cfg: dict, prev: list[dict], rows_all: dict, client: Client, defaults: dict) -> list[dict]:
+    client.set_delay(FINLEX, 1.5)
+    years = [TODAY.year] + ([TODAY.year - 1] if TODAY.month <= 2 else [])
+    entries = []
+    for y in years:
+        entries += parse_kko_valitusluvat(client.text(cfg["url"].format(year=y)))
+    if not entries and TODAY.month > 1:
+        raise RuntimeError("Finlex: KKO:n valituslupalistalta ei löytynyt yhtään korttia – sivurakenne lienee muuttunut")
+    by_id = {r["id"]: r for r in prev}
+    out, read = {}, 0
+    for e in entries:
+        rid = f"kko-vl-{e['year']}-{e['n']}"
+        old = by_id.get(rid, {})
+        row = {"id": rid, "source": cfg.get("_name") or cfg.get("name"), "authority": cfg["authority"], "scope": cfg["scope"],
+               "laji": cfg["laji"], "kind": cfg.get("kind") or "Valituslupa myönnetty", "ref": e["ref"],
+               "title": "; ".join(e["keywords"][:4]) or e["ref"], "keywords": e["keywords"], "url": FINLEX + e["path"],
+               "status": "vireillä", "date": old.get("date"), "summary": old.get("summary")}
+        if not old.get("date") and read < KKO_VL_MAX_DETAIL:
+            try:
+                row.update({k: v for k, v in parse_kko_valituslupa(client.text(row["url"])).items() if v})
+            except Exception as ex:  # noqa: BLE001 – the card is listed again next run
+                log(f"warn: KKO VL {e['ref']}: {ex}")
+            read += 1
+        if row.get("date"):
+            out[rid] = compact(row)
+    for rid, old in by_id.items():
+        out.setdefault(rid, old)
+    return list(out.values())
+
+
+RSS_ITEM = re.compile(r"<item>(.*?)</item>", re.S)
+
+
+def parse_rss_items(xml: str) -> list[dict]:
+    """title, link, date (pubDate) and guid number of each <item> of a WordPress feed."""
+    out = []
+    for it in RSS_ITEM.findall(xml or ""):
+        g = lambda tag: (re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", it, re.S) or [None, None])[1]  # noqa: E731
+        title = clean(re.sub(r"<!\[CDATA\[|\]\]>", "", g("title") or ""))
+        link = clean(re.sub(r"<!\[CDATA\[|\]\]>", "", g("link") or ""))
+        pid = re.search(r"[?&](?:amp;|#038;)?p=(\d+)", g("guid") or "")
+        if title and link:
+            out.append({"title": title, "url": link, "date": iso_rfc822(g("pubDate")), "pid": pid.group(1) if pid else None})
+    return out
+
+
+def run_rss_rulings(cfg: dict, prev: list[dict], rows_all: dict, client: Client, defaults: dict) -> list[dict]:
+    """Decisions a board publishes as a WordPress feed (Kuluttajariitalautakunta, Yhdenvertaisuus- ja
+    tasa-arvolautakunta). config: feeds [{url, kind}], id_prefix, authority, aihealueet."""
+    by_id = {r["id"]: r for r in prev}
+    out, failures = {}, []
+    for feed in cfg["feeds"]:
+        try:
+            items = parse_rss_items(client.text(feed["url"]))
+        except Exception as e:  # noqa: BLE001
+            failures.append(f"{feed['url']}: {e}")
+            continue
+        for e in items:
+            key = e["pid"] or re.sub(r"\W+", "-", e["url"].rstrip("/").rsplit("/", 1)[-1])[:60]
+            rid = f"{cfg['id_prefix']}-{key}"
+            row = compact({"id": rid, "source": cfg.get("_name") or cfg.get("name"), "authority": cfg["authority"], "scope": cfg["scope"],
+                           "laji": cfg["laji"], "kind": feed.get("kind") or cfg.get("kind") or "Ratkaisu", "ref": None,
+                           "title": e["title"], "date": e["date"], "url": e["url"], "status": "annettu", "keywords": []})
+            out[rid] = {**by_id.get(rid, {}), **row}
+    if failures and len(failures) == len(cfg["feeds"]):
+        raise RuntimeError(failures[0])
+    for rid, old in by_id.items():
+        out.setdefault(rid, old)
+    return list(out.values())
+
+
 # ---------------------------------------------------------------------------------------------------
 # orchestration
 # ---------------------------------------------------------------------------------------------------
@@ -1049,11 +1169,12 @@ RUNNERS = {
     "edpb_guidelines": run_edpb_guidelines, "vero_ohjeet": run_vero_ohjeet, "vero_kvl": run_vero_kvl,
     "traficom_maaraykset": run_traficom, "tsv_finlex": run_tsv,
     "eoa_finlex": run_finlex_list, "okv_finlex": run_finlex_list, "tes_finlex": run_finlex_list, "maaraykset_finlex": run_finlex_list,
+    "kko_valitusluvat": run_kko_valitusluvat, "kril_ratkaisut": run_rss_rulings, "yvtltk_ratkaisut": run_rss_rulings,
 }
 # dependents after their providers: lausuntopyynnöt borrow deadlines from tiedotteet, guidelines check open consultations
 ORDER = ["fiva_tiedotteet", "fiva_lausuntopyynnot", "esma_consultations", "eba_consultations", "eiopa_consultations",
          "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex",
-         "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex"]
+         "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex", "kko_valitusluvat", "kril_ratkaisut", "yvtltk_ratkaisut"]
 
 
 def prune(rows: list[dict], cfg: dict, defaults: dict) -> list[dict]:
