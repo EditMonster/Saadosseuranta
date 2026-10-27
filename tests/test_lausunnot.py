@@ -230,3 +230,27 @@ def test_committee_view_from_pdf_text():
     text = ("VALTIONEUVOSTON SELVITYS\nValtioneuvosto kannattaa ehdotusta ja pitää sitä hyvänä kokonaisuutena koko unionin kannalta.\n"
             "VALIOKUNNAN KANNANOTOT\nValiokunta pitää ehdotuksen tavoitetta kannatettavana mutta katsoo, että siirtymäaika on liian lyhyt.")
     assert fl.pick_gist(text.split("VALIOKUNNAN KANNANOTOT")[1], "Valiokunta", prefer=fl.COMMITTEE_VIEW).startswith("Valiokunta pitää")
+
+
+def test_committee_view_ignores_dissent_after_signature(monkeypatch):
+    # YmVL 29/2026 vp: after the signature come the members' "Eriävä mielipide" with its own "Perustelut"
+    text = ("Ympäristövaliokunta\nVALIOKUNNAN KANNANOTOT\nPerustelut\n"
+            "Valiokunta pitää tätä hyvänä ja katsoo, että lohikannan tilaa koskevat uusimmat tiedot tulee ottaa huomioon.\n"
+            "Lausunto\nYmpäristövaliokunta ilmoittaa, että se yhtyy valtioneuvoston kantaan. Helsingissä 14.10.2026 "
+            "Asian ratkaisevaan käsittelyyn ovat ottaneet osaa.\nEriävä mielipide\nPerustelut\n"
+            "Valiokunnan enemmistön kanta on mielestämme virheellinen kalakantojen kannalta.\n"
+            "Mielipide\nEdellä olevan perusteella esitämme, että suuri valiokunta muuttaa valtioneuvoston kantaa.\n")
+    monkeypatch.setattr(fl, "pdf_text", lambda data, n: (text, 3))
+    gist = fl.summarise_committee(b"%PDF")["gist"]
+    assert gist.startswith("Valiokunta pitää tätä hyvänä") and "esitämme" not in gist and "enemmistön" not in gist
+
+
+def test_committee_docs_reread_when_reader_improves():
+    assert fl.COMMITTEE_VERSION >= 2
+
+
+def test_committee_ponsi_gets_its_subject():
+    import build_lausunnot as bl
+    row = bl.committee_row({"tunnus": "YmVL 29/2026 vp", "committee": "YmV", "kind": "lausunto"},
+                           {"decisionText": "että se yhtyy asiassa valtioneuvoston kantaan edellä esitetyin painotuksin."})
+    assert row["gist"].startswith("Ympäristövaliokunta esittää, että se yhtyy") and row["yhtyy"]

@@ -37,6 +37,7 @@ SHARD_DIR = CACHE_DIR / "lausunnot"          # one file per source and year: a r
 BUDGET_S = int(os.environ.get("LAUSUNNOT_BUDGET_S", 15 * 60))
 WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
 PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
+COMMITTEE_VERSION = 2  # 2: the members' dissent/opinion after the signature is no longer read as the committee's view
 FORMAT_VERSION = 2   # 2: Outlook .msg, Word .doc, pptx/odt, plain text/e-mail/RTF and images are read too
 STRIKES = 5
 MAX_PAGES = 4
@@ -427,15 +428,27 @@ def summarise_msg(data: bytes, org: str = "", title: str = "") -> dict:
 COMMITTEE_VIEW = r"\bvaliokun\w*|\bvaliokunnan\b"
 
 
+SIGNATURE = re.compile(r"\bHelsingissä \d{1,2}\.\d{1,2}\.\d{4}")
+DISSENT_VOICE = re.compile(r"\b(esitämme|ehdotamme|katsomme|edellytämme)\b", re.I)
+
+
 def summarise_committee(data: bytes) -> dict:
     """A committee opinion/report (PeVL, YmVL, …M): the sentence where the committee states its own view,
     read from the first pages that hold the committee's considerations (no stance: it is not a respondent)."""
     raw, pages = pdf_text(data, 12)
     text = clean_text(raw)
+    # the committee's own text ends at the signature ("Helsingissä 14.10.2026"); after it come the members'
+    # dissenting opinions ("Edellä olevan perusteella esitämme …"), which are not the committee's view
+    if (sig := SIGNATURE.search(text)):
+        text = text[:sig.start()]
     # skip the summary of the government proposal: the committee's considerations start at "VALIOKUNNAN KANNANOTOT"/"Perustelut"
     m = re.search(r"\n(VALIOKUNNAN KANNANOTOT|Valiokunnan kannanotot|PERUSTELUT|Perustelut)\b", text)
     body = text[m.end():] if m else text
     gist = pick_gist(body, "Valiokunta", prefer=COMMITTEE_VIEW) or pick_gist(text, "Valiokunta", prefer=COMMITTEE_VIEW)
+    if gist:
+        gist = re.sub(r"^(?:[A-ZÄÖÅ]{3,}\s+){1,4}(?=[A-ZÄÖÅ][a-zäöå])", "", gist)  # a heading in capitals glued to the sentence
+    if gist and DISSENT_VOICE.search(gist):
+        gist = None
     return {"ok": True if gist else "noText", "pages": pages, "stance": None, "gist": gist or None}
 
 
@@ -536,6 +549,8 @@ def main():
             return OCR_READY and not v.get("ocrTried")  # scanned before OCR was available: read again
         if v.get("ok") == "notPdf" or (v.get("ok") == "error" and "document.xml" in (v.get("error") or "")):
             return int(v.get("fmt") or 1) < FORMAT_VERSION  # a format the reader learned since: read again
+        if c["src"] == "vk" and int(v.get("vk") or 1) < COMMITTEE_VERSION:
+            return True  # the committee reader improved since: read again
         if c.get("esittely") and v.get("ok") is True and v.get("stance") != "esittely":
             v["stance"] = "esittely"
         return False
@@ -563,6 +578,7 @@ def main():
             ctype = (r.headers.get("content-type") or "").lower()
             if c["src"] == "vk" and r.content[:4] == b"%PDF":
                 rec.update(summarise_committee(r.content))
+                rec["vk"] = COMMITTEE_VERSION
             else:
                 rec.update(summarise_file(r.content, c["url"], ctype, c["org"], c["title"]))
             rec["fmt"] = FORMAT_VERSION

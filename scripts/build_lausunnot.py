@@ -99,6 +99,9 @@ def committee_row(d: dict, rep: dict | None, summ: dict | None = None) -> dict:
         ponsi = ponsi[:420].rsplit(" ", 1)[0].rstrip(",;:") + " …"
     view = (summ or {}).get("gist") if (summ or {}).get("ok") is True else None
     gist = ponsi if ponsi and not GENERIC_PONSI.search(ponsi) else None
+    if gist and gist.startswith("että "):  # the ponsi is stored without its subject: "että se yhtyy …"
+        name = COMMITTEE_NAMES.get(abbr or "") or rep.get("committeeName") or "Valiokunta"
+        gist = f"{name[:1].upper()}{name[1:]} esittää, {gist}"
     row = {"tunnus": d["tunnus"], "kind": d.get("kind") or rep.get("kind"), "committee": abbr,
            "committeeName": COMMITTEE_NAMES.get(abbr or "") or rep.get("committeeName"), "date": d.get("date") or rep.get("date"),
            "decision": rep.get("decision") if rep.get("decision") not in (None, "muu") else None, "gist": gist or None,
