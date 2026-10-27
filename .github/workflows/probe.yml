@@ -1,0 +1,20 @@
+name: Lähdekoe (väliaikainen)
+on: workflow_dispatch
+permissions: {contents: read}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import urllib.request
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+          for u in ["https://www.lausuntopalvelu.fi/FI/Proposal/Open","https://www.lausuntopalvelu.fi/api/v1/Lausuntopalvelu.svc/",
+                    "https://valtioneuvosto.fi/paatokset","https://valtioneuvosto.fi/arviointineuvosto/lausunnot",
+                    "https://oikeuskansleri.fi/fi/ratkaisut/","https://www.oikeusasiamies.fi/fi/web/guest/ratkaisut",
+                    "https://energiavirasto.fi/lausuntopyynnot","https://valtioneuvosto.fi/rss"]:
+              try:
+                  r=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":UA,"Accept-Language":"fi"}),timeout=30)
+                  b=r.read(); print("PROBE",r.status,len(b),"CF" if b"Just a moment" in b[:4000] else "",u)
+              except Exception as e: print("PROBE ERR",u,str(e)[:120])
+          PY
