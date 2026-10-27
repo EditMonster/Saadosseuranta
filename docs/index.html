@@ -568,11 +568,28 @@ a{border-bottom-color:rgba(74,58,44,.25)}
 /* yläpalkki: tervehdys · avustaja · ohjaimet */
 #gbar{position:fixed;z-index:50;top:14px;left:112px;right:28px;height:54px;border-radius:999px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 8px 0 8px}
 #gbar .who{display:flex;align-items:center;gap:10px;min-width:0}
-#gbar .avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#fff,#e6d7c5);color:#5a4636;font-weight:600;font-size:14px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),0 2px 6px rgba(64,44,26,.15)}
 #gbar .hello{font-weight:600;font-size:14.5px;white-space:nowrap}
 #gbar .hello small{display:block;font-weight:400;font-size:11.5px;color:var(--muted)}
-#gbar .glogo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:44px;display:flex;align-items:center;pointer-events:none}
-#gbar .glogo img{height:44px;width:auto;display:block}
+#gbar .glogo{height:38px;display:flex;align-items:center;flex:none;padding-left:8px}
+#gbar .glogo img{height:38px;width:auto;display:block}
+#gbar .gsearch{position:relative;flex:0 1 520px;display:flex;align-items:center;gap:10px;height:40px;border-radius:999px;padding:0 10px 0 8px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.7);min-width:0}
+#gbar .gsearch:focus-within{background:rgba(255,255,255,.85);box-shadow:0 0 0 3px var(--signal-dim)}
+#gbar .gsearch input{flex:1;min-width:0;border:0!important;background:transparent!important;padding:0!important;font:inherit;font-size:13.5px!important;color:var(--fg);outline:none;box-shadow:none}
+#gbar .gsearch kbd{font-family:var(--sans);font-size:11px;color:var(--dim);border:1px solid rgba(74,58,44,.2);border-radius:6px;padding:0 6px;line-height:18px}
+#gbar .orb{width:24px;height:24px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#c9b6ff 30%,#7b6cf0 62%,#3e7bd8 100%);box-shadow:0 0 12px rgba(123,108,240,.45)}
+:root[data-theme="dark"] #gbar .gsearch{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)}
+:root[data-theme="dark"] #gbar .gsearch:focus-within{background:rgba(255,255,255,.12)}
+#gs-res{position:fixed;z-index:55;top:74px;left:50%;transform:translateX(-50%);width:min(760px,calc(100vw - 32px));max-height:min(68vh,640px);overflow-y:auto;border-radius:24px;padding:8px;
+  background:var(--glass-bar);-webkit-backdrop-filter:blur(34px) saturate(170%);backdrop-filter:blur(34px) saturate(170%);border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow)}
+#gs-res .gs-head{font-size:11.5px;color:var(--muted);padding:6px 12px 8px}
+#gs-res .gs-row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:12px;width:100%;text-align:left;padding:9px 12px;border-radius:14px;align-items:baseline}
+#gs-res .gs-row.on,#gs-res .gs-row:hover{background:rgba(255,255,255,.75)}
+:root[data-theme="dark"] #gs-res .gs-row.on,:root[data-theme="dark"] #gs-res .gs-row:hover{background:rgba(255,255,255,.08)}
+#gs-res .gs-type{font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#gs-res .gs-t{display:block;font-weight:500;line-height:1.3}
+#gs-res .gs-m{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#gs-res mark{background:var(--signal-dim);color:inherit;border-radius:3px;padding:0 1px}
+#gs-res .gs-empty{padding:16px 14px;color:var(--muted);font-size:13px}
 #gbar .glogo .lg-d{display:none}
 :root[data-theme="dark"] #gbar .glogo .lg-l{display:none}
 :root[data-theme="dark"] #gbar .glogo .lg-d{display:block}
@@ -674,7 +691,11 @@ main{margin-top:6px}
   #grail{display:none}
   #gbar{left:10px;right:10px;height:50px}
   #gbar .hello small,#gbar .ctl a{display:none}
-  #gbar .glogo,#gbar .glogo img{height:32px}
+  #gbar .glogo,#gbar .glogo img{height:28px}
+  #gbar .gsearch{flex:1}
+  #gbar .gsearch kbd,#gbar .orb{display:none}
+  #gs-res{top:68px}
+  #gs-res .gs-row{grid-template-columns:1fr;gap:2px}
   .view{border-radius:24px;padding:16px 14px!important}
   .name{font-size:24px}
 }
@@ -698,7 +719,6 @@ body *{text-transform:none!important;letter-spacing:normal!important}
 .name{letter-spacing:-.02em!important}.view-head h2,.drawer h3{letter-spacing:-.01em!important}.kpi .v{letter-spacing:-.02em!important}
 /* yläpalkin alle vierivä sisältö ei saa näkyä läpi */
 #gbar{background:var(--glass-strong)!important;-webkit-backdrop-filter:blur(34px) saturate(170%);backdrop-filter:blur(34px) saturate(170%)}
-#gbar .avatar img{width:26px;height:26px;object-fit:contain;display:block}
 /* painikkeet pillereinä */
 .follow-btn,.modal button:not(.close),.drawer button:not(.close):not(.ev):not(.fr),.linkbtn,.toolbar .seg button,.view .seg button,.act-btn{border-radius:999px!important}
 .follow-btn,.modal button:not(.close){border:1px solid rgba(255,255,255,.65)!important;background:rgba(255,255,255,.42)!important;color:var(--fg)!important;padding:5px 12px!important;font-size:12px!important}
@@ -713,7 +733,6 @@ th{font-weight:500;color:var(--muted)}
 :root{--glass-bar:rgba(250,246,240,.88)}
 :root[data-theme="dark"]{--glass-bar:rgba(30,26,23,.9)}
 #gbar,.tabs{background:var(--glass-bar)!important}
-#gbar .avatar{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:600}
 
 </style>
 </head>
@@ -2527,12 +2546,11 @@ Promise.all([
   const hour=new Date().getHours(); const hi=hour<10?"Hyvää huomenta":(hour<17?"Hyvää päivää":"Hyvää iltaa");
   /* the page is shared by a team: greet by the name saved in Jakamisen asetukset, if any */
   const nm=(typeof SHARE!=="undefined"&&SHARE.name)?String(SHARE.name).trim():"";
-  const av="§";
   /* the logo in the middle of the bar: the page's own logo files (embedded as data URIs in the artifact) */
   const lg=[["light","l"],["dark","d"]].map(([k,c])=>{ const im=document.querySelector(".logo."+k); return im?`<img class="lg-${c}" src="${im.getAttribute("src")}" alt="">`:""; }).join("");
   const esc2=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  bar.innerHTML=`<div class="who"><span class="avatar">${av}</span><span class="hello">${hi}${nm?", "+esc2(nm.split(/\s+/)[0]):""}<small id="g-sub">Säädösseuranta</small></span></div>
-    <span class="glogo" aria-hidden="true">${lg}</span>`;
+  bar.innerHTML=`<div class="who"><span class="glogo" aria-hidden="true">${lg}</span><span class="hello">${hi}${nm?", "+esc2(nm.split(/\s+/)[0]):""}<small id="g-sub">Säädösseuranta</small></span></div>
+    <div class="gsearch" role="search"><i class="orb" aria-hidden="true"></i><input type="search" id="gq" autocomplete="off" spellcheck="false" placeholder="Hae kaikesta – säädökset, EU, kilpailutukset, yrityskaupat, ratkaisut" aria-label="Hae kaikesta sisällöstä valinnoista riippumatta" aria-controls="gs-res" aria-expanded="false"><kbd>/</kbd></div>`;
   const ctl=$(".status .ctl"); if(ctl) bar.appendChild(ctl);  /* the page's own controls move here: ids and handlers stay */
   document.body.prepend(bar);
   /* the logo files carry a faint (3 %) tint over their whole rectangle, invisible on white but a visible box on
@@ -2549,6 +2567,74 @@ Promise.all([
     if(im.complete&&im.naturalWidth) fix(); else im.onload=fix;
   });
   bar.addEventListener("click",e=>{ if(e.target.closest(".ctl button")) setTimeout(sync,0); });
+
+  /* Haku kaikesta: every item of every view – also those outside the chosen tab, type and topic filters, folder,
+     hidden items and closed tenders. All words must match (title, reference, summary, keywords, parties, authority,
+     statutes, stages); the title and reference weigh most. Results open the item's own card. */
+  const gq=bar.querySelector("#gq"); const res=document.createElement("div"); res.id="gs-res"; res.setAttribute("role","listbox"); res.hidden=true; document.body.appendChild(res);
+  const norm=t=>String(t||"").toLowerCase().normalize("NFKD").replace(/[\u0300-\u0302\u0304-\u0307\u0309-\u036f]/g,"").replace(/[^\p{L}\p{M}\p{N}/.:§-]+/gu," ");
+  const HAY=new WeakMap();
+  const typeOf=it=>{
+    if(it.scope==="hankinta") return "Kilpailutus";
+    if(it.scope==="yrityskauppa") return it.segment==="kilpailunrajoitus"?"Kilpailunrajoitus":"Yrityskauppa";
+    if(it.scope==="ratkaisu") return it.courtName||it.court||"Ratkaisu";
+    const k=it.kind||({laki:"Laki",asetus:"Asetus",eu:"EU-säädös",kuuleminen:"Kuuleminen",ohje:"Ohje",signaali:"Aloite",kirjelma:"U/E-kirjelmä",delegoitu:"Delegoitu säädös"})[it.laji]||"";
+    return (it.scope==="eu"&&!/^EU/.test(k)?"EU · ":"")+k;
+  };
+  const A=x=>Array.isArray(x)?x:(x==null||x===""?[]:[x]);  /* some sources give a string where others give a list */
+  const hay=it=>{ let h=HAY.get(it); if(h) return h;
+    const parts=[it.ref,it.tunnus,it.ecli,it.caseNo,it.diary,A(it.sk).join(" "),A(it.heNumerot).map(x=>"HE "+x).join(" "),it.celex,it.maoNumber];
+    const body=[it.summary,A(it.keywords).join(" "),A(it.topics).join(" "),it.ministry,it.authority,it.buyer,it.winner,it.cpvLabel,it.court,it.courtName,it.procedure,it.status,
+      A(it.parties).map(p=>(p&&p.name)||p).join(" "),A(it.statutes).map(x=>typeof x==="string"?x:((x.sk||x.celex||"")+" "+(x.section||""))).join(" "),A(it.events).map(e=>e&&e.label).join(" "),it.signer,it.party,typeOf(it)];
+    h={t:" "+norm(it.fullTitle||it.title)+" ", r:" "+norm(parts.filter(Boolean).join(" "))+" ", b:" "+norm(body.filter(Boolean).join(" "))+" "}; HAY.set(it,h); return h; };
+  const STOP=new Set(["ja","tai","sekä","seka","eli","on","of","the","and","in","for","to","a","an","och","av","i","om","de","la","le","et"]);
+  /* short words (≤ 3 letters: "alv", "eu", "he") match only at a word start; longer ones anywhere (compounds: tietosuoja → tietosuojalaki) */
+  /* common abbreviations also match the written-out form */
+  const ALIAS=Object.fromEntries(Object.entries({alv:"arvonlisävero",kkv:"kilpailu- ja kuluttajavirasto",fiva:"finanssivalvonta",tsv:"tietosuojavaltuutettu",
+    eoa:"oikeusasiamies",okv:"oikeuskansleri",mao:"markkinaoikeus",kho:"korkein hallinto-oikeus",kko:"korkein oikeus",eut:"unionin tuomioistuin",
+    tes:"työehtosopimus",gdpr:"tietosuoja",dora:"digitaalinen häiriönsietokyky",nis2:"kyberturvallisuus",csrd:"kestävyysraportointi"}).map(([k,v])=>[k,norm(v).trim()]));
+  const terms=q=>{ const all=norm(q).trim().split(/\s+/).filter(Boolean); const w=all.filter(x=>!STOP.has(x)&&x!=="-"); return (w.length?w:all).map(x=>({w:x,short:x.replace(/[^\p{L}\p{N}]/gu,"").length<=3,alt:ALIAS[x]})); };
+  const has=(h,t)=>(t.short?(h.includes(" "+t.w)||h.includes("-"+t.w)||h.includes("/"+t.w)):h.includes(t.w))||(!!t.alt&&h.includes(t.alt));
+  let hits=[], cur=-1, tmr=null;
+  const all=()=>[...DATA,...TENDERS,...MERGERS,...RULINGS];
+  function search(q){
+    const ts=terms(q); if(!ts.length) return [];
+    const phrase=" "+norm(q).trim(); const out=[];
+    for(const it of all()){
+      const h=hay(it); let sc=0, ok=true;
+      for(const t of ts){ const inT=has(h.t,t), inR=has(h.r,t), inB=has(h.b,t); if(!inT&&!inR&&!inB){ ok=false; break; }
+        const whole=hh=>hh.includes(" "+t.w+" ")||hh.includes(" "+t.w+"-")||hh.includes(" "+t.w+":")||(!!t.alt&&hh.includes(t.alt));
+        sc+=inR?6:(inT?(whole(h.t)?7:(h.t.includes(" "+t.w)?4:3)):(whole(h.b)?2:1)); }
+      if(!ok) continue;
+      if(ts.length>1&&(h.r.includes(phrase)||h.t.includes(phrase)||h.b.includes(phrase))) sc+=10;
+      if(!it.done&&it.status!=="poistunut") sc+=1.5;
+      out.push({it,sc,d:(it.events&&it.events.length?it.events[it.events.length-1].date:(it.date||it.deadline||""))});
+    }
+    return out.sort((a,b)=>b.sc-a.sc||String(b.d).localeCompare(String(a.d))).slice(0,40).map(x=>x.it);
+  }
+  const hl=(t,ts)=>{ let x=esc(String(t||"").normalize("NFKD"));  /* same decomposition as the search terms, so ä/ö/å words highlight too */ ts.flatMap(t=>t.alt?[t,{w:t.alt,short:false}]:[t]).forEach(({w,short})=>{ const src=w.replace(/[.*+?^${}()|[\]\\/]/g,"\\$&"); try{ x=x.replace(new RegExp((short?"(?<![\\p{L}\\p{N}])":"")+"("+src+")","giu"),"<mark>$1</mark>"); }catch(e){} }); return x; };
+  function draw(){
+    const q=gq.value.trim(); if(!q){ res.hidden=true; gq.setAttribute("aria-expanded","false"); return; }
+    hits=search(q); cur=hits.length?0:-1; const words=terms(q);
+    const hidden=it=>state.hidden&&state.hidden.has(it.id);
+    res.innerHTML=hits.length?`<div class="gs-head">${hits.length>=40?"40+":hits.length} osumaa kaikesta sisällöstä – valinnat ja suodattimet eivät rajaa hakua</div>`+hits.map((it,i)=>{
+      const st=(typeof statusOf==="function"&&(it.scope==="fi"||it.scope==="eu"))?statusOf(it).text:(it.status||"");
+      return `<button type="button" role="option" class="gs-row${i===0?" on":""}" data-i="${i}" aria-selected="${i===0}"><span class="gs-type">${esc(typeOf(it))}</span><span class="gs-main"><span class="gs-t">${hl(it.fullTitle||it.title,words)}</span><span class="gs-m">${hl(it.ref||"",words)}${st?` · ${esc(st)}`:""}${it.ministry||it.buyer||it.authority?` · ${esc(it.ministry||it.buyer||it.authority)}`:""}${hidden(it)?" · piilotettu":""}</span></span></button>`; }).join("")
+      :`<div class="gs-empty">Ei osumia haulla ”${esc(q)}”. Haku kattaa otsikot, tunnukset (HE, säädösnumero, CELEX, diaari), tiivistelmät, asiasanat, osapuolet ja viranomaiset.</div>`;
+    res.hidden=false; gq.setAttribute("aria-expanded","true");
+  }
+  const pick=i=>{ const it=hits[i]; if(!it) return; res.hidden=true; gq.blur(); openItem(it.id); };
+  gq.addEventListener("input",()=>{ clearTimeout(tmr); tmr=setTimeout(draw,90); });
+  gq.addEventListener("focus",()=>{ if(gq.value.trim()) draw(); });
+  gq.addEventListener("keydown",e=>{
+    if(e.key==="ArrowDown"||e.key==="ArrowUp"){ e.preventDefault(); if(!hits.length) return; cur=(cur+(e.key==="ArrowDown"?1:-1)+hits.length)%hits.length;
+      res.querySelectorAll(".gs-row").forEach((r,i)=>{ r.classList.toggle("on",i===cur); r.setAttribute("aria-selected",String(i===cur)); if(i===cur) r.scrollIntoView({block:"nearest"}); }); }
+    else if(e.key==="Enter"){ e.preventDefault(); pick(cur<0?0:cur); }
+    else if(e.key==="Escape"){ res.hidden=true; gq.blur(); }
+  });
+  res.addEventListener("mousedown",e=>{ const r=e.target.closest(".gs-row"); if(r){ e.preventDefault(); pick(+r.dataset.i); } });
+  document.addEventListener("mousedown",e=>{ if(!res.hidden&&!e.target.closest("#gs-res")&&!e.target.closest(".gsearch")) res.hidden=true; });
+  document.addEventListener("keydown",e=>{ if(e.key==="/"&&!/input|textarea|select/i.test((document.activeElement||{}).tagName||"")&&!e.metaKey&&!e.ctrlKey){ e.preventDefault(); gq.focus(); gq.select(); } });
 
   /* vasen sivupalkki */
   const rail=document.createElement("nav"); rail.id="grail"; rail.setAttribute("aria-label","Näkymät");
