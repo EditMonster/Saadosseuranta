@@ -1,21 +1,21 @@
 {
  "arviointineuvosto": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "asiat": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "avoimuus": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -23,49 +23,49 @@
  "caselaw": {
   "last_error": null,
   "last_fail": "2026-10-21T15:36:46Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "curia": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "eduskunta": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "eu": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "eu_mergers": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "eu_signals": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "finlex": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -73,14 +73,14 @@
  "hankeikkuna": {
   "last_error": null,
   "last_fail": "2026-10-23T10:02:39Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "hankinnat": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -88,35 +88,35 @@
  "hediff": {
   "last_error": null,
   "last_fail": "2026-10-18T17:13:36Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "history": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "hys": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "kkv": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "kkv_valvonta": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -124,7 +124,7 @@
  "lausunnot": {
   "last_error": null,
   "last_fail": "2026-10-23T10:02:39Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -132,21 +132,21 @@
  "mao": {
   "last_error": null,
   "last_fail": "2026-10-22T04:41:31Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "nim": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "oeil": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -154,63 +154,63 @@
  "paatokset": {
   "last_error": null,
   "last_fail": "2026-10-21T16:14:56Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "regdel": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "sopimuskaudet": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "suunnitelmat": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "taysistunto": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "ted": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "toimiala": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "toimittajat": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
  },
  "ue": {
   "last_error": null,
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
@@ -218,7 +218,7 @@
  "vaski": {
   "last_error": null,
   "last_fail": "2026-10-18T12:34:15Z",
-  "last_ok": "2026-10-27T22:14:55Z",
+  "last_ok": "2026-10-27T22:57:08Z",
   "ok": true,
   "outage": false,
   "streak": 0
