@@ -15,6 +15,7 @@ import sys
 import traceback
 
 import build
+import fetch_asiat
 import fetch_avoimuus
 import fetch_caselaw
 import fetch_curia
@@ -48,6 +49,7 @@ STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
     ("vaski", fetch_vaski.main),
+    ("asiat", fetch_asiat.main),  # eduskunta.fi asia pages: every expert statement and committee opinion/report
     ("finlex", fetch_finlex.main),
     ("eu", fetch_eu.main),
     ("eu_signals", fetch_eu_signals.main),

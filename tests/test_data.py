@@ -525,7 +525,8 @@ def test_annetut_lausunnot(items):
     read_total = 0
     for it in with_n:
         n = it["lausunnotN"]
-        assert set(n) == {"n", "luettu", "kannat"} and n["n"] >= 1 and 0 <= n["luettu"] <= n["n"] and set(n["kannat"]) <= stances
+        assert set(n) == {"n", "luettu", "kannat", "valiokunnat"} and (n["n"] or n["valiokunnat"]) and 0 <= n["luettu"] <= n["n"]
+        assert set(n["kannat"]) <= stances
         d = json.loads(files[it["id"]].read_text(encoding="utf-8"))
         assert d["id"] == it["id"] and d["tiivistetty"] == n["luettu"] and d["tiivistetty"] + d["odottaa"] == n["n"]
         total = 0
@@ -546,5 +547,10 @@ def test_annetut_lausunnot(items):
             groups = [order[r.get("stance")] for r in sec["rivit"]]
             assert groups == sorted(groups), (it["id"], key)
         assert total == n["n"]
+        assert len(d.get("valiokunnat") or []) == n["valiokunnat"]
+        for r in d.get("valiokunnat") or []:
+            assert re.match(r"^[A-Za-zÄÖ]+[LM] \d+/\d{4} vp$", r["tunnus"]) and r["kind"] in ("lausunto", "mietintö"), r
+            assert r["url"].startswith("https://www.eduskunta.fi/valtiopaivaasiakirjat/") and len(r.get("gist") or "") <= 430
     assert read_total >= 100, "yhtään lausuntoa ei ole tiivistetty"
+    assert sum(i["lausunnotN"]["valiokunnat"] for i in with_n) >= 50, "valiokuntien lausunnot ja mietinnöt puuttuvat"
     assert files[with_n[0]["id"]].stat().st_size < 400_000

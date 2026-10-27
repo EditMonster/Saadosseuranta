@@ -32,7 +32,8 @@ NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "fi
          "ted": "TED", "paatokset": "Hankintapäätökset (Helsinki)", "toimittajat": "Tutkihankintoja", "kkv_valvonta": "KKV – kilpailu- ja hankintavalvonta",
          "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)",
          "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)",
-         "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)"}
+         "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)",
+         "asiat": "Eduskunta.fi – asioiden asiantuntijalausunnot ja valiokuntien lausunnot"}
 
 
 def alarming(v: dict, now: dt.datetime) -> bool:

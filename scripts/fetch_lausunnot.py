@@ -4,7 +4,8 @@ Lähteet (molemmat jo pipeline-välimuistissa, tämä vaihe vain lukee lausuntoj
 * Hankeikkuna – ministeriöiden lausuntokierrosten LAUSUNTO-asiakirjat (fetch_hankeikkuna tallentaa
   järjestön, päivän ja PDF-osoitteen: `lausunnot.docs`). PDF:t ovat api.hankeikkuna.fi/asiakirjat/…
   (CC BY 4.0).
-* Eduskunta (Vaski) – valiokuntien asiantuntijalausunnot (fetch_vaski: `statements`, eduskunta.fi/pdf/EDK-…).
+* Eduskunta – valiokuntien ja jaostojen asiantuntijalausunnot ja lisäselvitykset: eduskunta.fi:n asiasivuilta
+  kaikki (fetch_asiat: data/cache/asiat/) ja VaskiData-syötteestä (fetch_vaski: `statements`); PDF eduskunta.fi/pdf/EDK-….
   Virkamiesten esittelyt (ministeriö esittelee omaa esitystään) tiivistetään myös, kannaksi merkitään "virkamiesesittely".
   Skannatut lausunnot luetaan tekstintunnistuksella (pdftoppm + tesseract, suomi ja ruotsi), kun työkalut ovat asennettuina.
 
@@ -125,8 +126,10 @@ def _org_tokens(org: str) -> list[str]:
     return list(dict.fromkeys(abbr + toks[:2]))
 
 
-def pick_gist(text: str, org: str = "") -> str:
-    """The sentence(s) where the respondent states its position, verbatim, at most GIST_MAX characters."""
+def pick_gist(text: str, org: str = "", prefer: str | None = None) -> str:
+    """The sentence(s) where the respondent states its position, verbatim, at most GIST_MAX characters.
+    `prefer`: a regex; when some candidate sentences match it, only those are considered (a committee's own
+    view: sentences that name the committee, not the government's position it quotes)."""
     sents = sentences(text)
     toks = [t.lower() for t in _org_tokens(org)]
     scored = []
@@ -154,6 +157,9 @@ def pick_gist(text: str, org: str = "") -> str:
             return ""
         gist = " ".join(plain[:2]) if len(plain[0]) < 120 and len(plain) > 1 else plain[0]
         return gist if len(gist) <= GIST_MAX else gist[:GIST_MAX].rsplit(" ", 1)[0].rstrip(",;:–-") + " …"
+    if prefer:
+        own = [x for x in scored if re.search(prefer, x[2], re.I)]
+        scored = own or scored
     best = max(scored, key=lambda x: (x[0], -x[1]))
     gist = best[2]
     if len(gist) < 140:                                         # a short main sentence: add the next one when it qualifies it
@@ -210,11 +216,25 @@ def reclassify(rec: dict) -> bool:
     return changed
 
 
-def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
+def pdf_text(data: bytes, max_pages: int) -> tuple[str, int | None]:
+    """Text of the first pages: poppler's pdftotext when installed (10–30× faster than pdfplumber, the same
+    reading order for these documents), pdfplumber otherwise."""
+    import shutil
+    import subprocess
+    if shutil.which("pdftotext"):
+        try:
+            r = subprocess.run(["pdftotext", "-l", str(max_pages), "-enc", "UTF-8", "-", "-"], input=data, capture_output=True, timeout=120)
+            if r.returncode == 0:
+                return r.stdout.decode("utf-8", "ignore").replace("\f", "\n"), None
+        except Exception:  # noqa: BLE001
+            pass
     import pdfplumber
     with pdfplumber.open(io.BytesIO(data)) as pdf:
-        pages = len(pdf.pages)
-        raw = "\n".join((p.extract_text() or "") for p in pdf.pages[:MAX_PAGES])
+        return "\n".join((p.extract_text() or "") for p in pdf.pages[:max_pages]), len(pdf.pages)
+
+
+def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
+    raw, pages = pdf_text(data, MAX_PAGES)
     text = clean_text(raw)
     ocr = False
     if len(re.sub(r"\s", "", text)) < 80:
@@ -404,6 +424,21 @@ def summarise_msg(data: bytes, org: str = "", title: str = "") -> dict:
     return summarise_text(body, org, title)
 
 
+COMMITTEE_VIEW = r"\bvaliokun\w*|\bvaliokunnan\b"
+
+
+def summarise_committee(data: bytes) -> dict:
+    """A committee opinion/report (PeVL, YmVL, …M): the sentence where the committee states its own view,
+    read from the first pages that hold the committee's considerations (no stance: it is not a respondent)."""
+    raw, pages = pdf_text(data, 12)
+    text = clean_text(raw)
+    # skip the summary of the government proposal: the committee's considerations start at "VALIOKUNNAN KANNANOTOT"/"Perustelut"
+    m = re.search(r"\n(VALIOKUNNAN KANNANOTOT|Valiokunnan kannanotot|PERUSTELUT|Perustelut)\b", text)
+    body = text[m.end():] if m else text
+    gist = pick_gist(body, "Valiokunta", prefer=COMMITTEE_VIEW) or pick_gist(text, "Valiokunta", prefer=COMMITTEE_VIEW)
+    return {"ok": True if gist else "noText", "pages": pages, "stance": None, "gist": gist or None}
+
+
 def summarise_docx(data: bytes, org: str = "", title: str = "") -> dict:
     return summarise_text(zip_text(data), org, title)
 
@@ -415,7 +450,7 @@ def is_presentation(s: dict) -> bool:
     return bool(s.get("person")) and ("ministeriö" in org or "valtioneuvoston kanslia" in org)
 
 
-def candidates(hk: dict, vaski: dict) -> list[dict]:
+def candidates(hk: dict, vaski: dict, asiat: dict | None = None) -> list[dict]:
     """Every statement with a readable file – however old: a law shown on the page gets all of its statements
     summarised. Open/recent consultation rounds first, then newest first."""
     soon = (TODAY - dt.timedelta(days=60)).isoformat()
@@ -428,13 +463,23 @@ def candidates(hk: dict, vaski: dict) -> list[dict]:
                 continue
             out.append({"id": d["id"], "src": "hk", "url": d["url"], "org": d.get("org") or "", "date": d.get("date"),
                         "title": d.get("title") or "", "prio": 0 if open_round or (d.get("date") or "") >= soon else 1})
-    for asia, lst in (vaski.get("statements") or {}).items():
+    lists = list((vaski.get("statements") or {}).values()) + [a.get("statements") or [] for a in ((asiat or {}).get("asiat") or {}).values()]
+    seen: set[str] = set()
+    for lst in lists:
         for s in lst:
-            if not s.get("url"):
+            if not s.get("url") or (s.get("edk") or s["url"]) in seen:
                 continue
+            seen.add(s.get("edk") or s["url"])
             out.append({"id": s.get("edk") or s["url"], "src": "ek", "url": s["url"], "org": s.get("org") or s.get("person") or "",
                         "esittely": is_presentation(s),
                         "date": s.get("date"), "title": s.get("title") or "", "prio": 0 if (s.get("date") or "") >= soon else 1})
+    for a in ((asiat or {}).get("asiat") or {}).values():
+        for d in a.get("committeeDocs") or []:
+            if d["tunnus"] in seen:
+                continue
+            seen.add(d["tunnus"])
+            out.append({"id": d["tunnus"], "src": "vk", "url": "https://www.eduskunta.fi/pdf/" + d["tunnus"].replace(" vp", "").replace(" ", "+"),
+                        "org": d.get("committee") or "", "date": d.get("date"), "title": "", "prio": 0 if (d.get("date") or "") >= soon else 1})
     out.sort(key=lambda c: c.get("date") or "", reverse=True)
     out.sort(key=lambda c: c["prio"])  # stable: open rounds first, newest first within each group
     return out
@@ -474,7 +519,9 @@ def main():
     docs: dict = load_docs()
     hk = load_json(CACHE_DIR / "hankeikkuna.json", {}) or {}
     vaski = load_json(CACHE_DIR / "vaski.json", {}) or {}
-    cands = candidates(hk, vaski)
+    from fetch_asiat import load_cache
+    asiat = load_cache()
+    cands = candidates(hk, vaski, asiat)
     listed = {c["id"] for c in cands}
     changed = sum(reclassify(v) for v in docs.values())
     if changed:
@@ -514,7 +561,10 @@ def main():
                 r = http("GET", c["url"], headers=UA, timeout=60, retries=3)
             r.raise_for_status()
             ctype = (r.headers.get("content-type") or "").lower()
-            rec.update(summarise_file(r.content, c["url"], ctype, c["org"], c["title"]))
+            if c["src"] == "vk" and r.content[:4] == b"%PDF":
+                rec.update(summarise_committee(r.content))
+            else:
+                rec.update(summarise_file(r.content, c["url"], ctype, c["org"], c["title"]))
             rec["fmt"] = FORMAT_VERSION
             if c.get("esittely") and rec.get("ok") is True:
                 rec["stance"] = "esittely"  # the ministry presenting its own proposal: a summary, not a position
