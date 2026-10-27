@@ -138,12 +138,57 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
         "poistettuPaiva": tila.get("ilmoitettuPoistettavaksiPaiva"),
         "kiireellinen": bool(he.get("kiireellinen")),
         "pevLausunto": he.get("perustuslakivaliokunnanLausuntoVaaditaan") == "KYLLA",
+        "arviointineuvosto": bool((r.get("lainsaadanto") or {}).get("lainsaadannonArviointineuvosto")),
         "rauennut": bool(he.get("rauennut")),
         "etapit": sorted(etapit, key=lambda e: e["date"]),
         "asiakirjat": sorted(docs, key=lambda d: d["pvm"] or "")[-6:],
         "lausunnot": summarise_statements(statements, lausuntopalvelu),
         "url": f"https://valtioneuvosto.fi/hanke?tunnus={k.get('tunnus')}" if k.get("tunnus") else None,
     }
+
+
+KUULEMINEN_GRACE_D = 30   # a closed round stays listed this many days after its deadline
+
+
+def consultation_rows(r: dict, asettajat: dict) -> list[dict]:
+    """Lausuntokierrokset of a project that is not a HE/asetus project (selvitykset, strategiat, työryhmät,
+    talousarviot, other legislation): rows in the sector layer's consultation format."""
+    k = r["kohde"]
+    cut = (TODAY - dt.timedelta(days=KUULEMINEN_GRACE_D)).isoformat()
+    lp = next((_fi(l.get("url")) for l in r.get("linkit") or [] if "lausuntopalvelu" in (_fi(l.get("url")) or "")), None)
+    req = next((d for d in r.get("asiakirjat") or [] if d.get("tyyppi") == "LAUSUNTOPYYNTO" and d.get("url")), None)
+    out = []
+    for e in r.get("etapit") or []:
+        if e.get("tyyppi") != "LAUSUNTOKIERROS" or not e.get("alku") or (e.get("loppu") or e["alku"]) < cut:
+            continue
+        name = _fi(k.get("nimi"))
+        out.append({"id": f"hk-{k['uuid'][:8]}-{e.get('uuid', '')[:6]}", "source": "hankeikkuna_kuulemiset",
+                    "authority": asettajat.get(k.get("asettajaUuid"), "") or "Valtioneuvosto", "scope": "fi", "laji": "kuuleminen",
+                    "kind": "Lausuntokierros", "ref": k.get("tunnus"), "title": name, "summary": _fi(k.get("tiivistelma")) or _fi(k.get("kuvaus")),
+                    "date": e["alku"], "deadline": e.get("loppu"), "lausuntopalvelu": lp,
+                    "pdfUrl": req["url"] if req else None,
+                    "url": f"https://valtioneuvosto.fi/hanke?tunnus={k.get('tunnus')}" if k.get("tunnus") else (lp or ""),
+                    "keywords": [_fi(a) if isinstance(a, dict) else str(a) for a in r.get("asiasanat") or []][:8]})
+    return [{kk: v for kk, v in row.items() if v not in (None, "", [])} for row in out if row["url"]]
+
+
+def fetch_consultations(asettajat: dict, since: str) -> list[dict]:
+    """Every other project with a lausuntokierros: lausuntopalvelu.fi itself is closed to automated reads
+    (Cloudflare), but the ministries record their rounds in Hankeikkuna."""
+    rows, seen = [], set()
+    for body in ({"tyyppi": ["HANKE", "STRATEGIA", "TOIMIELIN"], "tila": ["KAYNNISSA"]},
+                 {"tyyppi": ["HANKE", "STRATEGIA", "TOIMIELIN"], "tila": ["PAATTYNYT"], "muokattuPaivaAlku": since},
+                 {"tyyppi": ["LAINSAADANTO"], "tila": ["KAYNNISSA"]},
+                 {"tyyppi": ["LAINSAADANTO"], "tila": ["PAATTYNYT"], "muokattuPaivaAlku": since}):
+        for r in search(body):
+            luokka = (r.get("lainsaadanto") or {}).get("tehtavaluokka")
+            if r["kohde"].get("tyyppi") == "LAINSAADANTO" and luokka in ("HALLITUKSEN_ESITYKSEN_VALMISTELU", "ASETUKSEN_ANTAMINEN"):
+                continue  # the HE and asetus projects are items of their own
+            if r["kohde"]["uuid"] in seen:
+                continue
+            seen.add(r["kohde"]["uuid"])
+            rows += consultation_rows(r, asettajat)
+    return rows
 
 
 def main():
@@ -164,8 +209,17 @@ def main():
             rec = normalise(r, teemat, asettajat)
             rec["laji"] = laji
             items.append(rec)
-    save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": items})
-    log(f"hankeikkuna: tallennettu {len(items)} hanketta -> {OUT}")
+    kuul_since = (TODAY - dt.timedelta(days=120)).isoformat() + "T00:00:00"
+    try:
+        kuulemiset = fetch_consultations(asettajat, kuul_since)
+    except SourceOutage:
+        raise
+    except Exception as e:  # noqa: BLE001 – the HE/asetus projects are saved even if this extra query fails
+        log(f"warn: hankeikkuna: muiden hankkeiden lausuntokierrokset epäonnistuivat: {e}")
+        from common import load_json
+        kuulemiset = (load_json(OUT, {}) or {}).get("kuulemiset") or []
+    save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": items, "kuulemiset": kuulemiset})
+    log(f"hankeikkuna: tallennettu {len(items)} hanketta ja {len(kuulemiset)} muun hankkeen lausuntokierrosta -> {OUT}")
 
 
 if __name__ == "__main__":

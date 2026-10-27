@@ -968,6 +968,78 @@ def run_tsv(cfg: dict, prev: list[dict], rows_all: dict, client: Client, default
 
 
 # ---------------------------------------------------------------------------------------------------
+# Finlex authority listings: oikeusasiamies, oikeuskansleri, yleissitovat työehtosopimukset, määräyskokoelmat
+# (the authorities' own sites oikeusasiamies.fi, oikeuskansleri.fi, energiavirasto.fi … answer GitHub's and this
+# environment's network with a Cloudflare challenge; Finlex publishes the same decisions and regulations)
+# ---------------------------------------------------------------------------------------------------
+
+FINLEX_ROW = re.compile(r'"aria-label":"(\d{1,2}\.\d{1,2}\.\d{4}) ([^"]{3,400}?)"[^}]*?"href":"(/fi/viranomaiset/[^"]+?/(\d{4})/(\d+))"')
+REF_LEAD = re.compile(r"^([A-ZÄÖa-zäö0-9./ -]{3,80}?),\s+(.+)$")  # "6819/2026, …", "OKV/1439/10/2025 ja OKV/…, …", "VK/ 24949/2026, …"
+
+
+def parse_finlex_list(h: str) -> list[dict]:
+    """A Finlex authority listing (Next.js payload): one entry per document – date, reference, title, url."""
+    h2 = h.replace('\\"', '"')
+    seen: dict[str, dict] = {}
+    for dmy, label, href, year, n in FINLEX_ROW.findall(h2):
+        if href in seen:
+            continue
+        label = clean(re.sub(r"(\\+n|\s)+", " ", label))
+        m = REF_LEAD.match(label)
+        ref, title = (m.group(1), m.group(2)) if m and "/" in m.group(1) and re.search(r"\d", m.group(1)) else (None, label)
+        ref = re.sub(r"/\s+", "/", ref) if ref else None
+        seen[href] = {"date": iso_dmy(dmy), "ref": ref, "title": title, "url": FINLEX + href, "year": int(year), "n": int(n),
+                      "path": href}
+    return list(seen.values())
+
+
+def run_finlex_list(cfg: dict, prev: list[dict], rows_all: dict, client: Client, defaults: dict) -> list[dict]:
+    """config: url (with {year}: the current year, and the previous one in January–February) or
+    agencies {slug: name} (each agency's latest regulations from its määräyskokoelma page); id_prefix, kind,
+    ref_prefix, empty_ok (a listing that may legitimately be empty)."""
+    client.set_delay(FINLEX, 1.5)  # Finlex answers 429 when hit faster
+    pages: list[tuple[str, str | None]] = []
+    if cfg.get("agencies"):
+        pages = [(cfg["url"].format(agency=slug), name) for slug, name in cfg["agencies"].items()]
+    else:
+        years = [TODAY.year] + ([TODAY.year - 1] if TODAY.month <= 2 else [])
+        pages = [(cfg["url"].format(year=y), None) for y in years]
+    entries, failures = [], []
+    for url, agency in pages:
+        try:
+            part = parse_finlex_list(client.text(url))
+        except Exception as e:  # noqa: BLE001 – one agency's page must not stop the others
+            failures.append(f"{url}: {e}")
+            continue
+        entries += [dict(e, agency=agency) for e in part]
+    if failures and len(failures) == len(pages):
+        raise RuntimeError(f"Finlex: yhtään listausta ei saatu – {failures[0]}")
+    if not entries and not cfg.get("empty_ok") and TODAY.month > 2:
+        raise RuntimeError(f"Finlex: listaukselta {pages[0][0]} ei löytynyt yhtään asiakirjaa – sivurakenne lienee muuttunut")
+    by_id = {r["id"]: r for r in prev}
+    out = {}
+    for e in entries:
+        slug = e["path"].split("/")[-3] if cfg.get("agencies") else None
+        rid = "-".join(x for x in (cfg["id_prefix"], slug, str(e["year"]), str(e["n"])) if x)
+        kind = cfg.get("kind") or "Ratkaisu"
+        if cfg.get("lausunto_kind") and re.match(r"Lausunto\b", e["title"]):
+            kind = cfg["lausunto_kind"]
+        title = e["title"]
+        if cfg.get("agencies") and (mk := re.match(r"(Ohje|Suositus|Päätös|Määräys)\s*:\s*(.+)$", title)):
+            kind, title = (mk.group(1) if mk.group(1) != "Määräys" else kind), mk.group(2)
+        ref = " ".join(x for x in (cfg.get("ref_prefix"), e.get("ref")) if x) or f"{e.get('agency') or cfg['authority']} {fmt_dmy(e['date'])}"
+        row = compact({"id": rid, "source": cfg.get("_name") or cfg.get("name"), "authority": e.get("agency") or cfg["authority"], "scope": cfg["scope"],
+                       "laji": cfg["laji"], "kind": kind, "ref": ref, "title": title, "date": e["date"], "url": e["url"],
+                       "status": "annettu", "keywords": [], "aihealueet": (cfg.get("agency_topics") or {}).get(slug)})
+        out[rid] = {**by_id.get(rid, {}), **row}
+    for rid, old in by_id.items():
+        out.setdefault(rid, old)
+    if failures:
+        log(f"warn: Finlex {len(failures)}/{len(pages)} listausta epäonnistui: {failures[0][:160]}")
+    return list(out.values())
+
+
+# ---------------------------------------------------------------------------------------------------
 # orchestration
 # ---------------------------------------------------------------------------------------------------
 
@@ -976,10 +1048,12 @@ RUNNERS = {
     "eba_consultations": run_eba, "eiopa_consultations": run_eiopa, "edpb_consultations": run_edpb_consultations,
     "edpb_guidelines": run_edpb_guidelines, "vero_ohjeet": run_vero_ohjeet, "vero_kvl": run_vero_kvl,
     "traficom_maaraykset": run_traficom, "tsv_finlex": run_tsv,
+    "eoa_finlex": run_finlex_list, "okv_finlex": run_finlex_list, "tes_finlex": run_finlex_list, "maaraykset_finlex": run_finlex_list,
 }
 # dependents after their providers: lausuntopyynnöt borrow deadlines from tiedotteet, guidelines check open consultations
 ORDER = ["fiva_tiedotteet", "fiva_lausuntopyynnot", "esma_consultations", "eba_consultations", "eiopa_consultations",
-         "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex"]
+         "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex",
+         "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex"]
 
 
 def prune(rows: list[dict], cfg: dict, defaults: dict) -> list[dict]:
@@ -1011,7 +1085,7 @@ def main():
     enabled = [s for s in ORDER if (sources.get(s) or {}).get("enabled")] + [s for s in sources if s not in ORDER and sources[s].get("enabled")]
     ok_count, failed = 0, []
     for name in enabled:
-        cfg = sources[name]
+        cfg = dict(sources[name], _name=name)
         runner = RUNNERS.get(name)
         h = health.setdefault(name, {})
         if not runner:

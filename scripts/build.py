@@ -240,7 +240,13 @@ def build_fi(topics_cfg, settings) -> list[dict]:
         hes = [h for h in hes if h]
         rec = ek.get(hes[0]) if hes else None
         ev = []
+        # Hankeikkuna's "Laki on vahvistettu" stage: the confirmation date even when eduskunta's data lacks it
+        hk_vahv = next((e["date"] for e in p.get("etapit", []) if e.get("tyyppi") == "SAADOS" and "vahvist" in (e.get("label") or "").lower()), None)
         for e in p.get("etapit", []):
+            if hk_vahv and e["date"] == hk_vahv and e.get("tyyppi") == "SAADOS" and "vahvist" in (e.get("label") or "").lower():
+                if not (rec or {}).get("vahvistettu"):
+                    ev.append({"date": hk_vahv, "label": "Vahvistettu", "kind": "vahvistettu", "confirmed": True})
+                continue
             ev.append({"date": e["date"], "end": e.get("end"), "label": e["label"], "kind": e["kind"], "confirmed": True})
         if not any(e["kind"] == "lausunto" for e in ev):
             for d in p.get("asiakirjat", []):
@@ -262,7 +268,8 @@ def build_fi(topics_cfg, settings) -> list[dict]:
             ev.append({"date": rec["ehdotettuVoimaantulo"], "label": "Ehdotettu voimaantulo", "kind": "voimaan", "confirmed": True})
         title = (rec or {}).get("title") or p["nimi"]
         ref = f"HE {hes[0]} vp" if hes else (p.get("tunnus") or "")
-        if (rec or {}).get("vahvistettu") and sks:
+        vahvistettu = bool((rec or {}).get("vahvistettu") or hk_vahv)
+        if vahvistettu and sks:
             ref = f"{sks[0]} · HE {hes[0]} vp" if hes else sks[0]
         links = {"hankeikkuna": p.get("url")}
         if hes:
@@ -279,10 +286,11 @@ def build_fi(topics_cfg, settings) -> list[dict]:
                          " ".join(l.get("name", "") for l in (rec or {}).get("laws", []))])
         rauennut = bool(p.get("rauennut")) or ((rec or {}).get("tila") == "Rauennut")
         items.append(make(f"fi-he-{hes[0].replace('/', '-')}" if hes else f"fi-hanke-{p['uuid'][:8]}", title, ref, ev,
-                          has_he=bool(hes), vahvistettu=bool((rec or {}).get("vahvistettu")), rauennut=rauennut,
+                          has_he=bool(hes), vahvistettu=vahvistettu, rauennut=rauennut,
                           summary=summary, source=links.get("finlex") or p.get("url"), links=links, ministry=p.get("ministerio", ""),
                           text=text, extra={"tunnus": p.get("tunnus"), "hankeUuid": p["uuid"], "sk": sks, "heNumerot": hes, "teemat": p.get("teemat", []),
                                              "committees": (rec or {}).get("committees", []), "updated": p.get("muokattu"),
+                                             "lanTulossa": p.get("arviointineuvosto") or None,
                                              "plan": plan, "influence": influence}))
     # proposals known to Eduskunta/Finlex but not linked to a Hankeikkuna project
     for num, rec in ek.items():
@@ -867,6 +875,29 @@ def main():
                 it["lausunnotN"] = ls_n[it["id"]]
     except Exception as e:  # noqa: BLE001
         log(f"warn: lausunnot: {e}")
+    # Lainsäädännön arviointineuvoston lausunto, as the HE itself reports it (fetch_arviointineuvosto)
+    try:
+        from fetch_arviointineuvosto import VERDICT_LABEL
+
+        an = (load_json(CACHE_DIR / "arviointineuvosto.json", {}) or {}).get("he") or {}
+        n_an = 0
+        for it in keep:
+            rec = next((an[h] for h in it.get("heNumerot") or [] if (an.get(h) or {}).get("found")), None)
+            if rec:
+                he = next(h for h in it["heNumerot"] if an.get(h) is rec)
+                it["arviointineuvosto"] = {k: v for k, v in {
+                    "date": rec.get("date"), "verdict": rec.get("verdict"), "label": VERDICT_LABEL.get(rec.get("verdict") or ""),
+                    "fixFirst": rec.get("fixFirst"), "text": rec.get("text"), "he": f"HE {he} vp",
+                    "url": "https://valtioneuvosto.fi/arviointineuvosto/lausunnot"}.items() if v}
+                it.pop("lanTulossa", None)
+                n_an += 1
+            elif it.get("lanTulossa") and it.get("status") in ("lausunnolla", "valmistelussa", "tulossa", "vireillä") and not it.get("heNumerot"):
+                pass  # the project is marked for the council but no HE yet: shown as "menee arviointineuvostoon"
+            else:
+                it.pop("lanTulossa", None)
+        log(f"arviointineuvosto: {n_an} asiaan liitetty neuvoston lausunto")
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: arviointineuvosto: {e}")
     for it in keep:
         it.pop("hankeUuid", None)
     changes = update_changelog(keep, settings)

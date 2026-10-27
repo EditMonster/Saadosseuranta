@@ -50,7 +50,8 @@ def topics():
 def test_config_shape(cfg_all, topics):
     srcs = cfg_all["sources"]
     assert {"fiva_tiedotteet", "fiva_lausuntopyynnot", "esma_consultations", "eba_consultations", "eiopa_consultations",
-            "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex"} <= set(srcs)
+            "edpb_consultations", "edpb_guidelines", "vero_ohjeet", "vero_kvl", "traficom_maaraykset", "tsv_finlex",
+            "eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex"} <= set(srcs)
     for name, s in srcs.items():
         assert s["scope"] in ("fi", "eu"), name
         assert s["laji"] in ("kuuleminen", "ohje", "ratkaisu"), name
@@ -307,6 +308,10 @@ def fetched(cfg_all):
         "elaketulojen-verotus-kansainvalisissa-tilanteissa7": "vero_ohje_item.html",
         "traficom.fi/search": "traficom_search.json",
         "tietosuojavaltuutettu/2026": "finlex_tsv.html",
+        "eduskunnan-oikeusasiamies/2026": "finlex_eoa.html",
+        "oikeuskansleri/2026": "finlex_okv.html",
+        "tyoehtosopimukset/2026": "finlex_tes.html",
+        "maarayskokoelmat/energiavirasto": "finlex_maaraykset_energiavirasto.html",
     })
 
     class VeroClient(FakeClient):
@@ -352,6 +357,17 @@ def test_runners(fetched):
     kvl = {r["id"]: r for r in rows_all["vero_kvl"]}["kvl-2026-29"]
     assert kvl["date"] == "2026-09-23" and kvl["status"] == "ei lainvoimainen" and kvl["ref"] == "KVL:2026/29"
     assert {r["id"] for r in rows_all["tsv_finlex"]} >= {"tsv-2026-36", "tsv-2026-35"}
+    # Finlex authority listings (oikeusasiamies.fi, oikeuskansleri.fi, energiavirasto.fi are Cloudflare-blocked)
+    eoa = {r["id"]: r for r in rows_all["eoa_finlex"]}
+    assert eoa["eoa-2026-6819"]["kind"] == "Lausunto" and eoa["eoa-2026-6819"]["ref"] == "EOA 6819/2026" and eoa["eoa-2026-6819"]["date"] == "2026-09-24"
+    assert eoa["eoa-2025-2921"]["kind"] == "Ratkaisu" and eoa["eoa-2025-2921"]["title"].startswith("Toimivalta suorittaa kompostitarkastuksia")
+    okv = {r["id"]: r for r in rows_all["okv_finlex"]}
+    assert okv["okv-2026-179"]["ref"] == "OKV/1439/10/2025 ja OKV/1711/10/2025" and okv["okv-2026-179"]["title"].startswith("Kilpailu- ja kuluttajaviraston")
+    tes = {r["id"]: r for r in rows_all["tes_finlex"]}
+    assert tes["tes-2024-6"]["ref"] == "YSL 10/2026" and tes["tes-2024-6"]["title"] == "Rahoitusalan työehtosopimus"
+    maar = {r["id"]: r for r in rows_all["maaraykset_finlex"]}
+    assert maar["maar-energiavirasto-2026-1"]["authority"] == "Energiavirasto" and maar["maar-energiavirasto-2026-1"]["kind"] == "Määräys"
+    assert all(r["source"] == n for n in ("eoa_finlex", "okv_finlex", "tes_finlex", "maaraykset_finlex") for r in rows_all[n])
     assert all(r.get("date") and r.get("url") and r.get("title") and r.get("authority") for rows in rows_all.values() for r in rows)
 
 
@@ -394,12 +410,19 @@ def test_builder_shape(fetched, tmp_path, monkeypatch, topics):
     assert all(i["deadlineUnknown"] for i in items if i["id"].startswith("fi-toim-fiva-lp-"))
     # rulings
     for r in rulings:
-        assert r["scope"] == "ratkaisu" and r["court"] in ("KVL", "TSV") and r["fi"] is True and r["statutes"] == [] and r["topics"]
+        assert r["scope"] == "ratkaisu" and r["court"] in ("KVL", "TSV", "EOA", "OKV", "TES") and r["fi"] is True and r["statutes"] == [] and r["topics"]
         assert re.match(ISO, r["date"]) and r["url"] and r["links"] and r["id"].startswith(f"r-{r['court'].lower()}-")
     kvl = {r["id"]: r for r in rulings}["r-kvl-2026-29"]
     assert kvl["courtName"] == "Keskusverolautakunta" and kvl["kind"] == "Ennakkoratkaisu (KVL)" and kvl["status"] == "ei lainvoimainen"
     assert kvl["title"].startswith("Arvonlisävero – Liikuntapalvelu") and kvl["ref"] == "KVL:2026/29" and "Verotus" in kvl["topics"]
     assert kvl["statuteText"].startswith("Arvonlisäverolaki") and kvl["links"] == {"vero": kvl["url"]}
+    by_r = {r["id"]: r for r in rulings}
+    assert by_r["r-eoa-2026-6819"]["courtName"] == "Eduskunnan oikeusasiamies" and by_r["r-eoa-2026-6819"]["kind"] == "Lausunto"
+    assert by_r["r-okv-2026-179"]["courtName"] == "Valtioneuvoston oikeuskansleri" and by_r["r-okv-2026-179"]["links"] == {"finlex": by_r["r-okv-2026-179"]["url"]}
+    tes = [r for r in rulings if r["court"] == "TES"]
+    assert len(tes) >= 5 and all("Työoikeus" in r["topics"] for r in tes)  # a year's window (keep_days 365), not the rulings default
+    maar = by_id["fi-toim-maar-energiavirasto-2026-1"]
+    assert maar["laji"] == "ohje" and maar["authority"] == "Energiavirasto" and "Kestävyys ja ympäristö" in maar["topics"]
     tsv = {r["id"]: r for r in rulings}["r-tsv-2026-36"]
     assert tsv["court"] == "TSV" and tsv["courtName"] == "Tietosuojavaltuutettu" and tsv["status"] == "annettu" and tsv["links"] == {"finlex": tsv["url"]}
     assert "Tietosuoja ja digi" in tsv["topics"]

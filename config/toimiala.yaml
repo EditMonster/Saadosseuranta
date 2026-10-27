@@ -56,7 +56,7 @@ sources:
 
   # ---- Euroopan valvontaviranomaiset ----
   esma_consultations:
-    enabled: true
+    enabled: false                # esma.europa.eu vastaa 403 kaikille poluille sekä tästä ympäristöstä että GitHubin verkosta (21.10.2026 alkaen)
     authority: ESMA
     scope: eu
     laji: kuuleminen
@@ -163,6 +163,110 @@ sources:
     keep_days: 120
     url: https://www.finlex.fi/fi/viranomaiset/tietosuojavaltuutettu/{year}
     # kuluva vuosi aina; edellinen vuosi myös tammi–helmikuussa, jotta keep_days-ikkuna ei katkea vuodenvaihteessa
+
+  # ---- Laillisuusvalvonta ja työehtosopimukset Finlexistä (oikeusasiamies.fi ja oikeuskansleri.fi ovat Cloudflare-estettyjä) ----
+  eoa_finlex:
+    enabled: true
+    name: eoa_finlex
+    authority: Eduskunnan oikeusasiamies
+    scope: fi
+    laji: ratkaisu
+    kind: Ratkaisu
+    lausunto_kind: Lausunto
+    id_prefix: eoa
+    ref_prefix: EOA
+    aihealueet: ["Hallinto ja hankinnat"]
+    keep_days: 120
+    url: https://www.finlex.fi/fi/viranomaiset/eduskunnan-oikeusasiamies/{year}
+
+  okv_finlex:
+    enabled: true
+    name: okv_finlex
+    authority: Valtioneuvoston oikeuskansleri
+    scope: fi
+    laji: ratkaisu
+    kind: Ratkaisu
+    lausunto_kind: Lausunto
+    id_prefix: okv
+    aihealueet: ["Hallinto ja hankinnat"]
+    keep_days: 120
+    url: https://www.finlex.fi/fi/viranomaiset/oikeuskansleri/{year}
+
+  # Työehtosopimuksen yleissitovuuden vahvistamislautakunnan päätökset: yleissitovaksi vahvistetut työehtosopimukset
+  tes_finlex:
+    enabled: true
+    name: tes_finlex
+    authority: Työehtosopimuksen yleissitovuuden vahvistamislautakunta
+    scope: fi
+    laji: ratkaisu
+    kind: Yleissitova työehtosopimus
+    id_prefix: tes
+    ref_prefix: YSL
+    aihealueet: ["Työoikeus"]
+    aihealueet_aina: true
+    keep_days: 365
+    url: https://www.finlex.fi/fi/viranomaiset/tyoehtosopimukset/{year}
+
+  # Virastojen ja ministeriöiden määräyskokoelmat (annetut määräykset; Traficom ja Fiva luetaan omista lähteistään)
+  maaraykset_finlex:
+    enabled: true
+    name: maaraykset_finlex
+    authority: Määräyskokoelmat
+    scope: fi
+    laji: ohje
+    kind: Määräys
+    id_prefix: maar
+    empty_ok: true
+    aihealueet: ["Hallinto ja hankinnat"]   # oletus, kun virastolla ei ole omaa aihealuetta eikä otsikko osu
+    agency_topics:
+      energiavirasto: ["Kestävyys ja ympäristö"]
+      kilpailu-ja-kuluttajavirasto: ["Kuluttaja ja tuotteet"]
+      patentti-ja-rekisterihallitus: ["Yhtiö ja rahoitus"]
+      verohallinto: ["Verotus"]
+      valvira: ["Sote ja koulutus"]
+      fimea: ["Sote ja koulutus"]
+      terveyden-ja-hyvinvoinnin-laitos: ["Sote ja koulutus"]
+      sosiaali-ja-terveysministerio: ["Sote ja koulutus"]
+      opetushallitus: ["Sote ja koulutus"]
+      turvallisuus-ja-kemikaalivirasto: ["Kuluttaja ja tuotteet"]
+      sateilyturvakeskus: ["Turvallisuus ja puolustus"]
+      poliisihallitus: ["Turvallisuus ja puolustus"]
+      sisaministerio: ["Turvallisuus ja puolustus"]
+      ruokavirasto: ["Kestävyys ja ympäristö"]
+      maa-ja-metsatalousministerio: ["Kestävyys ja ympäristö"]
+      ymparistoministerio: ["Kestävyys ja ympäristö"]
+      oikeusministerio: ["Rikos ja prosessi"]
+      ulkoministerio: ["Kansainväliset sopimukset"]
+    keep_days: 365
+    url: https://www.finlex.fi/fi/viranomaiset/maarayskokoelmat/{agency}
+    agencies:
+      energiavirasto: Energiavirasto
+      kilpailu-ja-kuluttajavirasto: Kilpailu- ja kuluttajavirasto
+      patentti-ja-rekisterihallitus: Patentti- ja rekisterihallitus
+      verohallinto: Verohallinto
+      valvira: Valvira
+      fimea: Fimea
+      turvallisuus-ja-kemikaalivirasto: Turvallisuus- ja kemikaalivirasto
+      sateilyturvakeskus: Säteilyturvakeskus
+      ruokavirasto: Ruokavirasto
+      lupa-ja-valvontavirasto: Lupa- ja valvontavirasto
+      terveyden-ja-hyvinvoinnin-laitos: THL
+      valtiokonttori: Valtiokonttori
+      maanmittauslaitos: Maanmittauslaitos
+      poliisihallitus: Poliisihallitus
+      opetushallitus: Opetushallitus
+      kansallisarkisto: Kansallisarkisto
+      valtiontalouden-tarkastusvirasto: Valtiontalouden tarkastusvirasto
+      valtioneuvoston-kanslia: Valtioneuvoston kanslia
+      valtiovarainministerio: Valtiovarainministeriö
+      tyo-ja-elinkeinoministerio: Työ- ja elinkeinoministeriö
+      sosiaali-ja-terveysministerio: Sosiaali- ja terveysministeriö
+      ymparistoministerio: Ympäristöministeriö
+      oikeusministerio: Oikeusministeriö
+      sisaministerio: Sisäministeriö
+      maa-ja-metsatalousministerio: Maa- ja metsätalousministeriö
+      liikenne-ja-viestintaministerio: Liikenne- ja viestintäministeriö
+      ulkoministerio: Ulkoministeriö
 
   # ---- Estetyt lähteet ----
   # Nämä YJA-alustan sivustot ja lausuntopalvelu.fi vastaavat tästä ympäristöstä Cloudflaren JS-haasteella

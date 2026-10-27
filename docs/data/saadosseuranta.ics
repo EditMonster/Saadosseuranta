@@ -1144,7 +1144,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi terveydenhuoltolain\, vankeuslain 10 luvun 1 §:n ja tutkintavankeuslain 6 luvun 1 §:n muuttamisesta
-DESCRIPTION:Voimaan (913/2026) · HE 81/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
+DESCRIPTION:Voimaan (913/2026) · 913/2026 · HE 81/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
 END:VEVENT
 BEGIN:VEVENT
@@ -1207,7 +1207,7 @@ DTSTAMP:20261027T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:[FI] Voimaan: Laiksi ulkomaalaislain muuttamisesta
-DESCRIPTION:Voimaan (912/2026) · HE 80/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
+DESCRIPTION:Voimaan (912/2026) · 912/2026 · HE 80/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
 END:VEVENT
 BEGIN:VEVENT
@@ -1351,7 +1351,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta
-DESCRIPTION:Voimaan (908/2026) · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
+DESCRIPTION:Voimaan (908/2026) · 908/2026 · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
@@ -3029,6 +3029,15 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.202
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-toim-hk-2640960f-d87c33-lausunto-2026-12-06@saadosseuranta
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[FI] Lausuntoaika päättyy: Valtakunnallisten alueidenkäyttötavoitteiden tarkistus
+DESCRIPTION:Lausuntoaika · YM018:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM018:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=YM018:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-toim-fiva-52-2026-voimaan-2026-12-31@saadosseuranta
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
@@ -3036,6 +3045,24 @@ DTEND;VALUE=DATE:20270101
 SUMMARY:[FI] Voimaan: Muutoksia työeläkealaa koskeviin määräyksiin ja ohjeisiin sekä vahinko- ja henkivakuutuksen määräyksiin ja ohjeisiin
 DESCRIPTION:Voimaan · Fiva 52/2026 · https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-tyoelakealaa-koskeviin-maarayksiin-ja-ohjeisiin-seka--vahinko--ja-henkivakuutuksen-maarayksiin-ja-ohjeisiin/
 URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-tyoelakealaa-koskeviin-maarayksiin-ja-ohjeisiin-seka--vahinko--ja-henkivakuutuksen-maarayksiin-ja-ohjeisiin/
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-toim-hk-2edcffea-1fd111-lausunto-2026-11-19@saadosseuranta
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[FI] Lausuntoaika päättyy: Liikenneturvallisuusstrategian päivitys
+DESCRIPTION:Lausuntoaika · LVM059:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=LVM059:00/2025
+URL:https://valtioneuvosto.fi/hanke?tunnus=LVM059:00/2025
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-toim-hk-219623f7-1b9bdd-lausunto-2026-11-25@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[FI] Lausuntoaika päättyy: Arviomuistio kilpailukäyttöön tarkoitettujen ajoneuvojen hyväksynnästä ja rekisteröinnistä
+DESCRIPTION:Lausuntoaika · LVM026:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM026:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=LVM026:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-toim-fiva-49-2026-voimaan-2026-11-20@saadosseuranta
@@ -3056,13 +3083,13 @@ DESCRIPTION:Palauteaika · EIOPA 13.10.2026 · https://www.eiopa.europa.eu/consu
 URL:https://www.eiopa.europa.eu/consultations/call-participate-discussion-disclosure-individual-stress-test-results_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-toim-esma-call-evidence-ccp-collateral-tokenisation-lausunto-2027-01-15@saadosseuranta
-DTSTAMP:20270115T000000Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:[EU] Lausuntoaika päättyy: Call for evidence on the CCP collateral tokenisation
-DESCRIPTION:Palauteaika · ESMA91-1505572268-4934 · https://www.esma.europa.eu/press-news/consultations/call-evidence-ccp-collateral-tokenisation
-URL:https://www.esma.europa.eu/press-news/consultations/call-evidence-ccp-collateral-tokenisation
+UID:fi-toim-hk-d35204db-25eac3-lausunto-2026-12-05@saadosseuranta
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:[FI] Lausuntoaika päättyy: Susikannan hoitosuunnitelman päivitys
+DESCRIPTION:Lausuntoaika · MMM037:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=MMM037:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=MMM037:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-eiopa-consultation-draft-supervisory-statement-ibip-sales-processes-lausunto-2027-01-04@saadosseuranta
@@ -3101,13 +3128,13 @@ DESCRIPTION:Palauteaika · Guidelines 4/2026 · https://www.edpb.europa.eu/publi
 URL:https://www.edpb.europa.eu/public-consultations/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-toim-esma-consultation-update-guidelines-disclosure-requirements-under-prospectu-lausunto-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Lausuntoaika päättyy: Consultation on the update to the Guidelines on disclosure requirements under the Prospectus Regulation
-DESCRIPTION:Palauteaika · ESMA32-753890202-3085 · https://www.esma.europa.eu/press-news/consultations/consultation-update-guidelines-disclosure-requirements-under-prospectus
-URL:https://www.esma.europa.eu/press-news/consultations/consultation-update-guidelines-disclosure-requirements-under-prospectus
+UID:fi-toim-hk-fa489d87-80357a-lausunto-2026-11-06@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[FI] Lausuntoaika päättyy: Sähkölinjoja koskevien korvausperusteiden uudistaminen
+DESCRIPTION:Lausuntoaika · OM115:00/2023 · https://valtioneuvosto.fi/hanke?tunnus=OM115:00/2023
+URL:https://valtioneuvosto.fi/hanke?tunnus=OM115:00/2023
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-eba-cp-2026-18-lausunto-2026-12-31@saadosseuranta

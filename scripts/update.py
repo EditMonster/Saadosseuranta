@@ -16,6 +16,7 @@ import traceback
 
 import build
 import fetch_asiat
+import fetch_arviointineuvosto
 import fetch_avoimuus
 import fetch_caselaw
 import fetch_curia
@@ -71,6 +72,7 @@ STEPS = [
     ("curia", fetch_curia.main),
     ("toimiala", fetch_toimiala.main),
     ("lausunnot", fetch_lausunnot.main),  # after hankeikkuna + vaski: summarises the statements they list
+    ("arviointineuvosto", fetch_arviointineuvosto.main),  # HE texts' section on the council's statement (VaskiData)
     ("history", fetch_history.main),
     ("hediff", fetch_hediff.main),  # last: eduskunta's API throttles after the vaski/eduskunta steps
 ]

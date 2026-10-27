@@ -24,16 +24,19 @@ LABEL = "lahdevahti"
 THRESHOLD = int(os.environ.get("HEALTH_THRESHOLD", "3"))
 ALARM_HOURS = float(os.environ.get("HEALTH_ALARM_HOURS", "20"))
 OUTAGE_ALARM_HOURS = float(os.environ.get("HEALTH_OUTAGE_ALARM_HOURS", "48"))
+SUB_ALARM_HOURS = float(os.environ.get("HEALTH_SUB_ALARM_HOURS", "72"))
+SUB_HEALTH = {"toimiala": ROOT / "data" / "cache" / "toimiala.json"}  # layers whose own sub-sources keep a health map
 NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "finlex": "Finlex", "eu": "EP + Cellar",
          "ue": "U/E-kirjelmät (eduskunta)", "hys": "Have your say", "hankinnat": "Hilma", "kkv": "KKV yrityskaupat", "eu_mergers": "Komissio yrityskaupat",
          "regdel": "Delegoitujen säädösten rekisteri", "mao": "Markkinaoikeus",
          "avoimuus": "Avoimuusrekisteri", "vaski": "Eduskunta – valiokunnat (Vaski)", "caselaw": "Oikeuskäytäntö (tuomioistuimet)", "curia": "EU-tuomioistuin (Cellar)",
-         "toimiala": "Toimialakerros (Fiva, ESMA/EBA/EIOPA, EDPB, Vero, Traficom)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
+         "toimiala": "Toimialakerros (Fiva, EBA/EIOPA, EDPB, Vero, Traficom, oikeusasiamies, oikeuskansleri, TES, määräyskokoelmat)", "sopimuskaudet": "Hilma – sopimuskaudet", "suunnitelmat": "Kilpailutussuunnitelmat ja hankintakalenterit",
          "ted": "TED", "paatokset": "Hankintapäätökset (Helsinki)", "toimittajat": "Tutkihankintoja", "kkv_valvonta": "KKV – kilpailu- ja hankintavalvonta",
          "eu_signals": "EU-ennakointi (neuvosto, komissio, OEIL, rikkomukset, komitologia, pakotteet)",
          "hediff": "HE-diff (rinnakkaistekstit ja mietinnöt)", "history": "Tilastohistoria (MAO, KKV, sopimuskaudet)",
          "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)",
-         "asiat": "Eduskunta.fi – asioiden asiantuntijalausunnot ja valiokuntien lausunnot"}
+         "asiat": "Eduskunta.fi – asioiden asiantuntijalausunnot ja valiokuntien lausunnot",
+         "arviointineuvosto": "Lainsäädännön arviointineuvosto (HE-tekstit)"}
 
 
 def alarming(v: dict, now: dt.datetime) -> bool:
@@ -49,6 +52,26 @@ def alarming(v: dict, now: dt.datetime) -> bool:
     return age_h >= (OUTAGE_ALARM_HOURS if v.get("outage") else ALARM_HOURS) and int(v.get("streak", 0)) >= 2
 
 
+def sub_failing(now: dt.datetime) -> dict:
+    """A layer such as the toimialakerros succeeds as a whole while one of its sources has been broken for days
+    (ESMA answered 403 from 21.10.2026 without anyone noticing): alarm on each sub-source that has not
+    updated for SUB_ALARM_HOURS."""
+    out = {}
+    for layer, path in SUB_HEALTH.items():
+        try:
+            subs = (json.loads(path.read_text(encoding="utf-8")) or {}).get("health") or {}
+        except (OSError, ValueError):
+            continue
+        for name, h in subs.items():
+            if h.get("ok") is not False:
+                continue
+            last = h.get("last_ok")
+            age = (now - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() / 3600 if last else 1e9
+            if age >= SUB_ALARM_HOURS:
+                out[f"{layer}/{name}"] = {"streak": f"{age / 24:.0f} vrk", "last_ok": last, "last_error": h.get("error")}
+    return out
+
+
 def gh(*args: str, check: bool = True) -> str:
     r = subprocess.run(["gh", *args], capture_output=True, text=True)
     if check and r.returncode != 0:
@@ -60,6 +83,7 @@ def main(manage_issue: bool) -> int:
     health = json.loads(HEALTH.read_text(encoding="utf-8")) if HEALTH.exists() else {}
     now = dt.datetime.now(dt.timezone.utc)
     failing = {k: v for k, v in health.items() if not k.startswith("_") and alarming(v, now)}
+    failing.update(sub_failing(now))
     warming = {k: v for k, v in health.items() if not k.startswith("_") and int(v.get("streak", 0)) > 0 and k not in failing}
     for k, v in sorted(health.items()):
         if k.startswith("_"):
@@ -79,7 +103,7 @@ def main(manage_issue: bool) -> int:
     last_key = str((health.get("_issue") or {}).get("key", ""))
 
     def lines(d):
-        return "\n".join(f"- **{NAMES.get(k, k)}** (`{k}`): {v.get('streak')} yritystä peräkkäin{' (huoltokatko lähteessä)' if v.get('outage') else ''}, viimeksi onnistui {v.get('last_ok') or 'ei koskaan'}"
+        return "\n".join(f"- **{NAMES.get(k, k)}** (`{k}`): {v.get('streak')}{'' if isinstance(v.get('streak'), str) else ' yritystä peräkkäin'}{' (huoltokatko lähteessä)' if v.get('outage') else ''}, viimeksi onnistui {v.get('last_ok') or 'ei koskaan'}"
                          f"\n  `{(v.get('last_error') or '')[:200]}`" for k, v in sorted(d.items()))
 
     if failing:

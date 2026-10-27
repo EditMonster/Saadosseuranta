@@ -189,7 +189,8 @@ def build_ratkaisut(items: list[dict], extra: list[dict] | None = None) -> dict:
 
     seen_ids = {r["id"] for r in rows}
     for r in extra or []:
-        if r.get("id") and r["id"] not in seen_ids and r.get("date") and r.get("date") >= cutoff:
+        own = r.pop("ownWindow", False)  # the sector layer already cut it by its source's own keep_days (yleissitovat TES: a year)
+        if r.get("id") and r["id"] not in seen_ids and r.get("date") and (own or r.get("date") >= cutoff):
             r.setdefault("scope", "ratkaisu")
             r.setdefault("topics", classify(" ".join([r.get("title") or "", r.get("summary") or "", " ".join(r.get("keywords") or [])]), topics_cfg) or ["Muut"])
             rows.append(r)

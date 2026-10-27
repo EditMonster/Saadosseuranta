@@ -22,8 +22,11 @@ import datetime as dt
 
 from common import CACHE_DIR, CONFIG_DIR, TODAY, load_json, load_yaml
 
-COURTS = {"vero_kvl": ("KVL", "Keskusverolautakunta"), "tsv_finlex": ("TSV", "Tietosuojavaltuutettu")}
-LINK_NAMES = {"vero_kvl": "vero", "vero_ohjeet": "vero", "tsv_finlex": "finlex"}
+COURTS = {"vero_kvl": ("KVL", "Keskusverolautakunta"), "tsv_finlex": ("TSV", "Tietosuojavaltuutettu"),
+          "eoa_finlex": ("EOA", "Eduskunnan oikeusasiamies"), "okv_finlex": ("OKV", "Valtioneuvoston oikeuskansleri"),
+          "tes_finlex": ("TES", "Työehtosopimuksen yleissitovuuden vahvistamislautakunta")}
+LINK_NAMES = {"hankeikkuna_kuulemiset": "hankeikkuna", "vero_kvl": "vero", "vero_ohjeet": "vero", "tsv_finlex": "finlex", "eoa_finlex": "finlex", "okv_finlex": "finlex",
+              "tes_finlex": "finlex", "maaraykset_finlex": "finlex"}
 
 
 def classify(text: str, topics_cfg: dict) -> list[str]:
@@ -47,7 +50,7 @@ def _cut(days: int) -> str:
 def _topics(r: dict, scfg: dict, topics_cfg: dict) -> list[str]:
     text = " ".join([r.get("title") or "", r.get("summary") or "", " ".join(r.get("keywords") or []), " ".join(r.get("taxTypes") or [])])
     topics = classify(text, topics_cfg)
-    defaults = list(scfg.get("aihealueet") or [])
+    defaults = list(r.get("aihealueet") or scfg.get("aihealueet") or [])  # a row's own field (the agency's) wins
     if scfg.get("aihealueet_aina") and defaults:  # single-field regulator: its field always applies
         return defaults + [t for t in topics if t not in defaults and t != "Muut"]
     return topics if topics != ["Muut"] else (defaults or ["Muut"])
@@ -170,13 +173,24 @@ def build_toimiala(topics_cfg: dict, settings: dict) -> dict:
                     continue
                 items.append(consultation_item(r, scfg, topics_cfg, defaults))
             elif laji == "ratkaisu":
-                if (r.get("date") or "9999") < _cut(int(ruling_keep or keep_days)):
+                # a source's own keep_days wins (yleissitovat TES stay a year); otherwise the rulings view's window
+                if (r.get("date") or "9999") < _cut(int(scfg["keep_days"]) if "keep_days" in scfg else int(ruling_keep or keep_days)):
                     continue
-                rulings.append(ruling_row(r, scfg, topics_cfg))
+                row = ruling_row(r, scfg, topics_cfg)
+                if "keep_days" in scfg and int(scfg["keep_days"]) > int(ruling_keep or defaults.get("keep_days", 120)):
+                    row["ownWindow"] = True
+                rulings.append(row)
             elif laji == "ohje":
                 if (r.get("date") or "9999") < cut:
                     continue
                 items.append(guidance_item(r, scfg, topics_cfg))
+    # lausuntokierrokset of Hankeikkuna projects other than HE/asetus projects (selvitykset, strategiat, työryhmät)
+    hk = load_json(CACHE_DIR / "hankeikkuna.json", {}) or {}
+    grace = int(defaults.get("consultation_grace_days", 30))
+    for r in hk.get("kuulemiset") or []:
+        if (r.get("deadline") or r.get("date") or "") < _cut(grace):
+            continue
+        items.append(consultation_item(r, {"scope": "fi"}, topics_cfg, defaults))
     items.sort(key=lambda i: ((i.get("events") or [{}])[0].get("date") or "", i["id"]), reverse=True)
     rulings.sort(key=lambda i: (i.get("date") or "", i["id"]), reverse=True)
     return {"items": items, "rulings": rulings}

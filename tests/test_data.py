@@ -554,3 +554,19 @@ def test_annetut_lausunnot(items):
     assert read_total >= 100, "yhtään lausuntoa ei ole tiivistetty"
     assert sum(i["lausunnotN"]["valiokunnat"] for i in with_n) >= 50, "valiokuntien lausunnot ja mietinnöt puuttuvat"
     assert files[with_n[0]["id"]].stat().st_size < 400_000
+
+
+def test_new_sources_reach_the_page(items):
+    """Arviointineuvosto (HE texts), Finlex: oikeusasiamies, oikeuskansleri, yleissitovat TES, määräyskokoelmat;
+    Hankeikkuna: lausuntokierrokset of projects other than HE/asetus projects."""
+    an = [it for it in items if it.get("arviointineuvosto")]
+    assert len(an) >= 50
+    for it in an:
+        a = it["arviointineuvosto"]
+        assert a["text"] and a["he"].startswith("HE ") and (not a.get("date") or re.match(r"^\d{4}-\d{2}-\d{2}$", a["date"]))
+        assert not a.get("verdict") or a.get("label")
+    assert sum(1 for it in items if it["id"].startswith("fi-toim-maar-")) >= 10
+    rulings = json.loads((DATA / "ratkaisut.json").read_text(encoding="utf-8"))
+    rows = rulings["items"] if isinstance(rulings, dict) else rulings
+    courts = {r["court"] for r in rows}
+    assert {"EOA", "OKV", "TES"} <= courts
