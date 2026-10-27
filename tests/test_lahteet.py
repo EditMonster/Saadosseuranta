@@ -122,3 +122,15 @@ def test_nim_rows():
     assert r == {"title": "Kirjanpitolaki", "sk": "1336/1997", "type": "Laki", "date": "2024-10-01", "notif": "2024-10-01"}
     a = fn.measure_row({"title": "LANDSKAPSLAG (2025:57) om cybersäkerhet", "oj": "2025:57", "type": "Landskapslag"})
     assert "sk" not in a and a["oj"] == "2025:57"
+
+
+def test_ted_joint_procurement_takes_the_watched_country():
+    import fetch_ted as fted
+    n = {"publication-number": "1-2026", "notice-title": {"fin": "Latvia – Rakennustyöt – Ielas pārbūve"},
+         "buyer-name": {"lav": "Ogres novada pašvaldība"}, "buyer-country": ["BEL", "LVA"], "publication-date": "2026-10-20+02:00"}
+    rec = fted.trim_notice(n, {"SE", "EE", "LV", "LT"})
+    assert rec["country"] == "LV" and rec["title"] == "Ielas pārbūve" and rec["cpvText"] == "Rakennustyöt"
+    assert rec["buyer"] == "Ogres novada pašvaldība"
+    assert fted.trim_notice(n)["country"] == "BE"  # without a watch list the first buyer country
+    q = fted.build_query(["LT"], __import__("datetime").date(2026, 10, 1), ["72*"])
+    assert "(buyer-country IN (LTU))" in q

@@ -1012,7 +1012,7 @@ def main():
                         "EU:n neuvosto – Coreperin ja neuvoston esityslistat (Cellar)", "Euroopan parlamentti – täysistuntoennusteet (OEIL, data.europarl.europa.eu)",
                         "Komissio – rikkomusmenettelyt Suomea vastaan", "Komitologiarekisteri – täytäntöönpanosäädökset", "EU-pakotteet (Cellar, EUVL L)",
                         "Hilma – sopimuskaudet ja kilpailutussuunnitelmat", "Hankintakalenterit: Hansel, HUS, Espoo, Senaatti, Tampere, Tuomi, LUVN",
-                        "TED (api.ted.europa.eu) – SE, EE, DK, NO", "Helsingin kaupungin päätöspalvelu – hankintapäätökset",
+                        "TED (api.ted.europa.eu) – " + ", ".join(str(c) for c in ((settings.get("ted") or {}).get("maat") or [])), "Helsingin kaupungin päätöspalvelu – hankintapäätökset",
                         "Tutkihankintoja.fi (Valtiokonttori) – valtion toimittajat", "KKV – hankintojen valvonta ja kilpailunrajoitusasiat"]}
     # Sanity gate: never publish an obviously broken data set (a source returning garbage would
     # otherwise wipe the page). Thresholds are deliberately low; adjust in settings.yaml.

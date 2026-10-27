@@ -5,7 +5,8 @@ Source: the keyless TED API v3, ``POST https://api.ted.europa.eu/v3/notices/sear
 query such as
 ``(buyer-country IN (SWE EST DNK NOR)) AND (publication-date >= 20261011) AND (classification-cpv IN (72* 48*))
 AND (notice-type IN (cn-standard cn-social pin-cfc-standard pin-only pin-buyer)) SORT BY publication-date DESC``
-and ITERATION paging (``iterationNextToken``), 250 notices per page, at most 1 000 notices per run.
+and ITERATION paging (``iterationNextToken``), 250 notices per page, at most 1 000 notices per country and run
+(one query per country; a country new to the cache is read ``backfill_days`` back once).
 Configuration lives in config/settings.yaml → ``ted`` (countries as ISO alpha-2, lookback days, CPV
 patterns; an empty list means the CPV divisions of config/hankinnat.yaml's toimialat). Finnish notices
 are not fetched here – Hilma already has every one of them.
@@ -132,16 +133,18 @@ def deadline_utc(dates, times) -> str | None:
     return best
 
 
-def trim_notice(n: dict) -> dict:
+def trim_notice(n: dict, wanted: set[str] | None = None) -> dict:
     title, lang = pick_title(n.get("notice-title"))
-    buyer, _ = pick_title(n.get("buyer-name"), order=("fin", "swe", "eng", "dan", "nor", "est"))
+    buyer, _ = pick_title(n.get("buyer-name"), order=("fin", "swe", "eng", "dan", "nor", "est", "lav", "lit"))
     deadline = deadline_utc(n.get("deadline-receipt-tender-date-lot"), n.get("deadline-receipt-tender-time-lot"))
     kind = "tarjous" if deadline else None
     if not deadline:
         deadline = deadline_utc(n.get("deadline-receipt-request-date-lot"), n.get("deadline-receipt-request-time-lot"))
         kind = "osallistumishakemus" if deadline else None
     cpv = list(dict.fromkeys(str(c) for c in (n.get("classification-cpv") or []) if c))
-    country = _first(n.get("buyer-country")) or ""
+    # a joint procurement lists several buyer countries: the watched one names the notice
+    bc = [str(c) for c in (n.get("buyer-country") if isinstance(n.get("buyer-country"), list) else [n.get("buyer-country")]) if c]
+    country = next((c for c in bc if wanted and ALPHA2.get(c, c[:2]) in wanted), bc[0] if bc else "")
     value = _first(n.get("estimated-value-glo"))
     if value is None:
         lots = [float(x) for x in (n.get("estimated-value-lot") or []) if str(x).replace(".", "", 1).isdigit()]
@@ -199,17 +202,29 @@ def main():
     cpv = cpv_patterns(cfg, load_yaml(CONFIG_DIR / "hankinnat.yaml") or {})
     if not cpv:
         raise RuntimeError("TED: ei yhtään CPV-ehtoa (settings.yaml ted.cpv tai hankinnat.yaml toimialat)")
-    query = build_query(countries, TODAY - dt.timedelta(days=days), cpv)
-    raw, total = search(query)
+    backfill_days = int(cfg.get("backfill_days", 45))
     old = (load_json(OUT, {}) or {}).get("notices") or {}
+    known = {n.get("country") for n in old.values()}
+    # one query per country: together the countries exceed the per-query cap, and without a sort clause (it breaks
+    # ITERATION paging) a capped result would drop arbitrary notices. A country new to the cache is read further back
+    # once so that tenders already open when it was added are listed at once.
+    raw, total, queries = [], 0, []
+    for c in countries:
+        lookback = days if c.upper() in known else max(days, backfill_days)
+        queries.append(build_query([c], TODAY - dt.timedelta(days=lookback), cpv))
+        part, n = search(queries[-1])
+        raw += part
+        total += n
+        if n > MAX_NOTICES:
+            log(f"warn: ted {c}: {n} ilmoitusta ylittää kyselykohtaisen rajan {MAX_NOTICES} – pienennä settings.yaml ted.days tai rajaa ted.cpv")
+        if lookback != days:
+            log(f"ted {c}: uusi maa, haettu {lookback} päivän ilmoitukset ({n})")
     if not raw and total == 0 and len(old) > 20:
         raise RuntimeError("TED palautti nolla ilmoitusta – kysely tai rajapinta näyttää rikkinäiseltä")
-    if total > MAX_NOTICES:
-        log(f"warn: ted: {total} ilmoitusta ylittää ajokohtaisen rajan {MAX_NOTICES} – pienennä settings.yaml ted.days tai rajaa ted.cpv")
     notices = dict(old)
     new = 0
     for n in raw:
-        rec = trim_notice(n)
+        rec = trim_notice(n, {c.upper() for c in countries})
         if not rec.get("pn"):
             continue
         if rec["pn"] not in notices:
@@ -217,7 +232,7 @@ def main():
         notices[rec["pn"]] = rec
     kept = {k: v for k, v in notices.items() if keep(v, days, pin_days)}
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    save_json(OUT, {"fetched": now, "query": query, "notices": kept}, compact=True)
+    save_json(OUT, {"fetched": now, "query": queries, "notices": kept}, compact=True)
     per_country = {}
     for v in kept.values():
         per_country[v.get("country")] = per_country.get(v.get("country"), 0) + 1

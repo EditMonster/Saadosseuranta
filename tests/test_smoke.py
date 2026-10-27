@@ -591,7 +591,14 @@ def test_tender_forward_stages_and_ted(page, base_url):
     page.click("#hk-stages [data-stage='avoin']")
     page.select_option("#hk-country", "SE")
     page.wait_for_timeout(200)
-    assert "SE (TED)" in page.text_content("#count") and page.locator(".hk-row").count() >= 10
+    assert "Ruotsi (TED)" in page.text_content("#count") and page.locator(".hk-row").count() >= 10
+    if page.locator("#hk-country option[value='BALT']").count():  # a region lists all its countries
+        page.select_option("#hk-country", "BALT")
+        page.wait_for_timeout(200)
+        assert "Baltia (TED)" in page.text_content("#count")
+        assert page.evaluate("TENDERS.filter(matchesTender).every(t=>['EE','LV','LT'].includes(t.country))")
+        page.select_option("#hk-country", "SE")
+        page.wait_for_timeout(200)
     assert "TED:ssä" in page.locator(".hk-row").first.inner_text()
     page.select_option("#hk-country", "FI")
     page.wait_for_timeout(200)

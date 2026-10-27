@@ -1389,7 +1389,7 @@ function matchesTender(it){
   if(state.hkScope==="eu" && !it.eu) return false;
   if(state.hkScope==="fi" && it.eu) return false;
   const pinnedQ=state.q||state.folderFilter||(state.followOnly&&state.follow.has(it.id));
-  if(!pinnedQ){ if(state.hkCountry==="FI"){ if(it.country) return false; } else if(it.country!==state.hkCountry) return false; }
+  if(!pinnedQ&&!inHkCountry(it)) return false;
   const st=stageOf(it);
   if(st==="avoin" && it.dps && !state.hkDps && !state.follow.has(it.id)) return false;
   const pinned=(state.followOnly&&state.follow.has(it.id))||state.q||state.folderFilter;
@@ -1425,11 +1425,19 @@ function incumbentsHTML(it){
   if(!named.length) return "";
   return `<div class="win micro" title="Hankintayksikön suurimmat toimittajat samassa luokassa viimeisen 12 kk aikana (Tutkihankintoja.fi, valtion ostolaskut)">Nykyiset toimittajat: ${named.slice(0,5).map(x=>`<b>${esc(x.name)}</b> ${esc(EUR.format(Math.round(x.sum/1000)))} t€`).join(" · ")}${named[0].category?` <span class="micro">(${esc(named[0].category)})</span>`:""}</div>`;
 }
+/* TED-maat: yksittäinen maa tai alue (Baltia, Pohjoismaat), Suomi tulee Hilmasta */
+const HK_REGIONS={BALT:["Baltia",["EE","LV","LT"]],NORD:["Pohjoismaat",["SE","NO","DK","IS"]]};
+const HK_COUNTRY_FI={SE:"Ruotsi",EE:"Viro",DK:"Tanska",NO:"Norja",IS:"Islanti",DE:"Saksa",LV:"Latvia",LT:"Liettua",NL:"Alankomaat",PL:"Puola"};
+function inHkCountry(x,c){ c=c||state.hkCountry; if(c==="FI") return !x.country; const r=HK_REGIONS[c]; return r?r[1].includes(x.country):x.country===c; }
 function buildCountrySelect(){
-  const sel=document.getElementById("hk-country"); const cs=[...new Set(TENDERS.filter(t=>t.country).map(t=>t.country))].sort();
-  const names={SE:"Ruotsi",EE:"Viro",DK:"Tanska",NO:"Norja",DE:"Saksa",LV:"Latvia",LT:"Liettua",NL:"Alankomaat",PL:"Puola"};
-  sel.innerHTML=`<option value="FI">Suomi (Hilma)</option>`+cs.map(c=>`<option value="${esc(c)}">${esc(names[c]||c)} (TED) · ${TENDERS.filter(t=>t.country===c).length}</option>`).join("");
-  if(!cs.includes(state.hkCountry)) state.hkCountry="FI"; sel.value=state.hkCountry; sel.hidden=!cs.length;
+  const sel=document.getElementById("hk-country"); const cs=[...new Set(TENDERS.filter(t=>t.country).map(t=>t.country))];
+  const n=c=>TENDERS.filter(t=>inHkCountry(t,c)).length;
+  const regions=Object.entries(HK_REGIONS).filter(([k,[,m]])=>m.filter(c=>cs.includes(c)).length>1);
+  const countries=cs.slice().sort((a,b)=>(HK_COUNTRY_FI[a]||a).localeCompare(HK_COUNTRY_FI[b]||b,"fi"));
+  sel.innerHTML=`<option value="FI">Suomi (Hilma)</option>`
+    +(regions.length?`<optgroup label="Alueet (TED)">${regions.map(([k,[name,m]])=>`<option value="${k}">${esc(name)} (${m.filter(c=>cs.includes(c)).join(", ")}) · ${n(k)}</option>`).join("")}</optgroup>`:"")
+    +`<optgroup label="Maat (TED)">${countries.map(c=>`<option value="${esc(c)}">${esc(HK_COUNTRY_FI[c]||c)} · ${n(c)}</option>`).join("")}</optgroup>`;
+  if(!cs.includes(state.hkCountry)&&!regions.some(([k])=>k===state.hkCountry)) state.hkCountry="FI"; sel.value=state.hkCountry; sel.hidden=!cs.length;
 }
 document.getElementById("hk-country").addEventListener("change",e=>{ state.hkCountry=e.target.value; state.hkShown=150; persist(); render(); });
 function factsHTML(it,full){
@@ -2710,7 +2718,7 @@ function render(){
   document.getElementById("n-kr").textContent=MERGERS_LOADED?MERGERS.filter(m=>m.segment==="kilpailunrajoitus"&&!m.done&&baseVisible(m)).length:"";
   document.getElementById("yk-open").checked=state.ykOpen; document.getElementById("yk-fi").checked=state.ykFi;
   document.querySelectorAll("#hk-tools [data-scope]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.scope===state.hkScope)));
-  document.querySelectorAll("#hk-stages [data-stage]").forEach(b=>{ b.setAttribute("aria-pressed",String(b.dataset.stage===state.hkStage)); const live={avoin:"avoin",tulossa:"tulossa",suorahankinta:"valitusaika",ratkaistu:"ratkaistu",mao:"vireillä",paatos:"valitusaika",ennuste:"ennuste",kalenteri:"suunniteltu"}[b.dataset.stage]; const inCountry=x=>state.hkCountry==="FI"?!x.country:x.country===state.hkCountry; b.querySelector(".n").textContent=TENDERS_LOADED?TENDERS.filter(x=>inCountry(x)&&stageOf(x)===b.dataset.stage&&x.status===live&&!deadlineInfo(x).over&&(b.dataset.stage!=="avoin"||!x.dps)).length:""; });
+  document.querySelectorAll("#hk-stages [data-stage]").forEach(b=>{ b.setAttribute("aria-pressed",String(b.dataset.stage===state.hkStage)); const live={avoin:"avoin",tulossa:"tulossa",suorahankinta:"valitusaika",ratkaistu:"ratkaistu",mao:"vireillä",paatos:"valitusaika",ennuste:"ennuste",kalenteri:"suunniteltu"}[b.dataset.stage]; const inCountry=x=>inHkCountry(x); b.querySelector(".n").textContent=TENDERS_LOADED?TENDERS.filter(x=>inCountry(x)&&stageOf(x)===b.dataset.stage&&x.status===live&&!deadlineInfo(x).over&&(b.dataset.stage!=="avoin"||!x.dps)).length:""; });
   document.getElementById("hk-within").hidden=false; document.getElementById("hk-within").querySelectorAll("option").forEach(o=>{ if(o.value!=="0") o.textContent=(state.hkStage==="ratkaistu"||(state.hkStage==="mao"&&state.hkMao==="ratkaistu")?"Ratkaistu ":(state.hkStage==="mao"?"Vireille ":"Sulkeutuu "))+o.value+" pv"; }); document.getElementById("hk-mao-tools").hidden=state.hkStage!=="mao"; document.querySelectorAll("#hk-mao-tools [data-mao]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mao===state.hkMao))); document.getElementById("hk-dps").parentElement.hidden=state.hkStage!=="avoin";
   document.getElementById("hk-within").value=String(state.hkWithin); document.getElementById("hk-dps").checked=state.hkDps;
   document.getElementById("q").placeholder=hk?"Hae hankinnan nimellä, hankintayksiköllä, CPV:llä tai sisällöllä":(yk?"Hae osapuolen nimellä tai diaarinumerolla":"Hae nimellä, numerolla tai sisällöllä");
@@ -2735,7 +2743,7 @@ function render(){
   if(state.tab==="yk"){ document.getElementById("legend-yk").innerHTML=legendHTML("yk"); if(!MERGERS_LOADED) document.getElementById("tl-yk").innerHTML='<p class="empty">Ladataan yrityskauppoja…</p>'; else renderTimeline(document.getElementById("tl-yk"), ykItems, {dense:true}); }
   document.getElementById("n-follow").textContent=state.follow.size?`(${state.follow.size})`:"";
   const fnote=state.folderFilter==="__hidden"?" · Piilotetut":(state.folderFilter&&folderById(state.folderFilter)?` · Kansio: ${folderById(state.folderFilter).name}`:"");
-  if(hk) document.getElementById("count").textContent=`${hkItems.length} ${({tulossa:"tulossa",avoin:"kilpailutusta",ratkaistu:"ratkaistua",suorahankinta:"suorahankintaa",mao:(state.hkMao==="ratkaistu"?"markkinaoikeuden ratkaisua":"valitusta markkinaoikeudessa"),paatos:"hankintapäätöstä (valitusaika tai päätös 30 pv)",ennuste:"uudelleenkilpailutuksen ennustetta",kalenteri:"suunniteltua kilpailutusta"})[state.hkStage]||"kilpailutusta"}`+(state.hkCountry!=="FI"?` · ${state.hkCountry} (TED)`:"")+(state.ptopics.size?` · ${state.ptopics.size} toimialaa`:"")+fnote;
+  if(hk) document.getElementById("count").textContent=`${hkItems.length} ${({tulossa:"tulossa",avoin:"kilpailutusta",ratkaistu:"ratkaistua",suorahankinta:"suorahankintaa",mao:(state.hkMao==="ratkaistu"?"markkinaoikeuden ratkaisua":"valitusta markkinaoikeudessa"),paatos:"hankintapäätöstä (valitusaika tai päätös 30 pv)",ennuste:"uudelleenkilpailutuksen ennustetta",kalenteri:"suunniteltua kilpailutusta"})[state.hkStage]||"kilpailutusta"}`+(state.hkCountry!=="FI"?` · ${(HK_REGIONS[state.hkCountry]||[HK_COUNTRY_FI[state.hkCountry]||state.hkCountry])[0]} (TED)`:"")+(state.ptopics.size?` · ${state.ptopics.size} toimialaa`:"")+fnote;
   else if(yk) document.getElementById("count").textContent=`${ykItems.length} ${state.ykSegment==="kilpailunrajoitus"?"kilpailunrajoitusasiaa":"yrityskauppaa"}`+(state.yktopics.size?` · ${state.yktopics.size} toimialaa`:"")+fnote;
   else if(rk) document.getElementById("count").textContent=`${RULINGS_LOADED?RULINGS.filter(r=>matchesRuling(r)).length:"…"} ratkaisua`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"")+fnote;
   else { const n={now:fi.length+eu.length,fi:fi.length,eu:eu.length,done:done.length}[state.tab]; document.getElementById("count").textContent=`${n} säädöstä`+(state.topics.size?` · ${state.topics.size} aihealuetta`:"")+fnote; }

@@ -77,8 +77,9 @@ vaski:
 # samoilta toimialoilta kuin Hilma-seuranta. Suomen ilmoitukset tulevat Hilmasta, joten FI ei ole listalla.
 ted:
   enabled: true
-  maat: ["SE", "EE", "DK", "NO"]   # ISO 3166-1 alpha-2 lainausmerkeissä (YAML lukisi NO:n epätotena); TEDiin SWE EST DNK NOR
+  maat: ["SE", "NO", "DK", "EE", "LV", "LT"]   # ISO 3166-1 alpha-2 lainausmerkeissä (YAML lukisi NO:n epätotena); Pohjoismaat ja Baltia
   days: 7                  # kuinka monen päivän julkaisut haetaan joka ajossa (ilmoitus säilyy määräaikaansa asti)
+  backfill_days: 45        # listalle lisätystä maasta haetaan ensimmäisellä kerralla näin monen päivän ilmoitukset
   cpv: []                  # tyhjä = config/hankinnat.yaml toimialojen CPV-etuliitteet ("72*"-muodossa)
   pin_days: 90             # ennakkoilmoitukset (pin-*) ilman määräaikaa pidetään näin monta päivää julkaisusta
 
