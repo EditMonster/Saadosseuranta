@@ -1,4 +1,11 @@
 {
+ "asiat": {
+  "last_error": null,
+  "last_ok": "2026-10-27T16:26:56Z",
+  "ok": true,
+  "outage": false,
+  "streak": 0
+ },
  "avoimuus": {
   "last_error": null,
   "last_ok": "2026-10-27T13:18:27Z",
@@ -110,7 +117,7 @@
  "lausunnot": {
   "last_error": null,
   "last_fail": "2026-10-23T10:02:39Z",
-  "last_ok": "2026-10-27T13:18:27Z",
+  "last_ok": "2026-10-27T16:26:56Z",
   "ok": true,
   "outage": false,
   "streak": 0
