@@ -2408,10 +2408,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-21@saadosseuranta
-DTSTAMP:20261221T000000Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
+UID:eu-hys-19517-lausunto-2026-12-22@saadosseuranta
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2471,15 +2471,6 @@ DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19418_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-17712-lausunto-2026-10-26@saadosseuranta
-DTSTAMP:20261026T000000Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
-SUMMARY:[EU] Lausuntoaika päättyy: Jätteet – varhaisvaroituskertomus 2027
-DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-hys-19293-lausunto-2026-12-14@saadosseuranta
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
@@ -2489,10 +2480,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-21@saadosseuranta
-DTSTAMP:20261221T000000Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
+UID:eu-hys-15492-lausunto-2026-12-22@saadosseuranta
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2543,6 +2534,15 @@ DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-17712-lausunto-2026-10-26@saadosseuranta
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[EU] Lausuntoaika päättyy: Jätteet – varhaisvaroituskertomus 2027
+DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -2568,6 +2568,15 @@ DTEND;VALUE=DATE:20261110
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the Annex to Regulation (EU) 2019/452 of the European Parliament and of the Council establishing a framework
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 8.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6107 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2819-maaraaika-2026-12-28@saadosseuranta
+DTSTAMP:20261228T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2024/1157 of the European Parliament and of the Council by establishing criteria on the
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)7389 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2819
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2819
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2858-maaraaika-2027-01-04@saadosseuranta
@@ -2993,6 +3002,15 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6909 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3155
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3173-maaraaika-2026-12-28@saadosseuranta
+DTSTAMP:20261228T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2024/1157 of the European Parliament and of the Council as regards wastes and mixtures of wa
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)7390 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-toim-fiva-52-2026-voimaan-2026-12-31@saadosseuranta
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
@@ -3063,15 +3081,6 @@ DTEND;VALUE=DATE:20261114
 SUMMARY:[EU] Lausuntoaika päättyy: Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR
 DESCRIPTION:Palauteaika · Guidelines 4/2026 · https://www.edpb.europa.eu/public-consultations/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en
 URL:https://www.edpb.europa.eu/public-consultations/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-toim-fiva-41-2026-soveltaminen-2026-10-19@saadosseuranta
-DTSTAMP:20261019T000000Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
-SUMMARY:[FI] Soveltaminen: Muutos EBAn maksukyvyttömyyden määritelmään liittyviin ohjeisiin EBA/GL/2016/07 – soveltaminen alkaa 19.10.2026
-DESCRIPTION:Soveltaminen alkaa · Fiva 41/2026 · https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutos-eban-maksukyvyttomyyden-maaritelmaan-liittyviin-ohjeisiin-ebagl201607--soveltaminen-alkaa-19.10.2026
-URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutos-eban-maksukyvyttomyyden-maaritelmaan-liittyviin-ohjeisiin-ebagl201607--soveltaminen-alkaa-19.10.2026
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-esma-consultation-update-guidelines-disclosure-requirements-under-prospectu-lausunto-2026-11-09@saadosseuranta

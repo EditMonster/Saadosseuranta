@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-26T14:23:36",
+ "fetched": "2026-10-27T06:23:18",
  "items": [
   {
    "actType": "COMMUNIC",
@@ -187,7 +187,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-21",
+     "end": "2026-12-22",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -205,7 +205,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-21",
+     "end": "2026-12-22",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -385,7 +385,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-21",
+     "end": "2026-12-22",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -578,24 +578,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14460_en"
   },
   {
-   "actType": "REPORT",
-   "actTypeLabel": "Kertomus",
-   "id": 17712,
-   "periods": [
-    {
-     "end": "2026-10-26",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-09-28"
-    }
-   ],
-   "reference": "Ares(2026)3757008",
-   "status": "ACTIVE",
-   "title_en": "Early warning report on waste 2027",
-   "title_fi": "Jätteet – varhaisvaroituskertomus 2027",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19293,
@@ -625,7 +607,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-21",
+     "end": "2026-12-22",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -888,6 +870,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REPORT",
+   "actTypeLabel": "Kertomus",
+   "id": 17712,
+   "periods": [
+    {
+     "end": "2026-10-26",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-09-28"
+    }
+   ],
+   "reference": "Ares(2026)3757008",
+   "status": "ACTIVE",
+   "title_en": "Early warning report on waste 2027",
+   "title_fi": "Jätteet – varhaisvaroituskertomus 2027",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en"
   },
   {
    "actType": "REG_IMPL",

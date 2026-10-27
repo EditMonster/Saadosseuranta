@@ -639,7 +639,7 @@
    "sector": "NaceV2Sector_K_63.10",
    "simplified": "MEsupersimplified",
    "timeline": [],
-   "title": "SNOWHAWK / ARES / MACQUARIE / DATA REALTY GROUP / PRIME DATA CENTRES"
+   "title": "SNOWHAWK / ARES / MACQUARIE / DATA REALTY GROUP / PRIME DATA CENTERS"
   },
   "M.12324": {
    "caseNumber": "M.12324",
@@ -2826,9 +2826,14 @@
   "M.12484": {
    "caseNumber": "M.12484",
    "deadline": "2026-11-09",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-26",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-05-26",
-   "lastDecision": null,
+   "lastDecision": "2026-10-26",
    "notice": {
     "activities": [
      "Itochu harjoittaa kotimaista ja kansainvälistä kauppaa monilla eri aloilla, kuten tekstiilit, koneet, metallit, mineraalit, energia, kemikaalit, elintarvikkeet, yleistuotteet, kiinteistöt, tieto- ja viestintätekniikka ja rahoitus. Itochu harjoittaa lentokoneiden vuokrausta kokonaan omistamansa tytäryhtiön IC Aero Co. Ltd kautta. Lisäksi Itochu on investoinut yritykseen Sirius Aviation Capital Holdings Limited, U.A.E.",
@@ -2872,7 +2877,7 @@
      "reference": "C:2026:5273:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_O_77.35",
    "simplified": "MEsimplified",
@@ -7825,5 +7830,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-26T14:25:46Z"
+ "fetched": "2026-10-27T06:25:34Z"
 }
