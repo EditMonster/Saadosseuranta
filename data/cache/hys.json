@@ -1,6 +1,96 @@
 {
- "fetched": "2026-10-27T06:23:18",
+ "fetched": "2026-10-27T13:21:18",
  "items": [
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19220,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)8434030",
+   "status": "ACTIVE",
+   "title_en": "Road transport smart enforcement and simplification",
+   "title_fi": "Tieliikenne: älykäs valvonta ja prosessien yksinkertaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19220_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 15632,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2025)9555728",
+   "status": "ACTIVE",
+   "title_en": "Harmonized classification and labelling of certain substances (CLP Regulation)",
+   "title_fi": "Kemikaalien luokitus ja merkinnät – hormonaaliset haitta-aineet ja hitaasti hajoavat aineet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15632_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 17632,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)3572407",
+   "status": "ACTIVE",
+   "title_en": "Classification, labelling and packaging of substances and mixtures (CLP Regulation) ",
+   "title_fi": "Hormonitoimintaa häiritsevät kemikaalit sekä hitaasti hajoavat ja biokertyvät aineet – siirto CLP-asetuksen piiriin",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 19612,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9999188",
+   "status": "ACTIVE",
+   "title_en": "Smart enforcement and simplification in road transport - omnibus (Directive)",
+   "title_fi": null,
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19612_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19613,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9999197",
+   "status": "ACTIVE",
+   "title_en": "Smart enforcement and simplification in road transport - omnibus (Regulation)",
+   "title_fi": null,
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19613_en"
+  },
   {
    "actType": "COMMUNIC",
    "actTypeLabel": "Tiedonanto",
@@ -126,6 +216,24 @@
    "title_en": "Commission Implementing Regulation on access rights to certain parts of the battery passport",
    "title_fi": "Akut – akkupassin tiettyjen osien käyttöoikeudet",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16473_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19496,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619342",
+   "status": "ACTIVE",
+   "title_en": "Simplification of reporting requirements under Regulation (EC) No 1370/2007 on public transport by rail and by road",
+   "title_fi": "Rautateiden ja maanteiden julkinen henkilöliikenne – raportointivaatimusten yksinkertaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19496_en"
   },
   {
    "actType": "PROP_REG",
@@ -324,6 +432,60 @@
    "title_en": "Revision of network code on capacity allocation mechanisms in gas transmission systems ",
    "title_fi": "Kaasunsiirtoverkkojen kapasiteetinjakomekanismeja koskeva verkkosääntö – tarkistaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19497,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619420",
+   "status": "ACTIVE",
+   "title_en": "Alignment of download periods from the vehicle unit and driver card with current tachograph technical capabilities",
+   "title_fi": "Ajopiirturitietojen säilytysaikojen ja kopiointivälien yhdenmukaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19497_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19495,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619285",
+   "status": "ACTIVE",
+   "title_en": "Introduction of over-the-air updates of tachograph software for smart enforcement and simplification purposes.",
+   "title_fi": "Ajopiirturiohjelmistot – langattomat päivitykset älykästä valvontaa ja yksinkertaistamista varten",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19495_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19494,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619242",
+   "status": "ACTIVE",
+   "title_en": "Introduction of new identifiers in the electronic freight transport information (eFTI) registry of identifiers",
+   "title_fi": "Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en"
   },
   {
    "actType": "REG_IMPL",

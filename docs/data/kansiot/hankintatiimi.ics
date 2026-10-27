@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-60497-maaraaika-2026-11-03-hankintatiimi@saadosseuranta
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[Hankinta] Määräaika: Ruokapalveluiden omavalvontajärjestelmä (HACCP)
+DESCRIPTION:Tarjoukset viimeistään · 2026-060497 · https://www.hankintailmoitukset.fi/fi/public/procedure/38408/enotice/60497
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38408/enotice/60497
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-743376-2026-maaraaika-2026-11-10-hankintatiimi@saadosseuranta
 DTSTAMP:20261110T000000Z
 DTSTART;VALUE=DATE:20261110
@@ -21,6 +30,15 @@ DTEND;VALUE=DATE:20261113
 SUMMARY:[Hankinta] Määräaika: BOOST 2027 – Upphandling av AMM-lösning\, Mätarutrullning och verksamhetsutvecklande tjänster.
 DESCRIPTION:Osallistumishakemukset viimeistään · BOO ENERGI EK FÖR · https://ted.europa.eu/fi/notice/-/detail/744843-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/744843-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60440-maaraaika-2026-11-13-hankintatiimi@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[Hankinta] Määräaika: Työturvallisuusjärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060440 · https://www.hankintailmoitukset.fi/fi/public/procedure/39239/enotice/60440
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39239/enotice/60440
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-742041-2026-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
@@ -138,6 +156,15 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Asiantuntijapalvelu digitaalisten prosessien ja työnkulkujen kehittämiseen Jyväskylän yliopiston Vasara-järjestelmään 2027 (2028)
 DESCRIPTION:Tarjoukset viimeistään · 2026-060329 · https://www.hankintailmoitukset.fi/fi/public/procedure/39181/enotice/60329
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39181/enotice/60329
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60438-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[Hankinta] Määräaika: WordPress-verkkosivuston (hri.fi) ylläpito ja jatkokehitys
+DESCRIPTION:Tarjoukset viimeistään · 2026-060438 · https://www.hankintailmoitukset.fi/fi/public/procedure/39238/enotice/60438
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39238/enotice/60438
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-EF-60265-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
@@ -1803,32 +1830,5 @@ DTEND;VALUE=DATE:20261117
 SUMMARY:[Hankinta] Määräaika: Mötesteknik
 DESCRIPTION:Tarjoukset viimeistään · Sveriges Meteorologiska och Hydrologiska Institut · https://ted.europa.eu/fi/notice/-/detail/717130-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/717130-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-717175-2026-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
-DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:[Hankinta] Määräaika: Integratsiooni Sihtasutuse kodulehe arendus ja haldus
-DESCRIPTION:Tarjoukset viimeistään · Integratsiooni Sihtasutus · https://ted.europa.eu/fi/notice/-/detail/717175-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/717175-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-718265-2026-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
-DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:[Hankinta] Määräaika: Bokningssystem för Flottsbros verksamhet
-DESCRIPTION:Osallistumishakemukset viimeistään · Huddinge Samhällsfastigheter AB · https://ted.europa.eu/fi/notice/-/detail/718265-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/718265-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-715603-2026-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
-DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[Hankinta] Määräaika: Checkout system and payment terminals
-DESCRIPTION:Osallistumishakemukset viimeistään · Vestland fylkeskommune · https://ted.europa.eu/fi/notice/-/detail/715603-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/715603-2026
 END:VEVENT
 END:VCALENDAR

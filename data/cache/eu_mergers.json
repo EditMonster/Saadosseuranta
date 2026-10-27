@@ -7314,6 +7314,23 @@
    "timeline": [],
    "title": "OCP GROUP / KI GROUP / JFC1"
   },
+  "M.12626": {
+   "caseNumber": "M.12626",
+   "deadline": "2026-12-02",
+   "decisions": [],
+   "initiated": "2026-08-31",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-27",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_81.10",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "GIMV / VP CAPITAL / BATENBURG TECHNIEK"
+  },
   "M.12632": {
    "caseNumber": "M.12632",
    "deadline": "2026-10-22",
@@ -7830,5 +7847,5 @@
    "title": "ITALGAS RETI / ALLIANZ / FLOENE"
   }
  },
- "fetched": "2026-10-27T06:25:34Z"
+ "fetched": "2026-10-27T13:23:34Z"
 }

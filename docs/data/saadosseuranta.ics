@@ -644,15 +644,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 214/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/214
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-81-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laeiksi terveydenhuoltolain\, vankeuslain 10 luvun 1 §:n ja tutkintavankeuslain 6 luvun 1 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 81/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-56-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1146,6 +1137,15 @@ DTEND;VALUE=DATE:20270502
 SUMMARY:[FI] Voimaan: Rikosseuraamuslaitoksen organisaation ja rikosseuraamusalan koulutusjärjestelmän uudistamista koskevaksi lainsäädännöksi
 DESCRIPTION:Voimaan (876/2026) · 876/2026 · HE 25/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/25
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-81-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi terveydenhuoltolain\, vankeuslain 10 luvun 1 §:n ja tutkintavankeuslain 6 luvun 1 §:n muuttamisesta
+DESCRIPTION:Voimaan (913/2026) · HE 81/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/81
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-200-2025-voimaan-2027-01-01@saadosseuranta
@@ -2363,6 +2363,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-17632-lausunto-2026-11-24@saadosseuranta
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[EU] Lausuntoaika päättyy: Hormonitoimintaa häiritsevät kemikaalit sekä hitaasti hajoavat ja biokertyvät aineet – siirto CLP-asetuksen piiriin
+DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-18695-lausunto-2026-11-23@saadosseuranta
 DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
@@ -2433,6 +2442,15 @@ DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Oikeudenmukaista työvoiman liikkuvuutta koskeva paketti: eurooppalainen sosiaaliturvapassi
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-19494-lausunto-2026-11-24@saadosseuranta
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[EU] Lausuntoaika päättyy: Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin
+DESCRIPTION:Palauteaika · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
@@ -3198,6 +3216,42 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation laying down rules for the application of Regulation (EU) 2024/1735 of the European Parliament and of the Council as regards t
 DESCRIPTION:Palauteaika (Have your say) · D118507/01 · https://ec.europa.eu/transparency/comitology-register/screen/documents/118507/1/consult
 URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118507/1/consult
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2374-voimaan-2026-10-28@saadosseuranta
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[EU] Voimaan: Neuvoston asetus (EU) 2026/2374 – Kongon demokraattinen tasavalta 1183/2005
+DESCRIPTION:Voimaan · (EU) 2026/2374 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2374
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2374
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2397-voimaan-2026-10-28@saadosseuranta
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2397 – Moldova 2010/573
+DESCRIPTION:Voimaan · (YUTP) 2026/2397 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2397
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2397
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2378-voimaan-2026-10-28@saadosseuranta
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2378 – terrorismi 2016/1693
+DESCRIPTION:Voimaan · (YUTP) 2026/2378 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2372-voimaan-2026-10-27@saadosseuranta
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2372 – Kongon demokraattinen tasavalta 2010/788
+DESCRIPTION:Voimaan · (YUTP) 2026/2372 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-pak-32026R2384-voimaan-2026-10-23@saadosseuranta

@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-27T06:27:09Z",
+ "fetched": "2026-10-27T13:24:14Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1191,7 +1191,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "710c5aae612d",
-   "lastSeen": "2026-10-27"
+   "lastSeen": "2026-10-27",
+   "missingSince": "2026-10-27"
   },
   "713fb4cfb667": {
    "buyer": "Kansaneläkelaitos",
@@ -2114,7 +2115,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "fcf24bcc7de0",
-   "lastSeen": "2026-10-27"
+   "lastSeen": "2026-10-27",
+   "missingSince": "2026-10-27"
   },
   "fda4037e5e23": {
    "buyer": "Stadion-säätiö sr",
