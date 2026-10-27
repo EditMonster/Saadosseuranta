@@ -85,7 +85,8 @@ a:hover{border-color:var(--fg)}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;padding-block:12px;border-bottom:1px solid var(--line)}
 .toolbar #lajit{width:100%}
 .chip.laji[aria-pressed="true"]{background:var(--panel2);color:var(--fg);border-color:var(--fg)}
-.chip.laji .n{opacity:.6;margin-left:4px}
+.chip.laji .n,.chip .n{opacity:.6;margin-left:4px}
+.chip.zero:not([aria-pressed="true"]){opacity:.42!important}
 .chips{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .chips-title{margin-right:8px}
 .chip{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);padding:4px 9px;border-radius:var(--radius);color:var(--muted);background:transparent}
@@ -2183,7 +2184,7 @@ const topicsEl=document.getElementById("topics");
 function buildTopicChips(list){
   topicsEl.querySelectorAll(".chip").forEach(c=>c.remove());
   const allChip=document.createElement("button"); allChip.className="chip"; allChip.textContent="Kaikki"; allChip.dataset.topic="*"; topicsEl.appendChild(allChip);
-  list.forEach(t=>{ const b=document.createElement("button"); b.className="chip"; b.textContent=t; b.dataset.topic=t; b.setAttribute("aria-pressed","false"); topicsEl.appendChild(b); });
+  list.forEach(t=>{ const b=document.createElement("button"); b.className="chip"; b.innerHTML=`${esc(t)}<span class="n"></span>`; b.dataset.topic=t; b.setAttribute("aria-pressed","false"); topicsEl.appendChild(b); });
   [...state.topics].forEach(t=>{ if(!list.includes(t)) state.topics.delete(t); });
 }
 const ptopicsEl=document.getElementById("ptopics");
@@ -2336,10 +2337,39 @@ document.getElementById("q").addEventListener("input",e=>{ state.q=e.target.valu
 document.getElementById("th-date").addEventListener("click",()=>{ state.sortDesc=!state.sortDesc; document.getElementById("th-date").textContent="Voimaantulo "+(state.sortDesc?"▾":"▴"); render(); });
 window.addEventListener("hashchange",()=>{ const h=decodeURIComponent(location.hash.replace("#","")); if(HASHTAB[h]){ if(!drawer.hidden) closeDrawer(); state.tab=HASHTAB[h]; persist(); render(); } else if(h&&findItem(h)) openItem(h); });
 
+/* Facets follow the open tab: a type or topic chip is shown only when the tab has items of it, and its number is
+   that tab's count with the other filters applied (the chip's own filter left out) – no "Lait (HE)" under EU,
+   no EU-pakotteet under Kansallinen. A selected chip stays visible so it can be switched off. */
+const LAJI_TAB_LABEL={fi:{kuuleminen:"Kuulemiset (viranomaiset)",signaali:"Aloitteet ja kysymykset",ohje:"Viranomaisohjeet"},
+  eu:{kuuleminen:"EU-kuulemiset",signaali:"EU-ennakointi",ohje:"EU-ohjeet"}};
+function facetBase(tab){
+  if(tab==="rk") return RULINGS;
+  if(tab==="done") return DATA.filter(it=>it.done);
+  if(tab==="fi"||tab==="eu") return DATA.filter(it=>!it.done&&it.scope===tab);
+  return DATA;
+}
+function refreshFacets(){
+  const tab=state.tab; if(!["now","fi","eu","done","rk"].includes(tab)) return;
+  const base=facetBase(tab).filter(baseVisible); const test=tab==="rk"?(it=>matchesRuling(it)):matches;
+  if(tab!=="rk"){
+    const present=new Set(base.map(it=>it.laji||"laki")); const lc={};
+    const saved=state.lajit; state.lajit=new Set(LAJIT.map(x=>x[0]));
+    try{ base.forEach(it=>{ if(test(it)){ const k=it.laji||"laki"; lc[k]=(lc[k]||0)+1; } }); } finally { state.lajit=saved; }
+    lajitEl.querySelectorAll(".chip").forEach(c=>{ const k=c.dataset.laji; c.hidden=!present.has(k);
+      const lab=(LAJI_TAB_LABEL[tab]||{})[k]||(LAJIT.find(x=>x[0]===k)||[,k])[1]; if(c.firstChild&&c.firstChild.nodeType===3) c.firstChild.nodeValue=lab;
+      const n=c.querySelector(".n"); if(n) n.textContent=lc[k]||0; c.classList.toggle("zero",!lc[k]); });
+  }
+  const tp=new Set(base.flatMap(it=>it.topics||[])); const tc={};
+  const savedT=state.topics; state.topics=new Set();
+  try{ base.forEach(it=>{ if(test(it)) (it.topics||[]).forEach(t=>{ tc[t]=(tc[t]||0)+1; }); }); } finally { state.topics=savedT; }
+  topicsEl.querySelectorAll(".chip[data-topic]").forEach(c=>{ const t=c.dataset.topic; if(t==="*") return;
+    c.hidden=!tp.has(t)&&!state.topics.has(t); const n=c.querySelector(".n"); if(n) n.textContent=tc[t]||0; c.classList.toggle("zero",!tc[t]); });
+}
 function render(){
   topicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.topics.size===0):String(state.topics.has(c.dataset.topic))));
   ptopicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.ptopics.size===0):String(state.ptopics.has(c.dataset.topic))));
   lajitEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(state.lajit.has(c.dataset.laji))));
+  refreshFacets();
   buildFolderSelect();
   const hk=state.tab==="hk", yk=state.tab==="yk", rk=state.tab==="rk";
   document.getElementById("rk-tools").hidden=!rk; document.getElementById("rk-fi").checked=state.rkFi; document.getElementById("rk-pending").checked=state.rkPending;
