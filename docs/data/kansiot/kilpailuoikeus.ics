@@ -5,24 +5,6 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Kilpailuoikeus (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
-UID:yk-fi-1475-2026-lausunto-2026-10-23-kilpailuoikeus@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[KKV] Lausuntoaika päättyy: Lappeenrannan Energia Oy / Kaukaan Voima Oy
-DESCRIPTION:Kuuleminen – lausunnot KKV:lle · KKV/1475/14.00.10/2026 · https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1475-14-00-10-2026/
-URL:https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1475-14-00-10-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:yk-fi-1475-2026-maaraaika-2026-11-18-kilpailuoikeus@saadosseuranta
-DTSTAMP:20261118T000000Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
-SUMMARY:[KKV] Määräaika: Lappeenrannan Energia Oy / Kaukaan Voima Oy
-DESCRIPTION:1. vaiheen määräaika (23 työpäivää) · KKV/1475/14.00.10/2026 · https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1475-14-00-10-2026/
-URL:https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1475-14-00-10-2026/
-END:VEVENT
-BEGIN:VEVENT
 UID:yk-eu-M-12540-lausunto-2026-10-30-kilpailuoikeus@saadosseuranta
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030

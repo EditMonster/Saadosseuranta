@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-27T13:19:15",
+ "fetched": "2026-10-27T19:28:43",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -51786,6 +51786,10 @@
      "type": "APR_AGRPROV_CONSIL_byEP_CMT"
     },
     {
+     "date": "2026-09-30",
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
      "date": "2026-10-09",
      "type": "APR_R1_byCONSIL"
     },
@@ -62361,11 +62365,6 @@
    "council": [
     {
      "date": "2026-10-21",
-     "projected": true,
-     "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-10-28",
      "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
