@@ -570,3 +570,35 @@ def test_new_sources_reach_the_page(items):
     rows = rulings["items"] if isinstance(rulings, dict) else rulings
     courts = {r["court"] for r in rows}
     assert {"EOA", "OKV", "TES"} <= courts
+
+
+def test_same_day_duplicates_merged():
+    """One stage recorded twice on one day is one event; different stages on the same day stay separate."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from build import merge_same_day
+    ev = merge_same_day([
+        {"date": "2026-10-01", "label": "HE 207/2026 vp", "kind": "muu"},
+        {"date": "2026-10-01", "label": "HE annettu eduskunnalle", "kind": "he"},
+        {"date": "2027-01-01", "label": "Voimaan (12/2026)", "kind": "voimaan"},
+        {"date": "2027-01-01", "label": "Voimaan (13/2026)", "kind": "voimaan"},
+        {"date": "2026-06-02", "label": "Asiantuntijakuuleminen (sosiaali- ja terveysvaliokunta): 3 kuultavaa", "kind": "eduskunta"},
+        {"date": "2026-06-02", "label": "Asiantuntijakuuleminen (sosiaali- ja terveysvaliokunta): 4 kuultavaa, 2 kirjallista lausuntoa", "kind": "eduskunta"},
+        {"date": "2026-09-17", "label": "Lähetekeskustelu", "kind": "eduskunta"},
+        {"date": "2026-09-17", "label": "Asiantuntijakuuleminen (talousvaliokunta): 2 kuultavaa", "kind": "eduskunta"},
+        {"date": "2026-11-05", "label": "Hanke on valmistunut", "kind": "muu"},
+        {"date": "2026-11-05", "label": "Vahvistettu", "kind": "vahvistettu"},
+    ])
+    labels = [(e["date"], e["label"]) for e in ev]
+    assert ("2026-10-01", "HE annettu eduskunnalle") in labels and not any(l == "HE 207/2026 vp" for _, l in labels)
+    assert ("2027-01-01", "Voimaan (12/2026, 13/2026)") in labels
+    assert ("2026-06-02", "Asiantuntijakuuleminen (sosiaali- ja terveysvaliokunta): 2 kuulemista, 7 kuultavaa, 2 kirjallista lausuntoa") in labels
+    assert sum(1 for d, _ in labels if d == "2026-09-17") == 2  # different stages stay
+    assert [l for d, l in labels if d == "2026-11-05"] == ["Vahvistettu"]
+    items = json.loads((DATA / "items.json").read_text(encoding="utf-8"))["items"]
+    for it in items:  # in the published data, no HE-given duplicate next to eduskunta's own event
+        days = {}
+        for e in it["events"]:
+            days.setdefault(e["date"], []).append(e)
+        for d, es in days.items():
+            if any(e["kind"] == "he" for e in es):
+                assert not any(e["kind"] == "muu" and re.match(r"^(HE \d+/\d{4}( vp)?|esityksen anto( eduskunnalle)?|annettu eduskunnalle)$", e["label"], re.I) for e in es), it["id"]

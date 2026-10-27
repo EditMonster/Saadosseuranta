@@ -379,6 +379,12 @@ th.sortable:hover{color:var(--fg)}
 .nx-label .in{font-family:var(--mono);font-size:10px;color:var(--muted);margin-left:4px}
 .nx-label.urgent{border-color:var(--signal)!important}
 .nx-label.urgent .in{color:var(--signal);font-weight:600}
+.ev.stacked{width:11px;height:11px;z-index:3}
+.ev-stack{position:absolute;top:50%;width:0;border-left:1.5px solid var(--fg);opacity:.35;transform:translateX(-50%);z-index:1;pointer-events:none}
+.span.lane{opacity:.92}
+.nx-label .also{font-size:10px;color:var(--signal);margin-left:4px;font-weight:500}
+.vlist li.same{margin-top:-8px}
+.vlist li.same .d{font-style:italic;color:var(--dim)}
 .ev.cluster{width:20px;height:20px;border-radius:10px;font-size:10.5px;font-weight:600;line-height:17px;text-align:center;color:var(--panel);background:var(--fg);font-family:var(--sans)}
 .ev.cluster.future{color:var(--fg);background:var(--panel)}
 .tl-inner.fit .row{min-height:64px}
@@ -1227,7 +1233,7 @@ function matches(it){
 function itemsFor(tab){ return DATA.filter(it=> tab==="done" ? it.done : (!it.done && it.scope===tab)).filter(matches); }
 function derivedSpans(it){
   const spans=[];
-  it.events.filter(e=>e.kind==="lausunto"&&e.end).forEach(e=>spans.push({from:pd(e.date),to:pd(e.end),cls:"lausunto"+(pd(e.date)<=TODAY&&pd(e.end)>=TODAY?" now":""),label:"Lausuntoaika"}));
+  it.events.filter(e=>e.kind==="lausunto"&&e.end).forEach(e=>spans.push({from:pd(e.date),to:pd(e.end),cls:"lausunto"+(pd(e.date)<=TODAY&&pd(e.end)>=TODAY?" now":""),label:/ruotsi|svensk|remiss/i.test(e.label||"")?"Ruotsinkielinen lausuntoaika":"Lausuntoaika",ev:e}));
   if(it.scope==="yrityskauppa"){
     const nt=it.notified?pd(it.notified):null; const end=it.decided?pd(it.decided):TODAY;
     if(nt&&end>nt) spans.push({from:nt,to:end,cls:"kasittely"+(it.decided?"":" open-end"),label:it.phase===2?"Käsittely · vaihe 2":"Käsittely"});
@@ -1535,11 +1541,16 @@ function renderTimeline(root, items, opts={}){
         if(b>xt) row+=`<div class="life future" style="left:${Math.max(a,xt)}%;width:${b-Math.max(a,xt)}%"></div>`;
       }
     }
-    derivedSpans(it).forEach(sp=>{
+    /* overlapping periods (Finnish and Swedish consultation rounds, a round and the committee stage) get lanes:
+       the first on the line, the next one above it, a third below – never drawn on top of each other */
+    const LANE_OFF=[0,-14,14]; const laneEnds=[]; const evOff=new Map();
+    derivedSpans(it).sort((a,b)=>a.from-b.from).forEach(sp=>{
+      let lane=laneEnds.findIndex(end=>end<sp.from); if(lane<0) lane=laneEnds.length; if(lane>2) lane=2; laneEnds[lane]=sp.to;
+      const off=LANE_OFF[lane]; if(sp.ev) evOff.set(sp.ev,off);
       const l=Math.max(0,x(sp.from)), w=Math.min(100,x(sp.to))-l; if(w<=0) return;
       const wpx=w/100*trackPx;
-      const crowded=shown.some(v=>v.d>sp.from&&v.d<sp.to);  /* the span's name would sit on top of stage markers */
-      row+=`<div class="span ${sp.cls}" style="left:${l}%;width:${w}%" title="${esc(sp.label)} ${fmt(sp.from)}–${fmt(sp.to)}">${wpx>90&&sp.label&&!crowded?`<span class="span-label">${esc(sp.label)}</span>`:""}</div>`;
+      const crowded=lane===0&&shown.some(v=>v.d>sp.from&&v.d<sp.to);  /* the span's name would sit on top of stage markers */
+      row+=`<div class="span ${sp.cls}${lane?" lane":""}" style="left:${l}%;width:${w}%${off?`;margin-top:${off}px`:""}" title="${esc(sp.label)} ${fmt(sp.from)}–${fmt(sp.to)}">${wpx>90&&sp.label&&!crowded?`<span class="span-label">${esc(sp.label)}</span>`:""}</div>`;
     });
     let prevX=-99, flip=false; const tiers=[-1e9,-1e9,-1e9,-1e9];
     /* stages closer than ~12 px merge into one marker with a count; the tooltip lists them */
@@ -1550,7 +1561,18 @@ function renderTimeline(root, items, opts={}){
         if(c.v.length===1) return;
         const px=Math.max(0.3,Math.min(99.7,(c.px0+c.px1)/2)); const last=c.v[c.v.length-1].d; const past=last<=TODAY;
         const labs=c.v.map(({e,d})=>`${fmt(d)} ${e.label||KIND_LABEL[e.kind]||""}`).join("\n");
-        row+=`<button class="ev cluster ${past?"past":"future"}" style="left:${px}%" data-d="${fmt(c.v[0].d)}–${fmt(last)}" data-l="${esc(labs)}" aria-label="${c.v.length} vaihetta: ${esc(labs)}" data-id="${esc(it.id)}" tabindex="-1">${c.v.length}</button>`;
+        const sameDate=c.v.every(v=>+v.d===+c.v[0].d);
+        const note=sameDate?` · ${c.v.length} vaihetta samana päivänä`:` · ${c.v.length} vaihetta lähekkäin (${fmt(c.v[0].d)}–${fmt(last)})`;
+        if(c.v.length<=3){
+          /* simultaneous stages: one column of markers on the same date, joined by a thin line, earliest on top */
+          const offs=c.v.length===2?[-8,8]:[-14,0,14];
+          row+=`<div class="ev-stack" style="left:${px}%;height:${offs[offs.length-1]-offs[0]}px;margin-top:${offs[0]}px" aria-hidden="true"></div>`;
+          c.v.forEach((v,i)=>{ const {e,d}=v; const kind=e.kind||"muu"; const lab=e.label||KIND_LABEL[kind]||"";
+            row+=`<button class="ev kind-${esc(kind)} ${d<=TODAY?"past":"future"} stacked${e.confirmed===false?" unconfirmed":""}" style="left:${px}%;margin-top:${offs[i]}px" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}${note}" data-l="${esc(labs)}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
+            v.clustered=true; });
+          return;
+        }
+        row+=`<button class="ev cluster ${past?"past":"future"}" style="left:${px}%" data-d="${fmt(c.v[0].d)}–${fmt(last)}${note}" data-l="${esc(labs)}" aria-label="${c.v.length} vaihetta: ${esc(labs)}" data-id="${esc(it.id)}" tabindex="-1">${c.v.length}</button>`;
         c.v.forEach(v=>{ v.clustered=true; });
       });
     }
@@ -1558,7 +1580,8 @@ function renderTimeline(root, items, opts={}){
       const px=Math.max(0.3,Math.min(99.7,x(d))); const past=d<=TODAY;
       let off=""; if(Math.abs(px-prevX)<1.6){ flip=!flip; off=flip?" up":" down"; } else flip=false; prevX=px;
       const kind=e.kind||"muu"; const lab=e.label||KIND_LABEL[kind]||"";
-      row+=`<button class="ev kind-${esc(kind)} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}${off}" style="left:${px}%" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}" data-l="${esc(lab)}${e.confirmed===false?" (tarkistamaton)":""}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
+      const lo=evOff.get(e)||0;
+      row+=`<button class="ev kind-${esc(kind)} ${past?"past":"future"}${e.confirmed===false?" unconfirmed":""}${lo?"":off}" style="left:${px}%${lo?`;margin-top:${lo}px`:""}" data-d="${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}" data-l="${esc(lab)}${e.confirmed===false?" (tarkistamaton)":""}" aria-label="${fmt(d)} ${esc(lab)}" data-id="${esc(it.id)}" tabindex="-1"></button>`;
       if(opts.labels){
         let tier=tiers.findIndex(v=>px-v>thr); if(tier<0) tier=i%4; tiers[tier]=px;
         row+=`<div class="ev-label ${["above","below","above2","below2"][tier]}" style="left:${px}%"><span class="d">${fmt(d)}${e.end?"–"+fmt(pd(e.end)):""}</span>${esc(lab)}</div>`;
@@ -1568,7 +1591,10 @@ function renderTimeline(root, items, opts={}){
     if(!opts.labels&&nx&&nx.date>=min&&nx.date<=max){
       const px=x(nx.date);
       const n=daysTo(nx.date);
-      row+=`<div class="nx-label ${px>60?"to-left":"to-right"}${n>=0&&n<=7?" urgent":""}" style="left:${px}%" title="${esc(nx.label)}"><b>${esc(fmtShort(nx.date))}</b> ${esc(shortLabel(nx.label))}${n>=0&&n<=30?` <span class="in">${n===0?"tänään":n===1?"huomenna":n+" pv"}</span>`:""}</div>`;
+      const sameDay=it.events.filter(e=>fmt(pd(e.end&&pd(e.date)<TODAY?e.end:e.date))===fmt(nx.date));
+      const also=sameDay.filter(e=>!(nx.label||"").startsWith(e.label||"\u0000"));
+      const tipNx=[nx.label].concat(also.map(e=>e.label||KIND_LABEL[e.kind]||"")).join("\n");
+      row+=`<div class="nx-label ${px>60?"to-left":"to-right"}${n>=0&&n<=7?" urgent":""}" style="left:${px}%" title="${esc(tipNx)}"><b>${esc(fmtShort(nx.date))}</b> ${esc(shortLabel(nx.label,also.length?36:46))}${also.length?` <span class="also">+${also.length} samana päivänä</span>`:""}${n>=0&&n<=30?` <span class="in">${n===0?"tänään":n===1?"huomenna":n+" pv"}</span>`:""}</div>`;
     }
     if(before.length){ const l=before[before.length-1]; row+=`<span class="edge l" title="${before.length} aiempaa vaihetta – viimeisin ${fmt(l.d)} ${esc(l.e.label||KIND_LABEL[l.e.kind]||"")}">‹ ${before.length}</span>`; }
     if(after.length){ const f=after.slice().sort((p,q)=>p.d-q.d)[0]; row+=`<span class="edge r" title="${after.length} myöhempää vaihetta – ensimmäinen ${fmt(f.d)} ${esc(f.e.label||KIND_LABEL[f.e.kind]||"")}">${esc(fmtShort(f.d))} ${esc(shortLabel(f.e.label||KIND_LABEL[f.e.kind]||"",30))} ›</span>`; }
@@ -2148,13 +2174,14 @@ function stepperHTML(steps){
   return `<ol class="stepper" style="--n:${steps.length}">${li}</ol>`;
 }
 function vlistHTML(events){
-  let html="", todayDone=false, nextDone=false;
+  let html="", todayDone=false, nextDone=false, prevKey="";
   events.forEach(e=>{
     const d=pd(e.date), end=e.end?pd(e.end):null; const past=(end||d)<=TODAY; const now=end&&d<=TODAY&&end>=TODAY;
+    const key=e.date+"|"+(e.end||""); const same=key===prevKey; prevKey=key;
     if(!todayDone&&!past&&!now&&d>TODAY){ html+=`<li class="today-div"><span>Tänään ${fmt(TODAY)}</span></li>`; todayDone=true; }
     const isNext=!past&&!nextDone; if(isNext) nextDone=true;
-    html+=`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${isNext?" next":""}${e.confirmed===false?" unconfirmed":""}">
-      <div class="d">${fmt(d)}${end?" – "+fmt(end):""} <span class="rel">${esc(relDays(now?end:d))}</span></div>
+    html+=`<li class="kind-${esc(e.kind||"muu")} ${past?"past":"future"}${isNext?" next":""}${same?" same":""}${e.confirmed===false?" unconfirmed":""}">
+      <div class="d">${same?"samana päivänä":`${fmt(d)}${end?" – "+fmt(end):""} <span class="rel">${esc(relDays(now?end:d))}</span>`}</div>
       <div class="l">${esc(e.label||KIND_LABEL[e.kind]||"")}${now?'<span class="now">käynnissä</span>':(isNext?'<span class="now">seuraavaksi</span>':"")}${e.confirmed===false?`<span class="unc">${e.kind==="ennuste"?"arvio":"tarkistamaton"}</span>`:""}</div></li>`;
   });
   if(!todayDone&&events.length) html+=`<li class="today-div"><span>Tänään ${fmt(TODAY)}</span></li>`;

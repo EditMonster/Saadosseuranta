@@ -30,6 +30,61 @@ def he_num(s: str) -> str | None:
     return f"{m.group(1)}/{m.group(2)}" if m else None
 
 
+
+HE_GIVEN_ALIAS = re.compile(r"^(HE \d+/\d{4}( vp)?|esityksen anto( eduskunnalle)?|annettu eduskunnalle|valtioneuvoston yleisistunto)$", re.I)
+HEARING = re.compile(r"^(Asiantuntijakuuleminen \([^)]*\))(?::\s*(.*))?$")
+
+
+def merge_same_day(events: list[dict]) -> list[dict]:
+    """One stage recorded twice on the same day – by two sources or once per statute – becomes one event:
+    the HE given (Hankeikkuna "HE 207/2026 vp" / "Esityksen anto" next to eduskunta's "HE annettu eduskunnalle"),
+    "Hanke on valmistunut" next to "Vahvistettu", several "Voimaan (sk)" rows, and one committee's several
+    hearings on one day (their counts added up). Different stages on the same day stay separate."""
+    by_day: dict[str, list[dict]] = {}
+    for e in events:
+        by_day.setdefault(e.get("date") or "", []).append(e)
+    out: list[dict] = []
+    for day, evs in by_day.items():
+        if len(evs) == 1:
+            out += evs
+            continue
+        kinds = {e.get("kind") for e in evs}
+        keep: list[dict] = []
+        voimaan: list[dict] = []
+        hearings: dict[str, list[dict]] = {}
+        for e in evs:
+            lab = (e.get("label") or "").strip()
+            if e.get("kind") == "muu" and "he" in kinds and HE_GIVEN_ALIAS.match(lab):
+                continue
+            if e.get("kind") == "muu" and "vahvistettu" in kinds and re.match(r"^hanke on valmistunut\.?$", lab, re.I):
+                continue
+            if e.get("kind") == "voimaan" and not e.get("end"):
+                voimaan.append(e)
+                continue
+            m = HEARING.match(lab)
+            if e.get("kind") == "eduskunta" and m:
+                hearings.setdefault(m.group(1), []).append(e)
+                continue
+            keep.append(e)
+        if voimaan:
+            if len(voimaan) == 1:
+                keep.append(voimaan[0])
+            else:
+                sks = [re.sub(r"^Voimaan\s*\((.*)\)$", r"\1", v.get("label") or "") for v in voimaan]
+                sks = [x for x in sks if x and not x.startswith("Voimaan")]
+                merged = dict(voimaan[0], label="Voimaan" + (f" ({', '.join(dict.fromkeys(sks))})" if sks else ""))
+                keep.append(merged)
+        for head, hs in hearings.items():
+            if len(hs) == 1:
+                keep.append(hs[0])
+                continue
+            k = sum(int(x) for h in hs for x in re.findall(r"(\d+) kuultavaa", h.get("label") or ""))
+            w = sum(int(x) for h in hs for x in re.findall(r"(\d+) kirjallista", h.get("label") or ""))
+            tail = ", ".join(x for x in (f"{k} kuultavaa" if k else "", f"{w} kirjallista lausuntoa" if w else "") if x)
+            keep.append(dict(hs[0], label=f"{head}: {len(hs)} kuulemista" + (f", {tail}" if tail else "")))
+        out += keep
+    return sorted(out, key=lambda e: (e.get("date") or "", e.get("end") or ""))
+
 def status_class_fi(ev: list[dict], has_he: bool, vahvistettu: bool, rauennut: bool) -> str:
     if rauennut:
         return "rauennut"
@@ -738,13 +793,14 @@ def compute_changes(old_items: list[dict], new_items: list[dict], day: str) -> l
         if it.get("status") != o.get("status"):
             add(it, "tila", f"Tila: {o.get('status')} → {it.get('status')}")
         old_ev = {(e["date"], e.get("end"), e["label"]) for e in o.get("events", [])}
+        old_kind_day = {(e["date"], e.get("end"), e.get("kind")) for e in o.get("events", [])}  # same stage, relabelled (merged same-day rows)
         old_by_label = {e["label"]: e for e in o.get("events", []) if e.get("kind") in CHANGE_KINDS}
         seen_labels = set()
         for e in it.get("events", []):
             if e.get("kind") not in CHANGE_KINDS:
                 continue
             key = (e["date"], e.get("end"), e["label"])
-            if key in old_ev:
+            if key in old_ev or (e["date"], e.get("end"), e.get("kind")) in old_kind_day:
                 continue
             if e["label"].startswith("Asiantuntijakuuleminen") and e["date"] < (dt.date.fromisoformat(day) - dt.timedelta(days=14)).isoformat():
                 continue  # backfilled hearing history is not news
@@ -900,6 +956,8 @@ def main():
         log(f"warn: arviointineuvosto: {e}")
     for it in keep:
         it.pop("hankeUuid", None)
+        if it.get("events"):
+            it["events"] = merge_same_day(it["events"])
     changes = update_changelog(keep, settings)
     # Tenders live in their own file (docs/data/hankinnat.json): a different rhythm (hundreds of new
     # notices a week) and a different page segment. None written = previous file stays in place.
