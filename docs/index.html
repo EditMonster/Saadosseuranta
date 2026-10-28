@@ -2967,7 +2967,12 @@ function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.sty
     const par=q.parentElement, pcs=getComputedStyle(par);
     const avail=Math.max(120,par.clientWidth-parseFloat(pcs.paddingLeft)-parseFloat(pcs.paddingRight));
     q.style.minWidth=Math.min(need,avail)+"px";
-    if(need>avail){ const fs=Math.max(10,Math.floor(base*(avail-chrome)/(need-chrome)*10)/10); q.style.setProperty("--phfs",fs+"px"); }
+    if(need>avail){
+      let fs=Math.max(10,Math.floor(base*(avail-chrome)/(need-chrome)*10)/10);
+      const cs2=getComputedStyle(q); const fits=f=>{ ctx.font=`${cs2.fontStyle} ${cs2.fontWeight} ${f}px ${cs2.fontFamily}`; return ctx.measureText(ph).width<=avail-chrome+20; };
+      while(fs>10&&!fits(fs)) fs=Math.round((fs-0.1)*10)/10;
+      q.style.setProperty("--phfs",fs+"px");
+    }
     else q.style.removeProperty("--phfs");
   }
   new MutationObserver(()=>requestAnimationFrame(fit)).observe(q,{attributes:true,attributeFilter:["placeholder"]});
@@ -2994,7 +2999,8 @@ function fitGlobalSearch(){
     if(mode==="short"&&needLong&&inner>=needLong*MIN/base){ busy=true; mode="long"; q.style.removeProperty("--phfs"); q.setAttribute("placeholder",LONG); busy=false; return; }
     const w=measure(base);
     if(w<=inner){ q.style.removeProperty("--phfs"); return; }
-    const fs=Math.floor(base*inner/w*10)/10;
+    let fs=Math.floor(base*inner/w*10)/10;
+    while(fs>=MIN&&measure(fs)>inner) fs=Math.round((fs-0.1)*10)/10;  // text width is not exactly linear in font size
     if(fs>=MIN){ q.style.setProperty("--phfs",fs+"px"); return; }
     if(mode==="long"){ needLong=w; busy=true; mode="short"; q.style.removeProperty("--phfs"); q.setAttribute("placeholder",SHORT); busy=false; return; }
     q.style.setProperty("--phfs",Math.max(9,fs)+"px");
