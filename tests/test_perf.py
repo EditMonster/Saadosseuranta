@@ -18,3 +18,11 @@ def test_no_fixed_attachment_backgrounds():
 def test_page_tall_view_has_no_backdrop_blur():
     rules = re.findall(r"(?:^|})\s*\.view\s*\{([^}]*)\}", CSS)
     assert any(re.search(r"(?<!-)backdrop-filter\s*:\s*none", r) for r in rules)
+
+
+def test_report_libraries_are_lazy_and_present():
+    # Word/PowerPoint libraries load only on a download click, never with the page
+    assert not re.search(r"<script[^>]+src=[\"'](?:vendor|js)/", HTML)
+    root = Path(__file__).resolve().parent.parent / "docs"
+    for rel in re.findall(r"\"((?:vendor|js)/[\w.-]+\.js)\"", HTML):
+        assert (root / rel).is_file(), rel

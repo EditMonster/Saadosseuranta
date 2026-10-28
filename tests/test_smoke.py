@@ -715,3 +715,39 @@ def test_swedish_switch(page, base_url):
     assert page.text_content("#tab-now").strip() == "Tilannekuva" and "Kansallinen lainsäädäntö" in page.text_content("#view-fi")
     page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
 
+
+
+# ---------- lataukset: lakianalyysi ja johtoryhmäraportti (Word ja PowerPoint) ----------
+def test_law_analysis_and_report_downloads(page, base_url, tmp_path):
+    import zipfile
+    goto(page, base_url, "")
+    # the heavy libraries stay out of the initial page load
+    assert page.evaluate("typeof window.docx === 'undefined' && typeof window.PptxGenJS === 'undefined' && !window.Raportit")
+    iid = page.evaluate("(DATA.find(i=>i.scope==='fi'&&i.laji==='laki'&&i.lausunnotN&&i.events.length>3)||DATA.find(i=>i.scope==='fi')).id")
+    page.evaluate(f"openItem('{iid}')")
+    page.wait_for_selector("#drawer:not([hidden]) [data-export=docx]")
+    title = page.evaluate(f"DATA.find(i=>i.id==='{iid}').fullTitle||DATA.find(i=>i.id==='{iid}').title").split()[0]
+    for kind, inner in (("docx", "word/document.xml"), ("pptx", "ppt/slides/slide1.xml")):
+        with page.expect_download(timeout=30000) as d:
+            page.click(f"#drawer [data-export={kind}]")
+        f = tmp_path / f"law.{kind}"
+        d.value.save_as(f)
+        assert d.value.suggested_filename.endswith("." + kind)
+        with zipfile.ZipFile(f) as z:
+            assert inner in z.namelist()
+            body = z.read(inner).decode("utf-8")
+            assert title in body
+    page.click("#dr-close")
+    page.click("#open-report")
+    assert page.locator("#rep").is_visible()
+    opts = page.eval_on_selector_all("#rep-scope option", "os=>os.map(o=>o.value)")
+    assert opts[:3] == ["all", "filters", "follow"]
+    for kind, inner in (("docx", "word/document.xml"), ("pptx", "ppt/slides/slide2.xml")):
+        with page.expect_download(timeout=30000) as d:
+            page.click(f"#rep-{kind}")
+        f = tmp_path / f"rep.{kind}"
+        d.value.save_as(f)
+        with zipfile.ZipFile(f) as z:
+            assert inner in z.namelist()
+    page.keyboard.press("Escape")
+    assert page.locator("#rep").is_hidden()
