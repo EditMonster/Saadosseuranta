@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T09:16:54",
+ "fetched": "2026-10-28T10:56:51",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -49507,7 +49507,7 @@
    },
    "lisattyPaiva": "2026-05-08",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-26T14:55:20",
+   "muokattu": "2026-10-28T10:44:08",
    "nimi": "Lainsäädäntöhanke poliisin rikostiedustelua koskevaksi lainsäädännöksi ja siihen liittyväksi lainsäädännöksi, 2. vaihe",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om polisens kriminalunderrättelseinhämtning och lagstiftning som har samband med den (fas 2)",
    "pevLausunto": true,
@@ -49554,7 +49554,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/95c19878-4d09-4c32-b37a-33fb171aabee/755d37b1-cc27-47e7-84e7-5c99b9f2405a/YHTEENVETO_20260910081145.PDF"
     }
    ],
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 39,
    "vanhaEsittelyvuosi": 2026
@@ -82506,7 +82506,9 @@
      "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
-   "evNumerot": [],
+   "evNumerot": [
+    "EV 174/2025"
+   ],
    "heNumerot": [
     "HE 111/2025"
    ],
@@ -83235,13 +83237,18 @@
    },
    "lisattyPaiva": "2025-05-20",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-08-25T09:02:08",
+   "muokattu": "2026-10-28T10:13:22",
    "nimi": "Hallituksen esitys eduskunnalle apteekkitalouden uudistamista koskevaksi lainsäädännöksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om en reform av apoteksekonomin",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "1426/2025",
+    "1427/2025",
+    "1428/2025",
+    "1429/2025"
+   ],
    "teemat": [],
    "tiivistelma": "Toteutetaan pääministeri Petteri Orpon hallitusohjelmakirjaukset apteekkitalouden kokonaisuudistuksesta. Uudistuksella tavoitellaan 30 miljoonan euron vuosittaisia säästöjä julkiseen talouteen.",
    "tila": "KAYNNISSA",
@@ -83287,7 +83294,7 @@
     }
    ],
    "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
+   "valmistumisPaiva": "2025-12-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -475568,7 +475575,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-28T09:16:33",
+   "muokattu": "2026-10-28T09:16:47",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -477328,7 +477335,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-20T13:05:43",
+   "muokattu": "2026-10-28T10:27:39",
    "nimi": "Valtioneuvoston asetus elinvoimakeskusten ja Työllisyys-, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028",
    "nimiSv": "Statsrådets förordning om avgifter som tas ut av livskraftscentralerna och Utvecklings- och förvaltningscentret för sysselsättningstjänster år 2027 och 2028",
    "pevLausunto": false,
@@ -477371,6 +477378,18 @@
      "n": "EVK Muistio 2027-2028",
      "t": "KIRJE",
      "u": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/2bbe0c67-791a-46e7-aac3-c9768dfda675/KIRJE_20261020052420.PDF"
+    },
+    {
+     "d": "2026-10-28",
+     "n": "EVK maksuasetus SV",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/8cab74bd-00ea-41c5-8eff-81dd33d878a4/LIITE_20261028102656.PDF"
+    },
+    {
+     "d": "2026-10-28",
+     "n": "EVK maksutaulukko 2027-2028 SV",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/2b31b291-778a-4e6c-bcb6-9d18e88c5218/LIITE_20261028102656.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -477898,7 +477917,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-09-18T11:12:02",
+   "muokattu": "2026-10-28T09:18:49",
    "nimi": "Sosiaali- ja terveysministeriön asetus Sosiaali- ja terveysalan tietolupaviranomaisen suoritteiden maksullisuudesta 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om avgiftsbelagda prestationer som tillhandahålls av Tillståndsmyndigheten för användning av social- och hälsovårdsdata 2027",
    "pevLausunto": false,

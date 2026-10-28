@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T09:28:56",
+ "fetched": "2026-10-28T10:57:24",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -62988,6 +62988,23 @@
    "final": false,
    "pid": "2026-0329",
    "ref": "2026/0329(COD)",
+   "stage": "RDG1",
+   "title_en": "",
+   "title_fi": "",
+   "title_sv": ""
+  },
+  "2026-0340": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-10-28",
+   "final": false,
+   "pid": "2026-0340",
+   "ref": "2026/0340(COD)",
    "stage": "RDG1",
    "title_en": "",
    "title_fi": "",

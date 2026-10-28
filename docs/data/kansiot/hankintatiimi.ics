@@ -176,6 +176,15 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-060429 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39233/enotice/60429
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60585-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[Hankinta] Määräaika: Paikkatieto- ja kuntarekisterijärjestelmän hankinta Sulkava ja Puumala
+DESCRIPTION:Tarjoukset viimeistään · 2026-060585 · https://www.hankintailmoitukset.fi/fi/public/procedure/39314/enotice/60585
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39314/enotice/60585
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-746429-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
 DTSTAMP:20261127T000000Z
 DTSTART;VALUE=DATE:20261127
@@ -1560,15 +1569,6 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[Hankinta] Määräaika: TV Resursų planavimo programinės įrangos paketo įsigijimas
 DESCRIPTION:Tarjoukset viimeistään · VšĮ Lietuvos nacionalinis radijas ir televizija (PV) · https://ted.europa.eu/fi/notice/-/detail/732473-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/732473-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-729673-2026-maaraaika-2026-10-28-hankintatiimi@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[Hankinta] Määräaika: Framework agreement for the procurement of digital joint user equipment/AV equipment and accompanying services.
-DESCRIPTION:Tarjoukset viimeistään · Bærum kommune · https://ted.europa.eu/fi/notice/-/detail/729673-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/729673-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-EF-59806-maaraaika-2026-10-28-hankintatiimi@saadosseuranta

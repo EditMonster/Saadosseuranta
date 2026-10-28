@@ -7818,16 +7818,69 @@
    "decisions": [],
    "initiated": "2026-10-05",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-09",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5591:",
+    "parties": [
+     {
+      "country": "Alankomaat",
+      "fi": false,
+      "name": "DIF Management B. V.",
+      "short": "CVC DIF"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "The Carlyle Group Inc.",
+      "short": "Carlyle"
+     },
+     {
+      "country": "Alankomaat",
+      "fi": false,
+      "name": "BauWatch Group B.V."
+     }
+    ],
+    "published": "2026-10-28",
+    "reference": "C/2026/5591",
+    "simplified": true,
+    "transaction": "CVC DIF ja Carlyle hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksessä BauWatch. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5591/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-15",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-28",
+     "reference": "C:2026:5591:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_O_80",
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "CVC DIF / CARLYLE / BAUWATCH GROUP"
+  },
+  "M.12666": {
+   "caseNumber": "M.12666",
+   "deadline": "2026-12-03",
+   "decisions": [],
+   "initiated": "2026-10-05",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-28",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_T_95.31",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "APOLLO FUNDS / MCP FUND V / ONE CALL"
   },
   "M.12670": {
    "caseNumber": "M.12670",
@@ -7864,5 +7917,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-28T09:32:38Z"
+ "fetched": "2026-10-28T11:00:53Z"
 }
