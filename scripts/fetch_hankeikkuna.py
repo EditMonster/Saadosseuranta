@@ -8,7 +8,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
-from common import CACHE_DIR, TODAY, SourceOutage, get_json, log, post_json, save_json
+from common import CACHE_DIR, TODAY, SourceOutage, get_json, log, post_json, save_json, PRIVATE_LABEL, _PRIVATE_TITLE, mask_private_givers
 
 API = "https://api.hankeikkuna.fi/api/v2"
 OUT = CACHE_DIR / "hankeikkuna.json"
@@ -79,6 +79,8 @@ def summarise_statements(docs: list[dict], lausuntopalvelu: str | None) -> dict 
     for d in docs:
         org = _fi(d.get("laatija")) or _fi(d.get("nimi")).split(";")[0].strip()
         org = re.sub(r"\s*\(\d+\)\s*$", "", org).strip()
+        if org and _PRIVATE_TITLE.search(_fi(d.get("nimi"))):  # private individual: no name on the public page or repo
+            org = PRIVATE_LABEL
         no = bool(NO_STATEMENT_RE.search(_fi(d.get("nimi"))))
         none += no
         if org:
@@ -227,6 +229,7 @@ def main():
         log(f"warn: hankeikkuna: muiden hankkeiden lausuntokierrokset epäonnistuivat: {e}")
         from common import load_json
         kuulemiset = (load_json(OUT, {}) or {}).get("kuulemiset") or []
+    items, _ = mask_private_givers(items)  # summarise_statements labels the marked ones; this catches their other statements
     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": items, "kuulemiset": kuulemiset})
     log(f"hankeikkuna: tallennettu {len(items)} hanketta ja {len(kuulemiset)} muun hankkeen lausuntokierrosta -> {OUT}")
 

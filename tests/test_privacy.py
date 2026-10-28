@@ -20,6 +20,7 @@ def test_personal_contacts_are_redacted_but_role_addresses_kept():
     assert s("https://etu.suku@kunta.fi") == "[sähköposti]"
     assert s("puh. 09 1234 5678") == "puh. [puhelin]" and s("040 123 4567 Viranomaisille") == "[puhelin] Viranomaisille"
     assert s("tel. +358 40 123 4567") == "tel. [puhelin]"
+    assert s("kirjaamo.hva@keusote.fi, helsinki.kirjaamo@hel.fi") == "kirjaamo.hva@keusote.fi, helsinki.kirjaamo@hel.fi"
     # identifiers that look like numbers stay intact
     for keep in ("HEL 2025-010605 T 02 08 02 00", "HUS 263-2026", "CPV 09310000", "dnro 040/2026", "HE 66/2026 vp", "12 345 euroa"):
         assert s(keep) == keep
@@ -65,3 +66,42 @@ def test_no_credentials_in_tracked_text_files():
 def test_link_fields_holding_only_a_personal_email_are_dropped():
     out = common.scrub_personal({"docsUrl": "https://etu.suku@kunta.fi", "url": "https://www.hankintailmoitukset.fi/fi/x"})
     assert "docsUrl" not in out and out["url"].startswith("https://")
+
+
+def test_private_individuals_are_not_named():
+    tree = {"items": [{"lausunnot": {"orgs": ["Kuntaliitto", "Meikäläinen Matti"], "docs": [
+        {"id": "a", "org": "Meikäläinen Matti", "title": "Yksityishenkilön lausunto"},
+        {"id": "b", "org": "Meikäläinen Matti", "title": "Meikäläinen Matti, lausunto"},
+        {"id": "c", "org": "Yksityismetsätalouden Työnantajat ry", "title": "Yksityismetsätalouden Työnantajat ry; lausunto"}]}}]}
+    out, n = common.mask_private_givers(tree)
+    txt = json.dumps(out, ensure_ascii=False)
+    assert n == 1 and "Meikäläinen" not in txt
+    assert out["items"][0]["lausunnot"]["orgs"] == ["Kuntaliitto", common.PRIVATE_LABEL]
+    assert "Yksityismetsätalouden Työnantajat ry" in txt  # an association whose name merely starts with "Yksityis-" stays
+    assert common.scrub_personal({"org": "Etu Suku", "title": "Yksityishenkilö; lausunto"})["org"] == common.PRIVATE_LABEL
+
+
+def test_public_repo_caches_are_minimised_too():
+    p = common.CACHE_DIR / "_privacy_test.json"
+    try:
+        common.save_json(p, {"gist": "Etu Suku, päällikkö, p. +358 44 123 4567", "org": "Yhtiö Oy", "person": "Etu Suku",
+                             "heard": [{"name": "X Y", "org": "O"}]})
+        txt = p.read_text(encoding="utf-8")
+        assert "123 4567" not in txt and '"person": "[nimi]"' in txt and "X Y" not in txt
+    finally:
+        p.unlink(missing_ok=True)
+
+
+def test_no_personal_contacts_in_tracked_caches_or_samples():
+    import subprocess
+    files = subprocess.run(["git", "ls-files", "data/cache", "tests/samples"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    bad = []
+    for f in files:
+        if not f.endswith((".json", ".html", ".xml")):
+            continue
+        t = (ROOT / f).read_text(encoding="utf-8", errors="ignore")
+        bad += [f"{f}: {m.group(0)}" for m in common._EMAIL.finditer(t)
+                if "." in m.group(1) and not common._is_role(m.group(1)) and not m.group(1).startswith("etunimi.")]
+        if f.startswith("data/cache"):
+            bad += [f"{f}: {m.group(0)}" for m in common._PHONE.finditer(t)]
+    assert not bad, bad[:10]

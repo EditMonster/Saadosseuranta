@@ -105,17 +105,22 @@ import re as _re
 _EMAIL = _re.compile(r"(?<![\w.%+-])([A-Za-z0-9._%+-]+)@([A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+)")
 _ROLE = _re.compile(r"^(kirjaamo|toimisto|info|hankinn\w*|hankinta\w*|registry|registrar|office|asiakaspalvelu|"
                     r"palaute|tietosuoja|neuvonta|vaihde|posti|mail|contact|tarjoukset|tenders?|procurement|purchase\d*|"
-                    r"ostot|kirjaamot|edustaja|valiokunta\w*|\w*valiokunta|eduskunta|lausunnot|lausuntopalvelu)$", _re.I)
+                    r"ostot|kirjaamot|edustaja|valiokunta\w*|\w*valiokunta|eduskunta|lausunnot|lausuntopalvelu|kilpailutus\w*|kirjasto|tietopalvelu|tiimi|hva)$", _re.I)
 _PHONE = _re.compile(r"(?:(?<=puh\. )|(?<=puh )|(?<=puh: )|(?<=puh\.: )|(?<=puhelin )|(?<=puhelin: )|(?<=tel\. )|(?<=tel: )|(?<=p\. )|(?<=gsm )|(?<=mob\. ))\+?\d[\d\s-]{5,16}\d"
                     r"|(?<![\w/.:-])(?:\+358[\s-]?|0)(?:4\d|50)[\s-]?\d{3}[\s-]?\d{3,4}(?![\w/.:-])"
                     r"|(?<![\w/.:-])\+358[\s-]?\(?0?\)?\d{1,3}[\s-]?\d{3,4}[\s-]?\d{3,4}(?![\w/.:-])", _re.I)
+
+
+def _is_role(local: str) -> bool:
+    """kirjaamo@, kirjaamo.hva@, helsinki.kirjaamo@, kilpailutus.tiimi@ – any segment naming a function, not a person."""
+    return bool(_ROLE.match(local)) or any(_ROLE.match(seg) for seg in _re.split(r"[._-]", local) if seg)
 
 
 def _scrub_text(t: str) -> str:
     if "@" in t:
         def em(m):
             local = m.group(1)
-            return m.group(0) if _ROLE.match(local) else "[sähköposti]"
+            return m.group(0) if _is_role(local) else "[sähköposti]"
         t = _EMAIL.sub(em, t)
         t = _re.sub(r"https?://\[sähköposti\]", "[sähköposti]", t)
     if any(c.isdigit() for c in t):
@@ -123,20 +128,79 @@ def _scrub_text(t: str) -> str:
     return t
 
 
-def scrub_personal(o, *, text: bool = True):
-    """Minimise personal data in a JSON tree (returns a new tree). text=False only drops hearing names."""
+# * yksityishenkilöiden lausuntojen antajan nimi → "Yksityishenkilö" (Hankeikkuna merkitsee ne otsikolla
+#   "Yksityishenkilön lausunto"); lausunnon sisältö säilyy
+# * välimuisteissa (data/cache, julkinen repo) myös eduskunnalle annettujen lausuntojen allekirjoittajan nimi
+#   peitetään, kun organisaatio on tiedossa – sivu ei käytä nimeä, vain tiedon siitä, että allekirjoittaja on
+PRIVATE_LABEL = "Yksityishenkilö"
+_PRIVATE_TITLE = _re.compile(r"yksityishenkil|privatperson|private individual", _re.I)
+
+
+def mask_private_givers(tree):
+    """A private individual who once filed a statement marked "Yksityishenkilön lausunto" may file another under
+    their own name ("Sukunimi Etunimi, lausunto"): collect every such name in the tree, then show all of their
+    statements (and the per-project giver lists) as PRIVATE_LABEL. Returns (tree, number of names)."""
+    names: set[str] = set()
+
+    def collect(o):
+        if isinstance(o, dict):
+            if isinstance(o.get("org"), str) and o["org"] != PRIVATE_LABEL and _PRIVATE_TITLE.search(str(o.get("title") or "")):
+                names.add(o["org"])
+            for v in o.values():
+                collect(v)
+        elif isinstance(o, list):
+            for v in o:
+                collect(v)
+
+    def mask(o):
+        if isinstance(o, dict):
+            out = {}
+            hidden = o.get("org") if o.get("org") in names else None
+            for k, v in o.items():
+                if k == "org" and v in names:
+                    out[k] = PRIVATE_LABEL
+                elif hidden and k == "title" and isinstance(v, str):
+                    out[k] = v.replace(hidden, PRIVATE_LABEL)
+                elif k == "orgs" and isinstance(v, list):
+                    seen: list = []
+                    for x in v:
+                        x = PRIVATE_LABEL if x in names else x
+                        if x not in seen:
+                            seen.append(x)
+                    out[k] = seen
+                else:
+                    out[k] = mask(v)
+            return out
+        if isinstance(o, list):
+            return [mask(v) for v in o]
+        return o
+
+    collect(tree)
+    return (mask(tree) if names else tree), len(names)
+
+
+def scrub_personal(o, *, text: bool = True, cache: bool = False):
+    """Minimise personal data in a JSON tree (returns a new tree). text=False only drops hearing names
+    and private individuals' names; cache=True also masks signer names where the organisation is known."""
     if isinstance(o, dict):
         out = {}
+        private = isinstance(o.get("org"), str) and bool(_PRIVATE_TITLE.search(str(o.get("title") or "")))
         for k, v in o.items():
+            if private and k == "org":
+                out[k] = PRIVATE_LABEL
+                continue
+            if cache and k == "person" and isinstance(v, str) and v and v != "[nimi]" and (o.get("org") or "").strip():
+                out[k] = "[nimi]"
+                continue
             if k == "heard" and isinstance(v, list):
                 v = [{kk: vv for kk, vv in h.items() if kk != "name"} if isinstance(h, dict) else h for h in v]
             if text and isinstance(v, str) and k.lower().endswith("url") and ("@" in v or "[sähköposti]" in v):
                 if "[sähköposti]" in _scrub_text(v):  # a mailto disguised as a link ("https://etu.suku@kunta.fi"): no usable link
                     continue
-            out[k] = scrub_personal(v, text=text)
+            out[k] = scrub_personal(v, text=text, cache=cache)
         return out
     if isinstance(o, list):
-        return [scrub_personal(v, text=text) for v in o]
+        return [scrub_personal(v, text=text, cache=cache) for v in o]
     if text and isinstance(o, str) and len(o) > 6:
         return _scrub_text(o)
     return o
@@ -151,7 +215,7 @@ def save_json(path: Path, data, *, compact: bool = False):
     if rel is not None and rel.parts[:2] == ("docs", "data"):
         data = scrub_personal(data)
     elif rel is not None and rel.parts[:2] == ("data", "cache"):
-        data = scrub_personal(data, text=False)
+        data = scrub_personal(data, cache=True)  # the repo is public: caches get the same minimisation
     if compact:
         txt = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     else:

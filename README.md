@@ -199,11 +199,16 @@ python -m http.server -d docs 8000  # http://localhost:8000
   allekirjoittajien nimiä ei julkaista, kun organisaatio on tiedossa. Nimet, jotka viranomainen on julkaissut henkilön
   ammatillisessa roolissa (lausunnonantaja, kirjallisen kysymyksen allekirjoittaja, toiminimi tavarantoimittajana),
   säilyvät. Testit: `tests/test_privacy.py`.
-* **Pyynnöt**: alatunnisteen *Tietosuoja*-ikkuna kertoo käsittelystä ja ohjaa korjaus- ja poistopyynnöt GitHub-issueksi.
+* **Yksityishenkilöt**: Hankeikkunan yksityishenkilöiden lausuntojen antajat näytetään nimellä *Yksityishenkilö* –
+  myös saman henkilön muut lausunnot, jotka on kirjattu hänen omalla nimellään (`mask_private_givers`); lausunnon
+  sisältö säilyy. Nimet poistetaan myös julkisen repon välimuisteista (`data/cache`), joihin sovelletaan samaa
+  minimointia kuin sivun aineistoon (sähköpostit, puhelinnumerot, kuultujen ja allekirjoittajien nimet).
+* **Pyynnöt**: alatunnisteen *Tietosuoja*-ikkuna kertoo käsittelystä ja ohjaa korjaus- ja poistopyynnöt GitHub-issueksi. Issuet ovat julkisia, mikä kerrotaan ikkunassa.
   Yksittäisen kohteen voi piilottaa tai korjata `config/overrides.json`-tiedostolla.
 * **Repo on julkinen**: koodi, tiimikansiot (`config/kansiot/`) ja aineisto näkyvät kaikille – asiakastietoja ei kansioihin.
   Työnkulut käyttävät vain GitHubin omaa lyhytikäistä tokenia; repossa ei ole avaimia. Commitit tehdään GitHubin
-  noreply-osoitteella.
+  noreply-osoitteella (vanhimmissa commiteissa näkyy ylläpitäjän henkilökohtainen osoite – historiaa ei ole kirjoitettu
+  uudelleen). Tiimikansioiden muutospyynnöt ja niihin kirjoitettu nimi näkyvät julkisessa issue- ja commit-historiassa.
 
 ## Ylläpito
 
