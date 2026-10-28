@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T15:14:52",
+ "fetched": "2026-10-28T20:52:36",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -550,7 +550,7 @@
     "eiLausuttavaa": 0,
     "n": 6,
     "orgs": [
-     "Anh Tran",
+     "Yksityishenkilö",
      "Garantiföreningen för Svenska Teatern rf",
      "Kulttuuri- ja taidealan keskusjärjestö KULTA ry",
      "Suomen Teatterit ry",
@@ -3223,6 +3223,13 @@
       "title": "Työ- ja elinkeinoministeriö; ei lausuttavaa"
      },
      {
+      "date": "2026-10-28",
+      "id": "14ecebae-4401-4645-861f-c95096f0867d",
+      "org": "Elinkeinoelämän keskusliitto EK",
+      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/c041a8b7-423d-49ce-8841-6c0dca3c0e15/14ecebae-4401-4645-861f-c95096f0867d/LAUSUNTO_20261028183002.PDF"
+     },
+     {
       "date": "2026-10-27",
       "id": "a484526d-1b95-480c-8098-1cf0adadf32b",
       "none": true,
@@ -3259,8 +3266,9 @@
      }
     ],
     "eiLausuttavaa": 5,
-    "n": 6,
+    "n": 7,
     "orgs": [
+     "Elinkeinoelämän keskusliitto EK",
      "Liikenne- ja viestintäministeriö",
      "Oikeusministeriö",
      "SaferGlobe ry",
@@ -3273,7 +3281,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-28T13:58:13",
+   "muokattu": "2026-10-28T18:30:02",
    "nimi": "Hallituksen esitys eduskunnalle Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-, kehitys-, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi",
    "nimiSv": "Regeringens proposition till riksdagen om godkännande och sättande i kraft av överenskommelsen om ändring av överenskommelsen mellan Amerikas förenta staters försvarsministerium och Finlands försvarsministerium, som agerar för Republiken Finlands regerings räkning, om forsknings-, utvecklings-, testnings- och utvärderingsprojekt",
    "pevLausunto": false,
@@ -9819,7 +9827,7 @@
      "Finnwatch ry",
      "Keskuskauppakamari ry",
      "Kiinteistönomistajat ja rakennuttajat Rakli ry",
-     "Professori Juha Lindgren",
+     "Yksityishenkilö",
      "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
      "Suomen Asianajajat",
      "Suomen Yrittäjät ry",
@@ -19450,7 +19458,7 @@
      "Pakolaisneuvonta ry",
      "Pelastakaa Lapset ry",
      "Poliisihallitus",
-     "Professori Martin Scheinin",
+     "Yksityishenkilö",
      "Puolustusministeriö",
      "Suojelupoliisi",
      "Suomen Asianajajat",
@@ -19460,7 +19468,6 @@
      "UNHCR Northern Europe",
      "Ulkoministeriö",
      "Valtiovarainministeriö",
-     "Yksityishenkilö",
      "Yhdenvertaisuusvaltuutetun toimisto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=b12d7b2a-d61d-499b-a1bf-935cfd834ba4",
@@ -34099,7 +34106,7 @@
      "Haso Retkeilijänkatu 6 asukastoimikunta",
      "Helsingin Asumisoikeus Oy",
      "Helsingin kaupunki",
-     "Jukka Hankamäki",
+     "Yksityishenkilö",
      "KUUMA-seutu liikelaitos",
      "Keravan kaupunki",
      "Kiinteistönomistajat ja rakennuttajat Rakli ry",
@@ -34107,7 +34114,6 @@
      "Kohtuuhintaisten vuokra- ja asumisoikeustalojen omistajat - KOVA ry",
      "Konkurssiasiamiehen toimisto",
      "Kuluttajaliitto ry",
-     "Lasse Laaksonen",
      "Oikeusministeriö",
      "Oulun kaupunki",
      "Rakennusteollisuus RT ry",
@@ -39307,7 +39313,7 @@
      "HUS-yhtymä",
      "Helsingin kaupunki",
      "Helsingin käräjäoikeus",
-     "Henri Heinonen",
+     "Yksityishenkilö",
      "Hyvinvointialueyhtiö Hyvil Oy",
      "Hätäkeskuslaitos",
      "Itä-Uudenmaan hyvinvointialue",
@@ -39354,7 +39360,6 @@
      "Vanhusasiavaltuutettu",
      "Vantaan ja Keravan hyvinvointialue",
      "Varsinais-Suomen hyvinvointialue",
-     "Yksityishenkilö",
      "Ålands landskapsregering",
      "Ålands polismyndighet"
     ],
@@ -46917,7 +46922,7 @@
      "Juristiliitto - Juristförbundet ry",
      "Keskusrikospoliisi KRP",
      "Korkein oikeus",
-     "Leino Kimmo",
+     "Yksityishenkilö",
      "Liikenne- ja viestintävirasto Traficom",
      "Maa- ja metsätalousministeriö",
      "Maahanmuuttovirasto",
@@ -48373,8 +48378,7 @@
      "Työttömien Keskusjärjestö ry",
      "Valtiovarainministeriö",
      "Verohallinto",
-     "Yksityishenkilö",
-     "Yliopistonlehtori Heidi Lindfors"
+     "Yksityishenkilö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=681a3c90-275d-4a86-89e6-42d244856024&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
     "viimeisin": "2026-06-05"
@@ -56378,7 +56382,7 @@
      "Helsingin kaupunki",
      "Kemijoki Oy",
      "Kiinteistötyönantajat ry",
-     "Kunnas Elias",
+     "Yksityishenkilö",
      "Kustos RY",
      "Lausunto arviomuistiosta kilpailuneutraliteettiselvityksen suosituksista",
      "Lieksan kaupunki",
@@ -56404,8 +56408,7 @@
      "Valtiokonttori",
      "Valtiovarainministeriö",
      "Varkauden kaupunki",
-     "Vesilaitosyhdistys",
-     "Yksityishenkilö"
+     "Vesilaitosyhdistys"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=82f60286-15b0-4215-a9ea-d584c57c1fc4",
     "viimeisin": "2026-06-30"
@@ -58779,7 +58782,7 @@
     "n": 33,
     "orgs": [
      "Digi- ja väestötietovirasto",
-     "Emeritusprofessori Urpo Kangas",
+     "Yksityishenkilö",
      "Etelä-Pohjanmaan hyvinvointialue",
      "HUS-yhtymä",
      "Helsingin hallinto-oikeus",
@@ -58809,7 +58812,6 @@
      "Valtiovarainministeriö",
      "Vantaan ja Keravan hyvinvointialue",
      "Varsinais-Suomen hyvinvointialue",
-     "Yksityishenkilö",
      "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=267ae6df-7357-4b6c-845c-aa38b0cf10fd",
@@ -62322,7 +62324,7 @@
      "Ammattikorkeakoulujen rehtorineuvosto Arene ry",
      "Ammattiliitto Jyty ry",
      "Ammattiliitto Pro ry",
-     "Annina Vilkas",
+     "Yksityishenkilö",
      "Asiakas- ja potilasturvallisuuskeskus",
      "Auta Lasta ry",
      "Autismiliitto ry",
@@ -64120,7 +64122,6 @@
      "Oikeuskanslerin virasto",
      "Oikeusrekisterikeskus",
      "Poliisihallitus",
-     "Professori Tatu Hyttinen",
      "RISE Rikosseuraamuslaitos",
      "Rikoksettoman elämän tukisäätiö sr",
      "Sisäministeriö",
@@ -68348,7 +68349,7 @@
      "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
      "Akava ry",
      "BIOS-tutkimusyksikkö",
-     "Dosentti Marianne Malmgrén",
+     "Yksityishenkilö",
      "Elinkeinoelämän Valtuuskunta EVA",
      "Elinkeinoelämän keskusliitto EK",
      "Elintarviketeollisuusliitto ry",
@@ -79259,7 +79260,7 @@
      "Elinkeinoelämän keskusliitto EK",
      "Finnwatch ry",
      "Keskuskauppakamari ry",
-     "Lindgren Juha",
+     "Yksityishenkilö",
      "Matkailu- ja Ravintolapalvelut MaRa ry",
      "Mikro- ja yksinyrittäjät ry",
      "Suomen Taksiliitto ry",
@@ -86277,7 +86278,7 @@
     "eiLausuttavaa": 2,
     "n": 20,
     "orgs": [
-     "Ahn Trahn",
+     "Yksityishenkilö",
      "Helsingin hovioikeus",
      "Itä-Suomen yliopisto",
      "Juristiliitto - Juristförbundet ry",
@@ -87748,8 +87749,7 @@
      "Pohjanmaan hyvinvointialue",
      "Pohjois-Karjalan käräjäoikeus",
      "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote",
-     "Professori Johanna Niemi",
-     "Professori Mikko Vuorenpää",
+     "Yksityishenkilö",
      "RISE Rikosseuraamuslaitos"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=0302dc73-efbb-4be5-b607-7d4a4fb4bf89&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
@@ -88206,7 +88206,7 @@
     "eiLausuttavaa": 2,
     "n": 48,
     "orgs": [
-     "Scheinin Martin",
+     "Yksityishenkilö",
      "Aliupseeriliitto ry",
      "Amnesty International Suomen osasto",
      "Aseistakieltäytyjäliitto ry",
@@ -90512,7 +90512,7 @@
      "Kemijoki Oy",
      "Keskuskauppakamari ry",
      "Liikenne- ja viestintäministeriö",
-     "Lindgren Juha",
+     "Yksityishenkilö",
      "Pohjolan Voima Oyj",
      "Suomen Asianajajat",
      "Suomen Veroasiantuntijat ry",
@@ -92365,7 +92365,7 @@
      "Oikeuskanslerin virasto",
      "Pirkanmaan käräjäoikeus",
      "Poliisihallitus",
-     "Professori Matti Tolvanen",
+     "Yksityishenkilö",
      "Puolustusministeriö",
      "Rajavartiolaitos",
      "Sanoma Media Finland Oy",
@@ -92378,7 +92378,6 @@
      "Tulli",
      "Turun hovioikeus",
      "Valtiovarainministeriö",
-     "Yksityishenkilö",
      "Yleisradio Oy"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=ad1d53ee-77cb-4219-a626-519400acbc3e&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
@@ -100053,7 +100052,7 @@
      "Kaupan liitto ry",
      "Kesko Oyj",
      "Keva",
-     "Koivula Heikki",
+     "Yksityishenkilö",
      "Kuluttajaliitto ry",
      "LVI-Tekniset Urakoitsijat LVI-TU ry",
      "Lidl Suomi Kommandiittiyhtiö",
@@ -117100,7 +117099,7 @@
      "RISE Rikosseuraamuslaitos",
      "Rikoksettoman elämän tukisäätiö sr",
      "Rikosseuraamusala Talentia Ry",
-     "Sami Peltovuoma",
+     "Yksityishenkilö",
      "Satakunnan hyvinvointialue",
      "Senaatti-kiinteistöt",
      "Sisäministeriö",
@@ -120946,7 +120945,7 @@
     "n": 48,
     "orgs": [
      "A-klinikkasäätiö",
-     "Ahn Trahn",
+     "Yksityishenkilö",
      "Eduskunnan oikeusasiamiehen kanslia",
      "Ehkäisevä päihdetyö EHYT ry",
      "Elinkeinoelämän keskusliitto EK",
@@ -127589,7 +127588,7 @@
      "Axon Enterprise",
      "Eduskunnan oikeusasiamiehen kanslia",
      "Forum Marinum säätiö",
-     "Kustaanheimo Aaro",
+     "Yksityishenkilö",
      "Maanpuolustuskiltojen liitto ry",
      "Maanpuolustuskoulutusyhdistys",
      "Poliisihallitus",
@@ -143466,7 +143465,7 @@
      "Raahen kaupunki",
      "ABO Energy Suomi Oy",
      "Energiateollisuus ry",
-     "Erkki Hurtig",
+     "Yksityishenkilö",
      "Eurowind Energy Oy",
      "Exilion Tuuli Ky",
      "Finanssiala ry",
@@ -152248,27 +152247,21 @@
     "orgs": [
      "Aleksanteriliitto",
      "Amnesty International Suomen osasto",
-     "Ant-Wuorinen Martti",
+     "Yksityishenkilö",
      "Eduskunnan oikeusasiamies",
      "Familia ry",
-     "Grönroos Simo",
      "Helsingin hallinto-oikeus",
      "Ihmisoikeuskeskus",
      "Ihmisoikeusliitto",
      "Itä-Suomen hallinto-oikeus",
      "Julkisten ja hyvinvointialojen liitto JHL ry",
-     "Kantonen Risto",
      "Keskusrikospoliisi",
      "Kirkkohallitus",
      "Korkein hallinto-oikeus",
-     "Kostiainen Aura",
      "Kvikant Christian",
      "Lastensuojelun Keskusliitto",
      "Maahanmuuttovirasto",
      "Mannerheimin Lastensuojeluliitto ry",
-     "Martin Scheinin",
-     "Martti Koskenniemi",
-     "Matti Muukkonen",
      "Monika-Naiset liitto ry",
      "Naisjärjestöjen Keskusliitto",
      "Oikeuskanslerin virasto",
@@ -152276,13 +152269,11 @@
      "Oikeuspoliittinen yhdistys Demla ry",
      "Pakolaisneuvonta ry",
      "Pelastakaa Lapset ry",
-     "Pirjatanniemi Elina",
      "Poliisihallitus",
      "Puolustusministeriö",
      "Päällystöliitto ry",
      "Rajaturvallisuusunioni ry",
      "Rouhu Ilpo",
-     "Sasi Kimmo",
      "Siirtolaisuusinstituutti",
      "Sosiaali- ja terveysministeriö",
      "Suojelupoliisi",
@@ -154994,7 +154985,7 @@
      "Valtiovarainministeriö",
      "Velallisten tuki VTR",
      "Verohallinto",
-     "Yliopistonlehtori Anssi Kärki"
+     "Yksityishenkilö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=a68ff8d0-c1ed-49e8-8c18-dc423a866302",
     "viimeisin": "2025-09-08"
@@ -174145,7 +174136,7 @@
      "Keskusrikospoliisi / rahanpesun selvittelykeskus",
      "Korkein hallinto-oikeus",
      "Korkein oikeus",
-     "Kustaanheimo Aaro",
+     "Yksityishenkilö",
      "Liikenne- ja viestintäministeriö",
      "Liikenne- ja viestintävirasto Traficom",
      "Maa- ja metsätalousministeriö",
@@ -182989,7 +182980,7 @@
      "Turvallisuus- ja kemikaalivirasto TUKES",
      "Ulkoministeriö",
      "Ålandsdelegationen",
-     "Ahn Triet Tran",
+     "Yksityishenkilö",
      "Ahvenanmaan maakunnan hallitus",
      "Ahvenanmaan valtuuskunta",
      "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
@@ -217363,7 +217354,7 @@
      "Greenpeace",
      "ICAN Finland",
      "Itä-Suomen yliopisto",
-     "Jarkko Kuosmanen",
+     "Yksityishenkilö",
      "Lappeenrannan–Lahden teknillinen yliopisto LUT​​",
      "Liikenne- ja viestintäministeriö",
      "Lääkärin sosiaalinen vastuu ry",
@@ -222842,7 +222833,7 @@
      "Espoon kaupunki",
      "Helsingin kaupunki",
      "Henkilöstöala HELA ry",
-     "Henri Memonen",
+     "Yksityishenkilö",
      "Hyvinvointialueyhtiö Hyvil Oy",
      "Into - etsivä nuorisotyö ja työpajatoiminta ry",
      "Jatkuvan oppimisen ja työllisyyden palvelukeskus",
@@ -224919,14 +224910,13 @@
     "eiLausuttavaa": 1,
     "n": 16,
     "orgs": [
-     "Dosentti Marianne Malmgrén",
+     "Yksityishenkilö",
      "Elinkeinoelämän Valtuuskunta EVA",
      "Elinkeinoelämän keskusliitto EK",
      "Finanssiala ry",
      "Fingo ry",
      "Finnwatch ry",
      "Keskuskauppakamari ry",
-     "Professori Juha Lindgren",
      "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
      "Suomen Veroasiantuntijat ry",
      "Suomen asianajajat",
@@ -243258,7 +243248,7 @@
      "STTK ry",
      "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
      "Suomen Yrittäjät ry",
-     "Timo Saija",
+     "Yksityishenkilö",
      "Työeläkevakuuttajat TELA ry"
     ],
     "url": null,
@@ -268440,7 +268430,7 @@
      "Helsingin hovioikeus",
      "Helsingin kaupunki",
      "Helsingin käräjäoikeus",
-     "Hyttinen Tatu",
+     "Yksityishenkilö",
      "Hyvinvointialueyhtiö Hyvil Oy",
      "Ifonas AS",
      "Itä-Suomen yliopisto",
@@ -274003,7 +273993,7 @@
      "Quantify Research Finland Oy",
      "SOSTE Suomen sosiaali ja terveys ry",
      "Sailab – MedTech Finland ry",
-     "Salokannel Marjut",
+     "Yksityishenkilö",
      "Satakunnan hyvinvointialue",
      "Sosiaali- ja terveysalan lupa- ja valvontavirasto Valvira",
      "Sosiaali- ja terveysalan tietolupaviranomainen Findata",
@@ -324058,7 +324048,7 @@
      "Oikeusrekisterikeskus",
      "Oulun käräjäoikeus",
      "Pirkanmaan käräjäoikeus",
-     "Professori Linna Tuula",
+     "Yksityishenkilö",
      "Pääomasijoittajat ry",
      "Pörssisäätiö",
      "Sosiaali- ja terveysministeriö",
@@ -327074,7 +327064,7 @@
      "Liikenne- ja viestintäministeriö",
      "Oikeusrekisterikeskus",
      "Poliisihallitus",
-     "Professori Mikko Vuorenpää",
+     "Yksityishenkilö",
      "Rajavartiolaitoksen esikunta",
      "Rikoksettoman elämän tukisäätiö sr",
      "Rikosuhripäivystys",
@@ -328693,13 +328683,12 @@
      "Itä-Suomen yliopisto",
      "Juristiliitto - Juristförbundet",
      "Keskusrikospoliisi / rahanpesun selvittelykeskus",
-     "Kimpimäki Minna",
+     "Yksityishenkilö",
      "Korkein oikeus",
      "Liikenne- ja viestintäministeriö",
      "Liikenne- ja viestintävirasto Traficom",
      "Oikeuskanslerin virasto",
      "Poliisihallitus",
-     "Professori Martin Scheinin",
      "Puolustusministeriö",
      "Päijät-Hämeen käräjäoikeus",
      "Sisäministeriö",
@@ -347527,7 +347516,7 @@
      "Tasa-arvovaltuutetun toimisto",
      "Valtiovarainministeriö",
      "Verohallinto",
-     "Emeritusprofessori Markku Helin",
+     "Yksityishenkilö",
      "FINE Vakuutus- ja rahoitusneuvonta",
      "Helsingin hovioikeus",
      "Helsingin oikeusaputoimisto",
@@ -397915,7 +397904,7 @@
      "Finanssivalvonta",
      "Finnwatch ry",
      "Keskuskauppakamari",
-     "Malmgrén Marianne",
+     "Yksityishenkilö",
      "Professori Pekka Nykäsen lausunto",
      "Professori Reijo Knuutisen lausunto",
      "Professori Timo Viherkentän lausunto",
@@ -401151,7 +401140,7 @@
      "Vuokralaiset VKL ry",
      "Yhdenvertaisuus- ja tasa-arvolautakunta",
      "Akava ry",
-     "Apulaisprofessori Mika Launiala",
+     "Yksityishenkilö",
      "Etelä-Karjalan käräjäoikeus",
      "Etelä-Pohjanmaan käräjäoikeus",
      "Etelä-Savon käräjäoikeus",
@@ -413828,7 +413817,7 @@
      "Antin Autokoulu Oy",
      "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
      "Autokatsastajat AK ry",
-     "Autokoulu Juha",
+     "Yksityishenkilö",
      "Autokoulu Ruutulippu",
      "Autokoulu Safiiri Oy",
      "Autoliikenteen Työnantajaliitto ry",
@@ -419076,7 +419065,7 @@
      "Vaasan yliopiston professori Panu Kalmi",
      "Valtakunnanvoudin kanslia",
      "Valtiovarainministeriö",
-     "Visa Europe"
+     "Yksityishenkilö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=ef4340aa-ceeb-4b4c-9ba1-4b42475e0d8e",
     "viimeisin": "2022-06-01"
@@ -444465,7 +444454,7 @@
      "North European Oil Trade Oy",
      "Nurmon Bioenergia Oy",
      "P2X Solutions Oy",
-     "Reskola Veli-Pekka",
+     "Yksityishenkilö",
      "Sahateollisuus ry",
      "St1 Nordic Oy",
      "Suomen Biokierto ja Biokaasu ry",
@@ -445408,13 +445397,12 @@
      "Yhdenvertaisuusvaltuutetun toimisto",
      "xxxSisäministeriö",
      "Eduskunnan oikeusasiamiehen kanslia",
-     "Helin Markku",
+     "Yksityishenkilö",
      "Helsingin hallinto-oikeus",
      "Helsingin käräjäoikeus",
      "Helsingin oikeusaputoimisto",
      "Helsingin yliopisto",
      "Itä-Suomen yliopisto",
-     "Kolehmainen Henna",
      "Loisto setlementti ry",
      "Monimuotoiset perheet -verkosto",
      "Opetus- ja kulttuuriministeriö",
@@ -446733,7 +446721,7 @@
     "orgs": [
      "Valtiovarainministeriö",
      "Elinkeinoelämän keskusliitto ry:n lausunto",
-     "Fokin Katja",
+     "Yksityishenkilö",
      "Helsingin hallinto-oikeus",
      "Korkein hallinto-oikeus",
      "Kristillisdemokraattinen eduskuntaryhmä",
@@ -463402,7 +463390,7 @@
      "xxxSisäministeriö",
      "Digi- ja väestötietovirasto",
      "Eduskunnan oikeusasiamiehen kanslia",
-     "Hakonen Kimmo",
+     "Yksityishenkilö",
      "Ihmisoikeusliitto",
      "Ilmastopaneeli",
      "Invalidiliitto ry",
@@ -463413,7 +463401,6 @@
      "Opetus- ja kulttuuriministeriö",
      "Opetushallitus",
      "Pakolaisneuvonta ry",
-     "Pentti Heinonen",
      "Pirkanmaan elinkeino-, liikenne- ja ympäristökeskus",
      "Pääesikunta",
      "Sisäministeriö",
@@ -464204,7 +464191,7 @@
      "Keskuskauppakamari ry",
      "Kuluttajaliitto - Konsumentförbundet ry",
      "Kuluttajaliitto ry - Konsumentförbundet rf",
-     "Leinonen Liisa",
+     "Yksityishenkilö",
      "Luottomiehet - Kreditmännen ry",
      "Mash Finance Oyj",
      "Nordea Bank Oyj",
@@ -466171,7 +466158,7 @@
      "Metsä-, tunturi- ja kalastajasaamelaiset",
      "Oula-Antti Labba",
      "Peltojärven saamelaiset ry",
-     "Prof. Martin Scheinin",
+     "Yksityishenkilö",
      "Puolustusministeriö",
      "Pääesikunta",
      "Saamelaisneuvosto",
@@ -471487,7 +471474,7 @@
      "Helsingin yliopistollinen sairaala",
      "Helsinki Biobank",
      "Hyvinvointialan liitto",
-     "Jorma Dahlström",
+     "Yksityishenkilö",
      "Jyväskylän yliopisto",
      "Jyväskylän yliopiston",
      "Kansaneläkelaitos (Kela)",
@@ -472287,7 +472274,7 @@
      "Helsingin hovioikeus",
      "Keskuskauppakamari",
      "Korkein oikeus",
-     "Lauri Tarasti",
+     "Yksityishenkilö",
      "Oikeuspoliittinen yhdistys Demla ry",
      "Opetus- ja kulttuuriministeriö",
      "Oulun käräjäoikeus",
@@ -472310,8 +472297,6 @@
      "Kokoomus",
      "Kristillisdemokraattinen eduskuntaryhmä",
      "Länsi-Uudenmaan syyttäjänvirasto",
-     "Matti Tolvanen",
-     "Mäenpää Olli",
      "Oikeusministeriö, kriminaalipoliittinen osasto",
      "Ruotsalainen eduskuntaryhmä",
      "SDP rp",
@@ -472325,9 +472310,7 @@
      "Suomen kuntaliitto",
      "Suomen tuomariliitto",
      "Taloushallintoliitto",
-     "Tapani Jussi",
      "Toimihenkilökeskusjärjestö STTK ry",
-     "Tolvanen Matti",
      "Transparency International Suomi ry",
      "Transparency International ry",
      "Tulli",
@@ -472336,8 +472319,7 @@
      "Vasemistoliiton eduskuntaryhmä",
      "Vasemmistoliitto",
      "Vihreä eduskuntaryhmä",
-     "Vihreä liitto rp",
-     "Viljanen Pekka"
+     "Vihreä liitto rp"
     ],
     "url": null,
     "viimeisin": "2017-09-01"
@@ -474484,6 +474466,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-28",
+      "id": "f6ad1527-f563-446e-92d8-19f03f567799",
+      "org": "Ylöjärven kaupunki",
+      "title": "Ylöjärven kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2697a4b6-d8e7-4c54-ae29-1c232f8565f1/f6ad1527-f563-446e-92d8-19f03f567799/LAUSUNTO_20261028180430.PDF"
+     },
+     {
       "date": "2026-10-26",
       "id": "b72e2949-4cea-4c3d-9f8e-aed3a24dcd4d",
       "org": "Kontiolahden kunta, Kontiolahden lukio",
@@ -474492,16 +474481,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
-     "Kontiolahden kunta, Kontiolahden lukio"
+     "Kontiolahden kunta, Kontiolahden lukio",
+     "Ylöjärven kaupunki"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5acd01bd-de9e-47a8-859c-2e1e10bcdbe7",
-    "viimeisin": "2026-10-26"
+    "viimeisin": "2026-10-28"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-27T18:15:22",
+   "muokattu": "2026-10-28T18:04:30",
    "nimi": "OKM:n asetus opiskelijaksi ottamisen perusteista lukiokoulutuksessa annetun asetuksen muuttamisesta",
    "nimiSv": "Undervisnings- och kulturministeriets förordning om ändring av ministeriets förordning om grunderna för antagning av studerande inom gymnasieutbildningen",
    "pevLausunto": false,
@@ -475114,6 +475104,27 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-28",
+      "id": "f7721468-0ba7-4c50-8bfb-4f959cebbd1b",
+      "org": "Helsingin yliopisto",
+      "title": "Helsingin yliopisto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/f7721468-0ba7-4c50-8bfb-4f959cebbd1b/LAUSUNTO_20261028180650.PDF"
+     },
+     {
+      "date": "2026-10-28",
+      "id": "1f0bf1c9-d6d9-46bd-a53b-b6edf21d5e2b",
+      "org": "Suomen ylioppilaskuntien liitto (SYL) ry",
+      "title": "Suomen ylioppilaskuntien liitto (SYL) ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/1f0bf1c9-d6d9-46bd-a53b-b6edf21d5e2b/LAUSUNTO_20261028180858.PDF"
+     },
+     {
+      "date": "2026-10-27",
+      "id": "761556e0-41e9-4308-b16f-20222e037c3c",
+      "org": "Kansallinen koulutuksen arviointikeskus",
+      "title": "Kansallinen koulutuksen arviointikeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/761556e0-41e9-4308-b16f-20222e037c3c/LAUSUNTO_20261028180205.PDF"
+     },
+     {
       "date": "2026-10-26",
       "id": "bfec2f3d-1796-421c-bdd7-e6ead167d78a",
       "org": "Tehy ry",
@@ -475178,24 +475189,27 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 9,
+    "n": 12,
     "orgs": [
      "Akava ry",
+     "Helsingin yliopisto",
      "Itä-Suomen yliopisto",
+     "Kansallinen koulutuksen arviointikeskus",
      "Oulun yliopisto",
      "Suomen erityiskasvatuksen liitto SEL ry",
      "Suomen opettajaksi opiskelevien liitto SOOL ry",
+     "Suomen ylioppilaskuntien liitto (SYL) ry",
      "Tampereen ammattikorkeakoulu Oy",
      "Tampereen yliopisto",
      "Tehy ry",
      "Turun yliopisto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=72d84fb8-9bd0-4a2a-9625-8de9f976421d",
-    "viimeisin": "2026-10-26"
+    "viimeisin": "2026-10-28"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-26T19:19:25",
+   "muokattu": "2026-10-28T18:08:58",
    "nimi": "Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om examina och specialiseringsutbildningar vid universitet",
    "pevLausunto": false,
@@ -476249,6 +476263,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-27",
+      "id": "57dea8c1-f9c4-4ba9-b97d-a850da1ef8b0",
+      "org": "Oulun normaalikoulu",
+      "title": "Oulun normaalikoulu; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2b307d2f-8863-4ec7-9b53-e39d487aab22/57dea8c1-f9c4-4ba9-b97d-a850da1ef8b0/LAUSUNTO_20261028175458.PDF"
+     },
+     {
+      "date": "2026-10-27",
+      "id": "98b8ee8f-9a6b-43ad-b606-20c83486bd5d",
+      "org": "Teknologiateollisuus ry",
+      "title": "Teknologiateollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2b307d2f-8863-4ec7-9b53-e39d487aab22/98b8ee8f-9a6b-43ad-b606-20c83486bd5d/LAUSUNTO_20261028175709.PDF"
+     },
+     {
       "date": "2026-10-19",
       "id": "f76e1504-b573-47d0-906e-c4a0120eb6ce",
       "none": true,
@@ -476257,16 +476285,18 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 1,
+    "n": 3,
     "orgs": [
+     "Oulun normaalikoulu",
+     "Teknologiateollisuus ry",
      "Valtiovarainministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=2b1dff52-923c-4b47-85eb-24c247289a69&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-19"
+    "viimeisin": "2026-10-27"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-28T07:34:52",
+   "muokattu": "2026-10-28T17:57:09",
    "nimi": "Valtioneuvoston asetus perusopetusasetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av förordningen om grundläggande utbildning",
    "pevLausunto": false,
@@ -477332,6 +477362,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-28",
+      "id": "aab3369b-4f18-4152-983c-1ab34af060e9",
+      "org": "Etelä-Savon maakuntaliitto",
+      "title": "Etelä-Savon maakuntaliitto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/aab3369b-4f18-4152-983c-1ab34af060e9/LAUSUNTO_20261028181201.PDF"
+     },
+     {
+      "date": "2026-10-28",
+      "id": "fae72deb-d85d-4ceb-a4b4-df09bdd35d1d",
+      "org": "Savonlinnan kaupunki",
+      "title": "Savonlinnan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/fae72deb-d85d-4ceb-a4b4-df09bdd35d1d/LAUSUNTO_20261028181409.PDF"
+     },
+     {
       "date": "2026-10-26",
       "id": "885e6b73-d503-4d66-b5f3-284279bb4f62",
       "org": "Etelä-Karjalan liitto",
@@ -477389,23 +477433,25 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 8,
+    "n": 10,
     "orgs": [
      "Etelä-Karjalan liitto",
+     "Etelä-Savon maakuntaliitto",
      "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
      "Keski-Pohjanmaan liitto",
      "Maanmittauslaitos",
+     "Savonlinnan kaupunki",
      "Sisäministeriö",
      "Suomen Sisävesiliitto – Insjöfartsförbundet ry",
      "Työ- ja elinkeinoministeriö",
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=a7fe6a15-4cc9-459c-b25b-8332072c1d31&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-26"
+    "viimeisin": "2026-10-28"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-26T19:31:29",
+   "muokattu": "2026-10-28T18:14:09",
    "nimi": "Yksityistieasetuksen muuttaminen",
    "nimiSv": "Ändring av förordningen om enskilda vägar",
    "pevLausunto": false,
@@ -478290,6 +478336,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-28",
+      "id": "52ca23c3-fbc7-4062-a986-9b181fab8475",
+      "org": "Autoalan Keskusliitto ry",
+      "title": "Autoalan Keskusliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/52ca23c3-fbc7-4062-a986-9b181fab8475/LAUSUNTO_20261028181635.PDF"
+     },
+     {
       "date": "2026-10-26",
       "id": "0fc85849-e09e-4add-a200-fe4357163a4d",
       "none": true,
@@ -478326,8 +478379,9 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 5,
+    "n": 6,
     "orgs": [
+     "Autoalan Keskusliitto ry",
      "Liikenne- ja viestintävirasto Traficom",
      "Sisäministeriö",
      "Sosiaali- ja terveysministeriö",
@@ -478335,11 +478389,11 @@
      "Verohallinto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=6e3f107f-7b25-488e-82d5-7ff5494f7a5f&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-26"
+    "viimeisin": "2026-10-28"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-28T12:31:26",
+   "muokattu": "2026-10-28T18:16:35",
    "nimi": "Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om fordon",
    "pevLausunto": false,
@@ -490504,6 +490558,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-27",
+      "id": "4808b47f-d0c3-44dd-a7c6-b8822fdcc8b8",
+      "org": "Kauniaisten kaupunki",
+      "title": "Kauniaisten kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/4808b47f-d0c3-44dd-a7c6-b8822fdcc8b8/LAUSUNTO_20261028174719.PDF"
+     },
+     {
       "date": "2026-10-23",
       "id": "1082b7bc-7e43-4aa0-bc0a-6ecfe2ded337",
       "org": "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
@@ -490532,19 +490593,20 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 4,
+    "n": 5,
     "orgs": [
      "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
+     "Kauniaisten kaupunki",
      "Liikenne- ja viestintäministeriö",
      "Opetus- ja kulttuuriministeriö",
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=0ac5d342-598e-4f3d-b52d-e3201be65461&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-23"
+    "viimeisin": "2026-10-27"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-25T04:39:03",
+   "muokattu": "2026-10-28T17:47:19",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "nimiSv": "Statsrådets förordning om understöd för främjande av skydd och vård av den biologiska mångfalden",
    "pevLausunto": false,
@@ -531845,8 +531907,8 @@
      {
       "date": "2025-11-19",
       "id": "0789bbd2-ee27-4adb-a378-b34f2230ff75",
-      "org": "Mikrojebe Tmi",
-      "title": "Mikrojebe Tmi; lausunto",
+      "org": "Yksityinen elinkeinonharjoittaja",
+      "title": "Yksityinen elinkeinonharjoittaja; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/e946f29a-781c-492f-8bb5-cba0ed301a81/0789bbd2-ee27-4adb-a378-b34f2230ff75/LAUSUNTO_20251119185955.PDF"
      },
      {
@@ -532630,7 +532692,7 @@
      "Maijamedia Oy",
      "Mikkosoft Productions",
      "Mikro- ja yksinyrittäjät ry",
-     "Mikrojebe Tmi",
+     "Yksityinen elinkeinonharjoittaja",
      "MixerMedia Oy",
      "Mixtum",
      "Modeleon Oy",
@@ -548190,7 +548252,7 @@
      "Pellon kunta",
      "Pohjoisen Perämeren Ammattikalastajat ry",
      "ProSiika ry",
-     "Riikonen Jussi",
+     "Yksityishenkilö",
      "Suomen Vapaa-ajankalastajien Keskusjärjestö ry",
      "Tornio-Muoniojoki kalatalousalue"
     ],
@@ -552775,8 +552837,8 @@
      {
       "date": "2025-06-17",
       "id": "2421e55c-48df-479b-8f59-b2c525a130a3",
-      "org": "Esa Pursiainen tmi",
-      "title": "Esa Pursiainen tmi; lausunto",
+      "org": "Yksityinen elinkeinonharjoittaja",
+      "title": "Yksityinen elinkeinonharjoittaja; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/948b8147-86ce-476b-bc04-c2d62594ee5e/2421e55c-48df-479b-8f59-b2c525a130a3/LAUSUNTO_20250617203429.PDF"
      },
      {
@@ -552906,7 +552968,7 @@
      "Suomen Psykoanalyyttinen yhdistys ry",
      "Eduskunnan oikeusasiamiehen kanslia",
      "Elinkeinoelämän keskusliitto EK",
-     "Esa Pursiainen tmi",
+     "Yksityinen elinkeinonharjoittaja",
      "Etelä-Karjalan hyvinvointialue",
      "Etelä-Pohjanmaan hyvinvointialue",
      "Etelä-Savon hyvinvointialue",
@@ -581077,7 +581139,7 @@
      "Helsingin kaupunki",
      "Hollolan kunta",
      "Hämeenlinnan kaupunki",
-     "Iida Parikka",
+     "Yksityishenkilö",
      "Iitin kunta",
      "Ilomantsin kunta",
      "Jakobstad stad / Pietarsaaren kaupunki",
@@ -596235,7 +596297,7 @@
      "Oikeusministeriö",
      "Opetus- ja kulttuuriministeriö",
      "Oulun kaupunki",
-     "Pentti Heinonen",
+     "Yksityishenkilö",
      "Pirkanmaan liitto",
      "Pohjanmaan liitto",
      "Pohjois-Karjalan maakuntaliitto",

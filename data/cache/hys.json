@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T15:22:50",
+ "fetched": "2026-10-28T21:04:13",
  "items": [
   {
    "actType": "PROP_REG",
@@ -960,6 +960,24 @@
    "title_en": "Housing simplification package",
    "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
+  },
+  {
+   "actType": "PROP_DEC",
+   "actTypeLabel": "Päätösehdotus",
+   "id": 18804,
+   "periods": [
+    {
+     "end": "2026-09-11",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-07-14"
+    }
+   ],
+   "reference": "Ares(2026)7004765",
+   "status": "ACTIVE",
+   "title_en": "The Union Position for the World Radiocommunication Conference 2027 ",
+   "title_fi": "Maailman radioviestintäkonferenssi 2027 – EU:n kanta",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18804_en"
   },
   {
    "actType": "PROP_REG",
