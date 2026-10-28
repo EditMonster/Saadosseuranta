@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T21:36:28",
+ "fetched": "2026-10-28T22:39:29",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -62007,6 +62007,10 @@
     {
      "date": "2026-10-26",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-27",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -63462,6 +63466,10 @@
     },
     {
      "date": "2026-10-19",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-27",
      "type": "DELIB_WP_byCONSIL"
     }
    ],
