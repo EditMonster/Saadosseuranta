@@ -855,7 +855,8 @@ def test_new_logo_and_global_search_placeholder(page, base_url):
         r = page.evaluate("""()=>{const q=document.getElementById('gq'); const cs=getComputedStyle(q);
           const c=document.createElement('canvas').getContext('2d'); c.font=`${cs.fontWeight} ${q.style.getPropertyValue('--phfs')||cs.fontSize} ${cs.fontFamily}`;
           const lg=document.querySelector('#gbar .glogo img').getBoundingClientRect(), ctl=document.querySelector('#gbar .ctl').getBoundingClientRect();
-          return {fits: c.measureText(q.placeholder).width <= q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight),
+          const tw=c.measureText(q.placeholder).width, inner=q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+          return {fits: tw <= inner, ph: q.placeholder, fs: q.style.getPropertyValue('--phfs')||cs.fontSize, tw: Math.round(tw), inner: Math.round(inner), font: c.font,
                   square: Math.abs(lg.width-lg.height)<1, inside: ctl.right<=innerWidth+1};}""")
         assert r["fits"] and r["square"] and r["inside"], (width, r)
     assert page.evaluate("[...document.querySelectorAll('link[rel~=icon]')].some(l=>l.href.endsWith('logo.svg'))")
