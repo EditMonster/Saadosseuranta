@@ -833,3 +833,14 @@ def test_drawer_can_be_widened_by_dragging(page, base_url):
     assert abs(page.evaluate("document.getElementById('drawer').getBoundingClientRect().width") - w0) < 2
     page.click("#dr-close")
     page.wait_for_function("document.getElementById('dr-resize').hidden")
+
+
+def test_search_placeholder_is_never_cut(page, base_url):
+    for width, tab in ((1440, "kilpailutukset"), (390, "kilpailutukset"), (1440, "kansallinen")):
+        page.set_viewport_size({"width": width, "height": 860})
+        goto(page, base_url, "#" + tab)
+        page.wait_for_timeout(300)
+        ok = page.evaluate("""()=>{const q=document.getElementById('q'); if(!q.offsetParent) return true; const cs=getComputedStyle(q);
+          const c=document.createElement('canvas').getContext('2d'); c.font=`${cs.fontWeight} ${q.style.getPropertyValue('--phfs')||cs.fontSize} ${cs.fontFamily}`;
+          return c.measureText(q.placeholder).width <= q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);}""")
+        assert ok, (width, tab)

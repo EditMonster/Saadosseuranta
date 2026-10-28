@@ -920,6 +920,9 @@ th{font-weight:500;color:var(--muted)}
 body.dr-resizing{cursor:ew-resize!important;user-select:none}
 body.dr-resizing #drawer{transition:none!important}
 @media (max-width:760px),(pointer:coarse){#dr-resize{display:none!important}}
+/* Hakukentän ohjeteksti näkyy aina kokonaan: leveys mitoitetaan tekstin mukaan, kapealla näytöllä fontti pienenee */
+#q{max-width:100%;box-sizing:border-box}
+#q::placeholder{font-size:var(--phfs,inherit);white-space:nowrap;text-overflow:clip}
 </style>
 </head>
 <body>
@@ -2938,6 +2941,29 @@ document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&fdropOpen&&!drawer
   if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
 function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+
+// Hakukentän ohjeteksti kokonaan näkyviin (kieli ja välilehti vaihtavat tekstiä)
+(function(){
+  const q=document.getElementById("q"); if(!q) return;
+  const ctx=document.createElement("canvas").getContext("2d");
+  function fit(){
+    const ph=q.getAttribute("placeholder")||""; if(!ph||!q.offsetParent) return;
+    const cs=getComputedStyle(q), base=parseFloat(cs.fontSize)||13;
+    ctx.font=`${cs.fontStyle} ${cs.fontWeight} ${base}px ${cs.fontFamily}`;
+    const chrome=parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight)+parseFloat(cs.borderLeftWidth)+parseFloat(cs.borderRightWidth)+34; // + tyhjennysnappi ja Safarin hakukentän sisävara
+    const need=Math.ceil(ctx.measureText(ph).width+chrome);
+    const par=q.parentElement, pcs=getComputedStyle(par);
+    const avail=Math.max(120,par.clientWidth-parseFloat(pcs.paddingLeft)-parseFloat(pcs.paddingRight));
+    q.style.minWidth=Math.min(need,avail)+"px";
+    if(need>avail){ const fs=Math.max(10,Math.floor(base*(avail-chrome)/(need-chrome)*10)/10); q.style.setProperty("--phfs",fs+"px"); }
+    else q.style.removeProperty("--phfs");
+  }
+  new MutationObserver(()=>requestAnimationFrame(fit)).observe(q,{attributes:true,attributeFilter:["placeholder"]});
+  let lastW=-1; if(window.ResizeObserver) new ResizeObserver(es=>{ const w=Math.round(es[0].contentRect.width); if(w!==lastW){ lastW=w; fit(); } }).observe(q.parentElement);
+  addEventListener("resize",fit);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  fit(); setTimeout(fit,400);
+})();
 
 // Tietoikkunan leveyden säätö: vedä vasemmasta reunasta, nuolinäppäimet, kaksoisnapsautus palauttaa oletuksen
 (function(){
