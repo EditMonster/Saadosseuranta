@@ -105,3 +105,13 @@ def test_no_personal_contacts_in_tracked_caches_or_samples():
         if f.startswith("data/cache"):
             bad += [f"{f}: {m.group(0)}" for m in common._PHONE.finditer(t)]
     assert not bad, bad[:10]
+
+
+def test_hankeikkuna_summary_keeps_names_for_the_masker():
+    # the masker learns a private giver's name from the marked statement, so the summary must not hide it first
+    import fetch_hankeikkuna as fh
+    docs = [{"uuid": "a", "laatija": {"fi": "Meikäläinen Matti"}, "nimi": {"fi": "Yksityishenkilön lausunto"}, "laatimispaiva": "2026-01-02"},
+            {"uuid": "b", "laatija": {"fi": "Meikäläinen Matti"}, "nimi": {"fi": "Meikäläinen Matti, lausunto"}, "laatimispaiva": "2026-01-03"}]
+    s = fh.summarise_statements(docs, None)
+    out, n = common.mask_private_givers([{"lausunnot": s}])
+    assert n == 1 and "Meikäläinen" not in json.dumps(out, ensure_ascii=False)
