@@ -36,3 +36,25 @@ def test_build_positions_agreement_and_privacy():
     assert orgs["alfa"]["al"][0][0] == "beta" and orgs["alfa"]["al"][0][1] == 100
     assert orgs["alfa"]["op"][0][0] == "gamma"
     assert res["alias"]["Alfa ry"] == "alfa" and res["ids"][orgs["alfa"]["p"][0][0]].startswith("fi-he-")
+
+
+def test_record_against_outcome_and_type():
+    import build_sidosryhmat as bs
+    rows = lambda st: [{"org": "Alfa ry", "stance": st}, {"org": "Beta Oy", "stance": "kannattaa"}]
+    statements, items = {}, {}
+    for i in range(12):  # Alfa asks for changes; the committee changed 9 of 12, all enacted
+        iid = f"fi-he-{i}-2026"
+        statements[iid] = {"kierros": {"rivit": rows("muutoksia")},
+                           "valiokunnat": [{"kind": "mietintö", "decision": "muutettuna" if i < 9 else "muuttamattomana"}]}
+        items[iid] = {"status": "voimassa", "topics": ["Työoikeus"]}
+    statements["fi-he-99-2026"] = {"kierros": {"rivit": rows("vastustaa")}}  # still in Parliament: no outcome yet
+    items["fi-he-99-2026"] = {"status": "eduskunnassa"}
+    res = bs.build(statements, items, {"fi-he-0-2026": {"Alfa ry": "h"}, "fi-he-1-2026": {"Alfa ry": "e"}})
+    a = res["orgs"]["alfa"]
+    assert a["ty"] == "järjestö" and res["orgs"]["beta"]["ty"] == "yritys"
+    n, score, exp, by = a["rec"]
+    assert n == 12 and score == 75 and by["R"] == [12, 9, 0]
+    assert a["pal"] == [1, 1, 0] and any(len(p) == 5 and p[4] == "h" for p in a["p"])
+    assert res["oc"][res["ids"].index("fi-he-0-2026")] == "a" and res["oc"][res["ids"].index("fi-he-99-2026")] == "-"
+    assert "akt1" in a["tg"] and res["orgs"]["beta"]["rec"][1] == 100
+    assert bs.org_type("Helsingin käräjäoikeus") == "viranomainen" and bs.org_type("Diakonissalaitos") == "järjestö"

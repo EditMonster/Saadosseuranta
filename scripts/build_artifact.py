@@ -51,7 +51,7 @@ def main(out_path: str) -> None:
     end = html.index("</script>", start)
     blob = {"items": json.loads(items), "meta": json.loads(meta), "changes": json.loads(changes), "hank": json.loads(hank), "yk": json.loads(yk),
             "kans": json.loads(kans), "vaik": json.loads(vaik), "ratk": json.loads(ratk), "tilas": json.loads(tilas),
-            "lausunnot": per_item("lausunnot"), "diffs": per_item("diff")}
+            "lausunnot": per_item("lausunnot"), "diffs": per_item("diff"), "palaute": per_item("palaute")}
     raw = json.dumps(blob, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     packed = base64.b64encode(gzip.compress(raw, 9)).decode("ascii")
     inline = f'''window.__SNAPSHOT={json.dumps(generated)};
@@ -63,7 +63,7 @@ def main(out_path: str) -> None:
     const txt=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
     D=JSON.parse(txt);
   }}catch(e){{ document.getElementById("sys").innerHTML='<span class="warn">Aineiston purku ei onnistunut tässä selaimessa – avaa ajantasainen sivu: <a href="{SITE}">editmonster.github.io/Saadosseuranta</a></span>'; return; }}
-  window.__INFLUENCE=(D.vaik||{{}}).items||{{}}; window.__RATKAISUT=D.ratk||{{items:[]}}; window.__TILASTOT=D.tilas||{{}}; window.__LAUSUNNOT=D.lausunnot||{{}}; window.__DIFFS=D.diffs||{{}};
+  window.__INFLUENCE=(D.vaik||{{}}).items||{{}}; window.__RATKAISUT=D.ratk||{{items:[]}}; window.__TILASTOT=D.tilas||{{}}; window.__LAUSUNNOT=D.lausunnot||{{}}; window.__DIFFS=D.diffs||{{}}; window.__PALAUTE=D.palaute||{{}};
   const j=D.items, m=D.meta, ch=D.changes, __H=D.hank, __Y=D.yk, __K=D.kans;
   DATA=j.items||[]; META=Object.assign({{}},j.meta||{{}},m||{{}});
   CHANGES=(ch&&ch.changes)||[]; CHANGE_BY_ID={{}}; CHANGES.forEach(c=>{{ if(!CHANGE_BY_ID[c.id]||CHANGE_BY_ID[c.id].date<c.date) CHANGE_BY_ID[c.id]=c; }});

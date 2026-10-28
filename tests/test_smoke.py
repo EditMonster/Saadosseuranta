@@ -860,3 +860,25 @@ def test_new_logo_and_global_search_placeholder(page, base_url):
                   square: Math.abs(lg.width-lg.height)<1, inside: ctl.right<=innerWidth+1};}""")
         assert r["fits"] and r["square"] and r["inside"], (width, r)
     assert page.evaluate("[...document.querySelectorAll('link[rel~=icon]')].some(l=>l.href.endsWith('logo.svg'))")
+
+
+def test_stakeholders_tab(page, base_url):
+    if not (ROOT / "docs" / "data" / "sidosryhmat.json").exists():
+        return
+    goto(page, base_url, "#lausunnonantajat")
+    page.wait_for_selector("#lg-body tr td .orglink")
+    assert page.locator("#lg-body tr").count() > 10
+    page.select_option("#lg-sort", "o")
+    page.select_option("#lg-type", "kunta")
+    page.wait_for_selector("#lg-body tr td .orglink")
+    page.fill("#q", "kaupunki")
+    page.wait_for_timeout(200)
+    names = page.eval_on_selector_all("#lg-body .orglink", "els=>els.map(e=>e.textContent.toLowerCase())")
+    assert names and all("kaupunki" in n for n in names)
+    page.locator("#lg-body .orglink").first.click()
+    page.wait_for_selector("#org-body .lg-rec")
+    assert "Miten asiat menivät" in page.text_content("#org-body")
+    pv = page.locator("#org-body .lg-pv")
+    if pv.count():
+        pv.first.click()
+        page.wait_for_selector(".lg-quote")

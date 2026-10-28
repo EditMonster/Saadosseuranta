@@ -37,6 +37,7 @@ NAMES = {"hankeikkuna": "Hankeikkuna", "eduskunta": "Eduskunnan avoin data", "fi
          "lausunnot": "Annetut lausunnot (tiivistelmät, Hankeikkuna ja eduskunta)",
          "asiat": "Eduskunta.fi – asioiden asiantuntijalausunnot ja valiokuntien lausunnot",
          "arviointineuvosto": "Lainsäädännön arviointineuvosto, HE:n sisältö ja säätämisjärjestys (HE-tekstit)",
+         "palaute": "HE:n lausuntopalaute (mitä lausunnonantajien ehdotuksille tehtiin)",
          "oeil": "EU-menettelyjen asiakirjat (OEIL: mietinnöt, vaikutustenarvioinnit, EDPS)",
          "nim": "EU-direktiivien kansalliset täytäntöönpanotoimet (Cellar)",
          "taysistunto": "Täysistunto (äänestykset, puheenvuorot, eduskunnan vastauksen lausumat)"}

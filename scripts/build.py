@@ -943,10 +943,19 @@ def main():
     except Exception as e:  # noqa: BLE001
         log(f"warn: lausunnot: {e}")
     # Sidosryhmien kannat organisaatioittain (from the statement files just written; loaded lazily by the page)
+    # Lausuntopalaute: what each HE says of the givers' proposals (docs/data/palaute/<id>.json; feeds the profiles)
+    palaute = {}
+    try:
+        from build_palaute import main as build_palaute
+
+        palaute = build_palaute(keep)
+        log(f"lausuntopalaute: {len(palaute)} hanketta, {sum(len(v) for v in palaute.values())} mainintaa -> {OUT_DIR / 'palaute'}")
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: lausuntopalaute: {e}")
     try:
         from build_sidosryhmat import main as build_sidosryhmat
 
-        log(f"sidosryhmät: {build_sidosryhmat(OUT_DIR, keep)} organisaatiota -> {OUT_DIR / 'sidosryhmat.json'}")
+        log(f"sidosryhmät: {build_sidosryhmat(OUT_DIR, keep, palaute)} organisaatiota -> {OUT_DIR / 'sidosryhmat.json'}")
     except Exception as e:  # noqa: BLE001
         log(f"warn: sidosryhmät: {e}")
     # Velvoitekalenteri: transition periods and staggered entry into force from the provision itself

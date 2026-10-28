@@ -17,6 +17,7 @@ import traceback
 import build
 import fetch_asiat
 import fetch_arviointineuvosto
+import fetch_palaute
 import fetch_taysistunto
 import fetch_nim
 import fetch_oeil
@@ -76,6 +77,7 @@ STEPS = [
     ("toimiala", fetch_toimiala.main),
     ("lausunnot", fetch_lausunnot.main),  # after hankeikkuna + vaski: summarises the statements they list
     ("arviointineuvosto", fetch_arviointineuvosto.main),  # HE texts' section on the council's statement (VaskiData)
+    ("palaute", fetch_palaute.main),  # HE texts' Lausuntopalaute chapter: what the ministry did with the givers' proposals
     ("taysistunto", fetch_taysistunto.main),  # plenary votes by party, speeches, EV lausumat
     ("nim", fetch_nim.main),  # Finland's national implementing measures for EU directives (Cellar)
     ("oeil", fetch_oeil.main),  # EU procedures' documents: EP reports, SWD/SEC, Council, EDPS, EESC (OEIL)
