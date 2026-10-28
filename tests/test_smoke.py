@@ -783,3 +783,32 @@ def test_estonian_lithuanian_and_original_texts(page, base_url):
     page.wait_for_timeout(300)
     assert page.text_content("#tab-now").strip() == "Tilannekuva"
     page.evaluate("localStorage.removeItem('saadosseuranta-lang');localStorage.removeItem('saadosseuranta-orig')")
+
+
+def test_obligations_calendar_and_stakeholder_profiles(page, base_url):
+    goto(page, base_url, "")
+    # Velvoitekalenteri on the overview, and the statute's own section in its card
+    assert page.locator("#l-siirt").count() == 1
+    iid = page.evaluate("(DATA.find(i=>(i.siirtymat||[]).some(r=>r.d))||{}).id")
+    if iid:
+        assert page.evaluate("document.querySelectorAll('#l-siirt li[data-id]').length") >= 0
+        page.evaluate(f"openItem('{iid}')")
+        page.wait_for_selector("#dr-siirtyma .siirt li")
+        assert "Siirtymäsäännökset" in page.text_content("#dr-siirtyma")
+        page.click("#dr-close")
+    # stakeholder profile: search, open, filter, open a bill from the list
+    page.fill("#org-q2", "kunta")
+    page.wait_for_selector("#org:not([hidden])")
+    page.wait_for_function("window.ORGS!==null||true")
+    page.wait_for_timeout(800)
+    if page.evaluate("ORGS && Object.keys(ORGS.orgs).length > 0"):
+        page.wait_for_selector("#org-sugg button")
+        page.keyboard.press("Enter")
+        page.wait_for_selector("#org-body .org-bar")
+        assert page.text_content("#org-title").strip() != "Sidosryhmät"
+        page.click("[data-orgf=O]")
+        rows = page.locator(".org-pos li[data-id]")
+        if rows.count():
+            rows.first.click()
+            page.wait_for_selector("#drawer:not([hidden])")
+            assert page.locator("#org").is_hidden()

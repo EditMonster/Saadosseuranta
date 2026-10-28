@@ -43,8 +43,9 @@ def voimaantulo(sk: str) -> dict | None:
         if d and d not in dates:
             dates.append(d)
     title = re.search(r'"title":"([^"]{5,200}?)\s*\|\s*' + re.escape(sk), txt)
+    from build_siirtyma import finlex_vt_text  # the entry-into-force provision itself: staggered dates, transition periods
     return {"sk": sk, "url": url, "voimaan": dates[0] if dates else None, "muutVoimaantulot": dates[1:4],
-            "title": title.group(1) if title else None, "fetched": dt.date.today().isoformat()}
+            "title": title.group(1) if title else None, "vtText": finlex_vt_text(txt) or None, "fetched": dt.date.today().isoformat()}
 
 
 def main():
@@ -61,8 +62,9 @@ def main():
     # the remainder is picked up on the next scheduled run (newest statutes first).
     wanted = {s.strip() for s in wanted if re.fullmatch(r"\d+/\d{4}", s.strip())}
     todo = [sk for sk in sorted(wanted, key=lambda s: (-int(s.split("/")[1]), -int(s.split("/")[0])))
-            if not (sk in cache and (cache[sk].get("voimaan") or
+            if not (sk in cache and "vtText" in cache[sk] and (cache[sk].get("voimaan") or
                     (dt.date.today() - dt.date.fromisoformat(cache[sk]["fetched"])).days < 14))]
+    # statutes read before the provision text was kept are read once more, newest first (a few runs)
     for sk in todo[:MAX_PER_RUN]:
         try:
             rec = voimaantulo(sk)

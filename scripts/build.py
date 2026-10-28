@@ -942,6 +942,26 @@ def main():
                 it["lausunnotN"] = ls_n[it["id"]]
     except Exception as e:  # noqa: BLE001
         log(f"warn: lausunnot: {e}")
+    # Sidosryhmien kannat organisaatioittain (from the statement files just written; loaded lazily by the page)
+    try:
+        from build_sidosryhmat import main as build_sidosryhmat
+
+        log(f"sidosryhmät: {build_sidosryhmat(OUT_DIR, keep)} organisaatiota -> {OUT_DIR / 'sidosryhmat.json'}")
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: sidosryhmät: {e}")
+    # Velvoitekalenteri: transition periods and staggered entry into force from the provision itself
+    try:
+        from build_siirtyma import attach as attach_siirtyma
+
+        diffs = {}
+        for f in (OUT_DIR / "diff").glob("*.json"):
+            d = load_json(f, {}) or {}
+            if d.get("id"):
+                diffs[d["id"]] = d
+        n_st = attach_siirtyma(keep, diffs, (load_json(CACHE_DIR / "finlex.json", {}) or {}).get("items") or {})
+        log(f"siirtymät: {n_st} säädöstä, joissa siirtymä- tai porrastettuja voimaantulosäännöksiä")
+    except Exception as e:  # noqa: BLE001
+        log(f"warn: siirtymät: {e}")
     # Lainsäädännön arviointineuvoston lausunto, as the HE itself reports it (fetch_arviointineuvosto)
     try:
         from fetch_arviointineuvosto import VERDICT_LABEL

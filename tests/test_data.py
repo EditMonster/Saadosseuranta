@@ -24,7 +24,7 @@ DATETIME = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?Z$")
 LAJIT = {"laki", "asetus", "eu", "kirjelma", "kuuleminen", "delegoitu", "signaali", "ohje", "taytantoonpano", "pakote"}
 SCOPES = {"fi", "eu"}
 EVENT_KINDS = {"lausunto", "he", "eduskunta", "hyvaksytty", "vahvistettu", "voimaan", "maaraaika", "muu", "ehdotus", "sopu", "ennuste",
-               "parlamentti", "neuvosto", "julkaistu", "soveltaminen", "kanta"}
+               "parlamentti", "neuvosto", "julkaistu", "soveltaminen", "kanta", "siirtyma"}
 TENDER_STATUS = {"avoin", "päättynyt", "poistunut"}
 
 
@@ -605,3 +605,18 @@ def test_same_day_duplicates_merged():
         for d, es in days.items():
             if any(e["kind"] == "he" for e in es):
                 assert not any(e["kind"] == "muu" and re.match(r"^(HE \d+/\d{4}( vp)?|esityksen anto( eduskunnalle)?|annettu eduskunnalle)$", e["label"], re.I) for e in es), it["id"]
+
+
+def test_transition_rules_and_stakeholders_are_well_formed():
+    items = json.loads((DATA / "items.json").read_text(encoding="utf-8"))["items"]
+    for it in items:
+        for r in it.get("siirtymat") or []:
+            assert r["k"] in ("voimaan", "soveltaminen", "voimassa", "velvoite", "vanha", "kumottu") and r["t"], (it["id"], r)
+            assert r.get("d") is None or DATE.match(r["d"]), (it["id"], r)
+            assert r["src"] in ("sk", "HE", "mietintö")
+    p = DATA / "sidosryhmat.json"
+    if p.exists():
+        s = json.loads(p.read_text(encoding="utf-8"))
+        assert s["orgs"] and s["ids"] and "Yksityishenkilö" not in s["alias"]
+        for k, o in list(s["orgs"].items())[:200]:
+            assert o["n"] and o["c"] == len(o["p"]) and all(0 <= p[0] < len(s["ids"]) for p in o["p"])

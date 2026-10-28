@@ -74,12 +74,14 @@ async function reportData(o){
   happened.sort((a,b)=>b.e.date.localeCompare(a.e.date));
   const firstSig=it=>(it.events||[]).filter(e=>["lausunto","he","ehdotus"].includes(e.kind)).sort((a,b)=>a.date.localeCompare(b.date))[0];
   const fresh=pool.filter(it=>{ const f=firstSig(it); return f&&past(f.date); });
-  const entering=[], euDeadlines=[];
+  const entering=[], euDeadlines=[], transitions=[];
   pool.forEach(it=>{
     const v=(it.events||[]).filter(e=>(e.kind==="voimaan"||e.kind==="soveltaminen")&&fut(e.date)).sort((a,b)=>a.date.localeCompare(b.date))[0];
     if(v) entering.push({it,e:v});
     (it.events||[]).filter(e=>e.kind==="maaraaika"&&fut(e.date)).slice(0,1).forEach(e=>euDeadlines.push({it,e}));
+    (it.events||[]).filter(e=>e.kind==="siirtyma"&&fut(e.date)).forEach(e=>transitions.push({it,e}));
   });
+  transitions.sort((a,b)=>a.e.date.localeCompare(b.e.date));
   entering.sort((a,b)=>a.e.date.localeCompare(b.e.date)); euDeadlines.sort((a,b)=>a.e.date.localeCompare(b.e.date));
   const open=pool.map(it=>({it,e:openConsultation(it)})).filter(x=>x.e).sort((a,b)=>a.e.end.localeCompare(b.e.end));
   const passed=happened.filter(x=>x.e.kind==="hyvaksytty"||x.e.kind==="vahvistettu"||x.e.kind==="sopu");
@@ -98,7 +100,7 @@ async function reportData(o){
   open.forEach(({it,e})=>bump(it,1.5,{e,open:true}));
   score.forEach(v=>{ if(state.follow.has(v.it.id)) v.s+=5; });
   const highlights=[...score.values()].sort((a,b)=>b.s-a.s).slice(0,6);
-  return {o,label,from,to,pool,happened,fresh,entering,euDeadlines,open,passed,rulings,highlights};
+  return {o,label,from,to,pool,happened,fresh,entering,euDeadlines,transitions,open,passed,rulings,highlights};
 }
 const evText=e=>T(e.label||KIND_TITLE[e.kind]||e.kind)+(e.confirmed===false?` (${T("arvio")})`:"");
 function highlightLine(h){
@@ -203,6 +205,14 @@ async function lawDocx(it){
     ch.push(w.table([T("Päivä"),T("Vaihe")],keyEv.slice(-40).map(e=>[e.end&&e.end!==e.date?`${dstr(e.date)}–${dstr(e.end)}`:dstr(e.date),evText(e)]),[22,78]));
   }
 
+  /* siirtymäsäännökset */
+  const SK={voimaan:"Porrastettu voimaantulo",soveltaminen:"Soveltaminen alkaa",voimassa:"Määräaikainen säännös päättyy",velvoite:"Siirtymäajan määräaika",vanha:"Aiempiin sovelletaan vanhaa lakia",kumottu:"Kumottua säännöstä sovelletaan asti"};
+  const sWhen=r=>r.d?dstr(r.d)+(r.calc?` (${r.r} ${T("voimaantulosta")})`:""):(r.r==="asetuksella"?T("valtioneuvoston asetuksella"):(r.r?`${r.r} ${T("voimaantulosta")}`:"–"));
+  if((it.siirtymat||[]).length){
+    ch.push(w.H1(T("Siirtymäsäännökset ja porrastettu voimaantulo")));
+    if(it.siirtymat.some(r=>r.src!=="sk")) ch.push(w.muted(T("Hallituksen esityksen tai valiokunnan mietinnön mukaan – voi muuttua eduskunnassa.")));
+    ch.push(w.table([T("Milloin"),T("Mitä"),T("Säännös")],it.siirtymat.map(r=>[sWhen(r),T(SK[r.k]||r.k)+(r.s?": "+r.s:""),clip(r.t,300)]),[18,30,52]));
+  }
   /* sisältö ja säätämisjärjestys */
   if(ls.he&&(ls.he.sisalto||(ls.he.sj&&ls.he.sj.text))){
     ch.push(w.H1(T("Esityksen pääasiallinen sisältö")));
@@ -295,6 +305,8 @@ async function reportDocx(o){
     r.highlights.forEach(h=>{ ch.push(w.P([w.A(short(h.it),link(h.it)),w.run(h.it.ref?"  ·  "+h.it.ref:"",{color:C.muted,size:18})],{after:20,keepNext:true})); ch.push(w.P(w.run(highlightLine(h),{size:19}),{after:140})); }); }
   const evRows=list=>list.map(({it,e})=>[dstr(e.end&&e.kind==="lausunto"?e.end:e.date),linkRow(w,it),evText(e)]);
   if(r.entering.length){ ch.push(w.H1(`${T("Tulevat voimaantulot")} (${fmt(TODAY)}–${fmt(r.to)})`)); ch.push(w.table([T("Päivä"),T("Säädös"),T("Vaihe")],evRows(r.entering.slice(0,60)),[14,60,26])); }
+  if(r.transitions.length){ ch.push(w.H1(`${T("Siirtymäajat ja porrastetut voimaantulot")} (${fmt(TODAY)}–${fmt(r.to)})`));
+    ch.push(w.table([T("Päivä"),T("Säädös"),T("Mitä tapahtuu")],evRows(r.transitions.slice(0,60)),[14,52,34])); }
   if(r.open.length){ ch.push(w.H1(T("Avoimet lausuntokierrokset")));
     ch.push(w.table([T("Päättyy"),T("Hanke"),T("Ministeriö")],r.open.slice(0,40).map(({it,e})=>[dstr(e.end),linkRow(w,it),T(it.ministry||"")]),[14,60,26])); }
   if(r.happened.length){ ch.push(w.H1(T("Jakson keskeiset tapahtumat")));
@@ -373,6 +385,10 @@ async function lawPptx(it){
   /* aikajana */
   if(d.steps.length){ s=p.addSlide({masterName:"BASE"}); head(s,T("Aikajana"),short(it)); timelineShapes(p,s,d.steps,3.4);
     const nx=d.next?`${T("Seuraavaksi")}: ${T(d.next.label||"")} ${fmt(d.next.date)}`:""; if(nx) s.addText(nx,{x:0.5,y:5.6,w:12.3,h:0.5,fontSize:15,bold:true,color:C.acc,fontFace:FONT}); }
+  /* siirtymäsäännökset */
+  if((it.siirtymat||[]).length){ const SK={voimaan:"Porrastettu voimaantulo",soveltaminen:"Soveltaminen alkaa",voimassa:"Määräaikainen säännös päättyy",velvoite:"Siirtymäajan määräaika",vanha:"Aiempiin sovelletaan vanhaa lakia",kumottu:"Kumottua säännöstä sovelletaan asti"};
+    const rows=it.siirtymat.slice(0,9).map(r=>[{text:r.d?dstr(r.d):(r.r==="asetuksella"?T("asetuksella"):(r.r?`${r.r} ${T("voimaantulosta")}`:"–"))},{text:T(SK[r.k]||r.k)+(r.s?": "+clip(r.s,60):"")},{text:clip(r.t,150)}]);
+    tableSlide(p,T("Siirtymäsäännökset ja porrastettu voimaantulo"),it.siirtymat.some(r=>r.src!=="sk")?T("ehdotus – voi muuttua eduskunnassa"):T("vahvistettu laki"),[T("Milloin"),T("Mitä"),T("Säännös")],rows,[1.9,3.6,6.83],it.siirtymat.length>9?`+ ${it.siirtymat.length-9}`:""); }
   /* sisältö */
   if(ls.he&&ls.he.sisalto){ s=p.addSlide({masterName:"BASE"}); head(s,T("Esityksen pääasiallinen sisältö"),ls.he.tunnus||"");
     s.addText(clip(ls.he.sisalto,1400),{x:0.5,y:1.6,w:12.3,h:4.4,fontSize:fsFor(clip(ls.he.sisalto,1400),true),color:C.ink,fontFace:FONT,valign:"top",fit:"shrink"});
@@ -437,6 +453,7 @@ async function reportPptx(o){
   const evRows=(list)=>list.map(({it,e})=>[{text:dstr(e.kind==="lausunto"&&e.end?e.end:e.date)},cellLink(it),{text:clip(evText(e),34)}]);
   const more=(all,n)=>all.length>n?`+ ${all.length-n} ${T("muuta – koko lista Word-raportissa")}`:"";
   if(r.entering.length) tableSlide(p,T("Tulevat voimaantulot"),`${fmt(TODAY)}–${fmt(r.to)}`,[T("Päivä"),T("Säädös"),T("Vaihe")],evRows(r.entering.slice(0,10)),[1.5,8.0,2.83],more(r.entering,10));
+  if(r.transitions.length) tableSlide(p,T("Siirtymäajat ja porrastetut voimaantulot"),`${fmt(TODAY)}–${fmt(r.to)}`,[T("Päivä"),T("Säädös"),T("Mitä tapahtuu")],evRows(r.transitions.slice(0,10)),[1.5,7.3,3.53],more(r.transitions,10));
   if(r.open.length) tableSlide(p,T("Avoimet lausuntokierrokset"),"",[T("Päättyy"),T("Hanke"),T("Ministeriö")],r.open.slice(0,10).map(({it,e})=>[{text:dstr(e.end)},cellLink(it),{text:clip(T(it.ministry||""),34)}]),[1.5,8.0,2.83],more(r.open,10));
   if(r.happened.length){ const fw=r.happened.filter(x=>state.follow.has(x.it.id)), rest=r.happened.filter(x=>!state.follow.has(x.it.id));
     const top=fw.concat(rest.filter(x=>x.e.kind!=="lausunto")).slice(0,10).sort((a,b)=>b.e.date.localeCompare(a.e.date));
