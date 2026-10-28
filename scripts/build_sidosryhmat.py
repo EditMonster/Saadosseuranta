@@ -153,6 +153,8 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
     gists: dict[str, list] = collections.defaultdict(list)
     dem: dict[str, list] = collections.defaultdict(list)  # org -> [(date, item, section, changed?, sentence)]
     committee = {iid: committee_changes(d) for iid, d in statements.items()}
+    pv_all = collections.Counter(v for m in palaute.values() for v in m.values())
+    pal_base = pv_all["h"] / max(1, pv_all["h"] + pv_all["e"])  # ministries report what they took in far more often than refusals
     variants: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
     pos: dict[str, list] = collections.defaultdict(list)
     bins = [[lo, hi, 0, 0] for lo, hi in BINS]
@@ -302,7 +304,7 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
             by = {g: [sum(1 for r in rows if r[0] == g), sum(1 for r in rows if r[0] == g and r[1] == 1.0),
                       sum(1 for r in rows if r[0] == g and r[1] == 0.5)] for g in "SRO"}
             o["rec"] = [len(rows), round(100 * got / len(rows)), round(100 * exp / len(rows)), by]
-        o["tg"] = tags(o, len(ps), avg)
+        o["tg"] = tags(o, len(ps), avg, pal_base)
         orgs[k] = o
         for v in variants[k]:
             alias[v] = k
@@ -319,7 +321,7 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
             "palBase": round(100 * pal_all[0] / max(1, pal_all[0] + pal_all[1]))}
 
 
-def tags(o: dict, n: int, avg: dict) -> list[str]:
+def tags(o: dict, n: int, avg: dict, pal_base: float = 0.85) -> list[str]:
     """Rule-based characterisation (codes; the page shows fixed, translatable labels)."""
     st = collections.Counter()
     for s, c in (o.get("st") or {}).items():
@@ -343,11 +345,11 @@ def tags(o: dict, n: int, avg: dict) -> list[str]:
         if sh["N"] >= 0.4:
             t.append("neut")
     pal = o.get("pal")
-    if pal and pal[0] + pal[1] >= 4:
+    if pal and pal[0] + pal[1] >= 6:
         share = pal[0] / (pal[0] + pal[1])
-        if share >= 0.75:
+        if share >= min(0.98, pal_base + 0.07) and pal[0] >= 6:
             t.append("pal+")
-        elif share <= 0.35:
+        elif share <= pal_base - 0.2:
             t.append("pal-")
     vq = o.get("vq")
     if vq and sum(vq) >= 4:
