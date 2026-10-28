@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T12:06:36",
+ "fetched": "2026-10-28T13:05:17",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -3158,6 +3158,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-28",
+      "id": "3a56e351-1d8c-45fc-94f7-533f32e95289",
+      "none": true,
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-10-27",
       "id": "a484526d-1b95-480c-8098-1cf0adadf32b",
       "none": true,
@@ -3193,21 +3200,22 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/c041a8b7-423d-49ce-8841-6c0dca3c0e15/d6fd5662-b5a3-423d-b9f7-bca09a7f66c9/LAUSUNTO_20261006181431.PDF"
      }
     ],
-    "eiLausuttavaa": 4,
-    "n": 5,
+    "eiLausuttavaa": 5,
+    "n": 6,
     "orgs": [
      "Liikenne- ja viestintäministeriö",
      "Oikeusministeriö",
      "SaferGlobe ry",
+     "Työ- ja elinkeinoministeriö",
      "Valtiovarainministeriö",
      "Ympäristöministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=bac88b01-8ddf-4403-90f0-ba9f28442852",
-    "viimeisin": "2026-10-27"
+    "viimeisin": "2026-10-28"
    },
    "lisattyPaiva": null,
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-27T09:43:43",
+   "muokattu": "2026-10-28T13:03:52",
    "nimi": "Hallituksen esitys eduskunnalle Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-, kehitys-, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi",
    "nimiSv": "Regeringens proposition till riksdagen om godkännande och sättande i kraft av överenskommelsen om ändring av överenskommelsen mellan Amerikas förenta staters försvarsministerium och Finlands försvarsministerium, som agerar för Republiken Finlands regerings räkning, om forsknings-, utvecklings-, testnings- och utvärderingsprojekt",
    "pevLausunto": false,
@@ -6771,7 +6779,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-09T10:29:33",
+   "muokattu": "2026-10-28T12:58:33",
    "nimi": "Lainsäädäntöhanke pysyväisluonteiseen asumiseen käytettävä tila ja tiedustelu, vaihe 3",
    "nimiSv": "Lagstiftningsprojekt om utrymmen som används för boende av permanent natur och om underrättelseinhämtning, fas 3",
    "pevLausunto": false,
@@ -11761,7 +11769,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-27T09:19:29",
+   "muokattu": "2026-10-28T12:49:43",
    "nimi": "Lainsäädäntöhanke Rajavartiolaitoksen rikostiedustelua koskevaksi lainsäädännöksi (2.vaihe)",
    "nimiSv": "Projekt till lagstiftning om kriminalunderrättelseinhämtning vid Gränsbevakningsväsendet (fas 2)",
    "pevLausunto": true,
@@ -12123,7 +12131,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-28T11:41:12",
+   "muokattu": "2026-10-28T13:00:09",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "nimiSv": "Lagstiftningsprojekt för det nationella genomförandet av vissa bestämmelser i EU:s återvändandeförordning",
    "pevLausunto": false,
@@ -19395,7 +19403,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-08T12:30:07",
+   "muokattu": "2026-10-28T12:29:43",
    "nimi": "Väliaikaisista toimenpiteistä välineellistetyn maahantulon torjumiseksi annetun lain voimassaolon jatkaminen",
    "nimiSv": "Förlängning av giltighetstiden för lagen om temporära åtgärder för bekämpande av instrumentaliserad inresa",
    "pevLausunto": false,
@@ -23202,7 +23210,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-13T09:56:30",
+   "muokattu": "2026-10-28T12:47:25",
    "nimi": "Lainsäädäntöhanke perheenjäsenten tulorajoja, oma-aloitteista tiedon luovuttamista ja Maahanmuuttoviraston antamaa maksukorttia koskevan sääntelyn muuttamisesta",
    "nimiSv": "Lagstiftningsprojekt ändring av regleringen av familjemedlemmarnas inkomstgränser, utlämnande av information på eget initiativ och betalkort utfärdade av Migrationsverket",
    "pevLausunto": false,
@@ -40732,7 +40740,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-09T10:47:12",
+   "muokattu": "2026-10-28T12:27:42",
    "nimi": "Metsähallituksen rakennuskantahankkeeseen liittyvät luonnonsuojelualueiden säädösmuutokset",
    "nimiSv": "Ändringar i lagstiftningen om naturskyddsområden i anslutning till Forststyrelsens byggnadsbeståndsprojekt",
    "pevLausunto": false,
@@ -49554,7 +49562,7 @@
    },
    "lisattyPaiva": "2026-05-08",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-28T10:44:08",
+   "muokattu": "2026-10-28T12:44:42",
    "nimi": "Lainsäädäntöhanke poliisin rikostiedustelua koskevaksi lainsäädännöksi ja siihen liittyväksi lainsäädännöksi, 2. vaihe",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om polisens kriminalunderrättelseinhämtning och lagstiftning som har samband med den (fas 2)",
    "pevLausunto": true,
@@ -60363,7 +60371,7 @@
    },
    "lisattyPaiva": "2026-08-24",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-22T10:51:17",
+   "muokattu": "2026-10-28T12:37:50",
    "nimi": "Lainsäädäntöhanke siviilitiedustelulainsäädännön ja poliisin henkilötietolain 7 luvun tarkistamiseksi, vaihe 2",
    "nimiSv": "Lagstiftningsprojekt för översyn av lagstiftningen om civil underrättelseinhämtning och 7 kap. i polisens personuppgiftslag, fas 2",
    "pevLausunto": false,
@@ -112911,7 +112919,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-09-16T12:09:38",
+   "muokattu": "2026-10-28T12:30:50",
    "nimi": "Rajavartiolaitoksen varautumista tukevien toimivaltuuksien tarkistaminen",
    "nimiSv": "Granskning av befogenheter som stöder Gränsbevakningsväsendets beredskap",
    "pevLausunto": false,
@@ -114866,7 +114874,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-09-16T07:28:04",
+   "muokattu": "2026-10-28T13:02:10",
    "nimi": "Hallituksen esitys puolustustarvikkeiden viennistä annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition om ändring av lagen om export av försvarsmateriel",
    "pevLausunto": false,
@@ -124630,7 +124638,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-27T09:15:41",
+   "muokattu": "2026-10-28T12:51:12",
    "nimi": "Pelastuslain toisen vaiheen uudistamishanke",
    "nimiSv": "Projektet för den andra fasen av reformen av räddningslagen",
    "pevLausunto": false,
@@ -132654,7 +132662,7 @@
    },
    "lisattyPaiva": "2026-08-28",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-02T07:30:12",
+   "muokattu": "2026-10-28T12:33:31",
    "nimi": "Hanke ampumaratojen toiminnan turvaamiseksi ja uusien ampumaratojen perustamisen edistämiseksi",
    "nimiSv": "Projekt för att trygga verksamheten vid skjutbanor och främja inrättandet av nya skjutbanor",
    "pevLausunto": false,
@@ -474240,7 +474248,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-27T08:49:20",
+   "muokattu": "2026-10-28T12:13:58",
    "nimi": "Asetus Lääkealan turvallisuus- ja kehittämiskeskuksen maksullisista suoritteista vuonna 2027  (Fimean maksuasetus vuodelle 2027)",
    "nimiSv": null,
    "pevLausunto": false,
@@ -477994,11 +478002,44 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": "2026-09-18",
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2026-10-28",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/f3f42f1d-cadc-4b70-8e11-d530444f909d/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "nimi": "Perustelumuistioluonnos",
+     "pvm": "2026-10-28",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/51c65085-5a3d-413b-9e59-724a52698fc0/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "nimi": "Asetusluonnos",
+     "pvm": "2026-10-28",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/c155bdf7-e41e-4949-8989-2cd320a2fbd4/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "nimi": "Utkast till förordning",
+     "pvm": "2026-10-28",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/95ce7258-200e-4482-b0df-1d5ac0ca35b3/LAUSUNTOPYYNTO_20261028123714.PDF"
+    }
+   ],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-10-28",
+     "end": "2026-12-01",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -478007,7 +478048,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-28T09:18:49",
+   "muokattu": "2026-10-28T12:38:28",
    "nimi": "Sosiaali- ja terveysministeriön asetus Sosiaali- ja terveysalan tietolupaviranomaisen suoritteiden maksullisuudesta 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om avgiftsbelagda prestationer som tillhandahålls av Tillståndsmyndigheten för användning av social- och hälsovårdsdata 2027",
    "pevLausunto": false,
@@ -478020,8 +478061,33 @@
    "tunnus": "STM075:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=STM075:00/2026",
    "uuid": "f0ae7f95-3b10-4bd7-b933-76d795d14186",
-   "valmistelu": [],
-   "valmisteluvaihe": "PERUSVALMISTELU",
+   "valmistelu": [
+    {
+     "d": "2026-10-28",
+     "n": "Lausuntopyyntö",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/f3f42f1d-cadc-4b70-8e11-d530444f909d/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "d": "2026-10-28",
+     "n": "Perustelumuistioluonnos",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/51c65085-5a3d-413b-9e59-724a52698fc0/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "d": "2026-10-28",
+     "n": "Asetusluonnos",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/c155bdf7-e41e-4949-8989-2cd320a2fbd4/LAUSUNTOPYYNTO_20261028123714.PDF"
+    },
+    {
+     "d": "2026-10-28",
+     "n": "Utkast till förordning",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/95ce7258-200e-4482-b0df-1d5ac0ca35b3/LAUSUNTOPYYNTO_20261028123714.PDF"
+    }
+   ],
+   "valmisteluvaihe": "LAUSUNTOMENETTELY",
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
@@ -478131,7 +478197,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-28T07:45:19",
+   "muokattu": "2026-10-28T12:31:26",
    "nimi": "Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om fordon",
    "pevLausunto": false,
@@ -478628,7 +478694,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-09-09T12:13:18",
+   "muokattu": "2026-10-28T12:20:56",
    "nimi": "Valtioneuvoston asetus auktorisoiduista teollisoikeusasiamiehistä annetun asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om auktoriserade ombud inom industriella rättigheter",
    "pevLausunto": false,

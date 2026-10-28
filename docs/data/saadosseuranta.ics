@@ -1589,6 +1589,15 @@ DESCRIPTION:Lausuntokierros · SM022:00/2026 · https://valtioneuvosto.fi/hanke?
 URL:https://valtioneuvosto.fi/hanke?tunnus=SM022:00/2026
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-f0ae7f95-lausunto-2026-12-01@saadosseuranta
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[FI] Lausuntoaika päättyy: Sosiaali- ja terveysministeriön asetus Sosiaali- ja terveysalan tietolupaviranomaisen suoritteiden maksullisuudesta 2027
+DESCRIPTION:Lausuntokierros · STM075:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=STM075:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=STM075:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-a0cdecbd-lausunto-2026-10-29@saadosseuranta
 DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
@@ -2307,6 +2316,15 @@ DTEND;VALUE=DATE:20270920
 SUMMARY:[EU] Soveltaminen: Asetusten (EU) N:o 1308/2013\, (EU) 2021/2115 ja (EU) N:o 251/2014 muuttaminen viinialan ja maustettujen viinituotteiden tiettyjen kaupan pitämistä koskevien sää
 DESCRIPTION:Soveltaminen (vaihe) · (EU) 2026/471 · https://eur-lex.europa.eu/eli/reg/2026/471/oj
 URL:https://eur-lex.europa.eu/eli/reg/2026/471/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0177-voimaan-2026-11-17@saadosseuranta
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[EU] Voimaan: Direktiivien 2009/43/EY ja 2009/81/EY muuttaminen puolustukseen liittyvien tuotteiden EU:n sisäisten siirtojen yksinkertaistamisen sekä turvallisuus- ja puolust
+DESCRIPTION:Voimaan · (EU) 2026/2402 · https://eur-lex.europa.eu/eli/dec/2026/2402/oj
+URL:https://eur-lex.europa.eu/eli/dec/2026/2402/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0251-maaraaika-2027-06-30@saadosseuranta
