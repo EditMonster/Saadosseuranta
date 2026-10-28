@@ -134,6 +134,15 @@ def _scrub_text(t: str) -> str:
 #   peitetään, kun organisaatio on tiedossa – sivu ei käytä nimeä, vain tiedon siitä, että allekirjoittaja on
 PRIVATE_LABEL = "Yksityishenkilö"
 _PRIVATE_TITLE = _re.compile(r"yksityishenkil|privatperson|private individual", _re.I)
+# * toiminimellä toimivan yksityisen elinkeinonharjoittajan nimi on käytännössä henkilön nimi ("Etu Suku Tmi",
+#   "Toiminimi X") → "Yksityinen elinkeinonharjoittaja"; kommandiitti- ja avoimet yhtiöt ovat yhtiöitä ja säilyvät
+SOLE_LABEL = "Yksityinen elinkeinonharjoittaja"
+_SOLE = _re.compile(r"(?<![\w-])(?:tmi|t:mi|toiminimi|enskild\s+(?:firma|näringsidkare))(?![\w-])", _re.I)
+HIDDEN_GIVERS = (PRIVATE_LABEL, SOLE_LABEL)
+
+
+def is_sole_trader(name) -> bool:
+    return isinstance(name, str) and bool(_SOLE.search(name))
 
 
 def mask_private_givers(tree):
@@ -185,10 +194,24 @@ def scrub_personal(o, *, text: bool = True, cache: bool = False):
     if isinstance(o, dict):
         out = {}
         private = isinstance(o.get("org"), str) and bool(_PRIVATE_TITLE.search(str(o.get("title") or "")))
+        sole = not private and is_sole_trader(o.get("org"))
         for k, v in o.items():
             if private and k == "org":
                 out[k] = PRIVATE_LABEL
                 continue
+            if sole and k == "org":
+                out[k] = SOLE_LABEL
+                continue
+            if sole and k == "title" and isinstance(v, str):
+                out[k] = v.replace(o["org"], SOLE_LABEL)
+                continue
+            if k in ("orgs", "givers") and isinstance(v, list) and any(is_sole_trader(x) for x in v):
+                seen: list = []
+                for x in v:
+                    x = SOLE_LABEL if is_sole_trader(x) else x
+                    if x not in seen:
+                        seen.append(x)
+                v = seen
             if cache and k == "person" and isinstance(v, str) and v and v != "[nimi]" and (o.get("org") or "").strip():
                 out[k] = "[nimi]"
                 continue

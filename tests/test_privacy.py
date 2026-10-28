@@ -115,3 +115,23 @@ def test_hankeikkuna_summary_keeps_names_for_the_masker():
     s = fh.summarise_statements(docs, None)
     out, n = common.mask_private_givers([{"lausunnot": s}])
     assert n == 1 and "Meikäläinen" not in json.dumps(out, ensure_ascii=False)
+
+
+def test_sole_traders_are_masked_but_partnerships_kept():
+    t = common.scrub_personal({"org": "Esa Esimerkki Tmi", "title": "Esa Esimerkki Tmi, lausunto", "stance": "kannattaa"})
+    assert t["org"] == common.SOLE_LABEL and "Esimerkki" not in t["title"]
+    assert common.scrub_personal({"org": "Toiminimi Matti M"})["org"] == common.SOLE_LABEL
+    assert common.scrub_personal({"org": "Enskild firma Svensson"})["org"] == common.SOLE_LABEL
+    lst = common.scrub_personal({"orgs": ["Kuntaliitto", "Mikro Tmi", "Toinen T:mi"]})["orgs"]
+    assert lst == ["Kuntaliitto", common.SOLE_LABEL]
+    # a limited partnership or general partnership is a company, not a sole trader; no false positives on words
+    assert common.scrub_personal({"org": "Lidl Suomi Ky"})["org"] == "Lidl Suomi Ky"
+    assert common.scrub_personal({"org": "Tmiaineistot Oy"})["org"] == "Tmiaineistot Oy"
+
+
+def test_stakeholder_profiles_skip_hidden_givers():
+    import build_sidosryhmat as bs
+    rows = [{"org": common.SOLE_LABEL, "stance": "kannattaa"}, {"org": "Mikro Tmi", "stance": "vastustaa"},
+            {"org": common.PRIVATE_LABEL, "stance": "osin"}, {"org": "Kuntaliitto", "stance": "kannattaa"}]
+    res = bs.build({"x": {"kierros": {"rivit": rows}}}, {})
+    assert list(res["orgs"]) == ["suomen kuntaliitto"]
