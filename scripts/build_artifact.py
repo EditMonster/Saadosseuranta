@@ -46,7 +46,7 @@ def main(out_path: str) -> None:
     html = src[src.index("<title>"):]
     html = html.replace("<title>Säädösseuranta</title>", '<title>Säädösseuranta</title>\n<meta name="claude:viewport-fit-sides" content="cover">', 1)
     html = html.replace("</head>\n<body>", "", 1).replace("</body>\n</html>", "", 1)
-    html = html.replace('src="logo-dark.png"', 'src="' + b64("logo-dark.png") + '"').replace('src="logo-light.png"', 'src="' + b64("logo-light.png") + '"')
+    html = html.replace('src="logo-icon.png"', 'src="' + b64("logo-icon.png") + '"')
     start = html.index("const v=Date.now();")
     end = html.index("</script>", start)
     blob = {"items": json.loads(items), "meta": json.loads(meta), "changes": json.loads(changes), "hank": json.loads(hank), "yk": json.loads(yk),

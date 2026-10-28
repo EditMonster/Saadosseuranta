@@ -7,7 +7,9 @@
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="googlebot" content="noindex, nofollow, noarchive">
-<link rel="icon" href="logo-light.png">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Säädösseuranta</title>
 <!-- fontit omalta palvelimelta (docs/fonts, SIL OFL): ei kutsuja Googlelle, kävijän IP-osoite ei välity kolmannelle osapuolelle -->
 <style>
@@ -78,10 +80,7 @@ a:hover{border-color:var(--fg)}
 /* Masthead */
 .top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding-block:22px 0;border-bottom:1px solid var(--fg)}
 .brand{display:flex;align-items:center;gap:16px;min-width:0;padding-bottom:14px}
-.logo{height:44px;width:auto;display:block}
-.logo.dark{display:none}
-:root[data-theme="dark"] .logo.light{display:none}
-:root[data-theme="dark"] .logo.dark{display:block}
+.logo{height:44px;width:44px;display:block;border-radius:10px}
 .name{font-weight:600;font-size:20px;letter-spacing:-.01em;line-height:1.1}
 .sub{color:var(--muted);font-size:12px;margin-top:4px}
 .tabs{display:flex;gap:2px;flex-wrap:wrap}
@@ -659,11 +658,11 @@ a{border-bottom-color:rgba(74,58,44,.25)}
 
 /* yläpalkki: tervehdys · avustaja · ohjaimet */
 #gbar{position:fixed;z-index:50;top:14px;left:112px;right:28px;height:54px;border-radius:999px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 8px 0 8px}
-#gbar .who{display:flex;align-items:center;gap:10px;min-width:0}
+#gbar .who{display:flex;align-items:center;gap:10px;flex:none}
 #gbar .hello{font-weight:600;font-size:14.5px;white-space:nowrap}
 #gbar .hello small{display:block;font-weight:400;font-size:11.5px;color:var(--muted)}
 #gbar .glogo{height:38px;display:flex;align-items:center;flex:none;padding-left:8px}
-#gbar .glogo img{height:38px;width:auto;display:block}
+#gbar .glogo img{height:38px;width:38px;display:block;border-radius:9px}
 #gbar .gsearch{position:relative;flex:0 1 520px;display:flex;align-items:center;gap:10px;height:40px;border-radius:999px;padding:0 10px 0 8px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.7);min-width:0}
 #gbar .gsearch:focus-within{background:rgba(255,255,255,.85);box-shadow:0 0 0 3px var(--signal-dim)}
 #gbar .gsearch input{flex:1;min-width:0;border:0!important;background:transparent!important;padding:0!important;font:inherit;font-size:13.5px!important;color:var(--fg);outline:none;box-shadow:none}
@@ -794,7 +793,7 @@ main{margin-top:6px}
   #grail{display:none}
   #gbar{left:10px;right:10px;height:50px}
   #gbar .hello small,#gbar .ctl a{display:none}
-  #gbar .glogo,#gbar .glogo img{height:28px}
+  #gbar .glogo,#gbar .glogo img{height:28px} #gbar .glogo img{width:28px;border-radius:7px}
   #gbar .gsearch{flex:1}
   #gbar .gsearch kbd,#gbar .orb{display:none}
   #gs-res{top:68px}
@@ -923,6 +922,20 @@ body.dr-resizing #drawer{transition:none!important}
 /* Hakukentän ohjeteksti näkyy aina kokonaan: leveys mitoitetaan tekstin mukaan, kapealla näytöllä fontti pienenee */
 #q{max-width:100%;box-sizing:border-box}
 #q::placeholder{font-size:var(--phfs,inherit);white-space:nowrap;text-overflow:clip}
+/* Yläpalkki: hakukenttä ei koskaan peitä tervehdystä. Alarivi (aineiston päiväys) näkyy myös tilarivillä, joten
+   kapeammalla näytöllä se jää pois ja sen jälkeen tervehdys – hakukenttä pysyy käyttökelpoisen levyisenä */
+#gbar .gsearch{min-width:240px}
+@media (max-width:1560px){ #gbar .hello small{display:none} }
+@media (max-width:1240px){ #gbar .hello{display:none} }
+@media (max-width:1100px){ #gbar .gsearch{min-width:0} #gbar{gap:10px} }
+#gq::placeholder{font-size:var(--phfs,inherit);white-space:nowrap;text-overflow:clip}
+/* kapea työpöytä (761–1180 px): kielet valikkona, teemakytkin näyttää vain vaihtoehdon ja GitHub-linkki jää pois,
+   jotta "Hae kaikesta" -kenttä pysyy käyttökelpoisen levyisenä */
+@media (min-width:761px) and (max-width:1180px){
+  #gbar .ctl .seg[aria-label^="Kieli"],#gbar .ctl a,#gbar .gsearch kbd{display:none!important}
+  #gbar #lang-sel{display:inline-block}
+  #gbar .ctl .seg button[aria-pressed="true"]{display:none!important} #gbar .ctl .seg{padding:2px!important}
+}
 </style>
 </head>
 <body>
@@ -946,8 +959,7 @@ body.dr-resizing #drawer{transition:none!important}
 
 <header class="top">
   <div class="brand">
-    <img class="logo dark" src="logo-dark.png" alt="">
-    <img class="logo light" src="logo-light.png" alt="">
+    <img class="logo light dark" src="logo-icon.png" alt="">
     <div>
       <div class="name">Säädösseuranta</div>
       <div class="sub">Kansallinen ja EU-sääntely aikajanalla · lausuntoajat, voimaantulot, määräajat · julkiset kilpailutukset</div>
@@ -2965,6 +2977,33 @@ function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.sty
   fit(); setTimeout(fit,400);
 })();
 
+// Yläpalkin "Hae kaikesta" -kentän ohjeteksti ei katkea: ensin pienempi fontti, ja jos tila ei silti riitä,
+// lyhyt muoto "Hae kaikesta" (kääntäjä kääntää molemmat). Kentän leveys tulee palkin asettelusta.
+function fitGlobalSearch(){
+  const q=document.getElementById("gq"); if(!q||q.__fit) return; q.__fit=true;
+  const LONG=q.getAttribute("placeholder"), SHORT="Hae kaikesta", MIN=11;
+  const ctx=document.createElement("canvas").getContext("2d");
+  let mode="long", needLong=0, busy=false;
+  function measure(fs){ const cs=getComputedStyle(q); ctx.font=`${cs.fontStyle} ${cs.fontWeight} ${fs}px ${cs.fontFamily}`; return ctx.measureText(q.getAttribute("placeholder")||"").width; }
+  function fit(){
+    if(busy||!q.offsetParent) return;
+    const cs=getComputedStyle(q), base=parseFloat(cs.fontSize)||13;
+    const inner=q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight)-4;
+    if(inner<=0) return;
+    if(mode==="short"&&needLong&&inner>=needLong*MIN/base){ busy=true; mode="long"; q.style.removeProperty("--phfs"); q.setAttribute("placeholder",LONG); busy=false; return; }
+    const w=measure(base);
+    if(w<=inner){ q.style.removeProperty("--phfs"); return; }
+    const fs=Math.floor(base*inner/w*10)/10;
+    if(fs>=MIN){ q.style.setProperty("--phfs",fs+"px"); return; }
+    if(mode==="long"){ needLong=w; busy=true; mode="short"; q.style.removeProperty("--phfs"); q.setAttribute("placeholder",SHORT); busy=false; return; }
+    q.style.setProperty("--phfs",Math.max(9,fs)+"px");
+  }
+  new MutationObserver(()=>requestAnimationFrame(fit)).observe(q,{attributes:true,attributeFilter:["placeholder"]});
+  if(window.ResizeObserver) new ResizeObserver(()=>fit()).observe(q);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  fit();
+}
+
 // Tietoikkunan leveyden säätö: vedä vasemmasta reunasta, nuolinäppäimet, kaksoisnapsautus palauttaa oletuksen
 (function(){
   const h=document.getElementById("dr-resize"); if(!h) return;
@@ -3439,15 +3478,16 @@ Promise.all([
   /* the page is shared by a team: greet by the name saved in Jakamisen asetukset, if any */
   const nm=(typeof SHARE!=="undefined"&&SHARE.name)?String(SHARE.name).trim():"";
   /* the logo in the middle of the bar: the page's own logo files (embedded as data URIs in the artifact) */
-  const lg=[["light","l"],["dark","d"]].map(([k,c])=>{ const im=document.querySelector(".logo."+k); return im?`<img class="lg-${c}" src="${im.getAttribute("src")}" alt="">`:""; }).join("");
+  const lg=(im=>im?`<img class="lg-i" src="${im.getAttribute("src")}" alt="">`:"")(document.querySelector(".logo"));
   const esc2=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   bar.innerHTML=`<div class="who"><span class="glogo" aria-hidden="true">${lg}</span><span class="hello">${hi}${nm?", "+esc2(nm.split(/\s+/)[0]):""}<small id="g-sub">Säädösseuranta</small></span></div>
     <div class="gsearch" role="search"><i class="orb" aria-hidden="true"></i><input type="search" id="gq" autocomplete="off" spellcheck="false" placeholder="Hae kaikesta – säädökset, EU, kilpailutukset, yrityskaupat, ratkaisut" aria-label="Hae kaikesta sisällöstä valinnoista riippumatta" aria-controls="gs-res" aria-expanded="false"><kbd>/</kbd></div>`;
   const ctl=$(".status .ctl"); if(ctl) bar.appendChild(ctl);  /* the page's own controls move here: ids and handlers stay */
   document.body.prepend(bar);
+  setTimeout(()=>{ try{ fitGlobalSearch(); }catch(e){} },0);
   /* the logo files carry a faint (3 %) tint over their whole rectangle, invisible on white but a visible box on
      glass, and their 2 px lines fade when scaled to bar height: redraw them once – tint removed, lines strengthened */
-  bar.querySelectorAll(".glogo img").forEach(im=>{
+  bar.querySelectorAll(".glogo img:not(.lg-i)").forEach(im=>{
     const fix=()=>{ try{
       const h=88, w=Math.round(im.naturalWidth/im.naturalHeight*h); if(!w) return;
       const c=document.createElement("canvas"); c.width=w; c.height=h; const x=c.getContext("2d");

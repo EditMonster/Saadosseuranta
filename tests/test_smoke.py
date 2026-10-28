@@ -844,3 +844,17 @@ def test_search_placeholder_is_never_cut(page, base_url):
           const c=document.createElement('canvas').getContext('2d'); c.font=`${cs.fontWeight} ${q.style.getPropertyValue('--phfs')||cs.fontSize} ${cs.fontFamily}`;
           return c.measureText(q.placeholder).width <= q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);}""")
         assert ok, (width, tab)
+
+
+def test_new_logo_and_global_search_placeholder(page, base_url):
+    for width in (1440, 1300, 1000, 800):
+        page.set_viewport_size({"width": width, "height": 860})
+        goto(page, base_url, "")
+        page.wait_for_timeout(400)
+        r = page.evaluate("""()=>{const q=document.getElementById('gq'); const cs=getComputedStyle(q);
+          const c=document.createElement('canvas').getContext('2d'); c.font=`${cs.fontWeight} ${q.style.getPropertyValue('--phfs')||cs.fontSize} ${cs.fontFamily}`;
+          const lg=document.querySelector('#gbar .glogo img').getBoundingClientRect(), ctl=document.querySelector('#gbar .ctl').getBoundingClientRect();
+          return {fits: c.measureText(q.placeholder).width <= q.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight),
+                  square: Math.abs(lg.width-lg.height)<1, inside: ctl.right<=innerWidth+1};}""")
+        assert r["fits"] and r["square"] and r["inside"], (width, r)
+    assert page.evaluate("[...document.querySelectorAll('link[rel~=icon]')].some(l=>l.href.endsWith('logo.svg'))")

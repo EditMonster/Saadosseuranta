@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Säädösseuranta">
+  <rect width="512" height="512" rx="116" fill="#F6A600"/>
+  <g fill="none" stroke="#0E0E0E" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M159.2 174.0 L401.0 329.1 M421.0 180.7 L401.0 286.9" stroke-width="11" opacity=".5"/>
+    <path d="M159.2 174.0 L421.0 180.7 L408.3 220.2 L415.0 258.4 L401.0 286.9 L401.0 329.1 L91.0 338.0 Z" stroke-width="24"/>
+  </g>
+  <circle cx="415.0" cy="258.4" r="15" fill="#0E0E0E"/>
+</svg>
