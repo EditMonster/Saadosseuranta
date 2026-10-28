@@ -662,3 +662,28 @@ def test_action_drafts(page, base_url):
         assert page.input_value("#act-to") == "COMP-MERGER-REGISTRY@ec.europa.eu"
         page.click("#act-close")
         page.keyboard.press("Escape")
+
+
+def test_language_switch(page, base_url):
+    goto(page, base_url, "")
+    page.click("#lang-en")
+    page.wait_for_timeout(300)
+    assert page.evaluate("document.documentElement.lang") == "en"
+    assert page.text_content("#tab-now").strip() == "Overview" and page.text_content("#tab-hk").strip().startswith("Tenders")
+    assert page.locator("#lang-note").is_visible()
+    # new content rendered in English mode is translated as it appears
+    page.click("#tab-fi")
+    page.wait_for_timeout(300)
+    assert "National legislation" in page.text_content("#view-fi")
+    # EU items use the EU's English title
+    eu = page.evaluate("(DATA.find(i=>i.scope==='eu'&&i.titleEn&&i._fi)||{}).id")
+    if page.evaluate("DATA.some(i=>i.titleEn)"):  # data built after titleEn was added
+        assert eu
+    page.click("#lang-fi")
+    page.wait_for_timeout(300)
+    assert page.evaluate("document.documentElement.lang") == "fi"
+    assert page.text_content("#tab-now").strip() == "Tilannekuva" and "Kansallinen lainsäädäntö" in page.text_content("#view-fi")
+    if eu:
+        assert page.evaluate(f"DATA.find(i=>i.id==='{eu}')._fi") is None
+    page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
+

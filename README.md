@@ -189,6 +189,13 @@ python -m http.server -d docs 8000  # http://localhost:8000
 
 ## Ylläpito
 
+* **Kielivalinta (FI/EN)**: yläpalkin FI | EN vaihtaa käyttöliittymän kielen lennosta (valinta muistetaan selaimessa;
+  linkkiin `?lang=en`). Englanninkieliset tekstit ovat sanakirjassa `config/i18n/en.json`: avain on sivun suomenkielinen
+  teksti tai sen osa (erottimet ·, –, :, sulut), luvut ja päivämäärät paikkamerkkeinä `{n}` ja `{d}`. Lisää puuttuva
+  käännös tiedostoon ja aja `python scripts/build_i18n.py`, joka upottaa sanakirjan sivuun (testi tarkistaa, että kopio on
+  ajan tasalla). Aineisto – HE:iden otsikot, lausunnot, ratkaisut, kilpailutukset – näytetään alkuperäiskielellään;
+  EU-asioissa käytetään EU:n omaa englanninkielistä otsikkoa. Toimenpideluonnokset (viranomaisille lähetettävät
+  kirjeet ja muistiot) pysyvät suomeksi.
 * **Aihealueet**: lisää avainsana `config/topics.yaml`-tiedostoon; luokittelu lasketaan joka ajossa
   uudelleen. Säädös, johon mikään avainsana ei osu, saa aihealueen *Muut* (EU-puolella sellaiset
   jätetään pois, ellei menettely ole watchlistillä).

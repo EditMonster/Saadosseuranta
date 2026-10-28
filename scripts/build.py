@@ -493,7 +493,7 @@ def build_hys(topics_cfg, settings) -> list[dict]:
         upcoming = any(e["date"] > TODAY.isoformat() for e in ev)
         status = "lausunnolla" if now_open else ("palauteaika tulossa" if upcoming else "palauteaika päättynyt")
         items.append({"id": f"eu-hys-{h['id']}", "scope": "eu", "laji": "kuuleminen", "kind": "EU-kuuleminen", "authority": "Komissio", "title": title[:160],
-                      "fullTitle": h.get("title_en") or title, "ref": h.get("actTypeLabel") or "Komission aloite", "topics": topics,
+                      "fullTitle": h.get("title_en") or title, "titleEn": h.get("title_en") or None, "ref": h.get("actTypeLabel") or "Komission aloite", "topics": topics,
                       "status": status, "done": False, "summary": (f"{h.get('actTypeLabel') or ''} · {h.get('reference') or ''}").strip(" ·"),
                       "source": h["url"], "links": {"haveyoursay": h["url"]}, "events": ev, "updated": None})
     return items
@@ -644,7 +644,7 @@ def build_delegated(topics_cfg, settings) -> list[dict]:
         if not title_fi and title_en:
             summary = (summary + " " if summary else "") + "(Suomenkielinen nimi tulee EUVL-julkaisun myötä.)"
         items.append({"id": f"eu-da-{aid}", "scope": "eu", "laji": "delegoitu", "kind": kind, "title": short_title(title)[:160] if title_fi else title[:160],
-                      "fullTitle": title, "ref": ref, "topics": topics, "status": status, "done": done,
+                      "fullTitle": title, "titleEn": title_en or None, "ref": ref, "topics": topics, "status": status, "done": done,
                       "summary": summary[:700], "source": links["regdel"], "links": links,
                       "ministry": "Euroopan komissio" + (f", {a.get('policyAreaName')}" if a.get("policyAreaName") else "") + (f" · perussäädös {ba.get('code')}" if ba.get("code") else ""),
                       "objectionEnd": deadline, "objectionMonths": {inst.get(k, k): v + extended.get(k, 0) for k, v in months.items()},
@@ -709,7 +709,7 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
         pc = c.get("proposal") or ""
         mpc = re.match(r"5(\d{4})PC(\d{4})", pc)
         items.append({"id": f"eu-{pid}", "scope": "eu", "laji": "eu", "pid": pid, "proposalCom": f"{mpc.group(1)}/{int(mpc.group(2))}" if mpc else None,
-                      "kind": kind, "title": title[:160], "fullTitle": title,
+                      "kind": kind, "title": title[:160], "fullTitle": title, "titleEn": rec.get("title_en") or None,
                       "ref": ref, "procedure": rec.get("ref"), "topics": topics, "status": status, "done": done,
                       "summary": (rec.get("title_en") or ""), "source": source,
                       "links": {"oeil": f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={rec.get('ref', pid)}",
