@@ -70,9 +70,9 @@ NONE_RE = re.compile(r"\bei (ole )?(lausuttavaa|lausuntoa|huomautettavaa|komment
 OPPOSE_RE = re.compile(r"\b(vastusta(a|vat|mme|isi\w*|a jyrkästi)|ei kannata|emme kannata|ei puolla|emme puolla|(ei|emme) voi(da)? (hyväksyä|kannattaa|puoltaa)|"
                        r"tulee hylätä|on hylättävä|ei tule (toteuttaa|hyväksyä|säätää)|ei pidä [a-zäö ]{0,40}perusteltuna|torju(u|vat|mme|isi\w*|taan)|"
                        r"esittä\w* [a-zäö ,]{0,50}(luopumista|hylkäämistä)|ei (ole )?(hyväksyttäv|kannatettav)\w*)\b", re.I)
-SUPPORT_RE = re.compile(r"\b(kannatta(a|vat|mme)(?! (huomata|todeta|harkita|selvittää|ottaa|pohtia|miettiä))|kannatamme|puolta(a|vat|mme)|"
-                        r"yhtyy|yhdymme|(pitää|pidämme|pitävät) [a-zäöå\- ]{0,60}(hyv|kannatettav|perusteltu|myönteis|tervetullee|"
-                        r"oikeansuuntais|tarpeellis)(änä|ana|enä|ena|inä|ina|nä|na|ä|a)\b|suhtautu\w* myönteisesti|tuke(e|vat|mme) (esitystä|ehdotusta|"
+SUPPORT_RE = re.compile(r"\b(kannatta(a|vat|mme)(?! (huomata|todeta|harkita|selvittää|ottaa|pohtia|miettiä))|kannatamme|kannatetaan|puolta(a|vat|mme)|puolletaan|"
+                        r"yhtyy|yhdymme|(pitää|pidämme|pitävät|pidetään) [a-zäöå\- ]{0,60}(hyv|kannatettav|perusteltu|myönteis|tervetullee|"
+                        r"oikeansuuntais|tarpeellis|positiivis)(änä|ana|enä|ena|inä|ina|nä|na|ä|a)\b|suhtautu\w* myönteisesti|tuke(e|vat|mme) (esitystä|ehdotusta|"
                         r"esitettyä|tavoitetta|ehdotettua|uudistusta|valtioneuvoston kantaa|kantaa|linjau\w*)|(ei ole|ei) huomautettavaa)\b", re.I)
 CONCERN_RE = re.compile(r"\b(kuitenkin|huolestun\w*|huolissa\w*|ongelmallis\w*|riski\w*|puutteellis\w*|riittämät\w*|"
                         r"esittä\w* [a-zäö ,]{0,40}(muutos|tarkennu|täsmennys|lisäy|selvity)\w*|ehdotta\w*|ehdotamme|"
@@ -183,8 +183,10 @@ def signals(text: str, title: str = "") -> dict:
 
 def decide(sig: dict) -> str:
     """Suuntaa-antava kanta sanastosta. Key into STANCE_LABEL."""
+    real_sup = [h for h in sig.get("sup") or [] if "huomautettavaa" not in h]
     if sig.get("none"):
-        return "ei"
+        # "Ei huomautettavaa. Ehdotusta kannatetaan." is support, not silence (otostarkistus 10/2026)
+        return "kannattaa" if real_sup and not sig.get("opp") else "ei"
     opp, sup, strong, weak = len(sig.get("opp") or []), len(sig.get("sup") or []), len(sig.get("res") or []), int(sig.get("con") or 0)
     if opp and not sup:
         return "vastustaa"

@@ -279,3 +279,11 @@ def test_build_lausunnot_extra_sections(tmp_path, monkeypatch):
     assert d["valmistelu"]["keskeiset"][0]["label"] == "Hanke asetettu"
     e = json.loads((tmp_path / "eu-2023-0001.json").read_text(encoding="utf-8"))
     assert e["nim"] == {"deadline": "2026-01-01"} and e["eu_asiakirjat"]["np"] == 2 and e["eu_asiakirjat"]["url"].endswith("2023/0001(COD)")
+
+
+def test_stance_sample_review_fixes():
+    import fetch_lausunnot as fl
+    assert fl.classify("Pykälään ei ole huomautettavaa. Ehdotusta kannatetaan.") == "kannattaa"
+    assert fl.classify("PRH:lla ei ole huomautettavaa luonnokseen.") == "ei"
+    assert fl.classify("Kunta pitää muutosesitystä kauttaaltaan positiivisena ja muutosta toimivana.") == "kannattaa"
+    assert fl.classify("Esitystä puolletaan.") == "kannattaa"
