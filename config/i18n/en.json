@@ -1644,5 +1644,16 @@
 "{n} päivää": "{n} days",
 "⤓ Diat": "⤓ Slides",
 "Hyväksytty muutettuna": "Adopted with amendments",
-"Hyväksytty muuttamattomana": "Adopted unamended"
+"Hyväksytty muuttamattomana": "Adopted unamended",
+"Kävijät.": "Visitors.",
+"Sivu ei kerää kävijöistä mitään: ei evästeitä, ei analytiikkaa, ei kirjautumista eikä kolmansien osapuolten palveluja (myös fontit ladataan sivun omalta palvelimelta). Seuranta, kansiot, piilotukset, kieli ja teema tallentuvat vain omaan selaimeesi. Sivun palvelin on GitHub Pages, joka käsittelee tavanomaisia palvelinlokeja (esim. IP-osoite) GitHubin omien ehtojen mukaisesti.": "The page collects nothing about its visitors: no cookies, no analytics, no sign-in and no third-party services (fonts are also served from the page's own server). Tracking, folders, hidden items, language and theme are stored only in your own browser. The page is hosted on GitHub Pages, which processes ordinary server logs (e.g. IP address) under GitHub's own terms.",
+"Aineisto.": "Data.",
+"Sivu kokoaa viranomaisten julkaisemaa tietoa: lainsäädäntöhankkeet, eduskunta-asiakirjat, EU:n asiakirjat, julkiset hankinnat, yrityskauppavalvonta ja tuomioistuinten julkaistut ratkaisut. Aineistossa voi olla henkilöiden nimiä siinä muodossa kuin viranomainen on ne julkaissut ja henkilön ammatillisessa roolissa – esimerkiksi lausunnonantaja, kirjallisen kysymyksen allekirjoittaja, toiminimellä toimiva tavarantoimittaja tai hankintapäätöksen tekijä. Tarpeettomat tiedot poistetaan automaattisesti: henkilökohtaiset sähköpostiosoitteet ja puhelinnumerot sekä valiokunnissa kuultujen asiantuntijoiden nimet. Tarkoitus on lainsäädännön ja julkisen päätöksenteon seuranta.": "The page compiles information published by public authorities: legislative projects, parliamentary documents, EU documents, public procurement, merger control and published court decisions. The data may contain names of persons as the authority published them and in their professional role – for example a consultation respondent, the signatory of a written question, a sole-trader supplier or the maker of a procurement decision. Unnecessary details are removed automatically: personal email addresses and phone numbers and the names of experts heard by committees. The purpose is to follow legislation and public decision-making.",
+"Korjaus- ja poistopyynnöt.": "Correction and removal requests.",
+"Jos aineistossa on sinua koskeva tieto, jonka haluat korjattavan tai poistettavan, avaa pyyntö": "If the data contains information about you that you want corrected or removed, open a request",
+"GitHubissa": "on GitHub",
+"(mainitse kohde tai linkki). Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": "(mention the item or link). Do not include personal data in the request beyond what is needed.",
+"mainitse kohde tai linkki": "mention the item or link",
+"Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": "Do not include personal data in the request beyond what is needed.",
+". Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": ". Do not include personal data in the request beyond what is needed."
 }

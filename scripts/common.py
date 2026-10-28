@@ -93,8 +93,65 @@ def load_json(path: Path, default):
         return default
 
 
+# ---------- tietosuoja: julkaistavan aineiston minimointi ----------
+# Lähteet (Hilma, Hankeikkuna, eduskunta) julkaisevat toisinaan henkilökohtaisia yhteystietoja ja nimiä, joita
+# sivu ei tarvitse. Ne poistetaan kaikesta, mitä kirjoitetaan docs/data-hakemistoon (julkinen sivu):
+# * henkilökohtaiset sähköpostiosoitteet (etunimi.sukunimi@…) vapaatekstistä → "[sähköposti]";
+#   yleiset osoitteet (kirjaamo@, toimisto@, hankinnat@ …) säilyvät, koska niihin lähetetään asiakirjoja
+# * suomalaiset puhelinnumerot vapaatekstistä → "[puhelin]"
+# * valiokuntien kuulemien asiantuntijoiden nimet (sivu näyttää vain organisaatiot ja määrät) – myös välimuistista
+import re as _re
+
+_EMAIL = _re.compile(r"(?<![\w.%+-])([A-Za-z0-9._%+-]+)@([A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+)")
+_ROLE = _re.compile(r"^(kirjaamo|toimisto|info|hankinn\w*|hankinta\w*|registry|registrar|office|asiakaspalvelu|"
+                    r"palaute|tietosuoja|neuvonta|vaihde|posti|mail|contact|tarjoukset|tenders?|procurement|purchase\d*|"
+                    r"ostot|kirjaamot|edustaja|valiokunta\w*|\w*valiokunta|eduskunta|lausunnot|lausuntopalvelu)$", _re.I)
+_PHONE = _re.compile(r"(?:(?<=puh\. )|(?<=puh )|(?<=puh: )|(?<=puh\.: )|(?<=puhelin )|(?<=puhelin: )|(?<=tel\. )|(?<=tel: )|(?<=p\. )|(?<=gsm )|(?<=mob\. ))\+?\d[\d\s-]{5,16}\d"
+                    r"|(?<![\w/.:-])(?:\+358[\s-]?|0)(?:4\d|50)[\s-]?\d{3}[\s-]?\d{3,4}(?![\w/.:-])"
+                    r"|(?<![\w/.:-])\+358[\s-]?\(?0?\)?\d{1,3}[\s-]?\d{3,4}[\s-]?\d{3,4}(?![\w/.:-])", _re.I)
+
+
+def _scrub_text(t: str) -> str:
+    if "@" in t:
+        def em(m):
+            local = m.group(1)
+            return m.group(0) if _ROLE.match(local) else "[sähköposti]"
+        t = _EMAIL.sub(em, t)
+        t = _re.sub(r"https?://\[sähköposti\]", "[sähköposti]", t)
+    if any(c.isdigit() for c in t):
+        t = _PHONE.sub("[puhelin]", t)
+    return t
+
+
+def scrub_personal(o, *, text: bool = True):
+    """Minimise personal data in a JSON tree (returns a new tree). text=False only drops hearing names."""
+    if isinstance(o, dict):
+        out = {}
+        for k, v in o.items():
+            if k == "heard" and isinstance(v, list):
+                v = [{kk: vv for kk, vv in h.items() if kk != "name"} if isinstance(h, dict) else h for h in v]
+            if text and isinstance(v, str) and k.lower().endswith("url") and ("@" in v or "[sähköposti]" in v):
+                if "[sähköposti]" in _scrub_text(v):  # a mailto disguised as a link ("https://etu.suku@kunta.fi"): no usable link
+                    continue
+            out[k] = scrub_personal(v, text=text)
+        return out
+    if isinstance(o, list):
+        return [scrub_personal(v, text=text) for v in o]
+    if text and isinstance(o, str) and len(o) > 6:
+        return _scrub_text(o)
+    return o
+
+
 def save_json(path: Path, data, *, compact: bool = False):
     path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        rel = path.resolve().relative_to(ROOT)
+    except ValueError:
+        rel = None
+    if rel is not None and rel.parts[:2] == ("docs", "data"):
+        data = scrub_personal(data)
+    elif rel is not None and rel.parts[:2] == ("data", "cache"):
+        data = scrub_personal(data, text=False)
     if compact:
         txt = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     else:

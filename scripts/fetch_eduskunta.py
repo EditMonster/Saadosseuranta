@@ -114,13 +114,13 @@ def parse_hearing(body: str, date: str, committee: str | None) -> dict:
         pos = re.search(rf"<{TAG}FraasiAsemaTeksti>([^<]*)<", part)
         org_s = html.unescape(org.group(1)).strip() if org else ""
         name = " ".join(html.unescape(g.group(1)).strip() for g in (fn, ln) if g and g.group(1).strip())
-        if group == "heard":
-            heard.append({"name": name or None, "org": org_s or None, "title": html.unescape(pos.group(1)).strip() if pos else None})
+        if group == "heard" and (org_s or name):  # the expert's organisation and title – the name is not published
+            heard.append({"org": org_s or None, "title": html.unescape(pos.group(1)).strip() if pos else None})
         elif group == "written":
             written.append(org_s or name)
         else:
             none.append(org_s or name)
-    return {"date": date, "committee": committee, "heard": [h for h in heard if h["org"] or h["name"]],
+    return {"date": date, "committee": committee, "heard": heard,
             "written": [w for w in written if w], "none": [n for n in none if n]}
 
 

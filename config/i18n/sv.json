@@ -1643,5 +1643,16 @@
 "{n} päivää": "{n} dagar",
 "⤓ Diat": "⤓ Bildspel",
 "Hyväksytty muutettuna": "Godkänd med ändringar",
-"Hyväksytty muuttamattomana": "Godkänd utan ändringar"
+"Hyväksytty muuttamattomana": "Godkänd utan ändringar",
+"Kävijät.": "Besökare.",
+"Sivu ei kerää kävijöistä mitään: ei evästeitä, ei analytiikkaa, ei kirjautumista eikä kolmansien osapuolten palveluja (myös fontit ladataan sivun omalta palvelimelta). Seuranta, kansiot, piilotukset, kieli ja teema tallentuvat vain omaan selaimeesi. Sivun palvelin on GitHub Pages, joka käsittelee tavanomaisia palvelinlokeja (esim. IP-osoite) GitHubin omien ehtojen mukaisesti.": "Sidan samlar inte in något om besökarna: inga kakor, ingen analys, ingen inloggning och inga tredjepartstjänster (även typsnitten läses in från sidans egen server). Bevakning, mappar, dolda objekt, språk och tema sparas endast i din egen webbläsare. Sidans server är GitHub Pages, som behandlar sedvanliga serverloggar (t.ex. IP-adress) enligt GitHubs egna villkor.",
+"Aineisto.": "Material.",
+"Sivu kokoaa viranomaisten julkaisemaa tietoa: lainsäädäntöhankkeet, eduskunta-asiakirjat, EU:n asiakirjat, julkiset hankinnat, yrityskauppavalvonta ja tuomioistuinten julkaistut ratkaisut. Aineistossa voi olla henkilöiden nimiä siinä muodossa kuin viranomainen on ne julkaissut ja henkilön ammatillisessa roolissa – esimerkiksi lausunnonantaja, kirjallisen kysymyksen allekirjoittaja, toiminimellä toimiva tavarantoimittaja tai hankintapäätöksen tekijä. Tarpeettomat tiedot poistetaan automaattisesti: henkilökohtaiset sähköpostiosoitteet ja puhelinnumerot sekä valiokunnissa kuultujen asiantuntijoiden nimet. Tarkoitus on lainsäädännön ja julkisen päätöksenteon seuranta.": "Sidan sammanställer information som myndigheter har publicerat: lagstiftningsprojekt, riksdagshandlingar, EU-handlingar, offentliga upphandlingar, företagsförvärvskontroll och domstolarnas publicerade avgöranden. Materialet kan innehålla namn på personer i den form myndigheten har publicerat dem och i personens yrkesroll – till exempel remissinstans, undertecknare av ett skriftligt spörsmål, leverantör som är enskild näringsidkare eller beslutsfattare i en upphandling. Onödiga uppgifter tas bort automatiskt: personliga e-postadresser och telefonnummer samt namnen på sakkunniga som hörts i utskotten. Syftet är att följa lagstiftningen och det offentliga beslutsfattandet.",
+"Korjaus- ja poistopyynnöt.": "Begäran om rättelse och radering.",
+"Jos aineistossa on sinua koskeva tieto, jonka haluat korjattavan tai poistettavan, avaa pyyntö": "Om materialet innehåller en uppgift om dig som du vill få rättad eller raderad, öppna en begäran",
+"GitHubissa": "på GitHub",
+"(mainitse kohde tai linkki). Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": "(ange objektet eller länken). Skriv inte andra personuppgifter i begäran än de som behövs.",
+"mainitse kohde tai linkki": "ange objektet eller länken",
+"Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": "Skriv inte andra personuppgifter i begäran än de som behövs.",
+". Älä kirjoita pyyntöön muita henkilötietoja kuin tarpeelliset.": ". Skriv inte andra personuppgifter i begäran än de som behövs."
 }

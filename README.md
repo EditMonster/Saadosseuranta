@@ -188,6 +188,23 @@ python scripts/update.py eduskunta  # vain yksi lähde + build
 python -m http.server -d docs 8000  # http://localhost:8000
 ```
 
+## Tietosuoja
+
+* **Kävijät**: sivu ei kerää kävijöistä mitään – ei evästeitä, analytiikkaa, kirjautumista eikä kolmansien osapuolten
+  kutsuja (fontit `docs/fonts/`, SIL OFL; raporttikirjastot `docs/vendor/`). Seuranta, kansiot ja asetukset ovat vain
+  käyttäjän selaimessa. Sivulla on `noindex`, joten hakukoneet eivät listaa sitä; linkin saanut pääsee silti sivulle.
+* **Aineiston minimointi**: `scripts/common.py` (`scrub_personal`) poistaa kaikesta `docs/data`-hakemistoon
+  kirjoitettavasta henkilökohtaiset sähköpostiosoitteet (yleiset kuten kirjaamo@ säilyvät) ja puhelinnumerot sekä
+  valiokuntien kuulemien asiantuntijoiden nimet (myös välimuistista). Eduskunnalle annettujen lausuntojen
+  allekirjoittajien nimiä ei julkaista, kun organisaatio on tiedossa. Nimet, jotka viranomainen on julkaissut henkilön
+  ammatillisessa roolissa (lausunnonantaja, kirjallisen kysymyksen allekirjoittaja, toiminimi tavarantoimittajana),
+  säilyvät. Testit: `tests/test_privacy.py`.
+* **Pyynnöt**: alatunnisteen *Tietosuoja*-ikkuna kertoo käsittelystä ja ohjaa korjaus- ja poistopyynnöt GitHub-issueksi.
+  Yksittäisen kohteen voi piilottaa tai korjata `config/overrides.json`-tiedostolla.
+* **Repo on julkinen**: koodi, tiimikansiot (`config/kansiot/`) ja aineisto näkyvät kaikille – asiakastietoja ei kansioihin.
+  Työnkulut käyttävät vain GitHubin omaa lyhytikäistä tokenia; repossa ei ole avaimia. Commitit tehdään GitHubin
+  noreply-osoitteella.
+
 ## Ylläpito
 
 * **Kielivalinta (FI/SV/EN)**: yläpalkin FI | SV | EN vaihtaa käyttöliittymän kielen lennosta (valinta muistetaan

@@ -256,7 +256,7 @@ def build_lausunnot(items: list[dict], hk_by_uuid: dict, vaski: dict, asiat: dic
                     continue
                 seen.add(sid)
                 rows.append(_row({"org": s.get("org") or s.get("person"), "date": s.get("date"), "url": s.get("url")}, cache.get(sid),
-                                 {"person": s.get("person"), "committee": s.get("committee"), "kind": s.get("kind"),
+                                 {"committee": s.get("committee"), "kind": s.get("kind"),
                                   "asia": key if key != _norm(it.get("ref") or "") and not key.startswith("HE ") else None}))
         sec = _section(rows)
         if sec:
