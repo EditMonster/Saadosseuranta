@@ -287,3 +287,16 @@ def test_stance_sample_review_fixes():
     assert fl.classify("PRH:lla ei ole huomautettavaa luonnokseen.") == "ei"
     assert fl.classify("Kunta pitää muutosesitystä kauttaaltaan positiivisena ja muutosta toimivana.") == "kannattaa"
     assert fl.classify("Esitystä puolletaan.") == "kannattaa"
+
+
+def test_section_demands_are_requests_not_descriptions():
+    import fetch_lausunnot as fl
+    yes = ["Lakiehdotuksen 22 §:n 2 momenttia tulisi muuttaa siten, että velvoite koskee vain suuria työnantajia.",
+           "Ehdotettua 4 §:ää on täsmennettävä siten, että se koskee vain kunnan omia palveluja.",
+           "Vastustamme 12 §:n mukaista uutta seuraamusmaksua.", "Esitämme, että 3 a § poistetaan."]
+    no = ["Lakiehdotuksen 2 §:n 1 momentin 6 kohtaan lisättäisiin soveltamisalan rajaus.",
+          "Voimassa olevan lain 6 §:n mukaan auktorisointi myönnetään vain kerran, ja sitä tulisi noudattaa.",
+          "Ehdotetun 9 §:n mukaan ehdollisessa päätöksessä määrätään kelpoisuuskokeen aiheet."]
+    assert all(fl.demands(t) for t in yes) and not any(fl.demands(t) for t in no)
+    assert fl.demands(yes[3])[0]["s"] == ["3 a §"]
+    assert fl.section_refs("Esitämme, että 2 ja 3 a §:ää täsmennetään") == ["2 §", "3 a §"]

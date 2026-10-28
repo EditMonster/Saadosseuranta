@@ -66,7 +66,10 @@ def _row(doc: dict, summ: dict | None, extra: dict) -> dict:
             if summ.get("gist"):
                 row["gist"] = summ["gist"]
             if summ.get("vaat") and summ.get("src") in ("ek", "hk"):
-                row["vaat"] = summ["vaat"][:6]  # section-specific demands: compared with the committee's changes
+                from fetch_lausunnot import DEMAND_CUE, DESCRIPTIVE
+                vaat = [v for v in summ["vaat"] if DEMAND_CUE.search(v.get("t") or "") and not DESCRIPTIVE.search(v.get("t") or "")]
+                if vaat:
+                    row["vaat"] = vaat[:6]  # section-specific demands: compared with the committee's changes
         elif summ.get("ok") == "noText":
             row["stance"] = summ.get("stance") or row.get("stance")
             row["noText"] = True

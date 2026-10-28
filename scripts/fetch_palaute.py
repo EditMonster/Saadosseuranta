@@ -24,7 +24,9 @@ import xml.etree.ElementTree as ET
 from common import CACHE_DIR, SourceOutage, load_json, log, save_json
 
 DIR = CACHE_DIR / "palaute"
-MAX_PER_RUN = int(os.environ.get("PALAUTE_MAX", "150"))
+MAX_PER_RUN = int(os.environ.get("PALAUTE_MAX", "120"))
+PACE_S = 1.2           # seconds between requests: the open data API refuses (403) a burst
+THROTTLED = 2          # stop after this many refusals in a row; the rest waits for the next run
 BUDGET_S = int(os.environ.get("PALAUTE_BUDGET_S", "420"))
 VERSION = 1
 PARA_MAX = 2500       # characters per paragraph
@@ -95,16 +97,25 @@ def main() -> None:
     he = load_all()
     todo = [n for n in wanted() if n not in he or int(he[n].get("v") or 0) < VERSION]
     log(f"palaute: {len(he)} HE:tä luettu, {len(todo)} odottaa")
-    t0, done, found, outage, touched = time.time(), 0, 0, None, set()
+    t0, done, found, outage, touched, refused = time.time(), 0, 0, None, set(), 0
     for num in todo[:MAX_PER_RUN]:
         if time.time() - t0 > BUDGET_S:
             break
+        time.sleep(PACE_S)
         try:
             rows = fetch_by_tunnus(f"HE {num} vp")
+            refused = 0
         except SourceOutage as e:
             outage = e
             break
         except Exception as e:  # noqa: BLE001
+            if "403" in str(e) or "429" in str(e):
+                refused += 1
+                if refused >= THROTTLED:
+                    log(f"palaute: avoin data rajoittaa pyyntöjä ({e}) – jatketaan seuraavalla ajolla")
+                    break
+                time.sleep(10)
+                continue
             log(f"warn: palaute HE {num}: {e}")
             continue
         # the government proposal itself (not the committee report or the käsittelytiedot row of the same tunnus)

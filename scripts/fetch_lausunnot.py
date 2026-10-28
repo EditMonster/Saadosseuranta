@@ -39,7 +39,8 @@ WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
 PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
 COMMITTEE_VERSION = 2  # 2: the members' dissent/opinion after the signature is no longer read as the committee's view
 FORMAT_VERSION = 2   # 2: Outlook .msg, Word .doc, pptx/odt, plain text/e-mail/RTF and images are read too
-DEMAND_VERSION = 1   # 1: demand sentences that name a section ("22 §:ää tulisi täsmentää") – read from up to DEMAND_PAGES
+DEMAND_VERSION = 1   # demand sentences that name a section ("22 §:ää tulisi täsmentää") – read from up to DEMAND_PAGES
+# (the cue words are re-applied to the stored sentences in build_lausunnot.py, so tightening them needs no re-read)
 DEMAND_PAGES = 12
 BACKFILL_MAX = int(os.environ.get("LAUSUNNOT_BACKFILL_MAX", 600))  # earlier expert statements re-read per run for their demands
 STRIKES = 5
@@ -223,10 +224,11 @@ def reclassify(rec: dict) -> bool:
 
 
 SECTION_REF = re.compile(r"(?<![\w.])(\d{1,3})\s?([a-zåäö])?\s?(?:–\s?\d{1,3}\s?[a-z]?\s?)?§")
-DEMAND_CUE = re.compile(r"\b(?:tulisi|tulee|pitäisi|olisi\s+syytä|on\s+syytä|olisi\s+tarpeen|on\s+tarpeen|ehdot\w*|esitä\w*|esitetään|"
-                        r"vaati\w*|edellytt\w*|vastust\w*|ei\s+kannata|emme\s+kannata|poist\w*|lisät\w*|lisättävä|muutettava|"
-                        r"täsmennett\w*|täsmentä\w*|tarkennett\w*|tarkentaa|korjat\w*|ongelmalli\w*|epäselv\w*|kohtuuton\w*|"
-                        r"ei\s+ole\s+(?:riittäv|perustel|tarkoituksenmukai)\w*|tulisi\s+harkita|kannattaisi)\b", re.I)
+DEMAND_CUE = re.compile(r"\b(?:tulisi|tulee\s+(?:\w+\s+){0,2}\w+(?:a|ä)\b|pitäisi|olisi\s+syytä|on\s+syytä|olisi\s+tarpeen|on\s+tarpeen|"
+                        r"olisi\s+(?:\w+\s+){0,2}\w+ttava|on\s+(?:\w+\s+){0,2}\w+ttava|\w+(?:ttava|ttävä)(?:t)?\s+(?:siten|niin|pois)|"
+                        r"ehdotamme|esitämme|ehdottaa|esittää,?\s+että|vaati\w*|vaadimme|edellytämme|vastustamme|vastustaa|ei\s+kannata|"
+                        r"emme\s+kannata|ongelmalli\w*|epäselv\w*|tulisi\s+harkita|kannattaisi|syytä\s+harkita)\b", re.I)
+DESCRIPTIVE = re.compile(r"voimassa\s+olevan\s+(?:lain|asetuksen)|nykyisen\s+lain|nykyisin\s+voimassa", re.I)
 
 
 def section_refs(sentence: str) -> list[str]:
@@ -243,7 +245,7 @@ def demands(text: str, limit: int = 8) -> list[dict]:
     """The statement's concrete requests that name a section: [{"s": ["22 §"], "t": sentence}] (≤ 240 chars each)."""
     out = []
     for s in sentences(text):
-        if len(s) < 25 or len(s) > 700 or "§" not in s or not DEMAND_CUE.search(s):
+        if len(s) < 25 or len(s) > 700 or "§" not in s or not DEMAND_CUE.search(s) or DESCRIPTIVE.search(s):
             continue
         refs = section_refs(s)
         if not refs or len(refs) > 6:

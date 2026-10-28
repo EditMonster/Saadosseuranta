@@ -53,6 +53,9 @@ HEALTH = CACHE_DIR / "health.json"
 STEPS = [
     ("hankeikkuna", fetch_hankeikkuna.main),
     ("eduskunta", fetch_eduskunta.main),
+    # HE texts' Lausuntopalaute chapter (what the ministry did with the givers' proposals): early, before the
+    # vaski/asiat scans – the open data API refuses requests (403) once a run has made many of them
+    ("palaute", fetch_palaute.main),
     ("vaski", fetch_vaski.main),
     ("asiat", fetch_asiat.main),  # eduskunta.fi asia pages: every expert statement and committee opinion/report
     ("finlex", fetch_finlex.main),
@@ -77,7 +80,6 @@ STEPS = [
     ("toimiala", fetch_toimiala.main),
     ("lausunnot", fetch_lausunnot.main),  # after hankeikkuna + vaski: summarises the statements they list
     ("arviointineuvosto", fetch_arviointineuvosto.main),  # HE texts' section on the council's statement (VaskiData)
-    ("palaute", fetch_palaute.main),  # HE texts' Lausuntopalaute chapter: what the ministry did with the givers' proposals
     ("taysistunto", fetch_taysistunto.main),  # plenary votes by party, speeches, EV lausumat
     ("nim", fetch_nim.main),  # Finland's national implementing measures for EU directives (Cellar)
     ("oeil", fetch_oeil.main),  # EU procedures' documents: EP reports, SWD/SEC, Council, EDPS, EESC (OEIL)
