@@ -850,7 +850,8 @@ def test_new_logo_and_global_search_placeholder(page, base_url):
     for width in (1440, 1300, 1000, 800):
         page.set_viewport_size({"width": width, "height": 860})
         goto(page, base_url, "")
-        page.wait_for_timeout(400)
+        page.evaluate("document.fonts.ready")
+        page.wait_for_timeout(1500)
         r = page.evaluate("""()=>{const q=document.getElementById('gq'); const cs=getComputedStyle(q);
           const c=document.createElement('canvas').getContext('2d'); c.font=`${cs.fontWeight} ${q.style.getPropertyValue('--phfs')||cs.fontSize} ${cs.fontFamily}`;
           const lg=document.querySelector('#gbar .glogo img').getBoundingClientRect(), ctl=document.querySelector('#gbar .ctl').getBoundingClientRect();

@@ -2973,7 +2973,8 @@ function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.sty
   new MutationObserver(()=>requestAnimationFrame(fit)).observe(q,{attributes:true,attributeFilter:["placeholder"]});
   let lastW=-1; if(window.ResizeObserver) new ResizeObserver(es=>{ const w=Math.round(es[0].contentRect.width); if(w!==lastW){ lastW=w; fit(); } }).observe(q.parentElement);
   addEventListener("resize",fit);
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  if(document.fonts){ document.fonts.ready.then(fit); document.fonts.addEventListener&&document.fonts.addEventListener("loadingdone",()=>fit()); }
+  setTimeout(fit,1200);
   fit(); setTimeout(fit,400);
 })();
 
@@ -3000,7 +3001,8 @@ function fitGlobalSearch(){
   }
   new MutationObserver(()=>requestAnimationFrame(fit)).observe(q,{attributes:true,attributeFilter:["placeholder"]});
   if(window.ResizeObserver) new ResizeObserver(()=>fit()).observe(q);
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  if(document.fonts){ document.fonts.ready.then(fit); document.fonts.addEventListener&&document.fonts.addEventListener("loadingdone",()=>fit()); }
+  setTimeout(fit,1200);
   fit();
 }
 
