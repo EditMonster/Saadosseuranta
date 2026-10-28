@@ -212,16 +212,23 @@ python -m http.server -d docs 8000  # http://localhost:8000
 
 ## Ylläpito
 
-* **Kielivalinta (FI/SV/EN)**: yläpalkin FI | SV | EN vaihtaa käyttöliittymän kielen lennosta (valinta muistetaan
-  selaimessa; linkkiin `?lang=sv` tai `?lang=en`). Käännökset ovat sanakirjoissa `config/i18n/sv.json` ja
-  `config/i18n/en.json`: avain on sivun suomenkielinen
-  teksti tai sen osa (erottimet ·, –, :, sulut), luvut ja päivämäärät paikkamerkkeinä `{n}` ja `{d}`. Lisää puuttuva
-  käännös tiedostoon ja aja `python scripts/build_i18n.py`, joka upottaa sanakirjan sivuun (testi tarkistaa, että kopio on
-  ajan tasalla). Otsikot vaihtuvat virallisiin käännöksiin, kun sellainen on: ruotsiksi HE:t ja lausuntohankkeet
-  Hankeikkunan ruotsinkielisellä nimellä ja EU-asiat Euroopan parlamentin ruotsinkielisellä otsikolla, englanniksi
-  EU-asiat EU:n englanninkielisellä otsikolla. Muu aineisto – tiivistelmät, lausunnot, ratkaisut, kilpailutukset –
-  näytetään alkuperäiskielellään, ja toimenpideluonnokset (viranomaisille lähetettävät kirjeet ja muistiot) pysyvät
-  suomeksi.
+* **Kielivalinta (FI/SV/EN/ET/LT)**: yläpalkin FI | SV | EN | ET | LT vaihtaa käyttöliittymän kielen lennosta (valinta
+  muistetaan selaimessa; linkkiin `?lang=sv|en|et|lt`). Käyttöliittymän tekstit ovat sanakirjoissa `config/i18n/<kieli>.json`:
+  avain on sivun suomenkielinen teksti tai sen osa (erottimet ·, –, :, sulut), luvut ja päivämäärät paikkamerkkeinä
+  `{n}` ja `{d}`. Lisää puuttuva käännös tiedostoon ja aja `python scripts/build_i18n.py`, joka upottaa sanakirjat sivuun
+  (testi tarkistaa, että kopio on ajan tasalla).
+* **Sisällön käännökset**: lakien, EU-asioiden ja kilpailutusten otsikot ja tiivistelmät näytetään valitulla kielellä –
+  myös suomeksi valittuna vieraskieliset (TED) kilpailutukset käännetään. `scripts/translate.py` (päivitysajon lopussa)
+  käyttää ensin virallisia käännöksiä (Hankeikkunan ruotsinkieliset nimet; Euroopan parlamentin EU-menettelyjen otsikot
+  englanniksi, ruotsiksi, viroksi ja liettuaksi) ja kääntää loput avoimilla OPUS-MT-malleilla (`scripts/mt.py`, Argos
+  Translate -paketit, CC BY 4.0, CTranslate2 CPU:lla – ei API-avaimia eikä kuluja; käännös englannin kautta, pieni
+  sanastokorjaus mm. §-viittauksille). Kieli tunnistetaan (py3langid, maakohtaisesti rajattuna); kaksikielisistä
+  TED-otsikoista käännetään englanninkielinen puolisko. Jokainen teksti käännetään kerran (`data/cache/kaannokset/`,
+  256 osaa), ensimmäinen täyttö jaetaan ajoille aikabudjetilla `TRANSLATE_BUDGET_S` (avoimet asiat ja kilpailutukset
+  ensin); mallit (~1 Gt) säilytetään Actionsin välimuistissa. Sivu lataa vain valitun kielen tiedoston
+  `docs/data/tr/<kieli>.json`. Kohteen tiedoissa näkyy, onko teksti virallinen käännös vai konekäännös ja mistä kielestä,
+  ja alkuperäisen saa auki; yläpalkin *Alkuperäinen* näyttää kaikki tekstit alkuperäiskielellä. Muu sisältö
+  (lausunnot, ratkaisut, HE:n pääasiallinen sisältö) pysyy alkuperäiskielellä, ja toimenpideluonnokset suomeksi.
 * **Aihealueet**: lisää avainsana `config/topics.yaml`-tiedostoon; luokittelu lasketaan joka ajossa
   uudelleen. Säädös, johon mikään avainsana ei osu, saa aihealueen *Muut* (EU-puolella sellaiset
   jätetään pois, ellei menettely ole watchlistillä).

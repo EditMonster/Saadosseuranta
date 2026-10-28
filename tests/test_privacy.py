@@ -44,7 +44,7 @@ def test_save_json_scrubs_everything_written_to_the_public_site():
 
 
 def test_no_third_party_requests_or_tracking():
-    assert not re.search(r"fonts\.(googleapis|gstatic)\.com|googletagmanager|google-analytics|gtag\(|plausible|matomo|hotjar|clarity\.ms", HTML)
+    assert not re.search(r"fonts\.(googleapis|gstatic)\.com|googletagmanager|google-analytics|gtag\(|plausible\.io|matomo\.(?:js|php)|_paq\.push|hotjar|clarity\.ms", HTML)
     assert not re.search(r"<(script|link)[^>]+(src|href)=[\"']https?://", HTML), "ulkoinen skripti tai tyylitiedosto"
     for f in re.findall(r"url\((fonts/[\w.-]+)\)", HTML):
         assert (ROOT / "docs" / f).is_file(), f

@@ -67,6 +67,15 @@ jobs:
 
       - run: pip install -r requirements.txt -r requirements-dev.txt
 
+      # Konekäännös (scripts/translate.py): avoimet OPUS-MT-mallit (~1 Gt) säilytetään ajojen välillä
+      - name: Käännösmoottori
+        run: pip install -r requirements-mt.txt && pip install --no-deps argostranslate==1.9.6 || echo "Käännösmoottoria ei saatu asennettua – sivu näyttää alkuperäiset tekstit ja viralliset käännökset"
+      - name: Käännösmallit (välimuisti)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/saadosseuranta-mt
+          key: mt-models-argos-1
+
       # Skannattujen lausuntojen tekstintunnistus (fetch_lausunnot): pdftoppm + tesseract suomeksi ja ruotsiksi
       - name: Tekstintunnistus
         run: sudo apt-get update -q >/dev/null && sudo apt-get install -y -q --no-install-recommends poppler-utils tesseract-ocr tesseract-ocr-fin tesseract-ocr-swe >/dev/null || echo "OCR-työkaluja ei saatu asennettua – skannatut lausunnot jäävät lukematta"
@@ -74,6 +83,7 @@ jobs:
       - name: Hae lähteet ja rakenna aineisto
         env:
           VAIHEET: ${{ needs.ajastin.outputs.steps }}
+          TRANSLATE_BUDGET_S: "900"
         run: python scripts/update.py $VAIHEET
 
       # Rikkinäistä aineistoa ei committata: build.py:n raja-arvot + rakenteen eheystestit.

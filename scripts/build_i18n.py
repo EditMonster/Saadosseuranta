@@ -1,4 +1,4 @@
-"""Upottaa käyttöliittymän sanakirjat (config/i18n/<kieli>.json: sv, en) sivuun docs/index.html.
+"""Upottaa käyttöliittymän sanakirjat (config/i18n/<kieli>.json: sv, en, et, lt) sivuun docs/index.html.
 
 Sanakirjat ovat sivun sisällä (<script id="i18n-<kieli>" type="application/json">), jotta kielivalinta toimii myös
 yhden tiedoston tilannevedoksessa, joka ei hae tiedostoja verkosta. Avaimet ovat sivun suomenkielisiä tekstejä tai
@@ -16,7 +16,7 @@ import sys
 R = pathlib.Path(__file__).resolve().parent.parent
 DIR = R / "config" / "i18n"
 PAGE = R / "docs" / "index.html"
-LANGS = ("sv", "en")
+LANGS = ("sv", "en", "et", "lt")
 
 
 def payload(lang: str) -> str:

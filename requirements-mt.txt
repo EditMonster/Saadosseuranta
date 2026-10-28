@@ -1,0 +1,7 @@
+# Konekäännös (scripts/mt.py, scripts/translate.py): avoimet OPUS-MT-mallit Argos-paketteina, CTranslate2 CPU:lla.
+# argostranslate asennetaan erikseen ilman riippuvuuksia (sen stanza/torch-riippuvuutta ei tarvita):
+#   pip install -r requirements-mt.txt && pip install --no-deps argostranslate==1.9.6
+ctranslate2>=4.5,<5
+sentencepiece>=0.2.0
+sacremoses>=0.1.1
+py3langid>=0.3.0

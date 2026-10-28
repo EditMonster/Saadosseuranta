@@ -720,6 +720,7 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
         items.append({"id": f"eu-{pid}", "scope": "eu", "laji": "eu", "pid": pid, "proposalCom": f"{mpc.group(1)}/{int(mpc.group(2))}" if mpc else None,
                       "kind": kind, "title": title[:160], "fullTitle": title, "titleEn": rec.get("title_en") or None,
                       "titleSv": rec.get("title_sv") or None,
+                      "titleEt": rec.get("title_et") or None, "titleLt": rec.get("title_lt") or None,
                       "ref": ref, "procedure": rec.get("ref"), "topics": topics, "status": status, "done": done,
                       "summary": (rec.get("title_en") or ""), "source": source,
                       "links": {"oeil": f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={rec.get('ref', pid)}",

@@ -114,6 +114,11 @@ def main(only: list[str] | None = None) -> int:
             log(f"ERROR in {name} (peräkkäisiä epäonnistumisia {h['streak']}):\n{tb}")
     save_json(HEALTH, health)
     build.main()
+    try:  # titles and summaries in every page language (open models, cached); never blocks the data update
+        import translate
+        translate.main()
+    except Exception:  # noqa: BLE001
+        log(f"translate epäonnistui (sivu näyttää alkuperäiset tekstit):\n{traceback.format_exc()}")
     if failures:
         log(f"valmis, mutta epäonnistuneet vaiheet: {failures} (vanha välimuisti käytössä)")
     return 0

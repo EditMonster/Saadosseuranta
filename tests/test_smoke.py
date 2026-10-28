@@ -676,7 +676,7 @@ def test_language_switch(page, base_url):
     page.wait_for_timeout(300)
     assert "National legislation" in page.text_content("#view-fi")
     # EU items use the EU's English title
-    eu = page.evaluate("(DATA.find(i=>i.scope==='eu'&&i.titleEn&&i._fi)||{}).id")
+    eu = page.evaluate("(DATA.find(i=>i.scope==='eu'&&i.titleEn&&i._o)||{}).id")
     if page.evaluate("DATA.some(i=>i.titleEn)"):  # data built after titleEn was added
         assert eu
     page.click("#lang-fi")
@@ -684,7 +684,7 @@ def test_language_switch(page, base_url):
     assert page.evaluate("document.documentElement.lang") == "fi"
     assert page.text_content("#tab-now").strip() == "Tilannekuva" and "Kansallinen lainsäädäntö" in page.text_content("#view-fi")
     if eu:
-        assert page.evaluate(f"DATA.find(i=>i.id==='{eu}')._fi") is None
+        assert page.evaluate(f"DATA.find(i=>i.id==='{eu}')._o") is None
     page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
 
 
@@ -700,7 +700,7 @@ def test_swedish_switch(page, base_url):
     page.wait_for_timeout(300)
     assert "Nationell lagstiftning" in page.text_content("#view-fi")
     # bills use their official Swedish titles from Projektfönstret
-    sv = page.evaluate("(DATA.find(i=>i.titleSv&&i._fi)||{}).id")
+    sv = page.evaluate("(DATA.find(i=>i.titleSv&&i._o)||{}).id")
     if page.evaluate("DATA.some(i=>i.titleSv)"):
         assert sv
     # straight to English: Swedish titles are restored before the English pass
@@ -708,7 +708,7 @@ def test_swedish_switch(page, base_url):
     page.wait_for_timeout(300)
     assert page.text_content("#tab-now").strip() == "Overview" and page.locator("#lang-note").is_visible()
     assert not page.locator("#lang-note-sv").is_visible()
-    if sv and not page.evaluate(f"DATA.find(i=>i.id==='{sv}').titleEn"):
+    if sv and not page.evaluate(f"(()=>{{const it=DATA.find(i=>i.id==='{sv}'); return it.titleEn||it._o}})()"):
         assert page.evaluate(f"DATA.find(i=>i.id==='{sv}').title") == fi_titles[sv]
     page.click("#lang-fi")
     page.wait_for_timeout(300)
@@ -751,3 +751,35 @@ def test_law_analysis_and_report_downloads(page, base_url, tmp_path):
             assert inner in z.namelist()
     page.keyboard.press("Escape")
     assert page.locator("#rep").is_hidden()
+
+
+def test_estonian_lithuanian_and_original_texts(page, base_url):
+    et = json.loads((ROOT / "config" / "i18n" / "et.json").read_text(encoding="utf-8"))
+    lt = json.loads((ROOT / "config" / "i18n" / "lt.json").read_text(encoding="utf-8"))
+    goto(page, base_url, "")
+    page.click("#lang-et")
+    page.wait_for_timeout(800)
+    assert page.evaluate("document.documentElement.lang") == "et"
+    assert page.text_content("#tab-now").strip() == et["Tilannekuva"]
+    assert page.locator("#lang-note-et").is_visible()
+    # content in Estonian once the translation file is there: the card says how it was translated and keeps the original
+    iid = page.evaluate("(DATA.find(i=>i._o&&(i.scope==='fi'||i.scope==='eu'))||{}).id")
+    if iid:
+        page.evaluate(f"openItem('{iid}')")
+        page.wait_for_selector("#dr-orig .mtnote")
+        assert any(w in page.text_content("#dr-orig") for w in ("Masintõlge", "Ametlik tõlge"))
+        page.click("#dr-close")
+        page.click("#orig-toggle")
+        page.wait_for_timeout(300)
+        assert page.evaluate("DATA.filter(i=>i._o).length") == 0 and page.get_attribute("#orig-toggle", "aria-pressed") == "true"
+        assert not page.locator("#lang-note-et").is_visible()
+        page.click("#orig-toggle")
+        page.wait_for_timeout(300)
+        assert page.evaluate("DATA.some(i=>i._o)")
+    page.click("#lang-lt")
+    page.wait_for_timeout(500)
+    assert page.text_content("#tab-now").strip() == lt["Tilannekuva"] and page.locator("#lang-note-lt").is_visible()
+    page.click("#lang-fi")
+    page.wait_for_timeout(300)
+    assert page.text_content("#tab-now").strip() == "Tilannekuva"
+    page.evaluate("localStorage.removeItem('saadosseuranta-lang');localStorage.removeItem('saadosseuranta-orig')")
