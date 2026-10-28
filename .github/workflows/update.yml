@@ -104,7 +104,7 @@ jobs:
               git push && break
               echo "push epäonnistui, yritys $i: haetaan uusin main ja tehdään rebase"
               git fetch origin main
-              git rebase origin/main || { git rebase --abort; exit 1; }
+              git rebase --autostash origin/main || { git rebase --abort 2>/dev/null || true; exit 1; }
               sleep 10
             done
           fi

@@ -58,7 +58,7 @@ jobs:
             echo "Ei muutoksia."
           else
             git commit -m "Tiimikansio: $(python -c "import json;print(json.load(open('.kansiopyynto.json'))['fid'])") (#${{ github.event.issue.number }})"
-            for i in 1 2 3; do git push && break; git fetch origin main; git rebase origin/main || { git rebase --abort; exit 1; }; sleep 10; done
+            for i in 1 2 3; do git push && break; git fetch origin main; git rebase --autostash origin/main || { git rebase --abort 2>/dev/null || true; exit 1; }; sleep 10; done
           fi
           msg=$(python -c "import json;print(json.load(open('.kansiopyynto.json'))['message'])")
           gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} --body "$msg"
