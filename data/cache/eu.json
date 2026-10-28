@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-28T10:57:24",
+ "fetched": "2026-10-28T11:52:42",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -55593,12 +55593,20 @@
    },
    "council": [
     {
+     "date": "2025-12-16",
+     "type": "DELIB_byCONSIL"
+    },
+    {
      "date": "2026-01-19",
      "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-02-18",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-05-04",
+     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-06-05",
@@ -62214,6 +62222,10 @@
     {
      "date": "2026-10-19",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-27",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -62993,6 +63005,23 @@
    "title_fi": "",
    "title_sv": ""
   },
+  "2026-0336": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-10-28",
+   "final": false,
+   "pid": "2026-0336",
+   "ref": "2026/0336(COD)",
+   "stage": "RDG1",
+   "title_en": "",
+   "title_fi": "",
+   "title_sv": ""
+  },
   "2026-0340": {
    "cellar": {
     "acts": {},
@@ -63005,6 +63034,23 @@
    "final": false,
    "pid": "2026-0340",
    "ref": "2026/0340(COD)",
+   "stage": "RDG1",
+   "title_en": "",
+   "title_fi": "",
+   "title_sv": ""
+  },
+  "2026-0342": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-10-28",
+   "final": false,
+   "pid": "2026-0342",
+   "ref": "2026/0342(COD)",
    "stage": "RDG1",
    "title_en": "",
    "title_fi": "",
