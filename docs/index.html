@@ -912,6 +912,14 @@ th{font-weight:500;color:var(--muted)}
 #dr-he details[open] summary::before{content:"▾ "}
 #dr-he details p{margin:6px 0 0;font-size:13px;line-height:1.5}
 #dr-he .sjt{color:var(--muted);font-size:12px;margin:4px 0 0}
+/* Tietoikkunan leveys: vasemman reunan vetokahva (vain hiirellä/työpöydällä; leveys muistetaan selaimessa) */
+#dr-resize{position:fixed;z-index:62;width:14px;cursor:ew-resize;touch-action:none;display:flex;align-items:center;justify-content:center;outline:none}
+#dr-resize[hidden]{display:none}
+#dr-resize::before{content:"";width:4px;height:56px;border-radius:4px;background:var(--fg);opacity:.16;transition:opacity .15s,height .15s}
+#dr-resize:hover::before,#dr-resize:focus-visible::before,#dr-resize.on::before{opacity:.5;height:96px}
+body.dr-resizing{cursor:ew-resize!important;user-select:none}
+body.dr-resizing #drawer{transition:none!important}
+@media (max-width:760px),(pointer:coarse){#dr-resize{display:none!important}}
 </style>
 </head>
 <body>
@@ -1142,6 +1150,7 @@ th{font-weight:500;color:var(--muted)}
   <p class="micro" style="margin-top:10px">Tiedosto kootaan selaimessasi sivun aineistosta – mitään ei lähetetä minnekään. Tarkista määräajat alkuperäisestä lähteestä ennen päätöksentekoa.</p>
 </div>
 <div class="scrim" id="scrim" hidden></div>
+<div id="dr-resize" role="separator" aria-orientation="vertical" aria-label="Muuta tietoikkunan leveyttä (vedä tai nuolinäppäimet, kaksoisnapsautus palauttaa)" title="Vedä levittääksesi – kaksoisnapsautus palauttaa" tabindex="0" hidden></div>
 <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden>
   <div class="drawer-top">
     <div class="kicker" id="dr-kicker"></div>
@@ -2929,6 +2938,42 @@ document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&fdropOpen&&!drawer
   if(e.key==="Enter"&&e.target.id==="dr-fnew"){ e.preventDefault(); document.getElementById(e.shiftKey?"dr-fcreate":"dr-fadd").click(); } if(e.key==="Enter"&&e.target.id==="folder-new"){ e.preventDefault(); document.getElementById("folder-add").click(); } });
 function syncDrawerFollow(id){ const b=document.getElementById("dr-follow"); if(!b) return; const on=state.follow.has(id); b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★ Seurannassa":"☆ Seuraa"; }
 function closeDrawer(){ drawer.hidden=true; scrim.hidden=true; document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"","#"+TABHASH[state.tab]); if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+
+// Tietoikkunan leveyden säätö: vedä vasemmasta reunasta, nuolinäppäimet, kaksoisnapsautus palauttaa oletuksen
+(function(){
+  const h=document.getElementById("dr-resize"); if(!h) return;
+  const KEY="saadosseuranta-drw", MIN=420, GAP=14;
+  const maxW=()=>Math.max(MIN,innerWidth-2*GAP-40);
+  let w=0; try{ w=parseInt(localStorage.getItem(KEY)||"0",10)||0; }catch(e){}
+  const desktop=()=>matchMedia("(min-width:761px) and (pointer:fine)").matches;
+  function apply(){
+    if(w&&desktop()) drawer.style.setProperty("width",Math.min(Math.max(w,MIN),maxW())+"px","important"); else drawer.style.removeProperty("width");
+    place();
+  }
+  function place(){
+    if(drawer.hidden||!desktop()){ h.hidden=true; return; }
+    const r=drawer.getBoundingClientRect(); h.hidden=false;
+    h.style.left=(r.left-7)+"px"; h.style.top=(r.top+28)+"px"; h.style.height=Math.max(60,r.height-56)+"px";
+    h.setAttribute("aria-valuenow",Math.round(r.width)); h.setAttribute("aria-valuemin",MIN); h.setAttribute("aria-valuemax",Math.round(maxW()));
+  }
+  function save(){ try{ w?localStorage.setItem(KEY,String(Math.round(w))):localStorage.removeItem(KEY); }catch(e){} }
+  h.addEventListener("pointerdown",e=>{
+    if(e.button!==0) return; e.preventDefault(); h.setPointerCapture(e.pointerId); h.classList.add("on"); document.body.classList.add("dr-resizing");
+    const right=drawer.getBoundingClientRect().right;
+    const move=ev=>{ w=Math.min(Math.max(right-ev.clientX,MIN),maxW()); apply(); };
+    const up=()=>{ h.classList.remove("on"); document.body.classList.remove("dr-resizing"); h.removeEventListener("pointermove",move); h.removeEventListener("pointerup",up); h.removeEventListener("pointercancel",up); save(); };
+    h.addEventListener("pointermove",move); h.addEventListener("pointerup",up); h.addEventListener("pointercancel",up);
+  });
+  h.addEventListener("dblclick",()=>{ w=0; save(); apply(); });
+  h.addEventListener("keydown",e=>{
+    const cur=drawer.getBoundingClientRect().width, step=e.shiftKey?120:40;
+    if(e.key==="ArrowLeft") w=Math.min(cur+step,maxW()); else if(e.key==="ArrowRight") w=Math.max(cur-step,MIN); else if(e.key==="Home"){ w=maxW(); } else if(e.key==="End"||e.key==="Escape"){ w=0; } else return;
+    e.preventDefault(); apply(); save();
+  });
+  new MutationObserver(()=>requestAnimationFrame(apply)).observe(drawer,{attributes:true,attributeFilter:["hidden"]});
+  addEventListener("resize",()=>{ if(!drawer.hidden) apply(); });
+  apply();
+})();
 document.getElementById("dr-close").addEventListener("click",closeDrawer);
 scrim.addEventListener("click",closeDrawer);
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!drawer.hidden) closeDrawer(); });

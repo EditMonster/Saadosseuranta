@@ -796,7 +796,9 @@ def test_obligations_calendar_and_stakeholder_profiles(page, base_url):
         page.wait_for_selector("#dr-siirtyma .siirt li")
         assert "Siirtymäsäännökset" in page.text_content("#dr-siirtyma")
         page.click("#dr-close")
-    # stakeholder profile: search, open, filter, open a bill from the list
+    # stakeholder profile: search, open, filter, open a bill from the list (the file exists after the first data build)
+    if not (ROOT / "docs" / "data" / "sidosryhmat.json").exists():
+        return
     page.fill("#org-q2", "kunta")
     page.wait_for_selector("#org:not([hidden])")
     page.wait_for_function("window.ORGS!==null||true")
@@ -812,3 +814,22 @@ def test_obligations_calendar_and_stakeholder_profiles(page, base_url):
             rows.first.click()
             page.wait_for_selector("#drawer:not([hidden])")
             assert page.locator("#org").is_hidden()
+
+
+def test_drawer_can_be_widened_by_dragging(page, base_url):
+    goto(page, base_url, "")
+    page.set_viewport_size({"width": 1440, "height": 900})
+    page.evaluate("openItem(DATA[0].id)")
+    page.wait_for_selector("#dr-resize:not([hidden])")
+    w0 = page.evaluate("document.getElementById('drawer').getBoundingClientRect().width")
+    hb = page.locator("#dr-resize").bounding_box()
+    page.mouse.move(hb["x"] + 7, hb["y"] + hb["height"] / 2)
+    page.mouse.down()
+    page.mouse.move(hb["x"] - 300, hb["y"] + hb["height"] / 2, steps=6)
+    page.mouse.up()
+    w1 = page.evaluate("document.getElementById('drawer').getBoundingClientRect().width")
+    assert w1 > w0 + 250
+    page.dblclick("#dr-resize")
+    assert abs(page.evaluate("document.getElementById('drawer').getBoundingClientRect().width") - w0) < 2
+    page.click("#dr-close")
+    page.wait_for_function("document.getElementById('dr-resize').hidden")
