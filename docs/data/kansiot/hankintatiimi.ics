@@ -1562,15 +1562,6 @@ DESCRIPTION:Tarjoukset viimeistään · VšĮ Lietuvos nacionalinis radijas ir t
 URL:https://ted.europa.eu/fi/notice/-/detail/732473-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-ted-727130-2026-maaraaika-2026-10-28-hankintatiimi@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[Hankinta] Määräaika: Serveriai
-DESCRIPTION:Tarjoukset viimeistään · Vilniaus rajono savivaldybės administracija · https://ted.europa.eu/fi/notice/-/detail/727130-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/727130-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-729673-2026-maaraaika-2026-10-28-hankintatiimi@saadosseuranta
 DTSTAMP:20261028T000000Z
 DTSTART;VALUE=DATE:20261028
@@ -1821,5 +1812,14 @@ DTEND;VALUE=DATE:20261124
 SUMMARY:[Hankinta] Määräaika: Mobiiltelefonid\, tahvelarvutid ja nende tarvikud
 DESCRIPTION:Tarjoukset viimeistään · Siseministeeriumi infotehnoloogia- ja arenduskeskus · https://ted.europa.eu/fi/notice/-/detail/728369-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/728369-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-ted-727100-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[Hankinta] Määräaika: HRM-system och Lönesystem
+DESCRIPTION:Osallistumishakemukset viimeistään · Nordvästra Skånes Vatten och Avlopp AB · https://ted.europa.eu/fi/notice/-/detail/727100-2026
+URL:https://ted.europa.eu/fi/notice/-/detail/727100-2026
 END:VEVENT
 END:VCALENDAR

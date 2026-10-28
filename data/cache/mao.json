@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-28T05:51:07Z",
+ "fetched": "2026-10-28T08:33:03Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -810,6 +810,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "29a41e38d52d",
+   "lastSeen": "2026-10-28"
+  },
+  "2a1ab722ff58": {
+   "buyer": "Laukaan kunta",
+   "decisionDate": "2026-10-05",
+   "decisionText": "Laukaan kunnan kunnanhallituksen päätös 5.10.2026, § 237, työterveyshuollon palveluiden hankinta 1.1.2027 alkaen",
+   "filed": "2026-10-27",
+   "firstSeen": "2026-10-28",
+   "hilmaNo": null,
+   "key": "2a1ab722ff58",
    "lastSeen": "2026-10-28"
   },
   "2a6a2fbd8c9e": {
@@ -1403,7 +1413,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "8ce211400832",
-   "lastSeen": "2026-10-28"
+   "lastSeen": "2026-10-28",
+   "missingSince": "2026-10-28"
   },
   "8dd5ce1e0441": {
    "buyer": "Pirkanmaan hyvinvointialue",
@@ -1493,7 +1504,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "96c35fcb00d5",
-   "lastSeen": "2026-10-28"
+   "lastSeen": "2026-10-28",
+   "missingSince": "2026-10-28"
   },
   "9b092a59fa98": {
    "buyer": "Jyväskylän kaupunki",
