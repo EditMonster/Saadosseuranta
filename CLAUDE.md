@@ -40,3 +40,28 @@ Käyttäjälle vastataan suomeksi. Hän on ohjelmoinnissa aloittelija: selitä m
   (GraphQL ei ole käytettävissä; käytä REST-rajapintaa). Ajo kestää noin 40–45 min.
 - Rehellisyys datasta: jos jokin tilastollinen havainto ei kestä tarkistusta (esim. lausuntokierroksen vastustus
   ei ennusta valiokunnan muutoksia), sitä ei esitetä sivulla ennusteena.
+
+## Avoimet tehtävät (tilanne 28.10.2026)
+
+1. **Välimuistien kertasiivous:** toiminimien maskaus (`SOLE_LABEL`) tuli koodiin 28.10. Ne `data/cache`-tiedostot, joita
+   ajo ei kirjoita uudelleen (esim. `data/cache/lausunnot/hk-2025.json`, `data/cache/hankeikkuna.json`), sisältävät vielä
+   toiminimiä: lataa ja tallenna ne kerran `common.save_json`illa ja commitoi. Historiaa ei muuteta.
+2. **Tietoturvakorjaukset** (katselmus 28.10.):
+   - sivu hyväksyy vain `github_pat_`-alkuiset tiimiavaimet;
+   - tiimiavaimen riskikuvaus oikeaksi (avain = omistajan nimissä toimiminen issueissa);
+   - `kansiopyynto`: hyväksyntä tarkistaa, ettei pyynnön tekstiä ole muokattu hyväksynnän jälkeen (tiiviste);
+   - `?s=`-siirtolinkki kysyy vahvistuksen ennen tuontia, erityisesti piilotusten osalta;
+   - linkkien skeemaksi vain `https?://` (`safeUrl`);
+   - `.ics`: poista myös `\r`;
+   - työnkulkujen oikeudet: `permissions: {}` ylätasolle ja oikeudet työkohtaisesti.
+   Bottitiliä ei tehdä niin kauan kuin tiimiavain on vain Kallella ja muutamalla luotetulla.
+3. **Saavutettavuus:**
+   - apu- ja päivämäärätekstien kontrasti vähintään 4,5:1 (vaalea: harmaa noin `#6b5f55`, korostus noin `#8a4a06`;
+     tumma: harmaa noin `#a39890`);
+   - ikkunoiden kohdistusloukku ja Escape dokumenttitasolla;
+   - ilmoituksiin `role="status"` ja `aria-live`.
+4. **Otostarkistukset, kun aineisto on rakentunut:**
+   - siirtymäsäännökset: 30 säädöstä verrattuna Finlexiin;
+   - sidosryhmänimet: 100 suurinta organisaatiota.
+5. **claude.ai-tilannevedos:** `python3 scripts/build_artifact.py`. Sidosryhmät ladataan suhteellisesta polusta
+   `data/sidosryhmat.json`, joten vedoksen mukana julkaistaan tämä tiedosto sekä `data/tr/*.json`, `js/`, `vendor/` ja `fonts/`.
