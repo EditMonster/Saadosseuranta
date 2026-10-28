@@ -687,3 +687,31 @@ def test_language_switch(page, base_url):
         assert page.evaluate(f"DATA.find(i=>i.id==='{eu}')._fi") is None
     page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
 
+
+def test_swedish_switch(page, base_url):
+    goto(page, base_url, "")
+    fi_titles = page.evaluate("Object.fromEntries(DATA.filter(i=>i.titleSv).map(i=>[i.id,i.title]))")
+    page.click("#lang-sv")
+    page.wait_for_timeout(300)
+    assert page.evaluate("document.documentElement.lang") == "sv"
+    assert page.text_content("#tab-now").strip() == "Lägesbild" and page.text_content("#tab-hk").strip().startswith("Upphandlingar")
+    assert page.locator("#lang-note-sv").is_visible() and not page.locator("#lang-note").is_visible()
+    page.click("#tab-fi")
+    page.wait_for_timeout(300)
+    assert "Nationell lagstiftning" in page.text_content("#view-fi")
+    # bills use their official Swedish titles from Projektfönstret
+    sv = page.evaluate("(DATA.find(i=>i.titleSv&&i._fi)||{}).id")
+    if page.evaluate("DATA.some(i=>i.titleSv)"):
+        assert sv
+    # straight to English: Swedish titles are restored before the English pass
+    page.click("#lang-en")
+    page.wait_for_timeout(300)
+    assert page.text_content("#tab-now").strip() == "Overview" and page.locator("#lang-note").is_visible()
+    assert not page.locator("#lang-note-sv").is_visible()
+    if sv and not page.evaluate(f"DATA.find(i=>i.id==='{sv}').titleEn"):
+        assert page.evaluate(f"DATA.find(i=>i.id==='{sv}').title") == fi_titles[sv]
+    page.click("#lang-fi")
+    page.wait_for_timeout(300)
+    assert page.text_content("#tab-now").strip() == "Tilannekuva" and "Kansallinen lainsäädäntö" in page.text_content("#view-fi")
+    page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
+

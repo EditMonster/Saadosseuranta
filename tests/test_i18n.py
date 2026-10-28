@@ -1,4 +1,4 @@
-"""Kielivalinta FI/EN: sanakirjan eheys ja sivuun upotetun kopion ajantasaisuus."""
+"""Kielivalinta FI/SV/EN: sanakirjan eheys ja sivuun upotetun kopion ajantasaisuus."""
 from __future__ import annotations
 
 import json
@@ -12,13 +12,16 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import build_i18n  # noqa: E402
 
 D = json.loads((ROOT / "config" / "i18n" / "en.json").read_text(encoding="utf-8"))
+SV = json.loads((ROOT / "config" / "i18n" / "sv.json").read_text(encoding="utf-8"))
+TOPICS = re.findall(r"^  ([A-ZÄÖ][^:\n]+):\s*$", (ROOT / "config" / "topics.yaml").read_text(encoding="utf-8"), re.M)
 
 
 def test_placeholders_survive_translation():
-    for k, v in D.items():
-        for ph in ("{n}", "{d}"):
-            assert k.count(ph) == v.count(ph), (k, v)
-        assert v.strip() and v != k, k
+    for d in (D, SV):
+        for k, v in d.items():
+            for ph in ("{n}", "{d}"):
+                assert k.count(ph) == v.count(ph), (k, v)
+            assert v.strip() and v != k, k
 
 
 def test_core_vocabulary():
@@ -27,8 +30,21 @@ def test_core_vocabulary():
                    "{n} lausuntoa": "{n} statements"}.items():
         assert D[fi] == en
     # every topic and tender sector on the page has a translation
-    topics = re.findall(r"^  ([A-ZÄÖ][^:\n]+):\s*$", (ROOT / "config" / "topics.yaml").read_text(encoding="utf-8"), re.M)
-    assert topics and all(t in D for t in topics), [t for t in topics if t not in D]
+    assert TOPICS and all(t in D for t in TOPICS), [t for t in TOPICS if t not in D]
+
+
+def test_core_vocabulary_sv():
+    for fi, sv in {"Tilannekuva": "Lägesbild", "Kansallinen": "Nationell", "Kilpailutukset": "Upphandlingar",
+                   "Ratkaisut": "Avgöranden", "Lausuttavissa nyt": "Öppna för remissvar nu", "Asetukset": "Förordningar",
+                   "Hallituksen esitys": "Regeringens proposition", "{n} lausuntoa": "{n} utlåtanden"}.items():
+        assert SV[fi] == sv
+    assert all(t in SV for t in TOPICS), [t for t in TOPICS if t not in SV]
+
+
+def test_dictionaries_cover_the_same_ui():
+    # a key added for one language only would leave the other half-translated
+    missing = sorted(set(D) - set(SV))
+    assert len(missing) < 40, missing[:40]
 
 
 def test_embedded_copy_is_current():

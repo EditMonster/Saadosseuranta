@@ -123,6 +123,7 @@ def normalise(r: dict, teemat: dict, asettajat: dict) -> dict:
         "uuid": k["uuid"],
         "tunnus": k.get("tunnus"),
         "nimi": _fi(k.get("nimi")),
+        "nimiSv": ((k.get("nimi") or {}).get("sv") or "").strip() or None,  # official Swedish name (Swedish view)
         "tiivistelma": _fi(k.get("tiivistelma")) or _fi(k.get("kuvaus")),
         "ministerio": asettajat.get(k.get("asettajaUuid"), ""),
         "teemat": [teemat[t] for t in k.get("teemaUuids") or [] if t in teemat],

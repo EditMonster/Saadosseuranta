@@ -77,6 +77,7 @@ def ep_detail(pid: str) -> dict | None:
         "ref": p.get("label") or pid,
         "title_fi": (title.get("fi") or "").strip(),
         "title_en": (title.get("en") or "").strip(),
+        "title_sv": (title.get("sv") or "").strip(),
         "stage": str((p.get("current_stage") or [""])[0] if isinstance(p.get("current_stage"), list) else (p.get("current_stage") or "")).split("/")[-1],
         "events": events,
     }
@@ -247,7 +248,7 @@ def main():
         if old:
             age = days_ago(old.get("fetched")) or 0
             limit = 60 if old.get("final") else (1 if pid in watched else REFRESH_DAYS)
-            if age < limit:
+            if age < limit and "title_sv" in old:  # records from before the Swedish title are read once more
                 continue
         todo.append(pid)
     log(f"eu: haetaan {len(todo)} menettelyä ({len(pids) - len(todo)} välimuistista)")

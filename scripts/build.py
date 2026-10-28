@@ -19,6 +19,15 @@ def classify(text: str, topics_cfg: dict) -> list[str]:
     return out or ["Muut"]
 
 
+SV_PREFIX = re.compile(r"^(regeringens proposition( till riksdagen)?|rp)( med förslag till)?\s+", re.I)
+
+
+def short_title_sv(title: str) -> str:
+    """'Regeringens proposition till riksdagen med förslag till lag om ändring av …' -> 'Lag om ändring av …'"""
+    t = SV_PREFIX.sub("", (title or "").strip())
+    return (t[:1].upper() + t[1:]) if t else title
+
+
 def short_title(title: str) -> str:
     t = HE_PREFIX.sub("", (title or "").strip())
     t = re.sub(r"^(laiksi|laeiksi|lain|lakien)\s+", lambda m: m.group(1).capitalize() + " ", t)
@@ -710,6 +719,7 @@ def build_eu(topics_cfg, settings, watch) -> list[dict]:
         mpc = re.match(r"5(\d{4})PC(\d{4})", pc)
         items.append({"id": f"eu-{pid}", "scope": "eu", "laji": "eu", "pid": pid, "proposalCom": f"{mpc.group(1)}/{int(mpc.group(2))}" if mpc else None,
                       "kind": kind, "title": title[:160], "fullTitle": title, "titleEn": rec.get("title_en") or None,
+                      "titleSv": rec.get("title_sv") or None,
                       "ref": ref, "procedure": rec.get("ref"), "topics": topics, "status": status, "done": done,
                       "summary": (rec.get("title_en") or ""), "source": source,
                       "links": {"oeil": f"https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference={rec.get('ref', pid)}",
@@ -954,6 +964,12 @@ def main():
         log(f"arviointineuvosto: {n_an} asiaan liitetty neuvoston lausunto")
     except Exception as e:  # noqa: BLE001
         log(f"warn: arviointineuvosto: {e}")
+    # official Swedish names from Hankeikkuna for the Swedish view (EU items carry the EP's Swedish title)
+    sv_names = {p["uuid"]: p.get("nimiSv") for p in (load_json(CACHE_DIR / "hankeikkuna.json", {"items": []}) or {}).get("items") or []}
+    for it in keep:
+        sv = sv_names.get(it.get("hankeUuid") or "")
+        if sv:
+            it["titleSv"], it["fullTitleSv"] = short_title_sv(sv), sv
     for it in keep:
         it.pop("hankeUuid", None)
         if it.get("events"):
