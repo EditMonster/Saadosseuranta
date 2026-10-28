@@ -141,6 +141,51 @@ _SOLE = _re.compile(r"(?<![\w-])(?:tmi|t:mi|toiminimi|enskild\s+(?:firma|näring
 HIDDEN_GIVERS = (PRIVATE_LABEL, SOLE_LABEL)
 
 
+# * yksittäisen ihmisen nimi lausunnonantajana ("Etu Suku", "Suku Etu", "Professori Etu Suku"): yksityishenkilöt
+#   lausuntokierroksilla, joiden lausuntoa ei ole merkitty yksityishenkilön lausunnoksi, ja eduskunnan kuulemat
+#   yksittäiset asiantuntijat. Tunnistus: 2–3 isolla alkavaa sanaa, joista yksi on yleinen etunimi, eikä yhtään
+#   organisaatiota ilmaisevaa sanaa. Sidosryhmäprofiileja ei muodosteta henkilöistä.
+_FIRST = set("""
+aapo aarne aaro aatu aija aila aili aimo aino aki akseli aleksi aleksanteri allan alma alpo altti alvar anja anna anne anneli
+anni annika annikki ansku antero anti antti anu anssi ari arja arto arttu arvo asko atte auli aulikki aune aura aurora
+eemeli eemil eero eeva eevi eija eila eino eira eki elias elina eliisa elisa elisabet ella elli elmeri elsa emma emilia
+erik erika erkki esa eveliina evgeniya felicitas freja gustav hanna hannele hannes hanne hannu harri heidi heikki heini
+heli helena helmi henna henni henri henrik hilkka hilla hilma ida iida iiro ilkka ilmari ilona inka irja irma irmeli
+isto ismo jaakko jaana jani janne jari jarkko jarmo jarno jenni jere jesse jessica johanna johannes joni jonna jorma
+joona jouko jouni juha juhana juhani jukka julia jussi jutta jyri jyrki kaarina kaarle kaarlo kai kaija kaisa kaj kalervo
+kalevi kalle kari karri kasper katariina kati katja katri kauko keijo kerttu kia kim kimmo kirsi kirsti klaus kristian
+kristiina kustaa kyösti laila lars lasse laura lauri leena leevi leila lena liisa liina lilja linda lotta lotta-maria
+lucas maarit magnus maija maila maire maj marika marina marja marjatta marjo marjut marketta markku marko markus marianne
+marjaana martin martta martti matias matleena matti mauno mauri merja mervi miia mika mikael mikko milka minna mira mirja
+mirva mona nea niina niklas niko nina noora oili olavi oliver olli onni oona oskari otto outi paavo pasi pauli pauliina
+pauliine pekka pekko pentti perttu pertti peter petra petri petteri pia pirjo pirkko pirkka päivi raija raimo raili raine
+rainer raisa reetta reijo reima reino riikka riitta riku risto ritva roope ruut saara sakari salla sami samuli sanna sanni
+santeri sara sari satu seija seppo sheryl siiri silja simo sini sinikka sirkka sirpa sisko sixten sofia sten susanna
+suvi suvianna sylvi taina taisto tanja tapani tapio tarja tarmo tatu teemu teija tellervo terhi teresa terttu teuvo tiina
+timo tino tom tomi toni toomas tove tuija tuomas tuomo tuula tuulikki tuure ukri ulla ulrika unto urho urpo valtteri
+vappu veikko veli vesa ville vilma visa yrjö väinö aziza dan kevät mari najat panu sirja anh ahn annina mohamed muhammad ali ahmed fatima hassan omar
+""".split())
+_TITLE = re.compile(r"^(?:professori|emeritusprofessori|apulaisprofessori|dosentti|tutkija|tutkijatohtori|yliopistonlehtori|"
+                    r"oikeustieteen tohtori|ott|tohtori|dr|prof|professor|docent|ylituomari|neuvos)\.?\s+", re.I)
+_PERSON_TOKEN = re.compile(r"^[A-ZÅÄÖÉÜ][a-zåäöéüß]+(?:-[A-ZÅÄÖÉÜ][a-zåäöéüß]+)?$")
+_ORGWORD = re.compile(r"(?i)\b(?:ry|rf|oy|oyj|ab|abp|ltd|plc|inc|gmbh|kunta|kaupunki|virasto|laitos|liitto|yliopisto|säätiö|"
+                      r"yhdistys|keskus|ministeriö|alue|seura|neuvosto|toimisto|lautakunta|valtuutettu|tuomioistuin|oikeus|"
+                      r"poliisi|kamari|instituutti|akatemia|akademi|rahasto|pankki|kirkko|seurakunta|yhtymä|finland|suomi|"
+                      r"suomen|osuuskunta|yrittäjät|paliskunta|kehitys|kauppakamari|klinikka|power|group|nordic|norden|mehiläinen|terveystalo|pihlajalinna|"
+                      r"lääkäri|sairaala|apteekki|tilitoimisto|asianajo)\w*")
+
+
+def looks_like_person(name) -> bool:
+    """"Olli Mäenpää", "Linna Tuula", "Professori Juha Lindgren" – but not "Tapio Oy", "Visit Ylläs" or "Kirkon Ulkomaanapu"."""
+    if not isinstance(name, str):
+        return False
+    n = _TITLE.sub("", " ".join(name.split()))
+    toks = n.split(" ")
+    if not 2 <= len(toks) <= 3 or _ORGWORD.search(n) or not all(_PERSON_TOKEN.match(t) for t in toks):
+        return False
+    return any(t.split("-")[0].lower() in _FIRST for t in (toks[0], toks[-1]))
+
+
 def is_sole_trader(name) -> bool:
     return isinstance(name, str) and bool(_SOLE.search(name))
 
@@ -195,6 +240,11 @@ def scrub_personal(o, *, text: bool = True, cache: bool = False):
         out = {}
         private = isinstance(o.get("org"), str) and bool(_PRIVATE_TITLE.search(str(o.get("title") or "")))
         sole = not private and is_sole_trader(o.get("org"))
+        # a person's name on a consultation round is a private individual; experts heard by Parliament (rows with a
+        # "committee") speak in a public role and keep their name in the statement list (no profile is built of them)
+        if (not private and not sole and "stance" in o and "committee" not in o and o.get("src") not in ("ek", "vk")
+                and looks_like_person(o.get("org"))):
+            private = True
         for k, v in o.items():
             if private and k == "org":
                 out[k] = PRIVATE_LABEL
@@ -205,10 +255,10 @@ def scrub_personal(o, *, text: bool = True, cache: bool = False):
             if sole and k == "title" and isinstance(v, str):
                 out[k] = v.replace(o["org"], SOLE_LABEL)
                 continue
-            if k in ("orgs", "givers") and isinstance(v, list) and any(is_sole_trader(x) for x in v):
+            if k in ("orgs", "givers") and isinstance(v, list) and any(is_sole_trader(x) or looks_like_person(x) for x in v):
                 seen: list = []
                 for x in v:
-                    x = SOLE_LABEL if is_sole_trader(x) else x
+                    x = SOLE_LABEL if is_sole_trader(x) else (PRIVATE_LABEL if looks_like_person(x) else x)
                     if x not in seen:
                         seen.append(x)
                 v = seen

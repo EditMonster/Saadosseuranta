@@ -135,3 +135,20 @@ def test_stakeholder_profiles_skip_hidden_givers():
             {"org": common.PRIVATE_LABEL, "stance": "osin"}, {"org": "Kuntaliitto", "stance": "kannattaa"}]
     res = bs.build({"x": {"kierros": {"rivit": rows}}}, {})
     assert list(res["orgs"]) == ["suomen kuntaliitto"]
+
+
+def test_individuals_masked_on_rounds_and_never_profiled():
+    assert common.looks_like_person("Olli Mäenpää") and common.looks_like_person("Professori Linna Tuula")
+    assert common.looks_like_person("Lindgren Juha") and common.looks_like_person("Mari-Pauliina Vainikainen")
+    for org in ("Tapio Oy", "Visit Ylläs", "Kirkon Ulkomaanapu", "Felicitas Mehiläinen", "Business Finland", "Suomen Kuntaliitto"):
+        assert not common.looks_like_person(org), org
+    # a private individual on a consultation round (no "Yksityishenkilön lausunto" title) is masked
+    assert common.scrub_personal({"org": "Tapio Räty", "stance": "vastustaa"})["org"] == common.PRIVATE_LABEL
+    assert common.scrub_personal({"orgs": ["Kuntaliitto", "Anh Tran", "Annina Vilkas"]})["orgs"] == ["Kuntaliitto", common.PRIVATE_LABEL]
+    # an expert heard by Parliament keeps the name in the statement list (public role) ...
+    assert common.scrub_personal({"org": "Olli Mäenpää", "stance": "kanta", "committee": "PeV"})["org"] == "Olli Mäenpää"
+    assert common.scrub_personal({"org": "Olli Mäenpää", "stance": "kanta", "src": "ek"})["org"] == "Olli Mäenpää"
+    # ... but no stakeholder profile is built of any individual
+    import build_sidosryhmat as bs
+    rows = [{"org": "Olli Mäenpää", "stance": "kannattaa", "committee": "PeV"}, {"org": "Kuntaliitto", "stance": "kannattaa"}]
+    assert list(bs.build({"x": {"eduskunta": {"rivit": rows}}}, {})["orgs"]) == ["suomen kuntaliitto"]

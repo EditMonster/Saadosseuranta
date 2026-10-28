@@ -3,7 +3,7 @@
 Lähde: sivun annetut lausunnot (docs/data/lausunnot/<id>.json – Hankeikkunan lausuntokierrokset ja eduskunnalle
 annetut asiantuntijalausunnot, kanta luokiteltu fetch_lausunnot.py:ssä). Puhdas funktio – ei verkkoa.
 
-  * Yksityishenkilöt ja toiminimet (yksityiset elinkeinonharjoittajat) eivät saa profiilia.
+  * Yksityishenkilöt, toiminimet ja yksittäiset asiantuntijat (henkilönimet, common.looks_like_person) eivät saa profiilia.
   * Nimet yhdistetään: kirjainkoko, "ry/Oy", sulkeissa oleva lyhenne, "täydentävä lausunto", "X edustaen Y:tä"
     (edustettu järjestö) ja pari tunnettua rinnakkaisnimeä (EK, SAK, STTK, Kuntaliitto ...). Yksityishenkilöt
     (tietosuoja) ja tunnistamattomat jätetään pois.
@@ -25,7 +25,7 @@ import collections
 import re
 from pathlib import Path
 
-from common import HIDDEN_GIVERS, is_sole_trader
+from common import HIDDEN_GIVERS, is_sole_trader, looks_like_person
 
 GROUP = {"kannattaa": "S", "varauksin": "R", "muutoksia": "R", "vastustaa": "O", "osin": "O", "kanta": "N", "esittely": "N", "ei": "N"}
 ALIAS = {"elinkeinoelämän keskusliitto": "elinkeinoelämän keskusliitto ek", "ek": "elinkeinoelämän keskusliitto ek",
@@ -70,7 +70,7 @@ def build(statements: dict[str, dict], items: dict[str, dict]) -> dict:
             for r in (d.get(sec) or {}).get("rivit") or []:
                 org = (r.get("org") or "").strip()
                 st = r.get("stance") or ""
-                if not org or org in HIDDEN_GIVERS or is_sole_trader(org) or len(org) < 2 or st not in GROUP:
+                if not org or org in HIDDEN_GIVERS or is_sole_trader(org) or looks_like_person(org) or len(org) < 2 or st not in GROUP:
                     continue
                 k = key_of(org)
                 if not k or len(k) < 2:
