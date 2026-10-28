@@ -128,11 +128,31 @@ def _score(g: str, oc: str):
     return 0.5 if committee == "m" else 0.0  # O: adopted with changes = half its way; as such = not its way
 
 
+def _norm_sec(s: str) -> str:
+    return re.sub(r"\s+", "", str(s or "")).lower()
+
+
+def committee_changes(d: dict) -> set[str] | None:
+    """Sections the committee changed in its report (normalised "4a§"), an empty set when it adopted the bill
+    unamended, or None when the report or its changes are not known."""
+    reps = [v for v in d.get("valiokunnat") or [] if v.get("kind") == "mietintö"]
+    if not reps:
+        return None
+    secs = {_norm_sec(s) for v in reps for s in v.get("changedSections") or [] if "§" in str(s)}
+    if secs:
+        return secs
+    if all(v.get("decision") == "muuttamattomana" for v in reps):
+        return set()
+    return None
+
+
 def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str, dict] | None = None) -> dict:
     """statements: item id -> docs/data/lausunnot/<id>.json payload; items: id -> item (title, topics);
     palaute: item id -> {giver name as in the rows: h|e|m} from build_palaute (the HE's Lausuntopalaute chapter)."""
     palaute = palaute or {}
     gists: dict[str, list] = collections.defaultdict(list)
+    dem: dict[str, list] = collections.defaultdict(list)  # org -> [(date, item, section, changed?, sentence)]
+    committee = {iid: committee_changes(d) for iid, d in statements.items()}
     variants: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
     pos: dict[str, list] = collections.defaultdict(list)
     bins = [[lo, hi, 0, 0] for lo, hi in BINS]
@@ -149,6 +169,11 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
                 variants[k][org] += 1
                 pv = (palaute.get(iid) or {}).get(org, "") if code == "k" else ""
                 pos[k].append([iid, st, r.get("date") or "", code] + ([pv] if pv else []))
+                ch = committee.get(iid)
+                if code == "e" and ch is not None and r.get("vaat"):
+                    for v in r["vaat"]:
+                        for sec in v.get("s") or []:
+                            dem[k].append((r.get("date") or "", iid, sec, _norm_sec(sec) in ch, v.get("t") or ""))
                 g = (r.get("gist") or "").strip()
                 if g and GROUP[st] != "N" and len(g) > 40:
                     gists[k].append((r.get("date") or "", iid, g))
@@ -173,6 +198,8 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
                 pos[o].extend(pos.pop(k))
                 if k in gists:
                     gists[o].extend(gists.pop(k))
+                if k in dem:
+                    dem[o].extend(dem.pop(k))
     # one position per organisation and item for agreement: the latest non-neutral one
     latest: dict[str, dict[str, str]] = collections.defaultdict(dict)
     for k, ps in pos.items():
@@ -246,6 +273,14 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
                 pv[p[0]] = "h" if "h" in (pv.get(p[0]), p[4]) else ("e" if "e" in (pv.get(p[0]), p[4]) else "m")
         if pv:
             o["pal"] = [sum(1 for v in pv.values() if v == x) for x in "hem"]
+        # Parliament stage: each section it asked to be changed vs. the sections the committee changed
+        dd = {}
+        for d, iid, sec, changed, t in sorted(dem.get(k, []), reverse=True):
+            dd.setdefault((iid, _norm_sec(sec)), (d, iid, sec, changed, t))
+        if dd:
+            rows = sorted(dd.values(), reverse=True)
+            o["vq"] = [sum(1 for r in rows if r[3]), sum(1 for r in rows if not r[3])]
+            o["vl"] = [[idx[r[1]], r[2], 1 if r[3] else 0, r[4][:200]] for r in rows[:8]]
         # agenda: its own key sentences, latest first, and the words that set its statements apart
         gl = sorted(gists.get(k, []), reverse=True)
         if len(ps) >= 3 and gl:
@@ -314,6 +349,12 @@ def tags(o: dict, n: int, avg: dict) -> list[str]:
             t.append("pal+")
         elif share <= 0.35:
             t.append("pal-")
+    vq = o.get("vq")
+    if vq and sum(vq) >= 4:
+        if vq[0] / sum(vq) >= 0.5:
+            t.append("vq+")
+        elif vq[0] / sum(vq) <= 0.15:
+            t.append("vq-")
     rec = o.get("rec")
     if rec and rec[0] >= 10:
         if rec[1] >= rec[2] + 10:

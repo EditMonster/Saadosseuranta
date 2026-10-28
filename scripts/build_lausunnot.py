@@ -65,6 +65,8 @@ def _row(doc: dict, summ: dict | None, extra: dict) -> dict:
             row["stance"] = summ.get("stance") or row.get("stance")
             if summ.get("gist"):
                 row["gist"] = summ["gist"]
+            if summ.get("vaat") and summ.get("src") in ("ek", "hk"):
+                row["vaat"] = summ["vaat"][:6]  # section-specific demands: compared with the committee's changes
         elif summ.get("ok") == "noText":
             row["stance"] = summ.get("stance") or row.get("stance")
             row["noText"] = True

@@ -58,3 +58,20 @@ def test_record_against_outcome_and_type():
     assert res["oc"][res["ids"].index("fi-he-0-2026")] == "a" and res["oc"][res["ids"].index("fi-he-99-2026")] == "-"
     assert "akt1" in a["tg"] and res["orgs"]["beta"]["rec"][1] == 100
     assert bs.org_type("Helsingin käräjäoikeus") == "viranomainen" and bs.org_type("Diakonissalaitos") == "järjestö"
+
+
+def test_section_demands_vs_committee_changes():
+    import build_sidosryhmat as bs
+    st = {"fi-he-1-2026": {"eduskunta": {"rivit": [{"org": "Alfa ry", "stance": "muutoksia", "committee": "TyV",
+                                                    "vaat": [{"s": ["4 a §", "9 §"], "t": "4 a §:ää ja 9 §:ää tulisi täsmentää."}]}]},
+                           "valiokunnat": [{"kind": "mietintö", "decision": "muutettuna", "changedSections": ["4 a §", "5 §"]}]},
+          "fi-he-2-2026": {"eduskunta": {"rivit": [{"org": "Alfa ry", "stance": "vastustaa", "committee": "TyV",
+                                                    "vaat": [{"s": ["2 §"], "t": "2 § tulisi poistaa."}]}]},
+                           "valiokunnat": [{"kind": "mietintö", "decision": "muuttamattomana"}]},
+          "fi-he-3-2026": {"eduskunta": {"rivit": [{"org": "Alfa ry", "stance": "muutoksia", "committee": "TyV",
+                                                    "vaat": [{"s": ["7 §"], "t": "7 §:ää tulisi muuttaa."}]}]}}}  # no report yet
+    res = bs.build(st, {k: {"status": "voimassa"} for k in st})
+    a = res["orgs"]["alfa"]
+    assert a["vq"] == [1, 2]  # 4 a § changed; 9 § and 2 § not; 7 § unknown (no report)
+    assert {(r[1], r[2]) for r in a["vl"]} == {("4 a §", 1), ("9 §", 0), ("2 §", 0)}
+    assert bs.committee_changes({"valiokunnat": [{"kind": "mietintö", "decision": "muutettuna"}]}) is None

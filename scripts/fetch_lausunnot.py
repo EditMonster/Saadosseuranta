@@ -39,6 +39,9 @@ WORKERS = int(os.environ.get("LAUSUNNOT_WORKERS", 4))
 PER_HOST = int(os.environ.get("LAUSUNNOT_PER_HOST", 2))
 COMMITTEE_VERSION = 2  # 2: the members' dissent/opinion after the signature is no longer read as the committee's view
 FORMAT_VERSION = 2   # 2: Outlook .msg, Word .doc, pptx/odt, plain text/e-mail/RTF and images are read too
+DEMAND_VERSION = 1   # 1: demand sentences that name a section ("22 §:ää tulisi täsmentää") – read from up to DEMAND_PAGES
+DEMAND_PAGES = 12
+BACKFILL_MAX = int(os.environ.get("LAUSUNNOT_BACKFILL_MAX", 600))  # earlier expert statements re-read per run for their demands
 STRIKES = 5
 MAX_PAGES = 4
 GIST_MAX = 280
@@ -219,6 +222,38 @@ def reclassify(rec: dict) -> bool:
     return changed
 
 
+SECTION_REF = re.compile(r"(?<![\w.])(\d{1,3})\s?([a-zåäö])?\s?(?:–\s?\d{1,3}\s?[a-z]?\s?)?§")
+DEMAND_CUE = re.compile(r"\b(?:tulisi|tulee|pitäisi|olisi\s+syytä|on\s+syytä|olisi\s+tarpeen|on\s+tarpeen|ehdot\w*|esitä\w*|esitetään|"
+                        r"vaati\w*|edellytt\w*|vastust\w*|ei\s+kannata|emme\s+kannata|poist\w*|lisät\w*|lisättävä|muutettava|"
+                        r"täsmennett\w*|täsmentä\w*|tarkennett\w*|tarkentaa|korjat\w*|ongelmalli\w*|epäselv\w*|kohtuuton\w*|"
+                        r"ei\s+ole\s+(?:riittäv|perustel|tarkoituksenmukai)\w*|tulisi\s+harkita|kannattaisi)\b", re.I)
+
+
+def section_refs(sentence: str) -> list[str]:
+    """'2 ja 3 a §:ää' → ['2 §', '3 a §']; '5–7 §' → ['5 §'] (a range keeps its first section)."""
+    out = []
+    for m in re.finditer(r"((?:\d{1,3}\s?[a-zåäö]?\s?(?:,|ja|sekä|tai)\s?)*)(\d{1,3})\s?([a-zåäö])?\s?(?:–\s?\d{1,3}\s?[a-z]?\s?)?§", sentence):
+        for n, ltr in re.findall(r"(\d{1,3})\s?([a-zåäö])?(?=\s?(?:,|ja|sekä|tai|$))", m.group(1) or ""):
+            out.append(f"{int(n)} {ltr} §" if ltr else f"{int(n)} §")
+        out.append(f"{int(m.group(2))} {m.group(3)} §" if m.group(3) else f"{int(m.group(2))} §")
+    return list(dict.fromkeys(out))
+
+
+def demands(text: str, limit: int = 8) -> list[dict]:
+    """The statement's concrete requests that name a section: [{"s": ["22 §"], "t": sentence}] (≤ 240 chars each)."""
+    out = []
+    for s in sentences(text):
+        if len(s) < 25 or len(s) > 700 or "§" not in s or not DEMAND_CUE.search(s):
+            continue
+        refs = section_refs(s)
+        if not refs or len(refs) > 6:
+            continue
+        out.append({"s": refs, "t": s[:240] + ("…" if len(s) > 240 else "")})
+        if len(out) >= limit:
+            break
+    return out
+
+
 def pdf_text(data: bytes, max_pages: int) -> tuple[str, int | None]:
     """Text of the first pages: poppler's pdftotext when installed (10–30× faster than pdfplumber, the same
     reading order for these documents), pdfplumber otherwise."""
@@ -228,16 +263,17 @@ def pdf_text(data: bytes, max_pages: int) -> tuple[str, int | None]:
         try:
             r = subprocess.run(["pdftotext", "-l", str(max_pages), "-enc", "UTF-8", "-", "-"], input=data, capture_output=True, timeout=120)
             if r.returncode == 0:
-                return r.stdout.decode("utf-8", "ignore").replace("\f", "\n"), None
+                return r.stdout.decode("utf-8", "ignore"), None  # pages separated by form feeds
         except Exception:  # noqa: BLE001
             pass
     import pdfplumber
     with pdfplumber.open(io.BytesIO(data)) as pdf:
-        return "\n".join((p.extract_text() or "") for p in pdf.pages[:max_pages]), len(pdf.pages)
+        return "\f".join((p.extract_text() or "") for p in pdf.pages[:max_pages]), len(pdf.pages)
 
 
 def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
-    raw, pages = pdf_text(data, MAX_PAGES)
+    raw_all, pages = pdf_text(data, DEMAND_PAGES)
+    raw = "\n".join(raw_all.split("\f")[:MAX_PAGES])  # stance and gist from the first pages, as before
     text = clean_text(raw)
     ocr = False
     if len(re.sub(r"\s", "", text)) < 80:
@@ -246,7 +282,10 @@ def summarise_pdf(data: bytes, org: str = "", title: str = "") -> dict:
         if len(re.sub(r"\s", "", text)) < 80:
             return {"ok": "noText", "pages": pages, "stance": "ei" if NONE_RE.search(title) else None, "ocrTried": OCR_READY}
     sig = signals(text, title)
-    out = {"ok": True, "pages": pages, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org)}
+    out = {"ok": True, "pages": pages, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org), "dv": DEMAND_VERSION}
+    vaat = demands(text if ocr else clean_text(raw_all.replace("\f", "\n")))
+    if vaat:
+        out["vaat"] = vaat
     if ocr:
         out["ocr"] = True
     return out
@@ -293,7 +332,9 @@ def summarise_text(text: str, org: str = "", title: str = "", extra: dict | None
     if len(re.sub(r"\s", "", text)) < 80:
         return {"ok": "noText", "pages": None, "stance": "ei" if NONE_RE.search(title) else None, "ocrTried": OCR_READY, **(extra or {})}
     sig = signals(text, title)
-    return {"ok": True, "pages": None, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org), **(extra or {})}
+    vaat = demands(text)
+    return {"ok": True, "pages": None, "stance": decide(sig), "sig": sig, "gist": pick_gist(text, org), "dv": DEMAND_VERSION,
+            **({"vaat": vaat} if vaat else {}), **(extra or {})}
 
 
 def zip_text(data: bytes) -> str:
@@ -438,7 +479,7 @@ def summarise_committee(data: bytes) -> dict:
     """A committee opinion/report (PeVL, YmVL, …M): the sentence where the committee states its own view,
     read from the first pages that hold the committee's considerations (no stance: it is not a respondent)."""
     raw, pages = pdf_text(data, 12)
-    text = clean_text(raw)
+    text = clean_text(raw.replace("\f", "\n"))
     # the committee's own text ends at the signature ("Helsingissä 14.10.2026"); after it come the members'
     # dissenting opinions ("Edellä olevan perusteella esitämme …"), which are not the committee's view
     if (sig := SIGNATURE.search(text)):
@@ -557,7 +598,13 @@ def main():
             v["stance"] = "esittely"
         return False
 
+    def backfill(c: dict) -> bool:
+        """An expert statement read before demands were collected: read again (bounded per run, after new ones)."""
+        v = docs.get(c["id"])
+        return bool(v) and c["src"] == "ek" and v.get("ok") is True and int(v.get("dv") or 0) < DEMAND_VERSION and not c.get("esittely")
+
     todo = [c for c in cands if needs(c)]
+    todo += [c for c in cands if backfill(c)][:BACKFILL_MAX]
     log(f"lausunnot: {len(docs)} tiivistetty, {len(todo)} odottaa (budjetti {BUDGET_S} s)")
     t0, done, outage, errors = time.time(), 0, None, 0
     down: set[str] = set()

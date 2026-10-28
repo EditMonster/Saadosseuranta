@@ -869,8 +869,9 @@ def test_stakeholders_tab(page, base_url):
     page.wait_for_selector("#lg-body tr td .orglink")
     assert page.locator("#lg-body tr").count() > 10
     page.select_option("#lg-sort", "o")
-    page.select_option("#lg-type", "kunta")
-    page.wait_for_selector("#lg-body tr td .orglink")
+    if page.evaluate("Object.values(ORGS.orgs).some(o=>o.ty==='kunta')"):  # data built with types
+        page.select_option("#lg-type", "kunta")
+        page.wait_for_selector("#lg-body tr td .orglink")
     page.fill("#q", "kaupunki")
     page.wait_for_timeout(200)
     names = page.eval_on_selector_all("#lg-body .orglink", "els=>els.map(e=>e.textContent.toLowerCase())")
