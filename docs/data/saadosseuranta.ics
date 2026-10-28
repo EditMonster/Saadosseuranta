@@ -50,15 +50,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 241/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-dc615681-lausunto-2026-10-20@saadosseuranta
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta
-DESCRIPTION:Lausuntokierros · MMM034:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=MMM034:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=MMM034:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-hanke-c041a8b7-lausunto-2026-10-28@saadosseuranta
 DTSTAMP:20261028T000000Z
 DTSTART;VALUE=DATE:20261028
@@ -1697,15 +1688,6 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2022/2065/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-2021-0105-soveltaminen-2026-10-20@saadosseuranta
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:[EU] Soveltaminen: Konetuotteet
-DESCRIPTION:Soveltaminen (vaihe) · (EU) 2023/1230 · https://eur-lex.europa.eu/eli/reg/2023/1230/oj
-URL:https://eur-lex.europa.eu/eli/reg/2023/1230/oj
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-2021-0105-soveltaminen-2027-01-20@saadosseuranta
 DTSTAMP:20270120T000000Z
 DTSTART;VALUE=DATE:20270120
@@ -1730,6 +1712,15 @@ DTSTART;VALUE=DATE:20270802
 DTEND;VALUE=DATE:20270803
 SUMMARY:[EU] Soveltaminen: Tekoälyasetus (AI Act)
 DESCRIPTION:Soveltaminen (vaihe) · (EU) 2024/1689 · https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+URL:https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2021-0106-soveltaminen-2027-12-02@saadosseuranta
+DTSTAMP:20271202T000000Z
+DTSTART;VALUE=DATE:20271202
+DTEND;VALUE=DATE:20271203
+SUMMARY:[EU] Soveltaminen: Tekoälyasetus (AI Act)
+DESCRIPTION:Liite III suuririskiset (omnibus 2026/1744) · (EU) 2024/1689 · https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 URL:https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 END:VEVENT
 BEGIN:VEVENT
@@ -2363,6 +2354,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19494-lausunto-2026-11-24@saadosseuranta
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[EU] Lausuntoaika päättyy: Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin
+DESCRIPTION:Palauteaika · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-17632-lausunto-2026-11-24@saadosseuranta
 DTSTAMP:20261124T000000Z
 DTSTART;VALUE=DATE:20261124
@@ -2417,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-22@saadosseuranta
-DTSTAMP:20261222T000000Z
-DTSTART;VALUE=DATE:20261222
-DTEND;VALUE=DATE:20261223
+UID:eu-hys-19517-lausunto-2026-12-23@saadosseuranta
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2442,15 +2442,6 @@ DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Oikeudenmukaista työvoiman liikkuvuutta koskeva paketti: eurooppalainen sosiaaliturvapassi
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-19494-lausunto-2026-11-24@saadosseuranta
-DTSTAMP:20261124T000000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:[EU] Lausuntoaika päättyy: Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin
-DESCRIPTION:Palauteaika · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
@@ -2498,10 +2489,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-22@saadosseuranta
-DTSTAMP:20261222T000000Z
-DTSTART;VALUE=DATE:20261222
-DTEND;VALUE=DATE:20261223
+UID:eu-hys-15492-lausunto-2026-12-23@saadosseuranta
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -3198,24 +3189,6 @@ DTEND;VALUE=DATE:20261027
 SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Guidelines on investment of available financial means
 DESCRIPTION:Palauteaika · EBA/CP/2026/12 · https://www.eba.europa.eu/publications-and-media/events/consultation-guidelines-investment-available-financial-means
 URL:https://www.eba.europa.eu/publications-and-media/events/consultation-guidelines-investment-available-financial-means
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-eiopa-consultation-draft-rts-valuation-3-irrd-lausunto-2026-10-20@saadosseuranta
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:[EU] Lausuntoaika päättyy: Consultation on draft RTS on valuation 3 - IRRD
-DESCRIPTION:Palauteaika · EIOPA 8.7.2026 · https://www.eiopa.europa.eu/consultations/consultation-draft-rts-valuation-3-irrd_en
-URL:https://www.eiopa.europa.eu/consultations/consultation-draft-rts-valuation-3-irrd_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-eiopa-consultation-draft-rts-valuation-1-and-2-irrd-lausunto-2026-10-20@saadosseuranta
-DTSTAMP:20261020T000000Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-SUMMARY:[EU] Lausuntoaika päättyy: Consultation on draft RTS on valuation 1 and 2 - IRRD
-DESCRIPTION:Palauteaika · EIOPA 8.7.2026 · https://www.eiopa.europa.eu/consultations/consultation-draft-rts-valuation-1-and-2-irrd_en
-URL:https://www.eiopa.europa.eu/consultations/consultation-draft-rts-valuation-1-and-2-irrd_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-edpb-guidelines-032026-on-web-scraping-in-the-context-of-generative-ai-lausunto-2026-10-30@saadosseuranta

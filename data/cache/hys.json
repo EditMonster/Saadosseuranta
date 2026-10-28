@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-27T22:59:30",
+ "fetched": "2026-10-28T05:47:08",
  "items": [
   {
    "actType": "PROP_REG",
@@ -18,6 +18,114 @@
    "title_en": "Road transport smart enforcement and simplification",
    "title_fi": "Tieliikenne: älykäs valvonta ja prosessien yksinkertaistaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19220_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19495,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619285",
+   "status": "ACTIVE",
+   "title_en": "Introduction of over-the-air updates of tachograph software for smart enforcement and simplification purposes.",
+   "title_fi": "Ajopiirturiohjelmistot – langattomat päivitykset älykästä valvontaa ja yksinkertaistamista varten",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19495_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19494,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619242",
+   "status": "ACTIVE",
+   "title_en": "Introduction of new identifiers in the electronic freight transport information (eFTI) registry of identifiers",
+   "title_fi": "Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19497,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619420",
+   "status": "ACTIVE",
+   "title_en": "Alignment of download periods from the vehicle unit and driver card with current tachograph technical capabilities",
+   "title_fi": "Ajopiirturitietojen säilytysaikojen ja kopiointivälien yhdenmukaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19497_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19496,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9619342",
+   "status": "ACTIVE",
+   "title_en": "Simplification of reporting requirements under Regulation (EC) No 1370/2007 on public transport by rail and by road",
+   "title_fi": "Rautateiden ja maanteiden julkinen henkilöliikenne – raportointivaatimusten yksinkertaistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19496_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19613,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9999197",
+   "status": "ACTIVE",
+   "title_en": "Smart enforcement and simplification in road transport - omnibus (Regulation)",
+   "title_fi": null,
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19613_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 19612,
+   "periods": [
+    {
+     "end": "2026-11-24",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-27"
+    }
+   ],
+   "reference": "Ares(2026)9999188",
+   "status": "ACTIVE",
+   "title_en": "Smart enforcement and simplification in road transport - omnibus (Directive)",
+   "title_fi": null,
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19612_en"
   },
   {
    "actType": "REG_DEL",
@@ -54,42 +162,6 @@
    "title_en": "Classification, labelling and packaging of substances and mixtures (CLP Regulation) ",
    "title_fi": "Hormonitoimintaa häiritsevät kemikaalit sekä hitaasti hajoavat ja biokertyvät aineet – siirto CLP-asetuksen piiriin",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632_en"
-  },
-  {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 19612,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9999188",
-   "status": "ACTIVE",
-   "title_en": "Smart enforcement and simplification in road transport - omnibus (Directive)",
-   "title_fi": null,
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19612_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 19613,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9999197",
-   "status": "ACTIVE",
-   "title_en": "Smart enforcement and simplification in road transport - omnibus (Regulation)",
-   "title_fi": null,
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19613_en"
   },
   {
    "actType": "COMMUNIC",
@@ -220,24 +292,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 19496,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9619342",
-   "status": "ACTIVE",
-   "title_en": "Simplification of reporting requirements under Regulation (EC) No 1370/2007 on public transport by rail and by road",
-   "title_fi": "Rautateiden ja maanteiden julkinen henkilöliikenne – raportointivaatimusten yksinkertaistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19496_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 19032,
    "periods": [
     {
@@ -295,7 +349,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-22",
+     "end": "2026-12-23",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -313,7 +367,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-22",
+     "end": "2026-12-23",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -436,60 +490,6 @@
   {
    "actType": "REG_IMPL",
    "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19497,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9619420",
-   "status": "ACTIVE",
-   "title_en": "Alignment of download periods from the vehicle unit and driver card with current tachograph technical capabilities",
-   "title_fi": "Ajopiirturitietojen säilytysaikojen ja kopiointivälien yhdenmukaistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19497_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19495,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9619285",
-   "status": "ACTIVE",
-   "title_en": "Introduction of over-the-air updates of tachograph software for smart enforcement and simplification purposes.",
-   "title_fi": "Ajopiirturiohjelmistot – langattomat päivitykset älykästä valvontaa ja yksinkertaistamista varten",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19495_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19494,
-   "periods": [
-    {
-     "end": "2026-11-24",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-27"
-    }
-   ],
-   "reference": "Ares(2026)9619242",
-   "status": "ACTIVE",
-   "title_en": "Introduction of new identifiers in the electronic freight transport information (eFTI) registry of identifiers",
-   "title_fi": "Sähköiset kuljetustiedot (eFTI) – Uusien tunnisteiden lisääminen eFTI-tunnisterekisteriin",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19494_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
    "id": 19292,
    "periods": [
     {
@@ -547,7 +547,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-22",
+     "end": "2026-12-23",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -686,60 +686,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14860_en"
   },
   {
-   "actType": "REG",
-   "actTypeLabel": "Asetus",
-   "id": 19398,
-   "periods": [
-    {
-     "end": "2026-10-27",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-29"
-    }
-   ],
-   "reference": "Ares(2026)9201435",
-   "status": "ACTIVE",
-   "title_en": "Chemicals regulation - update of EU rules for test methods",
-   "title_fi": "Kemikaalilainsäädäntö – testimenetelmiä koskevien EU-sääntöjen päivitys",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 19397,
-   "periods": [
-    {
-     "end": "2026-10-27",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-09-29"
-    }
-   ],
-   "reference": "Ares(2026)9186342",
-   "status": "ACTIVE",
-   "title_en": "\"Diversify EU\" instrument",
-   "title_fi": "Kauppa – monipuolistamista ja talouden häiriönsietokykyä edistävää uutta kaupan välinettä koskeva ehdotus",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19397_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 14460,
-   "periods": [
-    {
-     "end": "2026-10-27",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-29"
-    }
-   ],
-   "reference": "Ares(2024)8788957",
-   "status": "ACTIVE",
-   "title_en": "Minimum values for the electrochemical performance and durability of rechargeable industrial batteries",
-   "title_fi": "Teollisuusakut – sähkökemiallisen suorituskyvyn ja keston vähimmäisarvot",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14460_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19293,
@@ -769,7 +715,7 @@
    "id": 15492,
    "periods": [
     {
-     "end": "2026-12-22",
+     "end": "2026-12-23",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-09-15"
@@ -1034,6 +980,42 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
   },
   {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 14460,
+   "periods": [
+    {
+     "end": "2026-10-27",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-29"
+    }
+   ],
+   "reference": "Ares(2024)8788957",
+   "status": "ACTIVE",
+   "title_en": "Minimum values for the electrochemical performance and durability of rechargeable industrial batteries",
+   "title_fi": "Teollisuusakut – sähkökemiallisen suorituskyvyn ja keston vähimmäisarvot",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14460_en"
+  },
+  {
+   "actType": "REG",
+   "actTypeLabel": "Asetus",
+   "id": 19398,
+   "periods": [
+    {
+     "end": "2026-10-27",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-09-29"
+    }
+   ],
+   "reference": "Ares(2026)9201435",
+   "status": "ACTIVE",
+   "title_en": "Chemicals regulation - update of EU rules for test methods",
+   "title_fi": "Kemikaalilainsäädäntö – testimenetelmiä koskevien EU-sääntöjen päivitys",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398_en"
+  },
+  {
    "actType": "REPORT",
    "actTypeLabel": "Kertomus",
    "id": 17712,
@@ -1266,6 +1248,24 @@
    "title_en": "Tachograph specifications for occasional passenger services and other improvements to smart tachograph",
    "title_fi": "Ajopiirtureiden eritelmät satunnaista henkilöliikennettä varten ja parannukset älykkäisiin ajopiirtureihin",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14557_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 19397,
+   "periods": [
+    {
+     "end": "2026-10-27",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-09-29"
+    }
+   ],
+   "reference": "Ares(2026)9186342",
+   "status": "ACTIVE",
+   "title_en": "\"Diversify EU\" instrument",
+   "title_fi": "Kauppa – monipuolistamista ja talouden häiriönsietokykyä edistävää uutta kaupan välinettä koskeva ehdotus",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19397_en"
   },
   {
    "actType": "PROP_REG",
@@ -1856,24 +1856,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16573_en"
   },
   {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 18655,
-   "periods": [
-    {
-     "end": "2026-08-28",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-31"
-    }
-   ],
-   "reference": "Ares(2026)6511972",
-   "status": "ACTIVE",
-   "title_en": "Removing expired rules. Cross reference to the end date of their recognition for rules for equivalent third countries",
-   "title_fi": null,
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18655_en"
-  },
-  {
    "actType": "DEC_DEL",
    "actTypeLabel": "Delegoitu päätös",
    "id": 19033,
@@ -1926,24 +1908,6 @@
    "title_en": "Rules for the calculation and verification of recycled content in plastic packaging",
    "title_fi": "Muovipakkaukset – kierrätysmateriaalin osuuden laskentaa ja todentamista koskevien sääntöjen yhdenmukaistaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18753_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 18132,
-   "periods": [
-    {
-     "end": "2026-08-28",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-03"
-    }
-   ],
-   "reference": "Ares(2026)4659944",
-   "status": "ACTIVE",
-   "title_en": "Update to the EU drug precursor’s list",
-   "title_fi": "Huumausaineiden lähtöaineita koskeva EU:n luettelo – päivitys",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18132_en"
   }
  ]
 }

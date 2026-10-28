@@ -1,18 +1,5 @@
 {
  "cases": {
-  "KKV/1038/14.00.10/2026": {
-   "decided": "2026-07-29",
-   "decision": "Yrityskaupan hyväksyminen sellaisenaan",
-   "decisionUrl": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-1038-14-00-10-2026/",
-   "diaari": "KKV/1038/14.00.10/2026",
-   "listTitle": "Metroauto Oy / Toyota Autotalo Oy:n Tampereen liiketoiminta (Tammer-Auto)",
-   "notified": "2026-07-17",
-   "parties": "Metroauto Oy / Toyota Autotalo Oy:n Tampereen liiketoiminta (Tammer-Auto)",
-   "pending": false,
-   "seen": "2026-10-16",
-   "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin 17.7.2026 järjestely, jossa Metroauto Oy hankkii Toyota Autotalo Oy:n Tampereen liiketoiminnan. Molemmat osapuolet toimivat Toyota-merkkisten ajoneuvojen vähittäismyynnissä, jälkimarkkinapalveluissa sekä vuokraus- ja leasing-palveluissa. Virasto hyväksyi yrityskaupan 29.7.2026.",
-   "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-1038-14-00-10-2026/"
-  },
   "KKV/1043/14.00.10/2026": {
    "decided": "2026-07-30",
    "decision": "Yrityskaupan hyväksyminen sellaisenaan",
@@ -257,7 +244,7 @@
    "parties": "Corewood Oy / Ylijoki Metsäenergia Oy",
    "pending": true,
    "phase1End": "2026-11-04",
-   "seen": "2026-10-27",
+   "seen": "2026-10-28",
    "summary": "Kilpailu- ja kuluttajavirastolla on arvioitavana järjestely, jossa Corewood Oy hankkii Ylijoki Metsäenergia Oy:n osakkeet. Kaupan täytäntöönpanon ehdoksi on asetettu, että KKV antaa hyväksyntänsä kaupan toteuttamiselle. Corewood on Sponsor Capital Oy:n ja yksityishenkilöiden omistama kuljetusalan toimija.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1385-14-00-10-2026/"
   },
@@ -367,7 +354,7 @@
    "phase1End": "2026-09-23",
    "phase2End": "2026-12-31",
    "phase2Start": "2026-09-23",
-   "seen": "2026-10-27",
+   "seen": "2026-10-28",
    "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin on 21.8.2026 järjestely, jossa L&T Ympäristöpalvelut Oy hankkii määräysvallan Kempeleen Siirtokuljetus Oy:ssä. Viraston alustavan tarkastelun perusteella yrityskauppa saattaa aiheuttaa haitallisia kilpailuvaikutuksia Pohjois-Pohjanmaan jätehuollon markkinoilla. Virasto siirsi asian jatkokäsittelyyn 23.9.2026.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-743-14-00-10-2026/"
   },
@@ -385,5 +372,5 @@
    "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-985-14-00-10-2026/"
   }
  },
- "fetched": "2026-10-27T23:01:08Z"
+ "fetched": "2026-10-28T05:49:54Z"
 }
