@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-28T13:25:24Z",
+ "fetched": "2026-10-28T15:24:56Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -630,7 +630,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "0eda6f92fea9",
-   "lastSeen": "2026-10-28"
+   "lastSeen": "2026-10-28",
+   "missingSince": "2026-10-28"
   },
   "0f9e3bcd6042": {
    "buyer": "Kansaneläkelaitos",
@@ -650,6 +651,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "12444532bc0d",
+   "lastSeen": "2026-10-28"
+  },
+  "129f321999c6": {
+   "buyer": "Länsirannikon Työterveys Oy",
+   "decisionDate": "2026-10-12",
+   "decisionText": "Länsirannikon Työterveys Oy:n hankintapäätös 12.10.2026 koskien Länsirannikon Työterveys Oy:n laboratorio- ja kuvantamispalveluiden hankintaa",
+   "filed": "2026-10-28",
+   "firstSeen": "2026-10-28",
+   "hilmaNo": null,
+   "key": "129f321999c6",
    "lastSeen": "2026-10-28"
   },
   "12f022707954": {

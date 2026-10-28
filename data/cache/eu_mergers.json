@@ -5406,9 +5406,14 @@
   "M.12562": {
    "caseNumber": "M.12562",
    "deadline": "2026-11-11",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-28",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-20",
-   "lastDecision": null,
+   "lastDecision": "2026-10-28",
    "notice": {
     "activities": [
      "Hyperion on pääomasijoitusrahasto, joka sijoittaa kaksikäyttöteknologian alalla, ilmailu- ja avaruusalalla, kyberturvallisuuden alalla, tekoälyn alalla ja puolustusalalla toimiviin yrityksiin.",
@@ -5458,7 +5463,7 @@
      "reference": "C:2026:5300:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_33.16",
    "simplified": "MEsimplified",
@@ -6231,6 +6236,23 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "DANFOSS / ALFA GOMMA"
+  },
+  "M.12588": {
+   "caseNumber": "M.12588",
+   "deadline": "2026-12-03",
+   "decisions": [],
+   "initiated": "2026-08-03",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-28",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_M_68.20",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "IGNIS P2X / ACCIONA DATA CENTERS / ACCIONA DESARROLLOS Y PROYECTOS RENOVABLES / IGNIS DATA EPTA AND ESTRIBO SOLAR"
   },
   "M.12591": {
    "caseNumber": "M.12591",
@@ -7643,10 +7665,14 @@
     {
      "date": "2026-10-01",
      "type": "DecisionType20490"
+    },
+    {
+     "date": "2026-10-28",
+     "type": "DecisionType20310"
     }
    ],
    "initiated": "2026-09-14",
-   "lastDecision": "2026-10-01",
+   "lastDecision": "2026-10-28",
    "notice": {
     "activities": [
      "L Catterton on kuluttajakeskeinen sijoituspalveluyritys, jonka salkkuun kuuluvat yritykset toimivat vähittäiskauppa- ja ravintola-alalla, elintarvike- ja virvoitusjuomateollisuuden alalla sekä kuluttajapalvelujen ja kulutustavaroiden alalla, mukaan lukien vuodevaatteiden, vaatteiden ja asusteiden sekä kosmetiikan ja hajustetuotteiden tuotanto ja myynti.",
@@ -7703,7 +7729,7 @@
      "reference": "C:2026:5301:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": "2026-10-06",
    "sector": "NaceV2Sector_G_47.27",
    "simplified": "MEsupersimplified",
@@ -7917,5 +7943,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-28T13:24:52Z"
+ "fetched": "2026-10-28T15:24:27Z"
 }

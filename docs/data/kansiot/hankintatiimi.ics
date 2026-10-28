@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:fi-he-230-2026-voimaan-2027-01-01-hankintatiimi@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi hankintatietovarannosta ja siihen liittyviksi laeiksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-746562-2026-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
@@ -1812,14 +1821,5 @@ DTEND;VALUE=DATE:20261124
 SUMMARY:[Hankinta] Määräaika: Mobiiltelefonid\, tahvelarvutid ja nende tarvikud
 DESCRIPTION:Tarjoukset viimeistään · Siseministeeriumi infotehnoloogia- ja arenduskeskus · https://ted.europa.eu/fi/notice/-/detail/728369-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/728369-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-727100-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: HRM-system och Lönesystem
-DESCRIPTION:Osallistumishakemukset viimeistään · Nordvästra Skånes Vatten och Avlopp AB · https://ted.europa.eu/fi/notice/-/detail/727100-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/727100-2026
 END:VEVENT
 END:VCALENDAR
