@@ -1,18 +1,5 @@
 {
  "cases": {
-  "KKV/1043/14.00.10/2026": {
-   "decided": "2026-07-30",
-   "decision": "Yrityskaupan hyväksyminen sellaisenaan",
-   "decisionUrl": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-1043-14-00-10-2026/",
-   "diaari": "KKV/1043/14.00.10/2026",
-   "listTitle": "Pinerock Finland Oy / KBC Rakennus Oy",
-   "notified": "2026-07-21",
-   "parties": "Pinerock Finland Oy / KBC Rakennus Oy",
-   "pending": false,
-   "seen": "2026-10-16",
-   "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin 21.7.2026 järjestely, jossa Pinerock Finland Oy hankkii yksinomaisen määräysvallan KBC Rakennus Oy:ssä. Yrityskaupan molemmat osapuolet toimivat korjausrakentamisen markkinoilla. Virasto hyväksyi yrityskaupan 30.7.2026.",
-   "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-1043-14-00-10-2026/"
-  },
   "KKV/1060/14.00.10/2026": {
    "decided": "2026-08-10",
    "decision": "Yrityskaupan hyväksyminen sellaisenaan",
@@ -244,7 +231,7 @@
    "parties": "Corewood Oy / Ylijoki Metsäenergia Oy",
    "pending": true,
    "phase1End": "2026-11-04",
-   "seen": "2026-10-28",
+   "seen": "2026-10-29",
    "summary": "Kilpailu- ja kuluttajavirastolla on arvioitavana järjestely, jossa Corewood Oy hankkii Ylijoki Metsäenergia Oy:n osakkeet. Kaupan täytäntöönpanon ehdoksi on asetettu, että KKV antaa hyväksyntänsä kaupan toteuttamiselle. Corewood on Sponsor Capital Oy:n ja yksityishenkilöiden omistama kuljetusalan toimija.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1385-14-00-10-2026/"
   },
@@ -354,7 +341,7 @@
    "phase1End": "2026-09-23",
    "phase2End": "2026-12-31",
    "phase2Start": "2026-09-23",
-   "seen": "2026-10-28",
+   "seen": "2026-10-29",
    "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin on 21.8.2026 järjestely, jossa L&T Ympäristöpalvelut Oy hankkii määräysvallan Kempeleen Siirtokuljetus Oy:ssä. Viraston alustavan tarkastelun perusteella yrityskauppa saattaa aiheuttaa haitallisia kilpailuvaikutuksia Pohjois-Pohjanmaan jätehuollon markkinoilla. Virasto siirsi asian jatkokäsittelyyn 23.9.2026.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-743-14-00-10-2026/"
   },
@@ -372,5 +359,5 @@
    "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-985-14-00-10-2026/"
   }
  },
- "fetched": "2026-10-28T22:43:07Z"
+ "fetched": "2026-10-29T06:00:38Z"
 }

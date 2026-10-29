@@ -53,7 +53,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 1813,
    "objection": null,
    "policyArea": "MARE",
@@ -116,7 +116,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2376,
    "objection": null,
    "policyArea": "SANTE",
@@ -308,7 +308,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -485,7 +485,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -559,7 +559,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -640,7 +640,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -770,7 +770,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -833,7 +833,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -965,7 +965,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -1068,7 +1068,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -1393,7 +1393,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1444,7 +1444,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1637,7 +1637,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1774,7 +1774,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1879,7 +1879,7 @@
    "publication": "2026-10-23",
    "shortTitle": "Olive oil - Revision of marketing standards",
    "summary": "The objective of this revision of EU olive oil marketing standards is to bring them in line with the recently adopted changes to the International Olive Council Trade Standard for olive oils and olive pomace oils. It concerns the limit for total sterol content in monovarietal extra virgin olive oil from the Koroneiki or Nocellara del Belice variety and the labelling of such oils.",
-   "updateDate": 1792794049950
+   "updateDate": 1793228716429
   },
   "2937": {
    "adoption": "2026-06-11",
@@ -2003,7 +2003,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2188,7 +2188,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2957,
    "objection": null,
    "policyArea": "SANTE",
@@ -2251,7 +2251,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2314,7 +2314,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2963,
    "objection": null,
    "policyArea": "MARE",
@@ -2323,135 +2323,6 @@
    "shortTitle": "Common Fisheries Policy – landing obligation – Baltic Sea (salmon)",
    "summary": "The Common Fisheries Policy establishes in principle a landing obligation to avoid wasteful discards. The Commission may however adopt exemptions if certain conditions are fulfilled, e.g. on grounds of high survivability. This delegated act reconducts a 3-year exemption from the landing obligation on grounds of high survivability for salmon caught in the Baltic Sea with certain gears. Such 3-year  exemptions have been in place since 2015.",
    "updateDate": 1792620001013
-  },
-  "2968": {
-   "adoption": "2026-04-24",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32024R3005",
-    "code": "reg/2024/3005",
-    "deadlineRaw": "3",
-    "procedure": null,
-    "title": "Regulation (EU) 2024/3005 of the European Parliament and of the Council of 27 November 2024 on the transparency and integrity of Environmental, Social and Governance (ESG) rating activities, and amending Regulations (EU) 2019/2088 and (EU) 2023/2859 (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)2579",
-   "celexNumber": "32026R0904",
-   "cellar": {
-    "celex": "32026R0904",
-    "deadlines": [],
-    "eif": [
-     "2026-08-19"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-30",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/904, annettu 24 päivänä huhtikuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2024/3005 täydentämisestä Euroopan arvopaperimarkkinaviranomaisen ESG-luokitusten tarjoajille määräämiä sakkoja ja uhkasakkoja koskevilla menettelysäännöillä"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/904 of 24 April 2026 supplementing Regulation (EU) 2024/3005 of the European Parliament and of the Council with regard to rules of procedure on fines and periodic penalty payments imposed to ESG rating providers by the European Securities and Markets Authority",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-04-24",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-30",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2968,
-   "objection": null,
-   "policyArea": "FISMA",
-   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
-   "publication": "2026-07-30",
-   "shortTitle": "EU rules of procedure on fines and periodic penalty payments imposed to ESG rating providers",
-   "summary": "EU rules on environmental, social and governance (ESG) rating activities introduces a common regulatory approach to enhance the integrity, transparency, comparability where possible, responsibility, reliability, good governance and independence of such activities. They require the Commission to adopt further rules of procedure for the exercise of the European Securities and Markets Authority power to impose fines or periodic penalty payments.",
-   "updateDate": 1785450012709
-  },
-  "2969": {
-   "adoption": "2026-04-24",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32024R3005",
-    "code": "reg/2024/3005",
-    "deadlineRaw": "3",
-    "procedure": null,
-    "title": "Regulation (EU) 2024/3005 of the European Parliament and of the Council of 27 November 2024 on the transparency and integrity of Environmental, Social and Governance (ESG) rating activities, and amending Regulations (EU) 2019/2088 and (EU) 2023/2859 (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)2580",
-   "celexNumber": "32026R0910",
-   "cellar": {
-    "celex": "32026R0910",
-    "deadlines": [],
-    "eif": [
-     "2026-07-31"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-30",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/910, annettu 24 päivänä huhtikuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2024/3005 täydentämisestä Euroopan arvopaperimarkkinaviranomaisen ESG-luokitusten tarjoajilta perimien maksujen osalta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/910 of 24 April 2026 supplementing Regulation (EU) 2024/3005 of the European Parliament and of the Council with regard to fees charged by the European Securities and Markets Authority to ESG rating providers",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 3.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-04-24",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-30",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2969,
-   "objection": null,
-   "policyArea": "FISMA",
-   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
-   "publication": "2026-07-30",
-   "shortTitle": "EU rules on fees charged by the European Securities and Markets Authority to ESG rating providers",
-   "summary": "EU rules on environmental, social and governance (ESG) rating activities introduces a common regulatory approach to enhance the integrity, transparency, comparability where possible, responsibility, reliability, good governance and independence of such activities. They require the Commission to adopt rules on supervisory fees to specify types of fees, the matters for which fees are due, the amount of the fees and the respective justification(s) and the manner in which they are to be paid.",
-   "updateDate": 1785450013816
   },
   "2970": {
    "adoption": "2026-06-04",
@@ -2680,68 +2551,6 @@
    "summary": "EU rules on environmental, social and governance (ESG) rating activities introduces a common regulatory approach to enhance the integrity, transparency, comparability where possible, responsibility, reliability, good governance and independence of such activities. They require the Commission to adopt regulatory technical standards to ensure that the information to be submitted to the ESMA for the purposes of the authorisation/recognition processes of ESG rating providers is sufficient for enabling it to make relevant informed decisions.",
    "updateDate": 1788301210653
   },
-  "2977": {
-   "adoption": "2026-05-18",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32012R0528",
-    "code": "reg/2012/528",
-    "deadlineRaw": "2",
-    "procedure": "2009/0076/COD",
-    "title": "Regulation (EU) No 528/2012 of the European Parliament and of the Council of 22 May 2012 concerning the making available on the market and use of biocidal products Text with EEA relevance"
-   },
-   "cCode": "C(2026)1241",
-   "celexNumber": "32026R0447",
-   "cellar": {
-    "celex": "32026R0447",
-    "deadlines": [],
-    "eif": [
-     "2026-08-19"
-    ],
-    "inForce": "1",
-    "oj": "2026-07-30",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/447, annettu 27 päivänä helmikuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 528/2012 muuttamisesta siltä osin kuin on kyse sen liitteessä I olevaan ryhmään 6 kuuluvan tehoaineen hiilidioksidi käytön rajoittamisesta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/447 of 27 February 2026 amending Regulation (EU) No 528/2012 of the European Parliament and of the Council as regards the restriction of the use for the active substance carbon dioxide in Annex I, Category 6, thereto",
-   "deadlines": [
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-05-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-30",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2977,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-07-30",
-   "shortTitle": "Biocidal products - use restrictions for carbon dioxide",
-   "summary": null,
-   "updateDate": 1785933521455
-  },
   "2983": {
    "adoption": "2026-09-21",
    "adoptionDate": "Q3 2026",
@@ -2794,7 +2603,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2845,7 +2654,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2896,7 +2705,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -3017,7 +2826,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -3373,7 +3182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3431,7 +3240,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -3593,7 +3402,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3639,7 +3448,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3721,7 +3530,7 @@
    "publication": "2026-08-06",
    "shortTitle": "Wine sector - Payments of advances for interventions",
    "summary": null,
-   "updateDate": 1793055765265
+   "updateDate": 1793228786238
   },
   "3031": {
    "adoption": "2026-07-10",
@@ -3879,7 +3688,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3930,7 +3739,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -4048,7 +3857,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3048,
    "objection": null,
    "policyArea": "TRADE",
@@ -4241,7 +4050,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -4304,7 +4113,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3060,
    "objection": null,
    "policyArea": "MARE",
@@ -4391,7 +4200,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -4399,7 +4208,7 @@
    "publication": null,
    "shortTitle": "CAP Strategic Plans 2023/2027 - wine sector (additional requirements for certain types of interventions)",
    "summary": null,
-   "updateDate": 1793055765864
+   "updateDate": 1793228786939
   },
   "3074": {
    "adoption": "2026-09-18",
@@ -4454,7 +4263,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -4500,7 +4309,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -4509,57 +4318,6 @@
    "shortTitle": "Adjustment of the fees and charges payable to the European Medicines Agency (EMA)",
    "summary": null,
    "updateDate": 1792623041761
-  },
-  "3099": {
-   "adoption": "2026-07-28",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32026R0715",
-    "code": "reg/2026/715",
-    "deadlineRaw": "2",
-    "procedure": null,
-    "title": "Regulation (EU) 2026/715 of the European Parliament and of the Council of 11 March 2026 on European Union designs (codification) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)5161",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2026/715 of the European Parliament and of the Council with rules specifying the details of certain proceedings concerning registered EU designs, and repealing Delegated Regulation (EU) 2026/137",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-07-28",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-28",
-   "id": 3099,
-   "objection": null,
-   "policyArea": "GROW",
-   "policyAreaName": "Internal Market, Industry, Entrepreneurship and SMEs",
-   "publication": null,
-   "shortTitle": "EU designs - rules specifying certain proceedings",
-   "summary": null,
-   "updateDate": 1792620001174
   },
   "3100": {
    "adoption": "2026-04-20",
@@ -4738,7 +4496,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -4796,7 +4554,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -4859,7 +4617,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4917,7 +4675,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4942,6 +4700,11 @@
    "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Directive (EU) 2017/2397 of the European Parliament and of the Council as regards applicable requirements for certain professional qualifications in inland navigation",
    "deadlines": [
     {
+     "institution": "COUNCIL",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
+    {
      "institution": "COMMISSION",
      "months": 2.0,
      "type": "ORIGINAL"
@@ -4963,7 +4726,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4984,8 +4747,18 @@
     "title": "Regulation (EU) 2025/40 of the European Parliament and of the Council of 19 December 2024 on packaging and packaging waste, amending Regulation (EU) 2019/1020 and Directive (EU) 2019/904, and repealing Directive 94/62/EC (Text with EEA relevance)"
    },
    "cCode": "C(2026)5778",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED DECISION (EU) …/… amending Decision 2001/171/EC as regards crystal glass packaging",
+   "celexNumber": "32026D1948",
+   "cellar": {
+    "celex": "32026D1948",
+    "deadlines": [],
+    "eif": [
+     "2026-10-29"
+    ],
+    "inForce": null,
+    "oj": "2026-10-28",
+    "title_fi": "Komission delegoitu päätös (EU) 2026/1948, annettu 12 päivänä elokuuta 2026, päätöksen 2001/171/EY muuttamisesta kristallilasipakkausten osalta"
+   },
+   "completeTitle": "Commission Delegated Decision (EU) 2026/1948 of 12 August 2026 amending Decision 2001/171/EC as regards crystal glass packaging",
    "deadlines": [
     {
      "institution": "COUNCIL",
@@ -5004,7 +4777,7 @@
     }
    ],
    "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
+   "delegatedActStatus": "PUBLISHED",
    "delegatedActType": "DECISION",
    "events": [
     {
@@ -5012,17 +4785,23 @@
      "institution": "COMMISSION",
      "months": null,
      "type": "DA_ADOPTION"
+    },
+    {
+     "date": "2026-10-28",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_PUBLICATION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3118,
    "objection": null,
    "policyArea": "ENV",
    "policyAreaName": "Environment",
-   "publication": null,
+   "publication": "2026-10-28",
    "shortTitle": "Crystal glass packaging – temporary derogation for the lead concentration limits",
    "summary": "N/A",
-   "updateDate": 1792620000874
+   "updateDate": 1793229646240
   },
   "3122": {
    "adoption": "2026-08-06",
@@ -5077,7 +4856,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3122,
    "objection": null,
    "policyArea": "MARE",
@@ -5266,7 +5045,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -5317,7 +5096,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -5349,7 +5128,7 @@
     "oj": "2026-09-17",
     "title_fi": "Komission delegoitu asetus (EU) 2026/2102, annettu 13 päivänä heinäkuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2023/1115 muuttamisesta asianomaisten hyödykkeiden ja asianomaisten tuotteiden luettelon osalta"
    },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/2102 of 13 July 2026 amending Regulation (EU) 2023/1115 of the European Parliament and of the Council as regards the list of relevant commodities and relevant products",
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2023/1115 of the European Parliament and of the Council as regards the list of relevant commodities and relevant products",
    "deadlines": [
     {
      "institution": "PARLIAMENT",
@@ -5509,7 +5288,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -5560,7 +5339,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -5623,7 +5402,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-28",
+   "eventsFetched": "2026-10-29",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -5634,7 +5413,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-10-28T22:43:29Z",
+ "fetched": "2026-10-29T06:02:02Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -7165,10 +6944,13 @@
   "296": "PUBLISHED",
   "2961": "PUBLISHED",
   "2967": "PUBLISHED",
+  "2968": "PUBLISHED",
+  "2969": "PUBLISHED",
   "297": "OBJECTED",
   "2971": "PUBLISHED",
   "2975": "PUBLISHED",
   "2976": "PUBLISHED",
+  "2977": "PUBLISHED",
   "298": "PUBLISHED",
   "2980": "PUBLISHED",
   "2981": "PUBLISHED",
@@ -7196,6 +6978,7 @@
   "3086": "OBJECTED",
   "309": "PUBLISHED",
   "3094": "PUBLISHED",
+  "3099": "PUBLISHED",
   "31": "CANCELLED",
   "310": "PUBLISHED",
   "311": "PUBLISHED",

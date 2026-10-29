@@ -32,15 +32,6 @@ DESCRIPTION:Lausuntopyyntö luonnoksesta hallituksen esitykseksi  eduskunnalle l
 URL:https://valtioneuvosto.fi/hanke?tunnus=MMM036:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-2bc7c6ef-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi valtion rahoituksesta kansallisille taidelaitoksille annetun lain 1 ja 2 §:n sekä esittävän taiteen edistämisestä annetun lain 5 ja 6 §:n muuttamisesta
-DESCRIPTION:Lausuntopyyntö luonnoksesta hallituksen esitykseksi. · OKM036:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM036:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=OKM036:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-241-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -365,15 +356,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 255/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/255
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-f22cd269-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta
-DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM123:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=TEM123:00/2025
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM123:00/2025
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-231-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -579,15 +561,6 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Työneuvoston ja yhteistoiminta-asiamiehen toimiston lakkauttamista ja tehtävien siirtämistä koskevaksi lainsäädännöksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 132/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-hanke-912e0465-lausunto-2026-10-21@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[FI] Lausuntoaika päättyy: Kommandiittiyhtiömuotoisia rahastoja koskevan verolainsäädännön uudistamiseksi
-DESCRIPTION:Lausuntokierros · VM084:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=VM084:00/2025
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM084:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-151-2026-voimaan-2027-01-01@saadosseuranta
@@ -2444,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-23@saadosseuranta
-DTSTAMP:20261223T000000Z
-DTSTART;VALUE=DATE:20261223
-DTEND;VALUE=DATE:20261224
+UID:eu-hys-19517-lausunto-2026-12-24@saadosseuranta
+DTSTAMP:20261224T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2516,10 +2489,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-15492-lausunto-2026-12-23@saadosseuranta
-DTSTAMP:20261223T000000Z
-DTSTART;VALUE=DATE:20261223
-DTEND;VALUE=DATE:20261224
+UID:eu-hys-15492-lausunto-2026-12-24@saadosseuranta
+DTSTAMP:20261224T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
 SUMMARY:[EU] Lausuntoaika päättyy: Julkisia hankintoja koskevien EU:n sääntöjen tarkistaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
@@ -2568,15 +2541,6 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-17712-lausunto-2026-10-26@saadosseuranta
-DTSTAMP:20261026T000000Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
-SUMMARY:[EU] Lausuntoaika päättyy: Jätteet – varhaisvaroituskertomus 2027
-DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
@@ -2712,15 +2676,6 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards medium chain chlorinated 
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6262 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2923
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2923
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2926-maaraaika-2026-10-21@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/2358\, annettu 21 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1308/2013 täydentämisestä olii
-DESCRIPTION:Vastustamisaika päättyi · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2926-voimaan-2026-10-24@saadosseuranta
@@ -2975,6 +2930,15 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7240 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3118-voimaan-2026-10-29@saadosseuranta
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:[EU] Voimaan: Komission delegoitu päätös (EU) 2026/1948\, annettu 12 päivänä elokuuta 2026\, päätöksen 2001/171/EY muuttamisesta kristallilasipakkausten osalta
+DESCRIPTION:Voimaan · C(2026)5778 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
 DTSTAMP:20261110T000000Z
 DTSTART;VALUE=DATE:20261110
@@ -2991,15 +2955,6 @@ DTEND;VALUE=DATE:20261111
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for the temporary withdrawal of preferential arrangements and the adoptio
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6214 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3143-maaraaika-2026-10-21@saadosseuranta
-DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
-SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
-DESCRIPTION:Vastustamisaika päättyi · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3143-voimaan-2026-10-22@saadosseuranta
