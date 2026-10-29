@@ -683,8 +683,8 @@ def test_language_switch(page, base_url):
     page.wait_for_timeout(300)
     assert page.evaluate("document.documentElement.lang") == "fi"
     assert page.text_content("#tab-now").strip() == "Tilannekuva" and "Kansallinen lainsäädäntö" in page.text_content("#view-fi")
-    if eu:
-        assert page.evaluate(f"DATA.find(i=>i.id==='{eu}')._o") is None
+    if eu:  # back in Finnish: the Finnish title again (an English EU summary may stay machine-translated into Finnish)
+        assert page.evaluate(f"(()=>{{const i=DATA.find(x=>x.id==='{eu}'); return !i._o || i.title===i._o.title}})()")
     page.evaluate("localStorage.removeItem('saadosseuranta-lang')")
 
 

@@ -949,14 +949,19 @@ body.dr-resizing #drawer{transition:none!important}
 .lg-head{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 .lg-sec{margin:14px 0}.lg-sec h4{margin:0 0 6px}
 .lg-ag{list-style:none;margin:6px 0;padding:0}.lg-ag li{padding:5px 0;border-top:1px solid var(--line);font-size:13px}.lg-ag li:first-child{border-top:0}
-.lg-rec{width:100%;border-collapse:collapse;font-size:13px}.lg-rec th{background:none!important;border-top:1px solid var(--line);text-align:left;font-weight:500;color:var(--muted);width:210px;padding:5px 8px 5px 0;vertical-align:top}.lg-rec td{padding:5px 0;border-top:1px solid var(--line)}
+.lg-rec{font-size:13px;border-top:1px solid var(--line)}
+.lg-r{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:4px 16px;padding:8px 0;border-bottom:1px solid var(--line)}
+.lg-r .k{color:var(--muted);font-weight:500;overflow-wrap:anywhere}
+.lg-r .v{min-width:0;overflow-wrap:anywhere}
+.lg-r .v .lg-ag{margin:8px 0 0}
+@media (max-width:760px){ .lg-r{grid-template-columns:1fr} }
 .lg-pv{display:inline-block;width:max-content;max-width:100%;font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--line2);cursor:pointer;margin-top:3px}
 .lg-pv.h{border-color:#4e7a3a;color:#3f6a2c}.lg-pv.e{border-color:#a8442a;color:#a8442a}
 :root[data-theme="dark"] .lg-pv.h{color:#a9cf8f;border-color:#a9cf8f} :root[data-theme="dark"] .lg-pv.e{color:#e09a85;border-color:#e09a85}
 .lg-quote{grid-column:1/-1;background:rgba(255,255,255,.35);border-radius:12px;padding:8px 12px;margin-top:6px;font-size:12.5px;cursor:default}
 :root[data-theme="dark"] .lg-quote{background:rgba(255,255,255,.06)}
 .lg-quote hr{border:0;border-top:1px solid var(--line);margin:6px 0}
-@media (max-width:760px){ #lg-table th:nth-child(2),#lg-table td:nth-child(2),#lg-table th:nth-child(6),#lg-table td:nth-child(6),#lg-table th:nth-child(8),#lg-table td:nth-child(8){display:none} .lg-rec th{width:auto} }
+@media (max-width:760px){ #lg-table th:nth-child(2),#lg-table td:nth-child(2),#lg-table th:nth-child(6),#lg-table td:nth-child(6),#lg-table th:nth-child(8),#lg-table td:nth-child(8){display:none} }
 </style>
 </head>
 <body>
@@ -1723,22 +1728,22 @@ function orgProfileExtraHTML(o){
   const tags=(o.tg||[]).map(t=>`<span class="pill lg-tag ${esc(t.replace(/[+?-]/g,m=>({"+":"p","-":"m","?":"q"}[m])))}">${esc(ORG_TG[t]||t)}</span>`).join(" ");
   const ag=(o.ag||[]).map(([i,g])=>{ const id=ORGS.ids[i], it=findItem(id); return `<li><q>${esc(g)}</q> <span class="micro">— ${esc(it?it.title:id)}</span></li>`; }).join("");
   const r=o.rec, by=r&&r[3], b=ORGS.base||{};
-  const pct=(a,n)=>n?Math.round(100*a/n)+" %":"–";
+  const pct=(a,n)=>n?Math.round(100*a/n)+"&nbsp;%":"–";
   const pal=o.pal;
   return `<div class="lg-head"><span class="pill">${esc(ORG_TY[o.ty]||"Muu")}</span> ${tags}</div>
     ${(o.aw&&o.aw.length)||ag?`<div class="lg-sec"><h4>Mitä se ajaa</h4>${o.aw&&o.aw.length?`<div class="micro">Sille tunnusomaisia sanoja kannanotoissa: ${o.aw.map(w=>`<b>${esc(w)}</b>`).join(", ")}</div>`:""}${ag?`<ul class="lg-ag">${ag}</ul><div class="micro">Viimeisimmät kannanotot sen omin sanoin (lausunnon ydinlause).</div>`:""}</div>`:""}
     <div class="lg-sec"><h4>Miten asiat menivät</h4>
-      <table class="lg-rec"><tbody>
-        <tr><th>Ministeriövaihe</th><td>${pal?`HE:n lausuntopalautteessa sen ehdotus <b>huomioitiin ${pal[0]}</b> ja <b>jätettiin huomioimatta ${pal[1]}</b> kertaa; kanta mainitaan ilman vastausta ${pal[2]} kertaa. ${pal[0]+pal[1]?`Huomioitiin ${pct(pal[0],pal[0]+pal[1])} (kaikki lausunnonantajat ${ORGS.palBase||0} %).`:""}`:"Ei mainintoja hallitusten esitysten lausuntopalauteluvuissa (luvut luetaan vuodesta 2018 alkaen)."}</td></tr>
-        <tr><th>Eduskuntavaihe: pyydetyt pykälät</th><td>${o.vq?`Asiantuntijalausunnoissaan se pyysi muutosta ${o.vq[0]+o.vq[1]} pykälään; valiokunta muutti mietinnössään <b>${o.vq[0]}</b> niistä, ei muuttanut <b>${o.vq[1]}</b>.
+      <div class="lg-rec">
+        <div class="lg-r"><div class="k">Ministeriövaihe</div><div class="v">${pal?`HE:n lausuntopalautteessa sen ehdotus <b>huomioitiin ${pal[0]}</b> ja <b>jätettiin huomioimatta ${pal[1]}</b> kertaa; kanta mainitaan ilman vastausta ${pal[2]} kertaa. ${pal[0]+pal[1]?`Huomioitiin ${pct(pal[0],pal[0]+pal[1])} (kaikki lausunnonantajat ${ORGS.palBase||0}&nbsp;%).`:""}`:"Ei mainintoja hallitusten esitysten lausuntopalauteluvuissa (luvut luetaan vuodesta 2018 alkaen)."}</div></div>
+        <div class="lg-r"><div class="k">Eduskuntavaihe: pyydetyt pykälät</div><div class="v">${o.vq?`Asiantuntijalausunnoissaan se pyysi muutosta ${o.vq[0]+o.vq[1]} pykälään; valiokunta muutti mietinnössään <b>${o.vq[0]}</b> niistä, ei muuttanut <b>${o.vq[1]}</b>.
           <ul class="lg-ag">${(o.vl||[]).map(([i,sec,ch,t])=>{ const id=ORGS.ids[i], it=findItem(id); return `<li><span class="lg-pv ${ch?"h":"e"}" style="cursor:default">${esc(sec)} ${ch?"muutettiin":"ei muutettu"}</span> <q>${esc(t)}</q> <span class="micro">— ${esc(it?it.title:id)}</span></li>`; }).join("")}</ul>`
-          :"Ei pykäläkohtaisia vaatimuksia lausunnoissa, joiden valiokuntakäsittely on päättynyt (tieto kertyy, kun lausuntoja luetaan uudelleen)."}</td></tr>
-        ${by?`<tr><th>Kannatti</th><td>${by.S[0]} asiaa: säädettiin ${by.S[1]} (${pct(by.S[1],by.S[0])})</td></tr>
-        <tr><th>Varauksin tai muutosehdotuksin</th><td>${by.R[0]} asiaa: valiokunta muutti esitystä ${by.R[1]} kertaa (${pct(by.R[1],by.R[0])}; kaikki ${b.R||0} %)</td></tr>
-        <tr><th>Vastusti</th><td>${by.O[0]} asiaa: hyväksyttiin muutettuna ${by.O[2]}, sellaisenaan ${by.O[0]-by.O[2]} (muutettuna ${pct(by.O[2],by.O[0])}; kaikki ${Math.round(2*(b.O||0))} %)</td></tr>
-        <tr><th>Yhteensä</th><td>lopputulos kannan mukainen ${r[1]} % ${r[0]} ratkenneessa asiassa, kun samoilla kannoilla odotusarvo on ${r[2]} %</td></tr>`
-        :`<tr><th>Lopputulos</th><td>Ei vielä ratkenneita asioita, joissa sillä oli kanta.</td></tr>`}
-      </tbody></table>
+          :"Ei pykäläkohtaisia vaatimuksia lausunnoissa, joiden valiokuntakäsittely on päättynyt (tieto kertyy, kun lausuntoja luetaan uudelleen)."}</div></div>
+        ${by?`<div class="lg-r"><div class="k">Kannatti</div><div class="v">${by.S[0]} asiaa: säädettiin ${by.S[1]} (${pct(by.S[1],by.S[0])})</div></div>
+        <div class="lg-r"><div class="k">Varauksin tai muutosehdotuksin</div><div class="v">${by.R[0]} asiaa: valiokunta muutti esitystä ${by.R[1]} kertaa (${pct(by.R[1],by.R[0])}; kaikki ${b.R||0}&nbsp;%)</div></div>
+        <div class="lg-r"><div class="k">Vastusti</div><div class="v">${by.O[0]} asiaa: hyväksyttiin muutettuna ${by.O[2]}, sellaisenaan ${by.O[0]-by.O[2]} (muutettuna ${pct(by.O[2],by.O[0])}; kaikki ${Math.round(2*(b.O||0))}&nbsp;%)</div></div>
+        <div class="lg-r"><div class="k">Yhteensä</div><div class="v">lopputulos kannan mukainen ${r[1]}&nbsp;% ${r[0]} ratkenneessa asiassa, kun samoilla kannoilla odotusarvo on ${r[2]}&nbsp;%</div></div>`
+        :`<div class="lg-r"><div class="k">Lopputulos</div><div class="v">Ei vielä ratkenneita asioita, joissa sillä oli kanta.</div></div>`}
+      </div>
       <p class="micro">Ministeriövaihe = mitä hallituksen esitys itse kertoo lausuntopalautteen huomioon ottamisesta (avaa kannanoton rivi nähdäksesi lähdelauseen). Pyydetyt pykälät = lausunnon lauseet, joissa vaaditaan muutosta nimettyyn pykälään, verrattuna valiokunnan mietinnössä muuttamiin pykäliin; muutoksen suuntaa ei arvioida, ja samanniminen pykälä voi kuulua esityksen toiseen lakiin. Lopputulos = mitä esitykselle tapahtui eduskunnassa: kannattaessa toteutuu, kun laki säädetään; varauksin tai muutosehdotuksin, kun valiokunta muuttaa esitystä; vastustaessa puoliksi, kun esitys hyväksytään muutettuna. Valiokunta muuttaa suurinta osaa esityksistä joka tapauksessa, joten vertailukohta on kaikkien lausunnonantajien keskiarvo, ja luku kertoo yhteydestä, ei vaikutuksesta.</p>
     </div>`;
 }

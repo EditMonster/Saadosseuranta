@@ -250,7 +250,7 @@ def demands(text: str, limit: int = 8) -> list[dict]:
         refs = section_refs(s)
         if not refs or len(refs) > 6:
             continue
-        out.append({"s": refs, "t": s[:240] + ("…" if len(s) > 240 else "")})
+        out.append({"s": refs, "t": s if len(s) <= 240 else s[:240].rsplit(" ", 1)[0].rstrip(",;:–-") + " …"})
         if len(out) >= limit:
             break
     return out

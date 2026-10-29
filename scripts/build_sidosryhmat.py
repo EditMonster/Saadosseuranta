@@ -128,6 +128,20 @@ def _score(g: str, oc: str):
     return 0.5 if committee == "m" else 0.0  # O: adopted with changes = half its way; as such = not its way
 
 
+def _quote(t: str, n: int = 220) -> str:
+    """A demand sentence for display: a heading glued in front of it dropped ("Samanarvoisen työn … (3 a §) Valtion
+    virastoissa …" → "Valtion virastoissa …" only when the heading ends in a section reference), cut at a word."""
+    t = re.sub(r"^[^.!?]{5,140}?\([^()]*§\)\s+(?=[A-ZÅÄÖ][a-zåäö])", "", t.strip())
+    cut_before = t.endswith("…")
+    t = t.rstrip("…").rstrip()
+    if cut_before:  # stored already shortened, possibly mid-word: back to the last whole word
+        t = t.rsplit(" ", 1)[0].rstrip(",;:–-")
+    if len(t) <= n:
+        return t + (" …" if cut_before else "")
+    cut = t[:n].rsplit(" ", 1)[0].rstrip(",;:–-")
+    return cut + " …"
+
+
 def _norm_sec(s: str) -> str:
     return re.sub(r"\s+", "", str(s or "")).lower()
 
@@ -282,7 +296,7 @@ def build(statements: dict[str, dict], items: dict[str, dict], palaute: dict[str
         if dd:
             rows = sorted(dd.values(), reverse=True)
             o["vq"] = [sum(1 for r in rows if r[3]), sum(1 for r in rows if not r[3])]
-            o["vl"] = [[idx[r[1]], r[2], 1 if r[3] else 0, r[4][:200]] for r in rows[:8]]
+            o["vl"] = [[idx[r[1]], r[2], 1 if r[3] else 0, _quote(r[4])] for r in rows[:8]]
         # agenda: its own key sentences, latest first, and the words that set its statements apart
         gl = sorted(gists.get(k, []), reverse=True)
         if len(ps) >= 3 and gl:
