@@ -63,7 +63,7 @@ Käyttäjälle vastataan suomeksi. Hän on ohjelmoinnissa aloittelija: selitä m
 4. **Otostarkistukset, kun aineisto on rakentunut:**
    - siirtymäsäännökset: 30 säädöstä verrattuna Finlexiin;
    - sidosryhmänimet: 100 suurinta organisaatiota.
-5. **claude.ai-tilannevedos** (päivitetty 28.10. klo 22:52 aineistolla, versio 62; päivitä tarvittaessa): `python3 scripts/build_artifact.py`. Sidosryhmät ladataan suhteellisesta polusta
+5. **claude.ai-tilannevedos** (päivitetty 29.10. klo 14:02 aineistolla, versio 64; päivitä tarvittaessa): `python3 scripts/build_artifact.py`. Sidosryhmät ladataan suhteellisesta polusta
    `data/sidosryhmat.json`, joten vedoksen mukana julkaistaan tämä tiedosto sekä `data/tr/*.json`, `js/`, `vendor/` ja `fonts/`.
 6. **Lausunnonantajat-välilehti (28.10.):** ministeriövaihe tulee HE:n Lausuntopalaute-luvusta (`data/cache/palaute`,
    744 esitystä haettu kerralla; uudet `fetch_palaute.py`:llä). Pykälävaatimukset kertyvät, kun vanhoja
