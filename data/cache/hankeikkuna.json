@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-29T12:58:25",
+ "fetched": "2026-10-29T13:28:25",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -1359,9 +1359,9 @@
    "lausunnot": null,
    "lisattyPaiva": "2026-09-09",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-28T08:17:43",
+   "muokattu": "2026-10-29T13:19:54",
    "nimi": "Hallituksen esitys eduskunnalle Euroopan parlamentin jäsenten valitsemista Euroopan parlamenttiin yleisillä välittömillä vaaleilla koskevan säädöksen muuttamisesta tehdyn neuvoston päätöksen voimaan saattamisesta",
-   "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om sättande i kraft av rådets beslut om ändring av artikel 6 i akten om allmänna direkta val av ledamöter av Europaparlamentet",
+   "nimiSv": "Regeringens proposition till riksdagen med förslag om sättande i kraft av rådets beslut om ändring av akten om allmänna direkta val av ledamöter av Europaparlamentet",
    "pevLausunto": true,
    "poistettuPaiva": null,
    "rauennut": false,
@@ -479561,102 +479561,6 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö",
-     "pvm": "2026-08-26",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/8018e19f-d571-494c-9a02-5c4825b1acd1/LAUSUNTOPYYNTO_20260826092408.PDF"
-    }
-   ],
-   "asiasanat": [
-    "maahanmuutto",
-    "vastaanotto (pakolaiset)"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2026-08-26",
-     "end": "2026-09-24",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2026-09-23",
-      "id": "e3704a5c-98dc-4a2b-ab73-8e6f49e677c1",
-      "org": "Maahanmuuttovirasto",
-      "title": "Maahanmuuttovirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/e3704a5c-98dc-4a2b-ab73-8e6f49e677c1/LAUSUNTO_20260923175123.PDF"
-     },
-     {
-      "date": "2026-09-17",
-      "id": "c2f5b667-8381-4fd5-8c74-8b598e5ac001",
-      "org": "Valtiovarainministeriö",
-      "title": "Valtiovarainministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/c2f5b667-8381-4fd5-8c74-8b598e5ac001/LAUSUNTO_20260921085742.PDF"
-     },
-     {
-      "date": "2026-09-01",
-      "id": "37cf0649-3912-4970-b0cf-ef2c38a6767a",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/37cf0649-3912-4970-b0cf-ef2c38a6767a/LAUSUNTO_20260901112527.PDF"
-     }
-    ],
-    "eiLausuttavaa": 0,
-    "n": 3,
-    "orgs": [
-     "Maahanmuuttovirasto",
-     "Oikeusministeriö",
-     "Valtiovarainministeriö"
-    ],
-    "url": null,
-    "viimeisin": "2026-09-23"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-08T07:52:32",
-   "nimi": "Valtioneuvoston asetus vastaanottopalveluista perittävästä maksusta",
-   "nimiSv": "Statsrådets förordning om avgifter för mottagningstjänster",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [
-    "Maahanmuutto"
-   ],
-   "tiivistelma": "Vastaanottopalveluista perittävästä maksusta annetaan uusi valtioneuvoston asetus. Vastaanottolain 32 §:n mukaan vastaanottopalveluista voidaan periä kohtuullinen, enintään todellisten kustannusten suuruinen maksu.  Valtioneuvoston asetuksella vastaanottopalveluista perittävän maksun määrä ehdotetaan\nnostettavan 15 euroon.",
-   "tila": "KAYNNISSA",
-   "tunnus": "SM016:00/2026",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=SM016:00/2026",
-   "uuid": "c464ef80-5795-45cf-be68-238f9d090f3a",
-   "valmistelu": [
-    {
-     "d": "2026-08-26",
-     "n": "Lausuntopyyntö",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/8018e19f-d571-494c-9a02-5c4825b1acd1/LAUSUNTOPYYNTO_20260826092408.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-10-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
-   "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
    "esittelyviikko": null,
@@ -516549,6 +516453,627 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2018-11-02",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/daeff330-7294-4a49-a9ac-e5f811801be3/LAUSUNTOPYYNTO_20181011105220.pdf"
+    },
+    {
+     "nimi": "Begäran om utlåtande",
+     "pvm": "2018-11-02",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/24e562a1-aa79-48db-8d46-1245c8b43cdf/LAUSUNTOPYYNTO_20181102122726.pdf"
+    }
+   ],
+   "asiasanat": [
+    "terveydenhuolto",
+    "koulutus",
+    "erikoislääkärit",
+    "erikoishammaslääkärit"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2018-11-02",
+     "end": "2018-12-14",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2019-02-20",
+      "id": "b6346c63-a5c9-4010-9285-977eaaf1ff54",
+      "org": "Keskussairaaloiden ihotautien ylilääkärit",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/b6346c63-a5c9-4010-9285-977eaaf1ff54/LAUSUNTO_20190326102553.pdf"
+     },
+     {
+      "date": "2018-12-20",
+      "id": "2802788b-ffc2-4c4e-8182-f3fbf262b477",
+      "org": "Suomalainen Lääkäriseura Duodecim",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/2802788b-ffc2-4c4e-8182-f3fbf262b477/LAUSUNTO_20181228114819.pdf"
+     },
+     {
+      "date": "2018-12-19",
+      "id": "4f4215bc-d199-4f3b-8d84-014a1a26f10c",
+      "org": "Helsingin yliopisto. Opetus- ja opiskelijapalvelut",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/4f4215bc-d199-4f3b-8d84-014a1a26f10c/LAUSUNTO_20181220152137.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "dd258711-1445-4f00-bb21-5afd2585849b",
+      "org": "Turun kaupungin hyvinvointitoimiala",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/dd258711-1445-4f00-bb21-5afd2585849b/LAUSUNTO_20181214102907.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "a51ea3d9-0e07-421c-b796-1b349e9e1ce8",
+      "org": "Tehy ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a51ea3d9-0e07-421c-b796-1b349e9e1ce8/LAUSUNTO_20181214104822.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "af7dfee9-1629-4492-bb3e-65acf908dc82",
+      "org": "Suomen Lastenlääkäriyhdistys ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/af7dfee9-1629-4492-bb3e-65acf908dc82/LAUSUNTO_20181214104849.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "59e01aad-af53-4b2f-8a96-84dff7f7fbfc",
+      "org": "Oulun kaupunki",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/59e01aad-af53-4b2f-8a96-84dff7f7fbfc/LAUSUNTO_20181214112800.PDF"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "908ebf9b-d048-4182-ac41-1572c080cb47",
+      "org": "Oulun kaupunki",
+      "title": "Lausunto 2",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/908ebf9b-d048-4182-ac41-1572c080cb47/LAUSUNTO_20181214112959.PDF"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "37490200-58ca-4788-a558-ccb5ff4ae9a1",
+      "org": "Pohjois-Pohjanmaan sairaanhoitopiiri",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/37490200-58ca-4788-a558-ccb5ff4ae9a1/LAUSUNTO_20181214114307.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "4d992638-0f4a-4acb-abad-ba85b238ff3f",
+      "org": "Tampereen kaupunki",
+      "title": "Lausunto, liite",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/4d992638-0f4a-4acb-abad-ba85b238ff3f/LAUSUNTO_20181214120949.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "29e933ef-9d54-4791-b0a1-ff88de80cd5b",
+      "org": "Suomen Perinatologisen Seura",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/29e933ef-9d54-4791-b0a1-ff88de80cd5b/LAUSUNTO_20181214121441.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "64aad3e3-8685-4d11-b9f7-bd78515e7251",
+      "org": "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/64aad3e3-8685-4d11-b9f7-bd78515e7251/LAUSUNTO_20181214123717.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "54d7b623-0ba7-4457-852a-2fec3219bdbf",
+      "org": "Nuorten Lääkärien Yhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/54d7b623-0ba7-4457-852a-2fec3219bdbf/LAUSUNTO_20181214134316.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "a582b41e-0422-4c57-a473-f7015d60533f",
+      "org": "HUS; Suomen Lastenhematologian ja onkologian yhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a582b41e-0422-4c57-a473-f7015d60533f/LAUSUNTO_20181214134321.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "d17690f9-675c-4b5a-b26c-5a10b3fb120b",
+      "org": "Suomen Lääkäriliitto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/d17690f9-675c-4b5a-b26c-5a10b3fb120b/LAUSUNTO_20181214135553.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "c85ba7fe-6e06-4546-b3f9-1c9995cd50d1",
+      "org": "Helsingin yliopisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/c85ba7fe-6e06-4546-b3f9-1c9995cd50d1/LAUSUNTO_20181214141320.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "9bcbab65-1ed4-4149-b919-e318b65a0903",
+      "org": "Suomen korva-, nenä- ja kurkkutaudit – pään ja kaulan kirurgia ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/9bcbab65-1ed4-4149-b919-e318b65a0903/LAUSUNTO_20181217082324.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "888d8fcc-f6a1-494d-be5c-b23e592fb70d",
+      "org": "Helsingin kaupunki",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/888d8fcc-f6a1-494d-be5c-b23e592fb70d/LAUSUNTO_20181217083755.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "2d77b4f2-7e45-4156-914d-e7e8b613afa1",
+      "org": "Suomen Hammaslääkäriliitto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/2d77b4f2-7e45-4156-914d-e7e8b613afa1/LAUSUNTO_20181217085755.pdf"
+     },
+     {
+      "date": "2018-12-14",
+      "id": "a65dbd22-1d9d-458a-84f4-52633fdcbdb2",
+      "org": "Suomen Hammaslääkäriseura Apollonia",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a65dbd22-1d9d-458a-84f4-52633fdcbdb2/LAUSUNTO_20181217092603.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "35e3dba4-0eeb-4589-ace3-edd69dd08139",
+      "org": "Valvira",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/35e3dba4-0eeb-4589-ace3-edd69dd08139/LAUSUNTO_20181213074237.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "dd3b0a47-fd5b-43bb-8cba-69396801c677",
+      "org": "Valtiovarainministeriö VM",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/dd3b0a47-fd5b-43bb-8cba-69396801c677/LAUSUNTO_20181213105208.PDF"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "a280c9ff-b117-4618-8f72-65f255bd7f67",
+      "org": "Suomen Kuntaliitto ja KT Kuntatyönantajat",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a280c9ff-b117-4618-8f72-65f255bd7f67/LAUSUNTO_20181213125511.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "2e2b1c7f-ecfa-42f7-abe0-35a91e67c220",
+      "org": "Pohjois-Savon sairaanhoitopiiri",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/2e2b1c7f-ecfa-42f7-abe0-35a91e67c220/LAUSUNTO_20181213144642.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "589f639f-4827-414c-b2f6-5ab3a1d65b83",
+      "org": "Suomen Psykiatriyhdistys ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/589f639f-4827-414c-b2f6-5ab3a1d65b83/LAUSUNTO_20181214083332.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "414f0729-89ef-4559-ae0a-0ab42930d5b7",
+      "org": "Valtakunnallisen kansanterveystyön johtajaverkosto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/414f0729-89ef-4559-ae0a-0ab42930d5b7/LAUSUNTO_20181214083641.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "d102d98e-16c2-4c76-929d-803e12969759",
+      "org": "Suomen Ihotautilääkäriyhdistys , Ihotautien ja allergologian vastuukouluttajat",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/d102d98e-16c2-4c76-929d-803e12969759/LAUSUNTO_20181214085131.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "2c0eb652-6854-46f8-95a7-0da7679c46bd",
+      "org": "Suomen Yleiskirurginen Yhdistys (SYY) ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/2c0eb652-6854-46f8-95a7-0da7679c46bd/LAUSUNTO_20181214104253.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "2bd3ea3c-353e-4006-9808-faa6fb9644c0",
+      "org": "Tampereen kaupunki",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/2bd3ea3c-353e-4006-9808-faa6fb9644c0/LAUSUNTO_20181214120910.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "74082c96-44e4-4500-9215-d931c011363f",
+      "org": "Keski-Suomen sairaanhoitopiiri",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/74082c96-44e4-4500-9215-d931c011363f/LAUSUNTO_20181214121836.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "0abbcadd-ca08-4883-bc57-80ad2646c4db",
+      "org": "Suomen neurologinen yhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0abbcadd-ca08-4883-bc57-80ad2646c4db/LAUSUNTO_20181217083044.pdf"
+     },
+     {
+      "date": "2018-12-13",
+      "id": "51563b77-d6b1-4ea5-8fc8-f02e152df3ef",
+      "org": "Patologian erikoislääkärikoulutuksen vastuuhenkilöt",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/51563b77-d6b1-4ea5-8fc8-f02e152df3ef/LAUSUNTO_20181217084812.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "33baf679-07b5-4c98-8437-0fdf669b12d8",
+      "org": "Pohjois-Suomen aluehallintovirasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/33baf679-07b5-4c98-8437-0fdf669b12d8/LAUSUNTO_20181212103103.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "fcb5ad27-f8c5-4f2e-90d0-0d83eeb0f844",
+      "org": "Pirkanmaan sairaanhoitopiiri",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/fcb5ad27-f8c5-4f2e-90d0-0d83eeb0f844/LAUSUNTO_20181212132601.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "ef69275d-4716-4997-858b-6a57f6833a33",
+      "org": "Länsi-Suomen aluehallintovirasto LSSAVI",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/ef69275d-4716-4997-858b-6a57f6833a33/LAUSUNTO_20181213073717.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "0d5bd972-cdd7-4c61-84f7-b0ae17aaf87e",
+      "org": "Suomen Silmäkirurgiyhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0d5bd972-cdd7-4c61-84f7-b0ae17aaf87e/LAUSUNTO_20181213101329.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "ca6a7c03-e65a-4a68-937a-d694cb104109",
+      "org": "Suomen Gastroenterologiayhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/ca6a7c03-e65a-4a68-937a-d694cb104109/LAUSUNTO_20181213101636.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "0e73c718-ec50-49e2-b017-10c5328a85ca",
+      "org": "Keski-Pohjanmaan sosiaali- ja terveyspalvelukuntayhtymä Soite",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0e73c718-ec50-49e2-b017-10c5328a85ca/LAUSUNTO_20181213103919.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "1fa24fc8-1961-4b04-9a6a-e87ea7c08b48",
+      "org": "Etelä-Suomen aluehallintovirasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/1fa24fc8-1961-4b04-9a6a-e87ea7c08b48/LAUSUNTO_20181214103912.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "82a59e04-1aad-463d-83d5-40135800b744",
+      "org": "Etelä-Suomen aluehallintovirasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/82a59e04-1aad-463d-83d5-40135800b744/LAUSUNTO_20181214120154.pdf"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "a6f04023-a814-41de-aa90-acdbcb213016",
+      "org": "Tampereen yliopisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a6f04023-a814-41de-aa90-acdbcb213016/LAUSUNTO_20181214133934.PDF"
+     },
+     {
+      "date": "2018-12-12",
+      "id": "efdebd4e-5332-406b-9b00-4cb1698f5d22",
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/efdebd4e-5332-406b-9b00-4cb1698f5d22/LAUSUNTO_20181219123720.PDF"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "69e32b3d-5bbd-42a8-baf1-d3b222b0b7cf",
+      "org": "International Academy of Pathology (IAP), Suomen osasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/69e32b3d-5bbd-42a8-baf1-d3b222b0b7cf/LAUSUNTO_20181211115532.pdf"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "d2b0d6db-d698-420d-80bd-87f66491b7a4",
+      "org": "Etelä-Pohjanmaan sairaanhoitopiiri",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/d2b0d6db-d698-420d-80bd-87f66491b7a4/LAUSUNTO_20181212080741.pdf"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "b7c8fec1-6514-4ada-9d7b-36c0393c9d4e",
+      "org": "Itä-Suomen yliopisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/b7c8fec1-6514-4ada-9d7b-36c0393c9d4e/LAUSUNTO_20181212081218.pdf"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "1e2b7715-f6a2-4bb8-aa2b-7dacec3cfea1",
+      "org": "Oulun yliopisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/1e2b7715-f6a2-4bb8-aa2b-7dacec3cfea1/LAUSUNTO_20181213104630.pdf"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "e5b6ed37-1050-4498-a38c-2d7ea28e4036",
+      "org": "Turun yliopisto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/e5b6ed37-1050-4498-a38c-2d7ea28e4036/LAUSUNTO_20181213144336.pdf"
+     },
+     {
+      "date": "2018-12-11",
+      "id": "0ec94229-2a6a-4971-8a31-658ec802f87a",
+      "org": "Suomen Silmälääkäriyhdistys ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0ec94229-2a6a-4971-8a31-658ec802f87a/LAUSUNTO_20181214105349.pdf"
+     },
+     {
+      "date": "2018-12-10",
+      "id": "873a77b5-31de-4179-afc1-be897e98e20c",
+      "org": "Mehiläinen Länsi-Pohja Oy",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/873a77b5-31de-4179-afc1-be897e98e20c/LAUSUNTO_20181211132453.pdf"
+     },
+     {
+      "date": "2018-12-10",
+      "id": "4278f10a-f3fe-4236-926b-b2aa6d218fb0",
+      "org": "Suomen Medisiinariliitto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/4278f10a-f3fe-4236-926b-b2aa6d218fb0/LAUSUNTO_20181212080439.pdf"
+     },
+     {
+      "date": "2018-12-10",
+      "id": "0f29e9b5-01bc-44ac-b617-8257ee3d7ba1",
+      "org": "Suomen kliinisen fysiologian yhdistys, Radioisotooppiyhdistys  ja Suomen Lääkäriliiton kliinisen fysiologian ja isotooppilääketieteen alaosasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0f29e9b5-01bc-44ac-b617-8257ee3d7ba1/LAUSUNTO_20181214114437.pdf"
+     },
+     {
+      "date": "2018-12-10",
+      "id": "6b192535-9ffc-4267-93a2-900669cfb0ae",
+      "org": "Suomen Lääkäriliiton Neurologit-alaosasto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/6b192535-9ffc-4267-93a2-900669cfb0ae/LAUSUNTO_20181217085350.pdf"
+     },
+     {
+      "date": "2018-12-05",
+      "id": "5e8ffaea-1e0c-4362-9644-cfb1114816cd",
+      "org": "Suomen yleislääketieteen yhdistyksen lausunto",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/5e8ffaea-1e0c-4362-9644-cfb1114816cd/LAUSUNTO_20181205105929.pdf"
+     },
+     {
+      "date": "2018-12-04",
+      "id": "0ed2f694-d37d-4368-a4aa-b2baf6c89d37",
+      "org": "Suomen keuhkolääkäriyhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0ed2f694-d37d-4368-a4aa-b2baf6c89d37/LAUSUNTO_20181204104619.pdf"
+     },
+     {
+      "date": "2018-12-04",
+      "id": "199b9044-46f3-40c2-896e-67f9677e7189",
+      "org": "Suomen Foniatrit ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/199b9044-46f3-40c2-896e-67f9677e7189/LAUSUNTO_20181204124537.pdf"
+     },
+     {
+      "date": "2018-12-04",
+      "id": "7d412b6d-c154-4d87-89a3-383af654b300",
+      "org": "HUS Perusterveydenhuollon yksikkö",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/7d412b6d-c154-4d87-89a3-383af654b300/LAUSUNTO_20181204125257.pdf"
+     },
+     {
+      "date": "2018-12-03",
+      "id": "fca0135f-afe5-4e34-86e1-81cfa5953a6a",
+      "org": "Suomen Radiologiyhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/fca0135f-afe5-4e34-86e1-81cfa5953a6a/LAUSUNTO_20181203120337.pdf"
+     },
+     {
+      "date": "2018-11-30",
+      "id": "4b96c7d7-357e-46b0-b15e-bbd18cb888c7",
+      "org": "Suomen Verisuonikirurginen yhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/4b96c7d7-357e-46b0-b15e-bbd18cb888c7/LAUSUNTO_20181130075505.pdf"
+     },
+     {
+      "date": "2018-11-30",
+      "id": "e2979230-86ea-42b5-8c2a-4c147cfd7341",
+      "org": "Suomen Nefrologisyhdistys ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/e2979230-86ea-42b5-8c2a-4c147cfd7341/LAUSUNTO_20181130080411.pdf"
+     },
+     {
+      "date": "2018-11-30",
+      "id": "b3ad2100-1e44-4788-90b4-8974e9407012",
+      "org": "Hyvinvointiala HALI ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/b3ad2100-1e44-4788-90b4-8974e9407012/LAUSUNTO_20181211131911.pdf"
+     },
+     {
+      "date": "2018-11-27",
+      "id": "beadb378-48bf-4308-ae47-e032439ff358",
+      "org": "SuPer",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/beadb378-48bf-4308-ae47-e032439ff358/LAUSUNTO_20181205085306.pdf"
+     },
+     {
+      "date": "2018-11-26",
+      "id": "8d5bbc96-ea29-4d8b-adb9-8288651ee5e9",
+      "org": "Suomen Reumatologinen Yhdistys",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/8d5bbc96-ea29-4d8b-adb9-8288651ee5e9/LAUSUNTO_20181126132220.pdf"
+     },
+     {
+      "date": "2018-11-23",
+      "id": "0e13df7c-5028-4b99-8030-1047a167e8fa",
+      "org": "Terveyden ja hyvinvoinnin laitos",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/0e13df7c-5028-4b99-8030-1047a167e8fa/LAUSUNTO_20181128141036.pdf"
+     },
+     {
+      "date": "2018-11-14",
+      "id": "70153dba-4662-4dd4-9a3a-a582ef0fcb63",
+      "org": "Kainuun sosiaali-ja terveydenhuollon kuntayhtymä",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/70153dba-4662-4dd4-9a3a-a582ef0fcb63/LAUSUNTO_20181130065140.pdf"
+     },
+     {
+      "date": "2018-11-07",
+      "id": "e18db4c3-3c20-4319-8198-04da6451ea60",
+      "org": "Kuopion kaupunki / Terveyspalvelujen tukipalvelut",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/e18db4c3-3c20-4319-8198-04da6451ea60/LAUSUNTO_20181109103247.pdf"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 65,
+    "orgs": [
+     "Etelä-Suomen aluehallintovirasto",
+     "Oulun kaupunki",
+     "Tampereen kaupunki",
+     "Etelä-Pohjanmaan sairaanhoitopiiri",
+     "HUS Perusterveydenhuollon yksikkö",
+     "HUS; Suomen Lastenhematologian ja onkologian yhdistys",
+     "Helsingin ja Uudenmaan sairaanhoitopiiri HUS",
+     "Helsingin kaupunki",
+     "Helsingin yliopisto",
+     "Helsingin yliopisto. Opetus- ja opiskelijapalvelut",
+     "Hyvinvointiala HALI ry",
+     "International Academy of Pathology (IAP), Suomen osasto",
+     "Itä-Suomen yliopisto",
+     "Kainuun sosiaali-ja terveydenhuollon kuntayhtymä",
+     "Keski-Pohjanmaan sosiaali- ja terveyspalvelukuntayhtymä Soite",
+     "Keski-Suomen sairaanhoitopiiri",
+     "Keskussairaaloiden ihotautien ylilääkärit",
+     "Kuopion kaupunki / Terveyspalvelujen tukipalvelut",
+     "Länsi-Suomen aluehallintovirasto LSSAVI",
+     "Mehiläinen Länsi-Pohja Oy",
+     "Nuorten Lääkärien Yhdistys",
+     "Opetus- ja kulttuuriministeriö",
+     "Oulun yliopisto",
+     "Patologian erikoislääkärikoulutuksen vastuuhenkilöt",
+     "Pirkanmaan sairaanhoitopiiri",
+     "Pohjois-Pohjanmaan sairaanhoitopiiri",
+     "Pohjois-Savon sairaanhoitopiiri",
+     "Pohjois-Suomen aluehallintovirasto",
+     "SuPer",
+     "Suomalainen Lääkäriseura Duodecim",
+     "Suomen Foniatrit ry",
+     "Suomen Gastroenterologiayhdistys",
+     "Suomen Hammaslääkäriliitto",
+     "Suomen Hammaslääkäriseura Apollonia",
+     "Suomen Ihotautilääkäriyhdistys , Ihotautien ja allergologian vastuukouluttajat",
+     "Suomen Kuntaliitto ja KT Kuntatyönantajat",
+     "Suomen Lastenlääkäriyhdistys ry",
+     "Suomen Lääkäriliiton Neurologit-alaosasto",
+     "Suomen Lääkäriliitto",
+     "Suomen Medisiinariliitto",
+     "Suomen Nefrologisyhdistys ry",
+     "Suomen Perinatologisen Seura",
+     "Suomen Psykiatriyhdistys ry",
+     "Suomen Radiologiyhdistys",
+     "Suomen Reumatologinen Yhdistys",
+     "Suomen Silmäkirurgiyhdistys",
+     "Suomen Silmälääkäriyhdistys ry",
+     "Suomen Verisuonikirurginen yhdistys",
+     "Suomen Yleiskirurginen Yhdistys (SYY) ry",
+     "Suomen keuhkolääkäriyhdistys",
+     "Suomen kliinisen fysiologian yhdistys, Radioisotooppiyhdistys  ja Suomen Lääkäriliiton kliinisen fysiologian ja isotooppilääketieteen alaosasto",
+     "Suomen korva-, nenä- ja kurkkutaudit – pään ja kaulan kirurgia ry",
+     "Suomen neurologinen yhdistys",
+     "Suomen yleislääketieteen yhdistyksen lausunto",
+     "Tampereen yliopisto",
+     "Tehy ry",
+     "Terveyden ja hyvinvoinnin laitos",
+     "Turun kaupungin hyvinvointitoimiala",
+     "Turun yliopisto",
+     "Valtakunnallisen kansanterveystyön johtajaverkosto",
+     "Valtiovarainministeriö VM",
+     "Valvira"
+    ],
+    "url": null,
+    "viimeisin": "2019-02-20"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-10-29T13:10:47",
+   "nimi": "Sosiaali- ja terveysministeriön asetus erikoislääkäri- ja erikoishammaslääkärikoulutuksesta sekä yleislääketieteen erityiskoulutuksesta",
+   "nimiSv": "Förordning om ändring av social- och hälsovårdsministeriets förordning om specialistläkarutbild-ning och specialisttandläkarutbildning samt om särskild allmänläkarutbildning",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "55/2020"
+   ],
+   "teemat": [],
+   "tiivistelma": "",
+   "tila": "KAYNNISSA",
+   "tunnus": "STM115:00/2018",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM115:00/2018",
+   "uuid": "ffd6fcca-f19f-45a5-b998-96376c281346",
+   "valmistelu": [
+    {
+     "d": "2018-11-02",
+     "n": "Lausuntopyyntö",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/daeff330-7294-4a49-a9ac-e5f811801be3/LAUSUNTOPYYNTO_20181011105220.pdf"
+    },
+    {
+     "d": "2018-11-02",
+     "n": "Asetus",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/a5f627b6-13e2-436d-ae19-78dde04eb64c/KIRJE_20181102122724.pdf"
+    },
+    {
+     "d": "2018-11-02",
+     "n": "Begäran om utlåtande",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/24e562a1-aa79-48db-8d46-1245c8b43cdf/LAUSUNTOPYYNTO_20181102122726.pdf"
+    },
+    {
+     "d": "2018-11-02",
+     "n": "Asetus",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/e14a8cfd-e34c-4f1a-b804-cdc0a1ec5617/KIRJE_20181102122730.pdf"
+    },
+    {
+     "d": "2018-11-02",
+     "n": "Perusmuistio",
+     "t": "MUISTIO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ffd6fcca-f19f-45a5-b998-96376c281346/7d083b07-fc93-42b6-b0c0-70284c9a1e3d/MUISTIO_20181102122732.pdf"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2020-01-30",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [
     "kansainväliset sopimukset",
@@ -516637,6 +517162,102 @@
    ],
    "valmisteluvaihe": "VALMISTUNUT",
    "valmistumisPaiva": "2026-10-02",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2026-08-26",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/8018e19f-d571-494c-9a02-5c4825b1acd1/LAUSUNTOPYYNTO_20260826092408.PDF"
+    }
+   ],
+   "asiasanat": [
+    "maahanmuutto",
+    "vastaanotto (pakolaiset)"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2026-08-26",
+     "end": "2026-09-24",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-09-23",
+      "id": "e3704a5c-98dc-4a2b-ab73-8e6f49e677c1",
+      "org": "Maahanmuuttovirasto",
+      "title": "Maahanmuuttovirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/e3704a5c-98dc-4a2b-ab73-8e6f49e677c1/LAUSUNTO_20260923175123.PDF"
+     },
+     {
+      "date": "2026-09-17",
+      "id": "c2f5b667-8381-4fd5-8c74-8b598e5ac001",
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/c2f5b667-8381-4fd5-8c74-8b598e5ac001/LAUSUNTO_20260921085742.PDF"
+     },
+     {
+      "date": "2026-09-01",
+      "id": "37cf0649-3912-4970-b0cf-ef2c38a6767a",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/37cf0649-3912-4970-b0cf-ef2c38a6767a/LAUSUNTO_20260901112527.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 3,
+    "orgs": [
+     "Maahanmuuttovirasto",
+     "Oikeusministeriö",
+     "Valtiovarainministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-09-23"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sisäministeriö",
+   "muokattu": "2026-10-29T13:03:59",
+   "nimi": "Valtioneuvoston asetus vastaanottopalveluista perittävästä maksusta",
+   "nimiSv": "Statsrådets förordning om avgifter för mottagningstjänster",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [
+    "Maahanmuutto"
+   ],
+   "tiivistelma": "Vastaanottopalveluista perittävästä maksusta annetaan uusi valtioneuvoston asetus. Vastaanottolain 32 §:n mukaan vastaanottopalveluista voidaan periä kohtuullinen, enintään todellisten kustannusten suuruinen maksu.  Valtioneuvoston asetuksella vastaanottopalveluista perittävän maksun määrä ehdotetaan\nnostettavan 15 euroon.",
+   "tila": "PAATTYNYT",
+   "tunnus": "SM016:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=SM016:00/2026",
+   "uuid": "c464ef80-5795-45cf-be68-238f9d090f3a",
+   "valmistelu": [
+    {
+     "d": "2026-08-26",
+     "n": "Lausuntopyyntö",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c464ef80-5795-45cf-be68-238f9d090f3a/8018e19f-d571-494c-9a02-5c4825b1acd1/LAUSUNTOPYYNTO_20260826092408.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-10-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
