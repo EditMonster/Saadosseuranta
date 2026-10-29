@@ -2258,6 +2258,23 @@
    "timeline": [],
    "title": "HLA VISTAHERMOSA / SANOPTIS / OFTALVIST"
   },
+  "M.12470": {
+   "caseNumber": "M.12470",
+   "deadline": "2026-12-03",
+   "decisions": [],
+   "initiated": "2026-05-18",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-10-28",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_21.20",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "SUN PHARMA / ORGANON"
+  },
   "M.12472": {
    "caseNumber": "M.12472",
    "deadline": "2026-08-18",
@@ -7048,14 +7065,19 @@
   "M.12616": {
    "caseNumber": "M.12616",
    "deadline": "2026-11-13",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-15",
+     "type": "DecisionType20490"
+    }
+   ],
    "initiated": "2026-08-24",
-   "lastDecision": null,
+   "lastDecision": "2026-10-15",
    "notice": null,
    "noticeTries": 0,
    "notified": "2026-10-08",
    "oj": [],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_G_46.63",
    "simplified": "MEsupersimplified",
@@ -7914,10 +7936,63 @@
    "decisions": [],
    "initiated": "2026-10-12",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Italgas Reti on jakeluverkonhaltija, joka toimii maakaasun paikallisilla jakelumarkkinoilla Italiassa.",
+     "Allianz on sijoitusrahasto emoyhtiölleen Allianz SE, joka on johtava vakuutuksenantaja ja omaisuudenhoitaja lähes 70 maassa maailmanlaajuisesti.",
+     "Floene toimii maakaasun jakelumarkkinoilla Portugalissa, jossa se toimii jakeluverkonhaltijana yhdeksällä hyväksytyllä toiminta-alueella."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-09",
+    "observationsShifted": "Sunday",
+    "oj": "C:2026:5649:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Italia",
+        "name": "Cassa Depositi e Prestiti S.p.A."
+       }
+      ],
+      "country": "Italia",
+      "fi": false,
+      "name": "Italgas Reti S.p.A.",
+      "short": "Italgas Reti"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Saksa",
+        "name": "Allianz SE."
+       }
+      ],
+      "country": "Saksa",
+      "fi": false,
+      "name": "Allianz Capital Partners GmbH",
+      "short": "Allianz"
+     },
+     {
+      "country": "Portugali",
+      "fi": false,
+      "name": "Floene Energias S.A.",
+      "short": "Floene"
+     }
+    ],
+    "published": "2026-10-29",
+    "reference": "C/2026/5649",
+    "simplified": true,
+    "transaction": "Italgas Reti ja Allianz hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Floene. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5649/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-19",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-29",
+     "reference": "C:2026:5649:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_D_35.22",
@@ -7943,5 +8018,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-29T06:00:39Z"
+ "fetched": "2026-10-29T13:12:26Z"
 }

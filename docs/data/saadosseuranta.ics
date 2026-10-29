@@ -1652,6 +1652,24 @@ DESCRIPTION:Lausuntokierros · YM005:00/2026 · https://valtioneuvosto.fi/hanke?
 URL:https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-0272d315-voimaan-2026-10-23@saadosseuranta
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[FI] Voimaan: Valtioneuvoston asetus valtionavustuksesta työvoimaviranomaiselle pitkäaikaistyöttömien osaamisen kehittämiseksi vuosina 2026–2028
+DESCRIPTION:Voimaan (923/2026) · 923/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/923
+URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/923
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-701280f7-voimaan-2026-10-23@saadosseuranta
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[FI] Voimaan: Valtioneuvoston asetus valtionavustuksesta eräille kaupungeille nuorten työllisyyttä edistäviin hankkeisiin vuosina 2026–2028
+DESCRIPTION:Voimaan (922/2026) · 922/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/922
+URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/922
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2020-0359-maaraaika-2027-10-17@saadosseuranta
 DTSTAMP:20271017T000000Z
 DTSTART;VALUE=DATE:20271017
@@ -2354,6 +2372,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-16773-lausunto-2026-11-26@saadosseuranta
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[EU] Lausuntoaika päättyy: Raskaat perävaunut – uusien perävaunuteknologioiden sisällyttäminen hiilidioksidipäästöjen määritysmenetelmään
+DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-19494-lausunto-2026-11-24@saadosseuranta
 DTSTAMP:20261124T000000Z
 DTSTART;VALUE=DATE:20261124
@@ -2541,6 +2568,15 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-17712-lausunto-2026-10-26@saadosseuranta
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:[EU] Lausuntoaika päättyy: Jätteet – varhaisvaroituskertomus 2027
+DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
