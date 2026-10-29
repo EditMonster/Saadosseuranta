@@ -6390,9 +6390,14 @@
   "M.12594": {
    "caseNumber": "M.12594",
    "deadline": "2026-11-12",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-29",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-03",
-   "lastDecision": null,
+   "lastDecision": "2026-10-29",
    "notice": {
     "activities": [
      "Cinven SF2 ja Cinven Limited kuuluvat yritykseen Cinven ( 2 ) , joka on sijoitustenhoito- ja sijoitusneuvontapalveluja useille sijoitusrahastoille tarjoava pääomasijoitusyhtiö.",
@@ -6449,7 +6454,7 @@
      "reference": "C:2026:5412:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_L_66.22",
    "simplified": "MEsimplified",
@@ -7292,9 +7297,14 @@
   "M.12624": {
    "caseNumber": "M.12624",
    "deadline": "2026-11-12",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-29",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-31",
-   "lastDecision": null,
+   "lastDecision": "2026-10-29",
    "notice": {
     "activities": [
      "KAES kuuluu konserniin KI Group, joka käyttää määräysvaltaa useissa yrityksissä, jotka toimivat seuraavilla aloilla: jalostus ja kemikaalit, prosessi- ja pilaantumisentorjuntalaitteet ja -teknologiat, mineraalit, lannoitteet, hyödykekauppa ja -palvelut, polymeerit ja kuidut, lasi, metsätalous ja kulutustavarat, sähköliittimet, painatus ja pakkaaminen, yritysohjelmistot ja investoinnit. KI Group jakelee tytäryhtiönsä Koch Fertilizer, LLC:n kautta fosfaattilannoitteita Euroopan talousalueen ulkopuolella.",
@@ -7351,7 +7361,7 @@
      "reference": "C:2026:5426:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_20.15",
    "simplified": "MEsimplified",
@@ -8018,5 +8028,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-29T13:41:12Z"
+ "fetched": "2026-10-29T19:07:41Z"
 }

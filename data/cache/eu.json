@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-29T13:37:45",
+ "fetched": "2026-10-29T19:03:45",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -50906,7 +50906,6 @@
     },
     {
      "date": "2026-10-21",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -55953,7 +55952,6 @@
     },
     {
      "date": "2026-10-21",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -62342,7 +62340,6 @@
     },
     {
      "date": "2026-10-21",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -63057,6 +63054,10 @@
     {
      "date": "2026-09-17",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -63234,7 +63235,6 @@
     },
     {
      "date": "2026-10-21",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     },
     {
@@ -64108,7 +64108,6 @@
    "council": [
     {
      "date": "2026-10-21",
-     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
    ],

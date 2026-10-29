@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-29T13:28:25",
+ "fetched": "2026-10-29T18:57:54",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -1359,7 +1359,7 @@
    "lausunnot": null,
    "lisattyPaiva": "2026-09-09",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-29T13:19:54",
+   "muokattu": "2026-10-29T13:33:20",
    "nimi": "Hallituksen esitys eduskunnalle Euroopan parlamentin jäsenten valitsemista Euroopan parlamenttiin yleisillä välittömillä vaaleilla koskevan säädöksen muuttamisesta tehdyn neuvoston päätöksen voimaan saattamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag om sättande i kraft av rådets beslut om ändring av akten om allmänna direkta val av ledamöter av Europaparlamentet",
    "pevLausunto": true,
@@ -49688,7 +49688,7 @@
    },
    "lisattyPaiva": "2026-05-08",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-29T12:16:15",
+   "muokattu": "2026-10-29T14:07:49",
    "nimi": "Lainsäädäntöhanke poliisin rikostiedustelua koskevaksi lainsäädännöksi ja siihen liittyväksi lainsäädännöksi, 2. vaihe",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om polisens kriminalunderrättelseinhämtning och lagstiftning som har samband med den (fas 2)",
    "pevLausunto": true,
@@ -49735,7 +49735,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/95c19878-4d09-4c32-b37a-33fb171aabee/755d37b1-cc27-47e7-84e7-5c99b9f2405a/YHTEENVETO_20260910081145.PDF"
     }
    ],
-   "valmisteluvaihe": null,
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 39,
    "vanhaEsittelyvuosi": 2026
@@ -124771,7 +124771,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-29T12:16:54",
+   "muokattu": "2026-10-29T14:05:11",
    "nimi": "Pelastuslain toisen vaiheen uudistamishanke",
    "nimiSv": "Projektet för den andra fasen av reformen av räddningslagen",
    "pevLausunto": false,
@@ -124836,7 +124836,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/d0fd57c8-0e11-4fa1-9ebb-21bcba6b7674/543310d4-9b81-4bd5-808a-aa08fa898644/YHTEENVETO_20260907104901.PDF"
     }
    ],
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": 36,
    "vanhaEsittelyvuosi": 2026
@@ -174243,7 +174243,7 @@
    },
    "lisattyPaiva": "2025-12-05",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-27T11:22:25",
+   "muokattu": "2026-10-29T14:09:14",
    "nimi": "Lainsäädäntöhanke poliisin rikostiedustelua koskevaksi lainsäädännöksi ja siihen liittyväksi lainsäädännöksi",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om polisens kriminalunderrättelseinhämtning och lagstiftning som har samband med den",
    "pevLausunto": true,
@@ -174314,7 +174314,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/6b84297a-e2a7-4488-91a0-34183586b65d/197f3ec8-c6d2-4020-b0da-d333afa82261/YHTEENVETO_20260626074251.PDF"
     }
    ],
-   "valmisteluvaihe": null,
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": "2026-05-31",
    "vanhaEsittelyviikko": 10,
    "vanhaEsittelyvuosi": 2026
@@ -402628,7 +402628,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-26T23:33:39",
+   "muokattu": "2026-10-29T13:41:49",
    "nimi": "Mielenterveys- ja päihdepalveluja koskevan lainsäädännön uudistaminen",
    "nimiSv": "Reform av lagstiftningen om mentalvårds- och missbrukartjänster",
    "pevLausunto": false,
@@ -474389,18 +474389,6 @@
    "asetettu": null,
    "asiakirjat": [
     {
-     "nimi": "Fimean maksullisen toiminnan kustannusvastaavuus julkisoikeudellisissa suoritteissa 2025-2027",
-     "pvm": "2026-10-06",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/9e9585c6-8607-4b33-bea4-bc011063d661/LAUSUNTOPYYNTO_20261028132620.PDF"
-    },
-    {
-     "nimi": "Lausuntopyyntö sosiaali- ja terveysministeriön asetusluonnoksesta Lääkealan turvallisuus- ja kehittämiskeskuksen maksullisista suoritteista vuonna 2027",
-     "pvm": "2026-10-06",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/9ae3f7d1-e3fc-4b18-8e73-e47f7ad6bbd8/LAUSUNTOPYYNTO_20261028132620.PDF"
-    },
-    {
      "nimi": "STM_Asetus Fimean maksullisista suoritteista 2027_perustelumuistio_luonnos",
      "pvm": "2026-10-06",
      "tyyppi": "LAUSUNTOPYYNTO",
@@ -474417,6 +474405,24 @@
      "pvm": "2026-10-06",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/3bf7bc83-5e79-45a3-8c3f-8b00bdfb998a/LAUSUNTOPYYNTO_20261028132620.PDF"
+    },
+    {
+     "nimi": "STM_Förordningen om Fimeas avgiftsbelagda prestationer år 2027_bilaga_utkast",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/62c05f53-367a-4cf8-9c6d-4387e58fe35f/LAUSUNTOPYYNTO_20261029154913.PDF"
+    },
+    {
+     "nimi": "STM_Förordningen om Fimeas avgiftsbelagda prestationer år 2027_utkast",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/5053fe5c-93ab-4663-a87a-0c1efbac64a7/LAUSUNTOPYYNTO_20261029154913.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande om utkastet till social- och hälsovårdsministeriets förordning om Säkerhets- och utvecklingscentret för läkemedelsområdets avgiftsbelagda prestationer 2027",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/90616e3e-9f8a-471b-a58b-f02ddaff1603/LAUSUNTOPYYNTO_20261029154913.PDF"
     }
    ],
    "asiasanat": [],
@@ -474431,7 +474437,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-28T14:25:05",
+   "muokattu": "2026-10-29T15:49:13",
    "nimi": "Asetus Lääkealan turvallisuus- ja kehittämiskeskuksen maksullisista suoritteista vuonna 2027  (Fimean maksuasetus vuodelle 2027)",
    "nimiSv": null,
    "pevLausunto": false,
@@ -474474,6 +474480,24 @@
      "n": "STM_Asetus Fimean maksullisista suoritteista 2027_asetuksen liite_luonnos",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/3bf7bc83-5e79-45a3-8c3f-8b00bdfb998a/LAUSUNTOPYYNTO_20261028132620.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "STM_Förordningen om Fimeas avgiftsbelagda prestationer år 2027_bilaga_utkast",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/62c05f53-367a-4cf8-9c6d-4387e58fe35f/LAUSUNTOPYYNTO_20261029154913.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "STM_Förordningen om Fimeas avgiftsbelagda prestationer år 2027_utkast",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/5053fe5c-93ab-4663-a87a-0c1efbac64a7/LAUSUNTOPYYNTO_20261029154913.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "Begäran om utlåtande om utkastet till social- och hälsovårdsministeriets förordning om Säkerhets- och utvecklingscentret för läkemedelsområdets avgiftsbelagda prestationer 2027",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/90616e3e-9f8a-471b-a58b-f02ddaff1603/LAUSUNTOPYYNTO_20261029154913.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -474571,6 +474595,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-29",
+      "id": "a5bf0094-5c54-4d71-acdf-32d57feb2270",
+      "org": "Mäntsälän kunta, Mäntsälän lukio",
+      "title": "Mäntsälän kunta, Mäntsälän lukio; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2697a4b6-d8e7-4c54-ae29-1c232f8565f1/a5bf0094-5c54-4d71-acdf-32d57feb2270/LAUSUNTO_20261029184037.PDF"
+     },
+     {
       "date": "2026-10-28",
       "id": "f6ad1527-f563-446e-92d8-19f03f567799",
       "org": "Ylöjärven kaupunki",
@@ -474586,17 +474617,18 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 2,
+    "n": 3,
     "orgs": [
      "Kontiolahden kunta, Kontiolahden lukio",
+     "Mäntsälän kunta, Mäntsälän lukio",
      "Ylöjärven kaupunki"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5acd01bd-de9e-47a8-859c-2e1e10bcdbe7",
-    "viimeisin": "2026-10-28"
+    "viimeisin": "2026-10-29"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-28T18:04:30",
+   "muokattu": "2026-10-29T18:40:37",
    "nimi": "OKM:n asetus opiskelijaksi ottamisen perusteista lukiokoulutuksessa annetun asetuksen muuttamisesta",
    "nimiSv": "Undervisnings- och kulturministeriets förordning om ändring av ministeriets förordning om grunderna för antagning av studerande inom gymnasieutbildningen",
    "pevLausunto": false,
@@ -475209,6 +475241,27 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-29",
+      "id": "933ef77e-e96a-413b-b9ba-b66612e1b80d",
+      "org": "Kunta- ja hyvinvointialuetyönantajat KT",
+      "title": "Kunta- ja hyvinvointialuetyönantajat KT; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/933ef77e-e96a-413b-b9ba-b66612e1b80d/LAUSUNTO_20261029183816.PDF"
+     },
+     {
+      "date": "2026-10-29",
+      "id": "e7ce77fa-459c-409d-b4c2-cae43ee7b551",
+      "org": "Jyväskylän yliopisto",
+      "title": "Jyväskylän yliopisto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/e7ce77fa-459c-409d-b4c2-cae43ee7b551/LAUSUNTO_20261029184302.PDF"
+     },
+     {
+      "date": "2026-10-29",
+      "id": "351358f4-62b3-492c-9c8a-b387c7d8efe0",
+      "org": "Suomen Yrittäjät ry",
+      "title": "Suomen Yrittäjät ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/351358f4-62b3-492c-9c8a-b387c7d8efe0/LAUSUNTO_20261029184511.PDF"
+     },
+     {
       "date": "2026-10-28",
       "id": "f7721468-0ba7-4c50-8bfb-4f959cebbd1b",
       "org": "Helsingin yliopisto",
@@ -475294,13 +475347,16 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 12,
+    "n": 15,
     "orgs": [
      "Akava ry",
      "Helsingin yliopisto",
      "Itä-Suomen yliopisto",
+     "Jyväskylän yliopisto",
      "Kansallinen koulutuksen arviointikeskus",
+     "Kunta- ja hyvinvointialuetyönantajat KT",
      "Oulun yliopisto",
+     "Suomen Yrittäjät ry",
      "Suomen erityiskasvatuksen liitto SEL ry",
      "Suomen opettajaksi opiskelevien liitto SOOL ry",
      "Suomen ylioppilaskuntien liitto (SYL) ry",
@@ -475310,11 +475366,11 @@
      "Turun yliopisto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=72d84fb8-9bd0-4a2a-9625-8de9f976421d",
-    "viimeisin": "2026-10-28"
+    "viimeisin": "2026-10-29"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-28T18:08:58",
+   "muokattu": "2026-10-29T18:45:11",
    "nimi": "Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om examina och specialiseringsutbildningar vid universitet",
    "pevLausunto": false,
@@ -476996,10 +477052,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-10-29",
+      "id": "57297014-73bd-4515-81d2-615059716ff5",
+      "org": "Kirkkohallitus",
+      "title": "Kirkkohallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/32ac1aaf-90a1-487a-9952-bee8d0e5e32b/57297014-73bd-4515-81d2-615059716ff5/LAUSUNTO_20261029181130.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "Kirkkohallitus"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=d8ae8e31-2c89-4345-88e7-67b0581cb1ae",
+    "viimeisin": "2026-10-29"
+   },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T09:28:09",
+   "muokattu": "2026-10-29T18:11:30",
    "nimi": "Valtioneuvoston asetus verontilityksestä",
    "nimiSv": "Statsrådets förordning om skatteredovisning",
    "pevLausunto": false,
@@ -477108,10 +477181,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-10-29",
+      "id": "ecde8d1b-28e6-4079-b6af-d6ec7b7bdd46",
+      "org": "Kirkkohallitus",
+      "title": "Kirkkohallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2893c0dc-9721-4340-8ddc-abc60cf6dcfa/ecde8d1b-28e6-4079-b6af-d6ec7b7bdd46/LAUSUNTO_20261029181352.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "Kirkkohallitus"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=a65f56ca-28e6-42c3-8e32-acdc0fdbccc5",
+    "viimeisin": "2026-10-29"
+   },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T09:16:04",
+   "muokattu": "2026-10-29T18:13:52",
    "nimi": "Valtioneuvoston asetus verotusmenettelystä",
    "nimiSv": "Statsrådets förordning om beskattningsförfarande",
    "pevLausunto": false,
@@ -479649,6 +479739,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-29",
+      "id": "60e93908-59c4-4bd9-9d08-04948fb93418",
+      "org": "Kunta- ja hyvinvointialuetyönantajat KT",
+      "title": "Kunta- ja hyvinvointialuetyönantajat KT; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/378ed016-8802-4a76-aad3-6bd2ea68672e/60e93908-59c4-4bd9-9d08-04948fb93418/LAUSUNTO_20261029182405.PDF"
+     },
+     {
       "date": "2026-10-26",
       "id": "8c329599-3f9f-4c20-a7a8-bf599ad8cdd7",
       "none": true,
@@ -479657,16 +479754,17 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 1,
+    "n": 2,
     "orgs": [
+     "Kunta- ja hyvinvointialuetyönantajat KT",
      "Terveyden ja hyvinvoinnin laitos THL"
     ],
     "url": null,
-    "viimeisin": "2026-10-26"
+    "viimeisin": "2026-10-29"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-26T10:15:08",
+   "muokattu": "2026-10-29T18:24:05",
    "nimi": "Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om Folkpensionsanstaltens rehabiliteringsförmåner och rehabiliteringspenningförmåner",
    "pevLausunto": false,
@@ -496650,7 +496748,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-06-17T13:59:03",
+   "muokattu": "2026-10-29T13:54:46",
    "nimi": "Valtioneuvoston asetus eläinjalostuksesta",
    "nimiSv": "Statsrådets förordning om djurförädling",
    "pevLausunto": false,
@@ -496762,7 +496860,7 @@
     }
    ],
    "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-10-31",
+   "valmistumisPaiva": "2027-02-28",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-29T13:41:54Z",
+ "fetched": "2026-10-29T19:08:14Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1173,6 +1173,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "5f000918d96f",
+   "lastSeen": "2026-10-29"
+  },
+  "61d3463c8193": {
+   "buyer": "HUS-yhtymä",
+   "decisionDate": null,
+   "decisionText": "HUS-yhtymän konsernipalveluiden hankintapäätös 15.20.2026, § 392 / 2026, Työnhakuportaalien ja työpaikkamarkkinoinnin hankinta",
+   "filed": "2026-10-29",
+   "firstSeen": "2026-10-29",
+   "hilmaNo": null,
+   "key": "61d3463c8193",
    "lastSeen": "2026-10-29"
   },
   "68de15d787c8": {

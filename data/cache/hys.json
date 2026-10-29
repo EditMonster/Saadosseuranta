@@ -1,6 +1,42 @@
 {
- "fetched": "2026-10-29T13:39:29",
+ "fetched": "2026-10-29T19:06:10",
  "items": [
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19684,
+   "periods": [
+    {
+     "end": "2026-11-26",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-29"
+    }
+   ],
+   "reference": "Ares(2026)10178934",
+   "status": "ACTIVE",
+   "title_en": "Recognition of equivalence - Citrus sinensis from Israel",
+   "title_fi": null,
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19684_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 14569,
+   "periods": [
+    {
+     "end": "2026-11-26",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-29"
+    }
+   ],
+   "reference": "Ares(2025)1825802",
+   "status": "ACTIVE",
+   "title_en": "Amendment of protective measures against pests of plants",
+   "title_fi": "Kasvintuhoojien vastaisten suojatoimenpiteiden muuttaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14569_en"
+  },
   {
    "actType": "REG_IMPL",
    "actTypeLabel": "Täytäntöönpanoasetus",
@@ -962,24 +998,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15252_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 18658,
-   "periods": [
-    {
-     "end": "2026-09-30",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-01"
-    }
-   ],
-   "reference": "Ares(2026)6556383",
-   "status": "ACTIVE",
-   "title_en": "Housing simplification package",
-   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
-  },
-  {
    "actType": "PROP_DEC",
    "actTypeLabel": "Päätösehdotus",
    "id": 18804,
@@ -1086,24 +1104,6 @@
    "title_en": "Early warning report on waste 2027",
    "title_fi": "Jätteet – varhaisvaroituskertomus 2027",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 14569,
-   "periods": [
-    {
-     "end": "2026-10-22",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-09-24"
-    }
-   ],
-   "reference": "Ares(2025)1825802",
-   "status": "ACTIVE",
-   "title_en": "Amendment of protective measures against pests of plants",
-   "title_fi": "Kasvintuhoojien vastaisten suojatoimenpiteiden muuttaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14569_en"
   },
   {
    "actType": "DEC_IMPL",
