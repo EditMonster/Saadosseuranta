@@ -830,72 +830,6 @@
    ],
    "title": "KIMBERLY-CLARK / KENVUE"
   },
-  "M.12341": {
-   "caseNumber": "M.12341",
-   "deadline": "2026-08-21",
-   "decisions": [
-    {
-     "date": "2026-08-21",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-01-26",
-   "lastDecision": "2026-08-21",
-   "notice": {
-    "activities": [
-     "Orange on ranskalainen maailmanlaajuinen teleoperaattori, joka toimii Puolan televiestintämarkkinoilla pääasiassa tytäryhtiönsä Orange Polska S.A.:n (OPL) ja täystoiminnallisen yhteisyrityksen Światłowód Inwestycje sp. z o.o.:n (S-I) kautta."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-20",
-    "oj": "C:2026:3728:",
-    "parties": [
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "Orange S.A.",
-      "short": "Orange"
-     },
-     {
-      "country": "Alankomaat",
-      "fi": false,
-      "name": "APG Asset Management N.V.",
-      "short": "APG"
-     },
-     {
-      "country": "Puola",
-      "fi": false,
-      "name": "Nexera Holding sp. z o.o.",
-      "short": "Nexera"
-     }
-    ],
-    "published": "2026-07-10",
-    "reference": "C/2026/3728",
-    "simplified": false,
-    "transaction": "Orange ja APS hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksessä Nexera. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3728/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-02",
-   "oj": [
-    {
-     "published": "2026-07-10",
-     "reference": "C:2026:3728:"
-    }
-   ],
-   "phase": "FormalInvestigationPhase1Merger",
-   "renotified": null,
-   "sector": "NaceV2Sector_K_61.10",
-   "simplified": "MEnormal",
-   "timeline": [
-    {
-     "date": "2026-07-23",
-     "description": "Changed deadline - Art. 9 request received on 23/07/2026",
-     "type": "MEvent30"
-    }
-   ],
-   "title": "ORANGE / APG / NEXERA"
-  },
   "M.12349": {
    "caseNumber": "M.12349",
    "deadline": "2026-11-27",
@@ -2116,86 +2050,6 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "ELECTROLUX / MIDEA / JVs"
-  },
-  "M.12457": {
-   "caseNumber": "M.12457",
-   "deadline": "2026-08-13",
-   "decisions": [
-    {
-     "date": "2026-07-31",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-04",
-   "lastDecision": "2026-07-31",
-   "notice": {
-    "activities": [
-     "Indorama on IVL-konserniin kuuluva holdingyhtiö, joka ei harjoita valmistusta, kauppaa eikä muuta operatiivista toimintaa.",
-     "IVL Group on maailmanlaajuinen monialayritys, joka harjoittaa monipuolista liiketoimintaa (hartsit, kuidut, pakkaukset, kierrätys ja ratkaisuja tuottavat erikoiskemikaalit).",
-     "Epsilon on sijoitusalan holdingyhtiö, joka ei harjoita muuta valmistus- tai kaupankäyntitoimintaa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-26",
-    "oj": "C:2026:3891:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Thaimaa",
-        "name": "Indorama Ventures Public Company Limited"
-       }
-      ],
-      "country": "Alankomaat",
-      "fi": false,
-      "name": "Indorama Netherlands B.V.",
-      "short": "Indorama"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Blackstone Inc."
-       }
-      ],
-      "country": "Singapore",
-      "fi": false,
-      "name": "Epsilon Bidco Pte. Ltd.",
-      "short": "Epsilon"
-     },
-     {
-      "country": "Intia",
-      "fi": false,
-      "name": "EPL Ltd.",
-      "short": "EPL"
-     },
-     {
-      "country": "Intia",
-      "fi": false,
-      "name": "Indovida India Pte. Ltd.",
-      "short": "Indovida"
-     }
-    ],
-    "published": "2026-07-16",
-    "reference": "C/2026/3891",
-    "simplified": true,
-    "transaction": "Indorama ja Epsilon hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä EPL, mukaan lukien Indovida (joka on sulautettu yritykseen EPL). Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3891/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-08",
-   "oj": [
-    {
-     "published": "2026-07-16",
-     "reference": "C:2026:3891:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_22.22",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "INDORAMA / BLACKSTONE / EPL / INDOVIDA INDIA"
   },
   "M.12464": {
    "caseNumber": "M.12464",
@@ -4312,68 +4166,6 @@
    "timeline": [],
    "title": "ATLAS HOLDINGS / KPS / JV"
   },
-  "M.12532": {
-   "caseNumber": "M.12532",
-   "deadline": "2026-08-13",
-   "decisions": [
-    {
-     "date": "2026-07-31",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-29",
-   "lastDecision": "2026-07-31",
-   "notice": {
-    "activities": [
-     "PSPIB hoitaa Kanadan julkishallinnon (Canadian Federal Public Service), puolustusvoimien (Canadian Forces), poliisilaitoksen (Royal Canadian Mounted Police) ja reservijoukkojen (Reserve Force) eläkesijoituksia. Se hallinnoi globaalisti hajautettua sijoitussalkkua, johon kuuluu osakkeita, joukkovelkakirjoja ja muita kiinteätuottoisia arvopapereita, pääomasijoituksia sekä sijoituksia kiinteistöihin, infrastruktuuriin, luonnonvaroihin ja luottoihin.",
-     "JNbp toimii liiketoimen jälkeen maailmanlaajuisesti merituulipuistojen kehittämisen, rakentamisen ja toiminnan alalla."
-    ],
-    "fi": false,
-    "jv": "F2 harjoittaa merituulipuiston toimintaa Taiwanissa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-07-26",
-    "oj": "C:2026:3887:",
-    "parties": [
-     {
-      "country": "Kanada",
-      "fi": false,
-      "name": "Public Sector Pension Investment Board",
-      "short": "PSPIB"
-     },
-     {
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "JERA Nex bp Limited",
-      "short": "JNbp"
-     },
-     {
-      "country": "Taiwan",
-      "fi": false,
-      "name": "Formosa 2 International Investment Co., Ltd",
-      "short": "F2"
-     }
-    ],
-    "published": "2026-07-16",
-    "reference": "C/2026/3887",
-    "simplified": true,
-    "transaction": "PSPIB ja JNbp hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä F2. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3887/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-08",
-   "oj": [
-    {
-     "published": "2026-07-16",
-     "reference": "C:2026:3887:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_D_35.12",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "PSPIB / JNBP / F2"
-  },
   "M.12533": {
    "caseNumber": "M.12533",
    "deadline": "2026-09-15",
@@ -4500,80 +4292,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "EFMS / EXOLAUNCH"
-  },
-  "M.12535": {
-   "caseNumber": "M.12535",
-   "deadline": "2026-08-13",
-   "decisions": [
-    {
-     "date": "2026-07-31",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-29",
-   "lastDecision": "2026-07-31",
-   "notice": {
-    "activities": [
-     "Iv3 on holdingyhtiö yritykselle Iv3 Aqua Corporation, joka on vesihuoltoyhtiö, pitkäaikaisen pääoman tarjoaja ja vesihuoltoon, jätevesihuoltoon ja puhdistetun veden jälleenkäyttöön liittyvien laitosten operaattori ja yleishyödyllisen liitännäisliiketoiminnan harjoittaja ja toimilupien haltija.",
-     "Rakiza sijoittaa pääasiassa sähköntarjontaan ja yleishyödyllisiin palveluihin, vesihuoltoon, digitaalialoihin, sosiaaliseen infrastruktuuriin, televiestintään sekä liikenteeseen ja logistiikkaan lähinnä Omanissa ja Saudi-Arabiassa."
-    ],
-    "fi": false,
-    "jv": "Majis tarjoaa kokonaisvaltaisia merivesihuolto-, suolanpoisto- ja jätevedenkäsittelypalveluja teollisuusasiakkaille Soharin teollisuusalueilla Omanissa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-07-26",
-    "oj": "C:2026:3892:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Tanska",
-        "name": "A.P. Møller Holding A/S"
-       }
-      ],
-      "country": "Tanska",
-      "fi": false,
-      "name": "Iv3 Aqua Holding A/S",
-      "short": "Iv3"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Yhdistynyt kuningaskunta",
-        "name": "Equitix Investment Management Ltd"
-       }
-      ],
-      "country": "Guernsey",
-      "fi": false,
-      "name": "Rakiza GP I Ltd",
-      "short": "Rakiza"
-     },
-     {
-      "country": "Oman",
-      "fi": false,
-      "name": "Majis Industrial Services",
-      "short": "Majis"
-     }
-    ],
-    "published": "2026-07-16",
-    "reference": "C/2026/3892",
-    "simplified": true,
-    "transaction": "Iv3 ja Rakiza hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Majis. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3892/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-08",
-   "oj": [
-    {
-     "published": "2026-07-16",
-     "reference": "C:2026:3892:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_E_36",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "IV3 / RAKIZA / MAJIS"
   },
   "M.12536": {
    "caseNumber": "M.12536",
@@ -8028,5 +7746,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-29T19:07:41Z"
+ "fetched": "2026-10-30T06:04:19Z"
 }

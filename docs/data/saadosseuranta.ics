@@ -1040,15 +1040,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 103/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-79b4ba6d-lausunto-2026-10-22@saadosseuranta
-DTSTAMP:20261022T000000Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:[FI] Lausuntoaika päättyy: Ahvenanmaan itsehallintolain selvitys- ja muutoshanke –työryhmä (HE laiksi Ahvenanmaan itsehallintolain muuttamisesta)
-DESCRIPTION:Lausuntopyyntö: Hallituksen esitys eduskunnalle laeiksi Ahvenanmaan itsehallintolain muuttamisesta ja väliaikaisesta muuttamisesta ja kiinteän omaisuuden ja erityisten oikeuksien lunastuksesta kansallisen turvallisuuden varmistamiseksi annetun lain 2 §:n muuttamisesta · OM024:00/2023 · https://valtioneuvosto.fi/hanke?tunnus=OM024:00/2023
-URL:https://valtioneuvosto.fi/hanke?tunnus=OM024:00/2023
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1317,6 +1308,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta
 DESCRIPTION:Voimaan (908/2026) · 908/2026 · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-78e815f5-lausunto-2026-11-25@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus sairausvakuutuksesta korvattavan taksimatkan enimmäishinnasta vuonna 2027
+DESCRIPTION:Lausuntokierros · STM078:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=STM078:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=STM078:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-2697a4b6-lausunto-2026-12-04@saadosseuranta
@@ -2444,10 +2444,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-24@saadosseuranta
-DTSTAMP:20261224T000000Z
-DTSTART;VALUE=DATE:20261224
-DTEND;VALUE=DATE:20261225
+UID:eu-hys-19517-lausunto-2026-12-25@saadosseuranta
+DTSTAMP:20261225T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2975,6 +2975,24 @@ DESCRIPTION:Voimaan · C(2026)5778 · https://webgate.ec.europa.eu/regdel/#/dele
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3122-voimaan-2026-10-30@saadosseuranta
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1915\, annettu 6 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1241 muuttamisesta siltä osin 
+DESCRIPTION:Voimaan · C(2026)5667 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3122-soveltaminen-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1915\, annettu 6 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1241 muuttamisesta siltä osin 
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)5667 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
 DTSTAMP:20261110T000000Z
 DTSTART;VALUE=DATE:20261110
@@ -2991,15 +3009,6 @@ DTEND;VALUE=DATE:20261111
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for the temporary withdrawal of preferential arrangements and the adoptio
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6214 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3143-voimaan-2026-10-22@saadosseuranta
-DTSTAMP:20261022T000000Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
-SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
-DESCRIPTION:Voimaan · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3143-soveltaminen-2026-11-01@saadosseuranta

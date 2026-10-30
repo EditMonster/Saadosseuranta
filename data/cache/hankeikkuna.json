@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-29T18:57:54",
+ "fetched": "2026-10-30T05:45:38",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -56581,7 +56581,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-27T11:17:39",
+   "muokattu": "2026-10-30T05:38:26",
    "nimi": "Yhteissijoittamisen rahastorakenteiden kehittäminen",
    "nimiSv": "Utveckling av fondstrukturer för saminvestering",
    "pevLausunto": false,
@@ -91082,7 +91082,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-29T12:24:09",
+   "muokattu": "2026-10-30T05:16:27",
    "nimi": "Hallituksen esitys ilmanlaatudirektiivin muutoksen täytäntöönpanosta",
    "nimiSv": "Regeringens proposition om genomförandet av ändringen av luftkvalitetsdirektivet",
    "pevLausunto": false,
@@ -474355,7 +474355,15 @@
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-10-29",
+     "end": "2026-11-25",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -474364,7 +474372,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-29T12:18:11",
+   "muokattu": "2026-10-30T05:44:06",
    "nimi": "Valtioneuvoston asetus sairausvakuutuksesta korvattavan taksimatkan enimmäishinnasta vuonna 2027",
    "nimiSv": "Statsrådets förordning om maximipriset för taxiresor som ersätts av sjukförsäkringen år 2027",
    "pevLausunto": false,
@@ -520977,13 +520985,17 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-09-30T07:27:02",
+   "muokattu": "2026-10-30T05:42:13",
    "nimi": "Valtioneuvoston ja työ- ja elinkeinoministeriön asetukset energiatehokkuuslain nojalla annettujen asetusten muuttamiseksi",
    "nimiSv": "Statsrådets och arbets- och näringsministeriets förordningar om ändring av förordningar som utfärdats med stöd av energieffektivitetslagen",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "771/2026",
+    "772/2026",
+    "773/2026"
+   ],
    "teemat": [
     "Energia"
    ],
@@ -521079,7 +521091,7 @@
     }
    ],
    "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
+   "valmistumisPaiva": "2026-09-03",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

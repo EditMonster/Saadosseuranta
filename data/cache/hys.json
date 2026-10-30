@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-29T19:06:10",
+ "fetched": "2026-10-30T06:01:51",
  "items": [
   {
    "actType": "REG_IMPL",
@@ -421,7 +421,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-24",
+     "end": "2026-12-25",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -439,7 +439,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-24",
+     "end": "2026-12-25",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -619,7 +619,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-24",
+     "end": "2026-12-25",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -720,24 +720,6 @@
    "title_en": "Atlantic maritime and macro-regional strategy",
    "title_fi": "Atlantin alueen meri- ja makroaluestrategia",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19138_en"
-  },
-  {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 16352,
-   "periods": [
-    {
-     "end": "2026-10-29",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-01"
-    }
-   ],
-   "reference": "Ares(2026)183062",
-   "status": "ACTIVE",
-   "title_en": "Training and certification standards of fishers on EU vessels",
-   "title_fi": "EU:n kalastajat – koulutusta ja pätevyyskirjoja koskevat vaatimukset",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
   },
   {
    "actType": "PROP_REG",
@@ -996,6 +978,24 @@
    "title_en": "Tackling unjustified territorial supply constraints in the Single Market",
    "title_fi": "Sisämarkkinat – perusteettomien alueellisten toimitusrajoitusten torjuminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15252_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 16352,
+   "periods": [
+    {
+     "end": "2026-10-29",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-10-01"
+    }
+   ],
+   "reference": "Ares(2026)183062",
+   "status": "ACTIVE",
+   "title_en": "Training and certification standards of fishers on EU vessels",
+   "title_fi": "EU:n kalastajat – koulutusta ja pätevyyskirjoja koskevat vaatimukset",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
   },
   {
    "actType": "PROP_DEC",
@@ -1890,24 +1890,6 @@
    "title_en": "Plants obtained by new genomic techniques: applications for category 2 plants and their products",
    "title_fi": "Uusilla genomitekniikoilla tuotetut kasvit: ryhmän 2 kasveja ja niistä peräisin olevia tuotteita koskevat hakemukset",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18806_en"
-  },
-  {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 16573,
-   "periods": [
-    {
-     "end": "2026-08-30",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-07-22"
-    }
-   ],
-   "reference": "Ares(2026)796830",
-   "status": "ACTIVE",
-   "title_en": "Ship recycling – European list of ship recycling facilities (16th edition)",
-   "title_fi": "Aluskierrätys – aluskierrätyslaitosten eurooppalainen luettelo (16. päivitys)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16573_en"
   },
   {
    "actType": "DEC_DEL",
