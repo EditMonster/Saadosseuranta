@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-30T13:07:38Z",
+ "fetched": "2026-10-30T18:58:01Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -692,7 +692,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "14c4e1a79cfa",
-   "lastSeen": "2026-10-30"
+   "lastSeen": "2026-10-30",
+   "missingSince": "2026-10-30"
   },
   "14dca1fceb8b": {
    "buyer": "Helsingin kaupunki",
@@ -1194,6 +1195,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "68de15d787c8",
+   "lastSeen": "2026-10-30"
+  },
+  "69b70d522844": {
+   "buyer": "Tredu-Kiinteistöt Oy",
+   "decisionDate": "2026-10-16",
+   "decisionText": "Tredu-Kiinteistöt Oy:n päätös 16.10.2026 Tredu – Kampuskehityshanke, tarjoajien valintapäätös 16.10.2026",
+   "filed": "2026-10-30",
+   "firstSeen": "2026-10-30",
+   "hilmaNo": null,
+   "key": "69b70d522844",
    "lastSeen": "2026-10-30"
   },
   "6b8c79d36ef5": {

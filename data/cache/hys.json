@@ -1,6 +1,24 @@
 {
- "fetched": "2026-10-30T13:05:04",
+ "fetched": "2026-10-30T18:55:53",
  "items": [
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 16240,
+   "periods": [
+    {
+     "end": "2026-11-27",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-30"
+    }
+   ],
+   "reference": "Ares(2025)11438579",
+   "status": "ACTIVE",
+   "title_en": "States considered to be applying CORSIA in 2026 for ETS purposes ",
+   "title_fi": "EU:n päästökauppajärjestelmä – maat, joiden katsotaan soveltavan CORSIA-järjestelmää vuonna 2026",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240_en"
+  },
   {
    "actType": "REG_IMPL",
    "actTypeLabel": "Täytäntöönpanoasetus",

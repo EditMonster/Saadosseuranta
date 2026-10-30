@@ -2372,6 +2372,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-16240-lausunto-2026-11-27@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[EU] Lausuntoaika päättyy: EU:n päästökauppajärjestelmä – maat\, joiden katsotaan soveltavan CORSIA-järjestelmää vuonna 2026
+DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-16773-lausunto-2026-11-26@saadosseuranta
 DTSTAMP:20261126T000000Z
 DTSTART;VALUE=DATE:20261126
