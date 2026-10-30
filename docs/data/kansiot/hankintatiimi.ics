@@ -59,6 +59,15 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-060672 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38543/enotice/60672
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60820-maaraaika-2026-11-12-hankintatiimi@saadosseuranta
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[Hankinta] Määräaika: SSH Sec@GW -turvapostiratkaisun lisenssit\, ylläpito ja tukipalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-060820 · https://www.hankintailmoitukset.fi/fi/public/procedure/39457/enotice/60820
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39457/enotice/60820
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-753809-2026-maaraaika-2026-11-12-hankintatiimi@saadosseuranta
 DTSTAMP:20261112T000000Z
 DTSTART;VALUE=DATE:20261112
@@ -66,6 +75,15 @@ DTEND;VALUE=DATE:20261113
 SUMMARY:[Hankinta] Määräaika: Udbud af kontrakt vedrørende tilskudssystem
 DESCRIPTION:Osallistumishakemukset viimeistään · Slots- og Kulturstyrelsen · https://ted.europa.eu/fi/notice/-/detail/753809-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/753809-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60859-maaraaika-2026-11-13-hankintatiimi@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[Hankinta] Määräaika: Mobiili- ja web-testauksen työkalu
+DESCRIPTION:Tarjoukset viimeistään · 2026-060859 · https://www.hankintailmoitukset.fi/fi/public/procedure/39480/enotice/60859
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39480/enotice/60859
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-752854-2026-maaraaika-2026-11-13-hankintatiimi@saadosseuranta
@@ -84,6 +102,15 @@ DTEND;VALUE=DATE:20261119
 SUMMARY:[Hankinta] Määräaika: IT-rådgivning och omvärldsbevakningstjänster
 DESCRIPTION:Osallistumishakemukset viimeistään · Region Stockholm - Trafiknämnden · https://ted.europa.eu/fi/notice/-/detail/752833-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/752833-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60844-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[Hankinta] Määräaika: FME®-ohjelmistolisenssien ylläpito- ja tukipalvelun hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060844 · https://www.hankintailmoitukset.fi/fi/public/procedure/39471/enotice/60844
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39471/enotice/60844
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-755342-2026-maaraaika-2026-11-26-hankintatiimi@saadosseuranta
@@ -174,6 +201,15 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[Hankinta] Määräaika: Tulo- ja varallisuusselvitys
 DESCRIPTION:Tarjoukset viimeistään · 2026-060662 · https://www.hankintailmoitukset.fi/fi/public/procedure/39366/enotice/60662
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39366/enotice/60662
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60808-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[Hankinta] Määräaika: Taideyliopiston Sibelius-Akatemian Musiikkitalon tilojen lähiverkon uusinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060808 · https://www.hankintailmoitukset.fi/fi/public/procedure/39450/enotice/60808
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39450/enotice/60808
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-755731-2026-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
@@ -635,15 +671,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-ted-746562-2026-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: Student PCs
-DESCRIPTION:Tarjoukset viimeistään · Innlandet fylkeskommune · https://ted.europa.eu/fi/notice/-/detail/746562-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/746562-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-746436-2026-maaraaika-2026-11-05-hankintatiimi@saadosseuranta
 DTSTAMP:20261105T000000Z
 DTSTART;VALUE=DATE:20261105
@@ -894,24 +921,6 @@ DTEND;VALUE=DATE:20270101
 SUMMARY:[Hankinta] Määräaika: Rajatarkastussovelluksen (Ratas) ylläpidon hankinta
 DESCRIPTION:Osallistumishakemukset viimeistään · 2026-060451 · https://www.hankintailmoitukset.fi/fi/public/procedure/39244/enotice/60451
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39244/enotice/60451
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-744331-2026-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: Dirbtinio intelekto pagrindu veikiančios automatinio tekstų supaprastinimo paslaugos pirkimas\, Nr. 7976/2026/FSF
-DESCRIPTION:Tarjoukset viimeistään · Vilniaus universitetas (PV) · https://ted.europa.eu/fi/notice/-/detail/744331-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/744331-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-744549-2026-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: 33567 SAP vystymo ir programavimo paslaugos
-DESCRIPTION:Osallistumishakemukset viimeistään · LTG Kompetencijų centras UAB (PV) · https://ted.europa.eu/fi/notice/-/detail/744549-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/744549-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-EF-60497-maaraaika-2026-11-03-hankintatiimi@saadosseuranta
@@ -1794,14 +1803,5 @@ DTEND;VALUE=DATE:20261125
 SUMMARY:[Hankinta] Määräaika: Veebide ja infosüsteemide analüüsi\, arendus- ning hooldustööd 2026 - 2029
 DESCRIPTION:Tarjoukset viimeistään · Ettevõtluse ja Innovatsiooni Sihtasutus · https://ted.europa.eu/fi/notice/-/detail/735767-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/735767-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-735444-2026-maaraaika-2026-11-24-hankintatiimi@saadosseuranta
-DTSTAMP:20261124T000000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:[Hankinta] Määräaika: Kutselise kalapüügi registri (KIR) ja sellega seotud rakenduste arendus- ja hooldustööde tellimine
-DESCRIPTION:Tarjoukset viimeistään · Regionaal- ja Põllumajandusministeeriumi Infotehnoloogia Keskus · https://ted.europa.eu/fi/notice/-/detail/735444-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/735444-2026
 END:VEVENT
 END:VCALENDAR

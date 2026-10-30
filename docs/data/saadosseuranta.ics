@@ -941,6 +941,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 126/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/126
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-120-2025-voimaan-2026-11-20@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[FI] Voimaan: Laeiksi kuluttajansuojalain muuttamisesta ja eräiden kuluttajaluottojen välittäjistä sekä niihin liittyviksi laeiksi
+DESCRIPTION:Voimaan (32/2026) · 31/2026 · HE 120/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/120
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/120
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-46-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1254,15 +1263,6 @@ DTEND;VALUE=DATE:20270105
 SUMMARY:[FI] Voimaan: Laeiksi tulotietojärjestelmästä annetun lain ja positiivisesta luottotietorekisteristä annetun lain 22 ja 25 §:n muuttamisesta
 DESCRIPTION:Voimaan (199/2025) · 199/2025 · HE 216/2024 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2024/216
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2024/216
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-he-120-2025-voimaan-2026-11-20@saadosseuranta
-DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:[FI] Voimaan: Laeiksi kuluttajansuojalain muuttamisesta ja eräiden kuluttajaluottojen välittäjistä sekä niihin liittyviksi laeiksi
-DESCRIPTION:Voimaan (32/2026) · 31/2026 · HE 120/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/120
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/120
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-163-2025-voimaan-2027-07-01@saadosseuranta

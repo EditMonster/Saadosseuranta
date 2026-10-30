@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-10-30T06:05:49Z",
+ "fetched": "2026-10-30T13:07:38Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -530,7 +530,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "036639c46ec3",
-   "lastSeen": "2026-10-30"
+   "lastSeen": "2026-10-30",
+   "missingSince": "2026-10-30"
   },
   "03a7d3fbc077": {
    "buyer": "Kansaneläkelaitos",

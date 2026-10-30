@@ -1848,10 +1848,56 @@
    "decisions": [],
    "initiated": "2026-04-27",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "POSCO on maailmanlaajuinen teräs- ja materiaaliyhtiö. SE toimii useilla eri liiketoiminta-aloilla, joita ovat muun muassa teräksen, litiumin ja nikkelin jalostus, uusioakkumateriaalit, vety ja polttokennot, energia, rakentaminen sekä tieto- ja viestintäteknologia.",
+     "JSW tuottaa ja toimittaa terästä ja sen liitännäistuotteita Intiassa ja muilla maailmanmarkkinoilla."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-09",
+    "observationsShifted": null,
+    "oj": "C:2026:5716:",
+    "parties": [
+     {
+      "country": "Korean tasavalta",
+      "fi": false,
+      "name": "POSCO Holdings, Inc.",
+      "short": "POSCO"
+     },
+     {
+      "country": "Intia",
+      "fi": false,
+      "name": "JSW Steel Limited",
+      "short": "JSW"
+     },
+     {
+      "country": "Intia",
+      "fi": false,
+      "name": "Saffron Resources Private Limited",
+      "short": "Saffron"
+     },
+     {
+      "country": "Intia",
+      "fi": false,
+      "name": "POSCO Maharashtra",
+      "short": "PMH"
+     }
+    ],
+    "published": "2026-10-30",
+    "reference": "C/2026/5716",
+    "simplified": true,
+    "transaction": "POSCO ja JSW hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä PMH (jonka Saffron hankkii). Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5716/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-19",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-30",
+     "reference": "C:2026:5716:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_24.10",
@@ -5714,10 +5760,50 @@
    "decisions": [],
    "initiated": "2026-07-27",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "SVP on yksityisomistuksessa oleva sijoitusyhtiö, joka hoitaa hedgerahastoja ja pääomasijoituksia tekeviä yhdistelmärahastoja sekä tekee sijoituksia julkisille ja yksityisille pääomamarkkinoille, velkamarkkinoille ja muille vaihtoehtoisille sijoitusmarkkinoille maailmanlaajuisesti.",
+     "Marelli valmistaa ja myy autoteollisuuden komponentteja ja järjestelmiä, pääasiassa autojen valaistustuotteita, sisustustuotteita, käyttövoimatuotteita, elektronisia järjestelmiä, jousitusjärjestelmiä ja iskunvaimentajia, lämpö- ja pakokaasujärjestelmiä, jälkimarkkinoiden osia ja palveluja sekä moottoriurheilutuotteita."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-09",
+    "observationsShifted": null,
+    "oj": "C:2026:5722:",
+    "parties": [
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Strategic Value Partners, LLC",
+      "short": "SVP"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "KKR & Co. Inc."
+       }
+      ],
+      "country": "Japani",
+      "fi": false,
+      "name": "Marelli Corporation",
+      "short": "Marelli"
+     }
+    ],
+    "published": "2026-10-30",
+    "reference": "C/2026/5722",
+    "simplified": true,
+    "transaction": "SVP hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun määräysvallan yrityksessä Marelli. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5722/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-21",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-30",
+     "reference": "C:2026:5722:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_29.3",
@@ -5731,10 +5817,58 @@
    "decisions": [],
    "initiated": "2026-07-28",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "CDC on ranskalainen erityisaseman omaava julkinen organisaatio, joka hoitaa yhteiskuntapoliittisa tavoitteita tukevia yleishyödyllisiä tehtäviä. CDC harjoittaa tytäryhtiöidensä kautta myös avomarkkinatoimintaa ympäristö-, kiinteistö-, sijoitus-, pääomasijoitus- ja palvelutoimialoilla.",
+     "DK on sijoitusten hoitaja. DK:n hallinnoimien rahastojen tämänhetkiset sijoitukset kattavat useita toimialoja, kuten valmistusteollisuus, terveydenhuolto, vähittäiskauppa, rahoituspalvelut ja kiinteistöt.",
+     "HPC on sijoitusyhtiö, jolla on omistusosuuksia yrityksissä monenlaisilla toimialoilla.",
+     "Eclairion kehittää ja ylläpitää tekoälykäyttöön tarkoitettujen suurteholaskentalaitteistojen isännöintikeskuksia yksinomaan Ranskassa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-09",
+    "observationsShifted": null,
+    "oj": "C:2026:5763:",
+    "parties": [
+     {
+      "country": "Ranska",
+      "fi": false,
+      "name": "Caisse des Dépôts et Consignations",
+      "short": "CDC"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Davidson Kempner Capital Management LP",
+      "short": "DK"
+     },
+     {
+      "country": "Ranska",
+      "fi": false,
+      "name": "Human Performance Capital",
+      "short": "HPC"
+     },
+     {
+      "country": "Ranska",
+      "fi": false,
+      "name": "Eclairion Holding",
+      "short": "Eclairion"
+     }
+    ],
+    "published": "2026-10-30",
+    "reference": "C/2026/5763",
+    "simplified": true,
+    "transaction": "CDC, DK ja HPC hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Eclairion. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5763/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-19",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-10-30",
+     "reference": "C:2026:5763:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_K_63.10",
@@ -6351,9 +6485,14 @@
   "M.12600": {
    "caseNumber": "M.12600",
    "deadline": "2026-11-12",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-10-29",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-10",
-   "lastDecision": null,
+   "lastDecision": "2026-10-29",
    "notice": {
     "activities": [
      "Portobello on itsenäinen espanjalainen pääomasijoitusrahaston hoitaja, joka keskittyy Espanjan keskisuuriin markkinoihin ja sijoittaa hallinnoimiensa rahastojen kautta useilla sektoreilla ja toimialoilla toimiviin yrityksiin ja neuvoo niitä.",
@@ -6409,7 +6548,7 @@
      "reference": "C:2026:5409:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_20.42",
    "simplified": "MEsimplified",
@@ -7746,5 +7885,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-10-30T06:04:19Z"
+ "fetched": "2026-10-30T13:07:08Z"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-30T05:58:55",
+ "fetched": "2026-10-30T13:03:08",
  "items": {
   "10/2023": {
    "fetched": "2026-10-18",
@@ -27,6 +27,15 @@
    "voimaan": "2027-07-01",
    "vtText": "Tämä laki tulee voimaan 1 päivänä heinäkuuta 2027.\nLain 2 ja 9 luku, 43 §:n 3 momentti sekä 44, 57, 63 ja 64 § tulevat voimaan kuitenkin jo 1 päivänä maaliskuuta 2026.\nPoliisihallitus toimii 57 §:ssä tarkoitettuna toimivaltaisena viranomaisena 30 päivään kesäkuuta 2027.\nLain 7, 9–11, 13–15, 17 ja 18 §:n säännöksiä sovelletaan peliohjelmistotoimiluvan osalta vasta 1 päivästä heinäkuuta 2027. Lain 2 §:n 2 momentin ja 33 §:n säännöksiä sovelletaan peliohjelmistotoimiluvan osalta vasta 1 päivästä heinäkuuta 2028.\nPoliisihallituksesta Lupa- ja valvontavirastoon siirtyvien tehtävien hoitamisen edellyttämät tehdyt sopimukset ja sitoumukset samoin kuin niistä johtuvat oikeudet ja velvollisuudet siirtyvät tämän lain voimaan tullessa Lupa- ja valvontavirastolle.\nLupa- ja valvontavirastolle siirtyvät tässä laissa säädettyjen tehtävien hoitamiseksi välttämättömät lain voimaantuloon mennessä Poliisihallitukseen muodostuneet arkistot, rekisterit ja tietoaineistot, ellei niitä koskevista vastuista ja velvollisuuksista tämän tai muun lain nojalla erikseen säädetä tai muuta sovita.\nLupa- ja valvontavirastolla ja valtiovarainministeriöllä on ennen tämän lain voimaantuloa oikeus salassapitosäännösten estämättä ja maksutta saada Poliisihallitukselta ja sen lukuun toimivilta toimijoilta lupa- ja valvontatoiminnan ja hallinnon käynnistämisen valmistelun edellyttämät tiedot. Näitä tietoja ovat uudistuksen toimeenpanossa ja sen valmistelussa tarvittavat asiakirjat, rahapelivalvonnan tietojärjestelmiä koskevat tiedot, sopimukset, tiedot rahapelivalvonnan henkilöstöstä, joka siirtyy Lupa- ja valvontaviraston palvelukseen sekä muut uudistuksen toimeenpanon kannalta tarpeelliset tiedot."
   },
+  "100/2026": {
+   "fetched": "2026-10-30",
+   "muutVoimaantulot": [],
+   "sk": "100/2026",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/100",
+   "voimaan": "2026-02-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä helmikuuta 2026."
+  },
   "1000/2023": {
    "fetched": "2026-10-18",
    "muutVoimaantulot": [],
@@ -36,12 +45,13 @@
    "voimaan": "2025-01-01"
   },
   "1000/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1000/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1000",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nGenom denna lag upphävs 6 och 8 § i lagen om ändring och temporär ändring av lagen om farledsavgift (1214/2014)."
   },
   "1000/2025": {
    "fetched": "2026-10-29",
@@ -61,12 +71,13 @@
    "voimaan": "2023-12-01"
   },
   "1001/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1001/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1001",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025.\nYmpäristöministeriö hyväksyy Asumisen rahoitus- ja kehittämiskeskuksen vuoden 2025 tilinpäätöksen."
   },
   "1001/2025": {
    "fetched": "2026-10-29",
@@ -78,12 +89,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1002/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1002/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1002",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1002/2025": {
    "fetched": "2026-10-29",
@@ -95,12 +107,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1003/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1003/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1003",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1003/2025": {
    "fetched": "2026-10-29",
@@ -120,12 +133,13 @@
    "voimaan": "2022-12-15"
   },
   "1004/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1004/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1004",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1004/2025": {
    "fetched": "2026-10-29",
@@ -137,12 +151,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1005/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1005/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1005",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1005/2025": {
    "fetched": "2026-10-29",
@@ -154,12 +169,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1006/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1006/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1006",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1006/2025": {
    "fetched": "2026-10-29",
@@ -171,44 +187,49 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025. Lakia sovelletaan 1 päivänä tammikuuta 2026 ja sen jälkeen alkaviin tilikausiin.\nLakia voidaan soveltaa myös tilikaudella, joka on alkanut ennen tämän lain voimaantuloa, jos tilikausi on alkanut 1 päivänä tammikuuta 2025 tai sen jälkeen."
   },
   "1007/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1007/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1007",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1008/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1008/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1008",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1009/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1009/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1009",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1010/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1010/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1010",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1011/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1011/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1011",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1012/2022": {
    "fetched": "2026-10-18",
@@ -227,20 +248,22 @@
    "voimaan": "2024-01-01"
   },
   "1012/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1012/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1012",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1013/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1013/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1013",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1014/2023": {
    "fetched": "2026-10-18",
@@ -251,12 +274,13 @@
    "voimaan": "2023-12-01"
   },
   "1014/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1014/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1014",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1014/2025": {
    "fetched": "2026-10-29",
@@ -268,28 +292,31 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1015/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1015/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1015",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1016/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1016/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1016",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "1017/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1017/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1017",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025.\nHenkilöstön asemasta säädetään valtion virkamieslain (750/1994) 2 luvussa.\nAsumisen rahoitus- ja kehittämiskeskuksessa vireillä olevat asiat, tehdyt sopimukset ja sitoumukset sekä niistä johtuvat oikeudet ja velvollisuudet siirtyvät tämän lain tullessa voimaan ympäristöministeriön Valtion tukeman asuntorakentamisen keskukselle. Valtion tukeman asuntorakentamisen keskuksesta säädetään Valtion tukeman asuntorakentamisen keskuksesta annetussa laissa (1001/2024).\nMitä muualla säädetään Asumisen rahoitus- ja kehittämiskeskuksesta, koskee tämän lain voimaan tultua Valtion tukeman asuntorakentamisen keskusta.\nGenom denna lag upphävs lagen om Finansierings- och utvecklingscentralen för boendet (71/2007)."
   },
   "1018/2025": {
    "fetched": "2026-10-29",
@@ -343,12 +370,13 @@
    "voimaan": "2024-01-01"
   },
   "1023/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1023/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1023",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2027.\nHakemukseen tai hintailmoitukseen, joka on saapunut lääkkeiden hintalautakuntaan ennen tämän asetuksen voimaantuloa, sovelletaan ennen tämän asetuksen voimaantuloa voimassa olleita säännöksiä.\nLiite\nMAKSUTAULUKKO\nTill läkemedelsprisnämndens offentligrättsliga avgiftsbelagda prestationer som avses i 6 § i lagen om grunderna för avgifter till staten (150/1992) hör\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n10)\nFör de prestationer som avses i 1 mom. tas det ut avgifter enligt bifogade avgiftstabell.\nAvgift enligt denna förordning tas ut även om ansökan avslås.\nTill sådana prestationer som avses i 7 § i lagen om grunderna för avgifter till staten och som läkemedelsprisnämnden prissätter enligt företagsekonomiska grunder hör sådana utlåtanden och tjänster som inte har direkt anknytning till behandlingen av ansökningar om ersättning och pris eller behandlingen av prisanmälningar.\nLäkemedelsprisnämnden bestämmer avgifterna för framtagande av uppgifter enligt 34 § 2 mom. i lagen om offentlighet i myndigheternas verksamhet (621/1999) och för utlämnande av kopior och utskrifter enligt 3 mom. i samma paragraf, med beaktande av vad som föreskrivs i den paragrafen.\nBehandlingsavgiften behöver inte tas ut, om behandlingsavgiften för ett läkemedelspreparat som kräver försäljningstillstånd, ett kliniskt näringspreparat eller en salvbas är mer än en tredjedel av preparatets uppskattade stabiliserade årsförsäljning. Detta gäller inte ansökningar om en ny läkemedelssubstans eller om ett annat nytt läkemedelspreparat, ansökningar om utvidgad ersättning vid omfattande behandling eller ansökningar om ett läkemedelspreparat som omfattas av villkorlig ersättning.\nAvgifter för behandlingen av en förnyad ansökan tas inte ut om giltighetsperioden för det föregående godkännande beslutet är kortare än sex månader."
   },
   "1023/2025": {
    "fetched": "2026-10-29",
@@ -634,12 +662,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1056/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1056/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1056",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1056/2025": {
    "fetched": "2026-10-29",
@@ -651,12 +680,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1057/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1057/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1057",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1057/2025": {
    "fetched": "2026-10-29",
@@ -727,20 +757,22 @@
    "voimaan": "2024-01-01"
   },
   "1062/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1062/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1062",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tull essa Innovaatiorahoituskeskus Business Finlandissa tai Business Finland -osakeyhtiössä vireillä oleva yritysryhmien yhteisten kansainvälisten liiketoimintamahdollisuuksien selvityshanketta koskeva valtionavustusasia käsitellään loppuun noudattaen tämän asetuksen voimaan tullessa voimassa olleita säännöksiä."
   },
   "1063/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1063/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1063",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tullessa vireillä olevaan hankkeeseen sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä.\nTällä asetuksella kumotaan rakentamisen suunnittelutehtävien vaativuusluokkien määräytymisestä annettu valtioneuvoston asetus (214/2015)."
   },
   "1063/2025": {
    "fetched": "2026-10-29",
@@ -752,28 +784,31 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2026.\nTällä asetuksella kumotaan fluorattuja kasvihuonekaasuja tai otsonikerrosta heikentäviä aineita sisältävien laitteiden käsittelijän pätevyysvaatimuksista annettu valtioneuvoston asetus.\nHenkilöt ja toiminnanharjoittajat voivat osoittaa pätevyytensä tämän asetuksen voimaan tullessa voimassa olleiden säännösten mukaisesti 31 päivään kesäkuuta 2026. Näin saatu pätevyys on voimassa 12 päivään maaliskuuta 2029.\nLiite 1\nToiminnanharjoittajan vastuuhenkilön pätevyysvaatimukset\nLiite 2\nHenkilöiden pätevyysvaatimukset\nLiite 3\nLiite 4\nSähkö- ja elektroniikkalaiteromusta k ylmäaineiden talteenottoa tekevän henkilön pätevyysvaatimukset"
   },
   "1064/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1064/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1064",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1065/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1065/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1065",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1066/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1066/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1066",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nPoiketen siitä, mitä 8 §:n 3 momentissa ja 9 §:n 3 momentissa säädetään, mainituissa momenteissa tarkoitetut hakemukset on tehtävä viimeistään 28 päivänä helmikuuta 2025, jos tässä laissa tarkoitettu toiminta on käynnistynyt ennen tämän lain voimaantuloa."
   },
   "1066/2025": {
    "fetched": "2026-10-29",
@@ -793,12 +828,13 @@
    "voimaan": "2023-04-20"
   },
   "1067/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1067/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1067",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nLain 28 a §:ää sovelletaan ilmoitusvelvolliseen, joka on määrätty selvitystilaan tai poistettavaksi rekisteristä 1 päivänä tammikuuta 2023 tai sen jälkeen. Jos ilmoitusvelvollinen on rekisteristä poistamisen lisäksi määrätty selvitystilaan, 28 a §:n soveltamisen edellytyksenä on, että molemmat toimenpiteet on tehty 1 päivänä tammikuuta 2023 tai sen jälkeen.\nJos ilmoitusvelvollinen on määrätty selvitystilaan tai poistettavaksi rekisteristä ennen tämän lain voimaantuloa, lasketaan 28 a §:n 3 momentissa tarkoitettu vuoden määräaika hakemuksen tekemiselle lain voimaantuloa seuraavasta päivästä. Rekisteristä poistetun ilmoitusvelvollisen määrääminen selvitystilaan lain voimaantulon jälkeen ei pidennä tätä määräaikaa. Täytäntöönpanon keskeytyksen vaikutukseen hakemuksen tekemiseen noudatetaan, mitä 28 a §:n 6 momentissa säädetään.\nTämän lain 28 a §:ssä tarkoitetun hakemuksen käsittelystä peritään maksu, joka vastaa ilman malliasiakirjoja tehdystä perustamisilmoituksesta patentti- ja rekisterihallituksen suoritteista perittävistä maksuista annetun lain (1032/1992) nojalla määrättävää maksua, jos hakemus on tullut vireille viimeistään 31 päivänä joulukuuta 2026. Tämän jälkeen hakemuksesta perittävä maksu määrätään mainitun lain nojalla säädetyn mukaisesti. Jos toiminimen tai aputoiminimen rekisteröinnistä on määrätty perittäväksi erillinen maksu, noudatetaan sitä myös 28 a §:ssä tarkoitetun hakemuksen käsittelyn yhteydessä.\nJos rekisteriviranomainen on keskeyttänyt ilmoitusvelvollisen rekisteristä poistamista koskevan menettelyn 17 päivänä syyskuuta 2024 tai sen jälkeen mutta ennen tämän lain voimaan tuloa ja ilmoitusvelvolliselle lähetetystä kehotuksesta korjata laiminlyönti on jo tehty rekisterimerkintä kaupparekisteriin, rekisteriviranomaisen on ennen rekisteristä poistamista lähetettävä tieto merkinnästä ilmoitusvelvollisen vastuuhenkilölle ja varattava samassa yhteydessä kohtuullinen aika korjata laiminlyönti. Jos vastuuhenkilö tai tämän yhteystieto ei ole käytettävissä, lähetetään tieto ja varataan korjausmahdollisuus ilmoitu svelvolliselle, jos ilmoitusvelvollisen yhteystieto on käytettävissä. Asia voidaan ratkaista, vaikka vastuuhenkilön tai ilmoitusvelvollisen ei voitaisi näyttää vastaanottaneen lähetystä."
   },
   "1067/2025": {
    "fetched": "2026-10-29",
@@ -818,12 +854,13 @@
    "voimaan": "2021-01-01"
   },
   "1068/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1068/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1068",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nLain 32 §:n 1 momentin 1 kohtaa sovelletaan 1 päivästä tammikuuta 2026. Jätteen haltija saa kuitenkin jo mainittua ajankohtaa aiemmin järjestää sosiaali- ja terveydenhuollon palveluja tuottavan yrityksen tai yhteisön toimipaikassa tai vankilassa, puolustusvoimien asuinkasarmissa, vastaanottokeskuksessa tai muussa vastaavassa laitosasumisessa syntyvän jätteen jätehuollon tällä lailla muutettavan lain 28 §:n mukaisesti ilmoittamalla siitä kirjallisesti kunnalle vähintään kuusi kuukautta ennen jätehuollon järjestämisen aloittamista.Tällöin kunnan vastuu jätehuollon järjestämisestä lakkaa, kun jätteen haltijan järjestämä jätehuolto tämän tekemän ilmoituksen mukaisesti alkaa."
   },
   "1068/2025": {
    "fetched": "2026-10-29",
@@ -843,12 +880,13 @@
    "voimaan": "2022-01-01"
   },
   "1069/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1069/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1069",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nRikokseen, joka on tehty ennen tämän lain voimaantuloa, ja siitä seuraavan rangaistuksen täytäntöönpanoon sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "1069/2025": {
    "fetched": "2026-10-29",
@@ -893,12 +931,13 @@
    "voimaan": "2024-01-01"
   },
   "1070/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1070/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1070",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1071/2021": {
    "fetched": "2026-10-19",
@@ -909,12 +948,13 @@
    "voimaan": "2022-01-01"
   },
   "1071/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1071/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1071",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1072/2021": {
    "fetched": "2026-10-19",
@@ -925,12 +965,13 @@
    "voimaan": "2022-01-01"
   },
   "1072/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1072/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1072",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1072/2025": {
    "fetched": "2026-10-29",
@@ -958,12 +999,13 @@
    "voimaan": "2023-12-15"
   },
   "1073/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1073/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1073",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1073/2025": {
    "fetched": "2026-10-29",
@@ -983,12 +1025,13 @@
    "voimaan": "2022-01-01"
   },
   "1074/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1074/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1074",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1074/2025": {
    "fetched": "2026-10-29",
@@ -1016,12 +1059,13 @@
    "voimaan": "2023-01-01"
   },
   "1075/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1075/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1075",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1075/2025": {
    "fetched": "2026-10-29",
@@ -1041,12 +1085,13 @@
    "voimaan": "2023-01-01"
   },
   "1076/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1076/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1076",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "1076/2025": {
    "fetched": "2026-10-29",
@@ -1058,12 +1103,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1077/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1077/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1077",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2033.\nMuualla lainsäädännössä olevalla viittauksella ammatillisesta koulutuksesta annetun lain 22 §:n mukaiseen järjestämislupaan tarkoitetaan tämän lain voimassa ollessa myös tämän lain nojalla myönnettyjä kokeilulupia.\nSyftet med denna lag är att genomföra ett tidsbegränsat försök med verksamhetsstyrning inom yrkesutbildningen mellan den 1 januari 2026 och den 31 december 2033. Syftet med försöket är att utreda hur man genom att utvidga anordnartillstånden inom yrkesutbildningen och genom verksamhetsstyrning som grundar sig på ett förhandlingsförfarande kan stärka yrkesutbildningens kvalitet, genomslag och tillgänglighet.\nPå verksamheten hos utbildningsanordnare som deltar i försöket tillämpas vad som föreskrivs i lagen om yrkesutbildning (531/2017) och i de förordningar och föreskrifter som utfärdats med stöd av den.\nOm inte något annat föreskrivs i denna lag tillämpas på försöket dock inte vad som i lagen om yrkesutbildning föreskrivs om anordnartillstånd i 22 §, om examina och utbildning som ska anges i anordnartillståndet i 23 §, om undervisnings- och examensspråk i 24 §, om verksamhetsområde i 25 §, om övriga rättigheter, skyldigheter, villkor och uppgifter som ska anges i ett verksamhetstillstånd i 27 § 1–3 mom., om förutsättningar för beviljande av anordnartillstånd i 28 § och om ändring och återkallande av anordnartillstånd i 29 §.\nDeltagande i det försök som avses i denna lag förutsätter ett försökstillstånd som beviljas av undervisnings- och kulturministeriet. Försökstillståndet ersätter det tillstånd att ordna examina och utbildning som avses i 22 § i lagen om yrkesutbildning under den tid försöket pågår. Utbildningsanordnaren beviljas försökstillstånd på ansökan och beslutet om beviljande av tillstånd är avgiftsfritt.\nEn anordnare av yrkesutbildning som fått försökstillstånd har rätt\n1)\n2)\n3)\nUtbildning kan också ordnas som arbetskraftsutbildning. Utbildningsanordnaren och arbets- och näringsförvaltningen avtalar om ordnandet av arbetskraftsutbildning.\nUtbildning som handleder för arbete och ett självständigt liv enligt 7 § i lagen om yrkesutbildning, krävande särskilt stöd enligt 65 § i den lagen samt yrkesutbildning för idrottare får ordnas av sådana utbildningsanordnare som fått försökstillstånd som vid ikraftträdandet av denna lag har haft rätt att ordna utbildningen i fråga.\nVerksamma som sådana utbildningscentrum för utbildning för grundläggande yrkeskompetens eller fortbildning som avses i 35 § i lagen om transportservice (320/2017) får vara sådana utbildningsanordnare som fått försökstillstånd och som vid ikraftträdandet av denna lag har haft rätt att ordna utbildningen i fråga.\nMaximiantalet studerandeår som avses i 26 § i lagen om yrkesutbildning är det som anges för utbildningsanordnaren i anordnartillståndet enligt 22 § vid ikraftträdandet av denna lag.\nUndervisnings- och examensspråken i försökstillståndet är desamma som anges för utbildningsanordnaren i anordnartillståndet enligt 22 § i lagen om yrkesutbildning. Utbildningsanordnaren ska meddela undervisning på dessa språk. Därtill kan utbildningsanordnarens examensspråk vara engelska.\nEn examen eller ett kompetensområde kan genom undervisnings- och kulturministeriets beslut avgränsas från utbildningsanordnarens försökstillstånd, om\n1)\n2)\n3)\nNärmare bestämmelser om de examina och kompetensområden som avses i 1 mom. får utfärdas genom förordning av undervisnings- och kulturministeriet.\nI försökstillståndet anges ett sådant verksamhetsområde för utbildningsanordnaren där anordnarens verksamhet i första hand svarar mot kompetensbehoven. Utbildningsanordnaren ansvarar i första hand för utbildningen av läropliktiga och andra studerande inom sitt verksamhetsområde. Utbildningsanordnaren är skyldig att i enlighet med kompetensbehovet ordna examina och utbildning inom det verksamhetsområde som anges i försökstillståndet. Vid sidan av verksamhetsområdet kan examina och utbildning också ordnas på andra ställen i Finland, dock inte i landskapet Åland.\nSom verksamhe tsområde anges det område som vid ikraftträdandet av denna lag har varit det verksamhetsområde som anges i utbildningsanordnarens anordnartillstånd. Utbildningsanordnaren kan i den ansökan som avses i 3 § föreslå ändringar i sitt verksamhetsområde av grundad anledning som hänför sig till utbildningsbehovet.\nFörsökstillstånd får sökas av en utbildningsanordnare som vid ikraftträdandet av denna lag har ett sådant tillstånd att ordna examina och utbildning som avses i 22 § i lagen om yrkesutbildning.\nFörsökstillstånd kan beviljas en sökande som med beaktande av syftet med försöket har\n1)\n2)\n3)\n4)\n5)\nDärtill ska utbildningsanordnaren ha ekonomiska förutsättningar för att ordna examina och utbildning på ändamålsenligt sätt.\nUndervisnings- och kulturministeriet väljer högst 40 sådana utbildningsanordnare till försöket som uppfyller förutsättningarna enligt 8 §. För valet delar undervisnings- och kulturministeriet in Finland i ändamålsenliga områden med tanke på ordnandet av utbildning och befolkningsunderlaget.\nGrunden för antalet utbildningsanordnare som väljs till försöket från ett område är den relativa andelen studerandeår för utbildningsanordnarna i området av det riksomfattande totala antalet studerandeår. Med det riksomfattande totala antalet studerandeår avses målinriktade studerandeår som beviljats för 2025 genom ett beslut enligt 10 § 1 mom. i lagen om finansiering av undervisnings- och kulturverksamhet (1705/2009).\nNationella centret för utbildningsutvärdering poängsätter sökandena. Som grund för poängsättningen används de förutsättningar för beviljande av försökstillstånd som anges i 8 §. Till försöket väljs de utbildningsanordnare som fått flest poäng områdesvis på så sätt att undervisnings- och kulturministeriet vid valet av utbildningsanordnare som ska delta i försöket säkerställer att\n1)\n2)\n3)\n4)"
   },
   "1077/2025": {
    "fetched": "2026-10-29",
@@ -1083,12 +1129,13 @@
    "voimaan": "2024-01-01"
   },
   "1078/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1078/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1078",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 8 §, 23 §:n 1 ja 2 momentti, 26 §, 27 §:n 1–3 momentti, 100 §:n 2 momentti, 104 §:n 4 momentti, 105 § ja 123 §:n 1 momentti sekä 3 §:n 1 kohdan, 9 §:n, 37 §:n 3 momentin ja 44 §:n 4 momentin kumoaminen tulevat kuitenkin voimaan vasta 1 päivänä tammikuuta 2026. Sen 48 §:n 1 momentti sekä 63 ja 64 § tulevat kuitenkin voimaan vasta 1 päivänä elokuuta 2026.\nJos koulutuksen järjestäjällä on oikeus järjestää 8 §:n 1 kohdassa tarkoitettua ammatillista osaamista syventävää tai täydentävää koulutusta, päättyy oikeus järjestää mainittua koulutusta 31 päivänä joulukuuta 2028. Koulutuksen järjestäjällä on oikeus kerätä kohtuullisia opiskelijamaksuja mainitusta koulutuksesta 31 päivään joulukuuta 2028.\nOpetus- ja kulttuuriministeriö muuttaa hakemuksetta ja maksutta koulutuksen järjestäjien järjestämisluvat siten, että ne ovat tämän lain mukaisia 1 päivästä tammikuuta 2026."
   },
   "1078/2025": {
    "fetched": "2026-10-29",
@@ -1100,12 +1147,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nTämän lain voimaan tullessa lakkaavan uhkasakkolautakunnan vireillä olevat asiat siirtyvät käsiteltäviksi seuraamuslautakunnalle."
   },
   "1079/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1079/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1079",
-   "voimaan": "2026-01-01"
+   "voimaan": "2026-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nTätä lakia sovelletaan ensimmäisen kerran vuodelle 2026 myönnettävässä rahoituksessa."
   },
   "1079/2025": {
    "fetched": "2026-10-29",
@@ -1126,12 +1174,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä huhtikuuta 2026."
   },
   "1080/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1080/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1080",
-   "voimaan": "2026-01-01"
+   "voimaan": "2026-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1080/2025": {
    "fetched": "2026-10-29",
@@ -1151,12 +1200,13 @@
    "voimaan": "2024-01-01"
   },
   "1081/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1081/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1081",
-   "voimaan": "2025-10-01"
+   "voimaan": "2025-10-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2025.\nLapin hyvinvointialueen Kemissä, Pohjois-Pohjanmaa hyvinvointialueen Oulaisissa, Varsinais-Suomen hyvinvointialueen Salossa, Etelä-Savon hyvinvointialueen Savonlinnassa ja Pirkanmaan hyvinvointialueen Valkeakoskella sijaitsevissa sairaaloissa sekä niissä HUS-yhtymän sairaaloissa, joissa ei ylläpidetä monierikoisalaista ympärivuorokautista päivystystä, saa suorittaa väliaikaisesti päiväkirurgiana toteutettavia polven ja lonkan primaareja tekonivelleikkauksia, jos tällä lailla muutettavan lain 52 §:ssä säädetty hoitoon pääsyn enimmäisaika on vaarassa hyvinvointialueella tai HUS-yhtymän alueella jäädä toteutumatta eikä hyvinvointialue tai HUS-yhtymä pysty hankkimaan riittävästi näitä leikkauksia muilta hyvinvointialueilta. Edellytyksenä on lisäksi, että tämän lain 45 §:n 4 momentissa leikkaustoiminnalle säädetyt edellytykset täyttyvät. Näitä leikkauksia saa suorittaa mainituissa sairaaloissa kuitenkin vain 30 päivään kesäkuuta 2028 saakka.\nPohjois-Savon hyvinvointialueella Iisalmessa ja Varkaudessa saa ylläpitää ympärivuorokautista perusterveydenhuollon tai akuuttilääketieteen päivystystä 31 päivään joulukuuta 2025 saakka tämän lain voimaan tullessa voimassa olleen sosiaali- ja terveysministeriön myöntämän luvan mukaisesti."
   },
   "1082/2020": {
    "fetched": "2026-10-19",
@@ -1167,12 +1217,13 @@
    "voimaan": "2022-01-01"
   },
   "1082/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1082/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1082",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025 ja se on voimassa 30 päivään syyskuuta 2025."
   },
   "1083/2020": {
    "fetched": "2026-10-19",
@@ -1183,12 +1234,13 @@
    "voimaan": "2022-01-01"
   },
   "1083/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1083/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1083",
-   "voimaan": "2025-10-01"
+   "voimaan": "2025-10-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2025."
   },
   "1084/2020": {
    "fetched": "2026-10-19",
@@ -1199,12 +1251,13 @@
    "voimaan": "2021-01-01"
   },
   "1084/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1084/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1084",
-   "voimaan": "2025-10-01"
+   "voimaan": "2025-10-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2025."
   },
   "1084/2025": {
    "fetched": "2026-10-29",
@@ -1216,12 +1269,13 @@
    "vtText": "Tämä laki tulee voimaan 8 päivänä joulukuuta 2025.\nLakia sovelletaan ensimmäisen kerran 1 päivänä tammikuuta 2026 tai sen jälkeen toteutettaviin osakevaihtoihin."
   },
   "1085/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1085/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1085",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTällä asetuksella kumotaan työriitojen sovittelusta annettu valtioneuvoston asetus (394/2009).\nRiksmedlaren utnämns av statsrådet.\nStällföreträdare för riksmedlaren förordnas av statsrådet på framställning av riksmedlaren.\nÖvrig personal vid riksmedlarens byrå utnämns eller anställs av riksmedlaren.\nBehörighetsvillkor för tjänsten som riksmedlare är högre högskoleexamen samt god förtrogenhet med arbetslagstiftningen och arbetsmarknadsfunktionerna.\nStatsrådet förordnar på framställning av riksmedlaren ett behövligt antal medlare för tre år i sänder.\nMedlarnas verksamhetsområde är hela landet. En medlare är permanent stationerad på Åland.\nTill medlare kan förordnas en person som har en sådan i praktiken visad skicklighet och förmåga som en framgångsrik skötsel av uppdraget förutsätter.\nRiksmedlaren eller en medlare i en arbetstvist kan göra en framställning om tillsättande av en medlingsnämnd till arbets- och näringsministeriet.\nBestämmelser om ordförande för medlingsnämnden finns i lagen om medling i arbetstvister och om villkor för vissa stridsåtgärder (420/1962). Övriga medlemmar i medlingsnämnden förordnas av arbets- och näringsministeriet på framställning av riksmedlaren."
   },
   "1085/2025": {
    "fetched": "2026-10-29",
@@ -1283,12 +1337,13 @@
    "voimaan": "2024-01-01"
   },
   "1089/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1089/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1089",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tullessa vireillä olleeseen rakentamis- tai purkamislupahakemukseen tai purkamisilmoitukseen sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä.\nOm den m ängd rivningsmaterial som uppkommer i ett projekt inte är liten på det sätt som avses i 16 § i bygglagen (751/2023), ska den utredning som utarbetas i samband med ansökan om bygg- eller rivningslov eller i samband med rivningsanmälan innehålla en uppskattning av den mängd rivningsmaterial, uttryckt i massa, som uppkommer i projektet åtminstone enligt följande indelning:\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n10)\n11)\n12)\n13)\nUt redningen kan dessutom innehålla en uppskattning av de byggprodukter och byggnadsdelar som lämpar sig för återanvändning.\nUtredningen om rivningsmaterial och byggavfall ska innehålla uppgifter om typen av och mängden rivningsmaterial som innehåller asbest, om de har varit föremål för en asbestkartläggning enligt 7 § i statsrådets förordning om säkerheten vid asbestarbeten (798/2015).\nUtredningen kan också innehålla uppgifter om andra rivningsmaterial som innehåller farliga ämnen, om sådana uppgifter är tillgängliga på basis av kartläggningar och undersökningar av skadliga ämnen eller annan information.\nRivningsmaterial som innehåller farliga ämnen ingår inte i den uppskattning som avses i 1 §.\nOm det i ett projekt uppkommer jord- och stenmaterial som ska transporteras bort från byggplatsen, ska utredningen om rivningsmaterial och byggavfall innehålla en uppskattning av deras mängd, uttryckt i volym eller massa, så att förorenat och icke-förorenat jord- och stenmaterial anges separat.\nUtredningen kan innehålla en uppskattning av typerna av icke-förorenat jord- och stenmaterial.\nDen som påbörjar ett byggprojekt ska när bygg- och rivningsprojektet är slutfört se till att utredningen om rivningsmaterial och byggavfall uppdateras i det informationsmaterial om rivningsmaterial och byggavfall som ingår i den byggnadsinformationsresurs som avses i 2 § i lagen om datasystemet för den byggda miljön (431/2023), i första hand utifrån uppgifterna i det transportdokument som avses i 121 § i avfallslagen (646/2011).\nUppdateringen kan också innehålla uppgifter om byggprodukter och byggnadsdelar som förts till återanvändning samt om icke-förorenat jord- och stenmaterial.\nI utredningen om rivningsmaterial och byggavfall ska åtminstone följande uppgifter lämnas till den byggnadsinformationsresurs som avses i 4 § 1 mom.:\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\nI samband med ansökan om bygg- och rivningslov ska de uppgifter som avses i 1 mom. 4–6 punkten lämnas separat för varje byggnad eller byggplats. Uppgifterna om sådant bygg- och rivningsavfall som avses i 1 mom. 7 punkten ska lämnas separat för varje byggplats."
   },
   "1090/2023": {
    "fetched": "2026-10-18",
@@ -1299,12 +1354,13 @@
    "voimaan": "2024-01-01"
   },
   "1090/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1090/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1090",
-   "voimaan": "2025-08-01"
+   "voimaan": "2025-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2025. Lain 4, 9, 20 i, 26 a ja 33 § tulevat kuitenkin voimaan vasta 1 päivänä elokuuta 2026.\nTämän lain voimaan tullessa voimassa oleva tehostetun tuen oppimissuunnitelma, päätös erityisestä tuesta ja erityisen tuen henkilökohtainen opetuksen järjestämistä koskeva suunnitelma on saatettava tämän lain 4 a luvun mukaisiksi viimeistään 31 päivänä elokuuta 2026.\nHaettaessa muutosta ennen tämän lain voimaantuloa tehtyyn erityisen tuen päätökseen sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "1090/2025": {
    "fetched": "2026-10-29",
@@ -1324,12 +1380,13 @@
    "voimaan": "2024-01-01"
   },
   "1091/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1091/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1091",
-   "voimaan": "2026-08-01"
+   "voimaan": "2026-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2026.\nEnnen tämän lain voimaan tuloa tehty päätös pidennetystä oppivelvollisuudesta tulee saattaa 2 §:n 3 momentin mukaiseksi varhennettua oppivelvollisuutta tai perusopetuslain 20 i §:n mukaista opetusta koskevaksi päätökseksi viimeistään 31 päivänä elokuuta 2026.\nEnnen tämän lain voimaantuloa tehtyihin päätöksiin pidennetystä oppivelvollisuudesta ja niitä koskevaan opetukseen sovelletaan tämän lain voimaan tullessa voimassa olleita perusopetuslain säännöksiä.\nMitä tämän lain 23 §:n 5 momentissa säädetään, sovelletaan kuitenkin vasta 31 päivästä elokuuta 2026 alkaen. Lain voimaantulon jälkeen ennen 31 päivää elokuuta 2026 voidaan soveltaa vanhaa tai muutettua 23 §:n 5 momenttia sen mukaan, onko päätös tehty kumotun perusopetuslain 17 §:n tai uuden perusopetuslain 20 f §:n nojalla."
   },
   "1092/2022": {
    "fetched": "2026-10-18",
@@ -1348,12 +1405,13 @@
    "voimaan": "2024-01-01"
   },
   "1092/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1092/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1092",
-   "voimaan": "2026-08-01"
+   "voimaan": "2026-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2026."
   },
   "1093/2022": {
    "fetched": "2026-10-18",
@@ -1374,12 +1432,13 @@
    "voimaan": "2024-01-01"
   },
   "1093/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1093/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1093",
-   "voimaan": "2026-08-01"
+   "voimaan": "2026-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2026. Lain 35 §:n 2 momentti sekä 38 §:n otsikko ja 1 momentti tulevat kuitenkin voimaan jo 1 päivänä elokuuta 2025.\nTämän lain 23 §:n 2 momentin 2 ja 4 kohdassa tarkoitetun rahoituksen lisäksi varainhoitovuosille 2027 ja 2028 tehtäviin kustannustenjaon tarkistuksiin sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä pidennetyn oppivelvollisuuden piirissä olevien oppilaiden esi- ja perusopetuksen rahoituksesta.\nTämän lain 24 §:n 2 momentin 2 ja 4 kohdassa tarkoitettujen kustannusten lisäksi kustannustenjaon tarkistuksiin sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä pidennetyn oppivelvollisuuden piirissä olevien, viisi vuotta esiopetuksen alkamisvuonna täyttävien oppilaiden esiopetukseen järjestämisestä aiheutuneiden käyttökustannusten huomioon ottamisesta siltä osin kuin niitä sisältyy tarkistettaviin kustannuksiin.\nSen lisäksi, mitä tämän lain 35 §:n 2 momentissa säädetään kotikuntakorvauksen määräytymisestä, toteutuneiden kustannusten vähentä miseen sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä pidennetyn oppivelvollisuuden opetuksesta aiheutuneista kustannuksista siltä osin kuin niitä sisältyy aiheutuneisiin kustannuksiin."
   },
   "1094/2023": {
    "fetched": "2026-10-18",
@@ -1390,12 +1449,13 @@
    "voimaan": "2024-01-01"
   },
   "1094/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "1094/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/1094",
-   "voimaan": "2026-08-01"
+   "voimaan": "2026-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2026."
   },
   "1095/2023": {
    "fetched": "2026-10-18",
@@ -21358,12 +21418,13 @@
    "voimaan": "2023-01-01"
   },
   "738/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "738/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/738",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nEnnen 1 päivää tammikuuta 2008 syntyneisiin henkilöihin sovelletaan kuitenkin tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "738/2025": {
    "fetched": "2026-10-29",
@@ -21400,14 +21461,15 @@
    "voimaan": "2024-01-01"
   },
   "739/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [
     "2010-01-01"
    ],
    "sk": "739/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/739",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "739/2025": {
    "fetched": "2026-10-29",
@@ -21470,12 +21532,13 @@
    "voimaan": "2024-01-01"
   },
   "741/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "741/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/741",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nPoiketen siitä, mitä sosiaali- ja terveydenhuollon valvonnasta annetun lain (741/2023) 5 §:n 2 momentissa, 16 §:n 2 momentissa ja 21 §:ssä säädetään, palveluntuottaja voi muuttaa ympärivuorokautisen palveluasumisen henkilöstömitoituksen tämän lain 20 §:n mukaiseksi ilman hakemusta ja päätöstä rekisteröinnin muutoksesta. Palveluntuottajan on päivitettävä muutos valtakunnalliseen sosiaali- ja terveydenhuollon palveluntuottajien ja palveluyksikköjen rekisteriin sosiaali- ja terveydenhuollon valvonnasta annetun lain 17 §:n 1 momentissa tarkoitetulla tavalla.\nMuutos ja rekisteritietojen päivitys on tehtävä viimeistään 31 päivänä joulukuuta 2025. Jos muutos tehdään tai tiedot päivitetään 31 päivä joulukuuta 2025 jälkeen, muutoksen käsittelyyn sovelletaan sosiaali- ja terveydenhuollon valvonnasta annetun lain 5 §:ää ja 3 lukua."
   },
   "741/2025": {
    "fetched": "2026-10-29",
@@ -21495,12 +21558,13 @@
    "voimaan": "2024-04-01"
   },
   "742/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "742/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/742",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nGenom denna lag upphävs 4 mom. i ikraftträdandebestämmelsen i lagen om ändring av lagen om stödjande av den äldre befolkningens funktionsförmåga och om social- och hälsovårdstjänster för äldre (876/2022), sådant det lyder i lag 1046/2023."
   },
   "742/2025": {
    "fetched": "2026-10-29",
@@ -21512,12 +21576,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "743/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "743/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/743",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "743/2025": {
    "fetched": "2026-10-29",
@@ -21529,12 +21594,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "744/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "744/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/744",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "744/2025": {
    "fetched": "2026-10-29",
@@ -21564,12 +21630,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "747/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "747/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/747",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "747/2025": {
    "fetched": "2026-10-29",
@@ -21581,12 +21648,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "748/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "748/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/748",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "748/2025": {
    "fetched": "2026-10-29",
@@ -21598,12 +21666,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "749/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "749/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/749",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "749/2025": {
    "fetched": "2026-10-29",
@@ -21641,12 +21710,13 @@
    "voimaan": "2023-01-01"
   },
   "751/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "751/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/751",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "751/2025": {
    "fetched": "2026-10-29",
@@ -21666,12 +21736,13 @@
    "voimaan": "2023-01-01"
   },
   "752/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "752/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/752",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "752/2025": {
    "fetched": "2026-10-29",
@@ -21699,12 +21770,13 @@
    "voimaan": "2023-01-01"
   },
   "753/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "753/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/753",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "753/2025": {
    "fetched": "2026-10-29",
@@ -21725,12 +21797,13 @@
    "vtText": "Tämä asetus tulee voimaan 18 päivänä elokuuta 2026."
   },
   "754/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "754/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/754",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nTämän lain 159 §:n 1 momentissa tarkoitettuja tehtäviä kylmäkuljetusajoneuvojen tai junavaunujen jäädytysyksiköille, intermodaalikonteille, kylmäkuljetuskonteille tai orgaanisille Rankine-prosesseille suorittavan henkilön ja toiminnanharjoittajan on osoitettava tämän lain mukainen pätevyytensä viimeistään 12 päivänä maaliskuuta 2029.\nEnnen tämän lain voimaantuloa voimassa olleen lain nojalla pätevyyden hankkineiden henkilöiden ja toiminnanharjoittajien on uusittava pätevyytensä tämän lain ja sen 162 §:n nojalla annetun valtioneuvoston asetuksen mukaisesti viimeistään 12 päivänä maaliskuuta 2029.\nTämän lain voimaan tullessa voimassa olleen lain 164 §:ssä tarkoitettu pätevyysrekisteri ja julkinen tietopalvelu on saatettava tämän lain mukaiseksi 18 kuukauden kuluessa tämän lain voimaantulosta."
   },
   "754/2025": {
    "fetched": "2026-10-29",
@@ -21760,12 +21833,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "757/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "757/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/757",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Lain 17 b §:n mukaiset valtiontalouden yhdistellyt laskelmat laaditaan ensimmäisen kerran valtion vuoden 2025 tilinpäätöksen yhteydessä."
   },
   "757/2025": {
    "fetched": "2026-10-29",
@@ -21794,12 +21868,13 @@
    "voimaan": null
   },
   "758/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "758/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/758",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "758/2025": {
    "fetched": "2026-10-29",
@@ -21811,12 +21886,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "759/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "759/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/759",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "759/2025": {
    "fetched": "2026-10-29",
@@ -21837,12 +21913,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä toukokuuta 2026."
   },
   "760/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "760/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/760",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "760/2025": {
    "fetched": "2026-10-29",
@@ -21863,12 +21940,13 @@
    "vtText": "Tämä asetus tulee voimaan 28 päivänä elokuuta 2026."
   },
   "761/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "761/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/761",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Lain 6 §:ää sovelletaan ensimmäisen kerran valtion vuoden 2026 talousarvioesitykseen. Vuoden 2025 lisätalousarvioesityksiin sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "761/2025": {
    "fetched": "2026-10-29",
@@ -21897,12 +21975,13 @@
    "voimaan": null
   },
   "762/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "762/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/762",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Lain 8 §:ää sovelletaan ensimmäisen kerran valtion vuoden 2026 talousarvioesitykseen. Vuoden 2025 lisätalousarvioesityksiin sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "762/2025": {
    "fetched": "2026-10-29",
@@ -21914,12 +21993,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "763/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "763/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/763",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "763/2025": {
    "fetched": "2026-10-29",
@@ -21939,12 +22019,13 @@
    "voimaan": "2020-09-01"
   },
   "764/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "764/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/764",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "764/2025": {
    "fetched": "2026-10-29",
@@ -21964,12 +22045,13 @@
    "voimaan": "2020-09-01"
   },
   "765/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "765/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/765",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "765/2025": {
    "fetched": "2026-10-29",
@@ -21998,12 +22080,13 @@
    "voimaan": "2020-09-01"
   },
   "766/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "766/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/766",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "766/2025": {
    "fetched": "2026-10-29",
@@ -22031,12 +22114,13 @@
    "voimaan": "2021-11-01"
   },
   "767/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "767/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/767",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "767/2025": {
    "fetched": "2026-10-29",
@@ -22056,12 +22140,13 @@
    "voimaan": "2020-09-01"
   },
   "768/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "768/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/768",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "768/2025": {
    "fetched": "2026-10-29",
@@ -22081,12 +22166,13 @@
    "voimaan": "2020-09-01"
   },
   "769/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "769/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/769",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "769/2025": {
    "fetched": "2026-10-29",
@@ -22158,12 +22244,13 @@
    "voimaan": "2020-09-01"
   },
   "772/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "772/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/772",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "772/2025": {
    "fetched": "2026-10-29",
@@ -22192,12 +22279,13 @@
    "voimaan": "2020-09-01"
   },
   "773/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "773/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/773",
-   "voimaan": "2024-12-23"
+   "voimaan": "2024-12-23",
+   "vtText": "Tämä asetus tulee voimaan 23 päivänä joulukuuta 2024."
   },
   "773/2025": {
    "fetched": "2026-10-29",
@@ -22226,12 +22314,13 @@
    "voimaan": "2020-09-01"
   },
   "774/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "774/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/774",
-   "voimaan": "2024-12-23"
+   "voimaan": "2024-12-23",
+   "vtText": "Tämä asetus tulee voimaan 23 päivänä joulukuuta 2024."
   },
   "774/2025": {
    "fetched": "2026-10-29",
@@ -22251,12 +22340,13 @@
    "voimaan": "2020-09-01"
   },
   "775/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "775/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/775",
-   "voimaan": "2024-12-23"
+   "voimaan": "2024-12-23",
+   "vtText": "Tämä asetus tulee voimaan 23 päivänä joulukuuta 2024."
   },
   "775/2025": {
    "fetched": "2026-10-29",
@@ -22331,12 +22421,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "779/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "779/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/779",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025. Asetus on voimassa 31 päivään joulukuuta 2026.\nFör att täcka kostnaderna för förvaltningen och upprätthållandet av fastighetsdatasystemet samt för informationstjänsterna och utvecklandet av systemet får Lantmäteriverket av de inkomster som under förordningens giltighetstid inflyter av fastighetsdatasystemets prestationer en inkomst som motsvarar dessa kostnader, dock högst 27 procent av inkomsterna under förordningens giltighetstid.\nLantmäteriverket upprättar rapporter över de realiserade kostnaderna och lämnar rapporterna för år 2025 till de kommuner som för fastighetsregister senast vid utgången av februari 2026 och för år 2026 senast vid utgången av februari 2027.\nLantmäteriverket får under förordningens giltighetstid 998 533 euro för att täcka informationstjänstinvesteringarna i fastighetsdataregistrets inskrivningsdel.\nFör att täcka de kostnader som orsakas av andra än i 1 och 2 § avsedda åtgärder inom fastighetsdatasystemet betalas till de myndigheter som sköter systemet följande procentandelar av den inkomst av fastighetsdatasystemets prestationer som kvarstår efter att ersättningar enligt 1 och 2 § betalats ut:\n1)\n2)\nDe kommuner som för fastighetsregister får i egenskap av informationsproducenter en del av den för kommunerna gemensamma andelen som avses i 1 mom. 2 punkten och som bestäms enligt antalet registreringshändelser i kommunens fastighetsregister år 2023 och invånarantalet i december 2022.\nOm kommunen under förordningens giltighetstid upphör med att föra fastighetsregister, betalas kommunens andel ut till den myndighet som tar emot registerföringen.\nAv de influtna inkomsterna fördelar Lantmäteriverket andelarna till de kommuner som för fastighetsregister enligt följande:\nav de inkomster som har influtit under tiden 1.1.2025–31.5.2025 senast den 30 juni 2025,\nav de inkomster som har influtit under tiden 1.6.2025–31.8.2025 senast den 30 september 2025,\nav de inkomster som har influtit under tiden 1.9.2025–31.12.2025 senast den 31 januari 2026,\nav de inkomster som har influtit under tiden 1.1.2026–31.5.2026 senast den 30 juni 2026,\nav de inkomster som har influtit under tiden 1.6.2026–31.8.2026 senast den 30 september 2026 och\nav de inkomster som har influtit under tiden 1.9.2026–31.12.2026 senast den 31 januari 2027."
   },
   "779/2025": {
    "fetched": "2026-10-29",
@@ -22366,12 +22457,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä toukokuuta 2026."
   },
   "780/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "780/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/780",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2026.\nLiite\nMaksutaulukko kiinteistötietojärjestelmän suoritteista 1.1.2025-31.12.2026\nKiinteistötietojärjestelmästä annettavat viranomaisen oikeaksi todistamat luettelot, otteet ja todistukset sekä Maanmittauslaitoksen sähköisestä asiointipalvelusta annettavat kiinteistötietojärjestelmän otteet ja todistukset\nTeknisen käyttöyhteyden kautta luovutettavat suoritteet\nI denna förordning föreskrivs om de avgifter som ska tas ut till staten och kommunerna för fastighetsdatasystemets prestationer och informationstjänster.\nFör bestyrkta förteckningar, utdrag och intyg ur fastighetsdatasystemet och för utdrag och intyg från Lantmäteriverkets e-tjänst tas till staten och kommunerna ut avgifter i enlighet med bilagan till denna förordning.\nFör fastighetsdatasystemets prestationer som ges genom teknisk anslutning och för informationstjänster samt för prestationer i anslutning till fastighetsregistret och fastighetsregisterkartan tas till staten och kommunerna ut avgifter i enlighet med bilagan till denna förordning.\nDen organisation som administrerar fastighetsdatasystemet prissätter särskilt massöverlåtelse av uppgifter om fastigheter och till uppgifterna anslutande nyttjanderätt eller andra än i 2 eller 3 § avsedda prestationer och överlåtelse av nyttjanderätt m ed beaktande av bestämmelserna i 7 § i lagen om grunderna för avgifter till staten (150/1992)."
   },
   "780/2025": {
    "fetched": "2026-10-29",
@@ -22392,12 +22484,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "781/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "781/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/781",
-   "voimaan": "2024-12-19"
+   "voimaan": "2024-12-19",
+   "vtText": "Tämä asetus tulee voimaan 19 päivänä joulukuuta 2024."
   },
   "781/2025": {
    "fetched": "2026-10-29",
@@ -22436,12 +22529,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "783/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "783/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/783",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "783/2025": {
    "fetched": "2026-10-29",
@@ -22462,12 +22556,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "784/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "784/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/784",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTätä asetusta sovelletaan työttömyysetuuksiin, joita Kansaneläkelaitos tai työttömyyskassa on maksanut tämän asetuksen tultua voimaan."
   },
   "784/2025": {
    "fetched": "2026-10-29",
@@ -22488,12 +22583,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "785/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "785/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/785",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "785/2025": {
    "fetched": "2026-10-29",
@@ -22568,12 +22664,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "789/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "789/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/789",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nNär utvecklings- och förvaltningscentret tillhandahåller de tjänster för internationell rekrytering som avses i 3 a § 2 mom. 3 punkten i lagen om närings-, trafik- och miljöcentralerna samt om närings-, trafik- och miljöcentralernas utvecklings- och förvaltningscenter (897/2009) beaktas tjänsternas ändamålsenlighet med beaktande av målgrupperna samt de anslag som står till förfogande.\nMålgruppen för tjänsterna kan vara arbetsgivare, enskilda kunder eller arbetskraftsmyndigheter.\nUtvecklings- och förvaltningscentret får av grundad anledning avgränsa målgruppen för enskilda tjänster som tillhandahålls arbetsgivare.\nUtvecklings- och förvaltningscentret samlar nationellt in uppgifter om och förutser behoven av utländsk arbetskraft samt samlar nationellt in uppgifter om lediga platser för internationell rekrytering och om det utbud på utländsk kompetent arbetskraft som motsvarar arbetsplatserna för att fastställa det nationella behovet av tjänster för internationell rekrytering, allokera tjänsterna samt främja matchningen mellan arbetsgivare och internationell kompetent arbetskraft. Utvecklings- och förvaltningscentret utnyttjar arbetskraftsservicens riksomfattande informationssystemtjänster för att samla in uppgifter och främja matchningen på basis av dem.\nUtvecklings- och förvaltningscentret producerar riksomfattande rådgivning som kompletterar den rådgivning om internationell rekrytering som arbetskraftsmyndigheten ger arbetsgivare med stöd av lagen om ordnande av arbetskraftsserv ice (380/2023).\nUtvecklings- och förvaltningscentret tillhandahåller allmän rådgivning om internationell rekrytering för enskilda kunder på digitala serviceplattformar.\nUtvecklings- och förvaltningscentret ordnar vid behov kampanjer för att förmedla information om arbetslivet i Finland och marknadsföra arbetsmöjligheter för internationell kompetent arbetskraft samt utöka arbetsgivarnas förståelse och kompetens i fråga om internationell rekrytering. Därutöver ordnar utvecklings- och förvaltningscentret vid behov evenemang med hjälp av vilka matchningen mellan finländska arbetsgivare och internationell kompetent arbetskraft främjas.\nUtvecklings- och förvaltningscentret tillhandahåller arbetsgivare sådana tränings- och sakkunnigtjänster som behövs för att främja invandringen av kompetent arbetskraft och arbetskraftens rörlighet och som stöder arbetsgivaren och arbetsgemenskapen i utvecklingen av färdigheter för internationell rekrytering. Arbetsgivare kan också tillhandahållas tjänster som stöder etableringen av utländska arbetstagare som de rekryterar och utvecklingen av arbetstagarnas kunskaper i finska eller svenska."
   },
   "789/2025": {
    "fetched": "2026-10-29",
@@ -22684,12 +22781,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "794/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "794/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/794",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nTämän asetuksen voimaan tullessa vireillä olevassa asiassa suoritteesta peritään maksu tämän asetuksen voimaan tullessa voimassa olleiden säännösten mukaisesti."
   },
   "794/2025": {
    "fetched": "2026-10-29",
@@ -22710,12 +22808,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "795/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "795/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/795",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nEnnen tämän asetuksen voimaantuloa vireille tulleeseen asiaan sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä.\nLiite\nULKOMINISTERIÖN MAKSULLISET JULKISOIKEUDELLISET SUORITTEET"
   },
   "795/2025": {
    "fetched": "2026-10-29",
@@ -22754,12 +22853,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "797/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "797/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/797",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2026.\nMaksun perimiseen suoritteesta, jota koskeva asia on vireillä Turvallisuus- ja kemikaalivirastossa tämän asetuksen tullessa voimaan, sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä."
   },
   "797/2025": {
    "fetched": "2026-10-29",
@@ -22959,12 +23059,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026.\nJos hyvityksen suorittamista työhönottotilanteessa koskevan kanteen nostamisen määräaika on päättynyt tämän lain voimaan tullessa, noudatetaan tämän lain voimaan tullessa voimassa olleita säännöksiä.\nTämän lain voimaan tullessa yhdenvertaisuus- ja tasa-arvolautakunnassa vireillä olleeseen asiaan sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "806/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "806/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/806",
-   "voimaan": "2024-12-20"
+   "voimaan": "2024-12-20",
+   "vtText": "Tämä laki tulee voimaan 20 päivänä joulukuuta 2024. Sen 15 § tulee kuitenkin voimaan vasta 1 päivänä kesäkuuta 2027.\nTällä lailla kumotaan Euroopan unionin jäsenvaltioiden lainvalvontaviranomaisten välisen tietojen ja tiedustelutietojen vaihdon yksinkertaistamisesta tehdyn neuvoston puitepäätöksen lainsäädännön alaan kuuluvien säännösten kansallisesta täytäntöönpanosta ja puitepäätöksen soveltamisesta annettu laki (26/2009)."
   },
   "806/2025": {
    "fetched": "2026-10-29",
@@ -22976,12 +23077,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nPirkanmaan elinkeino-, liikenne ja ympäristökeskuksessa tämän lain voimaan tullessa vireillä olevat jätelain (1072/1993) 35 §:ssä tarkoitetut valtion jätehuoltotyöjärjestelmään liittyvät asiat ja niistä johtuvat sitoumukset ja sopimukset siirtyvät tämän lain tullessa voimaan Lupa- ja valvontavirastolle."
   },
   "807/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "807/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/807",
-   "voimaan": "2024-12-20"
+   "voimaan": "2024-12-20",
+   "vtText": "Tämä laki tulee voimaan 20 päivänä joulukuuta 2024."
   },
   "807/2025": {
    "fetched": "2026-10-29",
@@ -22993,12 +23095,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "808/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "808/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/808",
-   "voimaan": "2024-12-20"
+   "voimaan": "2024-12-20",
+   "vtText": "Tämä laki tulee voimaan 20 päivänä joulukuuta 2024."
   },
   "808/2025": {
    "fetched": "2026-10-29",
@@ -23010,12 +23113,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "809/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "809/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/809",
-   "voimaan": "2024-12-20"
+   "voimaan": "2024-12-20",
+   "vtText": "Tämä laki tulee voimaan 20 päivänä joulukuuta 2024."
   },
   "809/2025": {
    "fetched": "2026-10-29",
@@ -23054,12 +23158,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026.\nDigi- ja väestötietoviraston on saatettava toimintansa 3, 4 ja 7–9 §:n sekä 17 §:n 1 momentin, 18 §:n 1 ja 2 momentin ja 23 §:n mukaiseksi viimeistään 24 päivänä joulukuuta 2026.\nPatentti- ja rekisterihallituksen on saatettava toimintansa 5 ja 6 §:n mukaiseksi viimeistään 24 päivänä joulukuuta 2026.\nLiikenne- ja viestintäviraston on saatettava toimintansa 16 §:n ja 17 §:n 2 momentin mukaiseksi viimeistään 24 päivänä joulukuuta 2026.\nLain 18 §:n 3 momenttia sovelletaan 1  päivästä tammikuuta 2028."
   },
   "811/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "811/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/811",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "811/2025": {
    "fetched": "2026-10-29",
@@ -23080,12 +23185,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026.\nLain 7 b § ja 17 §:n 2 momentti tulevat kuitenkin voimaan vasta 1 päivänä tammikuuta 2027."
   },
   "812/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "812/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/812",
-   "voimaan": "2025-08-01"
+   "voimaan": "2025-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2025."
   },
   "812/2025": {
    "fetched": "2026-10-29",
@@ -23124,12 +23230,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "814/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "814/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/814",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nPäivää kohden kannettavan veron määrä lasketaan tämän lain voimaan tullessa voimassa olleiden säännösten mukaisesti 31 päivään joulukuuta 2025."
   },
   "814/2025": {
    "fetched": "2026-10-29",
@@ -23150,12 +23257,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "815/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "815/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/815",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nPäivää kohden kannettavan veron määrä lasketaan lain voimaan tullessa voimassa olleiden säännösten mukaisesti 31 päivään joulukuuta 2025."
   },
   "815/2025": {
    "fetched": "2026-10-29",
@@ -23184,12 +23292,13 @@
    "voimaan": "2022-09-15"
   },
   "816/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "816/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/816",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "816/2025": {
    "fetched": "2026-10-29",
@@ -23578,12 +23687,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "834/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "834/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/834",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "834/2025": {
    "fetched": "2026-10-29",
@@ -23604,12 +23714,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "835/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "835/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/835",
-   "voimaan": "2025-08-01"
+   "voimaan": "2025-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2025."
   },
   "835/2025": {
    "fetched": "2026-10-29",
@@ -23630,12 +23741,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "836/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "836/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/836",
-   "voimaan": "2025-08-01"
+   "voimaan": "2025-08-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä elokuuta 2025."
   },
   "836/2025": {
    "fetched": "2026-10-29",
@@ -23664,12 +23776,13 @@
    "voimaan": "2022-10-01"
   },
   "837/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "837/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/837",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "837/2025": {
    "fetched": "2026-10-29",
@@ -23690,12 +23803,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "838/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "838/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/838",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "838/2025": {
    "fetched": "2026-10-29",
@@ -23716,12 +23830,13 @@
    "vtText": "Tämä laki tulee voimaan  1 päivänä lokakuuta 2026."
   },
   "839/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "839/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/839",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "839/2025": {
    "fetched": "2026-10-29",
@@ -23742,12 +23857,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "840/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "840/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/840",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 12 §:n 4 momentti tulee kuitenkin voimaan valtioneuvoston asetuksella säädettävänä ajankohtana. Lain 12 §:n 3 momenttia sovelletaan kuitenkin vasta 1 päivästä tammikuuta 2028."
   },
   "840/2026": {
    "fetched": "2026-10-28",
@@ -23759,12 +23875,13 @@
    "vtText": "Tämä asetus tulee voimaan 15 päivänä syyskuuta 2026.\nByrån för samiska språket har till uppgift att\n1)\n2)\n3)\nByrån ska i sin översättningsverksamhet beakta rekommendationer och anvisningar från de organ som fastställer normerna för samiska språk samt allmänna principer för språkvård."
   },
   "841/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "841/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/841",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 5 m § on voimassa 31 päivään joulukuuta 2025. Tämän lain 5 d §:n 3 momentin voimaantulosta säädetään valtioneuvoston asetuksella."
   },
   "841/2025": {
    "fetched": "2026-10-29",
@@ -23785,20 +23902,22 @@
    "vtText": "Tämä asetus tulee voimaan 15 päivänä syyskuuta 2026."
   },
   "842/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "842/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/842",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nGenom denna lag upphävs 5 b § 4 mom. i lagen om ändring och temporär ändring av lagen om främjande av användningen av förnybara drivmedel för transport (1134/2022)."
   },
   "843/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "843/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/843",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "843/2025": {
    "fetched": "2026-10-29",
@@ -23819,12 +23938,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "844/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "844/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/844",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nGenom denna lag upphävs lagen om minskning av växthusgasutsläppen under hela livscykeln från vissa drivmedel (170/2018)."
   },
   "844/2025": {
    "fetched": "2026-10-29",
@@ -23845,12 +23965,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "845/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "845/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/845",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "845/2025": {
    "fetched": "2026-10-29",
@@ -23862,12 +23983,13 @@
    "vtText": null
   },
   "846/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "846/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/846",
-   "voimaan": "2024-12-30"
+   "voimaan": "2024-12-30",
+   "vtText": "Tämä laki tulee voimaan 30 päivänä joulukuuta 2024.\nTämän lain 29 f §:ssä tarkoitettu tieto sijaintimaakunnasta on asetettava saataville viimeistään 31 päivänä joulukuuta 2024."
   },
   "846/2025": {
    "fetched": "2026-10-29",
@@ -23879,12 +24001,13 @@
    "vtText": null
   },
   "847/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "847/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/847",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 7 b §:n 2 momentti tulee kuitenkin voimaan vasta 1 päivänä helmikuuta 2025.\nTämän lain 7 b §:n 2 momenttia ei sovelleta toimeentulotukea koskevaan hakemukseen, joka koskee aikaa ennen 1 päivää maaliskuuta 2025."
   },
   "847/2025": {
    "fetched": "2026-10-29",
@@ -23896,12 +24019,13 @@
    "vtText": "Tämä asetus tulee voimaan 22 päivänä heinäkuuta 2025 ja on voimassa 31 päivään heinäkuuta 2027.\nI områdena enligt 5 § i jaktförordningen (666/1993) får jagas östersjövikare under respektive jaktår som följer:\n1)\n2)\n3)"
   },
   "848/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "848/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/848",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "849/2021": {
    "fetched": "2026-10-19",
@@ -23912,12 +24036,13 @@
    "voimaan": "2021-10-04"
   },
   "849/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "849/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/849",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "849/2025": {
    "fetched": "2026-10-29",
@@ -23983,12 +24108,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä syyskuuta 2025."
   },
   "853/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "853/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/853",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTällä asetuksella kumotaan valtion talousarviosta annetun asetuksen (1243/1992) 8 a luku, sellaisena kuin se on asetuksessa 118/2016.\nAsetusta sovelletaan ensimmäisen kerran vuodelta 2024 laadittavaan vuosikertomukseen. Asetuksen 1 §:n 1 momentin 4 kohtaa yhdisteltyjen laskelmien osalta ja 5 kohtaa sovelletaan kuitenkin ensimmäisen kerran vuodelta 2025 laadittavaan vuosikertomukseen.\nVuodelta 2024 laadittavaan vuosikertomukseen otetaan lisäksi katsaus talousarviotalouden, valtion liikelaitosten ja talousarvion ulkopuolisten valtion rahastojen muodostaman kokonaisuuden tuottoihin ja kuluihin sekä varallisuusasemaan ja taseen ulkopuolisiin vastuisiin.\nI regeringens årsberättelse ska ingå\n1)\n2)\n3)\n4)\n5)\n6) redogörelser för resultatet inom ministeriernas ansvarsområde i enlighet med 2 §,\n7) uppgifter om regeringens åtgärder med anledning av riksdagens uttalanden och ställningstaganden.\nI regeringens årsberättelse ska även ingå finanscontrollerfunktionens uttalande om\nriktigheten och tillräckligheten av de uppgifter som avses i 18 § i lagen om statsbudgeten.\nRedogörelsen för resultaten av verksamheten inom ministeriets ansvarsområde ska innehålla\n1)\n2)\n3)\n4)\n5)\nDe uppgifter enligt 1 mom. 2–4 punkten som gäller resultatet samt i tillämpliga delar även de övriga uppgifter som avses i 1 mom. framställs i mån av möjlighet med hjälp av lämpliga nyckeltal som kompletteras med behövliga kvalitativa redogörelser.\nMinisterierna ska lämna statsrådets kansli de uppgifter som behövs för utarbetandet av regeringens årsberättelse i enlighet med de tidsfrister och anvisningar som statsrådets kansli angett.\nMinisterierna ska lämna statsrådets kansli och finansministeriet sådana övriga uppgifter och redogörelser som utarbetandet av regeringens årsberättelse förutsätter."
   },
   "853/2025": {
    "fetched": "2026-10-29",
@@ -24017,12 +24143,13 @@
    "voimaan": "2023-01-01"
   },
   "855/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "855/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/855",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tullessa 1 §:n 1 momentissa tarkoitettuun virkaan nimitettynä oleva henkilö on kielitaidon osalta edelleen kelpoinen virkaansa. Ennen tämän asetuksen voimaantuloa määräajaksi nimitetty henkilö on kelpoinen virkasuhteeseen määräajan loppuun saakka."
   },
   "855/2025": {
    "fetched": "2026-10-29",
@@ -24043,12 +24170,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä lokakuuta 2026."
   },
   "856/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "856/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/856",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tullessa yleisesikuntaupseerin tutkintoon johtavia opintoja suorittavaan sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä."
   },
   "856/2025": {
    "fetched": "2026-10-29",
@@ -24122,12 +24250,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "861/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "861/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/861",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nMaximibeloppet av den gottgörelse som anges i 44 § 1 mom. i samarbetslagen (1333/2021) är 40 160 euro."
   },
   "861/2025": {
    "fetched": "2026-10-29",
@@ -24183,12 +24312,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025."
   },
   "865/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "865/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/865",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja se on voimassa 31 päivään joulukuuta 2027 saakka.\nI denna förordning föreskrivs om avgiftsbelagda prestationer vid Enheten för hälso- och sjukvård för fångar och om grunderna för dessa prestationer.\nDe övriga prestationer som avses i 7 § 1 mom. i lagen om grunderna för avgifter till staten och som enheten prissätter enligt företagsekonomiska grunder är, om inte något annat följer av lag eller förordning, följande:\n1)\n2)"
   },
   "865/2025": {
    "fetched": "2026-10-29",
@@ -24235,12 +24365,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä syyskuuta 2025.\nTällä asetuksella kumotaan Suomen Teollisuussijoitus Oy nimisestä valtionyhtiöstä annettu valtioneuvoston asetus (54/2014)."
   },
   "869/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "869/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/869",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nI den bedömning av kompetens och behovet av integrationstjänster som avses i 14 § i lagen om främjande av integration (681/2023) ingår en inledande intervju och vid behov preciserande åtgärder.\nKommunen eller arbetskraftsmyndigheten ska vid en inledande intervju utreda åtminstone invandrarens kompetens och allmänna förutsättningar för integration samt behov och önskemål avseende integrationstjänsterna enligt följande:\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\nOm välfärdsområdet deltar i bedömningen av kompetens och behovet av integrationstjänster, kan utöver vad som föreskrivs i 1 mom. behovet av social- och hälsovårdstjänster preliminärt utredas.\nVid den inledande intervjun ska invandraren åtminstone informeras om\n1)\n2)\n3)\n4)\nUtifrån de uppgifter som erhållits vid den inledande intervjun kan bland annat följande preciserande åtgärder ingå i en bedömning av kompetens och behovet av integrationstjänster:\n1)\n2)\n3)\n4)\n5)\n6)\nEn bedömning av kompetens och behovet av integrationstjänster ska genomföras på invandrarens modersmål eller på ett språk som invandraren kan konstateras förstå i tillräcklig utsträckning med tanke på ärendets natur.\nBedömningen av kompetens och behovet av integrationstjänster ska genomföras så att utifrån den kan invandrarens behov av en integrationsplan enligt 16 § i lagen om främjande av integration bedömas eller så att invandraren utifrån bedömningen kan vägledas till arbetslivet, till utbildning som motsvarar invandrarens behov eller till andra integrationsfrämjande åtgärder och tjänster.\nBedömningen av kompetens och behovet av integrationstjänster ska ordnas på kommunens eller arbetskraftsmyndighetens verksamhetsställe eller något annat serviceställe, om inte något annat sätt att sköta ärendet är mer ändamålsenligt på grund av vägande skäl."
   },
   "87/2025": {
    "fetched": "2026-10-30",
@@ -24270,12 +24401,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä joulukuuta 2025."
   },
   "872/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "872/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/872",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nAv statens medel betalas kalkylerad ersättning för kostnader som föranleds av ordnande av verksamhet enligt 61 § i lagen om främjande av integration (681/2023) till kommuner som inte hör till landskapet Åland till ett belopp av 2 741 euro per år för en person under 7 år och till ett belopp av 2 052 euro per år för en person som fyllt 7 år. För en person som fyllt 18 år betalas utöver ovan nämnda kalkylerade ersättning dessutom en kalkylerad ersättning till ett belopp av 7 741 euro när ersättning betalas för personen under dennes första år som myndig.\nAv statens medel betalas kalkylerad ersättning till kommuner som hör till landskapet Åland för personer som avses i 2 § 3 och 4 mom. i lagen om främjande av integration för kostnader som föranleds av ordnande av verksamhet enligt 61 § i den lagen till ett belopp av 3 157 euro per år för en person under 7 år och till ett belopp av 2 609 euro per år för en person so m fyllt 7 år. För en person som fyllt 18 år betalas utöver ovan nämnda kalkylerade ersättning dessutom en kalkylerad ersättning till ett belopp av 76 euro när ersättning betalas för personen under dennes första år som myndig.\nAv statens medel betalas kalkylerad ersättning för kostnader som föranleds av ordnande av verksamhet enligt 62 § i lagen om främjande av integration till välfärdsområden och Helsingfors stad till ett belopp av 948 euro per år för en person under 7 år och till ett belopp av 1 097 euro per år för en person som fyllt 7 år. För en person som fyllt 18 år betalas utöver ovan nämnda kalkylerade ersättning dessutom en kalkylerad ersättning till ett belopp av 73 euro när ersättning betalas för personen under dennes första år som myndig.\nAv statens medel betalas kalkylerad ersättning till hälso- och sjukvårdsmyndigheten i landskapet Åland för kostnader som föranleds av ordnande av verksamhet enligt 62 § i lagen om främjande av integration till ett belopp av 532 euro per år för en person under 7 år och till ett belopp av 540 euro per år för en person som fyllt 7 år.\nAv statens medel betalas kalkylerad ersättning till kommuner som hör till landskapet Åland för kostnader som föranleds av ordnande av verksamhet enligt 65 § 3 mom. i lagen om främjande av integration enligt följande:\n1)\n2)\n3)\n4)\n5)\nEn förutsättning för att ersättning ska betalas är att kommunen i landskapet Åland har ordnat en tjänst som avses i 1 mom.\nOm i enli ghet med 70 § i lagen om främjande av integration en kommun eller ett välfärdsområde ansöker om och till kommunen eller välfärdsområdet betalas kalkylmässig ersättning för kostnader som uppkommit före ikraftträdandet av denna förordning, betalas av statens medel kalkylerad ersättning till kommuner som inte hör till landskapet Åland till ett belopp av 2 185 euro per år för en person under 7 år och till ett belopp av 1 496 euro per år för en person som fyllt 7 år, till kommuner som hör till landskapet Åland till ett belopp av 2 300 euro per år för en person under 7 år och till ett belopp av 1 760 euro per år för en person som fyllt 7 år och till välfärdsområden och Helsingfors stad till ett belopp av 115 euro per år för en person under 7 år och till ett belopp av 264 euro per år för en person som fyllt 7 år."
   },
   "872/2025": {
    "fetched": "2026-10-29",
@@ -24304,12 +24436,13 @@
    "vtText": "Tämä laki tulee voimaan 13 päivänä lokakuuta 2026. Sen 93 §:n 1 ja 4 momentti ovat voimassa 31 päivään joulukuuta 2026 ja niitä sovelletaan vuodelta 2026 toimitettavassa verotuksessa.\nLain 69 §:n 5–7 momenttia sovelletaan ensimmäisen kerran vuodelta 2026 toimitettavassa verotuksessa. Lain 127 f §:ää sovelletaan vuosilta 2026 ja 2027 toimitettavissa verotuksissa. Lain 127 f §:ää sovelletaan myös ennen lain voimaantuloa kotitalousvähennykseen oikeuttavasta työstä maksettuun suoritukseen, jos suoritus on tehty 1 päivänä tammikuuta 2026 tai sen jälkeen."
   },
   "874/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "874/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/874",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nKommunen ska i den nationella informationsresursen som avses i 74 § i lagen om främjande av integration (681/2023) i fråga om den bedömning av kompetens och behovet av integrationstjänster som avses i 14 § i den lagen föra in datum för utarbetandet av och innehållet i bedömningen, inklusive eventuella preciserande åtgärder, den planerade tidpunkten för utarbetande av integrationsplanen eller annan styrning till tjänster, kontaktuppgifter till dem som utarbetat bedömningen och information om varifrån uppgifterna i bedömningen har fåtts.\nKommunen får i den nationella informationsresursen också föra in andra uppgi fter som hänför sig till bedömningen och som är nödvändiga för att uppgifterna enligt lagen om främjande av integration ska kunna fullgöras.\nKommunen ska i den nationella informationsresursen om den integrationsplan som avses i 16 § i lagen om främjande av integration föra in datum för utarbetandet av planen och planens varaktighet, mål, överenskomna åtgärder och tjänster samt övrigt innehåll, kontaktuppgifter till dem som utarbetat planen, den planerade tidpunkten för en översyn av planen och information om varifrån uppgifterna i planen har fåtts.\nKommunen får också föra in andra uppgifter som hänför sig till planen och som är nödvändiga för att uppgifterna enligt lagen om främjande av integration ska kunna fullgöras.\nKommunen ska i den nationella informationsresursen föra in de nödvändiga uppgifter som hänför sig till den översyn av integrationsplaner som avses i 22 § i lagen om främjande av integration.\nFrån översynen av en integrationsplan ska åtminstone föras in tidpunkten för översynen, uppgifter om integrationskundens deltagande i tjänster och åtgärder, framsteg och resultat samt eventuella faktorer som försvårar eller fördröjer deltagandet, ändringar som ska göras i planen, kontaktuppgifter till dem som utarbetat planen, tidpunkten för den följande planerade översynen av planen och information om varifrån uppgifterna har fåtts.\nKommunen får också föra in andra uppgifter som hänför sig till översynen av en integrationsplan och som är nödvändiga för att uppgifterna enligt lagen om främjande av integration ska kunna fullgöras.\nKommunen får i den nationella informationsresursen med invandrarens samtycke vid ordnandet av väglednings- och rådgivningstjänster enligt 10 § i lagen om främjande av integration föra in uppgifter om invandrarens identifierade behov av tjänster och om styrande av invandraren till tjänster samt om andra frågor som hänför sig till integrationen av invandraren, om det behövs för att främja invandrarens integration."
   },
   "874/2026": {
    "fetched": "2026-10-28",
@@ -24393,12 +24526,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä toukokuuta 2027."
   },
   "882/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "882/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/882",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025. Asetus on voimassa 31 päivään joulukuuta 2025 saakka.\nLiite\nMAKSUTAULUKKO (PRH)\nKiinteämaksuiset julkisoikeudelliset suoritteet\n1. Kansalliset patenttiasiat\n2. Kansalliset hyödyllisyysmallioikeusasiat\n3. Patenttiyhteistyösopimuksen (SopS 58/1980, PCT) mukaiset asiat\n4. Eurooppapatenttiasiat\n5. Lisäsuojatodistusasiat\n6. Integroidun piirin piirimalliasiat\n7. Teollisoikeusasiamiesasiat\n8. Tavaramerkkiasiat\n9. Mallioikeusasiat\n10. Kaupparekisteriasiat\n11. Yritys- ja yhteisötunnusrekisteriasiat\n12. Yrityskiinnitysasiat\n13. Säätiörekisteriasiat\n14. Yhdistysrekisteriasiat\n16. Edunsaajia koskevat rekisteriasiat\n17. Muut suoritteet\nBestämmelser om bestämmande på basis av kostnadsmotsvari ghet enligt prestationsgrupp av de avgifter som tas ut för Patent- och registerstyrelsens offentligrättsliga prestationer finns i 2 och 3 § i lagen om avgifter för patent- och registerstyrelsens prestationer (1032/1992).\nPrestationsgrupperna är följande:\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n10)\n11)\n12)\nPrestationer som avses i 3 § 4 mom. i lagen om avgifter för patent- och registerstyrelsens prestationer oc h för vilka Patent- och registerstyrelsen tar ut en avgift som är lägre än självkostnadsvärdet är följande:\n1)\n2)\nPrestationer som avses i 3 § 4 mom. i lagen om avgifter för patent- och registerstyrelsens prestationer och för vilka Patent- och registerstyrelsen inte tar ut någon avgift är följande:\n1)\n2)"
   },
   "882/2026": {
    "fetched": "2026-10-28",
@@ -24444,12 +24578,13 @@
    "voimaan": "2023-06-30"
   },
   "884/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "884/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/884",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Lain 10 § tulee kuitenkin voimaan vasta 1 päivänä tammikuuta 2026."
   },
   "884/2026": {
    "fetched": "2026-10-28",
@@ -24495,12 +24630,13 @@
    "voimaan": "2023-06-30"
   },
   "886/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "886/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/886",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "886/2025": {
    "fetched": "2026-10-29",
@@ -24521,12 +24657,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä toukokuuta 2027."
   },
   "887/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "887/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/887",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "887/2026": {
    "fetched": "2026-10-28",
@@ -24538,12 +24675,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä marraskuuta 2026.\nEnnen tämän lain voimaantuloa myönnettyyn palkkatukijaksoon sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "888/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "888/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/888",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "888/2025": {
    "fetched": "2026-10-29",
@@ -24564,12 +24702,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä marraskuuta 2026."
   },
   "889/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "889/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/889",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "889/2025": {
    "fetched": "2026-10-29",
@@ -24607,12 +24746,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025.\nTällä lailla kumotaan sotilaskurinpidosta ja rikostorjunnasta puolustusvoimissa annettu laki (255/2014).\nMuualla laissa olevalla viittauksella kumottuun lakiin tarkoitetaan tämän lain tultua voimaan viittausta tähän lakiin.\nJos kurinpitomenettelyssä käsiteltävä rikos on tehty ennen tämän lain voimaantuloa, määrättäviin seuraamuksiin, pakkokeinoihin, asian käsittelyyn ja muutoksenhakuun sekä täytäntöönpanoon ja valvontaan sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä.\nI denna lag föreskrivs om den brottsbekämpning som Försvarsmaktens Huvudstab bedriver samt om utredning av sådana brott som behandlas i ett militärdisciplinförfarande inom Försvarsmakten. I lagen föreskrivs dessutom om förfarandet i ett militärdisciplinärende, om de påföljder som påförs i det samt om inledandet av ett militärrättegångsförfarande.\nBestämmelser om personer som lyder under ett militärdisciplinförfarande finns i\n1)\n2)\n3)\n4)\n5)\n6)\n7)\nI ett militärdisciplinförfarande får en sådan gärning undersökas där det finns skäl att misstänka att en person som lyder under ett militärdisciplinförfarande har gjort sig skyldig till ett brott som avses i 2 § i militära rättegångslagen (326/1983). För en sådan gärning kan ett disciplinstraff påföras i ett disciplinärt förfarande eller dömas ut i en militärrättegång i enlighet med denna lag och militära rättegångslagen.\nPå Huvudstabens brottsbekämpning tillämpas bestämmelserna om utredning av brott i förundersökningslagen (805/2011) och tvångsmedelslagen (806/2011), om inget annat följer av det som föreskrivs i denna lag.\nUtöver vad som föreskrivs i denna lag, finns det bestämmelser om behandling av personuppgifter i lagen om behandling av personuppgifter inom Försvarsmakten (332/2019).\nI denna lag avses med\n1)\n2)\n3)\n4)\n5)\n6)\n7)\nDe som sköter brottsbekämpningsuppdrag vid Huvudstaben ska respektera de grundläggande rättigheterna och de mänskliga rättigheterna, och när de utövar sina befogenheter välja det motiverbara alternativ som bäst tillgodoser dessa rättigheter.\nDe åtgärder som vidtas vid Huvudstaben i samband med brottsbekämpning ska kunna försvaras i förhållande till hur viktigt, farligt och brådskande uppdraget är, det mål som eftersträvas samt uppträdande, ålder, hälsa och andra motsvarande omständigheter som gäller den person som är föremål för åtgärden och övriga o mständigheter som inverkar på helhetsbedömningen av situationen.\nGenom de åtgärder som vidtas vid Huvudstaben i samband med brottsbekämpning får det inte ingripas i någons rättigheter i större utsträckning och ingen får orsakas större skada eller olägenhet än vad som är nödvändigt för att utföra uppdraget.\nHuvudstabens befogenheter för brottsbekämpning får utövas endast i syften som det föreskrivs om i denna lag.\nUtöver vad som föreskrivs i 2 kap. ska vid förundersökning i synnerhet följande principer enligt förundersökningslagen och tvångsmedelslagen iakttas:\n1)\n2)\n3)\n4)\nEn disciplinär förman ska göra förundersökning när det på grund av en anmälan till förmannen eller annars finns skäl att misstänka att ett brott som avses i militära rättegångslagen har begåtts. Den disciplinära förmannen ska utan dröjsmål registrera anmälan i enlighet med 3 kap. 1 § i förundersökningslagen. På förundersökning och beslut som gäller den tillämpas vad som närmare anges i förundersökningslagen, om inte något annat följer av 14 §.\nFörundersökning ska också göras när riksåklagaren eller en åklagare som avses i 4 § 1 mom. i militära rättegångslagen förordnar om det.\nFörundersökningen av ett brott som en tjänsteman vid Försvarsmaktens underrättelsetjänst misstänks för ska göras av Huvudstaben så som föreskrivs i 11 kap.\nUtöver vad som föreskrivs i 9 och 12 § kan en militärjurist som är Huvudstabens undersökningsledare eller någon annan tjänsteman som förordnats till undersökningsledare besluta om inledande av förundersökning i enlighet med 3 kap. 3 § i förundersökningslagen. En anmälan ska då utan dröjsmål registreras på det sätt som föreskrivs i 3 kap. 1 § i förundersökningslagen. Den disciplinära förmannen ska underrättas om ett beslut om att inleda förundersökning, om inte detta äventyrar genomförandet av förundersökningen.\nUtöver vad som föreskrivs i 9, 10 och 12 § kan polisen besluta om inledande av förundersökning i enlighet med 3 kap. 3 § i förundersökningslagen. Polisen ska utan dröjsmål registrera en anmälan på det sätt som föreskrivs i 3 kap. 1 § i förundersökningslagen. Den disciplinära förmannen ska underrättas om ett beslut om att inleda förundersökning, om inte detta äventyrar genomförandet av förundersökningen.\nDen disciplinära förman i vars underlydande trupp eller förvaltningsenhet ett brott har begåtts eller den som misstänks för brottet tjänstgör ska sörja för att förundersökning görs. Vid behov kan också en högre disciplinär förman sörja för att förundersökning görs. Den tjänsteman som sörjer för att förundersökning görs är samtidigt undersökningsledare eller förordnar en av sina underlydande till undersökningsledare.\nHar en högre disciplinär förman fått kännedom om att en lägre förman inte vidtagit åtgärder med anledning av ett misstänkt brott, ska förmannen om sakens natur det kräver förordna att förundersökning görs eller själv ta upp saken till behandling."
   },
   "890/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "890/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/890",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "890/2025": {
    "fetched": "2026-10-29",
@@ -24633,12 +24773,13 @@
    "vtText": "Tämä laki tulee voimaan 7 päivänä joulukuuta 2026.\nVuoden 2026 arvioitujen ennakoiden ja toteutuneiden maksuosuuksien erotus otetaan huomioon lain voimaantulon jälkeisten kuukausien valtion osuuksia maksettaessa."
   },
   "891/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "891/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/891",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "891/2025": {
    "fetched": "2026-10-29",
@@ -24675,12 +24816,13 @@
    "voimaan": "2023-07-03"
   },
   "892/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "892/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/892",
-   "voimaan": "2025-03-01"
+   "voimaan": "2025-03-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä maaliskuuta 2025."
   },
   "892/2026": {
    "fetched": "2026-10-28",
@@ -24769,20 +24911,22 @@
    "voimaan": "2023-08-01"
   },
   "896/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "896/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/896",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "897/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "897/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/897",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 38, 38 a, 61 ja 68 a §:ää sovelletaan kuitenkin vasta 1 päivästä tammikuuta 2026.\nRakentamislupahakemukseen sovelletaan 1 päivästä tammikuuta 2025 lukien 31 päivään joulukuuta 2025 alueidenkäyttölain (132/1999) 131 §:ää."
   },
   "897/2025": {
    "fetched": "2026-10-29",
@@ -24794,12 +24938,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä lokakuuta 2025."
   },
   "898/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "898/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/898",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Tällä lailla muutettavan lain 131 §:n kumoaminen tulee kuitenkin voimaan vasta 1 päivänä tammikuuta 2026.\nTämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "898/2026": {
    "fetched": "2026-10-28",
@@ -24811,12 +24956,13 @@
    "vtText": "Tämä asetus tulee voimaan 16 päivänä lokakuuta 2026."
   },
   "899/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "899/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/899",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "899/2026": {
    "fetched": "2026-10-28",
@@ -24862,12 +25008,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025."
   },
   "900/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "900/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/900",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "900/2026": {
    "fetched": "2026-10-28",
@@ -24879,12 +25026,13 @@
    "vtText": "Tämä asetus tulee voimaan 16 päivänä lokakuuta 2026."
   },
   "901/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "901/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/901",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "901/2025": {
    "fetched": "2026-10-29",
@@ -24913,12 +25061,13 @@
    "voimaan": null
   },
   "902/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "902/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/902",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa vuoden 2025 loppuun. Ennen tämän asetuksen voimaantuloa vireille tulleeseen asiaan sovelletaan tämän asetuksen voimaantullessa voimassa olleita säännöksiä.\nLiite\nMAAHANMUUTTOVIRASTON MAKSULLISET JULKISOIKEUDELLISET SUORITTEET\nSuorite\tMaksu\nMUIDEN VIRANOMAISTEN KANSSA SAMANLAATUISTEN SUORITTEIDEN MAKSUT\nOMAKUSTANNUSARVOA VASTAAVAT MAKSUT\nOMAKUSTANNUSARVOA ALEMMAT MAKSUT\nAvgiftsbelagda offentligrättsliga prestationer enligt 6 § 2 mom. i lagen om grunderna för avgifter till staten (150/1992) för vilka Migrationsverket tar ut en fast behandlingsavgift enligt den avgiftstabell som utgör bilaga till denna förordning är prestationer som gäller främlingspass, resedokument för flykting eller visum.\nAvgiftsbelagda offentligrättsliga prestationer enligt 6 § 1 mom. i lagen om grunderna för avgifter till staten för vilka Migrationsverket tar ut en fast behandlingsavgift som motsvarar självkostnadsvärdet enligt den avgiftstabell som utgör bilaga till denna förordning är prestationer som gäller\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n10)\n11)\n12)\nAvgiftsbelagda offentligrättsliga prestationer enligt 6 § 3 mom. i lagen om grunderna för avgifter till staten för vilka Migrationsverket av sociala och humanitära skäl eller av skäl som hänför sig till internationella avtal tar ut en fast behandlingsavgift till ett lägre belopp än prestationens självkostnadsvärde enligt den avgiftstabell som utgör bilaga till denna förordning är prestationer som gäller\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n11)\n12)\n13)\n14)\n15)\n16)\n17)\nOffentligrättsliga prestationer enligt 6 § 3 mom. i lagen om grunderna för avgifter till staten för vilka Migrationsverket av sociala och humanitära skäl eller av skäl som hänför sig till internationella avtal inte tar ut någon behandlingsavgift är prestationer som gäller\n1)"
   },
   "902/2025": {
    "fetched": "2026-10-29",
@@ -24947,7 +25096,7 @@
    "voimaan": "2021-01-01"
   },
   "904/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [
     "2025-03-03",
     "2025-03-31"
@@ -24955,7 +25104,8 @@
    "sk": "904/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/904",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nLiitteen merenkulun kohta 5.2.1 Turvallisuus- tai ympäristötodistus, sähköinen hakemus tulee voimaan 3 päivänä maaliskuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nLiitteen tieliikenteen kohta 12 Ajoneuvotekniset lausunnot ja luvat ja muut suoritteet on kuitenkin voimassa 30 päivään maaliskuuta 2025.\nLiitteen tieliikenteen kohta 12A Ajoneuvotekniset lausunnot ja luvat ja muut suoritteet tulee voimaan 31 päivänä maaliskuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nMaksuista tai suoritteista, joita koskeva asia on tullut vireille ennen tämän asetuksen voimaantuloa, peritään maksu asian vireille tulohetkellä voimassa olleiden säännösten mukaisesti."
   },
   "904/2025": {
    "fetched": "2026-10-29",
@@ -24967,12 +25117,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä lokakuuta 2025."
   },
   "905/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "905/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/905",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nMaksuista tai suoritteista, joita koskeva asia on tullut vireille ennen tämän asetuksen voimaantuloa, peritään maksu asian vireille tulohetkellä voimassa olleiden säännösten mukaisesti."
   },
   "905/2025": {
    "fetched": "2026-10-29",
@@ -24984,12 +25135,13 @@
    "vtText": "Tämä asetus tulee voimaan 31 päivänä lokakuuta 2025."
   },
   "906/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "906/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/906",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nMaksuista tai suoritteista, joita koskeva asia on tullut vireille ennen tämän asetuksen voimaantuloa, peritään maksu asian vireille tulohetkellä voimassa olleiden säännösten mukaisesti."
   },
   "906/2026": {
    "fetched": "2026-10-28",
@@ -25061,20 +25213,22 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025."
   },
   "910/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "910/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/910",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025 ja sitä sovelletaan siitä ja myöhäisemmästä ajankohdasta myönnettävään tai tarkistettavaan tukeen."
   },
   "911/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "911/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/911",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025 ja sitä sovelletaan siitä ja myöhäisemmästä ajankohdasta myönnettävään tai tarkistettavaan tukeen."
   },
   "911/2026": {
    "fetched": "2026-10-28",
@@ -25095,12 +25249,13 @@
    "vtText": "Tämä laki tulee voimaan 27 päivänä lokakuuta 2026."
   },
   "913/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "913/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/913",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "913/2026": {
    "fetched": "2026-10-28",
@@ -25112,12 +25267,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "914/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "914/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/914",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "914/2025": {
    "fetched": "2026-10-29",
@@ -25138,12 +25294,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "915/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "915/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/915",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "915/2025": {
    "fetched": "2026-10-29",
@@ -25164,12 +25321,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2027."
   },
   "916/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "916/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/916",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "916/2026": {
    "fetched": "2026-10-28",
@@ -25181,12 +25339,13 @@
    "vtText": "Tämä asetus tulee voimaan 12 päivänä marraskuuta 2026."
   },
   "917/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "917/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/917",
-   "voimaan": "2024-12-31"
+   "voimaan": "2024-12-31",
+   "vtText": "Tämä laki tulee voimaan 31 päivänä joulukuuta 2024. Lakia sovelletaan ensimmäis en kerran 1.1.2024 ja sen jälkeen alkaneisiin tilikausiin."
   },
   "917/2026": {
    "fetched": "2026-10-28",
@@ -25206,12 +25365,13 @@
    "voimaan": "2023-08-18"
   },
   "918/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "918/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/918",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "918/2026": {
    "fetched": "2026-10-28",
@@ -25223,12 +25383,13 @@
    "vtText": "Tämä asetus tulee voimaan 12 päivänä marraskuuta 2026."
   },
   "919/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "919/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/919",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "919/2026": {
    "fetched": "2026-10-28",
@@ -25291,12 +25452,13 @@
    "voimaan": "2023-08-23"
   },
   "923/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "923/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/923",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "923/2026": {
    "fetched": "2026-10-29",
@@ -25308,12 +25470,13 @@
    "vtText": "Tämä asetus tulee voimaan 23 päivänä lokakuuta 2026 ja on voimassa 31 päivään joulukuuta 2028.\nÄndamålet med statsunderstödet är att täcka de kostnader som föranleds arbetskraftsmyndigheten av tillhandahållandet av tjänster som är avsedda för kompetensutveckling för långtidsarbetslösa. Statsunderstödet får inte användas för andra ändamål.\nI denna förordning avses med\n1)\n2)"
   },
   "924/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "924/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/924",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "924/2025": {
    "fetched": "2026-10-29",
@@ -25333,12 +25496,13 @@
    "voimaan": "2023-09-01"
   },
   "925/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "925/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/925",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "926/2023": {
    "fetched": "2026-10-18",
@@ -25349,12 +25513,13 @@
    "voimaan": "2023-08-28"
   },
   "926/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "926/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/926",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "927/2021": {
    "fetched": "2026-10-19",
@@ -25373,20 +25538,22 @@
    "voimaan": "2022-12-05"
   },
   "927/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "927/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/927",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "928/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "928/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/928",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "928/2025": {
    "fetched": "2026-10-29",
@@ -25398,12 +25565,13 @@
    "vtText": "Tämä laki tulee voimaan 27 päivänä lokakuuta 2025."
   },
   "929/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "929/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/929",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "929/2025": {
    "fetched": "2026-10-29",
@@ -25433,20 +25601,22 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä helmikuuta 2026."
   },
   "930/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "930/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/930",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "931/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "931/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/931",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "931/2025": {
    "fetched": "2026-10-29",
@@ -25458,14 +25628,15 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä marraskuuta 2025."
   },
   "932/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [
     "2025-03-01"
    ],
    "sk": "932/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/932",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nHakemukseen, joka on saapunut lääkkeiden hintalautakuntaan ennen tämän lain voimaantuloa, sovelletaan tämän lain voimaan tullessa voimassa ollutta 6 luvun 7 a §:n 1 momenttia."
   },
   "932/2025": {
    "fetched": "2026-10-29",
@@ -25479,12 +25650,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä marraskuuta 2025."
   },
   "933/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "933/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/933",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nGenom denna lag upphävs 2 mom. i ikraftträdandebestämmelsen i lagen om ändring och temporär ändring av sjukförsäkringslagen (1221/2019)."
   },
   "933/2025": {
    "fetched": "2026-10-29",
@@ -25496,12 +25668,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nLain 20 §:n 1 momenttia sovelletaan lain voimaantulon jälkeen tehtyihin liittymissopimuksiin ja ennen lain voimaantuloa tehtyjen liittymissopimusten muutoksiin, jotka on tehty lain voimaantulon jälkeen.\nPaikalliseen tai alueelliseen nimellisjännitteeltään 400 kilovoltin sähköverkkoon tai -johtoon, joka on otettu käyttöön 1 päivän syyskuuta 2013 ja lain voimaantulon välisenä aikana tai jota koskeva investointi on sisällytetty 1 päivän syyskuuta 2013 ja lain voimaantulon välisenä aikana julkaistuun tällä lailla muutettavan lain 41 §:ssä tarkoitettuun kantaverkon kehittämissuunnitelmaan, sovelletaan kuitenkin lain voimaan tullessa voimassa olleita 3 §:n 3 kohtaa sekä 19 ja 31 §:ää.\nLiittymisjohtoihin, joita koskeva liittymissopimus on tehty ennen lain voimaantuloa, sovelletaan lain voimaan tullessa voimassa olleita säännöksiä."
   },
   "934/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "934/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/934",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "934/2025": {
    "fetched": "2026-10-29",
@@ -25548,12 +25721,13 @@
    "voimaan": "2023-01-01"
   },
   "937/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "937/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/937",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "937/2025": {
    "fetched": "2026-10-29",
@@ -25581,12 +25755,13 @@
    "voimaan": "2023-09-15"
   },
   "938/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "938/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/938",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "938/2025": {
    "fetched": "2026-10-29",
@@ -25598,12 +25773,13 @@
    "vtText": "Tämä laki tulee voimaan 4 päivänä tammikuuta 2027."
   },
   "939/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "939/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/939",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "939/2025": {
    "fetched": "2026-10-29",
@@ -25632,12 +25808,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä joulukuuta 2025."
   },
   "940/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "940/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/940",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "940/2025": {
    "fetched": "2026-10-29",
@@ -25649,12 +25826,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nYksityiset palveluntuottajat, jotka ovat merkittyinä palveluntuottajien rekisteriin tämän lain voimaan tullessa, saavat jatkaa toimintaansa tämän lain tultua voimaan. Rekisteröintiviranomaisen tulee viran puolesta ja maksutta muuttaa niille myönnetyt luvat ja tehdyt rekisteröinnit tämän lain mukaisiksi rekisteröinneiksi kolmen vuoden kuluessa tämän lain voimaantulosta."
   },
   "941/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "941/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/941",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "941/2025": {
    "fetched": "2026-10-29",
@@ -25666,12 +25844,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026.\nTämän lain voimaan tullessa yhteisössä käsiteltyä tai käytössä olevaa 9 §:n mukaista asiaa ei tarvitse käsitellä vuoropuhelussa siltä osin kuin se on käsitelty tai laadittu ennen lain voimaantuloa, ellei asiasta tehdä 12 §:ssä tarkoitettua aloitetta tai muussa laissa toisin säädetä.\nJos työnantaja on ennen tämän lain voimaantuloa aloittanut evankelis-luterilaisen kirkon virkaehtosopimuksista annetun lain 3 §:n 4 momentissa tarkoitetun yhteistoiminnasta tehdyn yleissopimuksen mukaisen yhteistoimintamenettelyn työvoiman käytön vähentämiseen liittyvissä tilanteissa, asianomaiseen menettelyyn sovelletaan tämän lain voimaan tullessa voimassa olleen yhteistoiminnasta tehdyn yleissopimuksen määräyksiä.\nTyönantajan on laadittava 8 §:n mukainen kehittämissuunnitelma 12 kuukauden kuluessa tämän lain voimaantulosta."
   },
   "942/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "942/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/942",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nLain 2 luvun 7 a §:ää ei sovelleta, jos työehtosopimus, jonka määräykseen paikallisen sopimuksen tekeminen perustuu, on solmittu ennen tämän lain voimaantuloa."
   },
   "942/2025": {
    "fetched": "2026-10-29",
@@ -25691,12 +25870,13 @@
    "voimaan": "2020-12-11"
   },
   "943/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "943/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/943",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nLain 2 luvun 6 a §:ää ei sovelleta, jos työehtosopimus, jonka määräykseen paikallisen sopimuksen tekeminen perustuu, on solmittu ennen tämän lain voimaantuloa."
   },
   "943/2025": {
    "fetched": "2026-10-29",
@@ -25716,12 +25896,13 @@
    "voimaan": null
   },
   "944/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "944/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/944",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nTämän lain 34 §:n 8 momenttia ei sovelleta työehtosopimukseen, joka on solmittu ennen tämän lain voimaantuloa."
   },
   "944/2025": {
    "fetched": "2026-10-29",
@@ -25733,12 +25914,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "945/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "945/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/945",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "945/2025": {
    "fetched": "2026-10-29",
@@ -25750,12 +25932,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "946/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "946/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/946",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nTämän lain 30 §:n 4 momenttia ei sovelleta työehtosopimukseen, joka on solmittu ennen tämän lain voimaantuloa."
   },
   "946/2025": {
    "fetched": "2026-10-29",
@@ -25767,12 +25950,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "947/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "947/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/947",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "947/2025": {
    "fetched": "2026-10-29",
@@ -25784,12 +25968,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "948/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "948/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/948",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "948/2025": {
    "fetched": "2026-10-29",
@@ -25801,12 +25986,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "949/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "949/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/949",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nTämän lain 38 §:n 4 momenttia ei sovelleta työehtosopimukseen, joka on solmittu ennen tämän lain voimaantuloa."
   },
   "949/2025": {
    "fetched": "2026-10-29",
@@ -25836,12 +26022,13 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä helmikuuta 2026."
   },
   "950/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "950/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/950",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nLain 5 a §:ää ei sovelleta, jos työehtosopimus, jonka määräykseen paikallisen sopimuksen tekeminen perustuu, on solmittu ennen tämän lain voimaantuloa."
   },
   "950/2025": {
    "fetched": "2026-10-29",
@@ -25861,12 +26048,13 @@
    "voimaan": "2023-10-01"
   },
   "951/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "951/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/951",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "951/2025": {
    "fetched": "2026-10-29",
@@ -25878,12 +26066,13 @@
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "952/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "952/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/952",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "953/2022": {
    "fetched": "2026-10-18",
@@ -26013,62 +26202,69 @@
    "vtText": "Tämä asetus tulee voimaan 1 päivänä maaliskuuta 2026."
   },
   "962/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "962/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/962",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nEnnen 1 päivää tammikuuta 2025 alkaneen työllistymistä edistävän palvelun ajalta maksettavaan työttömyysetuuteen sovelletaan tämän lain voimaan tullessa voimassa olleita säännöksiä.\nEnnen 1 päivää tammikuuta 2025 alkaneeseen työhön ja työhön liittyvään koulutukseen sovelletaan tämän lain voimaan tullessa voimassa ollutta 8 luvun 2 §:n 2–4 momenttia."
   },
   "963/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "963/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/963",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "964/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [
     "2024-01-01"
    ],
    "sk": "964/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/964",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025. Sen 5 §:n 3 ja 4 momenttia sovelletaan kuitenkin vasta 1 päivästä helmikuuta 2025.\nLain 5 §:n 3 ja 4 momentti on voimassa vuoden 2026 loppuun. Tämän lain 5 §:n 3 momentin nojall a toimintansa aloittanut palveluntuottaja saa jatkaa toimintaa 31 päivän joulukuuta 2026 jälkeen siihen saakka, kunnes tällä lailla muutettavan lain 21 §:n 2 momentissa tarkoitettu rekisteröintipäätös on tehty.\nTämän lain 5 §:n 3 ja 4 momenttia sovelletaan myös lain voimaan tullessa vireillä olleisiin hakemuksiin. Jos kuitenkin palveluntuottaja on ennen 1 päivää helmikuuta 2025 saanut tällä lailla muutettavan lain 21 §:n 2 momentissa tarkoitetun hylkäävän päätöksen palveluntuottajan tai palveluyksikön rekisteröinnistä, uuteen palveluntuottajan ja palveluyksikön rekisteröintiä koskevaan hakemukseen sovelletaan tällä lailla muutettavan lain 5 §:n 1 ja 2 momenttia. Jos palveluntuottaja on oikeushenkilö, tällä lailla muutettavan lain 6 §:n 1 momentin 4 kohdassa tarkoitetut henkilöt voidaan ottaa huomioon arvioitaessa sitä, onko kyse aiemmin hylkäävän päätöksen saaneen palveluntuottajan uudesta hakemuksesta."
   },
   "965/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "965/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/965",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "966/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "966/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/966",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nRikosta, joka on kohdistunut rikoslain 21 luvun 16 §:n 1 momentin 2 kohdassa tarkoitettuun henkilöön, saa tämän lain 3 a §:n estämättä sovitella, jos sovittelua koskeva aloite on tehty ennen tämän lain voimaantuloa."
   },
   "967/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "967/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/967",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025.\nSuomessa asuvan tällä lailla muutettavan lain 7 §:n 1 kohdassa tarkoitetun sosiaaliturva-asetuksen tai 7 §:n 2 kohdassa tarkoitetun perusasetuksen soveltamisalaan kuuluvan henkilön ennen tämän lain voimaantuloa alkanut kansaneläke lasketaan perusasetuksen 58 artiklan edellyttämällä tavalla eläkkeensaajan hakemuksesta tai kun eläke tarkistetaan lain voimaantulosta tai myöhäisemmästä ajankohdasta. Jos eläkkeensaaja asuu lain voimaan tullessa perusasetusta soveltavassa valtiossa, kansa neläkkeen maksu keskeytetään lain voimaantuloa seuraavan kuukauden alusta. Etuudensaajan palattua Suomeen asumaan aletaan keskeytettyä etuutta maksaa paluuta seuraavan kuukauden alusta. Etuutta maksetaan kuitenkin takautuvasti enintään kuuden kuukauden ajalta paluuilmoituksen tekemisestä. Keskeytetty eläke lakkaa ilman eri päätöstä, jos sitä ei ole kahden vuoden kuluessa keskeyttämisestä lukien vaadittu maksettavaksi.\nSen estämättä, mitä tässä laissa säädetään, Kansaneläkelaitoksen tämän lain voimaan tullessa voimassa olleen 65 §:n perusteella antama päätös etuuden maksamisesta vuoden ajan ulkomaille muutosta on voimassa päätöksessä määrätyn ajan."
   },
   "968/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "968/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/968",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025 ja on voimassa 31 päivään joulukuuta 2025.\nJos yhteisten alueiden yhdistämistä, alueen liittämistä yhteiseen alueeseen, alueen liittämistä osuutta vastaan yhteiseen alueeseen, yhteisen alueen muodostamista tai erityisen etuuden siirtämistä tarkoittavaa toimitusta koskeva hakemus on saapunut ennen 1.1.2020, kiinteistötoimitusmaksu määrätään työkorvauksena soveltamalla työn suorittamisajankohtana voimassa olleita aikaveloitteisia toimituksia koskevia säännöksiä.\nJos halkomista, yhteisen alueen jakamista, tontin tai rakennuspaikan osan lunastusta tarkoittavaa toimitusta taikka yksityistie- tai rasitetoimitusta koskeva hakemus on saapunut 1.1.2020-31.12.2024 välisenä aikana, kiinteistötoimitusmaksu määrätään toimituskorvauksena hakemuksen saapumisajankohtana voimassa olleiden säännösten mukaisesti.\nAikaveloitteisen päätoimituksen suorittamiseksi välttämättömästä kiinteähintaisesta sivutoimituksesta määrätään kiinteistötoimitusmaksu toimituskorvauksena soveltaen 2 §:n 1 momenttia, jos aikaveloitteista päätoimitusta koskeva hakemus on saapunut ennen 1.1.2022.\nKiinteistönmuodostamislain 22 a §:ssä tarkoitetusta yleisen alueen lohkomisesta määrätään kiinteistötoimitusmaksu toimituskorvauksena soveltaen 2 §:n 1 momenttia, jos toimitusta koskeva hakemus on saapunut ennen 1.1.2023.\nVesijätön lunastustoimituksesta ja yhteisen alueen lunastustoimituksesta määrätään kiinteistötoimitusmaksu toimituskorvauksena soveltaen 2 §:n 1 momenttia, jos toimitusta koskeva hakemus on saapunut ennen 1.1.2025.\nEdellä 1–5 momentissa tarkoitettuun hakemuksen saapumisen ajankohdan määräytymiseen sovelletaan, mitä edellä 2 §:ssä säädetään.\nKiinteistönmuodostamislain muuttamisesta annetun lain (73/2014) voimaantullessa 1 päivä maaliskuuta 2014 voimassa olleen kiinteistönmuodostamislain 207 §:n ja sitä edeltävien säännösten nojalla toimitusmenoiksi kertyneisiin kustannuksiin ja korvauksiin sovelletaan ennen mainitun lain voimaantuloa voimassa olleita säännöksiä. Kuitenkin, jos toimituksen lopullinen kiinteistötoimitusmaksu määrätään toimituskorvauksena, edellä tarkoitetut toimitusmenot jätetään perimättä niiltä osin, kuin niitä vastaavat osuudet sisältyvät tässä asetuksessa tarkoitettuun toimituskorvaukseen."
   },
   "97/2025": {
    "fetched": "2026-10-30",
@@ -26104,12 +26300,13 @@
    "voimaan": "2023-01-01"
   },
   "975/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "975/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/975",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nAsetuksen 2 §:ää sovelletaan kuitenkin vasta 1 päivästä tammikuuta 2026.\nHandbrandsläckarens bruksegenskaper och släckningsegenskaper, färgen och märkningarna på brandsläckaren samt den bruks- och underhållsanvisning som är fäst på brandsläckaren ska överensstämma med standarden SFS-EN 3-7 för handbrandsläckare eller någon annan teknisk specifikation på motsvarande kravnivå.\nDet serviceintervall som tillverkaren fastställt för handbrandsläckaren ska anges i den bruks- och underhållsanvisning som är fäst på handbrandsläckaren.\nI fråga om handbrandsläckare som är avsedda för hushållsbruk kan färgen på tryckbehållaren avvika från bestämmelserna i 1 §. I sådana fall ska det på handbrandsläckaren och säljförpackningen anges att brandsläckaren är avsedd endast för hushållsbruk."
   },
   "975/2025": {
    "fetched": "2026-10-29",
@@ -26129,12 +26326,13 @@
    "voimaan": "2022-01-01"
   },
   "976/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "976/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/976",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nI denna förordning föreskrivs om de funktionella krav som ställs på brandlarmanläggningar och automatiska släckanl äggningar som avses i lagen om vissa brandskyddsanordningar (191/2024) samt om innehållet i redogörelsen för den grundläggande karakteriseringen av en anläggning och om innehållet i installationsbeviset.\nI förordningen föreskrivs dessutom om kraven enligt 12 § 3 mom. i räddningslagen (379/2011) på hur dessa anläggningar ska hållas i funktionsdugligt skick.\nEn brandlarmanläggning ska konstrueras och installeras så att\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\nOm en brandlarmanläggning används för att styra funktionen hos andra anordningar eller system, får styrfunktionerna inte störa brandlarmanläggningens funktion.\nPlaneringen av funktionen hos styrda anordningar och installationen av dem ingår inte i utförandet av en brandlarmanläggning.\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\nFör förebyggande av felaktig funktion hos brandlarmanläggningar och automatiska släckanläggningar ska anläggningarna vara anpassade till verksamheten i de utrymmen som ska skyddas, och vid utförandet av anläggningarna ska byggnadsanvändarnas förmodade beteende beaktas så att det är så osannolikt som möjligt att anläggningarna aktiveras oavsiktligt. Man ska sträva efter att skydda anläggningarnas delar mot oavsiktlig eller avsiktlig skada.\nBrandlarmanläggningar och automatiska släckanläggningar och med dem skyddade utrymmen ska förses med de märkningar och skyltar som behövs för användningen och underhållet av anläggningarna.\nPlaceringen av brandlarmanläggningens huvudenhet och släckanläggningens central ska märkas ut med skyltar så att det är möjligt att lätt och utan obefogat dröjsmål hitta dem när en anläggning ger larm.\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\nDet installationsbevis som upprättas över utförandet av brandlarmanläggningar och automatiska släckanläggningar eller bilagan till det ska innehålla\n1)\n2)\n3)\n5)\n6)"
   },
   "976/2025": {
    "fetched": "2026-10-29",
@@ -26146,12 +26344,13 @@
    "vtText": null
   },
   "977/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "977/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/977",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2025.\nTämän asetuksen voimaan tullessa vireillä olevaan hankkeeseen sovelletaan tämän asetuksen voimaan tullessa voimassa olleita säännöksiä.\nI denna förordning föreskrivs om märkning och belysning av utrymningsvägar i nya byggnader. Förordningen gäller också utvidgning av byggnader och ändring av byggnaders användningsändamål. Förordningen ska tillämpas vid reparation och ändring av en byggnad om reparationen eller ändringen påverkar utrymningsarrangemangen för byggnaden.\nI förordningen föreskrivs dessutom om i 12 § i räddningslagen (379/2011) avsedda krav för att hålla utrymningsvägars skyltar och belysning i funktionsdugligt skick.\nI den här förordningen avses med:\n1)\n2)\nUtrymningsvägar utmärks med utrymningsskyltar i\n1)\n2)\n3)\n4)\n5)\n6)\n7)\nUtrymningsskyltarna ska placeras på ett med tanke på synligheten ändamålsenligt sätt och så att de klart anger utrymningsvägen. Utrymningsskyltarnas synlighet ska säkerställas med tillräcklig belysning.\nUtrymningsskyltarna ska vid behov kompletteras med ljudsignaler eller ljussignaler, markeringar på golvet eller på något annat sätt som gör utrymningsskyltarna lättare att observera.\nUtrymningsskyltarna ska vara tydliga och deras innebörd ska framgå och kunna förstås utan svårighet. Utrymningsskyltarna ska till sitt utseende och sina allmänna egenskaper stämma överens med statsrådets förordning om varselmärkning och signaler på arbetsplatser samt om minimikraven på dem (687/2015).\nI utrymmen enligt 3 § 1 mom. ska utrymningsvägar belysas så att de kan användas tryggt. Vid planering av belysningen ska byggnadens och dess utr ymmens användningsändamål, storlek och form samt utrymningsarrangemangen för byggnaden beaktas särskilt. I anslutning till dörrar på utrymningsvägen ska belysningen vara tillräcklig för att det ska gå att upptäcka dörren och för att dörröppningsmekanismen ska kunna användas.\nUtrymningsskyltarna ska alltid vara upplysta. Den övriga belysningen på utrymningsvägen ska aktiveras om byggnaden eller belysningsgruppen drabbas av störningar i eltillförseln eller om den normala belysningen slutar fungera.\nBelysningen ska fungera under den tid som krävs för trygg utrymning och evakuering, dock minst i en timme.\nUtrymningsskyltar av efterlysande material kan användas som kompletterande skyltar. Märkningen av utrymningsvägar kan dock inte genomföras endast med efterlysande utrymningsskyltar.\nUtrymningsvägarnas märkningar och belysning ska hållas i funktionsdugligt skick, funktionsdugligheten ska följas upp och observerade fel och brister ska åtgärdas. Utförda service- och underhållsåtgärder ska registreras."
   },
   "977/2025": {
    "fetched": "2026-10-29",
@@ -26524,12 +26723,13 @@
    "voimaan": "2023-12-01"
   },
   "996/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "996/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/996",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "996/2025": {
    "fetched": "2026-10-29",
@@ -26557,12 +26757,13 @@
    "voimaan": "2023-12-01"
   },
   "997/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "997/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/997",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "997/2025": {
    "fetched": "2026-10-29",
@@ -26582,12 +26783,13 @@
    "voimaan": "2023-12-01"
   },
   "998/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "998/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/998",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "999/2023": {
    "fetched": "2026-10-18",
@@ -26598,12 +26800,13 @@
    "voimaan": "2025-01-01"
   },
   "999/2024": {
-   "fetched": "2026-10-18",
+   "fetched": "2026-10-30",
    "muutVoimaantulot": [],
    "sk": "999/2024",
    "title": null,
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/999",
-   "voimaan": "2025-01-01"
+   "voimaan": "2025-01-01",
+   "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2025."
   },
   "999/2025": {
    "fetched": "2026-10-29",
