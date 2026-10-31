@@ -2587,6 +2587,58 @@
     }
    ]
   },
+  "32016L2284": {
+   "deadline": "2017-02-15",
+   "measures": [
+    {
+     "date": "2019-04-30",
+     "eif": "2019-05-01",
+     "notif": "2019-05-06",
+     "oj": "2019/8",
+     "title": "Landskapslag (2019/8) om ändring av landskapslagen om miljöskydd 21/03/2019",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2019-05-06",
+     "oj": "2008:124",
+     "title": "Landskapslag (2008:124) om miljöskydd 14/10/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2019-01-25",
+     "eif": "2019-01-28",
+     "notif": "2019-01-30",
+     "sk": "141/2019",
+     "title": "Valtioneuvoston asetus ympäristönsuojelusta annetun valtioneuvoston asetuksen muuttamisesta",
+     "type": "Valtioneuvoston asetus"
+    },
+    {
+     "date": "2019-01-21",
+     "eif": "2019-01-28",
+     "notif": "2019-01-30",
+     "sk": "49/2019",
+     "title": "Laki ympäristönsuojelulain muuttamisesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-01-30",
+     "notif": "2019-01-30",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2009-12-18",
+     "eif": "2010-01-01",
+     "notif": "2017-05-05",
+     "sk": "1069/2009",
+     "title": "Laki Suomen ympäristökeskuksesta",
+     "type": "Laki"
+    }
+   ]
+  },
   "32018L2001": {
    "deadline": "2021-06-30",
    "measures": [
@@ -2826,6 +2878,13 @@
      "type": "Laki"
     },
     {
+     "date": "2021-06-29",
+     "notif": "2021-06-29",
+     "sk": "636/2013",
+     "title": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista",
+     "type": "Ministeriön asetus"
+    },
+    {
      "date": "2017-12-03",
      "eif": "2017-12-31",
      "notif": "2021-06-29",
@@ -2898,10 +2957,11 @@
      "type": "Valtioneuvoston asetus"
     },
     {
-     "date": "2021-06-29",
+     "date": "2016-04-19",
+     "eif": "2016-10-02",
      "notif": "2021-06-29",
-     "sk": "636/2013",
-     "title": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista",
+     "sk": "273/2016",
+     "title": "Työ- ja elinkeinoministeriön asetus sähkökaupassa ja sähköntoimitusten selvityksessä noudatettavasta tiedonvaihdosta",
      "type": "Ministeriön asetus"
     },
     {
@@ -2947,12 +3007,11 @@
      "type": "Ministeriön asetus"
     },
     {
-     "date": "2016-04-19",
-     "eif": "2016-10-02",
-     "notif": "2021-06-29",
-     "sk": "273/2016",
-     "title": "Työ- ja elinkeinoministeriön asetus sähkökaupassa ja sähköntoimitusten selvityksessä noudatettavasta tiedonvaihdosta",
-     "type": "Ministeriön asetus"
+     "date": "2021-06-28",
+     "notif": "2021-06-28",
+     "sk": "170/2018",
+     "title": "Laki eräiden polttoaineiden elinkaarenaikaisten kasvihuonekaasupäästöjen vähentämisestä",
+     "type": "Laki"
     },
     {
      "date": "2020-12-28",
@@ -2971,10 +3030,11 @@
      "type": "Laki"
     },
     {
-     "date": "2021-06-28",
+     "date": "2019-06-23",
+     "eif": "2020-08-31",
      "notif": "2021-06-28",
-     "sk": "170/2018",
-     "title": "Laki eräiden polttoaineiden elinkaarenaikaisten kasvihuonekaasupäästöjen vähentämisestä",
+     "sk": "764/2019",
+     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
      "type": "Laki"
     },
     {
@@ -3045,14 +3105,6 @@
      "notif": "2021-06-28",
      "sk": "38/2015",
      "title": "Laki tiettyjen uusiutuvaa energiaa käyttävien energiajärjestelmien asentajien kouluttajan hyväksymisestä",
-     "type": "Laki"
-    },
-    {
-     "date": "2019-06-23",
-     "eif": "2020-08-31",
-     "notif": "2021-06-28",
-     "sk": "764/2019",
-     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
      "type": "Laki"
     },
     {
@@ -3391,6 +3443,22 @@
    "deadline": "2023-12-31",
    "measures": [
     {
+     "date": "2026-10-26",
+     "eif": "2026-11-01",
+     "notif": "2026-10-27",
+     "oj": "2026/109",
+     "title": "Landskapslag (2026/109) om ändring av landskapslagen om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel, 19/10/2026",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2009-07-09",
+     "eif": "2009-08-01",
+     "notif": "2026-10-27",
+     "oj": "2009:31",
+     "title": "Landskapslag (2009:31) om tillämpning i landskapet Åland av riksförfattningar om utsläppshandel, 25/09/2009",
+     "type": "Landskapslag"
+    },
+    {
      "date": "2025-07-01",
      "notif": "2025-07-01",
      "sk": "1270/2023",
@@ -3402,6 +3470,38 @@
   "32023L0959": {
    "deadline": "2023-12-31",
    "measures": [
+    {
+     "date": "2015-12-30",
+     "eif": "2016-05-01",
+     "notif": "2026-10-27",
+     "oj": "2015:103",
+     "title": "Landskapslag (2015:103) om Ålands energimyndighet, 19/11/2015",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2021-08-31",
+     "eif": "2022-01-01",
+     "notif": "2026-10-27",
+     "oj": "2021:79",
+     "title": "Offentlighetslag (2021:79) för Åland, 12/08/2021",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-03-28",
+     "eif": "2008-04-01",
+     "notif": "2026-10-27",
+     "oj": "2008:9",
+     "title": "Förvaltningslag (2008:9) för landskapet Åland, 14/02/2008",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2026-10-26",
+     "eif": "2026-11-01",
+     "notif": "2026-10-27",
+     "oj": "2026:110",
+     "title": "Landskapslag (2026:110) om tillämpning av lagen om handel med utsläppsrätter för distribution av fossila bränslen, 19/10/2026",
+     "type": "Landskapslag"
+    },
     {
      "date": "2025-07-23",
      "notif": "2025-07-23",
@@ -3443,7 +3543,64 @@
   },
   "32023L0970": {
    "deadline": "2026-06-07",
-   "measures": []
+   "measures": [
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "609/1986",
+     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "oj": "1.1.1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "1397/2016",
+     "title": "Laki julkisista hankinnoista ja käyttöoikeussopimuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "370/2007",
+     "title": "Laki oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "55/2001",
+     "title": "Työsopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "1327/2014",
+     "title": "Laki yhdenvertaisuus- ja tasa-arvolautakunnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "412/1974",
+     "title": "Vahingonkorvauslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "1328/2014",
+     "title": "Laki tasa-arvovaltuutetusta",
+     "type": "Laki"
+    }
+   ]
   },
   "32023L0977": {
    "deadline": "2024-12-12",
@@ -5330,6 +5487,13 @@
    "deadline": "2026-05-21",
    "measures": [
     {
+     "date": "2026-10-27",
+     "notif": "2026-10-27",
+     "sk": "301/2004",
+     "title": "Ulkomaalaislaki",
+     "type": "Laki"
+    },
+    {
      "date": "2026-06-05",
      "eif": "1998-08-21",
      "notif": "2026-06-05",
@@ -5378,13 +5542,6 @@
      "notif": "2026-06-05",
      "sk": "738/2002",
      "title": "Työturvallisuuslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "301/2004",
-     "title": "Ulkomaalaislaki",
      "type": "Laki"
     },
     {
@@ -5580,14 +5737,6 @@
      "type": "Valtioneuvoston asetus"
     },
     {
-     "date": "2026-02-03",
-     "eif": "2026-01-01",
-     "notif": "2026-02-20",
-     "sk": "107/2026",
-     "title": "Laki huoltovarmuuden turvaamisesta ja Huoltovarmuuskeskuksesta",
-     "type": "Laki"
-    },
-    {
      "date": "2026-02-20",
      "notif": "2026-02-20",
      "sk": "521/2008",
@@ -5599,6 +5748,38 @@
      "notif": "2026-02-20",
      "sk": "731/1999",
      "title": "Suomen perustuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-02-03",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "107/2026",
+     "title": "Laki huoltovarmuuden turvaamisesta ja Huoltovarmuuskeskuksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1441/2025",
+     "title": "Laki talouspolitiikan arviointineuvostosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1458/2025",
+     "title": "Laki valtion erityisrahoitustoiminnasta ja sen järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2025-12-31",
+     "eif": "2026-01-01",
+     "notif": "2026-02-20",
+     "sk": "1440/2025",
+     "title": "Laki julkisen talouden hoitamisesta",
      "type": "Laki"
     },
     {
@@ -5732,30 +5913,6 @@
      "notif": "2026-02-20",
      "sk": "745/1998",
      "title": "Laki valtion televisio- ja radiorahastosta",
-     "type": "Laki"
-    },
-    {
-     "date": "2025-12-31",
-     "eif": "2026-01-01",
-     "notif": "2026-02-20",
-     "sk": "1441/2025",
-     "title": "Laki talouspolitiikan arviointineuvostosta",
-     "type": "Laki"
-    },
-    {
-     "date": "2025-12-31",
-     "eif": "2026-01-01",
-     "notif": "2026-02-20",
-     "sk": "1458/2025",
-     "title": "Laki valtion erityisrahoitustoiminnasta ja sen järjestämisestä",
-     "type": "Laki"
-    },
-    {
-     "date": "2025-12-31",
-     "eif": "2026-01-01",
-     "notif": "2026-02-20",
-     "sk": "1440/2025",
-     "title": "Laki julkisen talouden hoitamisesta",
      "type": "Laki"
     },
     {
@@ -6606,5 +6763,5 @@
    "measures": []
   }
  },
- "fetched": "2026-10-30T06:22:49"
+ "fetched": "2026-10-31T10:16:32"
 }

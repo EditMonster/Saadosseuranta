@@ -1,131 +1,5 @@
 {
  "acts": {
-  "1813": {
-   "adoption": "2026-07-20",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32013R1380",
-    "code": "reg/2013/1380",
-    "deadlineRaw": "2",
-    "procedure": "2011/0195/COD",
-    "title": "Regulation (EU) No 1380/2013 of the European Parliament and of the Council of 11 December 2013 on the Common Fisheries Policy, amending Council Regulations (EC) No 1954/2003 and (EC) No 1224/2009 and repealing Council Regulations (EC) No 2371/2002 and (EC) No 639/2004 and Council Decision 2004/585/EC"
-   },
-   "cCode": "C(2026)9090",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2017/117 on conservation measures in the marine protected areas of Finngrunden, Svenska Högarna, Norra Midsjöbanken and Ottenby rev in the Baltic Sea",
-   "deadlines": [
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2021-11-11",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2026-05-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-07-20",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-30",
-   "id": 1813,
-   "objection": null,
-   "policyArea": "MARE",
-   "policyAreaName": "Maritime Affairs and Fisheries",
-   "publication": null,
-   "shortTitle": "Marine protected areas in the Baltic Sea - conservation measures",
-   "summary": "Joint Recommendations submitted by Sweden together with other Member States, for the protection of harbour porpoise in the Kattegat.",
-   "updateDate": 1792620000254
-  },
-  "2376": {
-   "adoption": "2026-07-20",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32017R0625",
-    "code": "reg/2017/625",
-    "deadlineRaw": "2",
-    "procedure": "2013/0140/COD",
-    "title": "Regulation (EU) 2017/625 of the European Parliament and of the Council of 15 March 2017 on official controls and other official activities performed to ensure the application of food and feed law, rules on animal health and welfare, plant health and plant protection products, amending Regulations (EC) No 999/2001, (EC) No 396/2005, (EC) No 1069/2009, (EC) No 1107/2009, (EU) No 1151/2012, (EU) No 652/2014, (EU) 2016/429 and (EU) 2016/2031 of the European Parliament and of the Council, Council Regulations (EC) No 1/2005 and (EC) No 1099/2009 and Council Directives 98/58/EC, 1999/74/EC, 2007/43/EC, 2008/119/EC and 2008/120/EC, and repealing Regulations (EC) No 854/2004 and (EC) No 882/2004 of the European Parliament and of the Council, Council Directives 89/608/EEC, 89/662/EEC, 90/425/EEC, 91/496/EEC, 96/23/EC, 96/93/EC and 97/78/EC and Council Decision 92/438/EEC (Official Controls Regulation)Text with EEA relevance."
-   },
-   "cCode": "C(2026)4948",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2019/2090 as regards the enforcement actions in case of non-compliance with the withdrawal period, maximum residue limits or maximum levels and in case of illegal treatment",
-   "deadlines": [
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2024-01-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2024-03-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-07-20",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-30",
-   "id": 2376,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": null,
-   "shortTitle": "Animal health - Enforcement actions in case of illegal treatment and non-compliance",
-   "summary": null,
-   "updateDate": 1792620000339
-  },
   "2567": {
    "adoption": "2026-06-12",
    "adoptionDate": "Q1 2026",
@@ -308,7 +182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -485,7 +359,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -559,7 +433,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -640,7 +514,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -770,7 +644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -833,7 +707,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -965,7 +839,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -1068,7 +942,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -1393,7 +1267,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1444,7 +1318,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1637,7 +1511,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1774,7 +1648,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1879,7 +1753,7 @@
    "publication": "2026-10-23",
    "shortTitle": "Olive oil - Revision of marketing standards",
    "summary": "The objective of this revision of EU olive oil marketing standards is to bring them in line with the recently adopted changes to the International Olive Council Trade Standard for olive oils and olive pomace oils. It concerns the limit for total sterol content in monovarietal extra virgin olive oil from the Koroneiki or Nocellara del Belice variety and the labelling of such oils.",
-   "updateDate": 1793228716429
+   "updateDate": 1793401805027
   },
   "2937": {
    "adoption": "2026-06-11",
@@ -2003,7 +1877,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2147,57 +2021,6 @@
    "summary": null,
    "updateDate": 1787610036745
   },
-  "2957": {
-   "adoption": "2026-07-24",
-   "adoptionDate": "Q4 2026",
-   "basicAct": {
-    "celex": "32004R0853",
-    "code": "reg/2004/853",
-    "deadlineRaw": "2",
-    "procedure": "2000/0179/COD",
-    "title": "Regulation (EC) No 853/2004 of the European Parliament and of the Council of 29 April 2004 laying down specific hygiene rules for food of animal origin"
-   },
-   "cCode": "C(2026)5062",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Annexes II and III to Regulation (EC) No 853/2004 of the European Parliament and of the Council as regards specific hygiene rules for live bivalve molluscs",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-07-24",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-30",
-   "id": 2957,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": null,
-   "shortTitle": "Specific hygiene rules for live bivalve molluscs (amendment)",
-   "summary": null,
-   "updateDate": 1792620000829
-  },
   "2962": {
    "adoption": "2026-09-15",
    "adoptionDate": "Q3 2026",
@@ -2251,7 +2074,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2540,7 +2363,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2591,7 +2414,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2642,7 +2465,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2763,7 +2586,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -3119,7 +2942,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3143,6 +2966,11 @@
    "celexNumber": null,
    "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2024/2594 of the European Parliament and of the Council as regards control measures applicable in the area covered by the Convention on future multilateral cooperation in the North-East Atlantic fisheries",
    "deadlines": [
+    {
+     "institution": "COUNCIL",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
     {
      "institution": "COMMISSION",
      "months": 2.0,
@@ -3177,7 +3005,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -3339,7 +3167,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3385,7 +3213,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3625,7 +3453,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3676,7 +3504,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3794,7 +3622,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3048,
    "objection": null,
    "policyArea": "TRADE",
@@ -3987,7 +3815,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -3996,69 +3824,6 @@
    "shortTitle": "Evidence of formal qualifications and titles of training courses (amendment)",
    "summary": "The Delegated Decision amends Annex V to Directive 2005/36/EC listing national evidence of qualifications benefitting from cross-border automatic recognition for access to certain regulated professions. As per Article 21a(4) of the Directive, delegated acts update titles adopted by the Member States for evidence of formal qualifications and, where appropriate, the body issuing evidence of formal qualifications, the certificate which accompanies it and the corresponding professional title.",
    "updateDate": 1792620000619
-  },
-  "3060": {
-   "adoption": "2026-07-20",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32019R1241",
-    "code": "reg/2019/1241",
-    "deadlineRaw": "2",
-    "procedure": "2016/0074/COD",
-    "title": "Regulation (EU) 2019/1241 of the European Parliament and of the Council of 20 June 2019 on the conservation of fisheries resources and the protection of marine ecosystems through technical measures, amending Council Regulations (EC) No 1967/2006, (EC) No 1224/2009 and Regulations (EU) No 1380/2013, (EU) 2016/1139, (EU) 2018/973, (EU) 2019/472 and (EU) 2019/1022 of the European Parliament and of the Council, and repealing Council Regulations (EC) No 894/97, (EC) No 850/98, (EC) No 2549/2000, (EC) No 254/2002, (EC) No 812/2004 and (EC) No 2187/2005"
-   },
-   "cCode": "C(2026)9091",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council by deleting the measures for the Northern Midsea Bank",
-   "deadlines": [
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-03-19",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2026-05-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-07-20",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-10-30",
-   "id": 3060,
-   "objection": null,
-   "policyArea": "MARE",
-   "policyAreaName": "Maritime Affairs and Fisheries",
-   "publication": null,
-   "shortTitle": "Northern Midsea Bank - repealing measures",
-   "summary": null,
-   "updateDate": 1792620000768
   },
   "3062": {
    "adoption": "2026-09-17",
@@ -4137,7 +3902,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -4200,7 +3965,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -4246,7 +4011,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -4433,7 +4198,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -4491,7 +4256,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -4554,7 +4319,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4612,7 +4377,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4663,7 +4428,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4999,7 +4764,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -5050,7 +4815,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -5242,7 +5007,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -5293,7 +5058,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -5356,7 +5121,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-30",
+   "eventsFetched": "2026-10-31",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -5367,7 +5132,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-10-30T18:57:49Z",
+ "fetched": "2026-10-31T10:00:03Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -6091,6 +5856,7 @@
   "1809": "PUBLISHED",
   "181": "PUBLISHED",
   "1812": "PUBLISHED",
+  "1813": "PUBLISHED",
   "1814": "PUBLISHED",
   "1815": "PUBLISHED",
   "1819": "PUBLISHED",
@@ -6528,6 +6294,7 @@
   "2370": "PUBLISHED",
   "2372": "PUBLISHED",
   "2374": "PUBLISHED",
+  "2376": "PUBLISHED",
   "2379": "PUBLISHED",
   "238": "NOTIFIED",
   "2382": "PUBLISHED",
@@ -6895,6 +6662,7 @@
   "295": "PUBLISHED",
   "2953": "PUBLISHED",
   "2954": "PUBLISHED",
+  "2957": "PUBLISHED",
   "296": "PUBLISHED",
   "2961": "PUBLISHED",
   "2963": "PUBLISHED",
@@ -6927,6 +6695,7 @@
   "3054": "PUBLISHED",
   "3058": "PUBLISHED",
   "306": "PUBLISHED",
+  "3060": "PUBLISHED",
   "3061": "PUBLISHED",
   "307": "PUBLISHED",
   "308": "PUBLISHED",

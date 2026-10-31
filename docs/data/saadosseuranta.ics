@@ -1013,15 +1013,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 221/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/221
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-4561553d-lausunto-2026-10-23@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[FI] Lausuntoaika päättyy: Keskinäisestä avunannosta ja yhteistyöstä tulliasioissa Moldovan tasavallan kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
-DESCRIPTION:Lausuntokierros · VM104:00/2023 · https://valtioneuvosto.fi/hanke?tunnus=VM104:00/2023
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM104:00/2023
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-95-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1544,15 +1535,6 @@ DESCRIPTION:Lausuntokierros · TEM051:00/2026 · https://valtioneuvosto.fi/hanke
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM051:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-e19d2053-lausunto-2026-10-23@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus eräistä valtioneuvoston yleisistunnossa ratkaistavien työ- ja elinkeinoministeriön toimialaan kuuluvien asioiden maksullisista suoritteista
-DESCRIPTION:Lausuntokierros · TEM047:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM047:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM047:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-a4c6876a-lausunto-2026-11-11@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -1650,24 +1632,6 @@ DTEND;VALUE=DATE:20261113
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta
 DESCRIPTION:Lausuntokierros · YM005:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-0272d315-voimaan-2026-10-23@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetus valtionavustuksesta työvoimaviranomaiselle pitkäaikaistyöttömien osaamisen kehittämiseksi vuosina 2026–2028
-DESCRIPTION:Voimaan (923/2026) · 923/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/923
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/923
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-701280f7-voimaan-2026-10-23@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetus valtionavustuksesta eräille kaupungeille nuorten työllisyyttä edistäviin hankkeisiin vuosina 2026–2028
-DESCRIPTION:Voimaan (922/2026) · 922/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/922
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/922
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2020-0359-maaraaika-2027-10-17@saadosseuranta
@@ -2453,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-25@saadosseuranta
-DTSTAMP:20261225T000000Z
-DTSTART;VALUE=DATE:20261225
-DTEND;VALUE=DATE:20261226
+UID:eu-hys-19517-lausunto-2026-12-26@saadosseuranta
+DTSTAMP:20261226T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -3297,14 +3261,5 @@ DTEND;VALUE=DATE:20261028
 SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2372 – Kongon demokraattinen tasavalta 2010/788
 DESCRIPTION:Voimaan · (YUTP) 2026/2372 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2384-voimaan-2026-10-23@saadosseuranta
-DTSTAMP:20261023T000000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
-SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2384 – terrorismi 881/2002
-DESCRIPTION:Voimaan · (EU) 2026/2384 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2384
 END:VEVENT
 END:VCALENDAR

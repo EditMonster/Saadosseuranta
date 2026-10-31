@@ -5,15 +5,6 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
-UID:hk-ted-755095-2026-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: IT-klienter Bjuv\, Klippan\, Perstorp\, Åstorp och Örkelljunga
-DESCRIPTION:Tarjoukset viimeistään · ettUpphandling · https://ted.europa.eu/fi/notice/-/detail/755095-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/755095-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-752817-2026-maaraaika-2026-11-03-hankintatiimi@saadosseuranta
 DTSTAMP:20261103T000000Z
 DTSTART;VALUE=DATE:20261103
@@ -1803,5 +1794,14 @@ DTEND;VALUE=DATE:20261125
 SUMMARY:[Hankinta] Määräaika: Veebide ja infosüsteemide analüüsi\, arendus- ning hooldustööd 2026 - 2029
 DESCRIPTION:Tarjoukset viimeistään · Ettevõtluse ja Innovatsiooni Sihtasutus · https://ted.europa.eu/fi/notice/-/detail/735767-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/735767-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-ted-735444-2026-maaraaika-2026-11-24-hankintatiimi@saadosseuranta
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:[Hankinta] Määräaika: Kutselise kalapüügi registri (KIR) ja sellega seotud rakenduste arendus- ja hooldustööde tellimine
+DESCRIPTION:Tarjoukset viimeistään · Regionaal- ja Põllumajandusministeeriumi Infotehnoloogia Keskus · https://ted.europa.eu/fi/notice/-/detail/735444-2026
+URL:https://ted.europa.eu/fi/notice/-/detail/735444-2026
 END:VEVENT
 END:VCALENDAR

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-30T18:55:53",
+ "fetched": "2026-10-31T09:56:57",
  "items": [
   {
    "actType": "REG_IMPL",
@@ -439,7 +439,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-25",
+     "end": "2026-12-26",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -457,7 +457,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-25",
+     "end": "2026-12-26",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -637,7 +637,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-25",
+     "end": "2026-12-26",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -1836,42 +1836,6 @@
    "title_en": "Rules on authorisations for the planting and replanting of vineyards and on the functioning of the analytical databank ",
    "title_fi": "Viininviljely – viinitarhojen (uudelleen)istutuslupia ja EU:n viinialan tietopankin toiminnan parantamista koskevat uudet säännöt",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16919_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 17673,
-   "periods": [
-    {
-     "end": "2026-08-31",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-08-03"
-    }
-   ],
-   "reference": "Ares(2026)3680075",
-   "status": "ACTIVE",
-   "title_en": "Delegated act to extend derogation for non-organic protein feed",
-   "title_fi": "Luonnonmukainen maatalous – luvat muun kuin luonnonmukaisen valkuaisrehun käyttöön",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17673_en"
-  },
-  {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 18413,
-   "periods": [
-    {
-     "end": "2026-08-31",
-     "open": false,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-06-05"
-    }
-   ],
-   "reference": "COM(2026)271",
-   "status": "ACTIVE",
-   "title_en": "Sustainable fishing in the EU: state of play and orientations for 2027",
-   "title_fi": "Kestävä kalastus EU:ssa: tilannekatsaus ja suuntaviivat vuodeksi 2027",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18413_en"
   },
   {
    "actType": "REG_DEL",
