@@ -71,7 +71,7 @@ jobs:
       - name: Käännösmoottori
         run: pip install -r requirements-mt.txt && pip install --no-deps argostranslate==1.9.6 || echo "Käännösmoottoria ei saatu asennettua – sivu näyttää alkuperäiset tekstit ja viralliset käännökset"
       - name: Käännösmallit (välimuisti)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/saadosseuranta-mt
           key: mt-models-argos-1
