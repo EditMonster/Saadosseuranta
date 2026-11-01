@@ -5,6 +5,105 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-60868-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[Hankinta] Määräaika: Infrarakentamisen valvonnan ja tilannekuvan sovelluksen  hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060868 · https://www.hankintailmoitukset.fi/fi/public/procedure/38178/enotice/60868
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38178/enotice/60868
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60868-maaraaika-2026-11-11-hankintatiimi@saadosseuranta
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[Hankinta] Määräaika: Infrarakentamisen valvonnan ja tilannekuvan sovelluksen  hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060868 · https://www.hankintailmoitukset.fi/fi/public/procedure/38178/enotice/60868
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38178/enotice/60868
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60826-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[Hankinta] Määräaika: Sähköisen huoltokirjajärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060826 · https://www.hankintailmoitukset.fi/fi/public/procedure/38057/enotice/60826
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38057/enotice/60826
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60826-maaraaika-2026-11-18-hankintatiimi@saadosseuranta
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[Hankinta] Määräaika: Sähköisen huoltokirjajärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060826 · https://www.hankintailmoitukset.fi/fi/public/procedure/38057/enotice/60826
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38057/enotice/60826
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60798-maaraaika-2026-11-29-hankintatiimi@saadosseuranta
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:[Hankinta] Määräaika: AV-esitystekniikan ja siihen liittyvien laitteiden sekä palveluiden hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060798 · https://www.hankintailmoitukset.fi/fi/public/procedure/39445/enotice/60798
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39445/enotice/60798
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60871-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[Hankinta] Määräaika: Joukkoliikenteen suunnittelujärjestelmän hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060871 · https://www.hankintailmoitukset.fi/fi/public/procedure/39486/enotice/60871
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39486/enotice/60871
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60785-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[Hankinta] Määräaika: Medianhallinnan kokonaisuudistuksen johtamis- ja asiantuntijapalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-060785 · https://www.hankintailmoitukset.fi/fi/public/procedure/39439/enotice/60785
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39439/enotice/60785
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60832-maaraaika-2026-12-03-hankintatiimi@saadosseuranta
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:[Hankinta] Määräaika: Lakisääteisten henkilökuljetusten ja kiireettömien potilaskuljetusten hankinta Etelä-Pohjanmaan hyvinvointialueen palvelutarpeisiin
+DESCRIPTION:Tarjoukset viimeistään · 2026-060832 · https://www.hankintailmoitukset.fi/fi/public/procedure/39460/enotice/60832
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39460/enotice/60832
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60446-maaraaika-2026-12-03-hankintatiimi@saadosseuranta
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:[Hankinta] Määräaika: Taivassalon kunnan ICT-peruspalveluiden hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-060446 · https://www.hankintailmoitukset.fi/fi/public/procedure/39243/enotice/60446
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39243/enotice/60446
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60771-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[Hankinta] Määräaika: Digitaalisen identiteetin mobiilisovelluksen asiantuntijapalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-060771 · https://www.hankintailmoitukset.fi/fi/public/procedure/39429/enotice/60771
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39429/enotice/60771
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-60773-maaraaika-2026-12-04-hankintatiimi@saadosseuranta
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[Hankinta] Määräaika: Google -työympäristö
+DESCRIPTION:Tarjoukset viimeistään · 2026-060773 · https://www.hankintailmoitukset.fi/fi/public/procedure/39431/enotice/60773
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39431/enotice/60773
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-752817-2026-maaraaika-2026-11-03-hankintatiimi@saadosseuranta
 DTSTAMP:20261103T000000Z
 DTSTART;VALUE=DATE:20261103
@@ -1713,95 +1812,5 @@ DTEND;VALUE=DATE:20261124
 SUMMARY:[Hankinta] Määräaika: Tallinna Huvikeskus Kullo esitlustehnika hankimine
 DESCRIPTION:Tarjoukset viimeistään · Tallinna Linnavaraamet · https://ted.europa.eu/fi/notice/-/detail/735679-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/735679-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-735936-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Sotsiaalkaitse infosüsteemi finantsarvestuse valdkonna analüüs
-DESCRIPTION:Tarjoukset viimeistään · Tervise ja Heaolu Infosüsteemide Keskus · https://ted.europa.eu/fi/notice/-/detail/735936-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/735936-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-736354-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Bendrosios duomenų aplinkos CDE programinės įrangos licencijų nuomos\, konfigūravimo\, duomenų migravimo ir naudotojų mokymo paslaugų pirkimas
-DESCRIPTION:Tarjoukset viimeistään · LITGRID AB (PV) · https://ted.europa.eu/fi/notice/-/detail/736354-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/736354-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-734940-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Security Culture Programme
-DESCRIPTION:Tarjoukset viimeistään · Statsforvalterens fellestjenester · https://ted.europa.eu/fi/notice/-/detail/734940-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/734940-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-60010-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Palvelimien turvasäilö
-DESCRIPTION:Tarjoukset viimeistään · 2026-060010 · https://www.hankintailmoitukset.fi/fi/public/procedure/39001/enotice/60010
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39001/enotice/60010
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-60025-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Kaavan tuotantojärjestelmän hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-060025 · https://www.hankintailmoitukset.fi/fi/public/procedure/39009/enotice/60025
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39009/enotice/60025
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-734727-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Ramavtal PC\, skärmar\, surfplattor och tillbehör - Skövde kommun m fl
-DESCRIPTION:Tarjoukset viimeistään · Skövde kommun · https://ted.europa.eu/fi/notice/-/detail/734727-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/734727-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-735037-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Barn- och elevregister
-DESCRIPTION:Tarjoukset viimeistään · Ale kommun · https://ted.europa.eu/fi/notice/-/detail/735037-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/735037-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-737017-2026-maaraaika-2026-11-23-hankintatiimi@saadosseuranta
-DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:[Hankinta] Määräaika: Konsultstöd för systemutveckling i SimCorp Dimension till Kammarkollegiets kapitalförvaltning
-DESCRIPTION:Tarjoukset viimeistään · Kammarkollegiet\, egen verksamhet · https://ted.europa.eu/fi/notice/-/detail/737017-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/737017-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-735767-2026-maaraaika-2026-11-24-hankintatiimi@saadosseuranta
-DTSTAMP:20261124T000000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:[Hankinta] Määräaika: Veebide ja infosüsteemide analüüsi\, arendus- ning hooldustööd 2026 - 2029
-DESCRIPTION:Tarjoukset viimeistään · Ettevõtluse ja Innovatsiooni Sihtasutus · https://ted.europa.eu/fi/notice/-/detail/735767-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/735767-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-735444-2026-maaraaika-2026-11-24-hankintatiimi@saadosseuranta
-DTSTAMP:20261124T000000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:[Hankinta] Määräaika: Kutselise kalapüügi registri (KIR) ja sellega seotud rakenduste arendus- ja hooldustööde tellimine
-DESCRIPTION:Tarjoukset viimeistään · Regionaal- ja Põllumajandusministeeriumi Infotehnoloogia Keskus · https://ted.europa.eu/fi/notice/-/detail/735444-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/735444-2026
 END:VEVENT
 END:VCALENDAR

@@ -182,7 +182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -359,7 +359,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -433,7 +433,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -514,7 +514,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -644,7 +644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -707,7 +707,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -839,7 +839,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -942,7 +942,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -1267,7 +1267,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1318,7 +1318,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1511,7 +1511,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1648,7 +1648,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1877,7 +1877,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2074,7 +2074,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2363,7 +2363,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2414,7 +2414,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2465,7 +2465,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2586,7 +2586,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -2833,6 +2833,64 @@
    "summary": null,
    "updateDate": 1789596062188
   },
+  "3010": {
+   "adoption": "2026-10-30",
+   "adoptionDate": "Q4 2026",
+   "basicAct": {
+    "celex": "32022R2056",
+    "code": "reg/2022/2056",
+    "deadlineRaw": "2",
+    "procedure": null,
+    "title": "Regulation (EU) 2022/2056 of the European Parliament and of the Council of 19 October 2022 laying down conservation and management measures applicable in the Western and Central Pacific Fisheries Convention Area and amending Council Regulation (EC) No 520/2007"
+   },
+   "cCode": "C(2026)7669",
+   "celexNumber": null,
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2022/2056 of the European Parliament and of the Council as regards the specifications for seabirds mitigation measures",
+   "deadlines": [
+    {
+     "institution": "COMMISSION",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
+    {
+     "institution": "PARLIAMENT",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    }
+   ],
+   "delegatedActPhase": "SCRUTINY",
+   "delegatedActStatus": "ADOPTED",
+   "delegatedActType": "REGULATION",
+   "events": [
+    {
+     "date": "2026-01-30",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_PLAN"
+    },
+    {
+     "date": "2026-10-07",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_EG_MEETING"
+    },
+    {
+     "date": "2026-10-30",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_ADOPTION"
+    }
+   ],
+   "eventsFetched": "2026-11-01",
+   "id": 3010,
+   "objection": null,
+   "policyArea": "MARE",
+   "policyAreaName": "Maritime Affairs and Fisheries",
+   "publication": null,
+   "shortTitle": "Western and Central Pacific Fisheries Commission - specifications for seabirds mitigation measures",
+   "summary": null,
+   "updateDate": 1793494477197
+  },
   "3011": {
    "adoption": "2026-05-04",
    "adoptionDate": "Q2 2026",
@@ -2942,7 +3000,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3005,7 +3063,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -3013,7 +3071,7 @@
    "publication": null,
    "shortTitle": "North-East Atlantic Fisheries Commission - conservation and enforcement measures (amendment)",
    "summary": null,
-   "updateDate": 1793372881016
+   "updateDate": 1793488851647
   },
   "3021": {
    "adoption": "2026-07-03",
@@ -3167,7 +3225,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3213,7 +3271,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3453,7 +3511,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3504,7 +3562,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3622,7 +3680,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3048,
    "objection": null,
    "policyArea": "TRADE",
@@ -3815,7 +3873,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -3902,7 +3960,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -3965,7 +4023,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -4011,7 +4069,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -4198,7 +4256,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -4256,7 +4314,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -4319,7 +4377,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4377,7 +4435,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4428,7 +4486,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4764,7 +4822,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -4815,7 +4873,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -5007,7 +5065,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -5058,7 +5116,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -5121,7 +5179,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-10-31",
+   "eventsFetched": "2026-11-01",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -5132,7 +5190,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-10-31T10:00:03Z",
+ "fetched": "2026-11-01T13:35:46Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",

@@ -2417,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-26@saadosseuranta
-DTSTAMP:20261226T000000Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
+UID:eu-hys-19517-lausunto-2026-12-27@saadosseuranta
+DTSTAMP:20261227T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2687,15 +2687,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6262 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2923
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-2926-voimaan-2026-10-24@saadosseuranta
-DTSTAMP:20261024T000000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
-SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/2358\, annettu 21 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1308/2013 täydentämisestä olii
-DESCRIPTION:Voimaan · C(2026)5797 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2926
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-2962-maaraaika-2026-11-16@saadosseuranta
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
@@ -2784,6 +2775,15 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending the Annexes to Directive 2008/68/EC of the European Parliament and of the Council to take into account scient
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6701 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2996
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2996
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3010-maaraaika-2026-12-30@saadosseuranta
+DTSTAMP:20261230T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2022/2056 of the European Parliament and of the Council as regards the specifications for se
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7669 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3010
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3010
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3013-maaraaika-2026-12-17@saadosseuranta
