@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-02T11:14:25Z",
+ "fetched": "2026-11-02T21:00:12Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1690,6 +1690,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "b4bf6b882438",
+   "lastSeen": "2026-11-02"
+  },
+  "b528030793d0": {
+   "buyer": "Rikosseuraamuslaitos",
+   "decisionDate": "2026-10-19",
+   "decisionText": "Rikosseuraamuslaitoksen toimitila- ja turvatekniikkayksikön päätös 19.10.2026, RISE/3842/2026 / Turvatekniset järjestelmät palveluineen, Osa-alue 1 Turvatekniset järjestelmät",
+   "filed": "2026-11-02",
+   "firstSeen": "2026-11-02",
+   "hilmaNo": null,
+   "key": "b528030793d0",
    "lastSeen": "2026-11-02"
   },
   "b61e39febf1c": {

@@ -446,15 +446,6 @@ DESCRIPTION:Lausuntokierros · VM164:00/2025 · https://valtioneuvosto.fi/hanke?
 URL:https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-143-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin kuningaskunnan alueella Ruotsin kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 143/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-232-2026-voimaan-2027-06-01@saadosseuranta
 DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
@@ -1074,6 +1065,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta
 DESCRIPTION:Voimaan (597/2026) · 597/2026 · HE 78/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/78
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/78
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-143-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin kuningaskunnan alueella Ruotsin kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi
+DESCRIPTION:Ehdotettu voimaantulo · 936/2026 · HE 143/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-94-2026-voimaan-2026-11-01@saadosseuranta
@@ -3038,10 +3038,10 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.202
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-toim-hk-2640960f-d87c33-lausunto-2026-12-06@saadosseuranta
-DTSTAMP:20261206T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+UID:fi-toim-hk-2640960f-d87c33-lausunto-2026-12-02@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
 SUMMARY:[FI] Lausuntoaika päättyy: Valtakunnallisten alueidenkäyttötavoitteiden tarkistus
 DESCRIPTION:Lausuntoaika · YM018:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM018:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=YM018:00/2026

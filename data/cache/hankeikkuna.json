@@ -1,6 +1,49 @@
 {
- "fetched": "2026-11-02T11:01:18",
+ "fetched": "2026-11-02T20:46:13",
  "items": [
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [],
+   "asiasanat": [
+    "rikokset",
+    "kokonaisturvallisuus",
+    "symbolit"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "oikeusministeriö",
+   "muokattu": "2026-11-02T13:12:43",
+   "nimi": "Selvitys natsismin ja kommunismin symbolien käyttämisen kriminalisointiin liittyvistä kysymyksistä",
+   "nimiSv": "Utredning om frågor relaterade till kriminaliseringen av användningen av nazismens och kommunismens symboler",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [
+    "Kokonaisturvallisuus",
+    "Rikos ja rangaistus"
+   ],
+   "tiivistelma": "Selvitetään mahdollisuudet natsismin ja kommunismin symbolien käyttämisen kriminalisointiin, kun niitä käytetään aatteiden edistämistä tavoitellen.",
+   "tila": "KAYNNISSA",
+   "tunnus": "OM064:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM064:00/2026",
+   "uuid": "0c78b68f-c369-432d-987d-b693321f70a6",
+   "valmistelu": [],
+   "valmisteluvaihe": "PERUSVALMISTELU",
+   "valmistumisPaiva": "2027-03-12",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
@@ -1433,7 +1476,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-29T11:57:11",
+   "muokattu": "2026-11-02T12:22:03",
    "nimi": "Hallituksen esitys energiaperuskirjasta tehdyn sopimuksen irtisanomiseksi",
    "nimiSv": "Regeringens proposition till riksdagen om uppsägning av energistadgefördraget",
    "pevLausunto": false,
@@ -2687,7 +2730,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-10-28T13:12:34",
+   "muokattu": "2026-11-02T14:57:06",
    "nimi": "Hallituksen esitys laiksi sotilastiedustelusta annetun lain muuttamiseksi (kotirauhan suoja)",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av lagen om militär underrättelseverksamhet (hemfridsskydd)",
    "pevLausunto": true,
@@ -4014,7 +4057,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T09:01:57",
+   "muokattu": "2026-11-02T15:00:20",
    "nimi": "Lainsäädäntöhanke Tullin rikostiedustelua koskevaksi lainsäädännöksi (2. vaihe)",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om Tullens kriminalunderrättelseinhämtning (fas 2)",
    "pevLausunto": true,
@@ -7022,7 +7065,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:35:54",
+   "muokattu": "2026-11-02T13:01:28",
    "nimi": "Hallituksen esitys laiksi Australian kanssa solmitun työlomasopimuksen voimaansaattamisesta",
    "nimiSv": "Regeringens proposition om att utfärdä ett avtal om arbetssemester med Australien",
    "pevLausunto": false,
@@ -35186,7 +35229,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:07:32",
+   "muokattu": "2026-11-02T13:03:37",
    "nimi": "Lainsäädäntöhanke työperäisen hyväksikäytön torjumiseksi oleskelulupamenettelyssä",
    "nimiSv": "Lagstiftningsprojekt för bekämpning av arbetsrelaterat utnyttjande i uppehållstillståndsförfarandet",
    "pevLausunto": false,
@@ -40620,7 +40663,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-02T09:41:41",
+   "muokattu": "2026-11-02T11:11:56",
    "nimi": "Metsähallituksen rakennuskantahankkeeseen liittyvät luonnonsuojelualueiden säädösmuutokset",
    "nimiSv": "Ändringar i lagstiftningen om naturskyddsområden i anslutning till Forststyrelsens byggnadsbeståndsprojekt",
    "pevLausunto": false,
@@ -42497,7 +42540,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-21T06:24:21",
+   "muokattu": "2026-11-02T15:04:33",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi väylälakien muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lagar om ändring av trafikledslagarna",
    "pevLausunto": false,
@@ -47296,189 +47339,6 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": "2026-08-27",
-   "arviointineuvosto": false,
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö",
-     "pvm": "2026-05-05",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/0b78b626-366b-43ba-a1f3-feb1129b61dc/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "nimi": "HE-luonnos ja sopimusteksti",
-     "pvm": "2026-05-05",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/fdfde0f0-856b-48df-abdd-36074b8dc669/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "nimi": "RP utkast - huvudsakliga innehåll och lagförslag",
-     "pvm": "2026-05-05",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/1191e2de-d142-4d34-972b-4e52e0ef7386/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "nimi": "Överenskommelse",
-     "pvm": "2026-05-05",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/787f7945-6e6c-4b95-85e5-3f81f2c2972a/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "nimi": "Lausuntoyhteenveto",
-     "pvm": "2026-06-30",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/73673168-d69a-4ed9-be74-e1048c6be3e2/YHTEENVETO_20260630092903.PDF"
-    }
-   ],
-   "asiasanat": [],
-   "esittelyviikko": 35,
-   "esittelyvuosi": 2026,
-   "etapit": [],
-   "evNumerot": [
-    "EV 148/2026"
-   ],
-   "heNumerot": [
-    "HE 143/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "kiireellinen": false,
-   "laji": "laki",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2026-06-25",
-      "id": "5d0347c3-38c6-4260-bb59-9a4c3da66501",
-      "org": "Sosiaali- ja terveysministeriö",
-      "title": "Sosiaali- ja terveysministeriön lausunto luonnoksesta hallituksen esitykseksi eduskunnalle tutkimustarkoituksessa siirre",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/5d0347c3-38c6-4260-bb59-9a4c3da66501/LAUSUNTO_20260629070726.PDF"
-     },
-     {
-      "date": "2026-06-16",
-      "id": "d4c77a76-3117-4a9d-a3b2-39062ff27a57",
-      "org": "Säteilyturvakeskus",
-      "title": "Säteilyturvakeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/d4c77a76-3117-4a9d-a3b2-39062ff27a57/LAUSUNTO_20260617161526.PDF"
-     },
-     {
-      "date": "2026-06-16",
-      "id": "96115214-42d8-4362-8fe1-de32fbca8ab0",
-      "org": "Teollisuuden Voima Oyj",
-      "title": "Teollisuuden Voima OYJ; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/96115214-42d8-4362-8fe1-de32fbca8ab0/LAUSUNTO_20260617161726.PDF"
-     },
-     {
-      "date": "2026-06-12",
-      "id": "b52b02d1-d957-45ad-9a9e-2e76dbd16ce1",
-      "org": "Ulkoministeriö",
-      "title": "Ulkoministeriön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/b52b02d1-d957-45ad-9a9e-2e76dbd16ce1/LAUSUNTO_20260612073043.PDF"
-     },
-     {
-      "date": "2026-06-12",
-      "id": "11f654d6-c07c-46e0-b5cc-2722b14f995a",
-      "org": "Fortum Power and Heat Oy",
-      "title": "Fortum Power and Heat Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/11f654d6-c07c-46e0-b5cc-2722b14f995a/LAUSUNTO_20260614082539.PDF"
-     },
-     {
-      "date": "2026-06-04",
-      "id": "3f0820a5-89fd-47a0-ab07-f7fca07f8018",
-      "none": true,
-      "org": "Valtiovarainministeriö",
-      "title": "Valtiovarainministeriö; ei lausuttavaa"
-     },
-     {
-      "date": "2026-05-19",
-      "id": "86af3f96-ed30-420d-b8ff-738a6fd91433",
-      "none": true,
-      "org": "Ympäristöministeriö",
-      "title": "Ympäristöministeriön lausunto_ei lausuttavaa"
-     },
-     {
-      "date": "2026-05-15",
-      "id": "f0353f3d-01cd-4e82-8b4d-346f2c12b4c1",
-      "org": "Yksityishenkilö",
-      "title": "Yksityishenkilö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/f0353f3d-01cd-4e82-8b4d-346f2c12b4c1/LAUSUNTO_20260517041920.PDF"
-     },
-     {
-      "date": "2026-05-08",
-      "id": "4620c9cb-d0b9-41d8-ab22-edc1dcddaec0",
-      "none": true,
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriö; ei lausuttavaa"
-     }
-    ],
-    "eiLausuttavaa": 3,
-    "n": 9,
-    "orgs": [
-     "Fortum Power and Heat Oy",
-     "Oikeusministeriö",
-     "Sosiaali- ja terveysministeriö",
-     "Säteilyturvakeskus",
-     "Teollisuuden Voima Oyj",
-     "Ulkoministeriö",
-     "Valtiovarainministeriö",
-     "Yksityishenkilö",
-     "Ympäristöministeriö"
-    ],
-    "url": null,
-    "viimeisin": "2026-06-25"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-29T06:46:23",
-   "nimi": "Hallituksen esitys tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin kuningaskunnan alueella Suomen hallituksen ja Ruotsin hallituksen välillä tehdyn sopimuksen hyväksymisestä ja laiksi sopimuksen lainsäädännön alaan kuuluvien määräysten voimaansaattamisesta",
-   "nimiSv": "Regeringens proposition om godkännande av överenskommelsen mellan Sveriges regering och Finlands regering om slutförvaring i Konungariket Sverige av använt kärnbränsle som sänts för forskningsändamål och av radioaktivt avfall som härrör från den forskningsverksamheten om detta samt med förslag till lag om sättande i kraft av de bestämmelser i överenskommelsen som hör till området för lagstiftningen",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Esityksessä ehdotetaan, että eduskunta hyväksyisi Suomen ja Ruotsin välisen sopimuksen tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin alueella ja lain sopimuksen lainsäädännön alaan kuuluvien määräysten voimaansaattamisesta.",
-   "tila": "KAYNNISSA",
-   "tunnus": "TEM109:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM109:00/2025",
-   "uuid": "82fb82ee-4385-4965-af2d-071a2d5556fc",
-   "valmistelu": [
-    {
-     "d": "2026-05-05",
-     "n": "Lausuntopyyntö",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/0b78b626-366b-43ba-a1f3-feb1129b61dc/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "d": "2026-05-05",
-     "n": "HE-luonnos ja sopimusteksti",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/fdfde0f0-856b-48df-abdd-36074b8dc669/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "d": "2026-05-05",
-     "n": "RP utkast - huvudsakliga innehåll och lagförslag",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/1191e2de-d142-4d34-972b-4e52e0ef7386/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "d": "2026-05-05",
-     "n": "Överenskommelse",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/787f7945-6e6c-4b95-85e5-3f81f2c2972a/LAUSUNTOPYYNTO_20260505120205.PDF"
-    },
-    {
-     "d": "2026-06-30",
-     "n": "Lausuntoyhteenveto",
-     "t": "YHTEENVETO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/73673168-d69a-4ed9-be74-e1048c6be3e2/YHTEENVETO_20260630092903.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
-   "vanhaEsittelyviikko": 20,
-   "vanhaEsittelyvuosi": 2026
-  },
-  {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
@@ -47845,7 +47705,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:11:48",
+   "muokattu": "2026-11-02T17:19:44",
    "nimi": "Hallituksen esitys laiksi vesilain muuttamisesta (merituulivoiman rakentamis- ja purkulakihanke)",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av vattenlagen (projekt för byggande och nedmontering av havsbaserad vindkraft)",
    "pevLausunto": false,
@@ -66227,7 +66087,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:26:06",
+   "muokattu": "2026-11-02T11:20:09",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi rakentamislain ja rakentamisen suunnittelu- tai työnjohtotehtävissä toimivien pätevyyden osoittamisesta annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av bygglagen och lagen om påvisande av kompetensen hos personer som utför projekterings- eller arbetsledningsuppgifter inom byggande",
    "pevLausunto": false,
@@ -95149,7 +95009,7 @@
      {
       "date": "2025-08-28",
       "id": "c484f44e-4c41-438c-b1fa-55ff3166a23a",
-      "org": "Lapin yliopiston ylioppilaskunta",
+      "org": "Lapin yliopiston ylioppilaskunta LYY",
       "title": "Lapin yliopiston ylioppilaskunta; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/c3a855b6-642e-4abd-9dd9-0bbb7264d32b/c484f44e-4c41-438c-b1fa-55ff3166a23a/LAUSUNTO_20260821110352.PDF"
      },
@@ -95269,7 +95129,6 @@
     "eiLausuttavaa": 1,
     "n": 68,
     "orgs": [
-     "Lapin yliopiston ylioppilaskunta",
      "AKI-liitot - AKI-förbunden ry",
      "Aalto-yliopisto",
      "Aalto-yliopiston ylioppilaskunta",
@@ -95292,6 +95151,8 @@
      "Kuntoutusohjaajat ry",
      "Lapin ammattikorkeakoulu Oy",
      "Lapin yliopisto",
+     "Lapin yliopiston ylioppilaskunta",
+     "Lapin yliopiston ylioppilaskunta LYY",
      "Lappeenrannan–Lahden teknillinen yliopisto LUT​​",
      "METO – Metsäalan Asiantuntijat ry",
      "Metropolia Ammattikorkeakoulu Oy",
@@ -95342,7 +95203,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-08-21T11:10:32",
+   "muokattu": "2026-11-02T12:55:44",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi yliopistolain ja ammattikorkeakoululain muuttamisesta (ns. yhden opiskeluoikeuden säännös)",
    "nimiSv": "Regeringens proposition tilla lagar om ändring av universitetslagen och yrkeshögskolelagen (bestämmelsen om en studierätt)",
    "pevLausunto": false,
@@ -101722,7 +101583,7 @@
      {
       "date": "2025-04-22",
       "id": "a541bffd-0037-41b2-a37d-da2b951fcbbc",
-      "org": "Lapin yliopiston ylioppilaskunta",
+      "org": "Lapin yliopiston ylioppilaskunta LYY",
       "title": "Lapin yliopiston ylioppilaskunta; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/6e8f8f68-a46b-4f42-bce3-b20901fdf32d/a541bffd-0037-41b2-a37d-da2b951fcbbc/LAUSUNTO_20250422173656.PDF"
      },
@@ -102114,7 +101975,7 @@
      "Lapin Matkailu- ja Ravintolayrittäjät ry",
      "Lapin ammattikorkeakoulun opiskelijakunta",
      "Lapin kauppakamari",
-     "Lapin yliopiston ylioppilaskunta",
+     "Lapin yliopiston ylioppilaskunta LYY",
      "Lapland Hotels Oy",
      "Lapland Safaris AC Oy",
      "Lapuan kaupunki"
@@ -102124,7 +101985,7 @@
    },
    "lisattyPaiva": "2025-12-04",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-10-30T10:00:47",
+   "muokattu": "2026-11-02T12:57:43",
    "nimi": "Hallituksen esitys laiksi rakentamislain muuttamisesta",
    "nimiSv": "Regeringens proposition om ändring av bygglagen",
    "pevLausunto": false,
@@ -124831,7 +124692,7 @@
      {
       "date": "2024-09-10",
       "id": "819e2373-5ad9-4a8d-87e0-1ee9a60f5f7d",
-      "org": "Lapin yliopiston ylioppilaskunta",
+      "org": "Lapin yliopiston ylioppilaskunta LYY",
       "title": "Lapin yliopiston ylioppilaskunta; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/4a468c24-a83d-4c75-9e8d-2e935d029679/819e2373-5ad9-4a8d-87e0-1ee9a60f5f7d/LAUSUNTO_20240911072505.PDF"
      },
@@ -124912,7 +124773,7 @@
      "Helsingin yliopiston ylioppilaskunta",
      "Kansaneläkelaitos (Kela)",
      "Kohtuuhintaisten vuokra- ja asumisoikeustalojen omistajat - KOVA ry",
-     "Lapin yliopiston ylioppilaskunta",
+     "Lapin yliopiston ylioppilaskunta LYY",
      "Lastensuojelun Keskusliitto",
      "Metropolia Ammattikorkeakoulun opiskelijakunta - METKA",
      "Mielenterveyden keskusliitto ry",
@@ -124955,7 +124816,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2024-12-16T13:27:50",
+   "muokattu": "2026-11-02T12:58:18",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi opintotukilain ja yleisestä asumistuesta annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av lagen om studiestöd och lagen allmänt bostadsbidrag",
    "pevLausunto": false,
@@ -182833,7 +182694,7 @@
    },
    "lisattyPaiva": "2026-05-26",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-30T12:08:20",
+   "muokattu": "2026-11-02T11:18:19",
    "nimi": "Ahvenanmaan itsehallintolain selvitys- ja muutoshanke –työryhmä (HE laiksi Ahvenanmaan itsehallintolain muuttamisesta)",
    "nimiSv": "Självstyrelselagen för Åland - utrednings- och ändringsprojekt –arbetsgrupp (RP med förslag till lag om ändring av självstyrelselagen för Åland)",
    "pevLausunto": true,
@@ -207956,7 +207817,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:22:51",
+   "muokattu": "2026-11-02T12:56:23",
    "nimi": "Hallituksen esitys laiksi Etelä-Korean kanssa solmitun työlomasopimuksen voimaansaattamisesta",
    "nimiSv": "Regeringens proposition om att utfärdä ett avtal om arbetssemester med Korea",
    "pevLausunto": false,
@@ -221955,6 +221816,199 @@
    "valmistumisPaiva": "2026-06-26",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": "2026-08-27",
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö",
+     "pvm": "2026-05-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/0b78b626-366b-43ba-a1f3-feb1129b61dc/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "nimi": "HE-luonnos ja sopimusteksti",
+     "pvm": "2026-05-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/fdfde0f0-856b-48df-abdd-36074b8dc669/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "nimi": "RP utkast - huvudsakliga innehåll och lagförslag",
+     "pvm": "2026-05-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/1191e2de-d142-4d34-972b-4e52e0ef7386/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "nimi": "Överenskommelse",
+     "pvm": "2026-05-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/787f7945-6e6c-4b95-85e5-3f81f2c2972a/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto",
+     "pvm": "2026-06-30",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/73673168-d69a-4ed9-be74-e1048c6be3e2/YHTEENVETO_20260630092903.PDF"
+    }
+   ],
+   "asiasanat": [],
+   "esittelyviikko": 35,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2026-10-29",
+     "end": null,
+     "kind": "muu",
+     "label": "Lain vahvistaminen",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [
+    "EV 148/2026"
+   ],
+   "heNumerot": [
+    "HE 143/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-06-25",
+      "id": "5d0347c3-38c6-4260-bb59-9a4c3da66501",
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "Sosiaali- ja terveysministeriön lausunto luonnoksesta hallituksen esitykseksi eduskunnalle tutkimustarkoituksessa siirre",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/5d0347c3-38c6-4260-bb59-9a4c3da66501/LAUSUNTO_20260629070726.PDF"
+     },
+     {
+      "date": "2026-06-16",
+      "id": "d4c77a76-3117-4a9d-a3b2-39062ff27a57",
+      "org": "Säteilyturvakeskus",
+      "title": "Säteilyturvakeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/d4c77a76-3117-4a9d-a3b2-39062ff27a57/LAUSUNTO_20260617161526.PDF"
+     },
+     {
+      "date": "2026-06-16",
+      "id": "96115214-42d8-4362-8fe1-de32fbca8ab0",
+      "org": "Teollisuuden Voima Oyj",
+      "title": "Teollisuuden Voima OYJ; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/96115214-42d8-4362-8fe1-de32fbca8ab0/LAUSUNTO_20260617161726.PDF"
+     },
+     {
+      "date": "2026-06-12",
+      "id": "b52b02d1-d957-45ad-9a9e-2e76dbd16ce1",
+      "org": "Ulkoministeriö",
+      "title": "Ulkoministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/b52b02d1-d957-45ad-9a9e-2e76dbd16ce1/LAUSUNTO_20260612073043.PDF"
+     },
+     {
+      "date": "2026-06-12",
+      "id": "11f654d6-c07c-46e0-b5cc-2722b14f995a",
+      "org": "Fortum Power and Heat Oy",
+      "title": "Fortum Power and Heat Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/11f654d6-c07c-46e0-b5cc-2722b14f995a/LAUSUNTO_20260614082539.PDF"
+     },
+     {
+      "date": "2026-06-04",
+      "id": "3f0820a5-89fd-47a0-ab07-f7fca07f8018",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     },
+     {
+      "date": "2026-05-19",
+      "id": "86af3f96-ed30-420d-b8ff-738a6fd91433",
+      "none": true,
+      "org": "Ympäristöministeriö",
+      "title": "Ympäristöministeriön lausunto_ei lausuttavaa"
+     },
+     {
+      "date": "2026-05-15",
+      "id": "f0353f3d-01cd-4e82-8b4d-346f2c12b4c1",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/f0353f3d-01cd-4e82-8b4d-346f2c12b4c1/LAUSUNTO_20260517041920.PDF"
+     },
+     {
+      "date": "2026-05-08",
+      "id": "4620c9cb-d0b9-41d8-ab22-edc1dcddaec0",
+      "none": true,
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 3,
+    "n": 9,
+    "orgs": [
+     "Fortum Power and Heat Oy",
+     "Oikeusministeriö",
+     "Sosiaali- ja terveysministeriö",
+     "Säteilyturvakeskus",
+     "Teollisuuden Voima Oyj",
+     "Ulkoministeriö",
+     "Valtiovarainministeriö",
+     "Yksityishenkilö",
+     "Ympäristöministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-06-25"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "työ- ja elinkeinoministeriö",
+   "muokattu": "2026-11-02T11:18:28",
+   "nimi": "Hallituksen esitys tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin kuningaskunnan alueella Suomen hallituksen ja Ruotsin hallituksen välillä tehdyn sopimuksen hyväksymisestä ja laiksi sopimuksen lainsäädännön alaan kuuluvien määräysten voimaansaattamisesta",
+   "nimiSv": "Regeringens proposition om godkännande av överenskommelsen mellan Sveriges regering och Finlands regering om slutförvaring i Konungariket Sverige av använt kärnbränsle som sänts för forskningsändamål och av radioaktivt avfall som härrör från den forskningsverksamheten om detta samt med förslag till lag om sättande i kraft av de bestämmelser i överenskommelsen som hör till området för lagstiftningen",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "936/2026"
+   ],
+   "teemat": [],
+   "tiivistelma": "Esityksessä ehdotetaan, että eduskunta hyväksyisi Suomen ja Ruotsin välisen sopimuksen tutkimustarkoituksessa siirrettävän käytetyn ydinpolttoaineen ja sen tutkimustoiminnan seurauksena syntyvän radioaktiivisen jätteen loppusijoittamisesta Ruotsin alueella ja lain sopimuksen lainsäädännön alaan kuuluvien määräysten voimaansaattamisesta.",
+   "tila": "PAATTYNYT",
+   "tunnus": "TEM109:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM109:00/2025",
+   "uuid": "82fb82ee-4385-4965-af2d-071a2d5556fc",
+   "valmistelu": [
+    {
+     "d": "2026-05-05",
+     "n": "Lausuntopyyntö",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/0b78b626-366b-43ba-a1f3-feb1129b61dc/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "d": "2026-05-05",
+     "n": "HE-luonnos ja sopimusteksti",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/fdfde0f0-856b-48df-abdd-36074b8dc669/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "d": "2026-05-05",
+     "n": "RP utkast - huvudsakliga innehåll och lagförslag",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/1191e2de-d142-4d34-972b-4e52e0ef7386/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "d": "2026-05-05",
+     "n": "Överenskommelse",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/787f7945-6e6c-4b95-85e5-3f81f2c2972a/LAUSUNTOPYYNTO_20260505120205.PDF"
+    },
+    {
+     "d": "2026-06-30",
+     "n": "Lausuntoyhteenveto",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82fb82ee-4385-4965-af2d-071a2d5556fc/73673168-d69a-4ed9-be74-e1048c6be3e2/YHTEENVETO_20260630092903.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-10-29",
+   "vanhaEsittelyviikko": 20,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-06-25",
@@ -239252,7 +239306,7 @@
      {
       "date": "2025-09-22",
       "id": "5dff62f8-1fb8-413e-8689-7fdac2e1b899",
-      "org": "Lapin yliopiston ylioppilaskunta",
+      "org": "Lapin yliopiston ylioppilaskunta LYY",
       "title": "Lapin yliopiston ylioppilaskunta; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/4bce837c-6415-4c6d-b12c-08d42a1996ec/5dff62f8-1fb8-413e-8689-7fdac2e1b899/LAUSUNTO_20250922184649.PDF"
      },
@@ -239367,7 +239421,7 @@
      "Lahden kaupunki",
      "Lapin ammattikorkeakoulu Oy",
      "Lapin yliopisto",
-     "Lapin yliopiston ylioppilaskunta",
+     "Lapin yliopiston ylioppilaskunta LYY",
      "Lappeenrannan kaupunki",
      "Nuorisoasuntoliitto NAL ry",
      "Opetus- ja kulttuuriministeriö",
@@ -239406,7 +239460,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-01-19T14:43:22",
+   "muokattu": "2026-11-02T12:55:03",
    "nimi": "Opiskelija-asuntojen korkotuen muutokset",
    "nimiSv": "Ändring av räntestöd för studentbostäder",
    "pevLausunto": false,
@@ -475071,6 +475125,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "9af8dfb1-9e16-415a-bee1-e30e8f72db0f",
+      "none": true,
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Opetus- ja kulttuuriministeriö; ei lausuttavaa"
+     },
+     {
+      "date": "2026-10-30",
+      "id": "7a40fe41-e23c-474e-829f-ee629e26d265",
+      "org": "Suomen Taksiliitto ry",
+      "title": "Suomen Taksiliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/7a40fe41-e23c-474e-829f-ee629e26d265/LAUSUNTO_20261102183711.PDF"
+     },
+     {
       "date": "2026-10-29",
       "id": "2525ba5f-ee97-44d5-a6d7-8dc1449d1166",
       "org": "Poliisitoimintayksikkö, Poliisihallitus",
@@ -475091,19 +475159,21 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/86f21123-d26c-452b-ab15-ea1fb4e5f0de/LAUSUNTO_20261026192907.PDF"
      }
     ],
-    "eiLausuttavaa": 0,
-    "n": 3,
+    "eiLausuttavaa": 1,
+    "n": 5,
     "orgs": [
      "Oikeusministeriö",
+     "Opetus- ja kulttuuriministeriö",
      "Poliisitoimintayksikkö, Poliisihallitus",
-     "Suomen Laivanpäällystöliitto ry"
+     "Suomen Laivanpäällystöliitto ry",
+     "Suomen Taksiliitto ry"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9d41d48a-b6f6-4ccb-8442-73e900ee78c4&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-29"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-30T07:41:20",
+   "muokattu": "2026-11-02T18:37:11",
    "nimi": "Liikenne- ja viestintäministeriön asetus Väyläviraston maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordning om Trafikledsverkets avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -475550,6 +475620,27 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/8d9d7c36-4e8e-417b-8871-448ebbbd50e4/LAUSUNTO_20261101045836.PDF"
      },
      {
+      "date": "2026-10-30",
+      "id": "9c8940e2-75a8-4b28-b2ee-3e2d8973863a",
+      "org": "Nuorten yrittäjyys ja talous NYT ry",
+      "title": "Nuorten yrittäjyys ja talous NYT ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/9c8940e2-75a8-4b28-b2ee-3e2d8973863a/LAUSUNTO_20261102181714.PDF"
+     },
+     {
+      "date": "2026-10-30",
+      "id": "dee0fc2b-33fe-43d9-a32d-f1ee5d922400",
+      "org": "Ammattikorkeakoulujen rehtorineuvosto Arene ry",
+      "title": "Ammattikorkeakoulujen rehtorineuvosto Arene ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/dee0fc2b-33fe-43d9-a32d-f1ee5d922400/LAUSUNTO_20261102181922.PDF"
+     },
+     {
+      "date": "2026-10-30",
+      "id": "dfc31004-c88d-42bd-beb5-e2fdf8a930b4",
+      "org": "Aineopettajaliitto AOL ry",
+      "title": "Aineopettajaliitto AOL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e5f8c97f-d25b-468c-8419-2313c7d7392a/dfc31004-c88d-42bd-beb5-e2fdf8a930b4/LAUSUNTO_20261102182130.PDF"
+     },
+     {
       "date": "2026-10-29",
       "id": "933ef77e-e96a-413b-b9ba-b66612e1b80d",
       "org": "Kunta- ja hyvinvointialuetyönantajat KT",
@@ -475684,15 +475775,18 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 27,
+    "n": 30,
     "orgs": [
+     "Aineopettajaliitto AOL ry",
      "Akava ry",
+     "Ammattikorkeakoulujen rehtorineuvosto Arene ry",
      "Elinkeinoelämän keskusliitto EK",
      "Helsingin yliopisto",
      "Itä-Suomen yliopisto",
      "Jyväskylän yliopisto",
      "Kansallinen koulutuksen arviointikeskus",
      "Kunta- ja hyvinvointialuetyönantajat KT",
+     "Nuorten yrittäjyys ja talous NYT ry",
      "Opetusalan Ammattijärjestö OAJ ry",
      "Opetushallitus",
      "Oulun Ammattikorkeakoulu Oy",
@@ -475719,7 +475813,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-01T04:58:36",
+   "muokattu": "2026-11-02T18:21:30",
    "nimi": "Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om examina och specialiseringsutbildningar vid universitet",
    "pevLausunto": false,
@@ -476275,6 +476369,27 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "8a01f6a8-5cf9-4a7a-88e2-bb0db8c0a242",
+      "none": true,
+      "org": "Varsinais-Suomen liitto",
+      "title": "Varsinais-Suomen Liitto; ei lausuttavaa"
+     },
+     {
+      "date": "2026-11-02",
+      "id": "b8a942b7-308d-497f-bb9c-ed946950448f",
+      "org": "MTK-Satakunta ry",
+      "title": "MTK-Satakunta ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/b8a942b7-308d-497f-bb9c-ed946950448f/LAUSUNTO_20261102191428.PDF"
+     },
+     {
+      "date": "2026-10-28",
+      "id": "e2fa7eab-708b-467d-8445-be13e46ff4c9",
+      "org": "Valtakunnallinen riistaneuvosto",
+      "title": "Valtakunnallinen riistaneuvosto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/e2fa7eab-708b-467d-8445-be13e46ff4c9/LAUSUNTO_20261102141433.PDF"
+     },
+     {
       "date": "2026-10-27",
       "id": "520aa121-8112-4e9d-b108-2e8e9627f44d",
       "org": "Putakon Erä ry",
@@ -476338,25 +476453,27 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/f1e555fb-146b-4c12-8383-cc412c0bffa8/LAUSUNTO_20261019064001.PDF"
      }
     ],
-    "eiLausuttavaa": 2,
-    "n": 9,
+    "eiLausuttavaa": 3,
+    "n": 12,
     "orgs": [
+     "Valtakunnallinen riistaneuvosto",
      "Idän Taiga ry",
      "Luonnonsuojeluliitto Tapiola ry",
+     "MTK-Satakunta ry",
      "Paliskuntain yhdistys",
      "Petsmo jaktklubb r.f.",
      "Putakon Erä ry",
      "Rajavartiolaitos",
      "Satakunnan alueellinen riistaneuvosto",
      "Sisäministeriö",
-     "Valtakunnallinen riistaneuvosto"
+     "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-27"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-02T09:45:11",
+   "muokattu": "2026-11-02T19:14:28",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -477011,6 +477128,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-10-31",
+      "id": "e5580460-17dc-460f-b85a-8b0a6b0e927c",
+      "org": "Saamelaispaliskunnat ry",
+      "title": "Saamelaispaliskunnat ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/3c104bd9-9ea6-491e-9808-9fc633ee845b/e5580460-17dc-460f-b85a-8b0a6b0e927c/LAUSUNTO_20261102191206.PDF"
+     },
+     {
       "date": "2026-10-28",
       "id": "7c63947e-d0d5-41c9-9b3d-d84eb0324c52",
       "org": "Paliskuntain yhdistys",
@@ -477026,17 +477150,18 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 2,
+    "n": 3,
     "orgs": [
      "Paliskuntain yhdistys",
-     "Ruokavirasto"
+     "Ruokavirasto",
+     "Saamelaispaliskunnat ry"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=30ac14d9-8251-4fba-a885-6084ff8bc269&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-28"
+    "viimeisin": "2026-10-31"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-02T09:45:55",
+   "muokattu": "2026-11-02T19:12:06",
    "nimi": "Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 5 § i och bilaga 5 till statsrådets förordning om viltskador",
    "pevLausunto": false,
@@ -477142,11 +477267,25 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "36735de4-88b9-4550-b022-5b3142e4b0f4",
+      "org": "Valtiovarainministeriö",
+      "title": "SOSTE Suomen sosiaali ja terveys ry, lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b33253fa-3403-45d7-85be-756911256b20/36735de4-88b9-4550-b022-5b3142e4b0f4/LAUSUNTO_20261102115223.PDF"
+     },
+     {
       "date": "2026-10-30",
       "id": "86852b3c-a1ec-483a-bf83-81cb4ec679bc",
       "org": "Verohallinto",
       "title": "Verohallinto; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/b33253fa-3403-45d7-85be-756911256b20/86852b3c-a1ec-483a-bf83-81cb4ec679bc/LAUSUNTO_20261101040356.PDF"
+     },
+     {
+      "date": "2026-10-30",
+      "id": "5c918d43-49f2-4d20-b02e-d1f5851eee4b",
+      "org": "SOSTE Suomen sosiaali ja terveys ry",
+      "title": "SOSTE Suomen sosiaali ja terveys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b33253fa-3403-45d7-85be-756911256b20/5c918d43-49f2-4d20-b02e-d1f5851eee4b/LAUSUNTO_20261102172811.PDF"
      },
      {
       "date": "2026-10-20",
@@ -477157,17 +477296,19 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 2,
+    "n": 4,
     "orgs": [
+     "SOSTE Suomen sosiaali ja terveys ry",
      "Työ- ja elinkeinoministeriö",
+     "Valtiovarainministeriö",
      "Verohallinto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=733bb41d-af33-4a4d-9853-5ae5d97e2524",
-    "viimeisin": "2026-10-30"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-01T04:03:56",
+   "muokattu": "2026-11-02T17:28:11",
    "nimi": "Valtiovarainministeriön asetus eräiden yleishyödyllisten yhteisöjen veronhuojennuksista",
    "nimiSv": "Finansministeriets förordning om skattelättnader för vissa allmännyttiga samfund",
    "pevLausunto": false,
@@ -477429,6 +477570,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "0229a032-3270-4b52-a254-6e0719cb40b5",
+      "org": "Verohallinto",
+      "title": "Verohallinto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/32ac1aaf-90a1-487a-9952-bee8d0e5e32b/0229a032-3270-4b52-a254-6e0719cb40b5/LAUSUNTO_20261102173032.PDF"
+     },
+     {
       "date": "2026-10-29",
       "id": "57297014-73bd-4515-81d2-615059716ff5",
       "org": "Kirkkohallitus",
@@ -477437,16 +477585,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
-     "Kirkkohallitus"
+     "Kirkkohallitus",
+     "Verohallinto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=d8ae8e31-2c89-4345-88e7-67b0581cb1ae",
-    "viimeisin": "2026-10-29"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T18:11:30",
+   "muokattu": "2026-11-02T17:30:32",
    "nimi": "Valtioneuvoston asetus verontilityksestä",
    "nimiSv": "Statsrådets förordning om skatteredovisning",
    "pevLausunto": false,
@@ -477858,10 +478007,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-02",
+      "id": "ecca7f17-6911-4409-9531-554d65cbba32",
+      "org": "Verohallinto",
+      "title": "Verohallinto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/ba66602a-1001-4d96-8704-966ecbcc70e5/ecca7f17-6911-4409-9531-554d65cbba32/LAUSUNTO_20261102173250.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "Verohallinto"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=4ef20fb1-0411-462f-915c-38476f76712f",
+    "viimeisin": "2026-11-02"
+   },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-15T06:28:17",
+   "muokattu": "2026-11-02T17:32:50",
    "nimi": "Valtiovarainministeriön asetus veronkannosta annetun valtiovarainministeriön asetuksen muuttamisesta",
    "nimiSv": "Finansministeriets förordning om ändring av finansministeriets förordning om skatteuppbörd",
    "pevLausunto": false,
@@ -477956,6 +478122,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "abaeecfe-e3d8-4f75-a97c-2edcce603714",
+      "org": "Uudenmaan elinvoimakeskus",
+      "title": "Uudenmaan elinvoimakeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/abaeecfe-e3d8-4f75-a97c-2edcce603714/LAUSUNTO_20261102184520.PDF"
+     },
+     {
+      "date": "2026-11-02",
+      "id": "3fdc787a-ff40-4548-a2b7-d0944f151bf9",
+      "org": "Suomen Tieyhdistys ry",
+      "title": "Suomen Tieyhdistys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/3fdc787a-ff40-4548-a2b7-d0944f151bf9/LAUSUNTO_20261102185119.PDF"
+     },
+     {
       "date": "2026-10-30",
       "id": "670f35c8-c4f5-46c5-8840-3cb835100094",
       "org": "Paraisten kaupunki",
@@ -478041,7 +478221,7 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 12,
+    "n": 14,
     "orgs": [
      "Etelä-Karjalan liitto",
      "Etelä-Savon maakuntaliitto",
@@ -478053,15 +478233,17 @@
      "Savonlinnan kaupunki",
      "Sisäministeriö",
      "Suomen Sisävesiliitto – Insjöfartsförbundet ry",
+     "Suomen Tieyhdistys ry",
      "Työ- ja elinkeinoministeriö",
+     "Uudenmaan elinvoimakeskus",
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=a7fe6a15-4cc9-459c-b25b-8332072c1d31&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-30"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-01T05:14:35",
+   "muokattu": "2026-11-02T18:51:19",
    "nimi": "Yksityistieasetuksen muuttaminen",
    "nimiSv": "Ändring av förordningen om enskilda vägar",
    "pevLausunto": false,
@@ -478215,6 +478397,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-02",
+      "id": "6b43bc01-f72a-46e6-b1fa-e31ec21aad00",
+      "org": "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
+      "title": "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus); lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/4934bc8e-cc02-4d84-9bae-9debccbdc66b/6b43bc01-f72a-46e6-b1fa-e31ec21aad00/LAUSUNTO_20261102175104.PDF"
+     },
+     {
       "date": "2026-10-20",
       "id": "4f118456-35e9-45a7-9a39-9d556f1670f2",
       "org": "Oikeusministeriö",
@@ -478222,16 +478411,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
+     "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
      "Oikeusministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=4418952d-131a-4291-a777-57e716264f95",
-    "viimeisin": "2026-10-20"
+    "viimeisin": "2026-11-02"
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-28T10:27:39",
+   "muokattu": "2026-11-02T17:51:04",
    "nimi": "Valtioneuvoston asetus elinvoimakeskusten ja Työllisyys-, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028",
    "nimiSv": "Statsrådets förordning om avgifter som tas ut av livskraftscentralerna och Utvecklings- och förvaltningscentret för sysselsättningstjänster år 2027 och 2028",
    "pevLausunto": false,
@@ -478753,10 +478943,43 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-02",
+      "id": "340342d9-fad1-4971-a1aa-da6d88733f6f",
+      "org": "Safetum Oy",
+      "title": "Safetum Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/340342d9-fad1-4971-a1aa-da6d88733f6f/LAUSUNTO_20261102183009.PDF"
+     },
+     {
+      "date": "2026-11-02",
+      "id": "bb02ccb6-f6a0-4411-83c8-2b5f2d263e57",
+      "org": "Hyvinvointialueyhtiö Hyvil Oy",
+      "title": "Hyvinvointialueyhtiö Hyvil Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/bb02ccb6-f6a0-4411-83c8-2b5f2d263e57/LAUSUNTO_20261102183218.PDF"
+     },
+     {
+      "date": "2026-11-02",
+      "id": "92ae9476-7d39-4a08-80fe-b2d319dc4994",
+      "org": "Suomen antenni- ja teleurakoitsijaliitto ry",
+      "title": "Suomen antenni- ja teleurakoitsijaliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/92ae9476-7d39-4a08-80fe-b2d319dc4994/LAUSUNTO_20261102183426.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 3,
+    "orgs": [
+     "Hyvinvointialueyhtiö Hyvil Oy",
+     "Safetum Oy",
+     "Suomen antenni- ja teleurakoitsijaliitto ry"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=b264614c-5349-401a-857a-3903bdd73c0e&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
+    "viimeisin": "2026-11-02"
+   },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-29T12:30:59",
+   "muokattu": "2026-11-02T18:34:26",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen",
    "nimiSv": "Statsrådets förordning om statsunderstöd för iståndsättning av skyddsrum",
    "pevLausunto": false,
@@ -479055,7 +479278,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-01T05:10:03",
+   "muokattu": "2026-11-02T13:08:55",
    "nimi": "Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om fordon",
    "pevLausunto": false,
@@ -479100,7 +479323,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/fdf8f7c6-f6b5-4254-b393-c883d34c7dbd/LAUSUNTOPYYNTO_20260918055303.PDF"
     }
    ],
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmisteluvaihe": "JATKOVALMISTELU",
    "valmistumisPaiva": "2026-12-15",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
@@ -602422,11 +602645,12 @@
   },
   {
    "authority": "ympäristöministeriö",
-   "date": "2026-10-30",
-   "deadline": "2026-12-06",
+   "date": "2026-11-02",
+   "deadline": "2026-12-02",
    "id": "hk-2640960f-d87c33",
    "kind": "Lausuntokierros",
    "laji": "kuuleminen",
+   "lausuntopalvelu": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5078e34b-6e47-4bf0-a4d7-68ab77438373",
    "ref": "YM018:00/2026",
    "scope": "fi",
    "source": "hankeikkuna_kuulemiset",
