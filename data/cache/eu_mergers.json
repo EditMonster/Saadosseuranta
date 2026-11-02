@@ -4339,67 +4339,6 @@
    "timeline": [],
    "title": "EFMS / EXOLAUNCH"
   },
-  "M.12536": {
-   "caseNumber": "M.12536",
-   "deadline": "2026-08-14",
-   "decisions": [
-    {
-     "date": "2026-08-03",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-29",
-   "lastDecision": "2026-08-03",
-   "notice": {
-    "activities": [
-     "Triton Fund 6 on yksi niistä sijoitusrahastoista, joita Triton-konserniin kuuluvat yhteisöt hallinnoivat ja neuvovat. Rahastot, joita Triton hallinnoi ja neuvoo, mukaan lukien Triton Fund 6, investoivat keskisuuriin yrityksiin, joiden päätoimipaikka on Keski- ja Pohjois-Euroopassa ja jotka toimivat useilla eri markkinoilla. Rahastot keskittyvät erityisesti seuraaviin kolmeen alaan: yrityspalvelut, teollisuusteknologia ja terveydenhuolto.",
-     "Flender on sellaisen yritysryhmän emoyhtiö, jonka toimialaa on mekaanisella voimansiirtojärjestelmällä toimivien tuotteiden sekä teollisuustuotantoa, sähköntuotantoa ja tuulivoimateollisuutta varten tarkoitettujen generaattoreiden, järjestelmien ja palvelujen kehittäminen, valmistaminen, tuottaminen, kokoonpano, maailmanlaajuinen markkinointi, myynti, ylläpito, käyttöönotto ja suunnittelu sekä niihin liittyvä projektinhallinta, konsultointi ja digitalisointi."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-27",
-    "oj": "C:2026:3900:",
-    "parties": [
-     {
-      "country": "Luxemburg",
-      "fi": false,
-      "name": "Triton Fund 6 GP SARL",
-      "short": "Triton Fund 6"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Carlyle Funds"
-       }
-      ],
-      "country": "Saksa",
-      "fi": false,
-      "name": "Flender Group GmbH",
-      "short": "Flender"
-     }
-    ],
-    "published": "2026-07-17",
-    "reference": "C/2026/3900",
-    "simplified": true,
-    "transaction": "Triton hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun määräysvallan yrityksessä Flender. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3900/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-09",
-   "oj": [
-    {
-     "published": "2026-07-17",
-     "reference": "C:2026:3900:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_33.12",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "TRITON / FLENDER"
-  },
   "M.12537": {
    "caseNumber": "M.12537",
    "deadline": "2026-10-21",
@@ -4473,67 +4412,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "POSCO FLOW / LX PANTOS / JV"
-  },
-  "M.12538": {
-   "caseNumber": "M.12538",
-   "deadline": "2026-08-14",
-   "decisions": [
-    {
-     "date": "2026-08-03",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-07-06",
-   "lastDecision": "2026-08-03",
-   "notice": {
-    "activities": [
-     "H.I.G. EU MM LBO II on Luxemburgiin sijoittautunut sijoitusrahasto, jota hallinnoi yritys H.I.G. Capital, Yhdysvaltojen Miamissa kotipaikkaansa pitävä globaali pääomasijoitusyhtiö ja vaihtoehtoisten omaisuuserien sijoitusyhtiö. H.I.G. Capital on erikoistunut tarjoamaan sekä vieraan että oman pääoman ehtoista rahoitusta pienille ja keskisuurille yrityksille.",
-     "Terras on sijoittautunut Saksaan ja toimii maa- ja vesirakennusalalla. Lisäksi Terras tarjoaa maa- ja vesirakentamiseen liittyviä palveluja, erityisesti tuotantoketjun alkupään teknisiä palveluja (maaperätutkimukset, maanmittaus ja asiantuntijalausunnot), rakennusmateriaalien ja irtotavaran kauppaa sekä tuotantoketjun loppupään jätehuoltoa (kaatopaikkasijoitus ja kierrätys). Terras toimii lähes yksinomaan Saksassa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-31",
-    "oj": "C:2026:3948:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "H.I.G. Capital, LLC"
-       }
-      ],
-      "country": "Luxemburg",
-      "fi": false,
-      "name": "H.I.G. Europe Middle Market LBO Fund II, SCSp",
-      "short": "H.I.G. EU MM LBO II"
-     },
-     {
-      "country": "Saksa",
-      "fi": false,
-      "name": "Terras Gruppe GmbH",
-      "short": "Terras"
-     }
-    ],
-    "published": "2026-07-21",
-    "reference": "C/2026/3948",
-    "simplified": true,
-    "transaction": "H.I.G. EU MM LBO II hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Terras. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3948/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-09",
-   "oj": [
-    {
-     "published": "2026-07-21",
-     "reference": "C:2026:3948:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_F_42.9",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "HIG EU MM LBO II / TERRAS"
   },
   "M.12540": {
    "caseNumber": "M.12540",
@@ -7885,5 +7763,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-01T13:34:42Z"
+ "fetched": "2026-11-02T07:23:40Z"
 }

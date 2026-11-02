@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-01T13:19:53",
+ "fetched": "2026-11-02T07:08:56",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -63,7 +63,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-30T11:37:42",
+   "muokattu": "2026-11-02T06:54:41",
    "nimi": "EU:n paluuasetuksen voimaantuloa koskeva lainsäädäntöhanke",
    "nimiSv": "Lagstiftningsprojekt som gäller ikraftträdandet av EU:s återvändandeförordning",
    "pevLausunto": false,
@@ -159,9 +159,9 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-23T09:29:16",
+   "muokattu": "2026-11-02T05:57:29",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 l §:n ja biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta",
-   "nimiSv": "RP med förslag till lagar om ändring av 5 l § i lagen om främjande av användningen av förnybara drivmedel för transport och 5 och 7 § i lagen om främjande av användningen av biobrännolja",
+   "nimiSv": "Regeringens proposition med förslag till lagar om ändring av 5 l § i lagen om främjande av användningen av förnybara drivmedel för transport och 5 och 7 § i lagen om främjande av användningen av biobrännolja",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
@@ -14438,7 +14438,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:58:41",
+   "muokattu": "2026-11-02T06:57:45",
    "nimi": "Hallituksen esitys eduskunnalle laiksi hyvinvointialueesta annetun lain 21 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av 21 § i lagen om välfärdsområden",
    "pevLausunto": false,
@@ -47069,14 +47069,47 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laeiksi arvonlisäverolain ja eräiden muiden lakien muuttamisesta (Digiajan alv osa 2)",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/c0d4a667-4c08-4b89-a6a8-b5521d913c51/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "nimi": "Luonnos hallituksen esitykseksi digiajan alv osa 2",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/ce6899ed-48af-4ad6-85b6-647805e9d735/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande om utkastet till regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och vissa andra lagar",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/26df14ff-1c19-4d4e-b575-3ef50f1f689f/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "nimi": "Utkast till propositionens huvudsakliga innehål och lagförslag",
+     "pvm": "2026-10-29",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/604bc7ac-2f0b-42e0-b71a-375e318b0bb1/LAUSUNTOPYYNTO_20261102064404.PDF"
+    }
+   ],
    "asiasanat": [
     "verotus",
     "arvonlisäverolaki"
    ],
    "esittelyviikko": 45,
    "esittelyvuosi": 2026,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-11-02",
+     "end": "2026-11-23",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
@@ -47201,12 +47234,12 @@
      "Suomen matkailualan liitto ry",
      "Uber Finland Oy"
     ],
-    "url": null,
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=951f037b-7f04-4bb9-b588-8ad5d6a76ed2",
     "viimeisin": "2026-03-25"
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:54:38",
+   "muokattu": "2026-11-02T06:47:56",
    "nimi": "Hallituksen esitys eduskunnalle laiksi arvonlisäverolain muuttamisesta  (Digiajan alv osa 2)",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av mervärdesskattelagen (Mervärdesskatt i den digitala tidsåldern del 2)",
    "pevLausunto": false,
@@ -47219,7 +47252,32 @@
    "tunnus": "VM164:00/2025",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025",
    "uuid": "e0ed1ec4-94fb-4725-af21-1319780b8aed",
-   "valmistelu": [],
+   "valmistelu": [
+    {
+     "d": "2026-10-29",
+     "n": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laeiksi arvonlisäverolain ja eräiden muiden lakien muuttamisesta (Digiajan alv osa 2)",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/c0d4a667-4c08-4b89-a6a8-b5521d913c51/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "Luonnos hallituksen esitykseksi digiajan alv osa 2",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/ce6899ed-48af-4ad6-85b6-647805e9d735/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "Begäran om utlåtande om utkastet till regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och vissa andra lagar",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/26df14ff-1c19-4d4e-b575-3ef50f1f689f/LAUSUNTOPYYNTO_20261102064404.PDF"
+    },
+    {
+     "d": "2026-10-29",
+     "n": "Utkast till propositionens huvudsakliga innehål och lagförslag",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/604bc7ac-2f0b-42e0-b71a-375e318b0bb1/LAUSUNTOPYYNTO_20261102064404.PDF"
+    }
+   ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 41,
@@ -149902,7 +149960,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-10-30T11:40:09",
+   "muokattu": "2026-11-02T06:23:20",
    "nimi": "Passi- ja henkilökorttilainsäädännön muutostarpeet ulkoasiainhallinnossa",
    "nimiSv": "Behov av ändringar i pass- och identitetskortslagstiftningen inom utrikesförvaltningen",
    "pevLausunto": false,

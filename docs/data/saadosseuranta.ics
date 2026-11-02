@@ -437,6 +437,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 140/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/140
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-hanke-e0ed1ec4-lausunto-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[FI] Lausuntoaika päättyy: Laiksi arvonlisäverolain muuttamisesta  (Digiajan alv osa 2)
+DESCRIPTION:Lausuntokierros · VM164:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025
+URL:https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-143-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -2417,10 +2426,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-27@saadosseuranta
-DTSTAMP:20261227T000000Z
-DTSTART;VALUE=DATE:20261227
-DTEND;VALUE=DATE:20261228
+UID:eu-hys-19517-lausunto-2026-12-28@saadosseuranta
+DTSTAMP:20261228T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
