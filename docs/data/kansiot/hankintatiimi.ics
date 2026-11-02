@@ -59,6 +59,15 @@ DESCRIPTION:Tarjoukset viimeistään · Aktsiaselts Ida-Tallinna Keskhaigla · h
 URL:https://ted.europa.eu/fi/notice/-/detail/759590-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-60933-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[Hankinta] Määräaika: Renkaiden ja rengastöiden hankinta Imatralla 2027
+DESCRIPTION:Tarjoukset viimeistään · 2026-060933 · https://www.hankintailmoitukset.fi/fi/public/procedure/39528/enotice/60933
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39528/enotice/60933
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-758457-2026-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
 DTSTAMP:20261117T000000Z
 DTSTART;VALUE=DATE:20261117
@@ -1605,15 +1614,6 @@ DTEND;VALUE=DATE:20261208
 SUMMARY:[Hankinta] Määräaika: Microsoft Azure CSP-pilvikapasiteetin jakelu- ja  hallintapalvelu siihen liittyvine asiantuntijapalveluineen
 DESCRIPTION:Tarjoukset viimeistään · 2026-060265 · https://www.hankintailmoitukset.fi/fi/public/procedure/39151/enotice/60265
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39151/enotice/60265
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-739864-2026-maaraaika-2026-11-02-hankintatiimi@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[Hankinta] Määräaika: 2026/4831 - Project 1148703 - NTNU Campus Collection - Procurement of project manager for user equipment.
-DESCRIPTION:Tarjoukset viimeistään · STATSBYGG · https://ted.europa.eu/fi/notice/-/detail/739864-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/739864-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-738052-2026-maaraaika-2026-11-02-hankintatiimi@saadosseuranta

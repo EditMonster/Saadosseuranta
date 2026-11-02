@@ -1022,15 +1022,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 221/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/221
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-95-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laiksi eräiden valtiontukea koskevien Euroopan unionin säännösten soveltamisesta sekä siihen liittyviksi laeiksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 95/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/95
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/95
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-192-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1047,6 +1038,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Hallintotuomioistuinten kokoonpanoja koskevan lainsäädännön uudistamiseksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 103/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-124-2026-voimaan-2026-11-02@saadosseuranta
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[FI] Voimaan: Laiksi yleistukilain voimaantulosäännöksen muuttamisesta
+DESCRIPTION:Voimaan (934/2026) · HE 124/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/124
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/124
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
@@ -1290,6 +1290,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Ydinenergialaiksi ja siihen liittyviksi laeiksi
 DESCRIPTION:Voimaan (775/2026) · 775/2026 · HE 24/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/24
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/24
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-95-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi eräiden valtiontukea koskevien Euroopan unionin säännösten soveltamisesta sekä siihen liittyviksi laeiksi
+DESCRIPTION:Voimaan (937/2026) · 937/2026 · HE 95/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/95
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/95
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-204-2025-voimaan-2027-06-01@saadosseuranta
