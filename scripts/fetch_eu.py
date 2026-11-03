@@ -14,7 +14,9 @@ Sources
 from __future__ import annotations
 
 import datetime as dt
+import os
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from common import CACHE_DIR, CONFIG_DIR, TODAY, days_ago, get_json, http, is_future, load_json, load_yaml, log, save_json
@@ -22,6 +24,8 @@ from common import CACHE_DIR, CONFIG_DIR, TODAY, days_ago, get_json, http, is_fu
 EP = "https://data.europarl.europa.eu/api/v2"
 SPARQL = "https://publications.europa.eu/webapi/rdf/sparql"
 OUT = CACHE_DIR / "eu.json"
+BUDGET_S = int(os.environ.get("EU_BUDGET_S", 8 * 60))  # seconds for the procedure details
+OUTAGE_STREAK = 8  # failures in a row = the EP API is down
 WORKERS = 6          # rinnakkaiset haut (EP API ~3 s/menettely)
 REFRESH_DAYS = 3     # keskeneräiset menettelyt haetaan uudelleen näin usein; watchlist päivittäin
 
@@ -264,15 +268,24 @@ def main():
         rec["final"] = is_final(rec)
         return pid, rec
 
+    # a slow or failing EP API must not use up the whole job (3.11.2026: 24 min of 500s and the run timed out):
+    # stop after BUDGET_S or after OUTAGE_STREAK failures in a row; the rest is fetched on the next run
+    t0, streak, stopped = time.time(), 0, ""
     done, failed = 0, 0
-    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+    ex = ThreadPoolExecutor(max_workers=WORKERS)
+    try:
         futs = {ex.submit(work, pid): pid for pid in todo}
         for f in as_completed(futs):
             pid = futs[f]
+            if time.time() - t0 > BUDGET_S or streak >= OUTAGE_STREAK:
+                stopped = "aikabudjetti" if time.time() - t0 > BUDGET_S else f"{streak} virhettä peräkkäin"
+                break
             try:
                 pid, rec = f.result()
+                streak = 0
             except Exception as e:  # noqa: BLE001
                 failed += 1
+                streak += 1
                 log(f"warn: {pid}: {e}")
                 continue
             if rec:
@@ -280,6 +293,10 @@ def main():
                 done += 1
                 if done % 25 == 0:
                     save_json(OUT, {"fetched": dt.datetime.now().isoformat(timespec="seconds"), "items": cache})
+    finally:
+        ex.shutdown(wait=False, cancel_futures=True)
+    if stopped:
+        log(f"eu: haku keskeytettiin ({stopped}) – loput {len(todo) - done - failed} menettelyä seuraavalla ajolla")
     # Council stages for every procedure that is not long finished (a handful of batched Cellar queries)
     active = [pid for pid, rec in cache.items() if not rec.get("final") or (days_ago(rec.get("fetched")) or 0) < 60]
     council = council_events(active)
