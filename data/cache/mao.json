@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-03T13:51:54Z",
+ "fetched": "2026-11-03T18:38:02Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1114,6 +1114,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "59978ccc32c5",
+   "lastSeen": "2026-11-03"
+  },
+  "5a9c4a1ee3b9": {
+   "buyer": "Valtiokonttori",
+   "decisionDate": "2026-10-15",
+   "decisionText": "Valtiokonttorin tarjouspyyntö 15.10.2026, VK/35613/2026 / Valtiokonttori – Ohjelmistot ja ICT-asiantuntijapalvelut 2026 (DPS) – IT-asiantuntijapalvelut digitaalisten palvelujen kehittämisen tueksi",
+   "filed": "2026-11-03",
+   "firstSeen": "2026-11-03",
+   "hilmaNo": null,
+   "key": "5a9c4a1ee3b9",
    "lastSeen": "2026-11-03"
   },
   "5abe0b494805": {

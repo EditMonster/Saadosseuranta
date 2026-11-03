@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T13:33:51",
+ "fetched": "2026-11-03T18:26:32",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -90,7 +90,7 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
-   "asetettu": null,
+   "asetettu": "2026-10-28",
    "asiakirjat": [],
    "asiasanat": [
     "maahanmuutto"
@@ -106,7 +106,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-02T06:54:41",
+   "muokattu": "2026-11-03T15:00:28",
    "nimi": "EU:n paluuasetuksen voimaantuloa koskeva lainsäädäntöhanke",
    "nimiSv": "Lagstiftningsprojekt som gäller ikraftträdandet av EU:s återvändandeförordning",
    "pevLausunto": false,
@@ -45042,7 +45042,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:55:59",
+   "muokattu": "2026-11-03T17:53:27",
    "nimi": "Hallituksen esitys eduskunnalle laiksi verotusmenettelystä annetun lain 21 §:n muuttamisesta annetun hallituksen esityksen (HE 141/2025 vp) täydentämisestä",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till komplettering av regeringens proposition med förslag till lag om ändring av 21 § i lagen om beskattningsförfarande (RP 141/2025 rd)",
    "pevLausunto": true,
@@ -57732,7 +57732,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-28T07:25:14",
+   "muokattu": "2026-11-03T16:34:12",
    "nimi": "Syyttömästi vangitulle tai tuomitulle maksettavaa korvausta koskevien säännösten uudistaminen",
    "nimiSv": "Revidering av bestämmelserna om ersättning som ska betalas till oskyldigt häktad eller dömd",
    "pevLausunto": false,
@@ -158073,7 +158073,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-30T12:32:00",
+   "muokattu": "2026-11-03T16:30:12",
    "nimi": "Asuntokauppalain uudistaminen",
    "nimiSv": "Revidering av lagen om bostadsköp",
    "pevLausunto": false,
@@ -158845,7 +158845,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-30T12:30:08",
+   "muokattu": "2026-11-03T16:31:31",
    "nimi": "Kuluttajaluotto- ja rahoituspalvelujen etämyyntisääntelyn valmistelu",
    "nimiSv": "Beredning av reglering om  konsumentkrediter och distansförsäljning av finansiella tjänster",
    "pevLausunto": false,
@@ -162154,7 +162154,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-03T13:22:19",
+   "muokattu": "2026-11-03T13:50:23",
    "nimi": "Hallituksen esitys kaavojen toteuttamisen ja katujen kunnossapidon lainsäädännön uudistamisesta",
    "nimiSv": "Regeringens proposition med förslag till en reform av lagstiftningen om genomförande av planer och underhåll av gator",
    "pevLausunto": false,
@@ -198310,7 +198310,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-03T02:17:11",
+   "muokattu": "2026-11-03T16:33:09",
    "nimi": "Julkisyhteisön vahingonkorvausvastuu",
    "nimiSv": "Offentliga samfunds skadeståndsansvar",
    "pevLausunto": false,
@@ -205512,6 +205512,385 @@
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": "2021-10-28",
+   "arviointineuvosto": false,
+   "asetettu": "2020-09-09",
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta sekä laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
+     "pvm": "2021-06-03",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2d3921a9-5dba-4f3d-afc5-93b556e620d2/LAUSUNTOPYYNTO_20210609115010.PDF"
+    },
+    {
+     "nimi": "HE laeiksi lääkitsemisestä ja ammatinharjoittamisesta luonnos",
+     "pvm": "2021-06-03",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/04db9342-334a-4305-9f2d-b90dc689dd90/LAUSUNTOPYYNTO_20210609115010.PDF"
+    },
+    {
+     "nimi": "Lakiehdotukset ruotsinkielisinä - Lagförslagen på svenska",
+     "pvm": "2021-06-03",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4e0f6e25-f00b-4ae9-b421-ea35bcb231c6/LAUSUNTOPYYNTO_20210609115011.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande om utkastet till regeringens proposition",
+     "pvm": "2021-06-18",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9619685f-4ef3-47c6-9f41-d26720c2cd1e/LAUSUNTOPYYNTO_20210618112822.PDF"
+    },
+    {
+     "nimi": "Lausuntotiivistelmä_290921",
+     "pvm": "2021-09-29",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a64918c8-06da-45c7-ab73-cd7a411f5675/YHTEENVETO_20210929114313.PDF"
+    }
+   ],
+   "asiasanat": [
+    "eläinlääkintä",
+    "lääkkeet"
+   ],
+   "esittelyviikko": 43,
+   "esittelyvuosi": 2021,
+   "etapit": [
+    {
+     "date": "2021-06-04",
+     "end": "2021-08-06",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta ja laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [
+    "EV 217/2021"
+   ],
+   "heNumerot": [
+    "HE 205/2021"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": true,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2021-08-13",
+      "id": "455bdae5-5072-4c95-8fa6-5f75d4dcb2e9",
+      "org": "Suomen Eläinlääkäripraktikot ry",
+      "title": "Suomen Eläinlääkäripraktikot SEP ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/455bdae5-5072-4c95-8fa6-5f75d4dcb2e9/LAUSUNTO_20210816062052.PDF"
+     },
+     {
+      "date": "2021-08-12",
+      "id": "13d67bdc-d908-4cb5-a607-692da07909e4",
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/13d67bdc-d908-4cb5-a607-692da07909e4/LAUSUNTO_20210816070546.PDF"
+     },
+     {
+      "date": "2021-08-11",
+      "id": "1b29e1ee-1f4b-4ea7-b1e9-ba8399d1b79b",
+      "org": "Ruokavirasto",
+      "title": "Ruokaviraston lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/1b29e1ee-1f4b-4ea7-b1e9-ba8399d1b79b/LAUSUNTO_20210812041511.PDF"
+     },
+     {
+      "date": "2021-08-09",
+      "id": "b1ead272-80c2-4955-ad1a-5bd44eb68d34",
+      "org": "Eläinten terveys ETT ry",
+      "title": "Eläinten terveys ETT ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b1ead272-80c2-4955-ad1a-5bd44eb68d34/LAUSUNTO_20210809090040.PDF"
+     },
+     {
+      "date": "2021-08-08",
+      "id": "c41cf67d-0e93-4156-bd8f-edd57001268a",
+      "org": "Suomen Eläinlääkäriliitto",
+      "title": "Suomen Eläinlääkäriliiton lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c41cf67d-0e93-4156-bd8f-edd57001268a/LAUSUNTO_20210809055258.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "a617b262-af48-447f-951c-ea2ba6d5644f",
+      "org": "Helsingin yliopisto, eläinlääketieteellinen tiedekunta",
+      "title": "Helsingin yliopiston eläinlääketieteellisen tiedekunnan lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a617b262-af48-447f-951c-ea2ba6d5644f/LAUSUNTO_20210806064115.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "f38c6a3d-8bcc-4f96-b74a-5d7974b84c30",
+      "org": "Luonnonvarakeskus",
+      "title": "Luonnonvarakeskuksen lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/f38c6a3d-8bcc-4f96-b74a-5d7974b84c30/LAUSUNTO_20210806070731.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "d85c04e1-dec9-4275-9d6b-1e9fa969d3ab",
+      "org": "Suomen Kalankasvattajaliitto ry",
+      "title": "Suomen Kalankasvattajaliiton lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/d85c04e1-dec9-4275-9d6b-1e9fa969d3ab/LAUSUNTO_20210806074842.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "dde7f718-4337-4b0b-a553-017a41e483af",
+      "org": "Yliopiston Apteekki",
+      "title": "Yliopiston Apteekin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/dde7f718-4337-4b0b-a553-017a41e483af/LAUSUNTO_20210806081953.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "b1eade4f-929f-4645-b728-49b979f0da40",
+      "org": "Suomen Telelääketieteen ja e-Health seura",
+      "title": "Suomen Telelääketieteen ja e-Health seuran lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b1eade4f-929f-4645-b728-49b979f0da40/LAUSUNTO_20210806105337.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "7954730f-425b-4eab-baf4-ee6ad5530b33",
+      "org": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
+      "title": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/7954730f-425b-4eab-baf4-ee6ad5530b33/LAUSUNTO_20210806115238.PDF"
+     },
+     {
+      "date": "2021-08-06",
+      "id": "c76b6add-a8e9-4650-b245-cfaea47426e0",
+      "org": "Länsi- ja Sisä-Suomen aluehallintovirasto",
+      "title": "Länsi- ja Sisä-Suomen aluehallintoviraston lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c76b6add-a8e9-4650-b245-cfaea47426e0/LAUSUNTO_20210809041524.PDF"
+     },
+     {
+      "date": "2021-08-05",
+      "id": "118e9ae0-a284-4d42-8e59-0dbb39096ee9",
+      "org": "Fimea Lääkealan turvallisuus- ja kehittämiskeskus",
+      "title": "Lääkealan turvallisuus- ja kehittämiskeskus Fimean lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/118e9ae0-a284-4d42-8e59-0dbb39096ee9/LAUSUNTO_20210805065540.PDF"
+     },
+     {
+      "date": "2021-08-05",
+      "id": "2ca7085e-a0ec-4f07-8250-54bb25e9b1bd",
+      "org": "Tulli",
+      "title": "Tullin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2ca7085e-a0ec-4f07-8250-54bb25e9b1bd/LAUSUNTO_20210805100621.PDF"
+     },
+     {
+      "date": "2021-08-05",
+      "id": "da3f1ec1-a04f-4bd5-b04f-1bf81174dd67",
+      "org": "Vetcare Oy",
+      "title": "Vetcare Oy:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/da3f1ec1-a04f-4bd5-b04f-1bf81174dd67/LAUSUNTO_20210805111540.PDF"
+     },
+     {
+      "date": "2021-08-04",
+      "id": "678665bc-c4ba-473d-ad14-d76f1a9266c4",
+      "org": "Animalia",
+      "title": "Animalia ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/678665bc-c4ba-473d-ad14-d76f1a9266c4/LAUSUNTO_20210804120943.PDF"
+     },
+     {
+      "date": "2021-08-04",
+      "id": "8d763135-c51e-4a86-a9a6-50ca45072b55",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/8d763135-c51e-4a86-a9a6-50ca45072b55/LAUSUNTO_20210809082929.PDF"
+     },
+     {
+      "date": "2021-08-04",
+      "id": "546357ae-a09c-489b-818d-310ce99ab96a",
+      "none": true,
+      "org": "Elintarviketeollisuusliitto ry",
+      "title": "Elintarviketeollisuusliitto ry:n lausunto; ei lausuttavaa"
+     },
+     {
+      "date": "2021-08-03",
+      "id": "4f73cbbe-a96e-4b17-8305-2be2c78e0213",
+      "org": "Saamelaiskäräjät",
+      "title": "Saamelaiskäräjien lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4f73cbbe-a96e-4b17-8305-2be2c78e0213/LAUSUNTO_20210803084340.PDF"
+     },
+     {
+      "date": "2021-08-03",
+      "id": "94918d76-3160-4830-b06d-cb9c50478521",
+      "org": "Paliskuntain yhdistys",
+      "title": "Paliskuntain yhdistyksen lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/94918d76-3160-4830-b06d-cb9c50478521/LAUSUNTO_20210803102242.PDF"
+     },
+     {
+      "date": "2021-08-02",
+      "id": "9ace2ef7-7d9f-44d8-b592-260448e3f05d",
+      "org": "Prevett Oy",
+      "title": "Prevett Oy:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9ace2ef7-7d9f-44d8-b592-260448e3f05d/LAUSUNTO_20210805062201.PDF"
+     },
+     {
+      "date": "2021-07-30",
+      "id": "2f1287c8-e603-40c1-b045-74f61e0253f5",
+      "org": "Suomen mehiläishoitajain liitto",
+      "title": "Suomen Mehiläishoitajain Liiton lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2f1287c8-e603-40c1-b045-74f61e0253f5/LAUSUNTO_20210803085500.PDF"
+     },
+     {
+      "date": "2021-07-23",
+      "id": "8af6aee7-3a21-4c70-a2ed-c3e26a7acaad",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/8af6aee7-3a21-4c70-a2ed-c3e26a7acaad/LAUSUNTO_20210803085100.PDF"
+     },
+     {
+      "date": "2021-07-16",
+      "id": "5e1b0a80-8144-406f-bf3e-5adf2e71311a",
+      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
+      "title": "Turvallisuus- ja kemikaalivirasto Tukesin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/5e1b0a80-8144-406f-bf3e-5adf2e71311a/LAUSUNTO_20210719114715.PDF"
+     },
+     {
+      "date": "2021-07-09",
+      "id": "778450b8-2e2d-4093-b482-cc2b21763cca",
+      "org": "Eläinlääkärihygieenikkojen yhdistys ry",
+      "title": "Eläinlääkärihygieenikkojen yhdistys ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/778450b8-2e2d-4093-b482-cc2b21763cca/LAUSUNTO_20210709093148.PDF"
+     },
+     {
+      "date": "2021-07-05",
+      "id": "f247caf9-a38c-4ffb-aa8e-639eedc1cbf2",
+      "org": "Ympäristöministeriö",
+      "title": "Ympäristöministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/f247caf9-a38c-4ffb-aa8e-639eedc1cbf2/LAUSUNTO_20210706065449.PDF"
+     },
+     {
+      "date": "2021-06-28",
+      "id": "5db3c43b-b99d-45c8-9866-75f4326863f1",
+      "org": "Suomen Kuntaliitto ry",
+      "title": "Kuntaliiton lausunto; ei anna lausuntoa",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/5db3c43b-b99d-45c8-9866-75f4326863f1/LAUSUNTO_20210629072028.PDF"
+     },
+     {
+      "date": "2021-06-24",
+      "id": "e383de0b-2275-4cd4-b5e6-900b5f2ac719",
+      "none": true,
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriön lausunto; ei lausuttavaa"
+     },
+     {
+      "date": "2021-06-24",
+      "id": "d0d39714-a62c-44cb-b6e2-5e27bec95a9f",
+      "org": "Suomen Turkiseläinten Kasvattajain Liitto ry",
+      "title": "Suomen Turkiseläinten Kasvattajain Liitto ry:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/d0d39714-a62c-44cb-b6e2-5e27bec95a9f/LAUSUNTO_20210803084615.PDF"
+     },
+     {
+      "date": "2021-06-09",
+      "id": "4b670eae-96f8-4c93-a9bc-3eea2b353731",
+      "org": "Suomen ympäristökeskus SYKE",
+      "title": "Suomen ympäristökeskus SYKE lausunto; ei anna lausuntoa",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4b670eae-96f8-4c93-a9bc-3eea2b353731/LAUSUNTO_20210629072028.PDF"
+     },
+     {
+      "date": "2021-06-07",
+      "id": "c217f039-31c7-42ef-bb59-ffd722c24c1b",
+      "org": "Kalatalouden Keskusliitto ry",
+      "title": "Kalatalouden Keskusliiton lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c217f039-31c7-42ef-bb59-ffd722c24c1b/LAUSUNTO_20210629072028.PDF"
+     }
+    ],
+    "eiLausuttavaa": 2,
+    "n": 31,
+    "orgs": [
+     "Animalia",
+     "Elintarviketeollisuusliitto ry",
+     "Eläinlääkärihygieenikkojen yhdistys ry",
+     "Eläinten terveys ETT ry",
+     "Fimea Lääkealan turvallisuus- ja kehittämiskeskus",
+     "Helsingin yliopisto, eläinlääketieteellinen tiedekunta",
+     "Yksityishenkilö",
+     "Kalatalouden Keskusliitto ry",
+     "Luonnonvarakeskus",
+     "Länsi- ja Sisä-Suomen aluehallintovirasto",
+     "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
+     "Oikeusministeriö",
+     "Paliskuntain yhdistys",
+     "Prevett Oy",
+     "Ruokavirasto",
+     "Saamelaiskäräjät",
+     "Suomen Eläinlääkäriliitto",
+     "Suomen Eläinlääkäripraktikot ry",
+     "Suomen Kalankasvattajaliitto ry",
+     "Suomen Kuntaliitto ry",
+     "Suomen Telelääketieteen ja e-Health seura",
+     "Suomen Turkiseläinten Kasvattajain Liitto ry",
+     "Suomen mehiläishoitajain liitto",
+     "Suomen ympäristökeskus SYKE",
+     "Tulli",
+     "Turvallisuus- ja kemikaalivirasto TUKES",
+     "Työ- ja elinkeinoministeriö",
+     "Valtiovarainministeriö",
+     "Vetcare Oy",
+     "Yliopiston Apteekki",
+     "Ympäristöministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2021-08-13"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "maa- ja metsätalousministeriö",
+   "muokattu": "2026-11-03T13:39:27",
+   "nimi": "Hallituksen esitys laiksi eläinten lääkitsemisestä (lääkitsemislaki)",
+   "nimiSv": "Lag om ändring av lagen om medicinsk behandling av djur",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "16/2022",
+    "17/2022"
+   ],
+   "teemat": [],
+   "tiivistelma": "Euroopan parlamentin ja neuvoston asetus (EU) 2019/6 eläinlääkkeistä ja direktiivin 2001/82/EY kumoamisesta (eläinlääkeasetus) annettiin 11.2.2018, ja sitä aletaan soveltaa 28.1.2022. Hankkeen tavoitteena on valmistella eläinlääkeasetuksen edellyttämät muutokset eläinten lääkitsemisestä annettuun lakiin.",
+   "tila": "KAYNNISSA",
+   "tunnus": "MMM001:00/2021",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=MMM001:00/2021",
+   "uuid": "7122bffc-ef52-4295-9c2a-098ed713cdbf",
+   "valmistelu": [
+    {
+     "d": "2021-01-04",
+     "n": "Säädöshankkeen asettamispäätös",
+     "t": "MUISTIO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b14446d2-a078-47a0-9496-39962db4036b/MUISTIO_20210104103344.PDF"
+    },
+    {
+     "d": "2021-06-03",
+     "n": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta sekä laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2d3921a9-5dba-4f3d-afc5-93b556e620d2/LAUSUNTOPYYNTO_20210609115010.PDF"
+    },
+    {
+     "d": "2021-06-03",
+     "n": "HE laeiksi lääkitsemisestä ja ammatinharjoittamisesta luonnos",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/04db9342-334a-4305-9f2d-b90dc689dd90/LAUSUNTOPYYNTO_20210609115010.PDF"
+    },
+    {
+     "d": "2021-06-03",
+     "n": "Lakiehdotukset ruotsinkielisinä - Lagförslagen på svenska",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4e0f6e25-f00b-4ae9-b421-ea35bcb231c6/LAUSUNTOPYYNTO_20210609115011.PDF"
+    },
+    {
+     "d": "2021-06-18",
+     "n": "Begäran om utlåtande om utkastet till regeringens proposition",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9619685f-4ef3-47c6-9f41-d26720c2cd1e/LAUSUNTOPYYNTO_20210618112822.PDF"
+    },
+    {
+     "d": "2021-09-29",
+     "n": "Lausuntotiivistelmä_290921",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a64918c8-06da-45c7-ab73-cd7a411f5675/YHTEENVETO_20210929114313.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2022-01-14",
+   "vanhaEsittelyviikko": 38,
+   "vanhaEsittelyvuosi": 2021
   },
   {
    "annettuEduskunnalle": "2021-04-22",
@@ -245410,7 +245789,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-14T13:21:47",
+   "muokattu": "2026-11-03T14:22:17",
    "nimi": "Työeläkejärjestelmän uudistamista valmisteleva työryhmä",
    "nimiSv": "Arbetsgrupp som bereder reformen av arbetspensionssystemet",
    "pevLausunto": false,
@@ -420502,385 +420881,6 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": "2021-10-28",
-   "arviointineuvosto": false,
-   "asetettu": "2020-09-09",
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta sekä laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
-     "pvm": "2021-06-03",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2d3921a9-5dba-4f3d-afc5-93b556e620d2/LAUSUNTOPYYNTO_20210609115010.PDF"
-    },
-    {
-     "nimi": "HE laeiksi lääkitsemisestä ja ammatinharjoittamisesta luonnos",
-     "pvm": "2021-06-03",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/04db9342-334a-4305-9f2d-b90dc689dd90/LAUSUNTOPYYNTO_20210609115010.PDF"
-    },
-    {
-     "nimi": "Lakiehdotukset ruotsinkielisinä - Lagförslagen på svenska",
-     "pvm": "2021-06-03",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4e0f6e25-f00b-4ae9-b421-ea35bcb231c6/LAUSUNTOPYYNTO_20210609115011.PDF"
-    },
-    {
-     "nimi": "Begäran om utlåtande om utkastet till regeringens proposition",
-     "pvm": "2021-06-18",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9619685f-4ef3-47c6-9f41-d26720c2cd1e/LAUSUNTOPYYNTO_20210618112822.PDF"
-    },
-    {
-     "nimi": "Lausuntotiivistelmä_290921",
-     "pvm": "2021-09-29",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a64918c8-06da-45c7-ab73-cd7a411f5675/YHTEENVETO_20210929114313.PDF"
-    }
-   ],
-   "asiasanat": [
-    "eläinlääkintä",
-    "lääkkeet"
-   ],
-   "esittelyviikko": 43,
-   "esittelyvuosi": 2021,
-   "etapit": [
-    {
-     "date": "2021-06-04",
-     "end": "2021-08-06",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta ja laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [
-    "EV 217/2021"
-   ],
-   "heNumerot": [
-    "HE 205/2021"
-   ],
-   "heTila": "ANNETTU_EK",
-   "kiireellinen": true,
-   "laji": "laki",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2021-08-13",
-      "id": "455bdae5-5072-4c95-8fa6-5f75d4dcb2e9",
-      "org": "Suomen Eläinlääkäripraktikot ry",
-      "title": "Suomen Eläinlääkäripraktikot SEP ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/455bdae5-5072-4c95-8fa6-5f75d4dcb2e9/LAUSUNTO_20210816062052.PDF"
-     },
-     {
-      "date": "2021-08-12",
-      "id": "13d67bdc-d908-4cb5-a607-692da07909e4",
-      "org": "Valtiovarainministeriö",
-      "title": "Valtiovarainministeriön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/13d67bdc-d908-4cb5-a607-692da07909e4/LAUSUNTO_20210816070546.PDF"
-     },
-     {
-      "date": "2021-08-11",
-      "id": "1b29e1ee-1f4b-4ea7-b1e9-ba8399d1b79b",
-      "org": "Ruokavirasto",
-      "title": "Ruokaviraston lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/1b29e1ee-1f4b-4ea7-b1e9-ba8399d1b79b/LAUSUNTO_20210812041511.PDF"
-     },
-     {
-      "date": "2021-08-09",
-      "id": "b1ead272-80c2-4955-ad1a-5bd44eb68d34",
-      "org": "Eläinten terveys ETT ry",
-      "title": "Eläinten terveys ETT ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b1ead272-80c2-4955-ad1a-5bd44eb68d34/LAUSUNTO_20210809090040.PDF"
-     },
-     {
-      "date": "2021-08-08",
-      "id": "c41cf67d-0e93-4156-bd8f-edd57001268a",
-      "org": "Suomen Eläinlääkäriliitto",
-      "title": "Suomen Eläinlääkäriliiton lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c41cf67d-0e93-4156-bd8f-edd57001268a/LAUSUNTO_20210809055258.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "a617b262-af48-447f-951c-ea2ba6d5644f",
-      "org": "Helsingin yliopisto, eläinlääketieteellinen tiedekunta",
-      "title": "Helsingin yliopiston eläinlääketieteellisen tiedekunnan lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a617b262-af48-447f-951c-ea2ba6d5644f/LAUSUNTO_20210806064115.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "f38c6a3d-8bcc-4f96-b74a-5d7974b84c30",
-      "org": "Luonnonvarakeskus",
-      "title": "Luonnonvarakeskuksen lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/f38c6a3d-8bcc-4f96-b74a-5d7974b84c30/LAUSUNTO_20210806070731.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "d85c04e1-dec9-4275-9d6b-1e9fa969d3ab",
-      "org": "Suomen Kalankasvattajaliitto ry",
-      "title": "Suomen Kalankasvattajaliiton lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/d85c04e1-dec9-4275-9d6b-1e9fa969d3ab/LAUSUNTO_20210806074842.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "dde7f718-4337-4b0b-a553-017a41e483af",
-      "org": "Yliopiston Apteekki",
-      "title": "Yliopiston Apteekin lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/dde7f718-4337-4b0b-a553-017a41e483af/LAUSUNTO_20210806081953.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "b1eade4f-929f-4645-b728-49b979f0da40",
-      "org": "Suomen Telelääketieteen ja e-Health seura",
-      "title": "Suomen Telelääketieteen ja e-Health seuran lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b1eade4f-929f-4645-b728-49b979f0da40/LAUSUNTO_20210806105337.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "7954730f-425b-4eab-baf4-ee6ad5530b33",
-      "org": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
-      "title": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/7954730f-425b-4eab-baf4-ee6ad5530b33/LAUSUNTO_20210806115238.PDF"
-     },
-     {
-      "date": "2021-08-06",
-      "id": "c76b6add-a8e9-4650-b245-cfaea47426e0",
-      "org": "Länsi- ja Sisä-Suomen aluehallintovirasto",
-      "title": "Länsi- ja Sisä-Suomen aluehallintoviraston lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c76b6add-a8e9-4650-b245-cfaea47426e0/LAUSUNTO_20210809041524.PDF"
-     },
-     {
-      "date": "2021-08-05",
-      "id": "118e9ae0-a284-4d42-8e59-0dbb39096ee9",
-      "org": "Fimea Lääkealan turvallisuus- ja kehittämiskeskus",
-      "title": "Lääkealan turvallisuus- ja kehittämiskeskus Fimean lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/118e9ae0-a284-4d42-8e59-0dbb39096ee9/LAUSUNTO_20210805065540.PDF"
-     },
-     {
-      "date": "2021-08-05",
-      "id": "2ca7085e-a0ec-4f07-8250-54bb25e9b1bd",
-      "org": "Tulli",
-      "title": "Tullin lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2ca7085e-a0ec-4f07-8250-54bb25e9b1bd/LAUSUNTO_20210805100621.PDF"
-     },
-     {
-      "date": "2021-08-05",
-      "id": "da3f1ec1-a04f-4bd5-b04f-1bf81174dd67",
-      "org": "Vetcare Oy",
-      "title": "Vetcare Oy:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/da3f1ec1-a04f-4bd5-b04f-1bf81174dd67/LAUSUNTO_20210805111540.PDF"
-     },
-     {
-      "date": "2021-08-04",
-      "id": "678665bc-c4ba-473d-ad14-d76f1a9266c4",
-      "org": "Animalia",
-      "title": "Animalia ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/678665bc-c4ba-473d-ad14-d76f1a9266c4/LAUSUNTO_20210804120943.PDF"
-     },
-     {
-      "date": "2021-08-04",
-      "id": "8d763135-c51e-4a86-a9a6-50ca45072b55",
-      "org": "Yksityishenkilö",
-      "title": "Yksityishenkilön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/8d763135-c51e-4a86-a9a6-50ca45072b55/LAUSUNTO_20210809082929.PDF"
-     },
-     {
-      "date": "2021-08-04",
-      "id": "546357ae-a09c-489b-818d-310ce99ab96a",
-      "none": true,
-      "org": "Elintarviketeollisuusliitto ry",
-      "title": "Elintarviketeollisuusliitto ry:n lausunto; ei lausuttavaa"
-     },
-     {
-      "date": "2021-08-03",
-      "id": "4f73cbbe-a96e-4b17-8305-2be2c78e0213",
-      "org": "Saamelaiskäräjät",
-      "title": "Saamelaiskäräjien lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4f73cbbe-a96e-4b17-8305-2be2c78e0213/LAUSUNTO_20210803084340.PDF"
-     },
-     {
-      "date": "2021-08-03",
-      "id": "94918d76-3160-4830-b06d-cb9c50478521",
-      "org": "Paliskuntain yhdistys",
-      "title": "Paliskuntain yhdistyksen lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/94918d76-3160-4830-b06d-cb9c50478521/LAUSUNTO_20210803102242.PDF"
-     },
-     {
-      "date": "2021-08-02",
-      "id": "9ace2ef7-7d9f-44d8-b592-260448e3f05d",
-      "org": "Prevett Oy",
-      "title": "Prevett Oy:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9ace2ef7-7d9f-44d8-b592-260448e3f05d/LAUSUNTO_20210805062201.PDF"
-     },
-     {
-      "date": "2021-07-30",
-      "id": "2f1287c8-e603-40c1-b045-74f61e0253f5",
-      "org": "Suomen mehiläishoitajain liitto",
-      "title": "Suomen Mehiläishoitajain Liiton lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2f1287c8-e603-40c1-b045-74f61e0253f5/LAUSUNTO_20210803085500.PDF"
-     },
-     {
-      "date": "2021-07-23",
-      "id": "8af6aee7-3a21-4c70-a2ed-c3e26a7acaad",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/8af6aee7-3a21-4c70-a2ed-c3e26a7acaad/LAUSUNTO_20210803085100.PDF"
-     },
-     {
-      "date": "2021-07-16",
-      "id": "5e1b0a80-8144-406f-bf3e-5adf2e71311a",
-      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
-      "title": "Turvallisuus- ja kemikaalivirasto Tukesin lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/5e1b0a80-8144-406f-bf3e-5adf2e71311a/LAUSUNTO_20210719114715.PDF"
-     },
-     {
-      "date": "2021-07-09",
-      "id": "778450b8-2e2d-4093-b482-cc2b21763cca",
-      "org": "Eläinlääkärihygieenikkojen yhdistys ry",
-      "title": "Eläinlääkärihygieenikkojen yhdistys ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/778450b8-2e2d-4093-b482-cc2b21763cca/LAUSUNTO_20210709093148.PDF"
-     },
-     {
-      "date": "2021-07-05",
-      "id": "f247caf9-a38c-4ffb-aa8e-639eedc1cbf2",
-      "org": "Ympäristöministeriö",
-      "title": "Ympäristöministeriön lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/f247caf9-a38c-4ffb-aa8e-639eedc1cbf2/LAUSUNTO_20210706065449.PDF"
-     },
-     {
-      "date": "2021-06-28",
-      "id": "5db3c43b-b99d-45c8-9866-75f4326863f1",
-      "org": "Suomen Kuntaliitto ry",
-      "title": "Kuntaliiton lausunto; ei anna lausuntoa",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/5db3c43b-b99d-45c8-9866-75f4326863f1/LAUSUNTO_20210629072028.PDF"
-     },
-     {
-      "date": "2021-06-24",
-      "id": "e383de0b-2275-4cd4-b5e6-900b5f2ac719",
-      "none": true,
-      "org": "Työ- ja elinkeinoministeriö",
-      "title": "Työ- ja elinkeinoministeriön lausunto; ei lausuttavaa"
-     },
-     {
-      "date": "2021-06-24",
-      "id": "d0d39714-a62c-44cb-b6e2-5e27bec95a9f",
-      "org": "Suomen Turkiseläinten Kasvattajain Liitto ry",
-      "title": "Suomen Turkiseläinten Kasvattajain Liitto ry:n lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/d0d39714-a62c-44cb-b6e2-5e27bec95a9f/LAUSUNTO_20210803084615.PDF"
-     },
-     {
-      "date": "2021-06-09",
-      "id": "4b670eae-96f8-4c93-a9bc-3eea2b353731",
-      "org": "Suomen ympäristökeskus SYKE",
-      "title": "Suomen ympäristökeskus SYKE lausunto; ei anna lausuntoa",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4b670eae-96f8-4c93-a9bc-3eea2b353731/LAUSUNTO_20210629072028.PDF"
-     },
-     {
-      "date": "2021-06-07",
-      "id": "c217f039-31c7-42ef-bb59-ffd722c24c1b",
-      "org": "Kalatalouden Keskusliitto ry",
-      "title": "Kalatalouden Keskusliiton lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/c217f039-31c7-42ef-bb59-ffd722c24c1b/LAUSUNTO_20210629072028.PDF"
-     }
-    ],
-    "eiLausuttavaa": 2,
-    "n": 31,
-    "orgs": [
-     "Animalia",
-     "Elintarviketeollisuusliitto ry",
-     "Eläinlääkärihygieenikkojen yhdistys ry",
-     "Eläinten terveys ETT ry",
-     "Fimea Lääkealan turvallisuus- ja kehittämiskeskus",
-     "Helsingin yliopisto, eläinlääketieteellinen tiedekunta",
-     "Yksityishenkilö",
-     "Kalatalouden Keskusliitto ry",
-     "Luonnonvarakeskus",
-     "Länsi- ja Sisä-Suomen aluehallintovirasto",
-     "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
-     "Oikeusministeriö",
-     "Paliskuntain yhdistys",
-     "Prevett Oy",
-     "Ruokavirasto",
-     "Saamelaiskäräjät",
-     "Suomen Eläinlääkäriliitto",
-     "Suomen Eläinlääkäripraktikot ry",
-     "Suomen Kalankasvattajaliitto ry",
-     "Suomen Kuntaliitto ry",
-     "Suomen Telelääketieteen ja e-Health seura",
-     "Suomen Turkiseläinten Kasvattajain Liitto ry",
-     "Suomen mehiläishoitajain liitto",
-     "Suomen ympäristökeskus SYKE",
-     "Tulli",
-     "Turvallisuus- ja kemikaalivirasto TUKES",
-     "Työ- ja elinkeinoministeriö",
-     "Valtiovarainministeriö",
-     "Vetcare Oy",
-     "Yliopiston Apteekki",
-     "Ympäristöministeriö"
-    ],
-    "url": null,
-    "viimeisin": "2021-08-13"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-01-19T14:05:09",
-   "nimi": "Hallituksen esitys laiksi eläinten lääkitsemisestä (lääkitsemislaki)",
-   "nimiSv": "Lag om ändring av lagen om medicinsk behandling av djur",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [
-    "16/2022",
-    "17/2022"
-   ],
-   "teemat": [],
-   "tiivistelma": "Euroopan parlamentin ja neuvoston asetus (EU) 2019/6 eläinlääkkeistä ja direktiivin 2001/82/EY kumoamisesta (eläinlääkeasetus) annettiin 11.2.2018, ja sitä aletaan soveltaa 28.1.2022. Hankkeen tavoitteena on valmistella eläinlääkeasetuksen edellyttämät muutokset eläinten lääkitsemisestä annettuun lakiin.",
-   "tila": "PAATTYNYT",
-   "tunnus": "MMM001:00/2021",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=MMM001:00/2021",
-   "uuid": "7122bffc-ef52-4295-9c2a-098ed713cdbf",
-   "valmistelu": [
-    {
-     "d": "2021-01-04",
-     "n": "Säädöshankkeen asettamispäätös",
-     "t": "MUISTIO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/b14446d2-a078-47a0-9496-39962db4036b/MUISTIO_20210104103344.PDF"
-    },
-    {
-     "d": "2021-06-03",
-     "n": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi laiksi eläinten lääkitsemisestä annetun lain muuttamisesta sekä laiksi eläinlääkärinammatin harjoittamisesta annetun lain 10 §:n muuttamisesta",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/2d3921a9-5dba-4f3d-afc5-93b556e620d2/LAUSUNTOPYYNTO_20210609115010.PDF"
-    },
-    {
-     "d": "2021-06-03",
-     "n": "HE laeiksi lääkitsemisestä ja ammatinharjoittamisesta luonnos",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/04db9342-334a-4305-9f2d-b90dc689dd90/LAUSUNTOPYYNTO_20210609115010.PDF"
-    },
-    {
-     "d": "2021-06-03",
-     "n": "Lakiehdotukset ruotsinkielisinä - Lagförslagen på svenska",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/4e0f6e25-f00b-4ae9-b421-ea35bcb231c6/LAUSUNTOPYYNTO_20210609115011.PDF"
-    },
-    {
-     "d": "2021-06-18",
-     "n": "Begäran om utlåtande om utkastet till regeringens proposition",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/9619685f-4ef3-47c6-9f41-d26720c2cd1e/LAUSUNTOPYYNTO_20210618112822.PDF"
-    },
-    {
-     "d": "2021-09-29",
-     "n": "Lausuntotiivistelmä_290921",
-     "t": "YHTEENVETO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/7122bffc-ef52-4295-9c2a-098ed713cdbf/a64918c8-06da-45c7-ab73-cd7a411f5675/YHTEENVETO_20210929114313.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2022-01-14",
-   "vanhaEsittelyviikko": 38,
-   "vanhaEsittelyvuosi": 2021
-  },
-  {
    "annettuEduskunnalle": "2021-06-10",
    "arviointineuvosto": false,
    "asetettu": null,
@@ -480235,10 +480235,10 @@
     "docs": [
      {
       "date": "2026-11-03",
-      "id": "7543b648-550d-4473-a18c-852aef24d830",
+      "id": "a3f2fdfe-136d-4acc-adbf-dd86c5f9d4e2",
       "org": "Avenir Loup Lynx Jura",
       "title": "Avenir Loup Lynx Jura; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/7543b648-550d-4473-a18c-852aef24d830/LAUSUNTO_20261103085324.PDF"
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/a3f2fdfe-136d-4acc-adbf-dd86c5f9d4e2/LAUSUNTO_20261103145401.PDF"
      },
      {
       "date": "2026-11-02",
@@ -480346,7 +480346,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-03T08:53:24",
+   "muokattu": "2026-11-03T14:54:01",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -484265,6 +484265,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-03",
+      "id": "edbd8d92-ace9-4c59-88c6-284b76c04da8",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "VM; Lausunto (ei lausuttavaa)"
+     },
+     {
       "date": "2026-10-29",
       "id": "60e93908-59c4-4bd9-9d08-04948fb93418",
       "org": "Kunta- ja hyvinvointialuetyönantajat KT",
@@ -484279,18 +484286,19 @@
       "title": "Terveyden ja hyvinvoinnin laitos THL; ei lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 1,
-    "n": 2,
+    "eiLausuttavaa": 2,
+    "n": 3,
     "orgs": [
      "Kunta- ja hyvinvointialuetyönantajat KT",
-     "Terveyden ja hyvinvoinnin laitos THL"
+     "Terveyden ja hyvinvoinnin laitos THL",
+     "Valtiovarainministeriö"
     ],
     "url": null,
-    "viimeisin": "2026-10-29"
+    "viimeisin": "2026-11-03"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-29T18:24:05",
+   "muokattu": "2026-11-03T14:42:20",
    "nimi": "Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om Folkpensionsanstaltens rehabiliteringsförmåner och rehabiliteringspenningförmåner",
    "pevLausunto": false,
@@ -514325,7 +514333,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2024-08-12T10:46:30",
+   "muokattu": "2026-11-03T13:35:51",
    "nimi": "Maa- ja metsätalousministeriön asetus eläinlääkkeistä pidettävästä lääkekirjanpidosta",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om journalföring över veterinärmedicinska läkemedel",
    "pevLausunto": false,

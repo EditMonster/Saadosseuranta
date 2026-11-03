@@ -1,6 +1,24 @@
 {
- "fetched": "2026-11-03T13:47:43",
+ "fetched": "2026-11-03T18:35:47",
  "items": [
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 18393,
+   "periods": [
+    {
+     "end": "2026-12-01",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-03"
+    }
+   ],
+   "reference": "Ares(2026)5700242",
+   "status": "ACTIVE",
+   "title_en": "Amendments of motor vehicle safety requirements in view of their application to fully automated vehicles",
+   "title_fi": "Moottoriajoneuvojen turvallisuusvaatimusten muuttaminen – muutosten johdosta vaatimuksia voidaan soveltaa täysin automatisoituihin ajoneuvoihin",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18393_en"
+  },
   {
    "actType": "REG_DEL",
    "actTypeLabel": "Delegoitu asetus",
@@ -58,7 +76,7 @@
    "reference": "Ares(2026)10178934",
    "status": "ACTIVE",
    "title_en": "Recognition of equivalence - Citrus sinensis from Israel",
-   "title_fi": null,
+   "title_fi": "Kasvien terveys – Israelista peräisin olevan Citrus sinensis -lajin vastaavuuden tunnustaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19684_en"
   },
   {

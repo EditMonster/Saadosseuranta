@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T13:44:27",
+ "fetched": "2026-11-03T18:33:48",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -36944,6 +36944,10 @@
     {
      "date": "2026-10-29",
      "type": "ADP_R1_POS_byCONSIL"
+    },
+    {
+     "date": "2026-11-03",
+     "type": "ADP_CCPOSR1CONSIL_byCOM"
     }
    ],
    "events": [
@@ -37070,6 +37074,10 @@
     {
      "date": "2026-10-29",
      "type": "ADP_R1_POS_byCONSIL"
+    },
+    {
+     "date": "2026-11-03",
+     "type": "ADP_CCPOSR1CONSIL_byCOM"
     }
    ],
    "events": [
@@ -42424,7 +42432,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-10-31",
+   "fetched": "2026-11-03",
    "final": false,
    "pid": "2023-0393",
    "ref": "2023/0393(COD)",
@@ -42480,7 +42488,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-10-31",
+   "fetched": "2026-11-03",
    "final": false,
    "pid": "2023-0396",
    "ref": "2023/0396(COD)",
@@ -42818,7 +42826,7 @@
      "label": "Parlamentin täysistuntoäänestys"
     }
    ],
-   "fetched": "2026-10-31",
+   "fetched": "2026-11-03",
    "final": false,
    "pid": "2023-0410",
    "ref": "2023/0410(COD)",
@@ -42934,7 +42942,7 @@
      "label": "Parlamentin täysistuntoäänestys"
     }
    ],
-   "fetched": "2026-10-31",
+   "fetched": "2026-11-03",
    "final": false,
    "pid": "2023-0413",
    "ref": "2023/0413(COD)",
@@ -61655,14 +61663,6 @@
     {
      "date": "2026-05-28",
      "type": "DELIB_WP_byCONSIL"
-    },
-    {
-     "date": "2026-06-03",
-     "type": "DELIB_COREPER_byCONSIL"
-    },
-    {
-     "date": "2026-06-09",
-     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [

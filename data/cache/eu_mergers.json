@@ -4349,9 +4349,14 @@
   "M.12540": {
    "caseNumber": "M.12540",
    "deadline": "2026-11-10",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-03",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-06",
-   "lastDecision": null,
+   "lastDecision": "2026-11-03",
    "notice": {
     "activities": [
      "AP Ejendomme on kiinteistösijoitusyhtiö, joka hankkii, rakennuttaa ja hallinnoi asuin- ja liikekiinteistöjä Tanskassa.",
@@ -4421,7 +4426,7 @@
      "reference": "C:2026:5532:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_M_68.2",
    "simplified": "MEsimplified",
@@ -7275,10 +7280,69 @@
    "decisions": [],
    "initiated": "2026-09-14",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Redevco on kiinteistösijoitusyhtiö, joka on erikoistunut vähittäiskaupan kiinteistöjen hankintaan, kehittämiseen ja hallinnointiin. Sen keskeisintä liiketoimintaa on korkean hintaluokan ostoskaduilla sijaitsevien vähittäisliiketilojen muuntaminen monipuolisemmaksi käyttöomaisuudeksi, sijoitukset ulkotiloihin rakennettuihin vähittäiskaupan alueisiin ja logistiikkaan sekä asuin- ja vapaa-ajan tilat. Redevco toimii eri puolilla Eurooppaa.",
+     "CBRE IM on globaalisti toimiva reaaliomaisuuteen keskittynyt sijoitusalusta, jolla on toimipisteitä Pohjois-Amerikassa, Euroopassa, Lähi-idässä ja Aasiassa. CBRE IM sijoittaa pääomaa eläkerahastojen, vakuutusyhtiöiden, valtiollisten sijoitusrahastojen ja muiden institutionaalisten sijoittajien puolesta.",
+     "Portal Mediterráneo (rekisteröintimaa Espanja) on osakeyhtiö, joka omistaa noin 11 500 neliömetrin laajuisen Portal Mediterráneo -nimisen ulkotiloihin rakennetun vähittäiskaupan alueen Espanjan Vinaròsissa (Castellónissa)."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-13",
+    "observationsShifted": null,
+    "oj": "C:2026:5773:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Sveitsi",
+        "name": "COFRA Holding AG"
+       }
+      ],
+      "country": "Alankomaat",
+      "fi": false,
+      "name": "Redevco B.V.",
+      "short": "Redevco"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "CBRE Group, Inc."
+       }
+      ],
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "CBRE Investment Management Indirect Limited",
+      "short": "CBRE IM"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Espanja",
+        "name": "Gestor Vinaros ZRT"
+       }
+      ],
+      "country": "Espanja",
+      "fi": false,
+      "name": "Gestor Portal Mediterráneo, S.L.U.",
+      "short": "Portal Mediterráneo"
+     }
+    ],
+    "published": "2026-11-03",
+    "reference": "C/2026/5773",
+    "simplified": true,
+    "transaction": "Redevco ja CBRE IM hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksessä Portal Mediterráneo. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5773/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-26",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-03",
+     "reference": "C:2026:5773:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_M_68.20",
@@ -7436,12 +7500,34 @@
    "timeline": [],
    "title": "L CATTERTON / ALTAS / FULLSCRIPT"
   },
+  "M.12648": {
+   "caseNumber": "M.12648",
+   "deadline": "2026-12-08",
+   "decisions": [],
+   "initiated": "2026-09-21",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-03",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.11",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "LL / IVSG"
+  },
   "M.12661": {
    "caseNumber": "M.12661",
    "deadline": "2026-11-13",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-03",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-10-05",
-   "lastDecision": null,
+   "lastDecision": "2026-11-03",
    "notice": {
     "activities": [
      "Veritas on sijoitusyhtiö, joka keskittyy teknologian ja hallinnon toimialat yhdistäviin yrityksiin.",
@@ -7696,5 +7782,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-03T13:50:37Z"
+ "fetched": "2026-11-03T18:37:28Z"
 }
