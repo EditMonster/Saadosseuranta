@@ -182,7 +182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -359,7 +359,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -404,8 +404,8 @@
      "type": "EXTENDEND"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -433,7 +433,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -441,7 +441,7 @@
    "publication": null,
    "shortTitle": "ICT domain variables - reference year 2027",
    "summary": "This initiative is to support the gathering of statistics for 2027 on the use of information and communication technologies (ICT) in households and by individuals.\nTo ensure that the data compiled is harmonised and comparable between Member States, it is necessary to specify the number and the title of the variables for the dataset.",
-   "updateDate": 1785933897109
+   "updateDate": 1793746822730
   },
   "2749": {
    "adoption": "2026-07-16",
@@ -514,7 +514,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -644,7 +644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -707,7 +707,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -839,7 +839,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -942,7 +942,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -1267,7 +1267,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1318,7 +1318,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1511,7 +1511,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1648,7 +1648,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1877,7 +1877,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2074,7 +2074,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2363,7 +2363,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2414,7 +2414,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2465,7 +2465,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2586,7 +2586,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -2881,7 +2881,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3010,
    "objection": null,
    "policyArea": "MARE",
@@ -3000,7 +3000,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3063,7 +3063,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -3225,7 +3225,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3271,7 +3271,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3511,7 +3511,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3562,7 +3562,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3638,57 +3638,6 @@
    "shortTitle": "Renewable energy - cross-border projects",
    "summary": "By the delegated act the Commission establishes a list of cross-border renewable energy projects. These projects are based on a cooperation mechanism between EU countries and provide more benefits compared to a project developed by one of the countries alone. The projects which are included in the list have a special status making them eligible to apply for grants for studies or works under the Connecting Europe Facility.",
    "updateDate": 1789165252099
-  },
-  "3048": {
-   "adoption": "2026-07-15",
-   "adoptionDate": "Q2 2026",
-   "basicAct": {
-    "celex": "32019R0287",
-    "code": "reg/2019/287",
-    "deadlineRaw": "2",
-    "procedure": "2018/0101/COD",
-    "title": "Regulation (EU) 2019/287 of the European Parliament and of the Council of 13 February 2019 implementing bilateral safeguard clauses and other mechanisms allowing for the temporary withdrawal of preferences in certain trade agreements concluded between the European Union and third countries"
-   },
-   "cCode": "C(2026)4867",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending the Annex to Regulation (EU) 2019/287 of the European Parliament and of the Council",
-   "deadlines": [
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-07-15",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-11-03",
-   "id": 3048,
-   "objection": null,
-   "policyArea": "TRADE",
-   "policyAreaName": "Trade",
-   "publication": null,
-   "shortTitle": "Bilateral safeguard clause amendment - MERCOSUR",
-   "summary": null,
-   "updateDate": 1792620001298
   },
   "3052": {
    "adoption": "2026-07-03",
@@ -3873,7 +3822,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -3960,7 +3909,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -4023,7 +3972,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -4069,7 +4018,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -4194,7 +4143,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -4252,7 +4201,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -4315,7 +4264,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4373,7 +4322,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4424,7 +4373,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4684,7 +4633,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -4735,7 +4684,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -4927,7 +4876,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -4978,7 +4927,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -5041,7 +4990,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-03",
+   "eventsFetched": "2026-11-04",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -5052,7 +5001,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-11-03T18:37:49Z",
+ "fetched": "2026-11-04T06:30:08Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -6610,6 +6559,7 @@
   "3030": "PUBLISHED_URGENCY_PROCEDURE",
   "304": "PUBLISHED",
   "3044": "PUBLISHED",
+  "3048": "PUBLISHED",
   "3049": "PUBLISHED",
   "305": "PUBLISHED",
   "3054": "PUBLISHED",

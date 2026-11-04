@@ -1157,15 +1157,6 @@ DESCRIPTION:Voimaan (600/2026) · 600/2026 · HE 43/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-80-2026-voimaan-2026-10-27@saadosseuranta
-DTSTAMP:20261027T000000Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
-SUMMARY:[FI] Voimaan: Laiksi ulkomaalaislain muuttamisesta
-DESCRIPTION:Voimaan (912/2026) · 912/2026 · HE 80/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/80
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-114-2025-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1506,15 +1497,6 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus verotusmenettelystä
 DESCRIPTION:Lausuntokierros · VM115:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM115:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=VM115:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-1f9643c0-lausunto-2026-10-27@saadosseuranta
-DTSTAMP:20261027T000000Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus Rikosseuraamuslaitoksesta annetun valtioneuvoston asetuksen muuttamisesta
-DESCRIPTION:Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi Rikosseuraamuslaitoksesta annetun valtioneuvoston asetuksen muuttamisesta · OM059:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OM059:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=OM059:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-ba66602a-lausunto-2026-11-04@saadosseuranta
@@ -2435,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-29@saadosseuranta
-DTSTAMP:20261229T000000Z
-DTSTART;VALUE=DATE:20261229
-DTEND;VALUE=DATE:20261230
+UID:eu-hys-19517-lausunto-2026-12-30@saadosseuranta
+DTSTAMP:20261230T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2543,15 +2525,6 @@ DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regu
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18512_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14549-lausunto-2026-11-03@saadosseuranta
-DTSTAMP:20261103T000000Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
-SUMMARY:[EU] Lausuntoaika päättyy: Meriliikennettä\, ilmailua ja kiinteitä laitoksia koskevan EU:n päästökauppajärjestelmän sekä markkinavakausvarannon uudelleentarkastelu
-DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-hys-14628-lausunto-2026-11-11@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -2559,6 +2532,15 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-14549-lausunto-2026-11-03@saadosseuranta
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:[EU] Lausuntoaika päättyy: Meriliikennettä\, ilmailua ja kiinteitä laitoksia koskevan EU:n päästökauppajärjestelmän sekä markkinavakausvarannon uudelleentarkastelu
+DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
@@ -3225,14 +3207,5 @@ DTEND;VALUE=DATE:20261029
 SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2378 – terrorismi 2016/1693
 DESCRIPTION:Voimaan · (YUTP) 2026/2378 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2372-voimaan-2026-10-27@saadosseuranta
-DTSTAMP:20261027T000000Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2372 – Kongon demokraattinen tasavalta 2010/788
-DESCRIPTION:Voimaan · (YUTP) 2026/2372 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2372
 END:VEVENT
 END:VCALENDAR

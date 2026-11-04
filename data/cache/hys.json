@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T18:35:47",
+ "fetched": "2026-11-04T06:26:33",
  "items": [
   {
    "actType": "REG_IMPL",
@@ -481,7 +481,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-29",
+     "end": "2026-12-30",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -499,7 +499,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-29",
+     "end": "2026-12-30",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -679,7 +679,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-29",
+     "end": "2026-12-30",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -932,24 +932,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14778_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 14549,
-   "periods": [
-    {
-     "end": "2026-11-03",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-08-20"
-    }
-   ],
-   "reference": "Ares(2025)1583154",
-   "status": "ACTIVE",
-   "title_en": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
-   "title_fi": "Meriliikennettä, ilmailua ja kiinteitä laitoksia koskevan EU:n päästökauppajärjestelmän sekä markkinavakausvarannon uudelleentarkastelu",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en"
-  },
-  {
    "actType": "COMMUNIC",
    "actTypeLabel": "Tiedonanto",
    "id": 18194,
@@ -1058,24 +1040,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 18658,
-   "periods": [
-    {
-     "end": "2026-09-30",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-01"
-    }
-   ],
-   "reference": "Ares(2026)6556383",
-   "status": "ACTIVE",
-   "title_en": "Housing simplification package",
-   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
-  },
-  {
    "actType": "PROP_DEC",
    "actTypeLabel": "Päätösehdotus",
    "id": 18804,
@@ -1110,6 +1074,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 14549,
+   "periods": [
+    {
+     "end": "2026-11-03",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-08-25"
+    }
+   ],
+   "reference": "Ares(2025)1583154",
+   "status": "ACTIVE",
+   "title_en": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
+   "title_fi": "Meriliikennettä, ilmailua ja kiinteitä laitoksia koskevan EU:n päästökauppajärjestelmän sekä markkinavakausvarannon uudelleentarkastelu",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549_en"
   },
   {
    "actType": "REG_IMPL",

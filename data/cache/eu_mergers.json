@@ -1963,73 +1963,6 @@
    "timeline": [],
    "title": "BLACKSTONE / TINICUM / SENIOR / AEROFLOW"
   },
-  "M.12454": {
-   "caseNumber": "M.12454",
-   "deadline": "2026-08-18",
-   "decisions": [
-    {
-     "date": "2026-08-05",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-04",
-   "lastDecision": "2026-08-05",
-   "notice": {
-    "activities": [
-     "Midea on maailmanlaajuinen teknologiayritys, joka jakautuu useisiin osastoihin. Niiden liiketoiminta keskittyy esimerkiksi älykotiteknologiaan, teollisuusteknologiaan, älykkääseen rakennusteknologiaan, robotiikkaan ja automatiikkaan, energiaratkaisuihin, terveydenhuoltoon ja älykkääseen logistiikkaan. Midea valmistaa ja toimittaa erityisesti sähkölaitteita, kuten monenlaista kulutuselektroniikkaa ja kodinkoneita.",
-     "Electrolux on maailmanlaajuisesti toimiva sähkölaitteiden toimittaja, joka toimittaa monenlaista kulutuselektroniikkaa ja kodinkoneita."
-    ],
-    "fi": false,
-    "jv": "Kolmen uuden yhteisyrityksen liiketoimintaan kuuluu kylmäsäilytyslaitteiden ja pyykinpesukoneiden kehittäminen, valmistus, markkinointi ja toimittaminen Yhdysvalloissa, Kanadassa, Meksikossa ja muilla markkinoilla Pohjois-Amerikassa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-02",
-    "oj": "C:2026:4071:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Kiina",
-        "name": "Midea Group Co., Ltd."
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Midea America Corp."
-     },
-     {
-      "controllers": [
-       {
-        "country": "Ruotsi",
-        "name": "Electrolux AB"
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Electrolux Consumer Products, Inc.",
-      "short": "ECP"
-     }
-    ],
-    "published": "2026-07-23",
-    "reference": "C/2026/4071",
-    "simplified": true,
-    "transaction": "Midea ja Electrolux hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksen EDM omistamassa yrityksessä Electrolux Home Products de Mexico, S.A. de C.V. (MXP) ja kolmessa uudessa yhteisyrityksessä. Keskittymä toteutetaan ostamalla osakkeita ja uuden yhteisyrityksen osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4071/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-13",
-   "oj": [
-    {
-     "published": "2026-07-23",
-     "reference": "C:2026:4071:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_27.5",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "ELECTROLUX / MIDEA / JVs"
-  },
   "M.12464": {
    "caseNumber": "M.12464",
    "deadline": "2026-08-28",
@@ -2107,79 +2040,6 @@
    "simplified": "MEnormal",
    "timeline": [],
    "title": "SUN PHARMA / ORGANON"
-  },
-  "M.12472": {
-   "caseNumber": "M.12472",
-   "deadline": "2026-08-18",
-   "decisions": [
-    {
-     "date": "2026-08-05",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-18",
-   "lastDecision": "2026-08-05",
-   "notice": {
-    "activities": [
-     "Strabag-konserniin kuuluva Strabag on kansainvälinen rakennusyhtiö. Strabag-konsernin päätoimialat ovat i) maa- ja vesirakentaminen (teiden, rautateiden ja tunnelien rakentaminen), ii) kiinteistöjen rakentaminen ja kehittäminen, iii) erikoistuneet tekniset ja infrastruktuurihankkeet sekä iv) ympäristö- ja teollisuuspalvelut.",
-     "Aberdeen on osa Aberdeen-konsernia. Se on säännelty omaisuudenhoitaja, ja toimii omaisuudenhoitajana tai neuvonantajana useissa Aberdeenin rahastoissa. Konserni tarjoaa institutionaalisille asiakkaille, tukkuasiakkaille, välittäjille ja yksityisasiakkaille maailmanlaajuisesti monenlaisia sijoitus-, varainhoito- ja rahoitussuunnittelupalveluja. Konserni toimii kansainvälisesti, ja sillä on sijoitusalan ammattilaisia ja toimipisteitä suurissa rahoituskeskuksissa eri puolilla maailmaa ja asiakkaita noin 80 maassa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-01",
-    "oj": "C:2026:3964:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "yhdessä määräysvallassaan olevien tytäryhtiöiden kanssa ”Strabag-konserni”",
-        "name": "Strabag SE"
-       }
-      ],
-      "country": "Itävalta",
-      "fi": false,
-      "name": "Strabag AG",
-      "short": "Strabag"
-     },
-     {
-      "controllers": [
-       {
-        "country": "yhdessä määräysvallassaan olevien tytäryhtiöiden kanssa ”Aberdeen Group”",
-        "name": "Aberdeen Group plc"
-       }
-      ],
-      "country": "Alankomaat",
-      "fi": false,
-      "name": "abrdn Investments Limited",
-      "short": "Aberdeen"
-     },
-     {
-      "country": "Unkari",
-      "fi": false,
-      "name": "MAK Mecsek Autópálya Koncessziós Zártkörűen Működő Részvénytársaság",
-      "short": "MAK"
-     }
-    ],
-    "published": "2026-07-22",
-    "reference": "C/2026/3964",
-    "simplified": true,
-    "transaction": "Strabag ja Aberdeen hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä MAK. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3964/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-13",
-   "oj": [
-    {
-     "published": "2026-07-22",
-     "reference": "C:2026:3964:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_F_42.11",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "STRABAG / ABERDEEN / MAK"
   },
   "M.12473": {
    "caseNumber": "M.12473",
@@ -3391,73 +3251,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "LTM / RANDSTAD (DIGITAL SOLUTIONS BUSINESS)"
-  },
-  "M.12508": {
-   "caseNumber": "M.12508",
-   "deadline": "2026-08-18",
-   "decisions": [
-    {
-     "date": "2026-08-05",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-08",
-   "lastDecision": "2026-08-05",
-   "notice": {
-    "activities": [
-     "İGA Holding harjoittaa holdingtoimintaa ja omistaa Istanbulin lentoasemalla toimivien tytäryhtiöidensä, mukaan lukien Istanbulin lentoaseman pitäjänä toimivan yhtiön, osakkeita.",
-     "Unifree harjoittaa yhdessä tytäryhtiöidensä ja yhteisyritystensä kanssa tax-free-myymälätoimintaa maailmanlaajuisesti, mutta pääasiassa Turkissa."
-    ],
-    "fi": false,
-    "jv": "Uuden yhteisyrityksen liiketoiminta keskittyy matkailuun liittyvien vähittäismyymälöiden ylläpitoon Istanbulin lentoasemalla sekä matkailuun liittyvien vähittäismyymälöiden toimintaan muilla lentoasemilla.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-02",
-    "oj": "C:2026:4062:",
-    "parties": [
-     {
-      "country": "Turkki",
-      "fi": false,
-      "name": "İGA Holding A.Ş.",
-      "short": "İGA Holding"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Saksa",
-        "name": "Gebr. Heinemann SE & Co. KG"
-       }
-      ],
-      "country": "Turkki",
-      "fi": false,
-      "name": "Unifree Duty Free İşletmeciliği Anonim Şirketi",
-      "short": "Unifree"
-     },
-     {
-      "country": "Turkki",
-      "fi": false,
-      "name": "uusi yhteisyritys"
-     }
-    ],
-    "published": "2026-07-23",
-    "reference": "C/2026/4062",
-    "simplified": true,
-    "transaction": "İGA Holding ja Unifree hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan uudessa yhteisyrityksessä. Keskittymä toteutetaan ostamalla uuden yhteisyrityksen osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4062/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-13",
-   "oj": [
-    {
-     "published": "2026-07-23",
-     "reference": "C:2026:4062:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_G_47.7",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "IGA HOLDING / UNIFREE / JV"
   },
   "M.12510": {
    "caseNumber": "M.12510",
@@ -7782,5 +7575,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-03T18:37:28Z"
+ "fetched": "2026-11-04T06:29:07Z"
 }
