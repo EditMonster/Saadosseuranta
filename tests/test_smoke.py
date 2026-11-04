@@ -101,7 +101,8 @@ def test_tabs_render_rows(page, base_url, tab, selector, minimum):
 def test_hash_routing(page, base_url):
     goto(page, base_url, "#kilpailutukset")
     assert page.locator("#tab-hk[aria-selected='true']").count() == 1
-    assert page.locator("#ptopics").is_visible() and page.locator("#lajit").is_hidden()
+    page.wait_for_function("!document.getElementById('dd-ptopics').hidden")
+    assert page.locator("#dd-ptopics").is_visible() and page.locator("#lajit").is_hidden()
     page.click("#tab-eu")
     assert page.evaluate("location.hash") == "#eu"
 
@@ -232,6 +233,7 @@ def test_tender_filters(page, base_url):
     fi = int(page.text_content("#count").split()[0])
     assert eu + fi == total
     page.click("#hk-tools [data-scope='all']")
+    page.click("#dd-ptopics summary")
     page.click("#ptopics .chip >> nth=1")
     assert int(page.text_content("#count").split()[0]) < total
     page.fill("#q", "zzzz-ei-osumia")
@@ -416,7 +418,8 @@ def test_eu_council_and_delegated(page, base_url):
 
 def test_mergers_tab(page, base_url):
     goto(page, base_url, "#yrityskaupat")
-    assert page.locator("#yktopics").is_visible() and page.locator("#yk-tools").is_visible() and page.locator("#lajit").is_hidden()
+    page.wait_for_function("!document.getElementById('dd-yktopics').hidden")
+    assert page.locator("#dd-yktopics").is_visible() and page.locator("#yk-tools").is_visible() and page.locator("#lajit").is_hidden()
     total = page.locator("#tl-yk .row[data-id]").count()
     assert total >= 5 and "yrityskauppaa" in page.text_content("#count")
     # KKV rows carry the statutory dates; the hearing shows as an open consultation
@@ -478,8 +481,12 @@ def test_legislation_filters(page, base_url):
     page.uncheck("#open-only")
     page.click("#lajit .chip[data-laji='asetus']")
     assert page.locator("#tl-fi .row[data-id]").count() > total
+    page.click("#dd-topics summary")
     page.click("#topics .chip >> nth=1")
     assert page.locator("#tl-fi .row[data-id]").count() < total
+    page.wait_for_function("document.querySelector('#dd-topics .dd-v').textContent !== 'Kaikki'")
+    page.click("#lajit")  # a click outside closes the list
+    assert not page.evaluate("document.getElementById('dd-topics').open")
 
 
 # ---------- teema ----------

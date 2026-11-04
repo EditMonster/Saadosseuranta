@@ -962,6 +962,35 @@ body.dr-resizing #drawer{transition:none!important}
 :root[data-theme="dark"] .lg-quote{background:rgba(255,255,255,.06)}
 .lg-quote hr{border:0;border-top:1px solid var(--line);margin:6px 0}
 @media (max-width:760px){ #lg-table th:nth-child(2),#lg-table td:nth-child(2),#lg-table th:nth-child(6),#lg-table td:nth-child(6),#lg-table th:nth-child(8),#lg-table td:nth-child(8){display:none} }
+/* Tilarivi pois (aineiston päiväys näkyy yläpalkissa); vain varoitus (esim. vanha aineisto) jää näkyviin */
+#status{display:none!important}
+#status:has(.warn){display:flex!important}
+#status .sys>span:not(.warn){display:none}
+/* Aihealue ja toimiala avattavina listoina */
+.filters-row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;width:100%}
+.toolbar #lajit{width:auto}
+.dd{position:relative}
+.dd[hidden]{display:none}
+.dd>summary{list-style:none;cursor:pointer;display:inline-flex;gap:8px;align-items:center;padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.42);font-size:13px;user-select:none;white-space:nowrap}
+.dd>summary::-webkit-details-marker{display:none}
+.dd>summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);opacity:.6;margin-left:2px;transition:transform .15s}
+.dd[open]>summary::after{transform:translateY(1px) rotate(-135deg)}
+.dd[open]>summary{background:#fff;box-shadow:0 1px 4px rgba(64,44,26,.15)}
+.dd-k{color:var(--muted)}
+.dd-v{font-weight:500}
+.dd-list{position:absolute;top:calc(100% + 6px);left:0;z-index:45;width:max-content;min-width:250px;max-width:calc(100vw - 32px);max-height:min(62vh,480px);overflow:auto;display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:2px;padding:6px;border-radius:16px;
+  background:rgba(250,246,241,.97);-webkit-backdrop-filter:blur(30px) saturate(160%);backdrop-filter:blur(30px) saturate(160%);border:1px solid var(--glass-edge);box-shadow:0 14px 40px rgba(64,44,26,.18)}
+:root[data-theme="dark"] .dd-list{background:rgba(33,29,26,.97)}
+.dd-list .chip{display:flex!important;justify-content:flex-start;gap:10px;width:100%;text-align:left;border-radius:10px!important;border-color:transparent!important;background:transparent!important;box-shadow:none!important;padding:7px 10px!important}
+.dd-list .chip:hover{background:rgba(255,255,255,.55)!important}
+.dd-list .chip[aria-pressed="true"]{background:#fff!important;font-weight:600}
+.dd-list .chip::before{content:"";flex:0 0 14px;margin-right:-6px}
+.dd-list .chip[aria-pressed="true"]::before{content:"✓"}
+.dd-list .chip .n{margin-left:auto}
+:root[data-theme="dark"] .dd>summary{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)}
+:root[data-theme="dark"] .dd[open]>summary{background:rgba(255,255,255,.16)}
+:root[data-theme="dark"] .dd-list .chip:hover{background:rgba(255,255,255,.08)!important}
+:root[data-theme="dark"] .dd-list .chip[aria-pressed="true"]{background:rgba(255,255,255,.16)!important}
 </style>
 </head>
 <body>
@@ -1008,10 +1037,12 @@ body.dr-resizing #drawer{transition:none!important}
 </header>
 
 <section class="toolbar" aria-label="Suodattimet">
-  <div class="chips" id="lajit"><span class="micro chips-title">Tyyppi</span></div>
-  <div class="chips" id="topics"><span class="micro chips-title">Aihealue</span></div>
-  <div class="chips" id="ptopics" hidden><span class="micro chips-title">Toimiala</span></div>
-  <div class="chips" id="yktopics" hidden><span class="micro chips-title">Toimiala</span></div>
+  <div class="filters-row">
+    <div class="chips" id="lajit"><span class="micro chips-title">Tyyppi</span></div>
+    <details class="dd" id="dd-topics"><summary><span class="dd-k">Aihealue</span><span class="dd-v">Kaikki</span></summary><div class="chips dd-list" id="topics"></div></details>
+    <details class="dd" id="dd-ptopics" hidden><summary><span class="dd-k">Toimiala</span><span class="dd-v">Kaikki</span></summary><div class="chips dd-list" id="ptopics" hidden></div></details>
+    <details class="dd" id="dd-yktopics" hidden><summary><span class="dd-k">Toimiala</span><span class="dd-v">Kaikki</span></summary><div class="chips dd-list" id="yktopics" hidden></div></details>
+  </div>
   <div class="tools">
     <label class="toggle"><input type="checkbox" id="follow-only"> Vain seuranta <span id="n-follow" class="mono"></span></label>
     <label class="toggle" for="folder-filter">Kansio</label><select id="folder-filter" class="sel" aria-label="Kansio"></select><button class="linkbtn" id="open-folders" title="Luo, nimeä ja poista kansioita">Hallitse</button>
@@ -3399,7 +3430,19 @@ function refreshFacets(){
   topicsEl.querySelectorAll(".chip[data-topic]").forEach(c=>{ const t=c.dataset.topic; if(t==="*") return;
     c.hidden=!tp.has(t)&&!state.topics.has(t); const n=c.querySelector(".n"); if(n) n.textContent=tc[t]||0; c.classList.toggle("zero",!tc[t]); });
 }
+// Aihealue/toimiala-pudotusvalikot: näkyvyys ja valinnan yhteenveto seuraavat listaa; suljetaan ulkopuolisesta napsautuksesta
+function syncDropdowns(){
+  [topicsEl,ptopicsEl,yktopicsEl].forEach(el=>{ const d=el&&el.closest("details.dd"); if(!d) return;
+    d.hidden=el.hidden;
+    const on=[...el.querySelectorAll('.chip[aria-pressed="true"]')].filter(c=>c.dataset.topic!=="*").map(c=>(c.firstChild&&c.firstChild.nodeType===3?c.firstChild.textContent:c.textContent).trim());
+    const v=d.querySelector(".dd-v"); const txt=on.length?on[0]+(on.length>1?" +"+(on.length-1):""):"Kaikki";
+    if(v.textContent!==txt) v.textContent=txt; });
+}
+document.addEventListener("click",e=>{ document.querySelectorAll("details.dd[open]").forEach(d=>{ if(!d.contains(e.target)) d.open=false; }); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") document.querySelectorAll("details.dd[open]").forEach(d=>{ d.open=false; d.querySelector("summary").focus(); }); });
+
 function render(){
+  setTimeout(syncDropdowns,0);
   if(typeof i18nSwapData==="function") i18nSwapData();
   topicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.topics.size===0):String(state.topics.has(c.dataset.topic))));
   ptopicsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", c.dataset.topic==="*"?String(state.ptopics.size===0):String(state.ptopics.has(c.dataset.topic))));
