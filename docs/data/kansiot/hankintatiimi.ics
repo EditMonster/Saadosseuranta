@@ -59,6 +59,15 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-061037 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/36356/enotice/61037
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61147-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[Hankinta] Määräaika: Turvapostiratkaisun lisenssit\, ylläpito ja tukipalvelut
+DESCRIPTION:Tarjoukset viimeistään · 2026-061147 · https://www.hankintailmoitukset.fi/fi/public/procedure/39658/enotice/61147
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39658/enotice/61147
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-764507-2026-maaraaika-2026-11-18-hankintatiimi@saadosseuranta
 DTSTAMP:20261118T000000Z
 DTSTART;VALUE=DATE:20261118
@@ -111,6 +120,15 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Moodle LMS izstrādes un konsultāciju pakalpojums
 DESCRIPTION:Tarjoukset viimeistään · Rīgas Stradiņa universitāte · https://ted.europa.eu/fi/notice/-/detail/767116-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/767116-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61231-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[Hankinta] Määräaika: Joutsenon vastaanottokeskuksen siirtokelpoisen asiointitilan suunnittelu\, toteutus\, rakennuttamisen asiantuntijapalvelut sekä huoltopalvelut (PAKTILA)
+DESCRIPTION:Tarjoukset viimeistään · 2026-061231 · https://www.hankintailmoitukset.fi/fi/public/procedure/39710/enotice/61231
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39710/enotice/61231
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-764027-2026-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
@@ -1400,24 +1418,6 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-060637 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39355/enotice/60637
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-ted-751533-2026-maaraaika-2026-11-04-hankintatiimi@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[Hankinta] Määräaika: Udbud af kontrakt om drift\, vedligehold\, support og videreudvikling af Statens Budgetsystem
-DESCRIPTION:Osallistumishakemukset viimeistään · Økonomistyrelsen · https://ted.europa.eu/fi/notice/-/detail/751533-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/751533-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-750293-2026-maaraaika-2026-11-04-hankintatiimi@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[Hankinta] Määräaika: Išmaniosios integracinės atsiskaitymų platformos vystymas ir techninė įranga (Atviras tarptautinis pirkimas)
-DESCRIPTION:Tarjoukset viimeistään · VšĮ Vilniaus pirkimų agentūra · https://ted.europa.eu/fi/notice/-/detail/750293-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/750293-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-EF-60599-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
 DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
@@ -1785,23 +1785,5 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[Hankinta] Määräaika: System för GPS och kontroller
 DESCRIPTION:Tarjoukset viimeistään · Linköpings kommun · https://ted.europa.eu/fi/notice/-/detail/748310-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/748310-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-60377-maaraaika-2026-11-26-hankintatiimi@saadosseuranta
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:[Hankinta] Määräaika: Ensihoidon laskutusjärjestelmä
-DESCRIPTION:Tarjoukset viimeistään · 2026-060377 · https://www.hankintailmoitukset.fi/fi/public/procedure/39204/enotice/60377
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39204/enotice/60377
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-746058-2026-maaraaika-2026-11-26-hankintatiimi@saadosseuranta
-DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:[Hankinta] Määräaika: Framework agreement for Cohesity storage systems/appliances for backup and restore
-DESCRIPTION:Tarjoukset viimeistään · Statens vegvesen · https://ted.europa.eu/fi/notice/-/detail/746058-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/746058-2026
 END:VEVENT
 END:VCALENDAR

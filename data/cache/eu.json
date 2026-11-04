@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04T06:24:42",
+ "fetched": "2026-11-04T15:36:03",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -35446,6 +35446,11 @@
     {
      "date": "2026-09-22",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "APR_R1_byCONSIL"
     }
    ],
    "events": [
@@ -47814,6 +47819,11 @@
     {
      "date": "2026-07-14",
      "type": "APR_AGRPROV_CONSIL_byEP_CMT"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "APR_R1_byCONSIL"
     }
    ],
    "events": [
@@ -50919,6 +50929,10 @@
     {
      "date": "2026-10-21",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-03",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -56315,6 +56329,11 @@
     {
      "date": "2026-10-21",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -57351,6 +57370,11 @@
     {
      "date": "2026-10-13",
      "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -57447,6 +57471,11 @@
     {
      "date": "2026-10-23",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -57655,6 +57684,11 @@
     {
      "date": "2026-10-23",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -58668,6 +58702,11 @@
     {
      "date": "2026-10-13",
      "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -58807,6 +58846,11 @@
     },
     {
      "date": "2026-10-13",
+     "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
      "type": "DELIB_byCONSIL"
     }
    ],
@@ -59230,6 +59274,11 @@
     {
      "date": "2026-10-13",
      "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -59399,6 +59448,11 @@
     },
     {
      "date": "2026-10-13",
+     "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
      "type": "DELIB_byCONSIL"
     }
    ],
@@ -62575,6 +62629,28 @@
     "proposal": "52026PC0231",
     "proposalDate": "2026-05-13"
    },
+   "council": [
+    {
+     "date": "2026-07-09",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-07-16",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-09-18",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-07",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-22",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [
     {
      "confirmed": true,
@@ -62601,6 +62677,28 @@
     "proposal": "52026PC0233",
     "proposalDate": "2026-05-13"
    },
+   "council": [
+    {
+     "date": "2026-06-08",
+     "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-07-09",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-07-16",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-01",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-15",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [
     {
      "confirmed": true,
@@ -62627,6 +62725,24 @@
     "proposal": "52026PC0232",
     "proposalDate": "2026-05-13"
    },
+   "council": [
+    {
+     "date": "2026-07-16",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-09-24",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-01",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-15",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [
     {
      "confirmed": true,
@@ -63080,6 +63196,11 @@
      "date": "2026-11-06",
      "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-19",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [

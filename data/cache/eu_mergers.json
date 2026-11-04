@@ -836,10 +836,44 @@
    "decisions": [],
    "initiated": "2026-02-02",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "DBAG on monipuolinen pääomamarkkinainfrastruktuurin tarjoaja, jonka tuotteet ja palvelut kattavat rahoitusmarkkinatransaktioiden koko arvoketjun.",
+     "Allfunds ylläpitää avoimeen arkkitehtuuriin perustuvaa varallisuudenhoidon digitaalista alustaa rahastojen jakelun hallintaa ja kaupankäyntiä varten. Se tarjoaa institutionaalisille asiakkaille kokonaisvaltaista yhden luukun rahastoratkaisua, joka kattaa transaktioiden koko elinkaaren."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-16",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5795:",
+    "parties": [
+     {
+      "country": "Saksa",
+      "fi": false,
+      "name": "Deutsche Börse AG",
+      "short": "DBAG"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Allfunds Group plc",
+      "short": "Allfunds"
+     }
+    ],
+    "published": "2026-11-04",
+    "reference": "C/2026/5795",
+    "simplified": false,
+    "transaction": "DBAG hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Allfunds. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5795/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-22",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-04",
+     "reference": "C:2026:5795:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_L_66.1",
@@ -1190,6 +1224,23 @@
    "simplified": "MEnormal",
    "timeline": [],
    "title": "COBEGA / PORTOBELLO / SONAB / CAIBA / NOSOPLAS"
+  },
+  "M.12399": {
+   "caseNumber": "M.12399",
+   "deadline": "2026-12-08",
+   "decisions": [],
+   "initiated": "2026-03-23",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-03",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_66.19",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "BRINK’S / NCR"
   },
   "M.12401": {
    "caseNumber": "M.12401",
@@ -3593,10 +3644,57 @@
    "decisions": [],
    "initiated": "2026-06-15",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Kongsberg on puolustus-, meri-, offshore-, ilmailu- ja avaruusteollisuudessa käytettävien teknologiajärjestelmien ja -ratkaisujen toimittaja.",
+     "Thales on monikansallinen teknologiayritys ja Thales-konsernin emoyhtiö. Se jakautuu kolmeen toimintasegmenttiin, jotka ovat i) puolustus ja turvallisuus, ii) ilmailu ja avaruus sekä iii) digitaalinen identiteetti ja turvallisuus.",
+     "TNOR tarjoaa salattuja ja turvattuja viestintäratkaisuja puolustussovelluksiin pääasiassa EU:n ja Naton alueilla."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-16",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5792:",
+    "parties": [
+     {
+      "country": "Norja",
+      "fi": false,
+      "name": "Kongsberg Gruppen ASA",
+      "short": "Kongsberg"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Ranska",
+        "name": "Dassault Aviation"
+       }
+      ],
+      "country": "Ranska",
+      "fi": false,
+      "name": "Thales S.A.",
+      "short": "Thales"
+     },
+     {
+      "country": "Norja",
+      "fi": false,
+      "name": "Thales Norway AS",
+      "short": "TNOR"
+     }
+    ],
+    "published": "2026-11-04",
+    "reference": "C/2026/5792",
+    "simplified": true,
+    "transaction": "Kongsberg ja Thales hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä TNOR. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5792/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-22",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-04",
+     "reference": "C:2026:5792:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_K_62.10",
@@ -3737,10 +3835,44 @@
    "decisions": [],
    "initiated": "2026-06-22",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "HBIS tuottaa ja myy rauta- ja terästuotteita maailmanlaajuisesti.",
+     "DITH toimii maailmanlaajuisesti terästuotteiden ja teräksentuotannon raaka-aineiden kaupan ja jakelun alalla."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-16",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5793:",
+    "parties": [
+     {
+      "country": "Kiina",
+      "fi": false,
+      "name": "HBIS Group Co., Ltd.",
+      "short": "HBIS"
+     },
+     {
+      "country": "Luxemburg",
+      "fi": false,
+      "name": "Duferco International Trading Holding S.A.",
+      "short": "DITH"
+     }
+    ],
+    "published": "2026-11-04",
+    "reference": "C/2026/5793",
+    "simplified": true,
+    "transaction": "HBIS hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä DITH. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5793/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-26",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-04",
+     "reference": "C:2026:5793:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_G_46.82",
@@ -6049,13 +6181,14 @@
    "lastDecision": "2026-10-06",
    "notice": {
     "activities": [
-     "Arvedi valmistaa ja jakelee terästuotteita Euroopan unionissa.",
-     "AMCLN toimii hiiliteräslevytuotteiden jakelun alalla teräspalvelukeskusten kautta Italiassa."
+     "Arvedi valmistaa ja myy terästuotteita, erityisesti hiiliteräslevytuotteita, ja jakelee teräspalvelukeskusten kautta hiiliteräslevytuotteita Italiassa.",
+     "AMCLN jakelee teräspalvelukeskusten kautta hiiliteräslevytuotteita Italiassa ja tarjoaa tytäryhtiönsä Delna S.p.A:n kautta käämien ja valssilankojen pintakäsittelypalveluja."
     ],
     "fi": false,
     "observationDays": 10,
-    "observationsEnd": "2026-09-27",
-    "oj": "C:2026:4892:",
+    "observationsEnd": "2026-11-06",
+    "observationsShifted": null,
+    "oj": "C:2026:5564:",
     "parties": [
      {
       "country": "Italia",
@@ -6070,11 +6203,11 @@
       "short": "AMCLN"
      }
     ],
-    "published": "2026-09-17",
-    "reference": "C/2026/4892",
-    "simplified": true,
-    "transaction": "Arvedi hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä AMCLN. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4892/oj/fin"
+    "published": "2026-10-27",
+    "reference": "C/2026/5564",
+    "simplified": false,
+    "transaction": "Arvedi hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä AMCLN. Keskittymä toteutetaan ostamalla osakkeita. Samasta keskittymästä ilmoitettiin komissiolle jo 10. syyskuuta 2026, mutta ilmoitus peruttiin 6. lokakuuta 2026.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5564/oj/fin"
    },
    "noticeTries": 1,
    "notified": "2026-09-10",
@@ -6082,6 +6215,10 @@
     {
      "published": "2026-09-17",
      "reference": "C:2026:4892:"
+    },
+    {
+     "published": "2026-10-27",
+     "reference": "C:2026:5564:"
     }
    ],
    "phase": "FormalInvestigationPhase1Merger",
@@ -6840,10 +6977,54 @@
    "decisions": [],
    "initiated": "2026-08-31",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Gimv Anchor Investments B.V. on sijoitusyhtiö, joka sijoittaa keskisuuriin ja suuriin yrityksiin pääasiassa Benelux-maissa, Itävallassa, Ranskassa, Saksassa ja Sveitsissä. WorxInvest N.V. on sijoitusyhtiö, joka keskittyy pääomasijoitusrahastoihin ja pieniin ja keskisuuriin yrityksiin, rahamarkkinavälineisiin ja kiinteistöihin pääasiassa Alankomaissa, Belgiassa, Saksassa ja Ranskassa.",
+     "VP Exploitatie B.V. on sijoitusyhtiö, joka keskittyy kolmansien osapuolten kiinteistörahastoihin ja muihin kuin kiinteistörahastoihin, uudistavaan maatalouteen, julkisiin osakkeisiin ja suoriin sijoituksiin pääasiassa Alankomaissa ja Belgiassa. VP Capital N.V. on sijoitusyhtiö, joka sijoittaa muun muassa julkisiin osakkeisiin ja tekstiilialaan pääasiassa Alankomaissa ja Belgiassa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-16",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5794:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Belgia",
+        "name": "WorxInvest N.V."
+       }
+      ],
+      "country": "Belgia",
+      "fi": false,
+      "name": "Gimv Anchor Investments B.V. (Belgia), joka on yrityksen WorxInvest N.V."
+     },
+     {
+      "controllers": [
+       {
+        "country": "Belgia",
+        "name": "VP Capital N.V."
+       }
+      ],
+      "country": "Alankomaat",
+      "fi": false,
+      "name": "Vp Exploitatie B.V."
+     }
+    ],
+    "published": "2026-11-04",
+    "reference": "C/2026/5794",
+    "simplified": true,
+    "transaction": "Gimv Anchor Investments B.V. ja VP Exploitatie B.V. hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Batenburg Techniek N.V. (Alankomaat). Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5794/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-27",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-04",
+     "reference": "C:2026:5794:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_O_81.10",
@@ -7575,5 +7756,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-04T06:29:07Z"
+ "fetched": "2026-11-04T15:42:15Z"
 }

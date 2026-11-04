@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
-UID:fi-hanke-1cc5241e-lausunto-2026-11-13@saadosseuranta
-DTSTAMP:20261113T000000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 l §:n ja biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
+UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[FI] Lausuntoaika päättyy: HE laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
 DESCRIPTION:Lausuntokierros · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
 END:VEVENT
@@ -30,6 +30,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sosiaali- ja terveydenhuoltoa ja pelastustoimea koskevan uudistuksen toimeenpanosta ja sitä koskevan lainsäädännön voimaanpanosta annetun lain 65 §:n muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 241/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-hanke-8f57ddac-lausunto-2026-11-04@saadosseuranta
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[FI] Lausuntoaika päättyy: Laiksi kuntalain 137 §:n muuttamisesta
+DESCRIPTION:Lausuntoyhteenveto · VM108:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM108:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=VM108:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-hanke-c041a8b7-lausunto-2026-10-28@saadosseuranta
@@ -2327,6 +2336,24 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-14770-lausunto-2026-12-30@saadosseuranta
+DTSTAMP:20261230T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
+DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-19419-lausunto-2026-12-02@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[EU] Lausuntoaika päättyy: Digipalvelusäädös – mainosrekisteriohjeet
+DESCRIPTION:Palauteaika · Tiedonanto · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19419_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19419_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-17873-lausunto-2027-02-09@saadosseuranta
 DTSTAMP:20270209T000000Z
 DTSTART;VALUE=DATE:20270209
@@ -3180,6 +3207,15 @@ DTEND;VALUE=DATE:20261127
 SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation amending Implementing Regulation (EU) 2022/1659 as regards inclusion of the production site code on packaging labels for the 
 DESCRIPTION:Palauteaika (Have your say) · D118717/01 · https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
 URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2490-voimaan-2026-11-05@saadosseuranta
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2490 – terrorismi 881/2002
+DESCRIPTION:Voimaan · (EU) 2026/2490 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-pak-32026R2374-voimaan-2026-10-28@saadosseuranta

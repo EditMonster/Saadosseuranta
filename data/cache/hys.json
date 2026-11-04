@@ -1,6 +1,60 @@
 {
- "fetched": "2026-11-04T06:26:33",
+ "fetched": "2026-11-04T15:40:17",
  "items": [
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 14770,
+   "periods": [
+    {
+     "end": "2026-12-30",
+     "open": true,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-11-04"
+    }
+   ],
+   "reference": "Ares(2025)5580019",
+   "status": "ACTIVE",
+   "title_en": "European climate resilience and risk management law",
+   "title_fi": "Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en"
+  },
+  {
+   "actType": "COMMUNIC",
+   "actTypeLabel": "Tiedonanto",
+   "id": 19419,
+   "periods": [
+    {
+     "end": "2026-12-02",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-11-04"
+    }
+   ],
+   "reference": "Ares(2026)9303193",
+   "status": "ACTIVE",
+   "title_en": "Digital Services Act - Advertising Repository Guidelines ",
+   "title_fi": "Digipalvelusäädös – mainosrekisteriohjeet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19419_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 18133,
+   "periods": [
+    {
+     "end": "2026-12-02",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-04"
+    }
+   ],
+   "reference": "Ares(2026)4660865",
+   "status": "ACTIVE",
+   "title_en": "Amendments of motor vehicle safety requirements in view of their application to fully automated vehicles",
+   "title_fi": "Muutokset moottoriajoneuvojen turvallisuusvaatimuksiin – muutosten johdosta vaatimuksia voidaan soveltaa täysin automatisoituihin ajoneuvoihin",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18133_en"
+  },
   {
    "actType": "REG_IMPL",
    "actTypeLabel": "Täytäntöönpanoasetus",
@@ -1038,6 +1092,24 @@
    "title_en": "Training and certification standards of fishers on EU vessels",
    "title_fi": "EU:n kalastajat – koulutusta ja pätevyyskirjoja koskevat vaatimukset",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 18658,
+   "periods": [
+    {
+     "end": "2026-09-30",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-07-01"
+    }
+   ],
+   "reference": "Ares(2026)6556383",
+   "status": "ACTIVE",
+   "title_en": "Housing simplification package",
+   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
   },
   {
    "actType": "PROP_DEC",
