@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04T15:40:17",
+ "fetched": "2026-11-05T07:26:45",
  "items": [
   {
    "actType": "PROP_REG",
@@ -7,7 +7,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2026-12-30",
+     "end": "2026-12-31",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -535,7 +535,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-30",
+     "end": "2026-12-31",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -553,7 +553,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-30",
+     "end": "2026-12-31",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -733,7 +733,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-30",
+     "end": "2026-12-31",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -896,30 +896,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 18833,
-   "periods": [
-    {
-     "end": "2026-11-04",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-09-09"
-    },
-    {
-     "end": "2026-11-04",
-     "open": true,
-     "stage": "OPC_LAUNCHED",
-     "start": "2026-09-09"
-    }
-   ],
-   "reference": "Ares(2026)7135338",
-   "status": "ACTIVE",
-   "title_en": "VAT and circular economy",
-   "title_fi": "Alv ja kiertotalous",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en"
-  },
-  {
    "actType": "REPORT",
    "actTypeLabel": "Kertomus",
    "id": 18512,
@@ -1006,24 +982,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 14820,
-   "periods": [
-    {
-     "end": "2026-11-04",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-15"
-    }
-   ],
-   "reference": "Ares(2025)6476068",
-   "status": "ACTIVE",
-   "title_en": " Eurojust Regulation Revision ",
-   "title_fi": "Rajatylittävä oikeudellinen yhteistyö – Eurojust-asetuksen tarkistus (vaikutustenarviointi)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14820_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 14638,
    "periods": [
     {
@@ -1094,24 +1052,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 18658,
-   "periods": [
-    {
-     "end": "2026-09-30",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-01"
-    }
-   ],
-   "reference": "Ares(2026)6556383",
-   "status": "ACTIVE",
-   "title_en": "Housing simplification package",
-   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
-  },
-  {
    "actType": "PROP_DEC",
    "actTypeLabel": "Päätösehdotus",
    "id": 18804,
@@ -1146,6 +1086,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 14820,
+   "periods": [
+    {
+     "end": "2026-11-04",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-07-15"
+    }
+   ],
+   "reference": "Ares(2025)6476068",
+   "status": "ACTIVE",
+   "title_en": " Eurojust Regulation Revision ",
+   "title_fi": "Rajatylittävä oikeudellinen yhteistyö – Eurojust-asetuksen tarkistus (vaikutustenarviointi)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14820_en"
   },
   {
    "actType": "PROP_DIR",

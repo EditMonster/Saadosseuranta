@@ -1511,76 +1511,6 @@
    "timeline": [],
    "title": "ACITURRI AEROENGINES / TIKEHAU CAPITAL / AERIAN"
   },
-  "M.12427": {
-   "caseNumber": "M.12427",
-   "deadline": "2026-08-19",
-   "decisions": [
-    {
-     "date": "2026-08-06",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-04-07",
-   "lastDecision": "2026-08-06",
-   "notice": {
-    "activities": [
-     "Apollo Funds koostuu Apollon tytäryhtiöiden hallinnoimista sijoitusrahastoista. Apollo on maailmanlaajuisesti toimiva vaihtoehtoisten omaisuudenhoitopalvelujen tarjoaja. Apollo tarjoaa maailmanlaajuisesti salkunhoito- ja rahoitussuunnittelupalveluja yksityishenkilöille ja institutionaalisille sijoittajille. Esimerkkinä voidaan mainita sijoitukset muun muassa koulutus-, vakuutus-, rahoituspalvelu- ja vapaa-ajan yrityksiin.",
-     "KKR on maailmanlaajuinen sijoituspalveluyritys, joka tarjoaa vaihtoehtoisia omaisuudenhoito-, pääomamarkkina- ja vakuutusratkaisuja."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-01",
-    "oj": "C:2026:3944:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "AGM",
-        "name": "Apollo Global Management, Inc."
-       },
-       {
-        "country": "Apollo",
-        "name": "AGM välillisten tytäryhtiöiden"
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Apollo Capital Management, L.P. (Yhdysvallat), yrityksen Apollo Global Management, Inc. (AGM) määräysvallassa (yhdessä s"
-     },
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "KKR & Co. Inc. (KKR & Co, tytäryhtiöineen KKR, Yhdysvallat",
-      "short": "KKR & Co"
-     },
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Atlantic Aviation Holding Corporation",
-      "short": "Atlantic Aviation"
-     }
-    ],
-    "published": "2026-07-22",
-    "reference": "C/2026/3944",
-    "simplified": true,
-    "transaction": "Apollo Funds ja KKR hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Atlantic Aviation. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3944/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-14",
-   "oj": [
-    {
-     "published": "2026-07-22",
-     "reference": "C:2026:3944:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_33.16",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "APOLLO FUNDS / KKR / ATLANTIC AVIATION HOLDINGS"
-  },
   "M.12428": {
    "caseNumber": "M.12428",
    "deadline": "2026-10-12",
@@ -2704,73 +2634,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "SCHMITZ CARGOBULL / BERGER FAHRZEUGTECHNIK"
-  },
-  "M.12496": {
-   "caseNumber": "M.12496",
-   "deadline": "2026-08-19",
-   "decisions": [
-    {
-     "date": "2026-08-06",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-01",
-   "lastDecision": "2026-08-06",
-   "notice": {
-    "activities": [
-     "Naspers on maailmanlaajuisesti toimiva kuluttajien internet-palveluja tarjoava konserni ja monikansallinen holdingyhtiö. Sen tytäryhtiö Prosus on maailmanlaajuisesti toimiva internet- ja teknologiasijoittaja, jonka salkkuun kuuluvat yritykset toimivat ruokakuljetusten, sähköisen kaupankäynnin, rahoitusteknologian, luokiteltujen ilmoitusten ja koulutusteknologian aloilla kaikkialla Euroopan talousalueella ja maailmanlaajuisesti.",
-     "eMAG toimii vähittäismyyjänä ja myös välittäjänä elektroniikan, kosmetiikan, lemmikkieläintuotteiden ja muiden tuotteiden myynnin alalla Romaniassa sekä muilla aloilla Bulgariassa ja Unkarissa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-31",
-    "oj": "C:2026:3947:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Alankomaat",
-        "name": "Prosus N.V."
-       }
-      ],
-      "country": "Etelä-Afrikka",
-      "fi": false,
-      "name": "Naspers Limited",
-      "short": "Naspers"
-     },
-     {
-      "controllers": [
-       {
-        "country": "yritysten Prosus ja MIH kautta",
-        "name": "Naspers"
-       }
-      ],
-      "country": "Romania",
-      "fi": false,
-      "name": "Dante International S.A.",
-      "short": "eMAG"
-     }
-    ],
-    "published": "2026-07-21",
-    "reference": "C/2026/3947",
-    "simplified": true,
-    "transaction": "Naspers hankkii yritysten Prosus ja MIH kautta sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä eMAG. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3947/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-14",
-   "oj": [
-    {
-     "published": "2026-07-21",
-     "reference": "C:2026:3947:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_G_47.91",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "NASPERS / EMAG"
   },
   "M.12497": {
    "caseNumber": "M.12497",
@@ -5681,9 +5544,14 @@
   "M.12585": {
    "caseNumber": "M.12585",
    "deadline": "2026-11-16",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-04",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-03",
-   "lastDecision": null,
+   "lastDecision": "2026-11-04",
    "notice": {
     "activities": [
      "BC Partners Fund XII on sijoitusrahasto, jota BC Partners neuvoo ja hallinnoi. BC Partners on vaihtoehtoisten sijoitusten hoitaja, joka keskittyy yksityiseen pääomaan, luottoihin ja kiinteistösijoituksiin.",
@@ -7756,5 +7624,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-04T15:42:15Z"
+ "fetched": "2026-11-05T07:29:15Z"
 }

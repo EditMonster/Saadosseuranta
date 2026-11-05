@@ -41,15 +41,6 @@ DESCRIPTION:Lausuntoyhteenveto · VM108:00/2026 · https://valtioneuvosto.fi/han
 URL:https://valtioneuvosto.fi/hanke?tunnus=VM108:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-c041a8b7-lausunto-2026-10-28@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[FI] Lausuntoaika päättyy: Amerikan Yhdysvaltojen puolustusministeriön ja Suomen tasavallan hallituksen puolesta toimivan Suomen puolustusministeriön välillä tehdyn sopimuksen tutkimus-\, kehitys-\, testaus- ja arviointihankkeista muutosasiakirjan hyväksymiseksi ja voimaansaattamiseksi
-DESCRIPTION:Lausuntopyyntö · PLM005:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=PLM005:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=PLM005:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-229-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -2336,10 +2327,10 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2026-12-30@saadosseuranta
-DTSTAMP:20261230T000000Z
-DTSTART;VALUE=DATE:20261230
-DTEND;VALUE=DATE:20261231
+UID:eu-hys-14770-lausunto-2026-12-31@saadosseuranta
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2444,10 +2435,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-30@saadosseuranta
-DTSTAMP:20261230T000000Z
-DTSTART;VALUE=DATE:20261230
-DTEND;VALUE=DATE:20261231
+UID:eu-hys-19517-lausunto-2026-12-31@saadosseuranta
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2532,15 +2523,6 @@ DTEND;VALUE=DATE:20261106
 SUMMARY:[EU] Lausuntoaika päättyy: Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
-DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
@@ -3083,15 +3065,6 @@ DESCRIPTION:Voimaan · MOK 3/2023 · https://www.finanssivalvonta.fi/tiedotteet-
 URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/muutoksia-eraiden-luotonantajien-ja-vertaislainanvalittajien-rekisterointia-koskeviin-maarayksiin-ja-ohjeisiin-32023/
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-toim-eiopa-call-participate-discussion-disclosure-individual-stress-test-results-lausunto-2026-10-28@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[EU] Lausuntoaika päättyy: Call to participate in the discussion on the disclosure of individual stress test results
-DESCRIPTION:Palauteaika · EIOPA 13.10.2026 · https://www.eiopa.europa.eu/consultations/call-participate-discussion-disclosure-individual-stress-test-results_en
-URL:https://www.eiopa.europa.eu/consultations/call-participate-discussion-disclosure-individual-stress-test-results_en
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-toim-hk-d35204db-25eac3-lausunto-2026-12-05@saadosseuranta
 DTSTAMP:20261205T000000Z
 DTSTART;VALUE=DATE:20261205
@@ -3216,32 +3189,5 @@ DTEND;VALUE=DATE:20261106
 SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2490 – terrorismi 881/2002
 DESCRIPTION:Voimaan · (EU) 2026/2490 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
 URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2374-voimaan-2026-10-28@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[EU] Voimaan: Neuvoston asetus (EU) 2026/2374 – Kongon demokraattinen tasavalta 1183/2005
-DESCRIPTION:Voimaan · (EU) 2026/2374 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2374
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2374
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2397-voimaan-2026-10-28@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2397 – Moldova 2010/573
-DESCRIPTION:Voimaan · (YUTP) 2026/2397 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2397
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2397
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026D2378-voimaan-2026-10-28@saadosseuranta
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2378 – terrorismi 2016/1693
-DESCRIPTION:Voimaan · (YUTP) 2026/2378 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2378
 END:VEVENT
 END:VCALENDAR
