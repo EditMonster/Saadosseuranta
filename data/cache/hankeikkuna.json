@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-05T10:52:42",
+ "fetched": "2026-11-05T16:02:52",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -135,7 +135,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -149,14 +149,16 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 304/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": null,
    "lisattyPaiva": "2026-10-27",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-27T08:53:28",
+   "muokattu": "2026-11-05T15:08:25",
    "nimi": "Hallituksen esitys eduskunnalle laiksi tuloverolain 93 §:n väliaikaisesta muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om temporär ändring av 93 § i inkomstskattelagen",
    "pevLausunto": false,
@@ -181,7 +183,20 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopalvelu.fi:ssä julkaistu lausuntopyyntö",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/3a1b58a4-ad49-407f-8bf8-f774a06a58f3/LAUSUNTOPYYNTO_20261105151854.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande (Utlåtande.fi)",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/916a0826-7f7f-457a-b32e-5f609810fe53/LAUSUNTOPYYNTO_20261105151854.PDF"
+    }
+   ],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
@@ -190,7 +205,7 @@
      "date": "2026-11-05",
      "end": "2026-11-19",
      "kind": "lausunto",
-     "label": "Lausuntokierros",
+     "label": "Lausuntokierros luonnoksesta hallituksen esitykseksi",
      "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
@@ -202,8 +217,8 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-04T10:10:53",
-   "nimi": "HE laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta",
+   "muokattu": "2026-11-05T15:22:01",
+   "nimi": "Hallituksen esitys laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lagar om ändring av 5 a och 5 l § i lagen om främjande av användningen av förnybara drivmedel för transport och 5 och 7 § i lagen om främjande av användningen av biobrännolja",
    "pevLausunto": false,
    "poistettuPaiva": null,
@@ -215,7 +230,32 @@
    "tunnus": "TEM060:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026",
    "uuid": "1cc5241e-b758-4a70-a039-8659928aabc7",
-   "valmistelu": [],
+   "valmistelu": [
+    {
+     "d": "2026-11-05",
+     "n": "Lausuntopalvelu.fi:ssä julkaistu lausuntopyyntö",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/3a1b58a4-ad49-407f-8bf8-f774a06a58f3/LAUSUNTOPYYNTO_20261105151854.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Begäran om utlåtande (Utlåtande.fi)",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/916a0826-7f7f-457a-b32e-5f609810fe53/LAUSUNTOPYYNTO_20261105151854.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "HE jakeluvelvoitteiden muuttamisesta (joustojen lisääminen)",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/4ad66a45-20aa-49ff-b817-c469066be582/KIRJE_20261105151854.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "RP jakeluvelvoitteen muuttamisesta_pykälät ja pääasiallinen sisältö",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/2bad6f19-9228-4ea0-9de2-8a677b0ef276/KIRJE_20261105151854.PDF"
+    }
+   ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2027-02-28",
    "vanhaEsittelyviikko": null,
@@ -261,7 +301,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -270,14 +310,16 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 305/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": null,
    "lisattyPaiva": "2026-10-21",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-26T10:34:52",
+   "muokattu": "2026-11-05T15:08:53",
    "nimi": "Hallituksen esitys eduskunnalle laiksi ajoneuvoverolain liitteen muuttamisesta  annetun hallituksen esityksen (HE 173/2026 vp) täydentämisestä",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till komplettering av regeringens proposition med förslag till lag om ändring av bilagan till fordonsskattelagen (RP 173/2026 rd)",
    "pevLausunto": false,
@@ -373,7 +415,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -415,8 +457,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 313/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": true,
    "laji": "laki",
    "lausunnot": {
@@ -479,7 +523,7 @@
    },
    "lisattyPaiva": "2026-10-14",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-28T15:01:57",
+   "muokattu": "2026-11-05T15:12:57",
    "nimi": "Hallituksen esitys eduskunnalle laiksi maataloustuotteiden markkinajärjestelystä annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om en marknadsordning för jordbruksprodukter",
    "pevLausunto": false,
@@ -768,7 +812,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -777,14 +821,16 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 289/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": null,
    "lisattyPaiva": "2026-09-29",
    "ministerio": "valtioneuvoston kanslia",
-   "muokattu": "2026-10-22T07:30:30",
+   "muokattu": "2026-11-05T15:00:16",
    "nimi": "Hallituksen esitys eduskunnalle laiksi valtioneuvostosta annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om statsrådet",
    "pevLausunto": true,
@@ -1080,7 +1126,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -1112,8 +1158,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 324/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -1353,7 +1401,7 @@
    },
    "lisattyPaiva": "2026-09-15",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:28:26",
+   "muokattu": "2026-11-05T15:18:34",
    "nimi": "Hallituksen esitys eduskunnalle laiksi taloudelliseen toimintaan myönnettävän tuen yleisistä edellytyksistä annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om allmänna förutsättningar för stöd som beviljas för ekonomisk verksamhet",
    "pevLausunto": false,
@@ -1386,7 +1434,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -1395,14 +1443,16 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 296/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": null,
    "lisattyPaiva": "2026-09-09",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-04T14:08:56",
+   "muokattu": "2026-11-05T15:03:51",
    "nimi": "Hallituksen esitys eduskunnalle Euroopan parlamentin jäsenten valitsemista Euroopan parlamenttiin yleisillä välittömillä vaaleilla koskevan säädöksen muuttamisesta tehdyn neuvoston päätöksen voimaan saattamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag om sättande i kraft av rådets beslut om ändring av akten om allmänna direkta val av ledamöter av Europaparlamentet",
    "pevLausunto": true,
@@ -1422,7 +1472,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -1452,8 +1502,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 327/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -1508,7 +1560,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:36:43",
+   "muokattu": "2026-11-05T15:20:14",
    "nimi": "Hallituksen esitys energiaperuskirjasta tehdyn sopimuksen irtisanomiseksi",
    "nimiSv": "Regeringens proposition till riksdagen om uppsägning av energistadgefördraget",
    "pevLausunto": false,
@@ -1553,7 +1605,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -1604,8 +1656,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 302/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -2089,7 +2143,7 @@
    },
    "lisattyPaiva": "2026-09-08",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-04T06:43:44",
+   "muokattu": "2026-11-05T15:07:14",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kuntalain 137 §:n muuttamisesta",
    "nimiSv": "FM; Regeringens proposition till riksdagen med förslag till lag om ändring av 137 § i kommunallagen",
    "pevLausunto": false,
@@ -2134,7 +2188,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -2176,8 +2230,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 316/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -2488,7 +2544,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-29T08:33:53",
+   "muokattu": "2026-11-05T15:14:10",
    "nimi": "Hallituksen esitys laeiksi metsästyslain 90 §:n ja riistahallintolain 31 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lagar om ändring av 90 § i jaktlagen och 31 § i viltförvaltningslagen",
    "pevLausunto": true,
@@ -2533,7 +2589,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -2555,8 +2611,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 301/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -2827,7 +2885,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-11-02T14:57:06",
+   "muokattu": "2026-11-05T15:06:34",
    "nimi": "Hallituksen esitys laiksi sotilastiedustelusta annetun lain muuttamiseksi (kotirauhan suoja)",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av lagen om militär underrättelseverksamhet (hemfridsskydd)",
    "pevLausunto": true,
@@ -3832,7 +3890,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -3884,8 +3942,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 306/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -4154,7 +4214,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-02T15:00:20",
+   "muokattu": "2026-11-05T15:09:28",
    "nimi": "Lainsäädäntöhanke Tullin rikostiedustelua koskevaksi lainsäädännöksi (2. vaihe)",
    "nimiSv": "Lagstiftningsprojekt för att bereda ett förslag till lagstiftning om Tullens kriminalunderrättelseinhämtning (fas 2)",
    "pevLausunto": true,
@@ -6272,7 +6332,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-30T09:39:56",
+   "muokattu": "2026-11-05T12:21:40",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kalastuslain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lag om fiske",
    "pevLausunto": false,
@@ -6280,7 +6340,7 @@
    "rauennut": false,
    "skNumerot": [],
    "teemat": [],
-   "tiivistelma": "Esityksessä ehdotetaan lisättäväksi kalastuslakiin uusi 7 a §, jossa säädettäisiin, että lain 7 §:ssä tarkoitettujen yleiskalastusoikeuksien nojalla ei saisi harjoittaa kaupallista kalastusta.\nLisäksi ehdotetaan muutettavaksi laki niin, että poistettaisiin poikkeus, joka mahdollistaa vapaa-ajankalastajille vähäisen kala- tai rapuerän myymisen.",
+   "tiivistelma": "Esityksessä ehdotetaan lisättäväksi kalastuslakiin uusi 7 a §, jossa säädettäisiin, että lain 7 §:ssä tarkoitettujen yleiskalastusoikeuksien nojalla ei saisi harjoittaa kaupallista kalastusta.\n\nLisäksi ehdotetaan muutettavaksi laki niin, että poistettaisiin poikkeus, joka mahdollistaa vapaa-ajankalastajille vähäisen kalaerän myymisen.",
    "tila": "KAYNNISSA",
    "tunnus": "MMM033:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=MMM033:00/2026",
@@ -6757,7 +6817,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -6768,8 +6828,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 298/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -7016,7 +7078,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-28T12:58:33",
+   "muokattu": "2026-11-05T15:05:12",
    "nimi": "Lainsäädäntöhanke pysyväisluonteiseen asumiseen käytettävä tila ja tiedustelu, vaihe 3",
    "nimiSv": "Lagstiftningsprojekt om utrymmen som används för boende av permanent natur och om underrättelseinhämtning, fas 3",
    "pevLausunto": false,
@@ -7038,7 +7100,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -7083,8 +7145,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 321/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -7162,7 +7226,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T10:46:33",
+   "muokattu": "2026-11-05T15:16:51",
    "nimi": "Hallituksen esitys laiksi Australian kanssa solmitun työlomasopimuksen voimaansaattamisesta",
    "nimiSv": "Regeringens proposition om att utfärdä ett avtal om arbetssemester med Australien",
    "pevLausunto": false,
@@ -7213,7 +7277,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-01-01",
    "asiakirjat": [
@@ -7258,8 +7322,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 334/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": true,
    "laji": "laki",
    "lausunnot": {
@@ -7622,7 +7688,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:28:54",
+   "muokattu": "2026-11-05T15:25:11",
    "nimi": "Rakennusten energiatodistustietojärjestelmästä annetun lain muuttaminen (EPBD 2024)",
    "nimiSv": "Ändring av lagen om informationssystemet för byggnaders energicertifikat (EPBD 2024)",
    "pevLausunto": false,
@@ -7669,7 +7735,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -7686,8 +7752,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 337/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -7878,7 +7946,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:28:05",
+   "muokattu": "2026-11-05T15:26:33",
    "nimi": "Hallituksen esitys laiksi ympäristönsuojelulain 60 §:n muuttamisesta",
    "nimiSv": null,
    "pevLausunto": false,
@@ -7898,7 +7966,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2026-05-20",
    "asiakirjat": [],
@@ -7910,8 +7978,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 336/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -7974,7 +8044,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-03T12:09:33",
+   "muokattu": "2026-11-05T15:26:06",
    "nimi": "Hallituksen esitys laiksi ympäristövahinkorahastosta annetun lain 2 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av 2 § i lagen om miljöskadefonden",
    "pevLausunto": false,
@@ -9484,7 +9554,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -9538,8 +9608,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 307/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -9722,7 +9794,7 @@
    },
    "lisattyPaiva": "2026-05-06",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-05T07:45:22",
+   "muokattu": "2026-11-05T15:09:59",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi verotusmenettelystä annetun lain ja eräiden muiden lakien muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av lagen om beskattningsförfarande och vissa andra lagar",
    "pevLausunto": false,
@@ -9879,7 +9951,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -9918,8 +9990,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 309/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -10030,7 +10104,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:59:57",
+   "muokattu": "2026-11-05T15:11:07",
    "nimi": "Hallituksen esitys eduskunnalle laiksi tuloverolain 10 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av 10 § i inkomstskattelagen",
    "pevLausunto": false,
@@ -12092,7 +12166,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2026-07-03",
    "asiakirjat": [
@@ -12145,8 +12219,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 300/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -12401,7 +12477,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-02T08:21:14",
+   "muokattu": "2026-11-05T15:06:11",
    "nimi": "EU:n paluuasetuksen eräiden säännösten kansallista täytäntöönpanoa koskeva lainsäädäntöhanke",
    "nimiSv": "Lagstiftningsprojekt för det nationella genomförandet av vissa bestämmelser i EU:s återvändandeförordning",
    "pevLausunto": false,
@@ -14390,7 +14466,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -14434,8 +14510,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 303/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -14602,7 +14680,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-02T10:34:36",
+   "muokattu": "2026-11-05T15:07:51",
    "nimi": "Hallituksen esitys eduskunnalle laiksi hyvinvointialueesta annetun lain 21 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av 21 § i lagen om välfärdsområden",
    "pevLausunto": false,
@@ -18271,7 +18349,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -18304,8 +18382,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 332/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -18616,7 +18696,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:00:05",
+   "muokattu": "2026-11-05T15:23:56",
    "nimi": "Asunto-osakeyhtiöiden perusparannuslainojen ja omistusasuntolainojen valtiontakauksen sekä asuntosäästöjärjestelmän ehtojen parantaminen",
    "nimiSv": "Förbättring av statsborgen för bostadsaktiebolags ombyggnadslån och ägarbostadslån samt av villkoren för bostadssparsystemet",
    "pevLausunto": false,
@@ -22972,7 +23052,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2026-03-09",
    "asiakirjat": [
@@ -23016,8 +23096,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 299/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -23248,7 +23330,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-05T08:33:44",
+   "muokattu": "2026-11-05T15:05:48",
    "nimi": "Lainsäädäntöhanke perheenjäsenten tulorajoja, oma-aloitteista tiedon luovuttamista ja Maahanmuuttoviraston antamaa maksukorttia koskevan sääntelyn muuttamisesta",
    "nimiSv": "Lagstiftningsprojekt ändring av regleringen av familjemedlemmarnas inkomstgränser, utlämnande av information på eget initiativ och betalkort utfärdade av Migrationsverket",
    "pevLausunto": false,
@@ -26766,7 +26848,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -26793,8 +26875,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 290/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -26930,7 +27014,7 @@
    },
    "lisattyPaiva": "2026-05-22",
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-11-02T09:05:01",
+   "muokattu": "2026-11-05T15:00:47",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kaksikäyttötuotteiden vientivalvonnasta annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om kontroll av export av produkter med dubbla användningsområden",
    "pevLausunto": false,
@@ -29833,7 +29917,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -29863,8 +29947,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 312/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -30776,7 +30862,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-03T10:46:01",
+   "muokattu": "2026-11-05T15:12:25",
    "nimi": "Hallituksen esitys varhaiskasvatuslain 31 §:n sekä 75 §:n 5 momentin muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av 31 § och 75 § 5 mom. i lagen om småbarnspedagogik",
    "pevLausunto": false,
@@ -31688,7 +31774,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -31708,8 +31794,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 293/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -31804,7 +31892,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-11-02T10:19:27",
+   "muokattu": "2026-11-05T15:02:14",
    "nimi": "Hallituksen esitys terrorismin ennaltaehkäisyä koskevan Euroopan neuvoston yleissopimuksen muutospöytäkirjan hyväksymisestä ja voimaansaattamisesta",
    "nimiSv": "Regeringens proposition om godkännande och sättande i kraft av ändringsprotokollet till Europarådets konvention om förebyggande av terrorism",
    "pevLausunto": false,
@@ -34939,7 +35027,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -34984,8 +35072,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 329/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -35350,7 +35440,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-02T13:03:37",
+   "muokattu": "2026-11-05T15:21:18",
    "nimi": "Lainsäädäntöhanke työperäisen hyväksikäytön torjumiseksi oleskelulupamenettelyssä",
    "nimiSv": "Lagstiftningsprojekt för bekämpning av arbetsrelaterat utnyttjande i uppehållstillståndsförfarandet",
    "pevLausunto": false,
@@ -40519,7 +40609,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -40549,8 +40639,8 @@
     }
    ],
    "asiasanat": [],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
+   "esittelyviikko": 45,
+   "esittelyvuosi": 2026,
    "etapit": [
     {
      "date": "2026-06-24",
@@ -40561,8 +40651,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
+   "heNumerot": [
+    "HE 331/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -40784,7 +40876,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-02T11:11:56",
+   "muokattu": "2026-11-05T15:23:19",
    "nimi": "Metsähallituksen rakennuskantahankkeeseen liittyvät luonnonsuojelualueiden säädösmuutokset",
    "nimiSv": "Ändringar i lagstiftningen om naturskyddsområden i anslutning till Forststyrelsens byggnadsbeståndsprojekt",
    "pevLausunto": false,
@@ -42203,7 +42295,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-11-25",
    "asiakirjat": [
@@ -42245,8 +42337,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 317/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -42661,7 +42755,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-02T15:04:33",
+   "muokattu": "2026-11-05T15:14:51",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi väylälakien muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lagar om ändring av trafikledslagarna",
    "pevLausunto": false,
@@ -42748,7 +42842,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": true,
    "asetettu": null,
    "asiakirjat": [
@@ -42795,8 +42889,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 311/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -43584,7 +43680,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-03T10:20:25",
+   "muokattu": "2026-11-05T15:12:01",
    "nimi": "Hallituksen esitys eduskunnalle tutkinnon suorittamista avoimena korkeakouluopetuksena koskevaksi lainsäädännöksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om avläggande av examen inom ramen för öppen högskoleundervisning",
    "pevLausunto": true,
@@ -47460,7 +47556,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -47506,8 +47602,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 330/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -47826,7 +47924,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:06:47",
+   "muokattu": "2026-11-05T15:22:06",
    "nimi": "Hallituksen esitys laiksi vesilain muuttamisesta (merituulivoiman rakentamis- ja purkulakihanke)",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av vattenlagen (projekt för byggande och nedmontering av havsbaserad vindkraft)",
    "pevLausunto": false,
@@ -47900,14 +47998,47 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/87e96f08-8eb0-421f-9409-2b0f4073d24d/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "nimi": "Luonnos hallituksen esitykseksi",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/d2926a09-a2b3-4bc7-97cf-f3dee5b4fab9/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "nimi": "Utkast till regeringens proposition, huvudsakliga innehåll och lagförslag",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/a7e68dfb-17a0-4d9f-ba08-efd29d97ab6c/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande om utkastet till regeringens proposition",
+     "pvm": "2026-11-05",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/795cf973-7a9d-4e9d-9493-26f35c2237c6/LAUSUNTOPYYNTO_20261105134557.PDF"
+    }
+   ],
    "asiasanat": [
     "arvonlisävero",
     "etämyynti"
    ],
    "esittelyviikko": 50,
    "esittelyvuosi": 2026,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-11-05",
+     "end": "2026-11-23",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
@@ -47916,7 +48047,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-05T08:17:38",
+   "muokattu": "2026-11-05T13:46:26",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och lagen om undantag för landskapet Åland från mervärdesskatte- och accislagstiftningen",
    "pevLausunto": false,
@@ -47929,7 +48060,32 @@
    "tunnus": "VM160:00/2025",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=VM160:00/2025",
    "uuid": "c7da6698-9dbd-4514-9c0b-7098ebb9df67",
-   "valmistelu": [],
+   "valmistelu": [
+    {
+     "d": "2026-11-05",
+     "n": "Lausuntopyyntö luonnoksesta hallituksen esitykseksi",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/87e96f08-8eb0-421f-9409-2b0f4073d24d/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Luonnos hallituksen esitykseksi",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/d2926a09-a2b3-4bc7-97cf-f3dee5b4fab9/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Utkast till regeringens proposition, huvudsakliga innehåll och lagförslag",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/a7e68dfb-17a0-4d9f-ba08-efd29d97ab6c/LAUSUNTOPYYNTO_20261105134508.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Begäran om utlåtande om utkastet till regeringens proposition",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/795cf973-7a9d-4e9d-9493-26f35c2237c6/LAUSUNTOPYYNTO_20261105134557.PDF"
+    }
+   ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 48,
@@ -50749,7 +50905,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-11-12",
    "asiakirjat": [
@@ -50803,8 +50959,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 319/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -50964,7 +51122,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-03T10:41:09",
+   "muokattu": "2026-11-05T15:15:41",
    "nimi": "Säädöshanke merenkulun sääntelyn sujuvoittamiseksi",
    "nimiSv": "Lagstiftningsprojekt för att göra regleringen av sjöfarten smidigare",
    "pevLausunto": false,
@@ -51057,7 +51215,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-11-04",
    "asiakirjat": [
@@ -51100,8 +51258,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 318/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -51284,7 +51444,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-30T12:14:03",
+   "muokattu": "2026-11-05T15:15:16",
    "nimi": "Liikenneturvallisuuteen liittyvien liikennerikkomusten rajat ylittävää tietojenvaihtoa koskevan CBE-muutosdirektiivin ja eurooppalaisen vammaisten henkilöiden pysäköintilupasääntelyn täytäntöönpano",
    "nimiSv": "Genomförande av direktivet om ändring av CBE-direktivet om underlättande av gränsöverskridande informationsutbyte om trafiksäkerhetsrelaterade brott och bestämmelser om EU-parkeringstillståndet för personer med funktionsnedsättning",
    "pevLausunto": false,
@@ -55450,7 +55610,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -55517,8 +55677,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 326/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -56134,7 +56296,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:32:37",
+   "muokattu": "2026-11-05T15:19:36",
    "nimi": "Kilpailuneutraliteettisääntelyn uudistaminen",
    "nimiSv": "Reform av konkurrensneutralitetsregleringen",
    "pevLausunto": false,
@@ -57624,7 +57786,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -57656,8 +57818,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 297/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -57821,7 +57985,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-03T16:34:12",
+   "muokattu": "2026-11-05T15:04:18",
    "nimi": "Syyttömästi vangitulle tai tuomitulle maksettavaa korvausta koskevien säännösten uudistaminen",
    "nimiSv": "Revidering av bestämmelserna om ersättning som ska betalas till oskyldigt häktad eller dömd",
    "pevLausunto": false,
@@ -57862,13 +58026,13 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/0a051409-ebea-4abe-8d33-a101a65ea6a2/820cb6d7-92f9-4082-b87d-9281dd4d3f73/KIRJE_20260421094624.PDF"
     }
    ],
-   "valmisteluvaihe": "LAUSUNTOMENETTELY",
+   "valmisteluvaihe": "VALTIONEUVOSTON_PAATOKSENTEKO",
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": 39,
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-09-10",
    "asiakirjat": [
@@ -57909,8 +58073,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 325/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -58181,7 +58347,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-02T10:37:19",
+   "muokattu": "2026-11-05T15:19:10",
    "nimi": "EU:n pakkotyöasetuksen kansallinen täytäntöönpano",
    "nimiSv": "Nationell implementering av EU:s förordning om förbud mot produkter som tillverkats genom tvångsarbete (EU) 2024/3015",
    "pevLausunto": false,
@@ -63159,7 +63325,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -63189,8 +63355,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 295/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -63388,7 +63556,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-04T10:52:55",
+   "muokattu": "2026-11-05T15:03:21",
    "nimi": "Vahingollisen tiedustelutoiminnan ja pakolaisvakoilun kriminalisointi",
    "nimiSv": "Kriminalisering av flyktingspionage och skadlig underrättelseverksamhet",
    "pevLausunto": true,
@@ -63415,7 +63583,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/7bdce790-ecec-4955-88b3-d649cb22c073/5d5ffddc-fa3c-4252-acbb-71dcbf8d2904/LAUSUNTOPYYNTO_20260616112555.PDF"
     }
    ],
-   "valmisteluvaihe": "JATKOVALMISTELU",
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": "2027-08-01",
    "vanhaEsittelyviikko": 37,
    "vanhaEsittelyvuosi": 2026
@@ -64911,7 +65079,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2024-10-01",
    "asiakirjat": [
@@ -64957,8 +65125,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 335/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -65307,7 +65477,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-02T11:20:09",
+   "muokattu": "2026-11-05T15:25:40",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi rakentamislain ja rakentamisen suunnittelu- tai työnjohtotehtävissä toimivien pätevyyden osoittamisesta annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av bygglagen och lagen om påvisande av kompetensen hos personer som utför projekterings- eller arbetsledningsuppgifter inom byggande",
    "pevLausunto": false,
@@ -66230,7 +66400,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": true,
    "asetettu": null,
    "asiakirjat": [
@@ -66251,8 +66421,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 322/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -66545,7 +66717,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T10:44:29",
+   "muokattu": "2026-11-05T15:17:24",
    "nimi": "Hallituksen esitys laiksi vähittäismyyntihintojen sääntelystä sähkön hintakriisin aikana",
    "nimiSv": "RP med förslag till lag om reglering av detaljhandelspriserna under elpriskrisen",
    "pevLausunto": true,
@@ -88593,7 +88765,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-05T07:09:10",
+   "muokattu": "2026-11-05T12:55:19",
    "nimi": "Hallituksen esitys yhdyskuntajätevesidirektiivin kansalliseksi täytäntöönpanoksi",
    "nimiSv": "Regeringens proposition om nationellt genomförande av direktivet om rening av avloppsvatten från tätbebyggelse",
    "pevLausunto": false,
@@ -88736,6 +88908,12 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/82b58ad6-df98-437f-955c-2759cd1280f6/b8d81845-c2af-40f1-ba37-35ede868920a/LAUSUNTOPYYNTO_20260604083543.PDF"
     },
     {
+     "d": "2026-08-13",
+     "n": "Asiantuntijaryhmän 15. kokous 20260813_Päätösmuistio",
+     "t": "MUISTIO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82b58ad6-df98-437f-955c-2759cd1280f6/b2750d2a-8ee3-4d77-8729-7cac5b164ae4/MUISTIO_20261105125423.PDF"
+    },
+    {
      "d": "2026-08-20",
      "n": "Seurantaryhmän 1. kokous 20250826_Päätösmuistio",
      "t": "MUISTIO",
@@ -88758,6 +88936,12 @@
      "n": "Seurantaryhmän 4. kokous 20260505_Päätösmuistio",
      "t": "MUISTIO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/82b58ad6-df98-437f-955c-2759cd1280f6/d6c2fd1f-59d1-4521-b1b9-38a39d33e328/MUISTIO_20260824071713.PDF"
+    },
+    {
+     "d": "2026-09-09",
+     "n": "Asiantuntijaryhmän 16. kokous 20260909_Päätösmuistio",
+     "t": "MUISTIO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/82b58ad6-df98-437f-955c-2759cd1280f6/45b69354-3c6b-44ea-a3dd-399f07baaa0e/MUISTIO_20261105125423.PDF"
     },
     {
      "d": "2026-10-01",
@@ -95283,7 +95467,7 @@
    "vanhaEsittelyvuosi": 2025
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-01-28",
    "asiakirjat": [
@@ -95318,8 +95502,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 328/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": true,
    "laji": "laki",
    "lausunnot": {
@@ -95803,7 +95989,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:47:38",
+   "muokattu": "2026-11-05T15:20:45",
    "nimi": "Alustatyödirektiivin kansallista täytäntöönpanoa valmisteleva työryhmä",
    "nimiSv": "Arbetsgrupp som bereder det nationella genomförandet av direktivet om plattformsarbete",
    "pevLausunto": false,
@@ -107099,7 +107285,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2025-01-09",
    "asiakirjat": [
@@ -107140,8 +107326,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 315/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -107364,7 +107552,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-03T11:02:04",
+   "muokattu": "2026-11-05T15:13:47",
    "nimi": "Hallituksen esitys eduskunnalle elintarvikelain, rehulain ja eläintautilain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av livsmedelslagen, foderlagen och lagen om djursjukdomar",
    "pevLausunto": false,
@@ -107633,7 +107821,7 @@
    "vanhaEsittelyvuosi": 2025
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2024-12-20",
    "asiakirjat": [
@@ -107677,8 +107865,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 314/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -107869,7 +108059,7 @@
    },
    "lisattyPaiva": "2026-04-01",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-01T09:22:28",
+   "muokattu": "2026-11-05T15:13:22",
    "nimi": "Hallituksen esitys yhteisen kalastuspolitiikan valvontaa koskevan lainsäädännön uudistamiseksi",
    "nimiSv": "RP med förslag till reform av lagstiftningen om tillsynen över den gemensamma fiskeripolitiken",
    "pevLausunto": false,
@@ -120680,12 +120870,6 @@
    "asetettu": null,
    "asiakirjat": [
     {
-     "nimi": "Lausuntoyhteenveto HE-luonnos YSL lupamärääysten tarkistamismenettelyn palauttamisesta",
-     "pvm": "2025-01-14",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/7030f239-871d-40d8-b86e-e9c393ebe668/692f22a9-6daf-4681-8b6b-c85b6179690e/YHTEENVETO_20250211123459.PDF"
-    },
-    {
      "nimi": "Lausuntopyyntö",
      "pvm": "2026-03-02",
      "tyyppi": "LAUSUNTOPYYNTO",
@@ -120714,6 +120898,12 @@
      "pvm": "2026-03-02",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/7030f239-871d-40d8-b86e-e9c393ebe668/39da827b-3d0a-495c-8371-b67e0337dd5d/LAUSUNTOPYYNTO_20260303072926.PDF"
+    },
+    {
+     "nimi": "Lausuntotiivistelmä 2. lausuntokierros 25.8.2026",
+     "pvm": "2026-11-05",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/7030f239-871d-40d8-b86e-e9c393ebe668/529e133b-3e78-4633-837a-a07be454386e/YHTEENVETO_20261105133655.PDF"
     }
    ],
    "asiasanat": [
@@ -120750,6 +120940,13 @@
      "end": "2024-12-16",
      "kind": "lausunto",
      "label": "Lausuntoyhteenveto",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-02-27",
+     "end": "2026-04-24",
+     "kind": "lausunto",
+     "label": "Lausuntotiivistelmä",
      "tyyppi": "LAUSUNTOKIERROS"
     },
     {
@@ -121250,7 +121447,7 @@
    },
    "lisattyPaiva": "2026-02-17",
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:19:43",
+   "muokattu": "2026-11-05T13:42:46",
    "nimi": "Ympäristönsuojelulain lupamääräysten tarkistamismenettelyn palauttaminen",
    "nimiSv": "Återställande av förfarandet för översyn av tillståndsvillkoren i miljöskyddslagen",
    "pevLausunto": false,
@@ -121331,6 +121528,12 @@
      "n": "Förslag till förordning",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/7030f239-871d-40d8-b86e-e9c393ebe668/39da827b-3d0a-495c-8371-b67e0337dd5d/LAUSUNTOPYYNTO_20260303072926.PDF"
+    },
+    {
+     "d": "2026-11-05",
+     "n": "Lausuntotiivistelmä 2. lausuntokierros 25.8.2026",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/7030f239-871d-40d8-b86e-e9c393ebe668/529e133b-3e78-4633-837a-a07be454386e/YHTEENVETO_20261105133655.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -121678,7 +121881,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -121717,8 +121920,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 323/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -122163,7 +122368,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T11:20:01",
+   "muokattu": "2026-11-05T15:17:56",
    "nimi": "Yritysvastuudirektiivin kansallinen täytäntöönpano",
    "nimiSv": "Nationellt genomförande av direktivet om företagsansvar",
    "pevLausunto": true,
@@ -142018,7 +142223,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2024-03-01",
    "asiakirjat": [
@@ -142055,8 +142260,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 333/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -142865,7 +143072,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T11:18:09",
+   "muokattu": "2026-11-05T15:24:30",
    "nimi": "Käytöstä poistettujen maatuulivoimaloiden purku- ja ennallistamisvelvoitteiden lainsäädäntöhanke",
    "nimiSv": "Lagstiftningsprojekt om en nedmonterings- och efterbehandlingsplikt gällande landbaserade vindkraftverk som tagits ur drift",
    "pevLausunto": false,
@@ -149035,7 +149242,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2024-02-27",
    "asiakirjat": [
@@ -149061,8 +149268,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 292/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -149133,7 +149342,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-11-05T10:49:25",
+   "muokattu": "2026-11-05T15:01:44",
    "nimi": "Passi- ja henkilökorttilainsäädännön muutostarpeet ulkoasiainhallinnossa",
    "nimiSv": "Behov av ändringar i pass- och identitetskortslagstiftningen inom utrikesförvaltningen",
    "pevLausunto": false,
@@ -157827,7 +158036,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": true,
    "asetettu": "2024-01-02",
    "asiakirjat": [],
@@ -157855,8 +158064,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 291/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -157998,7 +158209,7 @@
    },
    "lisattyPaiva": "2026-05-07",
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-10-30T13:42:57",
+   "muokattu": "2026-11-05T15:01:19",
    "nimi": "Hallituksen esitys eduskunnalle laiksi kehittyviin maihin myönnettävistä tuetuista investointiluotoista",
    "nimiSv": "RP till lag om ändring av lagen om räntestödkrediter till utvecklingsländer",
    "pevLausunto": false,
@@ -176949,7 +177160,7 @@
    "vanhaEsittelyvuosi": 2025
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -176988,8 +177199,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 310/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -177027,7 +177240,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T12:23:09",
+   "muokattu": "2026-11-05T15:11:32",
    "nimi": "Hallituksen esitys eduskunnalle keskinäisestä avunannosta ja yhteistyöstä tulliasioissa Moldovan tasavallan kanssa tehdyn sopimuksen hyväksymiseksi ja voimaansaattamiseksi",
    "nimiSv": "Regeringens proposition till riksdagen om godkännande och sättande i kraft av överenskommelsen med Republiken Moldavien om ömsesidigt bistånd och samarbete i tullfrågor",
    "pevLausunto": false,
@@ -177110,7 +177323,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -177155,8 +177368,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 308/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -177355,7 +177570,7 @@
    },
    "lisattyPaiva": "2026-04-02",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:44:39",
+   "muokattu": "2026-11-05T15:10:37",
    "nimi": "Hallituksen esitys eduskunnalle laiksi arvonlisäverolain muuttamisesta (kiinteistöinvestointien tarkistusmenettely)",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av mervärdesskattelagen (justeringsförfarande för fastighetsinvesteringar)",
    "pevLausunto": false,
@@ -188415,7 +188630,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -188476,8 +188691,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 294/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -191568,7 +191785,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-03T08:51:25",
+   "muokattu": "2026-11-05T15:02:44",
    "nimi": "Valmiuslain kokonaisuudistus",
    "nimiSv": "Reformen av beredskapslagen",
    "pevLausunto": true,
@@ -191735,7 +191952,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/9a8ae543-89b2-4f04-bcf8-6e1685260cf5/2cbdc53c-575c-4f76-9c91-a8733cc50ed5/YHTEENVETO_20260922085143.PDF"
     }
    ],
-   "valmisteluvaihe": "JATKOVALMISTELU",
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 40,
    "vanhaEsittelyvuosi": 2026
@@ -214320,7 +214537,7 @@
    "vanhaEsittelyvuosi": 2021
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-05",
    "arviointineuvosto": false,
    "asetettu": "2019-09-05",
    "asiakirjat": [
@@ -214367,8 +214584,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 320/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -214454,7 +214673,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-03T10:47:19",
+   "muokattu": "2026-11-05T15:16:02",
    "nimi": "Hallituksen esitys laiksi Etelä-Korean kanssa solmitun työlomasopimuksen voimaansaattamisesta",
    "nimiSv": "Regeringens proposition om att utfärdä ett avtal om arbetssemester med Korea",
    "pevLausunto": false,
@@ -225375,7 +225594,7 @@
    },
    "lisattyPaiva": "2026-04-20",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-02T08:30:55",
+   "muokattu": "2026-11-05T13:18:47",
    "nimi": "Hallituksen esitys eduskunnalle laiksi yleistukilain voimaantulosäännöksen muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av ikraftträdandebestämmelsen i lagen om allmänt stöd",
    "pevLausunto": false,
@@ -225411,7 +225630,7 @@
     }
    ],
    "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-12-31",
+   "valmistumisPaiva": "2026-11-02",
    "vanhaEsittelyviikko": 25,
    "vanhaEsittelyvuosi": 2026
   },
@@ -487714,6 +487933,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-05",
+      "id": "74b96484-37cb-4c50-8457-92a9efbbf7b1",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/74b96484-37cb-4c50-8457-92a9efbbf7b1/LAUSUNTO_20261105132548.pdf"
+     },
+     {
       "date": "2026-11-04",
       "id": "1cd2fc36-97cb-4429-a10a-2d4a254d6e82",
       "org": "Satakunnan Kennelpiiri ry",
@@ -487756,11 +487982,25 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/9d418dfe-98fa-4a73-933d-fc4664dc09d4/LAUSUNTO_20261104103940.PDF"
      },
      {
+      "date": "2026-11-02",
+      "id": "bd312e3e-bdd2-42b9-a0e2-cf6a8f6b1635",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/bd312e3e-bdd2-42b9-a0e2-cf6a8f6b1635/LAUSUNTO_20261105131315.pdf"
+     },
+     {
       "date": "2026-10-28",
       "id": "e2fa7eab-708b-467d-8445-be13e46ff4c9",
       "org": "Valtakunnallinen riistaneuvosto",
       "title": "Valtakunnallinen riistaneuvosto; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/e2fa7eab-708b-467d-8445-be13e46ff4c9/LAUSUNTO_20261102141433.PDF"
+     },
+     {
+      "date": "2026-10-28",
+      "id": "aeb41b22-5042-4f41-b765-29151d6b1602",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/aeb41b22-5042-4f41-b765-29151d6b1602/LAUSUNTO_20261105130624.pdf"
      },
      {
       "date": "2026-10-27",
@@ -487827,8 +488067,9 @@
      }
     ],
     "eiLausuttavaa": 3,
-    "n": 16,
+    "n": 19,
     "orgs": [
+     "Yksityishenkilö",
      "Valtakunnallinen riistaneuvosto",
      "Avenir Loup Lynx Jura",
      "Idän Taiga ry",
@@ -487846,11 +488087,11 @@
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-04"
+    "viimeisin": "2026-11-05"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-05T09:37:25",
+   "muokattu": "2026-11-05T13:25:48",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -488554,7 +488795,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-05T07:05:34",
+   "muokattu": "2026-11-05T12:06:57",
    "nimi": "Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 5 § i och bilaga 5 till statsrådets förordning om viltskador",
    "pevLausunto": false,
@@ -586439,6 +586680,54 @@
    "tunnus": "VM151:00/2023",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=VM151:00/2023",
    "uuid": "b650e2fe-5859-4574-ae66-8dffe5976de3",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2023-12-14",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": "2023-11-13",
+   "asiakirjat": [],
+   "asiasanat": [
+    "asetukset"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2023-12-14",
+     "end": null,
+     "kind": "muu",
+     "label": "Valtioneuvoston asetus annettu (1111/2023)",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "oikeusministeriö",
+   "muokattu": "2026-11-05T13:47:48",
+   "nimi": "Valtioneuvoston asetus eräiden rikosvahinkolaissa säädettyjen rahamäärien tarkistamisesta",
+   "nimiSv": "Statsrådets förordning om justering av vissa penningbelopp enligt brottsskadelagen",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "1111/2023"
+   ],
+   "teemat": [],
+   "tiivistelma": "",
+   "tila": "PAATTYNYT",
+   "tunnus": "OM178:00/2023",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM178:00/2023",
+   "uuid": "69d7e0fa-f839-4cdc-b245-808ac53b00da",
    "valmistelu": [],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2023-12-14",

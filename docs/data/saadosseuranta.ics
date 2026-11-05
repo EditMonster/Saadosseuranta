@@ -9,8 +9,8 @@ UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
 DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
-SUMMARY:[FI] Lausuntoaika päättyy: HE laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
-DESCRIPTION:Lausuntokierros · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
+DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
 END:VEVENT
 BEGIN:VEVENT
@@ -32,13 +32,13 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 241/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-8f57ddac-lausunto-2026-11-04@saadosseuranta
+UID:fi-he-302-2026-lausunto-2026-11-04@saadosseuranta
 DTSTAMP:20261104T000000Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi kuntalain 137 §:n muuttamisesta
-DESCRIPTION:Lausuntoyhteenveto · VM108:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM108:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM108:00/2026
+DESCRIPTION:Lausuntoyhteenveto · HE 302/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/302
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/302
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-229-2026-voimaan-2027-01-01@saadosseuranta
@@ -435,6 +435,15 @@ DTEND;VALUE=DATE:20261124
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi arvonlisäverolain muuttamisesta  (Digiajan alv osa 2)
 DESCRIPTION:Lausuntokierros · VM164:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025
 URL:https://valtioneuvosto.fi/hanke?tunnus=VM164:00/2025
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-hanke-c7da6698-lausunto-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta
+DESCRIPTION:Lausuntopyyntö · VM160:00/2025 · https://valtioneuvosto.fi/hanke?tunnus=VM160:00/2025
+URL:https://valtioneuvosto.fi/hanke?tunnus=VM160:00/2025
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-232-2026-voimaan-2027-06-01@saadosseuranta
@@ -2541,6 +2550,15 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
+DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14549-lausunto-2026-11-03@saadosseuranta

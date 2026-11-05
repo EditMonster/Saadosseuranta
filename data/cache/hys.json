@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-05T10:55:21",
+ "fetched": "2026-11-05T16:11:54",
  "items": [
   {
    "actType": "PROP_REG",
@@ -184,7 +184,7 @@
    "reference": "Ares(2026)10142916",
    "status": "ACTIVE",
    "title_en": "Amending Regulatory technical standards on certain margin requirements applicable to non-centrally cleared transactions",
-   "title_fi": null,
+   "title_fi": "Tekniset sääntelystandardit muuten kuin keskitetysti selvitettävien transaktioiden vakuusvaatimuksista (muutos)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680_en"
   },
   {
@@ -1052,6 +1052,42 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
   },
   {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 18658,
+   "periods": [
+    {
+     "end": "2026-09-30",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-07-01"
+    }
+   ],
+   "reference": "Ares(2026)6556383",
+   "status": "ACTIVE",
+   "title_en": "Housing simplification package",
+   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 18833,
+   "periods": [
+    {
+     "end": "2026-11-04",
+     "open": false,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-09-09"
+    }
+   ],
+   "reference": "Ares(2026)7135338",
+   "status": "ACTIVE",
+   "title_en": "VAT and circular economy",
+   "title_fi": "Alv ja kiertotalous",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en"
+  },
+  {
    "actType": "PROP_DEC",
    "actTypeLabel": "Päätösehdotus",
    "id": 18804,
@@ -1086,24 +1122,6 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
-  },
-  {
-   "actType": "PROP_RECO",
-   "actTypeLabel": "PROP_RECO",
-   "id": 18874,
-   "periods": [
-    {
-     "end": "2026-09-08",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-30"
-    }
-   ],
-   "reference": "Ares(2026)7243599",
-   "status": "ACTIVE",
-   "title_en": "Strengthening basic skills and improving performance in school education",
-   "title_fi": "Kouluopetus – perustaitojen vahvistaminen ja tulosten parantaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18874_en"
   },
   {
    "actType": "PROP_REG",
@@ -1790,24 +1808,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18897_en"
   },
   {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 18873,
-   "periods": [
-    {
-     "end": "2026-09-08",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-30"
-    }
-   ],
-   "reference": "Ares(2026)7243530",
-   "status": "ACTIVE",
-   "title_en": "Quality Education for All: A 2040 Roadmap",
-   "title_fi": "Laadukasta koulutusta kaikille: vuoteen 2040 ulottuva etenemissuunnitelma",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18873_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14709,
@@ -1842,30 +1842,6 @@
    "title_en": "Ex-post evaluation of exceptional MFA to Ukraine (2024-2025)",
    "title_fi": "EU:n rahoitustuki Ukrainalle 2024–2025 (makrotaloudellinen rahoitusapu) – arviointi",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18955_en"
-  },
-  {
-   "actType": "PROP_RECO",
-   "actTypeLabel": "PROP_RECO",
-   "id": 18872,
-   "periods": [
-    {
-     "end": "2026-09-08",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-30"
-    },
-    {
-     "end": "2026-09-04",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-07"
-    }
-   ],
-   "reference": "Ares(2026)7243475",
-   "status": "ACTIVE",
-   "title_en": "EU Teachers Agenda: Enhancing the attractiveness of the education and training profession",
-   "title_fi": "Opettajien EU-toimintaohjelma – opettajien ja kouluttajien ammatin houkuttelevuuden lisääminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18872_en"
   },
   {
    "actType": "REG_DEL",
