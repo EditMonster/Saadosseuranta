@@ -479,7 +479,7 @@
   },
   "M.12270": {
    "caseNumber": "M.12270",
-   "deadline": "2026-12-09",
+   "deadline": "2027-01-08",
    "decisions": [
     {
      "date": "2026-04-28",
@@ -540,14 +540,19 @@
    "simplified": "MEnormal",
    "timeline": [
     {
-     "date": "2026-05-26",
-     "description": "Deadline suspended under Article 11(3) [date may differ from the Article 11(3) decision date] from 26/05/2026",
-     "type": "MEvent59"
-    },
-    {
      "date": "2026-07-28",
      "description": "Changed deadline - suspension under Article 11(3) ended on 28/07/2026",
      "type": "MEvent60"
+    },
+    {
+     "date": "2026-11-04",
+     "description": "Changed deadline - Commitments submitted in N/2 on 04/11/2026",
+     "type": "MEvent4"
+    },
+    {
+     "date": "2026-05-26",
+     "description": "Deadline suspended under Article 11(3) [date may differ from the Article 11(3) decision date] from 26/05/2026",
+     "type": "MEvent59"
     },
     {
      "date": "2026-10-05",
@@ -5172,6 +5177,28 @@
    "timeline": [],
    "title": "VINCI ENERGIES / ALL FOR ONE GROUP"
   },
+  "M.12572": {
+   "caseNumber": "M.12572",
+   "deadline": "2026-12-09",
+   "decisions": [
+    {
+     "date": "2026-09-21",
+     "type": "DecisionType201316"
+    }
+   ],
+   "initiated": "2026-07-20",
+   "lastDecision": "2026-09-21",
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-04",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_28.29",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "CVC / CLEVERTECH"
+  },
   "M.12574": {
    "caseNumber": "M.12574",
    "deadline": "2026-11-11",
@@ -7624,5 +7651,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-05T07:29:15Z"
+ "fetched": "2026-11-05T10:57:14Z"
 }

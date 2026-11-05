@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-05T07:18:17",
+ "fetched": "2026-11-05T10:52:42",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -9511,6 +9511,12 @@
      "pvm": "2026-08-21",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/33136a1c-75bb-466d-b22d-7f913136d2d1/40c3c1a1-7296-4e43-b20c-50affb010fae/LAUSUNTOPYYNTO_20260821101744.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto",
+     "pvm": "2026-11-04",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/33136a1c-75bb-466d-b22d-7f913136d2d1/03129d35-8b15-4e4f-800e-9eb3a92a906d/YHTEENVETO_20261105074127.PDF"
     }
    ],
    "asiasanat": [
@@ -9716,7 +9722,7 @@
    },
    "lisattyPaiva": "2026-05-06",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-29T08:42:56",
+   "muokattu": "2026-11-05T07:45:22",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi verotusmenettelystä annetun lain ja eräiden muiden lakien muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av lagen om beskattningsförfarande och vissa andra lagar",
    "pevLausunto": false,
@@ -9756,6 +9762,12 @@
      "n": "Utkast till propositionens huvudsakliga innehåll och lagförslag",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/33136a1c-75bb-466d-b22d-7f913136d2d1/40c3c1a1-7296-4e43-b20c-50affb010fae/LAUSUNTOPYYNTO_20260821101744.PDF"
+    },
+    {
+     "d": "2026-11-04",
+     "n": "Lausuntoyhteenveto",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/33136a1c-75bb-466d-b22d-7f913136d2d1/03129d35-8b15-4e4f-800e-9eb3a92a906d/YHTEENVETO_20261105074127.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -16855,7 +16867,7 @@
     }
    ],
    "asiasanat": [],
-   "esittelyviikko": 45,
+   "esittelyviikko": 46,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -16994,7 +17006,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-03T07:57:41",
+   "muokattu": "2026-11-05T08:12:11",
    "nimi": "Hallituksen esitys eduskunnalle laiksi Suomen perustuslain 25 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till ändring av 25 § i Finlands grundlag",
    "pevLausunto": true,
@@ -22981,6 +22993,12 @@
      "pvm": "2026-09-01",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/c5bd538b-c721-4f06-8c3b-14fba93e196f/079a949a-94bd-4df1-8c06-9eb194d6b0fb/LAUSUNTOPYYNTO_20260901054317.PDF"
+    },
+    {
+     "nimi": "Lausuntotiivistelmä",
+     "pvm": "2026-11-04",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/c5bd538b-c721-4f06-8c3b-14fba93e196f/e6c0cda7-30ff-4067-8936-fa9d32f5aa7c/YHTEENVETO_20261105083344.PDF"
     }
    ],
    "asiasanat": [
@@ -23230,7 +23248,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-03T08:37:55",
+   "muokattu": "2026-11-05T08:33:44",
    "nimi": "Lainsäädäntöhanke perheenjäsenten tulorajoja, oma-aloitteista tiedon luovuttamista ja Maahanmuuttoviraston antamaa maksukorttia koskevan sääntelyn muuttamisesta",
    "nimiSv": "Lagstiftningsprojekt ändring av regleringen av familjemedlemmarnas inkomstgränser, utlämnande av information på eget initiativ och betalkort utfärdade av Migrationsverket",
    "pevLausunto": false,
@@ -23269,6 +23287,12 @@
      "n": "Utkast till propositionens huvudsakliga innehåll och lagförslag",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/c5bd538b-c721-4f06-8c3b-14fba93e196f/079a949a-94bd-4df1-8c06-9eb194d6b0fb/LAUSUNTOPYYNTO_20260901054317.PDF"
+    },
+    {
+     "d": "2026-11-04",
+     "n": "Lausuntotiivistelmä",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c5bd538b-c721-4f06-8c3b-14fba93e196f/e6c0cda7-30ff-4067-8936-fa9d32f5aa7c/YHTEENVETO_20261105083344.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -31802,7 +31826,7 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
-   "asetettu": null,
+   "asetettu": "2025-09-09",
    "asiakirjat": [],
    "asiasanat": [
     "konsuliasiat"
@@ -31818,7 +31842,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-08-12T13:20:07",
+   "muokattu": "2026-11-05T09:01:46",
    "nimi": "Hallituksen esitys konsulipalvelulain muuttamiseksi",
    "nimiSv": "Regeringens proposition med förslag till lag om ändring av lagen om konsulära tjänster",
    "pevLausunto": false,
@@ -31828,7 +31852,7 @@
    "teemat": [
     "Matkustaminen"
    ],
-   "tiivistelma": "Hankkeessa tarkastellaan edustustojen antamia konsulipalveluja julkisen vallan käytön näkökulmasta ja toteutetaan tarvittavat muutokset konsulipalvelulakiin.",
+   "tiivistelma": "Hankkeessa tarkastellaan edustustojen antamia konsulipalveluja julkisen vallan käytön näkökulmasta ja toteutetaan tarvittavat muutokset lainsäädäntöön. Lisäksi tässä hankkeessa arvioidaan force majeure -sääntely tarvetta konsulipalvelulakiin sellaisten tilanteiden huomioimiseksi, joissa joudutaan supistamaan toimintaa edustustoissa.",
    "tila": "KAYNNISSA",
    "tunnus": "UM008:00/2025",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=UM008:00/2025",
@@ -45709,7 +45733,7 @@
    },
    "lisattyPaiva": "2026-01-27",
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-05T06:47:15",
+   "muokattu": "2026-11-05T08:10:35",
    "nimi": "Hallituksen esitys eduskunnalle varhaiskasvatuksen, esi- ja perusopetuksen sekä vapaan sivistystyön järjestämisestä häiriötilanteissa koskevaksi lainsäädännöksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om anordnande av småbarnspedagogik, förskoleundervisning, grundläggande utbildning och fritt bildningsarbete i störningssituationer",
    "pevLausunto": false,
@@ -47004,7 +47028,7 @@
     "verotus",
     "arvonlisäverolaki"
    ],
-   "esittelyviikko": 45,
+   "esittelyviikko": 51,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -47144,7 +47168,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-02T06:47:56",
+   "muokattu": "2026-11-05T08:16:51",
    "nimi": "Hallituksen esitys eduskunnalle laiksi arvonlisäverolain muuttamisesta  (Digiajan alv osa 2)",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av mervärdesskattelagen (Mervärdesskatt i den digitala tidsåldern del 2)",
    "pevLausunto": false,
@@ -47881,7 +47905,7 @@
     "arvonlisävero",
     "etämyynti"
    ],
-   "esittelyviikko": 45,
+   "esittelyviikko": 50,
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
@@ -47892,7 +47916,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-03T09:49:13",
+   "muokattu": "2026-11-05T08:17:38",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och lagen om undantag för landskapet Åland från mervärdesskatte- och accislagstiftningen",
    "pevLausunto": false,
@@ -149109,7 +149133,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ulkoministeriö",
-   "muokattu": "2026-11-03T12:11:18",
+   "muokattu": "2026-11-05T10:49:25",
    "nimi": "Passi- ja henkilökorttilainsäädännön muutostarpeet ulkoasiainhallinnossa",
    "nimiSv": "Behov av ändringar i pass- och identitetskortslagstiftningen inom utrikesförvaltningen",
    "pevLausunto": false,
@@ -486595,6 +486619,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-05",
+      "id": "e2cbd4f5-d930-4b21-a236-4d08a35b102a",
+      "none": true,
+      "org": "Kilpailu- ja kuluttajavirasto KKV",
+      "title": "Kilpailu- ja kuluttajavirasto KKV; ei lausuttavaa"
+     },
+     {
+      "date": "2026-11-04",
+      "id": "6ef489c5-ce12-42b6-bd7d-7c1eec0be8e8",
+      "none": true,
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Opetus- ja kulttuuriministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-10-27",
       "id": "7d7746ab-eb30-4edd-930e-b7511ba98a2b",
       "none": true,
@@ -486602,17 +486640,19 @@
       "title": "Sosiaali- ja terveysministeriö; ei lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 1,
-    "n": 1,
+    "eiLausuttavaa": 3,
+    "n": 3,
     "orgs": [
+     "Kilpailu- ja kuluttajavirasto KKV",
+     "Opetus- ja kulttuuriministeriö",
      "Sosiaali- ja terveysministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5e5526f8-1550-4433-aa6c-1036af0bffe1&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-10-27"
+    "viimeisin": "2026-11-05"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-27T08:27:53",
+   "muokattu": "2026-11-05T10:16:18",
    "nimi": "Liikenne- ja viestintäministeriön asetukset Liikenne- ja viestintävirasto Traficomin maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordningar om Transport- och kommunikationsverket Traficoms avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -487810,7 +487850,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-05T06:40:42",
+   "muokattu": "2026-11-05T09:37:25",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -490278,7 +490318,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-09-21T07:48:58",
+   "muokattu": "2026-11-05T10:09:52",
    "nimi": "Valtioneuvoston asetus ilmailulta rajoitetuista alueista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om områden där luftfart är inskränkt",
    "pevLausunto": false,
@@ -490649,6 +490689,12 @@
      "pvm": "2026-09-18",
      "tyyppi": "LAUSUNTOPYYNTO",
      "url": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/fdf8f7c6-f6b5-4254-b393-c883d34c7dbd/LAUSUNTOPYYNTO_20260918055303.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto ETBS",
+     "pvm": "2026-10-30",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/fb3cf52f-e32a-4f39-8fa2-93d8cd75bdfd/YHTEENVETO_20261105082615.PDF"
     }
    ],
    "asiasanat": [],
@@ -490744,7 +490790,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-02T13:08:55",
+   "muokattu": "2026-11-05T08:27:01",
    "nimi": "Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om fordon",
    "pevLausunto": false,
@@ -490787,6 +490833,12 @@
      "n": "Begäran om utlåtande",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/fdf8f7c6-f6b5-4254-b393-c883d34c7dbd/LAUSUNTOPYYNTO_20260918055303.PDF"
+    },
+    {
+     "d": "2026-10-30",
+     "n": "Lausuntoyhteenveto ETBS",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/a0cdecbd-087c-45d4-8ca9-fd0c0ee43ee9/fb3cf52f-e32a-4f39-8fa2-93d8cd75bdfd/YHTEENVETO_20261105082615.PDF"
     }
    ],
    "valmisteluvaihe": "JATKOVALMISTELU",

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-05T07:24:50",
+ "fetched": "2026-11-05T10:53:39",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -57176,7 +57176,6 @@
     },
     {
      "date": "2026-11-04",
-     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     }
    ],
@@ -63193,6 +63192,10 @@
     },
     {
      "date": "2026-11-03",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-04",
      "type": "DELIB_WP_byCONSIL"
     }
    ],

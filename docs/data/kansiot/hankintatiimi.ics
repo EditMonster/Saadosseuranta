@@ -68,6 +68,15 @@ DESCRIPTION:Tarjoukset viimeistään · Ministry of Transport · https://ted.eur
 URL:https://ted.europa.eu/fi/notice/-/detail/770530-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61290-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Varhaiskasvatuksen suunnitelmaprosessin hallintaratkaisu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061290 · https://www.hankintailmoitukset.fi/fi/public/procedure/39751/enotice/61290
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39751/enotice/61290
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-769370-2026-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
@@ -903,15 +912,6 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[Hankinta] Määräaika: MOKINIŲ GEBĖJIMŲ ATPAŽINIMO PROGRAMINĖS ĮRANGOS SUKŪRIMO IR GARANTINĖS PRIEŽIŪROS PASLAUGOS (Atviras konkursas)
 DESCRIPTION:Tarjoukset viimeistään · Nacionalinė švietimo agentūra · https://ted.europa.eu/fi/notice/-/detail/762890-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/762890-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-758028-2026-maaraaika-2026-11-05-hankintatiimi@saadosseuranta
-DTSTAMP:20261105T000000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:[Hankinta] Määräaika: RITS ir SMPS elektroninio dokumentų pasirašymo programavimo paslaugos (21330)
-DESCRIPTION:Tarjoukset viimeistään · Viešoji įstaiga CPO LT · https://ted.europa.eu/fi/notice/-/detail/758028-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/758028-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-757506-2026-maaraaika-2026-11-12-hankintatiimi@saadosseuranta
