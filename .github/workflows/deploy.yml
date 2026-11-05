@@ -85,13 +85,13 @@ jobs:
       # GitHub Pages jää joskus jumiin tilaan "updating_pages" (4.11.2026: 10 min, julkaisu keskeytyi):
       # ensimmäinen yritys enintään 8 min, epäonnistuessa toinen yritys
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         if: steps.pages.outputs.type == 'workflow'
         continue-on-error: true
         with:
           timeout: 480000
       - id: deployment2
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         if: steps.pages.outputs.type == 'workflow' && steps.deployment.outcome == 'failure'
         with:
           timeout: 600000
