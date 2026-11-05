@@ -76,7 +76,7 @@ jobs:
         if: steps.pages.outputs.type != 'workflow'
         run: |
           echo "::notice title=Pages julkaistaan suoraan main-haarasta::Testit ajettiin, mutta ne eivät vielä portita julkaisua. Vaihda Settings → Pages → Source: GitHub Actions, niin sivu julkaistaan vasta testien mentyä läpi."
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
         if: steps.pages.outputs.type == 'workflow'
       - uses: actions/upload-pages-artifact@v4
         if: steps.pages.outputs.type == 'workflow'
