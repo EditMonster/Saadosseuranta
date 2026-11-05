@@ -56,10 +56,10 @@ jobs:
     if: github.event_name != 'pull_request'
     needs: test
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 25
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -82,6 +82,16 @@ jobs:
         if: steps.pages.outputs.type == 'workflow'
         with:
           path: docs
+      # GitHub Pages jää joskus jumiin tilaan "updating_pages" (4.11.2026: 10 min, julkaisu keskeytyi):
+      # ensimmäinen yritys enintään 8 min, epäonnistuessa toinen yritys
       - id: deployment
         uses: actions/deploy-pages@v4
         if: steps.pages.outputs.type == 'workflow'
+        continue-on-error: true
+        with:
+          timeout: 480000
+      - id: deployment2
+        uses: actions/deploy-pages@v4
+        if: steps.pages.outputs.type == 'workflow' && steps.deployment.outcome == 'failure'
+        with:
+          timeout: 600000

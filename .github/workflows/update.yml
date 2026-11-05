@@ -5,10 +5,12 @@ name: Päivitä säädösaineisto
 #     jos GitHub pudottaa tai viivästää herätyksen, väliin jäänyt ajo tehdään seuraavalla tunnilla
 #   * epäonnistuneiden lähteiden uusintayritys tunnin välein klo 7–22 (esim. lähteen huoltokatko)
 #   * muuten herätys päättyy ~15 sekunnissa.
-# Minuutti 11 välttää tasatuntien ruuhkan, jolloin GitHub pudottaa ajastuksia useimmin.
+# Minuutit 11 ja 41 välttävät tasatuntien ruuhkan. GitHub pudottaa ajastettuja herätyksiä kuormitettuna
+# (11/2026 vain noin joka 4. tunti), joten herätyksiä on kaksi tunnissa: ylimääräinen päättyy 15 sekunnissa.
 on:
   schedule:
     - cron: "11 * * * *"
+    - cron: "41 * * * *"
   workflow_dispatch:
     inputs:
       vaiheet:

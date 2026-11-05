@@ -13,6 +13,9 @@ from __future__ import annotations
 import datetime as dt
 import sys
 import traceback
+import time
+import threading
+import os
 
 import build
 import fetch_asiat
@@ -99,32 +102,78 @@ def is_outage(e: BaseException) -> bool:
     return False
 
 
+FETCH_BUDGET_S = int(os.environ.get("FETCH_BUDGET_S", 32 * 60))  # all source fetches together; the job has 55 min
+STEP_MAX_S = int(os.environ.get("STEP_MAX_S", 12 * 60))          # one source at most
+JOB_BUDGET_S = int(os.environ.get("JOB_BUDGET_S", 50 * 60))      # fetch + build + translate; the rest is saving
+
+
+def _run_step(fn, limit: float):
+    """Run one source in a thread; returns (finished, error). A source that does not finish within `limit` is
+    left behind (daemon thread, ends with the process) and the run carries on with its cached data."""
+    box: dict = {}
+
+    def target():
+        try:
+            fn()
+        except BaseException as e:  # noqa: BLE001
+            box["e"] = e
+            box["tb"] = traceback.format_exc()
+
+    th = threading.Thread(target=target, daemon=True)
+    th.start()
+    th.join(max(1.0, limit))
+    if th.is_alive():
+        return False, None
+    return True, box
+
+
 def main(only: list[str] | None = None) -> int:
+    t0 = time.time()
     health = load_json(HEALTH, {})
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    failures = []
-    for name, fn in STEPS:
+    failures, skipped = [], []
+    # sources left out of the previous run (time ran out) go first this time
+    steps = sorted(STEPS, key=lambda s: 0 if (health.get(s[0]) or {}).get("skipped") else 1)
+    for name, fn in steps:
         if only and name not in only:
             continue
         h = health.setdefault(name, {"streak": 0})
-        try:
-            fn()
-            h.update({"ok": True, "streak": 0, "last_ok": now, "last_error": None, "outage": False})
-        except Exception as e:  # noqa: BLE001
+        left = FETCH_BUDGET_S - (time.time() - t0)
+        if left < 30 and not only:
+            skipped.append(name)
+            h["skipped"] = True
+            continue
+        finished, box = _run_step(fn, min(STEP_MAX_S, left) if not only else STEP_MAX_S * 3)
+        if not finished:
             failures.append(name)
-            tb = traceback.format_exc()
+            h.update({"ok": False, "streak": int(h.get("streak", 0)) + 1, "last_fail": now, "outage": True,
+                      "last_error": f"aikaraja ylittyi ({int(min(STEP_MAX_S, left))} s) – edellinen aineisto käytössä"})
+            h["skipped"] = True
+            log(f"warn: {name} ei valmistunut aikarajassa – jatketaan välimuistin aineistolla, haetaan ensimmäisenä seuraavalla ajolla")
+            continue
+        h.pop("skipped", None)
+        if "e" not in box:
+            h.update({"ok": True, "streak": 0, "last_ok": now, "last_error": None, "outage": False})
+        else:
+            e, tb = box["e"], box["tb"]
+            failures.append(name)
             h.update({"ok": False, "streak": int(h.get("streak", 0)) + 1, "last_fail": now,
                       "last_error": (tb.strip().splitlines() or ["?"])[-1][:300], "outage": is_outage(e)})
             log(f"ERROR in {name} (peräkkäisiä epäonnistumisia {h['streak']}):\n{tb}")
+    if skipped:
+        log(f"aikabudjetti täynnä: ohitettiin {skipped} – ne haetaan ensimmäisinä seuraavalla ajolla")
     save_json(HEALTH, health)
     build.main()
     try:  # titles and summaries in every page language (open models, cached); never blocks the data update
         import translate
-        translate.main()
+        left = JOB_BUDGET_S - (time.time() - t0)
+        budget = min(float(os.environ.get("TRANSLATE_BUDGET_S", "480")), max(0.0, left))
+        translate.main(budget)
     except Exception:  # noqa: BLE001
         log(f"translate epäonnistui (sivu näyttää alkuperäiset tekstit):\n{traceback.format_exc()}")
     if failures:
         log(f"valmis, mutta epäonnistuneet vaiheet: {failures} (vanha välimuisti käytössä)")
+    log(f"ajo valmis {int(time.time() - t0)} s")
     return 0
 
 

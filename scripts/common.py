@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import threading
 import os
 import re
 import time
@@ -293,7 +294,10 @@ def save_json(path: Path, data, *, compact: bool = False):
         txt = json.dumps(data, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
     else:
         txt = json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True)
-    path.write_text(txt + "\n", encoding="utf-8")
+    # atomic: a source left running past its time limit (update.py) can never leave a half-written file behind
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.{threading.get_ident()}.tmp")
+    tmp.write_text(txt + "\n", encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def load_yaml(path: Path):

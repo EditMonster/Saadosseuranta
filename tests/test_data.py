@@ -620,3 +620,25 @@ def test_transition_rules_and_stakeholders_are_well_formed():
         assert s["orgs"] and s["ids"] and "Yksityishenkilö" not in s["alias"]
         for k, o in list(s["orgs"].items())[:200]:
             assert o["n"] and o["c"] == len(o["p"]) and all(0 <= p[0] < len(s["ids"]) for p in o["p"])
+
+
+def test_run_continues_past_a_hanging_source(monkeypatch, tmp_path):
+    import time as _t
+    import update
+    calls = []
+    monkeypatch.setattr(update, "STEPS", [("slow", lambda: _t.sleep(5)), ("fast", lambda: calls.append("fast"))])
+    monkeypatch.setattr(update, "STEP_MAX_S", 1)
+    monkeypatch.setattr(update, "HEALTH", tmp_path / "health.json")
+    monkeypatch.setattr(update.build, "main", lambda: calls.append("build"))
+    import translate
+    monkeypatch.setattr(translate, "main", lambda budget=None: calls.append("translate"))
+    t0 = _t.time()
+    update.main()
+    assert calls == ["fast", "build", "translate"] and _t.time() - t0 < 4
+    h = json.loads((tmp_path / "health.json").read_text())
+    assert h["slow"]["skipped"] and not h["slow"]["ok"] and h["fast"]["ok"]
+    # next run: the skipped source goes first
+    order = []
+    monkeypatch.setattr(update, "STEPS", [("fast", lambda: order.append("fast")), ("slow", lambda: order.append("slow"))])
+    update.main()
+    assert order == ["slow", "fast"]
