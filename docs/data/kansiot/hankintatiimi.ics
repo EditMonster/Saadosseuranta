@@ -32,6 +32,15 @@ DESCRIPTION:Osallistumishakemukset viimeistään · 2026-060573 · https://www.h
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39310/enotice/60573
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61445-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Vartiointipalvelujen hankinta Imatralla 2027
+DESCRIPTION:Tarjoukset viimeistään · 2026-061445 · https://www.hankintailmoitukset.fi/fi/public/procedure/39846/enotice/61445
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39846/enotice/61445
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-61228-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
@@ -66,6 +75,15 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[Hankinta] Määräaika: HANKINTAILMOITUS: UPS ja superkondensaattori
 DESCRIPTION:Tarjoukset viimeistään · 2026-061233 · https://www.hankintailmoitukset.fi/fi/public/procedure/38993/enotice/61233
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/38993/enotice/61233
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61460-maaraaika-2026-11-25-hankintatiimi@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[Hankinta] Määräaika: Verkkosivuille asennettavan matalan kynnyksen palautteenantotyökalu (Saas-palvelu)
+DESCRIPTION:Tarjoukset viimeistään · 2026-061460 · https://www.hankintailmoitukset.fi/fi/public/procedure/39853/enotice/61460
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39853/enotice/61460
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-772163-2026-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
@@ -1785,23 +1803,5 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Post Receipt of the Future
 DESCRIPTION:Osallistumishakemukset viimeistään · Værnesregionen Innkjøp · https://ted.europa.eu/fi/notice/-/detail/753346-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/753346-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-755499-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
-DTSTAMP:20261127T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:[Hankinta] Määräaika: PC-\, ChromeOS- och Android-klienter
-DESCRIPTION:Tarjoukset viimeistään · Lunds universitet · https://ted.europa.eu/fi/notice/-/detail/755499-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/755499-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-753514-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
-DTSTAMP:20261127T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:[Hankinta] Määräaika: Kopiatorer/MFP
-DESCRIPTION:Tarjoukset viimeistään · Tierps och Heby kommuns inköpscentral (THIC) · https://ted.europa.eu/fi/notice/-/detail/753514-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/753514-2026
 END:VEVENT
 END:VCALENDAR

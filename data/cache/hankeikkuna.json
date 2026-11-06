@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T11:43:31",
+ "fetched": "2026-11-06T16:05:13",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -8954,8 +8954,8 @@
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
-   "esittelyviikko": 41,
-   "esittelyvuosi": 2026,
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
    "etapit": [],
    "evNumerot": [],
    "heNumerot": [],
@@ -8965,7 +8965,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:02:20",
+   "muokattu": "2026-11-06T11:55:04",
    "nimi": "Hallituksen esitys fossiilittoman jouston tukimekanismista (Talvienergiatuki)",
    "nimiSv": "Regeringens proposition om en stödmekanism för fossilfri flexibilitet (stödmekanism för väderoberoende elproduktion)",
    "pevLausunto": false,
@@ -33235,7 +33235,7 @@
    "asiasanat": [
     "energia"
    ],
-   "esittelyviikko": 45,
+   "esittelyviikko": 48,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -33455,7 +33455,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T10:31:36",
+   "muokattu": "2026-11-06T11:55:46",
    "nimi": "Hallituksen esitys eduskunnalle laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag om genomförande och övervakning av skyldigheterna enligt EU:s förordning om minskning av metanutsläpp inom energisektorn samt om ändring av elmarknadslagen",
    "pevLausunto": false,
@@ -45227,7 +45227,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-03T17:53:27",
+   "muokattu": "2026-11-06T12:31:50",
    "nimi": "Hallituksen esitys eduskunnalle laiksi verotusmenettelystä annetun lain 21 §:n muuttamisesta annetun hallituksen esityksen (HE 141/2025 vp) täydentämisestä",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till komplettering av regeringens proposition med förslag till lag om ändring av 21 § i lagen om beskattningsförfarande (RP 141/2025 rd)",
    "pevLausunto": true,
@@ -56489,7 +56489,9 @@
      "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
-   "evNumerot": [],
+   "evNumerot": [
+    "EV 155/2026"
+   ],
    "heNumerot": [
     "HE 134/2026"
    ],
@@ -56716,7 +56718,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-20T08:43:12",
+   "muokattu": "2026-11-06T14:47:48",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta annetun lain 46 a §:n, työterveyslaitoksen toiminnasta ja rahoituksesta annetun lain sekä sosiaali- ja terveydenhuollon asiakastietojen käsittelystä annetun lain 76 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av 46 a § i lagen om tillsynen över arbetarskyddet och om arbetarskyddssamarbete på arbetsplatsen, lagen om arbetshälsoinstitutets verksamhet och finansiering och 76 § i lagen om behandling av kunduppgifter inom social- och hälsovården",
    "pevLausunto": false,
@@ -74440,7 +74442,7 @@
    },
    "lisattyPaiva": "2026-08-25",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-01T09:35:02",
+   "muokattu": "2026-11-06T13:17:38",
    "nimi": "Hallituksen esitys eduskunnalle laiksi avaruustoiminnasta annetun lain sekä maa-asemista ja eräistä tutkista annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om rymdverksamhet och lagen om markstationer och vissa radaranläggningar",
    "pevLausunto": false,
@@ -105017,7 +105019,9 @@
      "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
-   "evNumerot": [],
+   "evNumerot": [
+    "EV 151/2026"
+   ],
    "heNumerot": [
     "HE 63/2026"
    ],
@@ -105394,7 +105398,7 @@
    },
    "lisattyPaiva": "2025-08-14",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-05T01:36:19",
+   "muokattu": "2026-11-06T14:47:08",
    "nimi": "Hallituksen esitys eduskunnalle laiksi lapsiin liittyvien rikosepäilyjen selvittämisessä avustavista terveydenhuollon yksiköistä",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om hälso- och sjukvårdsenheter som bistår vid utredning av misstänkta brott som gäller barn",
    "pevLausunto": false,
@@ -176750,6 +176754,182 @@
    "valmistumisPaiva": "2026-12-30",
    "vanhaEsittelyviikko": 33,
    "vanhaEsittelyvuosi": 2025
+  },
+  {
+   "annettuEduskunnalle": "2024-11-07",
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": 45,
+   "esittelyvuosi": 2024,
+   "etapit": [
+    {
+     "date": "2024-06-26",
+     "end": "2024-08-21",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [
+    "HE 185/2024"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2024-08-22",
+      "id": "e0114472-226a-46a1-afb9-9c7e632c8e5e",
+      "org": "Pääesikunta",
+      "title": "Lausunto; Pääesikunta",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/e0114472-226a-46a1-afb9-9c7e632c8e5e/LAUSUNTO_20240822071858.PDF"
+     },
+     {
+      "date": "2024-08-22",
+      "id": "5ac41741-ccab-4b77-a559-d779cb935c0d",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/5ac41741-ccab-4b77-a559-d779cb935c0d/LAUSUNTO_20241028113456.PDF"
+     },
+     {
+      "date": "2024-08-21",
+      "id": "eb6cc3ff-3b47-4f3d-b767-70e4a8c47081",
+      "org": "Suojelupoliisi",
+      "title": "Suojelupoliisin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/eb6cc3ff-3b47-4f3d-b767-70e4a8c47081/LAUSUNTO_20240821102110.PDF"
+     },
+     {
+      "date": "2024-08-21",
+      "id": "edea0cdb-1843-4251-be40-f0868ca50f93",
+      "org": "Poliisihallitus",
+      "title": "Poliisihallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/edea0cdb-1843-4251-be40-f0868ca50f93/LAUSUNTO_20240822180451.PDF"
+     },
+     {
+      "date": "2024-08-20",
+      "id": "6dff6443-c4b0-4488-99e4-72ffe353fd0c",
+      "org": "Väylävirasto",
+      "title": "Väylävirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/6dff6443-c4b0-4488-99e4-72ffe353fd0c/LAUSUNTO_20240820173245.PDF"
+     },
+     {
+      "date": "2024-08-20",
+      "id": "3c9b163a-ef8d-4273-a363-0f8dc9c041c7",
+      "org": "Liikenne- ja viestintävirasto Traficom",
+      "title": "Liikenne- ja viestintävirasto Traficom; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/3c9b163a-ef8d-4273-a363-0f8dc9c041c7/LAUSUNTO_20240820173754.PDF"
+     },
+     {
+      "date": "2024-08-19",
+      "id": "f4ab6940-d135-4f58-b9e3-ff4f9504131b",
+      "org": "Maa- ja metsätalousministeriö",
+      "title": "Maa- ja metsätalousministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/f4ab6940-d135-4f58-b9e3-ff4f9504131b/LAUSUNTO_20240820064339.PDF"
+     },
+     {
+      "date": "2024-08-16",
+      "id": "ca5e1921-e8af-4288-97ee-ddcb442a7f7c",
+      "org": "Sisäministeriö",
+      "title": "Sisäministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/ca5e1921-e8af-4288-97ee-ddcb442a7f7c/LAUSUNTO_20240819141907.PDF"
+     },
+     {
+      "date": "2024-08-13",
+      "id": "aa3fabf4-d7da-40c3-9bf4-ecea228106bd",
+      "org": "Eduskunnan oikeusasiamiehen kanslia",
+      "title": "Eduskunnan oikeusasiamiehen kanslia; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/aa3fabf4-d7da-40c3-9bf4-ecea228106bd/LAUSUNTO_20240813201840.PDF"
+     },
+     {
+      "date": "2024-08-09",
+      "id": "6825a553-4064-441e-8195-e24ef7f27b0f",
+      "none": true,
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "STM:n lausunto (ei lausuttavaa)",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/6825a553-4064-441e-8195-e24ef7f27b0f/LAUSUNTO_20240819142010.PDF"
+     },
+     {
+      "date": "2024-08-08",
+      "id": "33f496f2-9e86-40e9-b194-6d3254f909ab",
+      "org": "Liikenne- ja viestintäministeriö",
+      "title": "Liikenne- ja viestintäministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/33f496f2-9e86-40e9-b194-6d3254f909ab/LAUSUNTO_20240816091312.PDF"
+     },
+     {
+      "date": "2024-08-07",
+      "id": "3ff904ef-28c0-418a-940c-9fe821668512",
+      "org": "Fintraffic Lennonvarmistus Oy",
+      "title": "Fintraffic Lennonvarmistus Oy:n lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/3ff904ef-28c0-418a-940c-9fe821668512/LAUSUNTO_20240807113832.PDF"
+     },
+     {
+      "date": "2024-08-06",
+      "id": "d75de852-eeb1-452f-ba53-8f1eb259225e",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     },
+     {
+      "date": "2024-08-05",
+      "id": "69fe727a-64c0-4ecd-a633-fdefdbbabe26",
+      "org": "Ulkoministeriö",
+      "title": "Lausunto; Ulkoministeriö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/69fe727a-64c0-4ecd-a633-fdefdbbabe26/LAUSUNTO_20240822045644.PDF"
+     },
+     {
+      "date": "2024-08-01",
+      "id": "50374f4c-37bb-4c72-af9b-54ff22cbf968",
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriön lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9727f544-7574-4b00-9e72-0ecbe951403d/50374f4c-37bb-4c72-af9b-54ff22cbf968/LAUSUNTO_20240816090648.PDF"
+     }
+    ],
+    "eiLausuttavaa": 2,
+    "n": 15,
+    "orgs": [
+     "Eduskunnan oikeusasiamiehen kanslia",
+     "Fintraffic Lennonvarmistus Oy",
+     "Liikenne- ja viestintäministeriö",
+     "Liikenne- ja viestintävirasto Traficom",
+     "Maa- ja metsätalousministeriö",
+     "Oikeusministeriö",
+     "Poliisihallitus",
+     "Pääesikunta",
+     "Sisäministeriö",
+     "Sosiaali- ja terveysministeriö",
+     "Suojelupoliisi",
+     "Työ- ja elinkeinoministeriö",
+     "Ulkoministeriö",
+     "Valtiovarainministeriö",
+     "Väylävirasto"
+    ],
+    "url": null,
+    "viimeisin": "2024-08-22"
+   },
+   "lisattyPaiva": "2024-05-03",
+   "ministerio": "puolustusministeriö",
+   "muokattu": "2026-11-06T11:56:36",
+   "nimi": "Hallituksen esitys laiksi aluevalvontalain muuttamisesta",
+   "nimiSv": "Beredningen av regeringens proposition; lagen om ändring av territorialövervakningslagen",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Suomen Nato-jäsenyys aiheuttaa tarpeen tarkastella aluevalvontalain muutostarpeita. \nPääministeri Orpon hallitusohjelmassa on todettu, että hallitus arvioi Nato-jäsenyyteen liittyvät lainsäädäntömuutostarpeet ja käynnistää välittömästi niihin tarvittavat valmistelut",
+   "tila": "KAYNNISSA",
+   "tunnus": "PLM003:00/2023",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=PLM003:00/2023",
+   "uuid": "9727f544-7574-4b00-9e72-0ecbe951403d",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": null,
+   "vanhaEsittelyviikko": 36,
+   "vanhaEsittelyvuosi": 2024
   },
   {
    "annettuEduskunnalle": "2026-11-05",
@@ -485709,6 +485889,42 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
+   "asetettu": "2026-11-02",
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "työ- ja elinkeinoministeriö",
+   "muokattu": "2026-11-06T14:56:45",
+   "nimi": "Business Finlandin rahoitusta koskevien asetusten voimassaolon jatkaminen",
+   "nimiSv": "Förlängning av giltighetstiden för de förordningar som gäller Business Finlands finansiering",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Yleiseen ryhmäpoikkeusasetukseen (EU) 651/2014 perustuvien Business Finlandin rahoitusasetusten voimassaolo päättyy vuoden 2026 loppuun.  Euroopan komission odotetaan antavan loppuvuoden aikana korvaavan ryhmäpoikkeusasetuksen, jolle olisi 6 kk siirtymäaika. Business Finlandin rahoitusasetusten voimassaoloaikaa jatkettaisiin 30.6.2027 asti.",
+   "tila": "KAYNNISSA",
+   "tunnus": "TEM064:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM064:00/2026",
+   "uuid": "40e063bb-713d-4396-bebb-6de4b08e9b50",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-12-31",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
@@ -487282,6 +487498,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-06",
+      "id": "1234e7a1-d6ea-4239-b121-9b4438ce61ab",
+      "none": true,
+      "org": "Liikenne- ja viestintäministeriö",
+      "title": "Liikenne- ja viestintäministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-10-30",
       "id": "cf4b70fd-93c3-477b-8cd4-9a14cdc499b5",
       "org": "Suomen Autopurkamoliitto ry",
@@ -487289,17 +487512,18 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/92ee5589-dccc-4e5d-a09b-a4ab185b167b/cf4b70fd-93c3-477b-8cd4-9a14cdc499b5/LAUSUNTO_20261101042621.PDF"
      }
     ],
-    "eiLausuttavaa": 0,
-    "n": 1,
+    "eiLausuttavaa": 1,
+    "n": 2,
     "orgs": [
+     "Liikenne- ja viestintäministeriö",
      "Suomen Autopurkamoliitto ry"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=1adfeded-64ac-4c16-96f4-fee40dabc5bf",
-    "viimeisin": "2026-10-30"
+    "viimeisin": "2026-11-06"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-01T04:26:21",
+   "muokattu": "2026-11-06T15:04:34",
    "nimi": "Jäteasetuksen muuttaminen (I osa)",
    "nimiSv": "Ändring av avfallsförordningen (del I)",
    "pevLausunto": false,

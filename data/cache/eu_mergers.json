@@ -565,9 +565,14 @@
   "M.12298": {
    "caseNumber": "M.12298",
    "deadline": "2026-11-12",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-06",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2025-12-22",
-   "lastDecision": null,
+   "lastDecision": "2026-11-06",
    "notice": {
     "activities": [
      "Snowhawk on yksityinen sijoituspalveluyritys, joka sijoittaa teknologian ja digitaalisen infrastruktuurin aloille ja tietoliikennealalle.",
@@ -7551,5 +7556,5 @@
    "title": "WITTINGTON / FAIRFAX / BLAZING STAR BOOTS SUPERCO"
   }
  },
- "fetched": "2026-11-06T11:48:38Z"
+ "fetched": "2026-11-06T16:12:44Z"
 }
