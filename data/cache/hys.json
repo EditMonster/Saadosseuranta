@@ -1,6 +1,24 @@
 {
- "fetched": "2026-11-06T08:16:17",
+ "fetched": "2026-11-06T11:46:49",
  "items": [
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 16733,
+   "periods": [
+    {
+     "end": "2026-12-04",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-06"
+    }
+   ],
+   "reference": "Ares(2026)1255657",
+   "status": "ACTIVE",
+   "title_en": "Exclusion of duty-free imports to the outermost regions of the Union from reference quantity for some tariff rate quotas",
+   "title_fi": "Tuontitariffikiintiöt – viitemäärien laskenta",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16733_en"
+  },
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
@@ -1014,24 +1032,6 @@
    "title_en": "Training and certification standards of fishers on EU vessels",
    "title_fi": "EU:n kalastajat – koulutusta ja pätevyyskirjoja koskevat vaatimukset",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352_en"
-  },
-  {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 18658,
-   "periods": [
-    {
-     "end": "2026-09-30",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-01"
-    }
-   ],
-   "reference": "Ares(2026)6556383",
-   "status": "ACTIVE",
-   "title_en": "Housing simplification package",
-   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
   },
   {
    "actType": "PROP_DIR",

@@ -302,6 +302,15 @@ DESCRIPTION:Tarjoukset viimeistään · Elisyd-förbundet ekonomisk förening ·
 URL:https://ted.europa.eu/fi/notice/-/detail/773251-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61411-maaraaika-2027-01-07-hankintatiimi@saadosseuranta
+DTSTAMP:20270107T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:[Hankinta] Määräaika: 26068 Alakylän koulun irtokalusteet
+DESCRIPTION:Tarjoukset viimeistään · 2026-061411 · https://www.hankintailmoitukset.fi/fi/public/procedure/39822/enotice/61411
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39822/enotice/61411
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-772243-2026-maaraaika-2027-02-01-hankintatiimi@saadosseuranta
 DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
@@ -1794,14 +1803,5 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Kopiatorer/MFP
 DESCRIPTION:Tarjoukset viimeistään · Tierps och Heby kommuns inköpscentral (THIC) · https://ted.europa.eu/fi/notice/-/detail/753514-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/753514-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-753673-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
-DTSTAMP:20261127T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:[Hankinta] Määräaika: System för perioperativ kvalitetsuppföljning
-DESCRIPTION:Tarjoukset viimeistään · Karolinska Universitetssjukhuset · https://ted.europa.eu/fi/notice/-/detail/753673-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/753673-2026
 END:VEVENT
 END:VCALENDAR

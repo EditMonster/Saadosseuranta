@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T08:13:17",
+ "fetched": "2026-11-06T11:45:00",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -37247,6 +37247,10 @@
     {
      "date": "2026-10-20",
      "type": "NGT_INST_byEP_CONSIL_COM"
+    },
+    {
+     "date": "2026-11-05",
+     "type": "NGT_INST_byEP_CONSIL_COM"
     }
    ],
    "events": [
@@ -46077,6 +46081,10 @@
     {
      "date": "2026-10-21",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-04",
+     "type": "APR_AGRPROV_CONSIL_byEP_CMT"
     }
    ],
    "events": [
@@ -61796,6 +61804,10 @@
     {
      "date": "2026-10-26",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -62938,6 +62950,10 @@
     {
      "date": "2026-10-01",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -62989,6 +63005,10 @@
     },
     {
      "date": "2026-10-06",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-21",
      "type": "DELIB_WP_byCONSIL"
     }
    ],
@@ -63347,7 +63367,6 @@
     },
     {
      "date": "2026-11-06",
-     "projected": true,
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
     },
     {

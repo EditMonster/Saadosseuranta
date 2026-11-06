@@ -1954,10 +1954,49 @@
    "decisions": [],
    "initiated": "2026-05-18",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Sun Pharma on Intian kansalliseen pörssiin (National Stock Exchange of India) ja BSE Limited -pörssiin listautunut vaativien geneeristen lääkkeiden valmistajayhtiö. Sen tuotevalikoima kattaa kardiologian, psykiatrian, neurologian, gastroenterologian ja dermatologian ja sisältää i) geneerisiä lääkkeitä ja brändättyjä geneerisiä lääkkeitä, ii) erikoistuotteita ja kompleksisia tuotteita, iii) reseptivapaita lääkkeitä, iv) antiretroviraalisia lääkkeitä ja v) aktiivisia farmaseuttisia ainesosia. Sillä on myös innovatiivisten lääkkeiden kehitystoimintaa. Sun Pharma toimii yli 100 maassa, ja sillä on tuotantolaitoksia viidessä maanosassa,",
+     "Organon on New Yorkin pörssissä noteerattu globaalisti toimiva terveydenhuoltoalan yritys, joka on keskittynyt pääasiassa naisten terveyteen ja biosimilaarilääkkeisiin ja tarjoaa ratkaisuja reseptihoitojen ja lääkinnällisten laitteiden muodossa. Organonin tuotesalkku sisältää yli 70 tuotetta, jotka voidaan jakaa kolmeen pääryhmään: naisten terveys (ml. ehkäisy ja hedelmällisyys), biosimilaarit (immunologia ja onkologia) ja vakiintuneet tuotemerkit (pääasiassa patenttisuojaamattomia alkuperäisvalmisteita esim. sydän- ja verisuonitautien, hengityselinsairauksien ja dermatologian alalla). Organon toimii 140 maassa, ja sillä on kuusi tuotantolaitosta eri puolilla maailmaa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-16",
+    "observationsShifted": null,
+    "oj": "C:2026:5941:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Intia",
+        "name": "Sun Pharmaceutical Industries Limited määräysvallassa"
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Sun Pharma America, Inc."
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Organon & Co.",
+      "short": "Organon"
+     }
+    ],
+    "published": "2026-11-06",
+    "reference": "C/2026/5941",
+    "simplified": false,
+    "transaction": "Sun Pharma hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Organon. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5941/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-28",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-06",
+     "reference": "C:2026:5941:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_21.20",
@@ -7493,7 +7532,24 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "ARES / EQT / STATERA JV ASSETS"
+  },
+  "M.12686": {
+   "caseNumber": "M.12686",
+   "deadline": "2026-12-11",
+   "decisions": [],
+   "initiated": "2026-10-26",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-06",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_R_86.9",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "WITTINGTON / FAIRFAX / BLAZING STAR BOOTS SUPERCO"
   }
  },
- "fetched": "2026-11-06T08:18:47Z"
+ "fetched": "2026-11-06T11:48:38Z"
 }

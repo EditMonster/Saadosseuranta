@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T08:03:08",
+ "fetched": "2026-11-06T11:43:31",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -105442,414 +105442,6 @@
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 15,
-   "vanhaEsittelyvuosi": 2026
-  },
-  {
-   "annettuEduskunnalle": "2026-07-09",
-   "arviointineuvosto": false,
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
-     "pvm": "2025-10-06",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f405c8c1-7f40-444c-ab5f-2ebe29f814c6/LAUSUNTOPYYNTO_20251006122156.PDF"
-    },
-    {
-     "nimi": "Begäran om utlåtande om arbetsgruppens betänkande; Genomförande av direktivet om ändring av människohandelsdirektivet",
-     "pvm": "2025-10-06",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8259b890-5250-4d7a-b406-6cd1da524ca3/LAUSUNTOPYYNTO_20251006122156.PDF"
-    }
-   ],
-   "asiasanat": [
-    "EU-direktiivit",
-    "rikosoikeus",
-    "rikokset",
-    "ihmiskauppa",
-    "rikosoikeudellinen vastuu",
-    "täytäntöönpano"
-   ],
-   "esittelyviikko": 28,
-   "esittelyvuosi": 2026,
-   "etapit": [
-    {
-     "date": "2025-10-06",
-     "end": "2025-11-18",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [
-    "EV 139/2026"
-   ],
-   "heNumerot": [
-    "HE 127/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "kiireellinen": false,
-   "laji": "laki",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2025-11-24",
-      "id": "fd4f368c-6d69-40c4-bcc8-d7c15f7e99b7",
-      "org": "Tilastokeskus",
-      "title": "Tilastokeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/fd4f368c-6d69-40c4-bcc8-d7c15f7e99b7/LAUSUNTO_20251125073932.PDF"
-     },
-     {
-      "date": "2025-11-21",
-      "id": "8b92d512-0aad-4413-8540-3ef73bfad926",
-      "org": "Helsingin yliopiston professori Sakari Melander",
-      "title": "Helsingin yliopiston professori Sakari Melander; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8b92d512-0aad-4413-8540-3ef73bfad926/LAUSUNTO_20251124071935.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "8da0dabb-9a04-40f8-be1f-1d339d8cf13d",
-      "org": "Syyttäjälaitos",
-      "title": "Syyttäjälaitos; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8da0dabb-9a04-40f8-be1f-1d339d8cf13d/LAUSUNTO_20251118184428.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "c0bc4077-3626-4a3b-bdf3-d9b045851bef",
-      "org": "Monika-Naiset liitto ry",
-      "title": "Monika-Naiset liitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/c0bc4077-3626-4a3b-bdf3-d9b045851bef/LAUSUNTO_20251118184650.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "b9b38c85-33b3-40de-9a25-2b61d0edeeb4",
-      "org": "Poliisihallitus",
-      "title": "Poliisihallitus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/b9b38c85-33b3-40de-9a25-2b61d0edeeb4/LAUSUNTO_20251118184908.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "95f3339c-d6f3-4c41-99d5-b01bb6012b80",
-      "org": "Monimuotoiset perheet -verkosto",
-      "title": "Monimuotoiset perheet -verkosto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/95f3339c-d6f3-4c41-99d5-b01bb6012b80/LAUSUNTO_20251118185129.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "6f5720de-0bbb-4fc2-95c7-5c18439c8fa7",
-      "org": "Rikosuhripäivystys",
-      "title": "Rikosuhripäivystys; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/6f5720de-0bbb-4fc2-95c7-5c18439c8fa7/LAUSUNTO_20251118190343.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "c65a214f-9dd3-4a0f-8192-8a304c51241c",
-      "org": "Yhdenvertaisuusvaltuutettu",
-      "title": "Yhdenvertaisuusvaltuutettu; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/c65a214f-9dd3-4a0f-8192-8a304c51241c/LAUSUNTO_20251118190605.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "5f67bf33-6b3f-4557-bd17-6a38a34e01e1",
-      "org": "Naisjärjestöjen Keskusliitto",
-      "title": "Naisjärjestöjen Keskusliitto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/5f67bf33-6b3f-4557-bd17-6a38a34e01e1/LAUSUNTO_20251118190826.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "03914029-b849-44d7-9e19-581178c85bbc",
-      "org": "Suomen asianajajat",
-      "title": "Suomen Asianajajat; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/03914029-b849-44d7-9e19-581178c85bbc/LAUSUNTO_20251118191308.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "aa60cdb8-0bba-412d-977e-818c6a0b7438",
-      "org": "Suomen tuomariliitto - Finlands domareförbund ry",
-      "title": "Suomen tuomariliitto - Finlands domareförbund ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/aa60cdb8-0bba-412d-977e-818c6a0b7438/LAUSUNTO_20251118192303.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "f0f6d13b-904c-4400-ac2a-a2fa48397881",
-      "org": "Yhdistyneiden Kansakuntien yhteydessä toimiva Euroopan Kriminaalipolitiikan Instituutti (HEUNI)",
-      "title": "HEUNI; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f0f6d13b-904c-4400-ac2a-a2fa48397881/LAUSUNTO_20251119065529.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "ca05539e-1435-43ff-888c-d31740297f5c",
-      "org": "Lapsiasiavaltuutetun toimisto",
-      "title": "LAPS_lausunto_OM_työryhmämietintö_ihmiskauppadirektiivin muutosdirektiivi täytäntöönpano_18112025",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ca05539e-1435-43ff-888c-d31740297f5c/LAUSUNTO_20251119070334.DOCX"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "b9d9d975-5c12-4306-b054-b37d99cc5fb0",
-      "org": "Sosiaali- ja terveysministeriö",
-      "title": "Sosiaali- ja terveysministeriö; Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/b9d9d975-5c12-4306-b054-b37d99cc5fb0/LAUSUNTO_20251119122709.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "9f97eb95-802b-4e02-b21f-95f37de96dfd",
-      "org": "Palvelualojen työnantajat PALTA ry",
-      "title": "Palvelualojen työnantajat Palta ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/9f97eb95-802b-4e02-b21f-95f37de96dfd/LAUSUNTO_20251119174229.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "9bc914c8-66ee-4561-995e-2e3178ebd6b9",
-      "org": "Miesjärjestöjen keskusliitto MJKL ry",
-      "title": "Miesjärjestöjen keskusliitto MJKL ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/9bc914c8-66ee-4561-995e-2e3178ebd6b9/LAUSUNTO_20251119174738.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "ac9f5fee-6b22-4bbc-ac92-a19a1dd8693b",
-      "org": "Elinkeinoelämän keskusliitto EK",
-      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ac9f5fee-6b22-4bbc-ac92-a19a1dd8693b/LAUSUNTO_20251121072124.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "ce3d868e-ed40-42da-90f5-7be85d426490",
-      "org": "Ulkoministeriö",
-      "title": "Ulkoministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ce3d868e-ed40-42da-90f5-7be85d426490/LAUSUNTO_20251201121155.PDF"
-     },
-     {
-      "date": "2025-11-18",
-      "id": "02049356-fabf-4b1b-98e7-259de7f0a335",
-      "org": "Opetus- ja kulttuuriministeriö",
-      "title": "Opetus- ja kulttuuriministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/02049356-fabf-4b1b-98e7-259de7f0a335/LAUSUNTO_20260204115237.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "0a3ba6e3-c2f0-41c0-90c4-f657b52ceb50",
-      "org": "Pohjois-Suomen aluehallintovirasto",
-      "title": "Pohjois-Suomen aluehallintovirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/0a3ba6e3-c2f0-41c0-90c4-f657b52ceb50/LAUSUNTO_20251117180047.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "7c55aff2-8e59-4768-9f65-6c918f5c8778",
-      "org": "Syyttäjälaitos",
-      "title": "Syyttäjälaitos; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/7c55aff2-8e59-4768-9f65-6c918f5c8778/LAUSUNTO_20251117181559.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "f20b068c-d1fb-4512-8c3e-0bc79b47a63c",
-      "org": "Tasa-arvovaltuutetun toimisto",
-      "title": "Tasa-arvovaltuutetun toimisto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f20b068c-d1fb-4512-8c3e-0bc79b47a63c/LAUSUNTO_20251117182115.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "18e97e21-6728-4042-a6a3-e5db039574e5",
-      "none": true,
-      "org": "Terveyden ja hyvinvoinnin laitos THL",
-      "title": "Terveyden ja hyvinvoinnin laitos THL; ei lausuttavaa"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "abe06899-5334-4bc1-94d7-991f332736eb",
-      "org": "Rajavartiolaitoksen esikunta",
-      "title": "Rajavartiolaitoksen esikunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/abe06899-5334-4bc1-94d7-991f332736eb/LAUSUNTO_20251119065900.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "84b84056-d31b-4710-8764-5bde9eaa7845",
-      "org": "Suomen syyttäjäyhdistys",
-      "title": "Suomen syyttäjäyhdistys; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/84b84056-d31b-4710-8764-5bde9eaa7845/LAUSUNTO_20251119070046.PDF"
-     },
-     {
-      "date": "2025-11-17",
-      "id": "3dfbf728-9713-4376-8396-55595b85ada7",
-      "org": "Sisäministeriö",
-      "title": "Sisäministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/3dfbf728-9713-4376-8396-55595b85ada7/LAUSUNTO_20260126081333.PDF"
-     },
-     {
-      "date": "2025-11-15",
-      "id": "28bda10e-310e-4bcd-ae9c-22f6f68fc608",
-      "org": "Maahanmuuttovirasto",
-      "title": "Maahanmuuttovirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/28bda10e-310e-4bcd-ae9c-22f6f68fc608/LAUSUNTO_20251117175824.PDF"
-     },
-     {
-      "date": "2025-11-14",
-      "id": "6d6e815e-9699-4efb-8741-5f3f3aa081f6",
-      "org": "Oulun käräjäoikeus",
-      "title": "Oulun käräjäoikeus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/6d6e815e-9699-4efb-8741-5f3f3aa081f6/LAUSUNTO_20251116032657.PDF"
-     },
-     {
-      "date": "2025-11-14",
-      "id": "06a9f607-93ed-4547-8962-8b9c1ab0e96c",
-      "org": "Helsingin hovioikeus",
-      "title": "Helsingin hovioikeus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/06a9f607-93ed-4547-8962-8b9c1ab0e96c/LAUSUNTO_20251116032920.PDF"
-     },
-     {
-      "date": "2025-11-14",
-      "id": "1c850a9b-5e13-4d3d-8f3d-06fab02c5560",
-      "org": "Helsingin poliisilaitos",
-      "title": "Helsingin poliisilaitos; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/1c850a9b-5e13-4d3d-8f3d-06fab02c5560/LAUSUNTO_20251117055034.PDF"
-     },
-     {
-      "date": "2025-11-12",
-      "id": "03f2cf88-0e8c-4dc7-8480-ad297e0ef9c1",
-      "org": "Palvelualojen ammattiliitto PAM ry",
-      "title": "Palvelualojen ammattiliitto PAM ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/03f2cf88-0e8c-4dc7-8480-ad297e0ef9c1/LAUSUNTO_20251112183029.PDF"
-     },
-     {
-      "date": "2025-11-10",
-      "id": "d25d9f7b-fca0-4a56-aa29-6fc14e3eaeb3",
-      "org": "Syyttäjälaitos",
-      "title": "Syyttäjälaitos; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/d25d9f7b-fca0-4a56-aa29-6fc14e3eaeb3/LAUSUNTO_20251110184254.PDF"
-     },
-     {
-      "date": "2025-11-05",
-      "id": "dbb2353f-5af5-4549-b346-b9afc1df25cd",
-      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-      "title": "Suomen Ammattiliittojen Keskusjärjestö SAK ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/dbb2353f-5af5-4549-b346-b9afc1df25cd/LAUSUNTO_20251105174843.PDF"
-     },
-     {
-      "date": "2025-11-05",
-      "id": "6ff3a526-4291-4236-801f-e8dea3bc1ae4",
-      "none": true,
-      "org": "Korkein oikeus",
-      "title": "Korkein oikeus; ei lausuttavaa"
-     },
-     {
-      "date": "2025-11-03",
-      "id": "6dc0c8d7-02d5-49b9-bbd4-185e947b14f0",
-      "none": true,
-      "org": "Valtiovarainministeriö",
-      "title": "Valtiovarainministeriö; ei lausuttavaa"
-     },
-     {
-      "date": "2025-11-03",
-      "id": "03c6ea23-37b3-4515-81a6-91cd29b7e8cf",
-      "none": true,
-      "org": "Eduskunnan oikeusasiamiehen kanslia",
-      "title": "Eduskunnan oikeusasiamiehen kanslia; ei lausuttavaa"
-     },
-     {
-      "date": "2025-11-03",
-      "id": "af12b193-d2eb-4d44-963e-54c1a085e4fb",
-      "org": "Työ- ja elinkeinoministeriö",
-      "title": "Työ- ja elinkeinoministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/af12b193-d2eb-4d44-963e-54c1a085e4fb/LAUSUNTO_20251107122220.PDF"
-     },
-     {
-      "date": "2025-10-23",
-      "id": "df37c24d-ba98-421d-82a6-474da936c7bb",
-      "org": "Keskusrikospoliisi / rahanpesun selvittelykeskus",
-      "title": "Keskusrikospoliisi; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/df37c24d-ba98-421d-82a6-474da936c7bb/LAUSUNTO_20251024080052.PDF"
-     },
-     {
-      "date": "2025-10-17",
-      "id": "d3b6b64b-0f37-48c4-a8aa-b98fa74e8a8a",
-      "org": "Lapin yliopiston prof. Minna Kimpimäki",
-      "title": "Lapin yliopiston prof. Minna Kimpimäki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/d3b6b64b-0f37-48c4-a8aa-b98fa74e8a8a/LAUSUNTO_20251017112752.PDF"
-     }
-    ],
-    "eiLausuttavaa": 4,
-    "n": 39,
-    "orgs": [
-     "Syyttäjälaitos",
-     "Eduskunnan oikeusasiamiehen kanslia",
-     "Elinkeinoelämän keskusliitto EK",
-     "Helsingin hovioikeus",
-     "Helsingin poliisilaitos",
-     "Helsingin yliopiston professori Sakari Melander",
-     "Keskusrikospoliisi / rahanpesun selvittelykeskus",
-     "Korkein oikeus",
-     "Lapin yliopiston prof. Minna Kimpimäki",
-     "Lapsiasiavaltuutetun toimisto",
-     "Maahanmuuttovirasto",
-     "Miesjärjestöjen keskusliitto MJKL ry",
-     "Monika-Naiset liitto ry",
-     "Monimuotoiset perheet -verkosto",
-     "Naisjärjestöjen Keskusliitto",
-     "Opetus- ja kulttuuriministeriö",
-     "Oulun käräjäoikeus",
-     "Palvelualojen ammattiliitto PAM ry",
-     "Palvelualojen työnantajat PALTA ry",
-     "Pohjois-Suomen aluehallintovirasto",
-     "Poliisihallitus",
-     "Rajavartiolaitoksen esikunta",
-     "Rikosuhripäivystys",
-     "Sisäministeriö",
-     "Sosiaali- ja terveysministeriö",
-     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-     "Suomen asianajajat",
-     "Suomen syyttäjäyhdistys",
-     "Suomen tuomariliitto - Finlands domareförbund ry",
-     "Tasa-arvovaltuutetun toimisto",
-     "Terveyden ja hyvinvoinnin laitos THL",
-     "Tilastokeskus",
-     "Työ- ja elinkeinoministeriö",
-     "Ulkoministeriö",
-     "Valtiovarainministeriö",
-     "Yhdenvertaisuusvaltuutettu",
-     "Yhdistyneiden Kansakuntien yhteydessä toimiva Euroopan Kriminaalipolitiikan Instituutti (HEUNI)"
-    ],
-    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=41180a6f-0833-447e-b939-b82f2524025e&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2025-11-24"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-22T06:02:06",
-   "nimi": "Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
-   "nimiSv": "Genomförande av direktivet om ändring av människohandelsdirektivet",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [
-    "Rikos ja rangaistus"
-   ],
-   "tiivistelma": "Arvioidaan, mitä lainsäädäntömuutoksia ihmiskauppadirektiivin muutosdirektiivin (direktiivi (EU) 2024/1712 ihmiskaupan ehkäisemisestä ja torjumisesta sekä ihmiskaupan uhrien suojelemisesta annetun direktiivin 2011/36/EU muuttamisesta) kansallinen täytäntöönpano edellyttää ja valmistellaan tämän perusteella tarvittavat lainsäädäntömuutokset.",
-   "tila": "KAYNNISSA",
-   "tunnus": "OM002:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM002:00/2025",
-   "uuid": "28cc3837-ad6a-406e-9ae8-dd58fd66597f",
-   "valmistelu": [
-    {
-     "d": "2024-11-25",
-     "n": "Asettamispäätös: Ihmiskauppadirektiivin muutosdirektiivin kansallista täytäntöönpanoa valmisteleva työryhmä",
-     "t": "ASETTAMISPAATOS",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f414538a-f593-4d70-9a03-9064249c31bb/ASETTAMISPAATOS_20250115053609.PDF"
-    },
-    {
-     "d": "2025-10-06",
-     "n": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f405c8c1-7f40-444c-ab5f-2ebe29f814c6/LAUSUNTOPYYNTO_20251006122156.PDF"
-    },
-    {
-     "d": "2025-10-06",
-     "n": "Begäran om utlåtande om arbetsgruppens betänkande; Genomförande av direktivet om ändring av människohandelsdirektivet",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8259b890-5250-4d7a-b406-6cd1da524ca3/LAUSUNTOPYYNTO_20251006122156.PDF"
-    }
-   ],
-   "valmisteluvaihe": "VALTIONEUVOSTON_PAATOKSENTEKO",
-   "valmistumisPaiva": null,
-   "vanhaEsittelyviikko": 11,
    "vanhaEsittelyvuosi": 2026
   },
   {
@@ -257181,6 +256773,428 @@
    "valmistumisPaiva": "2026-04-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": "2026-07-09",
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
+     "pvm": "2025-10-06",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f405c8c1-7f40-444c-ab5f-2ebe29f814c6/LAUSUNTOPYYNTO_20251006122156.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtande om arbetsgruppens betänkande; Genomförande av direktivet om ändring av människohandelsdirektivet",
+     "pvm": "2025-10-06",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8259b890-5250-4d7a-b406-6cd1da524ca3/LAUSUNTOPYYNTO_20251006122156.PDF"
+    }
+   ],
+   "asiasanat": [
+    "EU-direktiivit",
+    "rikosoikeus",
+    "rikokset",
+    "ihmiskauppa",
+    "rikosoikeudellinen vastuu",
+    "täytäntöönpano"
+   ],
+   "esittelyviikko": 28,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2025-10-06",
+     "end": "2025-11-18",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-11-06",
+     "end": null,
+     "kind": "muu",
+     "label": "Säädöskokoelmanumerot",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2026-11-06",
+     "end": null,
+     "kind": "muu",
+     "label": "Hanke on valmistunut",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [
+    "EV 139/2026"
+   ],
+   "heNumerot": [
+    "HE 127/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2025-11-24",
+      "id": "fd4f368c-6d69-40c4-bcc8-d7c15f7e99b7",
+      "org": "Tilastokeskus",
+      "title": "Tilastokeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/fd4f368c-6d69-40c4-bcc8-d7c15f7e99b7/LAUSUNTO_20251125073932.PDF"
+     },
+     {
+      "date": "2025-11-21",
+      "id": "8b92d512-0aad-4413-8540-3ef73bfad926",
+      "org": "Helsingin yliopiston professori Sakari Melander",
+      "title": "Helsingin yliopiston professori Sakari Melander; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8b92d512-0aad-4413-8540-3ef73bfad926/LAUSUNTO_20251124071935.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "8da0dabb-9a04-40f8-be1f-1d339d8cf13d",
+      "org": "Syyttäjälaitos",
+      "title": "Syyttäjälaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8da0dabb-9a04-40f8-be1f-1d339d8cf13d/LAUSUNTO_20251118184428.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "c0bc4077-3626-4a3b-bdf3-d9b045851bef",
+      "org": "Monika-Naiset liitto ry",
+      "title": "Monika-Naiset liitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/c0bc4077-3626-4a3b-bdf3-d9b045851bef/LAUSUNTO_20251118184650.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "b9b38c85-33b3-40de-9a25-2b61d0edeeb4",
+      "org": "Poliisihallitus",
+      "title": "Poliisihallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/b9b38c85-33b3-40de-9a25-2b61d0edeeb4/LAUSUNTO_20251118184908.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "95f3339c-d6f3-4c41-99d5-b01bb6012b80",
+      "org": "Monimuotoiset perheet -verkosto",
+      "title": "Monimuotoiset perheet -verkosto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/95f3339c-d6f3-4c41-99d5-b01bb6012b80/LAUSUNTO_20251118185129.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "6f5720de-0bbb-4fc2-95c7-5c18439c8fa7",
+      "org": "Rikosuhripäivystys",
+      "title": "Rikosuhripäivystys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/6f5720de-0bbb-4fc2-95c7-5c18439c8fa7/LAUSUNTO_20251118190343.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "c65a214f-9dd3-4a0f-8192-8a304c51241c",
+      "org": "Yhdenvertaisuusvaltuutettu",
+      "title": "Yhdenvertaisuusvaltuutettu; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/c65a214f-9dd3-4a0f-8192-8a304c51241c/LAUSUNTO_20251118190605.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "5f67bf33-6b3f-4557-bd17-6a38a34e01e1",
+      "org": "Naisjärjestöjen Keskusliitto",
+      "title": "Naisjärjestöjen Keskusliitto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/5f67bf33-6b3f-4557-bd17-6a38a34e01e1/LAUSUNTO_20251118190826.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "03914029-b849-44d7-9e19-581178c85bbc",
+      "org": "Suomen asianajajat",
+      "title": "Suomen Asianajajat; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/03914029-b849-44d7-9e19-581178c85bbc/LAUSUNTO_20251118191308.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "aa60cdb8-0bba-412d-977e-818c6a0b7438",
+      "org": "Suomen tuomariliitto - Finlands domareförbund ry",
+      "title": "Suomen tuomariliitto - Finlands domareförbund ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/aa60cdb8-0bba-412d-977e-818c6a0b7438/LAUSUNTO_20251118192303.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "f0f6d13b-904c-4400-ac2a-a2fa48397881",
+      "org": "Yhdistyneiden Kansakuntien yhteydessä toimiva Euroopan Kriminaalipolitiikan Instituutti (HEUNI)",
+      "title": "HEUNI; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f0f6d13b-904c-4400-ac2a-a2fa48397881/LAUSUNTO_20251119065529.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "ca05539e-1435-43ff-888c-d31740297f5c",
+      "org": "Lapsiasiavaltuutetun toimisto",
+      "title": "LAPS_lausunto_OM_työryhmämietintö_ihmiskauppadirektiivin muutosdirektiivi täytäntöönpano_18112025",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ca05539e-1435-43ff-888c-d31740297f5c/LAUSUNTO_20251119070334.DOCX"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "b9d9d975-5c12-4306-b054-b37d99cc5fb0",
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "Sosiaali- ja terveysministeriö; Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/b9d9d975-5c12-4306-b054-b37d99cc5fb0/LAUSUNTO_20251119122709.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "9f97eb95-802b-4e02-b21f-95f37de96dfd",
+      "org": "Palvelualojen työnantajat PALTA ry",
+      "title": "Palvelualojen työnantajat Palta ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/9f97eb95-802b-4e02-b21f-95f37de96dfd/LAUSUNTO_20251119174229.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "9bc914c8-66ee-4561-995e-2e3178ebd6b9",
+      "org": "Miesjärjestöjen keskusliitto MJKL ry",
+      "title": "Miesjärjestöjen keskusliitto MJKL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/9bc914c8-66ee-4561-995e-2e3178ebd6b9/LAUSUNTO_20251119174738.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "ac9f5fee-6b22-4bbc-ac92-a19a1dd8693b",
+      "org": "Elinkeinoelämän keskusliitto EK",
+      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ac9f5fee-6b22-4bbc-ac92-a19a1dd8693b/LAUSUNTO_20251121072124.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "ce3d868e-ed40-42da-90f5-7be85d426490",
+      "org": "Ulkoministeriö",
+      "title": "Ulkoministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/ce3d868e-ed40-42da-90f5-7be85d426490/LAUSUNTO_20251201121155.PDF"
+     },
+     {
+      "date": "2025-11-18",
+      "id": "02049356-fabf-4b1b-98e7-259de7f0a335",
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Opetus- ja kulttuuriministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/02049356-fabf-4b1b-98e7-259de7f0a335/LAUSUNTO_20260204115237.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "0a3ba6e3-c2f0-41c0-90c4-f657b52ceb50",
+      "org": "Pohjois-Suomen aluehallintovirasto",
+      "title": "Pohjois-Suomen aluehallintovirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/0a3ba6e3-c2f0-41c0-90c4-f657b52ceb50/LAUSUNTO_20251117180047.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "7c55aff2-8e59-4768-9f65-6c918f5c8778",
+      "org": "Syyttäjälaitos",
+      "title": "Syyttäjälaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/7c55aff2-8e59-4768-9f65-6c918f5c8778/LAUSUNTO_20251117181559.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "f20b068c-d1fb-4512-8c3e-0bc79b47a63c",
+      "org": "Tasa-arvovaltuutetun toimisto",
+      "title": "Tasa-arvovaltuutetun toimisto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f20b068c-d1fb-4512-8c3e-0bc79b47a63c/LAUSUNTO_20251117182115.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "18e97e21-6728-4042-a6a3-e5db039574e5",
+      "none": true,
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos THL; ei lausuttavaa"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "abe06899-5334-4bc1-94d7-991f332736eb",
+      "org": "Rajavartiolaitoksen esikunta",
+      "title": "Rajavartiolaitoksen esikunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/abe06899-5334-4bc1-94d7-991f332736eb/LAUSUNTO_20251119065900.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "84b84056-d31b-4710-8764-5bde9eaa7845",
+      "org": "Suomen syyttäjäyhdistys",
+      "title": "Suomen syyttäjäyhdistys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/84b84056-d31b-4710-8764-5bde9eaa7845/LAUSUNTO_20251119070046.PDF"
+     },
+     {
+      "date": "2025-11-17",
+      "id": "3dfbf728-9713-4376-8396-55595b85ada7",
+      "org": "Sisäministeriö",
+      "title": "Sisäministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/3dfbf728-9713-4376-8396-55595b85ada7/LAUSUNTO_20260126081333.PDF"
+     },
+     {
+      "date": "2025-11-15",
+      "id": "28bda10e-310e-4bcd-ae9c-22f6f68fc608",
+      "org": "Maahanmuuttovirasto",
+      "title": "Maahanmuuttovirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/28bda10e-310e-4bcd-ae9c-22f6f68fc608/LAUSUNTO_20251117175824.PDF"
+     },
+     {
+      "date": "2025-11-14",
+      "id": "6d6e815e-9699-4efb-8741-5f3f3aa081f6",
+      "org": "Oulun käräjäoikeus",
+      "title": "Oulun käräjäoikeus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/6d6e815e-9699-4efb-8741-5f3f3aa081f6/LAUSUNTO_20251116032657.PDF"
+     },
+     {
+      "date": "2025-11-14",
+      "id": "06a9f607-93ed-4547-8962-8b9c1ab0e96c",
+      "org": "Helsingin hovioikeus",
+      "title": "Helsingin hovioikeus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/06a9f607-93ed-4547-8962-8b9c1ab0e96c/LAUSUNTO_20251116032920.PDF"
+     },
+     {
+      "date": "2025-11-14",
+      "id": "1c850a9b-5e13-4d3d-8f3d-06fab02c5560",
+      "org": "Helsingin poliisilaitos",
+      "title": "Helsingin poliisilaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/1c850a9b-5e13-4d3d-8f3d-06fab02c5560/LAUSUNTO_20251117055034.PDF"
+     },
+     {
+      "date": "2025-11-12",
+      "id": "03f2cf88-0e8c-4dc7-8480-ad297e0ef9c1",
+      "org": "Palvelualojen ammattiliitto PAM ry",
+      "title": "Palvelualojen ammattiliitto PAM ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/03f2cf88-0e8c-4dc7-8480-ad297e0ef9c1/LAUSUNTO_20251112183029.PDF"
+     },
+     {
+      "date": "2025-11-10",
+      "id": "d25d9f7b-fca0-4a56-aa29-6fc14e3eaeb3",
+      "org": "Syyttäjälaitos",
+      "title": "Syyttäjälaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/d25d9f7b-fca0-4a56-aa29-6fc14e3eaeb3/LAUSUNTO_20251110184254.PDF"
+     },
+     {
+      "date": "2025-11-05",
+      "id": "dbb2353f-5af5-4549-b346-b9afc1df25cd",
+      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+      "title": "Suomen Ammattiliittojen Keskusjärjestö SAK ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/dbb2353f-5af5-4549-b346-b9afc1df25cd/LAUSUNTO_20251105174843.PDF"
+     },
+     {
+      "date": "2025-11-05",
+      "id": "6ff3a526-4291-4236-801f-e8dea3bc1ae4",
+      "none": true,
+      "org": "Korkein oikeus",
+      "title": "Korkein oikeus; ei lausuttavaa"
+     },
+     {
+      "date": "2025-11-03",
+      "id": "6dc0c8d7-02d5-49b9-bbd4-185e947b14f0",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     },
+     {
+      "date": "2025-11-03",
+      "id": "03c6ea23-37b3-4515-81a6-91cd29b7e8cf",
+      "none": true,
+      "org": "Eduskunnan oikeusasiamiehen kanslia",
+      "title": "Eduskunnan oikeusasiamiehen kanslia; ei lausuttavaa"
+     },
+     {
+      "date": "2025-11-03",
+      "id": "af12b193-d2eb-4d44-963e-54c1a085e4fb",
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/af12b193-d2eb-4d44-963e-54c1a085e4fb/LAUSUNTO_20251107122220.PDF"
+     },
+     {
+      "date": "2025-10-23",
+      "id": "df37c24d-ba98-421d-82a6-474da936c7bb",
+      "org": "Keskusrikospoliisi / rahanpesun selvittelykeskus",
+      "title": "Keskusrikospoliisi; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/df37c24d-ba98-421d-82a6-474da936c7bb/LAUSUNTO_20251024080052.PDF"
+     },
+     {
+      "date": "2025-10-17",
+      "id": "d3b6b64b-0f37-48c4-a8aa-b98fa74e8a8a",
+      "org": "Lapin yliopiston prof. Minna Kimpimäki",
+      "title": "Lapin yliopiston prof. Minna Kimpimäki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/d3b6b64b-0f37-48c4-a8aa-b98fa74e8a8a/LAUSUNTO_20251017112752.PDF"
+     }
+    ],
+    "eiLausuttavaa": 4,
+    "n": 39,
+    "orgs": [
+     "Syyttäjälaitos",
+     "Eduskunnan oikeusasiamiehen kanslia",
+     "Elinkeinoelämän keskusliitto EK",
+     "Helsingin hovioikeus",
+     "Helsingin poliisilaitos",
+     "Helsingin yliopiston professori Sakari Melander",
+     "Keskusrikospoliisi / rahanpesun selvittelykeskus",
+     "Korkein oikeus",
+     "Lapin yliopiston prof. Minna Kimpimäki",
+     "Lapsiasiavaltuutetun toimisto",
+     "Maahanmuuttovirasto",
+     "Miesjärjestöjen keskusliitto MJKL ry",
+     "Monika-Naiset liitto ry",
+     "Monimuotoiset perheet -verkosto",
+     "Naisjärjestöjen Keskusliitto",
+     "Opetus- ja kulttuuriministeriö",
+     "Oulun käräjäoikeus",
+     "Palvelualojen ammattiliitto PAM ry",
+     "Palvelualojen työnantajat PALTA ry",
+     "Pohjois-Suomen aluehallintovirasto",
+     "Poliisihallitus",
+     "Rajavartiolaitoksen esikunta",
+     "Rikosuhripäivystys",
+     "Sisäministeriö",
+     "Sosiaali- ja terveysministeriö",
+     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+     "Suomen asianajajat",
+     "Suomen syyttäjäyhdistys",
+     "Suomen tuomariliitto - Finlands domareförbund ry",
+     "Tasa-arvovaltuutetun toimisto",
+     "Terveyden ja hyvinvoinnin laitos THL",
+     "Tilastokeskus",
+     "Työ- ja elinkeinoministeriö",
+     "Ulkoministeriö",
+     "Valtiovarainministeriö",
+     "Yhdenvertaisuusvaltuutettu",
+     "Yhdistyneiden Kansakuntien yhteydessä toimiva Euroopan Kriminaalipolitiikan Instituutti (HEUNI)"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=41180a6f-0833-447e-b939-b82f2524025e&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
+    "viimeisin": "2025-11-24"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "oikeusministeriö",
+   "muokattu": "2026-11-06T11:32:06",
+   "nimi": "Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
+   "nimiSv": "Genomförande av direktivet om ändring av människohandelsdirektivet",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [
+    "Rikos ja rangaistus"
+   ],
+   "tiivistelma": "Arvioidaan, mitä lainsäädäntömuutoksia ihmiskauppadirektiivin muutosdirektiivin (direktiivi (EU) 2024/1712 ihmiskaupan ehkäisemisestä ja torjumisesta sekä ihmiskaupan uhrien suojelemisesta annetun direktiivin 2011/36/EU muuttamisesta) kansallinen täytäntöönpano edellyttää ja valmistellaan tämän perusteella tarvittavat lainsäädäntömuutokset.",
+   "tila": "PAATTYNYT",
+   "tunnus": "OM002:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=OM002:00/2025",
+   "uuid": "28cc3837-ad6a-406e-9ae8-dd58fd66597f",
+   "valmistelu": [
+    {
+     "d": "2024-11-25",
+     "n": "Asettamispäätös: Ihmiskauppadirektiivin muutosdirektiivin kansallista täytäntöönpanoa valmisteleva työryhmä",
+     "t": "ASETTAMISPAATOS",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f414538a-f593-4d70-9a03-9064249c31bb/ASETTAMISPAATOS_20250115053609.PDF"
+    },
+    {
+     "d": "2025-10-06",
+     "n": "Lausuntopyyntö työryhmän mietinnöstä; Ihmiskauppadirektiivin muutosdirektiivin täytäntöönpano",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/f405c8c1-7f40-444c-ab5f-2ebe29f814c6/LAUSUNTOPYYNTO_20251006122156.PDF"
+    },
+    {
+     "d": "2025-10-06",
+     "n": "Begäran om utlåtande om arbetsgruppens betänkande; Genomförande av direktivet om ändring av människohandelsdirektivet",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/28cc3837-ad6a-406e-9ae8-dd58fd66597f/8259b890-5250-4d7a-b406-6cd1da524ca3/LAUSUNTOPYYNTO_20251006122156.PDF"
+    }
+   ],
+   "valmisteluvaihe": "VALMISTUNUT",
+   "valmistumisPaiva": "2026-11-06",
+   "vanhaEsittelyviikko": 11,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2025-08-28",
@@ -486483,7 +486497,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-02T18:37:11",
+   "muokattu": "2026-11-06T11:18:39",
    "nimi": "Liikenne- ja viestintäministeriön asetus Väyläviraston maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordning om Trafikledsverkets avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -486534,7 +486548,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/8d5a1f29-d578-4c9d-b8a4-bc2b99fed13d/LAUSUNTOPYYNTO_20261023063850.PDF"
     }
    ],
-   "valmisteluvaihe": null,
+   "valmisteluvaihe": "LAUSUNTOMENETTELY",
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
@@ -486641,7 +486655,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-05T10:16:18",
+   "muokattu": "2026-11-06T11:18:50",
    "nimi": "Liikenne- ja viestintäministeriön asetukset Liikenne- ja viestintävirasto Traficomin maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordningar om Transport- och kommunikationsverket Traficoms avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -486740,7 +486754,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/2fdcf083-35d6-4140-9d01-7aca8a76f212/LAUSUNTOPYYNTO_20261023064434.PDF"
     }
    ],
-   "valmisteluvaihe": null,
+   "valmisteluvaihe": "LAUSUNTOMENETTELY",
    "valmistumisPaiva": "2026-12-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
@@ -487703,6 +487717,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-06",
+      "id": "676873bd-e2ed-4bdc-8a78-160e1a5d5d47",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/676873bd-e2ed-4bdc-8a78-160e1a5d5d47/LAUSUNTO_20261106103520.pdf"
+     },
+     {
+      "date": "2026-11-06",
+      "id": "266318c0-cbb1-49f7-a7f1-d7ca381a93ed",
+      "none": true,
+      "org": "Maa- ja metsätalousministeriö",
+      "title": "Maa- ja kalatalouselinkeino-osasto; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-05",
       "id": "74b96484-37cb-4c50-8457-92a9efbbf7b1",
       "org": "Yksityishenkilö",
@@ -487850,8 +487878,8 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/f1e555fb-146b-4c12-8383-cc412c0bffa8/LAUSUNTO_20261019064001.PDF"
      }
     ],
-    "eiLausuttavaa": 3,
-    "n": 21,
+    "eiLausuttavaa": 4,
+    "n": 23,
     "orgs": [
      "Yksityishenkilö",
      "Valtakunnallinen riistaneuvosto",
@@ -487860,6 +487888,7 @@
      "Korsholms kommun / Mustasaaren kunta",
      "Luonnonsuojeluliitto Tapiola ry",
      "MTK-Satakunta ry",
+     "Maa- ja metsätalousministeriö",
      "Paliskuntain yhdistys",
      "Petsmo jaktklubb r.f.",
      "Putakon Erä ry",
@@ -487872,11 +487901,11 @@
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-05"
+    "viimeisin": "2026-11-06"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-06T06:57:33",
+   "muokattu": "2026-11-06T11:17:59",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -488580,7 +488609,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-05T12:06:57",
+   "muokattu": "2026-11-06T11:20:08",
    "nimi": "Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 5 § i och bilaga 5 till statsrådets förordning om viltskador",
    "pevLausunto": false,
@@ -489031,7 +489060,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-02T17:30:32",
+   "muokattu": "2026-11-06T10:47:00",
    "nimi": "Valtioneuvoston asetus verontilityksestä",
    "nimiSv": "Statsrådets förordning om skatteredovisning",
    "pevLausunto": false,
@@ -489184,7 +489213,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-05T18:38:38",
+   "muokattu": "2026-11-06T10:37:09",
    "nimi": "Valtioneuvoston asetus verotusmenettelystä",
    "nimiSv": "Statsrådets förordning om beskattningsförfarande",
    "pevLausunto": false,
@@ -489495,7 +489524,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-03T19:10:00",
+   "muokattu": "2026-11-06T10:41:50",
    "nimi": "Valtiovarainministeriön asetus veronkannosta annetun valtiovarainministeriön asetuksen muuttamisesta",
    "nimiSv": "Finansministeriets förordning om ändring av finansministeriets förordning om skatteuppbörd",
    "pevLausunto": false,
@@ -491450,7 +491479,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-10-15T12:21:32",
+   "muokattu": "2026-11-06T08:51:08",
    "nimi": "SPR asetuksen muuttaminen",
    "nimiSv": "Ändring av förordningen om Finlands Röda Kors",
    "pevLausunto": false,
@@ -577035,13 +577064,15 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2025-12-04T10:08:16",
+   "muokattu": "2026-11-06T08:31:02",
    "nimi": "Valtioneuvoston asetus kunnan peruspalvelujen valtionosuudesta annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om statsandel för kommunal basservice",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "870/2024"
+   ],
    "teemat": [],
    "tiivistelma": "TE-uudistuksen toimeenpanon yhteydessä on huomattu tarve säätää tarkemmin korvauksen laskemisesta valtion kustannusvastuulle kuuluvien kotoutujien työmarkkinatuen osalta. Tavoitteena on, että kunnille maksettava korvaus vastaisi mahdollisimman tarkasti kunnille siirtyvien tehtävien todellisia kustannuksia.",
    "tila": "PAATTYNYT",
