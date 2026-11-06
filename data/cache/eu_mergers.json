@@ -1824,68 +1824,6 @@
    "timeline": [],
    "title": "POSCO / JSW / SAFFRON / PMH"
   },
-  "M.12451": {
-   "caseNumber": "M.12451",
-   "deadline": "2026-08-19",
-   "decisions": [
-    {
-     "date": "2026-08-07",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-04-27",
-   "lastDecision": "2026-08-07",
-   "notice": {
-    "activities": [
-     "Khazna kehittää ja ylläpitää datakeskuksia ja erikoistuu pääasiassa Yhdistyneissä arabiemiirikunnissa toimivien datakeskusten suunnitteluun, rakentamiseen ja hallinnointiin,",
-     "Eni toimii maailmanlaajuisesti öljyn ja maakaasun etsinnän, tuotannon, jalostuksen ja markkinoinnin sekä sähkön tuotannon ja myynnin aloilla ja on mukana siirtymisessä vaihtoehtoisiin energiaratkaisuihin."
-    ],
-    "fi": false,
-    "jv": "Yhteisyrityksen liiketoimintaan kuuluu datakeskusten rakentaminen, hallinnointi ja ylläpitäminen sekä tukkutason datakeskuspalvelujen tarjoaminen Italiassa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-03",
-    "oj": "C:2026:4076:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdistyneet arabiemiraatit",
-        "name": "Group 42 Holding Ltd"
-       }
-      ],
-      "country": "Yhdistyneet arabiemiraatit",
-      "fi": false,
-      "name": "Khazna Data Center Holdings Limited",
-      "short": "Khazna"
-     },
-     {
-      "country": "Italia",
-      "fi": false,
-      "name": "Eni S.p.A.",
-      "short": "Eni"
-     }
-    ],
-    "published": "2026-07-24",
-    "reference": "C/2026/4076",
-    "simplified": true,
-    "transaction": "Khazna ja Eni hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan uudessa yhteisyrityksessä. Keskittymä toteutetaan ostamalla yhteisyrityksen osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4076/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-14",
-   "oj": [
-    {
-     "published": "2026-07-24",
-     "reference": "C:2026:4076:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_M_68.20",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "KHAZNA / ENI / JV"
-  },
   "M.12452": {
    "caseNumber": "M.12452",
    "deadline": "2026-09-24",
@@ -2093,9 +2031,14 @@
   "M.12475": {
    "caseNumber": "M.12475",
    "deadline": "2026-11-06",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-05",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-05-18",
-   "lastDecision": null,
+   "lastDecision": "2026-11-05",
    "notice": {
     "activities": [
      "Amplifon on erikoistunut kuulolaitteiden ja niihin liittyvien kuulonhoitopalvelujen vähittäismyyntiin, sovittamiseen ja yksilöllistämiseen maailmanlaajuisesti.",
@@ -2268,68 +2211,6 @@
    "simplified": "MEnormal",
    "timeline": [],
    "title": "SMO / MERMEC"
-  },
-  "M.12479": {
-   "caseNumber": "M.12479",
-   "deadline": "2026-08-20",
-   "decisions": [
-    {
-     "date": "2026-08-07",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-18",
-   "lastDecision": "2026-08-07",
-   "notice": {
-    "activities": [
-     "GBL on julkisesti noteerattu sijoitusalan holdingyhtiö, jonka päätoimipaikka on Brysselissä Belgiassa ja jolla on sijoituksia eri aloilla toimiviin maailmanlaajuisiin yrityksiin, joiden päätoimipaikka on pääasiassa Euroopassa,",
-     "CVC plc on osakeyhtiö, jonka osakkeet on noteerattu ja otettu kaupankäynnin kohteeksi Amsterdamin Euronext-pörssissä. CVC-verkoston pääomasijoitustoiminnan osalta CVC plc ja välillisesti myös sen tietyt tytäryhtiöt tarjoavat ajoittain sijoitusneuvontaa ja/tai hoitavat sijoituksia tiettyjen rahastojen ja sijoitusvälineiden (”CVC-rahastot”) puolesta. CVC-rahastoilla on omistusosuuksia muun muassa rahoituspalvelujen, kemianteollisuuden, yleishyödyllisten palvelujen, valmistuksen, vähittäiskaupan ja jakelun aloilla eri puolilla maailmaa (Euroopassa, Yhdysvalloissa ja Aasian ja Tyynenmeren alueella) toimivissa yrityksissä. Yrityksen CVC plc kotipaikka on Jersey,",
-     "Recordati on kansainvälinen lääkekonserni, jonka toimialana on lääkkeiden tutkimus, kehittäminen, valmistus ja markkinointi. Sen osakkeet on noteerattu Milanon pörssissä, ja se on viime kädessä CVC-rahastojen määräysvallassa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-03",
-    "oj": "C:2026:4075:",
-    "parties": [
-     {
-      "country": "Belgia",
-      "fi": false,
-      "name": "Groupe Bruxelles Lambert SA",
-      "short": "GBL"
-     },
-     {
-      "country": "Jersey",
-      "fi": false,
-      "name": "CVC Capital Partners plc",
-      "short": "CVC plc"
-     },
-     {
-      "country": "Italia",
-      "fi": false,
-      "name": "Recordati Industria Chimica e Farmaceutica S.p.A.",
-      "short": "Recordati"
-     }
-    ],
-    "published": "2026-07-24",
-    "reference": "C/2026/4075",
-    "simplified": true,
-    "transaction": "GBL ja CVC hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksessä Recordati. Keskittymä toteutetaan 22. toukokuuta 2026 ilmoitetulla julkisella tarjouksella.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4075/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-15",
-   "oj": [
-    {
-     "published": "2026-07-24",
-     "reference": "C:2026:4075:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_B_08.99",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "GBL / CVC / RECORDATI"
   },
   "M.12480": {
    "caseNumber": "M.12480",
@@ -2929,60 +2810,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "PLD / NBIM / HAMBURG LOGISTICS PROPERTY ASSET"
-  },
-  "M.12503": {
-   "caseNumber": "M.12503",
-   "deadline": "2026-08-20",
-   "decisions": [
-    {
-     "date": "2026-08-07",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-08",
-   "lastDecision": "2026-08-07",
-   "notice": {
-    "activities": [
-     "GAHL toimii henkilöautojen, kevyiden hyötyajoneuvojen ja eri tuotemerkkien varaosien tukkukaupassa Tanskassa ja Ruotsissa sekä uusien ja käytettyjen henkilöautojen, kevyiden hyötyajoneuvojen ja varaosien vähittäiskaupan alalla Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Irlannissa ja Ruotsissa sijaitsevien myyntipaikkojen kautta. Lisäksi se tarjoaa huolto- ja korjauspalveluja sekä myynnin jälkeisiä palveluja Irlannissa ja Ruotsissa.",
-     "Kohdeyritys harjoittaa Mercedes Benz- ja Smart-merkkisten uusien henkilöautojen ja kevyiden hyötyajoneuvojen, käytettyjen henkilöautojen ja kevyiden hyötyajoneuvojen sekä varaosien vähittäismyyntiä Saksassa. Lisäksi se tarjoaa huolto- ja korjauspalveluja sekä autonvuokrauspalveluja."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-03",
-    "oj": "C:2026:4077:",
-    "parties": [
-     {
-      "country": "Topco",
-      "fi": false,
-      "name": "Global Auto Holdings"
-     },
-     {
-      "country": "Saksa",
-      "fi": false,
-      "name": "Mercedes-Benz (tietyt omaisuuserät) AG",
-      "short": "kohdeyritys"
-     }
-    ],
-    "published": "2026-07-24",
-    "reference": "C/2026/4077",
-    "simplified": true,
-    "transaction": "GAHL hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan kohdeyrityksessä. Keskittymä toteutetaan ostamalla omaisuutta.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4077/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-15",
-   "oj": [
-    {
-     "published": "2026-07-24",
-     "reference": "C:2026:4077:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_G_47.81",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "GAHL / MERCEDES-BENZ (CERTAIN ASSETS)"
   },
   "M.12504": {
    "caseNumber": "M.12504",
@@ -6927,6 +6754,23 @@
    "timeline": [],
    "title": "GIMV / VP CAPITAL / BATENBURG TECHNIEK"
   },
+  "M.12628": {
+   "caseNumber": "M.12628",
+   "deadline": "2026-12-10",
+   "decisions": [],
+   "initiated": "2026-08-31",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-05",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_66.30",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "CVC / DIF"
+  },
   "M.12632": {
    "caseNumber": "M.12632",
    "deadline": "2026-10-22",
@@ -7651,5 +7495,5 @@
    "title": "ARES / EQT / STATERA JV ASSETS"
   }
  },
- "fetched": "2026-11-05T16:13:59Z"
+ "fetched": "2026-11-06T08:18:47Z"
 }

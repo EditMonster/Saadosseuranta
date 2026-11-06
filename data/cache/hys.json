@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-05T16:11:54",
+ "fetched": "2026-11-06T08:16:17",
  "items": [
   {
    "actType": "PROP_REG",
@@ -7,7 +7,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2026-12-31",
+     "end": "2027-01-01",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -535,7 +535,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2026-12-31",
+     "end": "2027-01-01",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -553,7 +553,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2026-12-31",
+     "end": "2027-01-01",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -733,7 +733,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2026-12-31",
+     "end": "2027-01-01",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -878,24 +878,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en"
   },
   {
-   "actType": "PROP_DIR",
-   "actTypeLabel": "Direktiiviehdotus",
-   "id": 16912,
-   "periods": [
-    {
-     "end": "2026-11-05",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-09-10"
-    }
-   ],
-   "reference": "Ares(2026)1590676",
-   "status": "ACTIVE",
-   "title_en": "Omnibus on taxation",
-   "title_fi": "Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en"
-  },
-  {
    "actType": "REPORT",
    "actTypeLabel": "Kertomus",
    "id": 18512,
@@ -960,24 +942,6 @@
    "title_en": "Evaluation of the Balanced Approach Regulation on noise at EU airports",
    "title_fi": "Melu EU:n lentoasemilla – tasapainoisesta lähestymistavasta annetun asetuksen arviointi",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14778_en"
-  },
-  {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 18194,
-   "periods": [
-    {
-     "end": "2026-11-05",
-     "open": true,
-     "stage": "OPC_LAUNCHED",
-     "start": "2026-08-13"
-    }
-   ],
-   "reference": "Ares(2026)5079352",
-   "status": "ACTIVE",
-   "title_en": "EU Strategy on victims’ rights (2026 – 2030)",
-   "title_fi": "Uhrien oikeuksia koskeva EU:n strategia",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18194_en"
   },
   {
    "actType": "PROP_REG",
@@ -1122,6 +1086,42 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
+   "id": 16912,
+   "periods": [
+    {
+     "end": "2026-11-05",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-09-10"
+    }
+   ],
+   "reference": "Ares(2026)1590676",
+   "status": "ACTIVE",
+   "title_en": "Omnibus on taxation",
+   "title_fi": "Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en"
+  },
+  {
+   "actType": "COMMUNIC",
+   "actTypeLabel": "Tiedonanto",
+   "id": 18194,
+   "periods": [
+    {
+     "end": "2026-11-05",
+     "open": false,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-08-13"
+    }
+   ],
+   "reference": "Ares(2026)5079352",
+   "status": "ACTIVE",
+   "title_en": "EU Strategy on victims’ rights (2026 – 2030)",
+   "title_fi": "Uhrien oikeuksia koskeva EU:n strategia",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18194_en"
   },
   {
    "actType": "PROP_REG",

@@ -182,7 +182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -359,7 +359,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -433,7 +433,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -514,7 +514,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2749,
    "objection": null,
    "policyArea": "SANTE",
@@ -644,7 +644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -707,7 +707,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -839,7 +839,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -942,7 +942,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -951,280 +951,6 @@
    "shortTitle": "European Disability Card and European Parking Card - digital features for the physical versions",
    "summary": "Directive (EU) 2024/2841 establishes the European Disability Card and the European Parking Card to promote freedom of movement and facilitate short stays by persons with disabilities in other Member States than that of which they are a resident. The cards facilitate the access of persons with disabilities to services,  including parking,  in the visited Member States. This delegated act sets digital features for the physical cards to prevent fraud and ensure security and interoperability.",
    "updateDate": 1793660458417
-  },
-  "2882": {
-   "adoption": "2026-03-27",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32016R0429",
-    "code": "reg/2016/429",
-    "deadlineRaw": "2",
-    "procedure": "2013/0136/COD",
-    "title": "Regulation (EU) 2016/429 of the European Parliament and of the Council of 9 March 2016 on transmissible animal diseases and amending and repealing certain acts in the area of animal health (‘Animal Health Law’) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)903",
-   "celexNumber": "32026R0797",
-   "cellar": {
-    "celex": "32026R0797",
-    "deadlines": [],
-    "eif": [
-     "2026-08-14",
-     "2026-11-01"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-07",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/797, annettu 27 päivänä maaliskuuta 2026, delegoidun asetuksen (EU) 2020/689 muuttamisesta sinikieliviruksen aiheuttaman tartunnan (serotyypit 1–24) hävittämisohjelmien ja taudista vapaan aseman osalta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/797 of 27 March 2026 amending Delegated Regulation (EU) 2020/689 as regards the infection with bluetongue virus (serotypes 1-24) eradication programmes and disease-free status",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "EXTENDEND"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-03-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-05-13",
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "DA_EXTENSION"
-    },
-    {
-     "date": "2026-08-07",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2882,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-08-07",
-   "shortTitle": "Update requirements for bluetongue eradication programmes",
-   "summary": null,
-   "updateDate": 1786141235404
-  },
-  "2883": {
-   "adoption": "2026-03-27",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32016R0429",
-    "code": "reg/2016/429",
-    "deadlineRaw": "2",
-    "procedure": "2013/0136/COD",
-    "title": "Regulation (EU) 2016/429 of the European Parliament and of the Council of 9 March 2016 on transmissible animal diseases and amending and repealing certain acts in the area of animal health (‘Animal Health Law’) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)902",
-   "celexNumber": "32026R0796",
-   "cellar": {
-    "celex": "32026R0796",
-    "deadlines": [],
-    "eif": [
-     "2026-08-14",
-     "2026-11-01"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-07",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/796, annettu 27 päivänä maaliskuuta 2026, delegoidun asetuksen (EU) 2020/687 muuttamisesta sinikieliviruksen aiheuttaman tartunnan (serotyypit 1–24) torjuntatoimenpiteiden osalta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/796 of 27 March 2026 amending Delegated Regulation (EU) 2020/687 as regards the infection with bluetongue virus (serotype 1-24) disease control measures",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-03-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-08-07",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2883,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-08-07",
-   "shortTitle": "Updating requirements related to bluetongue disease control measures",
-   "summary": null,
-   "updateDate": 1786141236451
-  },
-  "2884": {
-   "adoption": "2026-03-27",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32016R0429",
-    "code": "reg/2016/429",
-    "deadlineRaw": "2",
-    "procedure": "2013/0136/COD",
-    "title": "Regulation (EU) 2016/429 of the European Parliament and of the Council of 9 March 2016 on transmissible animal diseases and amending and repealing certain acts in the area of animal health (‘Animal Health Law’) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)901",
-   "celexNumber": "32026R0795",
-   "cellar": {
-    "celex": "32026R0795",
-    "deadlines": [],
-    "eif": [
-     "2026-08-14",
-     "2026-11-01"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-07",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/795, annettu 27 päivänä maaliskuuta 2026, delegoidun asetuksen (EU) 2020/688 muuttamisesta siltä osin kuin on kyse sinikieliviruksen aiheuttamasta tartunnasta (serotyypit 1–24) ja epitsoottisen verenvuototautiviruksen aiheuttamasta tartunnasta sekä rekisteröityjen hevoseläinten siirtoja koskevan poikkeuksen käyttöönotosta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/795 of 27 March 2026 amending Delegated Regulation (EU) 2020/688 as regards infection with bluetongue virus (serotypes 1-24) and infection with epizootic haemorrhagic disease virus and introducing a derogation for movements of registered equine animals",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "EXTENDEND"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-03-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-05-13",
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "DA_EXTENSION"
-    },
-    {
-     "date": "2026-08-07",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2884,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-08-07",
-   "shortTitle": "Requirements related to bluetongue and epizootic haemorrhagic disease for movements of ruminants",
-   "summary": null,
-   "updateDate": 1789045960713
-  },
-  "2885": {
-   "adoption": "2026-03-27",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32016R0429",
-    "code": "reg/2016/429",
-    "deadlineRaw": "2",
-    "procedure": "2013/0136/COD",
-    "title": "Regulation (EU) 2016/429 of the European Parliament and of the Council of 9 March 2016 on transmissible animal diseases and amending and repealing certain acts in the area of animal health (‘Animal Health Law’) (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)900",
-   "celexNumber": "32026R0794",
-   "cellar": {
-    "celex": "32026R0794",
-    "deadlines": [],
-    "eif": [
-     "2026-08-14",
-     "2026-11-01"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-07",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/794, annettu 27 päivänä maaliskuuta 2026, delegoidun asetuksen (EU) 2020/686 muuttamisesta siltä osin kuin on kyse sinikieliviruksen aiheuttamasta tartunnasta (serotyypit 1–24), epitsoottisen verenvuototautiviruksen aiheuttamasta tartunnasta ja hevosen tarttuvasta kohtutulehduksesta (Taylorella equigenitalis)"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/794 of 27 March 2026 amending Delegated Regulation (EU) 2020/686 as regards infection with bluetongue virus (serotypes 1–24), infection with epizootic haemorrhagic disease virus and contagious equine metritis (Taylorella equigenitalis)",
-   "deadlines": [
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2026-03-27",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-08-07",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2885,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-08-07",
-   "shortTitle": "Requirements related to certain vector-borne animal diseases for movement of germinal products",
-   "summary": null,
-   "updateDate": 1786141239122
   },
   "2893": {
    "adoption": "2026-09-08",
@@ -1267,7 +993,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1318,7 +1044,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1511,7 +1237,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1648,7 +1374,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1877,7 +1603,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -2074,7 +1800,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2363,7 +2089,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2414,7 +2140,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2465,7 +2191,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2586,7 +2312,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -2881,7 +2607,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3010,
    "objection": null,
    "policyArea": "MARE",
@@ -3000,7 +2726,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -3063,7 +2789,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -3225,7 +2951,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -3271,7 +2997,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3437,7 +3163,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3488,7 +3214,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3748,7 +3474,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3055,
    "objection": null,
    "policyArea": "EMPL",
@@ -3835,7 +3561,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -3898,7 +3624,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -3944,7 +3670,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -4069,7 +3795,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -4127,7 +3853,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -4190,7 +3916,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4248,7 +3974,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4299,7 +4025,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4559,7 +4285,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -4610,7 +4336,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -4802,7 +4528,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -4853,7 +4579,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -4916,7 +4642,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-05",
+   "eventsFetched": "2026-11-06",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -4927,7 +4653,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-11-05T16:14:23Z",
+ "fetched": "2026-11-06T08:20:05Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -6416,6 +6142,10 @@
   "288": "PUBLISHED",
   "2880": "PUBLISHED",
   "2881": "PUBLISHED",
+  "2882": "PUBLISHED",
+  "2883": "PUBLISHED",
+  "2884": "PUBLISHED",
+  "2885": "PUBLISHED",
   "2886": "PUBLISHED",
   "2887": "PUBLISHED",
   "2888": "PUBLISHED",

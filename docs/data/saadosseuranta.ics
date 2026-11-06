@@ -1553,15 +1553,6 @@ DESCRIPTION:Lausuntokierros · STM075:00/2026 · https://valtioneuvosto.fi/hanke
 URL:https://valtioneuvosto.fi/hanke?tunnus=STM075:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-a0cdecbd-lausunto-2026-10-29@saadosseuranta
-DTSTAMP:20261029T000000Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus ajoneuvoista annetun valtioneuvoston asetuksen muuttamisesta (ETBS-jarrujärjestelmät)
-DESCRIPTION:Lausuntokierros · LVM041:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM041:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=LVM041:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-0b695719-lausunto-2026-11-23@saadosseuranta
 DTSTAMP:20261123T000000Z
 DTSTART;VALUE=DATE:20261123
@@ -2039,6 +2030,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2023/2418/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2022-0272-soveltaminen-2027-12-11@saadosseuranta
+DTSTAMP:20271211T000000Z
+DTSTART;VALUE=DATE:20271211
+DTEND;VALUE=DATE:20271212
+SUMMARY:[EU] Soveltaminen: Kyberkestävyysasetus (CRA)
+DESCRIPTION:Soveltaminen (vaihe) · (EU) 2024/2847 · https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+URL:https://eur-lex.europa.eu/eli/reg/2024/2847/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2022-0302-maaraaika-2026-12-09@saadosseuranta
 DTSTAMP:20261209T000000Z
 DTSTART;VALUE=DATE:20261209
@@ -2336,10 +2336,10 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2026-12-31@saadosseuranta
-DTSTAMP:20261231T000000Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
+UID:eu-hys-14770-lausunto-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2444,10 +2444,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2026-12-31@saadosseuranta
-DTSTAMP:20261231T000000Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
+UID:eu-hys-19517-lausunto-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2525,15 +2525,6 @@ DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15492_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-16912-lausunto-2026-11-05@saadosseuranta
-DTSTAMP:20261105T000000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:[EU] Lausuntoaika päättyy: Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti
-DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-hys-18512-lausunto-2026-12-01@saadosseuranta
 DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
@@ -2559,6 +2550,15 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
 DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-16912-lausunto-2026-11-05@saadosseuranta
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:[EU] Lausuntoaika päättyy: Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti
+DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-14549-lausunto-2026-11-03@saadosseuranta
@@ -2622,42 +2622,6 @@ DTEND;VALUE=DATE:20261103
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2024/2841 as regards setting the QR code on the physical version of the European Disabil
 DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto – siirtyy\, 1.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)4534 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2882-soveltaminen-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/797\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/689 muuttamisesta sinikieliviruksen aiheuttaman ta
-DESCRIPTION:Soveltaminen (vaihe) · C(2026)903 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2882
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2882
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2883-soveltaminen-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/796\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/687 muuttamisesta sinikieliviruksen aiheuttaman ta
-DESCRIPTION:Soveltaminen (vaihe) · C(2026)902 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2883
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2883
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2884-soveltaminen-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/795\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/688 muuttamisesta siltä osin kuin on kyse sinikiel
-DESCRIPTION:Soveltaminen (vaihe) · C(2026)901 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2884
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2884
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2885-soveltaminen-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/794\, annettu 27 päivänä maaliskuuta 2026\, delegoidun asetuksen (EU) 2020/686 muuttamisesta siltä osin kuin on kyse sinikiel
-DESCRIPTION:Soveltaminen (vaihe) · C(2026)900 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2885
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2885
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2893-maaraaika-2026-12-08@saadosseuranta
@@ -2955,15 +2919,6 @@ DTEND;VALUE=DATE:20261222
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Directive (EU) 2017/2397 of the European Parliament and of the Council as regards applicable requirements fo
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7240 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3118-voimaan-2026-10-29@saadosseuranta
-DTSTAMP:20261029T000000Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:[EU] Voimaan: Komission delegoitu päätös (EU) 2026/1948\, annettu 12 päivänä elokuuta 2026\, päätöksen 2001/171/EY muuttamisesta kristallilasipakkausten osalta
-DESCRIPTION:Voimaan · C(2026)5778 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3118
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3122-voimaan-2026-10-30@saadosseuranta

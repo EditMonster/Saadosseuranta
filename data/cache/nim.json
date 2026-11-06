@@ -6056,20 +6056,6 @@
      "type": "Landskapslag"
     },
     {
-     "date": "2026-05-29",
-     "notif": "2026-05-29",
-     "sk": "848/2017",
-     "title": "Ympäristöministeriön asetus rakennusten paloturvallisuudesta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-05-29",
-     "notif": "2026-05-29",
-     "sk": "1429/2014",
-     "title": "Energiatehokkuuslaki",
-     "type": "Laki"
-    },
-    {
      "date": "2020-10-28",
      "eif": "2021-01-01",
      "notif": "2026-05-29",
@@ -6116,6 +6102,20 @@
      "sk": "1027/2024",
      "title": "Ympäristöministeriön asetus rakennuksen ilmastoselvityksestä ja rakennustuoteluettelosta",
      "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "848/2017",
+     "title": "Ympäristöministeriön asetus rakennusten paloturvallisuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
+     "type": "Laki"
     },
     {
      "date": "2026-05-29",
@@ -6799,5 +6799,5 @@
    "measures": []
   }
  },
- "fetched": "2026-11-05T07:48:35"
+ "fetched": "2026-11-06T08:34:21"
 }
