@@ -123,13 +123,12 @@
   "streak": 0
  },
  "lausunnot": {
-  "last_error": "aikaraja ylittyi (720 s) – edellinen aineisto käytössä",
+  "last_error": null,
   "last_fail": "2026-11-07T10:42:19Z",
-  "last_ok": "2026-11-06T15:55:18Z",
-  "ok": false,
-  "outage": true,
-  "skipped": true,
-  "streak": 2
+  "last_ok": "2026-11-07T15:39:47Z",
+  "ok": true,
+  "outage": false,
+  "streak": 0
  },
  "mao": {
   "last_error": null,
