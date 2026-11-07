@@ -350,14 +350,6 @@
      "type": "Landskapsförordning"
     },
     {
-     "date": "2007-01-11",
-     "eif": "2007-03-01",
-     "notif": "2008-07-04",
-     "oj": "2007/2",
-     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
-     "type": "Landskapsförordning"
-    },
-    {
      "date": "2007-12-20",
      "notif": "2008-07-04",
      "oj": "2007/117",
@@ -368,6 +360,14 @@
      "date": "2005-11-10",
      "notif": "2008-07-04",
      "oj": "2005/76",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-01-11",
+     "eif": "2007-03-01",
+     "notif": "2008-07-04",
+     "oj": "2007/2",
      "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
      "type": "Landskapsförordning"
     },
@@ -6321,7 +6321,50 @@
   },
   "32024L1619": {
    "deadline": "2026-01-10",
-   "measures": []
+   "measures": [
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "423/2013",
+     "title": "Laki osuuspankeista ja muista osuuskuntamuotoisista luottolaitoksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "747/2012",
+     "title": "Sijoituspalvelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "1501/2001",
+     "title": "Laki liikepankeista ja muista osakeyhtiömuotoisista luottolaitoksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "1502/2001",
+     "title": "Säästöpankkilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "610/2014",
+     "title": "Laki luottolaitostoiminnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-11-05",
+     "notif": "2026-11-05",
+     "sk": "878/2008",
+     "title": "Laki Finanssivalvonnasta",
+     "type": "Laki"
+    }
+   ]
   },
   "32024L1640": {
    "deadline": "2025-07-10",
@@ -6799,5 +6842,5 @@
    "measures": []
   }
  },
- "fetched": "2026-11-06T08:34:21"
+ "fetched": "2026-11-07T09:17:43"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T16:09:22",
+ "fetched": "2026-11-07T08:53:46",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -3174,7 +3174,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2021-0106",
    "ref": "2021/0106(COD)",
@@ -6902,7 +6902,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2021-0239",
    "ref": "2021/0239(COD)",
@@ -12057,7 +12057,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2021-0414",
    "ref": "2021/0414(COD)",
@@ -14919,7 +14919,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2022-0047",
    "ref": "2022/0047(COD)",
@@ -21299,7 +21299,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2022-0272",
    "ref": "2022/0272(COD)",
@@ -22670,7 +22670,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2022-0302",
    "ref": "2022/0302(COD)",
@@ -24998,7 +24998,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2022-0396",
    "ref": "2022/0396(COD)",
@@ -49469,7 +49469,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2025-0045",
    "ref": "2025/0045(COD)",
@@ -54652,6 +54652,11 @@
     {
      "date": "2026-10-13",
      "type": "NGT_INST_byEP_CONSIL_COM"
+    },
+    {
+     "date": "2026-11-13",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -56400,7 +56405,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2025-0360",
    "ref": "2025/0360(COD)",
@@ -56799,6 +56804,11 @@
     {
      "date": "2026-11-04",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-09",
+     "projected": true,
+     "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
    "events": [
@@ -56959,6 +56969,11 @@
     {
      "date": "2026-11-04",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-09",
+     "projected": true,
+     "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
    "events": [
@@ -57131,6 +57146,11 @@
     {
      "date": "2026-11-04",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-09",
+     "projected": true,
+     "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
    "events": [
@@ -58113,6 +58133,11 @@
      "date": "2026-11-06",
      "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-11",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -58218,6 +58243,11 @@
     },
     {
      "date": "2026-10-09",
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-11",
+     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -58484,6 +58514,10 @@
     },
     {
      "date": "2026-10-21",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
      "type": "DELIB_WP_byCONSIL"
     }
    ],
@@ -58995,6 +59029,10 @@
     {
      "date": "2026-10-26",
      "type": "ENDORSE_AGRPROV_SPCO_byCONSIL"
+    },
+    {
+     "date": "2026-11-04",
+     "type": "APR_AGRPROV_CONSIL_byEP_CMT"
     }
    ],
    "events": [
@@ -62291,6 +62329,11 @@
     {
      "date": "2026-10-27",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-11",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -62445,7 +62488,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-06",
+   "fetched": "2026-11-07",
    "final": false,
    "pid": "2026-0074",
    "ref": "2026/0074(COD)",
@@ -62633,6 +62676,10 @@
     {
      "date": "2026-10-28",
      "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-04",
+     "type": "APR_AGRPROV_CONSIL_byEP_CMT"
     }
    ],
    "events": [
@@ -62802,6 +62849,10 @@
     },
     {
      "date": "2026-10-22",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
      "type": "DELIB_WP_byCONSIL"
     }
    ],
@@ -63438,6 +63489,10 @@
     {
      "date": "2026-10-20",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -63784,6 +63839,11 @@
     {
      "date": "2026-09-16",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-13",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -64227,6 +64287,12 @@
     "proposal": "52026PC0995",
     "proposalDate": "2026-09-15"
    },
+   "council": [
+    {
+     "date": "2026-11-05",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [
     {
      "confirmed": true,
@@ -64323,6 +64389,11 @@
     {
      "date": "2026-10-29",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-11",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [

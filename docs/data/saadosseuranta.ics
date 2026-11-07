@@ -1364,15 +1364,6 @@ DESCRIPTION:lausuntokierros · MMM046:00/2026 · https://valtioneuvosto.fi/hanke
 URL:https://valtioneuvosto.fi/hanke?tunnus=MMM046:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-e5f8c97f-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta
-DESCRIPTION:Lausuntomenettely · OKM040:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=OKM040:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-92ee5589-lausunto-2026-12-02@saadosseuranta
 DTSTAMP:20261202T000000Z
 DTSTART;VALUE=DATE:20261202
@@ -1461,24 +1452,6 @@ DTEND;VALUE=DATE:20261102
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta
 DESCRIPTION:Lausuntokierros 2.10.2026 - 1.11.2026 · MMM006:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=MMM006:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=MMM006:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-b33253fa-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[FI] Lausuntoaika päättyy: Valtiovarainministeriön asetus eräiden yleishyödyllisten yhteisöjen veronhuojennuksista
-DESCRIPTION:Lausuntokierros · VM119:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM119:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM119:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-3a5f48e7-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus ydinenergian käyttöä koskevista valtioneuvoston maksullisista suoritteista
-DESCRIPTION:Lausuntokierros luonnoksesta valtioneuvoston asetukseksi · TEM052:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM052:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM052:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a2009c8f-lausunto-2026-11-13@saadosseuranta
@@ -2336,10 +2309,10 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
+UID:eu-hys-14770-lausunto-2027-01-02@saadosseuranta
+DTSTAMP:20270102T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2444,10 +2417,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
+UID:eu-hys-19517-lausunto-2027-01-02@saadosseuranta
+DTSTAMP:20270102T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2478,15 +2451,6 @@ DTEND;VALUE=DATE:20261110
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
 DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-14450-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[EU] Lausuntoaika päättyy: Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista
-DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-15112-lausunto-2026-12-01@saadosseuranta
@@ -2550,6 +2514,15 @@ DTEND;VALUE=DATE:20261105
 SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
 DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-14450-lausunto-2026-11-06@saadosseuranta
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:[EU] Lausuntoaika päättyy: Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista
+DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-16912-lausunto-2026-11-05@saadosseuranta
@@ -2858,6 +2831,15 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6339 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3062
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3067-maaraaika-2027-02-08@saadosseuranta
+DTSTAMP:20270208T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Commission Delegated Regulation (EU) 2016/1052 as regards th
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 6.2.2027 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)7806 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3067
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3067
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3074-maaraaika-2026-11-18@saadosseuranta
 DTSTAMP:20261118T000000Z
 DTSTART;VALUE=DATE:20261118
@@ -2919,15 +2901,6 @@ DTEND;VALUE=DATE:20261222
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Directive (EU) 2017/2397 of the European Parliament and of the Council as regards applicable requirements fo
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7240 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3117
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3122-voimaan-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1915\, annettu 6 päivänä elokuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1241 muuttamisesta siltä osin 
-DESCRIPTION:Voimaan · C(2026)5667 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3122
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3122-soveltaminen-2027-01-01@saadosseuranta
@@ -3117,24 +3090,6 @@ DTEND;VALUE=DATE:20261103
 SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Reporting for the purposes of the validation and monitoring of ISDA SIMM
 DESCRIPTION:Palauteaika · EBA/CP/2026/16 · https://www.eba.europa.eu/publications-and-media/events/consultation-reporting-purposes-validation-and-monitoring-isda-simm
 URL:https://www.eba.europa.eu/publications-and-media/events/consultation-reporting-purposes-validation-and-monitoring-isda-simm
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-edpb-guidelines-032026-on-web-scraping-in-the-context-of-generative-ai-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[EU] Lausuntoaika päättyy: Guidelines 03/2026 on web scraping in the context of generative AI
-DESCRIPTION:Palauteaika · Guidelines 3/2026 · https://www.edpb.europa.eu/public-consultations/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en
-URL:https://www.edpb.europa.eu/public-consultations/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-edpb-guidelines-022026-on-anonymisation-lausunto-2026-10-30@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[EU] Lausuntoaika päättyy: Guidelines 02/2026 on Anonymisation
-DESCRIPTION:Palauteaika · Guidelines 2/2026 · https://www.edpb.europa.eu/public-consultations/guidelines-022026-on-anonymisation_en
-URL:https://www.edpb.europa.eu/public-consultations/guidelines-022026-on-anonymisation_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-ia-d118507-lausunto-2026-11-11@saadosseuranta

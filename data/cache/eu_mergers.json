@@ -958,87 +958,6 @@
    "timeline": [],
    "title": "SBB / HELSANA GROUP / HMS"
   },
-  "M.12362": {
-   "caseNumber": "M.12362",
-   "deadline": "2026-08-17",
-   "decisions": [
-    {
-     "date": "2026-08-17",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-02-16",
-   "lastDecision": "2026-08-17",
-   "notice": {
-    "activities": [
-     "FedEx tarjoaa asiakkaille maailmanlaajuisesti ja koko ETA-alueella laajan valikoiman kuljetus-, verkkokauppa- ja yrityspalveluja, mukaan lukien pienten pakettien toimituspalvelut kotimaassa ja kansainvälisesti.",
-     "IS Iris on Adventin määräysvallassa oleva rahoitusalan holdingyhtiö. Advent hankkii omistusosuuksia ja hoitaa sijoitusrahastoja esimerkiksi terveydenhuolto-, teollisuus- ja teknologia-alalla sekä kuluttaja-, yritys- ja rahoituspalveluja maailmanlaajuisesti ja koko ETA-alueella.",
-     "A&R harjoittaa sijoitustoimintaa ensisijaisesti ETA-alueella. Sillä on monipuolinen maailmanlaajuinen salkku, joka kattaa logistiikka-alan ja logistiikan automatisoinnin, verkkokaupan, analyysiratkaisut, markkinoinnin automatisoinnin ja ekologisen innovoinnin.",
-     "InPost tarjoaa pienten pakettien toimituspalveluja Alankomaissa, Belgiassa, Espanjassa, Italiassa, Itävallassa, Luxemburgissa, Portugalissa, Puolassa, Ranskassa, Saksassa ja Yhdistyneessä kuningaskunnassa. Se keskittyy kotiinkuljetuksiin yrityksiltä kuluttajille automatisoitujen pakettiautomaattien ja noutopisteiden verkoston kautta."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-07-30",
-    "oj": "C:2026:3904:",
-    "parties": [
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "FedEx Corporation",
-      "short": "FedEx"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Advent International, L.P."
-       }
-      ],
-      "country": "Luxemburg",
-      "fi": false,
-      "name": "IS Iris Financial Investor S.à r.l.",
-      "short": "IS Iris"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Liechtenstein",
-        "name": "Life & Science Foundation"
-       }
-      ],
-      "country": "Malta",
-      "fi": false,
-      "name": "A&R Investments Limited",
-      "short": "A&R"
-     },
-     {
-      "country": "Luxemburg",
-      "fi": false,
-      "name": "InPost S.A.",
-      "short": "InPost"
-     }
-    ],
-    "published": "2026-07-20",
-    "reference": "C/2026/3904",
-    "simplified": false,
-    "transaction": "FedEx, Advent ja A&R hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksessä InPost. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/3904/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-10",
-   "oj": [
-    {
-     "published": "2026-07-20",
-     "reference": "C:2026:3904:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_H_53.2",
-   "simplified": "MEnormal",
-   "timeline": [],
-   "title": "FEDEX / ADVENT / A&R / INPOST"
-  },
   "M.12364": {
    "caseNumber": "M.12364",
    "deadline": "2026-10-19",
@@ -7556,5 +7475,5 @@
    "title": "WITTINGTON / FAIRFAX / BLAZING STAR BOOTS SUPERCO"
   }
  },
- "fetched": "2026-11-06T16:12:44Z"
+ "fetched": "2026-11-07T09:02:23Z"
 }

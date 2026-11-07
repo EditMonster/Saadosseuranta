@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-06T16:11:02",
+ "fetched": "2026-11-07T09:00:27",
  "items": [
   {
    "actType": "REG_DEL",
@@ -25,7 +25,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-01",
+     "end": "2027-01-02",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-01",
+     "end": "2027-01-02",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-01",
+     "end": "2027-01-02",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -728,30 +728,12 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14593_en"
   },
   {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 14450,
-   "periods": [
-    {
-     "end": "2026-11-06",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-09"
-    }
-   ],
-   "reference": "Ares(2024)8249446",
-   "status": "ACTIVE",
-   "title_en": "Implementing act on templates for reporting methane emissions",
-   "title_fi": "Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-01",
+     "end": "2027-01-02",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -762,42 +744,6 @@
    "title_en": "Revision of the Standardisation Regulation",
    "title_fi": "Standardointiasetus – tarkistaminen",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14511_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 18732,
-   "periods": [
-    {
-     "end": "2026-11-06",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-09"
-    }
-   ],
-   "reference": "Ares(2026)6797142",
-   "status": "ACTIVE",
-   "title_en": "Vehicle safety - annual update of references to regulatory acts in the annexes to the General Safety Regulation",
-   "title_fi": "Ajoneuvojen turvallisuus – ajoneuvojen yleistä turvallisuutta koskevan asetuksen liitteissä lueteltuja säädöksiä koskevien viittausten vuotuinen päivitys",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18732_en"
-  },
-  {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 19474,
-   "periods": [
-    {
-     "end": "2026-11-06",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-09"
-    }
-   ],
-   "reference": "Ares(2026)9527776",
-   "status": "ACTIVE",
-   "title_en": "Technical details for air quality projections and implementation reports",
-   "title_fi": "Ilmanlaatua koskevat ennusteet ja täytäntöönpanoraportit – tekniset yksityiskohdat",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474_en"
   },
   {
    "actType": "PROP_DIR",
@@ -964,24 +910,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 14638,
-   "periods": [
-    {
-     "end": "2026-11-06",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-15"
-    }
-   ],
-   "reference": "Ares(2025)2980065",
-   "status": "ACTIVE",
-   "title_en": "Proposal for a new Regulation on the European Union Agency for Law Enforcement Cooperation (Europol)",
-   "title_fi": "Lainvalvontayhteistyö – uusi Europol-asetus (ehdotus)",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14638_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 14628,
    "periods": [
     {
@@ -1086,6 +1014,78 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 14638,
+   "periods": [
+    {
+     "end": "2026-11-06",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-07-15"
+    }
+   ],
+   "reference": "Ares(2025)2980065",
+   "status": "ACTIVE",
+   "title_en": "Proposal for a new Regulation on the European Union Agency for Law Enforcement Cooperation (Europol)",
+   "title_fi": "Lainvalvontayhteistyö – uusi Europol-asetus (ehdotus)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14638_en"
+  },
+  {
+   "actType": "DEC_IMPL",
+   "actTypeLabel": "Täytäntöönpanopäätös",
+   "id": 19474,
+   "periods": [
+    {
+     "end": "2026-11-06",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-09"
+    }
+   ],
+   "reference": "Ares(2026)9527776",
+   "status": "ACTIVE",
+   "title_en": "Technical details for air quality projections and implementation reports",
+   "title_fi": "Ilmanlaatua koskevat ennusteet ja täytäntöönpanoraportit – tekniset yksityiskohdat",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 18732,
+   "periods": [
+    {
+     "end": "2026-11-06",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-09"
+    }
+   ],
+   "reference": "Ares(2026)6797142",
+   "status": "ACTIVE",
+   "title_en": "Vehicle safety - annual update of references to regulatory acts in the annexes to the General Safety Regulation",
+   "title_fi": "Ajoneuvojen turvallisuus – ajoneuvojen yleistä turvallisuutta koskevan asetuksen liitteissä lueteltuja säädöksiä koskevien viittausten vuotuinen päivitys",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18732_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 14450,
+   "periods": [
+    {
+     "end": "2026-11-06",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-09"
+    }
+   ],
+   "reference": "Ares(2024)8249446",
+   "status": "ACTIVE",
+   "title_en": "Implementing act on templates for reporting methane emissions",
+   "title_fi": "Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en"
   },
   {
    "actType": "PROP_DIR",
@@ -1806,42 +1806,6 @@
    "title_en": "Ex-post evaluation of MFA Moldova and North Macedonia",
    "title_fi": "EU:n rahoitusapu Moldovalle ja Pohjois-Makedonialle (makrotaloudellinen rahoitusapu) – arviointi",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18897_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 14709,
-   "periods": [
-    {
-     "end": "2026-09-07",
-     "open": false,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-02"
-    }
-   ],
-   "reference": "Ares(2025)4305261",
-   "status": "ACTIVE",
-   "title_en": "Digital Networks Act",
-   "title_fi": "Digiverkkosäädös",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14709_en"
-  },
-  {
-   "actType": "SWD",
-   "actTypeLabel": "SWD",
-   "id": 18955,
-   "periods": [
-    {
-     "end": "2026-09-07",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-10"
-    }
-   ],
-   "reference": "Ares(2026)7473728",
-   "status": "ACTIVE",
-   "title_en": "Ex-post evaluation of exceptional MFA to Ukraine (2024-2025)",
-   "title_fi": "EU:n rahoitustuki Ukrainalle 2024–2025 (makrotaloudellinen rahoitusapu) – arviointi",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18955_en"
   },
   {
    "actType": "REG_DEL",

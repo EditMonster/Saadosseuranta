@@ -1697,24 +1697,6 @@ DESCRIPTION:Tarjoukset viimeistään · 2026-060773 · https://www.hankintailmoi
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39431/enotice/60773
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-EF-60642-maaraaika-2026-10-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261030T000000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:[Hankinta] Määräaika: HRM- ja palkkajärjestelmän hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-060642 · https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/60642
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/60642
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-60642-maaraaika-2026-11-06-hankintatiimi@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[Hankinta] Määräaika: HRM- ja palkkajärjestelmän hankinta
-DESCRIPTION:Tarjoukset viimeistään · 2026-060642 · https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/60642
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37708/enotice/60642
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-755591-2026-maaraaika-2026-11-11-hankintatiimi@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -1803,5 +1785,14 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Post Receipt of the Future
 DESCRIPTION:Osallistumishakemukset viimeistään · Værnesregionen Innkjøp · https://ted.europa.eu/fi/notice/-/detail/753346-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/753346-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-ted-755499-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[Hankinta] Määräaika: PC-\, ChromeOS- och Android-klienter
+DESCRIPTION:Tarjoukset viimeistään · Lunds universitet · https://ted.europa.eu/fi/notice/-/detail/755499-2026
+URL:https://ted.europa.eu/fi/notice/-/detail/755499-2026
 END:VEVENT
 END:VCALENDAR
