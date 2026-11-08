@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-07T11:02:45",
+ "fetched": "2026-11-08T07:33:44",
  "items": [
   {
    "actType": "REG_DEL",
@@ -25,7 +25,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-02",
+     "end": "2027-01-03",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-02",
+     "end": "2027-01-03",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-02",
+     "end": "2027-01-03",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -733,7 +733,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-02",
+     "end": "2027-01-03",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"

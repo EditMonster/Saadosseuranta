@@ -5,6 +5,24 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:hk-EF-61385-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[Hankinta] Määräaika: Asiakaskokemuksen mittaus- ja analysointiratkaisu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061385 · https://www.hankintailmoitukset.fi/fi/public/procedure/39807/enotice/61385
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39807/enotice/61385
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61360-maaraaika-2026-12-09-hankintatiimi@saadosseuranta
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[Hankinta] Määräaika: Crypto Asset Tax Calculation Solution
+DESCRIPTION:Tarjoukset viimeistään · 2026-061360 · https://www.hankintailmoitukset.fi/fi/public/procedure/39796/enotice/61360
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39796/enotice/61360
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-61236-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
@@ -1776,23 +1794,5 @@ DTEND;VALUE=DATE:20261127
 SUMMARY:[Hankinta] Määräaika: Podcast Services
 DESCRIPTION:Tarjoukset viimeistään · NORGES BANK · https://ted.europa.eu/fi/notice/-/detail/755342-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/755342-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-753346-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
-DTSTAMP:20261127T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:[Hankinta] Määräaika: Post Receipt of the Future
-DESCRIPTION:Osallistumishakemukset viimeistään · Værnesregionen Innkjøp · https://ted.europa.eu/fi/notice/-/detail/753346-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/753346-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-755499-2026-maaraaika-2026-11-27-hankintatiimi@saadosseuranta
-DTSTAMP:20261127T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:[Hankinta] Määräaika: PC-\, ChromeOS- och Android-klienter
-DESCRIPTION:Tarjoukset viimeistään · Lunds universitet · https://ted.europa.eu/fi/notice/-/detail/755499-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/755499-2026
 END:VEVENT
 END:VCALENDAR

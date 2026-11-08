@@ -1670,6 +1670,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2023/988/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2021-0170-maaraaika-2027-12-13@saadosseuranta
+DTSTAMP:20271213T000000Z
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+SUMMARY:[EU] Määräaika: Asetus yleisestä tuoteturvallisuudesta\, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 1025/2012 muuttamisesta sekä neuvoston direktiivin 87/357/ETY ja Eu
+DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) · (EU) 2023/988 · https://eur-lex.europa.eu/eli/reg/2023/988/oj
+URL:https://eur-lex.europa.eu/eli/reg/2023/988/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2021-0171-maaraaika-2026-11-20@saadosseuranta
 DTSTAMP:20261120T000000Z
 DTSTART;VALUE=DATE:20261120
@@ -2309,10 +2318,10 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-02@saadosseuranta
-DTSTAMP:20270102T000000Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
+UID:eu-hys-14770-lausunto-2027-01-03@saadosseuranta
+DTSTAMP:20270103T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2417,10 +2426,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-02@saadosseuranta
-DTSTAMP:20270102T000000Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
+UID:eu-hys-19517-lausunto-2027-01-03@saadosseuranta
+DTSTAMP:20270103T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
