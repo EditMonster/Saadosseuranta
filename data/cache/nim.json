@@ -2986,6 +2986,14 @@
      "type": "Valtioneuvoston asetus"
     },
     {
+     "date": "2016-04-19",
+     "eif": "2016-10-02",
+     "notif": "2021-06-29",
+     "sk": "273/2016",
+     "title": "Työ- ja elinkeinoministeriön asetus sähkökaupassa ja sähköntoimitusten selvityksessä noudatettavasta tiedonvaihdosta",
+     "type": "Ministeriön asetus"
+    },
+    {
      "date": "2021-06-29",
      "notif": "2021-06-29",
      "sk": "636/2013",
@@ -3035,14 +3043,6 @@
      "type": "Ministeriön asetus"
     },
     {
-     "date": "2016-04-19",
-     "eif": "2016-10-02",
-     "notif": "2021-06-29",
-     "sk": "273/2016",
-     "title": "Työ- ja elinkeinoministeriön asetus sähkökaupassa ja sähköntoimitusten selvityksessä noudatettavasta tiedonvaihdosta",
-     "type": "Ministeriön asetus"
-    },
-    {
      "date": "2020-12-28",
      "eif": "2021-06-29",
      "notif": "2021-06-28",
@@ -3056,6 +3056,14 @@
      "notif": "2021-06-28",
      "sk": "416/2019",
      "title": "Laki hiilen energiakäytön kieltämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2019-06-23",
+     "eif": "2020-08-31",
+     "notif": "2021-06-28",
+     "sk": "764/2019",
+     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
      "type": "Laki"
     },
     {
@@ -3136,14 +3144,6 @@
      "type": "Laki"
     },
     {
-     "date": "2019-06-23",
-     "eif": "2020-08-31",
-     "notif": "2021-06-28",
-     "sk": "764/2019",
-     "title": "Laki eräiden ympäristöllisten lupamenettelyjen yhteensovittamisesta",
-     "type": "Laki"
-    },
-    {
      "date": "2021-06-28",
      "notif": "2021-06-28",
      "sk": "1429/2014",
@@ -3176,6 +3176,32 @@
      "notif": "2021-06-28",
      "sk": "13/2003",
      "title": "Laki sähköisestä asioinnista viranomaistoiminnassa",
+     "type": "Laki"
+    }
+   ]
+  },
+  "32019L1023": {
+   "deadline": "2021-07-17",
+   "measures": [
+    {
+     "date": "2022-06-27",
+     "notif": "2022-06-27",
+     "sk": "47/1993",
+     "title": "Laki yrityksen saneerauksesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-06-27",
+     "notif": "2022-06-27",
+     "sk": "120/2004",
+     "title": "Konkurssilaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2022-06-27",
+     "notif": "2022-06-27",
+     "sk": "57/1993",
+     "title": "Laki yksityishenkilön velkajärjestelystä",
      "type": "Laki"
     }
    ]
@@ -6840,7 +6866,15 @@
   "32026L0805": {
    "deadline": "2027-12-21",
    "measures": []
+  },
+  "32026L2383": {
+   "deadline": "2027-11-24",
+   "measures": []
+  },
+  "32026L2450": {
+   "deadline": "2028-11-20",
+   "measures": []
   }
  },
- "fetched": "2026-11-08T07:38:52"
+ "fetched": "2026-11-09T07:16:03"
 }

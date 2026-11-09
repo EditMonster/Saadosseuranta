@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-09T06:42:48Z",
+ "fetched": "2026-11-09T07:27:41Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -825,6 +825,16 @@
    "key": "26ad1aa37681",
    "lastSeen": "2026-11-09"
   },
+  "2720082cd235": {
+   "buyer": "Kouvolan kaupunki",
+   "decisionDate": "2026-08-31",
+   "decisionText": "Kouvolan kaupungin kaupunginhallituksen suorahankintapäätös 31.8.2026, § 160, taloushallinto- ja palkanlaskentapalvelut",
+   "filed": "2026-11-06",
+   "firstSeen": "2026-11-09",
+   "hilmaNo": null,
+   "key": "2720082cd235",
+   "lastSeen": "2026-11-09"
+  },
   "2913f665c30e": {
    "buyer": "Turun kaupunki",
    "decisionDate": "2026-04-20",
@@ -1034,7 +1044,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "4325200f2844",
-   "lastSeen": "2026-11-09"
+   "lastSeen": "2026-11-09",
+   "missingSince": "2026-11-09"
   },
   "447f2dcbf259": {
    "buyer": "Kansaneläkelaitos",
@@ -1205,6 +1216,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "5f000918d96f",
+   "lastSeen": "2026-11-09"
+  },
+  "6127e2ddc038": {
+   "buyer": "2M-IT Oy",
+   "decisionDate": "2026-10-23",
+   "decisionText": "2M-IT Oy:n hankintapäätös 23.10.2026, 626798 / YTA HR IT -kokonaisratkaisun hankinta SaaS-palveluna",
+   "filed": "2026-11-06",
+   "firstSeen": "2026-11-09",
+   "hilmaNo": null,
+   "key": "6127e2ddc038",
    "lastSeen": "2026-11-09"
   },
   "61d3463c8193": {

@@ -1283,15 +1283,6 @@ DESCRIPTION:Tarjoukset viimeistään · Viešoji įstaiga "Plačiajuostis intern
 URL:https://ted.europa.eu/fi/notice/-/detail/764425-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-ted-762078-2026-maaraaika-2026-11-09-hankintatiimi@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[Hankinta] Määräaika: E. formų rengimo pasirašymui elektroniniu parašu programinė įranga (12834)
-DESCRIPTION:Tarjoukset viimeistään · VšĮ Vilniaus universiteto ligoninė Santaros klinikos (PV) · https://ted.europa.eu/fi/notice/-/detail/762078-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/762078-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-EF-61051-maaraaika-2026-11-11-hankintatiimi@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -1785,5 +1776,14 @@ DTEND;VALUE=DATE:20261203
 SUMMARY:[Hankinta] Määräaika: Upphandling av spendanalysverktyg
 DESCRIPTION:Tarjoukset viimeistään · Botkyrka kommun · https://ted.europa.eu/fi/notice/-/detail/759129-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/759129-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-ted-757038-2026-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[Hankinta] Määräaika: Webbkonsulter
+DESCRIPTION:Tarjoukset viimeistään · Specialpedagogiska Skolmyndigheten · https://ted.europa.eu/fi/notice/-/detail/757038-2026
+URL:https://ted.europa.eu/fi/notice/-/detail/757038-2026
 END:VEVENT
 END:VCALENDAR

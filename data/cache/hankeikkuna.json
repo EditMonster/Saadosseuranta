@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-09T06:23:01",
+ "fetched": "2026-11-09T07:17:16",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -7963,7 +7963,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-09T05:15:10",
+   "muokattu": "2026-11-09T06:35:47",
    "nimi": "Hallituksen esitys laiksi ympäristönsuojelulain 60 §:n muuttamisesta",
    "nimiSv": null,
    "pevLausunto": false,
@@ -7978,7 +7978,7 @@
    "uuid": "08759a35-f8ff-405d-8f32-9bca3b485638",
    "valmistelu": [],
    "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
+   "valmistumisPaiva": "2027-04-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -72786,7 +72786,7 @@
    },
    "lisattyPaiva": "2026-08-24",
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-09-16T13:09:41",
+   "muokattu": "2026-11-09T06:26:55",
    "nimi": "Poliisilain osittaisuudistus; Poliisin toimivaltuudet miehittämättömien kulkuneuvojen kulkuun ja toimintaan puuttumisessa",
    "nimiSv": "Delreform av polislagen; polisens befogenheter att ingripa i obemannade fordons färd och verksamhet",
    "pevLausunto": false,
@@ -88321,7 +88321,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-28T07:41:41",
+   "muokattu": "2026-11-09T07:11:50",
    "nimi": "Rikosoikeudellisten menettelyjen siirtäminen (EU-asetusta täydentävä kansallinen lainsäädäntö)",
    "nimiSv": "Överföring av straffrättsliga förfaranden (nationell lagstiftning som kompletterar EU-förordningen)",
    "pevLausunto": false,
@@ -153779,7 +153779,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-10-15T09:53:56",
+   "muokattu": "2026-11-09T07:00:06",
    "nimi": "Osakeyhtiölain ja osuuskuntalain tarkistaminen",
    "nimiSv": "Ändring av aktiebolagslagen och lagen om andelslag",
    "pevLausunto": false,
@@ -490528,6 +490528,13 @@
       "title": "Maa- ja kalatalouselinkeino-osasto; ei lausuttavaa"
      },
      {
+      "date": "2026-11-06",
+      "id": "a258e851-2c20-4dae-8743-3b6f8f29823f",
+      "org": "Ruokavirasto",
+      "title": "Ruokavirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/a258e851-2c20-4dae-8743-3b6f8f29823f/LAUSUNTO_20261109063817.PDF"
+     },
+     {
       "date": "2026-11-05",
       "id": "74b96484-37cb-4c50-8457-92a9efbbf7b1",
       "org": "Yksityishenkilö",
@@ -490676,7 +490683,7 @@
      }
     ],
     "eiLausuttavaa": 4,
-    "n": 23,
+    "n": 24,
     "orgs": [
      "Yksityishenkilö",
      "Valtakunnallinen riistaneuvosto",
@@ -490690,6 +490697,7 @@
      "Petsmo jaktklubb r.f.",
      "Putakon Erä ry",
      "Rajavartiolaitos",
+     "Ruokavirasto",
      "Satakunnan Kennelpiiri ry",
      "Satakunnan alueellinen riistaneuvosto",
      "Sisäministeriö",
@@ -490702,7 +490710,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-06T11:17:59",
+   "muokattu": "2026-11-09T06:38:33",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -490923,10 +490931,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-06",
+      "id": "ccd4e2b9-dd09-461c-bcbd-2a432ee31cd0",
+      "org": "Maanmittauslaitos",
+      "title": "Maanmittauslaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/62e27420-4c2d-4f0c-978b-78a585658214/ccd4e2b9-dd09-461c-bcbd-2a432ee31cd0/LAUSUNTO_20261109064007.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "Maanmittauslaitos"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-06"
+   },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-12T13:46:29",
+   "muokattu": "2026-11-09T06:40:07",
    "nimi": "Maa- ja metsätalousministeriön asetus kiinteistötietojärjestelmän tulojen jakamisesta vuosina 2027 ja 2028",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om fördelning av inkomster-na av fastighetsdatasystemet åren 2027 och 2028",
    "pevLausunto": false,
