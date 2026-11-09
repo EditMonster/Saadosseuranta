@@ -367,9 +367,14 @@
   "M.12258": {
    "caseNumber": "M.12258",
    "deadline": "2026-11-18",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-09",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2025-11-24",
-   "lastDecision": null,
+   "lastDecision": "2026-11-09",
    "notice": {
     "activities": [
      "Volkswagen on konsernin VW Group emoyhtiö. VW Group toimii henkilöautojen, kevyiden hyötyajoneuvojen, kuorma-autojen, bussien, linja-autojen, linja-autojen ja dieselmoottorien alustojen sekä moottoripyörien, mukaan lukien kaikkien näiden varaosat ja tarvikkeet, kehittämisen, valmistuksen, markkinoinnin ja myynnin alalla. VW Group toimii myös ajoneuvojen jakelun alalla,",
@@ -424,9 +429,14 @@
   "M.12269": {
    "caseNumber": "M.12269",
    "deadline": "2026-11-06",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-06",
+     "type": "DecisionType20212"
+    }
+   ],
    "initiated": "2025-12-02",
-   "lastDecision": null,
+   "lastDecision": "2026-11-06",
    "notice": {
     "activities": [
      "AkzoNobel on hollantilainen yli 150 maassa toimiva monikansallinen konserni, joka valmistaa ja myy kuluttaja- ja teollisuuskäyttöön tarkoitettuja maaleja ja pinnoitteita.",
@@ -464,7 +474,7 @@
      "reference": "C:2026:5032:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_20.30",
    "simplified": "MEnormal",
@@ -644,7 +654,7 @@
      "reference": "C:2026:5450:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_K_63.10",
    "simplified": "MEsupersimplified",
@@ -1250,6 +1260,23 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "SUN TRINITY / MHCCE / BRUC JAPAN / BRUC JAPAN 2"
+  },
+  "M.12402": {
+   "caseNumber": "M.12402",
+   "deadline": "2026-12-11",
+   "decisions": [],
+   "initiated": "2026-03-23",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-06",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_10.82",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "PURATOS / DAWN"
   },
   "M.12405": {
    "caseNumber": "M.12405",
@@ -3728,6 +3755,23 @@
    "timeline": [],
    "title": "ATLAS HOLDINGS / KPS / JV"
   },
+  "M.12531": {
+   "caseNumber": "M.12531",
+   "deadline": "2026-12-11",
+   "decisions": [],
+   "initiated": "2026-06-22",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-06",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_I_55",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "MUBADALA CAPITAL / PIERRE ET VACANCES"
+  },
   "M.12533": {
    "caseNumber": "M.12533",
    "deadline": "2026-09-15",
@@ -4766,6 +4810,23 @@
    "timeline": [],
    "title": "FRANCISCO PARTNERS / HEIDELBERG MATERIALS / COMMAND ALKON"
   },
+  "M.12566": {
+   "caseNumber": "M.12566",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-07-20",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_N_71.2",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "TRITON FUND 6 / BUREAU VERITAS (GLOBAL FUEL TIC DIVISION)"
+  },
   "M.12567": {
    "caseNumber": "M.12567",
    "deadline": "2026-10-08",
@@ -4833,6 +4894,23 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "SOCIÉTÉ GÉNÉRALE / VODAFONE / OXG GLASFASER"
+  },
+  "M.12568": {
+   "caseNumber": "M.12568",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-09-15",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_F_42.22",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "TFK / DEEPOCEAN / JV"
   },
   "M.12570": {
    "caseNumber": "M.12570",
@@ -4992,9 +5070,14 @@
   "M.12574": {
    "caseNumber": "M.12574",
    "deadline": "2026-11-11",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-09",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-27",
-   "lastDecision": null,
+   "lastDecision": "2026-11-09",
    "notice": {
     "activities": [
      "CVC plc on osakeyhtiö, jonka osakkeet on noteerattu ja otettu kaupankäynnin kohteeksi Amsterdamin Euronext-pörssissä. Se kuuluu yritykseen CVC Network, joka on maailmanlaajuisesti toimiva vaihtoehtoisten sijoitusten hoitaja ja joka keskittyy yksityiseen pääomaan, luottoihin, infrastruktuuriin ja jälkimarkkinoihin. CVC plc tarjoaa sijoitusneuvontaa sellaisille rahastoille ja sijoitusvälineille (CVC-rahastot), joilla on omistusosuuksia useissa yrityksissä eri aloilla, esimerkiksi rahoituspalvelujen, kemikaalien, yleishyödyllisten palvelujen, tehdasteollisuuden, vähittäiskaupan ja jakelun aloilla Euroopassa, Yhdysvalloissa ja Aasian ja Tyynenmeren alueella, ja se myös hoitaa sijoituksia niiden puolesta.",
@@ -5039,7 +5122,7 @@
      "reference": "C:2026:5411:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_E_38.1",
    "simplified": "MEsimplified",
@@ -5100,6 +5183,23 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "ACCENTURE / VTS"
+  },
+  "M.12576": {
+   "caseNumber": "M.12576",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-07-27",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_20.14",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "OLIN / HUNTSMAN"
   },
   "M.12578": {
    "caseNumber": "M.12578",
@@ -5538,10 +5638,58 @@
    "decisions": [],
    "initiated": "2026-08-03",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "IGNIS P2X on espanjalainen yhtiö, joka toteuttaa uusiutuvaa energiaa käyttäviä energiaintensiivisiä teollisuushankkeita, mukaan lukien datakeskukset ja vihreän vedyn tuotantolaitokset, ja se on IGNIS Group -konsernin ja KKR:n eri tytäryhtiöiden neuvomien ja hallinnoimien sijoitusrahastojen, rahoitusvälineiden ja/tai sijoitustilien välillisesti omistama yhteisyritys.",
+     "ADC kehittää, rakentaa ja ylläpitää datakeskuksia ja tarjoaa tulevaisuudessa niihin liittyviä datakeskuspalveluja.",
+     "ADPR kehittää, rakentaa ja ylläpitää uusiutuvan energian laitoksia, kuten aurinkovoimapuistoja, tuulivoimapuistoja ja energiavarastoja."
+    ],
+    "fi": false,
+    "jv": "Yritysten SPV DC ja SPV PV liiketoiminta koostuu SPV DC:n osalta Segoviassa Espanjassa sijaitsevan datakeskuksen kehittämisestä, rakentamisesta, kaupallistamisesta ja ylläpitämisestä ja SPV PV:n osalta SPV DC:n tarvitseman sähkön tuottavan aurinkosähkölaitoksen kehittämisestä, rakentamisesta ja ylläpitämisestä.",
+    "observationDays": 10,
+    "observationsEnd": "2026-11-19",
+    "observationsShifted": null,
+    "oj": "C:2026:5945:",
+    "parties": [
+     {
+      "country": "Espanja",
+      "fi": false,
+      "name": "IGNIS P2X, S.L.",
+      "short": "IGNIS P2X"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Espanja",
+        "name": "Acciona, S.A."
+       }
+      ],
+      "country": "Espanja",
+      "fi": false,
+      "name": "Acciona Data Centers, S.L.",
+      "short": "ADC"
+     },
+     {
+      "country": "Espanja",
+      "fi": false,
+      "name": "Acciona Desarrollos y Proyectos Renovables, S.L.",
+      "short": "ADPR"
+     }
+    ],
+    "published": "2026-11-09",
+    "reference": "C/2026/5945",
+    "simplified": true,
+    "transaction": "IGNIS P2X ja Acciona (yritysten ADC ja ADPR kautta) hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yhteisen määräysvallan yrityksissä IGNIS DATA EPTA, S.L.U. (SPV DC, Espanja) ja ESTRIBO SOLAR, S.L.U. (SPV PV, Espanja). Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5945/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-28",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-09",
+     "reference": "C:2026:5945:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_M_68.20",
@@ -6101,6 +6249,23 @@
    "timeline": [],
    "title": "AP / GERRESHEIMER (PRIMARY PACKAGING PLASTICS BUSINESS)"
   },
+  "M.12603": {
+   "caseNumber": "M.12603",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-08-10",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_N_71.20",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "EQT FUNDS / INTERTEK"
+  },
   "M.12604": {
    "caseNumber": "M.12604",
    "deadline": "2026-10-07",
@@ -6528,9 +6693,14 @@
   "M.12623": {
    "caseNumber": "M.12623",
    "deadline": "2026-11-17",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-06",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-31",
-   "lastDecision": null,
+   "lastDecision": "2026-11-06",
    "notice": {
     "activities": [
      "Ardian on ranskalainen pääomasijoitusyhtiö, joka tytäryhtiöidensä kautta hallinnoi useita sijoitusrahastoja, joilla on suoria tai välillisiä omistusosuuksia monissa toiminnallisissa yhtiöissä eri puolilla maailmaa, ja antaa niille neuvontaa.",
@@ -6950,6 +7120,23 @@
    "timeline": [],
    "title": "ITOCHU / DENTSU / DENTSU SOKEN"
   },
+  "M.12636": {
+   "caseNumber": "M.12636",
+   "deadline": "2026-12-11",
+   "decisions": [],
+   "initiated": "2026-09-14",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-06",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_F_43.99",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "FINCANTIERI / NEXTGEO"
+  },
   "M.12637": {
    "caseNumber": "M.12637",
    "deadline": "2026-12-01",
@@ -7242,7 +7429,7 @@
      "reference": "C:2026:5440:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_25.53",
    "simplified": "MEsupersimplified",
@@ -7446,10 +7633,63 @@
    "decisions": [],
    "initiated": "2026-10-20",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Ares on yhdysvaltalainen globaalisti toimiva vaihtoehtoisten sijoitusten hoitaja, joka tarjoaa asiakkailleen täydentäviä ensisijaisia ja toissijaisia sijoitusratkaisuja luotto-, kiinteistö-, pääomasijoitus- ja infrastruktuuriomaisuusluokissa.",
+     "Statera on Yhdistyneen kuningaskunnan energiasektorilla toimiva yhtiö, joka keskittyy akkuvarastointiin ja joustavaan energiantuotantoon. Se toimii myös muiden joustavien energiateknologioiden, kuten pumppuvoimalaitokset ja vihreän vedyn tuotanto, markkinoilla. EFMS hoitaa EQT Infrastructure VI:n vaihtoehtoisia sijoituksia. EQT Infrastructure VI on yksityinen sijoitusrahasto, joka kuuluu EQT-sijoitusrahastoryhmään. EFMS on kokonaan EQT AB:n (Ruotsi) omistuksessa. EQT:n rahastoilla on salkkuyrityksiä useilla toimialoilla ja useissa maissa Euroopan talousalueella ja maailmanlaajuisesti."
+    ],
+    "fi": false,
+    "jv": "Omaisuuserissä Statera JV assets on kyse seuraavasta: Noin 1,9 gigawatin verran toiminnassa tai rakenteilla olevia akkupohjaisia energianvarastointijärjestelmiä (BESS) ja joustavaa kaasukäyttöistä sähköntuotantoa (Flex-gen) Yhdistyneessä kuningaskunnassa. Liiketoiminta koostuu i) sähkön varastoinnista ja ii) sähkön tuottamisesta uusiutumattomista lähteistä. Liiketoiminnassa myydään sähköä, varastointikapasiteettia ja säätövoimaa ainoastaan Yhdistyneen kuningaskunnan tukkumarkkinoilla ja tasehallintamarkkinoilla. Sähköä ei toimiteta loppukäyttäjille.",
+    "observationDays": 10,
+    "observationsEnd": "2026-11-19",
+    "observationsShifted": null,
+    "oj": "C:2026:5946:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Ares Partners Holdco LLC"
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Ares Management Corporation",
+      "short": "Ares"
+     },
+     {
+      "controllers": [
+       {
+        "country": "Ruotsi",
+        "name": "EQT AB"
+       }
+      ],
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Statera Operating Holdings Limited",
+      "short": "Statera"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Statera Opco Holdings Limited",
+      "short": "Statera JV Assets"
+     }
+    ],
+    "published": "2026-11-09",
+    "reference": "C/2026/5946",
+    "simplified": true,
+    "transaction": "Ares ja EFMS hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan omaisuuseriin Statera JV Assets. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5946/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-27",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-09",
+     "reference": "C:2026:5946:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_D_35.16",
@@ -7473,7 +7713,24 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "WITTINGTON / FAIRFAX / BLAZING STAR BOOTS SUPERCO"
+  },
+  "M.12701": {
+   "caseNumber": "M.12701",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-11-04",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_J_60.31",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
   }
  },
- "fetched": "2026-11-09T07:27:03Z"
+ "fetched": "2026-11-09T17:41:34Z"
 }

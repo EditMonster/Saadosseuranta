@@ -1139,6 +1139,15 @@ DESCRIPTION:Voimaan (600/2026) · 600/2026 · HE 43/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/43
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-127-2026-voimaan-2026-12-01@saadosseuranta
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[FI] Voimaan: Laiksi rikoslain 25 luvun muuttamisesta ja eräiksi muiksi laeiksi
+DESCRIPTION:Voimaan (976/2026) · HE 127/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/127
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/127
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-114-2025-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1281,6 +1290,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Syyttäjälaitoksesta annetun lain ja oikeushallinnon valtakunnallisesta tietovarannosta annetun lain muuttamisesta
 DESCRIPTION:Voimaan (908/2026) · 908/2026 · HE 77/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-1a459a89-lausunto-2026-12-06@saadosseuranta
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[FI] Lausuntoaika päättyy: Päiväsakkoasetuksen muuttaminen
+DESCRIPTION:Lausuntokierros · OM065:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OM065:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=OM065:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-78e815f5-lausunto-2026-11-25@saadosseuranta

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-09T07:18:07",
+ "fetched": "2026-11-09T17:36:55",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -55896,6 +55896,10 @@
      "type": "DELIB_WP_byCONSIL"
     },
     {
+     "date": "2025-11-11",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
      "date": "2025-12-03",
      "type": "DELIB_COREPER_byCONSIL"
     },
@@ -55950,6 +55954,10 @@
     {
      "date": "2026-05-29",
      "type": "DELIB_byCONSIL"
+    },
+    {
+     "date": "2026-06-02",
+     "type": "DELIB_WP_byCONSIL"
     },
     {
      "date": "2026-07-10",
@@ -62696,6 +62704,10 @@
     {
      "date": "2026-05-12",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-05-29",
+     "type": "DELIB_byCONSIL"
     },
     {
      "date": "2026-07-10",
