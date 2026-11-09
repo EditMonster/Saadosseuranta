@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T07:33:44",
+ "fetched": "2026-11-09T06:39:24",
  "items": [
   {
    "actType": "REG_DEL",
@@ -25,7 +25,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-03",
+     "end": "2027-01-04",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-03",
+     "end": "2027-01-04",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-03",
+     "end": "2027-01-04",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -733,7 +733,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-03",
+     "end": "2027-01-04",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -1770,42 +1770,6 @@
    "title_en": "Implementing rules on registering in and reporting to the register of producers ",
    "title_fi": "Pakkaukset ja pakkausjäte – kansallisia tuottajarekistereitä koskevat säännöt",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15352_en"
-  },
-  {
-   "actType": "REG_DEL",
-   "actTypeLabel": "Delegoitu asetus",
-   "id": 14858,
-   "periods": [
-    {
-     "end": "2026-09-09",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-08-12"
-    }
-   ],
-   "reference": "Ares(2025)7729439",
-   "status": "ACTIVE",
-   "title_en": "Methodology for calculation and verification of recycled content in batteries",
-   "title_fi": "Kestävät akut ja paristot – kierrätetyn sisällön laskeminen ja todentaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14858_en"
-  },
-  {
-   "actType": "SWD",
-   "actTypeLabel": "SWD",
-   "id": 18897,
-   "periods": [
-    {
-     "end": "2026-09-09",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-12"
-    }
-   ],
-   "reference": "Ares(2026)7327001",
-   "status": "ACTIVE",
-   "title_en": "Ex-post evaluation of MFA Moldova and North Macedonia",
-   "title_fi": "EU:n rahoitusapu Moldovalle ja Pohjois-Makedonialle (makrotaloudellinen rahoitusapu) – arviointi",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18897_en"
   },
   {
    "actType": "REG_DEL",

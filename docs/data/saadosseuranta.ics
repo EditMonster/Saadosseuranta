@@ -149,15 +149,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 171/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/171
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-139-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[FI] Voimaan: Laiksi vaaratiedotteesta annetun lain 5 ja 7 §:n muuttamisesta
-DESCRIPTION:Voimaan (911/2026) · HE 139/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/139
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-240-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -680,15 +671,6 @@ DESCRIPTION:Voimaan (377/2026) · 377/2026 · HE 16/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/16
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-133-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[FI] Voimaan: Laiksi eräiden kriittisiä raaka-aineita koskevan Euroopan parlamentin ja neuvoston asetuksen mukaisten velvoitteiden toimeenpanosta ja valvonnasta ja siihen liittyviksi laeiksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 133/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/133
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/133
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-227-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1067,15 +1049,6 @@ DESCRIPTION:Ehdotettu voimaantulo · 936/2026 · HE 143/2026 vp · https://www.f
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/143
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-94-2026-voimaan-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[FI] Voimaan: Laeiksi työvoimapalveluiden järjestämisestä annetun lain ja tulotietojärjestelmästä annetun lain 13 §:n muuttamisesta
-DESCRIPTION:Voimaan (887/2026) · 887/2026 · HE 94/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/94
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-117-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1443,15 +1416,6 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus perusopetusasetuksen muuttamisesta
 DESCRIPTION:Lausuntokierros · OKM032:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OKM032:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=OKM032:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-3c104bd9-lausunto-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus riistavahingoista annetun valtioneuvoston asetuksen 5 §:n ja liitteen 5 muuttamisesta
-DESCRIPTION:Lausuntokierros 2.10.2026 - 1.11.2026 · MMM006:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=MMM006:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=MMM006:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a2009c8f-lausunto-2026-11-13@saadosseuranta
@@ -2012,6 +1976,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2023/2418/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2022-0269-soveltaminen-2027-12-14@saadosseuranta
+DTSTAMP:20271214T000000Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:[EU] Soveltaminen: Pakkotyöllä valmistettujen tuotteiden kieltäminen unionin markkinoilla
+DESCRIPTION:Soveltaminen (vaihe) · (EU) 2024/3015 · https://eur-lex.europa.eu/eli/reg/2024/3015/oj
+URL:https://eur-lex.europa.eu/eli/reg/2024/3015/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2022-0272-soveltaminen-2027-12-11@saadosseuranta
 DTSTAMP:20271211T000000Z
 DTSTART;VALUE=DATE:20271211
@@ -2255,13 +2228,58 @@ DESCRIPTION:Soveltaminen (vaihe) · (EU) 2026/471 · https://eur-lex.europa.eu/e
 URL:https://eur-lex.europa.eu/eli/reg/2026/471/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-2025-0177-voimaan-2026-11-17@saadosseuranta
-DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
+UID:eu-2025-0172-voimaan-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[EU] Voimaan: Puolustusvalmiutta koskevien hankkeiden lupamenettelyn nopeuttaminen
+DESCRIPTION:Voimaan · (EU) 2026/2381 · https://eur-lex.europa.eu/eli/reg/2026/2381/oj
+URL:https://eur-lex.europa.eu/eli/reg/2026/2381/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0172-soveltaminen-2027-02-24@saadosseuranta
+DTSTAMP:20270224T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:[EU] Soveltaminen: Puolustusvalmiutta koskevien hankkeiden lupamenettelyn nopeuttaminen
+DESCRIPTION:Soveltaminen (vaihe) · (EU) 2026/2381 · https://eur-lex.europa.eu/eli/reg/2026/2381/oj
+URL:https://eur-lex.europa.eu/eli/reg/2026/2381/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0176-soveltaminen-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:[EU] Soveltaminen: Asetusten (EY) N:o 1907/2006\, (EY) N:o 1272/2008\, (EU) N:o 528/2012\, (EU) 2019/1021 ja (EU) 2021/697 muuttaminen siltä osin kuin on kyse puolustusvalmiudesta se
+DESCRIPTION:Soveltaminen (vaihe) · (EU) 2026/2382 · https://eur-lex.europa.eu/eli/reg/2026/2382/oj
+URL:https://eur-lex.europa.eu/eli/reg/2026/2382/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0177-voimaan-2026-11-23@saadosseuranta
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
 SUMMARY:[EU] Voimaan: Direktiivien 2009/43/EY ja 2009/81/EY muuttaminen puolustukseen liittyvien tuotteiden EU:n sisäisten siirtojen yksinkertaistamisen sekä turvallisuus- ja puolust
-DESCRIPTION:Voimaan · (EU) 2026/2402 · https://eur-lex.europa.eu/eli/dec/2026/2402/oj
-URL:https://eur-lex.europa.eu/eli/dec/2026/2402/oj
+DESCRIPTION:Voimaan · (EU) 2026/2383 · https://eur-lex.europa.eu/eli/dir/2026/2383/oj
+URL:https://eur-lex.europa.eu/eli/dir/2026/2383/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0177-maaraaika-2027-11-24@saadosseuranta
+DTSTAMP:20271124T000000Z
+DTSTART;VALUE=DATE:20271124
+DTEND;VALUE=DATE:20271125
+SUMMARY:[EU] Määräaika: Direktiivien 2009/43/EY ja 2009/81/EY muuttaminen puolustukseen liittyvien tuotteiden EU:n sisäisten siirtojen yksinkertaistamisen sekä turvallisuus- ja puolust
+DESCRIPTION:Täytäntöönpanon määräaika · (EU) 2026/2383 · https://eur-lex.europa.eu/eli/dir/2026/2383/oj
+URL:https://eur-lex.europa.eu/eli/dir/2026/2383/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-2025-0232-voimaan-2026-11-19@saadosseuranta
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[EU] Voimaan: Direktiivin 2004/37/EY muuttaminen siltä osin kuin on kyse aineiden lisäämisestä sen liitteisiin I\, III ja III a ja niitä koskevien raja-arvojen asettamisesta
+DESCRIPTION:Voimaan · (EU) 2026/2450 · https://eur-lex.europa.eu/eli/dir/2026/2450/oj
+URL:https://eur-lex.europa.eu/eli/dir/2026/2450/oj
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2025-0251-maaraaika-2027-06-30@saadosseuranta
@@ -2318,10 +2336,19 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-03@saadosseuranta
-DTSTAMP:20270103T000000Z
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
+UID:eu-2026-0078-voimaan-2026-11-04@saadosseuranta
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[EU] Voimaan: Ketterää ja nopeaa puolustusalan innovointia koskevan ohjelman (AGILE) perustaminen
+DESCRIPTION:Voimaan · (EU) 2026/2387 · https://eur-lex.europa.eu/eli/reg/2026/2387/oj
+URL:https://eur-lex.europa.eu/eli/reg/2026/2387/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-14770-lausunto-2027-01-04@saadosseuranta
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2426,10 +2453,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-03@saadosseuranta
-DTSTAMP:20270103T000000Z
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
+UID:eu-hys-19517-lausunto-2027-01-04@saadosseuranta
+DTSTAMP:20270104T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2937,15 +2964,6 @@ DTEND;VALUE=DATE:20261111
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for the temporary withdrawal of preferential arrangements and the adoptio
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6214 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3143-soveltaminen-2026-11-01@saadosseuranta
-DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/2152\, annettu 21 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2026/2108 täydentämisestä vahvist
-DESCRIPTION:Soveltaminen (vaihe) · C(2026)6694 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3143
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3149-maaraaika-2026-11-09@saadosseuranta
