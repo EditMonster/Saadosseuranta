@@ -1283,6 +1283,15 @@ DESCRIPTION:Voimaan (908/2026) · 908/2026 · HE 77/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-8f5fdfa7-lausunto-2026-12-05@saadosseuranta
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus siviilipalveluksesta annetun valtioneuvoston asetuksen muuttamisesta
+DESCRIPTION:Lausuntokierros · TEM065:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM065:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM065:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-1a459a89-lausunto-2026-12-06@saadosseuranta
 DTSTAMP:20261206T000000Z
 DTSTART;VALUE=DATE:20261206

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T10:27:01",
+ "fetched": "2026-11-10T17:56:38",
  "items": {
   "10/2023": {
    "fetched": "2026-11-02",
@@ -4140,6 +4140,15 @@
    "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/1270",
    "voimaan": "2024-01-01",
    "vtText": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2024."
+  },
+  "1270/2025": {
+   "fetched": "2026-11-10",
+   "muutVoimaantulot": [],
+   "sk": "1270/2025",
+   "title": null,
+   "url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1270",
+   "voimaan": "2026-01-01",
+   "vtText": "Tämä asetus tulee voimaan 1 päivänä tammikuuta 2026."
   },
   "1271/2023": {
    "fetched": "2026-10-31",

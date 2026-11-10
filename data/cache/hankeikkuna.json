@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T10:26:27",
+ "fetched": "2026-11-10T17:49:51",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -344,7 +344,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-22T12:02:52",
+   "muokattu": "2026-11-10T12:25:12",
    "nimi": "Hallituksen esitys eduskunnalle laiksi yritysten määräaikaisesta polttoainetuesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om temporärt bränslestöd för företag",
    "pevLausunto": false,
@@ -9088,15 +9088,15 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-06T11:55:04",
-   "nimi": "Hallituksen esitys fossiilittoman jouston tukimekanismista (Talvienergiatuki)",
-   "nimiSv": "Regeringens proposition om en stödmekanism för fossilfri flexibilitet (stödmekanism för väderoberoende elproduktion)",
+   "muokattu": "2026-11-10T14:09:04",
+   "nimi": "Hallituksen esitys talvienergiatuesta (fossiilittoman jouston tukimekanismi)",
+   "nimiSv": "Regeringens proposition om en stödmekanism för väderoberoende elproduktion",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
    "skNumerot": [],
    "teemat": [],
-   "tiivistelma": "Hallituksen esityksellä edistetään pitkäkestoisen sähkön joustokapasiteetin rakentumista ja markkinoille tuloa. Tavoitteena on tukea sähköjärjestelmän tasapainoa tilanteessa, jossa uusiutuvan energian osuus sähköntuotannosta kasvaa.",
+   "tiivistelma": "Hallituksen esityksellä luodaan pysyvä tukimekanismi, jolla edistetään fossiilittoman ja säävarman sähköntuotantokapasiteetin rakentumista. Kapasiteetti parantaa sähköjärjestelmän toimitusvarmuutta erityisesti talvella ja pitkinä vähätuulisina jaksoina. Lailla säädetään myös tuen jatkuvasta, pitkäaikaisesta rahoituksesta.",
    "tila": "KAYNNISSA",
    "tunnus": "TEM039:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM039:00/2026",
@@ -33578,7 +33578,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-06T11:55:46",
+   "muokattu": "2026-11-10T10:36:35",
    "nimi": "Hallituksen esitys eduskunnalle laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag om genomförande och övervakning av skyldigheterna enligt EU:s förordning om minskning av metanutsläpp inom energisektorn samt om ändring av elmarknadslagen",
    "pevLausunto": false,
@@ -71777,7 +71777,14 @@
    "annettuEduskunnalle": "2026-04-16",
    "arviointineuvosto": false,
    "asetettu": "2025-06-24",
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntoyhteenveto luonnoksesta hallituksen esitykseksi eduskunnalle työkyvyttömyyseläkkeen ja työansioiden yhteensovitt",
+     "pvm": "2026-11-10",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/e36b06b5-789f-4270-aab9-6521c102a2d0/7883f381-890d-4429-a28c-eafc6adb6444/YHTEENVETO_20261110121235.DOCX"
+    }
+   ],
    "asiasanat": [
     "takuueläke",
     "osatyökyvyttömyyseläkkeet",
@@ -71794,6 +71801,13 @@
      "kind": "muu",
      "label": "Vammaisjärjestöjen kuulemistilaisuus 24.3.2025",
      "tyyppi": "KUULEMISTILAISUUS"
+    },
+    {
+     "date": "2026-02-26",
+     "end": "2026-03-12",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
     }
    ],
    "evNumerot": [],
@@ -71805,6 +71819,13 @@
    "laji": "laki",
    "lausunnot": {
     "docs": [
+     {
+      "date": "2026-11-06",
+      "id": "b3eb8fa9-53ca-4c79-874b-c086f7212f5a",
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "Arviointineuvoston lausunto 28.4.2026",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e36b06b5-789f-4270-aab9-6521c102a2d0/b3eb8fa9-53ca-4c79-874b-c086f7212f5a/LAUSUNTO_20261110123337.PDF"
+     },
      {
       "date": "2026-03-16",
       "id": "e242caad-f198-429e-8b08-28a0546ffaf8",
@@ -72038,7 +72059,7 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 33,
+    "n": 34,
     "orgs": [
      "Akava ry",
      "Amnesty International Suomen osasto",
@@ -72065,6 +72086,7 @@
      "SAMS - Samarbetsförbundet kring funktionshinder rf",
      "SOSTE Suomen sosiaali ja terveys ry",
      "STTK ry",
+     "Sosiaali- ja terveysministeriö",
      "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
      "Suomen Reumaliitto ry",
      "Suomen Yrittäjät ry",
@@ -72075,11 +72097,11 @@
      "Vates-säätiö sr"
     ],
     "url": null,
-    "viimeisin": "2026-03-16"
+    "viimeisin": "2026-11-06"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-09T10:57:01",
+   "muokattu": "2026-11-10T12:33:38",
    "nimi": "Hallituksen esitys työkyvyttömyyseläkkeen ja työansioiden yhteensovittamista koskevaksi lainsäädännöksi (ns. joustomalli)",
    "nimiSv": "RP med förslag till lagstiftning om samordning av invalidpension och arbetsinkomster (s.k. flexibilitetsmodell)",
    "pevLausunto": false,
@@ -72098,6 +72120,12 @@
      "n": "2026-02-26-(Osa)työkyvyttömyyseläkkeiden joustomalli",
      "t": "MUISTIO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/e36b06b5-789f-4270-aab9-6521c102a2d0/9344365e-8d48-4764-9301-f6f42b7e4fbf/MUISTIO_20260226211143.PDF"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Lausuntoyhteenveto luonnoksesta hallituksen esitykseksi eduskunnalle työkyvyttömyyseläkkeen ja työansioiden yhteensovitt",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e36b06b5-789f-4270-aab9-6521c102a2d0/7883f381-890d-4429-a28c-eafc6adb6444/YHTEENVETO_20261110121235.DOCX"
     }
    ],
    "valmisteluvaihe": null,
@@ -84136,7 +84164,7 @@
    },
    "lisattyPaiva": "2026-01-14",
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-29T06:22:45",
+   "muokattu": "2026-11-10T11:19:48",
    "nimi": "Hallituksen esitys eduskunnalle kotihoidon tuen Norjan mallista",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till en norsk modell för stöd för hemvård av barn",
    "pevLausunto": false,
@@ -87101,7 +87129,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-10T08:24:18",
+   "muokattu": "2026-11-10T12:50:09",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "nimiSv": "Genomförande av direktivet om bekämpning av våld mot kvinnor och våld i nära relationer",
    "pevLausunto": false,
@@ -489367,7 +489395,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-10T07:44:22",
+   "muokattu": "2026-11-10T14:03:03",
    "nimi": "Valtioneuvoston asetus metsityksen määräaikaisesta tukemisesta annetun asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av förordning om temporärt stöd för beskogning",
    "pevLausunto": false,
@@ -489390,11 +489418,32 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi siviilipalveluksesta annetun valtioneuvoston asetuksen (1461_2007) muuttamisesta",
+     "pvm": "2026-11-10",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/13bc690b-c033-4141-8af2-0e21c53d33a7/LAUSUNTOPYYNTO_20261110105026.PDF"
+    },
+    {
+     "nimi": "Begäran om utlåtanden om utkastet till statsrådets förordning om ändring av statsrådets förordning om civiltjänst (1461_2007)",
+     "pvm": "2026-11-10",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/78bc161a-a669-457a-b133-efe76267809c/LAUSUNTOPYYNTO_20261110105026.PDF"
+    }
+   ],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-11-10",
+     "end": "2026-12-05",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -489403,7 +489452,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-09T10:55:57",
+   "muokattu": "2026-11-10T10:52:57",
    "nimi": "Valtioneuvoston asetus siviilipalveluksesta annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om civiltjänst",
    "pevLausunto": false,
@@ -489416,7 +489465,38 @@
    "tunnus": "TEM065:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM065:00/2026",
    "uuid": "8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1",
-   "valmistelu": [],
+   "valmistelu": [
+    {
+     "d": "2026-11-10",
+     "n": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi siviilipalveluksesta annetun valtioneuvoston asetuksen (1461_2007) muuttamisesta",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/13bc690b-c033-4141-8af2-0e21c53d33a7/LAUSUNTOPYYNTO_20261110105026.PDF"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Begäran om utlåtanden om utkastet till statsrådets förordning om ändring av statsrådets förordning om civiltjänst (1461_2007)",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/78bc161a-a669-457a-b133-efe76267809c/LAUSUNTOPYYNTO_20261110105026.PDF"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Muistio siviilipalvelusasetuksen muuttaminen",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/6fa08e70-2031-4491-87bb-8ad1dc1c9e28/LIITE_20261110105026.PDF"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Valtioneuvoston asetus siviilipalveluksesta annetun valtioneuvoston asetuksen muuttamisesta",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/13bfa2a2-fc48-460a-85ab-6d5746577432/LIITE_20261110105026.PDF"
+    },
+    {
+     "d": "2026-11-10",
+     "n": "Statsrådets förordning om ändring av statsrådets förordning om civiltjänst",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/8f5fdfa7-6c0c-4dd8-8485-ad09fecd6ff1/6f118c64-36b7-4963-9825-25ecea2a41de/LIITE_20261110105026.PDF"
+    }
+   ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
@@ -489440,10 +489520,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-10",
+      "id": "997afe60-fb60-43bc-b34b-2a446baf1b36",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 1,
+    "orgs": [
+     "Valtiovarainministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-10"
+   },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-10T08:16:32",
+   "muokattu": "2026-11-10T12:25:00",
    "nimi": "Sosiaali- ja terveysministeriön asetus turkistuottajille järjestettävien lomituspalvelujen enimmäismääristä vuonna 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om maximikvantiteten avbytarservice som kan ordnas för pälsdjursuppfödare under 2027",
    "pevLausunto": false,
@@ -489479,10 +489576,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-10",
+      "id": "b34f1e6b-538d-4a8a-85eb-a5989dd425f4",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 1,
+    "orgs": [
+     "Valtiovarainministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-10"
+   },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-10T08:17:51",
+   "muokattu": "2026-11-10T12:28:19",
    "nimi": "Sosiaali- ja terveysministeriön asetus poronhoitajien sijaisavun enimmäismäärästä vuonna 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om maximikvantiteten vikariehjälp för renskötare under 2027",
    "pevLausunto": false,
@@ -489559,10 +489673,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-10",
+      "id": "063f51fd-0fdb-498a-829e-5e35c98defb4",
+      "none": true,
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 1,
+    "orgs": [
+     "Valtiovarainministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-10"
+   },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-09T08:50:57",
+   "muokattu": "2026-11-10T10:35:36",
    "nimi": "Päiväsakkoasetuksen muuttaminen",
    "nimiSv": "Ändring av förordningen om dagsbotens belopp",
    "pevLausunto": false,
@@ -490376,6 +490507,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-10",
+      "id": "011bad80-2d68-46f2-834b-d41aae5616c6",
+      "none": true,
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "Sosiaali- ja terveysministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-02",
       "id": "9af8dfb1-9e16-415a-bee1-e30e8f72db0f",
       "none": true,
@@ -490410,21 +490548,22 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/86f21123-d26c-452b-ab15-ea1fb4e5f0de/LAUSUNTO_20261026192907.PDF"
      }
     ],
-    "eiLausuttavaa": 1,
-    "n": 5,
+    "eiLausuttavaa": 2,
+    "n": 6,
     "orgs": [
      "Oikeusministeriö",
      "Opetus- ja kulttuuriministeriö",
      "Poliisitoimintayksikkö, Poliisihallitus",
+     "Sosiaali- ja terveysministeriö",
      "Suomen Laivanpäällystöliitto ry",
      "Suomen Taksiliitto ry"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9d41d48a-b6f6-4ccb-8442-73e900ee78c4&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-02"
+    "viimeisin": "2026-11-10"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-06T11:18:39",
+   "muokattu": "2026-11-10T12:21:59",
    "nimi": "Liikenne- ja viestintäministeriön asetus Väyläviraston maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordning om Trafikledsverkets avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -490549,6 +490688,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-10",
+      "id": "06ca2059-a7e6-44fe-bc15-cec0675ce66e",
+      "none": true,
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriön lausunto; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-06",
       "id": "c548c841-a33f-4365-91ae-1543bd60a5d2",
       "org": "Centria-ammattikorkeakoulu Oy",
@@ -490577,20 +490723,21 @@
       "title": "Sosiaali- ja terveysministeriö; ei lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 3,
-    "n": 4,
+    "eiLausuttavaa": 4,
+    "n": 5,
     "orgs": [
      "Centria-ammattikorkeakoulu Oy",
      "Kilpailu- ja kuluttajavirasto KKV",
      "Opetus- ja kulttuuriministeriö",
-     "Sosiaali- ja terveysministeriö"
+     "Sosiaali- ja terveysministeriö",
+     "Työ- ja elinkeinoministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5e5526f8-1550-4433-aa6c-1036af0bffe1&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-06"
+    "viimeisin": "2026-11-10"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-08T06:27:21",
+   "muokattu": "2026-11-10T12:06:03",
    "nimi": "Liikenne- ja viestintäministeriön asetukset Liikenne- ja viestintävirasto Traficomin maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordningar om Transport- och kommunikationsverket Traficoms avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -491675,6 +491822,13 @@
       "title": "Uudenmaan liiton ilmoitus; ei lausuttavaa"
      },
      {
+      "date": "2026-11-09",
+      "id": "0f20dcb2-7a61-4e7b-bf3c-dd77a5c9124e",
+      "org": "Association Ulvetid",
+      "title": "Association Ulvetid; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/0f20dcb2-7a61-4e7b-bf3c-dd77a5c9124e/LAUSUNTO_20261110110809.PDF"
+     },
+     {
       "date": "2026-11-08",
       "id": "b92a4dc7-0546-4475-88bd-7bc6dd8eb068",
       "org": "Aktivt Rovdyrvern (ARV)",
@@ -491872,11 +492026,12 @@
      }
     ],
     "eiLausuttavaa": 5,
-    "n": 29,
+    "n": 30,
     "orgs": [
      "Yksityishenkilö",
      "Valtakunnallinen riistaneuvosto",
      "Aktivt Rovdyrvern (ARV)",
+     "Association Ulvetid",
      "Avenir Loup Lynx Jura",
      "Idän Taiga ry",
      "Korsholms kommun / Mustasaaren kunta",
@@ -491903,7 +492058,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-10T09:50:44",
+   "muokattu": "2026-11-10T11:08:09",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -493663,6 +493818,13 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/cf1fc70c-d0bf-4da3-a084-8ddae7e1ce26/LAUSUNTO_20261108061829.PDF"
      },
      {
+      "date": "2026-11-05",
+      "id": "fca65a2f-764b-47dd-bb66-2931b39a6609",
+      "org": "Maa- ja metsätalousministeriö",
+      "title": "Saaristoasiain neuvottelukunta ja yksityistielossityöryhmä; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/fca65a2f-764b-47dd-bb66-2931b39a6609/LAUSUNTO_20261110111154.PDF"
+     },
+     {
       "date": "2026-11-03",
       "id": "1873839f-c317-45f8-a691-b790310f4ae6",
       "org": "Liikenne- ja viestintävirasto Traficom",
@@ -493691,6 +493853,13 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/3fdc787a-ff40-4548-a2b7-d0944f151bf9/LAUSUNTO_20261102185119.PDF"
      },
      {
+      "date": "2026-11-02",
+      "id": "09ab616c-8faf-411e-8231-05ff06f2f791",
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/09ab616c-8faf-411e-8231-05ff06f2f791/LAUSUNTO_20261110112112.PDF"
+     },
+     {
       "date": "2026-10-30",
       "id": "670f35c8-c4f5-46c5-8840-3cb835100094",
       "org": "Paraisten kaupunki",
@@ -493703,6 +493872,13 @@
       "org": "Metsähallitus",
       "title": "Metsähallitus; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/fadfbe35-b275-4a3f-8c83-1d912f63c1f7/LAUSUNTO_20261101051435.PDF"
+     },
+     {
+      "date": "2026-10-30",
+      "id": "6557b5e7-80f7-4d60-bfea-a11af806ff18",
+      "org": "Maa- ja metsätalousministeriö",
+      "title": "Maa- ja metsätalousministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/b8a220c7-dc1f-430b-b6b3-09403037a3fd/6557b5e7-80f7-4d60-bfea-a11af806ff18/LAUSUNTO_20261110110920.PDF"
      },
      {
       "date": "2026-10-28",
@@ -493776,8 +493952,9 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 19,
+    "n": 22,
     "orgs": [
+     "Maa- ja metsätalousministeriö",
      "Etelä-Karjalan liitto",
      "Etelä-Savon maakuntaliitto",
      "FÖSS Finlands Öar rf - Suomen saaret ry",
@@ -493795,6 +493972,7 @@
      "Suomen Tieyhdistys ry",
      "Työ- ja elinkeinoministeriö",
      "Uudenmaan elinvoimakeskus",
+     "Valtiovarainministeriö",
      "Varsinais-Suomen liitto",
      "Väylävirasto"
     ],
@@ -493803,7 +493981,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-08T06:36:42",
+   "muokattu": "2026-11-10T11:21:12",
    "nimi": "Yksityistieasetuksen muuttaminen",
    "nimiSv": "Ändring av förordningen om enskilda vägar",
    "pevLausunto": false,
@@ -493881,10 +494059,42 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-09",
+      "id": "c6e8eddf-9d52-4e9c-a65c-bfaa1664ec1e",
+      "org": "Keskusrikospoliisi / rahanpesun selvittelykeskus",
+      "title": "Keskusrikospoliisin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/dcab14b0-ca0f-45ba-9e56-1310db98852c/c6e8eddf-9d52-4e9c-a65c-bfaa1664ec1e/LAUSUNTO_20261110133459.PDF"
+     },
+     {
+      "date": "2026-11-09",
+      "id": "ecf8293a-2528-4186-a2a6-db03a2a85cb1",
+      "org": "Keskusrikospoliisi / rahanpesun selvittelykeskus",
+      "title": "Keskusrikospoliisin lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/dcab14b0-ca0f-45ba-9e56-1310db98852c/ecf8293a-2528-4186-a2a6-db03a2a85cb1/LAUSUNTO_20261110133525.PDF"
+     },
+     {
+      "date": "2026-11-06",
+      "id": "2efe9125-71f4-42ef-ad1b-44dc7f487443",
+      "none": true,
+      "org": "Opetus- ja kulttuuriministeriö",
+      "title": "Opetus- ja kulttuuriministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 3,
+    "orgs": [
+     "Keskusrikospoliisi / rahanpesun selvittelykeskus",
+     "Opetus- ja kulttuuriministeriö"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-09"
+   },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-10-13T07:50:20",
+   "muokattu": "2026-11-10T13:35:25",
    "nimi": "Valtioneuvoston asetukset taajuusasetuksen ja Ahvenanmaan taajuusasetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordningar om ändring av frekvensförordningen och Ålands frekvensförordning",
    "pevLausunto": false,
@@ -494656,6 +494866,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-10",
+      "id": "002976d9-f0dc-41b7-a11a-1e09ad12aaae",
+      "none": true,
+      "org": "Maa- ja metsätalousministeriö",
+      "title": "Maa- ja metsätalousministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-09",
       "id": "be59182b-527f-4af4-8fe9-eb113a723420",
       "org": "Pohjois-Savon hyvinvointialue",
@@ -494668,6 +494885,13 @@
       "org": "Isännöintiliitto ry",
       "title": "Isännöintiliitto ry; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/b3d158b6-2496-4abb-881b-4d0881574fb7/LAUSUNTO_20261109211058.PDF"
+     },
+     {
+      "date": "2026-11-09",
+      "id": "209d7a88-712f-471b-9a0d-e8709051690f",
+      "org": "Valtiovarainministeriö",
+      "title": "Valtiovarainministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/209d7a88-712f-471b-9a0d-e8709051690f/LAUSUNTO_20261110110702.PDF"
      },
      {
       "date": "2026-11-06",
@@ -494754,8 +494978,8 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/92ae9476-7d39-4a08-80fe-b2d319dc4994/LAUSUNTO_20261102183426.PDF"
      }
     ],
-    "eiLausuttavaa": 0,
-    "n": 14,
+    "eiLausuttavaa": 1,
+    "n": 16,
     "orgs": [
      "Helsingin pelastusliitto ry",
      "Hyvinvointialueyhtiö Hyvil Oy",
@@ -494765,19 +494989,21 @@
      "Kynnys ry",
      "Liikenne- ja viestintävirasto Traficom",
      "Länsi-Uudenmaan hyvinvointialue",
+     "Maa- ja metsätalousministeriö",
      "Pohjanmaan hyvinvointialue",
      "Pohjois-Savon hyvinvointialue",
      "Safetum Oy",
      "Suomen antenni- ja teleurakoitsijaliitto ry",
      "Turvallisuus- ja kemikaalivirasto TUKES",
+     "Valtiovarainministeriö",
      "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=b264614c-5349-401a-857a-3903bdd73c0e&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-09"
+    "viimeisin": "2026-11-10"
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-09T21:10:58",
+   "muokattu": "2026-11-10T11:08:04",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen",
    "nimiSv": "Statsrådets förordning om statsunderstöd för iståndsättning av skyddsrum",
    "pevLausunto": false,
@@ -508486,42 +508712,6 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
-   "asetettu": "2025-12-04",
-   "asiakirjat": [],
-   "asiasanat": [],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": null,
-   "lisattyPaiva": null,
-   "ministerio": "valtiovarainministeriö",
-   "muokattu": "2025-12-04T10:20:48",
-   "nimi": "Valtioneuvoston asetus kunnan peruspalvelujen valtionosuudesta annetun valtioneuvoston asetuksen muuttamisesta",
-   "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om statsandel för kommunal basservice",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Kunnan peruspalvelujen valtionosuudesta annetun lain (618/2021) nojalla valtioneuvoston asetuksella säädetään vuosittain seuraavaa varainhoitovuotta varten laskennallisten kustannusten perushinnat ja lisäosien perushinnat.",
-   "tila": "KAYNNISSA",
-   "tunnus": "VM173:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM173:00/2025",
-   "uuid": "50ea3125-3e83-4e24-abb4-a895722a8eb2",
-   "valmistelu": [],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2025-12-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
@@ -520889,487 +521079,6 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-06-30",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
-   "asetettu": "2024-04-04",
-   "asiakirjat": [
-    {
-     "nimi": "20240410_Lausuntopyyntö valtiovarainministeriön asetuksessa säädettävistä kunnan taloustietojen toimittamiseen sovellettavista tietosisällöistä ja teknisistä kuvauksista koskien tilikautta 2025_72513.pdf",
-     "pvm": "2024-04-15",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/6b9e33de-7952-4684-b0fe-466876c4ed95/LAUSUNTOPYYNTO_20250110090049.PDF"
-    },
-    {
-     "nimi": "Lausuntoyhteenveto kunnat",
-     "pvm": "2025-01-10",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4029414e-cfd3-4baa-8f77-0cb086d87692/YHTEENVETO_20250110102108.PDF"
-    }
-   ],
-   "asiasanat": [
-    "kunnat",
-    "talous",
-    "raportointi"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2024-04-10",
-     "end": "2024-05-03",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    },
-    {
-     "date": "2024-04-22",
-     "end": "2024-04-22",
-     "kind": "muu",
-     "label": "Kuulemistilaisuus kunnille talousraportoinnin tietosisällöistä 22.4.2024 klo 13",
-     "tyyppi": "KUULEMISTILAISUUS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2024-05-03",
-      "id": "22c718c4-3fcd-4cea-95b1-2ffe1e7fba85",
-      "org": "KEHA ELY-keskusten kehittämis- ja hallintokeskus",
-      "title": "KEHA ELY-keskusten sekä TE-toimistojen kehittämis- ja hallintokeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/22c718c4-3fcd-4cea-95b1-2ffe1e7fba85/LAUSUNTO_20240505154653.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "fd630520-c121-4434-aebf-7249157633cd",
-      "org": "Kouvolan kaupunki",
-      "title": "Kouvolan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/fd630520-c121-4434-aebf-7249157633cd/LAUSUNTO_20240505154955.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "148b3cea-86ad-4eae-80bb-5e1ee3e06003",
-      "org": "Porvoon kaupunki",
-      "title": "Porvoon kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/148b3cea-86ad-4eae-80bb-5e1ee3e06003/LAUSUNTO_20240505155258.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "d48a4bbe-737e-429f-86b0-97fb94244443",
-      "org": "Espoon kaupunki",
-      "title": "Espoon kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/d48a4bbe-737e-429f-86b0-97fb94244443/LAUSUNTO_20240505155933.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "cb2ca4bc-6b90-4129-98a2-ca2334dbbbfb",
-      "org": "Turun kaupunki",
-      "title": "Turun kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/cb2ca4bc-6b90-4129-98a2-ca2334dbbbfb/LAUSUNTO_20240505160236.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "54f47b42-fc94-4304-92fe-2fe92888b579",
-      "org": "Hankasalmen kunta",
-      "title": "Hankasalmen kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/54f47b42-fc94-4304-92fe-2fe92888b579/LAUSUNTO_20240505160540.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "2554a7b2-70e9-4da9-94e2-bd9c06c29336",
-      "org": "Riihimäen kaupunki",
-      "title": "Riihimäen kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/2554a7b2-70e9-4da9-94e2-bd9c06c29336/LAUSUNTO_20240505161216.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "dca6b333-2426-49e3-85df-6cc2fc3b3cfa",
-      "org": "Orimattilan kaupunki",
-      "title": "Orimattilan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/dca6b333-2426-49e3-85df-6cc2fc3b3cfa/LAUSUNTO_20240505161854.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "c95aab7e-aa0a-4486-ab82-674b234c1894",
-      "org": "Suomen Kuntaliitto ry",
-      "title": "Suomen Kuntaliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/c95aab7e-aa0a-4486-ab82-674b234c1894/LAUSUNTO_20240505162200.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "ecbfc4b3-e43d-4eea-a721-a3bd01fe79a1",
-      "org": "Savonlinnan kaupunki",
-      "title": "Savonlinnan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/ecbfc4b3-e43d-4eea-a721-a3bd01fe79a1/LAUSUNTO_20240505162828.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "b00e451b-cb7b-4316-bed8-bacffaa30068",
-      "org": "Outokummun kaupunki",
-      "title": "Outokummun kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b00e451b-cb7b-4316-bed8-bacffaa30068/LAUSUNTO_20240505163512.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "5b1acabf-530a-4df2-a0c6-9e3d23e7379a",
-      "org": "Hyvinkään kaupunki",
-      "title": "Hyvinkään kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5b1acabf-530a-4df2-a0c6-9e3d23e7379a/LAUSUNTO_20240505163807.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "82f2a73e-1261-454d-951d-6929972a33e4",
-      "org": "Tilastokeskus",
-      "title": "Tilastokeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/82f2a73e-1261-454d-951d-6929972a33e4/LAUSUNTO_20240505164513.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "262488b3-56af-4859-b390-01b920112d93",
-      "org": "Vantaan kaupunki",
-      "title": "Vantaan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/262488b3-56af-4859-b390-01b920112d93/LAUSUNTO_20240505165159.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "de892fea-b845-4aac-8fb0-de28d82865b9",
-      "org": "Virtain kaupunki",
-      "title": "Virtain kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/de892fea-b845-4aac-8fb0-de28d82865b9/LAUSUNTO_20240505165525.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "5501ded5-824c-440b-9511-9dc090721cfa",
-      "org": "Laitilan kaupunki",
-      "title": "Laitilan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5501ded5-824c-440b-9511-9dc090721cfa/LAUSUNTO_20240505165826.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "5ad5cab6-713a-4c5c-b49f-d445914c2aae",
-      "org": "Haminan kaupunki",
-      "title": "Haminan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5ad5cab6-713a-4c5c-b49f-d445914c2aae/LAUSUNTO_20240505170131.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "72962053-5757-4b40-b330-feda3bfff3ae",
-      "org": "Siikajoen kunta",
-      "title": "Siikajoen kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/72962053-5757-4b40-b330-feda3bfff3ae/LAUSUNTO_20240505170434.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "d805c9a9-dc11-46d1-a69a-c5da9db63878",
-      "org": "Kajaanin kaupunki",
-      "title": "Kajaanin kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/d805c9a9-dc11-46d1-a69a-c5da9db63878/LAUSUNTO_20240505170737.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "897e7444-672e-449a-85c1-d5051091ca4b",
-      "org": "Heinäveden kunta",
-      "title": "Heinäveden kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/897e7444-672e-449a-85c1-d5051091ca4b/LAUSUNTO_20240505171707.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "91b4a21f-c290-4acf-a9c0-6bb4909e27e9",
-      "org": "Sysmän kunta",
-      "title": "Sysmän kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/91b4a21f-c290-4acf-a9c0-6bb4909e27e9/LAUSUNTO_20240505172007.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "dfd2cd59-6da7-45af-915f-5ca9734cd6cc",
-      "org": "Nurmijärven kunta",
-      "title": "Nurmijärven kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/dfd2cd59-6da7-45af-915f-5ca9734cd6cc/LAUSUNTO_20240506154450.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "a0457647-1ee8-465e-a828-1170b5556d18",
-      "org": "Iisalmen kaupunki",
-      "title": "Iisalmen kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/a0457647-1ee8-465e-a828-1170b5556d18/LAUSUNTO_20240506154748.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "19944820-34d6-48df-9e19-03cd8619dc38",
-      "org": "Kärkölän kunta",
-      "title": "Kärkölän kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/19944820-34d6-48df-9e19-03cd8619dc38/LAUSUNTO_20240506155053.PDF"
-     },
-     {
-      "date": "2024-05-03",
-      "id": "be3329b1-99f0-4109-a585-7ef828422c5e",
-      "org": "Liikenne- ja viestintäministeriö",
-      "title": "Liikenne- ja viestintäministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/be3329b1-99f0-4109-a585-7ef828422c5e/LAUSUNTO_20240508102700.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "b401e6af-171e-4abc-8444-757a3fe5d8d0",
-      "org": "Sastamalan kaupunki",
-      "title": "Sastamalan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b401e6af-171e-4abc-8444-757a3fe5d8d0/LAUSUNTO_20240502155724.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "13cf889e-860a-4148-867a-9d02138d96c1",
-      "org": "Tampereen kaupunki",
-      "title": "Tampereen kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/13cf889e-860a-4148-867a-9d02138d96c1/LAUSUNTO_20240502161315.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "06f1dac7-c226-4ab1-bf62-8887eeb7beee",
-      "org": "Lahden kaupunki",
-      "title": "Lahden kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/06f1dac7-c226-4ab1-bf62-8887eeb7beee/LAUSUNTO_20240502161942.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "32f20b7e-0396-43a7-895d-fdb417a44cf9",
-      "org": "CGI Suomi Oy",
-      "title": "CGI Suomi Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/32f20b7e-0396-43a7-895d-fdb417a44cf9/LAUSUNTO_20240502162242.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "1d720dc4-5cc0-43d1-8af4-1ba297dd70fe",
-      "org": "Pukkilan kunta",
-      "title": "Pukkilan kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/1d720dc4-5cc0-43d1-8af4-1ba297dd70fe/LAUSUNTO_20240502164222.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "09d75476-fad8-4dcf-a575-0ea2adf0ed90",
-      "org": "Joensuun kaupunki",
-      "title": "Joensuun kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/09d75476-fad8-4dcf-a575-0ea2adf0ed90/LAUSUNTO_20240505151006.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "1fb8cf6d-5d25-4fa2-b065-e62659fcffe6",
-      "org": "Oulun kaupunki",
-      "title": "Oulun kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/1fb8cf6d-5d25-4fa2-b065-e62659fcffe6/LAUSUNTO_20240505153013.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "71d36d76-e3d3-45ef-8690-4ca222b08d24",
-      "org": "Liperin kunta",
-      "title": "Liperin kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/71d36d76-e3d3-45ef-8690-4ca222b08d24/LAUSUNTO_20240505153702.PDF"
-     },
-     {
-      "date": "2024-05-02",
-      "id": "5e216065-a477-4d12-9a9e-311d56974a08",
-      "org": "Kalajoen kaupunki",
-      "title": "Kalajoen kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5e216065-a477-4d12-9a9e-311d56974a08/LAUSUNTO_20240505154006.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "779ceb38-c3d6-40d0-9e73-fea4e81802dc",
-      "org": "Helsingin kaupunki",
-      "title": "Helsingin kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/779ceb38-c3d6-40d0-9e73-fea4e81802dc/LAUSUNTO_20240430102303.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "2df3d017-b36c-416c-abb1-b2e944f40aaf",
-      "org": "Taipalsaaren kunta",
-      "title": "Taipalsaaren kunta; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/2df3d017-b36c-416c-abb1-b2e944f40aaf/LAUSUNTO_20240502153450.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "ca077188-09e9-4d7f-bd2f-7cc46bb9b6f5",
-      "org": "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote",
-      "title": "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/ca077188-09e9-4d7f-bd2f-7cc46bb9b6f5/LAUSUNTO_20240502154134.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "4eaf7ef5-2df4-4839-ac56-5569c84a81e0",
-      "org": "Kankaanpään kaupunki",
-      "title": "Kankaanpään kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4eaf7ef5-2df4-4839-ac56-5569c84a81e0/LAUSUNTO_20240502154444.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "7589320e-238e-4b5c-86a9-b2b3eef91b27",
-      "org": "Jyväskylän kaupunki",
-      "title": "Jyväskylän kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/7589320e-238e-4b5c-86a9-b2b3eef91b27/LAUSUNTO_20240502155421.PDF"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "ac23d12c-5dd5-4cad-8417-27d401aea845",
-      "none": true,
-      "org": "Terveyden ja hyvinvoinnin laitos THL",
-      "title": "Terveyden ja hyvinvoinnin laitos THL; lausunto, ei lausuttavaa"
-     },
-     {
-      "date": "2024-04-30",
-      "id": "e568579b-78e5-4e23-8808-e6e66b66fdf3",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa"
-     },
-     {
-      "date": "2024-04-29",
-      "id": "9a499663-d157-4aef-af6e-5bcfbd6f5a60",
-      "org": "Lappeenrannan kaupunki",
-      "title": "Lappeenrannan kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/9a499663-d157-4aef-af6e-5bcfbd6f5a60/LAUSUNTO_20240430092226.PDF"
-     },
-     {
-      "date": "2024-04-29",
-      "id": "f228a38b-1141-402b-9f5e-7796d5388f30",
-      "org": "Kilpailu- ja kuluttajavirasto",
-      "title": "Kilpailu- ja kuluttajavirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/f228a38b-1141-402b-9f5e-7796d5388f30/LAUSUNTO_20240430092902.PDF"
-     },
-     {
-      "date": "2024-04-29",
-      "id": "c378181d-eb12-4386-89ac-44f2c67d2dc8",
-      "org": "Sarastia Oy",
-      "title": "Sarastia Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/c378181d-eb12-4386-89ac-44f2c67d2dc8/LAUSUNTO_20240430095636.PDF"
-     },
-     {
-      "date": "2024-04-29",
-      "id": "17ec76da-0553-49a0-89a6-46cfe73d3ad0",
-      "org": "Sosiaali- ja terveysministeriö",
-      "title": "Sosiaali- ja terveysministeriö; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/17ec76da-0553-49a0-89a6-46cfe73d3ad0/LAUSUNTO_20240508103106.PDF"
-     },
-     {
-      "date": "2024-04-25",
-      "id": "23ec399a-30dc-4644-be99-417aabe5b42e",
-      "org": "Valtiokonttori",
-      "title": "Valtiokonttori; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/23ec399a-30dc-4644-be99-417aabe5b42e/LAUSUNTO_20240425161653.PDF"
-     },
-     {
-      "date": "2024-04-24",
-      "id": "49a8e996-d2e6-41a8-909f-88b6ba13de32",
-      "org": "Pudasjärven kaupunki",
-      "title": "Pudasjärven kaupunki; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/49a8e996-d2e6-41a8-909f-88b6ba13de32/LAUSUNTO_20240424160147.PDF"
-     }
-    ],
-    "eiLausuttavaa": 1,
-    "n": 47,
-    "orgs": [
-     "CGI Suomi Oy",
-     "Espoon kaupunki",
-     "Haminan kaupunki",
-     "Hankasalmen kunta",
-     "Heinäveden kunta",
-     "Helsingin kaupunki",
-     "Hyvinkään kaupunki",
-     "Iisalmen kaupunki",
-     "Joensuun kaupunki",
-     "Jyväskylän kaupunki",
-     "KEHA ELY-keskusten kehittämis- ja hallintokeskus",
-     "Kajaanin kaupunki",
-     "Kalajoen kaupunki",
-     "Kankaanpään kaupunki",
-     "Kilpailu- ja kuluttajavirasto",
-     "Kouvolan kaupunki",
-     "Kärkölän kunta",
-     "Lahden kaupunki",
-     "Laitilan kaupunki",
-     "Lappeenrannan kaupunki",
-     "Liikenne- ja viestintäministeriö",
-     "Liperin kunta",
-     "Nurmijärven kunta",
-     "Oikeusministeriö",
-     "Orimattilan kaupunki",
-     "Oulun kaupunki",
-     "Outokummun kaupunki",
-     "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote",
-     "Porvoon kaupunki",
-     "Pudasjärven kaupunki",
-     "Pukkilan kunta",
-     "Riihimäen kaupunki",
-     "Sarastia Oy",
-     "Sastamalan kaupunki",
-     "Savonlinnan kaupunki",
-     "Siikajoen kunta",
-     "Sosiaali- ja terveysministeriö",
-     "Suomen Kuntaliitto ry",
-     "Sysmän kunta",
-     "Taipalsaaren kunta",
-     "Tampereen kaupunki",
-     "Terveyden ja hyvinvoinnin laitos THL",
-     "Tilastokeskus",
-     "Turun kaupunki",
-     "Valtiokonttori",
-     "Vantaan kaupunki",
-     "Virtain kaupunki"
-    ],
-    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=05dc4dfc-8325-4b39-a9af-a328a3823e27&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2024-05-03"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "valtiovarainministeriö",
-   "muokattu": "2025-01-10T10:21:08",
-   "nimi": "Valtiovarainministeriön asetus kunnan taloustietojen toimittamiseen sovellettavasta tietosisällöstä ja teknisistä kuvauksista koskien tilikautta 2025",
-   "nimiSv": "Finansministeriets förordning om informationsinnehåll och tekniska beskrivningar som tillämpas på lämnandet av kommuns ekonomiska uppgifter för räkenskapsperioden 2025",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [
-    "381/2024"
-   ],
-   "teemat": [
-    "Kunta-asiat"
-   ],
-   "tiivistelma": "Kuntalain 120 a §:n nojalla annetaan vuosittain valtiovarainministeriön asetus, jossa ovat tarkemmat säännökset seuraavan tilikauden tietojen toimittamiseen sovellettavista teknisistä kuvauksista ja tietosisällöstä. Tämä säädösvalmisteluhanke koskee tilikaudelta 2025 raportoitavia tietoja.",
-   "tila": "KAYNNISSA",
-   "tunnus": "VM055:00/2024",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM055:00/2024",
-   "uuid": "653520b7-6b76-4049-90d2-f392d37e6a63",
-   "valmistelu": [
-    {
-     "d": "2024-04-15",
-     "n": "20240410_Lausuntopyyntö valtiovarainministeriön asetuksessa säädettävistä kunnan taloustietojen toimittamiseen sovellettavista tietosisällöistä ja teknisistä kuvauksista koskien tilikautta 2025_72513.pdf",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/6b9e33de-7952-4684-b0fe-466876c4ed95/LAUSUNTOPYYNTO_20250110090049.PDF"
-    },
-    {
-     "d": "2024-06-06",
-     "n": "Yhteenveto muutoksista tilikaudelle 2025 (18.6.2024)",
-     "t": "LIITE",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/34264617-59bd-4e94-9035-427b5f7ee564/LIITE_20240607052114.pdf"
-    },
-    {
-     "d": "2024-06-06",
-     "n": "Sammanfattning av ändringarna räkenskapsperiod 2025 (18.6.2024)",
-     "t": "LIITE",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b78b8c74-c12b-4f22-8378-425f2298c6f8/LIITE_20240607052523.pdf"
-    },
-    {
-     "d": "2025-01-10",
-     "n": "Lausuntoyhteenveto kunnat",
-     "t": "YHTEENVETO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4029414e-cfd3-4baa-8f77-0cb086d87692/YHTEENVETO_20250110102108.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2024-06-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -544581,6 +544290,44 @@
    "valmistelu": [],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-12-18",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": "2025-12-04",
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "valtiovarainministeriö",
+   "muokattu": "2026-11-10T11:25:41",
+   "nimi": "Valtioneuvoston asetus kunnan peruspalvelujen valtionosuudesta annetun valtioneuvoston asetuksen muuttamisesta",
+   "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om statsandel för kommunal basservice",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "1270/2025"
+   ],
+   "teemat": [],
+   "tiivistelma": "Kunnan peruspalvelujen valtionosuudesta annetun lain (618/2021) nojalla valtioneuvoston asetuksella säädetään vuosittain seuraavaa varainhoitovuotta varten laskennallisten kustannusten perushinnat ja lisäosien perushinnat.",
+   "tila": "PAATTYNYT",
+   "tunnus": "VM173:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM173:00/2025",
+   "uuid": "50ea3125-3e83-4e24-abb4-a895722a8eb2",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2025-12-31",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -583946,6 +583693,487 @@
    "valmistelu": [],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2026-10-19",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": "2024-04-04",
+   "asiakirjat": [
+    {
+     "nimi": "20240410_Lausuntopyyntö valtiovarainministeriön asetuksessa säädettävistä kunnan taloustietojen toimittamiseen sovellettavista tietosisällöistä ja teknisistä kuvauksista koskien tilikautta 2025_72513.pdf",
+     "pvm": "2024-04-15",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/6b9e33de-7952-4684-b0fe-466876c4ed95/LAUSUNTOPYYNTO_20250110090049.PDF"
+    },
+    {
+     "nimi": "Lausuntoyhteenveto kunnat",
+     "pvm": "2025-01-10",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4029414e-cfd3-4baa-8f77-0cb086d87692/YHTEENVETO_20250110102108.PDF"
+    }
+   ],
+   "asiasanat": [
+    "kunnat",
+    "talous",
+    "raportointi"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2024-04-10",
+     "end": "2024-05-03",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2024-04-22",
+     "end": "2024-04-22",
+     "kind": "muu",
+     "label": "Kuulemistilaisuus kunnille talousraportoinnin tietosisällöistä 22.4.2024 klo 13",
+     "tyyppi": "KUULEMISTILAISUUS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2024-05-03",
+      "id": "22c718c4-3fcd-4cea-95b1-2ffe1e7fba85",
+      "org": "KEHA ELY-keskusten kehittämis- ja hallintokeskus",
+      "title": "KEHA ELY-keskusten sekä TE-toimistojen kehittämis- ja hallintokeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/22c718c4-3fcd-4cea-95b1-2ffe1e7fba85/LAUSUNTO_20240505154653.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "fd630520-c121-4434-aebf-7249157633cd",
+      "org": "Kouvolan kaupunki",
+      "title": "Kouvolan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/fd630520-c121-4434-aebf-7249157633cd/LAUSUNTO_20240505154955.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "148b3cea-86ad-4eae-80bb-5e1ee3e06003",
+      "org": "Porvoon kaupunki",
+      "title": "Porvoon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/148b3cea-86ad-4eae-80bb-5e1ee3e06003/LAUSUNTO_20240505155258.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "d48a4bbe-737e-429f-86b0-97fb94244443",
+      "org": "Espoon kaupunki",
+      "title": "Espoon kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/d48a4bbe-737e-429f-86b0-97fb94244443/LAUSUNTO_20240505155933.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "cb2ca4bc-6b90-4129-98a2-ca2334dbbbfb",
+      "org": "Turun kaupunki",
+      "title": "Turun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/cb2ca4bc-6b90-4129-98a2-ca2334dbbbfb/LAUSUNTO_20240505160236.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "54f47b42-fc94-4304-92fe-2fe92888b579",
+      "org": "Hankasalmen kunta",
+      "title": "Hankasalmen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/54f47b42-fc94-4304-92fe-2fe92888b579/LAUSUNTO_20240505160540.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "2554a7b2-70e9-4da9-94e2-bd9c06c29336",
+      "org": "Riihimäen kaupunki",
+      "title": "Riihimäen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/2554a7b2-70e9-4da9-94e2-bd9c06c29336/LAUSUNTO_20240505161216.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "dca6b333-2426-49e3-85df-6cc2fc3b3cfa",
+      "org": "Orimattilan kaupunki",
+      "title": "Orimattilan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/dca6b333-2426-49e3-85df-6cc2fc3b3cfa/LAUSUNTO_20240505161854.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "c95aab7e-aa0a-4486-ab82-674b234c1894",
+      "org": "Suomen Kuntaliitto ry",
+      "title": "Suomen Kuntaliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/c95aab7e-aa0a-4486-ab82-674b234c1894/LAUSUNTO_20240505162200.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "ecbfc4b3-e43d-4eea-a721-a3bd01fe79a1",
+      "org": "Savonlinnan kaupunki",
+      "title": "Savonlinnan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/ecbfc4b3-e43d-4eea-a721-a3bd01fe79a1/LAUSUNTO_20240505162828.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "b00e451b-cb7b-4316-bed8-bacffaa30068",
+      "org": "Outokummun kaupunki",
+      "title": "Outokummun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b00e451b-cb7b-4316-bed8-bacffaa30068/LAUSUNTO_20240505163512.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "5b1acabf-530a-4df2-a0c6-9e3d23e7379a",
+      "org": "Hyvinkään kaupunki",
+      "title": "Hyvinkään kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5b1acabf-530a-4df2-a0c6-9e3d23e7379a/LAUSUNTO_20240505163807.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "82f2a73e-1261-454d-951d-6929972a33e4",
+      "org": "Tilastokeskus",
+      "title": "Tilastokeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/82f2a73e-1261-454d-951d-6929972a33e4/LAUSUNTO_20240505164513.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "262488b3-56af-4859-b390-01b920112d93",
+      "org": "Vantaan kaupunki",
+      "title": "Vantaan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/262488b3-56af-4859-b390-01b920112d93/LAUSUNTO_20240505165159.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "de892fea-b845-4aac-8fb0-de28d82865b9",
+      "org": "Virtain kaupunki",
+      "title": "Virtain kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/de892fea-b845-4aac-8fb0-de28d82865b9/LAUSUNTO_20240505165525.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "5501ded5-824c-440b-9511-9dc090721cfa",
+      "org": "Laitilan kaupunki",
+      "title": "Laitilan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5501ded5-824c-440b-9511-9dc090721cfa/LAUSUNTO_20240505165826.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "5ad5cab6-713a-4c5c-b49f-d445914c2aae",
+      "org": "Haminan kaupunki",
+      "title": "Haminan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5ad5cab6-713a-4c5c-b49f-d445914c2aae/LAUSUNTO_20240505170131.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "72962053-5757-4b40-b330-feda3bfff3ae",
+      "org": "Siikajoen kunta",
+      "title": "Siikajoen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/72962053-5757-4b40-b330-feda3bfff3ae/LAUSUNTO_20240505170434.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "d805c9a9-dc11-46d1-a69a-c5da9db63878",
+      "org": "Kajaanin kaupunki",
+      "title": "Kajaanin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/d805c9a9-dc11-46d1-a69a-c5da9db63878/LAUSUNTO_20240505170737.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "897e7444-672e-449a-85c1-d5051091ca4b",
+      "org": "Heinäveden kunta",
+      "title": "Heinäveden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/897e7444-672e-449a-85c1-d5051091ca4b/LAUSUNTO_20240505171707.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "91b4a21f-c290-4acf-a9c0-6bb4909e27e9",
+      "org": "Sysmän kunta",
+      "title": "Sysmän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/91b4a21f-c290-4acf-a9c0-6bb4909e27e9/LAUSUNTO_20240505172007.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "dfd2cd59-6da7-45af-915f-5ca9734cd6cc",
+      "org": "Nurmijärven kunta",
+      "title": "Nurmijärven kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/dfd2cd59-6da7-45af-915f-5ca9734cd6cc/LAUSUNTO_20240506154450.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "a0457647-1ee8-465e-a828-1170b5556d18",
+      "org": "Iisalmen kaupunki",
+      "title": "Iisalmen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/a0457647-1ee8-465e-a828-1170b5556d18/LAUSUNTO_20240506154748.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "19944820-34d6-48df-9e19-03cd8619dc38",
+      "org": "Kärkölän kunta",
+      "title": "Kärkölän kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/19944820-34d6-48df-9e19-03cd8619dc38/LAUSUNTO_20240506155053.PDF"
+     },
+     {
+      "date": "2024-05-03",
+      "id": "be3329b1-99f0-4109-a585-7ef828422c5e",
+      "org": "Liikenne- ja viestintäministeriö",
+      "title": "Liikenne- ja viestintäministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/be3329b1-99f0-4109-a585-7ef828422c5e/LAUSUNTO_20240508102700.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "b401e6af-171e-4abc-8444-757a3fe5d8d0",
+      "org": "Sastamalan kaupunki",
+      "title": "Sastamalan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b401e6af-171e-4abc-8444-757a3fe5d8d0/LAUSUNTO_20240502155724.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "13cf889e-860a-4148-867a-9d02138d96c1",
+      "org": "Tampereen kaupunki",
+      "title": "Tampereen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/13cf889e-860a-4148-867a-9d02138d96c1/LAUSUNTO_20240502161315.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "06f1dac7-c226-4ab1-bf62-8887eeb7beee",
+      "org": "Lahden kaupunki",
+      "title": "Lahden kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/06f1dac7-c226-4ab1-bf62-8887eeb7beee/LAUSUNTO_20240502161942.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "32f20b7e-0396-43a7-895d-fdb417a44cf9",
+      "org": "CGI Suomi Oy",
+      "title": "CGI Suomi Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/32f20b7e-0396-43a7-895d-fdb417a44cf9/LAUSUNTO_20240502162242.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "1d720dc4-5cc0-43d1-8af4-1ba297dd70fe",
+      "org": "Pukkilan kunta",
+      "title": "Pukkilan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/1d720dc4-5cc0-43d1-8af4-1ba297dd70fe/LAUSUNTO_20240502164222.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "09d75476-fad8-4dcf-a575-0ea2adf0ed90",
+      "org": "Joensuun kaupunki",
+      "title": "Joensuun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/09d75476-fad8-4dcf-a575-0ea2adf0ed90/LAUSUNTO_20240505151006.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "1fb8cf6d-5d25-4fa2-b065-e62659fcffe6",
+      "org": "Oulun kaupunki",
+      "title": "Oulun kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/1fb8cf6d-5d25-4fa2-b065-e62659fcffe6/LAUSUNTO_20240505153013.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "71d36d76-e3d3-45ef-8690-4ca222b08d24",
+      "org": "Liperin kunta",
+      "title": "Liperin kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/71d36d76-e3d3-45ef-8690-4ca222b08d24/LAUSUNTO_20240505153702.PDF"
+     },
+     {
+      "date": "2024-05-02",
+      "id": "5e216065-a477-4d12-9a9e-311d56974a08",
+      "org": "Kalajoen kaupunki",
+      "title": "Kalajoen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/5e216065-a477-4d12-9a9e-311d56974a08/LAUSUNTO_20240505154006.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "779ceb38-c3d6-40d0-9e73-fea4e81802dc",
+      "org": "Helsingin kaupunki",
+      "title": "Helsingin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/779ceb38-c3d6-40d0-9e73-fea4e81802dc/LAUSUNTO_20240430102303.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "2df3d017-b36c-416c-abb1-b2e944f40aaf",
+      "org": "Taipalsaaren kunta",
+      "title": "Taipalsaaren kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/2df3d017-b36c-416c-abb1-b2e944f40aaf/LAUSUNTO_20240502153450.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "ca077188-09e9-4d7f-bd2f-7cc46bb9b6f5",
+      "org": "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote",
+      "title": "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/ca077188-09e9-4d7f-bd2f-7cc46bb9b6f5/LAUSUNTO_20240502154134.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "4eaf7ef5-2df4-4839-ac56-5569c84a81e0",
+      "org": "Kankaanpään kaupunki",
+      "title": "Kankaanpään kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4eaf7ef5-2df4-4839-ac56-5569c84a81e0/LAUSUNTO_20240502154444.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "7589320e-238e-4b5c-86a9-b2b3eef91b27",
+      "org": "Jyväskylän kaupunki",
+      "title": "Jyväskylän kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/7589320e-238e-4b5c-86a9-b2b3eef91b27/LAUSUNTO_20240502155421.PDF"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "ac23d12c-5dd5-4cad-8417-27d401aea845",
+      "none": true,
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos THL; lausunto, ei lausuttavaa"
+     },
+     {
+      "date": "2024-04-30",
+      "id": "e568579b-78e5-4e23-8808-e6e66b66fdf3",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa"
+     },
+     {
+      "date": "2024-04-29",
+      "id": "9a499663-d157-4aef-af6e-5bcfbd6f5a60",
+      "org": "Lappeenrannan kaupunki",
+      "title": "Lappeenrannan kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/9a499663-d157-4aef-af6e-5bcfbd6f5a60/LAUSUNTO_20240430092226.PDF"
+     },
+     {
+      "date": "2024-04-29",
+      "id": "f228a38b-1141-402b-9f5e-7796d5388f30",
+      "org": "Kilpailu- ja kuluttajavirasto",
+      "title": "Kilpailu- ja kuluttajavirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/f228a38b-1141-402b-9f5e-7796d5388f30/LAUSUNTO_20240430092902.PDF"
+     },
+     {
+      "date": "2024-04-29",
+      "id": "c378181d-eb12-4386-89ac-44f2c67d2dc8",
+      "org": "Sarastia Oy",
+      "title": "Sarastia Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/c378181d-eb12-4386-89ac-44f2c67d2dc8/LAUSUNTO_20240430095636.PDF"
+     },
+     {
+      "date": "2024-04-29",
+      "id": "17ec76da-0553-49a0-89a6-46cfe73d3ad0",
+      "org": "Sosiaali- ja terveysministeriö",
+      "title": "Sosiaali- ja terveysministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/17ec76da-0553-49a0-89a6-46cfe73d3ad0/LAUSUNTO_20240508103106.PDF"
+     },
+     {
+      "date": "2024-04-25",
+      "id": "23ec399a-30dc-4644-be99-417aabe5b42e",
+      "org": "Valtiokonttori",
+      "title": "Valtiokonttori; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/23ec399a-30dc-4644-be99-417aabe5b42e/LAUSUNTO_20240425161653.PDF"
+     },
+     {
+      "date": "2024-04-24",
+      "id": "49a8e996-d2e6-41a8-909f-88b6ba13de32",
+      "org": "Pudasjärven kaupunki",
+      "title": "Pudasjärven kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/49a8e996-d2e6-41a8-909f-88b6ba13de32/LAUSUNTO_20240424160147.PDF"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 47,
+    "orgs": [
+     "CGI Suomi Oy",
+     "Espoon kaupunki",
+     "Haminan kaupunki",
+     "Hankasalmen kunta",
+     "Heinäveden kunta",
+     "Helsingin kaupunki",
+     "Hyvinkään kaupunki",
+     "Iisalmen kaupunki",
+     "Joensuun kaupunki",
+     "Jyväskylän kaupunki",
+     "KEHA ELY-keskusten kehittämis- ja hallintokeskus",
+     "Kajaanin kaupunki",
+     "Kalajoen kaupunki",
+     "Kankaanpään kaupunki",
+     "Kilpailu- ja kuluttajavirasto",
+     "Kouvolan kaupunki",
+     "Kärkölän kunta",
+     "Lahden kaupunki",
+     "Laitilan kaupunki",
+     "Lappeenrannan kaupunki",
+     "Liikenne- ja viestintäministeriö",
+     "Liperin kunta",
+     "Nurmijärven kunta",
+     "Oikeusministeriö",
+     "Orimattilan kaupunki",
+     "Oulun kaupunki",
+     "Outokummun kaupunki",
+     "Pohjois-Karjalan sosiaali- ja terveyspalvelujen kuntayhtymä - Siun sote",
+     "Porvoon kaupunki",
+     "Pudasjärven kaupunki",
+     "Pukkilan kunta",
+     "Riihimäen kaupunki",
+     "Sarastia Oy",
+     "Sastamalan kaupunki",
+     "Savonlinnan kaupunki",
+     "Siikajoen kunta",
+     "Sosiaali- ja terveysministeriö",
+     "Suomen Kuntaliitto ry",
+     "Sysmän kunta",
+     "Taipalsaaren kunta",
+     "Tampereen kaupunki",
+     "Terveyden ja hyvinvoinnin laitos THL",
+     "Tilastokeskus",
+     "Turun kaupunki",
+     "Valtiokonttori",
+     "Vantaan kaupunki",
+     "Virtain kaupunki"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=05dc4dfc-8325-4b39-a9af-a328a3823e27&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
+    "viimeisin": "2024-05-03"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "valtiovarainministeriö",
+   "muokattu": "2026-11-10T10:59:56",
+   "nimi": "Valtiovarainministeriön asetus kunnan taloustietojen toimittamiseen sovellettavasta tietosisällöstä ja teknisistä kuvauksista koskien tilikautta 2025",
+   "nimiSv": "Finansministeriets förordning om informationsinnehåll och tekniska beskrivningar som tillämpas på lämnandet av kommuns ekonomiska uppgifter för räkenskapsperioden 2025",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "381/2024"
+   ],
+   "teemat": [
+    "Kunta-asiat"
+   ],
+   "tiivistelma": "Kuntalain 120 a §:n nojalla annetaan vuosittain valtiovarainministeriön asetus, jossa ovat tarkemmat säännökset seuraavan tilikauden tietojen toimittamiseen sovellettavista teknisistä kuvauksista ja tietosisällöstä. Tämä säädösvalmisteluhanke koskee tilikaudelta 2025 raportoitavia tietoja.",
+   "tila": "PAATTYNYT",
+   "tunnus": "VM055:00/2024",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM055:00/2024",
+   "uuid": "653520b7-6b76-4049-90d2-f392d37e6a63",
+   "valmistelu": [
+    {
+     "d": "2024-04-15",
+     "n": "20240410_Lausuntopyyntö valtiovarainministeriön asetuksessa säädettävistä kunnan taloustietojen toimittamiseen sovellettavista tietosisällöistä ja teknisistä kuvauksista koskien tilikautta 2025_72513.pdf",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/6b9e33de-7952-4684-b0fe-466876c4ed95/LAUSUNTOPYYNTO_20250110090049.PDF"
+    },
+    {
+     "d": "2024-06-06",
+     "n": "Yhteenveto muutoksista tilikaudelle 2025 (18.6.2024)",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/34264617-59bd-4e94-9035-427b5f7ee564/LIITE_20240607052114.pdf"
+    },
+    {
+     "d": "2024-06-06",
+     "n": "Sammanfattning av ändringarna räkenskapsperiod 2025 (18.6.2024)",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/b78b8c74-c12b-4f22-8378-425f2298c6f8/LIITE_20240607052523.pdf"
+    },
+    {
+     "d": "2025-01-10",
+     "n": "Lausuntoyhteenveto kunnat",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/653520b7-6b76-4049-90d2-f392d37e6a63/4029414e-cfd3-4baa-8f77-0cb086d87692/YHTEENVETO_20250110102108.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2024-06-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

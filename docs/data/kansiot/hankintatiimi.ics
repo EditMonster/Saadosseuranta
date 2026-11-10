@@ -176,6 +176,15 @@ DESCRIPTION:Tarjoukset viimeistään · Tervisekassa · https://ted.europa.eu/fi
 URL:https://ted.europa.eu/fi/notice/-/detail/781264-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61672-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[Hankinta] Määräaika: Tarjouspyyntö Metsäkeskuksen Microsoft-tuotteiden varmistuspalvelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061672 · https://www.hankintailmoitukset.fi/fi/public/procedure/39986/enotice/61672
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39986/enotice/61672
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-779771-2026-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
 DTSTAMP:20261207T000000Z
 DTSTART;VALUE=DATE:20261207
@@ -1011,15 +1020,6 @@ DTEND;VALUE=DATE:20270202
 SUMMARY:[Hankinta] Määräaika: New trade system for the Guarantee Fund for fishermen
 DESCRIPTION:Tarjoukset viimeistään · Garantikassen for fiskere · https://ted.europa.eu/fi/notice/-/detail/772243-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/772243-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-767723-2026-maaraaika-2026-11-10-hankintatiimi@saadosseuranta
-DTSTAMP:20261110T000000Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
-SUMMARY:[Hankinta] Määräaika: Competition - IT: Network and PC equipment
-DESCRIPTION:Tarjoukset viimeistään · Forsvarsbygg · https://ted.europa.eu/fi/notice/-/detail/767723-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/767723-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-768284-2026-maaraaika-2026-11-12-hankintatiimi@saadosseuranta

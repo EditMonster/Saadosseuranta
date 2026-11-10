@@ -419,7 +419,7 @@
      "reference": "C:2026:5530:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_O_77.11",
    "simplified": "MEsimplified",
@@ -4795,7 +4795,7 @@
    "sector": "NaceV2Sector_F_42.22",
    "simplified": "MEsimplified",
    "timeline": [],
-   "title": "TFK / DEEPOCEAN / JV"
+   "title": "BCFR / DEEPOCEAN / JV"
   },
   "M.12570": {
    "caseNumber": "M.12570",
@@ -5469,9 +5469,14 @@
   "M.12587": {
    "caseNumber": "M.12587",
    "deadline": "2026-11-19",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-10",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-08-03",
-   "lastDecision": null,
+   "lastDecision": "2026-11-10",
    "notice": {
     "activities": [
      "Danfoss valmistaa maailmanlaajuisesti teknisiä komponentteja ja teknologioita jäähdytystä, lämmitystä, ilmastointia, teollisuusautomaatiota, hydrauliikkaa, autojen tehomoduuleja, korkeapainejärjestelmiä ja taajuudenmuuttajia varten.",
@@ -5510,7 +5515,7 @@
      "reference": "C:2026:5449:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_G_46.84",
    "simplified": "MEsimplified",
@@ -6630,7 +6635,7 @@
      "reference": "C:2026:5529:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_N_71.12",
    "simplified": "MEsimplified",
@@ -7248,6 +7253,23 @@
    "timeline": [],
    "title": "L CATTERTON / ALTAS / FULLSCRIPT"
   },
+  "M.12645": {
+   "caseNumber": "M.12645",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-09-21",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_65.30",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "STANDARD LIFE / CVC / PRUDENTIAL FINANCIAL / STANDARD LIFE ASSURANCE"
+  },
   "M.12648": {
    "caseNumber": "M.12648",
    "deadline": "2026-12-08",
@@ -7582,6 +7604,23 @@
    "timeline": [],
    "title": "ARES / EQT / STATERA JV ASSETS"
   },
+  "M.12684": {
+   "caseNumber": "M.12684",
+   "deadline": "2026-12-14",
+   "decisions": [],
+   "initiated": "2026-10-20",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-09",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_65.1",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "AMTRUST BERMUDA I / BIG WAKAM"
+  },
   "M.12686": {
    "caseNumber": "M.12686",
    "deadline": "2026-12-11",
@@ -7617,5 +7656,5 @@
    "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
   }
  },
- "fetched": "2026-11-10T10:31:11Z"
+ "fetched": "2026-11-10T18:00:22Z"
 }
