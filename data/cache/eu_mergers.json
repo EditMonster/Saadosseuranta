@@ -3699,62 +3699,6 @@
    "timeline": [],
    "title": "ACCENTURE / INDX / ALFAHEALTH"
   },
-  "M.12530": {
-   "caseNumber": "M.12530",
-   "deadline": "2026-08-19",
-   "decisions": [
-    {
-     "date": "2026-08-11",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-22",
-   "lastDecision": "2026-08-11",
-   "notice": {
-    "activities": [
-     "Atlas Holdings on yksityinen sijoitusyhtiö. Atlas Holdings ja siihen sidoksissa olevat rahastot omistavat useilla teollisuuden ja valmistusteollisuuden sektoreilla toimivia yrityksiä. Atlas Holdings toimii Yhdysvalloissa akkujen ja energian varastoinnin alalla osana Edison Groupia, johon kuuluvat myös uuden yhteisyrityksen muodostamiseen käytettävät yritykset: Stryten Energy LLC, Element Resources DE LLC, ja Motrex LLC sekä niiden tytäryhtiöt (Yhdysvallat),",
-     "KPS on yksityinen sijoitusyhtiö, joka tekee määräävän omistusoikeuden antavia pääomasijoituksia useilla eri aloilla toimiviin valmistus- ja teollisuusyrityksiin. KPS:llä on välillinen määräysvalta yrityksessä C&D Technologies Inc. (Yhdysvallat), joka valmistaa ja toimittaa teolliseen ja kaupalliseen käyttöön akkuja ja energianvarastointiratkaisuja ja tarjoaa niihin liittyviä palveluja. Yritystä C&D Technologies Inc. käytetään uuden yhteisyrityksen muodostamiseen."
-    ],
-    "fi": false,
-    "jv": "Uuden yhteisyrityksen toiminta koostuu sen muodostamiseen käytettyjen yritysten, eli Edison Groupin ja C&D Technologies Inc:n toiminnasta, eli se valmistaa akkuja ja energianvarastointiratkaisuja sekä tarjoaa niihin liittyviä palveluja. Yhteisyrityksen odotetaan toimivan pääasiassa Yhdysvalloissa, Kanadassa, Meksikossa ja Kiinassa ja sillä odotetaan olevan vähemmän toimintaa muualla maailmassa, mukaan lukien ETA-alueella.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-02",
-    "oj": "C:2026:4073:",
-    "parties": [
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Atlas FRM LLC",
-      "short": "Atlas Holdings"
-     },
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "KPS Capital Partners, LP",
-      "short": "KPS"
-     }
-    ],
-    "published": "2026-07-23",
-    "reference": "C/2026/4073",
-    "simplified": true,
-    "transaction": "Atlas Holdings ja KPS hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan uudessa yhteisyrityksessä, joka muodostetaan tietyistä niiden salkuissa olevista yrityksistä. Keskittymä toteutetaan ostamalla uuden yhteisyrityksen osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4073/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-14",
-   "oj": [
-    {
-     "published": "2026-07-23",
-     "reference": "C:2026:4073:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_E_38.21",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "ATLAS HOLDINGS / KPS / JV"
-  },
   "M.12531": {
    "caseNumber": "M.12531",
    "deadline": "2026-12-11",
@@ -4509,65 +4453,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "LONE STAR FUNDS / CONTITECH"
-  },
-  "M.12553": {
-   "caseNumber": "M.12553",
-   "deadline": "2026-08-24",
-   "decisions": [
-    {
-     "date": "2026-08-11",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-07-13",
-   "lastDecision": "2026-08-11",
-   "notice": {
-    "activities": [
-     "Nalka Invest AB on Pohjoismaissa toimiva sijoitusyhtiö, joka sijoittaa eri alojen pieniin ja keskisuuriin yrityksiin.",
-     "RMS HoldCo AB on RMS-konsernin emoyhtiö, joka tarjoaa ympärivuorokautisia tienvarsipalveluja, rengaspalveluja ja korjausratkaisuja raskaille hyötyajoneuvoille. RMS Group toimii Ruotsissa, Suomessa, Tanskassa ja Alankomaissa."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-08",
-    "oj": "C:2026:4141:",
-    "parties": [
-     {
-      "country": "Ruotsi",
-      "fi": false,
-      "name": "Nalka Invest AB"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Ruotsi",
-        "name": "Capillar Equity Holding AB"
-       }
-      ],
-      "country": "Ruotsi",
-      "fi": false,
-      "name": "RMS HoldCo AB (Ruotsi), joka on yrityksen Capillar Equity Holding AB"
-     }
-    ],
-    "published": "2026-07-29",
-    "reference": "C/2026/4141",
-    "simplified": true,
-    "transaction": "Nalka Invest AB hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä RMS HoldCo AB. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4141/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-17",
-   "oj": [
-    {
-     "published": "2026-07-29",
-     "reference": "C:2026:4141:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_T_95.31",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "INTEROGO / RMS"
   },
   "M.12554": {
    "caseNumber": "M.12554",
@@ -7732,5 +7617,5 @@
    "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
   }
  },
- "fetched": "2026-11-09T17:41:34Z"
+ "fetched": "2026-11-10T10:31:11Z"
 }
