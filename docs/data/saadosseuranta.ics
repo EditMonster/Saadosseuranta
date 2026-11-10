@@ -1004,15 +1004,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 103/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-124-2026-voimaan-2026-11-02@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[FI] Voimaan: Laiksi yleistukilain voimaantulosäännöksen muuttamisesta
-DESCRIPTION:Voimaan (934/2026) · HE 124/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/124
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/124
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -2174,15 +2165,6 @@ DESCRIPTION:Täytäntöönpanon määräaika · (EU) 2024/3101 · https://eur-le
 URL:https://eur-lex.europa.eu/eli/dir/2024/3101/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-2023-0177-maaraaika-2026-11-02@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[EU] Määräaika: Ympäristöön\, yhteiskuntaan ja hyvään hallintotapaan (ESG) liittyvän luokitustoiminnan läpinäkyvyys ja eheys
-DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) · (EU) 2024/3005 · https://eur-lex.europa.eu/eli/reg/2024/3005/oj
-URL:https://eur-lex.europa.eu/eli/reg/2024/3005/oj
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-2023-0234-maaraaika-2027-06-17@saadosseuranta
 DTSTAMP:20270617T000000Z
 DTSTART;VALUE=DATE:20270617
@@ -2363,10 +2345,10 @@ DESCRIPTION:Voimaan · (EU) 2026/2387 · https://eur-lex.europa.eu/eli/reg/2026/
 URL:https://eur-lex.europa.eu/eli/reg/2026/2387/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-04@saadosseuranta
-DTSTAMP:20270104T000000Z
-DTSTART;VALUE=DATE:20270104
-DTEND;VALUE=DATE:20270105
+UID:eu-hys-14770-lausunto-2027-01-05@saadosseuranta
+DTSTAMP:20270105T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2471,10 +2453,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-04@saadosseuranta
-DTSTAMP:20270104T000000Z
-DTSTART;VALUE=DATE:20270104
-DTEND;VALUE=DATE:20270105
+UID:eu-hys-19517-lausunto-2027-01-05@saadosseuranta
+DTSTAMP:20270105T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2496,15 +2478,6 @@ DTEND;VALUE=DATE:20261211
 SUMMARY:[EU] Lausuntoaika päättyy: Oikeudenmukaista työvoiman liikkuvuutta koskeva paketti: eurooppalainen sosiaaliturvapassi
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
-DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-15112-lausunto-2026-12-01@saadosseuranta
@@ -2570,6 +2543,15 @@ DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/be
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
+DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-14450-lausunto-2026-11-06@saadosseuranta
 DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
@@ -2606,15 +2588,6 @@ DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2723
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-2734-maaraaika-2026-11-02@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2019/1700 of the European Parliament and of the Council by specifying the number and ti
-DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)4526 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2734
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2734
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-2806-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -2640,15 +2613,6 @@ DTEND;VALUE=DATE:20270105
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Delegated Regulation (EU) 2017/584 as regards certain organi
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 1.1.2027 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6845 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2858
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2858
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2861-maaraaika-2026-11-02@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2024/2841 as regards setting the QR code on the physical version of the European Disabil
-DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto – siirtyy\, 1.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)4534 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2861
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2893-maaraaika-2026-12-08@saadosseuranta
@@ -2912,6 +2876,24 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7285 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3075
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3081-maaraaika-2027-02-09@saadosseuranta
+DTSTAMP:20270209T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the regulatory technical standards laid down in Commission Delegated Regulation (EU) No 447/2012 as regards 
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7853 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3081
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3081
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3082-maaraaika-2027-02-09@saadosseuranta
+DTSTAMP:20270209T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Annex I to Regulation (EC) No 1060/2009 of the European Parliament and of the Council as regards transparenc
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7817 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3082
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3082
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3107-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -3009,6 +2991,15 @@ DTEND;VALUE=DATE:20261229
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2024/1157 of the European Parliament and of the Council as regards wastes and mixtures of wa
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)7390 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-toim-fiva-54-2026-soveltaminen-2027-01-30@saadosseuranta
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:[FI] Soveltaminen: Vahinko- ja henkivakuutusyhtiöiden vakavaraisuuskehikon päivitys muuttaa EIOPAn ohjeita
+DESCRIPTION:Soveltaminen alkaa · Fiva 54/2026 · https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/vahinko--ja-henkivakuutusyhtioiden-vakavaraisuuskehikon-paivitys-muuttaa-eiopan-ohjeita/
+URL:https://www.finanssivalvonta.fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2026/vahinko--ja-henkivakuutusyhtioiden-vakavaraisuuskehikon-paivitys-muuttaa-eiopan-ohjeita/
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-toim-hk-2640960f-d87c33-lausunto-2026-12-02@saadosseuranta
@@ -3126,15 +3117,6 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Regulatory Technical Standards on prudential requirements for investment firms
 DESCRIPTION:Palauteaika · EBA/CP/2026/17 · https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
 URL:https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-toim-eba-cp-2026-16-lausunto-2026-11-02@saadosseuranta
-DTSTAMP:20261102T000000Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
-SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Reporting for the purposes of the validation and monitoring of ISDA SIMM
-DESCRIPTION:Palauteaika · EBA/CP/2026/16 · https://www.eba.europa.eu/publications-and-media/events/consultation-reporting-purposes-validation-and-monitoring-isda-simm
-URL:https://www.eba.europa.eu/publications-and-media/events/consultation-reporting-purposes-validation-and-monitoring-isda-simm
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-ia-d118507-lausunto-2026-11-11@saadosseuranta

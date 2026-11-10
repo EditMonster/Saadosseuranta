@@ -192,7 +192,7 @@
    "parties": "Corewood Oy / Ylijoki Metsäenergia Oy",
    "pending": true,
    "phase1End": "2026-11-04",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "summary": "Kilpailu- ja kuluttajavirastolla on arvioitavana järjestely, jossa Corewood Oy hankkii Ylijoki Metsäenergia Oy:n osakkeet. Kaupan täytäntöönpanon ehdoksi on asetettu, että KKV antaa hyväksyntänsä kaupan toteuttamiselle. Corewood on Sponsor Capital Oy:n ja yksityishenkilöiden omistama kuljetusalan toimija.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1385-14-00-10-2026/"
   },
@@ -287,7 +287,7 @@
    "parties": "Loimua Oy / Leppäkosken Lämpö Oy",
    "pending": true,
    "phase1End": "2026-12-02",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "summary": "Yrityskaupassa on kyse järjestelystä, jossa Loimua Oy hankkii kaikki Leppäkosken Lämpö Oy:n osakkeet. Yrityskaupan toteutumisen jälkeen Loimua käyttää yksinomaista määräysvaltaa Leppäkosken Lämmössä.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1557-14-00-10-2026/"
   },
@@ -301,9 +301,23 @@
    "parties": "Gambr BidCo Oy (MB Rahastot) / Gallant Group Oy",
    "pending": true,
    "phase1End": "2026-12-09",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "summary": "Ilmoitus koskee järjestelyä, jossa Gambr BidCo Oy hankkii omistukseensa Gallant Group Oy:n koko osakekannan. Gallantiin ja sen konserniyhtiöihin viitataan yhteisellä nimityksellä Gallant-konserni tai Kohde . Yrityskaupan toteuttamisen jälkeen Ilmoittaja käyttää Kohteessa yksinomaista määräysvaltaa. Yrityskaupan tavoitteena on rakentaa Gallant-konsernista merkittävä pohjoiseurooppalainen taloushallintoalan toimija.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1598-14-00-10-2026/"
+  },
+  "KKV/1613/14.00.10/2026": {
+   "diaari": "KKV/1613/14.00.10/2026",
+   "hearingEnd": "2026-11-17",
+   "listDate": "2026-11-09",
+   "listStatus": "Vireillä oleva yrityskauppailmoitus",
+   "listTitle": "Reledo AB / Leo Clean Oy",
+   "notified": "2026-11-09",
+   "parties": "Reledo AB / Leo Clean Oy",
+   "pending": true,
+   "phase1End": "2026-12-10",
+   "seen": "2026-11-10",
+   "summary": "Nyt ilmoitettavalla yrityskaupalla ruotsalainen Reledo AB hankkii 100 % Leo Clean Oy:n osakekannasta. Osakekauppakirjassa ostajatahona toimii Reledo AB:n täydessä määräysvallassa oleva suomalainen holding-yhtiö Reledo Oy. Ennen Yrityskaupan toteuttamista myyjät omistavat 100 % Kohteen osakekannasta. Yrityskauppa on tarkoitus toteuttaa siten, että Reledo hankkii 100 % Kohteen osakekannasta myyjiltä. Yrityskaupan toteuttamisen jälkeen Ilmoittajalla tulee olemaan yksinomainen määräysvalta Kohteessa.",
+   "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1613-14-00-10-2026/"
   },
   "KKV/433/14.00.10/2026": {
    "decided": "2026-09-03",
@@ -330,7 +344,7 @@
    "phase1End": "2026-09-23",
    "phase2End": "2026-12-31",
    "phase2Start": "2026-09-23",
-   "seen": "2026-11-09",
+   "seen": "2026-11-10",
    "summary": "Kilpailu- ja kuluttajavirastolle ilmoitettiin on 21.8.2026 järjestely, jossa L&T Ympäristöpalvelut Oy hankkii määräysvallan Kempeleen Siirtokuljetus Oy:ssä. Viraston alustavan tarkastelun perusteella yrityskauppa saattaa aiheuttaa haitallisia kilpailuvaikutuksia Pohjois-Pohjanmaan jätehuollon markkinoilla. Virasto siirsi asian jatkokäsittelyyn 23.9.2026.",
    "url": "https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-743-14-00-10-2026/"
   },
@@ -348,5 +362,5 @@
    "url": "https://www.kkv.fi/paatokset/kilpailuasiat/yrityskauppavalvonta/kkv-985-14-00-10-2026/"
   }
  },
- "fetched": "2026-11-09T17:41:30Z"
+ "fetched": "2026-11-10T09:57:18Z"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-09T17:39:13",
+ "fetched": "2026-11-10T09:54:56",
  "items": [
   {
    "actType": "REG_DEL",
@@ -25,7 +25,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-04",
+     "end": "2027-01-05",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-04",
+     "end": "2027-01-05",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-04",
+     "end": "2027-01-05",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -692,24 +692,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032_en"
   },
   {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19292,
-   "periods": [
-    {
-     "end": "2026-11-09",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-12"
-    }
-   ],
-   "reference": "Ares(2026)8716045",
-   "status": "ACTIVE",
-   "title_en": "Articles 75c – 75d AI Act Implementing Act ",
-   "title_fi": "Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14593,
@@ -733,7 +715,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-04",
+     "end": "2027-01-05",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -964,6 +946,24 @@
   {
    "actType": "PROP_DIR",
    "actTypeLabel": "Direktiiviehdotus",
+   "id": 18658,
+   "periods": [
+    {
+     "end": "2026-09-30",
+     "open": false,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-07-01"
+    }
+   ],
+   "reference": "Ares(2026)6556383",
+   "status": "ACTIVE",
+   "title_en": "Housing simplification package",
+   "title_fi": "Asuntojen tarjonta ja kohtuuhintaisuus (sääntelyn yksinkertaistaminen)",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18658_en"
+  },
+  {
+   "actType": "PROP_DIR",
+   "actTypeLabel": "Direktiiviehdotus",
    "id": 18833,
    "periods": [
     {
@@ -1014,6 +1014,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19292,
+   "periods": [
+    {
+     "end": "2026-11-09",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-12"
+    }
+   ],
+   "reference": "Ares(2026)8716045",
+   "status": "ACTIVE",
+   "title_en": "Articles 75c – 75d AI Act Implementing Act ",
+   "title_fi": "Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en"
   },
   {
    "actType": "PROP_REG",
@@ -1734,42 +1752,6 @@
    "title_en": "AI strategy for cultural and creative sectors ",
    "title_fi": "Kulttuurialan ja luovien alojen tekoälystrategia",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18592_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 14842,
-   "periods": [
-    {
-     "end": "2026-09-10",
-     "open": false,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-02"
-    }
-   ],
-   "reference": "Ares(2025)7291209",
-   "status": "ACTIVE",
-   "title_en": "Evaluation and Revision of the Chips Act (\"Chips Act 2.0\")",
-   "title_fi": "Sirusäädös 2",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14842_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 15352,
-   "periods": [
-    {
-     "end": "2026-09-10",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-08-06"
-    }
-   ],
-   "reference": "Ares(2025)8913890",
-   "status": "ACTIVE",
-   "title_en": "Implementing rules on registering in and reporting to the register of producers ",
-   "title_fi": "Pakkaukset ja pakkausjäte – kansallisia tuottajarekistereitä koskevat säännöt",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15352_en"
   },
   {
    "actType": "REG_DEL",
