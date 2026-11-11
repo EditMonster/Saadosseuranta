@@ -182,7 +182,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -359,7 +359,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -433,7 +433,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -442,87 +442,6 @@
    "shortTitle": "ICT domain variables - reference year 2027",
    "summary": "This initiative is to support the gathering of statistics for 2027 on the use of information and communication technologies (ICT) in households and by individuals.\nTo ensure that the data compiled is harmonised and comparable between Member States, it is necessary to specify the number and the title of the variables for the dataset.",
    "updateDate": 1793746822730
-  },
-  "2749": {
-   "adoption": "2026-07-16",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32016R2031",
-    "code": "reg/2016/2031",
-    "deadlineRaw": "2",
-    "procedure": "2013/0141/COD",
-    "title": "Regulation (EU) 2016/2031 of the European Parliament of the Council of 26 October 2016 on protective measures against pests of plants, amending Regulations (EU) No 228/2013, (EU) No 652/2014 and (EU) No 1143/2014 of the European Parliament and of the Council and repealing Council Directives 69/464/EEC, 74/647/EEC, 93/85/EEC, 98/57/EC, 2000/29/EC, 2006/91/EC and 2007/33/EC"
-   },
-   "cCode": "C(2026)4919",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2016/2031 of the European Parliament and of the Council as regards the procedure to be followed to grant temporary derogations from the prohibition provided for in Article 40(1) and from the requirements referred to in Article 41(1) thereof",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2025-03-24",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2025-06-26",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2025-12-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-02-04",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLIC_FEEDBACK"
-    },
-    {
-     "date": "2026-06-09",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-07-16",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    }
-   ],
-   "eventsFetched": "2026-11-10",
-   "id": 2749,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": null,
-   "shortTitle": "Protective measures against pests of plants – temporary derogations from import prohibitions and requirements",
-   "summary": "The draft Delegated Regulation describes the procedure to be followed when a third country wishes to submit a request for derogation from import prohibition or special import requirements for certain plants plant products or other objects, in terms of the content and the submission of the dossier, as well as the procedure to be followed for the assessment of the respective technical dossier submitted by the third country.",
-   "updateDate": 1792620002028
   },
   "2785": {
    "adoption": "2026-05-21",
@@ -644,7 +563,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -707,7 +626,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -716,87 +635,6 @@
    "shortTitle": "Shipments of waste - criteria for the green-listing of certain waste for recycling",
    "summary": "The act implements the new Waste Shipment Regulation and complements the objectives of the future Circular Economy Act. It will consider certain waste as green-listed, and possibility introduce contamination thresholds for considering sone waste as green-listed. \nAdoption of the act will be preceded by a consultation processed to gather input from a wide range of stakeholders on waste streams to be addressed.",
    "updateDate": 1793143250069
-  },
-  "2843": {
-   "adoption": "2026-06-09",
-   "adoptionDate": "Q3 2025",
-   "basicAct": {
-    "celex": "32012R0649",
-    "code": "reg/2012/649",
-    "deadlineRaw": "2",
-    "procedure": "2011/0105/COD",
-    "title": "Regulation (EU) No 649/2012 of the European Parliament and of the Council of 4 July 2012 concerning the export and import of hazardous chemicals Text with EEA relevance"
-   },
-   "cCode": "C(2026)3735",
-   "celexNumber": "32026R1278",
-   "cellar": {
-    "celex": "32026R1278",
-    "deadlines": [],
-    "eif": [
-     "2026-09-01",
-     "2026-10-01"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-12",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/1278, annettu 9 päivänä kesäkuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) N:o 649/2012 muuttamisesta ja oikaisemisesta torjunta-aineiden ja teollisuuskemikaalien luetteloinnin osalta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/1278 of 9 June 2026 amending and correcting Regulation (EU) No 649/2012 of the European Parliament and of the Council as regards the listing of pesticides and industrial chemicals",
-   "deadlines": [
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2025-06-17",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2025-07-14",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLIC_FEEDBACK"
-    },
-    {
-     "date": "2025-08-11",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLIC_FEEDBACK_END"
-    },
-    {
-     "date": "2026-06-09",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-08-12",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2843,
-   "objection": null,
-   "policyArea": "ENV",
-   "policyAreaName": "Environment",
-   "publication": "2026-08-12",
-   "shortTitle": "Pesticides and industrial chemicals (listing)",
-   "summary": "Regulation (EU) No 649/2012 on export and import of hazardous chemicals implements the Rotterdam Convention, which provides certain rules on the international trade in hazardous chemicals. It aims to ensure that unwanted imports are prevented and that information on hazards, risks and safe handling is exchanged when these chemicals are exported.\nIn addition, the Regulation implements the Stockholm Convention on persistent organic pollutants (POPs) as regards the provisions on export. Export of POPs is banned, unless certain exemptions apply.\nTh",
-   "updateDate": 1786573255472
   },
   "2858": {
    "adoption": "2026-10-01",
@@ -839,7 +677,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -942,7 +780,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2861,
    "objection": null,
    "policyArea": "JUST",
@@ -993,7 +831,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -1044,7 +882,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -1237,7 +1075,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
@@ -1374,7 +1212,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1603,7 +1441,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -1800,7 +1638,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -2089,7 +1927,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -2098,6 +1936,52 @@
    "shortTitle": "Energy Efficiency - establishment of a common Union rating scheme for data centres",
    "summary": "The Energy Efficiency Directive (EU) 2023/1791 promotes the energy efficiency and sustainability of data centres. A common Union scheme for rating the sustainability of data centres in Europe will be developed via a Delegated Regulation based on Article 33(3) of the Energy Efficiency Directive. This should also simplify the reporting scheme that was introduced with the Delegated Regulation (EU) 2024/1364.",
    "updateDate": 1791280898608
+  },
+  "2988": {
+   "adoption": "2026-11-10",
+   "adoptionDate": "Q2 2026",
+   "basicAct": {
+    "celex": "32012R0648",
+    "code": "reg/2012/648",
+    "deadlineRaw": "1/3",
+    "procedure": "2010/0250/COD",
+    "title": "Regulation (EU) No 648/2012 of the European Parliament and of the Council of 4 July 2012 on OTC derivatives, central counterparties and trade repositories Text with EEA relevance"
+   },
+   "cCode": "C(2026)7883",
+   "celexNumber": null,
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) No 648/2012 of the European Parliament and of the Council with regard to regulatory technical standards specifying the requirements on margin transparency and margin simulation tool by central counterparties and margin transparency and margin simulations by clearing service providers",
+   "deadlines": [
+    {
+     "institution": "COMMISSION",
+     "months": 3.0,
+     "type": "ORIGINAL"
+    },
+    {
+     "institution": "PARLIAMENT",
+     "months": 3.0,
+     "type": "ORIGINAL"
+    }
+   ],
+   "delegatedActPhase": "SCRUTINY",
+   "delegatedActStatus": "ADOPTED",
+   "delegatedActType": "REGULATION",
+   "events": [
+    {
+     "date": "2026-11-10",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_ADOPTION"
+    }
+   ],
+   "eventsFetched": "2026-11-11",
+   "id": 2988,
+   "objection": null,
+   "policyArea": "FISMA",
+   "policyAreaName": "Financial Stability, Financial Services and Capital Markets Union",
+   "publication": null,
+   "shortTitle": "European Market Infrastructure Regulation - regulatory technical standards -margin transparency",
+   "summary": null,
+   "updateDate": 1794357312453
   },
   "2993": {
    "adoption": "2026-10-08",
@@ -2140,7 +2024,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -2191,7 +2075,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2312,7 +2196,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -2607,7 +2491,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3010,
    "objection": null,
    "policyArea": "MARE",
@@ -2726,7 +2610,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -2789,7 +2673,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -2951,7 +2835,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -2997,7 +2881,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -3134,8 +3018,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -3163,7 +3047,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -3171,7 +3055,7 @@
    "publication": null,
    "shortTitle": "Fruit juices - yeast fermentation processing aids",
    "summary": "The delegated act will introduce in annex I, part II, point 3 of the fruit juice directive (Directive 2001/112/EC ) the authorised processing aids that may be used in the yeast fermentation process to produce reduced-sugar fruit juices.\nThese processing aids are necessary for the technological purposes of nutrition, hydration, pH control and antifoaming, and their inclusion in the directive will provide legal clarity to manufactures and consumers.",
-   "updateDate": 1790632926598
+   "updateDate": 1794351713571
   },
   "3038": {
    "adoption": "2026-09-14",
@@ -3214,7 +3098,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3510,7 +3394,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -3556,7 +3440,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3067,
    "objection": null,
    "policyArea": "FISMA",
@@ -3619,7 +3503,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -3665,7 +3549,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -3711,7 +3595,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3081,
    "objection": null,
    "policyArea": "FISMA",
@@ -3757,7 +3641,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3082,
    "objection": null,
    "policyArea": "FISMA",
@@ -3882,7 +3766,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -3917,8 +3801,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -3940,7 +3824,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -3948,7 +3832,7 @@
    "publication": null,
    "shortTitle": "Bluefin tuna in the Easter Atlantic and Mediterranean – multiannual management plan (amendment)",
    "summary": null,
-   "updateDate": 1794265402505
+   "updateDate": 1794351600145
   },
   "3112": {
    "adoption": "2026-10-08",
@@ -4003,7 +3887,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -4061,7 +3945,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -4112,7 +3996,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4269,6 +4153,64 @@
    "summary": null,
    "updateDate": 1794265402512
   },
+  "3124": {
+   "adoption": "2026-11-10",
+   "adoptionDate": "Q3 2026",
+   "basicAct": {
+    "celex": "32024R3110",
+    "code": "reg/2024/3110",
+    "deadlineRaw": "2",
+    "procedure": null,
+    "title": "Regulation (EU) 2024/3110 of the European Parliament and of the Council of 27 November 2024 laying down harmonised rules for the marketing of construction products and repealing Regulation (EU) No 305/2011 (Text with EEA relevance)"
+   },
+   "cCode": "C(2026)7917",
+   "celexNumber": null,
+   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2024/3110 of the European Parliament and of the Council by laying down the conditions for the classification without testing of certain products as regards their reaction to fire performance",
+   "deadlines": [
+    {
+     "institution": "PARLIAMENT",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    },
+    {
+     "institution": "COMMISSION",
+     "months": 2.0,
+     "type": "ORIGINAL"
+    }
+   ],
+   "delegatedActPhase": "SCRUTINY",
+   "delegatedActStatus": "ADOPTED",
+   "delegatedActType": "REGULATION",
+   "events": [
+    {
+     "date": "2026-06-18",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_PLAN"
+    },
+    {
+     "date": "2026-07-20",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_PUBLIC_FEEDBACK"
+    },
+    {
+     "date": "2026-11-10",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_ADOPTION"
+    }
+   ],
+   "eventsFetched": "2026-11-11",
+   "id": 3124,
+   "objection": null,
+   "policyArea": "GROW",
+   "policyAreaName": "Internal Market, Industry, Entrepreneurship and SMEs",
+   "publication": null,
+   "shortTitle": "Reaction to fire performance - classification without testing of certain products",
+   "summary": "This draft delegated act is required to ensure that manufacturers benefit from the less onerous approach as regards the declaration of reaction to fire of products and that they are not required to perform unnecessary testing.",
+   "updateDate": 1794358226221
+  },
   "3128": {
    "adoption": "2026-06-26",
    "adoptionDate": null,
@@ -4361,8 +4303,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -4372,7 +4314,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -4380,7 +4322,7 @@
    "publication": null,
    "shortTitle": "Rules for granting the special incentive arrangement for sustainable development and good governance (GSP+)",
    "summary": null,
-   "updateDate": 1789378334748
+   "updateDate": 1794351600338
   },
   "3134": {
    "adoption": "2026-09-10",
@@ -4412,8 +4354,8 @@
      "type": "ORIGINAL"
     }
    ],
-   "delegatedActPhase": "SCRUTINY",
-   "delegatedActStatus": "ADOPTED",
+   "delegatedActPhase": "PUBLICATION",
+   "delegatedActStatus": "SCRUTINY_FINISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -4423,7 +4365,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -4431,7 +4373,7 @@
    "publication": null,
    "shortTitle": "Generalised scheme of preferences (GSP) - procedures for temporary withdrawals and general safeguards measures",
    "summary": null,
-   "updateDate": 1789381990966
+   "updateDate": 1794351600389
   },
   "3137": {
    "adoption": "2026-07-13",
@@ -4615,7 +4557,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -4666,7 +4608,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -4729,7 +4671,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-10",
+   "eventsFetched": "2026-11-11",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -4740,7 +4682,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-11-10T18:00:40Z",
+ "fetched": "2026-11-11T06:28:17Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -6131,6 +6073,7 @@
   "274": "PUBLISHED",
   "2741": "PUBLISHED",
   "2743": "PUBLISHED",
+  "2749": "PUBLISHED",
   "275": "PUBLISHED",
   "2752": "PUBLISHED",
   "2753": "PUBLISHED",
@@ -6204,6 +6147,7 @@
   "284": "PUBLISHED",
   "2840": "PUBLISHED",
   "2841": "PUBLISHED",
+  "2843": "PUBLISHED",
   "2848": "PUBLISHED",
   "2849": "PUBLISHED",
   "285": "PUBLISHED",

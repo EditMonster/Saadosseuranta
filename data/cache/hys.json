@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T17:58:32",
+ "fetched": "2026-11-11T06:24:49",
  "items": [
   {
    "actType": "REG_DEL",
@@ -25,7 +25,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-05",
+     "end": "2027-01-06",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-05",
+     "end": "2027-01-06",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-05",
+     "end": "2027-01-06",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -674,24 +674,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13638_en"
   },
   {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 15032,
-   "periods": [
-    {
-     "end": "2026-11-10",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-13"
-    }
-   ],
-   "reference": "Ares(2025)8122470",
-   "status": "ACTIVE",
-   "title_en": "Revision of network code on capacity allocation mechanisms in gas transmission systems ",
-   "title_fi": "Kaasunsiirtoverkkojen kapasiteetinjakomekanismeja koskeva verkkosääntö – tarkistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14593,
@@ -715,7 +697,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-05",
+     "end": "2027-01-06",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -980,24 +962,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en"
   },
   {
-   "actType": "PROP_DEC",
-   "actTypeLabel": "Päätösehdotus",
-   "id": 18804,
-   "periods": [
-    {
-     "end": "2026-09-11",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-14"
-    }
-   ],
-   "reference": "Ares(2026)7004765",
-   "status": "ACTIVE",
-   "title_en": "The Union Position for the World Radiocommunication Conference 2027 ",
-   "title_fi": "Maailman radioviestintäkonferenssi 2027 – EU:n kanta",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18804_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 19222,
@@ -1014,6 +978,24 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 15032,
+   "periods": [
+    {
+     "end": "2026-11-10",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-13"
+    }
+   ],
+   "reference": "Ares(2025)8122470",
+   "status": "ACTIVE",
+   "title_en": "Revision of network code on capacity allocation mechanisms in gas transmission systems ",
+   "title_fi": "Kaasunsiirtoverkkojen kapasiteetinjakomekanismeja koskeva verkkosääntö – tarkistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032_en"
   },
   {
    "actType": "REG_IMPL",
@@ -1716,42 +1698,6 @@
    "title_en": "Reporting on the application and functioning of EU rules on data protection law enforcement",
    "title_fi": "Lainvalvontatarkoituksessa käsiteltyjen henkilötietojen suoja – EU:n sääntöjen soveltaminen ja toimivuus",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18372_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 16013,
-   "periods": [
-    {
-     "end": "2026-09-11",
-     "open": false,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-08-14"
-    }
-   ],
-   "reference": "Ares(2025)10754855",
-   "status": "ACTIVE",
-   "title_en": "Data sets and metadata for European statistics on population and housing",
-   "title_fi": "Euroopan väestö- ja asuntotilastot – tietokokonaisuudet ja metatiedot",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16013_en"
-  },
-  {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 18592,
-   "periods": [
-    {
-     "end": "2026-09-11",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-07-27"
-    }
-   ],
-   "reference": "Ares(2026)6387101",
-   "status": "ACTIVE",
-   "title_en": "AI strategy for cultural and creative sectors ",
-   "title_fi": "Kulttuurialan ja luovien alojen tekoälystrategia",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18592_en"
   },
   {
    "actType": "REG_DEL",

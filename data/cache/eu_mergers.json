@@ -2073,74 +2073,6 @@
    "timeline": [],
    "title": "AMPLIFON / GN HEARING"
   },
-  "M.12476": {
-   "caseNumber": "M.12476",
-   "deadline": "2026-08-25",
-   "decisions": [
-    {
-     "date": "2026-08-12",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-18",
-   "lastDecision": "2026-08-12",
-   "notice": {
-    "activities": [
-     "Verdane: kasvuyrityksiin sijoittava pääomasijoitusyhtiö, joka toimii pääasiassa teknologiayritysten alalla Euroopassa",
-     "Telenor: teleoperaattori, joka tarjoaa kiinteän ja matkaviestintäverkon palveluja sekä televisiopalveluja Suomessa, Ruotsissa, Norjassa ja Tanskassa sekä matkaviestintäverkon palveluja Aasiassa",
-     "BLDNG: rakennusanalytiikan alusta, joka hyödyntää esineiden internetin dataa toimistotilojen käytön, energiatehokkuuden ja kestävyysnäkökohtien optimoimiseksi tilojen käyttäjille."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-08",
-    "oj": "C:2026:4138:",
-    "parties": [
-     {
-      "country": "Ruotsi",
-      "fi": false,
-      "name": "Verdane IoT TopCo AS",
-      "short": "Verdane"
-     },
-     {
-      "country": "Norja",
-      "fi": false,
-      "name": "Telenor ASA",
-      "short": "Telenor"
-     },
-     {
-      "country": "Ruotsi",
-      "fi": false,
-      "name": "Telenor Connexion AB",
-      "short": "Connexion"
-     },
-     {
-      "country": "Norja",
-      "fi": false,
-      "name": "BLDNG.ai AS",
-      "short": "BLDNG"
-     }
-    ],
-    "published": "2026-07-29",
-    "reference": "C/2026/4138",
-    "simplified": true,
-    "transaction": "Verdane ja Telenor hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Connexion, ja Verdana hankkii yksinomaisen määräysvallan yrityksessä BLDNG. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4138/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-20",
-   "oj": [
-    {
-     "published": "2026-07-29",
-     "reference": "C:2026:4138:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_K_62.20",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "VERDANE / TELENOR / CONNEXION / BLDNG"
-  },
   "M.12478": {
    "caseNumber": "M.12478",
    "deadline": "2026-10-19",
@@ -2988,86 +2920,6 @@
    "timeline": [],
    "title": "LTM / RANDSTAD (DIGITAL SOLUTIONS BUSINESS)"
   },
-  "M.12510": {
-   "caseNumber": "M.12510",
-   "deadline": "2026-08-25",
-   "decisions": [
-    {
-     "date": "2026-08-12",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-08",
-   "lastDecision": "2026-08-12",
-   "notice": {
-    "activities": [
-     "Mercedes China valmistaa ja myy henkilö- ja pakettiautoja, tarjoaa rahoituspalveluja, liikkumispalveluja ja varaosia sekä ylläpitää tutkimus- ja kehittämiskeskuksia Kiinassa. Mercedes Group on maailmanlaajuinen autoalan konserni, joka kehittää, valmistaa ja markkinoi ajoneuvoja.",
-     "BMW China valmistaa ja myy BMW-merkkisiä henkilöautoja sekä tarjoaa niihin liittyviä myynnin jälkeisiä palveluja, tutkimus- ja kehittämistoimintaa ja hankintaa Kiinassa. BMW Group on maailmanlaajuisesti toimiva henkilöautojen, moottoripyörien ja varusteiden valmistaja.",
-     "Seresin liiketoiminta kattaa sähköajoneuvojen ja niiden keskeisten komponenttien tutkimus- ja kehittämistoiminnan, valmistuksen ja myynnin sekä niihin liittyvät palvelut."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-08",
-    "oj": "C:2026:4140:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Saksa",
-        "name": "Mercedes-Benz Group AG"
-       }
-      ],
-      "country": "Kiina",
-      "fi": false,
-      "name": "Mercedes-Benz Group China Ltd.",
-      "short": "Mercedes China"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Saksa",
-        "name": "BMW AG"
-       }
-      ],
-      "country": "Kiina",
-      "fi": false,
-      "name": "BMW Brilliance Automotive Ltd.",
-      "short": "BMW China"
-     },
-     {
-      "country": "Kiina",
-      "fi": false,
-      "name": "Seres Group Co. Ltd.",
-      "short": "Seres"
-     },
-     {
-      "country": "Kiina",
-      "fi": false,
-      "name": "Beijing IONCHI New Energy Technology Co., Ltd.",
-      "short": "Ionchi"
-     }
-    ],
-    "published": "2026-07-29",
-    "reference": "C/2026/4140",
-    "simplified": true,
-    "transaction": "Mercedes China, BMW China ja Seres hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Ionchi. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4140/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-20",
-   "oj": [
-    {
-     "published": "2026-07-29",
-     "reference": "C:2026:4140:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_D_35.15",
-   "simplified": "MEsupersimplified",
-   "timeline": [],
-   "title": "MERCEDES-BENZ / BMW / SERES / IONCHI"
-  },
   "M.12513": {
    "caseNumber": "M.12513",
    "deadline": "2026-10-08",
@@ -3564,74 +3416,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "HBIS / DITH"
-  },
-  "M.12527": {
-   "caseNumber": "M.12527",
-   "deadline": "2026-08-25",
-   "decisions": [
-    {
-     "date": "2026-08-12",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-22",
-   "lastDecision": "2026-08-12",
-   "notice": {
-    "activities": [
-     "Volkswagen toimii henkilöautojen, kevyiden hyötyajoneuvojen, kuorma-autojen, bussien, linja-autojen, linja-autojen ja dieselmoottorien alustojen, moottoripyörien, varaosien ja tarvikkeiden kehittämisen, valmistuksen, markkinoinnin ja myynnin alalla.",
-     "Bain Capital on yksityinen sijoitusyhtiö, joka sijoittaa yrityksiin useilla eri toimialoilla, kuten tietotekniikan, terveydenhuollon, vähittäiskaupan, kulutushyödykkeiden, viestinnän, rahoituspalvelujen, teollisuuden ja valmistuksen aloilla."
-    ],
-    "fi": false,
-    "jv": "Everllence on insinööritoimisto, joka toimii meriteollisuuden, energia-alan ja teollisten sovellusten käyttövoima-, vähähiilistämis- ja tehokkuusratkaisujen alalla.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-09",
-    "oj": "C:2026:4220:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Saksa",
-        "name": "Porsche Automobil Holding SE"
-       }
-      ],
-      "country": "Saksa",
-      "fi": false,
-      "name": "Volkswagen Aktiengesellschaft",
-      "short": "Volkswagen"
-     },
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Bain Capital Investors, LLC",
-      "short": "Bain Capital"
-     },
-     {
-      "country": "Saksa",
-      "fi": false,
-      "name": "Everllence SE",
-      "short": "Everllence"
-     }
-    ],
-    "published": "2026-07-30",
-    "reference": "C/2026/4220",
-    "simplified": true,
-    "transaction": "Volkswagen ja Bain Capital hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Everllence. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4220/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-20",
-   "oj": [
-    {
-     "published": "2026-07-30",
-     "reference": "C:2026:4220:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_33.12",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "BAIN CAPITAL / VOLKSWAGEN / EVERLLENCE"
   },
   "M.12528": {
    "caseNumber": "M.12528",
@@ -7656,5 +7440,5 @@
    "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
   }
  },
- "fetched": "2026-11-10T18:00:22Z"
+ "fetched": "2026-11-11T06:27:07Z"
 }
