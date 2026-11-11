@@ -14,6 +14,15 @@ DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/20
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-hanke-c9f7879a-lausunto-2026-11-25@saadosseuranta
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[FI] Lausuntoaika päättyy: Laiksi yritysten määräaikaisesta polttoainetuesta
+DESCRIPTION:Lausuntokierros · TEM061:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM061:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM061:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-248-2026-voimaan-2027-06-01@saadosseuranta
 DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
@@ -406,7 +415,16 @@ DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+DESCRIPTION:Voimaan (986/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-193-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
+DESCRIPTION:Voimaan (987/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
 END:VEVENT
 BEGIN:VEVENT
@@ -1542,15 +1560,6 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun valtioneuvoston asetuksen muuttamisesta
 DESCRIPTION:Lausuntokierros · STM067:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=STM067:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-b66e8b10-voimaan-2026-11-12@saadosseuranta
-DTSTAMP:20261112T000000Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liikennemerkkejä ja -opasteita koskevan yleissopimuksen muutosten\, liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävän eurooppalaisen sopimuksen muutosten sekä liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävään eurooppalaiseen sopimukseen liitettävän tiemerkintöjä käsittelevän pöytäkirjan muutosten voimaansaattamiseksi
-DESCRIPTION:Voimaan (916/2026\, 917/2026\, 918/2026\, 919/2026\, 920/2026) · 916/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
-URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-1d6d0bf7-lausunto-2026-11-18@saadosseuranta

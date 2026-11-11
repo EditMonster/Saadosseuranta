@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-11T06:28:36Z",
+ "fetched": "2026-11-11T15:34:37Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -764,6 +764,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "1c578ad70b32",
+   "lastSeen": "2026-11-11"
+  },
+  "1d6c92f32288": {
+   "buyer": "Vantaan kaupunki",
+   "decisionDate": "2026-10-20",
+   "decisionText": "Vantaan kaupungin hankintapäätös 20.10.2026, § 7, tulkkauspalveluiden hankinta 2026 / PT, osa-alue 2 Pikatulkkaus",
+   "filed": "2026-11-11",
+   "firstSeen": "2026-11-11",
+   "hilmaNo": null,
+   "key": "1d6c92f32288",
    "lastSeen": "2026-11-11"
   },
   "1e44de619dd4": {
@@ -1371,7 +1381,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "7553631d4c98",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-11",
+   "missingSince": "2026-11-11"
   },
   "7586a79693a1": {
    "buyer": "Kansaneläkelaitos",
@@ -1927,7 +1938,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "d486e17a217f",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-11",
+   "missingSince": "2026-11-11"
   },
   "d5ece844f0aa": {
    "buyer": "Hansel Oy",
@@ -2188,7 +2200,8 @@
    "firstSeen": "2026-11-02",
    "hilmaNo": null,
    "key": "ef80df1d5eae",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-11",
+   "missingSince": "2026-11-11"
   },
   "f2f2faa535fe": {
    "buyer": "Lappeenrannan kaupunki",

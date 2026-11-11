@@ -115,7 +115,7 @@
      "reference": "C:2026:4845:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_G_46.21",
    "simplified": "MEnormal",
@@ -1170,10 +1170,44 @@
    "decisions": [],
    "initiated": "2026-03-23",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Brink’s tarjoaa maailmanlaajuisesti käteisen ja arvoesineiden hallintaa, digitaalisia vähittäiskaupan ratkaisuja ja pankkiautomaattipalveluja. Sen asiakkaita ovat rahoituslaitokset, vähittäismyyjät, valtion virastot, rahapajat, jalokivikauppiaat ja muut kaupalliset toimijat eri puolilla maailmaa. Brink’sin globaali verkosto palvelee asiakkaita yli 100 maassa.",
+     "NCR on finanssiteknologiayritys, joka tarjoaa maailmanlaajuisesti itsepalveluun perustuvia pankkiratkaisuja. Sen toimintaan sisältyvät pankkiautomaattien valmistus ja toimitus, pankkiautomaattiohjelmistojen tarjonta, pankkiautomaattien huolto- ja korjauspalvelut, kehitys- ja tukipalvelut, pankkiautomaattien hallintapalvelut, pankkiautomaatti palveluna -ulkoistusratkaisut (ATM-as-a-Service) sekä pankkiautomaattien käyttöönotto- ja ylläpitopalvelut."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-23",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5956:",
+    "parties": [
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "The Brinks Company",
+      "short": "Brinks"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "NCR Atleos Corporation",
+      "short": "NCR"
+     }
+    ],
+    "published": "2026-11-11",
+    "reference": "C/2026/5956",
+    "simplified": false,
+    "transaction": "Brink’s hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä NCR. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5956/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-03",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-11",
+     "reference": "C:2026:5956:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_L_66.19",
@@ -5004,9 +5038,14 @@
   "M.12581": {
    "caseNumber": "M.12581",
    "deadline": "2026-11-24",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-11",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-28",
-   "lastDecision": null,
+   "lastDecision": "2026-11-11",
    "notice": {
     "activities": [
      "CDC on ranskalainen erityisaseman omaava julkinen organisaatio, joka hoitaa yhteiskuntapoliittisa tavoitteita tukevia yleishyödyllisiä tehtäviä. CDC harjoittaa tytäryhtiöidensä kautta myös avomarkkinatoimintaa ympäristö-, kiinteistö-, sijoitus-, pääomasijoitus- ja palvelutoimialoilla.",
@@ -7060,10 +7099,44 @@
    "decisions": [],
    "initiated": "2026-09-21",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "LL on maailmanlaajuisesti toimiva yritys, joka valmistaa ja myy paahdettua kahvia ja siihen liittyviä tuotteita.",
+     "IVSG asentaa, huoltaa ja hallinnoi täysin automatisoituja juoma- ja välipala-automaatteja Euroopan tasolla."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-23",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5954:",
+    "parties": [
+     {
+      "country": "Italia",
+      "fi": false,
+      "name": "Luigi Lavazza S.p.A.",
+      "short": "LL"
+     },
+     {
+      "country": "Luxemburg",
+      "fi": false,
+      "name": "IVS Group S.A.",
+      "short": "IVSG"
+     }
+    ],
+    "published": "2026-11-11",
+    "reference": "C/2026/5954",
+    "simplified": true,
+    "transaction": "LL hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä IVSG. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5954/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-03",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-11",
+     "reference": "C:2026:5954:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_G_47.11",
@@ -7130,9 +7203,14 @@
   "M.12664": {
    "caseNumber": "M.12664",
    "deadline": "2026-11-23",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-10",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-10-05",
-   "lastDecision": null,
+   "lastDecision": "2026-11-10",
    "notice": {
     "activities": [
      "Blackstone on maailmanlaajuisesti toimiva vaihtoehtoisten sijoitusten hallintapalvelujen tarjoaja.",
@@ -7181,9 +7259,14 @@
   "M.12665": {
    "caseNumber": "M.12665",
    "deadline": "2026-11-20",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-10",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-10-05",
-   "lastDecision": null,
+   "lastDecision": "2026-11-10",
    "notice": {
     "activities": [],
     "fi": false,
@@ -7224,7 +7307,7 @@
      "reference": "C:2026:5591:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_O_80",
    "simplified": "MEsupersimplified",
@@ -7237,10 +7320,57 @@
    "decisions": [],
    "initiated": "2026-10-05",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "ACM on nopeasti kasvava ja maailmanlaajuisesti toimiva vaihtoehtoisten omaisuudenhoitopalvelujen tarjoaja. Esimerkkinä voidaan mainita sijoitukset muun muassa koulutus-, vakuutus-, rahoituspalvelu- ja vapaa-ajan yrityksiin.",
+     "MCP on eurooppalainen sijoitusneuvoja, jonka palveluja käyttävät rahastot ovat erikoistuneet tarjoamaan pääomaratkaisuja, joihin ei liity määräysvaltaa, johtajien omistamille yrityksille keskisuurilla markkinoilla.",
+     "RSCPBR Limited on John Radfordin kokonaan omistama sijoitusyhtiö, jolla on tällä hetkellä yksinomainen määräysvalta yrityksessä One Call."
+    ],
+    "fi": false,
+    "jv": "One Call -yhteisyritys tarjoaa koti-, moottoriajoneuvo-, moottoripyörä- ja hyötyajoneuvovakuutuksia ja toimii vakuutusten välityksen ja merkinnän sekä korvausvaatimusten käsittelyn aloilla.",
+    "observationDays": 10,
+    "observationsEnd": "2026-11-23",
+    "observationsShifted": "Saturday",
+    "oj": "C:2026:5953:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdysvallat",
+        "name": "Apollo Global Management, Inc."
+       }
+      ],
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Apollo Capital Management L.P.",
+      "short": "ACM"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Metric Capital Partners LLP",
+      "short": "MCP"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "RSCPBR Limited"
+     }
+    ],
+    "published": "2026-11-11",
+    "reference": "C/2026/5953",
+    "simplified": true,
+    "transaction": "ACM, MCP ja RSCPBR Limited hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä RSCPBR Saleco Limited (One Call, Yhdistynyt kuningaskunta), joka on tällä hetkellä yrityksen RSCPBR Limited määräysvallassa.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/5953/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-10-28",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-11",
+     "reference": "C:2026:5953:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_T_95.31",
@@ -7422,6 +7552,23 @@
    "timeline": [],
    "title": "WITTINGTON / FAIRFAX / BLAZING STAR BOOTS SUPERCO"
   },
+  "M.12697": {
+   "caseNumber": "M.12697",
+   "deadline": "2026-12-15",
+   "decisions": [],
+   "initiated": "2026-11-04",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-10",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_L_64.21",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "LBG / APOLLO FUNDS / FERNANDO GROUP"
+  },
   "M.12701": {
    "caseNumber": "M.12701",
    "deadline": "2026-12-14",
@@ -7438,7 +7585,24 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
+  },
+  "M.12706": {
+   "caseNumber": "M.12706",
+   "deadline": "2026-12-15",
+   "decisions": [],
+   "initiated": "2026-11-04",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-10",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_77.35",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-11T06:27:07Z"
+ "fetched": "2026-11-11T15:33:59Z"
 }

@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – Hankintatiimi (esimerkki)
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:fi-he-230-2026-voimaan-2027-01-01-hankintatiimi@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi hankintatietovarannosta ja siihen liittyviksi laeiksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-786157-2026-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
 DTSTAMP:20261116T000000Z
 DTSTART;VALUE=DATE:20261116
@@ -41,6 +50,24 @@ DESCRIPTION:Tarjoukset viimeistään · AB Via Lietuva (PV) · https://ted.europ
 URL:https://ted.europa.eu/fi/notice/-/detail/785245-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61714-maaraaika-2026-11-13-hankintatiimi@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[Hankinta] Määräaika: Väyläviraston mediatiedotejakelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061714 · https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/61714
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/61714
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61714-maaraaika-2026-11-18-hankintatiimi@saadosseuranta
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[Hankinta] Määräaika: Väyläviraston mediatiedotejakelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061714 · https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/61714
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39130/enotice/61714
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-783372-2026-maaraaika-2026-11-19-hankintatiimi@saadosseuranta
 DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
@@ -48,6 +75,15 @@ DTEND;VALUE=DATE:20261120
 SUMMARY:[Hankinta] Määräaika: Mötesteknik
 DESCRIPTION:Tarjoukset viimeistään · Sveriges Meteorologiska och Hydrologiska Institut · https://ted.europa.eu/fi/notice/-/detail/783372-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/783372-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61799-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[Hankinta] Määräaika: Virtuaalisen koulutusympäristön hankinta
+DESCRIPTION:Tarjoukset viimeistään · 2026-061799 · https://www.hankintailmoitukset.fi/fi/public/procedure/39105/enotice/61799
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39105/enotice/61799
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-785893-2026-maaraaika-2026-11-20-hankintatiimi@saadosseuranta
@@ -93,6 +129,24 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[Hankinta] Määräaika: Psihoemocionālā atbalsta konsultatīvā tālruņa līnijas nodrošināšana pusaudžiem
 DESCRIPTION:Tarjoukset viimeistään · Nacionālais veselības dienests · https://ted.europa.eu/fi/notice/-/detail/783781-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/783781-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61726-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[Hankinta] Määräaika: PEF-etämittauspalvelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061726 · https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61726
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61726
+END:VEVENT
+BEGIN:VEVENT
+UID:hk-EF-61712-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[Hankinta] Määräaika: Ruokapalveluiden tuotannonohjausjärjestelmä / Liperin kunta
+DESCRIPTION:Tarjoukset viimeistään · 2026-061712 · https://www.hankintailmoitukset.fi/fi/public/procedure/40009/enotice/61712
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/40009/enotice/61712
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-784953-2026-maaraaika-2026-12-04-hankintatiimi@saadosseuranta
@@ -345,15 +399,6 @@ DTEND;VALUE=DATE:20261217
 SUMMARY:[Hankinta] Määräaika: Reagentai ir eksploatacinės medžiagos (Nr.10913-17)
 DESCRIPTION:Tarjoukset viimeistään · VšĮ Respublikinė Vilniaus universitetinė ligoninė (PV) · https://ted.europa.eu/fi/notice/-/detail/786132-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/786132-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-he-230-2026-voimaan-2027-01-01-hankintatiimi@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laiksi hankintatietovarannosta ja siihen liittyviksi laeiksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-ted-780261-2026-maaraaika-2026-11-12-hankintatiimi@saadosseuranta
@@ -1758,41 +1803,5 @@ DTEND;VALUE=DATE:20261128
 SUMMARY:[Hankinta] Määräaika: Moodle LMS izstrādes un konsultāciju pakalpojums
 DESCRIPTION:Tarjoukset viimeistään · Rīgas Stradiņa universitāte · https://ted.europa.eu/fi/notice/-/detail/767116-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/767116-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-764027-2026-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261130T000000Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
-SUMMARY:[Hankinta] Määräaika: Transportlīdzekļu vadītāju dokumentu izgatavošana un piegāde
-DESCRIPTION:Tarjoukset viimeistään · Valsts akciju sabiedrība "Ceļu satiksmes drošības direkcija" · https://ted.europa.eu/fi/notice/-/detail/764027-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/764027-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-767350-2026-maaraaika-2026-11-30-hankintatiimi@saadosseuranta
-DTSTAMP:20261130T000000Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
-SUMMARY:[Hankinta] Määräaika: Maksājumu administrēšanas informācijas sistēmas (MAIS) pilnveidošana\, uzturēšana un garantijas nodrošināšana
-DESCRIPTION:Tarjoukset viimeistään · Valsts ieņēmumu dienests · https://ted.europa.eu/fi/notice/-/detail/767350-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/767350-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-765771-2026-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
-DTSTAMP:20261202T000000Z
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-SUMMARY:[Hankinta] Määräaika: Udbud af afregningssystem for Samn Forsyning ApS
-DESCRIPTION:Osallistumishakemukset viimeistään · Samn Forsyning ApS · https://ted.europa.eu/fi/notice/-/detail/765771-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/765771-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-61026-maaraaika-2026-12-03-hankintatiimi@saadosseuranta
-DTSTAMP:20261203T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
-SUMMARY:[Hankinta] Määräaika: Sähköisen ajanvarauksen järjestelmän hankinta sote-palveluihin
-DESCRIPTION:Tarjoukset viimeistään · 2026-061026 · https://www.hankintailmoitukset.fi/fi/public/procedure/39583/enotice/61026
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39583/enotice/61026
 END:VEVENT
 END:VCALENDAR
