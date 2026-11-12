@@ -1,6 +1,60 @@
 {
- "fetched": "2026-11-11T15:31:53",
+ "fetched": "2026-11-12T11:17:42",
  "items": [
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 19393,
+   "periods": [
+    {
+     "end": "2027-01-18",
+     "open": true,
+     "stage": "PLANNING_WORKFLOW",
+     "start": "2026-11-12"
+    }
+   ],
+   "reference": "Ares(2026)9141299",
+   "status": "ACTIVE",
+   "title_en": "Limited assurance standards for sustainability reporting ",
+   "title_fi": "Yritysten kestävyysraportointi – rajoitetut varmennustandardit",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19295,
+   "periods": [
+    {
+     "end": "2026-12-09",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-11"
+    }
+   ],
+   "reference": "Ares(2026)8740131",
+   "status": "ACTIVE",
+   "title_en": "Revision of olive oil conformity checks",
+   "title_fi": "Oliiviöljyn vaatimustenmukaisuus – tarkistus",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19295_en"
+  },
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 19294,
+   "periods": [
+    {
+     "end": "2026-12-09",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-11"
+    }
+   ],
+   "reference": "Ares(2026)8740112",
+   "status": "ACTIVE",
+   "title_en": "Revision of olive oil marketing standards",
+   "title_fi": "Oliiviöljyn kaupan pitämistä koskevat vaatimukset – tarkistaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19294_en"
+  },
   {
    "actType": "REG_DEL",
    "actTypeLabel": "Delegoitu asetus",
@@ -25,7 +79,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-06",
+     "end": "2027-01-07",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -553,7 +607,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-06",
+     "end": "2027-01-07",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -571,7 +625,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-06",
+     "end": "2027-01-07",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -638,42 +692,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17214_en"
   },
   {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 19174,
-   "periods": [
-    {
-     "end": "2026-11-11",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-14"
-    }
-   ],
-   "reference": "Ares(2026)8251214",
-   "status": "ACTIVE",
-   "title_en": "Implementing Regulation on a standardised reporting template for Member States’ monitoring of the NZIA",
-   "title_fi": "Nettonollateollisuussäädöksen seuranta EU-maissa – standardoitua raportointimallia koskeva täytäntöönpanoasetus",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19174_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 13638,
-   "periods": [
-    {
-     "end": "2026-11-11",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-14"
-    }
-   ],
-   "reference": "Ares(2022)7849159",
-   "status": "ACTIVE",
-   "title_en": "Measures for the implementation in the Member States of the contingency plans for animal diseases",
-   "title_fi": "Eläintautien torjunta – valmiussuunnitelmien täytäntöönpano jäsenvaltioissa",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13638_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14593,
@@ -697,7 +715,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-06",
+     "end": "2027-01-07",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -874,24 +892,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 14628,
-   "periods": [
-    {
-     "end": "2026-11-11",
-     "open": true,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-02"
-    }
-   ],
-   "reference": "Ares(2025)2876603",
-   "status": "ACTIVE",
-   "title_en": "Cloud and AI Development Act",
-   "title_fi": "Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 15252,
    "periods": [
     {
@@ -978,6 +978,60 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 13638,
+   "periods": [
+    {
+     "end": "2026-11-11",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-14"
+    }
+   ],
+   "reference": "Ares(2022)7849159",
+   "status": "ACTIVE",
+   "title_en": "Measures for the implementation in the Member States of the contingency plans for animal diseases",
+   "title_fi": "Eläintautien torjunta – valmiussuunnitelmien täytäntöönpano jäsenvaltioissa",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13638_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 19174,
+   "periods": [
+    {
+     "end": "2026-11-11",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-14"
+    }
+   ],
+   "reference": "Ares(2026)8251214",
+   "status": "ACTIVE",
+   "title_en": "Implementing Regulation on a standardised reporting template for Member States’ monitoring of the NZIA",
+   "title_fi": "Nettonollateollisuussäädöksen seuranta EU-maissa – standardoitua raportointimallia koskeva täytäntöönpanoasetus",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19174_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
+   "id": 14628,
+   "periods": [
+    {
+     "end": "2026-11-11",
+     "open": false,
+     "stage": "ADOPTION_WORKFLOW",
+     "start": "2026-07-02"
+    }
+   ],
+   "reference": "Ares(2025)2876603",
+   "status": "ACTIVE",
+   "title_en": "Cloud and AI Development Act",
+   "title_fi": "Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en"
   },
   {
    "actType": "REG_IMPL",

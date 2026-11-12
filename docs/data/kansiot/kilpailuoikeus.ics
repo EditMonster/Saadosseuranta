@@ -59,15 +59,6 @@ DESCRIPTION:1. vaiheen määräaika (23 työpäivää) · KKV/1557/14.00.10/2026
 URL:https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1557-14-00-10-2026/
 END:VEVENT
 BEGIN:VEVENT
-UID:yk-fi-1385-2026-maaraaika-2026-11-04-kilpailuoikeus@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[KKV] Määräaika: Corewood Oy / Ylijoki Metsäenergia Oy
-DESCRIPTION:1. vaiheen määräaika (23 työpäivää) · KKV/1385/14.00.10/2026 · https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1385-14-00-10-2026/
-URL:https://www.kkv.fi/paatokset/vireilla-olevat-yrityskaupat/kkv-1385-14-00-10-2026/
-END:VEVENT
-BEGIN:VEVENT
 UID:yk-fi-743-2026-maaraaika-2026-12-31-kilpailuoikeus@saadosseuranta
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231

@@ -5,15 +5,6 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
-UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
-DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
-DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-hanke-c9f7879a-lausunto-2026-11-25@saadosseuranta
 DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20261125
@@ -39,15 +30,6 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sosiaali- ja terveydenhuoltoa ja pelastustoimea koskevan uudistuksen toimeenpanosta ja sitä koskevan lainsäädännön voimaanpanosta annetun lain 65 §:n muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 241/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-he-302-2026-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[FI] Lausuntoaika päättyy: Laiksi kuntalain 137 §:n muuttamisesta
-DESCRIPTION:Lausuntoyhteenveto · HE 302/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/302
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/302
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-229-2026-voimaan-2027-01-01@saadosseuranta
@@ -1022,6 +1004,24 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 103/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
+DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-142-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi auktorisoiduista teollisoikeusasiamiehistä annetun lain muuttamisesta
+DESCRIPTION:Voimaan (1029/2026) · HE 142/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/142
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/142
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-57-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1463,33 +1463,6 @@ DESCRIPTION:Lausuntokierros · TEM054:00/2026 · https://valtioneuvosto.fi/hanke
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM054:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-32ac1aaf-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus verontilityksestä
-DESCRIPTION:Lausuntokierros · VM116:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM116:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM116:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-2893c0dc-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus verotusmenettelystä
-DESCRIPTION:Lausuntokierros · VM115:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM115:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM115:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-ba66602a-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[FI] Lausuntoaika päättyy: Valtiovarainministeriön asetus veronkannosta annetun valtiovarainministeriön asetuksen muuttamisesta
-DESCRIPTION:Lausuntokierros · VM117:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=VM117:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=VM117:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-b8a220c7-lausunto-2026-11-06@saadosseuranta
 DTSTAMP:20261106T000000Z
 DTSTART;VALUE=DATE:20261106
@@ -1587,6 +1560,15 @@ DTEND;VALUE=DATE:20261113
 SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta
 DESCRIPTION:Lausuntokierros · YM005:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=YM005:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-b66e8b10-voimaan-2026-11-12@saadosseuranta
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:[FI] Voimaan: Valtioneuvoston asetukset liikennemerkkejä ja -opasteita koskevan yleissopimuksen muutosten\, liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävän eurooppalaisen sopimuksen muutosten sekä liikennemerkkejä ja -opasteita koskevaa yleissopimusta täydentävään eurooppalaiseen sopimukseen liitettävän tiemerkintöjä käsittelevän pöytäkirjan muutosten voimaansaattamiseksi
+DESCRIPTION:Voimaan (916/2026\, 917/2026\, 918/2026\, 919/2026\, 920/2026) · 916/2026 · https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
+URL:https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/916
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-2020-0359-maaraaika-2027-10-17@saadosseuranta
@@ -2210,6 +2192,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1738/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2023-0373-soveltaminen-2027-12-17@saadosseuranta
+DTSTAMP:20271217T000000Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:[EU] Soveltaminen: Muovipellettien ympäristöön pääsyn estäminen mikromuovisaasteen vähentämiseksi
+DESCRIPTION:Soveltaminen (vaihe) · (EU) 2025/2365 · https://eur-lex.europa.eu/eli/reg/2025/2365/oj
+URL:https://eur-lex.europa.eu/eli/reg/2025/2365/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2024-0061-maaraaika-2027-06-30@saadosseuranta
 DTSTAMP:20270630T000000Z
 DTSTART;VALUE=DATE:20270630
@@ -2354,19 +2345,19 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-2026-0078-voimaan-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[EU] Voimaan: Ketterää ja nopeaa puolustusalan innovointia koskevan ohjelman (AGILE) perustaminen
-DESCRIPTION:Voimaan · (EU) 2026/2387 · https://eur-lex.europa.eu/eli/reg/2026/2387/oj
-URL:https://eur-lex.europa.eu/eli/reg/2026/2387/oj
+UID:eu-hys-19393-lausunto-2027-01-18@saadosseuranta
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[EU] Lausuntoaika päättyy: Yritysten kestävyysraportointi – rajoitetut varmennustandardit
+DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-06@saadosseuranta
-DTSTAMP:20270106T000000Z
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
+UID:eu-hys-14770-lausunto-2027-01-07@saadosseuranta
+DTSTAMP:20270107T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2471,10 +2462,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-06@saadosseuranta
-DTSTAMP:20270106T000000Z
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
+UID:eu-hys-19517-lausunto-2027-01-07@saadosseuranta
+DTSTAMP:20270107T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2550,15 +2541,6 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-18833-lausunto-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[EU] Lausuntoaika päättyy: Alv ja kiertotalous
-DESCRIPTION:Palauteaika · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18833_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
@@ -2921,15 +2903,6 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7015 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3112
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-3115-maaraaika-2026-11-04@saadosseuranta
-DTSTAMP:20261104T000000Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards measures to reduce incide
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6205 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3115
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-3117-maaraaika-2026-12-21@saadosseuranta
 DTSTAMP:20261221T000000Z
 DTSTART;VALUE=DATE:20261221
@@ -3126,6 +3099,24 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[EU] Lausuntoaika päättyy: Consultation on Regulatory Technical Standards on prudential requirements for investment firms
 DESCRIPTION:Palauteaika · EBA/CP/2026/17 · https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
 URL:https://www.eba.europa.eu/publications-and-media/events/consultation-regulatory-technical-standards-prudential-requirements-investment-firms
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-ia-d109911-lausunto-2026-12-09@saadosseuranta
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation amending Implementing Regulation (EU) 2022/2105 laying down rules on conformity checks of marketing standards for olive oil a
+DESCRIPTION:Palauteaika (Have your say) · D109911/04 · https://ec.europa.eu/transparency/comitology-register/screen/documents/109911/4/consult
+URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/109911/4/consult
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-ia-d118146-lausunto-2026-12-09@saadosseuranta
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation amending Implementing Regulation (EU) 2022/2105 as regards olive oil conformity checks
+DESCRIPTION:Palauteaika (Have your say) · D118146/01 · https://ec.europa.eu/transparency/comitology-register/screen/documents/118146/1/consult
+URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118146/1/consult
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-ia-d118507-lausunto-2026-11-11@saadosseuranta

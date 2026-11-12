@@ -2767,68 +2767,6 @@
    "timeline": [],
    "title": "PLD / NBIM / HAMBURG LOGISTICS PROPERTY ASSET"
   },
-  "M.12504": {
-   "caseNumber": "M.12504",
-   "deadline": "2026-08-26",
-   "decisions": [
-    {
-     "date": "2026-08-13",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-08",
-   "lastDecision": "2026-08-13",
-   "notice": {
-    "activities": [
-     "Brookfield on globaalisti toimiva sijoituspalveluyritys, joka käyttää pääomapooleja sijoittajia varten maailmanlaajuisesti eri ydinliiketoiminnoissaan, esimerkiksi omaisuudenhoitopalveluissa, ja sen liiketoiminta keskittyy pääasiassa uusiutuvaan energiaan ja siirtymään, infrastruktuuriin, yksityiseen pääomaan ja kiinteistöihin.",
-     "MHC on kaupallisen rahoituksen tarjoaja, jolla on erilaisia rahoitusratkaisuja, kuten omaisuusrahoitus, ajoneuvojen leasing-vuokraus ja osamaksurahoitus."
-    ],
-    "fi": false,
-    "jv": "MHBF hallinnoi uusiutuvan energian omaisuuseriä Ranskassa, Espanjassa, Suomessa, Ruotsissa, Irlannissa ja Yhdistyneessä kuningaskunnassa.",
-    "observationDays": 10,
-    "observationsEnd": "2026-08-10",
-    "oj": "C:2026:4230:",
-    "parties": [
-     {
-      "country": "Kanada",
-      "fi": false,
-      "name": "Brookfield Corporation",
-      "short": "Brookfield"
-     },
-     {
-      "country": "Japani",
-      "fi": false,
-      "name": "Mitsubishi HC Capital Inc.",
-      "short": "MHC"
-     },
-     {
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "MHBF Renewable Holdings Limited",
-      "short": "MHBF"
-     }
-    ],
-    "published": "2026-07-31",
-    "reference": "C/2026/4230",
-    "simplified": true,
-    "transaction": "Brookfield ja MHC hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä MHBF. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4230/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-22",
-   "oj": [
-    {
-     "published": "2026-07-31",
-     "reference": "C:2026:4230:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_D_35.1",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "MITSUBISHI HC CAPITAL / BROOKFIELD / MHBF RENEWABLES"
-  },
   "M.12506": {
    "caseNumber": "M.12506",
    "deadline": "2026-09-28",
@@ -2883,76 +2821,6 @@
    "simplified": "MEsupersimplified",
    "timeline": [],
    "title": "PUBLIGAS / PUBLI-T"
-  },
-  "M.12507": {
-   "caseNumber": "M.12507",
-   "deadline": "2026-08-24",
-   "decisions": [
-    {
-     "date": "2026-08-13",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-06-08",
-   "lastDecision": "2026-08-13",
-   "notice": {
-    "activities": [
-     "LTM on maailmanlaajuinen teknologiakonsultoinnin ja digitaalisten ratkaisujen tarjoaja, jolla on kattava valikoima tietotekniikkapalveluja eri toimialoilla.",
-     "RDS tarjoaa tietotekniikkapalveluja ja konsultointipalveluja monenlaisille yritysasiakkaille Euroopassa ja Australiassa. Sen palveluihin kuuluvat yleiset pilvipalvelut, infrastruktuuripalvelut ja tietotekniikkapalvelut muun muassa seuraavien osalta: asiakas-/käyttäjäkokemus ja käyttöliittymä, digitaalinen kehitys ja tuotekehitys, data ja analytiikka, alustaan ja työnkulkuun liittyvät ratkaisut, kyberturvallisuus ja muut digitalisaatiota tukevat palvelut. Lisäksi RDS tarjoaa henkilöstöpalveluja, kuten digitaalialan asiantuntijoiden rekrytointia ja työhönsijoitusta, maailmanlaajuisia digitaalisia osaamiskeskittymiä, asiakaskohtaisia ratkaisuja ja hanketoteutusta."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-06",
-    "oj": "C:2026:4101:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Intia",
-        "name": "LTM Limited"
-       },
-       {
-        "country": "Intia",
-        "name": "Larsen & Toubro Limited"
-       }
-      ],
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "LTM UK & Ireland Limited",
-      "short": "LTM UK"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Alankomaat",
-        "name": "Randstad N.V."
-       }
-      ],
-      "country": "Alankomaat",
-      "fi": false,
-      "name": "Randstad Digital B.V. (Alankomaat), Randstad Digital France SAS (Ranska) ja FinXL Professional Services Pty Ltd (Austral"
-     }
-    ],
-    "published": "2026-07-27",
-    "reference": "C/2026/4101",
-    "simplified": true,
-    "transaction": "LTM hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä RDS. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4101/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-17",
-   "oj": [
-    {
-     "published": "2026-07-27",
-     "reference": "C:2026:4101:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_K_62.2",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "LTM / RANDSTAD (DIGITAL SOLUTIONS BUSINESS)"
   },
   "M.12513": {
    "caseNumber": "M.12513",
@@ -5098,7 +4966,7 @@
      "reference": "C:2026:5763:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_K_63.10",
    "simplified": "MEsimplified",
@@ -6041,6 +5909,23 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "PARTNERS GROUP / AVK"
+  },
+  "M.12609": {
+   "caseNumber": "M.12609",
+   "deadline": "2026-12-15",
+   "decisions": [],
+   "initiated": "2026-08-17",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-10",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_O_79",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "CERTARES / FS INTERNATIONAL / TRENITALIA FRANCE"
   },
   "M.12610": {
    "caseNumber": "M.12610",
@@ -7249,7 +7134,7 @@
      "reference": "C:2026:5551:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_J_58.29",
    "simplified": "MEsimplified",
@@ -7530,7 +7415,7 @@
    "oj": [],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
-   "sector": "NaceV2Sector_L_65.1",
+   "sector": "NaceV2Sector_L_66.22",
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "AMTRUST BERMUDA I / BIG WAKAM"
@@ -7604,5 +7489,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-11T15:33:59Z"
+ "fetched": "2026-11-12T11:20:14Z"
 }
