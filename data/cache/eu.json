@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T11:14:22",
+ "fetched": "2026-11-12T19:01:54",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -58653,6 +58653,10 @@
     {
      "date": "2026-11-06",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-11",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -64291,6 +64295,14 @@
     {
      "date": "2026-10-12",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-10-19",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-05",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -64792,6 +64804,12 @@
     "proposal": "52026PC0563",
     "proposalDate": "2026-10-22"
    },
+   "council": [
+    {
+     "date": "2026-11-06",
+     "type": "DELIB_WP_byCONSIL"
+    }
+   ],
    "events": [],
    "fetched": "2026-11-12",
    "final": false,
@@ -64923,6 +64941,63 @@
    "ref": "2026/0342(COD)",
    "stage": "RDG1",
    "title_en": "European Border and Coast Guard (recast)",
+   "title_et": "",
+   "title_fi": "",
+   "title_lt": "",
+   "title_sv": ""
+  },
+  "2026-0356": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-11-12",
+   "final": false,
+   "pid": "2026-0356",
+   "ref": "2026/0356(COD)",
+   "stage": "RDG1",
+   "title_en": "Digital Fairness Act",
+   "title_et": "",
+   "title_fi": "",
+   "title_lt": "",
+   "title_sv": ""
+  },
+  "2026-0357": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-11-12",
+   "final": false,
+   "pid": "2026-0357",
+   "ref": "2026/0357(COD)",
+   "stage": "RDG1",
+   "title_en": "Simplification of certain consumer protection rules",
+   "title_et": "",
+   "title_fi": "",
+   "title_lt": "",
+   "title_sv": ""
+  },
+  "2026-0358": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-11-12",
+   "final": false,
+   "pid": "2026-0358",
+   "ref": "2026/0358(COD)",
+   "stage": "RDG1",
+   "title_en": "Cooperation in the enforcement of consumer protection laws in the Union",
    "title_et": "",
    "title_fi": "",
    "title_lt": "",

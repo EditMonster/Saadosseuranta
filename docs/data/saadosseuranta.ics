@@ -793,7 +793,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi vammaisetuuksista annetun lain\, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta
-DESCRIPTION:Ehdotettu voimaantulo · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
+DESCRIPTION:Voimaan (983/2026) · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 END:VEVENT
 BEGIN:VEVENT
@@ -1407,6 +1407,15 @@ DTEND;VALUE=DATE:20261114
 SUMMARY:[FI] Lausuntoaika päättyy: Sisäministeriön asetus Rajavartiolaitoksen eräiden virkamiesten eroamisiän vahvistamisesta
 DESCRIPTION:Lausuntokierros · SM017:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=SM017:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=SM017:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-ef9bb708-lausunto-2026-11-27@saadosseuranta
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:[FI] Lausuntoaika päättyy: Rajavartiolaitoksesta annetun valtioneuvoston asetuksen muuttaminen
+DESCRIPTION:Lausuntokierros · SM020:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=SM020:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=SM020:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-a907c52b-lausunto-2026-11-13@saadosseuranta
@@ -2343,6 +2352,15 @@ DTEND;VALUE=DATE:20270802
 SUMMARY:[EU] Määräaika: Asetuksen (EU) 2021/1232 muuttaminen sen soveltamisajan jatkamiseksi
 DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) · (EU) 2026/1881 · https://eur-lex.europa.eu/eli/reg/2026/1881/oj
 URL:https://eur-lex.europa.eu/eli/reg/2026/1881/oj
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-hys-16414-lausunto-2026-12-10@saadosseuranta
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[EU] Lausuntoaika päättyy: Hiilen varastointia pitkäkestoisiin tuotteisiin koskevat sertifiointimenetelmät
+DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu asetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-hys-19393-lausunto-2027-01-18@saadosseuranta

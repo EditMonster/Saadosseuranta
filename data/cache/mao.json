@@ -489,7 +489,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-12T11:21:45Z",
+ "fetched": "2026-11-12T19:06:23Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1006,7 +1006,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "3cc9c2218ea5",
-   "lastSeen": "2026-11-12"
+   "lastSeen": "2026-11-12",
+   "missingSince": "2026-11-12"
   },
   "3f8b67b897a8": {
    "buyer": "Kansaneläkelaitos",
@@ -1596,6 +1597,16 @@
    "key": "9538ae53773b",
    "lastSeen": "2026-11-12"
   },
+  "95914eda896c": {
+   "buyer": "Kokkolan kaupunki",
+   "decisionDate": "2026-09-24",
+   "decisionText": "Kokkolan kaupungin valitus koskien hankintamenettelyä, tarjouspyyntö ja hankintailmoitus 24.9.2026 koskien kiinteistöjen rakennuspalveluiden puitejärjestelyä",
+   "filed": "2026-11-12",
+   "firstSeen": "2026-11-12",
+   "hilmaNo": null,
+   "key": "95914eda896c",
+   "lastSeen": "2026-11-12"
+  },
   "968f174cb1c2": {
    "buyer": "Kansaneläkelaitos",
    "decisionDate": "2026-05-08",
@@ -1828,7 +1839,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "bc03fbcaa0d9",
-   "lastSeen": "2026-11-12"
+   "lastSeen": "2026-11-12",
+   "missingSince": "2026-11-12"
   },
   "bcc0d422df56": {
    "buyer": "Paraisten Seurakuntayhtymä",
@@ -2273,7 +2285,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "fabebdaed955",
-   "lastSeen": "2026-11-12"
+   "lastSeen": "2026-11-12",
+   "missingSince": "2026-11-12"
   },
   "fcf24bcc7de0": {
    "buyer": "Länsimetro Oy",

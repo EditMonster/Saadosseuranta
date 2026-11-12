@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T11:03:10",
+ "fetched": "2026-11-12T18:54:31",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -266,7 +266,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-11T08:08:25",
+   "muokattu": "2026-11-12T13:08:54",
    "nimi": "Hallituksen esitys eduskunnalle laiksi yritysten määräaikaisesta polttoainetuesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om temporärt bränslestöd för företag",
    "pevLausunto": false,
@@ -291,6 +291,12 @@
      "n": "HE yritysten polttoainetuki 20261109 lapa",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/c9f7879a-e8c5-4bfa-b05b-c55679c1dabe/01312330-b9ac-4f57-8f20-b30a97fe59af/LAUSUNTOPYYNTO_20261111075043.PDF"
+    },
+    {
+     "d": "2026-11-12",
+     "n": "HE yritysten polttoainetuki 20261109 SV - huvudsakligt innehåll och lagförslag",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c9f7879a-e8c5-4bfa-b05b-c55679c1dabe/146ed078-8fb4-483a-923e-3707c58fafd5/KIRJE_20261112120436.PDF"
     }
    ],
    "valmisteluvaihe": "LAUSUNTOMENETTELY",
@@ -6405,7 +6411,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-12",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -6421,8 +6427,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 339/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -6773,7 +6781,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-11-05T07:06:47",
+   "muokattu": "2026-11-12T12:08:00",
    "nimi": "Puolustusvalmiutta koskevien hankkeiden lupamenettelyn nopeuttamisesta annetun EU-asetuksen toimeenpano",
    "nimiSv": "Genomförande av EU-förordningen om påskyndande av tillståndsförfarandet för projekt som gäller försvarsberedskap",
    "pevLausunto": true,
@@ -10947,7 +10955,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-12",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -10993,8 +11001,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 342/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -11161,7 +11171,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-04T16:33:13",
+   "muokattu": "2026-11-12T13:53:17",
    "nimi": "Hallituksen esitys eduskunnalle ajoneuvoverolaiksi ja siihen liittyviksi laeiksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till ny fordonsskattelag och till vissa lagar som har samband med den",
    "pevLausunto": false,
@@ -11171,7 +11181,7 @@
    "teemat": [
     "Verotus"
    ],
-   "tiivistelma": "Esityksessä ehdotetaan säädettäväksi uusi ajoneuvoverolaki. Lisäksi muutettaisiin ajoneuvolakia ja polttoainemaksusta annettua lakia.",
+   "tiivistelma": "Esityksessä ehdotetaan säädettäväksi uusi ajoneuvoverolaki. Samalla voimassa oleva ajoneuvoverolaki ehdotetaan kumottavaksi. Lisäksi muutettaisiin ajoneuvolakia, polttoainemaksusta annettua lakia ja hallinto-oikeuslakia.",
    "tila": "KAYNNISSA",
    "tunnus": "VM043:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=VM043:00/2026",
@@ -17072,7 +17082,7 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-12",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -17114,8 +17124,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
+   "heNumerot": [
+    "HE 338/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -17241,7 +17253,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-12T07:30:35",
+   "muokattu": "2026-11-12T12:02:58",
    "nimi": "Hallituksen esitys eduskunnalle laiksi Suomen perustuslain 25 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till ändring av 25 § i Finlands grundlag",
    "pevLausunto": true,
@@ -17280,7 +17292,7 @@
      "u": "https://api.hankeikkuna.fi/asiakirjat/cff84922-6faf-4a6d-8469-bb51e39ec46e/6f4c26ab-4f1a-477a-8474-643897ebff90/YHTEENVETO_20261112072935.PDF"
     }
    ],
-   "valmisteluvaihe": "JATKOVALMISTELU",
+   "valmisteluvaihe": "EDUSKUNTAKASITTELY",
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": 40,
    "vanhaEsittelyvuosi": 2026
@@ -38042,6 +38054,42 @@
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": 45,
+   "esittelyvuosi": 2026,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": "POISTETTU_ISTUNTOKAUDEN_AIKANA",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-11-12T13:10:01",
+   "nimi": "Hallituksen esitys laiksi vammaisetuuksista annetun lain muuttamisesta",
+   "nimiSv": "Regeringens proposition med förslag till lag om ändring av lagen om handikappförmåner",
+   "pevLausunto": false,
+   "poistettuPaiva": "2026-09-07",
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Pääministeri Orpon hallitus neuvotteli julkisen talouden suunnitelmasta 22.-23.4.2025, ja pöytäkirjamerkintöjen mukaan valmistellaan yleistä keliakiakorvausta koskeva lainsäädäntö vuoden 2026 loppuun mennessä.\n\nHallitus on toteuttanut jo lainmuutoksen, jonka myötä keliakiasta aiheutuvia ylimääräisiä ravintomenoja on voitu 1.3.2025 alkaen huomioida osana toimeentulotuesta annetun lain (1412/1997) mukaista perustoimeentulotukea 38 euroa kuukaudessa 16 vuotta täyttäneillä henkilöillä (laki toimeentulotuesta annetun lain muuttamisesta (847/2024), HE 133/2024 vp). Hankkeessa STM036:00/2024 valmistellaan esitettäväksi, että kyseinen alaikäraja muutettaisiin 16 vuodesta 18 vuoteen 1.1.2027, ja että vammaisetuuksista annetun lain (570/2007) lapsen perusvammaistukea voisi 1.1.2027 alkaen myöntää alle 18-vuotiaaksi asti keliakian tai ihokeliakian perusteella.",
+   "tila": "KAYNNISSA",
+   "tunnus": "STM199:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM199:00/2025",
+   "uuid": "08579e34-c595-412d-827c-a45e189c0c67",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-12-31",
+   "vanhaEsittelyviikko": 39,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-10-08",
@@ -66234,7 +66282,7 @@
    "vanhaEsittelyvuosi": 2026
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-12",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
@@ -66272,8 +66320,10 @@
     }
    ],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 341/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -66503,7 +66553,7 @@
    },
    "lisattyPaiva": "2026-08-11",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-03T19:19:02",
+   "muokattu": "2026-11-12T12:09:43",
    "nimi": "Hallituksen esitys eduskunnalle kommandiittiyhtiömuotoisia rahastoja koskevan verolainsäädännön uudistamiseksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till revidering av skattelagstiftningen om fonder i kommanditbolagsform",
    "pevLausunto": false,
@@ -84361,7 +84411,7 @@
    "vanhaEsittelyvuosi": 2025
   },
   {
-   "annettuEduskunnalle": null,
+   "annettuEduskunnalle": "2026-11-12",
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
@@ -84370,8 +84420,10 @@
    "esittelyvuosi": 2026,
    "etapit": [],
    "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "LISATTY_ISTUNTOKAUDEN_AIKANA",
+   "heNumerot": [
+    "HE 340/2026"
+   ],
+   "heTila": "ANNETTU_EK",
    "kiireellinen": false,
    "laji": "laki",
    "lausunnot": {
@@ -84602,7 +84654,7 @@
    },
    "lisattyPaiva": "2026-05-08",
    "ministerio": "puolustusministeriö",
-   "muokattu": "2026-11-04T19:09:29",
+   "muokattu": "2026-11-12T12:09:09",
    "nimi": "Hallituksen esityksen valmistelu; henkilöstön joustava käyttö (Nato-säädösmuutokset)",
    "nimiSv": "Beredning av regeringsproposition; flexibel användning av personalen (Nato)",
    "pevLausunto": true,
@@ -87059,7 +87111,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-11T06:19:30",
+   "muokattu": "2026-11-12T12:59:55",
    "nimi": "Naisiin kohdistuvan väkivallan ja perheväkivallan torjumisesta annetun direktiivin (NKV-direktiivi) täytäntöönpano",
    "nimiSv": "Genomförande av direktivet om bekämpning av våld mot kvinnor och våld i nära relationer",
    "pevLausunto": false,
@@ -117992,13 +118044,17 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-09T11:39:56",
+   "muokattu": "2026-11-12T12:50:58",
    "nimi": "Hallituksen esitys eduskunnalle laiksi vammaisetuuksista annetun lain, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om handikappförmåner, 7 b § i lagen om utkomststöd och 10 kap. 2 § och 11 kap. 2 § i sjukförsäkringslagen",
    "pevLausunto": false,
    "poistettuPaiva": null,
    "rauennut": false,
-   "skNumerot": [],
+   "skNumerot": [
+    "983/2026",
+    "984/2026",
+    "985/2026"
+   ],
    "teemat": [],
    "tiivistelma": "Pääministeri Orpon hallituksen ohjelman kohdan 2.1 Kiirehdittävät toimet sosiaali- ja terveyspalveluiden saatavuuden parantamiseksi mukaan palautetaan keliakiakorvaus alaikäisiä ja alemman tulotason aikuisia painottaen. \n\nPääministeri Orpon hallituksen ohjelman kohdan 2.2 Henkilöstön riittävyys ja saatavuus mukaisesti vähennetään ammattihenkilöstöltä vaadittavan kirjallisen työn, kuten säädösperäisten lausuntojen ja erilaisten todistusten, määrää. Sosiaali- ja terveysministeriön hallinnonalan hyvinvointialueita koskevien velvoitteiden laaja-alaisen keventämisen edistämiseksi asettaman valtiosihteerityöryhmän työssä on noussut esiin tarve täsmentää vammaisetuuksista annetun lain (570/2007) mukaisia menettelysäännöksiä koskien vammaisetuushakemuksen liitteeksi tarvittavaa lääketieteellistä selvitystä sekä sitä, milloin etuus myönnetään toistaiseksi ja milloin määräaikaisena.\n\nValmisteltaessa etuuden saajaa koskevien ikärajojen muutoksia mm. kansaneläkelakiin, sairausvakuutuslakiin sekä Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annettuun lakiin (HE 125/2024 vp), havaittiin tarve tarkastella myöhemmin eräitä muita etuuslainsäädännön ikärajoja. Mainittu hallituksen esitys ei koskenut   sairausvakuutuslain mukaista erityishoitorahan myöntämisedellytystä lapsen ikärajan osalta.",
    "tila": "KAYNNISSA",
@@ -142853,7 +142909,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-10-13T09:23:44",
+   "muokattu": "2026-11-12T11:33:00",
    "nimi": "Terveydensuojelulainsäädännön kokonaisuudistus",
    "nimiSv": "Totalreform av hälsoskyddslagstiftningen",
    "pevLausunto": false,
@@ -180549,7 +180605,7 @@
    },
    "lisattyPaiva": "2026-05-22",
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-03T07:02:35",
+   "muokattu": "2026-11-12T14:50:44",
    "nimi": "Sika-alan salmonellariskien hallintaa koskeva säädöshanke; hallituksen esitys laiksi sika-alan salmonellavahinkorahastosta",
    "nimiSv": "Lagstiftningsprojektet för hantering av salmonellarisker inom svinsektorn",
    "pevLausunto": true,
@@ -182590,7 +182646,7 @@
    },
    "lisattyPaiva": "2026-05-26",
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-11T08:05:48",
+   "muokattu": "2026-11-12T12:25:38",
    "nimi": "Ahvenanmaan itsehallintolain selvitys- ja muutoshanke –työryhmä (HE laiksi Ahvenanmaan itsehallintolain muuttamisesta)",
    "nimiSv": "Självstyrelselagen för Åland - utrednings- och ändringsprojekt –arbetsgrupp (RP med förslag till lag om ändring av självstyrelselagen för Åland)",
    "pevLausunto": true,
@@ -227702,42 +227758,6 @@
    "valmistumisPaiva": "2026-03-20",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
-   "asetettu": null,
-   "asiakirjat": [],
-   "asiasanat": [],
-   "esittelyviikko": 45,
-   "esittelyvuosi": 2026,
-   "etapit": [],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": "POISTETTU_ISTUNTOKAUDEN_AIKANA",
-   "kiireellinen": false,
-   "laji": "laki",
-   "lausunnot": null,
-   "lisattyPaiva": null,
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-09-17T04:32:18",
-   "nimi": "Hallituksen esitys laiksi vammaisetuuksista annetun lain muuttamisesta",
-   "nimiSv": "Regeringens proposition med förslag till lag om ändring av lagen om handikappförmåner",
-   "pevLausunto": false,
-   "poistettuPaiva": "2026-09-07",
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Pääministeri Orpon hallitus neuvotteli julkisen talouden suunnitelmasta 22.-23.4.2025, ja pöytäkirjamerkintöjen mukaan valmistellaan yleistä keliakiakorvausta koskeva lainsäädäntö vuoden 2026 loppuun mennessä.\n\nHallitus on toteuttanut jo lainmuutoksen, jonka myötä keliakiasta aiheutuvia ylimääräisiä ravintomenoja on voitu 1.3.2025 alkaen huomioida osana toimeentulotuesta annetun lain (1412/1997) mukaista perustoimeentulotukea 38 euroa kuukaudessa 16 vuotta täyttäneillä henkilöillä (laki toimeentulotuesta annetun lain muuttamisesta (847/2024), HE 133/2024 vp). Hankkeessa STM036:00/2024 valmistellaan esitettäväksi, että kyseinen alaikäraja muutettaisiin 16 vuodesta 18 vuoteen 1.1.2027, ja että vammaisetuuksista annetun lain (570/2007) lapsen perusvammaistukea voisi 1.1.2027 alkaen myöntää alle 18-vuotiaaksi asti keliakian tai ihokeliakian perusteella.",
-   "tila": "PAATTYNYT",
-   "tunnus": "STM199:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM199:00/2025",
-   "uuid": "08579e34-c595-412d-827c-a45e189c0c67",
-   "valmistelu": [],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-12-31",
-   "vanhaEsittelyviikko": 39,
-   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-04-16",
@@ -490015,6 +490035,47 @@
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
+   "asiasanat": [
+    "kunnat",
+    "saaristot"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "maa- ja metsätalousministeriö",
+   "muokattu": "2026-11-12T11:50:41",
+   "nimi": "Valtioneuvoston asetus saaristokunnista ja muiden kuntien saaristo-osista",
+   "nimiSv": "Statsrådets förordning om skärgårdskommuner",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [
+    "Kunta-asiat"
+   ],
+   "tiivistelma": "Saaristokuntia ja muiden kuntien saaristo-osia koskevaa valtioneuvoston asetusta (1089/2016) muutettaisiin niin, että saaristokuntien ja saaristo-osakuntien listauksissa otettaisiin huomioon valmistuneet sillat, joiden takia osaan saaristosta on nykyisin olemassa kiinteä tieyhteys.",
+   "tila": "KAYNNISSA",
+   "tunnus": "MMM041:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=MMM041:00/2026",
+   "uuid": "05676a01-e4ab-4ee4-9ce8-80d50506d92e",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2027-02-28",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [],
    "asiasanat": [],
    "esittelyviikko": null,
    "esittelyvuosi": null,
@@ -492208,6 +492269,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-12",
+      "id": "22b0b828-9de6-49be-985c-3765d76734af",
+      "org": "Ekorosk Oy Ab",
+      "title": "Ekorosk Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92ee5589-dccc-4e5d-a09b-a4ab185b167b/22b0b828-9de6-49be-985c-3765d76734af/LAUSUNTO_20261112113234.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "3278ea2c-e500-4d7f-9526-3b243b50942b",
+      "org": "Asikkalan kunta",
+      "title": "Asikkalan kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92ee5589-dccc-4e5d-a09b-a4ab185b167b/3278ea2c-e500-4d7f-9526-3b243b50942b/LAUSUNTO_20261112113757.PDF"
+     },
+     {
       "date": "2026-11-09",
       "id": "977d5592-a061-4cc8-858b-f2b3a71fd066",
       "org": "Haapaveden kaupunki",
@@ -492230,18 +492305,20 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 3,
+    "n": 5,
     "orgs": [
+     "Asikkalan kunta",
+     "Ekorosk Oy Ab",
      "Haapaveden kaupunki",
      "Liikenne- ja viestintäministeriö",
      "Suomen Autopurkamoliitto ry"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=1adfeded-64ac-4c16-96f4-fee40dabc5bf",
-    "viimeisin": "2026-11-09"
+    "viimeisin": "2026-11-12"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-12T10:18:10",
+   "muokattu": "2026-11-12T11:37:57",
    "nimi": "Jäteasetuksen muuttaminen (I osa)",
    "nimiSv": "Ändring av avfallsförordningen (del I)",
    "pevLausunto": false,
@@ -492465,14 +492542,41 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": "2026-09-10",
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö VNA-luonnoksesta RVLsta annetun valtioneuvoston asetuksen 3 ja 50 § muuttamisesta",
+     "pvm": "2026-11-11",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/1b0cfd17-31ec-4c16-9f3e-c18c482821f8/LAUSUNTOPYYNTO_20261112145140.PDF"
+    },
+    {
+     "nimi": "VNA RVL asetusluonnos 11.11.2026",
+     "pvm": "2026-11-11",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/73ce24ed-c0c5-403f-9cce-d52201c586e9/LAUSUNTOPYYNTO_20261112145140.PDF"
+    },
+    {
+     "nimi": "VNA RVL perustelumuistio luonnos 11.11.2026",
+     "pvm": "2026-11-11",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/34f93e6d-5fb6-410f-ac88-2c33f4ae172d/LAUSUNTOPYYNTO_20261112145140.PDF"
+    }
+   ],
    "asiasanat": [
     "Rajavartiolaitos",
     "rajaturvallisuus"
    ],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-11-11",
+     "end": "2026-11-27",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -492481,7 +492585,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-11T13:31:58",
+   "muokattu": "2026-11-12T14:52:20",
    "nimi": "Rajavartiolaitoksesta annetun valtioneuvoston asetuksen muuttaminen",
    "nimiSv": "Ändring av statsrådets förordning om gränsbevakningsväsendet",
    "pevLausunto": false,
@@ -492502,6 +492606,24 @@
      "n": "Rajavartiolaitoksesta annetun valtioneuvoston asetuksen muuttaminen",
      "t": "ASETTAMISPAATOS",
      "u": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/65ca262c-37bf-4551-b1b8-29015c32dba3/ASETTAMISPAATOS_20261005110222.PDF"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "Lausuntopyyntö VNA-luonnoksesta RVLsta annetun valtioneuvoston asetuksen 3 ja 50 § muuttamisesta",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/1b0cfd17-31ec-4c16-9f3e-c18c482821f8/LAUSUNTOPYYNTO_20261112145140.PDF"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "VNA RVL asetusluonnos 11.11.2026",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/73ce24ed-c0c5-403f-9cce-d52201c586e9/LAUSUNTOPYYNTO_20261112145140.PDF"
+    },
+    {
+     "d": "2026-11-11",
+     "n": "VNA RVL perustelumuistio luonnos 11.11.2026",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/ef9bb708-625e-4d60-8d51-e29a1c721323/34f93e6d-5fb6-410f-ac88-2c33f4ae172d/LAUSUNTOPYYNTO_20261112145140.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -492659,6 +492781,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-12",
+      "id": "bba17590-2aba-471e-8022-a29da6ae7baa",
+      "org": "Ympäristöministeriö",
+      "title": "Ympäristöministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/bba17590-2aba-471e-8022-a29da6ae7baa/LAUSUNTO_20261112110638.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "1c09598b-75ec-461e-a92f-05ffd15f3386",
+      "org": "Oulun yliopisto",
+      "title": "Oulun yliopiston Wildlife Genomics-tutkimusryhmän jäsenet; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/1c09598b-75ec-461e-a92f-05ffd15f3386/LAUSUNTO_20261112113048.PDF"
+     },
+     {
       "date": "2026-11-11",
       "id": "f772492c-012b-4a46-ac4e-04faf3dbd813",
       "org": "Etelä-Karjalan liitto",
@@ -492741,6 +492877,13 @@
       "none": true,
       "org": "Uudenmaan liitto - Nylands förbund",
       "title": "Uudenmaan liiton ilmoitus; ei lausuttavaa"
+     },
+     {
+      "date": "2026-11-09",
+      "id": "6362eb49-a20d-4ecf-b0dc-16ff81eb4219",
+      "org": "Finnature Oy",
+      "title": "Finnature Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/6362eb49-a20d-4ecf-b0dc-16ff81eb4219/LAUSUNTO_20261112110659.PDF"
      },
      {
       "date": "2026-11-08",
@@ -492926,19 +493069,21 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 38,
+    "n": 41,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
      "Association Ulvetid",
      "Avenir Loup Lynx Jura",
      "Etelä-Karjalan liitto",
+     "Finnature Oy",
      "Idän Taiga ry",
      "Korsholms kommun / Mustasaaren kunta",
      "Luonnonsuojeluliitto Tapiola ry",
      "MTK-Satakunta ry",
      "Maa- ja metsätalousministeriö",
      "Metsästyskoiraliitto ry",
+     "Oulun yliopisto",
      "Petsmo jaktklubb r.f.",
      "Poliisihallitus",
      "Putakon Erä ry",
@@ -492959,15 +493104,16 @@
      "Varsinais-Suomen liitto",
      "Vehmaan kunta",
      "WWF Suomi",
+     "Ympäristöministeriö",
      "Österbottens förbund - Pohjanmaan liitto",
      "Österbottens svenska producentförbund r.f."
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-12"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-12T10:02:27",
+   "muokattu": "2026-11-12T11:30:48",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -493317,10 +493463,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-12",
+      "id": "8ae22617-9eda-4e6b-b9b3-d5a0ecd60638",
+      "none": true,
+      "org": "Maanmittauslaitos",
+      "title": "Maanmittauslaitos; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 1,
+    "orgs": [
+     "Maanmittauslaitos"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-12"
+   },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-12T13:46:24",
+   "muokattu": "2026-11-12T13:33:26",
    "nimi": "Maa- ja metsätalousministeriön asetus kiinteistöjärjestelmän suoritteista ja tietopalvelusta perittävistä maksuista  vuosina 2027 ja 2028",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om avgifter som tas ut åren 2025 och 2026 för fastighetsdatasystemets prestationer och informationstjänster",
    "pevLausunto": false,
@@ -493956,7 +494119,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-06T07:29:03",
+   "muokattu": "2026-11-12T12:54:09",
    "nimi": "Valtioneuvoston asetus ydinenergian käyttöä koskevista valtioneuvoston maksullisista suoritteista",
    "nimiSv": "Statsrådets förordning om statsrådets avgiftsbelagda prestationer som gäller användning av kärnenergi",
    "pevLausunto": false,
@@ -494038,6 +494201,13 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/b93b0f4f-ebce-42ce-ae33-6063aa9e8b3a/LAUSUNTO_20261111131715.PDF"
      },
      {
+      "date": "2026-11-11",
+      "id": "9fe2a489-ca6a-48a3-b05c-a2f8f4e6734e",
+      "org": "Ympäristöministeriö",
+      "title": "Ympäristöministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/9fe2a489-ca6a-48a3-b05c-a2f8f4e6734e/LAUSUNTO_20261112110638.PDF"
+     },
+     {
       "date": "2026-11-03",
       "id": "6f6ef5fe-e972-4491-ae5f-26fc1f762dac",
       "none": true,
@@ -494053,10 +494223,11 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 3,
+    "n": 4,
     "orgs": [
      "Maa- ja metsätalousministeriö",
      "Sisäministeriö",
+     "Ympäristöministeriö",
      "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9409a539-47f7-4874-a582-dccb24ac9460",
@@ -494064,7 +494235,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-12T10:41:56",
+   "muokattu": "2026-11-12T11:06:38",
    "nimi": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista vuosina 2027-2028",
    "nimiSv": "Arbets- och näringsministeriets förordning om Säkerhets- och kemikalieverkets avgiftsbelagda prestationer åren 2027–2028",
    "pevLausunto": false,
@@ -507082,6 +507253,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-12",
+      "id": "dba59274-ccaa-4050-94d7-83ac1eef7f52",
+      "org": "Saamelaiskäräjät",
+      "title": "Saamelaiskäräjät; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/dba59274-ccaa-4050-94d7-83ac1eef7f52/LAUSUNTO_20261112134529.PDF"
+     },
+     {
       "date": "2026-11-11",
       "id": "a28daac6-b4db-4efd-9b1f-8c42e49ac538",
       "org": "Etelä-Pohjanmaan elinvoimakeskus",
@@ -507215,7 +507393,7 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 19,
+    "n": 20,
     "orgs": [
      "Etelä-Pohjanmaan elinvoimakeskus",
      "Etelä-Savon maakuntaliitto",
@@ -507230,6 +507408,7 @@
      "Metsäteollisuus ry",
      "Opetus- ja kulttuuriministeriö",
      "Regulaattorit ry",
+     "Saamelaiskäräjät",
      "Satakuntaliitto",
      "Suomen Kuntaliitto ry",
      "Suomen Satamat ry",
@@ -507238,11 +507417,11 @@
      "Varsinais-Suomen liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=0ac5d342-598e-4f3d-b52d-e3201be65461&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-12"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-12T10:40:49",
+   "muokattu": "2026-11-12T13:45:29",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "nimiSv": "Statsrådets förordning om understöd för främjande av skydd och vård av den biologiska mångfalden",
    "pevLausunto": false,

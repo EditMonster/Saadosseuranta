@@ -86,6 +86,15 @@ DESCRIPTION:Osallistumishakemukset viimeistään · Slots- og Kulturstyrelsen ·
 URL:https://ted.europa.eu/fi/notice/-/detail/788712-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-61900-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[Hankinta] Määräaika: PEF-etämittauspalvelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-061900 · https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61900
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61900
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-788818-2026-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
 DTSTAMP:20261202T000000Z
 DTSTART;VALUE=DATE:20261202
@@ -534,15 +543,6 @@ DTEND;VALUE=DATE:20261201
 SUMMARY:[Hankinta] Määräaika: Psihoemocionālā atbalsta konsultatīvā tālruņa līnijas nodrošināšana pusaudžiem
 DESCRIPTION:Tarjoukset viimeistään · Nacionālais veselības dienests · https://ted.europa.eu/fi/notice/-/detail/783781-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/783781-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-61726-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
-DTSTAMP:20261202T000000Z
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
-SUMMARY:[Hankinta] Määräaika: PEF-etämittauspalvelu
-DESCRIPTION:Tarjoukset viimeistään · 2026-061726 · https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61726
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/40020/enotice/61726
 END:VEVENT
 BEGIN:VEVENT
 UID:hk-EF-61712-maaraaika-2026-12-02-hankintatiimi@saadosseuranta
@@ -1776,14 +1776,5 @@ DTEND;VALUE=DATE:20261215
 SUMMARY:[Hankinta] Määräaika: Procurement of consultancy services - Preparation of a public transport plan for Møre og Romsdal
 DESCRIPTION:Tarjoukset viimeistään · Møre og Romsdal Fylkeskommune · https://ted.europa.eu/fi/notice/-/detail/771551-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/771551-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-ted-773251-2026-maaraaika-2026-12-15-hankintatiimi@saadosseuranta
-DTSTAMP:20261215T000000Z
-DTSTART;VALUE=DATE:20261215
-DTEND;VALUE=DATE:20261216
-SUMMARY:[Hankinta] Määräaika: Materielupphandling Elisyd nov 2026
-DESCRIPTION:Tarjoukset viimeistään · Elisyd-förbundet ekonomisk förening · https://ted.europa.eu/fi/notice/-/detail/773251-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/773251-2026
 END:VEVENT
 END:VCALENDAR

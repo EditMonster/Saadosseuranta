@@ -3808,6 +3808,23 @@
    "timeline": [],
    "title": "INEOS / SINOPEC / JV"
   },
+  "M.12544": {
+   "caseNumber": "M.12544",
+   "deadline": "2026-12-17",
+   "decisions": [],
+   "initiated": "2026-07-06",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-12",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_G_47.30",
+   "simplified": "MEnormal",
+   "timeline": [],
+   "title": "ENILIVE / OIL!"
+  },
   "M.12545": {
    "caseNumber": "M.12545",
    "deadline": "2026-08-31",
@@ -7489,5 +7506,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-12T11:20:14Z"
+ "fetched": "2026-11-12T19:05:48Z"
 }

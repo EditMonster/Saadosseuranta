@@ -1,6 +1,24 @@
 {
- "fetched": "2026-11-12T11:17:42",
+ "fetched": "2026-11-12T19:03:50",
  "items": [
+  {
+   "actType": "REG_DEL",
+   "actTypeLabel": "Delegoitu asetus",
+   "id": 16414,
+   "periods": [
+    {
+     "end": "2026-12-10",
+     "open": true,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-11-12"
+    }
+   ],
+   "reference": "Ares(2026)433232",
+   "status": "ACTIVE",
+   "title_en": "Certification methodologies for carbon storage in long-lasting products",
+   "title_fi": "Hiilen varastointia pitkäkestoisiin tuotteisiin koskevat sertifiointimenetelmät",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414_en"
+  },
   {
    "actType": "REG_DEL",
    "actTypeLabel": "Delegoitu asetus",
