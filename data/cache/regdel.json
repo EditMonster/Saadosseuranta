@@ -115,7 +115,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2657,
    "objection": null,
    "policyArea": "HOME",
@@ -124,103 +124,6 @@
    "shortTitle": "Amendment to the ETIAS Data Correspondence",
    "summary": "This amendment to the Commission delegated decision is a consequence of the adoption of the Eurodac Regulation (EU) 2024/1358 of 14 May 2024 which amended the ETIAS Regulation (EU) 2018/ 1240.",
    "updateDate": 1765839609169
-  },
-  "2721": {
-   "adoption": "2026-06-05",
-   "adoptionDate": "Q3 2026",
-   "basicAct": {
-    "celex": "32016R2031",
-    "code": "reg/2016/2031",
-    "deadlineRaw": "2",
-    "procedure": "2013/0141/COD",
-    "title": "Regulation (EU) 2016/2031 of the European Parliament of the Council of 26 October 2016 on protective measures against pests of plants, amending Regulations (EU) No 228/2013, (EU) No 652/2014 and (EU) No 1143/2014 of the European Parliament and of the Council and repealing Council Directives 69/464/EEC, 74/647/EEC, 93/85/EEC, 98/57/EC, 2000/29/EC, 2006/91/EC and 2007/33/EC"
-   },
-   "cCode": "C(2026)3719",
-   "celexNumber": "32026R1195",
-   "cellar": {
-    "celex": "32026R1195",
-    "deadlines": [],
-    "eif": [
-     "2026-09-03"
-    ],
-    "inForce": "1",
-    "oj": "2026-08-14",
-    "title_fi": "Komission delegoitu asetus (EU) 2026/1195, annettu 5 päivänä kesäkuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2016/2031 täydentämisestä vakavan riskin kasvien, kasvituotteiden tai muiden tavaroiden luettelointia koskevan menettelyn osalta"
-   },
-   "completeTitle": "Commission Delegated Regulation (EU) 2026/1195 of 5 June 2026 supplementing Regulation (EU) 2016/2031 of the European Parliament and of the Council as regards the procedure to conduct the listing of high-risk plants, plant products or other objects",
-   "deadlines": [
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "PUBLISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2025-03-06",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2025-06-26",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2025-11-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2025-12-18",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-02-04",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLIC_FEEDBACK"
-    },
-    {
-     "date": "2026-06-05",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-08-14",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLICATION"
-    }
-   ],
-   "eventsFetched": null,
-   "id": 2721,
-   "objection": null,
-   "policyArea": "SANTE",
-   "policyAreaName": "Health and Food Safety",
-   "publication": "2026-08-14",
-   "shortTitle": "Protective measures against pests of plants - listing of high-risk plants, plant products or other objects",
-   "summary": "Based on a preliminary assessment, certain plants, plant products and other objects are listed in the Annex to Implementing Regulation (EU) 2018/2019 as high-risk plants, whose import into the EU is prohibited pending a risk assessment. This initiative aims to clearly outline the procedure for listing plant, plant product or other objects as high-risk plants, to ensure transparency and consistency for Member States, third countries and the professional operators concerned.",
-   "updateDate": 1786746014187
   },
   "2723": {
    "adoption": "2026-07-09",
@@ -292,7 +195,7 @@
      "type": "DA_OBJECTION_NOT_APPROVED"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2723,
    "objection": null,
    "policyArea": "CLIMA",
@@ -366,7 +269,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2734,
    "objection": null,
    "policyArea": "ESTAT",
@@ -496,7 +399,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2806,
    "objection": null,
    "policyArea": "TRADE",
@@ -559,7 +462,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2819,
    "objection": null,
    "policyArea": "ENV",
@@ -610,7 +513,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2858,
    "objection": null,
    "policyArea": "FISMA",
@@ -619,109 +522,6 @@
    "shortTitle": "Regulatory technical standards - organisational requirements of trading venues and circuit breakers (amendment)",
    "summary": null,
    "updateDate": 1792762100309
-  },
-  "2861": {
-   "adoption": "2026-07-01",
-   "adoptionDate": "Q1 2026",
-   "basicAct": {
-    "celex": "32024L2841",
-    "code": "dir/2024/2841",
-    "deadlineRaw": "2",
-    "procedure": null,
-    "title": "Directive (EU) 2024/2841 of the European Parliament and of the Council of 23 October 2024 establishing the European Disability Card and the European Parking Card for persons with disabilities (Text with EEA relevance)"
-   },
-   "cCode": "C(2026)4534",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive (EU) 2024/2841 as regards setting the QR code on the physical version of the European Disability Card and setting the QR code and establishing common technical specifications that ensure the security of the physical version of the European Parking Card for persons with disabilities, as well as interoperability matters",
-   "deadlines": [
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "EXTENDEND"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "COMMISSION",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    },
-    {
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "EXTENDEND"
-    },
-    {
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "ORIGINAL"
-    }
-   ],
-   "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
-   "delegatedActType": "REGULATION",
-   "events": [
-    {
-     "date": "2025-07-07",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PLAN"
-    },
-    {
-     "date": "2025-12-15",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-01-14",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-04-15",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_PUBLIC_FEEDBACK"
-    },
-    {
-     "date": "2026-04-21",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_EG_MEETING"
-    },
-    {
-     "date": "2026-07-01",
-     "institution": "COMMISSION",
-     "months": null,
-     "type": "DA_ADOPTION"
-    },
-    {
-     "date": "2026-07-20",
-     "institution": "PARLIAMENT",
-     "months": 2.0,
-     "type": "DA_EXTENSION"
-    },
-    {
-     "date": "2026-10-19",
-     "institution": "COUNCIL",
-     "months": 2.0,
-     "type": "DA_EXTENSION"
-    }
-   ],
-   "eventsFetched": "2026-11-12",
-   "id": 2861,
-   "objection": null,
-   "policyArea": "JUST",
-   "policyAreaName": "Justice and Consumers",
-   "publication": null,
-   "shortTitle": "European Disability Card and European Parking Card - digital features for the physical versions",
-   "summary": "Directive (EU) 2024/2841 establishes the European Disability Card and the European Parking Card to promote freedom of movement and facilitate short stays by persons with disabilities in other Member States than that of which they are a resident. The cards facilitate the access of persons with disabilities to services,  including parking,  in the visited Member States. This delegated act sets digital features for the physical cards to prevent fraud and ensure security and interoperability.",
-   "updateDate": 1794236435304
   },
   "2893": {
    "adoption": "2026-09-08",
@@ -764,7 +564,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2893,
    "objection": null,
    "policyArea": "FISMA",
@@ -815,7 +615,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2899,
    "objection": null,
    "policyArea": "FISMA",
@@ -971,8 +771,19 @@
     "title": "Regulation (EU) 2019/1021 of the European Parliament and of the Council of 20 June 2019 on persistent organic pollutants (Text with EEA relevance.)"
    },
    "cCode": "C(2026)6059",
-   "celexNumber": null,
-   "completeTitle": "COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards long-chain perfluorocarboxylic acids, their salts and related compounds",
+   "celexNumber": "32026R1972",
+   "cellar": {
+    "celex": "32026R1972",
+    "deadlines": [],
+    "eif": [
+     "2026-12-02",
+     "2026-12-16"
+    ],
+    "inForce": "0",
+    "oj": "2026-11-12",
+    "title_fi": "Komission delegoitu asetus (EU) 2026/1972, annettu 7 päivänä syyskuuta 2026, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1021 muuttamisesta siltä osin kuin on kyse pitkäketjuisista perfluorikarboksyylihapoista, niiden suoloista ja niiden kanssa samankaltaisista yhdisteistä"
+   },
+   "completeTitle": "Commission Delegated Regulation (EU) 2026/1972 of 7 September 2026 amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards long-chain perfluorocarboxylic acids, their salts and related compounds",
    "deadlines": [
     {
      "institution": "COMMISSION",
@@ -986,7 +797,7 @@
     }
    ],
    "delegatedActPhase": "PUBLICATION",
-   "delegatedActStatus": "SCRUTINY_FINISHED",
+   "delegatedActStatus": "PUBLISHED",
    "delegatedActType": "REGULATION",
    "events": [
     {
@@ -1006,17 +817,23 @@
      "institution": "COMMISSION",
      "months": null,
      "type": "DA_ADOPTION"
+    },
+    {
+     "date": "2026-11-12",
+     "institution": "COMMISSION",
+     "months": null,
+     "type": "DA_PUBLICATION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2917,
    "objection": null,
    "policyArea": "ENV",
    "policyAreaName": "Environment",
-   "publication": null,
+   "publication": "2026-11-12",
    "shortTitle": "Persistent organic pollutants - amendment to the list of chemicals",
    "summary": "Regulation (EU) 2019/1021 implements the EU’s international commitments under the Stockholm Convention on persistent organic pollutants (chemical substances). The Conference of the Parties of the Stockholm Convention decided to list long-chain perfluorocarboxylic acids, their salts and related compounds in Annex A to the Convention. This initiative amends Annex I to the Regulation to include long-chain perfluorocarboxylic acids, their salts and related compounds as a substance subject to certain restrictions.",
-   "updateDate": 1794265223003
+   "updateDate": 1794525610235
   },
   "2922": {
    "adoption": "2026-06-30",
@@ -1145,7 +962,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2923,
    "objection": null,
    "policyArea": "ENV",
@@ -1374,7 +1191,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2945,
    "objection": null,
    "policyArea": "ESTAT",
@@ -1571,7 +1388,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2962,
    "objection": null,
    "policyArea": "EMPL",
@@ -1781,7 +1598,7 @@
      "type": "DA_EXTENSION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2983,
    "objection": null,
    "policyArea": "ENER",
@@ -1827,7 +1644,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2988,
    "objection": null,
    "policyArea": "FISMA",
@@ -1878,7 +1695,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2993,
    "objection": null,
    "policyArea": "FISMA",
@@ -1929,7 +1746,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2994,
    "objection": null,
    "policyArea": "FISMA",
@@ -2050,7 +1867,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 2996,
    "objection": null,
    "policyArea": "MOVE",
@@ -2345,7 +2162,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3010,
    "objection": null,
    "policyArea": "MARE",
@@ -2464,7 +2281,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3013,
    "objection": null,
    "policyArea": "FISMA",
@@ -2527,7 +2344,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3017,
    "objection": null,
    "policyArea": "MARE",
@@ -2689,7 +2506,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3025,
    "objection": null,
    "policyArea": "AGRI",
@@ -2735,7 +2552,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3028,
    "objection": null,
    "policyArea": "SANTE",
@@ -2901,7 +2718,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3032,
    "objection": null,
    "policyArea": "AGRI",
@@ -2952,7 +2769,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3038,
    "objection": null,
    "policyArea": "TRADE",
@@ -3248,7 +3065,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3062,
    "objection": null,
    "policyArea": "AGRI",
@@ -3294,7 +3111,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3067,
    "objection": null,
    "policyArea": "FISMA",
@@ -3357,7 +3174,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3074,
    "objection": null,
    "policyArea": "SANTE",
@@ -3403,7 +3220,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3075,
    "objection": null,
    "policyArea": "SANTE",
@@ -3449,7 +3266,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3081,
    "objection": null,
    "policyArea": "FISMA",
@@ -3495,7 +3312,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3082,
    "objection": null,
    "policyArea": "FISMA",
@@ -3620,7 +3437,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3107,
    "objection": null,
    "policyArea": "TRADE",
@@ -3678,7 +3495,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3111,
    "objection": null,
    "policyArea": "MARE",
@@ -3741,7 +3558,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3112,
    "objection": null,
    "policyArea": "MARE",
@@ -3799,7 +3616,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3115,
    "objection": null,
    "policyArea": "MARE",
@@ -3850,7 +3667,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3117,
    "objection": null,
    "policyArea": "MOVE",
@@ -4055,7 +3872,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3124,
    "objection": null,
    "policyArea": "GROW",
@@ -4168,7 +3985,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3133,
    "objection": null,
    "policyArea": "TRADE",
@@ -4219,7 +4036,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3134,
    "objection": null,
    "policyArea": "TRADE",
@@ -4411,7 +4228,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3149,
    "objection": null,
    "policyArea": "MOVE",
@@ -4462,7 +4279,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3155,
    "objection": null,
    "policyArea": "DGT",
@@ -4525,7 +4342,7 @@
      "type": "DA_ADOPTION"
     }
    ],
-   "eventsFetched": "2026-11-12",
+   "eventsFetched": "2026-11-13",
    "id": 3173,
    "objection": null,
    "policyArea": "ENV",
@@ -4536,7 +4353,7 @@
    "updateDate": 1793143247235
   }
  },
- "fetched": "2026-11-12T19:06:06Z",
+ "fetched": "2026-11-13T08:09:26Z",
  "skip": {
   "10": "PUBLISHED",
   "100": "PUBLISHED",
@@ -5919,6 +5736,7 @@
   "2717": "PUBLISHED",
   "272": "PUBLISHED",
   "2720": "PUBLISHED",
+  "2721": "PUBLISHED",
   "2722": "PUBLISHED",
   "2726": "PUBLISHED",
   "2727": "PUBLISHED",
@@ -6013,6 +5831,7 @@
   "2859": "PUBLISHED",
   "286": "PUBLISHED",
   "2860": "PUBLISHED",
+  "2861": "PUBLISHED",
   "2862": "PUBLISHED",
   "2863": "PUBLISHED",
   "2864": "PUBLISHED_URGENCY_PROCEDURE",

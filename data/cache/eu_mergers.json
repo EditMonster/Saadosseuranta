@@ -1685,73 +1685,17 @@
    "timeline": [],
    "title": "WARBURG PINCUS / NETFONDS"
   },
-  "M.12447": {
-   "caseNumber": "M.12447",
-   "deadline": "2026-08-27",
+  "M.12449": {
+   "caseNumber": "M.12449",
+   "deadline": "2026-11-24",
    "decisions": [
     {
-     "date": "2026-08-14",
+     "date": "2026-11-12",
      "type": "DecisionType20310"
     }
    ],
    "initiated": "2026-04-27",
-   "lastDecision": "2026-08-14",
-   "notice": {
-    "activities": [
-     "Flamingo on erikoistunut tuoreiden leikkokukkien, koti- ja puutarhakasvien sekä ensiluokkaisten tuotteiden viljelyyn, jalostukseen ja toimittamiseen.",
-     "Nazca on keskisuuriin yrityksiin erikoistunut pääomasijoitusrahasto, joka sijoittaa pääasiassa perheomistuksessa oleviin pieniin ja keskisuuriin yrityksiin. Nazca investoi erityisesti Espanjan niemimaalla ja käyttää yksinomaista määräysvaltaa yrityksessä Herbex, joka on Marokossa ja Etelä-Espanjassa viljeltävien tuoreiden mausteyrttien ja vihannesten tuotantoon ja markkinointiin erikoistunut espanjalainen konserni."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-10",
-    "oj": "C:2026:4235:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Sun Capital"
-       }
-      ],
-      "country": "Yhdistynyt kuningaskunta",
-      "fi": false,
-      "name": "Flamingo Produce Investments, Ltd.",
-      "short": "Flamingo"
-     },
-     {
-      "country": "Espanja",
-      "fi": false,
-      "name": "FONDO NAZCA IV, F.C.R",
-      "short": "Nazca"
-     }
-    ],
-    "published": "2026-07-31",
-    "reference": "C/2026/4235",
-    "simplified": true,
-    "transaction": "Flamingo ja Nazca hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Herbex. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4235/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-23",
-   "oj": [
-    {
-     "published": "2026-07-31",
-     "reference": "C:2026:4235:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_C_10.89",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "FLAMINGO / FONDO NAZCA IV / HERBEX"
-  },
-  "M.12449": {
-   "caseNumber": "M.12449",
-   "deadline": "2026-11-24",
-   "decisions": [],
-   "initiated": "2026-04-27",
-   "lastDecision": null,
+   "lastDecision": "2026-11-12",
    "notice": {
     "activities": [
      "POSCO on maailmanlaajuinen teräs- ja materiaaliyhtiö. SE toimii useilla eri liiketoiminta-aloilla, joita ovat muun muassa teräksen, litiumin ja nikkelin jalostus, uusioakkumateriaalit, vety ja polttokennot, energia, rakentaminen sekä tieto- ja viestintäteknologia.",
@@ -1802,7 +1746,7 @@
      "reference": "C:2026:5716:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_24.10",
    "simplified": "MEsimplified",
@@ -4789,6 +4733,23 @@
    "timeline": [],
    "title": "OLIN / HUNTSMAN"
   },
+  "M.12577": {
+   "caseNumber": "M.12577",
+   "deadline": "2026-12-17",
+   "decisions": [],
+   "initiated": "2026-07-27",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-12",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_E_39",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "VAR ENERGI / BLUENORD"
+  },
   "M.12578": {
    "caseNumber": "M.12578",
    "deadline": "2026-09-03",
@@ -7283,9 +7244,14 @@
   "M.12670": {
    "caseNumber": "M.12670",
    "deadline": "2026-11-24",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-12",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-10-12",
-   "lastDecision": null,
+   "lastDecision": "2026-11-12",
    "notice": {
     "activities": [
      "Italgas Reti on jakeluverkonhaltija, joka toimii maakaasun paikallisilla jakelumarkkinoilla Italiassa.",
@@ -7343,7 +7309,7 @@
      "reference": "C:2026:5649:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_D_35.22",
    "simplified": "MEsupersimplified",
@@ -7506,5 +7472,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-12T19:05:48Z"
+ "fetched": "2026-11-13T08:08:30Z"
 }

@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
+DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-hanke-c9f7879a-lausunto-2026-11-25@saadosseuranta
 DTSTAMP:20261125T000000Z
 DTSTART;VALUE=DATE:20261125
@@ -1004,15 +1013,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 103/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/103
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
-DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:[FI] Lausuntoaika päättyy: Laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta
-DESCRIPTION:Lausuntokierros luonnoksesta hallituksen esitykseksi · TEM060:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM060:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-142-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1317,6 +1317,15 @@ DTEND;VALUE=DATE:20261207
 SUMMARY:[FI] Lausuntoaika päättyy: Päiväsakkoasetuksen muuttaminen
 DESCRIPTION:Lausuntokierros · OM065:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=OM065:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=OM065:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-asetus-40e063bb-lausunto-2026-12-03@saadosseuranta
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:[FI] Lausuntoaika päättyy: Business Finlandin rahoitusta koskevien asetusten voimassaolon jatkaminen
+DESCRIPTION:Lausuntokierros · TEM064:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM064:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM064:00/2026
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-asetus-78e815f5-lausunto-2026-11-25@saadosseuranta
@@ -2372,10 +2381,10 @@ DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/bet
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-07@saadosseuranta
-DTSTAMP:20270107T000000Z
-DTSTART;VALUE=DATE:20270107
-DTEND;VALUE=DATE:20270108
+UID:eu-hys-14770-lausunto-2027-01-08@saadosseuranta
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2480,10 +2489,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-07@saadosseuranta
-DTSTAMP:20270107T000000Z
-DTSTART;VALUE=DATE:20270107
-DTEND;VALUE=DATE:20270108
+UID:eu-hys-19517-lausunto-2027-01-08@saadosseuranta
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2579,15 +2588,6 @@ DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https:/
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-16912-lausunto-2026-11-05@saadosseuranta
-DTSTAMP:20261105T000000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:[EU] Lausuntoaika päättyy: Välitöntä verotusta koskevien EU:n sääntöjen yksinkertaistaminen – koontipaketti
-DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Direktiiviehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16912_en
-END:VEVENT
-BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -2646,8 +2646,26 @@ UID:eu-da-2917-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) 2019/1021 of the European Parliament and of the Council as regards long-chain perfluorocarbo
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 7.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/1972\, annettu 7 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1021 muuttamisesta siltä osin
+DESCRIPTION:Vastustamisaika päättyi · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2917-voimaan-2026-12-02@saadosseuranta
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1972\, annettu 7 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1021 muuttamisesta siltä osin
+DESCRIPTION:Voimaan · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-2917-soveltaminen-2026-12-16@saadosseuranta
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1972\, annettu 7 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1021 muuttamisesta siltä osin
+DESCRIPTION:Soveltaminen (vaihe) · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
 END:VEVENT
 BEGIN:VEVENT
@@ -2993,6 +3011,15 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 26.12.202
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3173
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-toim-hk-57beb704-e663ec-lausunto-2026-12-06@saadosseuranta
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[FI] Lausuntoaika päättyy: Arviomuistio sähköisen viestinnän tietosuojadirektiivin kansallisista laajennuksista
+DESCRIPTION:Lausuntoaika · LVM018:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM018:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=LVM018:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-toim-fiva-54-2026-soveltaminen-2027-01-30@saadosseuranta
 DTSTAMP:20270130T000000Z
 DTSTART;VALUE=DATE:20270130
@@ -3153,14 +3180,5 @@ DTEND;VALUE=DATE:20261127
 SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation amending Implementing Regulation (EU) 2022/1659 as regards inclusion of the production site code on packaging labels for the 
 DESCRIPTION:Palauteaika (Have your say) · D118717/01 · https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
 URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-pak-32026R2490-voimaan-2026-11-05@saadosseuranta
-DTSTAMP:20261105T000000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:[EU] Voimaan: Komission täytäntöönpanoasetus (EU) 2026/2490 – terrorismi 881/2002
-DESCRIPTION:Voimaan · (EU) 2026/2490 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
-URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2490
 END:VEVENT
 END:VCALENDAR
