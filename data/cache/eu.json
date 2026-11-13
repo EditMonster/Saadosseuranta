@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T08:04:00",
+ "fetched": "2026-11-13T16:28:12",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -54757,7 +54757,6 @@
     },
     {
      "date": "2026-11-13",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -57092,7 +57091,6 @@
     },
     {
      "date": "2026-11-09",
-     "projected": true,
      "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
@@ -58494,6 +58492,10 @@
     },
     {
      "date": "2026-11-04",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-12",
      "type": "DELIB_WP_byCONSIL"
     }
    ],
@@ -64047,7 +64049,6 @@
     },
     {
      "date": "2026-11-13",
-     "projected": true,
      "type": "DELIB_COREPER_byCONSIL"
     }
    ],
@@ -64949,6 +64950,25 @@
    "ref": "2026/0342(COD)",
    "stage": "RDG1",
    "title_en": "European Border and Coast Guard (recast)",
+   "title_et": "",
+   "title_fi": "",
+   "title_lt": "",
+   "title_sv": ""
+  },
+  "2026-0346": {
+   "cellar": {
+    "acts": {},
+    "adopted": null,
+    "proposal": null,
+    "proposalDate": null
+   },
+   "events": [],
+   "fetched": "2026-11-13",
+   "final": false,
+   "pid": "2026-0346",
+   "ref": "2026/0346(COD)",
+   "stage": "RDG1",
+   "title_en": "",
    "title_et": "",
    "title_fi": "",
    "title_lt": "",

@@ -140,6 +140,15 @@ DESCRIPTION:Tarjoukset viimeistään · Integratsiooni Sihtasutus · https://ted
 URL:https://ted.europa.eu/fi/notice/-/detail/789663-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-62044-maaraaika-2026-12-04-hankintatiimi@saadosseuranta
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:[Hankinta] Määräaika: ICT-palvelut ja Microsoft 365 -ympäristön hallintapalvelut 2027-2031
+DESCRIPTION:Tarjoukset viimeistään · 2026-062044 · https://www.hankintailmoitukset.fi/fi/public/procedure/40220/enotice/62044
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/40220/enotice/62044
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-EF-61902-maaraaika-2026-12-09-hankintatiimi@saadosseuranta
 DTSTAMP:20261209T000000Z
 DTSTART;VALUE=DATE:20261209
@@ -1785,14 +1794,5 @@ DTEND;VALUE=DATE:20261208
 SUMMARY:[Hankinta] Määräaika: Testauksen ja laadunvarmistuksen palvelut
 DESCRIPTION:Tarjoukset viimeistään · 2026-061442 · https://www.hankintailmoitukset.fi/fi/public/procedure/39843/enotice/61442
 URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39843/enotice/61442
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-61403-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
-DTSTAMP:20261207T000000Z
-DTSTART;VALUE=DATE:20261207
-DTEND;VALUE=DATE:20261208
-SUMMARY:[Hankinta] Määräaika: Loppukäyttäjän tukipalvelut ja laitteet
-DESCRIPTION:Tarjoukset viimeistään · 2026-061403 · https://www.hankintailmoitukset.fi/fi/public/procedure/39816/enotice/61403
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39816/enotice/61403
 END:VEVENT
 END:VCALENDAR

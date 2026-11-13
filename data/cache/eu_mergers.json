@@ -2588,6 +2588,23 @@
    "timeline": [],
    "title": "ACS AIID / TELEFÓNICA / BANCO SANTANDER / SETT / JV"
   },
+  "M.12500": {
+   "caseNumber": "M.12500",
+   "deadline": "2026-12-17",
+   "decisions": [],
+   "initiated": "2026-06-01",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-12",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_26.4",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "TCL ELECTRONICS / SONY (HOME ENTERTAINMENT BUSINESS)"
+  },
   "M.12501": {
    "caseNumber": "M.12501",
    "deadline": "2026-09-04",
@@ -4152,7 +4169,7 @@
      "reference": "C:2026:4763:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_21.2",
    "simplified": "MEsupersimplified",
@@ -4588,10 +4605,44 @@
    ],
    "initiated": "2026-07-20",
    "lastDecision": "2026-09-21",
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "CVC on pääomasijoitusyhtiö, jonka rahastoilla on omistusosuuksia useissa muun muassa rahoituspalvelujen, kemikaalien, yleishyödyllisten palvelujen, valmistuksen, vähittäiskaupan ja jakelun aloilla eri puolilla maailmaa toimivissa yrityksissä.",
+     "Clevertech on italialainen yritys, joka toimii Euroopassa ja muualla maailmassa teollisuuden automaatio- ja pakkausratkaisujen suunnittelun, valmistuksen ja markkinoinnin alalla ja on erikoistunut tuotantolinjan loppupään tertiääripakkausratkaisuihin."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-23",
+    "observationsShifted": null,
+    "oj": "C:2026:6023:",
+    "parties": [
+     {
+      "country": "Jersey",
+      "fi": false,
+      "name": "CVC Capital Partners plc",
+      "short": "CVC"
+     },
+     {
+      "country": "Italia",
+      "fi": false,
+      "name": "Clevertech S.p.A.",
+      "short": "Clevertech"
+     }
+    ],
+    "published": "2026-11-13",
+    "reference": "C/2026/6023",
+    "simplified": true,
+    "transaction": "CVC hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Clevertech. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/6023/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-04",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-13",
+     "reference": "C:2026:6023:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_28.29",
@@ -6096,6 +6147,23 @@
    "timeline": [],
    "title": "PG / EURAZEO /AROMA-ZONE / LH 91"
   },
+  "M.12615": {
+   "caseNumber": "M.12615",
+   "deadline": "2026-12-18",
+   "decisions": [],
+   "initiated": "2026-08-17",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-13",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_E_38.22",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "IIF / IDEX GROUP"
+  },
   "M.12616": {
    "caseNumber": "M.12616",
    "deadline": "2026-11-13",
@@ -6792,9 +6860,14 @@
   "M.12640": {
    "caseNumber": "M.12640",
    "deadline": "2026-11-24",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-12",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-09-14",
-   "lastDecision": null,
+   "lastDecision": "2026-11-12",
    "notice": {
     "activities": [
      "Prologis, L.P. omistaa, hallinnoi ja rakennuttaa kiinteistöjä pääasiassa teollisiin tarkoituksiin Pohjois- ja Etelä-Amerikassa, Euroopassa ja Aasiassa.",
@@ -7386,6 +7459,23 @@
    "timeline": [],
    "title": "ARES / EQT / STATERA JV ASSETS"
   },
+  "M.12679": {
+   "caseNumber": "M.12679",
+   "deadline": "2026-12-18",
+   "decisions": [],
+   "initiated": "2026-10-20",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-13",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.20",
+   "simplified": "MEsupersimplified",
+   "timeline": [],
+   "title": "DSBV / OCTOPUS ENERGY / RISE JV"
+  },
   "M.12684": {
    "caseNumber": "M.12684",
    "deadline": "2026-12-14",
@@ -7452,7 +7542,7 @@
    "sector": "NaceV2Sector_J_60.31",
    "simplified": "MEsupersimplified",
    "timeline": [],
-   "title": "KOCH / GETTY FAMILY / GETTY IMAGES"
+   "title": "KOCH / CHEYNE WALK TRUST / GETTY IMAGES"
   },
   "M.12706": {
    "caseNumber": "M.12706",
@@ -7472,5 +7562,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-13T08:08:30Z"
+ "fetched": "2026-11-13T16:32:19Z"
 }
