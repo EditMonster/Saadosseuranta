@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T16:30:13",
+ "fetched": "2026-11-14T11:06:44",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-08",
+     "end": "2027-01-09",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -602,48 +602,12 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19032_en"
   },
   {
-   "actType": "DIR",
-   "actTypeLabel": "Direktiivi",
-   "id": 19475,
-   "periods": [
-    {
-     "end": "2026-11-13",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-16"
-    }
-   ],
-   "reference": "Ares(2026)9529146",
-   "status": "ACTIVE",
-   "title_en": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock ",
-   "title_fi": "Nitraatit – lannasta talteenotettua typpeä koskevien sääntöjen laajentaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 16712,
-   "periods": [
-    {
-     "end": "2026-11-13",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-16"
-    }
-   ],
-   "reference": "Ares(2026)1211139",
-   "status": "ACTIVE",
-   "title_en": "Templates for health data access applications, health data requests, data permits and decisions on a data request",
-   "title_fi": "Eurooppalainen terveystietoalue – Mallit sähköisten terveystietojen toissijaista käyttöä varten",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en"
-  },
-  {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-08",
+     "end": "2027-01-09",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -661,7 +625,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-08",
+     "end": "2027-01-09",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -751,7 +715,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-08",
+     "end": "2027-01-09",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -1000,6 +964,24 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
+   "id": 16413,
+   "periods": [
+    {
+     "end": "2026-10-16",
+     "open": false,
+     "stage": "OPC_LAUNCHED",
+     "start": "2026-07-10"
+    }
+   ],
+   "reference": "Ares(2026)430890",
+   "status": "ACTIVE",
+   "title_en": "European partnerships implemented as joint undertakings under Horizon Europe (2028-2034)",
+   "title_fi": "Horisontti Eurooppa – Yhteisyrityksinä toteutettavat eurooppalaiset kumppanuudet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16413_en"
+  },
+  {
+   "actType": "PROP_REG",
+   "actTypeLabel": "Asetusehdotus",
    "id": 19222,
    "periods": [
     {
@@ -1014,6 +996,42 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 16712,
+   "periods": [
+    {
+     "end": "2026-11-13",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-16"
+    }
+   ],
+   "reference": "Ares(2026)1211139",
+   "status": "ACTIVE",
+   "title_en": "Templates for health data access applications, health data requests, data permits and decisions on a data request",
+   "title_fi": "Eurooppalainen terveystietoalue – Mallit sähköisten terveystietojen toissijaista käyttöä varten",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en"
+  },
+  {
+   "actType": "DIR",
+   "actTypeLabel": "Direktiivi",
+   "id": 19475,
+   "periods": [
+    {
+     "end": "2026-11-13",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-16"
+    }
+   ],
+   "reference": "Ares(2026)9529146",
+   "status": "ACTIVE",
+   "title_en": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock ",
+   "title_fi": "Nitraatit – lannasta talteenotettua typpeä koskevien sääntöjen laajentaminen",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475_en"
   },
   {
    "actType": "REG_IMPL",
@@ -1556,24 +1574,6 @@
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18892_en"
   },
   {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
-   "id": 16413,
-   "periods": [
-    {
-     "end": "2026-10-16",
-     "open": false,
-     "stage": "OPC_LAUNCHED",
-     "start": "2026-07-10"
-    }
-   ],
-   "reference": "Ares(2026)430890",
-   "status": "ACTIVE",
-   "title_en": "European partnerships implemented as joint undertakings under Horizon Europe (2028-2034)",
-   "title_fi": "Horisontti Eurooppa – Yhteisyrityksinä toteutettavat eurooppalaiset kumppanuudet",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16413_en"
-  },
-  {
    "actType": "PROP_DEC",
    "actTypeLabel": "Päätösehdotus",
    "id": 19052,
@@ -1770,24 +1770,6 @@
    "title_en": "Competitiveness in the single banking market",
    "title_fi": "Kilpailukyky pankkialan sisämarkkinoilla",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16795_en"
-  },
-  {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 18372,
-   "periods": [
-    {
-     "end": "2026-09-14",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-17"
-    }
-   ],
-   "reference": "Ares(2026)5627160",
-   "status": "ACTIVE",
-   "title_en": "Reporting on the application and functioning of EU rules on data protection law enforcement",
-   "title_fi": "Lainvalvontatarkoituksessa käsiteltyjen henkilötietojen suoja – EU:n sääntöjen soveltaminen ja toimivuus",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18372_en"
   },
   {
    "actType": "REG_DEL",

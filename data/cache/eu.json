@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T16:28:12",
+ "fetched": "2026-11-14T11:04:30",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -3174,7 +3174,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2021-0106",
    "ref": "2021/0106(COD)",
@@ -6902,7 +6902,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2021-0239",
    "ref": "2021/0239(COD)",
@@ -12057,7 +12057,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2021-0414",
    "ref": "2021/0414(COD)",
@@ -14919,7 +14919,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2022-0047",
    "ref": "2022/0047(COD)",
@@ -21299,7 +21299,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2022-0272",
    "ref": "2022/0272(COD)",
@@ -22670,7 +22670,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2022-0302",
    "ref": "2022/0302(COD)",
@@ -24998,7 +24998,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2022-0396",
    "ref": "2022/0396(COD)",
@@ -36967,6 +36967,10 @@
     {
      "date": "2026-11-03",
      "type": "ADP_CCPOSR1CONSIL_byCOM"
+    },
+    {
+     "date": "2026-11-12",
+     "type": "ANN_POSR1CONSIL_byEP"
     }
    ],
    "events": [
@@ -37097,6 +37101,10 @@
     {
      "date": "2026-11-03",
      "type": "ADP_CCPOSR1CONSIL_byCOM"
+    },
+    {
+     "date": "2026-11-12",
+     "type": "ANN_POSR1CONSIL_byEP"
     }
    ],
    "events": [
@@ -49507,7 +49515,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2025-0045",
    "ref": "2025/0045(COD)",
@@ -49666,6 +49674,10 @@
     },
     {
      "date": "2026-10-12",
+     "type": "NGT_INST_byEP_CONSIL_COM"
+    },
+    {
+     "date": "2026-11-12",
      "type": "NGT_INST_byEP_CONSIL_COM"
     }
    ],
@@ -53642,6 +53654,11 @@
     {
      "date": "2026-09-10",
      "type": "APR_AGRPROV_CONSIL_byEP_CMT"
+    },
+    {
+     "date": "2026-11-30",
+     "projected": true,
+     "type": "APR_R1_byCONSIL"
     }
    ],
    "events": [
@@ -56013,6 +56030,11 @@
     {
      "date": "2026-11-11",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -56171,6 +56193,11 @@
     {
      "date": "2026-10-21",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-12-01",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -56518,7 +56545,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2025-0360",
    "ref": "2025/0360(COD)",
@@ -56926,7 +56953,6 @@
     },
     {
      "date": "2026-11-09",
-     "projected": true,
      "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
@@ -57267,7 +57293,6 @@
     },
     {
      "date": "2026-11-09",
-     "projected": true,
      "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
@@ -58375,6 +58400,11 @@
     {
      "date": "2026-11-11",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -59305,6 +59335,11 @@
     {
      "date": "2026-10-30",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-20",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -62183,6 +62218,16 @@
     {
      "date": "2026-10-22",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-12-01",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -62255,6 +62300,11 @@
     {
      "date": "2026-10-30",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-30",
+     "projected": true,
+     "type": "APR_R1_byCONSIL"
     }
    ],
    "events": [
@@ -62369,6 +62419,11 @@
     {
      "date": "2026-10-19",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -62655,7 +62710,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-14",
    "final": false,
    "pid": "2026-0074",
    "ref": "2026/0074(COD)",
@@ -62823,6 +62878,11 @@
     {
      "date": "2026-11-11",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -63213,6 +63273,16 @@
     {
      "date": "2026-11-05",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-12-01",
+     "projected": true,
+     "type": "ADP_APPRGEN_byCONSIL"
     }
    ],
    "events": [
@@ -63273,6 +63343,16 @@
     {
      "date": "2026-11-10",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-12-01",
+     "projected": true,
+     "type": "DELIB_byCONSIL"
     }
    ],
    "events": [
@@ -63732,6 +63812,10 @@
     {
      "date": "2026-10-21",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-13",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -64006,6 +64090,11 @@
     {
      "date": "2026-10-27",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -64050,6 +64139,11 @@
     {
      "date": "2026-11-13",
      "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -64364,6 +64458,11 @@
     {
      "date": "2026-11-11",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
     }
    ],
    "events": [
@@ -64846,6 +64945,16 @@
     {
      "date": "2026-11-06",
      "type": "ADP_MAND_NGT_INST_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "DELIB_COREPER_byCONSIL"
+    },
+    {
+     "date": "2026-11-18",
+     "projected": true,
+     "type": "ENDORSE_AGRPROV_COREPER_byCONSIL"
     }
    ],
    "events": [

@@ -1481,24 +1481,6 @@ DESCRIPTION:Lausuntokierros · TEM054:00/2026 · https://valtioneuvosto.fi/hanke
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM054:00/2026
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-asetus-b8a220c7-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[FI] Lausuntoaika päättyy: Yksityistieasetuksen muuttaminen
-DESCRIPTION:Lausuntokierros: Yksityistieasetuksen muuttaminen · LVM025:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=LVM025:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=LVM025:00/2026
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-asetus-4934bc8e-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[FI] Lausuntoaika päättyy: Valtioneuvoston asetus elinvoimakeskusten ja Työllisyys-\, kehittämis- ja hallintokeskuksen maksuista vuonna 2027 ja 2028
-DESCRIPTION:Lausuntokierros · TEM051:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM051:00/2026
-URL:https://valtioneuvosto.fi/hanke?tunnus=TEM051:00/2026
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-asetus-a4c6876a-lausunto-2026-11-11@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -2381,10 +2363,10 @@ DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/bet
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-08@saadosseuranta
-DTSTAMP:20270108T000000Z
-DTSTART;VALUE=DATE:20270108
-DTEND;VALUE=DATE:20270109
+UID:eu-hys-14770-lausunto-2027-01-09@saadosseuranta
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2480,19 +2462,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-16712-lausunto-2026-11-13@saadosseuranta
-DTSTAMP:20261113T000000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:[EU] Lausuntoaika päättyy: Eurooppalainen terveystietoalue – Mallit sähköisten terveystietojen toissijaista käyttöä varten
-DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-08@saadosseuranta
-DTSTAMP:20270108T000000Z
-DTSTART;VALUE=DATE:20270108
-DTEND;VALUE=DATE:20270109
+UID:eu-hys-19517-lausunto-2027-01-09@saadosseuranta
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2561,6 +2534,15 @@ DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regu
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18512_en
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-16712-lausunto-2026-11-13@saadosseuranta
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[EU] Lausuntoaika päättyy: Eurooppalainen terveystietoalue – Mallit sähköisten terveystietojen toissijaista käyttöä varten
+DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16712_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-14628-lausunto-2026-11-11@saadosseuranta
 DTSTAMP:20261111T000000Z
 DTSTART;VALUE=DATE:20261111
@@ -2577,15 +2559,6 @@ DTEND;VALUE=DATE:20261110
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
 DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-14450-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[EU] Lausuntoaika päättyy: Päästöraportointi – täytäntöönpanosäädös energiateollisuuden metaanipäästöjen raportoinnin malleista
-DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450_en
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
@@ -3117,15 +3090,6 @@ DTEND;VALUE=DATE:20261114
 SUMMARY:[EU] Lausuntoaika päättyy: Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR
 DESCRIPTION:Palauteaika · Guidelines 4/2026 · https://www.edpb.europa.eu/public-consultations/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en
 URL:https://www.edpb.europa.eu/public-consultations/guidelines-042026-on-the-application-of-the-power-to-impose-administrative_en
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-toim-hk-fa489d87-80357a-lausunto-2026-11-06@saadosseuranta
-DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:[FI] Lausuntoaika päättyy: Sähkölinjoja koskevien korvausperusteiden uudistaminen
-DESCRIPTION:Lausuntoaika · OM115:00/2023 · https://valtioneuvosto.fi/hanke?tunnus=OM115:00/2023
-URL:https://valtioneuvosto.fi/hanke?tunnus=OM115:00/2023
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-toim-eba-cp-2026-18-lausunto-2026-12-31@saadosseuranta

@@ -350,14 +350,6 @@
      "type": "Landskapsförordning"
     },
     {
-     "date": "2007-01-11",
-     "eif": "2007-03-01",
-     "notif": "2008-07-04",
-     "oj": "2007/2",
-     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
-     "type": "Landskapsförordning"
-    },
-    {
      "date": "2007-12-20",
      "notif": "2008-07-04",
      "oj": "2007/117",
@@ -368,6 +360,14 @@
      "date": "2005-11-10",
      "notif": "2008-07-04",
      "oj": "2005/76",
+     "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-01-11",
+     "eif": "2007-03-01",
+     "notif": "2008-07-04",
+     "oj": "2007/2",
      "title": "LANDSKAPSFÖRORDNING om ändring av landskapsförordningen om miljöskydd och miljötillstånd",
      "type": "Landskapsförordning"
     },
@@ -6876,5 +6876,5 @@
    "measures": []
   }
  },
- "fetched": "2026-11-13T08:17:15"
+ "fetched": "2026-11-14T11:17:16"
 }
