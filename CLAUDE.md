@@ -41,6 +41,13 @@ Käyttäjälle vastataan suomeksi. Hän on ohjelmoinnissa aloittelija: selitä m
 - Rehellisyys datasta: jos jokin tilastollinen havainto ei kestä tarkistusta (esim. lausuntokierroksen vastustus
   ei ennusta valiokunnan muutoksia), sitä ei esitetä sivulla ennusteena.
 
+## Tauko (15.11.2026)
+
+Kalle pysäytti kehityksen toistaiseksi. Älä aloita uutta kehitystä ennen kuin hän pyytää. Claude-puolen ajastettu tehtävä
+"Säädösseuranta: artifact-vedoksen päivitys" (trig_01Eog12L5tWVhEGkfvUX8ZB8) on poistettu käytöstä; GitHubin
+aineistopäivitykset jätettiin päälle, jotta sivu pysyy ajan tasalla. Jatkettaessa: ota ajastettu tehtävä tarvittaessa
+takaisin käyttöön ja käy läpi alla olevat avoimet tehtävät sekä avoimet Dependabot-PR:t.
+
 ## Avoimet tehtävät (tilanne 28.10.2026)
 
 1. **Välimuistien kertasiivous:** toiminimien maskaus (`SOLE_LABEL`) tuli koodiin 28.10. Ne `data/cache`-tiedostot, joita
