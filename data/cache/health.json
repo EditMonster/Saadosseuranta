@@ -87,13 +87,12 @@
   "streak": 0
  },
  "hediff": {
-  "last_error": "aikaraja ylittyi (225 s) – edellinen aineisto käytössä",
+  "last_error": null,
   "last_fail": "2026-11-15T08:28:31Z",
-  "last_ok": "2026-11-14T10:56:32Z",
-  "ok": false,
-  "outage": true,
-  "skipped": true,
-  "streak": 1
+  "last_ok": "2026-11-15T10:50:08Z",
+  "ok": true,
+  "outage": false,
+  "streak": 0
  },
  "history": {
   "last_error": null,
