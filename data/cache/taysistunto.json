@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T11:17:13",
+ "fetched": "2026-11-15T08:55:50",
  "he": {
   "1/2024": {
    "aanestykset": [],
@@ -66758,6 +66758,26 @@
    ],
    "v": 1
   },
+  "249/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-20",
+     "puheenvuorot": 7,
+     "ryhmat": {
+      "kesk": 1,
+      "kok": 1,
+      "ps": 2,
+      "r": 1,
+      "sd": 2
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
   "25/2023": {
    "aanestykset": [],
    "checked": "2026-10-27",
@@ -67307,6 +67327,177 @@
    ],
    "v": 1
   },
+  "250/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 4,
+     "ryhmat": {
+      "kesk": 1,
+      "ps": 3
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "251/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-20",
+     "puheenvuorot": 2,
+     "ryhmat": {
+      "ps": 1,
+      "sd": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "252/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 6,
+     "ryhmat": {
+      "kesk": 1,
+      "kok": 1,
+      "ps": 4
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "253/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 5,
+     "ryhmat": {
+      "kesk": 1,
+      "kok": 2,
+      "ps": 1,
+      "sd": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "254/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-22",
+     "puheenvuorot": 11,
+     "ryhmat": {
+      "kok": 5,
+      "ps": 2,
+      "sd": 4
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "255/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 7,
+     "ryhmat": {
+      "kesk": 1,
+      "kok": 1,
+      "ps": 4,
+      "sd": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "256/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 3,
+     "ryhmat": {
+      "kesk": 1,
+      "kok": 1,
+      "ps": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "257/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 7,
+     "ryhmat": {
+      "kesk": 2,
+      "kok": 2,
+      "ps": 2,
+      "sd": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "258/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [
+    {
+     "date": "2026-10-21",
+     "puheenvuorot": 8,
+     "ryhmat": {
+      "kesk": 2,
+      "kok": 2,
+      "ps": 3,
+      "sd": 1
+     },
+     "vaihe": "Lähetekeskustelu"
+    }
+   ],
+   "v": 1
+  },
+  "259/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
   "26/2023": {
    "aanestykset": [],
    "checked": "2026-10-27",
@@ -67749,6 +67940,76 @@
     }
    ],
    "lausumat": [],
+   "v": 1
+  },
+  "260/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "261/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "262/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "263/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "264/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "265/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "266/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "267/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "268/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "269/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
    "v": 1
   },
   "27/2023": {
@@ -68303,6 +68564,76 @@
    "lausumat": [],
    "v": 1
   },
+  "270/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "271/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "272/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "273/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "274/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "275/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "276/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "277/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "278/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "279/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
   "28/2023": {
    "aanestykset": [],
    "checked": "2026-10-27",
@@ -68660,6 +68991,69 @@
     }
    ],
    "lausumat": [],
+   "v": 1
+  },
+  "280/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "281/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "282/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "283/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "284/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "285/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "286/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "287/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "288/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
    "v": 1
   },
   "29/2024": {
@@ -69189,6 +69583,34 @@
     }
    ],
    "lausumat": [],
+   "v": 1
+  },
+  "294/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "295/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "296/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "297/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
    "v": 1
   },
   "3/2025": {
@@ -70608,6 +71030,27 @@
    "lausumat": [],
    "v": 1
   },
+  "301/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "304/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "305/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
   "31/2025": {
    "aanestykset": [
     {
@@ -71178,6 +71621,20 @@
    "lausumat": [],
    "v": 1
   },
+  "311/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "316/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
   "32/2023": {
    "aanestykset": [],
    "checked": "2026-10-27",
@@ -71624,6 +72081,27 @@
    "lausumat": [],
    "v": 1
   },
+  "322/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "324/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "327/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
   "33/2023": {
    "aanestykset": [],
    "checked": "2026-10-27",
@@ -71928,6 +72406,62 @@
    "lausumat": [
     "Eduskunta edellyttää, että hallitus ryhtyy viivytyksettä lainvalmisteluun vuokranantajien tiedonsaantioikeudesta säätämiseksi sisäministeriön alan lainsäädännössä, jotta painavan syyn irtisanomisperusteen näytön saamista voidaan edistää ja turvata näin asumisrauha ja antaa tästä selvityksen ympäristövaliokunnalle viimeistään 31.8.2027."
    ],
+   "v": 1
+  },
+  "330/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "331/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "332/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "333/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "334/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "335/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "336/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
+   "v": 1
+  },
+  "337/2026": {
+   "aanestykset": [],
+   "checked": "2026-11-15",
+   "final": false,
+   "kasittelyt": [],
    "v": 1
   },
   "34/2023": {

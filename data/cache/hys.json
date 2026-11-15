@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T11:06:44",
+ "fetched": "2026-11-15T08:48:08",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-09",
+     "end": "2027-01-10",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -607,7 +607,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-09",
+     "end": "2027-01-10",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -625,7 +625,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-09",
+     "end": "2027-01-10",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -715,7 +715,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-09",
+     "end": "2027-01-10",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"

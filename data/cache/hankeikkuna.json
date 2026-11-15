@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T10:56:52",
+ "fetched": "2026-11-15T08:28:45",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -48284,10 +48284,27 @@
    "heTila": "HYVAKSYTYSSA_HE_LUETTELOSSA",
    "kiireellinen": false,
    "laji": "laki",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-13",
+      "id": "18125758-dded-46c1-a185-0e093f9d3cc2",
+      "org": "Kaupan liitto ry",
+      "title": "Kaupan liitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/18125758-dded-46c1-a185-0e093f9d3cc2/LAUSUNTO_20261115044139.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "Kaupan liitto ry"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=f3445ba1-abe6-4365-b070-37d9a9bc7296",
+    "viimeisin": "2026-11-13"
+   },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-05T13:46:26",
+   "muokattu": "2026-11-15T04:41:39",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och lagen om undantag för landskapet Åland från mervärdesskatte- och accislagstiftningen",
    "pevLausunto": false,
@@ -491204,10 +491221,27 @@
    "heTila": null,
    "kiireellinen": false,
    "laji": "asetus",
-   "lausunnot": null,
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-11-13",
+      "id": "46a214c7-37e8-4d79-8ae6-11ce30856031",
+      "org": "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
+      "title": "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus); lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a98c5a07-e1d6-4e59-beb5-8b37946f52f5/46a214c7-37e8-4d79-8ae6-11ce30856031/LAUSUNTO_20261115044653.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 1,
+    "orgs": [
+     "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)"
+    ],
+    "url": null,
+    "viimeisin": "2026-11-13"
+   },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-13T10:58:14",
+   "muokattu": "2026-11-15T04:46:53",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta työvoimaviranomaiselle työttömien nuorten työllistämiseen vuosina 2026 ja 2027 annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om statsunderstöd till arbetskraftsmyndigheten för sysselsättning av arbetslösa unga 2026 och 2027",
    "pevLausunto": false,
@@ -491612,6 +491646,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "2a6ae433-d5a8-4f7e-a6d8-a9e5029cc2f0",
+      "org": "Hankasalmen kunta",
+      "title": "Hankasalmen kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2697a4b6-d8e7-4c54-ae29-1c232f8565f1/2a6ae433-d5a8-4f7e-a6d8-a9e5029cc2f0/LAUSUNTO_20261115053218.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "e3568162-8db9-40be-a412-1d970afb42bd",
       "org": "Hankasalmen kunta",
@@ -491683,10 +491724,10 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 10,
+    "n": 11,
     "orgs": [
-     "Alajärven kaupunki, Alajärven lukio",
      "Hankasalmen kunta",
+     "Alajärven kaupunki, Alajärven lukio",
      "Helsingin kaupunki",
      "Iin kunta",
      "Kontiolahden kunta, Kontiolahden lukio",
@@ -491697,11 +491738,11 @@
      "Ylöjärven kaupunki"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5acd01bd-de9e-47a8-859c-2e1e10bcdbe7",
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-13T05:55:22",
+   "muokattu": "2026-11-15T05:32:18",
    "nimi": "OKM:n asetus opiskelijaksi ottamisen perusteista lukiokoulutuksessa annetun asetuksen muuttamisesta",
    "nimiSv": "Undervisnings- och kulturministeriets förordning om ändring av ministeriets förordning om grunderna för antagning av studerande inom gymnasieutbildningen",
    "pevLausunto": false,
@@ -493401,6 +493442,97 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/8b97723f-d7d6-49b0-98f8-941fb9c72190/LAUSUNTO_20261113122758.PDF"
      },
      {
+      "date": "2026-11-13",
+      "id": "e30b3b70-9d53-434c-ac66-8c67769bf38d",
+      "org": "Österbottens svenska fårförening rf",
+      "title": "Österbottens svenska fårförening rf; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/e30b3b70-9d53-434c-ac66-8c67769bf38d/LAUSUNTO_20261115054210.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "debf617a-0207-453e-a2bd-fa010557d1eb",
+      "org": "MTK-Varsinais-Suomi ry",
+      "title": "MTK-Varsinais-Suomi ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/debf617a-0207-453e-a2bd-fa010557d1eb/LAUSUNTO_20261115054419.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "91ea817c-8689-4e95-944a-5ba26f5e1865",
+      "org": "Östra Korsholms jaktförening rf",
+      "title": "Östra Korsholms jaktförening rf; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/91ea817c-8689-4e95-944a-5ba26f5e1865/LAUSUNTO_20261115054631.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "c0078486-b7dc-4648-9f6a-63b350af3d86",
+      "org": "Suomen eläinoikeusjuristit ry",
+      "title": "Suomen eläinoikeusjuristit ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/c0078486-b7dc-4648-9f6a-63b350af3d86/LAUSUNTO_20261115054842.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "c64fd088-0f80-4505-b1eb-5b9c131a9387",
+      "org": "Kvevlax kyrkoby jaktklubb rf",
+      "title": "Kvevlax kyrkoby jaktklubb rf; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/c64fd088-0f80-4505-b1eb-5b9c131a9387/LAUSUNTO_20261115055050.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "0b77e9ff-4372-40eb-9996-cdf9591d3c2d",
+      "org": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
+      "title": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/0b77e9ff-4372-40eb-9996-cdf9591d3c2d/LAUSUNTO_20261115055301.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "44bebd27-bb64-48ac-b2e0-811b576d5eb5",
+      "org": "Suomen Luonnonvalokuvaajat SLV ry",
+      "title": "Suomen Luonnonvalokuvaajat SLV ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/44bebd27-bb64-48ac-b2e0-811b576d5eb5/LAUSUNTO_20261115055511.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "2bb043fb-b422-4ba1-9135-dfc20ceed3e0",
+      "org": "Eläinoikeusakatemia ry",
+      "title": "Eläinoikeusakatemia ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/2bb043fb-b422-4ba1-9135-dfc20ceed3e0/LAUSUNTO_20261115055722.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "171db92b-499e-47bc-a2ab-30ac8a1e5196",
+      "org": "Suomen Metsästäjäliitto – Finlands Jägarförbund r.y.",
+      "title": "Suomen Metsästäjäliitto – Finlands Jägarförbund r.y.; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/171db92b-499e-47bc-a2ab-30ac8a1e5196/LAUSUNTO_20261115055931.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "1931e4b8-dbed-4a31-a01f-2e30e766dedd",
+      "org": "Kauhajoen Metsästysseura ry",
+      "title": "Kauhajoen Metsästysseura ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/1931e4b8-dbed-4a31-a01f-2e30e766dedd/LAUSUNTO_20261115060419.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "dfbb645c-336d-4874-b982-744efa257457",
+      "org": "Suomen ympäristökeskus (Syke)",
+      "title": "Suomen ympäristökeskus (Syke); lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/dfbb645c-336d-4874-b982-744efa257457/LAUSUNTO_20261115060635.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "75b045db-e7d3-4152-8050-a4226b661612",
+      "org": "Natur och Miljö r.f.",
+      "title": "Natur och Miljö r.f; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/75b045db-e7d3-4152-8050-a4226b661612/LAUSUNTO_20261115060845.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "0d9fe1ef-ceb0-4b90-89ec-59906dc8f74f",
+      "org": "Suomen luonnonsuojeluliitto ry",
+      "title": "Suomen luonnonsuojeluliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/0d9fe1ef-ceb0-4b90-89ec-59906dc8f74f/LAUSUNTO_20261115061052.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "bba17590-2aba-471e-8022-a29da6ae7baa",
       "org": "Ympäristöministeriö",
@@ -493462,6 +493594,20 @@
       "org": "Vaasan seudun riistanhoitoyhdistys",
       "title": "Vaasan seudun riistanhoitoyhdistys; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/f1edba70-4add-4535-bf07-ecbd43548fb3/LAUSUNTO_20261113130159.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "7b2b943c-7cf2-4f7e-b8d4-0015b87d53cb",
+      "org": "Maalahden seudun riistanhoitoyhdistys",
+      "title": "Maalahden seudun riistanhoitoyhdistys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/7b2b943c-7cf2-4f7e-b8d4-0015b87d53cb/LAUSUNTO_20261115053751.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "eb6d8de4-9e8e-4047-b976-bfe3a2cceb4f",
+      "org": "Malax kommun / Maalahden kunta",
+      "title": "Malax kommun / Maalahden kunta; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/eb6d8de4-9e8e-4047-b976-bfe3a2cceb4f/LAUSUNTO_20261115054000.PDF"
      },
      {
       "date": "2026-11-11",
@@ -493766,29 +493912,37 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 54,
+    "n": 69,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
      "Association Ulvetid",
      "Avenir Loup Lynx Jura",
+     "Eläinoikeusakatemia ry",
      "Etelä-Karjalan liitto",
      "Finnature Oy",
      "Idän Taiga ry",
      "Irina Andryushchenko-Basquin",
+     "Kauhajoen Metsästysseura ry",
      "Keski-Pohjanmaan liitto",
      "Kimitoöns Jakthundslubb rf",
      "Kirkkonummen kunta",
      "Kodesjärven Metsästysyhdistys ry",
      "Korsholms kommun / Mustasaaren kunta",
+     "Kvevlax kyrkoby jaktklubb rf",
      "Lassilan Metsästysseura ry",
      "Luonnonsuojeluliitto Tapiola ry",
      "M. Arthaud",
      "MTK-Satakunta ry",
+     "MTK-Varsinais-Suomi ry",
      "Maa- ja metsätalousministeriö",
+     "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
+     "Maalahden seudun riistanhoitoyhdistys",
+     "Malax kommun / Maalahden kunta",
      "Mats Westerbom ym.",
      "Metsähallitus",
      "Metsästyskoiraliitto ry",
+     "Natur och Miljö r.f.",
      "Oulun yliopisto",
      "Petsmo jaktklubb r.f.",
      "Philippe de Béchevel",
@@ -493804,10 +493958,15 @@
      "Stichting Wolven Belangen",
      "Suomen Harmaahirvikoirajärjestö ry",
      "Suomen Kennelliitto ry",
+     "Suomen Luonnonvalokuvaajat SLV ry",
      "Suomen Metsästäjäliiton Varsinais-Suomen piiri ry",
+     "Suomen Metsästäjäliitto – Finlands Jägarförbund r.y.",
+     "Suomen eläinoikeusjuristit ry",
      "Suomen luonnonsuojeluliiton Pirkanmaan piiri ry",
      "Suomen luonnonsuojeluliiton Pohjois-Karjalan piiri",
      "Suomen luonnonsuojeluliiton Pohjois-Pohjanmaan piiri ry",
+     "Suomen luonnonsuojeluliitto ry",
+     "Suomen ympäristökeskus (Syke)",
      "Svenska Rovdjursföreningen",
      "Taivassalon kunta",
      "Thierry Ruf",
@@ -493820,14 +493979,16 @@
      "Wildlife Safaris Finland Oy",
      "Ympäristöministeriö",
      "Österbottens förbund - Pohjanmaan liitto",
-     "Österbottens svenska producentförbund r.f."
+     "Österbottens svenska fårförening rf",
+     "Österbottens svenska producentförbund r.f.",
+     "Östra Korsholms jaktförening rf"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
     "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-13T13:26:36",
+   "muokattu": "2026-11-15T06:10:52",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -494941,6 +495102,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "8ad1d37c-097e-4d1d-94be-81c5b1ef918f",
+      "org": "Siemenkauppiaitten yhdistys ry",
+      "title": "Siemenkauppiaitten yhdistys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/8ad1d37c-097e-4d1d-94be-81c5b1ef918f/LAUSUNTO_20261115044430.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "e3823ae8-652b-424e-b26b-f718890238f3",
+      "org": "Kemianteollisuus ry",
+      "title": "Kemianteollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/e3823ae8-652b-424e-b26b-f718890238f3/LAUSUNTO_20261115044913.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "3b1143f0-3323-495c-8c7c-9bc726e19507",
       "org": "Teknisen Kaupan liitto ry",
@@ -494998,11 +495173,13 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 8,
+    "n": 10,
     "orgs": [
      "Kaupan liitto ry",
+     "Kemianteollisuus ry",
      "Liikenne- ja viestintäministeriö",
      "Maa- ja metsätalousministeriö",
+     "Siemenkauppiaitten yhdistys ry",
      "Sisäministeriö",
      "Suomen Biokierto ja Biokaasu ry",
      "Teknisen Kaupan liitto ry",
@@ -495010,11 +495187,11 @@
      "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9409a539-47f7-4874-a582-dccb24ac9460",
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-13T06:27:03",
+   "muokattu": "2026-11-15T04:49:13",
    "nimi": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista vuosina 2027-2028",
    "nimiSv": "Arbets- och näringsministeriets förordning om Säkerhets- och kemikalieverkets avgiftsbelagda prestationer åren 2027–2028",
    "pevLausunto": false,
@@ -496862,6 +497039,13 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/0b1b103c-fa9a-4193-b6e2-f24e4af16226/LAUSUNTO_20261113061036.PDF"
      },
      {
+      "date": "2026-11-11",
+      "id": "73e982bb-4a8b-4647-ba41-8cd3936473cc",
+      "org": "Kiinteistönomistajat ja rakennuttajat Rakli ry",
+      "title": "Kiinteistönomistajat ja rakennuttajat Rakli ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/73e982bb-4a8b-4647-ba41-8cd3936473cc/LAUSUNTO_20261115053456.PDF"
+     },
+     {
       "date": "2026-11-10",
       "id": "002976d9-f0dc-41b7-a11a-1e09ad12aaae",
       "none": true,
@@ -497031,7 +497215,7 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 38,
+    "n": 39,
     "orgs": [
      "Elinkeinoelämän keskusliitto EK",
      "Etelä-Savon hyvinvointialue",
@@ -497042,6 +497226,7 @@
      "Isännöintiliitto ry",
      "Kehitysvammaliitto",
      "Keski-Suomen pelastuslaitos",
+     "Kiinteistönomistajat ja rakennuttajat Rakli ry",
      "Kohtuuhintaisten vuokra- ja asumisoikeustalojen omistajat - KOVA ry",
      "Kuluttajaliitto ry",
      "Kuuloliitto ry",
@@ -497077,7 +497262,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-13T07:17:07",
+   "muokattu": "2026-11-15T05:34:56",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen",
    "nimiSv": "Statsrådets förordning om statsunderstöd för iståndsättning av skyddsrum",
    "pevLausunto": false,
@@ -497203,6 +497388,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-12",
+      "id": "7f8e100b-e96b-4e23-8ab4-cfd987f9376a",
+      "org": "Biopankkien Osuuskunta Suomi - FINBB",
+      "title": "Biopankkien Osuuskunta Suomi - FINBB; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/f0ae7f95-3b10-4bd7-b933-76d795d14186/7f8e100b-e96b-4e23-8ab4-cfd987f9376a/LAUSUNTO_20261115051151.PDF"
+     },
+     {
       "date": "2026-11-11",
       "id": "f5342f3f-95dc-4fe1-9ce0-6bc337206fd2",
       "org": "Pohjois-Savon hyvinvointialue",
@@ -497211,16 +497403,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
+     "Biopankkien Osuuskunta Suomi - FINBB",
      "Pohjois-Savon hyvinvointialue"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=f2dd4549-d3e2-4a9b-8a98-ee738e9464a1",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-12"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-13T05:07:08",
+   "muokattu": "2026-11-15T05:11:51",
    "nimi": "Sosiaali- ja terveysministeriön asetus Sosiaali- ja terveysalan tietolupaviranomaisen suoritteiden maksullisuudesta 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om avgiftsbelagda prestationer som tillhandahålls av Tillståndsmyndigheten för användning av social- och hälsovårdsdata 2027",
    "pevLausunto": false,
@@ -497622,6 +497815,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "a4d9dc99-fbf2-40a7-824a-b1944ed009f7",
+      "org": "Hyvinvointialueyhtiö Hyvil Oy",
+      "title": "Hyvinvointialueyhtiö Hyvil Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/0b695719-4398-4fab-9c70-0081bb7c23d5/a4d9dc99-fbf2-40a7-824a-b1944ed009f7/LAUSUNTO_20261115052031.PDF"
+     },
+     {
       "date": "2026-11-10",
       "id": "4eaa397b-75a3-4206-b6df-2a31fb2c50cb",
       "org": "Satakunnan hyvinvointialue",
@@ -497679,8 +497879,9 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 8,
+    "n": 9,
     "orgs": [
+     "Hyvinvointialueyhtiö Hyvil Oy",
      "Lappeenrannan kaupunki - Kuusimäen toimintayksikkö",
      "Lohjan kaupunki",
      "Pirkanmaan hyvinvointialue",
@@ -497691,11 +497892,11 @@
      "Terveyden ja hyvinvoinnin laitos THL"
     ],
     "url": null,
-    "viimeisin": "2026-11-10"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-10T19:45:05",
+   "muokattu": "2026-11-15T05:20:31",
    "nimi": "Valtioneuvoston asetus alueellisista toimeentulotukiasioiden neuvottelukunnista annetun valtioneuvoston asetuksen 1 §:n muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 1 § i statsrådets förordning om regionala delegationer för utkomststödsärenden",
    "pevLausunto": false,
@@ -508250,6 +508451,41 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/d1bb2a2c-e4ae-421b-9ab1-eb503fc783d4/LAUSUNTO_20261113050203.PDF"
      },
      {
+      "date": "2026-11-12",
+      "id": "a9ead941-c7dd-4a49-8420-4f024280fb84",
+      "org": "Leader Pohjoisin Lappi ry",
+      "title": "Leader Pohjoisin Lappi ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/a9ead941-c7dd-4a49-8420-4f024280fb84/LAUSUNTO_20261115045615.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "aa56c465-951a-49ea-ab19-cbc1de73885e",
+      "org": "Kairalan kyläseura ry",
+      "title": "Kairalan kyläseura ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/aa56c465-951a-49ea-ab19-cbc1de73885e/LAUSUNTO_20261115045821.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "e0a28bd3-7fc4-4d29-9d3e-4bb66befc618",
+      "org": "Saijan kyläyhdistys ry",
+      "title": "Saijan kyläyhdistys ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/e0a28bd3-7fc4-4d29-9d3e-4bb66befc618/LAUSUNTO_20261115050029.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "4018bce6-343c-4d84-b7cd-85179dc28ae0",
+      "org": "Luonnon- ja riistanhoitosäätiö sr",
+      "title": "Luonnon- ja riistanhoitosäätiö sr; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/4018bce6-343c-4d84-b7cd-85179dc28ae0/LAUSUNTO_20261115050236.PDF"
+     },
+     {
+      "date": "2026-11-12",
+      "id": "0a5da88c-173c-4824-a2ca-cf3f487b6411",
+      "org": "Natur och Miljö r.f.",
+      "title": "Natur och Miljö r.f.; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/0a5da88c-173c-4824-a2ca-cf3f487b6411/LAUSUNTO_20261115050444.PDF"
+     },
+     {
       "date": "2026-11-11",
       "id": "a28daac6-b4db-4efd-9b1f-8c42e49ac538",
       "org": "Etelä-Pohjanmaan elinvoimakeskus",
@@ -508397,7 +508633,7 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 35,
+    "n": 40,
     "orgs": [
      "Ennallistajat Group Oy",
      "Etelä-Pohjanmaan elinvoimakeskus",
@@ -508405,21 +508641,26 @@
      "Heinolan kaupunki",
      "KEHA-keskus (Työllisyys-, kehittämis- ja hallintokeskus)",
      "Kaarinan kaupunki",
+     "Kairalan kyläseura ry",
      "Kauniaisten kaupunki",
      "Keravan kaupunki",
      "Keski-Pohjanmaan liitto",
      "Keski-Uudenmaan ympäristökeskus",
      "Lapin ELY-keskus",
+     "Leader Pohjoisin Lappi ry",
      "Liikenne- ja viestintäministeriö",
      "Lounais-Suomen elinvoimakeskus",
+     "Luonnon- ja riistanhoitosäätiö sr",
      "Luonnonvarakeskus (Luke)",
      "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
      "Metsähallitus",
      "Metsäteollisuus ry",
+     "Natur och Miljö r.f.",
      "Opetus- ja kulttuuriministeriö",
      "Pohjois-Karjalan maakuntaliitto",
      "Regulaattorit ry",
      "Saamelaiskäräjät",
+     "Saijan kyläyhdistys ry",
      "Satakuntaliitto",
      "Suomen Kuntaliitto ry",
      "Suomen Metsästäjäliitto – Finlands Jägarförbund r.y.",
@@ -508440,7 +508681,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-13T05:02:03",
+   "muokattu": "2026-11-15T05:04:44",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "nimiSv": "Statsrådets förordning om understöd för främjande av skydd och vård av den biologiska mångfalden",
    "pevLausunto": false,
@@ -570585,151 +570826,6 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2025-08-29",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntoyhteenveto",
-     "pvm": "2025-02-25",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/205bcd39-6c4e-4e2c-9bff-496b58295444/YHTEENVETO_20250225110254.PDF"
-    }
-   ],
-   "asiasanat": [
-    "jätevesi",
-    "avustukset",
-    "vesienhoito",
-    "haitalliset aineet",
-    "hulevesi"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2025-01-21",
-     "end": "2025-02-13",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2025-02-13",
-      "id": "ddd77eda-dce4-4a8b-82e0-c0a66f98f3f5",
-      "org": "Suomen Vesilaitosyhdistys ry",
-      "title": "Suomen Vesilaitosyhdistys ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/ddd77eda-dce4-4a8b-82e0-c0a66f98f3f5/LAUSUNTO_20250213191744.PDF"
-     },
-     {
-      "date": "2025-02-13",
-      "id": "5e2fd127-f3fc-4d54-a1c4-78bf1b7e3c79",
-      "org": "Suomen Kuntaliitto ry",
-      "title": "Suomen Kuntaliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/5e2fd127-f3fc-4d54-a1c4-78bf1b7e3c79/LAUSUNTO_20250213192438.PDF"
-     },
-     {
-      "date": "2025-02-12",
-      "id": "d819aa6e-3d63-4760-8447-0527077f0481",
-      "org": "Suomen Vesiyhdistys ry",
-      "title": "Suomen Vesiyhdistys ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/d819aa6e-3d63-4760-8447-0527077f0481/LAUSUNTO_20250212175645.PDF"
-     },
-     {
-      "date": "2025-02-10",
-      "id": "9b2315b8-a819-4a3d-80b8-5c92a5942740",
-      "org": "Suomen Vesiensuojelun Keskusliitto ry",
-      "title": "Suomen Vesiensuojelun Keskusliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/9b2315b8-a819-4a3d-80b8-5c92a5942740/LAUSUNTO_20250210171604.PDF"
-     },
-     {
-      "date": "2025-02-05",
-      "id": "8a23635b-630b-4249-992f-3667f026fa32",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa"
-     },
-     {
-      "date": "2025-02-05",
-      "id": "c88503cf-4b97-4688-9d07-fb8e0e9b2d27",
-      "org": "Etelä-Savon ELY-keskus",
-      "title": "Etelä-Savon ELY-keskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/c88503cf-4b97-4688-9d07-fb8e0e9b2d27/LAUSUNTO_20250205173225.PDF"
-     },
-     {
-      "date": "2025-02-03",
-      "id": "71078155-1dae-4196-a9b1-09fb934e1bc6",
-      "org": "Maa- ja metsätalousministeriö",
-      "title": "Maa- ja metsätalousministeriön ilmoitus, että sillä ei ole lausuttavaa."
-     },
-     {
-      "date": "2025-01-28",
-      "id": "9b091229-464d-42d0-ae61-0b2b94ee14f2",
-      "org": "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
-      "title": "Maa- ja metsätaloustuottajain keskusliitto MTK ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/9b091229-464d-42d0-ae61-0b2b94ee14f2/LAUSUNTO_20250128174732.PDF"
-     },
-     {
-      "date": "2025-01-28",
-      "id": "a79af78e-87dd-4933-be03-803610f45ac6",
-      "org": "Luonnonvarakeskus (Luke)",
-      "title": "Luonnonvarakeskus (Luke); lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/a79af78e-87dd-4933-be03-803610f45ac6/LAUSUNTO_20250129170825.PDF"
-     }
-    ],
-    "eiLausuttavaa": 0,
-    "n": 9,
-    "orgs": [
-     "Etelä-Savon ELY-keskus",
-     "Luonnonvarakeskus (Luke)",
-     "Maa- ja metsätalousministeriö",
-     "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
-     "Oikeusministeriö",
-     "Suomen Kuntaliitto ry",
-     "Suomen Vesiensuojelun Keskusliitto ry",
-     "Suomen Vesilaitosyhdistys ry",
-     "Suomen Vesiyhdistys ry"
-    ],
-    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=d6899607-173e-4253-9203-3081a18f29a7",
-    "viimeisin": "2025-02-13"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "ympäristöministeriö",
-   "muokattu": "2025-05-23T07:20:56",
-   "nimi": "Kaupunkien vesien hallintaa ja niiden haitallisten aineiden vähentämistä koskeviin hankkeisiin vuosina 2020-2025 myönnettävästä valtionavustuksesta annetun valtioneuvoston asetuksen muuttaminen",
-   "nimiSv": "Miljöministeriet: ändring av statsrådets förordning om statsunderstöd åren 2020–2025 för projekt som gäller hantering av vatten i städerna och minskning av skadliga ämnen i dem",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [
-    "Luonto"
-   ],
-   "tiivistelma": "Valtioneuvoston asetusta kaupunkien vesien hallintaa ja niiden haitallisten aineiden vähentämistä koskeviin hankkeisiin vuosina 2020–2025 myönnettävästä valtionavustuksesta (669/2020) muutettaisiin jatkamalla asetuksen voimassaoloa; muutos kohdistuisi asetuksen nimikkeeseen ja voimassaolopykälään.",
-   "tila": "PAATTYNYT",
-   "tunnus": "YM001:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=YM001:00/2025",
-   "uuid": "a5493e45-5f1b-4bcd-9a43-d2067b17744a",
-   "valmistelu": [
-    {
-     "d": "2025-02-25",
-     "n": "Lausuntoyhteenveto",
-     "t": "YHTEENVETO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/a5493e45-5f1b-4bcd-9a43-d2067b17744a/205bcd39-6c4e-4e2c-9bff-496b58295444/YHTEENVETO_20250225110254.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2025-05-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

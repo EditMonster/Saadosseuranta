@@ -5,6 +5,15 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Säädösseuranta – määräajat
 X-WR-TIMEZONE:Europe/Helsinki
 BEGIN:VEVENT
+UID:fi-he-304-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi tuloverolain 93 §:n väliaikaisesta muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 304/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/304
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/304
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-hanke-1cc5241e-lausunto-2026-11-19@saadosseuranta
 DTSTAMP:20261119T000000Z
 DTSTART;VALUE=DATE:20261119
@@ -21,6 +30,15 @@ DTEND;VALUE=DATE:20261126
 SUMMARY:[FI] Lausuntoaika päättyy: Laiksi yritysten määräaikaisesta polttoainetuesta
 DESCRIPTION:Lausuntokierros · TEM061:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM061:00/2026
 URL:https://valtioneuvosto.fi/hanke?tunnus=TEM061:00/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-305-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi ajoneuvoverolain liitteen muuttamisesta annetun hallituksen esityksen (HE 173/2026 vp) täydentämisestä
+DESCRIPTION:Ehdotettu voimaantulo · HE 305/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/305
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/305
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-248-2026-voimaan-2027-06-01@saadosseuranta
@@ -41,6 +59,24 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 241/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/241
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-324-2026-voimaan-2027-02-01@saadosseuranta
+DTSTAMP:20270201T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FI] Voimaan: Laiksi taloudelliseen toimintaan myönnettävän tuen yleisistä edellytyksistä annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 324/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/324
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/324
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-272-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Eräiden työ- ja elinkeinoministeriön hallinnonalan neuvottelukuntien lakkauttamista koskevaksi lainsäädännöksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 272/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/272
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/272
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-229-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -48,6 +84,42 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi valtion tutkimus- ja kehittämistoiminnan rahoituksesta vuosina 2024–2030 annetun lain 2 §:n muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 229/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/229
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/229
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-306-2026-voimaan-2027-06-01@saadosseuranta
+DTSTAMP:20270601T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[FI] Voimaan: Tullin rikostiedustelua koskevaksi lainsäädännöksi annetun hallituksen esityksen (HE 232/2026 vp) täydentämisestä
+DESCRIPTION:Ehdotettu voimaantulo · HE 306/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/306
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/306
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-280-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi kalastuslain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 280/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/280
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/280
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-336-2026-voimaan-2027-11-29@saadosseuranta
+DTSTAMP:20271129T000000Z
+DTSTART;VALUE=DATE:20271129
+DTEND;VALUE=DATE:20271130
+SUMMARY:[FI] Voimaan: Laeiksi ympäristövahinkorahastosta annetun lain 2 §:n ja pelastuslain 99 a §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 336/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/336
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/336
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-282-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Laiksi datakeskusrekisteristä
+DESCRIPTION:Ehdotettu voimaantulo · HE 282/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/282
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/282
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-200-2026-voimaan-2027-01-01@saadosseuranta
@@ -102,6 +174,33 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi työttömyysetuuksien rahoituksesta annetun lain muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 187/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/187
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/187
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-279-2026-voimaan-2027-06-01@saadosseuranta
+DTSTAMP:20270601T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[FI] Voimaan: Rajavartiolaitoksen rikostiedustelua koskevaksi lainsäädännöksi annetun hallituksen esityksen (HE 140/2026 vp) täydentämisestä
+DESCRIPTION:Ehdotettu voimaantulo · HE 279/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/279
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/279
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-300-2026-voimaan-2027-10-17@saadosseuranta
+DTSTAMP:20271017T000000Z
+DTSTART;VALUE=DATE:20271017
+DTEND;VALUE=DATE:20271018
+SUMMARY:[FI] Voimaan: Laiksi ulkomaalaislain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 300/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/300
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/300
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-288-2026-voimaan-2027-08-13@saadosseuranta
+DTSTAMP:20270813T000000Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:[FI] Voimaan: Laiksi vaarallisten aineiden käytön rajoittamisesta sähkö- ja elektroniikkalaitteissa annetun lain 4 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 288/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/288
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/288
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-169-2026-voimaan-2027-01-01@saadosseuranta
@@ -165,6 +264,15 @@ DTEND;VALUE=DATE:20261231
 SUMMARY:[FI] Voimaan: Laiksi EU:n metsäkatoasetuksen velvoitteiden valvonnasta ja seuraamuksista sekä siihen liittyviksi laeiksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 236/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/236
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/236
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-332-2026-voimaan-2027-03-01@saadosseuranta
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[FI] Voimaan: Asunto-osakeyhtiöiden perusparannuslainojen ja omistusasuntolainojen valtiontakauksen sekä asuntosäästöjärjestelmän ehtoja koskevaksi lainsäädännöksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 332/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/332
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/332
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-197-2026-voimaan-2027-01-01@saadosseuranta
@@ -284,6 +392,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 239/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/239
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-290-2026-voimaan-2027-02-01@saadosseuranta
+DTSTAMP:20270201T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FI] Voimaan: Laiksi kaksikäyttötuotteiden vientivalvonnasta annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 290/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/290
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/290
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-167-2026-voimaan-2027-09-01@saadosseuranta
 DTSTAMP:20270901T000000Z
 DTSTART;VALUE=DATE:20270901
@@ -356,6 +473,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 156/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/156
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-269-2026-voimaan-2027-06-01@saadosseuranta
+DTSTAMP:20270601T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[FI] Voimaan: Merityötä koskevan yleissopimuksen ohjeiston muutosten hyväksymiseksi ja voimaansaattamiseksi sekä laeiksi merityösopimuslain ja eräiden muiden lakien muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 269/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/269
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/269
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-135-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -363,6 +489,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi kiinteistönmuodostamislain 3 ja 283 §:n sekä yksityistielain 76 §:n muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 135/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/135
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/135
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-329-2026-voimaan-2027-03-03@saadosseuranta
+DTSTAMP:20270303T000000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:[FI] Voimaan: Laeiksi ulkomaalaislain ja kolmansien maiden kansalaisten maahantulon ja oleskelun edellytyksistä kausityöntekijöinä työskentelyä varten annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 329/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/329
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/329
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-131-2026-voimaan-2027-01-01@saadosseuranta
@@ -390,6 +525,24 @@ DTEND;VALUE=DATE:20271102
 SUMMARY:[FI] Voimaan: Ambulanssikuljetusten ja ensihoitopalveluun sisältyvien kuljetusten järjestämis- ja rahoitusvastuun uudistamista ja sosiaali- ja terveydenhuollon asiakasmaksumuutoksia koskevaksi lainsäädännöksi
 DESCRIPTION:Voimaan (703/2026) · 702/2026 · HE 66/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/66
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/66
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-331-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Laeiksi eräiden kansallispuistoja koskevien lakien muuttamisesta ja kumoamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 331/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/331
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/331
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-281-2026-voimaan-2027-07-06@saadosseuranta
+DTSTAMP:20270706T000000Z
+DTSTART;VALUE=DATE:20270706
+DTEND;VALUE=DATE:20270707
+SUMMARY:[FI] Voimaan: Laeiksi merenkulun ympäristönsuojelulain ja sakon täytäntöönpanosta annetun lain 1 §:n muuttamisesta sekä MARPOL-yleissopimuksen VI liitteen muutosten hyväksymiseksi ja voimaansaattamiseksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 281/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/281
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/281
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-233-2026-voimaan-2027-01-01@saadosseuranta
@@ -464,6 +617,24 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 174/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/174
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-277-2026-voimaan-2027-06-01@saadosseuranta
+DTSTAMP:20270601T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[FI] Voimaan: Rikostiedustelua koskevaksi lainsäädännöksi annetun hallituksen esityksen (HE 121/2026 vp) täydentämisestä
+DESCRIPTION:Ehdotettu voimaantulo · HE 277/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/277
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/277
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-267-2026-voimaan-2027-03-01@saadosseuranta
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[FI] Voimaan: Laiksi evankelis-luterilaisen kirkon eläkerahastosta annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 267/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/267
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/267
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-146-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -489,6 +660,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi lääkkeiden velvoitevarastoinnista annetun lain muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 198/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/198
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/198
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-319-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Merenkulkua koskevan lainsäädännön päivittämiseksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 319/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/319
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/319
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-181-2026-voimaan-2027-01-01@saadosseuranta
@@ -536,6 +716,24 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 194/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/194
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-297-2026-voimaan-2027-05-01@saadosseuranta
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[FI] Voimaan: Laiksi syyttömästi vangitulle tai tuomitulle valtion varoista vapauden menetyksen johdosta maksettavasta korvauksesta annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 297/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/297
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/297
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-325-2026-voimaan-2027-12-14@saadosseuranta
+DTSTAMP:20271214T000000Z
+DTSTART;VALUE=DATE:20271214
+DTEND;VALUE=DATE:20271215
+SUMMARY:[FI] Voimaan: Laeiksi pakkotyöllä valmistettujen tuotteiden kiellon valvonnasta ja seuraamuksista sekä sakon täytäntöönpanosta annetun lain 1 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 325/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/325
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/325
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-182-2026-voimaan-2027-07-01@saadosseuranta
 DTSTAMP:20270701T000000Z
 DTSTART;VALUE=DATE:20270701
@@ -552,6 +750,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi digitaalisten palvelujen tarjoamisesta annetun lain muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 106/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/106
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/106
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-335-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laiksi rakentamislain 112 ja 119 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 335/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/335
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/335
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-151-2026-voimaan-2027-01-01@saadosseuranta
@@ -649,7 +856,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi vuosilomalain muuttamisesta ja eräiksi muiksi laeiksi
-DESCRIPTION:Ehdotettu voimaantulo · HE 118/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/118
+DESCRIPTION:Voimaan (943/2026) · 943/2026 · HE 118/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/118
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/118
 END:VEVENT
 BEGIN:VEVENT
@@ -671,6 +878,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 69/2026 vp · https://www.finlex.fi/fi/h
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/69
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-340-2026-voimaan-2027-07-01@saadosseuranta
+DTSTAMP:20270701T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:[FI] Voimaan: Laeiksi asevelvollisuuslain 50 ja 62 §:n sekä puolustusvoimista annetun lain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 340/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/340
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/340
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-16-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -680,6 +896,15 @@ DESCRIPTION:Voimaan (377/2026) · 377/2026 · HE 16/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/16
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-263-2026-voimaan-2027-02-01@saadosseuranta
+DTSTAMP:20270201T000000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[FI] Voimaan: Laiksi rikosoikeudellisten menettelyjen siirtämisestä Suomen ja muiden Euroopan unionin jäsenvaltioiden välillä sekä eräiksi muiksi laeiksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 263/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/263
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/263
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-227-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -687,6 +912,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi elinkeinotulon verottamisesta annetun lain muuttamisesta
 DESCRIPTION:Ehdotettu voimaantulo · HE 227/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/227
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/227
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-287-2026-voimaan-2026-12-11@saadosseuranta
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[FI] Voimaan: Laiksi ympäristönsuojelulain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 287/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/287
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/287
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-96-2026-voimaan-2027-07-01@saadosseuranta
@@ -741,6 +975,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sosiaalihuoltolain muuttamisesta ja siihen liittyviksi laeiksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 180/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/180
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/180
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-314-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Yhteisen kalastuspolitiikan valvontaa koskevan lainsäädännön uudistamiseksi
+DESCRIPTION:Ehdotettu voimaantulo · HE 314/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/314
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/314
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-238-2026-voimaan-2027-01-01@saadosseuranta
@@ -802,7 +1045,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi vammaisetuuksista annetun lain\, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta
-DESCRIPTION:Voimaan (983/2026) · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
+DESCRIPTION:Voimaan (983/2026) · 983/2026 · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 END:VEVENT
 BEGIN:VEVENT
@@ -813,6 +1056,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Eurooppalaisen terveystietoaluetta koskevan asetuksen terveystietojen toissijaista käyttöä ja seuraamuksia täydentäväksi sääntelyksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 218/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/218
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/218
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-278-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Laeiksi pelastuslain\, ajoneuvolain 30 §:n ja autoverolain 14 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 278/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/278
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/278
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-110-2026-voimaan-2027-01-01@saadosseuranta
@@ -860,6 +1112,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 220/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/220
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-271-2026-voimaan-2027-04-01@saadosseuranta
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FI] Voimaan: Laeiksi ulkomaisten sijoitusten seurannasta ja lupamenettelystä sekä sakon täytäntöönpanosta annetun lain 1 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 271/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/271
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/271
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-129-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -905,6 +1166,15 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 166/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/166
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-he-274-2026-voimaan-2027-09-01@saadosseuranta
+DTSTAMP:20270901T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:[FI] Voimaan: Laeiksi terveydenhuollon ammattihenkilöistä annetun lain\, sosiaalihuollon ammattihenkilöistä annetun lain ja Lupa- ja valvontavirastosta annetun lain 15 ja 20 §:n muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 274/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/274
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/274
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-he-107-2026-voimaan-2027-02-01@saadosseuranta
 DTSTAMP:20270201T000000Z
 DTSTART;VALUE=DATE:20270201
@@ -912,6 +1182,24 @@ DTEND;VALUE=DATE:20270202
 SUMMARY:[FI] Voimaan: Kuolinpesän sähköistä asiointia koskevaksi lainsäädännöksi
 DESCRIPTION:Ehdotettu voimaantulo · HE 107/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/107
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/107
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-333-2026-voimaan-2027-10-01@saadosseuranta
+DTSTAMP:20271001T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:[FI] Voimaan: Laiksi rakentamislain muuttamisesta
+DESCRIPTION:Ehdotettu voimaantulo · HE 333/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/333
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/333
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-85-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi viranomaisten tietojärjestelmien ja tietoliikennejärjestelyjen tietoturvallisuuden arvioinnista annetun lain\, tietoturvallisuuden arviointilaitoksista annetun lain sekä turvallisuusselvityslain 18 ja 48 §:n muuttamisesta
+DESCRIPTION:Voimaan (949/2026) · 949/2026 · HE 85/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/85
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/85
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-126-2026-voimaan-2027-07-01@saadosseuranta
@@ -1063,7 +1351,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi valtion virkamieslain ja turvallisuusselvityslain 50 §:n muuttamisesta
-DESCRIPTION:Voimaan (906/2026) · HE 117/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
+DESCRIPTION:Voimaan (906/2026) · 906/2026 · HE 117/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/117
 END:VEVENT
 BEGIN:VEVENT
@@ -1081,7 +1369,7 @@ DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Työneuvoston ja yhteistoiminta-asiamiehen toimiston lakkauttamista ja tehtävien siirtämistä koskevaksi lainsäädännöksi
-DESCRIPTION:Voimaan (951/2026) · HE 132/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
+DESCRIPTION:Voimaan (953/2026) · 952/2026 · HE 132/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/132
 END:VEVENT
 BEGIN:VEVENT
@@ -1153,7 +1441,7 @@ DTSTAMP:20261201T000000Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:[FI] Voimaan: Laiksi rikoslain 25 luvun muuttamisesta ja eräiksi muiksi laeiksi
-DESCRIPTION:Voimaan (976/2026) · HE 127/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/127
+DESCRIPTION:Voimaan (976/2026) · 976/2026 · HE 127/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/127
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/127
 END:VEVENT
 BEGIN:VEVENT
@@ -2363,10 +2651,10 @@ DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/bet
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-09@saadosseuranta
-DTSTAMP:20270109T000000Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
+UID:eu-hys-14770-lausunto-2027-01-10@saadosseuranta
+DTSTAMP:20270110T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2462,10 +2750,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-09@saadosseuranta
-DTSTAMP:20270109T000000Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
+UID:eu-hys-19517-lausunto-2027-01-10@saadosseuranta
+DTSTAMP:20270110T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2961,8 +3249,17 @@ UID:eu-da-3149-maaraaika-2026-11-09@saadosseuranta
 DTSTAMP:20261109T000000Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) No 965/2012 as regards the flight and duty time limitations and rest requirements for air ta
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 8.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6142 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
+SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/1979\, annettu 8 päivänä syyskuuta 2026\, asetuksen (EU) N:o 965/2012 muuttamisesta taksilentotoiminnan\, kiireellisen lääkint
+DESCRIPTION:Vastustamisaika päättyi · C(2026)6142 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3149-voimaan-2026-12-03@saadosseuranta
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1979\, annettu 8 päivänä syyskuuta 2026\, asetuksen (EU) N:o 965/2012 muuttamisesta taksilentotoiminnan\, kiireellisen lääkint
+DESCRIPTION:Voimaan · C(2026)6142 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
 END:VEVENT
 BEGIN:VEVENT

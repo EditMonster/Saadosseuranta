@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T11:05:16",
+ "fetched": "2026-11-15T08:46:40",
  "items": {
   "E 1/2025 vp": {
    "anto": "2025-01-24",
@@ -1966,7 +1966,7 @@
    "com": [
     "2026/619"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotus asetukseksi päästökauppadirektiivin muuttamisesta lämmön ja polttoaineen vertailuarvojen vuosille 2026-2030 tarkistettujen arvojen osalta",
    "stages": [
@@ -1984,7 +1984,7 @@
     }
    ],
    "tila": "Käsittelyssä",
-   "title": "Komission ehdotus asetukseksi päästökauppadirektiivin muuttamisesta lämmön ja polttoaineen vertailuarvojen vuosille 2026-2030 tarkistettujen arvojen osalta",
+   "title": "Valtioneuvoston selvitys: Komission ehdotus asetukseksi päästökauppadirektiivin muuttamisesta lämmön ja polttoaineen vertailuarvojen vuosille 2026-2030 tarkistettujen arvojen osalta",
    "tunnus": "E 42/2026 vp"
   },
   "E 43/2025 vp": {
@@ -2008,7 +2008,7 @@
    "anto": "2026-08-31",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "E-kirje: Ennakkovaikuttaminen EU:n kriittisen viestinnän järjestelmää koskevaan lainsäädäntöön",
    "stages": [
@@ -2046,7 +2046,7 @@
    "com": [
     "2026/334"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Rahoituspaketti Montenegron kanssa käytäviä liittymisneuvotteluja varten - E-kirje",
    "stages": [
@@ -2086,13 +2086,17 @@
    "anto": "2026-09-11",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission luonnosehdotus PeRa-suuntaviivojen korvaamiseksi",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-09-11"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-23"
     }
    ],
    "tila": "Käsittelyssä",
@@ -2130,7 +2134,7 @@
    "com": [
     "2026/540"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotus neuvoston suositukseksi asuntomarkkinoilta syrjäytymisen torjumisesta",
    "stages": [
@@ -2172,7 +2176,7 @@
    "com": [
     "2026/576"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "EU:n kotieläintuotantoa koskeva strategia ja proteiinisuunnitelma",
    "stages": [
@@ -2214,13 +2218,21 @@
    "com": [
     "2026/437"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "E kirje komission ehdotuksesta neuvoston asetukseksi \neräiden kalakantojen ja kalakantaryhmien Itämerellä sovellettavien kalastusmahdollisuuksien vahvistamisesta \nvuodeksi 2027 ja asetuksen (EU) 2026/249 muuttamisesta tiettyjen muilla vesillä sovellettavien kalastusmahdollisuuksien osalta",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-09-18"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-16"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-16"
     }
    ],
    "tila": "Käsittelyssä",
@@ -2256,7 +2268,7 @@
    "com": [
     "2026/339"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Eurooppalaisesta kansalaisaloitteesta annetun asetuksen (EU) 2019/788 muutosehdotus",
    "stages": [
@@ -2334,7 +2346,7 @@
    "com": [
     "2026/577"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "E-kirje: komission tiedonanto kyberturvallisuuden ja tekoälyn toimintasuunnitelmasta",
    "stages": [
@@ -2376,7 +2388,7 @@
    "com": [
     "2026/595"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "E-kirje komission tiedonannosta sähköistämistä koskevaksi toimenpidesuunnitelmaksi",
    "stages": [
@@ -2420,7 +2432,7 @@
    "anto": "2026-10-01",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission tiedonanto alueellisia valtiontukia koskevien suuntaviivojen ja niiden liitteiden I - V muuttamisesta 1.1.2028 - 31.12.2034 aluetukikarttojen osalta",
    "stages": [
@@ -2466,7 +2478,7 @@
    "com": [
     "2026/615"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "(E-kirje): Komission tiedonanto EU:n pankkisektorin kilpailukyvystä ja pankkialan sisämarkkinoista",
    "stages": [
@@ -2503,7 +2515,7 @@
     "2026/660",
     "2026/661"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotus yhteisen kalastuspolitiikan asetuksen, yhteisen markkina-järjestelyasetuksen, metsäkatoasetuksen ja menettelyasetuksen muuttamiseksi unionin syrjäisimpien alueiden hallinnollisen taakan keventämiseksi",
    "stages": [
@@ -2539,7 +2551,7 @@
    "com": [
     "2026/516"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotus neuvoston täytäntöönpanopäätökseksi ehdollisuusasetuksen nojalla Unkariin kohdistettujen toimenpiteiden kumoamisesta",
    "stages": [
@@ -2548,7 +2560,7 @@
      "date": "2026-10-09"
     }
    ],
-   "tila": "Käsittelyssä",
+   "tila": "Käsitelty",
    "title": "Komission ehdotus neuvoston täytäntöönpanopäätökseksi ehdollisuusasetuksen nojalla Unkariin kohdistettujen toimenpiteiden kumoamisesta",
    "tunnus": "E 55/2026 vp"
   },
@@ -2585,7 +2597,7 @@
    "anto": "2026-10-14",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Euroopan unionin ja Kanadan suhteet",
    "stages": [
@@ -2625,6 +2637,25 @@
    "title": "Euroopan parlamentin ja neuvoston asetus tiettyjen Ve-näjän federaatiosta ja Valko-Venäjän tasavallasta peräisin olevien tai niistä suoraan tai välillisesti vietyjen tavaroi-den tuontiin sovellettavien tullien muuttamisesta",
    "tunnus": "E 57/2025 vp"
   },
+  "E 57/2026 vp": {
+   "anto": "2026-10-19",
+   "cod": [],
+   "com": [
+    "2026/401"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "E-kirje; Komission suositus neuvoston päätökseksi luvan antamisesta Euroopan komissiolle osallistua Euroopan unionin puolesta Yhdistyneiden kansakuntien puitteissa käytäviin neuvotteluihin ihmisten suojelua katastrofitilanteissa koskevasta kansainvälisestä sopimuksesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-19"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "E-kirje; Komission suositus neuvoston päätökseksi luvan antamisesta Euroopan komissiolle osallistua Euroopan unionin puolesta Yhdistyneiden kansakuntien puitteissa käytäviin neuvotteluihin ihmisten suojelua katastrofitilanteissa koskevasta kansainvälisestä sopimuksesta",
+   "tunnus": "E 57/2026 vp"
+  },
   "E 58/2025 vp": {
    "anto": "2025-07-11",
    "cod": [],
@@ -2655,6 +2686,23 @@
    "title": "E-kirje: Ehdotukset viidennestä Omnibus-paketista (puolustus) sekä puolustusalan Mini-Omnibusista",
    "tunnus": "E 58/2025 vp"
   },
+  "E 58/2026 vp": {
+   "anto": "2026-10-21",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "E-kirje; Siviiiliräjähde- ja pyrotekniikkadirektiivin uudelleentarkastelu",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-21"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "E-kirje; Siviiiliräjähde- ja pyrotekniikkadirektiivin uudelleentarkastelu",
+   "tunnus": "E 58/2026 vp"
+  },
   "E 59/2025 vp": {
    "anto": "2025-06-19",
    "cod": [],
@@ -2671,6 +2719,23 @@
    "tila": "Käsitelty",
    "title": "E-kirje; Suositus neuvoston asetukseksi Euroopan keskuspankin valtuuksista kerätä tilastotietoja annetun asetuksen (EY) N:o 2533/98 muuttamisesta (EKP/2025/17)",
    "tunnus": "E 59/2025 vp"
+  },
+  "E 59/2026 vp": {
+   "anto": "2026-10-26",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Datakeskuksia koskevan luokitusjärjestelmän perustamiseen liittyvä delegoitu asetus",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-26"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Datakeskuksia koskevan luokitusjärjestelmän perustamiseen liittyvä delegoitu asetus",
+   "tunnus": "E 59/2026 vp"
   },
   "E 6/2025 vp": {
    "anto": "2025-03-14",
@@ -2750,6 +2815,25 @@
    "title": "Valtioneuvoston selvitys: Komission suositus neuvoston päätökseksi luvan antamisesta aloittaa neuvottelut Euroopan unionin ja Norjan kuningaskunnan välisestä hallinnollista yhteistyötä välittömän verotuksen alalla koskevasta sopimuksesta",
    "tunnus": "E 60/2025 vp"
   },
+  "E 60/2026 vp": {
+   "anto": "2026-10-14",
+   "cod": [],
+   "com": [
+    "2026/459"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "OSA; Komission suositus neuvoston päätökseksi luvan antamisesta aloittaa neuvottelut unionin ja eräiden kolmansien maiden välisistä, Eurojustin ja näiden maiden toimivaltaisten viranomaisten välillä tehtävää yhteistyötä koskevista sopimuksista",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-26"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "OSA; Komission suositus neuvoston päätökseksi luvan antamisesta aloittaa neuvottelut unionin ja eräiden kolmansien maiden välisistä, Eurojustin ja näiden maiden toimivaltaisten viranomaisten välillä tehtävää yhteistyötä koskevista sopimuksista",
+   "tunnus": "E 60/2026 vp"
+  },
   "E 61/2025 vp": {
    "anto": "2025-08-28",
    "cod": [],
@@ -2773,6 +2857,25 @@
    "title": "Valtioneuvoston selvitys: VM; E-kirje; Euroopan komission ehdotus Euroopan parlamentin ja neuvoston päätökseksi makrotaloudellisen rahoitusavun myöntämisestä Jordanian hašemiittiselle kuningaskunnalle",
    "tunnus": "E 61/2025 vp"
   },
+  "E 61/2026 vp": {
+   "anto": "2026-10-27",
+   "cod": [],
+   "com": [
+    "2026/273"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "EU:n oikeusalan tulostaulu 2026; e-kirje",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-27"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "EU:n oikeusalan tulostaulu 2026; e-kirje",
+   "tunnus": "E 61/2026 vp"
+  },
   "E 62/2025 vp": {
    "anto": "2025-08-29",
    "cod": [],
@@ -2794,6 +2897,25 @@
    "title": "Valtioneuvoston selvitys: Euroopan vakausmekanismin (EVM) vuosikertomus ja Euroopan rahoitusvakausvälineen (ERVV) tilinpäätös vuodelta 2024",
    "tunnus": "E 62/2025 vp"
   },
+  "E 62/2026 vp": {
+   "anto": "2026-10-30",
+   "cod": [],
+   "com": [
+    "2026/454"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "E-kirje; Suositus neuvoston päätökseksi luvan antamisesta osallistua kansainvälisen trooppista puuta koskevan sopimuksen (ITTA) korvaavaa kansainvälistä sopimusta tai muuta välinettä koskeviin neuvotteluihin",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-30"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "E-kirje; Suositus neuvoston päätökseksi luvan antamisesta osallistua kansainvälisen trooppista puuta koskevan sopimuksen (ITTA) korvaavaa kansainvälistä sopimusta tai muuta välinettä koskeviin neuvotteluihin",
+   "tunnus": "E 62/2026 vp"
+  },
   "E 63/2025 vp": {
    "anto": "2025-08-29",
    "cod": [],
@@ -2812,6 +2934,23 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston selvitys: Neuvottelut Marokon kuningaskunnan kanssa EU:n ja Marokon kuningaskunnan välisen assosiaatiosopimuksen pöytäkirjojen 1 ja 4 muuttamisesta kirjeenvaihdolla tehtävällä sopimuksella",
    "tunnus": "E 63/2025 vp"
+  },
+  "E 63/2026 vp": {
+   "anto": "2026-11-11",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "E-kirje; Euroopan tilintarkastustuomioistuimen vuosikertomus 2025",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "E-kirje; Euroopan tilintarkastustuomioistuimen vuosikertomus 2025",
+   "tunnus": "E 63/2026 vp"
   },
   "E 64/2025 vp": {
    "anto": "2025-09-01",
@@ -6059,13 +6198,17 @@
    "com": [
     "2026/299"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Valtioneuvoston kirjelmä",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-08-27"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-23"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6099,7 +6242,7 @@
     "2025/30",
     "2026/560"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta neuvoston direktiiviksi hallinnollisesta yhteistyöstä verotuksen alalla annetun direktiivin uudelleenlaatimisesta",
    "stages": [
@@ -6206,7 +6349,7 @@
    "com": [
     "2026/152"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi Euroopan unionin avaruuspalveluvirastosta ja asetuksen (EU) 2021/696 muuttamisesta (EUSPA-asetusehdotus)",
    "stages": [
@@ -6261,7 +6404,7 @@
     "2026/560",
     "2026/308"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta neuvoston direktiiviksi neuvoston direktiivien 2003/49/EY, 2009/133/EY, 2011/96/EU, (EU) 2016/1164, (EU) 2017/1852 ja (EU)\n2025/50 muuttamisesta välitöntä verotusta koskevan unionin kehyksen yksinkertaistamisen ja EU:n kasvun ja kilpailukyvyn tukemisen osalta",
    "stages": [
@@ -6319,13 +6462,21 @@
    "com": [
     "2026/313"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta uudeksi Euroopan parlamentin ja neuvoston direktiiviksi eurooppalaisesta tutkintamääräyksestä ja eurooppalaisesta etäosallistumismääräyksestä",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-09-10"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-23"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-23"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6374,7 +6525,7 @@
    "com": [
     "2026/16"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi matkaviestintäpalveluita tarjoavien järjestelmien lupamenettelyistä yhdenmukaistetulla 2 GHz:n taajuusalueella sekä päätöksen n:o 626/2008/EY kumoamisesta (2 GHz MSS-asetus)",
    "stages": [
@@ -6433,7 +6584,7 @@
     "2026/504",
     "2025/984"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi kehyksen perustamiseksi Euroopan pilvipalvelu- ja tekoälyekosysteemin vahvistamiseksi (pilvipalveluiden ja tekoälyn kehittämisen säädös)",
    "stages": [
@@ -6444,6 +6595,14 @@
     {
      "code": "SAAEUL",
      "date": "2026-09-30"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-21"
+    },
+    {
+     "code": "VKPL",
+     "date": "2026-11-04"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6499,7 +6658,7 @@
     "2025/984",
     "2025/838"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi unionin puolijohde-ekosysteemiä vahvistavasta toimenpidekehyksestä ja asetuksen (EU) 2023/1781 (sirusäädös) kumoamisesta (sirusäädös 2.0)",
    "stages": [
@@ -6510,6 +6669,14 @@
     {
      "code": "SAAEUL",
      "date": "2026-09-30"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-21"
+    },
+    {
+     "code": "VKPL",
+     "date": "2026-11-04"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6550,7 +6717,7 @@
    "anto": "2026-08-25",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Suomen liittymisestä Genomiikan eurooppalaiseen digitaali-infrastruktuurikonsortioon",
    "stages": [
@@ -6596,7 +6763,7 @@
    "anto": "2026-09-21",
    "cod": [],
    "com": [],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Suomen liittymisestä perustettavaan koulutuksen eurooppalaiseen digitaali-infrastruktuurikonsortioon (Education EDIC, EDU-EDIC)",
    "stages": [
@@ -6647,13 +6814,21 @@
    "com": [
     "2020/743"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Euroopan unionin ja Kolumbian välisen Euroopan unionin rikosoikeudellisen yhteistyön viraston (Eurojust) ja Kolumbian rikosoikeudellisesta yhteistyöstä vastaavien toimivaltaisten viranomaisten välistä yhteistyötä koskevan sopimuksen neuvottelemisesta",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-01"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-16"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-16"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6689,13 +6864,21 @@
    "com": [
     "2026/600"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2019/943 muuttamisesta siltä osin kuin on kyse tulevaisuuden vaatimukset huomioon ottavista sähkölaskuista unionissa vähentämällä järjestelmäkustannuksia ja edistämällä sähköistämistä ja digitalisaatiota",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-01"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-11-11"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-11-11"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6789,13 +6972,25 @@
     "2026/620",
     "2026/153"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotuksesta Euroopan parlamentin ja neuvoston direktiiviksi (päästökauppadirektiivin ja markkinavakausvarantopäätöksen muuttaminen) sekä komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi (meriliikenteen MRV-asetuksen ja FuelEU Maritime -asetuksen muuttaminen)",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-01"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-21"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-23"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-11-06"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6840,13 +7035,21 @@
     "2026/570",
     "2026/314"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Euroopan komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi Euroopan unionin rikosoikeudellisen yhteistyön virastosta (Eurojust) ja asetuksen 2018/1727/EU kumoamisesta (COM(2026) 570 final)",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-08"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-10-23"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-23"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6892,13 +7095,17 @@
     "2022/530",
     "2025/837"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2018/1725 muuttamisesta luonnollisten henkilöiden suojelusta unionin toimielinten, elinten ja laitosten suorittamassa henkilötietojen käsittelyssä ja näiden tietojen vapaasta liikkuvuudesta",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-08"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-10-23"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6933,13 +7140,21 @@
     "2026/580",
     "2026/314"
    ],
-   "fetched": "2026-10-15",
+   "fetched": "2026-11-15",
    "ministry": null,
    "short": "Euroopan komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi Euroopan unionin lainvalvontayhteistyövirastosta (Europol), asetuksen (EU) 2018/1726 ja asetuksen (EU) 2024/982 muuttamisesta sekä asetuksen (EU) 2016/794 kumoamisesta (COM(2026) 580 final)",
    "stages": [
     {
      "code": "ANTO",
      "date": "2026-10-08"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-11-11"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-11-11"
     }
    ],
    "tila": "Käsittelyssä",
@@ -6969,6 +7184,29 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta neuvoston asetukseksi tiettyjen maatalous- ja teollisuustuotteiden asetuksen (EU) N:o 952/2013 56 artiklan 2 kohdan c alakohdassa tarkoitettujen yhteisen tullitariffin tullien suspensiosta annetun asetuksen (EU) 2021/2278 muuttamisesta (unionin autonomiset tullien suspendoinnit; maatalous- ja teollisuustuotteet)",
    "tunnus": "U 64/2025 vp"
   },
+  "U 64/2026 vp": {
+   "anto": "2026-10-09",
+   "cod": [],
+   "com": [
+    "2025/427"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "EU:n ja Ecuadorin tasavallan välisen kestävien investointien helpottamista koskevan sopimuksen tekemisestä ja allekirjoittamisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-15"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-11-06"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle EU:n ja Ecuadorin tasavallan välisen kestävien investointien helpottamista koskevan sopimuksen tekemisestä ja allekirjoittamisesta",
+   "tunnus": "U 64/2026 vp"
+  },
   "U 65/2025 vp": {
    "anto": "2025-11-27",
    "cod": [],
@@ -6991,6 +7229,23 @@
    "tila": "Käsitelty",
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta neuvoston asetukseksi tiettyjä maatalous- ja teollisuustuotteita koskevien unionin autonomisten tariffikiintiöiden avaamisesta ja hallinnoinnista annetun asetuksen (EU) 2021/2283 muuttamisesta (unionin autonomiset tariffikiintiöt; maatalous- ja teollisuustuotteet)",
    "tunnus": "U 65/2025 vp"
+  },
+  "U 65/2026 vp": {
+   "anto": "2026-10-15",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Suomen liittymisestä teollisen biotekniikan ja synteettisen biologian eurooppalaiseen tutkimusinfrastruktuurikonsortioon",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-15"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle Suomen liittymisestä teollisen biotekniikan ja synteettisen biologian eurooppalaiseen tutkimusinfrastruktuurikonsortioon",
+   "tunnus": "U 65/2026 vp"
   },
   "U 66/2025 vp": {
    "anto": "2025-11-18",
@@ -7015,6 +7270,31 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi sisämarkkina- ja tulliohjelman perustamisesta vuosiksi 2028–2034 ja asetusten (EU) 2021/444, (EU) 2021/690, (EU) 2021/785, (EU) 2021/847 ja (EU) 2021/1077 kumoamisesta",
    "tunnus": "U 66/2025 vp"
   },
+  "U 66/2026 vp": {
+   "anto": "2026-10-07",
+   "cod": [],
+   "com": [
+    "2026/565",
+    "2026/326",
+    "2025/995"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2017/1369 ja asetuksen (EU) 2020/740 muuttamisesta energiamerkinnän ja renkaiden merkinnän yksinkertaistamisen ja digitaalisten mahdollisuuksien paremman hyödyntämisen osalta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-15"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-11-04"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2017/1369 ja asetuksen (EU) 2020/740 muuttamisesta energiamerkinnän ja renkaiden merkinnän yksinkertaistamisen ja digitaalisten mahdollisuuksien paremman hyödyntämisen osalta",
+   "tunnus": "U 66/2026 vp"
+  },
   "U 67/2025 vp": {
    "anto": "2025-11-28",
    "cod": [],
@@ -7037,6 +7317,33 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi avaruustoiminnan turvallisuudesta, häiriönsietokyvystä ja kestävyydestä unionissa (avaruusasetus)",
    "tunnus": "U 67/2025 vp"
+  },
+  "U 67/2026 vp": {
+   "anto": "2026-10-12",
+   "cod": [],
+   "com": [
+    "2026/599"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission asetusehdotuksesta kehyksen luomiseksi jäsenvaltioiden toimenpiteille asumisen kohtuuhintaisuuden ja saatavuuden turvaamiseksi (kohtuuhintaista asumista koskeva säädös)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-15"
+    },
+    {
+     "code": "SAAEUL",
+     "date": "2026-11-04"
+    },
+    {
+     "code": "VKEUP",
+     "date": "2026-11-04"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission asetusehdotuksesta kehyksen luomiseksi jäsenvaltioiden toimenpiteille asumisen kohtuuhintaisuuden ja saatavuuden turvaamiseksi (kohtuuhintaista asumista koskeva säädös)",
+   "tunnus": "U 67/2026 vp"
   },
   "U 68/2025 vp": {
    "anto": "2025-11-28",
@@ -7065,6 +7372,25 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi Euroopan kemikaalivirastosta ja asetusten (EY) N:o 1907/2006, (EU) N:o 528/2012, (EU) N:o 649/2012 ja (EU) 2019/1021 muuttamisesta",
    "tunnus": "U 68/2025 vp"
   },
+  "U 68/2026 vp": {
+   "anto": "2026-10-29",
+   "cod": [],
+   "com": [
+    "2026/79"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Sopimusten neuvottelemisesta Euroopan unionin sekä Albanian, Bosnia ja Hertsegovinan, Kosovon, Montenegron, Pohjois-Makedonian ja Serbian välillä verkkovierailuista yleisissä matkaviestinverkoissa",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-29"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle sopimusten neuvottelemisesta Euroopan unionin sekä Albanian, Bosnia ja Hertsegovinan, Kosovon, Montenegron, Pohjois-Makedonian ja Serbian välillä verkkovierailuista yleisissä matkaviestinverkoissa",
+   "tunnus": "U 68/2026 vp"
+  },
   "U 69/2025 vp": {
    "anto": "2025-12-05",
    "cod": [],
@@ -7092,6 +7418,25 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta tietojenvaihtoa, avunantoa ja koulutusta toimintaohjelman perustamisesta euron suojaamiseksi rahanväärennykseltä kaudeksi 2028–2034 (Perikles V-ohjelma) sekä komission ehdotuksesta neuvoston asetukseksi ohjelman soveltamisen ulottamisesta muihin kuin osallistuviin jäsenvaltioihin (Perikles V-ohjelma)",
    "tunnus": "U 69/2025 vp"
+  },
+  "U 69/2026 vp": {
+   "anto": "2026-10-23",
+   "cod": [],
+   "com": [
+    "2026/498"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2021/1139 muuttamisesta siltä osin kuin on kyse yksinkertaistamisesta ja kalastustukia koskevan WTO:n sopimuksen sisällyttämisestä siihen",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-29"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi asetuksen (EU) 2021/1139 muuttamisesta siltä osin kuin on kyse yksinkertaistamisesta ja kalastustukia koskevan WTO:n sopimuksen sisällyttämisestä siihen",
+   "tunnus": "U 69/2026 vp"
   },
   "U 7/2025 vp": {
    "anto": "2025-04-04",
@@ -7189,6 +7534,27 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksista Euroopan aluekehitysrahaston, mukaan lukien Euroopan alueellinen yhteistyö (Interreg), koheesiorahaston ja Euroopan sosiaalirahaston perustamisesta osana kansallista ja alueellista kumppanuussuunnitelmaa sekä aluekehityksen ja laadukkaisiin työpaikkoihin, osaamiseen ja sosiaaliseen osallisuuteen vuosiksi 2028–2034 myönnettävän unionin täytäntöönpanoedellytyksistä (koheesiopolitiikan asetusehdotukset 2028–2034)",
    "tunnus": "U 70/2025 vp"
   },
+  "U 70/2026 vp": {
+   "anto": "2026-10-09",
+   "cod": [],
+   "com": [
+    "2026/619",
+    "2026/616",
+    "2026/620"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission ehdotuksesta asetukseksi päästökauppadirektiivin muuttamisesta lämmön ja polttoaineen vertailuarvojen vuosille 2026–2030 tarkistettujen arvojen osalta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-10-29"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta asetukseksi päästökauppadirektiivin muuttamisesta lämmön ja polttoaineen vertailuarvojen vuosille 2026–2030 tarkistettujen arvojen osalta",
+   "tunnus": "U 70/2026 vp"
+  },
   "U 71/2025 vp": {
    "anto": "2025-12-11",
    "cod": [],
@@ -7217,6 +7583,23 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi (EU) Globaali Eurooppa -välineen perustamiseksi (COM(2025) 551 final)",
    "tunnus": "U 71/2025 vp"
   },
+  "U 71/2026 vp": {
+   "anto": "2026-11-05",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Euroopan unionin sekä Filippiinien tasavallan välisen kauppasopimuksen neuvottelemisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle Euroopan unionin sekä Filippiinien tasavallan välisen kauppasopimuksen neuvottelemisesta",
+   "tunnus": "U 71/2026 vp"
+  },
   "U 72/2025 vp": {
    "anto": "2025-12-15",
    "cod": [],
@@ -7243,6 +7626,25 @@
    "tila": "Käsitelty",
    "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta neuvoston asetukseksi (Euroopan syyttäjänviraston ja Euroopan petostentorjuntaviraston pääsy arvonlisäverotietoihin unionin tasolla)",
    "tunnus": "U 72/2025 vp"
+  },
+  "U 72/2026 vp": {
+   "anto": "2026-11-02",
+   "cod": [],
+   "com": [
+    "2026/515"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta neuvoston direktiiviksi käännetyn verovelvollisuuden ja nopean reagoinnin mekanismien soveltamisajan jatkamisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta neuvoston direktiiviksi käännetyn verovelvollisuuden ja nopean reagoinnin mekanismien soveltamisajan jatkamisesta",
+   "tunnus": "U 72/2026 vp"
   },
   "U 73/2025 vp": {
    "anto": "2025-12-18",
@@ -7280,6 +7682,27 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksista (1) Euroopan parlamentin ja neuvoston asetukseksi tutkimuksen ja innovoinnin puiteohjelman ”Horisontti Eurooppa -asetus” perustamisesta vuosiksi 2028–2034, sen osallistumista ja tulosten levittämistä koskevien sääntöjen vahvistamisesta ja asetuksen (EU) 2021/695 kumoamisesta, (2) neuvoston päätökseksi tutkimuksen ja innovoinnin puiteohjelman ”Horisontti Eurooppa” (2028–2034) täytäntöönpanoa koskevasta erityisohjelmasta, kyseiseen ohjelmaan osallistumista ja sen tulosten levittämistä koskevien sääntöjen vahvistamisesta sekä päätöksen (EU) 2021/764 kumoamisesta, (3) neuvoston asetukseksi tutkimuksen ja innovoinnin puiteohjelmaa ”Horisontti Eurooppa” täydentävän Euroopan atomienergiayhteisön tutkimus- ja koulutusohjelman perustamisesta vuosiksi 2028–2032, yhteisön osuudesta ITER-hankkeeseen ja asetuksen (Euratom) 2025/1304 kumoamisesta, (4) neuvoston asetukseksi Liettuassa sijaitsevan Ignalinan ydinvoimalaitoksen käytöstäpoiston avustusohjelman perustamisesta vuosiksi 2028–2034 ja asetuksen (EU) 2021/101 kumoamisesta ja (5) neuvoston asetukseksi välineen perustamisesta ydinturvallisuuteen liittyvää yhteistyötä ja ydinlaitosten käytöstä poistamista varten vuosiksi 2028–2034 ja asetusten (Euratom) 2021/100 ja (Euratom) 2021/948 kumoamisesta",
    "tunnus": "U 73/2025 vp"
   },
+  "U 73/2026 vp": {
+   "anto": "2026-11-02",
+   "cod": [],
+   "com": [
+    "2026/992",
+    "2026/970",
+    "2025/90"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi tutkintojen ja osaamisen siirrettävyydestä sekä asetuksen (EU) 2018/1724 muuttamisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi tutkintojen ja osaamisen siirrettävyydestä sekä asetuksen (EU) 2018/1724 muuttamisesta",
+   "tunnus": "U 73/2026 vp"
+  },
   "U 74/2025 vp": {
    "anto": "2025-12-12",
    "cod": [],
@@ -7314,6 +7737,29 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan kilpailukykyrahaston perustamisesta, mukaan lukien puolustusalan tutkimuksen ja innovoinnin erityisohjelma",
    "tunnus": "U 74/2025 vp"
   },
+  "U 74/2026 vp": {
+   "anto": "2026-11-05",
+   "cod": [],
+   "com": [
+    "2026/990",
+    "2026/995",
+    "2026/970",
+    "2026/992",
+    "2025/90"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission ehdotuksista Euroopan parlamentin ja neuvoston direktiiveiksi ammattipätevyyden tunnustamisesta annetun direktiivin muuttamisesta ja kolmansien maiden kansalaisten pätevyyksien tunnustamisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksista Euroopan parlamentin ja neuvoston direktiiveiksi ammattipätevyyden tunnustamisesta annetun direktiivin muuttamisesta ja kolmansien maiden kansalaisten pätevyyksien tunnustamisesta",
+   "tunnus": "U 74/2026 vp"
+  },
   "U 75/2025 vp": {
    "anto": "2026-01-12",
    "cod": [],
@@ -7338,6 +7784,25 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston kirjelmä eduskunnalle Euroopan komission ehdotuksesta neuvoston asetukseksi hätätoimenpiteistä Venäjän toimien aiheuttamien vakavien taloudellisten vaikeuksien ratkaisemiseksi Ukrainaa vastaan kohdistuvan hyökkäyssodan johdosta (Ukrainan rahoitustuki)",
    "tunnus": "U 75/2025 vp"
+  },
+  "U 75/2026 vp": {
+   "anto": "2026-11-05",
+   "cod": [],
+   "com": [
+    "2025/804"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Sopimuksen neuvottelemisesta Euroopan unionin sekä Iso-Britannian ja Pohjois-Irlannin Yhdistyneen kuningaskunnan välillä Yhdistyneen kuningaskunnan rahoitusosuudesta unionin alueiden välisten taloudellisten ja sosiaalisten erojen vähentämiseen (ns. koheesiokontribuutiosopimus)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle sopimuksen neuvottelemisesta Euroopan unionin sekä Iso-Britannian ja Pohjois-Irlannin Yhdistyneen kuningaskunnan välillä Yhdistyneen kuningaskunnan rahoitusosuudesta unionin alueiden välisten taloudellisten ja sosiaalisten erojen vähentämiseen (ns. koheesiokontribuutiosopimus)",
+   "tunnus": "U 75/2026 vp"
   },
   "U 76/2025 vp": {
    "anto": "2026-01-16",
@@ -7366,6 +7831,25 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston päätökseksi päätöksen (EU) 2015/1814 muuttamisesta siltä osin kuin on kyse markkinavakausvarannosta rakennusten ja tieliikenteen aloilla ja muilla aloilla",
    "tunnus": "U 76/2025 vp"
   },
+  "U 76/2026 vp": {
+   "anto": "2026-10-26",
+   "cod": [],
+   "com": [
+    "2025/804"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Sopimuksen neuvottelemisesta Euroopan unionin sekä Iso-Britannian ja Pohjois-Irlannin Yhdistyneen kuningaskunnan välillä Yhdistyneen kuningaskunnan osallistumisesta unionin sähkön sisämarkkinoihin",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle sopimuksen neuvottelemisesta Euroopan unionin sekä Iso-Britannian ja Pohjois-Irlannin Yhdistyneen kuningaskunnan välillä Yhdistyneen kuningaskunnan osallistumisesta unionin sähkön sisämarkkinoihin",
+   "tunnus": "U 76/2026 vp"
+  },
   "U 77/2025 vp": {
    "anto": "2026-01-21",
    "cod": [],
@@ -7392,6 +7876,25 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi eurooppalaisten yrityslompakoiden perustamisesta",
    "tunnus": "U 77/2025 vp"
+  },
+  "U 77/2026 vp": {
+   "anto": "2026-11-05",
+   "cod": [],
+   "com": [
+    "2026/985"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan työviranomaisen perustamisesta annetun asetuksen (EU) 2019/1149, työnvälityspalvelujen eurooppalaisesta verkostosta (EURES) annetun asetuksen (EU) 2016/589 ja hallinnollisesta yhteistyöstä sisämarkkinoiden tietojenvaihtojärjestelmässä annetun asetuksen (EU) N:o 1024/2012 muuttamisesta sekä komission täytäntöönpanopäätösten (EU) 2017/1256, (EU) 2018/170, (EU) 2018/1020 ja (EU) 2018/1021 kumoamisesta",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan työviranomaisen perustamisesta annetun asetuksen (EU) 2019/1149, työnvälityspalvelujen eurooppalaisesta verkostosta (EURES) annetun asetuksen (EU) 2016/589 ja hallinnollisesta yhteistyöstä sisämarkkinoiden tietojenvaihtojärjestelmässä annetun asetuksen (EU) N:o 1024/2012 muuttamisesta sekä komission täytäntöönpanopäätösten (EU) 2017/1256, (EU) 2018/170, (EU) 2018/1020 ja (EU) 2018/1021 kumoamisesta",
+   "tunnus": "U 77/2026 vp"
   },
   "U 78/2025 vp": {
    "anto": "2026-01-26",
@@ -7420,6 +7923,25 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston asetuksen 2019/2088 muuttamista koskien kestävyyteen liittyvien tietojen antamista rahoituspalvelusektorilla (SFDR-asetuksen uudelleentarkastelu)",
    "tunnus": "U 78/2025 vp"
   },
+  "U 78/2026 vp": {
+   "anto": "2026-11-05",
+   "cod": [],
+   "com": [
+    "2026/980"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi sosiaaliturvajärjestelmien yhteensovittamisen digitalisoinnista, eurooppalaista sosiaaliturvapassia koskevasta kehyksestä ja asetusten (EY) N:o 883/2004, (EY) N:o 987/2009 ja (EU) 2018/1724 muuttamisesta (COM (2026) 980 final, ESSPASS-asetusehdotus)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-05"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi sosiaaliturvajärjestelmien yhteensovittamisen digitalisoinnista, eurooppalaista sosiaaliturvapassia koskevasta kehyksestä ja asetusten (EY) N:o 883/2004, (EY) N:o 987/2009 ja (EU) 2018/1724 muuttamisesta (COM (2026) 980 final, ESSPASS-asetusehdotus)",
+   "tunnus": "U 78/2026 vp"
+  },
   "U 79/2025 vp": {
    "anto": "2026-01-29",
    "cod": [],
@@ -7447,6 +7969,23 @@
    "tila": "Käsittelyssä",
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksista Ukrainan taloudelliseksi tueksi vuosille 2026 ja 2027",
    "tunnus": "U 79/2025 vp"
+  },
+  "U 79/2026 vp": {
+   "anto": "2026-11-09",
+   "cod": [],
+   "com": [],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Suomen liittymisestä Euroopan mannerlaattojen havainnointijärjestelmän tutkimusinfrastruktuurikonsortioon (EPOS ERIC)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle Suomen liittymisestä Euroopan mannerlaattojen havainnointijärjestelmän tutkimusinfrastruktuurikonsortioon (EPOS ERIC)",
+   "tunnus": "U 79/2026 vp"
   },
   "U 8/2025 vp": {
    "anto": "2025-04-07",
@@ -7522,6 +8061,25 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle Euroopan komission ehdotuksesta neuvoston päätökseksi luvan antamisesta tiiviimpään yhteistyöhön Ukrainalle annettavan lainan perustamiseksi",
    "tunnus": "U 80/2025 vp"
   },
+  "U 80/2026 vp": {
+   "anto": "2026-11-06",
+   "cod": [],
+   "com": [
+    "2026/681"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi digitaalisten verkkoympäristöjen vastuullisuuden ja luotettavuuden turvaamisesta (EU Kids Act)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi digitaalisten verkkoympäristöjen vastuullisuuden ja luotettavuuden turvaamisesta (EU Kids Act)",
+   "tunnus": "U 80/2026 vp"
+  },
   "U 81/2025 vp": {
    "anto": "2026-01-23",
    "cod": [],
@@ -7559,6 +8117,25 @@
    "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksista Euroopan parlamentin ja neuvoston asetusten ja direktiivien muuttamisesta digitaalisen lainsäädäntökehyksen yksinkertaistamisen osalta (digiomnibus) ja tekoälyä koskevien yhdenmukaistettujen sääntöjen täytäntöönpanon yksinkertaistamisen osalta (tekoälyomnibus)",
    "tunnus": "U 81/2025 vp"
   },
+  "U 81/2026 vp": {
+   "anto": "2026-11-06",
+   "cod": [],
+   "com": [
+    "2026/590"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi hankintasopimuksista ja käyttöoikeussopimuksista sekä tiettyjen direktiivien kumoamisesta ja asetusten sekä direktiivien muuttamisesta (julkisia hankintoja koskeva säädös)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi hankintasopimuksista ja käyttöoikeussopimuksista sekä tiettyjen direktiivien kumoamisesta ja asetusten sekä direktiivien muuttamisesta (julkisia hankintoja koskeva säädös)",
+   "tunnus": "U 81/2026 vp"
+  },
   "U 82/2025 vp": {
    "anto": "2026-01-26",
    "cod": [],
@@ -7583,6 +8160,46 @@
    "tila": "Käsitelty",
    "title": "Valtioneuvoston kirjelmä eduskunnalle Euroopan unionin sekä Ison-Britannian ja PohjoisIrlannin yhdistyneen kuningaskunnan välisen nuorisokokemusohjelmaa koskevan sopimuksen neuvottelemisesta",
    "tunnus": "U 82/2025 vp"
+  },
+  "U 82/2026 vp": {
+   "anto": "2026-11-06",
+   "cod": [],
+   "com": [
+    "2026/567",
+    "2026/568",
+    "2026/590"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi unionin innovaatioekosysteemiä vahvistavasta toimenpidekehyksestä ja asetuksen (EU) 2017/1001 muuttamisesta (eurooppalainen innovaatiosäädös)",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta Euroopan parlamentin ja neuvoston asetukseksi unionin innovaatioekosysteemiä vahvistavasta toimenpidekehyksestä ja asetuksen (EU) 2017/1001 muuttamisesta (eurooppalainen innovaatiosäädös)",
+   "tunnus": "U 82/2026 vp"
+  },
+  "U 83/2026 vp": {
+   "anto": "2026-11-09",
+   "cod": [],
+   "com": [
+    "2026/523"
+   ],
+   "fetched": "2026-11-15",
+   "ministry": null,
+   "short": "Komission ehdotuksesta asetukseksi asetuksen (EU) 2016/1628 muuttamiseksi siltä osin kuin on kyse vedyn sisällyttämisestä moottorityypin tai moottoriperheen testauksessa käytettävänä vertailupolttoaineena",
+   "stages": [
+    {
+     "code": "ANTO",
+     "date": "2026-11-12"
+    }
+   ],
+   "tila": "Käsittelyssä",
+   "title": "Valtioneuvoston kirjelmä eduskunnalle komission ehdotuksesta asetukseksi asetuksen (EU) 2016/1628 muuttamiseksi siltä osin kuin on kyse vedyn sisällyttämisestä moottorityypin tai moottoriperheen testauksessa käytettävänä vertailupolttoaineena",
+   "tunnus": "U 83/2026 vp"
   },
   "U 9/2025 vp": {
    "anto": "2025-04-14",
