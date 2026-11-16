@@ -722,73 +722,6 @@
    "timeline": [],
    "title": "HARMAN / ZF CAPRI"
   },
-  "M.12325": {
-   "caseNumber": "M.12325",
-   "deadline": "2026-08-28",
-   "decisions": [
-    {
-     "date": "2026-08-17",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-01-19",
-   "lastDecision": "2026-08-17",
-   "notice": {
-    "activities": [
-     "NYK on japanilainen pörssiyhtiö ja kuljetus- ja logistiikkapalvelujen tarjoaja, joka on erikoistunut kansainväliseen meriliikenteeseen. NYK toimii tytäryhtiöidensä ja sidosyritystensä kautta maailmanlaajuisesti ja sen aluskantaan kuuluu konttialuksia, irtolasti- ja puuhakealuksia, ro-ro-autonkuljetusaluksia, nesteytettyä maakaasua (LNG) kuljettavia aluksia (mm. LNG-tankkausaluksia ja pienen kokoluokan LNG-aluksia) sekä risteilyaluksia.",
-     "SNGL on yrityksen SNL kokonaan omistama tytäryhtiö, joka toimii LNG-segmentillä. SNL ja sen tytäryhtiöt kuljettavat, varastoivat ja jakelevat maailmanlaajuisesti irtotavarana olevia nestemäisiä kemikaaleja, ruokaöljyjä, happoja ja muita erikoisnesteitä."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-14",
-    "oj": "C:2026:4251:",
-    "parties": [
-     {
-      "country": "Japani",
-      "fi": false,
-      "name": "Nippon Yusen Kabushiki Kaisha",
-      "short": "NYK"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Bermuda",
-        "name": "Stolt-Nielsen Limited"
-       }
-      ],
-      "country": "Bermuda",
-      "fi": false,
-      "name": "Stolt-Nielsen Gas Ltd.",
-      "short": "SNGL"
-     },
-     {
-      "country": "Bermuda",
-      "fi": false,
-      "name": "Avenir LNG Limited",
-      "short": "Avenir"
-     }
-    ],
-    "published": "2026-08-04",
-    "reference": "C/2026/4251",
-    "simplified": true,
-    "transaction": "NYK ja SNGL hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Avenir. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4251/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-24",
-   "oj": [
-    {
-     "published": "2026-08-04",
-     "reference": "C:2026:4251:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_H_52.10",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "NYK / SNL / AVENIR"
-  },
   "M.12330": {
    "caseNumber": "M.12330",
    "deadline": null,
@@ -1630,61 +1563,6 @@
    "timeline": [],
    "title": "GIM / EFMS / AES"
   },
-  "M.12436": {
-   "caseNumber": "M.12436",
-   "deadline": "2026-08-28",
-   "decisions": [
-    {
-     "date": "2026-08-17",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-04-20",
-   "lastDecision": "2026-08-17",
-   "notice": {
-    "activities": [
-     "Warburg Pincus on pääomasijoitusyhtiö.",
-     "Netfonds on Saksan rahoitusalan hallinto-, neuvonta- ja sääntelypalvelujen foorumi."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-14",
-    "oj": "C:2026:4254:",
-    "parties": [
-     {
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Warburg Pincus LLC",
-      "short": "Warburg Pincus"
-     },
-     {
-      "country": "Saksa",
-      "fi": false,
-      "name": "Netfonds AG",
-      "short": "Netfonds"
-     }
-    ],
-    "published": "2026-08-04",
-    "reference": "C/2026/4254",
-    "simplified": true,
-    "transaction": "Warburg Pincus hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Netfonds. Keskittymä toteutetaan 9. maaliskuuta 2026 ilmoitetulla julkisella tarjouksella.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4254/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-24",
-   "oj": [
-    {
-     "published": "2026-08-04",
-     "reference": "C:2026:4254:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_L_66.19",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "WARBURG PINCUS / NETFONDS"
-  },
   "M.12449": {
    "caseNumber": "M.12449",
    "deadline": "2026-11-24",
@@ -1815,67 +1693,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "BLACKSTONE / TINICUM / SENIOR / AEROFLOW"
-  },
-  "M.12464": {
-   "caseNumber": "M.12464",
-   "deadline": "2026-08-28",
-   "decisions": [
-    {
-     "date": "2026-08-17",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-11",
-   "lastDecision": "2026-08-17",
-   "notice": {
-    "activities": [
-     "Sanoptis: eurooppalainen silmälääketieteen alusta, joka toimii Saksassa, Sveitsissä, Italiassa, Espanjassa, Itävallassa ja Kreikassa. Sanoptis kuuluu GBL-sijoitusholdingyhtiöön.",
-     "HLA Vistahermosa: koko Espanjan kattavan sairaalaverkoston ylläpitäjä. HLA Vistahermosa kuuluu yritykseen ASISA, joka on Espanjan johtava sairausvakuutusosuuskunta."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-13",
-    "oj": "C:2026:4241:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Belgia",
-        "name": "Groupe Bruxelles Lambert"
-       }
-      ],
-      "country": "Espanja",
-      "fi": false,
-      "name": "Sanoptis España, S.L.U.",
-      "short": "Sanoptis"
-     },
-     {
-      "country": "Espanja",
-      "fi": false,
-      "name": "Clínica Vistahermosa Grupo HLA, S.L.U.",
-      "short": "HLA Vistahermosa"
-     }
-    ],
-    "published": "2026-08-03",
-    "reference": "C/2026/4241",
-    "simplified": true,
-    "transaction": "Sanoptis ja HLA Vistahermosa hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Oftalmología Vistahermosa, S.L. (Oftalvist, Espanja), joka on tällä hetkellä yrityksen HLA Vistahermosa yksinomaisessa määräysvallassa. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4241/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-24",
-   "oj": [
-    {
-     "published": "2026-08-03",
-     "reference": "C:2026:4241:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_L_65.12",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "HLA VISTAHERMOSA / SANOPTIS / OFTALVIST"
   },
   "M.12470": {
    "caseNumber": "M.12470",
@@ -2177,67 +1994,6 @@
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "WATERLAND / BODE / VENTURA"
-  },
-  "M.12481": {
-   "caseNumber": "M.12481",
-   "deadline": "2026-08-28",
-   "decisions": [
-    {
-     "date": "2026-08-17",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-05-18",
-   "lastDecision": "2026-08-17",
-   "notice": {
-    "activities": [
-     "Centerbridge on yksityinen sijoitustenhoitoyritys, jolla on toimistot New Yorkissa ja Lontoossa ja joka tarjoaa neuvonta- ja/tai hallinnointipalveluja pääomasijoituksista luottoihin ja niihin liittyviin strategioihin sekä kiinteistöihin,",
-     "Santander on liikepankki, jonka päätoimipaikka on Espanjassa. Konsernin toiminta on sulautettu viiteen maailmanlaajuiseen yritykseen: Retail & Commercial Banking, Digital Consumer Bank, Corporate & Investment Banking, Wealth Management & Insurance ja Payments."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-13",
-    "oj": "C:2026:4246:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Centerbridge Partners, L.P."
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "CB Victoria Lux S.à r.l.",
-      "short": "CB Victoria"
-     },
-     {
-      "country": "S.L.",
-      "fi": false,
-      "name": "Santander Payment Solutions, S.L.",
-      "short": "aiemmin PagoNxt"
-     }
-    ],
-    "published": "2026-08-03",
-    "reference": "C/2026/4246",
-    "simplified": true,
-    "transaction": "Centerbridge ja Santander hankkivat sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa ja 3 artiklan 4 kohdassa tarkoitetun yhteisen määräysvallan yrityksessä Ebury Partners Limited (Ebury, Yhdistynyt kuningaskunta), joka on viime kädessä yrityksen Santander määräysvallassa. Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4246/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-24",
-   "oj": [
-    {
-     "published": "2026-08-03",
-     "reference": "C:2026:4246:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_L_64.21",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "CENTERBRIDGE / SANTANDER / EBURY"
   },
   "M.12483": {
    "caseNumber": "M.12483",
@@ -7566,5 +7322,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-15T08:49:49Z"
+ "fetched": "2026-11-16T08:51:14Z"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T08:48:08",
+ "fetched": "2026-11-16T08:48:53",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-10",
+     "end": "2027-01-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -607,7 +607,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-10",
+     "end": "2027-01-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -625,7 +625,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-10",
+     "end": "2027-01-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -715,7 +715,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-10",
+     "end": "2027-01-11",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -1806,60 +1806,6 @@
    "title_en": "Plants obtained by new genomic techniques: applications for category 2 plants and their products",
    "title_fi": "Uusilla genomitekniikoilla tuotetut kasvit: ryhmän 2 kasveja ja niistä peräisin olevia tuotteita koskevat hakemukset",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18806_en"
-  },
-  {
-   "actType": "DEC_DEL",
-   "actTypeLabel": "Delegoitu päätös",
-   "id": 19033,
-   "periods": [
-    {
-     "end": "2026-09-16",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-14"
-    }
-   ],
-   "reference": "Ares(2026)7696337",
-   "status": "ACTIVE",
-   "title_en": "Sustainability criteria for plastic recycling technologies ",
-   "title_fi": "Pakkaukset ja pakkausjätteet – muovin kierrätysteknologioiden kestävyyskriteerit",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19033_en"
-  },
-  {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 18752,
-   "periods": [
-    {
-     "end": "2026-09-16",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-14"
-    }
-   ],
-   "reference": "Ares(2026)6818624",
-   "status": "ACTIVE",
-   "title_en": "Conditions for importing recycled materials into the EU for use in packaging",
-   "title_fi": "Pakkaukset ja pakkausjäte – edellytykset kierrätettyjen materiaalien tuonnille EU:hun käytettäväksi pakkauksissa",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18752_en"
-  },
-  {
-   "actType": "DEC_IMPL",
-   "actTypeLabel": "Täytäntöönpanopäätös",
-   "id": 18753,
-   "periods": [
-    {
-     "end": "2026-09-16",
-     "open": false,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-08-14"
-    }
-   ],
-   "reference": "Ares(2026)6820488",
-   "status": "ACTIVE",
-   "title_en": "Rules for the calculation and verification of recycled content in plastic packaging",
-   "title_fi": "Muovipakkaukset – kierrätysmateriaalin osuuden laskentaa ja todentamista koskevien sääntöjen yhdenmukaistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18753_en"
   }
  ]
 }

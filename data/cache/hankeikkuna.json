@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T08:28:45",
+ "fetched": "2026-11-16T08:37:28",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -9391,7 +9391,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-29T09:41:47",
+   "muokattu": "2026-11-16T05:40:12",
    "nimi": "Hallituksen esitys laeiksi kirkkolain 3 ja 8 luvun ja ortodoksisesta kirkosta annetun lain 74 §:n muuttamisesta",
    "nimiSv": "Regeringens propositions med förslag till lagar om ändring av 3 och 8 kapitel av kyrkolagen samt 74 § i lagen om ortodoxa kyrkan",
    "pevLausunto": false,
@@ -17192,7 +17192,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-13T12:22:47",
+   "muokattu": "2026-11-16T06:59:24",
    "nimi": "Hallituksen esitys eduskunnalle laiksi matkapalveluyhdistelmistä annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om kombinerade resetjänster",
    "pevLausunto": false,
@@ -93339,7 +93339,9 @@
      "tyyppi": "KUULEMISTILAISUUS"
     }
    ],
-   "evNumerot": [],
+   "evNumerot": [
+    "EV 103/2025"
+   ],
    "heNumerot": [
     "HE 102/2025"
    ],
@@ -93638,7 +93640,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-08-21T11:17:38",
+   "muokattu": "2026-11-16T08:22:12",
    "nimi": "Hallituksen esitys eduskunnalle kielitutkintoja koskevan lainsäädännön muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till ändring av lagstiftningen om språkexamina",
    "pevLausunto": false,
@@ -492788,7 +492790,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-03T19:30:17",
+   "muokattu": "2026-11-16T07:21:45",
    "nimi": "Valtioneuvoston asetus yliopistojen tutkinnoista ja erikoistumiskoulutuksista annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om examina och specialiseringsutbildningar vid universitet",
    "pevLausunto": false,
@@ -493533,6 +493535,48 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/0d9fe1ef-ceb0-4b90-89ec-59906dc8f74f/LAUSUNTO_20261115061052.PDF"
      },
      {
+      "date": "2026-11-13",
+      "id": "e9be1d57-1b0e-40ba-b799-9dadfc6d8a12",
+      "org": "Pohjois-Savon luonnonsuojelupiiri ry",
+      "title": "Pohjois-Savon luonnonsuojelupiiri ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/e9be1d57-1b0e-40ba-b799-9dadfc6d8a12/LAUSUNTO_20261116061703.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "3c698393-d867-4f29-81d7-a50bbe60d44f",
+      "org": "Pohjanmaan elinvoimakeskus",
+      "title": "Pohjanmaan elinvoimakeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/3c698393-d867-4f29-81d7-a50bbe60d44f/LAUSUNTO_20261116062158.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "abc77198-23f9-40a0-8db3-379cd365b06d",
+      "org": "Luontoliitto ry",
+      "title": "Luontoliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/abc77198-23f9-40a0-8db3-379cd365b06d/LAUSUNTO_20261116062319.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "af990cb1-241e-4920-9e98-4bbd3410e958",
+      "org": "Suomen riistakeskus",
+      "title": "Suomen riistakeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/af990cb1-241e-4920-9e98-4bbd3410e958/LAUSUNTO_20261116062438.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "8271d66a-4e9d-4154-ade5-4edaa4a851a7",
+      "org": "Paliskuntain yhdistys",
+      "title": "Paliskuntain yhdistys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/8271d66a-4e9d-4154-ade5-4edaa4a851a7/LAUSUNTO_20261116062654.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "40f429eb-6039-4e80-98c5-b0f8dcfbdd35",
+      "org": "Lauhanmaan metsästysseura ry",
+      "title": "Lauhanmaan metsästysseura ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/40f429eb-6039-4e80-98c5-b0f8dcfbdd35/LAUSUNTO_20261116073350.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "bba17590-2aba-471e-8022-a29da6ae7baa",
       "org": "Ympäristöministeriö",
@@ -493912,7 +493956,7 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 69,
+    "n": 75,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
@@ -493931,7 +493975,9 @@
      "Korsholms kommun / Mustasaaren kunta",
      "Kvevlax kyrkoby jaktklubb rf",
      "Lassilan Metsästysseura ry",
+     "Lauhanmaan metsästysseura ry",
      "Luonnonsuojeluliitto Tapiola ry",
+     "Luontoliitto ry",
      "M. Arthaud",
      "MTK-Satakunta ry",
      "MTK-Varsinais-Suomi ry",
@@ -493944,8 +493990,11 @@
      "Metsästyskoiraliitto ry",
      "Natur och Miljö r.f.",
      "Oulun yliopisto",
+     "Paliskuntain yhdistys",
      "Petsmo jaktklubb r.f.",
      "Philippe de Béchevel",
+     "Pohjanmaan elinvoimakeskus",
+     "Pohjois-Savon luonnonsuojelupiiri ry",
      "Poliisihallitus",
      "Putakon Erä ry",
      "Rajavartiolaitos",
@@ -493966,6 +494015,7 @@
      "Suomen luonnonsuojeluliiton Pohjois-Karjalan piiri",
      "Suomen luonnonsuojeluliiton Pohjois-Pohjanmaan piiri ry",
      "Suomen luonnonsuojeluliitto ry",
+     "Suomen riistakeskus",
      "Suomen ympäristökeskus (Syke)",
      "Svenska Rovdjursföreningen",
      "Taivassalon kunta",
@@ -493988,7 +494038,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-15T06:10:52",
+   "muokattu": "2026-11-16T08:23:44",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -494481,6 +494531,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "6fe45f38-0f88-4c1f-b304-623bf8fdaa73",
+      "none": true,
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos THL; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-12",
       "id": "edcd7c2c-2f1b-48ae-b63a-6da26312224c",
       "org": "Sipoon kunta",
@@ -494537,8 +494594,8 @@
       "title": "Valtiovarainministeriön ilmoitus; ei lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 1,
-    "n": 8,
+    "eiLausuttavaa": 2,
+    "n": 9,
     "orgs": [
      "Lahden kaupunki",
      "Leppävirran kunta",
@@ -494546,15 +494603,16 @@
      "Sipoon kunta",
      "Suomen Vanhempainliitto ry",
      "Teknologiateollisuus ry",
+     "Terveyden ja hyvinvoinnin laitos THL",
      "Turun kaupunki",
      "Valtiovarainministeriö"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=2b1dff52-923c-4b47-85eb-24c247289a69&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-13T05:51:07",
+   "muokattu": "2026-11-16T06:44:28",
    "nimi": "Valtioneuvoston asetus perusopetusasetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av förordningen om grundläggande utbildning",
    "pevLausunto": false,
@@ -533444,7 +533502,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-12T06:40:30",
+   "muokattu": "2026-11-16T07:55:30",
    "nimi": "Sosiaali- ja terveysministeriön asetus Säteilyturvakeskuksen suoritteista perittävistä maksuista",
    "nimiSv": null,
    "pevLausunto": false,
@@ -626417,6 +626475,7 @@
    ],
    "kind": "Lausuntokierros",
    "laji": "kuuleminen",
+   "lausuntopalvelu": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=4c97c7cd-a228-47cb-b825-95d9c4b74376",
    "pdfUrl": "https://api.hankeikkuna.fi/asiakirjat/57beb704-afd2-4e5b-9463-51af67cdfb87/4d387ea3-587b-4092-999c-2c59c740739a/LAUSUNTOPYYNTO_20260610071844.PDF",
    "ref": "LVM018:00/2026",
    "scope": "fi",

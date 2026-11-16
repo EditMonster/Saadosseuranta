@@ -2300,6 +2300,15 @@ DESCRIPTION:Täytäntöönpanon määräaika · (EU) 2024/2853 · https://eur-le
 URL:https://eur-lex.europa.eu/eli/dir/2024/2853/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2022-0344-maaraaika-2027-12-21@saadosseuranta
+DTSTAMP:20271221T000000Z
+DTSTART;VALUE=DATE:20271221
+DTEND;VALUE=DATE:20271222
+SUMMARY:[EU] Määräaika: Yhteisön vesipolitiikan puitteista annetun direktiivin 2000/60/EY\, pohjaveden suojelusta pilaantumiselta ja huononemiselta annetun direktiivin 2006/118/EY ja ym
+DESCRIPTION:Täytäntöönpanon määräaika · (EU) 2026/805 · https://eur-lex.europa.eu/eli/dir/2026/805/oj
+URL:https://eur-lex.europa.eu/eli/dir/2026/805/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2022-0345-maaraaika-2027-07-31@saadosseuranta
 DTSTAMP:20270731T000000Z
 DTSTART;VALUE=DATE:20270731
@@ -2651,10 +2660,10 @@ DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/bet
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-10@saadosseuranta
-DTSTAMP:20270110T000000Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
+UID:eu-hys-14770-lausunto-2027-01-11@saadosseuranta
+DTSTAMP:20270111T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2750,10 +2759,10 @@ DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.e
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-10@saadosseuranta
-DTSTAMP:20270110T000000Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
+UID:eu-hys-19517-lausunto-2027-01-11@saadosseuranta
+DTSTAMP:20270111T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en

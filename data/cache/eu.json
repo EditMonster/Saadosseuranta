@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T08:43:54",
+ "fetched": "2026-11-16T08:45:50",
  "items": {
   "2020-0266": {
    "cellar": {
@@ -3174,7 +3174,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2021-0106",
    "ref": "2021/0106(COD)",
@@ -6902,7 +6902,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2021-0239",
    "ref": "2021/0239(COD)",
@@ -12057,7 +12057,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2021-0414",
    "ref": "2021/0414(COD)",
@@ -14919,7 +14919,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2022-0047",
    "ref": "2022/0047(COD)",
@@ -21299,7 +21299,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2022-0272",
    "ref": "2022/0272(COD)",
@@ -22670,7 +22670,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2022-0302",
    "ref": "2022/0302(COD)",
@@ -24998,7 +24998,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2022-0396",
    "ref": "2022/0396(COD)",
@@ -49527,7 +49527,7 @@
      "label": "Julkaistu EUVL:ssä"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2025-0045",
    "ref": "2025/0045(COD)",
@@ -56570,7 +56570,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2025-0360",
    "ref": "2025/0360(COD)",
@@ -58552,6 +58552,10 @@
     {
      "date": "2026-11-12",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-13",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -59359,6 +59363,10 @@
     },
     {
      "date": "2026-10-30",
+     "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-13",
      "type": "DELIB_WP_byCONSIL"
     },
     {
@@ -62741,7 +62749,7 @@
      "label": "Valiokuntaan (EP)"
     }
    ],
-   "fetched": "2026-11-15",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2026-0074",
    "ref": "2026/0074(COD)",
@@ -64615,6 +64623,10 @@
     {
      "date": "2026-10-22",
      "type": "DELIB_WP_byCONSIL"
+    },
+    {
+     "date": "2026-11-13",
+     "type": "DELIB_WP_byCONSIL"
     }
    ],
    "events": [
@@ -65100,11 +65112,11 @@
    "cellar": {
     "acts": {},
     "adopted": null,
-    "proposal": null,
-    "proposalDate": null
+    "proposal": "52026PC0603",
+    "proposalDate": "2026-11-13"
    },
    "events": [],
-   "fetched": "2026-11-13",
+   "fetched": "2026-11-16",
    "final": false,
    "pid": "2026-0346",
    "ref": "2026/0346(COD)",

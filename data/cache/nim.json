@@ -3549,19 +3549,19 @@
      "type": "Landskapslag"
     },
     {
-     "date": "2008-03-28",
-     "eif": "2008-04-01",
-     "notif": "2026-10-27",
-     "oj": "2008:9",
-     "title": "Förvaltningslag (2008:9) för landskapet Åland, 14/02/2008",
-     "type": "Landskapslag"
-    },
-    {
      "date": "2026-10-26",
      "eif": "2026-11-01",
      "notif": "2026-10-27",
      "oj": "2026:110",
      "title": "Landskapslag (2026:110) om tillämpning av lagen om handel med utsläppsrätter för distribution av fossila bränslen, 19/10/2026",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-03-28",
+     "eif": "2008-04-01",
+     "notif": "2026-10-27",
+     "oj": "2008:9",
+     "title": "Förvaltningslag (2008:9) för landskapet Åland, 14/02/2008",
      "type": "Landskapslag"
     },
     {
@@ -3609,8 +3609,8 @@
     {
      "date": "2026-10-26",
      "notif": "2026-10-26",
-     "sk": "609/1986",
-     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "sk": "1328/2014",
+     "title": "Laki tasa-arvovaltuutetusta",
      "type": "Laki"
     },
     {
@@ -3618,20 +3618,6 @@
      "notif": "2026-10-26",
      "oj": "1.1.1734",
      "title": "Oikeudenkäymiskaari",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-10-26",
-     "notif": "2026-10-26",
-     "sk": "1397/2016",
-     "title": "Laki julkisista hankinnoista ja käyttöoikeussopimuksista",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-10-26",
-     "notif": "2026-10-26",
-     "sk": "370/2007",
-     "title": "Laki oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa",
      "type": "Laki"
     },
     {
@@ -3658,8 +3644,22 @@
     {
      "date": "2026-10-26",
      "notif": "2026-10-26",
-     "sk": "1328/2014",
-     "title": "Laki tasa-arvovaltuutetusta",
+     "sk": "609/1986",
+     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "1397/2016",
+     "title": "Laki julkisista hankinnoista ja käyttöoikeussopimuksista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-26",
+     "notif": "2026-10-26",
+     "sk": "370/2007",
+     "title": "Laki oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa",
      "type": "Laki"
     }
    ]
@@ -3713,15 +3713,15 @@
     {
      "date": "2026-06-15",
      "notif": "2026-06-15",
-     "sk": "808/2019",
-     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "sk": "672/2002",
+     "title": "Laki sakon täytäntöönpanosta",
      "type": "Laki"
     },
     {
      "date": "2026-06-15",
      "notif": "2026-06-15",
-     "sk": "672/2002",
-     "title": "Laki sakon täytäntöönpanosta",
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
      "type": "Laki"
     }
    ]
@@ -4076,44 +4076,12 @@
      "type": "Landskapsförordning"
     },
     {
-     "date": "2024-08-29",
-     "eif": "2024-09-01",
-     "notif": "2026-03-25",
-     "oj": "2024:56",
-     "title": "Landskapsförordning (2024:56) om tillämpning på Åland av statsrådets förordning om ursprungsgarantier för energi 15/08/2024",
-     "type": "Landskapsförordning"
-    },
-    {
-     "date": "2007-12-28",
-     "eif": "2008-01-01",
-     "notif": "2026-03-25",
-     "oj": "2007:115",
-     "title": "Landskapslag (2007:115) om Ålands miljö- och hälsoskyddsmyndighet 31/08/2007",
-     "type": "Landskapslag"
-    },
-    {
      "date": "2022-12-12",
      "eif": "2022-12-15",
      "notif": "2026-03-25",
      "oj": "2022:79",
      "title": "Landskapslag (2022:79) om tillämpning på Åland av lagen om ursprungsgaranti för energi 1/12/2022",
      "type": "Landskapslag"
-    },
-    {
-     "date": "2018-08-31",
-     "eif": "2018-09-01",
-     "notif": "2026-03-25",
-     "oj": "2018:31",
-     "title": "Landskapslag (2018:31) om miljökonsekvensbedömning och miljöbedömning 27/06/2018",
-     "type": "Landskapslag"
-    },
-    {
-     "date": "2008-11-27",
-     "eif": "2008-12-01",
-     "notif": "2026-03-25",
-     "oj": "2008:130",
-     "title": "Landskapsförordning (2008:130) om miljöskydd 14/10/2008",
-     "type": "Landskapsförordning"
     },
     {
      "date": "2008-10-03",
@@ -4257,6 +4225,38 @@
      "notif": "2026-03-25",
      "oj": "2025:11",
      "title": "Landskapsförordning (2025:11) om fastställande av byggnadens energianvändning vid normalt brukande och ett normalår 23/01/2025",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2024-08-29",
+     "eif": "2024-09-01",
+     "notif": "2026-03-25",
+     "oj": "2024:56",
+     "title": "Landskapsförordning (2024:56) om tillämpning på Åland av statsrådets förordning om ursprungsgarantier för energi 15/08/2024",
+     "type": "Landskapsförordning"
+    },
+    {
+     "date": "2007-12-28",
+     "eif": "2008-01-01",
+     "notif": "2026-03-25",
+     "oj": "2007:115",
+     "title": "Landskapslag (2007:115) om Ålands miljö- och hälsoskyddsmyndighet 31/08/2007",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2018-08-31",
+     "eif": "2018-09-01",
+     "notif": "2026-03-25",
+     "oj": "2018:31",
+     "title": "Landskapslag (2018:31) om miljökonsekvensbedömning och miljöbedömning 27/06/2018",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-11-27",
+     "eif": "2008-12-01",
+     "notif": "2026-03-25",
+     "oj": "2008:130",
+     "title": "Landskapsförordning (2008:130) om miljöskydd 14/10/2008",
      "type": "Landskapsförordning"
     },
     {
@@ -5162,8 +5162,64 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "9/2023",
-     "title": "Luonnonsuojelulaki",
+     "sk": "527/2014",
+     "title": "Ympäristönsuojelulaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "108/2018",
+     "title": "Laki rikostorjunnasta Rajavartiolaitoksessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "616/2019",
+     "title": "Laki henkilötietojen käsittelystä poliisitoimessa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "555/1981",
+     "title": "Maa-aineslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "89/2025",
+     "title": "Laki sotilaskurinpidosta ja rikostorjunnasta Puolustusvoimissa",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "806/2011",
+     "title": "Pakkokeinolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "669/2015",
+     "title": "Laki rikosuhrimaksusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "180/2015",
+     "title": "Laki pyroteknisten tuotteiden vaatimustenmukaisuudesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "587/2011",
+     "title": "Vesilaki",
      "type": "Laki"
     },
     {
@@ -5171,6 +5227,20 @@
      "notif": "2026-05-19",
      "sk": "1171/2022",
      "title": "Laki Euroopan unionin ja kansallisen oikeuden rikkomisesta ilmoittavien henkilöiden suojelusta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "661/2009",
+     "title": "Laki väestötietojärjestelmästä ja Digi- ja väestötietoviraston varmennepalveluista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-19",
+     "notif": "2026-05-19",
+     "sk": "9/2023",
+     "title": "Luonnonsuojelulaki",
      "type": "Laki"
     },
     {
@@ -5211,13 +5281,6 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "527/2014",
-     "title": "Ympäristönsuojelulaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
      "sk": "599/2013",
      "title": "Kemikaalilaki",
      "type": "Laki"
@@ -5253,13 +5316,6 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "108/2018",
-     "title": "Laki rikostorjunnasta Rajavartiolaitoksessa",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
      "oj": "19.12.1889",
      "title": "Rikoslaki",
      "type": "Laki"
@@ -5281,20 +5337,6 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "616/2019",
-     "title": "Laki henkilötietojen käsittelystä poliisitoimessa",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
-     "sk": "555/1981",
-     "title": "Maa-aineslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
      "sk": "295/2012",
      "title": "Laki rikosoikeudellisia menettelyjä koskevien toimivaltaristiriitojen ehkäisemisestä ja ratkaisemisesta sekä esitutkinnan ja syytetoimien siirtämisestä Suomen ja muiden Euroopan unionin jäsenvaltioiden välillä",
      "type": "Laki"
@@ -5304,13 +5346,6 @@
      "notif": "2026-05-19",
      "sk": "4/1734",
      "title": "Oikeudenkäymiskaari",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
-     "sk": "89/2025",
-     "title": "Laki sotilaskurinpidosta ja rikostorjunnasta Puolustusvoimissa",
      "type": "Laki"
     },
     {
@@ -5351,13 +5386,6 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "661/2009",
-     "title": "Laki väestötietojärjestelmästä ja Digi- ja väestötietoviraston varmennepalveluista",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
      "sk": "646/2011",
      "title": "Jätelaki",
      "type": "Laki"
@@ -5386,29 +5414,8 @@
     {
      "date": "2026-05-19",
      "notif": "2026-05-19",
-     "sk": "806/2011",
-     "title": "Pakkokeinolaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
-     "sk": "669/2015",
-     "title": "Laki rikosuhrimaksusta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
      "sk": "66/2021",
      "title": "Laki Suomen osallistumisesta Euroopan syyttäjänviraston (EPPO) toimintaan",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
-     "sk": "180/2015",
-     "title": "Laki pyroteknisten tuotteiden vaatimustenmukaisuudesta",
      "type": "Laki"
     },
     {
@@ -5430,13 +5437,6 @@
      "notif": "2026-05-19",
      "sk": "1563/2011",
      "title": "Laki kasvinsuojeluaineista",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-19",
-     "notif": "2026-05-19",
-     "sk": "587/2011",
-     "title": "Vesilaki",
      "type": "Laki"
     },
     {
@@ -5574,8 +5574,99 @@
     {
      "date": "2026-06-05",
      "notif": "2026-06-05",
+     "sk": "44/2006",
+     "title": "Laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "4/1734",
+     "title": "Oikeudenkäymiskaari",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "738/2002",
+     "title": "Työturvallisuuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "751/2023",
+     "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "379/2011",
+     "title": "Pelastuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "436/1946",
+     "title": "Työehtosopimuslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "162/2005",
+     "title": "Vuosilomalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "380/2023",
+     "title": "Laki työvoimapalveluiden järjestämisestä",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
      "sk": "714/2018",
      "title": "Lukiolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "545/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus asunnon ja muun oleskelutilan terveydellisistä olosuhteista sekä ulkopuolisten asiantuntijoiden pätevyysvaatimuksista",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "872/2019",
+     "title": "Työaikalaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "393/2021",
+     "title": "Laki asumisoikeusasunnoista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "1190/1993",
+     "title": "Aravarajoituslaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-05",
+     "notif": "2026-06-05",
+     "sk": "604/2001",
+     "title": "Laki vuokra-asuntolainojen ja asumisoikeustalolainojen korkotuesta",
      "type": "Laki"
     },
     {
@@ -5602,27 +5693,6 @@
     {
      "date": "2026-06-05",
      "notif": "2026-06-05",
-     "sk": "738/2002",
-     "title": "Työturvallisuuslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "545/2015",
-     "title": "Sosiaali- ja terveysministeriön asetus asunnon ja muun oleskelutilan terveydellisistä olosuhteista sekä ulkopuolisten asiantuntijoiden pätevyysvaatimuksista",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "751/2023",
-     "title": "Rakentamislaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
      "sk": "55/2001",
      "title": "Työsopimuslaki",
      "type": "Laki"
@@ -5637,29 +5707,8 @@
     {
      "date": "2026-06-05",
      "notif": "2026-06-05",
-     "sk": "872/2019",
-     "title": "Työaikalaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
      "sk": "1384/2015",
      "title": "Laki ammattipätevyyden tunnustamisesta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "379/2011",
-     "title": "Pelastuslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "436/1946",
-     "title": "Työehtosopimuslaki",
      "type": "Laki"
     },
     {
@@ -5679,43 +5728,8 @@
     {
      "date": "2026-06-05",
      "notif": "2026-06-05",
-     "sk": "393/2021",
-     "title": "Laki asumisoikeusasunnoista",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
      "sk": "390/2005",
      "title": "Laki vaarallisten kemikaalien ja räjähteiden käsittelyn turvallisuudesta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "162/2005",
-     "title": "Vuosilomalaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "44/2006",
-     "title": "Laki työsuojelun valvonnasta ja työpaikan työsuojeluyhteistoiminnasta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "1190/1993",
-     "title": "Aravarajoituslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "4/1734",
-     "title": "Oikeudenkäymiskaari",
      "type": "Laki"
     },
     {
@@ -5730,13 +5744,6 @@
      "notif": "2026-06-05",
      "sk": "574/2016",
      "title": "Laki vuokratalojen rakentamislainojen lyhytaikaisesta korkotuesta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "380/2023",
-     "title": "Laki työvoimapalveluiden järjestämisestä",
      "type": "Laki"
     },
     {
@@ -5765,13 +5772,6 @@
      "notif": "2026-06-05",
      "sk": "39/1889",
      "title": "Rikoslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-05",
-     "notif": "2026-06-05",
-     "sk": "604/2001",
-     "title": "Laki vuokra-asuntolainojen ja asumisoikeustalolainojen korkotuesta",
      "type": "Laki"
     },
     {
@@ -6018,6 +6018,22 @@
    "deadline": "2025-01-01",
    "measures": [
     {
+     "date": "2014-06-30",
+     "eif": "2015-01-01",
+     "notif": "2026-10-21",
+     "oj": "2014:31",
+     "title": "Landskapslag (2014:31) om energideklaration för byggnader 12/06/2014",
+     "type": "Landskapslag"
+    },
+    {
+     "date": "2008-10-03",
+     "eif": "2008-10-01",
+     "notif": "2026-10-21",
+     "oj": "2008:102",
+     "title": "Plan- och bygglag (2008:102) för landskapet Åland 28/08/2008",
+     "type": "Landskapslag"
+    },
+    {
      "date": "1999-06-03",
      "eif": "1999-07-01",
      "notif": "2026-10-21",
@@ -6058,28 +6074,44 @@
      "type": "Landskapsförordning"
     },
     {
-     "date": "2014-06-30",
-     "eif": "2015-01-01",
-     "notif": "2026-10-21",
-     "oj": "2014:31",
-     "title": "Landskapslag (2014:31) om energideklaration för byggnader 12/06/2014",
-     "type": "Landskapslag"
-    },
-    {
-     "date": "2008-10-03",
-     "eif": "2008-10-01",
-     "notif": "2026-10-21",
-     "oj": "2008:102",
-     "title": "Plan- och bygglag (2008:102) för landskapet Åland 28/08/2008",
-     "type": "Landskapslag"
-    },
-    {
      "date": "1999-07-22",
      "eif": "1999-09-01",
      "notif": "2026-10-21",
      "oj": "1999:40",
      "title": "Landskapslag (1999:40) om bostadsproduktion 24/06/1999",
      "type": "Landskapslag"
+    },
+    {
+     "date": "2024-12-30",
+     "eif": "2026-01-01",
+     "notif": "2026-05-29",
+     "sk": "1027/2024",
+     "title": "Ympäristöministeriön asetus rakennuksen ilmastoselvityksestä ja rakennustuoteluettelosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-22",
+     "eif": "2026-05-22",
+     "notif": "2026-05-29",
+     "sk": "365/2026",
+     "title": "Ympäristöministeriön asetus päästöttömän rakennuksen tunnuksesta energiatodistuksessa",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2017-12-27",
+     "eif": "2018-01-01",
+     "notif": "2026-05-29",
+     "sk": "1009/2017",
+     "title": "Ympäristöministeriön asetus uuden rakennuksen sisäilmastosta ja ilmanvaihdosta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-01-09",
+     "eif": "2026-01-09",
+     "notif": "2026-05-29",
+     "sk": "2/2026",
+     "title": "Valtioneuvoston asetus uuden rakennuksen hiilijalanjäljen raja-arvoista",
+     "type": "Valtioneuvoston asetus"
     },
     {
      "date": "2020-10-28",
@@ -6093,62 +6125,9 @@
      "date": "2017-12-27",
      "eif": "2018-01-01",
      "notif": "2026-05-29",
-     "sk": "1009/2017",
-     "title": "Ympäristöministeriön asetus uuden rakennuksen sisäilmastosta ja ilmanvaihdosta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-05-22",
-     "eif": "2026-05-22",
-     "notif": "2026-05-29",
-     "sk": "365/2026",
-     "title": "Ympäristöministeriön asetus päästöttömän rakennuksen tunnuksesta energiatodistuksessa",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-01-09",
-     "eif": "2026-01-09",
-     "notif": "2026-05-29",
-     "sk": "2/2026",
-     "title": "Valtioneuvoston asetus uuden rakennuksen hiilijalanjäljen raja-arvoista",
-     "type": "Valtioneuvoston asetus"
-    },
-    {
-     "date": "2017-12-27",
-     "eif": "2018-01-01",
-     "notif": "2026-05-29",
      "sk": "1010/2017",
      "title": "Ympäristöministeriön asetus uuden rakennuksen energiatehokkuudesta",
      "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2024-12-30",
-     "eif": "2026-01-01",
-     "notif": "2026-05-29",
-     "sk": "1027/2024",
-     "title": "Ympäristöministeriön asetus rakennuksen ilmastoselvityksestä ja rakennustuoteluettelosta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-05-29",
-     "notif": "2026-05-29",
-     "sk": "848/2017",
-     "title": "Ympäristöministeriön asetus rakennusten paloturvallisuudesta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-05-29",
-     "notif": "2026-05-29",
-     "sk": "1429/2014",
-     "title": "Energiatehokkuuslaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-05-29",
-     "notif": "2026-05-29",
-     "sk": "50/2013",
-     "title": "Laki rakennuksen energiatodistuksesta",
-     "type": "Laki"
     },
     {
      "date": "2026-05-29",
@@ -6156,6 +6135,13 @@
      "sk": "1048/2017",
      "title": "Ympäristöministeriön asetus rakennuksen energiatodistuksesta",
      "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "50/2013",
+     "title": "Laki rakennuksen energiatodistuksesta",
+     "type": "Laki"
     },
     {
      "date": "2026-05-29",
@@ -6169,6 +6155,20 @@
      "notif": "2026-05-29",
      "sk": "751/2023",
      "title": "Rakentamislaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "848/2017",
+     "title": "Ympäristöministeriön asetus rakennusten paloturvallisuudesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-05-29",
+     "notif": "2026-05-29",
+     "sk": "1429/2014",
+     "title": "Energiatehokkuuslaki",
      "type": "Laki"
     },
     {
@@ -6258,6 +6258,13 @@
     {
      "date": "2026-06-29",
      "notif": "2026-06-29",
+     "sk": "609/1986",
+     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
      "sk": "750/1994",
      "title": "Valtion virkamieslaki",
      "type": "Laki"
@@ -6265,29 +6272,8 @@
     {
      "date": "2026-06-29",
      "notif": "2026-06-29",
-     "sk": "434/2003",
-     "title": "Hallintolaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-29",
-     "notif": "2026-06-29",
      "sk": "1050/2018",
      "title": "Tietosuojalaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-29",
-     "notif": "2026-06-29",
-     "sk": "728/2021",
-     "title": "Laki valtion palveluiden saatavuuden ja toimintojen sijoittamisen perusteista",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-29",
-     "notif": "2026-06-29",
-     "sk": "609/1986",
-     "title": "Laki naisten ja miesten välisestä tasa-arvosta",
      "type": "Laki"
     },
     {
@@ -6328,6 +6314,20 @@
     {
      "date": "2026-06-29",
      "notif": "2026-06-29",
+     "sk": "434/2003",
+     "title": "Hallintolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
+     "sk": "728/2021",
+     "title": "Laki valtion palveluiden saatavuuden ja toimintojen sijoittamisen perusteista",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-29",
+     "notif": "2026-06-29",
      "sk": "1326/2014",
      "title": "Laki yhdenvertaisuusvaltuutetusta",
      "type": "Laki"
@@ -6351,8 +6351,8 @@
     {
      "date": "2026-11-05",
      "notif": "2026-11-05",
-     "sk": "423/2013",
-     "title": "Laki osuuspankeista ja muista osuuskuntamuotoisista luottolaitoksista",
+     "sk": "1502/2001",
+     "title": "Säästöpankkilaki",
      "type": "Laki"
     },
     {
@@ -6372,15 +6372,15 @@
     {
      "date": "2026-11-05",
      "notif": "2026-11-05",
-     "sk": "1502/2001",
-     "title": "Säästöpankkilaki",
+     "sk": "610/2014",
+     "title": "Laki luottolaitostoiminnasta",
      "type": "Laki"
     },
     {
      "date": "2026-11-05",
      "notif": "2026-11-05",
-     "sk": "610/2014",
-     "title": "Laki luottolaitostoiminnasta",
+     "sk": "423/2013",
+     "title": "Laki osuuspankeista ja muista osuuskuntamuotoisista luottolaitoksista",
      "type": "Laki"
     },
     {
@@ -6479,20 +6479,6 @@
     {
      "date": "2026-06-25",
      "notif": "2026-06-25",
-     "sk": "1354/2014",
-     "title": "Laki valtion varoista maksettavasta korvauksesta turvakotipalvelun tuottajalle",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-25",
-     "notif": "2026-06-25",
-     "sk": "442/1999",
-     "title": "Laki holhoustoimesta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-25",
-     "notif": "2026-06-25",
      "sk": "301/2004",
      "title": "Ulkomaalaislaki",
      "type": "Laki"
@@ -6521,13 +6507,6 @@
     {
      "date": "2026-06-25",
      "notif": "2026-06-25",
-     "sk": "1301/2014",
-     "title": "Sosiaalihuoltolaki",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-06-25",
-     "notif": "2026-06-25",
      "sk": "361/1983",
      "title": "Laki lapsen huollosta ja tapaamisoikeudesta",
      "type": "Laki"
@@ -6542,15 +6521,36 @@
     {
      "date": "2026-06-25",
      "notif": "2026-06-25",
-     "sk": "1326/2010",
-     "title": "Terveydenhuoltolaki",
+     "sk": "39/1889",
+     "title": "Rikoslaki",
      "type": "Laki"
     },
     {
      "date": "2026-06-25",
      "notif": "2026-06-25",
-     "sk": "39/1889",
-     "title": "Rikoslaki",
+     "sk": "1301/2014",
+     "title": "Sosiaalihuoltolaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1354/2014",
+     "title": "Laki valtion varoista maksettavasta korvauksesta turvakotipalvelun tuottajalle",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "442/1999",
+     "title": "Laki holhoustoimesta",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-06-25",
+     "notif": "2026-06-25",
+     "sk": "1326/2010",
+     "title": "Terveydenhuoltolaki",
      "type": "Laki"
     },
     {
@@ -6572,15 +6572,15 @@
     {
      "date": "2026-07-14",
      "notif": "2026-07-14",
-     "sk": "936/2014",
-     "title": "Valtioneuvoston asetus suurten polttolaitosten päästöjen rajoittamisesta",
-     "type": "Valtioneuvoston asetus"
+     "sk": "808/2019",
+     "title": "Laki oikeudenkäynnistä hallintoasioissa",
+     "type": "Laki"
     },
     {
      "date": "2026-07-14",
      "notif": "2026-07-14",
-     "sk": "64/2015",
-     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta",
+     "sk": "936/2014",
+     "title": "Valtioneuvoston asetus suurten polttolaitosten päästöjen rajoittamisesta",
      "type": "Valtioneuvoston asetus"
     },
     {
@@ -6635,9 +6635,9 @@
     {
      "date": "2026-07-14",
      "notif": "2026-07-14",
-     "sk": "808/2019",
-     "title": "Laki oikeudenkäynnistä hallintoasioissa",
-     "type": "Laki"
+     "sk": "64/2015",
+     "title": "Valtioneuvoston asetus eräiden orgaanisia liuottimia käyttävien toimintojen ja laitosten ilmaan johdettavien päästöjen rajoittamisesta",
+     "type": "Valtioneuvoston asetus"
     }
    ]
   },
@@ -6722,6 +6722,27 @@
     {
      "date": "2026-10-06",
      "notif": "2026-10-06",
+     "sk": "355/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiön toimintasuunnitelmasta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "356/2015",
+     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiölain 10 luvun mukaisessa vakavaraisuuslaskennassa käytettävästä vastaavuuskorjauksesta",
+     "type": "Ministeriön asetus"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
+     "sk": "521/2008",
+     "title": "Vakuutusyhtiölaki",
+     "type": "Laki"
+    },
+    {
+     "date": "2026-10-06",
+     "notif": "2026-10-06",
      "sk": "304/2015",
      "title": "Laki vakuutusyhtiölain muuttamisesta annetun lain voimaantulosta",
      "type": "Laki"
@@ -6743,13 +6764,6 @@
     {
      "date": "2026-10-06",
      "notif": "2026-10-06",
-     "sk": "355/2015",
-     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiön toimintasuunnitelmasta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-10-06",
-     "notif": "2026-10-06",
      "sk": "621/1999",
      "title": "Laki viranomaisten toiminnan julkisuudesta",
      "type": "Laki"
@@ -6759,20 +6773,6 @@
      "notif": "2026-10-06",
      "sk": "878/2008",
      "title": "Laki Finanssivalvonnasta",
-     "type": "Laki"
-    },
-    {
-     "date": "2026-10-06",
-     "notif": "2026-10-06",
-     "sk": "356/2015",
-     "title": "Sosiaali- ja terveysministeriön asetus vakuutusyhtiölain 10 luvun mukaisessa vakavaraisuuslaskennassa käytettävästä vastaavuuskorjauksesta",
-     "type": "Ministeriön asetus"
-    },
-    {
-     "date": "2026-10-06",
-     "notif": "2026-10-06",
-     "sk": "521/2008",
-     "title": "Vakuutusyhtiölaki",
      "type": "Laki"
     }
    ]
@@ -6876,5 +6876,5 @@
    "measures": []
   }
  },
- "fetched": "2026-11-15T08:55:52"
+ "fetched": "2026-11-16T08:54:13"
 }
