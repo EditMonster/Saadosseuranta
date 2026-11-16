@@ -453,7 +453,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-16T11:19:39Z",
+ "fetched": "2026-11-16T19:12:23Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1103,7 +1103,8 @@
    "firstSeen": "2026-10-20",
    "hilmaNo": null,
    "key": "54ef2e4cefe7",
-   "lastSeen": "2026-11-16"
+   "lastSeen": "2026-11-16",
+   "missingSince": "2026-11-16"
   },
   "54fa198ee48f": {
    "buyer": "Helsingin kaupunki",
@@ -1224,6 +1225,16 @@
    "firstSeen": "2026-10-29",
    "hilmaNo": null,
    "key": "61d3463c8193",
+   "lastSeen": "2026-11-16"
+  },
+  "672eff811aef": {
+   "buyer": "HUS-yhtymä",
+   "decisionDate": "2026-11-03",
+   "decisionText": "HUS-yhtymän konsernihallinnon hankintatoimenjohtajan päätös 3.11.2026, § 419 / 2026, HUS/12021/2026, päätös tarjouksen poissulkemisesta tarjouskilpailussa HUS 123 2026 Holter tutkimuslaitteet, Sydämen EKG:n pitkäaikaisrekisteröinnin kokonaisratkaisu",
+   "filed": "2026-11-16",
+   "firstSeen": "2026-11-16",
+   "hilmaNo": null,
+   "key": "672eff811aef",
    "lastSeen": "2026-11-16"
   },
   "68de15d787c8": {
@@ -2190,6 +2201,16 @@
    "key": "ef80df1d5eae",
    "lastSeen": "2026-11-11",
    "missingSince": "2026-11-11"
+  },
+  "f05407e85509": {
+   "buyer": "Kirkkonummen kunta",
+   "decisionDate": "2026-10-05",
+   "decisionText": "Kirkkonummen kunnan kunnanhallituksen hankintapäätös 5.10.2026, § 280, perustietotekniikan palveluiden hankinta",
+   "filed": "2026-10-20",
+   "firstSeen": "2026-11-16",
+   "hilmaNo": null,
+   "key": "f05407e85509",
+   "lastSeen": "2026-11-16"
   },
   "f2f2faa535fe": {
    "buyer": "Lappeenrannan kaupunki",

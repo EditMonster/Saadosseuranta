@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T11:21:45",
+ "fetched": "2026-11-16T19:14:07",
  "he": {
   "1/2020": {
    "checked": "2026-10-27",
@@ -25,6 +25,17 @@
   "1/2025": {
    "checked": "2026-10-27",
    "found": false,
+   "v": 4
+  },
+  "10/2022": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi sosiaali- ja terveydenhuoltoa ja pelastustoimea koskevan uudistuksen toimeenpanosta ja sitä koskevan lainsäädännön voimaanpanosta annettua lakia, hyvinvointialueesta annettua lakia, sosiaali- ja terveydenhuollon järjestämisestä annettua lakia, pelastustoimen järjestämisestä annettua lakia, hyvinvointialueiden rahoituksesta annettua lakia, terveydenhuoltolakia, perintö- ja lahjaverolakia sekä kuolemansyyn selvittämisestä annettua lakia. Tavoitteena on tarkentaa sosiaali- ja terveydenhuollon ja pelastustoimen uudistusta koskevaa lainsäädäntöä siltä osin, kuin uudistuksen toimeenpanossa on havaittu täsmentämistarpeita. Ympäristöterveydenhuollon tehtävien järjestämisvastuun sopimuksenvaraista siirtoa koskevaa säännöstä ehdotetaan täsmennettäväksi eräiltä osin. Hyvinvointialueen tiedonsaantioikeutta ehdotetaan muutettavaksi siten, että hyvinvointialueella olisi oikeus saada sosiaali- ja terveydenhuollon asiakas- ja potilastietoja silloin, kun tiedot olisivat välttämättömiä asiakkaan hoidon ja palvelujen jatkuvuuden sekä hoitoon ja palveluun liittyvien yksilökohtaisiin velvoitteiden täyttämiseksi. Kuntien hyvinvointialueille tuottamien tukipalvelujen yhtiöittämiselle ehdotetaan yhden vuoden siirtymäaikaa, jos kunta on tuottanut kyseisiä palveluja sosiaali- ja terveydenhuoltoon tai pelastustoimeen ennen vuotta 2023.",
+   "sj": {
+    "order": "tavallinen",
+    "pev": true,
+    "text": "Hallituksen käsityksen mukaan esitys voidaan käsitellä tavallisen lain säätämisjärjestyksessä. Hallitus pitää kuitenkin suotavana, että perustuslakivaliokunta antaisi asiasta lausunnon."
+   },
    "v": 4
   },
   "10/2024": {
@@ -103,6 +114,11 @@
     "order": "tavallinen",
     "text": "Edellä mainituilla perusteilla lakiehdotukset voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä."
    },
+   "v": 4
+  },
+  "101/2020": {
+   "checked": "2026-11-16",
+   "found": false,
    "v": 4
   },
   "101/2021": {
@@ -261,6 +277,12 @@
    "text": "Lainsäädännön arviointineuvosto antoi esitysluonnoksesta lausunnon 4.5.2026 (asianumero VN/13863/2025-VNK-3). Arviointineuvosto katsoi, että hallituksen esitysluonnos noudattaa tyydyttävästi lainvalmistelun vaikutusarviointiohjetta. Arviointineuvosto suosittelee, että esitysluonnosta korjataan neuvoston lausunnon mukaisesti ennen hallituksen esityksen antamista. Esitysluonnoksen perusteella saa pääosin käsityksen asian taustasta, tavoitteista ja keskeisistä ehdotuksista. Esitysluonnoksessa vaikutuksia on käsitelty useasta näkökulmasta, mutta vaikutusarvioinnin keskeiset johtopäätökset ja vaikutusketjut eivät kaikilta osin käy selkeästi ilmi. Keskeiset kehittämiskohteet liittyvät erityisesti vaikutusten mittaluokan, kohdentumisen ja epävarmuuksien täsmällisempään kuvaamiseen sekä siihen, että vaikutusarviointi jää useissa kohdissa yleisemmälle tasolle kuin nykytilan arviointi.",
    "v": 4,
    "verdict": "tyydyttävästi"
+  },
+  "105/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi tartuntatautilakia. Muutokset on tarkoitettu olemaan voimassa covid-19-pandemian johdosta väliaikaisesti. Esityksessä ehdotetuilla tartuntatautilain muutoksilla pyritään ehkäisemään ulkomaista alkuperää olevien covid-19-tartuntojen leviäminen Suomeen. Suomeen saapuvilta henkilöiltä edellytettäisiin luotettavaa todistusta kuuden kuukauden sisällä sairastetusta covid-19-taudista, saadusta hyväksyttävästä covid-19-rokotussarjasta tai ennen Suomeen saapumista tehdystä negatiivisen tuloksen osoittavasta luotettavasta covid-19-testistä. Jos Suomeen saapuvalla vuonna 2005 tai sitä ennen syntyneellä henkilöllä ei olisi esittää covid-19-testitodistusta, hänen tulisi käydä testissä Suomeen saavuttuaan ja toisessa covid-19-testissä 72-120 tunnin kuluessa Suomeen saapumisesta. Lisäksi heidän, joilla on todistus ennen Suomeen saapumista tehdystä negatiivisen tuloksen osoittavasta luotettavasta covid-19-testistä, tulisi käydä toisessa covid-19-testissä 72-120 tunnin kuluessa Suomeen saapumisesta. Esityksessä ehdotetaan myös lisättäväksi tartuntatautilakiin virka-apua täydentävää sääntelyä. Lisäksi tartuntatautilakiin ehdotetaan muutosta, jolla säädettäisiin rangaistavaksi se, jos henkilö ei osallistuisi edellä tarkoitettuihin covid-19-testeihin. Laki on tarkoitettu tulemaan voimaan mahdollisimman pian ja olemaan voimassa 31 päivään joulukuuta 2021. asti.",
+   "v": 4
   },
   "105/2025": {
    "checked": "2026-10-27",
@@ -709,6 +731,11 @@
    "found": false,
    "v": 4
   },
+  "118/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "v": 4
+  },
   "118/2022": {
    "checked": "2026-10-27",
    "found": false,
@@ -991,6 +1018,16 @@
    },
    "v": 4
   },
+  "125/2020": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi tieteellisiin tai opetustarkoituksiin käytettävien eläinten suojelusta annettua lakia. Lakiehdotuksen taustalla on Euroopan komission antama virallinen huomautus tieteellisiin tarkoituksiin käytettävien eläinten suojelusta annetun direktiivin puutteellisesta täytäntöönpanosta. Samalla lakiin tehtäisiin eräitä direktiivin muutoksesta johtuvia päivityksiä eläinten käyttöä koskevien tietojen julkaisuun liittyen. Esitykseen sisältyy myös eräitä kansallisesta tarpeesta johtuvia muutoksia. Lain soveltamisalaa ehdotetaan laajennettavan siten, että se koskisi myös lintujen ja matelijoiden sikiöitä niiden kehityksen viimeisen kolmanneksen aikana. Hankelupalautakunnan kokoonpanoa ehdotetaan muutettavan joustavammaksi siten, että henkilökohtaisten varajäsenten sijaan lautakunnan jaostoihin voitaisiin nimetä jäsenelle useampi samaa asiantuntemusalaa edustava varajäsen. Laki on tarkoitettu tulemaan voimaan 1.1.2021.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Katsotaan, että laki voidaan säätää tavallisessa lainsäätämisjärjestyksessä."
+   },
+   "v": 4
+  },
   "125/2024": {
    "checked": "2026-10-27",
    "found": false,
@@ -1140,6 +1177,16 @@
    "v": 4,
    "verdict": null
   },
+  "129/2020": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi sosiaali- ja terveydenhuollon asiakasmaksuista annettua lakia, sosiaali- ja terveydenhuollon palvelusetelistä annettua lakia sekä tuomioistuinmaksulakia. Esityksen tavoitteena on pääministeri Sanna Marinin hallituksen ohjelman kirjauksen mukaisesti hoidon esteiden poistaminen ja terveyden tasa-arvon lisääminen. Esityksessä ehdotetaan muutettavaksi asiakasmaksulakia niin, että hoitajavastaanotot tulisivat maksuttomiksi perusterveydenhuollossa ja että poliklinikan antamasta tutkimuksesta ja hoidosta ei enää perittäisi maksuja alaikäisiltä asiakkailta. Mielenterveyspalvelujen maksuttomuutta perusterveydenhuollossa selkiytettäisiin ja tartuntatauteihin liittyvän hoidon, tutkimuksen ja lääkkeiden maksuttomuutta laajennettaisiin tietyiltä osin. Maksukattoa laajennettaisiin suun terveydenhuollosta, terapiasta, tilapäisestä kotisairaanhoidosta ja tilapäisestä kotisairaalahoidosta sekä tietyistä etäpalveluista perittäviin asiakasmaksuihin. Lisäksi asiakasmaksut, joiden suorittamiseen on myönnetty toimeentulotukea, kerryttäisivät jatkossa maksukattoa. Pitkäaikaishoidon asiakasmaksut määräytyisivät jatkossakin asiakkaan maksukyvyn mukaan.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Hallitus katsoo kuitenkin, että esitys voidaan käsitellä tavallisen lain säätämisjärjestyksessä."
+   },
+   "v": 4
+  },
   "129/2024": {
    "checked": "2026-10-27",
    "found": false,
@@ -1277,6 +1324,17 @@
    "v": 4,
    "verdict": "hyvin"
   },
+  "131/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi tartuntatautilakia siten, että ulkomaista alkuperää olevien covid-19-tartuntojen Suomeen leviämisen ehkäisemiseksi säädettyjen tartuntatautilain väliaikaisesti voimassa olevien säännösten voimassaolo jatkuu 15.10.2021 jälkeenkin 31.12.2021 saakka. Suomeen saapuvilta henkilöiltä edellytettäisiin joko luotettavaa todistusta kuuden kuukauden sisällä sairastetusta covid-19-taudista, saadusta hyväksyttävästä covid-19-rokotussarjasta tai ennen Suomeen saapumista tehdystä negatiivisen tuloksen osoittavasta luotettavasta covid-19-testistä. Suomeen saapuvan olisi vaihtoehtoisesti käytävä covid-19-testissä Suomeen saavuttuaan ja toisessa testissä 72–120 tunnin kuluessa. Lakiin ehdotetaan lisättäväksi myös säännös valtion korvausvelvollisuudesta kunnille ja kuntayhtymille todistusten tarkastamisesta ja covid-19-testauksesta aiheutuvista kustannuksia. Esityksessä ehdotetaan säädettäväksi myös EU:n digitaalisen koronatodistuksen kansallisesta käytöstä. Vaihtoehtona voimassa oleville säädetyille ja viranomaispäätöksin asetetuille koronavirusepidemian leviämisen estämiseen tähtääville velvoitteille ja rajoituksille toiminnanharjoittaja voisi tietyin edellytyksin edellyttää yleisötilaisuuteen osallistuvilta tai asiakas- ja osallistujatilaan tulevilta ihmisiltä koronatodistuksen esittämistä.",
+   "sj": {
+    "order": "tavallinen",
+    "pev": true,
+    "text": "Edellä mainituilla perusteilla lakiehdotus voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä. Asiasta olisi kuitenkin aiheellista hankkia perustuslakivaliokunnan lausunto."
+   },
+   "v": 4
+  },
   "131/2022": {
    "checked": "2026-11-15",
    "found": false,
@@ -1341,6 +1399,17 @@
    "sj": {
     "order": "tavallinen",
     "text": "Edellä mainituilla perusteluilla lakiehdotukset voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä."
+   },
+   "v": 4
+  },
+  "133/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettaviksi oikeudenkäymiskaarta sekä oikeudenkäynnistä rikosasioissa annettua lakia, oikeudenkäynnin julkisuudesta yleisissä tuomioistuimissa annettua lakia, elinkautisvankien vapauttamismenettelystä annettua lakia, oikeudenkäynnistä markkinaoikeudessa annettua lakia ja turvatarkastuksista tuomioistuimissa annettua lakia. Esityksellä toteutettaisiin pääministeri Sanna Marinin hallituksen ohjelmaa, jonka mukaan oikeudenkäynneissä näytön vastaanottaminen keskitetään käräjäoikeuksiin niin, että todistelu taltioidaan hovioikeuskäsittelyä varten. Esityksen mukaan käräjäoikeudessa vastaanotettavasta suullisesta todistelusta tehtäisiin kuva- ja äänitallenne. Jos asiassa haettaisiin muutosta, hovioikeus ja korkein oikeus ottaisivat suullisen todistelun lähtökohtaisesti vastaan tältä tallenteelta, eikä todistajia ja muita oikeudenkäynnissä kuulusteltavia henkilöitä kutsuttaisi esittämään kertomustaan uudelleen. Eräissä tilanteissa suullinen todistelu voitaisiin esittää pääkäsittelyssä siihen viittaamalla siten, että muutoksenhakutuomioistuin perehtyisi todisteluun asianosaisten ja yleisön läsnä olematta. Lisäksi tehtäisiin eräitä muita muutoksia suullisen todistelun vastaanottamistapaan.",
+   "sj": {
+    "order": "tavallinen",
+    "pev": true,
+    "text": "Lait voidaan siten hyväksyä tavallisen lain säätämisjärjestyksessä. Näistä syistä ehdotuksesta olisi aiheellista pyytää perustuslakivaliokunnan lausunto."
    },
    "v": 4
   },
@@ -1889,6 +1958,11 @@
    "checked": "2026-10-27",
    "found": false,
    "sisalto": "Esityksessä ehdotetaan muutettavaksi puolustustarvikkeiden viennistä annettua lakia. Muutosten tavoitteena on ajantasaistaa lainsäädäntöä vastaamaan muuttunutta turvallisuusympäristöä, tiivistynyttä kansainvälistä puolustusyhteistyötä sekä Suomen Nato-jäsenyyttä. Lain soveltamisalaa tarkennettaisiin ja päivitettäisiin puolustustarvikkeen määritelmää. Lakiin ehdotetaan lisättäväksi uutena lupatyyppinä yleinen vientilupa, joka yksinkertaistaisi erityisesti ei‑kaupallisiin ja väliaikaisiin vientitilanteisiin liittyvää lupamenettelyä. Valvontaa tehostettaisiin tarkentamalla puolustustarvikkeiden viejille asetettavia vaatimuksia ja kirjanpitovelvollisuuksia. Lisäksi mahdollistettaisiin viennin jälkeiset tarkastukset. Tiettyjen teknologioiden kohdalla luotaisiin puolustushallinnon sisäinen vapautusmenettely. Päätöksentekoa valtioneuvostossa kohdennettaisiin uudelleen puolustusministeriön ja valtioneuvoston yleisistunnon välillä. Lisäksi lakiin tehtäisiin muutamia teknisiä ja kielellisiä muutoksia ilman vaikutusta oikeustilaan. Ehdotettu laki on tarkoitettu tulemaan tulla voimaan 1.2.2027.",
+   "v": 4
+  },
+  "15/2021": {
+   "checked": "2026-11-16",
+   "found": false,
    "v": 4
   },
   "15/2024": {
@@ -4181,6 +4255,11 @@
    },
    "v": 4
   },
+  "224/2020": {
+   "checked": "2026-11-16",
+   "found": false,
+   "v": 4
+  },
   "224/2026": {
    "checked": "2026-10-27",
    "found": false,
@@ -4272,6 +4351,16 @@
   "23/2026": {
    "checked": "2026-10-27",
    "found": false,
+   "v": 4
+  },
+  "230/2020": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi terveydenhuoltolakia ja sosiaalihuoltolakia lisäämällä niihin sosiaali- ja terveydenhuollon valmiussuunnittelua ja tilannekuvan luomista koskevia säännökset. Sairaanhoitopiireille, joissa on yliopistollinen sairaala, annettaisiin tehtäväksi sosiaali- ja terveydenhuollon valmiussuunnittelun ohjaus valtakunnallisten yhtenäisten periaatteiden mukaisesti omalla erityisvastuualueellaan. Sosiaalihuoltolakiin lisättäisiin sosiaalihuollon valmiussuunnittelua ja varautumista koskeva yleissäännös. Sairaanhoitopiirien alueen kuntien tulisi laatia yhteinen sosiaalihuollon valmiussuunnitelma keskussairaalan sijaintikunnan sosiaalihuollosta vastaavan viranomaisen johdolla. Ylipistollista sairaalaa ylläpitävät sairaanhoitopiirit toimisivat keskenään yhteistyössä ja yhdenmukaisin periaattein, jotta valmiussuunnittelusta muodostuisi valtakunnallinen kokonaisuus. Yliopistollista sairaalaa ylläpitävän sairaanhoitopiirin tehtävänä olisi luoda terveydenhuollon tilannekuva, joka sisältäisi tiedot perusterveydenhuollon ja erikoissairaanhoidon häiriötilanteista ja niiden uhkista sekä terveyspalvelujärjestelmän valmiudesta vastata erilaisiin häiriötilanteisiin.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Hallituksen käsityksen mukaan lakiehdotukset voidaan käsitellä tavallisen lain säätämisjärjestyksessä."
+   },
    "v": 4
   },
   "230/2026": {
@@ -6577,6 +6666,19 @@
    "found": false,
    "v": 4
   },
+  "48/2022": {
+   "checked": "2026-11-16",
+   "date": "2022-02-18",
+   "found": true,
+   "sisalto": "Esityksessä ehdotetaan lisättäväksi kuluttajansuojalakiin uusi 9 a luku eräistä henkilöön kohdistuvista palveluista. Henkilöön kohdistuvilla palveluilla tarkoitetaan ehdotetussa laissa terveys- ja sosiaalipalveluja, varhaiskasvatus- ja koulutuspalveluja, ulkonäköön kohdistuvia palveluja, liikunta- ja muita hyvinvointipalveluja, elämyspalveluja ja vapaa-ajan kursseja, juhla- ja ravintolapalveluja sekä taksiliikenteen palveluja. Pääministeri Marinin hallitusohjelman mukaan kuluttajansuojaa ajantasaistetaan etenkin palveluiden osalta. Kuluttajansuojalaissa ei tällä hetkellä ole säännöksiä kuluttajan oikeuksista virhe- ja viivästystilanteissa silloin, kun kyse on henkilöön kohdistuvista palveluista. Kuluttajariitalautakunnan ratkaisukäytännössä kuluttajansuojalain 8 luvun periaatteita on tosin sovellettu myös muihin kuin luvun soveltamisalaan nimenomaisesti kuuluviin kuluttajapalvelusopimuksiin. Oikeusvarmuuden lisäämiseksi ja kuluttajan aseman parantamiseksi uuteen 9 a lukuun lisättäisiin säännökset toimeksisaajana toimivan elinkeinonharjoittajan suorituksesta henkilöön kohdistuvissa palveluissa, seuraamukset tällaisen palvelun viivästymisestä tai virheestä sekä tilaajana toimivan kuluttajan velvollisuuksista ja sopimusrikkomuksen seuraamuksista. Lisäksi tarkennettaisiin välittäjän vastuuta koskevaa 12 luvun 1 §:ää.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Edellä esitetyistä syistä lakiehdotus täyttää perustuslain asettamat vaatimukset ja laki voidaan säätää tavallisessa lainsäätämisjärjestyksessä."
+   },
+   "text": "Lainsäädännön arviointineuvosto antoi 18.2.2022 lausunnon esitysluonnoksesta. Esitykseen on lainsäädännön arviointineuvoston lausunnon johdosta tehty täydennyksiä siltä osin kuin se on käytettävissä olevaan tilastotietoon ja muuhun tietoon nähden ollut mahdollista. Vaikutusarvioinnista on myös arviointineuvoston lausunnon mukaisesti poistettu tekstejä, joissa ei varsinaisesti arvioida ehdotettujen säännösten vaikutuksia. Esityksen 5.2 jaksossa esitettyä maavertailua ei ole mahdollista laajentaa, sillä vertailussa käsitellyissä maissa ei kuluttajansuojalainsäädännössä ole erityisiä säännöksiä henkilöön kohdistuvista palveluista. Näihin palveluihin sovelletaan yleisiä kuluttajansuojasäännöksiä eikä saatavilla ole tietoa siitä, millaisia kokemuksia kyseisissä maissa on saatu nimenomaan henkilöön kohdistuvista palveluista.",
+   "v": 4,
+   "verdict": null
+  },
   "48/2024": {
    "checked": "2026-10-27",
    "found": false,
@@ -6875,6 +6977,16 @@
   "55/2026": {
    "checked": "2026-10-27",
    "found": false,
+   "v": 4
+  },
+  "56/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Hallituksen esitys liittyy eduskunnalle 8.12.2020 annettuun hallituksen esitykseen hyvinvointialueiden perustamista ja sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisen uudistusta koskevaksi lainsäädännöksi sekä Euroopan paikallisen itsehallinnon peruskirjan 12 ja 13 artiklan mukaisen ilmoituksen antamiseksi (HE 241/2020). Esityksessä ehdotetaan muutettaviksi sosiaali- ja terveydenhuollon ja pelastustoimen lainsäädäntöä sekä eräitä muita lakeja edellä mainitusta esityksestä johtuen ja sen mukaisesti. Lait on tarkoitettu tulemaan voimaan 1 päivänä tammikuuta 2023.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Edellä kerrotun perusteella lait voidaan hallituksen käsityksen mukaan säätää tavallisessa lainsäätämisjärjestyksessä."
+   },
    "v": 4
   },
   "56/2023": {
@@ -7235,6 +7347,16 @@
    "v": 4,
    "verdict": null
   },
+  "67/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan säädettäväksi laki lääkinnällisistä laitteista ja muutettavaksi terveydenhuollon laitteista ja tarvikkeista annettua lakia, tartuntatautilakia, potilasvakuutuslakia, säteilylakia, tupakkalakia, kehitysvammaisten erityishuollosta annettua lakia, Lääkealan turvallisuus- ja kehittämiskeskuksesta annettua lakia ja vaarallisten aineiden käytön rajoittamisesta sähkö- ja elektroniikkalaitteissa annettua lakia. Esityksen tarkoituksena on antaa lääkinnällisiä laitteita koskevaa EU:n asetusta ja ihmiskehon ulkopuolella suoritettavissa tutkimuksissa käytettäviä lääkinnällisiä laitteita eli niin sanottuja in vitro –diagnostiikkaan tarkoitettuja laitteita koskevaa EU:n asetusta täydentävät säännökset. Uudessa lääkinnällisiä laitteita koskevassa laissa säädettäisiin niistä asioista, joista EU-asetukset edellyttävät tai mahdollistavat kansallisia säännöksiä. Laissa säädettäisiin muun muassa viranomaisen toimivaltuuksista, asiakirjoja koskevista kielivaatimuksista, terveydenhuoltoon kohdistuvista velvoitteista, toimijoilta perittävästä vuosimaksusta ja lainsäädännön rikkomisen seuraamuksista. Lisäksi laissa olisi säännöksiä kliinisistä laitetutkimuksista ja laitteiden suorituskykyä koskevista tutkimuksista. In vitro -diagnostiikkaan tarkoitettuja lääkinnällisiä laitteita koskevaa asetusta sovelletaan täysimääräisesti vasta vuonna 2022.",
+   "sj": {
+    "order": "tavallinen",
+    "text": "Edellä mainituilla perusteilla lakiehdotukset voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä."
+   },
+   "v": 4
+  },
   "67/2025": {
    "checked": "2026-10-27",
    "found": false,
@@ -7442,6 +7564,11 @@
    "found": false,
    "v": 4
   },
+  "73/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "v": 4
+  },
   "73/2022": {
    "checked": "2026-10-27",
    "found": false,
@@ -7483,6 +7610,20 @@
    "found": true,
    "sisalto": "Esityksessä ehdotetaan säädettäväksi laki eräitä yleishyödyllisiä palveluita tuottavien yritysten tiedon uudelleenkäytöstä sekä laki julkisin varoin tuotettujen tutkimusaineistojen uudelleenkäytöstä. Lisäksi julkisen hallinnon tiedonhallinnasta annettua lakia ja viranomaisten toiminnan julkisuudesta annettua lakia ehdotetaan muutettavaksi. Esityksellä on tarkoitus panna täytäntöön avointa dataa ja julkisen sektorin hallussa olevien tietojen uudelleenkäyttöä koskevan Euroopan parlamentin ja neuvoston direktiivin vaatimukset siltä osin kuin voimassa oleva kansallinen lainsäädäntö ei täytä niitä. Sääntely kohdistuisi julkisen sektorin elinten hallussa oleviin tietoihin, julkisin varoin tuotettuihin ja tietovarastossa julkaistuihin tutkimusaineistoihin, sekä tietyillä toimialoilla toimivien julkisyhteisöjen määräysvallassa olevien yritysten tietoihin silloin, kun yritys sallii tietojen käytön tai on velvollinen sallimaan uudelleenkäytön. Julkisen hallinnon tiedonhallinnasta annettuun lakiin ja viranomaisten toiminnan julkisuudesta annettuun lakiin ehdotettavat muutokset koskisivat arvokkaita tietoaineistoja sekä tiheästi tai reaaliaikaisesti päivittyvää tietoa. Lisäksi julkisen hallinnon tiedonhallinnasta annettuun lakiin ehdotettaisiin direktiivin täytäntöönpanosta johtuvia muutoksia lain soveltamisalaan ja tiedonhallintalautakunnan tehtäviin.",
    "text": "Lainsäädännön arviointineuvosto antoi lausuntonsa hallituksen esityksestä 14.4.2021. Arviointineuvosto kiinnitti erityistä huomiota esityksen tavoitteisiin ja siihen, että kansallisen liikkumavaran vähäistä hyödyntämistä ei oltu perusteltu riittävästi. Myös avoimen datan hyötyjä käsiteltiin suppeasti ja arviointineuvosto katsoi, että konkreettiset esimerkit helpottaisivat asiakokonaisuuden ymmärtämistä.",
+   "v": 4,
+   "verdict": null
+  },
+  "74/2022": {
+   "checked": "2026-11-16",
+   "date": "2022-02-22",
+   "found": true,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi toistaiseksi ja väliaikaisesti terveydenhuoltolakia, toistaiseksi ja väliaikaisesti korkeakouluopiskelijoiden opiskeluterveydenhuollosta annettua lakia, oppilas- ja opiskelijahuoltolakia, vankeuslakia, tutkintavankeuslakia sekä potilaan asemasta ja oikeuksista annettua lakia. Esityksessä ehdotetaan tiukennettavaksi perusterveydenhuollon kiireettömään hoitoon pääsyn määräaikoja. Potilaan pitäisi saada arkipäivisin virka-aikana saman päivän aikana yhteys perusterveydenhuollon toimintayksikköön ja saada yksilöllinen arvio hoidon tarpeestaan. Perusterveydenhuoltoon kuuluvassa kiireettömässä sairaanhoidossa lääketieteellisesti tarpeelliseksi todetun hoidon ensimmäinen hoitotapahtuma tulisi järjestää seitsemässä vuorokaudessa, jos potilaan hoidon hakeutumisen syynä on sairastuminen, vamma, pitkäaikaissairauden vaikeutuminen, uusien oireiden esilletulo tai toimintakyvyn aleneminen. Suun terveydenhuollossa hammaslääketieteellisesti tarpeelliseksi todettu tutkimus tai hoito tulisi järjestää kohtuullisessa ajassa, kuitenkin kolmen kuukauden kuluessa siitä, kun arviointi hoidon tarpeesta on tehty. Laissa olisi lisäksi säännöksiä niistä tilanteista, joissa potilas on ensin ohjattu muun terveydenhuollon ammattihenkilön kuin lääkärin tai hammaslääkärin vastaanotolle.",
+   "sj": {
+    "order": "tavallinen",
+    "pev": true,
+    "text": "Hallituksen käsityksen mukaan lakiehdotukset voidaan säätää tavallisen lain säätämisjärjestyksessä. Hallitus pitää kuitenkin suotavana, että perustuslakivaliokunta antaa esityksestä lausunnon."
+   },
+   "text": "Lainsäädännön arviointineuvosto on antanut esityksestä lausunnon (arviointineuvoston lausunto 22.2.2022,VN/2411/2022) https://vnk.fi/-/arviointineuvosto-pystyvatko-hyvinvointialueet-noudattamaan-hoitotakuun-velvoitteita- . Lainsäädännön arviointineuvosto antoi esityksestä lausunnon 22.2.2022 (VN/2411/2022). Arviointineuvoston lausunnossa katsottiin, että esitysluonnoksessa on kuvattu valmistelun lähtökohdat hyvin, ja tavoitteet ja keskeiset esitykset on kuvattu ymmärrettävästi.",
    "v": 4,
    "verdict": null
   },
@@ -8212,6 +8353,17 @@
    "sj": {
     "order": "tavallinen",
     "text": "Lakiehdotukset voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä."
+   },
+   "v": 4
+  },
+  "96/2021": {
+   "checked": "2026-11-16",
+   "found": false,
+   "sisalto": "Esityksessä ehdotetaan muutettavaksi sosiaali- ja terveystietojen toissijaisesta käytöstä annetun lain siirtymäsäännöstä siten, että lain tietoturvalliselta käyttöympäristöltä edellytettäviä vaatimuksia sovellettaisiin vasta 1 päivästä toukokuuta 2022. Ennen mainittua ajankohtaa tietoja voitaisiin kuitenkin luovuttaa luvansaajan käsiteltäväksi lain nojalla, vaikka tietolupahakemuksessa ei osoitettaisi laissa tarkoitettua tietoturvallista käyttöympäristöä tietojen käsittelylle. Tietojen luovuttaminen edellyttäisi tällöin määräajaksi annettua tietolupaa, joka olisi voimassa enintään 30 päivään huhtikuuta 2022. Lisäksi siirtymäsäännöstä esitetään muutettavaksi siten, että lain merkittäviin kliinisiin löydöksiin perustuvia oikeuksia, velvoitteita ja toimenpiteitä sovellettaisiin 1 päivästä tammikuuta 2024. Laki on tarkoitettu tulemaan voimaan mahdollisimman pian.",
+   "sj": {
+    "order": "tavallinen",
+    "pev": true,
+    "text": "Edellä mainituilla perusteilla lakiehdotus voidaan käsitellä tavallisessa lainsäätämisjärjestyksessä. Hallitus pitää kuitenkin suotavana, että perustuslakivaliokunta antaisi asiasta lausunnon."
    },
    "v": 4
   },

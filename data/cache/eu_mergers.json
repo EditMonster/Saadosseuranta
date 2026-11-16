@@ -1234,10 +1234,44 @@
    "decisions": [],
    "initiated": "2026-03-23",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Puratos valmistaa ja toimittaa maailmanlaajuisesti ainesosia ja ratkaisuja leipomo-, konditoria- ja suklaa-aloja varten.",
+     "Dawn on leipomotuotteiden maailmanlaajuinen valmistaja ja toimittaja, joka keskittyy erityisesti amerikkalaistyylisiin makeisiin leivonnaisiin."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-26",
+    "observationsShifted": null,
+    "oj": "C:2026:6031:",
+    "parties": [
+     {
+      "country": "Belgia",
+      "fi": false,
+      "name": "Puratos Group NV",
+      "short": "Puratos"
+     },
+     {
+      "country": "Yhdysvallat",
+      "fi": false,
+      "name": "Dawn Foods, Inc.",
+      "short": "Dawn"
+     }
+    ],
+    "published": "2026-11-16",
+    "reference": "C/2026/6031",
+    "simplified": false,
+    "transaction": "Puratos hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Dawn. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/6031/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-06",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-16",
+     "reference": "C:2026:6031:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_C_10.82",
@@ -1248,9 +1282,14 @@
   "M.12405": {
    "caseNumber": "M.12405",
    "deadline": "2026-11-16",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-16",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-03-23",
-   "lastDecision": null,
+   "lastDecision": "2026-11-16",
    "notice": {
     "activities": [
      "UniCredit tarjoaa vähittäispankki-, liikepankki-, yksityispankki-, investointipankki-, omaisuudenhoito- ja vakuutuspalveluja Italiassa, Saksassa ja maailmanlaajuisesti,",
@@ -1289,7 +1328,7 @@
      "reference": "C:2026:5439:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_L_64.19",
    "simplified": "MEnormal",
@@ -2797,9 +2836,14 @@
   "M.12520": {
    "caseNumber": "M.12520",
    "deadline": "2026-11-27",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-16",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-06-15",
-   "lastDecision": null,
+   "lastDecision": "2026-11-16",
    "notice": {
     "activities": [
      "Kongsberg on puolustus-, meri-, offshore-, ilmailu- ja avaruusteollisuudessa käytettävien teknologiajärjestelmien ja -ratkaisujen toimittaja.",
@@ -2851,7 +2895,7 @@
      "reference": "C:2026:5792:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_K_62.10",
    "simplified": "MEsimplified",
@@ -3108,10 +3152,49 @@
    "decisions": [],
    "initiated": "2026-06-22",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "Mubadala Capital on maailmanlaajuisesti toimiva vaihtoehtoisten omaisuudenhoitopalvelujen alusta. Se hallinnoi ja hoitaa yli 600 miljardin Yhdysvaltain dollarin varoja omaisuudenhoitajiensa ja strategisten kumppanuuksiensa kautta. MIC sijoittaa maailmanlaajuisesti monenlaisiin omaisuusluokkiin, kuten pääomaan, julkisiin osakkeisiin, luottoihin, kiinteistöihin, infrastruktuuriin sekä niiden vaihtoehtoihin.",
+     "Pierre et Vacances on eurooppalainen matkailualan toimija, joka on erikoistunut loma-asuntoihin, lomakyliin ja kaupunkiasuntoihin ja toimii Ranskassa, Alankomaissa, Saksassa, Belgiassa ja muissa Euroopan maissa. Sillä on neljä keskeistä tuotemerkkiä: Pierre & Vacances, Center Parcs, maeva.com ja Adagio."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-26",
+    "observationsShifted": null,
+    "oj": "C:2026:6036:",
+    "parties": [
+     {
+      "controllers": [
+       {
+        "country": "Yhdistyneet arabiemiraatit",
+        "name": "Mubadala Investment Company PSJC"
+       }
+      ],
+      "country": "Yhdistyneet arabiemiraatit",
+      "fi": false,
+      "name": "Mubadala Capital LLC",
+      "short": "Mubadala Capital"
+     },
+     {
+      "country": "Ranska",
+      "fi": false,
+      "name": "Pierre et Vacances SA"
+     }
+    ],
+    "published": "2026-11-16",
+    "reference": "C/2026/6036",
+    "simplified": true,
+    "transaction": "Mubadala Capital hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Pierre et Vacances. Keskittymä toteutetaan 22. kesäkuuta 2026 ilmoitetulla julkisella tarjouksella.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/6036/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-06",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-16",
+     "reference": "C:2026:6036:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_I_55",
@@ -4634,9 +4717,14 @@
   "M.12579": {
    "caseNumber": "M.12579",
    "deadline": "2026-11-26",
-   "decisions": [],
+   "decisions": [
+    {
+     "date": "2026-11-16",
+     "type": "DecisionType20310"
+    }
+   ],
    "initiated": "2026-07-27",
-   "lastDecision": null,
+   "lastDecision": "2026-11-16",
    "notice": {
     "activities": [
      "SVP on yksityisomistuksessa oleva sijoitusyhtiö, joka hoitaa hedgerahastoja ja pääomasijoituksia tekeviä yhdistelmärahastoja sekä tekee sijoituksia julkisille ja yksityisille pääomamarkkinoille, velkamarkkinoille ja muille vaihtoehtoisille sijoitusmarkkinoille maailmanlaajuisesti.",
@@ -4681,7 +4769,7 @@
      "reference": "C:2026:5722:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_C_29.3",
    "simplified": "MEsupersimplified",
@@ -5625,10 +5713,44 @@
    "decisions": [],
    "initiated": "2026-08-10",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "EFMS hoitaa rahaston EQT X vaihtoehtoisia sijoituksia. EQT X on yksityinen sijoitusrahasto, joka kuuluu EQT-rahastoryhmään. EFMS on yksinomaan yrityksen EQT omistuksessa. EQT:n rahastojen salkkuyritykset toimivat useilla maantieteellisillä alueilla, myös Euroopan talousalueella, ja useilla toimialoilla, kuten kuluttaja-, energia- ja ympäristö-, terveydenhuolto-, kiinteistö-, palvelu-, teknologia- ja kuljetuslogistiikka-alalla.",
+     "Intertek tarjoaa varmennus-, testaus-, tarkastus- ja sertifiointipalveluita. Se toimii pääasiassa Yhdistyneessä kuningaskunnassa, Pohjois-Amerikassa, Australiassa, Kiinassa, Hongkongissa ja ETA-alueella."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-26",
+    "observationsShifted": null,
+    "oj": "C:2026:6037:",
+    "parties": [
+     {
+      "country": "Luxemburg",
+      "fi": false,
+      "name": "EQT Fund Management S.à.r.l.",
+      "short": "EFMS"
+     },
+     {
+      "country": "Yhdistynyt kuningaskunta",
+      "fi": false,
+      "name": "Intertek Group Plc",
+      "short": "Intertek"
+     }
+    ],
+    "published": "2026-11-16",
+    "reference": "C/2026/6037",
+    "simplified": true,
+    "transaction": "EFMS hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä Intertek. Keskittymä toteutetaan 18. kesäkuuta 2026 ilmoitetulla julkisella tarjouksella.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/6037/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-09",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-16",
+     "reference": "C:2026:6037:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_N_71.20",
@@ -6297,16 +6419,67 @@
    "decisions": [],
    "initiated": "2026-08-31",
    "lastDecision": null,
-   "notice": null,
-   "noticeTries": 0,
+   "notice": {
+    "activities": [
+     "CVC on osa pääomasijoitus- ja sijoitusneuvontayhtiötä CVC Network, joka tarjoaa sijoitusneuvontaa ja hoitaa varojen hallinnointia tietyille rahastoille ja sijoitusjärjestelyille, joilla on omistuksia eri puolilla maailmaa,",
+     "DIF on infrastruktuuripääomarahasto, joka tarjoaa sijoitusneuvontaa tietyille rahastoille ja sijoitusjärjestelyille ja hallinnoi sijoituksia niiden puolesta. Se on keskittynyt sijoituksiin Euroopassa, Pohjois- ja Etelä-Amerikassa ja Australaasiassa."
+    ],
+    "fi": false,
+    "observationDays": 10,
+    "observationsEnd": "2026-11-26",
+    "observationsShifted": null,
+    "oj": "C:2026:6032:",
+    "parties": [
+     {
+      "country": "Jersey",
+      "fi": false,
+      "name": "CVC Capital Partners plc",
+      "short": "CVC"
+     },
+     {
+      "country": "Alankomaat",
+      "fi": false,
+      "name": "DIF Management Holding B.V., yrityksen CVC sekä myyjien, jotka ovat ryhmä yrityksen DIF perustajia ja osakkaita",
+      "short": "DIF"
+     }
+    ],
+    "published": "2026-11-16",
+    "reference": "C/2026/6032",
+    "simplified": true,
+    "transaction": "CVC hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun yksinomaisen määräysvallan yrityksessä DIF. Keskittymä toteutetaan ostamalla osakkeita.",
+    "url": "https://eur-lex.europa.eu/eli/C/2026/6032/oj/fin"
+   },
+   "noticeTries": 1,
    "notified": "2026-11-05",
-   "oj": [],
+   "oj": [
+    {
+     "published": "2026-11-16",
+     "reference": "C:2026:6032:"
+    }
+   ],
    "phase": "FormalInvestigationPhase1Merger",
    "renotified": null,
    "sector": "NaceV2Sector_L_66.30",
    "simplified": "MEsimplified",
    "timeline": [],
    "title": "CVC / DIF"
+  },
+  "M.12631": {
+   "caseNumber": "M.12631",
+   "deadline": "2026-12-21",
+   "decisions": [],
+   "initiated": "2026-09-08",
+   "lastDecision": null,
+   "notice": null,
+   "noticeTries": 0,
+   "notified": "2026-11-16",
+   "oj": [],
+   "phase": "FormalInvestigationPhase1Merger",
+   "renotified": null,
+   "sector": "NaceV2Sector_C_33.12",
+   "simplified": "MEsimplified",
+   "timeline": [],
+   "title": "SLB / KELVION"
   },
   "M.12632": {
    "caseNumber": "M.12632",
@@ -6687,7 +6860,7 @@
      "reference": "C:2026:5552:"
     }
    ],
-   "phase": "FormalInvestigationPhase1Merger",
+   "phase": null,
    "renotified": null,
    "sector": "NaceV2Sector_M_68.2",
    "simplified": "MEsimplified",
@@ -7322,5 +7495,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-16T11:18:59Z"
+ "fetched": "2026-11-16T19:11:32Z"
 }

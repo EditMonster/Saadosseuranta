@@ -554,24 +554,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 233/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/233
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-193-2026-voimaan-2026-12-01@saadosseuranta
-DTSTAMP:20261201T000000Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
-DESCRIPTION:Voimaan (986/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
-END:VEVENT
-BEGIN:VEVENT
-UID:fi-he-193-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
-DESCRIPTION:Voimaan (987/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-140-2026-voimaan-2027-06-01@saadosseuranta
 DTSTAMP:20270601T000000Z
 DTSTART;VALUE=DATE:20270601
@@ -1317,6 +1299,24 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laeiksi Kansaneläkelaitoksen kuntoutusetuuksista ja kuntoutusrahaetuuksista annetun lain ja sairausvakuutuslain 15 ja 17 luvun sekä eräiden muiden lakien muuttamisesta
 DESCRIPTION:Voimaan (620/2026) · 620/2026 · HE 67/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/67
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/67
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-193-2026-voimaan-2026-12-01@saadosseuranta
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
+DESCRIPTION:Voimaan (986/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-193-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Asetuksenantovaltuussääntelyn päivittämistä ja eräiden lakien kumoamista valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi
+DESCRIPTION:Voimaan (987/2026) · 986/2026 · HE 193/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/193
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-78-2026-voimaan-2027-01-01@saadosseuranta
@@ -3450,5 +3450,95 @@ DTEND;VALUE=DATE:20261127
 SUMMARY:[EU] Lausuntoaika päättyy: Commission Implementing Regulation amending Implementing Regulation (EU) 2022/1659 as regards inclusion of the production site code on packaging labels for the 
 DESCRIPTION:Palauteaika (Have your say) · D118717/01 · https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
 URL:https://ec.europa.eu/transparency/comitology-register/screen/documents/118717/1/consult
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2574-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2574 – Venäjä 269/2014
+DESCRIPTION:Voimaan · (EU) 2026/2574 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2574
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2574
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2569-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2569 – ihmisoikeudet 2020/1998
+DESCRIPTION:Voimaan · (EU) 2026/2569 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2569
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2569
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2568-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2568 – Hamas ja PIJ 2024/386
+DESCRIPTION:Voimaan · (EU) 2026/2568 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2568
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2568
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2558-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2558 – Venäjän hybridiuhat 2024/2642
+DESCRIPTION:Voimaan · (EU) 2026/2558 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2558
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2558
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026R2550-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston täytäntöönpanoasetus (EU) 2026/2550 – kyberhyökkäykset 2019/796
+DESCRIPTION:Voimaan · (EU) 2026/2550 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2550
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026R2550
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2575-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2575 – Venäjä 2014/145
+DESCRIPTION:Voimaan · (YUTP) 2026/2575 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2575
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2575
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2571-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2571 – ihmisoikeudet 2020/1999
+DESCRIPTION:Voimaan · (YUTP) 2026/2571 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2571
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2571
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2570-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2570 – Hamas ja PIJ 2024/385
+DESCRIPTION:Voimaan · (YUTP) 2026/2570 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2570
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2570
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2556-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2556 – Venäjän hybridiuhat 2024/2643
+DESCRIPTION:Voimaan · (YUTP) 2026/2556 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2556
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2556
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-pak-32026D2546-voimaan-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Voimaan: Neuvoston päätös (YUTP) (YUTP) 2026/2546 – kyberhyökkäykset 2019/797
+DESCRIPTION:Voimaan · (YUTP) 2026/2546 · https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2546
+URL:https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32026D2546
 END:VEVENT
 END:VCALENDAR

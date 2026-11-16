@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T11:12:58",
+ "fetched": "2026-11-16T18:56:21",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -696,7 +696,7 @@
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [],
-   "esittelyviikko": 45,
+   "esittelyviikko": 47,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -772,7 +772,7 @@
    },
    "lisattyPaiva": "2026-10-21",
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-10-29T09:52:46",
+   "muokattu": "2026-11-16T15:05:59",
    "nimi": "Hallituksen esitys laeiksi valtion rahoituksesta kansallisille taidelaitoksille annetun lain 1 ja 2 §:n sekä esittävän taiteen edistämisestä annetun lain 5 ja 6 §:n muuttamisesta",
    "nimiSv": "RP med förslag till lagar om ändring av 1 och 2 § i lagen om statlig finansiering av nationella konstinstitutioner samt ändring av 5 och 6 § lagen om främjande av scenkonst",
    "pevLausunto": false,
@@ -788,8 +788,8 @@
    "valmistelu": [],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2027-03-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
+   "vanhaEsittelyviikko": 45,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": null,
@@ -1173,7 +1173,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-09T13:50:40",
+   "muokattu": "2026-11-16T13:40:20",
    "nimi": "EU:n ajoneuvojen kiertotalousasetuksen täytäntöönpano",
    "nimiSv": "Genomförande av EU:s förordning om cirkularitet för fordon",
    "pevLausunto": false,
@@ -1200,6 +1200,12 @@
      "n": "Työryhmän 1. kokous 15.10.2026 muistio",
      "t": "MUISTIO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/f3c1de1a-e148-4f61-af0e-94219f5f268c/cfb7a143-b813-4f0a-b77b-1d54a73e1ff0/MUISTIO_20261109135040.PDF"
+    },
+    {
+     "d": "2026-11-16",
+     "n": "Työryhmän 2. kokous 29.10.2026 muistio",
+     "t": "MUISTIO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/f3c1de1a-e148-4f61-af0e-94219f5f268c/832e4da8-853c-43ac-9d50-5252df90cadd/MUISTIO_20261116134020.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -46035,205 +46041,6 @@
    "vanhaEsittelyvuosi": null
   },
   {
-   "annettuEduskunnalle": "2026-09-24",
-   "arviointineuvosto": false,
-   "asetettu": "2025-11-04",
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö 4.5.2026",
-     "pvm": "2026-05-04",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/dd4ee43f-8cd9-4215-9bda-b6b9e29a4693/LAUSUNTOPYYNTO_20260504121326.PDF"
-    },
-    {
-     "nimi": "HE asetuksenantovaltuussääntely",
-     "pvm": "2026-05-04",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/d753f164-69b1-488b-91e5-7c9a4a727d72/LAUSUNTOPYYNTO_20260504121326.PDF"
-    }
-   ],
-   "asiasanat": [
-    "asetukset",
-    "hallituksen esitykset",
-    "valtuudet"
-   ],
-   "esittelyviikko": 39,
-   "esittelyvuosi": 2026,
-   "etapit": [
-    {
-     "date": "2026-05-04",
-     "end": "2026-05-29",
-     "kind": "lausunto",
-     "label": "Lausuntokierros 4. - 29.5.2026",
-     "tyyppi": "LAUSUNTOKIERROS"
-    },
-    {
-     "date": "2026-09-24",
-     "end": null,
-     "kind": "muu",
-     "label": "Hallituksen esitys 193/2026 vp",
-     "tyyppi": "SAADOS"
-    },
-    {
-     "date": "2026-10-07",
-     "end": "2026-10-07",
-     "kind": "muu",
-     "label": "Hallintovaliokunnan mietintö 22/2026 vp",
-     "tyyppi": "SAADOS"
-    },
-    {
-     "date": "2026-10-16",
-     "end": "2026-10-16",
-     "kind": "muu",
-     "label": "Eduskunnan vastaus EV 144/2026 vp",
-     "tyyppi": "SAADOS"
-    },
-    {
-     "date": "2026-11-10",
-     "end": "2026-11-10",
-     "kind": "muu",
-     "label": "Vahvistetut lait numeroilla 986-1022/2026",
-     "tyyppi": "SAADOS"
-    }
-   ],
-   "evNumerot": [
-    "EV 144/2026"
-   ],
-   "heNumerot": [
-    "HE 193/2026"
-   ],
-   "heTila": "ANNETTU_EK",
-   "kiireellinen": false,
-   "laji": "laki",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2026-05-29",
-      "id": "e6744327-83cb-4f71-be95-084d123a3446",
-      "org": "Kirkkohallitus",
-      "title": "Kirkkohallitus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/e6744327-83cb-4f71-be95-084d123a3446/LAUSUNTO_20260531032341.PDF"
-     },
-     {
-      "date": "2026-05-27",
-      "id": "57dbb312-9782-48ca-b99a-3de052b1d14e",
-      "org": "Verohallinto",
-      "title": "Verohallinto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/57dbb312-9782-48ca-b99a-3de052b1d14e/LAUSUNTO_20260527162939.PDF"
-     },
-     {
-      "date": "2026-05-25",
-      "id": "02e875ca-2fae-452f-bfc8-27a4ec42ec79",
-      "org": "Elinkeinoelämän keskusliitto EK",
-      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/02e875ca-2fae-452f-bfc8-27a4ec42ec79/LAUSUNTO_20260526164547.PDF"
-     },
-     {
-      "date": "2026-05-08",
-      "id": "e74173ed-8ce1-4d1e-a389-a665e18d8539",
-      "org": "Oikeusministeriö",
-      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa"
-     },
-     {
-      "date": "2026-05-05",
-      "id": "ff9b28f5-38a7-49b0-bc15-112af6d00d98",
-      "org": "Korkein hallinto-oikeus",
-      "title": "Korkein hallinto-oikeus; ilmoitus, ettei anna lausuntoa asiassa"
-     },
-     {
-      "date": "2026-05-05",
-      "id": "e28fdbe0-38f2-4d66-b949-f2ba706ce8fe",
-      "org": "Eduskunnan oikeusasiamiehen kanslia",
-      "title": "Eduskunnan oikeusasiamiehen kanslia; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/e28fdbe0-38f2-4d66-b949-f2ba706ce8fe/LAUSUNTO_20260506155639.PDF"
-     }
-    ],
-    "eiLausuttavaa": 0,
-    "n": 6,
-    "orgs": [
-     "Eduskunnan oikeusasiamiehen kanslia",
-     "Elinkeinoelämän keskusliitto EK",
-     "Kirkkohallitus",
-     "Korkein hallinto-oikeus",
-     "Oikeusministeriö",
-     "Verohallinto"
-    ],
-    "url": null,
-    "viimeisin": "2026-05-29"
-   },
-   "lisattyPaiva": "2026-08-24",
-   "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-11T08:21:21",
-   "nimi": "Hallituksen esitys eduskunnalle asetuksenantovaltuussääntelyn päivittämistä valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi",
-   "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om uppdatering av bestämmelserna om bemyndigande att utfärda förordning inom finansministeriets förvaltningsområde",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [
-    "986/2026",
-    "987/2026",
-    "988/2026",
-    "989/2026",
-    "990/2026",
-    "991/2026",
-    "992/2026",
-    "993/2026",
-    "994/2026",
-    "995/2026",
-    "996/2026",
-    "997/2026",
-    "998/2026",
-    "999/2026",
-    "1000/2026",
-    "1001/2026",
-    "1002/2026",
-    "1003/2026",
-    "1004/2026",
-    "1005/2026",
-    "1006/2026",
-    "1007/2026",
-    "1008/2026",
-    "1009/2026",
-    "1010/2026",
-    "1011/2026",
-    "1012/2026",
-    "1013/2026",
-    "1014/2026",
-    "1015/2026",
-    "1016/2026",
-    "1017/2026",
-    "1018/2026",
-    "1019/2026",
-    "1020/2026",
-    "1021/2026",
-    "1022/2026"
-   ],
-   "teemat": [],
-   "tiivistelma": "Esityksessä ehdotetaan muutettavaksi eräitä valtiovarainministeriön hallinnonalan lakeja siten, että niiden asetuksenantovaltuuksia koskevat säännökset päivitettäisiin vastaamaan nykyisiä täsmällisyyden ja tarkkarajaisuuden vaatimuksia. Voimassa olevassa lainsäädännössä on edelleen runsaasti yleisvaltuuksia, jotka eivät täytä näitä vaatimuksia.",
-   "tila": "KAYNNISSA",
-   "tunnus": "VM165:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM165:00/2025",
-   "uuid": "373b8c6b-6562-43bb-b0fb-58b6706f6dc1",
-   "valmistelu": [
-    {
-     "d": "2026-05-04",
-     "n": "Lausuntopyyntö 4.5.2026",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/dd4ee43f-8cd9-4215-9bda-b6b9e29a4693/LAUSUNTOPYYNTO_20260504121326.PDF"
-    },
-    {
-     "d": "2026-05-04",
-     "n": "HE asetuksenantovaltuussääntely",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/d753f164-69b1-488b-91e5-7c9a4a727d72/LAUSUNTOPYYNTO_20260504121326.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-12-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
    "annettuEduskunnalle": "2026-10-22",
    "arviointineuvosto": false,
    "asetettu": null,
@@ -47395,6 +47202,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "8adf5ea6-a506-4e80-b8b1-77c9d07cde36",
+      "org": "Kaupan liitto ry",
+      "title": "Kaupan liitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/e0ed1ec4-94fb-4725-af21-1319780b8aed/8adf5ea6-a506-4e80-b8b1-77c9d07cde36/LAUSUNTO_20261116184810.PDF"
+     },
+     {
       "date": "2026-03-25",
       "id": "782091fc-9d14-4d8f-8388-8d396b6c9795",
       "org": "Bolt",
@@ -47494,7 +47308,7 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 14,
+    "n": 15,
     "orgs": [
      "Airbnb",
      "Bolt",
@@ -47502,6 +47316,7 @@
      "Elinkeinoelämän keskusliitto EK",
      "European Holiday Home Association (EHHA)",
      "Kalustettujen asuntojen toimijat Ry",
+     "Kaupan liitto ry",
      "Keskuskauppakamari ry",
      "Matkailu- ja Ravintolapalvelut MaRa ry",
      "Mikro- ja yksinyrittäjät ry",
@@ -47512,11 +47327,11 @@
      "Uber Finland Oy"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=951f037b-7f04-4bb9-b588-8ad5d6a76ed2",
-    "viimeisin": "2026-03-25"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-05T08:16:51",
+   "muokattu": "2026-11-16T18:48:10",
    "nimi": "Hallituksen esitys eduskunnalle laiksi arvonlisäverolain muuttamisesta  (Digiajan alv osa 2)",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av mervärdesskattelagen (Mervärdesskatt i den digitala tidsåldern del 2)",
    "pevLausunto": false,
@@ -48316,7 +48131,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-15T04:41:39",
+   "muokattu": "2026-11-16T12:25:39",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi arvonlisäverolain ja Ahvenanmaan maakuntaa koskevista poikkeuksista arvonlisävero- ja valmisteverolainsäädäntöön annetun lain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av mervärdesskattelagen och lagen om undantag för landskapet Åland från mervärdesskatte- och accislagstiftningen",
    "pevLausunto": false,
@@ -48353,6 +48168,12 @@
      "n": "Begäran om utlåtande om utkastet till regeringens proposition",
      "t": "LAUSUNTOPYYNTO",
      "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/795cf973-7a9d-4e9d-9493-26f35c2237c6/LAUSUNTOPYYNTO_20261105134557.PDF"
+    },
+    {
+     "d": "2026-11-16",
+     "n": "Utkast till regeringens proposition till riksdagen",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/c7da6698-9dbd-4514-9c0b-7098ebb9df67/c3c9ffe9-207b-4b42-aa6a-47264522e1e3/KIRJE_20261116122510.PDF"
     }
    ],
    "valmisteluvaihe": null,
@@ -230843,6 +230664,205 @@
    "valmistumisPaiva": "2026-06-16",
    "vanhaEsittelyviikko": 8,
    "vanhaEsittelyvuosi": 2026
+  },
+  {
+   "annettuEduskunnalle": "2026-09-24",
+   "arviointineuvosto": false,
+   "asetettu": "2025-11-04",
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö 4.5.2026",
+     "pvm": "2026-05-04",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/dd4ee43f-8cd9-4215-9bda-b6b9e29a4693/LAUSUNTOPYYNTO_20260504121326.PDF"
+    },
+    {
+     "nimi": "HE asetuksenantovaltuussääntely",
+     "pvm": "2026-05-04",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/d753f164-69b1-488b-91e5-7c9a4a727d72/LAUSUNTOPYYNTO_20260504121326.PDF"
+    }
+   ],
+   "asiasanat": [
+    "asetukset",
+    "hallituksen esitykset",
+    "valtuudet"
+   ],
+   "esittelyviikko": 39,
+   "esittelyvuosi": 2026,
+   "etapit": [
+    {
+     "date": "2026-05-04",
+     "end": "2026-05-29",
+     "kind": "lausunto",
+     "label": "Lausuntokierros 4. - 29.5.2026",
+     "tyyppi": "LAUSUNTOKIERROS"
+    },
+    {
+     "date": "2026-09-24",
+     "end": null,
+     "kind": "muu",
+     "label": "Hallituksen esitys 193/2026 vp",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2026-10-07",
+     "end": "2026-10-07",
+     "kind": "muu",
+     "label": "Hallintovaliokunnan mietintö 22/2026 vp",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2026-10-16",
+     "end": "2026-10-16",
+     "kind": "muu",
+     "label": "Eduskunnan vastaus EV 144/2026 vp",
+     "tyyppi": "SAADOS"
+    },
+    {
+     "date": "2026-11-10",
+     "end": "2026-11-10",
+     "kind": "muu",
+     "label": "Vahvistetut lait numeroilla 986-1022/2026",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [
+    "EV 144/2026"
+   ],
+   "heNumerot": [
+    "HE 193/2026"
+   ],
+   "heTila": "ANNETTU_EK",
+   "kiireellinen": false,
+   "laji": "laki",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-05-29",
+      "id": "e6744327-83cb-4f71-be95-084d123a3446",
+      "org": "Kirkkohallitus",
+      "title": "Kirkkohallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/e6744327-83cb-4f71-be95-084d123a3446/LAUSUNTO_20260531032341.PDF"
+     },
+     {
+      "date": "2026-05-27",
+      "id": "57dbb312-9782-48ca-b99a-3de052b1d14e",
+      "org": "Verohallinto",
+      "title": "Verohallinto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/57dbb312-9782-48ca-b99a-3de052b1d14e/LAUSUNTO_20260527162939.PDF"
+     },
+     {
+      "date": "2026-05-25",
+      "id": "02e875ca-2fae-452f-bfc8-27a4ec42ec79",
+      "org": "Elinkeinoelämän keskusliitto EK",
+      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/02e875ca-2fae-452f-bfc8-27a4ec42ec79/LAUSUNTO_20260526164547.PDF"
+     },
+     {
+      "date": "2026-05-08",
+      "id": "e74173ed-8ce1-4d1e-a389-a665e18d8539",
+      "org": "Oikeusministeriö",
+      "title": "Oikeusministeriön ilmoitus, ettei se lausu asiassa"
+     },
+     {
+      "date": "2026-05-05",
+      "id": "ff9b28f5-38a7-49b0-bc15-112af6d00d98",
+      "org": "Korkein hallinto-oikeus",
+      "title": "Korkein hallinto-oikeus; ilmoitus, ettei anna lausuntoa asiassa"
+     },
+     {
+      "date": "2026-05-05",
+      "id": "e28fdbe0-38f2-4d66-b949-f2ba706ce8fe",
+      "org": "Eduskunnan oikeusasiamiehen kanslia",
+      "title": "Eduskunnan oikeusasiamiehen kanslia; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/e28fdbe0-38f2-4d66-b949-f2ba706ce8fe/LAUSUNTO_20260506155639.PDF"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 6,
+    "orgs": [
+     "Eduskunnan oikeusasiamiehen kanslia",
+     "Elinkeinoelämän keskusliitto EK",
+     "Kirkkohallitus",
+     "Korkein hallinto-oikeus",
+     "Oikeusministeriö",
+     "Verohallinto"
+    ],
+    "url": null,
+    "viimeisin": "2026-05-29"
+   },
+   "lisattyPaiva": "2026-08-24",
+   "ministerio": "valtiovarainministeriö",
+   "muokattu": "2026-11-16T16:15:57",
+   "nimi": "Hallituksen esitys eduskunnalle asetuksenantovaltuussääntelyn päivittämistä valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi",
+   "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om uppdatering av bestämmelserna om bemyndigande att utfärda förordning inom finansministeriets förvaltningsområde",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [
+    "986/2026",
+    "987/2026",
+    "988/2026",
+    "989/2026",
+    "990/2026",
+    "991/2026",
+    "992/2026",
+    "993/2026",
+    "994/2026",
+    "995/2026",
+    "996/2026",
+    "997/2026",
+    "998/2026",
+    "999/2026",
+    "1000/2026",
+    "1001/2026",
+    "1002/2026",
+    "1003/2026",
+    "1004/2026",
+    "1005/2026",
+    "1006/2026",
+    "1007/2026",
+    "1008/2026",
+    "1009/2026",
+    "1010/2026",
+    "1011/2026",
+    "1012/2026",
+    "1013/2026",
+    "1014/2026",
+    "1015/2026",
+    "1016/2026",
+    "1017/2026",
+    "1018/2026",
+    "1019/2026",
+    "1020/2026",
+    "1021/2026",
+    "1022/2026"
+   ],
+   "teemat": [],
+   "tiivistelma": "Esityksessä ehdotetaan muutettavaksi eräitä valtiovarainministeriön hallinnonalan lakeja siten, että niiden asetuksenantovaltuuksia koskevat säännökset päivitettäisiin vastaamaan nykyisiä täsmällisyyden ja tarkkarajaisuuden vaatimuksia. Voimassa olevassa lainsäädännössä on edelleen runsaasti yleisvaltuuksia, jotka eivät täytä näitä vaatimuksia.",
+   "tila": "PAATTYNYT",
+   "tunnus": "VM165:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM165:00/2025",
+   "uuid": "373b8c6b-6562-43bb-b0fb-58b6706f6dc1",
+   "valmistelu": [
+    {
+     "d": "2026-05-04",
+     "n": "Lausuntopyyntö 4.5.2026",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/dd4ee43f-8cd9-4215-9bda-b6b9e29a4693/LAUSUNTOPYYNTO_20260504121326.PDF"
+    },
+    {
+     "d": "2026-05-04",
+     "n": "HE asetuksenantovaltuussääntely",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/373b8c6b-6562-43bb-b0fb-58b6706f6dc1/d753f164-69b1-488b-91e5-7c9a4a727d72/LAUSUNTOPYYNTO_20260504121326.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-12-31",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
   },
   {
    "annettuEduskunnalle": "2026-04-30",
@@ -493586,10 +493606,17 @@
      },
      {
       "date": "2026-11-13",
-      "id": "40f429eb-6039-4e80-98c5-b0f8dcfbdd35",
+      "id": "519ea951-12aa-491b-9eb0-34b4a72c77e6",
+      "org": "Saamelaispaliskunnat ry",
+      "title": "Saamelaispaliskunnat ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/519ea951-12aa-491b-9eb0-34b4a72c77e6/LAUSUNTO_20261116125434.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "3f4c56d8-53c7-4a87-a752-56391b067d52",
       "org": "Lauhanmaan metsästysseura ry",
       "title": "Lauhanmaan metsästysseura ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/40f429eb-6039-4e80-98c5-b0f8dcfbdd35/LAUSUNTO_20261116073350.PDF"
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/3f4c56d8-53c7-4a87-a752-56391b067d52/LAUSUNTO_20261116125750.PDF"
      },
      {
       "date": "2026-11-12",
@@ -493971,7 +493998,7 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 75,
+    "n": 76,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
@@ -494015,6 +494042,7 @@
      "Rajavartiolaitos",
      "Rovviltets Røst Norge",
      "Ruokavirasto",
+     "Saamelaispaliskunnat ry",
      "Sastamalan riistanhoitoyhdistys",
      "Satakunnan Kennelpiiri ry",
      "Satakunnan alueellinen riistaneuvosto",
@@ -494053,7 +494081,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-16T10:49:09",
+   "muokattu": "2026-11-16T13:24:28",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -495371,7 +495399,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-06T10:47:00",
+   "muokattu": "2026-11-16T11:28:35",
    "nimi": "Valtioneuvoston asetus verontilityksestä",
    "nimiSv": "Statsrådets förordning om skatteredovisning",
    "pevLausunto": false,
@@ -495524,7 +495552,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-06T10:37:09",
+   "muokattu": "2026-11-16T11:27:46",
    "nimi": "Valtioneuvoston asetus verotusmenettelystä",
    "nimiSv": "Statsrådets förordning om beskattningsförfarande",
    "pevLausunto": false,
@@ -497969,7 +497997,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-15T05:20:31",
+   "muokattu": "2026-11-16T13:08:27",
    "nimi": "Valtioneuvoston asetus alueellisista toimeentulotukiasioiden neuvottelukunnista annetun valtioneuvoston asetuksen 1 §:n muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 1 § i statsrådets förordning om regionala delegationer för utkomststödsärenden",
    "pevLausunto": false,
@@ -506418,7 +506446,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-12T08:35:28",
+   "muokattu": "2026-11-16T11:17:01",
    "nimi": "Valtioneuvoston asetus yhdyskuntaseuraamusten täytäntöönpanosta annetun valtioneuvoston asetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av statsrådets förordning om verkställighet av samhällspåföljder",
    "pevLausunto": false,
@@ -508426,6 +508454,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "cf640616-efcb-4155-8542-88fa1242b746",
+      "org": "Metsähallitus",
+      "title": "Metsähallitus; lisälausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/cf640616-efcb-4155-8542-88fa1242b746/LAUSUNTO_20261116135014.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "dba59274-ccaa-4050-94d7-83ac1eef7f52",
       "org": "Saamelaiskäräjät",
@@ -508608,6 +508643,13 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/0c8da948-34b3-4f7a-af3b-f8f87e5e796c/LAUSUNTO_20261113043116.PDF"
      },
      {
+      "date": "2026-11-11",
+      "id": "bcc641ed-eecc-493d-be36-70992cc139c2",
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/bcc641ed-eecc-493d-be36-70992cc139c2/LAUSUNTO_20261116111632.PDF"
+     },
+     {
       "date": "2026-11-10",
       "id": "a4dc6e0d-1117-4057-a8ba-b5e21cec4c0b",
       "org": "Keski-Pohjanmaan liitto",
@@ -508706,8 +508748,9 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 40,
+    "n": 42,
     "orgs": [
+     "Metsähallitus",
      "Ennallistajat Group Oy",
      "Etelä-Pohjanmaan elinvoimakeskus",
      "Etelä-Savon maakuntaliitto",
@@ -508726,7 +508769,6 @@
      "Luonnon- ja riistanhoitosäätiö sr",
      "Luonnonvarakeskus (Luke)",
      "Maa- ja metsätaloustuottajain Keskusliitto MTK ry",
-     "Metsähallitus",
      "Metsäteollisuus ry",
      "Natur och Miljö r.f.",
      "Opetus- ja kulttuuriministeriö",
@@ -508742,6 +508784,7 @@
      "Suomen luonnonsuojeluliitto ry",
      "Suomen riistakeskus",
      "Suomen ympäristökeskus (Syke)",
+     "Työ- ja elinkeinoministeriö",
      "Uudenmaan ELY-keskus",
      "Uudenmaan liitto - Nylands förbund",
      "Vaasan Sähkö Oy",
@@ -508750,11 +508793,11 @@
      "Österbottens förbund - Pohjanmaan liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=0ac5d342-598e-4f3d-b52d-e3201be65461&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-15T05:04:44",
+   "muokattu": "2026-11-16T13:50:14",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "nimiSv": "Statsrådets förordning om understöd för främjande av skydd och vård av den biologiska mångfalden",
    "pevLausunto": false,
