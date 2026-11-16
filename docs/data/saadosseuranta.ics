@@ -1040,15 +1040,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 208/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/208
 END:VEVENT
 BEGIN:VEVENT
-UID:fi-he-68-2026-voimaan-2027-01-01@saadosseuranta
-DTSTAMP:20270101T000000Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
-SUMMARY:[FI] Voimaan: Laeiksi vammaisetuuksista annetun lain\, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta
-DESCRIPTION:Voimaan (983/2026) · 983/2026 · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
-URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
-END:VEVENT
-BEGIN:VEVENT
 UID:fi-he-218-2026-voimaan-2027-01-01@saadosseuranta
 DTSTAMP:20270101T000000Z
 DTSTART;VALUE=DATE:20270101
@@ -1452,6 +1443,15 @@ DTEND;VALUE=DATE:20270102
 SUMMARY:[FI] Voimaan: Laiksi sairausvakuutuslain 4 luvun muuttamisesta
 DESCRIPTION:Voimaan (1053/2025) · 1053/2025 · HE 114/2025 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2025/114
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2025/114
+END:VEVENT
+BEGIN:VEVENT
+UID:fi-he-68-2026-voimaan-2027-01-01@saadosseuranta
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[FI] Voimaan: Laeiksi vammaisetuuksista annetun lain\, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta
+DESCRIPTION:Voimaan (983/2026) · 983/2026 · HE 68/2026 vp · https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
+URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/68
 END:VEVENT
 BEGIN:VEVENT
 UID:fi-he-15-2026-voimaan-2027-01-01@saadosseuranta

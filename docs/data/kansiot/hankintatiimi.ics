@@ -77,6 +77,15 @@ DESCRIPTION:Tarjoukset viimeistään · Rēzeknes valstspilsētas pašvaldība �
 URL:https://ted.europa.eu/fi/notice/-/detail/794773-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:hk-EF-62149-maaraaika-2026-12-07-hankintatiimi@saadosseuranta
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:[Hankinta] Määräaika: Suun terveydenhuollon tiedonhallinnan asiantuntija- ja konsultointipalvelu
+DESCRIPTION:Tarjoukset viimeistään · 2026-062149 · https://www.hankintailmoitukset.fi/fi/public/procedure/37575/enotice/62149
+URL:https://www.hankintailmoitukset.fi/fi/public/procedure/37575/enotice/62149
+END:VEVENT
+BEGIN:VEVENT
 UID:hk-ted-795135-2026-maaraaika-2026-12-14-hankintatiimi@saadosseuranta
 DTSTAMP:20261214T000000Z
 DTSTART;VALUE=DATE:20261214
@@ -1211,15 +1220,6 @@ DESCRIPTION:Ehdotettu voimaantulo · HE 230/2026 vp · https://www.finlex.fi/fi/
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/230
 END:VEVENT
 BEGIN:VEVENT
-UID:hk-ted-784785-2026-maaraaika-2026-11-16-hankintatiimi@saadosseuranta
-DTSTAMP:20261116T000000Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:[Hankinta] Määräaika: General manager role for Vegforum for Byer og Tettsteder
-DESCRIPTION:Tarjoukset viimeistään · Vegforum for byer og tettsteder · https://ted.europa.eu/fi/notice/-/detail/784785-2026
-URL:https://ted.europa.eu/fi/notice/-/detail/784785-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:hk-ted-785245-2026-maaraaika-2026-11-17-hankintatiimi@saadosseuranta
 DTSTAMP:20261117T000000Z
 DTSTART;VALUE=DATE:20261117
@@ -1776,14 +1776,5 @@ DTEND;VALUE=DATE:20261209
 SUMMARY:[Hankinta] Määräaika: Network Equipment
 DESCRIPTION:Tarjoukset viimeistään · Ålesund kommune · https://ted.europa.eu/fi/notice/-/detail/780984-2026
 URL:https://ted.europa.eu/fi/notice/-/detail/780984-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:hk-EF-61560-maaraaika-2026-12-09-hankintatiimi@saadosseuranta
-DTSTAMP:20261209T000000Z
-DTSTART;VALUE=DATE:20261209
-DTEND;VALUE=DATE:20261210
-SUMMARY:[Hankinta] Määräaika: Talousjärjestelmäuudistus Mico Botnialle
-DESCRIPTION:Tarjoukset viimeistään · 2026-061560 · https://www.hankintailmoitukset.fi/fi/public/procedure/39915/enotice/61560
-URL:https://www.hankintailmoitukset.fi/fi/public/procedure/39915/enotice/61560
 END:VEVENT
 END:VCALENDAR

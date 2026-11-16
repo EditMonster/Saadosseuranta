@@ -453,7 +453,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-16T08:52:21Z",
+ "fetched": "2026-11-16T11:19:39Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1470,6 +1470,16 @@
    "key": "89a130b53969",
    "lastSeen": "2026-11-16"
   },
+  "8a6c876d6b42": {
+   "buyer": "Lapin hyvinvointialue",
+   "decisionDate": "2026-10-30",
+   "decisionText": "Lapin hyvinvointialueen vastuualuejohtajan päätös 30.10.2026, § 173/2026, kotiin annettavat turvalaitteet, hälytysten vastaanottopalvelu ja hälytysten vastaanottojärjestelmä",
+   "filed": "2026-11-13",
+   "firstSeen": "2026-11-16",
+   "hilmaNo": null,
+   "key": "8a6c876d6b42",
+   "lastSeen": "2026-11-16"
+  },
   "8acc88a5773b": {
    "buyer": "Lahden kaupunki",
    "decisionDate": "2026-10-02",
@@ -1683,7 +1693,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "a9a3a571520b",
-   "lastSeen": "2026-11-16"
+   "lastSeen": "2026-11-16",
+   "missingSince": "2026-11-16"
   },
   "aa0168d7e481": {
    "buyer": "Sastamalan kaupunki",
@@ -1844,7 +1855,8 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "c8be52849e04",
-   "lastSeen": "2026-11-16"
+   "lastSeen": "2026-11-16",
+   "missingSince": "2026-11-16"
   },
   "ca0aa03b4e65": {
    "buyer": "Helsingin kaupunki",
