@@ -453,7 +453,7 @@
    "value": null
   }
  },
- "fetched": "2026-11-17T11:23:25Z",
+ "fetched": "2026-11-17T14:30:29Z",
  "pending": {
   "005a1b8c64b8": {
    "buyer": "Helsingin seudun liikenne -kuntayhtymä",
@@ -1818,6 +1818,16 @@
    "key": "bacaa232d25d",
    "lastSeen": "2026-11-17"
   },
+  "bbe05d1e111a": {
+   "buyer": "Kurikan kaupunki",
+   "decisionDate": "2026-11-05",
+   "decisionText": "Kurikan kaupungin suorahankintapäätös, Työajan seuranta- ja suunnittelujärjestelmän suorahankinta, Hilma-ilmoitus 5.11.2026",
+   "filed": "2026-11-17",
+   "firstSeen": "2026-11-17",
+   "hilmaNo": null,
+   "key": "bbe05d1e111a",
+   "lastSeen": "2026-11-17"
+  },
   "bc03fbcaa0d9": {
    "buyer": "Kymenlaakson hyvinvointialue",
    "decisionDate": "2026-09-30",
@@ -2060,6 +2070,16 @@
    "firstSeen": "2026-10-17",
    "hilmaNo": null,
    "key": "e36aaf047a19",
+   "lastSeen": "2026-11-17"
+  },
+  "e42fd5a54ea5": {
+   "buyer": "Helsingin kaupunki",
+   "decisionDate": "2026-11-03",
+   "decisionText": "Helsingin kaupungin kasvatuksen ja koulutuksen toimialajohtajan päätös 3.11.2026, 125 §, Esitystekniikan hankinta: eräät esiopetuksen, perusopetuksen, lukiokoulutuksen ja ammatillisen koulutuksen toimipisteet",
+   "filed": "2026-11-16",
+   "firstSeen": "2026-11-17",
+   "hilmaNo": null,
+   "key": "e42fd5a54ea5",
    "lastSeen": "2026-11-17"
   },
   "e4918338275a": {

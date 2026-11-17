@@ -1589,6 +1589,15 @@ DESCRIPTION:Voimaan (908/2026) · 908/2026 · HE 77/2026 vp · https://www.finle
 URL:https://www.finlex.fi/fi/hallituksen-esitykset/2026/77
 END:VEVENT
 BEGIN:VEVENT
+UID:fi-asetus-185a05f9-lausunto-2026-11-30@saadosseuranta
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[FI] Lausuntoaika päättyy: Työ- ja elinkeinoministeriön asetus Patentti- ja rekisterihallituksen maksullisista suoritteista vuonna 2027
+DESCRIPTION:Lausuntokierros · TEM070:00/2026 · https://valtioneuvosto.fi/hanke?tunnus=TEM070:00/2026
+URL:https://valtioneuvosto.fi/hanke?tunnus=TEM070:00/2026
+END:VEVENT
+BEGIN:VEVENT
 UID:fi-asetus-8f5fdfa7-lausunto-2026-12-05@saadosseuranta
 DTSTAMP:20261205T000000Z
 DTSTART;VALUE=DATE:20261205

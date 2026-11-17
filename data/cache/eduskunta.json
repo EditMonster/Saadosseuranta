@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-17T11:11:07",
+ "fetched": "2026-11-17T14:24:25",
  "items": {
   "1/2020": {
    "committees": [
@@ -2636,7 +2636,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "100/2026",
    "hearings": [
@@ -3377,7 +3377,7 @@
   },
   "101/2023": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "101/2023",
    "hearings": [],
@@ -3963,7 +3963,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "101/2026",
    "hearings": [
@@ -4772,7 +4772,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "103/2022",
    "hearings": [
@@ -5318,7 +5318,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "103/2026",
    "hearings": [
@@ -5467,7 +5467,7 @@
   },
   "104/2023": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "104/2023",
    "hearings": [],
@@ -5780,7 +5780,7 @@
     "puolustusvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2019-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "104/2026",
    "hearings": [
@@ -5919,6 +5919,13 @@
      ],
      "none": [],
      "written": []
+    },
+    {
+     "committee": "puolustusvaliokunta",
+     "date": "2026-11-17",
+     "heard": [],
+     "none": [],
+     "written": []
     }
    ],
    "lausuntoaika": [
@@ -5999,7 +6006,7 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laiksi sotilastiedustelusta annetun lain muuttamisesta ja siihen liittyviksi laeiksi",
    "vahvistettu": null,
-   "vaihe": "Valmistava keskustelu"
+   "vaihe": "Valiokunnan päätös"
   },
   "105/2021": {
    "committees": [
@@ -6423,7 +6430,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-07-09",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "105/2026",
    "hearings": [
@@ -7116,7 +7123,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "106/2026",
    "hearings": [
@@ -7272,12 +7279,17 @@
      "code": "2K",
      "committee": null,
      "date": "2026-11-10"
+    },
+    {
+     "code": "EV",
+     "committee": null,
+     "date": "2026-11-17"
     }
    ],
    "tila": "Käsitelty",
    "title": "Hallituksen esitys eduskunnalle laiksi digitaalisten palvelujen tarjoamisesta annetun lain muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Toinen käsittely"
+   "vaihe": "Eduskunnan vastaus"
   },
   "107/2024": {
    "committees": [
@@ -7496,7 +7508,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "107/2026",
    "hearings": [
@@ -8717,7 +8729,7 @@
    "committees": [
     "talousvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "109/2022",
    "hearings": [
@@ -9152,7 +9164,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "109/2026",
    "hearings": [
@@ -9626,7 +9638,7 @@
   },
   "11/2024": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "11/2024",
    "hearings": [],
@@ -10293,7 +10305,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "110/2022",
    "hearings": [
@@ -10791,7 +10803,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "110/2026",
    "hearings": [
@@ -11692,7 +11704,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "111/2026",
    "hearings": [
@@ -12535,7 +12547,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "113/2025",
    "hearings": [
@@ -14281,7 +14293,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-08-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "115/2026",
    "hearings": [
@@ -15148,7 +15160,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "116/2026",
    "hearings": [
@@ -17542,7 +17554,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "119/2026",
    "hearings": [
@@ -19553,7 +19565,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "120/2026",
    "hearings": [
@@ -20257,7 +20269,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2019-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "121/2025",
    "hearings": [
@@ -20497,7 +20509,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "121/2026",
    "hearings": [
@@ -21519,7 +21531,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "122/2026",
    "hearings": [
@@ -23441,7 +23453,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "125/2026",
    "hearings": [
@@ -24435,7 +24447,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "126/2026",
    "hearings": [
@@ -26503,7 +26515,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "128/2026",
    "hearings": [
@@ -27400,7 +27412,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "129/2026",
    "hearings": [
@@ -32647,7 +32659,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "130/2026",
    "hearings": [
@@ -34043,7 +34055,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "131/2026",
    "hearings": [
@@ -35515,7 +35527,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-11-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "133/2026",
    "hearings": [
@@ -36149,7 +36161,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2030-01-07",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "134/2026",
    "hearings": [
@@ -37137,7 +37149,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "135/2026",
    "hearings": [
@@ -37250,12 +37262,17 @@
      "code": "2K",
      "committee": null,
      "date": "2026-11-13"
+    },
+    {
+     "code": "EV",
+     "committee": null,
+     "date": "2026-11-17"
     }
    ],
    "tila": "Käsitelty",
    "title": "Hallituksen esitys eduskunnalle laeiksi kiinteistönmuodostamislain 3 ja 283 §:n sekä yksityistielain 76 §:n muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Toinen käsittely"
+   "vaihe": "Eduskunnan vastaus"
   },
   "136/2021": {
    "committees": [
@@ -37657,7 +37674,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-06",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "136/2026",
    "hearings": [
@@ -38087,7 +38104,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-05-22",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "137/2026",
    "hearings": [
@@ -38769,7 +38786,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "138/2026",
    "hearings": [
@@ -39832,7 +39849,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "14/2026",
    "hearings": [
@@ -40489,7 +40506,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "140/2026",
    "hearings": [],
@@ -40863,7 +40880,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "141/2025",
    "hearings": [],
@@ -40900,7 +40917,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "141/2026",
    "hearings": [
@@ -41148,7 +41165,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2014-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "142/2026",
    "hearings": [
@@ -42416,7 +42433,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "144/2026",
    "hearings": [],
@@ -43215,7 +43232,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "145/2026",
    "hearings": [
@@ -43795,7 +43812,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "146/2026",
    "hearings": [
@@ -44434,7 +44451,7 @@
    "committees": [
     "sosiaali- ja terveysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "147/2026",
    "hearings": [
@@ -45003,7 +45020,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-07-22",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "148/2026",
    "hearings": [
@@ -46009,7 +46026,7 @@
     "puolustusvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "149/2026",
    "hearings": [
@@ -47459,7 +47476,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "150/2026",
    "hearings": [
@@ -47783,7 +47800,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "151/2026",
    "hearings": [],
@@ -48176,7 +48193,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "152/2026",
    "hearings": [
@@ -48489,7 +48506,7 @@
    "committees": [
     "liikenne- ja viestintävaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "153/2026",
    "hearings": [
@@ -48896,7 +48913,7 @@
    "committees": [
     "liikenne- ja viestintävaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "154/2026",
    "hearings": [
@@ -49094,7 +49111,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "155/2026",
    "hearings": [
@@ -49353,7 +49370,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "156/2026",
    "hearings": [
@@ -49851,7 +49868,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "157/2026",
    "hearings": [
@@ -50754,7 +50771,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-04-19",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "158/2026",
    "hearings": [],
@@ -51166,7 +51183,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "159/2026",
    "hearings": [],
@@ -52338,7 +52355,7 @@
    "committees": [
     "sivistysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "160/2026",
    "hearings": [
@@ -52911,7 +52928,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2006-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "161/2026",
    "hearings": [
@@ -53374,7 +53391,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "162/2026",
    "hearings": [],
@@ -54006,7 +54023,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "163/2026",
    "hearings": [],
@@ -54353,7 +54370,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-05-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "164/2026",
    "hearings": [
@@ -54823,7 +54840,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "165/2026",
    "hearings": [
@@ -55350,7 +55367,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "166/2026",
    "hearings": [
@@ -55895,7 +55912,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-09-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "167/2026",
    "hearings": [],
@@ -56298,7 +56315,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "168/2026",
    "hearings": [
@@ -56995,7 +57012,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "169/2026",
    "hearings": [],
@@ -58082,7 +58099,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "170/2026",
    "hearings": [
@@ -58722,7 +58739,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "171/2026",
    "hearings": [],
@@ -58783,12 +58800,17 @@
      "code": "2K",
      "committee": null,
      "date": "2026-11-10"
+    },
+    {
+     "code": "EV",
+     "committee": null,
+     "date": "2026-11-17"
     }
    ],
    "tila": "Käsitelty",
    "title": "Hallituksen esitys eduskunnalle laiksi tupakkaverosta annetun lain liitteen muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Toinen käsittely"
+   "vaihe": "Eduskunnan vastaus"
   },
   "172/2021": {
    "committees": [
@@ -59413,7 +59435,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "172/2026",
    "hearings": [],
@@ -59474,12 +59496,17 @@
      "code": "2K",
      "committee": null,
      "date": "2026-11-10"
+    },
+    {
+     "code": "EV",
+     "committee": null,
+     "date": "2026-11-17"
     }
    ],
    "tila": "Käsitelty",
    "title": "Hallituksen esitys eduskunnalle laiksi alkoholi- ja alkoholijuomaverosta annetun lain 4 §:n ja liitteen muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Toinen käsittely"
+   "vaihe": "Eduskunnan vastaus"
   },
   "173/2021": {
    "committees": [
@@ -59695,7 +59722,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "173/2024",
    "hearings": [
@@ -60007,7 +60034,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "173/2026",
    "hearings": [],
@@ -60736,7 +60763,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "174/2026",
    "hearings": [],
@@ -61383,7 +61410,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "175/2026",
    "hearings": [
@@ -61632,7 +61659,7 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle valtion talousarvioksi vuodelle 2027",
    "vahvistettu": null,
-   "vaihe": "Asiantuntijakuuleminen"
+   "vaihe": "Valmistava keskustelu jaostossa"
   },
   "176/2020": {
    "committees": [
@@ -62333,7 +62360,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "176/2026",
    "hearings": [
@@ -62817,7 +62844,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "177/2026",
    "hearings": [
@@ -63710,7 +63737,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "178/2026",
    "hearings": [
@@ -64594,7 +64621,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "179/2026",
    "hearings": [
@@ -65584,7 +65611,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "180/2026",
    "hearings": [
@@ -66114,7 +66141,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "181/2026",
    "hearings": [
@@ -66870,7 +66897,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "182/2026",
    "hearings": [
@@ -67581,7 +67608,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "183/2026",
    "hearings": [
@@ -67721,7 +67748,7 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laeiksi kuolemansyyn selvittämisestä annetun lain sekä ihmisen elimien, kudoksien ja solujen lääketieteellisestä käytöstä annetun lain muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Asiantuntijakuuleminen"
+   "vaihe": "Yksityiskohtainen käsittely"
   },
   "184/2024": {
    "committees": [
@@ -68032,7 +68059,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "184/2026",
    "hearings": [
@@ -68406,7 +68433,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-03-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "185/2026",
    "hearings": [
@@ -68604,6 +68631,30 @@
       "lapsiasiavaltuutetun toimisto",
       "eduskunnan oikeusasiamiehen kanslia"
      ]
+    },
+    {
+     "committee": "sosiaali- ja terveysvaliokunta",
+     "date": "2026-11-16",
+     "heard": [
+      {
+       "org": "sosiaali- ja terveysministeriö",
+       "title": "hallitussihteeri"
+      },
+      {
+       "org": "sosiaali- ja terveysministeriö",
+       "title": "lääkintöneuvos"
+      },
+      {
+       "org": "sosiaali- ja terveysministeriö",
+       "title": "ylilääkäri"
+      },
+      {
+       "org": "sosiaali- ja terveysministeriö",
+       "title": "erityisasiantuntija"
+      }
+     ],
+     "none": [],
+     "written": []
     }
    ],
    "laws": [
@@ -69151,7 +69202,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "186/2025",
    "hearings": [
@@ -69250,7 +69301,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "186/2026",
    "hearings": [
@@ -70176,7 +70227,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "187/2026",
    "hearings": [
@@ -70275,12 +70326,17 @@
      "code": "2K",
      "committee": null,
      "date": "2026-11-10"
+    },
+    {
+     "code": "EV",
+     "committee": null,
+     "date": "2026-11-17"
     }
    ],
    "tila": "Käsitelty",
    "title": "Hallituksen esitys eduskunnalle laiksi työttömyysetuuksien rahoituksesta annetun lain muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Toinen käsittely"
+   "vaihe": "Eduskunnan vastaus"
   },
   "188/2024": {
    "committees": [
@@ -70813,7 +70869,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "188/2026",
    "hearings": [
@@ -71955,7 +72011,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "189/2026",
    "hearings": [
@@ -73055,7 +73111,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-12-09",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "190/2026",
    "hearings": [
@@ -73766,7 +73822,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "1995-09-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "191/2026",
    "hearings": [
@@ -73912,7 +73968,7 @@
     "perustuslakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "192/2022",
    "hearings": [
@@ -74344,7 +74400,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "192/2026",
    "hearings": [
@@ -75831,7 +75887,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "194/2026",
    "hearings": [
@@ -76382,7 +76438,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-06-25",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "195/2026",
    "hearings": [
@@ -76687,7 +76743,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "196/2026",
    "hearings": [
@@ -77663,7 +77719,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "197/2026",
    "hearings": [
@@ -78251,7 +78307,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "198/2026",
    "hearings": [
@@ -78865,7 +78921,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2016-05-24",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "199/2026",
    "hearings": [],
@@ -80685,7 +80741,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "200/2026",
    "hearings": [],
@@ -80967,7 +81023,7 @@
    "committees": [
     "ympäristövaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "201/2026",
    "hearings": [
@@ -81362,7 +81418,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "202/2026",
    "hearings": [
@@ -81726,7 +81782,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-17",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "203/2026",
    "hearings": [
@@ -82303,7 +82359,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "204/2026",
    "hearings": [
@@ -82802,7 +82858,7 @@
    "committees": [
     "hallintovaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "205/2026",
    "hearings": [],
@@ -82945,7 +83001,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "206/2026",
    "hearings": [],
@@ -83068,7 +83124,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "207/2026",
    "hearings": [
@@ -83325,7 +83381,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "208/2026",
    "hearings": [
@@ -83856,7 +83912,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "209/2026",
    "hearings": [],
@@ -85198,7 +85254,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "210/2026",
    "hearings": [
@@ -85467,7 +85523,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "211/2026",
    "hearings": [],
@@ -85867,7 +85923,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "212/2026",
    "hearings": [
@@ -86316,7 +86372,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "213/2026",
    "hearings": [
@@ -86586,7 +86642,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-05-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "214/2026",
    "hearings": [
@@ -86821,7 +86877,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2019-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "215/2026",
    "hearings": [
@@ -86994,7 +87050,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-12",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "216/2026",
    "hearings": [],
@@ -87266,7 +87322,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-03-26",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "217/2026",
    "hearings": [],
@@ -87875,7 +87931,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "218/2026",
    "hearings": [
@@ -88122,10 +88178,18 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "219/2026",
-   "hearings": [],
+   "hearings": [
+    {
+     "committee": "sosiaali- ja terveysvaliokunta",
+     "date": "2026-11-12",
+     "heard": [],
+     "none": [],
+     "written": []
+    }
+   ],
    "laws": [
     {
      "decision": null,
@@ -88158,7 +88222,7 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laiksi opioidiyliannostuksen vastalääkkeiden jakelutoiminnasta sekä laiksi lääkelain muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Asian ilmoittaminen"
+   "vaihe": "Asiantuntijakuuleminen"
   },
   "22/2022": {
    "committees": [
@@ -89923,7 +89987,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-20",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "220/2026",
    "hearings": [
@@ -90389,7 +90453,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "221/2026",
    "hearings": [
@@ -90811,7 +90875,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "222/2026",
    "hearings": [
@@ -91052,7 +91116,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "223/2026",
    "hearings": [
@@ -91321,7 +91385,7 @@
     "perustuslakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "224/2026",
    "hearings": [
@@ -91394,7 +91458,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "225/2026",
    "hearings": [
@@ -91777,7 +91841,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "226/2026",
    "hearings": [
@@ -91851,7 +91915,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "227/2026",
    "hearings": [],
@@ -91888,7 +91952,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2029-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "228/2026",
    "hearings": [
@@ -91969,7 +92033,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "229/2026",
    "hearings": [
@@ -93172,7 +93236,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "230/2026",
    "hearings": [
@@ -93499,7 +93563,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "231/2026",
    "hearings": [
@@ -93580,7 +93644,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "232/2026",
    "hearings": [],
@@ -93669,7 +93733,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "233/2026",
    "hearings": [
@@ -93905,7 +93969,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "234/2026",
    "hearings": [
@@ -94118,7 +94182,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "235/2026",
    "hearings": [
@@ -94431,7 +94495,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-12-30",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "236/2026",
    "hearings": [
@@ -94585,7 +94649,7 @@
    "committees": [
     "talousvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "237/2026",
    "hearings": [
@@ -95029,7 +95093,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "238/2026",
    "hearings": [
@@ -95169,7 +95233,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "239/2026",
    "hearings": [
@@ -96382,7 +96446,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "240/2026",
    "hearings": [
@@ -99065,7 +99129,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "241/2026",
    "hearings": [],
@@ -99106,10 +99170,18 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "242/2026",
-   "hearings": [],
+   "hearings": [
+    {
+     "committee": "sosiaali- ja terveysvaliokunta",
+     "date": "2026-11-12",
+     "heard": [],
+     "none": [],
+     "written": []
+    }
+   ],
    "lausuntoaika": [
     "2026-06-18",
     "2026-08-13"
@@ -99152,14 +99224,14 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laiksi lääkelain muuttamisesta ja siihen liittyviksi laeiksi",
    "vahvistettu": null,
-   "vaihe": "Asian ilmoittaminen"
+   "vaihe": "Asiantuntijakuuleminen"
   },
   "243/2022": {
    "committees": [
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "243/2022",
    "hearings": [
@@ -99257,7 +99329,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "243/2026",
    "hearings": [],
@@ -99312,10 +99384,18 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "244/2026",
-   "hearings": [],
+   "hearings": [
+    {
+     "committee": "sosiaali- ja terveysvaliokunta",
+     "date": "2026-11-12",
+     "heard": [],
+     "none": [],
+     "written": []
+    }
+   ],
    "laws": [
     {
      "decision": null,
@@ -99366,7 +99446,7 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laeiksi maatalousyrittäjän eläkelain ja eräiden muiden lakien muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Asian ilmoittaminen"
+   "vaihe": "Asiantuntijakuuleminen"
   },
   "245/2020": {
    "committees": [
@@ -99694,7 +99774,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "245/2026",
    "hearings": [
@@ -99799,7 +99879,7 @@
    "committees": [
     "sosiaali- ja terveysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "246/2026",
    "hearings": [],
@@ -100038,7 +100118,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "247/2026",
    "hearings": [
@@ -100097,6 +100177,54 @@
       "Tapahtumateollisuus ry",
       "Erikoiskaupan liitto Etu ry"
      ]
+    },
+    {
+     "committee": "lakivaliokunta",
+     "date": "2026-11-17",
+     "heard": [
+      {
+       "org": "Itä-Suomen hovioikeus",
+       "title": "presidentti"
+      },
+      {
+       "org": "Oulun käräjäoikeus",
+       "title": "käräjätuomari"
+      },
+      {
+       "org": "Syyttäjälaitos",
+       "title": "syyttäjäylitarkastaja"
+      },
+      {
+       "org": "Helsingin poliisilaitos",
+       "title": "rikostarkastaja"
+      },
+      {
+       "org": "tietosuojavaltuutetun toimisto",
+       "title": "ylitarkastaja"
+      },
+      {
+       "org": "Suomen Asianajajat",
+       "title": "asianajaja"
+      },
+      {
+       "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
+       "title": "lakimies"
+      },
+      {
+       "org": "Suomen Yrittäjät ry",
+       "title": "asiantuntija"
+      },
+      {
+       "org": null,
+       "title": "professori"
+      },
+      {
+       "org": "oikeusministeriö",
+       "title": "lainsäädäntöneuvos"
+      }
+     ],
+     "none": [],
+     "written": []
     }
    ],
    "laws": [
@@ -100358,7 +100486,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "248/2026",
    "hearings": [],
@@ -100435,7 +100563,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-05-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "249/2026",
    "hearings": [],
@@ -101707,7 +101835,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "250/2026",
    "hearings": [
@@ -101806,7 +101934,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "251/2026",
    "hearings": [],
@@ -101849,7 +101977,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "252/2026",
    "hearings": [
@@ -102014,7 +102142,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-11-20",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "253/2026",
    "hearings": [
@@ -102069,7 +102197,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "254/2026",
    "hearings": [
@@ -102194,7 +102322,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "255/2026",
    "hearings": [
@@ -102401,7 +102529,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-08-07",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "256/2026",
    "hearings": [],
@@ -102480,7 +102608,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "257/2026",
    "hearings": [
@@ -102731,7 +102859,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-05-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "258/2026",
    "hearings": [
@@ -102873,7 +103001,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "259/2026",
    "hearings": [
@@ -103971,7 +104099,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "260/2020",
    "hearings": [
@@ -104239,7 +104367,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "260/2026",
    "hearings": [],
@@ -104503,7 +104631,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2021-06-30",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "261/2026",
    "hearings": [
@@ -104551,7 +104679,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "262/2026",
    "hearings": [
@@ -104862,7 +104990,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "263/2026",
    "hearings": [
@@ -105174,7 +105302,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-03-20",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "264/2026",
    "hearings": [],
@@ -105617,7 +105745,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-08-02",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "265/2026",
    "hearings": [],
@@ -105696,7 +105824,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "266/2026",
    "hearings": [],
@@ -105739,7 +105867,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-03-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "267/2026",
    "hearings": [],
@@ -105880,7 +106008,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "268/2026",
    "hearings": [
@@ -106202,7 +106330,7 @@
     "työelämä- ja tasa-arvovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "269/2026",
    "hearings": [
@@ -107545,7 +107673,7 @@
    "committees": [
     "talousvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "270/2026",
    "hearings": [
@@ -107596,7 +107724,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "271/2026",
    "hearings": [
@@ -107647,7 +107775,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "272/2026",
    "hearings": [
@@ -107770,7 +107898,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "273/2022",
    "hearings": [
@@ -107862,7 +107990,7 @@
    "committees": [
     "sosiaali- ja terveysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "273/2026",
    "hearings": [],
@@ -107905,7 +108033,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-09-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "274/2026",
    "hearings": [],
@@ -107953,7 +108081,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "275/2026",
    "hearings": [],
@@ -108002,7 +108130,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "276/2022",
    "hearings": [],
@@ -108038,7 +108166,7 @@
    "committees": [
     "ulkoasiainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "276/2026",
    "hearings": [],
@@ -108081,7 +108209,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "277/2026",
    "hearings": [
@@ -108179,7 +108307,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "278/2026",
    "hearings": [],
@@ -108311,7 +108439,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "279/2026",
    "hearings": [],
@@ -108929,7 +109057,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "280/2026",
    "hearings": [
@@ -109023,7 +109151,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-06",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "281/2026",
    "hearings": [
@@ -109103,7 +109231,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "282/2026",
    "hearings": [
@@ -109152,7 +109280,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "283/2026",
    "hearings": [
@@ -109273,7 +109401,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2019-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "284/2026",
    "hearings": [
@@ -109354,7 +109482,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "285/2026",
    "hearings": [
@@ -109421,7 +109549,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-08-04",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "286/2026",
    "hearings": [
@@ -109470,7 +109598,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-12-11",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "287/2026",
    "hearings": [
@@ -109480,6 +109608,60 @@
      "heard": [],
      "none": [],
      "written": []
+    },
+    {
+     "committee": "ympäristövaliokunta",
+     "date": "2026-11-17",
+     "heard": [
+      {
+       "org": "ympäristöministeriö",
+       "title": "erityisasiantuntija"
+      },
+      {
+       "org": "Ilmatieteen laitos",
+       "title": "erikoistutkija"
+      },
+      {
+       "org": "Terveyden ja hyvinvoinnin laitos (THL)",
+       "title": "tiimipäällikkö"
+      },
+      {
+       "org": "Helsingin seudun ympäristöpalvelut -kuntayhtymä",
+       "title": "ilmansuojeluyksikön päällikkö"
+      },
+      {
+       "org": "Suomen Kuntaliitto",
+       "title": "kehittämispäällikkö"
+      },
+      {
+       "org": "Suomen Omakotiliitto ry",
+       "title": "toiminnanjohtaja"
+      },
+      {
+       "org": "Hengitysliitto ry",
+       "title": "erityisasiantuntija"
+      },
+      {
+       "org": "Lupa- ja valvontavirasto",
+       "title": null
+      },
+      {
+       "org": "Pieksämäen kaupunki",
+       "title": null
+      },
+      {
+       "org": "Hyvinkään kaupunki",
+       "title": null
+      }
+     ],
+     "none": [
+      "Lahden kaupunki"
+     ],
+     "written": [
+      "Suomen ympäristökeskus",
+      "Turun kaupunki",
+      "Suomen luonnonsuojeluliitto ry"
+     ]
     }
    ],
    "laws": [
@@ -109508,14 +109690,14 @@
    "tila": "Käsittelyssä",
    "title": "Hallituksen esitys eduskunnalle laiksi ympäristönsuojelulain muuttamisesta",
    "vahvistettu": null,
-   "vaihe": "Ennakkokäsittelyn vaiheiden hyväksyminen"
+   "vaihe": "Asian käsittelystä päättäminen"
   },
   "288/2026": {
    "committees": [
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-08-13",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "288/2026",
    "hearings": [
@@ -109564,7 +109746,7 @@
   },
   "289/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "289/2026",
    "hearings": [],
@@ -109593,7 +109775,7 @@
   },
   "29/2023": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "29/2023",
    "hearings": [],
@@ -110173,7 +110355,7 @@
   "290/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "290/2026",
    "hearings": [],
@@ -110412,7 +110594,7 @@
   },
   "291/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "291/2026",
    "hearings": [],
@@ -110448,7 +110630,7 @@
   "292/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2026-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "292/2026",
    "hearings": [],
@@ -110821,7 +111003,7 @@
   "293/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2008-05-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "293/2026",
    "hearings": [
@@ -110873,7 +111055,7 @@
     "puolustusvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2012-03-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "294/2026",
    "hearings": [
@@ -111000,7 +111182,7 @@
    "committees": [
     "lakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "295/2026",
    "hearings": [
@@ -111062,7 +111244,7 @@
    "committees": [
     "perustuslakivaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "296/2026",
    "hearings": [
@@ -111113,7 +111295,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-05-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "297/2026",
    "hearings": [],
@@ -111151,7 +111333,7 @@
   },
   "298/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "298/2026",
    "hearings": [],
@@ -111419,7 +111601,7 @@
   },
   "299/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "299/2026",
    "hearings": [],
@@ -112928,7 +113110,7 @@
   "300/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-10-17",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "300/2026",
    "hearings": [],
@@ -112959,7 +113141,7 @@
    "committees": [
     "puolustusvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "301/2026",
    "hearings": [
@@ -113017,7 +113199,7 @@
   },
   "302/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "302/2026",
    "hearings": [],
@@ -113046,7 +113228,7 @@
   },
   "303/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "303/2026",
    "hearings": [],
@@ -113078,7 +113260,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "304/2026",
    "hearings": [],
@@ -113281,7 +113463,7 @@
     "valtiovarainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "305/2026",
    "hearings": [],
@@ -113316,7 +113498,7 @@
   "306/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-06-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "306/2026",
    "hearings": [],
@@ -113456,7 +113638,7 @@
   "307/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "307/2026",
    "hearings": [],
@@ -113574,7 +113756,7 @@
   "308/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "308/2026",
    "hearings": [],
@@ -113603,7 +113785,7 @@
   },
   "309/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "309/2026",
    "hearings": [],
@@ -113961,7 +114143,7 @@
   "310/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2026-09-21",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "310/2026",
    "hearings": [],
@@ -113999,7 +114181,7 @@
     "sivistysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-08-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "311/2026",
    "hearings": [],
@@ -114052,7 +114234,7 @@
   "312/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2030-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "312/2026",
    "hearings": [],
@@ -114081,7 +114263,7 @@
   },
   "313/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "313/2026",
    "hearings": [
@@ -114181,7 +114363,7 @@
   "314/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "314/2026",
    "hearings": [
@@ -114504,7 +114686,7 @@
   "315/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2026-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "315/2026",
    "hearings": [],
@@ -114653,7 +114835,7 @@
     "maa- ja metsätalousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "316/2026",
    "hearings": [
@@ -114702,7 +114884,7 @@
   "317/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2023-01-16",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "317/2026",
    "hearings": [],
@@ -114991,7 +115173,7 @@
   "318/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2024-12-04",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "318/2026",
    "hearings": [],
@@ -115264,7 +115446,7 @@
   "319/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "319/2026",
    "hearings": [],
@@ -115903,7 +116085,7 @@
   },
   "320/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "320/2026",
    "hearings": [],
@@ -115939,7 +116121,7 @@
   "321/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2002-05-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "321/2026",
    "hearings": [],
@@ -115976,7 +116158,7 @@
    "committees": [
     "talousvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "322/2026",
    "hearings": [
@@ -116179,7 +116361,7 @@
   "323/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2028-07-26",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "323/2026",
    "hearings": [],
@@ -116500,7 +116682,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-02-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "324/2026",
    "hearings": [
@@ -116543,7 +116725,7 @@
   "325/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-12-14",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "325/2026",
    "hearings": [],
@@ -116701,7 +116883,7 @@
   },
   "326/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "326/2026",
    "hearings": [],
@@ -116751,7 +116933,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-06-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "327/2026",
    "hearings": [
@@ -116799,7 +116981,7 @@
   },
   "328/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "328/2026",
    "hearings": [
@@ -116974,7 +117156,7 @@
   "329/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-03-03",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "329/2026",
    "hearings": [],
@@ -117674,7 +117856,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "330/2026",
    "hearings": [],
@@ -117711,7 +117893,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-04-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "331/2026",
    "hearings": [],
@@ -117772,7 +117954,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-03-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "332/2026",
    "hearings": [
@@ -117847,7 +118029,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "333/2026",
    "hearings": [],
@@ -117884,7 +118066,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-05-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "334/2026",
    "hearings": [
@@ -117929,7 +118111,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "335/2026",
    "hearings": [
@@ -117974,7 +118156,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-11-29",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "336/2026",
    "hearings": [
@@ -118043,7 +118225,7 @@
    "committees": [
     "ympäristövaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "337/2026",
    "hearings": [
@@ -118085,7 +118267,7 @@
   },
   "338/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "338/2026",
    "hearings": [],
@@ -118114,7 +118296,7 @@
   },
   "339/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "339/2026",
    "hearings": [],
@@ -118612,7 +118794,7 @@
   "340/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "340/2026",
    "hearings": [],
@@ -118647,7 +118829,7 @@
   },
   "341/2026": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "341/2026",
    "hearings": [],
@@ -118701,7 +118883,7 @@
   "342/2026": {
    "committees": [],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "342/2026",
    "hearings": [],
@@ -120723,7 +120905,7 @@
    "committees": [
     "sosiaali- ja terveysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "38/2024",
    "hearings": [
@@ -126228,7 +126410,7 @@
    "committees": [
     "sosiaali- ja terveysvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "44/2026",
    "hearings": [
@@ -127966,7 +128148,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "46/2026",
    "hearings": [
@@ -128674,7 +128856,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "48/2022",
    "hearings": [
@@ -128913,7 +129095,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "48/2025",
    "hearings": [
@@ -129562,7 +129744,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-09-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "49/2026",
    "hearings": [
@@ -131138,7 +131320,7 @@
   },
   "50/2023": {
    "committees": [],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "50/2023",
    "hearings": [],
@@ -131424,7 +131606,7 @@
     "perustuslakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2000-03-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "50/2026",
    "hearings": [
@@ -143056,7 +143238,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2009-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "63/2026",
    "hearings": [
@@ -143901,7 +144083,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2028-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "64/2026",
    "hearings": [
@@ -147019,7 +147201,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "69/2026",
    "hearings": [
@@ -147771,7 +147953,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2022-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "70/2022",
    "hearings": [
@@ -148454,7 +148636,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "70/2026",
    "hearings": [
@@ -149871,7 +150053,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "71/2026",
    "hearings": [
@@ -152720,7 +152902,7 @@
     "liikenne- ja viestintävaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-11-12",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "74/2025",
    "hearings": [
@@ -155088,7 +155270,7 @@
    "committees": [
     "maa- ja metsätalousvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "77/2025",
    "hearings": [
@@ -156226,7 +156408,7 @@
     "hallintovaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-08-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "79/2026",
    "hearings": [
@@ -159098,7 +159280,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2024-05-28",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "83/2026",
    "hearings": [
@@ -160059,7 +160241,7 @@
     "ympäristövaliokunta"
    ],
    "ehdotettuVoimaantulo": "2025-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "84/2026",
    "hearings": [
@@ -163013,7 +163195,7 @@
    "committees": [
     "valtiovarainvaliokunta"
    ],
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "88/2026",
    "hearings": [],
@@ -165078,7 +165260,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-01-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "90/2026",
    "hearings": [
@@ -166888,7 +167070,7 @@
     "ulkoasiainvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2017-01-23",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "92/2026",
    "hearings": [
@@ -168993,7 +169175,7 @@
     "talousvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2027-07-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "96/2026",
    "hearings": [
@@ -169326,7 +169508,7 @@
     "sosiaali- ja terveysvaliokunta"
    ],
    "ehdotettuVoimaantulo": "2026-12-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "97/2026",
    "hearings": [
@@ -170195,7 +170377,7 @@
     "lakivaliokunta"
    ],
    "ehdotettuVoimaantulo": "2023-10-01",
-   "fetched": "2026-11-16",
+   "fetched": "2026-11-17",
    "final": false,
    "he": "98/2026",
    "hearings": [

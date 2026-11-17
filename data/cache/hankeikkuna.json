@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-17T11:11:00",
+ "fetched": "2026-11-17T14:23:43",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -114920,7 +114920,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-09-25T09:59:12",
+   "muokattu": "2026-11-17T13:28:50",
    "nimi": "Tuotevastuudirektiivin kansallinen täytäntöönpano",
    "nimiSv": "Nationellt genomförande av produktansvarsdirektivet",
    "pevLausunto": false,
@@ -116460,7 +116460,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-10-15T12:44:25",
+   "muokattu": "2026-11-17T11:39:44",
    "nimi": "EU:n ekosuunnitteluasetuksen kansallinen täytäntöönpano",
    "nimiSv": "Nationellt genomförande av EU:s ekodesignförordning",
    "pevLausunto": false,
@@ -490691,13 +490691,52 @@
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
    "asetettu": null,
-   "asiakirjat": [],
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö-fi-Lausuntopyyntö työ- ja elinkeinoministeriön asetuksesta Patentti- ja rekisterihallituksen maksullisista suoritteista vuonna 2027",
+     "pvm": "2026-11-17",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/29c0b4a2-edcf-4972-940a-f8cdda0b2e8c/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "nimi": "Lausuntopyyntö-sv-Begäran om utlåtande om arbets- och näringsministeriets förordning om Patent- och registerstyrelsens avgiftsbelagda prestationer 2027",
+     "pvm": "2026-11-17",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/a55e4f9e-cd58-4a5b-92dc-67bed0ef518d/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "nimi": "Lausuntopyynnön-liite-Perustelumuistio maksuasetus PRH 2027",
+     "pvm": "2026-11-17",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/765e7e77-09bd-4790-810d-506297845248/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "nimi": "Lausuntopyynnön-liite-Maksuasetus PRH 2027 fi luonnos",
+     "pvm": "2026-11-17",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/8ad71e8b-d696-4f48-be41-7769d8ff24eb/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "nimi": "Lausuntopyynnön-liite-Maksuasetus PRH 2027 sv luonnos",
+     "pvm": "2026-11-17",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/6ae44fc9-791a-430f-a0c9-f59a6f5704b0/LAUSUNTOPYYNTO_20261117124423.PDF"
+    }
+   ],
    "asiasanat": [
     "Patentti- ja rekisterihallitus"
    ],
    "esittelyviikko": null,
    "esittelyvuosi": null,
-   "etapit": [],
+   "etapit": [
+    {
+     "date": "2026-11-17",
+     "end": "2026-11-30",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
    "evNumerot": [],
    "heNumerot": [],
    "heTila": null,
@@ -490706,7 +490745,7 @@
    "lausunnot": null,
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-12T10:34:42",
+   "muokattu": "2026-11-17T12:46:19",
    "nimi": "Työ- ja elinkeinoministeriön asetus Patentti- ja rekisterihallituksen maksullisista suoritteista vuonna 2027",
    "nimiSv": "Arbets- och näringsministeriets förordning om Patent- och registerstyrelsens avgiftsbelagda prestationer året 2027",
    "pevLausunto": false,
@@ -490719,7 +490758,38 @@
    "tunnus": "TEM070:00/2026",
    "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM070:00/2026",
    "uuid": "185a05f9-ce54-41a5-bc5d-29a48a12dc0c",
-   "valmistelu": [],
+   "valmistelu": [
+    {
+     "d": "2026-11-17",
+     "n": "Lausuntopyyntö-fi-Lausuntopyyntö työ- ja elinkeinoministeriön asetuksesta Patentti- ja rekisterihallituksen maksullisista suoritteista vuonna 2027",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/29c0b4a2-edcf-4972-940a-f8cdda0b2e8c/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "d": "2026-11-17",
+     "n": "Lausuntopyyntö-sv-Begäran om utlåtande om arbets- och näringsministeriets förordning om Patent- och registerstyrelsens avgiftsbelagda prestationer 2027",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/a55e4f9e-cd58-4a5b-92dc-67bed0ef518d/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "d": "2026-11-17",
+     "n": "Lausuntopyynnön-liite-Perustelumuistio maksuasetus PRH 2027",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/765e7e77-09bd-4790-810d-506297845248/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "d": "2026-11-17",
+     "n": "Lausuntopyynnön-liite-Maksuasetus PRH 2027 fi luonnos",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/8ad71e8b-d696-4f48-be41-7769d8ff24eb/LAUSUNTOPYYNTO_20261117124423.PDF"
+    },
+    {
+     "d": "2026-11-17",
+     "n": "Lausuntopyynnön-liite-Maksuasetus PRH 2027 sv luonnos",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/185a05f9-ce54-41a5-bc5d-29a48a12dc0c/6ae44fc9-791a-430f-a0c9-f59a6f5704b0/LAUSUNTOPYYNTO_20261117124423.PDF"
+    }
+   ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
@@ -493581,6 +493651,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-17",
+      "id": "7899b380-65d5-4aa2-8a6f-e3b7a355d992",
+      "org": "Foreningen Våre Rovdyr",
+      "title": "Foreningen Våre Rovdyr; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/7899b380-65d5-4aa2-8a6f-e3b7a355d992/LAUSUNTO_20261117140058.PDF"
+     },
+     {
       "date": "2026-11-13",
       "id": "560a60c0-aa92-44f2-aba8-028feac58ac4",
       "org": "Wildlife Safaris Finland Oy",
@@ -494170,7 +494247,7 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 84,
+    "n": 85,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
@@ -494181,6 +494258,7 @@
      "Eläinvihreät ry",
      "Etelä-Karjalan liitto",
      "Finnature Oy",
+     "Foreningen Våre Rovdyr",
      "Idän Taiga ry",
      "Irina Andryushchenko-Basquin",
      "Kauhajoen Metsästysseura ry",
@@ -494250,15 +494328,14 @@
      "WWF Suomi",
      "Wildlife Safaris Finland Oy",
      "Ympäristöministeriö",
-     "Österbottens förbund - Pohjanmaan liitto",
-     "Österbottens svenska fårförening rf"
+     "Österbottens förbund - Pohjanmaan liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-13"
+    "viimeisin": "2026-11-17"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-17T11:02:05",
+   "muokattu": "2026-11-17T14:00:58",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -497251,6 +497328,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-13",
+      "id": "821db400-8011-45df-b585-9750060247e9",
+      "none": true,
+      "org": "Puolustusministeriö",
+      "title": "Puolustusministeriö; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-11",
       "id": "cdea7123-367b-4d6a-bf3c-97dd65e1aa28",
       "org": "Näkövammaisten liitto ry",
@@ -497524,8 +497608,8 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a4c6876a-433a-4215-880f-2df089ae01b4/92ae9476-7d39-4a08-80fe-b2d319dc4994/LAUSUNTO_20261102183426.PDF"
      }
     ],
-    "eiLausuttavaa": 1,
-    "n": 39,
+    "eiLausuttavaa": 2,
+    "n": 40,
     "orgs": [
      "Elinkeinoelämän keskusliitto EK",
      "Etelä-Savon hyvinvointialue",
@@ -497549,6 +497633,7 @@
      "Pirkanmaan hyvinvointialue",
      "Pohjanmaan hyvinvointialue",
      "Pohjois-Savon hyvinvointialue",
+     "Puolustusministeriö",
      "Safetum Oy",
      "Suomen Kiinteistöliitto ry",
      "Suomen Palopäällystöliitto - Finlands Brandbefälsförbund ry",
@@ -497568,11 +497653,11 @@
      "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=b264614c-5349-401a-857a-3903bdd73c0e&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "sisäministeriö",
-   "muokattu": "2026-11-15T05:34:56",
+   "muokattu": "2026-11-17T12:57:25",
    "nimi": "Valtioneuvoston asetus valtionavustuksesta väestönsuojien kunnostamiseen",
    "nimiSv": "Statsrådets förordning om statsunderstöd för iståndsättning av skyddsrum",
    "pevLausunto": false,
@@ -498125,6 +498210,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "ba8d5646-a456-4a8c-bcaa-d262a0776c27",
+      "org": "Työ- ja elinkeinoministeriö",
+      "title": "Työ- ja elinkeinoministeriö; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/0b695719-4398-4fab-9c70-0081bb7c23d5/ba8d5646-a456-4a8c-bcaa-d262a0776c27/LAUSUNTO_20261117123247.PDF"
+     },
+     {
       "date": "2026-11-13",
       "id": "a4d9dc99-fbf2-40a7-824a-b1944ed009f7",
       "org": "Hyvinvointialueyhtiö Hyvil Oy",
@@ -498189,7 +498281,7 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 9,
+    "n": 10,
     "orgs": [
      "Hyvinvointialueyhtiö Hyvil Oy",
      "Lappeenrannan kaupunki - Kuusimäen toimintayksikkö",
@@ -498199,14 +498291,15 @@
      "Päijät-Hämeen hyvinvointialue",
      "Satakunnan hyvinvointialue",
      "Tampereen kaupunki",
-     "Terveyden ja hyvinvoinnin laitos THL"
+     "Terveyden ja hyvinvoinnin laitos THL",
+     "Työ- ja elinkeinoministeriö"
     ],
     "url": null,
-    "viimeisin": "2026-11-13"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-16T13:08:27",
+   "muokattu": "2026-11-17T12:32:47",
    "nimi": "Valtioneuvoston asetus alueellisista toimeentulotukiasioiden neuvottelukunnista annetun valtioneuvoston asetuksen 1 §:n muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av 1 § i statsrådets förordning om regionala delegationer för utkomststödsärenden",
    "pevLausunto": false,
@@ -498612,6 +498705,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "e7e81f47-ae19-48a9-a237-af0b39383bc9",
+      "none": true,
+      "org": "Terveyden ja hyvinvoinnin laitos THL",
+      "title": "Terveyden ja hyvinvoinnin laitos; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-03",
       "id": "7c803fec-cba6-43c1-b43c-af334d5c080d",
       "org": "Sisäministeriö",
@@ -498624,18 +498724,19 @@
       "title": "Sosiaali- ja terveysministeriön ilmoitus, ettei sillä ole lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 0,
-    "n": 2,
+    "eiLausuttavaa": 1,
+    "n": 3,
     "orgs": [
      "Sisäministeriö",
-     "Sosiaali- ja terveysministeriö"
+     "Sosiaali- ja terveysministeriö",
+     "Terveyden ja hyvinvoinnin laitos THL"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=d3a72022-cd05-4332-99b8-db4db01283b2&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-03"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-03T12:37:23",
+   "muokattu": "2026-11-17T12:34:11",
    "nimi": "Ympäristöministeriön asetusmuutokset rakennusten vesilaitteistoissa käytettävien rakennustuotteiden olennaisia teknisiä vaatimuksia ja tyyppihyväksyntöjä koskien",
    "nimiSv": "Ändringar av miljöministeriets förordningar om väsentliga tekniska krav och typgodkännanden för byggprodukter som används i byggnaders vatteninstallationer",
    "pevLausunto": false,
@@ -508671,11 +508772,11 @@
    "lausunnot": {
     "docs": [
      {
-      "date": "2026-11-13",
-      "id": "cf640616-efcb-4155-8542-88fa1242b746",
+      "date": "2026-11-16",
+      "id": "a1c247f6-4b4e-4827-8747-5bde7b36a639",
       "org": "Metsähallitus",
-      "title": "Metsähallitus; lisälausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/cf640616-efcb-4155-8542-88fa1242b746/LAUSUNTO_20261116135014.PDF"
+      "title": "Metsähallitus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1ef0f51a-524c-4a6d-bbe7-72504d8504c1/a1c247f6-4b4e-4827-8747-5bde7b36a639/LAUSUNTO_20261117135713.PDF"
      },
      {
       "date": "2026-11-12",
@@ -509010,11 +509111,11 @@
      "Österbottens förbund - Pohjanmaan liitto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=0ac5d342-598e-4f3d-b52d-e3201be65461&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-13"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "ympäristöministeriö",
-   "muokattu": "2026-11-16T13:50:14",
+   "muokattu": "2026-11-17T13:57:13",
    "nimi": "Valtioneuvoston asetus luonnon monimuotoisuuden suojelun ja hoidon edistämiseen myönnettävästä avustuksesta",
    "nimiSv": "Statsrådets förordning om understöd för främjande av skydd och vård av den biologiska mångfalden",
    "pevLausunto": false,
