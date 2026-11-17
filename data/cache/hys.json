@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T19:09:30",
+ "fetched": "2026-11-17T11:19:53",
  "items": [
   {
    "actType": "PROP_REG",
@@ -115,7 +115,7 @@
    "id": 14770,
    "periods": [
     {
-     "end": "2027-01-11",
+     "end": "2027-01-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-11-04"
@@ -532,60 +532,6 @@
   {
    "actType": "PROP_REG",
    "actTypeLabel": "Asetusehdotus",
-   "id": 18452,
-   "periods": [
-    {
-     "end": "2026-11-16",
-     "open": true,
-     "stage": "PLANNING_WORKFLOW",
-     "start": "2026-10-19"
-    }
-   ],
-   "reference": "Ares(2026)5869805",
-   "status": "ACTIVE",
-   "title_en": "Revision of EU rules on the internal market information system",
-   "title_fi": "Sisämarkkinoiden tietojenvaihtojärjestelmä (IMI) – EU:n sääntöjen tarkistaminen",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18452_en"
-  },
-  {
-   "actType": "DEC_DEL",
-   "actTypeLabel": "Delegoitu päätös",
-   "id": 19225,
-   "periods": [
-    {
-     "end": "2026-11-16",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-19"
-    }
-   ],
-   "reference": "Ares(2026)8456971",
-   "status": "ACTIVE",
-   "title_en": "Approval of unilateral extension of ETS1 scope by Sweden",
-   "title_fi": "Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en"
-  },
-  {
-   "actType": "REG_IMPL",
-   "actTypeLabel": "Täytäntöönpanoasetus",
-   "id": 16473,
-   "periods": [
-    {
-     "end": "2026-11-16",
-     "open": true,
-     "stage": "ISC_WORKFLOW",
-     "start": "2026-10-19"
-    }
-   ],
-   "reference": "Ares(2026)568530",
-   "status": "ACTIVE",
-   "title_en": "Commission Implementing Regulation on access rights to certain parts of the battery passport",
-   "title_fi": "Akut – akkupassin tiettyjen osien käyttöoikeudet",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16473_en"
-  },
-  {
-   "actType": "PROP_REG",
-   "actTypeLabel": "Asetusehdotus",
    "id": 19032,
    "periods": [
     {
@@ -607,7 +553,7 @@
    "id": 14532,
    "periods": [
     {
-     "end": "2027-01-11",
+     "end": "2027-01-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -625,7 +571,7 @@
    "id": 19517,
    "periods": [
     {
-     "end": "2027-01-11",
+     "end": "2027-01-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-15"
@@ -715,7 +661,7 @@
    "id": 14511,
    "periods": [
     {
-     "end": "2027-01-11",
+     "end": "2027-01-12",
      "open": true,
      "stage": "ADOPTION_WORKFLOW",
      "start": "2026-10-09"
@@ -996,6 +942,42 @@
    "title_en": "Revision of Schengen short-stay visa procedures (recast)",
    "title_fi": "Lyhytaikaista oleskelua koskevien Schengen-viisumimenettelyjen tarkistus (uudelleenlaadinta)",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19222_en"
+  },
+  {
+   "actType": "REG_IMPL",
+   "actTypeLabel": "Täytäntöönpanoasetus",
+   "id": 16473,
+   "periods": [
+    {
+     "end": "2026-11-16",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-19"
+    }
+   ],
+   "reference": "Ares(2026)568530",
+   "status": "ACTIVE",
+   "title_en": "Commission Implementing Regulation on access rights to certain parts of the battery passport",
+   "title_fi": "Akut – akkupassin tiettyjen osien käyttöoikeudet",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16473_en"
+  },
+  {
+   "actType": "DEC_DEL",
+   "actTypeLabel": "Delegoitu päätös",
+   "id": 19225,
+   "periods": [
+    {
+     "end": "2026-11-16",
+     "open": false,
+     "stage": "ISC_WORKFLOW",
+     "start": "2026-10-19"
+    }
+   ],
+   "reference": "Ares(2026)8456971",
+   "status": "ACTIVE",
+   "title_en": "Approval of unilateral extension of ETS1 scope by Sweden",
+   "title_fi": "Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en"
   },
   {
    "actType": "REG_IMPL",
@@ -1752,24 +1734,6 @@
    "title_en": "Evaluation of the Employers Sanctions Directive",
    "title_fi": "Työnantajiin kohdistettavia seuraamuksia koskevan direktiivin arviointi",
    "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18575_en"
-  },
-  {
-   "actType": "COMMUNIC",
-   "actTypeLabel": "Tiedonanto",
-   "id": 16795,
-   "periods": [
-    {
-     "end": "2026-09-17",
-     "open": false,
-     "stage": "ADOPTION_WORKFLOW",
-     "start": "2026-07-17"
-    }
-   ],
-   "reference": "Ares(2026)1348740",
-   "status": "ACTIVE",
-   "title_en": "Competitiveness in the single banking market",
-   "title_fi": "Kilpailukyky pankkialan sisämarkkinoilla",
-   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16795_en"
   },
   {
    "actType": "REG_DEL",

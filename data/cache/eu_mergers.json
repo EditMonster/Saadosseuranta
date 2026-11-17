@@ -3625,95 +3625,6 @@
    "timeline": [],
    "title": "ENILIVE / OIL!"
   },
-  "M.12545": {
-   "caseNumber": "M.12545",
-   "deadline": "2026-08-31",
-   "decisions": [
-    {
-     "date": "2026-08-18",
-     "type": "DecisionType20310"
-    }
-   ],
-   "initiated": "2026-07-06",
-   "lastDecision": "2026-08-18",
-   "notice": {
-    "activities": [
-     "MSI tarjoaa rahoituspalveluja, mukaan lukien omaisuudenhoitoneuvontaa ja sellaisten rahastojen neuvontaa, jotka sijoittavat infrastruktuuriomaisuuteen.",
-     "Kohdeyritykset tarjoavat jätehuoltopalveluja (Nicollin, SMN, NHE) ja vesihuoltopalveluja (Nicollin Eau ja MP3D Groupe)."
-    ],
-    "fi": false,
-    "observationDays": 10,
-    "observationsEnd": "2026-08-14",
-    "oj": "C:2026:4255:",
-    "parties": [
-     {
-      "controllers": [
-       {
-        "country": "Yhdysvallat",
-        "name": "Morgan Stanley"
-       }
-      ],
-      "country": "Yhdysvallat",
-      "fi": false,
-      "name": "Morgan Stanley Infrastructure Inc.",
-      "short": "MSI"
-     },
-     {
-      "controllers": [
-       {
-        "country": "Ranska",
-        "name": "Groupe Nicollin"
-       }
-      ],
-      "country": "Ranska",
-      "fi": false,
-      "name": "Nicollin SAS",
-      "short": "Nicollin"
-     },
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "Société Méditerranéenne De Nettoiement SAS",
-      "short": "SMN"
-     },
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "Nicollin Holding Environnement",
-      "short": "NHE"
-     },
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "Nicollin Eau"
-     },
-     {
-      "country": "Ranska",
-      "fi": false,
-      "name": "MP3D Groupe"
-     }
-    ],
-    "published": "2026-08-04",
-    "reference": "C/2026/4255",
-    "simplified": true,
-    "transaction": "Morgan Stanley hankkii sulautuma-asetuksen 3 artiklan 1 kohdan b alakohdassa tarkoitetun määräysvallan yrityksissä Nicollin, SMN, NHE, Nicollin Eau ja MP3D Groupe (kohdeyritykset). Keskittymä toteutetaan ostamalla osakkeita.",
-    "url": "https://eur-lex.europa.eu/eli/C/2026/4255/oj/fin"
-   },
-   "noticeTries": 1,
-   "notified": "2026-07-27",
-   "oj": [
-    {
-     "published": "2026-08-04",
-     "reference": "C:2026:4255:"
-    }
-   ],
-   "phase": null,
-   "renotified": null,
-   "sector": "NaceV2Sector_E_37",
-   "simplified": "MEsimplified",
-   "timeline": [],
-   "title": "MSI / NICOLLIN SAS / SMN / NHE / NICOLLIN EAU / MP3D"
-  },
   "M.12546": {
    "caseNumber": "M.12546",
    "deadline": "2026-10-19",
@@ -7495,5 +7406,5 @@
    "title": "DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV"
   }
  },
- "fetched": "2026-11-16T19:11:32Z"
+ "fetched": "2026-11-17T11:22:14Z"
 }

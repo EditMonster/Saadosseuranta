@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T18:56:21",
+ "fetched": "2026-11-17T11:11:00",
  "items": [
   {
    "annettuEduskunnalle": null,
@@ -263,6 +263,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "ac5aef0e-61e0-43ab-b55e-efa86ce93a96",
+      "org": "Verohallinto",
+      "title": "Verohallinto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/ac5aef0e-61e0-43ab-b55e-efa86ce93a96/LAUSUNTO_20261116191425.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "1f54133a-e9c9-4359-a5c4-6df0ee9b18b5",
+      "org": "Lidl Suomi Kommandiittiyhtiö",
+      "title": "Lidl Suomi; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/1cc5241e-b758-4a70-a039-8659928aabc7/1f54133a-e9c9-4359-a5c4-6df0ee9b18b5/LAUSUNTO_20261116191906.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "cd94dacb-6f6e-455b-82ba-ee0dd8233128",
       "org": "Neova Oy",
@@ -278,17 +292,19 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 2,
+    "n": 4,
     "orgs": [
+     "Lidl Suomi Kommandiittiyhtiö",
      "Neova Oy",
-     "Rautavaaran kunta"
+     "Rautavaaran kunta",
+     "Verohallinto"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=51e6e0bb-91fe-4c7c-92fe-243ec5e0dfa5&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-13T04:19:59",
+   "muokattu": "2026-11-16T19:19:06",
    "nimi": "Hallituksen esitys laeiksi uusiutuvien polttoaineiden käytön edistämisestä liikenteessä annetun lain 5 a ja 5 l §:n sekä biopolttoöljyn käytön edistämisestä annetun lain 5 ja 7 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition med förslag till lagar om ändring av 5 a och 5 l § i lagen om främjande av användningen av förnybara drivmedel för transport och 5 och 7 § i lagen om främjande av användningen av biobrännolja",
    "pevLausunto": false,
@@ -772,7 +788,7 @@
    },
    "lisattyPaiva": "2026-10-21",
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-16T15:05:59",
+   "muokattu": "2026-11-17T08:37:34",
    "nimi": "Hallituksen esitys laeiksi valtion rahoituksesta kansallisille taidelaitoksille annetun lain 1 ja 2 §:n sekä esittävän taiteen edistämisestä annetun lain 5 ja 6 §:n muuttamisesta",
    "nimiSv": "RP med förslag till lagar om ändring av 1 och 2 § i lagen om statlig finansiering av nationella konstinstitutioner samt ändring av 5 och 6 § lagen om främjande av scenkonst",
    "pevLausunto": false,
@@ -9478,7 +9494,7 @@
     }
    ],
    "asiasanat": [],
-   "esittelyviikko": 45,
+   "esittelyviikko": 48,
    "esittelyvuosi": 2026,
    "etapit": [
     {
@@ -9617,7 +9633,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-13T05:44:17",
+   "muokattu": "2026-11-17T09:22:21",
    "nimi": "Hallituksen esitys laiksi Kansallisgalleriasta annetun lain muuttamisesta",
    "nimiSv": "RP med förslag till lag om ändring av lagen om Nationalgalleriet",
    "pevLausunto": false,
@@ -9652,8 +9668,8 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2027-12-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
+   "vanhaEsittelyviikko": 45,
+   "vanhaEsittelyvuosi": 2026
   },
   {
    "annettuEduskunnalle": "2026-10-15",
@@ -33609,7 +33625,7 @@
    },
    "lisattyPaiva": "2026-08-12",
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-16T09:23:24",
+   "muokattu": "2026-11-17T06:26:28",
    "nimi": "Hallituksen esitys eduskunnalle laiksi EU:n energia-alan metaanipäästöjen vähentämistä koskevan asetuksen velvoitteiden toimeenpanosta ja valvonnasta sekä sähkömarkkinalain muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag om genomförande och övervakning av skyldigheterna enligt EU:s förordning om minskning av metanutsläpp inom energisektorn samt om ändring av elmarknadslagen",
    "pevLausunto": false,
@@ -35136,7 +35152,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-10-27T08:12:48",
+   "muokattu": "2026-11-17T09:31:12",
    "nimi": "Hallituksen esitys eduskunnalle laeiksi kiinteistönmuodostamislain 3 ja 283 §:n sekä yksityistielain 76 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagar om ändring av 3 och 283 § i fastighetsbildningslagen och 76 § i lagen om enskilda vägar",
    "pevLausunto": false,
@@ -118466,7 +118482,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "oikeusministeriö",
-   "muokattu": "2026-11-13T07:02:56",
+   "muokattu": "2026-11-17T08:33:41",
    "nimi": "Menettämisseuraamuksia koskevat lainsäädäntömuutokset",
    "nimiSv": "Ändringar i lagstiftningen om förverkandepåföljder",
    "pevLausunto": true,
@@ -118506,7 +118522,7 @@
     }
    ],
    "valmisteluvaihe": "EDUSKUNTAKASITTELY",
-   "valmistumisPaiva": "2026-11-23",
+   "valmistumisPaiva": "2026-11-30",
    "vanhaEsittelyviikko": 24,
    "vanhaEsittelyvuosi": 2026
   },
@@ -230794,7 +230810,7 @@
    },
    "lisattyPaiva": "2026-08-24",
    "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-11-16T16:15:57",
+   "muokattu": "2026-11-17T07:03:28",
    "nimi": "Hallituksen esitys eduskunnalle asetuksenantovaltuussääntelyn päivittämistä valtiovarainministeriön hallinnonalalla koskevaksi lainsäädännöksi",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lagstiftning om uppdatering av bestämmelserna om bemyndigande att utfärda förordning inom finansministeriets förvaltningsområde",
    "pevLausunto": false,
@@ -273472,7 +273488,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-16T09:46:29",
+   "muokattu": "2026-11-17T07:19:24",
    "nimi": "Hallituksen esitys eduskunnalle laiksi vammaisetuuksista annetun lain, toimeentulotuesta annetun lain 7 b §:n ja sairausvakuutuslain 10 luvun 2 §:n ja 11 luvun 2 §:n muuttamisesta",
    "nimiSv": "Regeringens proposition till riksdagen med förslag till lag om ändring av lagen om handikappförmåner, 7 b § i lagen om utkomststöd och 10 kap. 2 § och 11 kap. 2 § i sjukförsäkringslagen",
    "pevLausunto": false,
@@ -490563,6 +490579,42 @@
    "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
+   "asiasanat": [],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-11-17T08:54:51",
+   "nimi": "STM; sosiaali- ja terveysministeriön asetus hengityslaitteen varassa elävän henkilön taloudellista tukea koskevien euromäärien tarkistamisesta",
+   "nimiSv": "SHM; Social- och hälsovårdsministeriets förordning om justering av belopp som gäller ekonomiskt stöd till personer som använder livsuppehållande respirator",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "STM:n asetus hengityslaitteen varassa elävän henkilön taloudellista tukea koskevien euromäärien tarkistamisesta perustuu vammaispalvelulain (675/2023) 33 §:n 4 momenttiin, jossa säädetään indeksitarkastuksen tekemisestä joka toinen vuosi. Lisäksi vammaispalvelulain 42 §:n 4 momentissa säädetään ensimmäisen indeksitarkistuksen toteuttamisesta.",
+   "tila": "KAYNNISSA",
+   "tunnus": "STM090:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM090:00/2026",
+   "uuid": "924919b7-a8a1-459c-a231-c7e010a662b9",
+   "valmistelu": [],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-12-31",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [],
    "asiasanat": [
     "kunnat",
     "saaristot"
@@ -491371,6 +491423,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "717c0d71-bdda-40d3-b786-d6524d39b94d",
+      "org": "Suomen Taksiliitto ry",
+      "title": "Suomen Taksiliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/78e815f5-87a6-4137-a8c8-10b6fe1a9ca6/717c0d71-bdda-40d3-b786-d6524d39b94d/LAUSUNTO_20261116204614.PDF"
+     },
+     {
       "date": "2026-11-10",
       "id": "e8e4a48f-3f7d-4553-b82d-fbbccd61955b",
       "org": "Näkövammaisten liitto ry",
@@ -491393,18 +491452,19 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 3,
+    "n": 4,
     "orgs": [
      "Kunta- ja hyvinvointialuetyönantajat KT",
      "M. Huikko Oy",
-     "Näkövammaisten liitto ry"
+     "Näkövammaisten liitto ry",
+     "Suomen Taksiliitto ry"
     ],
     "url": null,
-    "viimeisin": "2026-11-10"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-11T19:39:30",
+   "muokattu": "2026-11-16T20:46:14",
    "nimi": "Valtioneuvoston asetus sairausvakuutuksesta korvattavan taksimatkan enimmäishinnasta vuonna 2027",
    "nimiSv": "Statsrådets förordning om maximipriset för taxiresor som ersätts av sjukförsäkringen år 2027",
    "pevLausunto": false,
@@ -491508,6 +491568,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "a93f7b52-803a-4eba-8d6d-f8223d1b4567",
+      "org": "Helsingin kaupunki",
+      "title": "Helsingin kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/3f7bf303-48e2-4031-bda5-441072f1a9de/a93f7b52-803a-4eba-8d6d-f8223d1b4567/LAUSUNTO_20261116202759.PDF"
+     },
+     {
       "date": "2026-11-11",
       "id": "c3089682-d997-4a81-80a5-04bb17c1522d",
       "org": "Pirkanmaan hyvinvointialue",
@@ -491516,16 +491583,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
+     "Helsingin kaupunki",
      "Pirkanmaan hyvinvointialue"
     ],
     "url": null,
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-13T05:04:46",
+   "muokattu": "2026-11-16T20:27:59",
    "nimi": "Asetus Lääkealan turvallisuus- ja kehittämiskeskuksen maksullisista suoritteista vuonna 2027",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om Säkerhets- och utvecklingscentret för läkemedelsområdets avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -491596,46 +491664,6 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
-   "asetettu": "2026-10-12",
-   "asiakirjat": [],
-   "asiasanat": [
-    "asetukset",
-    "korvaukset",
-    "virkamatkat"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": null,
-   "lisattyPaiva": null,
-   "ministerio": "valtiovarainministeriö",
-   "muokattu": "2026-10-26T11:06:40",
-   "nimi": "Valtioneuvoston asetus valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetussa laissa säädettyjen korvausten enimmäismääristä",
-   "nimiSv": "Statsrådets förordning om maximibeloppen för ersättningar enligt lagen om skadeersättningar vid statliga tjänsteresor",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetun lain (530/2017) 24 §:n mukaan lain 9 §:n 1 momentissa, 10 §:n 2 momentissa, 13 §:ssä ja 14 §:n 3 momentissa mainitut rahamäärät tarkistetaan kolmen vuoden välein rahan arvon muutosta vastaavasti. Tarkistetut rahamäärät säädetään valtioneuvoston asetuksella.",
-   "tila": "KAYNNISSA",
-   "tunnus": "VM126:00/2026",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM126:00/2026",
-   "uuid": "e7b37060-c75f-454e-aa18-685137e2e0d0",
-   "valmistelu": [],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2026-12-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [
     {
@@ -491682,6 +491710,13 @@
    "laji": "asetus",
    "lausunnot": {
     "docs": [
+     {
+      "date": "2026-11-16",
+      "id": "e6874028-0cc8-4c9b-8d69-75c07ce43753",
+      "org": "Rovaniemen kaupunki",
+      "title": "Rovaniemen kaupunki; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/2697a4b6-d8e7-4c54-ae29-1c232f8565f1/e6874028-0cc8-4c9b-8d69-75c07ce43753/LAUSUNTO_20261116210842.PDF"
+     },
      {
       "date": "2026-11-13",
       "id": "2a6ae433-d5a8-4f7e-a6d8-a9e5029cc2f0",
@@ -491761,7 +491796,7 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 11,
+    "n": 12,
     "orgs": [
      "Hankasalmen kunta",
      "Alajärven kaupunki, Alajärven lukio",
@@ -491770,16 +491805,17 @@
      "Kontiolahden kunta, Kontiolahden lukio",
      "Kulosaaren yhteiskoulun osakeyhtiö",
      "Mäntsälän kunta, Mäntsälän lukio",
+     "Rovaniemen kaupunki",
      "Sipoon kunta",
      "Sonkajärven kunta",
      "Ylöjärven kaupunki"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5acd01bd-de9e-47a8-859c-2e1e10bcdbe7",
-    "viimeisin": "2026-11-13"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-15T05:32:18",
+   "muokattu": "2026-11-16T21:08:42",
    "nimi": "OKM:n asetus opiskelijaksi ottamisen perusteista lukiokoulutuksessa annetun asetuksen muuttamisesta",
    "nimiSv": "Undervisnings- och kulturministeriets förordning om ändring av ministeriets förordning om grunderna för antagning av studerande inom gymnasieutbildningen",
    "pevLausunto": false,
@@ -491994,6 +492030,27 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "6010f625-49f1-4cdb-8ff4-a8079729ff98",
+      "org": "Rautatiealan sääntelyelin",
+      "title": "Rautatiealan sääntelyelin; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/6010f625-49f1-4cdb-8ff4-a8079729ff98/LAUSUNTO_20261116212342.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "21b54a9a-b824-475d-bb43-6f640b3c2c82",
+      "org": "Ilmatieteen laitos",
+      "title": "Ilmatieteen laitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/21b54a9a-b824-475d-bb43-6f640b3c2c82/LAUSUNTO_20261116212825.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "e900b498-7345-475e-ae11-ac95864b71fd",
+      "none": true,
+      "org": "Valtioneuvoston kanslia",
+      "title": "Valtioneuvoston kanslian lausunto; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-11",
       "id": "a3ea3d58-5ae6-4a7c-92da-5603255691b3",
       "none": true,
@@ -492042,23 +492099,26 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/bd5ad2bc-e701-41e1-9c34-1d3a54d5d306/86f21123-d26c-452b-ab15-ea1fb4e5f0de/LAUSUNTO_20261026192907.PDF"
      }
     ],
-    "eiLausuttavaa": 3,
-    "n": 7,
+    "eiLausuttavaa": 4,
+    "n": 10,
     "orgs": [
+     "Ilmatieteen laitos",
      "Oikeusministeriö",
      "Opetus- ja kulttuuriministeriö",
      "Poliisitoimintayksikkö, Poliisihallitus",
      "Puolustusministeriö",
+     "Rautatiealan sääntelyelin",
      "Sosiaali- ja terveysministeriö",
      "Suomen Laivanpäällystöliitto ry",
-     "Suomen Taksiliitto ry"
+     "Suomen Taksiliitto ry",
+     "Valtioneuvoston kanslia"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=9d41d48a-b6f6-4ccb-8442-73e900ee78c4&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-13T15:00:08",
+   "muokattu": "2026-11-17T08:05:40",
    "nimi": "Liikenne- ja viestintäministeriön asetus Väyläviraston maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordning om Trafikledsverkets avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -492183,6 +492243,55 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-17",
+      "id": "52798a2d-4a4a-43b4-908c-1c625db0b5e5",
+      "none": true,
+      "org": "Poliisihallitus",
+      "title": "Poliisihallitus; ei lausuttavaa"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "3d40a7ac-e496-4e2e-a213-198d8dfa94d3",
+      "org": "Suomen Taksiliitto ry",
+      "title": "Suomen Taksiliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/3d40a7ac-e496-4e2e-a213-198d8dfa94d3/LAUSUNTO_20261116211846.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "6d1e4487-1df0-4664-b335-f97d27dd69ee",
+      "org": "Ilmatieteen laitos",
+      "title": "Ilmatieteen laitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/6d1e4487-1df0-4664-b335-f97d27dd69ee/LAUSUNTO_20261116212607.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "5ce01c22-b6e1-4dcd-994d-64eb78a3a624",
+      "org": "RadioMedia ry",
+      "title": "RadioMedia ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/5ce01c22-b6e1-4dcd-994d-64eb78a3a624/LAUSUNTO_20261116213048.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "ca3d92a3-b833-4f84-92cd-85f108e06af3",
+      "org": "Ålands landskapsregering",
+      "title": "Ålands landskapsregering; Utlåtande",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/ca3d92a3-b833-4f84-92cd-85f108e06af3/LAUSUNTO_20261117075739.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "c031606b-5155-4da0-a5a9-d7d745b90643",
+      "org": "Finnish Information Security Cluster (FISC) – Kyberala ry",
+      "title": "Finnish Information Security Cluster (FISC) – Kyberala ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/d219af81-76b8-4790-8e8c-dee9eb52bd7c/c031606b-5155-4da0-a5a9-d7d745b90643/LAUSUNTO_20261116211135.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "84a755bf-d981-411a-bea0-d67abac01678",
+      "none": true,
+      "org": "Valtioneuvoston kanslia",
+      "title": "Valtioneuvoston kanslian lausunto; ei lausuttavaa"
+     },
+     {
       "date": "2026-11-11",
       "id": "fa7fbd4a-b069-40fc-83d5-d41e056848a2",
       "none": true,
@@ -492225,22 +492334,29 @@
       "title": "Sosiaali- ja terveysministeriö; ei lausuttavaa"
      }
     ],
-    "eiLausuttavaa": 5,
-    "n": 6,
+    "eiLausuttavaa": 7,
+    "n": 13,
     "orgs": [
      "Centria-ammattikorkeakoulu Oy",
+     "Finnish Information Security Cluster (FISC) – Kyberala ry",
+     "Ilmatieteen laitos",
      "Kilpailu- ja kuluttajavirasto KKV",
      "Opetus- ja kulttuuriministeriö",
+     "Poliisihallitus",
      "Puolustusministeriö",
+     "RadioMedia ry",
      "Sosiaali- ja terveysministeriö",
-     "Työ- ja elinkeinoministeriö"
+     "Suomen Taksiliitto ry",
+     "Työ- ja elinkeinoministeriö",
+     "Valtioneuvoston kanslia",
+     "Ålands landskapsregering"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=5e5526f8-1550-4433-aa6c-1036af0bffe1&respondentId=00000000-0000-0000-0000-000000000000&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
-    "viimeisin": "2026-11-11"
+    "viimeisin": "2026-11-17"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-12T07:34:12",
+   "muokattu": "2026-11-17T08:06:12",
    "nimi": "Liikenne- ja viestintäministeriön asetukset Liikenne- ja viestintävirasto Traficomin maksullisista suoritteista vuonna 2027",
    "nimiSv": "Kommunikationsministeriets förordningar om Transport- och kommunikationsverket Traficoms avgiftsbelagda prestationer år 2027",
    "pevLausunto": false,
@@ -493619,6 +493735,55 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/3f4c56d8-53c7-4a87-a752-56391b067d52/LAUSUNTO_20261116125750.PDF"
      },
      {
+      "date": "2026-11-13",
+      "id": "1280345c-3a95-4221-a91f-73bc65dcf2dd",
+      "org": "NOAH - for dyrs rettigheter",
+      "title": "NOAH - for dyrs rettigheter; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/1280345c-3a95-4221-a91f-73bc65dcf2dd/LAUSUNTO_20261116213338.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "d00c132c-9212-4bd9-a8f1-4c3957c98819",
+      "org": "Veikars Jaktklubb rf",
+      "title": "Veikars Jaktklubb rf; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/d00c132c-9212-4bd9-a8f1-4c3957c98819/LAUSUNTO_20261116213546.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "f46530f8-274e-4f73-8714-78279941c579",
+      "org": "Luonnonvarakeskus (Luke)",
+      "title": "Luonnonvarakeskus (Luke); lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/f46530f8-274e-4f73-8714-78279941c579/LAUSUNTO_20261116213753.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "5c106d90-0e1d-4770-9a40-8ad5eefb3b62",
+      "org": "Svenska lantbruksproducenternas centralförbund SLC rf",
+      "title": "Svenska lantbruksproducenternas centralförbund SLC rf; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/5c106d90-0e1d-4770-9a40-8ad5eefb3b62/LAUSUNTO_20261116214001.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "4a4ad868-0f29-4c5a-b2fa-cc7ee235843d",
+      "org": "Eläinvihreät ry",
+      "title": "Eläinvihreät ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/4a4ad868-0f29-4c5a-b2fa-cc7ee235843d/LAUSUNTO_20261116214208.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "23172ee7-6064-41cf-a082-9b2ec3c3c521",
+      "org": "Eläinten vallankumous",
+      "title": "Eläinten vallankumous; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/23172ee7-6064-41cf-a082-9b2ec3c3c521/LAUSUNTO_20261116214417.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "6a68f17c-e34b-4105-b9bf-465c0c968cbe",
+      "org": "Punkalaitumen riistanhoitoyhdistys",
+      "title": "Punkalaitumen riistanhoitoyhdistys; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/6a68f17c-e34b-4105-b9bf-465c0c968cbe/LAUSUNTO_20261116214628.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "bba17590-2aba-471e-8022-a29da6ae7baa",
       "org": "Ympäristöministeriö",
@@ -493799,6 +493964,13 @@
       "org": "Suomen luonnonsuojeluliiton Pirkanmaan piiri ry",
       "title": "Suomen luonnonsuojeluliiton Pirkanmaan piiri ry; lausunto",
       "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/f4ca9377-4fef-492d-85a8-b3038eaaacc5/LAUSUNTO_20261111061631.PDF"
+     },
+     {
+      "date": "2026-11-10",
+      "id": "84ca421d-e2c5-4a6d-810e-1aab9417d2a0",
+      "org": "Yksityishenkilö",
+      "title": "Yksityishenkilö",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a907c52b-3006-4607-8047-57a67f142500/84ca421d-e2c5-4a6d-810e-1aab9417d2a0/LAUSUNTO_20261117105909.pdf"
      },
      {
       "date": "2026-11-09",
@@ -493998,13 +494170,15 @@
      }
     ],
     "eiLausuttavaa": 6,
-    "n": 76,
+    "n": 84,
     "orgs": [
      "Yksityishenkilö",
      "Aktivt Rovdyrvern (ARV)",
      "Association Ulvetid",
      "Avenir Loup Lynx Jura",
      "Eläinoikeusakatemia ry",
+     "Eläinten vallankumous",
+     "Eläinvihreät ry",
      "Etelä-Karjalan liitto",
      "Finnature Oy",
      "Idän Taiga ry",
@@ -494019,6 +494193,7 @@
      "Lassilan Metsästysseura ry",
      "Lauhanmaan metsästysseura ry",
      "Luonnonsuojeluliitto Tapiola ry",
+     "Luonnonvarakeskus (Luke)",
      "Luontoliitto ry",
      "M. Arthaud",
      "MTK-Satakunta ry",
@@ -494030,6 +494205,7 @@
      "Mats Westerbom ym.",
      "Metsähallitus",
      "Metsästyskoiraliitto ry",
+     "NOAH - for dyrs rettigheter",
      "Natur och Miljö r.f.",
      "Oulun yliopisto",
      "Paliskuntain yhdistys",
@@ -494038,6 +494214,7 @@
      "Pohjanmaan elinvoimakeskus",
      "Pohjois-Savon luonnonsuojelupiiri ry",
      "Poliisihallitus",
+     "Punkalaitumen riistanhoitoyhdistys",
      "Putakon Erä ry",
      "Rajavartiolaitos",
      "Rovviltets Røst Norge",
@@ -494061,6 +494238,7 @@
      "Suomen riistakeskus",
      "Suomen ympäristökeskus (Syke)",
      "Svenska Rovdjursföreningen",
+     "Svenska lantbruksproducenternas centralförbund SLC rf",
      "Taivassalon kunta",
      "Thierry Ruf",
      "Uudenmaan liitto - Nylands förbund",
@@ -494068,20 +494246,19 @@
      "Valtakunnallinen riistaneuvosto",
      "Varsinais-Suomen liitto",
      "Vehmaan kunta",
+     "Veikars Jaktklubb rf",
      "WWF Suomi",
      "Wildlife Safaris Finland Oy",
      "Ympäristöministeriö",
      "Österbottens förbund - Pohjanmaan liitto",
-     "Österbottens svenska fårförening rf",
-     "Österbottens svenska producentförbund r.f.",
-     "Östra Korsholms jaktförening rf"
+     "Österbottens svenska fårförening rf"
     ],
     "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=11a1d93c-6f67-444e-968f-0e9348b99e72&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744",
     "viimeisin": "2026-11-13"
    },
    "lisattyPaiva": null,
    "ministerio": "maa- ja metsätalousministeriö",
-   "muokattu": "2026-11-16T13:24:28",
+   "muokattu": "2026-11-17T11:02:05",
    "nimi": "Maa- ja metsätalousministeriön asetus susikiintiöksi metsästysvuodelle 2026–2027",
    "nimiSv": "Jord- och skogsbruksministeriets förordning om jakt på varg som sker med stöd av en regional kvot under jaktåret 2026–2027",
    "pevLausunto": false,
@@ -494655,7 +494832,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "opetus- ja kulttuuriministeriö",
-   "muokattu": "2026-11-16T06:44:28",
+   "muokattu": "2026-11-17T08:24:59",
    "nimi": "Valtioneuvoston asetus perusopetusasetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordning om ändring av förordningen om grundläggande utbildning",
    "pevLausunto": false,
@@ -495217,6 +495394,20 @@
       "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/e3823ae8-652b-424e-b26b-f718890238f3/LAUSUNTO_20261115044913.PDF"
      },
      {
+      "date": "2026-11-13",
+      "id": "ab75237d-64d6-4bf9-b24f-22710c6da765",
+      "org": "Turvallisuus- ja kemikaalivirasto TUKES",
+      "title": "Turvallisuus- ja kemikaalivirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/ab75237d-64d6-4bf9-b24f-22710c6da765/LAUSUNTO_20261116190644.PDF"
+     },
+     {
+      "date": "2026-11-13",
+      "id": "ff075faf-da39-40aa-9b2a-2ec5d7eb9247",
+      "org": "Kosmetiikka- ja hygieniateollisuus ry",
+      "title": "Kosmetiikka- ja hygieniateollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/a2009c8f-3f97-4cda-a137-185968ee647d/ff075faf-da39-40aa-9b2a-2ec5d7eb9247/LAUSUNTO_20261116191155.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "3b1143f0-3323-495c-8c7c-9bc726e19507",
       "org": "Teknisen Kaupan liitto ry",
@@ -495274,16 +495465,18 @@
      }
     ],
     "eiLausuttavaa": 2,
-    "n": 10,
+    "n": 12,
     "orgs": [
      "Kaupan liitto ry",
      "Kemianteollisuus ry",
+     "Kosmetiikka- ja hygieniateollisuus ry",
      "Liikenne- ja viestintäministeriö",
      "Maa- ja metsätalousministeriö",
      "Siemenkauppiaitten yhdistys ry",
      "Sisäministeriö",
      "Suomen Biokierto ja Biokaasu ry",
      "Teknisen Kaupan liitto ry",
+     "Turvallisuus- ja kemikaalivirasto TUKES",
      "Ympäristöministeriö",
      "Ålands landskapsregering"
     ],
@@ -495292,7 +495485,7 @@
    },
    "lisattyPaiva": null,
    "ministerio": "työ- ja elinkeinoministeriö",
-   "muokattu": "2026-11-15T04:49:13",
+   "muokattu": "2026-11-16T19:11:55",
    "nimi": "Työ- ja elinkeinoministeriön asetus Turvallisuus- ja kemikaaliviraston maksullisista suoritteista vuosina 2027-2028",
    "nimiSv": "Arbets- och näringsministeriets förordning om Säkerhets- och kemikalieverkets avgiftsbelagda prestationer åren 2027–2028",
    "pevLausunto": false,
@@ -496223,6 +496416,20 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "7f4fb469-baac-4c7f-aa86-7055bdf19290",
+      "org": "Teknologian tutkimuskeskus VTT Oy",
+      "title": "Teknologian tutkimuskeskus VTT Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/dcab14b0-ca0f-45ba-9e56-1310db98852c/7f4fb469-baac-4c7f-aa86-7055bdf19290/LAUSUNTO_20261116211618.PDF"
+     },
+     {
+      "date": "2026-11-16",
+      "id": "2a1282b3-1ada-480f-be68-e9ec206c24c2",
+      "org": "Ålands landskapsregering",
+      "title": "Ålands landskapsregering; Utlåtande",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/dcab14b0-ca0f-45ba-9e56-1310db98852c/2a1282b3-1ada-480f-be68-e9ec206c24c2/LAUSUNTO_20261117075657.PDF"
+     },
+     {
       "date": "2026-11-12",
       "id": "c3df05c8-6490-4fab-bf1c-a03c1e92a152",
       "org": "Liikenne- ja viestintävirasto Traficom",
@@ -496259,18 +496466,20 @@
      }
     ],
     "eiLausuttavaa": 1,
-    "n": 5,
+    "n": 7,
     "orgs": [
      "Keskusrikospoliisi / rahanpesun selvittelykeskus",
      "Liikenne- ja viestintävirasto Traficom",
-     "Opetus- ja kulttuuriministeriö"
+     "Opetus- ja kulttuuriministeriö",
+     "Teknologian tutkimuskeskus VTT Oy",
+     "Ålands landskapsregering"
     ],
     "url": null,
-    "viimeisin": "2026-11-12"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "liikenne- ja viestintäministeriö",
-   "muokattu": "2026-11-13T06:17:16",
+   "muokattu": "2026-11-17T07:56:57",
    "nimi": "Valtioneuvoston asetukset taajuusasetuksen ja Ahvenanmaan taajuusasetuksen muuttamisesta",
    "nimiSv": "Statsrådets förordningar om ändring av frekvensförordningen och Ålands frekvensförordning",
    "pevLausunto": false,
@@ -499259,6 +499468,13 @@
    "lausunnot": {
     "docs": [
      {
+      "date": "2026-11-16",
+      "id": "020a031e-b46d-46c1-bc0c-87cf07483ab4",
+      "org": "Helsingin yliopisto",
+      "title": "Helsingin yliopisto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/9438da5b-ccc1-45f1-97f7-db6c6dcffb36/020a031e-b46d-46c1-bc0c-87cf07483ab4/LAUSUNTO_20261116203927.PDF"
+     },
+     {
       "date": "2026-11-10",
       "id": "6825222c-e188-4cef-8e05-034c8bf8c0bd",
       "org": "Valtiovarainministeriö",
@@ -499267,16 +499483,17 @@
      }
     ],
     "eiLausuttavaa": 0,
-    "n": 1,
+    "n": 2,
     "orgs": [
+     "Helsingin yliopisto",
      "Valtiovarainministeriö"
     ],
     "url": null,
-    "viimeisin": "2026-11-10"
+    "viimeisin": "2026-11-16"
    },
    "lisattyPaiva": null,
    "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-11-11T06:32:30",
+   "muokattu": "2026-11-16T20:39:27",
    "nimi": "Sosiaali- ja terveysministeriön asetus Terveyden ja hyvinvoinnin laitoksen maksullisista suoritteista",
    "nimiSv": "Social- och hälsovårdsministeriets förordning om avgiftsbelagda prestationer vid Institutet för hälsa och välfärd",
    "pevLausunto": false,
@@ -511867,422 +512084,6 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2026-08-01",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
-   "asetettu": null,
-   "asiakirjat": [
-    {
-     "nimi": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi rakennustyön turvallisuudesta_13733",
-     "pvm": "2025-11-25",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/8a08ee82-5623-4892-a038-0bb782e69f18/LAUSUNTOPYYNTO_20251125121838.PDF"
-    }
-   ],
-   "asiasanat": [
-    "EU-direktiivit",
-    "työturvallisuus",
-    "työsuojelu",
-    "rakennustyöt",
-    "rakennustyömaat",
-    "rakennustyöntekijät"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2025-11-25",
-     "end": "2026-01-23",
-     "kind": "lausunto",
-     "label": "Lausuntokierros",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2026-01-29",
-      "id": "7fed026b-523d-4ad5-af55-e88f19e68bf2",
-      "org": "Väylävirasto",
-      "title": "Väyläviraston lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/7fed026b-523d-4ad5-af55-e88f19e68bf2/LAUSUNTO_20260129123522.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "cb6ca2f3-c3a5-4327-8d2c-ea705d35ce90",
-      "org": "Teknologiateollisuus ry",
-      "title": "Teknologiateollisuus ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/cb6ca2f3-c3a5-4327-8d2c-ea705d35ce90/LAUSUNTO_20260125063619.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "a02e7053-1f8f-4f08-ac20-a960588f8efe",
-      "org": "Tapaturva Oy",
-      "title": "Tapaturva Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a02e7053-1f8f-4f08-ac20-a960588f8efe/LAUSUNTO_20260125064100.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "497a77b5-cb79-4069-9148-022aca06bb31",
-      "org": "Talonrakennusteollisuus ry",
-      "title": "Talonrakennusteollisuus ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/497a77b5-cb79-4069-9148-022aca06bb31/LAUSUNTO_20260125064305.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "7a9f9fa0-6de2-45fd-86b0-f6c8e2442320",
-      "org": "Kiinteistötyönantajat ry",
-      "title": "Kiinteistötyönantajat ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/7a9f9fa0-6de2-45fd-86b0-f6c8e2442320/LAUSUNTO_20260125064716.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "6c915e1c-0cca-431b-a1ad-222626cacccf",
-      "org": "Rakennusinsinöörit ja -arkkitehdit RIA ry",
-      "title": "Rakennusinsinöörit ja -arkkitehdit RIA ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/6c915e1c-0cca-431b-a1ad-222626cacccf/LAUSUNTO_20260125064923.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "0f73ab86-1865-4f25-9d75-0d54ec2416b1",
-      "org": "Koneyrittäjät ry",
-      "title": "Koneyrittäjät ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/0f73ab86-1865-4f25-9d75-0d54ec2416b1/LAUSUNTO_20260125065406.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "1d795c82-e237-42d6-b7aa-008f4e9ded34",
-      "org": "Energiateollisuus ry",
-      "title": "Energiateollisuus ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1d795c82-e237-42d6-b7aa-008f4e9ded34/LAUSUNTO_20260125065615.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "4d3d08ff-4df4-4b1f-b23e-20ca4c213cd3",
-      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-      "title": "Suomen Ammattiliittojen Keskusjärjestö SAK ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4d3d08ff-4df4-4b1f-b23e-20ca4c213cd3/LAUSUNTO_20260125065824.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "efa10617-caf4-4436-acd8-86443d37c891",
-      "org": "Elinkeinoelämän keskusliitto EK",
-      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/efa10617-caf4-4436-acd8-86443d37c891/LAUSUNTO_20260125070033.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "beb80e97-79e8-48e5-9f37-bb5a5433d492",
-      "org": "INFRA ry",
-      "title": "INFRA ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/beb80e97-79e8-48e5-9f37-bb5a5433d492/LAUSUNTO_20260125070240.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "1d188c5c-783d-44a6-93a9-0bdb83897633",
-      "org": "LVI-Tekniset Urakoitsijat LVI-TU ry",
-      "title": "LVI-Tekniset Urakoitsijat LVI-TU ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1d188c5c-783d-44a6-93a9-0bdb83897633/LAUSUNTO_20260125070723.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "4ea198ac-cd3d-4971-bb90-4bb9331a1f02",
-      "org": "Ramirent Finland Oy",
-      "title": "Ramirent Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4ea198ac-cd3d-4971-bb90-4bb9331a1f02/LAUSUNTO_20260125070931.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "61d04a10-ad0a-4a7a-9763-38c32bdf85c6",
-      "org": "KarmaRock ry",
-      "title": "KarmaRock ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/61d04a10-ad0a-4a7a-9763-38c32bdf85c6/LAUSUNTO_20260125071413.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "a44ac712-f1f8-44e1-bc52-2f2a528886d9",
-      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
-      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a44ac712-f1f8-44e1-bc52-2f2a528886d9/LAUSUNTO_20260125071622.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "edb09f06-7258-49e8-a9c4-2da33b9e7ac3",
-      "org": "STTK ry",
-      "title": "STTK ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/edb09f06-7258-49e8-a9c4-2da33b9e7ac3/LAUSUNTO_20260125071830.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "60f68060-3877-4c1e-ba1f-0021c24d7d74",
-      "org": "Kemianteollisuus ry",
-      "title": "Kemianteollisuus ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/60f68060-3877-4c1e-ba1f-0021c24d7d74/LAUSUNTO_20260125072038.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "fdde95e8-7614-47f9-8a36-b280d6ef20b4",
-      "org": "Senaatti-konserni",
-      "title": "Senaatti-konserni; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/fdde95e8-7614-47f9-8a36-b280d6ef20b4/LAUSUNTO_20260125072248.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "2600d433-830f-4eb4-a503-a2b5bf970560",
-      "org": "LiveFIN ry",
-      "title": "LiveFIN ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2600d433-830f-4eb4-a503-a2b5bf970560/LAUSUNTO_20260126191657.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "4a51fdea-2d48-4354-8ce4-4984948d0c1d",
-      "org": "Lupa- ja valvontavirasto LVV",
-      "title": "Lupa- ja valvontavirasto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4a51fdea-2d48-4354-8ce4-4984948d0c1d/LAUSUNTO_20260126191902.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "4c3f3219-1ef9-4689-861c-6c33061d67c6",
-      "org": "Suomen Yrittäjät ry",
-      "title": "Suomen Yrittäjät ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4c3f3219-1ef9-4689-861c-6c33061d67c6/LAUSUNTO_20260126192108.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "069933b1-339d-405c-a00e-2b73975cdaa4",
-      "org": "Suomen Omakotiliitto ry",
-      "title": "Suomen Omakotiliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/069933b1-339d-405c-a00e-2b73975cdaa4/LAUSUNTO_20260126192316.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "90abe133-71bc-4969-8157-6968f381287a",
-      "org": "Haahtela-rakennuttaminen Oy",
-      "title": "Haahtela-rakennuttaminen Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/90abe133-71bc-4969-8157-6968f381287a/LAUSUNTO_20260126192524.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "09a53999-81ae-448e-a1f3-f8743001f30c",
-      "org": "Ammattiliitto Pro ry",
-      "title": "Ammattiliitto Pro ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/09a53999-81ae-448e-a1f3-f8743001f30c/LAUSUNTO_20260127173947.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "ebd4ef48-6f1e-4aae-8100-a7152460bdee",
-      "org": "Vepe Oy Peltonen",
-      "title": "Vepe Oy Peltonen; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/ebd4ef48-6f1e-4aae-8100-a7152460bdee/LAUSUNTO_20260127174157.PDF"
-     },
-     {
-      "date": "2026-01-23",
-      "id": "6f813662-4a01-4951-972a-67c84ee529c7",
-      "org": "Kiinteistönomistajat ja rakennuttajat Rakli ry",
-      "title": "Kiinteistönomistajat ja rakennuttajat Rakli ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/6f813662-4a01-4951-972a-67c84ee529c7/LAUSUNTO_20260127174407.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "529f58aa-3933-434a-9ecd-a31fc3d0935b",
-      "org": "Arkkitehtitoimistojen liitto ATL ry",
-      "title": "Arkkitehtitoimistojen Liitto ATL ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/529f58aa-3933-434a-9ecd-a31fc3d0935b/LAUSUNTO_20260122184040.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "21923e6c-91c4-4933-aae5-bf6ee275c1ea",
-      "org": "Tampereen Raitiotie Oy",
-      "title": "Tampereen Raitiotie Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/21923e6c-91c4-4933-aae5-bf6ee275c1ea/LAUSUNTO_20260122185223.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "ea14e2d3-2b58-452e-9d52-a19137e0616b",
-      "org": "Rakennusmestarit ja -insinöörit AMK RKL ry",
-      "title": "Rakennusmestarit ja -insinöörit AMK RKL ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/ea14e2d3-2b58-452e-9d52-a19137e0616b/LAUSUNTO_20260122185430.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "b58050dc-982d-4389-acf1-54d3ba3caf71",
-      "org": "Rakennusliitto ry",
-      "title": "Rakennusliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/b58050dc-982d-4389-acf1-54d3ba3caf71/LAUSUNTO_20260122185637.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "d30d439b-b85b-4612-9825-f5d7d7938eb2",
-      "org": "Live Nation Finland Oy",
-      "title": "Live Nation Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/d30d439b-b85b-4612-9825-f5d7d7938eb2/LAUSUNTO_20260122185843.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "a0d7bec9-0338-4e9b-9bbd-f0cebf15446b",
-      "org": "Valtiovarainministeriö",
-      "title": "Valtion työmarkkinalaitoksen lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a0d7bec9-0338-4e9b-9bbd-f0cebf15446b/LAUSUNTO_20260123102913.PDF"
-     },
-     {
-      "date": "2026-01-22",
-      "id": "3a3a458e-9797-4fc4-a3df-bee0b07195e5",
-      "org": "Tapaturva Oy",
-      "title": "Tapaturva Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/3a3a458e-9797-4fc4-a3df-bee0b07195e5/LAUSUNTO_20260125063137.PDF"
-     },
-     {
-      "date": "2026-01-20",
-      "id": "2c5570de-4a59-4842-8732-9aaf7854ba4b",
-      "org": "Suomen Arkkitehtiliitto ry SAFA",
-      "title": "Suomen Arkkitehtiliitto ry SAFA; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2c5570de-4a59-4842-8732-9aaf7854ba4b/LAUSUNTO_20260121181926.PDF"
-     },
-     {
-      "date": "2026-01-19",
-      "id": "4572d1b0-74a7-4e6b-87fc-c50de95c835d",
-      "org": "Työterveyslaitos",
-      "title": "Työterveyslaitos; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4572d1b0-74a7-4e6b-87fc-c50de95c835d/LAUSUNTO_20260119184703.PDF"
-     },
-     {
-      "date": "2026-01-19",
-      "id": "e2c27e44-e788-4486-9b3e-5927dcdcf267",
-      "org": "Tapahtumateollisuus ry",
-      "title": "Tapahtumateollisuus ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/e2c27e44-e788-4486-9b3e-5927dcdcf267/LAUSUNTO_20260119184909.PDF"
-     },
-     {
-      "date": "2026-01-16",
-      "id": "d112efd3-a396-4d6f-9e88-07c5663ad56d",
-      "org": "Tapaturmavakuutuskeskus",
-      "title": "Tapaturmavakuutuskeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/d112efd3-a396-4d6f-9e88-07c5663ad56d/LAUSUNTO_20260118044442.PDF"
-     },
-     {
-      "date": "2026-01-16",
-      "id": "1c9565ca-a512-4978-898c-a3effb639e60",
-      "org": "Sähköalojen ammattiliitto ry",
-      "title": "Sähköalojen ammattiliitto ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1c9565ca-a512-4978-898c-a3effb639e60/LAUSUNTO_20260118044932.PDF"
-     },
-     {
-      "date": "2026-01-15",
-      "id": "2726cd76-264a-4c64-aca6-e9207db15171",
-      "org": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
-      "title": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2726cd76-264a-4c64-aca6-e9207db15171/LAUSUNTO_20260115183016.PDF"
-     },
-     {
-      "date": "2026-01-14",
-      "id": "defb5f1f-11eb-4bc3-9107-77410bc90b43",
-      "org": "Verohallinto",
-      "title": "Verohallinto; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/defb5f1f-11eb-4bc3-9107-77410bc90b43/LAUSUNTO_20260114141803.PDF"
-     },
-     {
-      "date": "2026-01-14",
-      "id": "19e84668-6df3-4a3f-83e3-51bc787f12cb",
-      "org": "Ramirent Finland Oy",
-      "title": "Ramirent Finland Oy; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/19e84668-6df3-4a3f-83e3-51bc787f12cb/LAUSUNTO_20260115182256.PDF"
-     },
-     {
-      "date": "2026-01-09",
-      "id": "4b35e723-729b-4d59-ba4f-6701898828ce",
-      "org": "Säteilyturvakeskus",
-      "title": "Säteilyturvakeskus; lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4b35e723-729b-4d59-ba4f-6701898828ce/LAUSUNTO_20260112194244.PDF"
-     },
-     {
-      "date": "2025-12-19",
-      "id": "99bdf57b-b750-4979-8449-434e6898c75f",
-      "none": true,
-      "org": "Sisäministeriö",
-      "title": "Sisäministeriö; ei lausuttavaa"
-     }
-    ],
-    "eiLausuttavaa": 1,
-    "n": 43,
-    "orgs": [
-     "Ramirent Finland Oy",
-     "Tapaturva Oy",
-     "Ammattiliitto Pro ry",
-     "Arkkitehtitoimistojen liitto ATL ry",
-     "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
-     "Elinkeinoelämän keskusliitto EK",
-     "Energiateollisuus ry",
-     "Haahtela-rakennuttaminen Oy",
-     "INFRA ry",
-     "KarmaRock ry",
-     "Kemianteollisuus ry",
-     "Kiinteistönomistajat ja rakennuttajat Rakli ry",
-     "Kiinteistötyönantajat ry",
-     "Koneyrittäjät ry",
-     "LVI-Tekniset Urakoitsijat LVI-TU ry",
-     "Live Nation Finland Oy",
-     "LiveFIN ry",
-     "Lupa- ja valvontavirasto LVV",
-     "Matkailu- ja Ravintolapalvelut MaRa ry",
-     "Rakennusinsinöörit ja -arkkitehdit RIA ry",
-     "Rakennusliitto ry",
-     "Rakennusmestarit ja -insinöörit AMK RKL ry",
-     "STTK ry",
-     "Senaatti-konserni",
-     "Sisäministeriö",
-     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-     "Suomen Arkkitehtiliitto ry SAFA",
-     "Suomen Omakotiliitto ry",
-     "Suomen Yrittäjät ry",
-     "Sähköalojen ammattiliitto ry",
-     "Säteilyturvakeskus",
-     "Talonrakennusteollisuus ry",
-     "Tampereen Raitiotie Oy",
-     "Tapahtumateollisuus ry",
-     "Tapaturmavakuutuskeskus",
-     "Teknologiateollisuus ry",
-     "Työterveyslaitos",
-     "Valtiovarainministeriö",
-     "Vepe Oy Peltonen",
-     "Verohallinto",
-     "Väylävirasto"
-    ],
-    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=53cf31bf-16dd-4e56-bf95-df8300e40759",
-    "viimeisin": "2026-01-29"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-06-08T18:53:02",
-   "nimi": "Valtioneuvoston asetus rakennustyön turvallisuudesta",
-   "nimiSv": "Statsrådets förordning om säkerheten vid byggarbeten",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Annetaan uusi rakennustyön turvallisuutta koskeva valtioneuvoston asetus. Valtioneuvoston asetus 205/2009 ja työministeriön päätös rakennustyömaiden henkilöstötiloista (977/1994) kumotaan.",
-   "tila": "KAYNNISSA",
-   "tunnus": "STM159:00/2025",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM159:00/2025",
-   "uuid": "92d87e5b-ff9a-49c5-a449-00bc6adda6b6",
-   "valmistelu": [
-    {
-     "d": "2025-11-25",
-     "n": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi rakennustyön turvallisuudesta_13733",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/8a08ee82-5623-4892-a038-0bb782e69f18/LAUSUNTOPYYNTO_20251125121838.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": null,
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -535317,305 +535118,6 @@
   {
    "annettuEduskunnalle": null,
    "arviointineuvosto": false,
-   "asetettu": "2019-02-04",
-   "asiakirjat": [
-    {
-     "nimi": "STM:n lausuntopyyntö sidosryhmille",
-     "pvm": "2019-02-04",
-     "tyyppi": "LAUSUNTOPYYNTO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/8ba3767e-3f77-4619-9f0b-1474e5a9795a/LAUSUNTOPYYNTO_20190328105647.pdf"
-    },
-    {
-     "nimi": "Esiselvitys yhteenveto_työmarkkinajärjestöt ja AVIt",
-     "pvm": "2019-04-09",
-     "tyyppi": "YHTEENVETO",
-     "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1e30f7e0-effa-44f7-ad62-85dfb7f9a0a9/YHTEENVETO_20210909053838.pdf"
-    }
-   ],
-   "asiasanat": [
-    "lainsäädäntö",
-    "työturvallisuus",
-    "rakennustyöt"
-   ],
-   "esittelyviikko": null,
-   "esittelyvuosi": null,
-   "etapit": [
-    {
-     "date": "2019-02-04",
-     "end": "2019-03-29",
-     "kind": "lausunto",
-     "label": "Lausuntopyyntö sidosryhmille rakennustyön turvallisuutta koskevien säännösten uudistamisesta",
-     "tyyppi": "LAUSUNTOKIERROS"
-    }
-   ],
-   "evNumerot": [],
-   "heNumerot": [],
-   "heTila": null,
-   "kiireellinen": false,
-   "laji": "asetus",
-   "lausunnot": {
-    "docs": [
-     {
-      "date": "2019-03-29",
-      "id": "5eb8027f-c510-4897-bbaa-9b8155d8fb1b",
-      "org": "Ammattiliitto Pro ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/5eb8027f-c510-4897-bbaa-9b8155d8fb1b/LAUSUNTO_20190329100632.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "58748b31-eeff-4853-acae-c2d23f1852e6",
-      "org": "Suomen Yrittäjät",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/58748b31-eeff-4853-acae-c2d23f1852e6/LAUSUNTO_20190329101216.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "43120bc0-a3f4-492f-a333-c77053e54308",
-      "org": "Teknisen Kaupan Liitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/43120bc0-a3f4-492f-a333-c77053e54308/LAUSUNTO_20190329113638.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "42897e25-3e19-4caa-85f1-76795a1fcb28",
-      "org": "Ylemmät toimihenkilöt YTN ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/42897e25-3e19-4caa-85f1-76795a1fcb28/LAUSUNTO_20190329132409.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "dbf0b5e5-d9c1-448f-9930-6f472f8ec67d",
-      "org": "RAKLI ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/dbf0b5e5-d9c1-448f-9930-6f472f8ec67d/LAUSUNTO_20190329140424.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "1a0e6ef1-e00b-4633-b323-0cb4f1c5c8b6",
-      "org": "Suomen Purkuliikkeiden liitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1a0e6ef1-e00b-4633-b323-0cb4f1c5c8b6/LAUSUNTO_20190401064419.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "81863178-efa7-41d6-bccb-7dbc54e77f58",
-      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/81863178-efa7-41d6-bccb-7dbc54e77f58/LAUSUNTO_20190401064820.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "ace40fdc-f762-47ed-bd1b-09edcb658470",
-      "org": "Akava ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/ace40fdc-f762-47ed-bd1b-09edcb658470/LAUSUNTO_20190401084723.pdf"
-     },
-     {
-      "date": "2019-03-29",
-      "id": "c88d5ce1-1eb2-47ba-a3e8-3af770b69b85",
-      "org": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/c88d5ce1-1eb2-47ba-a3e8-3af770b69b85/LAUSUNTO_20190401085134.pdf"
-     },
-     {
-      "date": "2019-03-28",
-      "id": "79d706c8-050b-4393-a8fa-dabd5f9e9fd3",
-      "org": "Teollisuusliitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/79d706c8-050b-4393-a8fa-dabd5f9e9fd3/LAUSUNTO_20190328113248.pdf"
-     },
-     {
-      "date": "2019-03-28",
-      "id": "a48429fa-acd2-4900-9821-ffbaabf4c001",
-      "org": "Energiateollisuus ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/a48429fa-acd2-4900-9821-ffbaabf4c001/LAUSUNTO_20190329093832.pdf"
-     },
-     {
-      "date": "2019-03-28",
-      "id": "fb18a19c-f714-4a99-a3ba-56e3583b97a4",
-      "org": "Rakennusinsinöörit- ja arkkitehdit RIA ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/fb18a19c-f714-4a99-a3ba-56e3583b97a4/LAUSUNTO_20190329140744.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "e7730754-8823-4743-999a-5c3f529f5868",
-      "org": "Rakennusliitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/e7730754-8823-4743-999a-5c3f529f5868/LAUSUNTO_20190329080717.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "bb8bba5e-55bb-4f77-a568-a24802184f91",
-      "org": "Arkkitehtitoimistojen liitto ATL ja Suomen arkkitehtiliitto SAFA",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/bb8bba5e-55bb-4f77-a568-a24802184f91/LAUSUNTO_20190329081125.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "c56af87c-7d8d-4b25-8054-f128b75c1be0",
-      "org": "Sähköalojen ammattiliitto ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/c56af87c-7d8d-4b25-8054-f128b75c1be0/LAUSUNTO_20190329083113.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "b76dab8b-47a9-4272-a5a3-14a0fcf8a912",
-      "org": "Rakennuskonepäälliköt ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/b76dab8b-47a9-4272-a5a3-14a0fcf8a912/LAUSUNTO_20190329083515.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "08949980-b5b5-4d9f-a444-d2d5e2a00a6e",
-      "org": "Teknologiateollisuus ry ja Metsäteollisuus ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/08949980-b5b5-4d9f-a444-d2d5e2a00a6e/LAUSUNTO_20190329084024.pdf"
-     },
-     {
-      "date": "2019-03-27",
-      "id": "32fe06b0-7b3f-4cb1-9796-49bb01d213a2",
-      "org": "Toimihenkilökeskusjärjestö STTK ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/32fe06b0-7b3f-4cb1-9796-49bb01d213a2/LAUSUNTO_20190329094404.pdf"
-     },
-     {
-      "date": "2019-03-26",
-      "id": "eabd5058-7e63-4a38-a5fe-ca88436cdbae",
-      "org": "Sähkö- ja teleurakoitsijaliitto STUL ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/eabd5058-7e63-4a38-a5fe-ca88436cdbae/LAUSUNTO_20190329075954.pdf"
-     },
-     {
-      "date": "2019-03-25",
-      "id": "2f3eeadd-232d-4b58-921b-cd6767969116",
-      "org": "Skol ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/2f3eeadd-232d-4b58-921b-cd6767969116/LAUSUNTO_20190329074018.pdf"
-     },
-     {
-      "date": "2019-03-25",
-      "id": "985dc753-bf78-458e-9780-a681e912b484",
-      "org": "Skol ry",
-      "title": "Lausunnon liite",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/985dc753-bf78-458e-9780-a681e912b484/LAUSUNTO_20190329074333.pdf"
-     },
-     {
-      "date": "2019-03-25",
-      "id": "2ed44b62-4941-4014-8449-e465c0647c2a",
-      "org": "Skol ry",
-      "title": "Lausunnon liite",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/2ed44b62-4941-4014-8449-e465c0647c2a/LAUSUNTO_20190329074421.pdf"
-     },
-     {
-      "date": "2019-03-25",
-      "id": "90431b37-e548-4527-9f35-80143def6933",
-      "org": "Suomen Asbesti- ja Pölysaneerausalan liitto SAP ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/90431b37-e548-4527-9f35-80143def6933/LAUSUNTO_20190329085256.pdf"
-     },
-     {
-      "date": "2019-03-22",
-      "id": "05efea69-8320-437a-9cba-cac58bd6bb89",
-      "org": "Elinkeinoelämän keskusliitto EK",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/05efea69-8320-437a-9cba-cac58bd6bb89/LAUSUNTO_20190329084704.pdf"
-     },
-     {
-      "date": "2019-03-18",
-      "id": "a54eddac-d164-4355-92d7-8fbcc1f5ca4a",
-      "org": "Rakennusteollisuus RT ry",
-      "title": "Lausunto",
-      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/a54eddac-d164-4355-92d7-8fbcc1f5ca4a/LAUSUNTO_20190328104050.pdf"
-     }
-    ],
-    "eiLausuttavaa": 0,
-    "n": 25,
-    "orgs": [
-     "Skol ry",
-     "Akava ry",
-     "Ammattiliitto Pro ry",
-     "Arkkitehtitoimistojen liitto ATL ja Suomen arkkitehtiliitto SAFA",
-     "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
-     "Elinkeinoelämän keskusliitto EK",
-     "Energiateollisuus ry",
-     "RAKLI ry",
-     "Rakennusinsinöörit- ja arkkitehdit RIA ry",
-     "Rakennuskonepäälliköt ry",
-     "Rakennusliitto ry",
-     "Rakennusteollisuus RT ry",
-     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
-     "Suomen Asbesti- ja Pölysaneerausalan liitto SAP ry",
-     "Suomen Purkuliikkeiden liitto ry",
-     "Suomen Yrittäjät",
-     "Sähkö- ja teleurakoitsijaliitto STUL ry",
-     "Sähköalojen ammattiliitto ry",
-     "Teknisen Kaupan Liitto ry",
-     "Teknologiateollisuus ry ja Metsäteollisuus ry",
-     "Teollisuusliitto ry",
-     "Toimihenkilökeskusjärjestö STTK ry",
-     "Ylemmät toimihenkilöt YTN ry"
-    ],
-    "url": null,
-    "viimeisin": "2019-03-29"
-   },
-   "lisattyPaiva": null,
-   "ministerio": "sosiaali- ja terveysministeriö",
-   "muokattu": "2026-08-12T08:01:55",
-   "nimi": "Rakennustyön turvallisuutta koskevien säännösten uudistaminen",
-   "nimiSv": "Revidering av bestämmelserna om säkerheten vid byggnadsarbete",
-   "pevLausunto": false,
-   "poistettuPaiva": null,
-   "rauennut": false,
-   "skNumerot": [],
-   "teemat": [],
-   "tiivistelma": "Työsuojeluviranomaisilta, työmarkkinajärjestöiltä sekä muilta sidosryhmiltä pyydettyjen näkemysten perusteella on katsottu, että rakennustyön turvallisuutta koskevan sääntelyn läpikäyminen ja tarvittavien muutosten tekeminen on ajankohtaista ja tarpeellista.",
-   "tila": "KAYNNISSA",
-   "tunnus": "STM030:00/2019",
-   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM030:00/2019",
-   "uuid": "335e70bb-2893-4da6-b57d-dc33f91fa7d7",
-   "valmistelu": [
-    {
-     "d": "2019-02-04",
-     "n": "STM:n lausuntopyyntö sidosryhmille",
-     "t": "LAUSUNTOPYYNTO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/8ba3767e-3f77-4619-9f0b-1474e5a9795a/LAUSUNTOPYYNTO_20190328105647.pdf"
-    },
-    {
-     "d": "2019-04-09",
-     "n": "Esiselvitys yhteenveto_työmarkkinajärjestöt ja AVIt",
-     "t": "YHTEENVETO",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1e30f7e0-effa-44f7-ad62-85dfb7f9a0a9/YHTEENVETO_20210909053838.pdf"
-    },
-    {
-     "d": "2020-10-14",
-     "n": "Rakennusjaosto asettaminen",
-     "t": "LIITE",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/d87014d1-21d9-4852-a687-273a9483b1ca/LIITE_20221123112301.PDF"
-    },
-    {
-     "d": "2022-09-15",
-     "n": "Rakennustyön turvallisuutta käsittelevän jaoston toimikauden jatkaminen",
-     "t": "KIRJE",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/92b75e45-acd7-4687-8ec9-2813857fa2b7/KIRJE_20221123112301.PDF"
-    },
-    {
-     "d": "2023-11-09",
-     "n": "Rakennustyön turvallisuutta käsittelevän jaoston toimikauden jatkaminen 31.12.2024 asti",
-     "t": "KIRJE",
-     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/ca32fe36-9d3b-43d0-8e67-87775d2c3eeb/KIRJE_20231214063102.PDF"
-    }
-   ],
-   "valmisteluvaihe": null,
-   "valmistumisPaiva": "2027-12-31",
-   "vanhaEsittelyviikko": null,
-   "vanhaEsittelyvuosi": null
-  },
-  {
-   "annettuEduskunnalle": null,
-   "arviointineuvosto": false,
    "asetettu": null,
    "asiakirjat": [],
    "asiasanat": [
@@ -535702,6 +535204,67 @@
    "valmistelu": [],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2026-07-01",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": "2026-10-12",
+   "asiakirjat": [],
+   "asiasanat": [
+    "asetukset",
+    "korvaukset",
+    "virkamatkat"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2026-11-16",
+     "end": null,
+     "kind": "muu",
+     "label": "Valtioneuvoston asetus valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetussa laissa säädettyjen korvausten enimmäismääristä",
+     "tyyppi": "SAADOS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": null,
+   "lisattyPaiva": null,
+   "ministerio": "valtiovarainministeriö",
+   "muokattu": "2026-11-17T07:04:14",
+   "nimi": "Valtioneuvoston asetus valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetussa laissa säädettyjen korvausten enimmäismääristä",
+   "nimiSv": "Statsrådets förordning om maximibeloppen för ersättningar enligt lagen om skadeersättningar vid statliga tjänsteresor",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetun lain (530/2017) 24 §:n mukaan lain 9 §:n 1 momentissa, 10 §:n 2 momentissa, 13 §:ssä ja 14 §:n 3 momentissa mainitut rahamäärät tarkistetaan kolmen vuoden välein rahan arvon muutosta vastaavasti. Tarkistetut rahamäärät säädetään valtioneuvoston asetuksella.",
+   "tila": "PAATTYNYT",
+   "tunnus": "VM126:00/2026",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=VM126:00/2026",
+   "uuid": "e7b37060-c75f-454e-aa18-685137e2e0d0",
+   "valmistelu": [
+    {
+     "d": "2026-11-16",
+     "n": "1033_2026 Statsrådets förordning om maximibeloppen för ersättningar enligt lagen om skadeersättningar vid statliga tjänsteresor",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e7b37060-c75f-454e-aa18-685137e2e0d0/f9cc5c42-e034-43a0-905f-b57fb148dad2/KIRJE_20261117063728.PDF"
+    },
+    {
+     "d": "2026-11-16",
+     "n": "1033_2026 VNA valtion virkamatkoilla sattuneiden vahinkojen korvaamisesta annetussa laissa säädettyjen korvausten enimmäismääristä",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/e7b37060-c75f-454e-aa18-685137e2e0d0/fa76c77c-bbe2-4760-a7fe-a4198c2f6b7e/KIRJE_20261117063728.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-11-17",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -547971,6 +547534,422 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": null,
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": null,
+   "asiakirjat": [
+    {
+     "nimi": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi rakennustyön turvallisuudesta_13733",
+     "pvm": "2025-11-25",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/8a08ee82-5623-4892-a038-0bb782e69f18/LAUSUNTOPYYNTO_20251125121838.PDF"
+    }
+   ],
+   "asiasanat": [
+    "EU-direktiivit",
+    "työturvallisuus",
+    "työsuojelu",
+    "rakennustyöt",
+    "rakennustyömaat",
+    "rakennustyöntekijät"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2025-11-25",
+     "end": "2026-01-23",
+     "kind": "lausunto",
+     "label": "Lausuntokierros",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2026-01-29",
+      "id": "7fed026b-523d-4ad5-af55-e88f19e68bf2",
+      "org": "Väylävirasto",
+      "title": "Väyläviraston lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/7fed026b-523d-4ad5-af55-e88f19e68bf2/LAUSUNTO_20260129123522.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "cb6ca2f3-c3a5-4327-8d2c-ea705d35ce90",
+      "org": "Teknologiateollisuus ry",
+      "title": "Teknologiateollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/cb6ca2f3-c3a5-4327-8d2c-ea705d35ce90/LAUSUNTO_20260125063619.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "a02e7053-1f8f-4f08-ac20-a960588f8efe",
+      "org": "Tapaturva Oy",
+      "title": "Tapaturva Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a02e7053-1f8f-4f08-ac20-a960588f8efe/LAUSUNTO_20260125064100.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "497a77b5-cb79-4069-9148-022aca06bb31",
+      "org": "Talonrakennusteollisuus ry",
+      "title": "Talonrakennusteollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/497a77b5-cb79-4069-9148-022aca06bb31/LAUSUNTO_20260125064305.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "7a9f9fa0-6de2-45fd-86b0-f6c8e2442320",
+      "org": "Kiinteistötyönantajat ry",
+      "title": "Kiinteistötyönantajat ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/7a9f9fa0-6de2-45fd-86b0-f6c8e2442320/LAUSUNTO_20260125064716.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "6c915e1c-0cca-431b-a1ad-222626cacccf",
+      "org": "Rakennusinsinöörit ja -arkkitehdit RIA ry",
+      "title": "Rakennusinsinöörit ja -arkkitehdit RIA ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/6c915e1c-0cca-431b-a1ad-222626cacccf/LAUSUNTO_20260125064923.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "0f73ab86-1865-4f25-9d75-0d54ec2416b1",
+      "org": "Koneyrittäjät ry",
+      "title": "Koneyrittäjät ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/0f73ab86-1865-4f25-9d75-0d54ec2416b1/LAUSUNTO_20260125065406.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "1d795c82-e237-42d6-b7aa-008f4e9ded34",
+      "org": "Energiateollisuus ry",
+      "title": "Energiateollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1d795c82-e237-42d6-b7aa-008f4e9ded34/LAUSUNTO_20260125065615.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "4d3d08ff-4df4-4b1f-b23e-20ca4c213cd3",
+      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+      "title": "Suomen Ammattiliittojen Keskusjärjestö SAK ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4d3d08ff-4df4-4b1f-b23e-20ca4c213cd3/LAUSUNTO_20260125065824.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "efa10617-caf4-4436-acd8-86443d37c891",
+      "org": "Elinkeinoelämän keskusliitto EK",
+      "title": "Elinkeinoelämän keskusliitto EK; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/efa10617-caf4-4436-acd8-86443d37c891/LAUSUNTO_20260125070033.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "beb80e97-79e8-48e5-9f37-bb5a5433d492",
+      "org": "INFRA ry",
+      "title": "INFRA ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/beb80e97-79e8-48e5-9f37-bb5a5433d492/LAUSUNTO_20260125070240.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "1d188c5c-783d-44a6-93a9-0bdb83897633",
+      "org": "LVI-Tekniset Urakoitsijat LVI-TU ry",
+      "title": "LVI-Tekniset Urakoitsijat LVI-TU ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1d188c5c-783d-44a6-93a9-0bdb83897633/LAUSUNTO_20260125070723.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "4ea198ac-cd3d-4971-bb90-4bb9331a1f02",
+      "org": "Ramirent Finland Oy",
+      "title": "Ramirent Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4ea198ac-cd3d-4971-bb90-4bb9331a1f02/LAUSUNTO_20260125070931.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "61d04a10-ad0a-4a7a-9763-38c32bdf85c6",
+      "org": "KarmaRock ry",
+      "title": "KarmaRock ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/61d04a10-ad0a-4a7a-9763-38c32bdf85c6/LAUSUNTO_20260125071413.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "a44ac712-f1f8-44e1-bc52-2f2a528886d9",
+      "org": "Matkailu- ja Ravintolapalvelut MaRa ry",
+      "title": "Matkailu- ja Ravintolapalvelut MaRa ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a44ac712-f1f8-44e1-bc52-2f2a528886d9/LAUSUNTO_20260125071622.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "edb09f06-7258-49e8-a9c4-2da33b9e7ac3",
+      "org": "STTK ry",
+      "title": "STTK ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/edb09f06-7258-49e8-a9c4-2da33b9e7ac3/LAUSUNTO_20260125071830.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "60f68060-3877-4c1e-ba1f-0021c24d7d74",
+      "org": "Kemianteollisuus ry",
+      "title": "Kemianteollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/60f68060-3877-4c1e-ba1f-0021c24d7d74/LAUSUNTO_20260125072038.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "fdde95e8-7614-47f9-8a36-b280d6ef20b4",
+      "org": "Senaatti-konserni",
+      "title": "Senaatti-konserni; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/fdde95e8-7614-47f9-8a36-b280d6ef20b4/LAUSUNTO_20260125072248.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "2600d433-830f-4eb4-a503-a2b5bf970560",
+      "org": "LiveFIN ry",
+      "title": "LiveFIN ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2600d433-830f-4eb4-a503-a2b5bf970560/LAUSUNTO_20260126191657.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "4a51fdea-2d48-4354-8ce4-4984948d0c1d",
+      "org": "Lupa- ja valvontavirasto LVV",
+      "title": "Lupa- ja valvontavirasto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4a51fdea-2d48-4354-8ce4-4984948d0c1d/LAUSUNTO_20260126191902.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "4c3f3219-1ef9-4689-861c-6c33061d67c6",
+      "org": "Suomen Yrittäjät ry",
+      "title": "Suomen Yrittäjät ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4c3f3219-1ef9-4689-861c-6c33061d67c6/LAUSUNTO_20260126192108.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "069933b1-339d-405c-a00e-2b73975cdaa4",
+      "org": "Suomen Omakotiliitto ry",
+      "title": "Suomen Omakotiliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/069933b1-339d-405c-a00e-2b73975cdaa4/LAUSUNTO_20260126192316.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "90abe133-71bc-4969-8157-6968f381287a",
+      "org": "Haahtela-rakennuttaminen Oy",
+      "title": "Haahtela-rakennuttaminen Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/90abe133-71bc-4969-8157-6968f381287a/LAUSUNTO_20260126192524.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "09a53999-81ae-448e-a1f3-f8743001f30c",
+      "org": "Ammattiliitto Pro ry",
+      "title": "Ammattiliitto Pro ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/09a53999-81ae-448e-a1f3-f8743001f30c/LAUSUNTO_20260127173947.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "ebd4ef48-6f1e-4aae-8100-a7152460bdee",
+      "org": "Vepe Oy Peltonen",
+      "title": "Vepe Oy Peltonen; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/ebd4ef48-6f1e-4aae-8100-a7152460bdee/LAUSUNTO_20260127174157.PDF"
+     },
+     {
+      "date": "2026-01-23",
+      "id": "6f813662-4a01-4951-972a-67c84ee529c7",
+      "org": "Kiinteistönomistajat ja rakennuttajat Rakli ry",
+      "title": "Kiinteistönomistajat ja rakennuttajat Rakli ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/6f813662-4a01-4951-972a-67c84ee529c7/LAUSUNTO_20260127174407.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "529f58aa-3933-434a-9ecd-a31fc3d0935b",
+      "org": "Arkkitehtitoimistojen liitto ATL ry",
+      "title": "Arkkitehtitoimistojen Liitto ATL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/529f58aa-3933-434a-9ecd-a31fc3d0935b/LAUSUNTO_20260122184040.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "21923e6c-91c4-4933-aae5-bf6ee275c1ea",
+      "org": "Tampereen Raitiotie Oy",
+      "title": "Tampereen Raitiotie Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/21923e6c-91c4-4933-aae5-bf6ee275c1ea/LAUSUNTO_20260122185223.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "ea14e2d3-2b58-452e-9d52-a19137e0616b",
+      "org": "Rakennusmestarit ja -insinöörit AMK RKL ry",
+      "title": "Rakennusmestarit ja -insinöörit AMK RKL ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/ea14e2d3-2b58-452e-9d52-a19137e0616b/LAUSUNTO_20260122185430.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "b58050dc-982d-4389-acf1-54d3ba3caf71",
+      "org": "Rakennusliitto ry",
+      "title": "Rakennusliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/b58050dc-982d-4389-acf1-54d3ba3caf71/LAUSUNTO_20260122185637.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "d30d439b-b85b-4612-9825-f5d7d7938eb2",
+      "org": "Live Nation Finland Oy",
+      "title": "Live Nation Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/d30d439b-b85b-4612-9825-f5d7d7938eb2/LAUSUNTO_20260122185843.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "a0d7bec9-0338-4e9b-9bbd-f0cebf15446b",
+      "org": "Valtiovarainministeriö",
+      "title": "Valtion työmarkkinalaitoksen lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/a0d7bec9-0338-4e9b-9bbd-f0cebf15446b/LAUSUNTO_20260123102913.PDF"
+     },
+     {
+      "date": "2026-01-22",
+      "id": "3a3a458e-9797-4fc4-a3df-bee0b07195e5",
+      "org": "Tapaturva Oy",
+      "title": "Tapaturva Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/3a3a458e-9797-4fc4-a3df-bee0b07195e5/LAUSUNTO_20260125063137.PDF"
+     },
+     {
+      "date": "2026-01-20",
+      "id": "2c5570de-4a59-4842-8732-9aaf7854ba4b",
+      "org": "Suomen Arkkitehtiliitto ry SAFA",
+      "title": "Suomen Arkkitehtiliitto ry SAFA; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2c5570de-4a59-4842-8732-9aaf7854ba4b/LAUSUNTO_20260121181926.PDF"
+     },
+     {
+      "date": "2026-01-19",
+      "id": "4572d1b0-74a7-4e6b-87fc-c50de95c835d",
+      "org": "Työterveyslaitos",
+      "title": "Työterveyslaitos; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4572d1b0-74a7-4e6b-87fc-c50de95c835d/LAUSUNTO_20260119184703.PDF"
+     },
+     {
+      "date": "2026-01-19",
+      "id": "e2c27e44-e788-4486-9b3e-5927dcdcf267",
+      "org": "Tapahtumateollisuus ry",
+      "title": "Tapahtumateollisuus ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/e2c27e44-e788-4486-9b3e-5927dcdcf267/LAUSUNTO_20260119184909.PDF"
+     },
+     {
+      "date": "2026-01-16",
+      "id": "d112efd3-a396-4d6f-9e88-07c5663ad56d",
+      "org": "Tapaturmavakuutuskeskus",
+      "title": "Tapaturmavakuutuskeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/d112efd3-a396-4d6f-9e88-07c5663ad56d/LAUSUNTO_20260118044442.PDF"
+     },
+     {
+      "date": "2026-01-16",
+      "id": "1c9565ca-a512-4978-898c-a3effb639e60",
+      "org": "Sähköalojen ammattiliitto ry",
+      "title": "Sähköalojen ammattiliitto ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/1c9565ca-a512-4978-898c-a3effb639e60/LAUSUNTO_20260118044932.PDF"
+     },
+     {
+      "date": "2026-01-15",
+      "id": "2726cd76-264a-4c64-aca6-e9207db15171",
+      "org": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
+      "title": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/2726cd76-264a-4c64-aca6-e9207db15171/LAUSUNTO_20260115183016.PDF"
+     },
+     {
+      "date": "2026-01-14",
+      "id": "defb5f1f-11eb-4bc3-9107-77410bc90b43",
+      "org": "Verohallinto",
+      "title": "Verohallinto; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/defb5f1f-11eb-4bc3-9107-77410bc90b43/LAUSUNTO_20260114141803.PDF"
+     },
+     {
+      "date": "2026-01-14",
+      "id": "19e84668-6df3-4a3f-83e3-51bc787f12cb",
+      "org": "Ramirent Finland Oy",
+      "title": "Ramirent Finland Oy; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/19e84668-6df3-4a3f-83e3-51bc787f12cb/LAUSUNTO_20260115182256.PDF"
+     },
+     {
+      "date": "2026-01-09",
+      "id": "4b35e723-729b-4d59-ba4f-6701898828ce",
+      "org": "Säteilyturvakeskus",
+      "title": "Säteilyturvakeskus; lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/4b35e723-729b-4d59-ba4f-6701898828ce/LAUSUNTO_20260112194244.PDF"
+     },
+     {
+      "date": "2025-12-19",
+      "id": "99bdf57b-b750-4979-8449-434e6898c75f",
+      "none": true,
+      "org": "Sisäministeriö",
+      "title": "Sisäministeriö; ei lausuttavaa"
+     }
+    ],
+    "eiLausuttavaa": 1,
+    "n": 43,
+    "orgs": [
+     "Ramirent Finland Oy",
+     "Tapaturva Oy",
+     "Ammattiliitto Pro ry",
+     "Arkkitehtitoimistojen liitto ATL ry",
+     "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
+     "Elinkeinoelämän keskusliitto EK",
+     "Energiateollisuus ry",
+     "Haahtela-rakennuttaminen Oy",
+     "INFRA ry",
+     "KarmaRock ry",
+     "Kemianteollisuus ry",
+     "Kiinteistönomistajat ja rakennuttajat Rakli ry",
+     "Kiinteistötyönantajat ry",
+     "Koneyrittäjät ry",
+     "LVI-Tekniset Urakoitsijat LVI-TU ry",
+     "Live Nation Finland Oy",
+     "LiveFIN ry",
+     "Lupa- ja valvontavirasto LVV",
+     "Matkailu- ja Ravintolapalvelut MaRa ry",
+     "Rakennusinsinöörit ja -arkkitehdit RIA ry",
+     "Rakennusliitto ry",
+     "Rakennusmestarit ja -insinöörit AMK RKL ry",
+     "STTK ry",
+     "Senaatti-konserni",
+     "Sisäministeriö",
+     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+     "Suomen Arkkitehtiliitto ry SAFA",
+     "Suomen Omakotiliitto ry",
+     "Suomen Yrittäjät ry",
+     "Sähköalojen ammattiliitto ry",
+     "Säteilyturvakeskus",
+     "Talonrakennusteollisuus ry",
+     "Tampereen Raitiotie Oy",
+     "Tapahtumateollisuus ry",
+     "Tapaturmavakuutuskeskus",
+     "Teknologiateollisuus ry",
+     "Työterveyslaitos",
+     "Valtiovarainministeriö",
+     "Vepe Oy Peltonen",
+     "Verohallinto",
+     "Väylävirasto"
+    ],
+    "url": "https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=53cf31bf-16dd-4e56-bf95-df8300e40759",
+    "viimeisin": "2026-01-29"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-11-17T09:15:58",
+   "nimi": "Valtioneuvoston asetus rakennustyön turvallisuudesta",
+   "nimiSv": "Statsrådets förordning om säkerheten vid byggarbeten",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Annetaan uusi rakennustyön turvallisuutta koskeva valtioneuvoston asetus. Valtioneuvoston asetus 205/2009 ja työministeriön päätös rakennustyömaiden henkilöstötiloista (977/1994) kumotaan.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM159:00/2025",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM159:00/2025",
+   "uuid": "92d87e5b-ff9a-49c5-a449-00bc6adda6b6",
+   "valmistelu": [
+    {
+     "d": "2025-11-25",
+     "n": "Lausuntopyyntö luonnoksesta valtioneuvoston asetukseksi rakennustyön turvallisuudesta_13733",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/92d87e5b-ff9a-49c5-a449-00bc6adda6b6/8a08ee82-5623-4892-a038-0bb782e69f18/LAUSUNTOPYYNTO_20251125121838.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-11-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },
@@ -625558,6 +625537,305 @@
    ],
    "valmisteluvaihe": null,
    "valmistumisPaiva": "2019-12-31",
+   "vanhaEsittelyviikko": null,
+   "vanhaEsittelyvuosi": null
+  },
+  {
+   "annettuEduskunnalle": null,
+   "arviointineuvosto": false,
+   "asetettu": "2019-02-04",
+   "asiakirjat": [
+    {
+     "nimi": "STM:n lausuntopyyntö sidosryhmille",
+     "pvm": "2019-02-04",
+     "tyyppi": "LAUSUNTOPYYNTO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/8ba3767e-3f77-4619-9f0b-1474e5a9795a/LAUSUNTOPYYNTO_20190328105647.pdf"
+    },
+    {
+     "nimi": "Esiselvitys yhteenveto_työmarkkinajärjestöt ja AVIt",
+     "pvm": "2019-04-09",
+     "tyyppi": "YHTEENVETO",
+     "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1e30f7e0-effa-44f7-ad62-85dfb7f9a0a9/YHTEENVETO_20210909053838.pdf"
+    }
+   ],
+   "asiasanat": [
+    "lainsäädäntö",
+    "työturvallisuus",
+    "rakennustyöt"
+   ],
+   "esittelyviikko": null,
+   "esittelyvuosi": null,
+   "etapit": [
+    {
+     "date": "2019-02-04",
+     "end": "2019-03-29",
+     "kind": "lausunto",
+     "label": "Lausuntopyyntö sidosryhmille rakennustyön turvallisuutta koskevien säännösten uudistamisesta",
+     "tyyppi": "LAUSUNTOKIERROS"
+    }
+   ],
+   "evNumerot": [],
+   "heNumerot": [],
+   "heTila": null,
+   "kiireellinen": false,
+   "laji": "asetus",
+   "lausunnot": {
+    "docs": [
+     {
+      "date": "2019-03-29",
+      "id": "5eb8027f-c510-4897-bbaa-9b8155d8fb1b",
+      "org": "Ammattiliitto Pro ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/5eb8027f-c510-4897-bbaa-9b8155d8fb1b/LAUSUNTO_20190329100632.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "58748b31-eeff-4853-acae-c2d23f1852e6",
+      "org": "Suomen Yrittäjät",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/58748b31-eeff-4853-acae-c2d23f1852e6/LAUSUNTO_20190329101216.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "43120bc0-a3f4-492f-a333-c77053e54308",
+      "org": "Teknisen Kaupan Liitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/43120bc0-a3f4-492f-a333-c77053e54308/LAUSUNTO_20190329113638.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "42897e25-3e19-4caa-85f1-76795a1fcb28",
+      "org": "Ylemmät toimihenkilöt YTN ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/42897e25-3e19-4caa-85f1-76795a1fcb28/LAUSUNTO_20190329132409.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "dbf0b5e5-d9c1-448f-9930-6f472f8ec67d",
+      "org": "RAKLI ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/dbf0b5e5-d9c1-448f-9930-6f472f8ec67d/LAUSUNTO_20190329140424.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "1a0e6ef1-e00b-4633-b323-0cb4f1c5c8b6",
+      "org": "Suomen Purkuliikkeiden liitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1a0e6ef1-e00b-4633-b323-0cb4f1c5c8b6/LAUSUNTO_20190401064419.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "81863178-efa7-41d6-bccb-7dbc54e77f58",
+      "org": "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/81863178-efa7-41d6-bccb-7dbc54e77f58/LAUSUNTO_20190401064820.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "ace40fdc-f762-47ed-bd1b-09edcb658470",
+      "org": "Akava ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/ace40fdc-f762-47ed-bd1b-09edcb658470/LAUSUNTO_20190401084723.pdf"
+     },
+     {
+      "date": "2019-03-29",
+      "id": "c88d5ce1-1eb2-47ba-a3e8-3af770b69b85",
+      "org": "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/c88d5ce1-1eb2-47ba-a3e8-3af770b69b85/LAUSUNTO_20190401085134.pdf"
+     },
+     {
+      "date": "2019-03-28",
+      "id": "79d706c8-050b-4393-a8fa-dabd5f9e9fd3",
+      "org": "Teollisuusliitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/79d706c8-050b-4393-a8fa-dabd5f9e9fd3/LAUSUNTO_20190328113248.pdf"
+     },
+     {
+      "date": "2019-03-28",
+      "id": "a48429fa-acd2-4900-9821-ffbaabf4c001",
+      "org": "Energiateollisuus ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/a48429fa-acd2-4900-9821-ffbaabf4c001/LAUSUNTO_20190329093832.pdf"
+     },
+     {
+      "date": "2019-03-28",
+      "id": "fb18a19c-f714-4a99-a3ba-56e3583b97a4",
+      "org": "Rakennusinsinöörit- ja arkkitehdit RIA ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/fb18a19c-f714-4a99-a3ba-56e3583b97a4/LAUSUNTO_20190329140744.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "e7730754-8823-4743-999a-5c3f529f5868",
+      "org": "Rakennusliitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/e7730754-8823-4743-999a-5c3f529f5868/LAUSUNTO_20190329080717.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "bb8bba5e-55bb-4f77-a568-a24802184f91",
+      "org": "Arkkitehtitoimistojen liitto ATL ja Suomen arkkitehtiliitto SAFA",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/bb8bba5e-55bb-4f77-a568-a24802184f91/LAUSUNTO_20190329081125.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "c56af87c-7d8d-4b25-8054-f128b75c1be0",
+      "org": "Sähköalojen ammattiliitto ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/c56af87c-7d8d-4b25-8054-f128b75c1be0/LAUSUNTO_20190329083113.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "b76dab8b-47a9-4272-a5a3-14a0fcf8a912",
+      "org": "Rakennuskonepäälliköt ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/b76dab8b-47a9-4272-a5a3-14a0fcf8a912/LAUSUNTO_20190329083515.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "08949980-b5b5-4d9f-a444-d2d5e2a00a6e",
+      "org": "Teknologiateollisuus ry ja Metsäteollisuus ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/08949980-b5b5-4d9f-a444-d2d5e2a00a6e/LAUSUNTO_20190329084024.pdf"
+     },
+     {
+      "date": "2019-03-27",
+      "id": "32fe06b0-7b3f-4cb1-9796-49bb01d213a2",
+      "org": "Toimihenkilökeskusjärjestö STTK ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/32fe06b0-7b3f-4cb1-9796-49bb01d213a2/LAUSUNTO_20190329094404.pdf"
+     },
+     {
+      "date": "2019-03-26",
+      "id": "eabd5058-7e63-4a38-a5fe-ca88436cdbae",
+      "org": "Sähkö- ja teleurakoitsijaliitto STUL ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/eabd5058-7e63-4a38-a5fe-ca88436cdbae/LAUSUNTO_20190329075954.pdf"
+     },
+     {
+      "date": "2019-03-25",
+      "id": "2f3eeadd-232d-4b58-921b-cd6767969116",
+      "org": "Skol ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/2f3eeadd-232d-4b58-921b-cd6767969116/LAUSUNTO_20190329074018.pdf"
+     },
+     {
+      "date": "2019-03-25",
+      "id": "985dc753-bf78-458e-9780-a681e912b484",
+      "org": "Skol ry",
+      "title": "Lausunnon liite",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/985dc753-bf78-458e-9780-a681e912b484/LAUSUNTO_20190329074333.pdf"
+     },
+     {
+      "date": "2019-03-25",
+      "id": "2ed44b62-4941-4014-8449-e465c0647c2a",
+      "org": "Skol ry",
+      "title": "Lausunnon liite",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/2ed44b62-4941-4014-8449-e465c0647c2a/LAUSUNTO_20190329074421.pdf"
+     },
+     {
+      "date": "2019-03-25",
+      "id": "90431b37-e548-4527-9f35-80143def6933",
+      "org": "Suomen Asbesti- ja Pölysaneerausalan liitto SAP ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/90431b37-e548-4527-9f35-80143def6933/LAUSUNTO_20190329085256.pdf"
+     },
+     {
+      "date": "2019-03-22",
+      "id": "05efea69-8320-437a-9cba-cac58bd6bb89",
+      "org": "Elinkeinoelämän keskusliitto EK",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/05efea69-8320-437a-9cba-cac58bd6bb89/LAUSUNTO_20190329084704.pdf"
+     },
+     {
+      "date": "2019-03-18",
+      "id": "a54eddac-d164-4355-92d7-8fbcc1f5ca4a",
+      "org": "Rakennusteollisuus RT ry",
+      "title": "Lausunto",
+      "url": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/a54eddac-d164-4355-92d7-8fbcc1f5ca4a/LAUSUNTO_20190328104050.pdf"
+     }
+    ],
+    "eiLausuttavaa": 0,
+    "n": 25,
+    "orgs": [
+     "Skol ry",
+     "Akava ry",
+     "Ammattiliitto Pro ry",
+     "Arkkitehtitoimistojen liitto ATL ja Suomen arkkitehtiliitto SAFA",
+     "Auto- ja Kuljetusalan Työntekijäliitto AKT ry",
+     "Elinkeinoelämän keskusliitto EK",
+     "Energiateollisuus ry",
+     "RAKLI ry",
+     "Rakennusinsinöörit- ja arkkitehdit RIA ry",
+     "Rakennuskonepäälliköt ry",
+     "Rakennusliitto ry",
+     "Rakennusteollisuus RT ry",
+     "Suomen Ammattiliittojen Keskusjärjestö SAK ry",
+     "Suomen Asbesti- ja Pölysaneerausalan liitto SAP ry",
+     "Suomen Purkuliikkeiden liitto ry",
+     "Suomen Yrittäjät",
+     "Sähkö- ja teleurakoitsijaliitto STUL ry",
+     "Sähköalojen ammattiliitto ry",
+     "Teknisen Kaupan Liitto ry",
+     "Teknologiateollisuus ry ja Metsäteollisuus ry",
+     "Teollisuusliitto ry",
+     "Toimihenkilökeskusjärjestö STTK ry",
+     "Ylemmät toimihenkilöt YTN ry"
+    ],
+    "url": null,
+    "viimeisin": "2019-03-29"
+   },
+   "lisattyPaiva": null,
+   "ministerio": "sosiaali- ja terveysministeriö",
+   "muokattu": "2026-11-17T08:56:06",
+   "nimi": "Rakennustyön turvallisuutta koskevien säännösten uudistaminen",
+   "nimiSv": "Revidering av bestämmelserna om säkerheten vid byggnadsarbete",
+   "pevLausunto": false,
+   "poistettuPaiva": null,
+   "rauennut": false,
+   "skNumerot": [],
+   "teemat": [],
+   "tiivistelma": "Työsuojeluviranomaisilta, työmarkkinajärjestöiltä sekä muilta sidosryhmiltä pyydettyjen näkemysten perusteella on katsottu, että rakennustyön turvallisuutta koskevan sääntelyn läpikäyminen ja tarvittavien muutosten tekeminen on ajankohtaista ja tarpeellista.",
+   "tila": "PAATTYNYT",
+   "tunnus": "STM030:00/2019",
+   "url": "https://valtioneuvosto.fi/hanke?tunnus=STM030:00/2019",
+   "uuid": "335e70bb-2893-4da6-b57d-dc33f91fa7d7",
+   "valmistelu": [
+    {
+     "d": "2019-02-04",
+     "n": "STM:n lausuntopyyntö sidosryhmille",
+     "t": "LAUSUNTOPYYNTO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/8ba3767e-3f77-4619-9f0b-1474e5a9795a/LAUSUNTOPYYNTO_20190328105647.pdf"
+    },
+    {
+     "d": "2019-04-09",
+     "n": "Esiselvitys yhteenveto_työmarkkinajärjestöt ja AVIt",
+     "t": "YHTEENVETO",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/1e30f7e0-effa-44f7-ad62-85dfb7f9a0a9/YHTEENVETO_20210909053838.pdf"
+    },
+    {
+     "d": "2020-10-14",
+     "n": "Rakennusjaosto asettaminen",
+     "t": "LIITE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/d87014d1-21d9-4852-a687-273a9483b1ca/LIITE_20221123112301.PDF"
+    },
+    {
+     "d": "2022-09-15",
+     "n": "Rakennustyön turvallisuutta käsittelevän jaoston toimikauden jatkaminen",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/92b75e45-acd7-4687-8ec9-2813857fa2b7/KIRJE_20221123112301.PDF"
+    },
+    {
+     "d": "2023-11-09",
+     "n": "Rakennustyön turvallisuutta käsittelevän jaoston toimikauden jatkaminen 31.12.2024 asti",
+     "t": "KIRJE",
+     "u": "https://api.hankeikkuna.fi/asiakirjat/335e70bb-2893-4da6-b57d-dc33f91fa7d7/ca32fe36-9d3b-43d0-8e67-87775d2c3eeb/KIRJE_20231214063102.PDF"
+    }
+   ],
+   "valmisteluvaihe": null,
+   "valmistumisPaiva": "2026-11-30",
    "vanhaEsittelyviikko": null,
    "vanhaEsittelyvuosi": null
   },

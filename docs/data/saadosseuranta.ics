@@ -1886,6 +1886,15 @@ DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) ·
 URL:https://eur-lex.europa.eu/eli/reg/2022/2065/oj
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-2021-0058-maaraaika-2027-12-22@saadosseuranta
+DTSTAMP:20271222T000000Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:[EU] Määräaika: Intian valtameren tonnikalatoimikunnan (IOTC) toimivalta-alueella sovellettavat hoito-\, säilyttämis- ja valvontatoimenpiteet sekä neuvoston asetusten (EY) N:o 1
+DESCRIPTION:Säädöksen määräaika (esim. arviointi\, siirtymäsäännös) · (EU) 2022/2343 · https://eur-lex.europa.eu/eli/reg/2022/2343/oj
+URL:https://eur-lex.europa.eu/eli/reg/2022/2343/oj
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-2021-0105-soveltaminen-2027-01-20@saadosseuranta
 DTSTAMP:20270120T000000Z
 DTSTART;VALUE=DATE:20270120
@@ -2660,10 +2669,10 @@ DESCRIPTION:Palauteaika · Delegoitu asetus · https://ec.europa.eu/info/law/bet
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-14770-lausunto-2027-01-11@saadosseuranta
-DTSTAMP:20270111T000000Z
-DTSTART;VALUE=DATE:20270111
-DTEND;VALUE=DATE:20270112
+UID:eu-hys-14770-lausunto-2027-01-12@saadosseuranta
+DTSTAMP:20270112T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
 SUMMARY:[EU] Lausuntoaika päättyy: Euroopan ilmastokestävyys ja riskinhallinta – yhtenäinen kehys
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770_en
@@ -2750,19 +2759,10 @@ DESCRIPTION:Palauteaika · Asetusehdotus · https://ec.europa.eu/info/law/better
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498_en
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-hys-19225-lausunto-2026-11-16@saadosseuranta
-DTSTAMP:20261116T000000Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:[EU] Lausuntoaika päättyy: Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti
-DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-19517-lausunto-2027-01-11@saadosseuranta
-DTSTAMP:20270111T000000Z
-DTSTART;VALUE=DATE:20270111
-DTEND;VALUE=DATE:20270112
+UID:eu-hys-19517-lausunto-2027-01-12@saadosseuranta
+DTSTAMP:20270112T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
 SUMMARY:[EU] Lausuntoaika päättyy: Pelastuspalvelu – eurooppalaisen kriittisen viestinnän järjestelmän perustaminen
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19517_en
@@ -2831,6 +2831,15 @@ DESCRIPTION:Palauteaika · Kertomus · https://ec.europa.eu/info/law/better-regu
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18512_en
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-hys-19225-lausunto-2026-11-16@saadosseuranta
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:[EU] Lausuntoaika päättyy: Päästökauppajärjestelmä 1 – hyväksytään Ruotsin hakemus laajentaa soveltamisalaa yksipuolisesti
+DESCRIPTION:Palaute säädösluonnoksesta · Delegoitu päätös · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
+URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225_en
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-hys-16712-lausunto-2026-11-13@saadosseuranta
 DTSTAMP:20261113T000000Z
 DTSTART;VALUE=DATE:20261113
@@ -2847,33 +2856,6 @@ DTEND;VALUE=DATE:20261112
 SUMMARY:[EU] Lausuntoaika päättyy: Tekoälyn maanosa – uusi säädös pilvipalvelujen ja tekoälyn kehittämisestä
 DESCRIPTION:Palaute hyväksytystä ehdotuksesta · Asetusehdotus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
 URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-hys-19292-lausunto-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Lausuntoaika päättyy: Tekoälysäädöksen täytäntöönpanosäädös – artiklat 75 c ja 75 d
-DESCRIPTION:Palaute säädösluonnoksesta · Täytäntöönpanoasetus · https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
-URL:https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292_en
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2723-maaraaika-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) 2024/3012 of the European Parliament and of the Council by establishing the certificati
-DESCRIPTION:Vastustamisaika päättyy (pidennetty) – EP ja neuvosto · C(2026)4666 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2723
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2723
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2806-maaraaika-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending the Annex to Regulation (EU) 2019/452 of the European Parliament and of the Council establishing a framework
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 8.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6107 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2806
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2819-maaraaika-2026-12-28@saadosseuranta
@@ -2910,15 +2892,6 @@ DTEND;VALUE=DATE:20271104
 SUMMARY:[EU] Soveltaminen: Komission delegoitu asetus (EU) 2026/1519\, annettu 6 päivänä heinäkuuta 2026\, komission delegoidussa asetuksessa (EU) 2017/392 vahvistettujen teknisten sääntely
 DESCRIPTION:Soveltaminen (vaihe) · C(2026)4642 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2909
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-2917-maaraaika-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/1972\, annettu 7 päivänä syyskuuta 2026\, Euroopan parlamentin ja neuvoston asetuksen (EU) 2019/1021 muuttamisesta siltä osin
-DESCRIPTION:Vastustamisaika päättyi · C(2026)6059 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/2917
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-2917-voimaan-2026-12-02@saadosseuranta
@@ -3128,6 +3101,15 @@ DESCRIPTION:Soveltaminen (vaihe) · C(2026)5011 · https://webgate.ec.europa.eu/
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3052
 END:VEVENT
 BEGIN:VEVENT
+UID:eu-da-3056-maaraaika-2027-01-18@saadosseuranta
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[EU] Määräaika: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending Directive 2005/36/EC of the European Parliament and of the Council as regards minimum training requirements f
+DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 16.1.2027 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)7946 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3056
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3056
+END:VEVENT
+BEGIN:VEVENT
 UID:eu-da-3062-maaraaika-2026-11-17@saadosseuranta
 DTSTAMP:20261117T000000Z
 DTSTART;VALUE=DATE:20261117
@@ -3182,12 +3164,12 @@ DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)7817 · https
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3082
 END:VEVENT
 BEGIN:VEVENT
-UID:eu-da-3107-maaraaika-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... amending Annex II to Regulation (EU) No 1233/2011 of the European Parliament and of the Council on the application of
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto – siirtyy\, 7.11.2026 on vapaapäivä (asetus 1182/71 3 art. 4 kohta) · C(2026)6097 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3107
+UID:eu-da-3107-voimaan-2026-12-06@saadosseuranta
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/1969\, annettu 7 päivänä syyskuuta 2026\, tiettyjen suuntaviivojen soveltamisesta julkisesti tuettuihin vientiluottoihin anne
+DESCRIPTION:Voimaan · C(2026)6097 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3107
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3107
 END:VEVENT
 BEGIN:VEVENT
@@ -3240,8 +3222,17 @@ UID:eu-da-3133-maaraaika-2026-11-10@saadosseuranta
 DTSTAMP:20261110T000000Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
-SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for granting the special incentive arrangement for sustainable developmen
-DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6211 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
+SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/2018\, annettu 10 päivänä syyskuuta 2026\, kestävää kehitystä ja hyvää hallintoa edistävän erityisen kannustusmenettelyn (GSP
+DESCRIPTION:Vastustamisaika päättyi · C(2026)6211 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
+URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
+END:VEVENT
+BEGIN:VEVENT
+UID:eu-da-3133-voimaan-2026-12-06@saadosseuranta
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:[EU] Voimaan: Komission delegoitu asetus (EU) 2026/2018\, annettu 10 päivänä syyskuuta 2026\, kestävää kehitystä ja hyvää hallintoa edistävän erityisen kannustusmenettelyn (GSP
+DESCRIPTION:Voimaan · C(2026)6211 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3133
 END:VEVENT
 BEGIN:VEVENT
@@ -3252,15 +3243,6 @@ DTEND;VALUE=DATE:20261111
 SUMMARY:[EU] Määräaika: COMMISSION DELEGATED REGULATION (EU) …/... establishing rules related to the procedure for the temporary withdrawal of preferential arrangements and the adoptio
 DESCRIPTION:Vastustamisaika päättyy – EP ja neuvosto · C(2026)6214 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
 URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3134
-END:VEVENT
-BEGIN:VEVENT
-UID:eu-da-3149-maaraaika-2026-11-09@saadosseuranta
-DTSTAMP:20261109T000000Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
-SUMMARY:[EU] Määräaika: Komission delegoitu asetus (EU) 2026/1979\, annettu 8 päivänä syyskuuta 2026\, asetuksen (EU) N:o 965/2012 muuttamisesta taksilentotoiminnan\, kiireellisen lääkint
-DESCRIPTION:Vastustamisaika päättyi · C(2026)6142 · https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
-URL:https://webgate.ec.europa.eu/regdel/#/delegatedActs/3149
 END:VEVENT
 BEGIN:VEVENT
 UID:eu-da-3149-voimaan-2026-12-03@saadosseuranta
